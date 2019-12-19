@@ -5,7 +5,8 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
+	parser: 'babel-eslint'
+	// "parser": "babel-eslint"
   },
   extends: [
 	'eslint-config-fluid',
