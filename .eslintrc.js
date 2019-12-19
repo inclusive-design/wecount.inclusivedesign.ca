@@ -9,8 +9,8 @@ module.exports = {
 	// "parser": "babel-eslint"
   },
   extends: [
-	'eslint-config-fluid',
-    //'@nuxtjs',
+	//'eslint-config-fluid',
+    '@nuxtjs',
     'plugin:nuxt/recommended'
   ],
   // add your custom rules here
