@@ -9,7 +9,7 @@ module.exports = {
   },
   extends: [
 	'eslint-config-fluid',
-    '@nuxtjs',
+    //'@nuxtjs',
     'plugin:nuxt/recommended'
   ],
   // add your custom rules here

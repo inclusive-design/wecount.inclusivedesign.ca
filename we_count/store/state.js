@@ -1,8 +1,6 @@
-// import cats from '../data/cats'
-// import dogs from '../data/dogs'
+import dsTools from "../assets/data/dsTools";
 
-// export default {
-//   cats,
-//   dogs,
-//   pets: [...cats, ...dogs]
-// }
+export default {
+  dsTools,
+  spread: [...dsTools, "test"]
+};
