@@ -1,17 +1,24 @@
 <template>
-  <div>
-	<Header></Header>
+  <div style="background-image: url('https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png'); background-repeat: no-repeat; background-position: right;">
+    <Header />
+    <Search />
     <nuxt />
   </div>
 </template>
 
 <script>
-import Header from "../components/Header";
+import Header from "~/components/Header"
+import Search from "~/components/Search"
 export default {
-    components: {
-        Header
-    }
-};
+	components: {
+		Header,
+		Search
+	},
+	data () {
+		return {
+		}
+	}
+}
 </script>
 
 <style>

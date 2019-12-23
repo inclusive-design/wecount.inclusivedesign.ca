@@ -1,6 +1,6 @@
-import dsTools from "../assets/data/dsTools";
+import dsTools from "../assets/data/dsTools"
 
 export default () => ({
-    dsTools,
-    pread: [...dsTools, "test"]
-});
+	dsTools,
+	pread: [...dsTools, "test"]
+})

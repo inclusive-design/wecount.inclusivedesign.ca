@@ -1,10 +1,9 @@
-"use strict";
+"use strict"
 
 const Config = {
 	appTitle: "we_count",
 	appTitleShort: "WC",
-	appDescription:
-		"We Count Project",
+	appDescription: "We Count Project",
 	appThemeColor: "#fffffff ",
 	appBgColor: "#00172c ",
 	appIcon: "assets/app-icon.png",
@@ -14,6 +13,6 @@ const Config = {
 		destinations: ""
 	}
 
-};
+}
 
-module.exports = Config;
+module.exports = Config
