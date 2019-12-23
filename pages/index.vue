@@ -7,26 +7,14 @@
     <br>
     <br>
     <br>
-    {{ Title }}
+    <h1>
+      <b>{{ Title }}</b>
+    </h1>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    {{ Content }}
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div id="api-content" />
     <br>
     <br>
     <br>
@@ -41,9 +29,14 @@ export default {
 	},
 	data () {
 		return {
-			Title: "We Count",
-			Content: "test"
+			Title: ""
 		}
+	},
+	async mounted () {
+		const ip = await this.$axios.$get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages#")
+		const res = ip.filter(x => x.title.rendered === "We Count")[0]
+		this.Title = res.title.rendered.toUpperCase()
+		document.getElementById("api-content").innerHTML = res.content.rendered
 	}
 }
 </script>
