@@ -7,14 +7,14 @@
     <br>
     <br>
     <br>
-	{{ Title }}
+    {{ Title }}
     <br>
     <br>
     <br>
     <br>
     <br>
     <br>
-	{{ Content }}
+    {{ Content }}
     <br>
     <br>
     <br>

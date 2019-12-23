@@ -15,7 +15,7 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-col>
-          <b-navbar-brand href="#" style="color: black;">
+          <b-navbar-brand style="color: black;">
             Removing bias and exclusion in the data economy
           </b-navbar-brand>
         </b-col>

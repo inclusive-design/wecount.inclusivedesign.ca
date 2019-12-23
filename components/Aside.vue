@@ -28,10 +28,11 @@
       <br>
       <br>
       <br>
-      <br>
-      <br>
       <p id="phrase">
-        © 2019 We Count
+        © 2019
+        <a href="https://wecount.inclusivedesign.ca" style="color: black;">
+          We Count
+        </a>
       </p>
     </ul>
   </aside>
