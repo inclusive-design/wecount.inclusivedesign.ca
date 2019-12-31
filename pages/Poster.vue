@@ -34,8 +34,8 @@ export default {
 		}
 	},
 	async mounted () {
-		const ip = await this.$axios.$get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages#")
-		const res = ip.filter(x => x.title.rendered === "About")[0]
+		const ip = await this.$axios.$get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/posts#")
+		const res = ip.filter(x => x.title.rendered === "Walrus Talk")[0]
 		this.Title = res.title.rendered.toUpperCase()
 		document.getElementById("api-content").innerHTML = res.content.rendered
 	}

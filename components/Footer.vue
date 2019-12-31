@@ -1,6 +1,6 @@
 <template>
   <b-row align-h="center">
-    <div style="width: 80%; position: center;">
+    <div style="width: 80%;">
       <hr style="background: lightgrey;">
       <br>
       <br>

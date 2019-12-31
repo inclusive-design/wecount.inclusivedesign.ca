@@ -1,26 +1,27 @@
 <template>
-  <div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1>
-      <b>{{ Title }}</b>
-    </h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="api-content" />
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  </div>
+  <b-row align-h="center">
+    <div style="width: 80%;">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>
+        <b>{{ Title }}</b>
+      </h1>
+      <br>
+      <br>
+      <br>
+      <div id="api-content" style="width: 50%" />
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </b-row>
 </template>
 
 <script>

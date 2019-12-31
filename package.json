@@ -15,6 +15,7 @@
   "dependencies": {
     "@inotom/vue-nav-drawer": "^1.1.0",
     "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/bulma": "^1.2.6",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "bootstrap": "^4.1.3",
