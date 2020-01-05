@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="light">
-      <b-link href="https://wecount.inclusivedesign.ca/" target="_blank">
+      <b-link href="/">
         <b-img height="100%" src="~/static/img/We Count logos_colour and bw-01.png" />
       </b-link>
 

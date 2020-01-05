@@ -20,7 +20,7 @@
       <br>
       <br>
       <p class="footer-copyright">
-        © 2019
+        © 2020
         <a href="https://wecount.inclusivedesign.ca" style="color: black;">
           We Count
         </a>

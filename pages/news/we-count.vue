@@ -32,8 +32,6 @@ export default {
 		}
 	},
 	async mounted () {
-		this.$store.dispatch("fetchPosts")
-		this.$store.dispatch("fetchPages")
 		const ip = await this.$axios.$get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages#")
 		const res = ip.filter(x => x.title.rendered === "We Count")[0]
 		this.Title = res.title.rendered.toUpperCase()

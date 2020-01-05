@@ -12,11 +12,23 @@
       <br>
       <br>
       <hr style="width:100%; background-color: grey;">
-      <li><a id="a"><nuxt-link to="/">Home</nuxt-link></a></li>
+      <li>
+        <nuxt-link to="/">
+          Home
+        </nuxt-link>
+      </li>
       <hr style="width:100%; background-color: grey;">
-      <li><a onclick="location.href='About'">About</a></li>
+      <li>
+        <nuxt-link to="/about">
+          About
+        </nuxt-link>
+      </li>
       <hr style="width:100%; background-color: grey;">
-      <li><a onclick="location.href='News'">News</a></li>
+      <li>
+        <nuxt-link to="/news">
+          News
+        </nuxt-link>
+      </li>
       <hr style="width:100%; background-color: grey;">
       <br>
       <br>
@@ -29,7 +41,7 @@
       <br>
       <br>
       <p id="phrase">
-        © 2019
+        © 2020
         <a href="https://wecount.inclusivedesign.ca" style="color: black;">
           We Count
         </a>
