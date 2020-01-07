@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style>
+/* contains unneeded css fields */
 .container {
   margin: 0 auto;
   min-height: 100vh;

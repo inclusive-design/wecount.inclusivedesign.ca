@@ -1,3 +1,5 @@
+// TODO:
+// This is where I plan to put the global variables for the api endpoints. They are hardcoded for now.
 "use strict"
 
 const Config = {

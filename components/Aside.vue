@@ -41,6 +41,7 @@
       <br>
       <br>
       <p id="phrase">
+		  <!-- The year should probably be dynamic -->
         © 2020
         <a href="https://wecount.inclusivedesign.ca" style="color: black;">
           We Count
@@ -51,6 +52,7 @@
 </template>
 
 <script>
+// Used code from previous project to for side/drawer navigation. Thinking about redoing it using Vuetify (vue frontend library).
 export default {
 	data () {
 		return {
@@ -85,6 +87,7 @@ export default {
 </script>
 
 <style>
+/* Used from old code some field are not being used */
 .nav-sidebar {
     position: fixed;
     height: 100vh;

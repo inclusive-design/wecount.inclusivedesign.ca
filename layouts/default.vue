@@ -25,6 +25,7 @@ export default {
 </script>
 
 <style>
+/* Alot of this is default styling that can be removed */
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;

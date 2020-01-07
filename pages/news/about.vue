@@ -1,4 +1,5 @@
 <template>
+<!-- This is a copy of /page/about.vue -->
   <b-row align-h="center">
     <div style="width: 80%;">
       <br>

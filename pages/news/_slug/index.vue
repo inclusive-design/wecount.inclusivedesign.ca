@@ -24,6 +24,7 @@
       <br>
       <br>
       <br>
+	  <!-- Solcial media sites still use original wordpress url -->
       <section class="toolbelt_social_share">
         <a
           :href="'https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwecount.inclusivedesign.ca%2F' + $route.params.slug +'%2F'"

@@ -1,5 +1,6 @@
 import axios from "axios"
 export default {
+	// May be a way to consolidate fetchPage and fetchPosts into one action
 	fetchPages: async (context) => {
 		const Pages = []
 		const r = await axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages")
@@ -33,7 +34,6 @@ export default {
 			const date = new Date(r.data[i].date).toLocaleString("en-us", options)
 
 			const api = r.data[i]._links["wp:featuredmedia"][0].href
-			// const pic = await this.$axios.$get(api)
 			const pic = await axios.get(api)
 
 			const picture = pic.data.guid.rendered
@@ -41,8 +41,9 @@ export default {
 			Posts.push({ title, picture, date, slug, content, tags })
 		}
 		context.commit("REFRESH_POSTS", Posts)
-	},
-	addPet: ({ commit }, payload) => {
-		commit("appendPet", payload)
 	}
+	// ,
+	// addPet: ({ commit }, payload) => {
+	// 	commit("appendPet", payload)
+	// }
 }

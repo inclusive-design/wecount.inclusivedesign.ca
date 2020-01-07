@@ -1,4 +1,5 @@
 <template>
+<!-- This compenent is used by data from pages api call as well as post api call -->
   <figure class="preview-media">
     <nuxt-link :to="'/news/' + slug">
       <div :style="'background-image: url(' + picture + ');'" class="grid-item" />
@@ -43,11 +44,13 @@
 
 <script>
 export default {
+	// Pages have no media attached to them so when they render they are imageless
 	props: ["picture", "title", "date", "slug"]
 }
 </script>
 
 <style>
+/* Some of these fields are not needed */
 figure {
 	padding: 0;
 	margin: 0;

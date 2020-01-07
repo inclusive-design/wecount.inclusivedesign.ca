@@ -26,6 +26,7 @@ export default {
 			// this.$store.dispatch("fetchQuery", Q)
 			this.query = null
 		},
+		// Currently not using code below. Was testing mapActions
 		...mapActions([
 			"fetchQuery",
 			"wpAPI"
