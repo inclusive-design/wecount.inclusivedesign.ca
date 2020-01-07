@@ -1,5 +1,17 @@
+import axios from "axios"
+
 export default {
 	mode: "universal",
+	generate: {
+		routes () {
+			return axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/posts")
+			.then((res) => {
+				return res.data.map((post) => {
+					return "/news/" + post.slug
+				})
+			})
+		}
+	},
 	/*
   ** Headers of the page
   */
