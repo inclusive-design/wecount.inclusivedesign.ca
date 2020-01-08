@@ -225,7 +225,7 @@ export default {
 	// 		this.linksNames.push(ip[i].slug.replace(/-/g, " "))
 	// 	}
 	// },
-	asyncData ({ store }) {
+	fetch ({ store }) {
 		return store.dispatch("fetchPosts")
 	},
 	methods: {
