@@ -73,11 +73,17 @@ export default {
 			return _.chunk(this.pagesPosts, 2)
 		}
 	},
-	mounted () {
-		return this.$store.dispatch("fetchPosts")
-	},
-	beforeMount () {
-		return this.$store.dispatch("fetchPages")
+	asyncData ({ store }) {
+		return Promise.all([
+			store.dispatch("fetchPosts"),
+			store.dispatch("fetchPages")
+		])
 	}
+	// mounted () {
+	// 	return this.$store.dispatch("fetchPosts")
+	// },
+	// beforeCreate () {
+	// 	return this.$store.dispatch("fetchPages")
+	// }
 }
 </script>

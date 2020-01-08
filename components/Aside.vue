@@ -41,7 +41,7 @@
       <br>
       <br>
       <p id="phrase">
-		  <!-- The year should probably be dynamic -->
+        <!-- The year should probably be dynamic -->
         © 2020
         <a href="https://wecount.inclusivedesign.ca" style="color: black;">
           We Count

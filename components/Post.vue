@@ -1,5 +1,5 @@
 <template>
-<!-- This compenent is used by data from pages api call as well as post api call -->
+  <!-- This compenent is used by data from pages api call as well as post api call -->
   <figure class="preview-media">
     <nuxt-link :to="'/news/' + slug">
       <div :style="'background-image: url(' + picture + ');'" class="grid-item" />

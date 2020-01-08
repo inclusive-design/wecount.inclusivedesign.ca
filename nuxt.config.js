@@ -2,14 +2,41 @@ import axios from "axios"
 
 export default {
 	mode: "universal",
+	// generate: {
+	// 	routes () {
+	// 		return axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/posts")
+	// 		.then((res) => {
+	// 			return res.data.map((post) => {
+	// 				return "/news/" + post.slug
+	// 			})
+	// 		})
+	// 	}
+	// }
 	generate: {
-		routes () {
-			return axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/posts")
-			.then((res) => {
-				return res.data.map((post) => {
-					return "/news/" + post.slug
+		routes (callback) {
+			axios.all([
+				axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages"),
+				axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/posts")
+			])
+				.then(axios.spread(function (pages, posts) {
+					const routes1 = pages.data.map((page) => {
+						return {
+							route: "/" + page.title.rendered.toLowerCase().replace(/ /g, "-"),
+							payload: page
+						}
+					})
+
+					const routes2 = posts.data.map((post) => {
+						return {
+							route: "/news/" + post.slug,
+							payload: post
+						}
+					})
+
+					callback(null, routes1.concat(routes2))
+				}), function (err) {
+					return next(err)
 				})
-			})
 		}
 	},
 	/*

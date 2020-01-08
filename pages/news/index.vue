@@ -52,11 +52,15 @@ export default {
 			return _.chunk(this.$store.state.posts, 2)
 		}
 	},
-	mounted () {
-		return this.$store.dispatch("fetchPosts")
-	},
-	beforeMount () {
-		return this.$store.dispatch("fetchPages")
+	asyncData ({ store }) {
+	// GET_CATEGORIES action returns a Promise since it's defined as an async function
+		return store.dispatch("fetchPosts")
 	}
+	// mounted () {
+	// 	return this.$store.dispatch("fetchPosts")
+	// },
+	// beforeMount () {
+	// 	return this.$store.dispatch("fetchPages")
+	// }
 }
 </script>
