@@ -35,25 +35,7 @@ export default {
 			Content: ""
 		}
 	},
-	// beforeMount () {
-	// 	if this.api {
-	// 		const res = this.api.filter(x => x.title.rendered === "About")[0]
-	// 		this.Title = res.title.rendered.toUpperCase()
-	// 		document.getElementById("api-content").innerHTML = res.content.rendered
-
-	// 	}
-	// 	this.api
-
-	// },
-	// async mounted () {
-	// 	const ip = await this.$axios.$get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages#")
-	// 	const res = ip.filter(x => x.title.rendered === "About")[0]
-	// 	this.Title = res.title.rendered.toUpperCase()
-	// 	document.getElementById("api-content").innerHTML = res.content.rendered
-	// },
 	asyncData (context) {
-		// this.$store.dispatch("fetchPosts")
-		// this.$store.dispatch("fetchPages")
 		// check if you got a payload first
 		if (context.payload) {
 		// extract the page object passed from nuxt.config.js

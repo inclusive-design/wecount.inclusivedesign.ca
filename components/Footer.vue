@@ -11,7 +11,7 @@
             Innovation, Science and Economic<br>Development Canada
           </a>'s Accessible Technology Program.
         </p>
-		<b-img v-b-modal.modal-1 height="55%" src="~/static/img/canada_logo.png" alt=" " />
+        <b-img v-b-modal.modal-1 height="55%" src="~/static/img/canada_logo.png" alt=" " />
         <!-- <img alt="Canada Wordmark" src="http://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/T130-Canada-2-e1572386144103.png"> -->
       </div>
       <br>

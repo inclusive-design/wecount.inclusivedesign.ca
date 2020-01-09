@@ -14,7 +14,6 @@
       <br>
       <br>
       <br>
-      <!-- <div id="api-content" style="width: 50%" /> -->
       <div id="api-content" v-html="Content" style="width: 50%" />
       <br>
       <br>
@@ -34,17 +33,7 @@ export default {
 			Content: ""
 		}
 	},
-	// async mounted () {
-	// 	this.$store.dispatch("fetchPosts")
-	// 	this.$store.dispatch("fetchPages")
-	// 	const ip = await this.$axios.$get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages#")
-	// 	const res = ip.filter(x => x.title.rendered === "We Count")[0]
-	// 	this.Title = res.title.rendered.toUpperCase()
-	// 	document.getElementById("api-content").innerHTML = res.content.rendered
-	// },
 	asyncData (context) {
-		// this.$store.dispatch("fetchPosts")
-		// this.$store.dispatch("fetchPages")
 		// check if you got a payload first
 		if (context.payload) {
 		// extract the page object passed from nuxt.config.js

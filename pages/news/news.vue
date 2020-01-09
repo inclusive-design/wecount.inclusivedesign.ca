@@ -1,5 +1,4 @@
 <template>
-  <!-- this is a copy of page/news/index.vue -->
   <b-row align-h="center">
     <div style="width: 80%;">
       <br>
@@ -53,11 +52,8 @@ export default {
 			return _.chunk(this.$store.state.posts, 2)
 		}
 	},
-	mounted () {
-		return this.$store.dispatch("fetchPosts")
-	},
-	beforeMount () {
-		return this.$store.dispatch("fetchPages")
+	fetch ({ store }) {
+		return store.dispatch("fetchPosts")
 	}
 }
 </script>

@@ -61,11 +61,8 @@ export default {
 			return _.chunk(this.filterdBlogs, 2)
 		}
 	},
-	asyncData ({ store }) {
+	fetch ({ store }) {
 		return store.dispatch("fetchPosts")
 	}
-	// beforeCreate () {
-	// 	return this.$store.dispatch("fetchPosts")
-	// }
 }
 </script>

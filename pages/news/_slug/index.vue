@@ -199,32 +199,6 @@ export default {
 			return this.links.map(x => x.replace(/-/g, " "))
 		}
 	},
-	// async mounted () {
-	// 	const ip = await this.$axios.$get(
-	// 		"https://wecount.inclusivedesign.ca/wp-json/wp/v2/posts"
-	// 	)
-	// 	const res = ip.filter(x => x.slug === this.$route.params.slug)[0]
-	// 	this.Title = res.title.rendered.toUpperCase()
-
-	// 	const api = res._links["wp:featuredmedia"][0].href
-	// 	const pic = await this.$axios.$get(api)
-	// 	this.Picture = pic.guid.rendered
-
-	// 	document.getElementById("api-content").innerHTML = res.content.rendered
-
-	// 	const T = res.pure_taxonomies.tags
-
-	// 	for (let i = 0; i < T.length; i++) {
-	// 		const link = T[i].slug
-	// 		const tag = T[i].name
-	// 		this.Tags.push({ link, tag })
-	// 	}
-
-	// 	for (let i = 0; i < ip.length; i++) {
-	// 		this.links.push(ip[i].slug)
-	// 		this.linksNames.push(ip[i].slug.replace(/-/g, " "))
-	// 	}
-	// },
 	fetch ({ store }) {
 		return store.dispatch("fetchPosts")
 	},
