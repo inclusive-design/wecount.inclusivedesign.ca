@@ -1,5 +1,5 @@
 <template>
-  <b-modal id="modal-1" size="xl" hide-header="True" hide-footer="True">
+  <b-modal id="modal-1" size="xl" :hide-header="bool" :hide-footer="bool">
     <b-form-input
       @keyup.enter="$router.push({ path: '/search', query: { s: query } }); $bvModal.hide('modal-1'); settingQ(query)"
       v-model="query"
@@ -15,7 +15,8 @@ import { mapActions } from "vuex"
 export default {
 	data () {
 		return {
-			query: ""
+			query: "",
+			bool: true
 		}
 	},
 	computed: {
