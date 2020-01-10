@@ -13,6 +13,7 @@ export default {
 	// 	}
 	// }
 	generate: {
+		fallback: "404.html",
 		routes (callback) {
 			axios.all([
 				axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages"),
