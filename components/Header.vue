@@ -47,10 +47,10 @@
 // Want to make this more of a modal
 import Aside from "~/components/Aside"
 export default {
-	props: ["target"],
 	components: {
 		Aside
 	},
+	props: ["target"],
 	data () {
 		return {
 			toggleNavStatus: false
