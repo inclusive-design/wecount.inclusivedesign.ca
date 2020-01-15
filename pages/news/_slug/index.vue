@@ -1,26 +1,16 @@
 <template>
   <b-row align-h="center">
     <div style="width: 80%;">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
       <h1>
         <b>{{ Title }}</b>
       </h1>
-      <br>
-      <br>
-      <br>
       <img :src="Picture">
       <br>
       <br>
       <br>
       <br>
       <br>
-      <div id="api-content" style="width: 50%" />
+      <div id="api-content" v-html="Content" style="width: 50%" />
       <br>
       <br>
       <br>
@@ -177,26 +167,33 @@
 
 <script>
 export default {
+	validate ({ params, store }) {
+		const linkList = store.state.posts.map(({ slug }) => slug)
+		return linkList.includes(params.slug)
+	},
 	components: {},
 	data () {
 		return {
 		}
 	},
 	computed: {
+		links () {
+			return this.$store.state.posts.map(({ slug }) => slug)
+		},
+		linkNames () {
+			return this.links.map(x => x.replace(/-/g, " "))
+		},
 		Title () {
 			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).title
 		},
 		Picture () {
 			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).picture
 		},
+		Content () {
+			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).content
+		},
 		Tags () {
 			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).tags
-		},
-		links () {
-			return this.$store.state.posts.map(({ slug }) => slug)
-		},
-		linkNames () {
-			return this.links.map(x => x.replace(/-/g, " "))
 		}
 	},
 	fetch ({ store }) {

@@ -42,10 +42,10 @@
       <br>
       <p id="phrase">
         <!-- The year should probably be dynamic -->
-        © 2020
-        <a href="https://wecount.inclusivedesign.ca" style="color: black;">
+        © {{ today.getFullYear() }}
+        <nuxt-link to="/" style="color: black;">
           We Count
-        </a>
+        </nuxt-link>
       </p>
     </ul>
   </aside>
@@ -56,7 +56,8 @@
 export default {
 	data () {
 		return {
-			toggleNavStatus: true
+			toggleNavStatus: true,
+			today: new Date()
 		}
 	},
 	methods: {

@@ -7,7 +7,7 @@
       <div>
         <p>
           Supported by
-          <a href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home" target="_blank" style="color: #;">
+          <a href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home">
             Innovation, Science and Economic<br>Development Canada
           </a>'s Accessible Technology Program.
         </p>
@@ -22,10 +22,10 @@
       <br>
       <p class="footer-copyright">
         <!-- The year should probably be dynamic -->
-        © 2020
-        <a href="https://wecount.inclusivedesign.ca" style="color: black;">
+        © {{ today.getFullYear() }}
+        <nuxt-link to="/">
           We Count
-        </a>
+        </nuxt-link>
       </p>
       <br>
       <br>
@@ -33,3 +33,12 @@
     </div>
   </b-row>
 </template>
+<script>
+export default {
+	data () {
+		return {
+			today: new Date()
+		}
+	}
+}
+</script>

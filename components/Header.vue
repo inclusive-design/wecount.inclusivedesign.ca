@@ -5,7 +5,7 @@
         <b-img height="100%" src="~/static/img/We Count logos_colour and bw-01.png" />
       </b-link>
 
-      <b-navbar-toggle>
+      <b-navbar-toggle target="nav-collapse">
         <b-button-group>
           <b-img v-b-modal.modal-1 height="30%" src="~/static/img/search.png" alt=" " />
           <b-col />
@@ -50,7 +50,6 @@ export default {
 	components: {
 		Aside
 	},
-	props: ["target"],
 	data () {
 		return {
 			toggleNavStatus: false

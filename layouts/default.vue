@@ -1,6 +1,6 @@
 <template>
   <div style="background-image: url('https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png'); background-repeat: no-repeat; background-position: right; background-attachment: fixed;">
-    <Header />
+    <Header :target="'hi'" />
     <Search />
     <nuxt />
     <Footer />

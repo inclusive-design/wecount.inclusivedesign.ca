@@ -5,8 +5,4 @@ export default {
 	REFRESH_PAGES: (state, Pages) => {
 		state.pages = Pages
 	}
-	// ,
-	// appendPet: (state, { species, pet }) => {
-	// 	state[species].push(pet)
-	// }
 }

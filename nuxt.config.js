@@ -13,28 +13,28 @@ export default {
 	// 	}
 	// }
 	generate: {
-		fallback: "404.html",
+		fallback: true,
 		routes (callback) {
 			axios.all([
 				axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages"),
 				axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/posts")
 			])
 				.then(axios.spread(function (pages, posts) {
-					const routes1 = pages.data.map((page) => {
+					const pageRoutes = pages.data.map((page) => {
 						return {
 							route: "/" + page.title.rendered.toLowerCase().replace(/ /g, "-"),
 							payload: page
 						}
 					})
 
-					const routes2 = posts.data.map((post) => {
+					const postRoutes = posts.data.map((post) => {
 						return {
 							route: "/news/" + post.slug,
 							payload: post
 						}
 					})
 
-					callback(null, routes1.concat(routes2))
+					callback(null, pageRoutes.concat(postRoutes))
 				}), function (err) {
 					return next(err)
 				})

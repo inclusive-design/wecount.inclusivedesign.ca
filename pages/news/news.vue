@@ -1,18 +1,9 @@
 <template>
   <b-row align-h="center">
     <div style="width: 80%;">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
       <h1>
         <b>NEWS</b>
       </h1>
-      <br>
-      <br>
       <b-row v-for="row in groupedPosts">
         <b-col v-for="x in row">
           <Post

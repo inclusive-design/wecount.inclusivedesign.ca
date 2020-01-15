@@ -3,10 +3,10 @@
 "use strict"
 
 const Config = {
-	appTitle: "we_count",
+	appTitle: "We Count",
 	appTitleShort: "WC",
 	appDescription: "We Count Project",
-	appThemeColor: "#fffffff ",
+	appThemeColor: "#fffffff",
 	appBgColor: "#00172c ",
 	appIcon: "assets/app-icon.png",
 	wpDomain: "https://wecount.inclusivedesign.ca",
