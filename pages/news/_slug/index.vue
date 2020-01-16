@@ -138,10 +138,12 @@
       <hr id="lineBreak">
       <b-row align-h="center" class="overflow-auto">
         <b-pagination-nav
-		id="pagination"
+          id="pagination"
           :link-gen="linkGen"
           :page-gen="pageGen"
           :number-of-pages="links.length"
+          use-router
+          base-url="/news/"
         />
       </b-row>
     </div>
