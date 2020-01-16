@@ -142,7 +142,7 @@
           :link-gen="linkGen"
           :page-gen="pageGen"
           :number-of-pages="links.length"
-          base-url="/news/"
+          use-router
         />
       </b-row>
     </div>
@@ -208,7 +208,7 @@ export default {
 	},
 	methods: {
 		linkGen (pageNum) {
-			return this.links[pageNum - 1]
+			return { path: "/news/" + this.links[pageNum - 1] }
 		},
 		pageGen (pageNum) {
 			return this.linkNames[pageNum - 1]
