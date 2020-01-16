@@ -142,7 +142,6 @@
           :link-gen="linkGen"
           :page-gen="pageGen"
           :number-of-pages="links.length"
-          use-router
         />
       </b-row>
     </div>
@@ -205,9 +204,6 @@ export default {
 		Tags () {
 			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).tags
 		}
-	},
-	fetch ({ store }) {
-		return store.dispatch("fetchPosts")
 	},
 	methods: {
 		linkGen (pageNum) {
