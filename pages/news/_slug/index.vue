@@ -142,7 +142,6 @@
           :link-gen="linkGen"
           :page-gen="pageGen"
           :number-of-pages="links.length"
-          use-router
           base-url="/news/"
         />
       </b-row>
