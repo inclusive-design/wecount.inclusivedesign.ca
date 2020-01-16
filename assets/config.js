@@ -12,7 +12,8 @@ const Config = {
 	wpDomain: "https://wecount.inclusivedesign.ca",
 	loadDbName: "starter_wp",
 	api: {
-		destinations: ""
+		pages: "/wp-json/wp/v2/pages",
+		posts: "/wp-json/wp/v2/posts"
 	}
 
 }
