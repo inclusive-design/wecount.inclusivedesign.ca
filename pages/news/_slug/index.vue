@@ -1,19 +1,11 @@
 <template>
   <b-row align-h="center">
-    <div style="width: 80%;">
-      <h1>
+    <div id="container">
+      <h1 id="title">
         <b>{{ Title }}</b>
       </h1>
-      <img :src="Picture">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div id="api-content" v-html="Content" style="width: 50%" />
-      <br>
-      <br>
-      <br>
+      <img id="postImage" :src="Picture">
+      <div id="api-content" v-html="Content" />
       <!-- Solcial media sites still use original wordpress url -->
       <section class="toolbelt_social_share">
         <a
@@ -125,10 +117,6 @@
           </svg> Pin this
         </a>
       </section>
-      <br>
-      <br>
-      <br>
-      <br>
       <div>
         <span class="meta-icon">
           <svg
@@ -147,17 +135,13 @@
           <nuxt-link v-else :to="{ path: '/tag', query: { s: t }}">{{ t }},  </nuxt-link>
         </span>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <hr>
+      <hr id="lineBreak">
       <b-row align-h="center" class="overflow-auto">
         <b-pagination-nav
+		id="pagination"
           :link-gen="linkGen"
           :page-gen="pageGen"
           :number-of-pages="links.length"
-          style="text-transform: capitalize;"
           use-router
         />
       </b-row>
@@ -165,11 +149,37 @@
   </b-row>
 </template>
 
+<style>
+
+#postImage {
+	margin-top: 5rem;
+}
+.toolbelt_social_share {
+	margin-bottom: 6rem;
+}
+
+#lineBreak {
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+#pagination {
+	text-transform: capitalize;
+}
+</style>
+
 <script>
 export default {
-	validate ({ params, store }) {
+	async validate ({ params, store }) {
+		if (store.state.posts === null) {
+			await store.dispatch("fetchPosts")
+		}
 		const linkList = store.state.posts.map(({ slug }) => slug)
 		return linkList.includes(params.slug)
+	},
+	head () {
+		return {
+			title: this.Title
+		}
 	},
 	components: {},
 	data () {

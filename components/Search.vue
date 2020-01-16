@@ -34,7 +34,6 @@ export default {
 		])
 	},
 	fetch ({ store }) {
-	// GET_CATEGORIES action returns a Promise since it's defined as an async function
 		return Promise.all([
 			store.dispatch("fetchPosts"),
 			store.dispatch("fetchPages")

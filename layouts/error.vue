@@ -1,15 +1,27 @@
 <template>
   <div class="container">
-    <h1 v-if="error.statusCode === 404">
-      Page not found
-    </h1>
-    <h1 v-else>
-      An error occurred
-    </h1><p>
-      <nuxt-link to="/">
-        Home page
-      </nuxt-link>
-    </p>
+    <div v-if="error.statusCode === 404">
+      <h1>
+        Page not found
+      </h1>
+      <p>
+        The page you were looking for could not be found. It might have
+        <br>
+        been removed, renamed, or did not exist in the first place.
+      </p>
+    </div>
+    <div v-else>
+      <h1>
+        An error occurred
+      </h1>
+    </div>
+    <div>
+      <p>
+        <nuxt-link to="/">
+          Home page
+        </nuxt-link>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -18,3 +30,14 @@ export default {
 	props: ["error"]
 }
 </script>
+
+<style>
+h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.container {
+	display: flex;
+	flex-flow: column;
+}
+</style>

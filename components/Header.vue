@@ -15,7 +15,7 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-col>
-          <b-navbar-brand style="color: black;">
+          <b-navbar-brand id="slogan">
             Removing bias and exclusion in the data economy
           </b-navbar-brand>
         </b-col>
@@ -24,14 +24,14 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-form>
             <!-- <b-form-input size="sm" class="mr-sm-2" placeholder="Search" /> -->
-            <b-button v-b-modal.modal-1 variant="link" style="color: black;">
+            <b-button id="iconButton" v-b-modal.modal-1 variant="link">
               Search <b-img height="17%" src="~/static/img/search.png" alt=" " />
             </b-button>
           </b-nav-form>
 
           <b-nav-form>
             <!-- <b-form-input size="sm" class="mr-sm-2" placeholder="Search" /> -->
-            <b-button @click="toggleNav" variant="link" style="color: black;">
+            <b-button id="iconButton" @click="toggleNav" variant="link">
               Menu <b-img height="17%" src="~/static/img/list-menu.png" alt=" " />
             </b-button>
           </b-nav-form>
@@ -81,6 +81,13 @@ export default {
 </script>
 
 <style>
+#slogan {
+	color: black;
+}
+
+#iconButton {
+	color: black;
+}
 .nav-sidebar {
     position: fixed;
     height: 100vh;

@@ -1,10 +1,10 @@
 <template>
   <b-row align-h="center">
-    <div style="width: 80%;">
-      <h1>
+    <div id="container">
+      <h1 id="title">
         <b>{{ Title }}</b>
       </h1>
-      <div id="api-content" v-html="Content" style="width: 50%" />
+      <div id="api-content" v-html="Content" />
     </div>
   </b-row>
 </template>

@@ -50,7 +50,6 @@ export default {
 </script>
 
 <style>
-/* Some of these fields are not needed */
 figure {
 	padding: 0;
 	margin: 0;

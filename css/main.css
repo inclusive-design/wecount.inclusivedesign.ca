@@ -1,0 +1,13 @@
+/* webpage styling */
+
+#container {
+	width: 80%;
+}
+#title {
+	margin-top: 6rem;
+}
+#api-content {
+	width: 50%;
+	margin-top: 4rem;
+	margin-bottom: 6rem;
+}

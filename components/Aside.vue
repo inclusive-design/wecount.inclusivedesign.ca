@@ -1,49 +1,33 @@
 <template>
   <aside class="nav-sidebar">
     <ul>
-      <br>
-      <b-row align-h="end">
-        <b-button @click="toggleNav" variant="link" style="color: black;">
+      <b-row id="cancelContainer" @click="toggleNav" align-h="end">
+        <b-button class="cancel" variant="link">
           <b-img align-h="end" height="30%" src="~/static/img/cancel.png" />
         </b-button>
       </b-row>
-      <br>
-      <br>
-      <br>
-      <br>
-      <hr style="width:100%; background-color: grey;">
+      <hr id="asideLine">
       <li>
         <nuxt-link to="/">
           Home
         </nuxt-link>
       </li>
-      <hr style="width:100%; background-color: grey;">
+      <hr id="asideLine">
       <li>
         <nuxt-link to="/about">
           About
         </nuxt-link>
       </li>
-      <hr style="width:100%; background-color: grey;">
+      <hr id="asideLine">
       <li>
         <nuxt-link to="/news">
           News
         </nuxt-link>
       </li>
-      <hr style="width:100%; background-color: grey;">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <hr id="asideLine">
       <p id="phrase">
-        <!-- The year should probably be dynamic -->
         © {{ today.getFullYear() }}
-        <nuxt-link to="/" style="color: black;">
+        <nuxt-link class="year" to="/">
           We Count
         </nuxt-link>
       </p>
@@ -88,6 +72,23 @@ export default {
 </script>
 
 <style>
+#cancelContainer {
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+.year {
+	color: black;
+}
+#asideLine {
+	margin-bottom: inherit;
+}
+hr {
+	width:100%;
+	background-color: grey;
+}
+.cancel {
+	color: black;
+}
 /* Used from old code some field are not being used */
 .nav-sidebar {
     position: fixed;
@@ -151,6 +152,7 @@ export default {
 }
 
 #phrase {
+	margin-top: 14rem;
     font-size: 9.5px;
     text-align: center;
     transition:  all 100s ease-out;

@@ -1,21 +1,10 @@
 <template>
   <b-row align-h="center">
-    <div style="width: 80%;">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <h1><b>SEARCH: "{{ searchQuery }}"</b></h1>
-      <br>
+    <div id="container">
+      <h1 id="title"><b>SEARCH: "{{ searchQuery }}"</b></h1>
       <p>We found {{ pagesPosts.length }} results for your search.</p>
-      <br>
-      <br>
       <b-row v-for="row in groupedPosts">
-        <b-col v-for="x in row">
+        <b-col id="api-content" v-for="x in row">
           <Post
             v-if="row.length>1"
             :picture="x.picture"
@@ -36,6 +25,15 @@
     </div>
   </b-row>
 </template>
+
+<style scoped>
+
+#api-content {
+	margin-bottom: 0px;
+}
+
+</style>
+
 <script>
 import _ from "lodash"
 import Post from "~/components/Post"

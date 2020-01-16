@@ -62,6 +62,7 @@ export default {
   ** Global CSS
   */
 	css: [
+		"~/css/main.css"
 	],
 	/*
   ** Plugins to load before mounting the App

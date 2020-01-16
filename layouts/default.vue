@@ -1,6 +1,6 @@
 <template>
-  <div style="background-image: url('https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png'); background-repeat: no-repeat; background-position: right; background-attachment: fixed;">
-    <Header :target="'hi'" />
+  <div id="defaultContainer">
+    <Header />
     <Search />
     <nuxt />
     <Footer />
@@ -25,6 +25,13 @@ export default {
 </script>
 
 <style>
+#defaultContainer {
+	background-image: url("https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-attachment: fixed;
+}
+
 /* Alot of this is default styling that can be removed */
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
