@@ -44,7 +44,7 @@ export default {
 		}
 	},
 	fetch ({ store }) {
-		return store.dispatch("fetchPosts")
+		return store.dispatch("fetchApiData", "posts")
 	}
 }
 </script>
