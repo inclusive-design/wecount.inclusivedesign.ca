@@ -35,8 +35,8 @@ export default {
 	},
 	fetch ({ store }) {
 		return Promise.all([
-			store.dispatch("fetchPosts"),
-			store.dispatch("fetchPages")
+			store.dispatch("fetchApiData", "posts"),
+			store.dispatch("fetchApiData", "pages")
 		])
 	}
 }
