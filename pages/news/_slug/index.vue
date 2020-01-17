@@ -171,7 +171,7 @@
 export default {
 	async validate ({ params, store }) {
 		if (store.state.posts === null) {
-			await store.dispatch("fetchPosts")
+			await store.dispatch("fetchApiData", "posts")
 		}
 		const linkList = store.state.posts.map(({ slug }) => slug)
 		return linkList.includes(params.slug)

@@ -1,49 +1,36 @@
 import axios from "axios"
 export default {
-	// May be a way to consolidate fetchPage and fetchPosts into one action
-	fetchPages: async (context) => {
-		const Pages = []
-		const r = await axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages")
+	fetchApiData: async (context, postType) => {
+		const Results = []
+		const r = await axios.get(`https://wecount.inclusivedesign.ca/wp-json/wp/v2/${postType}`)
 
 		for (let i = 0; i < r.data.length; i++) {
-			const slug = r.data[i].title.rendered.toLowerCase().replace(/ /g, "-")
-			const title = r.data[i].title.rendered
-			const date = ""
-			const picture = ""
-			const content = r.data[i].content.rendered
-
-			Pages.push({ slug, title, date, picture, content })
-		}
-		context.commit("REFRESH_PAGES", Pages)
-	},
-	fetchPosts: async (context) => {
-		const Posts = []
-		const r = await axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/posts")
-
-		for (let i = 0; i < r.data.length; i++) {
-			const slug = r.data[i].slug
+			const slug = (r.data[i].slug === "home") ? "/" : r.data[i].slug
 			const title = r.data[i].title.rendered
 			const content = r.data[i].content.rendered
-			const tags = r.data[i].pure_taxonomies.tags.map(({ name }) => name)
-
-			const options = {
+			const dateOptions = {
 				year: "numeric",
 				month: "long",
 				day: "numeric"
 			}
-			const date = new Date(r.data[i].date).toLocaleString("en-us", options)
+			const date = new Date(r.data[i].date).toLocaleString("en-us", dateOptions)
+			let picture = false
+			let tags = []
 
-			const api = r.data[i]._links["wp:featuredmedia"][0].href
-			const pic = await axios.get(api)
+			if (postType === "posts") {
+				tags = r.data[i].pure_taxonomies.tags.map(({ name }) => name)
+				const api = r.data[i]._links["wp:featuredmedia"][0].href
+				const pic = await axios.get(api)
+				picture = pic.data.guid.rendered
+			}
 
-			const picture = pic.data.guid.rendered
-
-			Posts.push({ title, picture, date, slug, content, tags })
+			Results.push({ slug, title, date, picture, content, tags })
 		}
-		context.commit("REFRESH_POSTS", Posts)
+		if (postType === "posts") {
+			context.commit("REFRESH_POSTS", Results)
+		}
+		if (postType === "pages") {
+			context.commit("REFRESH_PAGES", Results)
+		}
 	}
-	// ,
-	// addPet: ({ commit }, payload) => {
-	// 	commit("appendPet", payload)
-	// }
 }
