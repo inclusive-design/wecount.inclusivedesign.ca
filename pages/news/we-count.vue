@@ -11,7 +11,7 @@
 
 <script>
 import axios from "axios"
-import Config from "@/assets/config"
+import Config from "~/assets/config"
 export default {
 	components: {
 	},
