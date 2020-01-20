@@ -1,8 +1,10 @@
 import axios from "axios"
+import Config from "~/assets/config"
+
 export default {
 	fetchApiData: async (context, postType) => {
 		const Results = []
-		const r = await axios.get(`https://wecount.inclusivedesign.ca/wp-json/wp/v2/${postType}`)
+		const r = await axios.get(`${Config.wpDomain}${Config.apiBase}${postType}`)
 
 		for (let i = 0; i < r.data.length; i++) {
 			const slug = (r.data[i].slug === "home") ? "/" : r.data[i].slug
