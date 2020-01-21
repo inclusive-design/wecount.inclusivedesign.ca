@@ -5,7 +5,7 @@
         <b>TAG: "{{ searchQuery }}"</b>
       </h1>
       <b-row v-for="row in groupedPosts">
-        <b-col id="api-content" v-for="x in row">
+        <b-col id="api-posts" v-for="x in row">
           <Post
             v-if="row.length>1"
             :picture="x.picture"

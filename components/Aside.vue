@@ -8,26 +8,26 @@
       </b-row>
       <hr id="asideLine">
       <li>
-        <nuxt-link to="/">
+        <nuxt-link id="is-link" to="/">
           Home
         </nuxt-link>
       </li>
       <hr id="asideLine">
       <li>
-        <nuxt-link to="/about">
+        <nuxt-link id="is-link" to="/about">
           About
         </nuxt-link>
       </li>
       <hr id="asideLine">
       <li>
-        <nuxt-link to="/news">
+        <nuxt-link id="is-link" to="/news">
           News
         </nuxt-link>
       </li>
       <hr id="asideLine">
       <p id="phrase">
         © {{ today.getFullYear() }}
-        <nuxt-link class="year" to="/">
+        <nuxt-link id="is-link" class="year" to="/">
           We Count
         </nuxt-link>
       </p>

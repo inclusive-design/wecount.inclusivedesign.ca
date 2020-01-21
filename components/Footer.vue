@@ -5,7 +5,7 @@
       <div>
         <p>
           Supported by
-          <a href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home">
+          <a id="is-link" href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home">
             Innovation, Science and Economic<br>Development Canada
           </a>'s Accessible Technology Program.
         </p>
@@ -13,7 +13,7 @@
       </div>
       <p class="footer-copyright">
         © {{ today.getFullYear() }}
-        <nuxt-link to="/">
+        <nuxt-link id="is-link" to="/">
           We Count
         </nuxt-link>
       </p>

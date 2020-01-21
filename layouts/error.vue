@@ -17,7 +17,7 @@
     </div>
     <div>
       <p>
-        <nuxt-link to="/">
+        <nuxt-link id="is-link" to="/">
           Home page
         </nuxt-link>
       </p>
