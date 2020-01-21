@@ -11,10 +11,7 @@ const Config = {
 	appIcon: "assets/app-icon.png",
 	wpDomain: "https://wecount.inclusivedesign.ca",
 	loadDbName: "starter_wp",
-	api: {
-		destinations: ""
-	}
-
+	apiBase: "/wp-json/wp/v2/"
 }
 
 module.exports = Config

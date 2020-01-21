@@ -11,6 +11,7 @@
 
 <script>
 import axios from "axios"
+import Config from "~/assets/config"
 export default {
 	components: {
 	},
@@ -30,7 +31,7 @@ export default {
 			}
 		} else {
 		// if you got no context, go ahead and make the API request
-			return axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages#").then((response) => {
+			return axios.get(`${Config.wpDomain}${Config.apiBase}pages`).then((response) => {
 				const res = response.data.filter(x => x.title.rendered === "We Count")[0]
 				return {
 					Title: res.title.rendered.toUpperCase(),
