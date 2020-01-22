@@ -2,7 +2,7 @@
   <b-row align-h="center">
     <div id="container">
       <h1 id="title">
-        <b>SEARCH: "{{ searchQuery }}"</b>
+        SEARCH: "{{ searchQuery }}"
       </h1>
       <p>We found {{ pagesPosts.length }} results for your search.</p>
       <b-row v-for="row in groupedPosts">

@@ -2,7 +2,7 @@
   <b-row align-h="center">
     <div id="container">
       <h1 id="title">
-        <b>{{ Title }}</b>
+        {{ Title }}
       </h1>
       <img id="postImage" :src="Picture">
       <div id="api-content" v-html="Content" />

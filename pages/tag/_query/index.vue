@@ -2,7 +2,7 @@
   <b-row align-h="center">
     <div id="container">
       <h1 id="title">
-        <b>TAG: "{{ searchQuery }}"</b>
+        TAG: "{{ searchQuery }}"
       </h1>
       <b-row v-for="row in groupedPosts">
         <b-col id="api-posts" v-for="x in row">
