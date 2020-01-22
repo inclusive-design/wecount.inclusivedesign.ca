@@ -44,7 +44,6 @@ export default {
   ** Headers of the page
   */
 	head: {
-		// title: process.env.npm_package_name || "",
 		title: "We Count",
 		meta: [
 			{ charset: "utf-8" },
