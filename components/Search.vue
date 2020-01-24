@@ -21,6 +21,12 @@ export default {
 	},
 	computed: {
 	},
+	fetch ({ store }) {
+		return Promise.all([
+			store.dispatch("fetchApiData", "posts"),
+			store.dispatch("fetchApiData", "pages")
+		])
+	},
 	methods: {
 		settingQ (Q) {
 			// this.fetchQuery(Q)
@@ -31,12 +37,6 @@ export default {
 		...mapActions([
 			"fetchQuery",
 			"wpAPI"
-		])
-	},
-	fetch ({ store }) {
-		return Promise.all([
-			store.dispatch("fetchApiData", "posts"),
-			store.dispatch("fetchApiData", "pages")
 		])
 	}
 }
