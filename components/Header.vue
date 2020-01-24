@@ -127,11 +127,11 @@ export default {
     transition:  all 0.3s ease-in-out;
 }
 
-.nav-sidebar ul li a {
+/* .nav-sidebar ul li a {
     text-align: left;
-	/* font-weight: 500; */
+	font-weight: 500;
     font-size: 22px;
-}
+} */
 
 .phrase {
     font-size: 9.5px;
