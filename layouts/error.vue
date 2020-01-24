@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="section">
     <div v-if="error.statusCode === 404">
       <h1>
         Page not found
@@ -17,7 +17,7 @@
     </div>
     <div>
       <p>
-        <nuxt-link id="is-link" to="/">
+        <nuxt-link class="is-link" to="/">
           Home page
         </nuxt-link>
       </p>
@@ -36,8 +36,10 @@ h1 {
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.container {
+.section {
 	display: flex;
 	flex-flow: column;
+	text-align: center;
+	margin: 8rem;
 }
 </style>

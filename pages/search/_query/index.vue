@@ -1,12 +1,12 @@
 <template>
   <b-row align-h="center">
-    <div id="container">
-      <h1 id="title">
+    <div class="container">
+      <h1 class="title">
         SEARCH: "{{ searchQuery }}"
       </h1>
       <p>We found {{ pagesPosts.length }} results for your search.</p>
       <b-row v-for="row in groupedPosts">
-        <b-col id="api-posts" v-for="x in row">
+        <b-col class="posts" v-for="x in row">
           <Post
             v-if="row.length>1"
             :picture="x.picture"
@@ -28,14 +28,6 @@
   </b-row>
 </template>
 
-<style scoped>
-
-#api-content {
-	margin-bottom: 0px;
-}
-
-</style>
-
 <script>
 import _ from "lodash"
 import Post from "~/components/Post"
@@ -53,7 +45,7 @@ export default {
 			// const currentPath = this.$nuxt.$route.fullPath
 			// const match = myRegexp.exec(currentPath)
 			// return match[1]
-			return decodeURIComponent(this.$nuxt.$route.fullPath.match(/rch\?s=(.*)/)[1])
+			return decodeURIComponent(this.$nuxt.$route.fullPath.match(/rch\?s.*(.*)/)[1])
 		},
 		filterdBlogs () {
 			return this.$store.state.posts.filter((blog) => {
@@ -73,10 +65,10 @@ export default {
 			return _.chunk(this.pagesPosts, 2)
 		}
 	},
-	fetch ({ store }) {
+	async fetch ({ store }) {
 		return Promise.all([
-			store.dispatch("fetchApiData", "posts"),
-			store.dispatch("fetchApiData", "pages")
+			await store.dispatch("fetchApiData", "posts"),
+			await store.dispatch("fetchApiData", "pages")
 		])
 	}
 }

@@ -1,5 +1,5 @@
 <template>
-  <div id="defaultContainer">
+  <div class="defaultContainer">
     <Header />
     <Search />
     <nuxt />
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style>
-#defaultContainer {
+.defaultContainer {
 	background-image: url("https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png");
 	background-repeat: no-repeat;
 	background-position: right;

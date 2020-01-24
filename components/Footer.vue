@@ -1,19 +1,19 @@
 <template>
   <b-row align-h="center">
-    <div id="container">
+    <div class="container">
       <hr>
       <div>
         <p>
           Supported by
-          <a id="is-link" href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home">
+          <a class="is-link" href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home">
             Innovation, Science and Economic<br>Development Canada
           </a>'s Accessible Technology Program.
         </p>
-        <b-img v-b-modal.modal-1 height="55%" src="~/static/img/canada_logo.png" alt=" " />
+        <img height="55%" src="~/static/img/canada_logo.png" alt="Government of Canada Logo">
       </div>
       <p class="footer-copyright">
         © {{ today.getFullYear() }}
-        <nuxt-link id="is-link" to="/">
+        <nuxt-link class="is-link" to="/">
           We Count
         </nuxt-link>
       </p>
@@ -34,9 +34,6 @@ export default {
 .footer-copyright {
 	margin-top: 9rem;
 	margin-bottom: 5rem;
-}
-#container {
-	width: 80%;
 }
 hr {
 	background: lightgrey;

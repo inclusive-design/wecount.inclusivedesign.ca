@@ -1,10 +1,10 @@
 <template>
   <b-row align-h="center">
-    <div id="container">
-      <h1 id="title">
+    <div class="container">
+      <h1 class="title">
         {{ Title }}
       </h1>
-      <div id="api-content" v-html="Content" />
+      <div class="content" v-html="Content" />
     </div>
   </b-row>
 </template>
@@ -45,24 +45,6 @@ export default {
 
 <style>
 /* contains unneeded css fields */
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
 
 .subtitle {
   font-weight: 300;

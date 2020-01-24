@@ -5,6 +5,8 @@
         <b-img height="100%" src="~/static/img/We Count logos_colour and bw-01.png" />
       </b-link>
 
+      <h2>We Count</h2>
+
       <b-navbar-toggle target="nav-collapse">
         <b-button-group>
           <b-img v-b-modal.modal-1 height="30%" src="~/static/img/search.png" alt=" " />
@@ -60,7 +62,7 @@ export default {
 			const getSidebar = document.querySelector(".nav-sidebar")
 			const getSidebarUl = document.querySelector(".nav-sidebar ul")
 			const getSidebarLinks = document.querySelectorAll(".nav-sidebar a")
-			const getPhrase = document.querySelectorAll("#phrase")
+			const getPhrase = document.querySelectorAll(".phrase")
 
 			getSidebarUl.style.visibility = "visible"
 			getSidebar.style.width = String(1439 - 1132) + "px"
@@ -113,43 +115,25 @@ export default {
 
 .nav-sidebar ul li span, .nav-sidebar ul li a {
     display: block;
-    height: 60px;
+    /* height: 60px; */
     padding: 0 0px;
     text-decoration: none;
     /* text-transform: uppercase; */
-    color: rgb(19, 18, 18);
+    /* color: rgb(19, 18, 18); */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    /* font-size: 16px; */
     white-space: nowrap;
     opacity: 0;
     transition:  all 0.3s ease-in-out;
 }
 
-.nav-sidebar ul li a:hover {
-    text-decoration: underline;
-
-}
-
-.nav-sidebar ul li span {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: left;
-}
-
-#blanks {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: right;
-
-}
-
 .nav-sidebar ul li a {
     text-align: left;
-	font-weight: 500;
+	/* font-weight: 500; */
     font-size: 22px;
 }
 
-#phrase {
+.phrase {
     font-size: 9.5px;
     text-align: center;
     transition:  all 100s ease-out;

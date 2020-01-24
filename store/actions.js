@@ -7,7 +7,7 @@ export default {
 		const r = await axios.get(`${Config.wpDomain}${Config.apiBase}${postType}`)
 
 		for (let i = 0; i < r.data.length; i++) {
-			const slug = (r.data[i].slug === "home") ? "/" : r.data[i].slug
+			const slug = (r.data[i].slug === "home") ? "" : r.data[i].slug
 			const title = r.data[i].title.rendered
 			const content = r.data[i].content.rendered
 			const dateOptions = {

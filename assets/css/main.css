@@ -3,78 +3,78 @@
 /* Global Styling */
 html *
 {
-   font-family: Fira Sans !important;
+   font-family: Fira Sans ;
 }
 h1 {
-	font-size: 4em !important;
-	font-weight: semi-bold !important;
+	font-size: 4em ;
+	font-weight: semi-bold ;
 }
 h2 {
-	font-size: 3em !important;
-	font-weight: medium !important;
+	font-size: 3em ;
+	font-weight: medium ;
 }
 h3 {
-	font-size: 1.5em !important;
-	font-weight: bold !important;
+	font-size: 1.5em ;
+	font-weight: bold ;
 }
 p {
-	font-size: 1em !important;
-	font-weight: regular !important;
+	font-size: 1em ;
+	font-weight: regular ;
 }
-#container {
+.container {
 	width: 80%;
 }
-#title {
+.title {
 	margin-top: 6rem;
 }
 
 /* Palette */
 
 /* Primary */
-#is-blue1 {
+.bg-blue1 {
 	background-color: #84bcde;
 }
-#is-blue2 {
+.bg-blue2 {
 	background-color: #acdde9;
 }
-#is-blue3 {
+.bg-blue3 {
 	background-color: #6895c6;
 }
-#is-yellow1 {
+.bg-yellow1 {
 	background-color: #fdcc70;
 }
-#is-yellow2 {
+.bg-yellow2 {
 	background-color: #ffe6a7;
 }
-#is-yellow3 {
+.bg-yellow3 {
 	background-color: #fcb33e;
 }
 
 /* Secondary */
-#is-black {
+.bg-black {
 	background-color: #313131;
 }
-#is-navy1 {
+.bg-navy1 {
 	background-color: #2e405b;
 }
-#is-navy2 {
+.bg-navy2 {
 	background-color: #5e82ae;
 }
-#is-navy3 {
+.bg-navy3 {
 	background-color: #8caabb;
 }
-#is-green1 {
+.bg-green1 {
 	background-color: #b0d0be;
 }
-#is-green2 {
+.bg-green2 {
 	background-color: #cee6c5;
 }
-#is-green3 {
+.bg-green3 {
 	background-color: #f7fff4;
 }
 
 /* Buttons and Links */
-#is-button {
+.is-button {
 	border: #8caabb solid 1px;
 	background-color: #cee6c5;
 	border-radius: 25px;
@@ -85,7 +85,7 @@ p {
 	transform: perspective(1px) translateZ(0);
 	position: relative;
   }
-  #is-button:before {
+  .is-button:before {
 	border-radius: 25px;
 	pointer-events: none;
 	content: '';
@@ -101,7 +101,7 @@ p {
 	-webkit-transition-property: top, right, bottom, left;
 	transition-property: top, right, bottom, left;
   }
-  #is-button:hover:before, #is-button:focus:before, #is-button:active:before {
+  .is-button:hover:before, .is-button:focus:before, .is-button:active:before {
 	top: 3px;
 	right: -3px;
 	bottom: -3px;
@@ -109,79 +109,79 @@ p {
 	opacity: 1;
   }
 
-#is-link {
+.is-link {
 	color: #6895c6;
 	font-weight: bold;
 }
 
-#is-link:hover {
+.is-link:hover {
 	color: #6895c6;
 	background-color: #ffe6a7;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-/* API Content */
-#api-content {
+/* Content */
+.content {
 	width: 50%;
 	margin-top: 4rem;
 	margin-bottom: 6rem;
 }
-#api-content /deep/ a {
+.content /deep/ a {
 	color: #6895c6;
 	font-weight: bold;
 }
-#api-content /deep/ a:hover {
+.content /deep/ a:hover {
 	color: #6895c6;
 	background-color: #ffe6a7;
 	font-weight: bold;
 	text-decoration: none;
 }
-#api-content /deep/ html *
+.content /deep/ html *
 {
-   font-family: Fira Sans !important;
+   font-family: Fira Sans ;
 }
-#api-content /deep/ h1 {
-	font-size: 4em !important;
-	font-weight: semi-bold !important;
+.content /deep/ h1 {
+	font-size: 4em ;
+	font-weight: semi-bold ;
 }
-#api-content /deep/ h2 {
-	font-size: 3em !important;
-	font-weight: medium !important;
+.content /deep/ h2 {
+	font-size: 3em ;
+	font-weight: medium ;
 }
-#api-content /deep/ h3 {
-	font-size: 1.5em !important;
-	font-weight: bold !important;
+.content /deep/ h3 {
+	font-size: 1.5em ;
+	font-weight: bold ;
 }
-#api-content /deep/ p {
-	font-size: 1em !important;
-	font-weight: regular !important;
+.content /deep/ p {
+	font-size: 1em ;
+	font-weight: regular ;
 }
 
 /* API Posts */
-#api-posts {
+.posts {
 	width: 50%;
 	margin-top: 4rem;
 	margin-bottom: 6rem;
 }
 
-#api-posts /deep/ h2 {
+.posts /deep/ h2 {
 	color: #313131;
-	font-size: 3em !important;
-	font-weight: medium !important;
+	font-size: 3em ;
+	font-weight: medium ;
 }
-#api-posts /deep/ h2:hover {
+.posts /deep/ h2:hover {
 	color: #5e82ae;
 }
 
-#api-posts /deep/ .meta-text {
+.posts /deep/ .meta-text {
 	color: #313131;
-	font-weight: medium !important;
+	font-weight: medium ;
 }
-#api-posts /deep/ .meta-text:hover {
+.posts /deep/ .meta-text:hover {
 	color: #5e82ae;
 }
 
-#api-posts /deep/ a {
+.posts /deep/ a {
 	text-decoration: none;
 }

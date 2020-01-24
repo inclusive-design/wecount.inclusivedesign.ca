@@ -1,11 +1,11 @@
 <template>
   <!-- This compenent is used by data from pages api call as well as post api call -->
   <figure class="preview-media">
-    <nuxt-link :to="'/news/' + slug">
+    <nuxt-link :to="'/' + slug">
       <div :style="'background-image: url(' + picture + ');'" class="grid-item" />
     </nuxt-link>
     <header>
-      <nuxt-link :to="'/news/' + slug">
+      <nuxt-link :to="'/' + slug">
         <h2>
           {{ title.toUpperCase() }}
         </h2>
@@ -13,7 +13,7 @@
       <div class="post-meta-wrapper post-meta-archive">
         <ul class="post-meta color-accent">
           <li class="post-date">
-            <nuxt-link :to="'/news/' + slug">
+            <nuxt-link :to="'/' + slug">
               <span class="meta-icon">
                 <svg
                   class="svg-icon"
@@ -45,7 +45,12 @@
 <script>
 export default {
 	// Pages have no media attached to them so when they render they are imageless
-	props: ["picture", "title", "date", "slug"]
+	props: {
+		picture: Object,
+		title: String,
+		date: Date,
+		slug: String
+	}
 }
 </script>
 

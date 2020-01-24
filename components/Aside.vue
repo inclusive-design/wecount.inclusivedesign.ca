@@ -1,33 +1,33 @@
 <template>
   <aside class="nav-sidebar">
     <ul>
-      <b-row id="cancelContainer" @click="toggleNav" align-h="end">
+      <b-row @click="toggleNav" class="cancelContainer" align-h="end">
         <b-button class="cancel" variant="link">
           <b-img align-h="end" height="30%" src="~/static/img/cancel.png" />
         </b-button>
       </b-row>
-      <hr id="asideLine">
+      <hr class="asideLine">
       <li>
-        <nuxt-link id="is-link" to="/">
+        <nuxt-link class="is-link" to="/">
           Home
         </nuxt-link>
       </li>
-      <hr id="asideLine">
+      <hr class="asideLine">
       <li>
-        <nuxt-link id="is-link" to="/about">
+        <nuxt-link class="is-link" to="/about">
           About
         </nuxt-link>
       </li>
-      <hr id="asideLine">
+      <hr class="asideLine">
       <li>
-        <nuxt-link id="is-link" to="/news">
+        <nuxt-link class="is-link" to="/news">
           News
         </nuxt-link>
       </li>
-      <hr id="asideLine">
-      <p id="phrase">
+      <hr class="asideLine">
+      <p class="phrase">
         © {{ today.getFullYear() }}
-        <nuxt-link id="is-link" class="year" to="/">
+        <nuxt-link class="is-link" to="/">
           We Count
         </nuxt-link>
       </p>
@@ -49,7 +49,7 @@ export default {
 			const getSidebar = document.querySelector(".nav-sidebar")
 			const getSidebarUl = document.querySelector(".nav-sidebar ul")
 			const getSidebarLinks = document.querySelectorAll(".nav-sidebar a")
-			const getPhrase = document.querySelectorAll("#phrase")
+			const getPhrase = document.querySelectorAll(".phrase")
 
 			getSidebar.style.width = "0px"
 
@@ -72,23 +72,18 @@ export default {
 </script>
 
 <style>
-#cancelContainer {
+.cancelContainer {
 	margin-top: 3rem;
 	margin-bottom: 5rem;
 }
-.year {
-	color: black;
-}
-#asideLine {
+.asideLine {
 	margin-bottom: inherit;
 }
 hr {
 	width:100%;
 	background-color: grey;
 }
-.cancel {
-	color: black;
-}
+
 /* Used from old code some field are not being used */
 .nav-sidebar {
     position: fixed;
@@ -115,43 +110,25 @@ hr {
 
 .nav-sidebar ul li span, .nav-sidebar ul li a {
     display: block;
-    height: 60px;
+    /* height: 60px; */
     padding: 0 0px;
     text-decoration: none;
     /* text-transform: uppercase; */
-    color: rgb(19, 18, 18);
+    /* color: rgb(19, 18, 18); */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    /* font-size: 16px; */
     white-space: nowrap;
     opacity: 0;
     transition:  all 0.3s ease-in-out;
 }
 
-.nav-sidebar ul li a:hover {
-    text-decoration: underline;
-
-}
-
-.nav-sidebar ul li span {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: left;
-}
-
-#blanks {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: right;
-
-}
-
-.nav-sidebar ul li a {
+/* .nav-sidebar ul li a {
     text-align: left;
 	font-weight: 500;
     font-size: 22px;
-}
+} */
 
-#phrase {
+.phrase {
 	margin-top: 14rem;
     font-size: 9.5px;
     text-align: center;

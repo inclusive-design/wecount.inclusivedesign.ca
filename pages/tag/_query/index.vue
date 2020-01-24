@@ -1,11 +1,11 @@
 <template>
   <b-row align-h="center">
-    <div id="container">
-      <h1 id="title">
+    <div class="container">
+      <h1 class="title">
         TAG: "{{ searchQuery }}"
       </h1>
       <b-row v-for="row in groupedPosts">
-        <b-col id="api-posts" v-for="x in row">
+        <b-col class="posts" v-for="x in row">
           <Post
             v-if="row.length>1"
             :picture="x.picture"
