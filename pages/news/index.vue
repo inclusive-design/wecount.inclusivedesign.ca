@@ -4,8 +4,8 @@
       <h1 id="title">
         <b>NEWS</b>
       </h1>
-      <b-row v-for="row in groupedPosts">
-        <b-col id="api-content" v-for="x in row">
+      <b-row v-for="row in groupedPosts" :key="row.id">
+        <b-col id="api-content" v-for="x in row" :key="x.id">
           <Post
             v-if="row.length>1"
             :picture="x.picture"
