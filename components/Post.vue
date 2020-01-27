@@ -45,7 +45,21 @@
 <script>
 export default {
 	// Pages have no media attached to them so when they render they are imageless
-	props: ["picture", "title", "date", "slug"]
+	props: {
+		picture: {
+			type: Object,
+			default: () => "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
+		},
+		title: {
+			type: String,
+			default: "We Count Default"
+		},
+		date: Date,
+		slug: {
+			type: String,
+			default: "/"
+		}
+	}
 }
 </script>
 
@@ -68,7 +82,8 @@ figure {
   width: 100%; /* Set a small width */
   height: 60%;
   display: inline-block;
-  background-position: top;
+  /* background-position: top; */
+  background-size: cover;
   flex-flow: row wrap;
 
 }
