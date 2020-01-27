@@ -52,7 +52,7 @@ export default {
 		},
 		title: {
 			type: String,
-			default: "We Count Default"
+			default: "Untitled Post"
 		},
 		date: Date,
 		slug: {
@@ -82,7 +82,6 @@ figure {
   width: 100%; /* Set a small width */
   height: 60%;
   display: inline-block;
-  /* background-position: top; */
   background-size: cover;
   flex-flow: row wrap;
 
