@@ -5,8 +5,8 @@
         <b>SEARCH: "{{ searchQuery }}"</b>
       </h1>
       <p>We found {{ pagesPosts.length }} results for your search.</p>
-      <b-row v-for="row in groupedPosts">
-        <b-col id="api-content" v-for="x in row">
+      <b-row v-for="row in groupedPosts" :key="row.id">
+        <b-col id="api-content" v-for="x in row" :key="x.id">
           <Post
             v-if="row.length>1"
             :picture="x.picture"
