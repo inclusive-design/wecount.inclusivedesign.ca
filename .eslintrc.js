@@ -16,9 +16,10 @@ module.exports = {
     'plugin:nuxt/recommended'
   ],
   // add your custom rules here
-  rules: { 
+  rules: {
 	  "indent": [2, "tab"],
 	  "no-tabs": 0,
-	  "quotes": [2, "double", { "avoidEscape": true }]
+	  "quotes": [2, "double", { "avoidEscape": true }],
+	  "import/no-named-as-default": 0
   }
 }

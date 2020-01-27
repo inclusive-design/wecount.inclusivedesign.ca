@@ -69,7 +69,6 @@ export default {
 			return this.filterdBlogs.concat(this.filteredPages)
 		},
 		groupedPosts () {
-			console.log(this.pagesPosts)
 			return _.chunk(this.pagesPosts, 2)
 		}
 	},
