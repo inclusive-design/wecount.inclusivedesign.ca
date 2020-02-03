@@ -36,9 +36,7 @@ export default {
 
 					callback(null, pageRoutes.concat(postRoutes))
 				}))
-				.catch((error) => {
-					throw new Error(error.response)
-				})
+				.catch(callback)
 		}
 	},
 	/*
