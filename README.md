@@ -1,12 +1,12 @@
 # wecount.inclusivedesign.ca
 The source files for the WeCount site.
 
-### How to Run
+## How to Run
 To run the website locally enter the following in command line terminal:
 ```
 npm run dev
 ```
-### How to Build
+## How to Build
 To build static webpages enter the following in command line terminal:
 ```
 nuxt generate
@@ -14,7 +14,7 @@ nuxt generate
 
 The static html files will be in the newly formed `dist` directory in the root of the project.
 
-### How to Deploy
+## How to Deploy
 This repository is hooked to netlify. Updating the master branch will trigger a rebuild and deployement of the project to this temporary [url.](https://peaceful-davinci-07d6a2.netlify.com/)
 
 
