@@ -15,7 +15,7 @@ nuxt generate
 The static website's files will be in the newly-created `dist` directory in the root of the project.
 
 ## How to Deploy
-This repository is hooked to netlify. Updating the master branch will trigger a rebuild and deployement of the project to this temporary [url.](https://peaceful-davinci-07d6a2.netlify.com/)
+This repository is connected to [Netlify](https://netlify.com). Updating the master branch will trigger a new build and deployment of the project to this temporary [url](https://wecount.netlify.com/).
 
 
 
