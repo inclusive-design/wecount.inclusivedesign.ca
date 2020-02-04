@@ -7,7 +7,7 @@ To run the website locally enter the following in command line terminal:
 npm run dev
 ```
 ## How to Build
-To build static webpages enter the following in command line terminal:
+To build a static version of the website, enter the following in the command line: 
 ```
 nuxt generate
 ```
