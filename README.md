@@ -1,5 +1,5 @@
 # wecount.inclusivedesign.ca
-The source files for the WeCount site.
+The source files for the We Count website, built with [NuxtJS](https://nuxtjs.org/).
 
 ## How to Run
 To run the website in local development mode, enter the following in the command line:
