@@ -2,7 +2,7 @@
 The source files for the WeCount site.
 
 ## How to Run
-To run the website locally enter the following in command line terminal:
+To run the website in local development mode, enter the following in the command line:
 ```
 npm run dev
 ```
