@@ -8,14 +8,12 @@ module.exports = {
 	},
 	parserOptions: {
 	parser: 'babel-eslint'
-	// "parser": "babel-eslint"
 	},
 	extends: [
 	//'eslint-config-fluid',
 		'@nuxtjs',
 		'plugin:nuxt/recommended'
 	],
-	// add your custom rules here
 	rules: {
 		"indent": [2, "tab"],
 		"no-tabs": 0,
