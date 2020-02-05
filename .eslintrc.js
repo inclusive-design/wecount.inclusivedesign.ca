@@ -7,18 +7,17 @@ module.exports = {
 		node: true
 	},
 	parserOptions: {
-	parser: 'babel-eslint'
+		parser: 'babel-eslint'
 	},
 	extends: [
-	//'eslint-config-fluid',
 		'@nuxtjs',
 		'plugin:nuxt/recommended'
 	],
 	rules: {
-		"indent": [2, "tab"],
+		"indent": [1, "tab"],
 		"no-tabs": 0,
 		"quotes": [2, "double", { "avoidEscape": true }],
 		"import/no-named-as-default": 0,
-		"vue/html-indent": [2, "tab"]
+		"vue/html-indent": [1, "tab"]
 	}
 }
