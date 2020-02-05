@@ -45,7 +45,21 @@
 <script>
 export default {
 	// Pages have no media attached to them so when they render they are imageless
-	props: ["picture", "title", "date", "slug"]
+	props: {
+		picture: {
+			type: Object,
+			default: () => "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
+		},
+		title: {
+			type: String,
+			default: "Untitled Post"
+		},
+		date: Date,
+		slug: {
+			type: String,
+			default: "/"
+		}
+	}
 }
 </script>
 
