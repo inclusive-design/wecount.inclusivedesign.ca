@@ -76,15 +76,14 @@ figure {
 	align-items: center;
 }
 .grid-item {
-  border: 1px solid #ddd; /* Gray border */
-  border-radius: 1px;  /* Rounded border */
-  padding: 0px; /* Some padding */
-  width: 100%; /* Set a small width */
-  height: 60%;
-  display: inline-block;
+	border: 1px solid #ddd; /* Gray border */
+	border-radius: 1px;  /* Rounded border */
+	padding: 0px; /* Some padding */
+	width: 100%; /* Set a small width */
+	height: 60%;
+	display: inline-block;
 	background-size: cover;
-  flex-flow: row wrap;
-
+	flex-flow: row wrap;
 }
 
 /* Add a hover effect (blue shadow) */
