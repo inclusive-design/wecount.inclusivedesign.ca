@@ -82,7 +82,7 @@ figure {
   width: 100%; /* Set a small width */
   height: 60%;
   display: inline-block;
-  background-size: cover;
+  background-position: top;
   flex-flow: row wrap;
 
 }
