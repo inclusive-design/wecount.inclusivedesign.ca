@@ -1,12 +1,12 @@
 <template>
-  <b-row align-h="center">
-    <div id="container">
-      <h1 id="title">
-        <b>{{ Title }}</b>
-      </h1>
-      <div id="api-content" v-html="Content" />
-    </div>
-  </b-row>
+	<b-row align-h="center">
+		<div id="container">
+			<h1 id="title">
+				<b>{{ Title }}</b>
+			</h1>
+			<div id="api-content" v-html="Content" />
+		</div>
+	</b-row>
 </template>
 
 <script>

@@ -1,13 +1,13 @@
 <template>
-  <b-modal id="modal-1" :hide-header="bool" :hide-footer="bool" size="xl">
-    <b-form-input
-      @keyup.enter="$router.push({ path: '/search', query: { s: query } }); $bvModal.hide('modal-1'); settingQ(query)"
-      v-model="query"
-      type="reset"
-      size="lg"
-      placeholder="Search for..."
-    />
-  </b-modal>
+	<b-modal id="modal-1" :hide-header="bool" :hide-footer="bool" size="xl">
+		<b-form-input
+			@keyup.enter="$router.push({ path: '/search', query: { s: query } }); $bvModal.hide('modal-1'); settingQ(query)"
+			v-model="query"
+			type="reset"
+			size="lg"
+			placeholder="Search for..."
+		/>
+	</b-modal>
 </template>
 
 <script>
