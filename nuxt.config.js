@@ -35,9 +35,8 @@ export default {
 					})
 
 					callback(null, pageRoutes.concat(postRoutes))
-				}), function (err) {
-					return next(err)
-				})
+				}))
+				.catch(callback)
 		}
 	},
 	/*
