@@ -11,7 +11,7 @@
 		"generate": "nuxt generate",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
 		"lint:fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
-		"test": "lint"
+		"test": "npm run lint"
 	},
 	"dependencies": {
 		"@inotom/vue-nav-drawer": "^1.1.0",
