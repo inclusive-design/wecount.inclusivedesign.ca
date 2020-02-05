@@ -1,38 +1,38 @@
 <template>
-  <aside class="nav-sidebar">
-    <ul>
-      <b-row id="cancelContainer" @click="toggleNav" align-h="end">
-        <b-button class="cancel" variant="link">
-          <b-img align-h="end" height="30%" src="~/static/img/cancel.png" />
-        </b-button>
-      </b-row>
-      <hr id="asideLine">
-      <li>
-        <nuxt-link to="/">
-          Home
-        </nuxt-link>
-      </li>
-      <hr id="asideLine">
-      <li>
-        <nuxt-link to="/about">
-          About
-        </nuxt-link>
-      </li>
-      <hr id="asideLine">
-      <li>
-        <nuxt-link to="/news">
-          News
-        </nuxt-link>
-      </li>
-      <hr id="asideLine">
-      <p id="phrase">
-        © {{ today.getFullYear() }}
-        <nuxt-link class="year" to="/">
-          We Count
-        </nuxt-link>
-      </p>
-    </ul>
-  </aside>
+	<aside class="nav-sidebar">
+		<ul>
+			<b-row id="cancelContainer" @click="toggleNav" align-h="end">
+				<b-button class="cancel" variant="link">
+					<b-img align-h="end" height="30%" src="~/static/img/cancel.png" />
+				</b-button>
+			</b-row>
+			<hr id="asideLine">
+			<li>
+				<nuxt-link to="/">
+					Home
+				</nuxt-link>
+			</li>
+			<hr id="asideLine">
+			<li>
+				<nuxt-link to="/about">
+					About
+				</nuxt-link>
+			</li>
+			<hr id="asideLine">
+			<li>
+				<nuxt-link to="/news">
+					News
+				</nuxt-link>
+			</li>
+			<hr id="asideLine">
+			<p id="phrase">
+				© {{ today.getFullYear() }}
+				<nuxt-link class="year" to="/">
+					We Count
+				</nuxt-link>
+			</p>
+		</ul>
+	</aside>
 </template>
 
 <script>
@@ -91,76 +91,76 @@ hr {
 }
 /* Used from old code some field are not being used */
 .nav-sidebar {
-    position: fixed;
-    height: 100vh;
-    right: 0px;
-    bottom: 0px;
-    width: 0px;
-    padding: 0 0px;
-    background-color: rgb(255, 255, 255);
-    z-index: 100;
-    transition:  all 0.3s ease-in-out;
+	position: fixed;
+	height: 100vh;
+	right: 0px;
+	bottom: 0px;
+	width: 0px;
+	padding: 0 0px;
+	background-color: rgb(255, 255, 255);
+	z-index: 100;
+	transition:  all 0.3s ease-in-out;
 }
 
 .nav-sidebar ul {
-    padding-top: 15px;
-    overflow: hidden;
-    visibility: hidden;
+	padding-top: 15px;
+	overflow: hidden;
+	visibility: hidden;
 }
 
 .nav-sidebar ul li {
-    line-height: 60px;
-    list-style: none;
+	line-height: 60px;
+	list-style: none;
 }
 
 .nav-sidebar ul li span, .nav-sidebar ul li a {
-    display: block;
-    height: 60px;
-    padding: 0 0px;
-    text-decoration: none;
-    /* text-transform: uppercase; */
-    color: rgb(19, 18, 18);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    white-space: nowrap;
-    opacity: 0;
-    transition:  all 0.3s ease-in-out;
+	display: block;
+	height: 60px;
+	padding: 0 0px;
+	text-decoration: none;
+	/* text-transform: uppercase; */
+	color: rgb(19, 18, 18);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	white-space: nowrap;
+	opacity: 0;
+	transition:  all 0.3s ease-in-out;
 }
 
 .nav-sidebar ul li a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 
 }
 
 .nav-sidebar ul li span {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: left;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: left;
 }
 
 #blanks {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: right;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: right;
 
 }
 
 .nav-sidebar ul li a {
-    text-align: left;
-	font-weight: 500;
-    font-size: 22px;
+	text-align: left;
+font-weight: 500;
+	font-size: 22px;
 }
 
 #phrase {
-	margin-top: 14rem;
-    font-size: 9.5px;
-    text-align: center;
-    transition:  all 100s ease-out;
-    transition: all 0.1s ease-in;
+margin-top: 14rem;
+	font-size: 9.5px;
+	text-align: center;
+	transition:  all 100s ease-out;
+	transition: all 0.1s ease-in;
 }
 
 .nav-sidebar ul {
-    padding: 0 40px;
+	padding: 0 40px;
 }
 
 </style>

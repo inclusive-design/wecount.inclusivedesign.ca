@@ -35,14 +35,13 @@ export default {
 					})
 
 					callback(null, pageRoutes.concat(postRoutes))
-				}), function (err) {
-					return next(err)
-				})
+				}))
+				.catch(callback)
 		}
 	},
 	/*
-  ** Headers of the page
-  */
+	** Headers of the page
+	*/
 	head: {
 		title: "We Count",
 		meta: [
@@ -55,31 +54,31 @@ export default {
 		]
 	},
 	/*
-  ** Customize the progress-bar color
-  */
+	** Customize the progress-bar color
+	*/
 	loading: { color: "#fff" },
 	/*
-  ** Global CSS
-  */
+	** Global CSS
+	*/
 	css: [
 		"~/css/main.css"
 	],
 	/*
-  ** Plugins to load before mounting the App
-  */
+	** Plugins to load before mounting the App
+	*/
 	plugins: [
 		"@/plugins/bootstrap-vue"
 	],
 	/*
-  ** Nuxt.js dev-modules
-  */
+	** Nuxt.js dev-modules
+	*/
 	buildModules: [
 		// Doc: https://github.com/nuxt-community/eslint-module
 		"@nuxtjs/eslint-module"
 	],
 	/*
-  ** Nuxt.js modules
-  */
+	** Nuxt.js modules
+	*/
 	modules: [
 		// Doc: https://bootstrap-vue.js.org
 		"bootstrap-vue/nuxt",
@@ -90,18 +89,18 @@ export default {
 		"@nuxtjs/dotenv"
 	],
 	/*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
+	** Axios module configuration
+	** See https://axios.nuxtjs.org/options
+	*/
 	axios: {
 	},
 	/*
-  ** Build configuration
-  */
+	** Build configuration
+	*/
 	build: {
 		/*
-    ** You can extend webpack config here
-    */
+		** You can extend webpack config here
+		*/
 		extend (config, ctx) {
 		}
 	}
