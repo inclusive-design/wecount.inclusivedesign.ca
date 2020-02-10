@@ -1,9 +1,20 @@
 <template>
 	<div id="defaultContainer">
-		<Header />
-		<Search />
-		<nuxt />
-		<Footer />
+		<Header>
+			<Brand />
+			<NavBar />
+			<SearchForm />
+		</Header>
+		<nuxt>
+			<Aside />
+			<Article />
+			<PostGrid />
+		</nuxt>
+		<Footer>
+			<ContactInfo />
+			<SocialMedia />
+			<Funders />
+		</Footer>
 	</div>
 </template>
 
