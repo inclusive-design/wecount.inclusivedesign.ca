@@ -23,7 +23,7 @@
 <script>
 import ContactInfo from "~/components/ContactInfo"
 import SocialMedia from "~/components/SocialMedia"
-import Funders from "~/components/Funder"
+import Funders from "~/components/Funders"
 export default {
 	data () {
 		return {
