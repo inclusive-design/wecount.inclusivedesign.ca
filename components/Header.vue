@@ -14,7 +14,7 @@ import NavBar from "~/components/NavBar"
 import SearchForm from "~/components/SearchForm"
 export default {
 	components: {
-		Aside
+		Brand
 	},
 	data () {
 		return {
