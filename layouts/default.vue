@@ -1,7 +1,6 @@
 <template>
 	<div id="defaultContainer">
 		<Header />
-		<Search />
 		<nuxt />
 		<Footer />
 	</div>
@@ -9,7 +8,6 @@
 
 <script>
 import Header from "~/components/Header"
-import Search from "~/components/Search"
 import Footer from "~/components/Footer"
 export default {
 	components: {
