@@ -46,6 +46,9 @@
 // TODO
 // Want to make this more of a modal
 import Aside from "~/components/Aside"
+import Brand from "~/components/Brand"
+import NavBar from "~/components/NavBar"
+import SearchForm from "~/components/SearchForm"
 export default {
 	components: {
 		Aside

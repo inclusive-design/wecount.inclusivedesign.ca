@@ -1,26 +1,13 @@
 <template>
 	<div id="defaultContainer">
-		<Header>
-			<Brand />
-			<NavBar />
-			<SearchForm />
-		</Header>
-		<nuxt>
-			<Aside />
-			<Article />
-			<PostGrid />
-		</nuxt>
-		<Footer>
-			<ContactInfo />
-			<SocialMedia />
-			<Funders />
-		</Footer>
+		<Header />
+		<nuxt />
+		<Footer />
 	</div>
 </template>
 
 <script>
 import Header from "~/components/Header"
-import Search from "~/components/Search"
 import Footer from "~/components/Footer"
 export default {
 	components: {

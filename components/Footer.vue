@@ -21,6 +21,9 @@
 	</b-row>
 </template>
 <script>
+import ContactInfo from "~/components/ContactInfo"
+import SocialMedia from "~/components/SocialMedia"
+import Funders from "~/components/Funder"
 export default {
 	data () {
 		return {
