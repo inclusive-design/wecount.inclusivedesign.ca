@@ -14,7 +14,9 @@ import NavBar from "~/components/NavBar"
 import SearchForm from "~/components/SearchForm"
 export default {
 	components: {
-		Brand
+		Brand,
+		NavBar,
+		SearchForm
 	},
 	data () {
 		return {
