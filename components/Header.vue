@@ -1,45 +1,9 @@
 <template>
-	<div>
-		<b-navbar toggleable="lg" type="dark" variant="light">
-			<b-link href="/">
-				<b-img height="100%" src="~/static/img/We Count logos_colour and bw-01.png" />
-			</b-link>
-
-			<b-navbar-toggle target="nav-collapse">
-				<b-button-group>
-					<b-img v-b-modal.modal-1 height="30%" src="~/static/img/search.png" alt=" " />
-					<b-col />
-					<b-img @click="toggleNav" height="30%" src="~/static/img/list-menu.png" alt=" " />
-				</b-button-group>
-			</b-navbar-toggle>
-
-			<b-collapse id="nav-collapse" is-nav>
-				<b-col>
-					<b-navbar-brand id="slogan">
-						Removing bias and exclusion in the data economy
-					</b-navbar-brand>
-				</b-col>
-
-				<!-- Right aligned nav items -->
-				<b-navbar-nav class="ml-auto">
-					<b-nav-form>
-						<!-- <b-form-input size="sm" class="mr-sm-2" placeholder="Search" /> -->
-						<b-button id="iconButton" v-b-modal.modal-1 variant="link">
-							Search <b-img height="17%" src="~/static/img/search.png" alt=" " />
-						</b-button>
-					</b-nav-form>
-
-					<b-nav-form>
-						<!-- <b-form-input size="sm" class="mr-sm-2" placeholder="Search" /> -->
-						<b-button id="iconButton" @click="toggleNav" variant="link">
-							Menu <b-img height="17%" src="~/static/img/list-menu.png" alt=" " />
-						</b-button>
-					</b-nav-form>
-				</b-navbar-nav>
-			</b-collapse>
-		</b-navbar>
-		<Aside />
-	</div>
+	<header>
+		<Brand />
+		<NavBar />
+		<SearchForm />
+	</header>
 </template>
 
 <script>
@@ -50,7 +14,9 @@ import NavBar from "~/components/NavBar"
 import SearchForm from "~/components/SearchForm"
 export default {
 	components: {
-		Aside
+		Brand,
+		NavBar,
+		SearchForm
 	},
 	data () {
 		return {
