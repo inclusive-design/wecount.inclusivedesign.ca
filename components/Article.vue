@@ -1,10 +1,10 @@
 <template>
-	<div>
+	<article>
 		<h1 class="title">
-			<b>{{ title }}</b>
+			{{ title }}
 		</h1>
-		<p id="api-content" v-html="content" />
-	</div>
+		<div class="api-content" v-html="content" />
+	</article>
 </template>
 
 <script>
@@ -12,11 +12,11 @@ export default {
 	props: {
 		title: {
 			type: String,
-			default: "Untitled Post"
+			default: "Untitled"
 		},
 		content: {
 			type: String,
-			default: "We Count content"
+			default: "No content found"
 		}
 	}
 }
