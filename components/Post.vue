@@ -65,25 +65,25 @@ export default {
 
 <style>
 figure {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	height: 500px;
-	width: 100%;
-	line-height:0px;
-	flex-flow: row wrap;
-	justify-content: center;
 	align-items: center;
+	border: 0;
+	flex-flow: row wrap;
+	height: 500px;
+	justify-content: center;
+	line-height:0px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 .grid-item {
+	background-size: cover;
 	border: 1px solid #ddd; /* Gray border */
 	border-radius: 1px;  /* Rounded border */
+	display: inline-block;
+	flex-flow: row wrap;
+	height: 60%;
 	padding: 0px; /* Some padding */
 	width: 100%; /* Set a small width */
-	height: 60%;
-	display: inline-block;
-	background-size: cover;
-	flex-flow: row wrap;
 }
 
 /* Add a hover effect (blue shadow) */

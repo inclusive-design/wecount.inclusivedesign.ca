@@ -57,20 +57,20 @@ export default {
 	color: black;
 }
 .nav-sidebar {
-	position: fixed;
-	height: 100vh;
-	right: 0px;
-	bottom: 0px;
-	width: 0px;
-	padding: 0 0px;
 	background-color: rgb(255, 255, 255);
-	z-index: 100;
+	bottom: 0px;
+	height: 100vh;
+	padding: 0 0px;
+	position: fixed;
+	right: 0px;
 	transition:  all 0.3s ease-in-out;
+	width: 0px;
+	z-index: 100;
 }
 
 .nav-sidebar ul {
-	padding-top: 15px;
 	overflow: hidden;
+	padding: 15px 40px 0;
 	visibility: hidden;
 }
 
@@ -80,17 +80,23 @@ export default {
 }
 
 .nav-sidebar ul li span, .nav-sidebar ul li a {
-	display: block;
-	height: 60px;
-	padding: 0 0px;
-	text-decoration: none;
 	/* text-transform: uppercase; */
 	color: rgb(19, 18, 18);
+	display: block;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
-	white-space: nowrap;
+	height: 60px;
 	opacity: 0;
+	padding: 0 0px;
+	text-decoration: none;
 	transition:  all 0.3s ease-in-out;
+	white-space: nowrap;
+}
+
+.nav-sidebar ul li a {
+	font-size: 22px;
+	font-weight: 500;
+	text-align: left;
 }
 
 .nav-sidebar ul li a:hover {
@@ -111,20 +117,10 @@ export default {
 
 }
 
-.nav-sidebar ul li a {
-	text-align: left;
-	font-weight: 500;
-	font-size: 22px;
-}
-
 #phrase {
 	font-size: 9.5px;
 	text-align: center;
 	transition:  all 100s ease-out;
 	transition: all 0.1s ease-in;
-}
-
-.nav-sidebar ul {
-	padding: 0 40px;
 }
 </style>

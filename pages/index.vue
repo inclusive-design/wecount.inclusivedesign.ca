@@ -46,30 +46,30 @@ export default {
 <style>
 /* contains unneeded css fields */
 .container {
-	margin: 0 auto;
-	min-height: 100vh;
+	align-items: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	margin: 0 auto;
+	min-height: 100vh;
 	text-align: center;
 }
 
 .title {
+	color: #35495e;
+	display: block;
 	font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
 		'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-	display: block;
-	font-weight: 300;
 	font-size: 100px;
-	color: #35495e;
+	font-weight: 300;
 	letter-spacing: 1px;
 }
 
 .subtitle {
-	font-weight: 300;
-	font-size: 42px;
 	color: #526488;
-	word-spacing: 5px;
+	font-size: 42px;
+	font-weight: 300;
 	padding-bottom: 15px;
+	word-spacing: 5px;
 }
 
 .links {
