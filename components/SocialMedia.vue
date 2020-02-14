@@ -1,5 +1,5 @@
 <template>
-	<div class="socila-media">
+	<div class="social-media">
 		<h2>Follow us on social media</h2>
 		<ul>
 			<li v-for="s in socialMedia" :key="s.id">
