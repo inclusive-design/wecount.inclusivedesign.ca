@@ -13,7 +13,7 @@ const Config = {
 	loadDbName: "starter_wp",
 	apiBase: "/wp-json/wp/v2/",
 	contactEmail: "wecount@inclusivedesign.ca",
-	socialMedia: [{ title: "Twitter", href: "https://twitter.com/wecount" }]
+	socialMedia: []
 }
 
 module.exports = Config
