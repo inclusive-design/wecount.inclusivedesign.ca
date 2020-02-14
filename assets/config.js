@@ -12,7 +12,8 @@ const Config = {
 	wpDomain: "https://wecount.inclusivedesign.ca",
 	loadDbName: "starter_wp",
 	apiBase: "/wp-json/wp/v2/",
-	contactEmail: "wecount@inclusivedesign.ca"
+	contactEmail: "wecount@inclusivedesign.ca",
+	socialMedia: [{ title: "Twitter", href: "https://twitter.com/wecount" }]
 }
 
 module.exports = Config
