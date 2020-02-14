@@ -1,30 +1,21 @@
 <template>
-	<b-row align-h="center">
-		<div id="container">
-			<hr>
-			<div>
-				<p>
-					Supported by
-					<a href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home">
-						Innovation, Science and Economic<br>Development Canada
-					</a>'s Accessible Technology Program.
-				</p>
-				<b-img v-b-modal.modal-1 height="55%" src="~/static/img/canada_logo.png" alt=" " />
-			</div>
-			<p class="footer-copyright">
-				© {{ today.getFullYear() }}
-				<nuxt-link to="/">
-					We Count
-				</nuxt-link>
-			</p>
-		</div>
-	</b-row>
+	<footer>
+		<ContactInfo />
+		<SocialMedia />
+		<Funders />
+	</footer>
 </template>
+
 <script>
 import ContactInfo from "~/components/ContactInfo"
 import SocialMedia from "~/components/SocialMedia"
 import Funders from "~/components/Funders"
 export default {
+	components: {
+		ContactInfo,
+		SocialMedia,
+		Funders
+	},
 	data () {
 		return {
 			today: new Date()

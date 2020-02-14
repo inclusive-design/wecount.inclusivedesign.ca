@@ -12,7 +12,6 @@ import Footer from "~/components/Footer"
 export default {
 	components: {
 		Header,
-		Search,
 		Footer
 	},
 	data () {
