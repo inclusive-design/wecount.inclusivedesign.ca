@@ -1,9 +1,22 @@
 <template>
 	<aside>
-		<div v-for="h in headers">
-			<nuxt-link to="">
-				{{ h }}
-			</nuxt-link>
-		</div>
+		<ul>
+			<li v-for="h in headers" :key="h.id">
+				<nuxt-link :to="h.href">
+					{{ h.title }}
+				</nuxt-link>
+			</li>
+		</ul>
 	</aside>
 </template>
+
+<script>
+export default {
+	props: {
+		headers: {
+			type: Array,
+			default: () => []
+		}
+	}
+}
+</script>
