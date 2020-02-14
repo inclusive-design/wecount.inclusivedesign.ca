@@ -26,8 +26,8 @@ export default {
 
 <style>
 .footer-copyright {
-	margin-top: 9rem;
 	margin-bottom: 5rem;
+	margin-top: 9rem;
 }
 #container {
 	width: 80%;

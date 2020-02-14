@@ -159,8 +159,8 @@
 }
 
 #lineBreak {
-	margin-top: 4rem;
 	margin-bottom: 2rem;
+	margin-top: 4rem;
 }
 #pagination {
 	text-transform: capitalize;
