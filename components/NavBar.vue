@@ -12,7 +12,7 @@
 		<nuxt-link to="/our-data">
 			Out Data
 		</nuxt-link>
-		<nuxt-link to="news-and-views">
+		<nuxt-link to="/news-and-views">
 			News and Views
 		</nuxt-link>
 	</nav>
