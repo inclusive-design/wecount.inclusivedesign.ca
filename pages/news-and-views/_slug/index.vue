@@ -208,7 +208,7 @@ export default {
 	},
 	methods: {
 		linkGen (pageNum) {
-			return { path: "/news/" + this.links[pageNum - 1] }
+			return { path: "/news-and-views/" + this.links[pageNum - 1] }
 		},
 		pageGen (pageNum) {
 			return this.linkNames[pageNum - 1]

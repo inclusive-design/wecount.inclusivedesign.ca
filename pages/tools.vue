@@ -21,8 +21,8 @@ export default {
 		if (context.payload) {
 		// extract the page object passed from nuxt.config.js
 			return {
-				title: context.payload.page.title.rendered.toUpperCase(),
-				content: context.payload.page.content.rendered
+				title: context.payload.title.rendered.toUpperCase(),
+				content: context.payload.content.rendered
 			}
 		} else {
 		// if you got no context, go ahead and make the API request
