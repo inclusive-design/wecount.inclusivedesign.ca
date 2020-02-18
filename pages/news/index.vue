@@ -1,12 +1,15 @@
 <template>
-	<NewsItem :title="title" :postList="postList" />
+	<article>
+		<h1>{{ title }}</h1>
+		<NewsGrid :postList="postList" />
+	</article>
 </template>
 
 <script>
-import NewsItem from "~/components/NewsItem"
+import NewsGrid from "~/components/NewsGrid"
 export default {
 	components: {
-		NewsItem
+		NewsGrid
 	},
 	data () {
 		return {
