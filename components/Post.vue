@@ -1,11 +1,11 @@
 <template>
 	<!-- This compenent is used by data from pages api call as well as post api call -->
 	<figure class="preview-media">
-		<nuxt-link :to="'/news/' + slug">
+		<nuxt-link :to="'/news-and-views/' + slug">
 			<div :style="'background-image: url(' + picture + ');'" class="grid-item" />
 		</nuxt-link>
 		<header>
-			<nuxt-link :to="'/news/' + slug">
+			<nuxt-link :to="'/news-and-views/' + slug">
 				<h2>
 					{{ title.toUpperCase() }}
 				</h2>
@@ -13,7 +13,7 @@
 			<div class="post-meta-wrapper post-meta-archive">
 				<ul class="post-meta color-accent">
 					<li class="post-date">
-						<nuxt-link :to="'/news/' + slug">
+						<nuxt-link :to="'/news-and-views/' + slug">
 							<span class="meta-icon">
 								<svg
 									class="svg-icon"
@@ -62,32 +62,3 @@ export default {
 	}
 }
 </script>
-
-<style>
-figure {
-	align-items: center;
-	border: 0;
-	flex-flow: row wrap;
-	height: 500px;
-	justify-content: center;
-	line-height:0px;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-.grid-item {
-	background-size: cover;
-	border: 1px solid #ddd; /* Gray border */
-	border-radius: 1px;  /* Rounded border */
-	display: inline-block;
-	flex-flow: row wrap;
-	height: 60%;
-	padding: 0px; /* Some padding */
-	width: 100%; /* Set a small width */
-}
-
-/* Add a hover effect (blue shadow) */
-.grid-item:hover {
-	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-</style>

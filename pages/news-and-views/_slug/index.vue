@@ -149,24 +149,6 @@
 	</b-row>
 </template>
 
-<style>
-
-#postImage {
-	margin-top: 5rem;
-}
-.toolbelt_social_share {
-	margin-bottom: 6rem;
-}
-
-#lineBreak {
-	margin-bottom: 2rem;
-	margin-top: 4rem;
-}
-#pagination {
-	text-transform: capitalize;
-}
-</style>
-
 <script>
 export default {
 	async validate ({ params, store }) {
@@ -208,7 +190,7 @@ export default {
 	},
 	methods: {
 		linkGen (pageNum) {
-			return { path: "/news/" + this.links[pageNum - 1] }
+			return { path: "/news-and-views/" + this.links[pageNum - 1] }
 		},
 		pageGen (pageNum) {
 			return this.linkNames[pageNum - 1]

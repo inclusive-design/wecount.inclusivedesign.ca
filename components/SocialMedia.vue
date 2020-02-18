@@ -16,7 +16,7 @@ import Config from "~/assets/config"
 export default {
 	data () {
 		return {
-			solcialMedia: Config.socialMedia
+			socialMedia: Config.socialMedia
 		}
 	}
 }
