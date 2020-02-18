@@ -31,10 +31,6 @@ export default {
 		NewsItem
 	},
 	props: {
-		title: {
-			type: String,
-			default: "Untitled"
-		},
 		postList: {
 			type: String,
 			default: () => []
