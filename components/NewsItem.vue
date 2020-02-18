@@ -1,11 +1,11 @@
 <template>
 	<!-- This compenent is used by data from pages api call as well as post api call -->
 	<figure class="preview-media">
-		<nuxt-link :to="'/news/' + slug">
+		<nuxt-link :to="'/news-and-views/' + slug">
 			<div :style="'background-image: url(' + picture + ');'" class="grid-item" />
 		</nuxt-link>
 		<header>
-			<nuxt-link :to="'/news/' + slug">
+			<nuxt-link :to="'/news-and-views/' + slug">
 				<h2>
 					{{ title.toUpperCase() }}
 				</h2>
@@ -13,7 +13,7 @@
 			<div class="post-meta-wrapper post-meta-archive">
 				<ul class="post-meta color-accent">
 					<li class="post-date">
-						<nuxt-link :to="'/news/' + slug">
+						<nuxt-link :to="'/news-and-views/' + slug">
 							<span class="meta-icon">
 								<svg
 									class="svg-icon"

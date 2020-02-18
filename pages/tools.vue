@@ -27,7 +27,7 @@ export default {
 		} else {
 		// if you got no context, go ahead and make the API request
 			return axios.get(`${Config.wpDomain}${Config.apiBase}pages`).then((response) => {
-				const res = response.data.filter(x => x.title.rendered === "We Count")[0]
+				const res = response.data.filter(x => x.title.rendered === "Tools")[0]
 				return {
 					title: res.title.rendered.toUpperCase(),
 					content: res.content.rendered
