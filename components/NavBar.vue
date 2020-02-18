@@ -10,7 +10,7 @@
 			Inclusion Challenges
 		</nuxt-link>
 		<nuxt-link to="/our-data">
-			Out Data
+			Our Data
 		</nuxt-link>
 		<nuxt-link to="/news-and-views">
 			News and Views
