@@ -28,14 +28,6 @@
 	</b-row>
 </template>
 
-<style scoped>
-
-#api-content {
-	margin-bottom: 0px;
-}
-
-</style>
-
 <script>
 import _ from "lodash"
 import Post from "~/components/Post"

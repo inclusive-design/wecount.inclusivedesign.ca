@@ -149,24 +149,6 @@
 	</b-row>
 </template>
 
-<style>
-
-#postImage {
-	margin-top: 5rem;
-}
-.toolbelt_social_share {
-	margin-bottom: 6rem;
-}
-
-#lineBreak {
-	margin-bottom: 2rem;
-	margin-top: 4rem;
-}
-#pagination {
-	text-transform: capitalize;
-}
-</style>
-
 <script>
 export default {
 	async validate ({ params, store }) {
