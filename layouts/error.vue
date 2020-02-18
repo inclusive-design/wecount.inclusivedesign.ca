@@ -35,14 +35,3 @@ export default {
 	}
 }
 </script>
-
-<style>
-h1 {
-	font-weight: bold;
-	text-transform: uppercase;
-}
-.container {
-	display: flex;
-	flex-flow: column;
-}
-</style>
