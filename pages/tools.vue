@@ -4,9 +4,11 @@
 
 <script>
 import axios from "axios"
+import Article from "~/components/Article"
 import Config from "~/assets/config"
 export default {
 	components: {
+		Article
 	},
 	data () {
 		return {
