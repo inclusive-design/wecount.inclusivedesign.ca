@@ -17,7 +17,7 @@ export default {
 	data () {
 		return {
 			title: (this.error.statusCode === 404) ? "Page not found" : "An error occurred",
-			content: (this.error.statusCode === 404) ? "<p>The page you were looking for could not be found. It might have<br>been removed, renamed, or did not exist in the first place.</p><div><p><nuxt-link to='/'>Home page</nuxt-link></p></div>" : "<div><p><nuxt-link to='/'>Home page</nuxt-link></p></div>"
+			content: (this.error.statusCode === 404) ? "<p>The page you were looking for could not be found. It might have<br>been removed, renamed, or did not exist in the first place.</p><div><p><a href='/'>Home page</a></p></div>" : "<div><p><a href='/'>Home page</a></p></div>"
 		}
 	}
 }
