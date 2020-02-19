@@ -3,7 +3,11 @@
 </template>
 
 <script>
+import Article from "~/components/Article"
 export default {
+	components: {
+		Article
+	},
 	props: {
 		error: {
 			type: Object,
