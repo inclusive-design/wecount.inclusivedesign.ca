@@ -5,23 +5,7 @@
 				<b>NEWS</b>
 			</h1>
 			<b-row v-for="row in groupedPosts" :key="row.id">
-				<b-col id="api-content" v-for="x in row" :key="x.id">
-					<Post
-						v-if="row.length>1"
-						:picture="x.picture"
-						:title="x.title"
-						:date="x.date"
-						:slug="x.slug"
-					/>
-					<Post
-						v-else
-						:picture="x.picture"
-						:title="x.title"
-						:date="x.date"
-						:slug="x.slug"
-						style="width: 50%"
-					/>
-				</b-col>
+				<b-col id="api-content" v-for="x in row" :key="x.id" />
 			</b-row>
 		</div>
 	</b-row>
@@ -29,10 +13,8 @@
 
 <script>
 import _ from "lodash"
-import Post from "~/components/Post"
 export default {
 	components: {
-		Post
 	},
 	data () {
 		return {
