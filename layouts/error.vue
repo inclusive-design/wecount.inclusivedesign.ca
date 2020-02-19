@@ -1,28 +1,5 @@
 <template>
-	<div class="container">
-		<div v-if="error.statusCode === 404">
-			<h1>
-				Page not found
-			</h1>
-			<p>
-				The page you were looking for could not be found. It might have
-				<br>
-				been removed, renamed, or did not exist in the first place.
-			</p>
-		</div>
-		<div v-else>
-			<h1>
-				An error occurred
-			</h1>
-		</div>
-		<div>
-			<p>
-				<nuxt-link to="/">
-					Home page
-				</nuxt-link>
-			</p>
-		</div>
-	</div>
+	<Article :title="title" :content="content" />
 </template>
 
 <script>
@@ -31,6 +8,12 @@ export default {
 		error: {
 			type: Object,
 			default: () => {}
+		}
+	},
+	data () {
+		return {
+			title: (this.error.statusCode === 404) ? "Page not found" : "An error occurred",
+			content: (this.error.statusCode === 404) ? "<p>The page you were looking for could not be found. It might have<br>been removed, renamed, or did not exist in the first place.</p><div><p><nuxt-link to='/'>Home page</nuxt-link></p></div>" : "<div><p><nuxt-link to='/'>Home page</nuxt-link></p></div>"
 		}
 	}
 }
