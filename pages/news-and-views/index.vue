@@ -1,28 +1,20 @@
 <template>
-	<b-row align-h="center">
-		<div id="container">
-			<h1 id="title">
-				<b>NEWS</b>
-			</h1>
-			<b-row v-for="row in groupedPosts" :key="row.id">
-				<b-col id="api-content" v-for="x in row" :key="x.id" />
-			</b-row>
-		</div>
-	</b-row>
+	<article>
+		<h1>{{ title }}</h1>
+		<NewsGrid :postList="postList" />
+	</article>
 </template>
 
 <script>
-import _ from "lodash"
+import NewsGrid from "~/components/NewsGrid"
 export default {
 	components: {
+		NewsGrid
 	},
 	data () {
 		return {
-		}
-	},
-	computed: {
-		groupedPosts () {
-			return _.chunk(this.$store.state.posts, 2)
+			title: "News",
+			postList: this.$store.state.posts
 		}
 	},
 	fetch ({ store }) {
