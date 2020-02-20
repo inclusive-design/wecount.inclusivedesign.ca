@@ -2,7 +2,7 @@
 	<!-- This compenent is used by data from pages api call as well as post api call -->
 	<article>
 		<figure class="preview-media">
-			<img :src="picture" :alt="caption" class="news-item-img">
+			<img :src="picture" :alt="altTag" class="news-item-img">
 		</figure>
 		<nuxt-link :to="'/news-and-views/' + slug" class="news-item">
 			<h2>
@@ -22,7 +22,7 @@ export default {
 			type: String,
 			default: "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
 		},
-		caption: {
+		altTag: {
 			type: String,
 			default: "post thumbnail"
 		},

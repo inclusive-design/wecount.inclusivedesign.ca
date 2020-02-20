@@ -4,7 +4,7 @@
 		<div v-for="post in postList" :key="post.id" class="api-content">
 			<NewsItem
 				:picture="post.picture"
-				:caption="post.caption"
+				:altTag="post.altTag"
 				:title="post.title"
 				:date="post.date"
 				:dateTime="post.dateTime"
