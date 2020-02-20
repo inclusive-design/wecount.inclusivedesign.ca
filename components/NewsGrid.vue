@@ -13,7 +13,6 @@
 </template>
 
 <script>
-// import _ from "lodash"
 import NewsItem from "~/components/NewsItem"
 export default {
 	components: {
@@ -26,9 +25,6 @@ export default {
 		}
 	},
 	computed: {
-		// groupedList () {
-		// 	return _.chunk(this.postList, 2)
-		// }
 	}
 }
 </script>

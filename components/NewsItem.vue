@@ -21,7 +21,7 @@ export default {
 	props: {
 		picture: {
 			type: String,
-			default: () => "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
+			default: "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
 		},
 		title: {
 			type: String,
