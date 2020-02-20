@@ -23,18 +23,3 @@ export default {
 	}
 }
 </script>
-
-<style>
-.footer-copyright {
-	margin-top: 9rem;
-	margin-bottom: 5rem;
-}
-#container {
-	width: 80%;
-}
-hr {
-	background: lightgrey;
-	margin-bottom: 4rem;
-}
-
-</style>

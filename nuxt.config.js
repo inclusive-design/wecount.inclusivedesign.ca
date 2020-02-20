@@ -1,35 +1,26 @@
 import axios from "axios"
+import Config from "./assets/config"
 
 export default {
 	mode: "universal",
-	// generate: {
-	// 	routes () {
-	// 		return axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/posts")
-	// 		.then((res) => {
-	// 			return res.data.map((post) => {
-	// 				return "/news/" + post.slug
-	// 			})
-	// 		})
-	// 	}
-	// }
 	generate: {
 		fallback: true,
 		routes (callback) {
 			axios.all([
-				axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/pages"),
-				axios.get("https://wecount.inclusivedesign.ca/wp-json/wp/v2/posts")
+				axios.get(`${Config.wpDomain}${Config.apiBase}pages`),
+				axios.get(`${Config.wpDomain}${Config.apiBase}posts`)
 			])
 				.then(axios.spread(function (pages, posts) {
 					const pageRoutes = pages.data.map((page) => {
 						return {
-							route: "/" + page.title.rendered.toLowerCase().replace(/ /g, "-"),
+							route: (page.slug !== "home") ? "/" + page.slug : "/",
 							payload: page
 						}
 					})
 
 					const postRoutes = posts.data.map((post) => {
 						return {
-							route: "/news/" + post.slug,
+							route: "/news-and-views/" + post.slug,
 							payload: post
 						}
 					})
