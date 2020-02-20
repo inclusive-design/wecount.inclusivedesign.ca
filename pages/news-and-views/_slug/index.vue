@@ -1,5 +1,5 @@
 <template>
-	<b-row align-h="center">
+	<div align-h="center">
 		<div id="container">
 			<h1 id="title">
 				<b>{{ Title }}</b>
@@ -136,17 +136,8 @@
 				</span>
 			</div>
 			<hr id="lineBreak">
-			<b-row align-h="center" class="overflow-auto">
-				<b-pagination-nav
-					id="pagination"
-					:link-gen="linkGen"
-					:page-gen="pageGen"
-					:number-of-pages="links.length"
-					use-router
-				/>
-			</b-row>
 		</div>
-	</b-row>
+	</div>
 </template>
 
 <script>
@@ -186,14 +177,6 @@ export default {
 		},
 		Tags () {
 			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).tags
-		}
-	},
-	methods: {
-		linkGen (pageNum) {
-			return { path: "/news-and-views/" + this.links[pageNum - 1] }
-		},
-		pageGen (pageNum) {
-			return this.linkNames[pageNum - 1]
 		}
 	}
 }
