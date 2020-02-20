@@ -13,7 +13,7 @@ export default {
 	},
 	data () {
 		return {
-			title: "News",
+			title: "News and Views",
 			postList: this.$store.state.posts
 		}
 	},

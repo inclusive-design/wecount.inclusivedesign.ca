@@ -1,30 +1,19 @@
 
 <template>
 	<div class="news-grid">
-		<div v-for="row in groupedList" :key="row.id" class="row">
-			<div v-for="x in row" :key="x.id" class="api-content">
-				<NewsItem
-					v-if="row.length>1"
-					:picture="x.picture"
-					:title="x.title"
-					:date="x.date"
-					:slug="x.slug"
-				/>
-				<NewsItem
-					v-else
-					:picture="x.picture"
-					:title="x.title"
-					:date="x.date"
-					:slug="x.slug"
-					style="width: 50%"
-				/>
-			</div>
+		<div v-for="post in postList" :key="post.id" class="api-content">
+			<NewsItem
+				:picture="post.picture"
+				:title="post.title"
+				:date="post.date"
+				:slug="post.slug"
+			/>
 		</div>
 	</div>
 </template>
 
 <script>
-import _ from "lodash"
+// import _ from "lodash"
 import NewsItem from "~/components/NewsItem"
 export default {
 	components: {
@@ -32,14 +21,14 @@ export default {
 	},
 	props: {
 		postList: {
-			type: String,
+			type: Array,
 			default: () => []
 		}
 	},
 	computed: {
-		groupedList () {
-			return _.chunk(this.postList, 2)
-		}
+		// groupedList () {
+		// 	return _.chunk(this.postList, 2)
+		// }
 	}
 }
 </script>
