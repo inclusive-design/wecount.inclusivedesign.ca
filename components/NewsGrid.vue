@@ -1,6 +1,6 @@
 
 <template>
-	<article class="news-grid">
+	<div class="news-grid">
 		<div v-for="row in groupedList" :key="row.id" class="row">
 			<div v-for="x in row" :key="x.id" class="api-content">
 				<NewsItem
@@ -20,7 +20,7 @@
 				/>
 			</div>
 		</div>
-	</article>
+	</div>
 </template>
 
 <script>
