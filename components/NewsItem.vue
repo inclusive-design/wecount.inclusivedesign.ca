@@ -1,19 +1,18 @@
 <template>
 	<!-- This compenent is used by data from pages api call as well as post api call -->
-	<nuxt-link :to="'/news-and-views/' + slug" class="news-item">
+	<article>
 		<figure class="preview-media">
-			<img :src="picture" class="news-item-img" alt="">
-			<figcaption>
-				<h2>
-					{{ title }}
-				</h2>
-			</figcaption>
+			<img :src="picture" :alt="caption" class="news-item-img">
 		</figure>
+		<nuxt-link :to="'/news-and-views/' + slug" class="news-item">
+			<h2>
+				{{ title }}
+			</h2>
+		</nuxt-link>
 		<div class="date">
-			<img class="date-icon" alt="">
-			<time>{{ date }}</time>
+			<time :datetime="dateTime">{{ date }}</time>
 		</div>
-	</nuxt-link>
+	</article>
 </template>
 
 <script>
@@ -23,11 +22,19 @@ export default {
 			type: String,
 			default: "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
 		},
+		caption: {
+			type: String,
+			default: "post thumbnail"
+		},
 		title: {
 			type: String,
 			default: "Untitled Post"
 		},
 		date: {
+			type: String,
+			default: ""
+		},
+		dateTime: {
 			type: String,
 			default: ""
 		},
