@@ -25,7 +25,7 @@ export default {
 				tags = r.data[i].pure_taxonomies.tags.map(({ name }) => name)
 				const api = r.data[i]._links["wp:featuredmedia"][0].href
 				const pic = await axios.get(api)
-				picture = pic.data.guid.rendered
+				picture = pic.data.source_url
 				altTag = pic.data.alt_text
 			}
 
