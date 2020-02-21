@@ -4,11 +4,11 @@
 		<figure class="preview-media">
 			<img :src="picture" :alt="altTag" class="news-item-img">
 		</figure>
-		<nuxt-link :to="'/news-and-views/' + slug" class="news-item">
-			<h2>
+		<h2>
+			<nuxt-link :to="'/news-and-views/' + slug" class="news-item">
 				{{ title }}
-			</h2>
-		</nuxt-link>
+			</nuxt-link>
+		</h2>
 		<div class="date">
 			<time :datetime="dateTime">{{ date }}</time>
 		</div>
