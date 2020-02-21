@@ -10,8 +10,6 @@
 <script>
 import NewsGrid from "~/components/NewsGrid"
 import _ from "lodash"
-import Post from "~/components/Post"
-
 export default {
 	components: {
 		NewsGrid

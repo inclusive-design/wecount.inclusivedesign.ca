@@ -10,10 +10,8 @@
 
 <script>
 import _ from "lodash"
-import Post from "~/components/Post"
 export default {
 	components: {
-		Post
 	},
 	data () {
 		return {
