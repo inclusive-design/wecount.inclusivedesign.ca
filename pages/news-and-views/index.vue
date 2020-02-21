@@ -1,5 +1,5 @@
 <template>
-	<b-row align-h="center">
+	<b-row>
 		<div id="container">
 			<h1 id="title">
 				<b>NEWS</b>

@@ -1,39 +1,20 @@
 <template>
-	<div align-h="center">
-		<div id="container">
+	<div class="container">
 			<h1 id="title">
-				<b>TAG: "{{ searchQuery }}"</b>
+				TAG: "{{ searchQuery }}"
 			</h1>
-			<div v-for="row in groupedPosts" :key="row.id">
-				<div id="api-content" v-for="x in row" :key="x.id">
-					<Post
-						v-if="row.length>1"
-						:picture="x.picture"
-						:title="x.title"
-						:date="x.date"
-						:slug="x.slug"
-					/>
-					<Post
-						v-else
-						:picture="x.picture"
-						:title="x.title"
-						:date="x.date"
-						:slug="x.slug"
-						style="width: 50%"
-					/>
-				</div>
-			</div>
-		</div>
+		<NewsGrid :postList="filterdBlogs" />
 	</div>
 </template>
 
 <script>
+import NewsGrid from "~/components/NewsGrid"
 import _ from "lodash"
 import Post from "~/components/Post"
 
 export default {
 	components: {
-		Post
+		NewsGrid
 	},
 	data () {
 		return {
