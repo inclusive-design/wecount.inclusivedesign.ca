@@ -1,11 +1,11 @@
 <template>
-	<b-row align-h="center">
+	<div align-h="center">
 		<div id="container">
 			<h1 id="title">
 				<b>TAG: "{{ searchQuery }}"</b>
 			</h1>
-			<b-row v-for="row in groupedPosts" :key="row.id">
-				<b-col id="api-content" v-for="x in row" :key="x.id">
+			<div v-for="row in groupedPosts" :key="row.id">
+				<div id="api-content" v-for="x in row" :key="x.id">
 					<Post
 						v-if="row.length>1"
 						:picture="x.picture"
@@ -21,10 +21,10 @@
 						:slug="x.slug"
 						style="width: 50%"
 					/>
-				</b-col>
-			</b-row>
+				</div>
+			</div>
 		</div>
-	</b-row>
+	</div>
 </template>
 
 <script>
