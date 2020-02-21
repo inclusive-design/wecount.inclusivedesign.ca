@@ -3,13 +3,13 @@
 		<a class="pagination-previous">Previous</a>
 		<a class="pagination-next">Next page</a>
 		<ul class="pagination-list">
-			<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+			<li><a :href="firstLink" class="pagination-link" aria-label="Goto page 1">1</a></li>
 			<li><span class="pagination-ellipsis">&hellip;</span></li>
-			<li><a class="pagination-link" aria-label="Goto page 45">{{ before }}</a></li>
-			<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">{{ currentPageNum }}</a></li>
-			<li><a class="pagination-link" aria-label="Goto page 47">{{ after }}</a></li>
+			<li><a :href="beforeLink" class="pagination-link" aria-label="Goto page 45">{{ before }}</a></li>
+			<li><a :href="currentLink" class="pagination-link is-current" aria-label="Page 46" aria-current="page">{{ currentPageNum }}</a></li>
+			<li><a :href="afterLink" class="pagination-link" aria-label="Goto page 47">{{ after }}</a></li>
 			<li><span class="pagination-ellipsis">&hellip;</span></li>
-			<li><a class="pagination-link" aria-label="Goto page 86">{{ postLen }}</a></li>
+			<li><a :href="lastLink" class="pagination-link" aria-label="Goto page 86">{{ postLen }}</a></li>
 		</ul>
 	</nav>
 </template>
@@ -31,6 +31,21 @@ export default {
 		},
 		after () {
 			return this.currentPageNum + 1
+		},
+		firstLink () {
+			return this.$store.state.posts.find(post => post.count === 1).slug
+		},
+		beforeLink () {
+			return this.$store.state.posts.find(post => post.count === this.before).slug
+		},
+		currentLink () {
+			return this.$store.state.posts.find(post => post.count === this.currentPageNum).slug
+		},
+		afterLink () {
+			return this.$store.state.posts.find(post => post.count === this.after).slug
+		},
+		lastLink () {
+			return this.$store.state.posts.find(post => post.count === this.postLen).slug
 		}
 	}
 }

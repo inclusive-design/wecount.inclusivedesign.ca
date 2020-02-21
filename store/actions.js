@@ -18,15 +18,17 @@ export default {
 			const date = new Date(r.data[i].date).toLocaleString("en-us", dateOptions)
 			let picture = "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
 			let tags = []
+			let count = 0
 
 			if (postType === "posts") {
+				count += 1
 				tags = r.data[i].pure_taxonomies.tags.map(({ name }) => name)
 				const api = r.data[i]._links["wp:featuredmedia"][0].href
 				const pic = await axios.get(api)
 				picture = pic.data.guid.rendered
 			}
 
-			Results.push({ slug, title, date, picture, content, tags })
+			Results.push({ slug, title, date, picture, content, tags, count })
 		}
 		if (postType === "posts") {
 			context.commit("REFRESH_POSTS", Results)

@@ -137,10 +137,12 @@
 			</div>
 			<hr id="lineBreak">
 		</div>
+		<Pagination :currentPageNum="currentPageNum" />
 	</div>
 </template>
 
 <script>
+import Pagination from "~/components/Pagination"
 export default {
 	async validate ({ params, store }) {
 		if (store.state.posts === null) {
@@ -154,7 +156,9 @@ export default {
 			title: this.Title
 		}
 	},
-	components: {},
+	components: {
+		Pagination
+	},
 	data () {
 		return {
 		}
@@ -174,6 +178,9 @@ export default {
 		},
 		Content () {
 			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).content
+		},
+		currentPageNum () {
+			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).count
 		},
 		Tags () {
 			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).tags
