@@ -1,15 +1,14 @@
 <template>
 	<div class="container">
 			<h1 id="title">
-				TAG: "{{ searchQuery }}"
+				tag: “{{ searchQuery }}”
 			</h1>
-		<NewsGrid :postList="filterdBlogs" />
+		<NewsGrid :postList="foundPages" />
 	</div>
 </template>
 
 <script>
 import NewsGrid from "~/components/NewsGrid"
-import _ from "lodash"
 export default {
 	components: {
 		NewsGrid
@@ -22,13 +21,15 @@ export default {
 		searchQuery () {
 			return decodeURIComponent(this.$nuxt.$route.fullPath.match(/tag\?s=(.*)/)[1])
 		},
-		filterdBlogs () {
+		foundPosts () {
 			return this.$store.state.posts.filter((blog) => {
 				return blog.title.concat(" ", blog.content, " ", blog.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase())
 			})
 		},
-		groupedPosts () {
-			return _.chunk(this.filterdBlogs, 2)
+		foundPages () {
+			return this.$store.state.pages.filter((page) => {
+				return page.title.concat(" ", page.content).toLowerCase().match(this.searchQuery.toLowerCase())
+			})
 		}
 	},
 	fetch ({ store }) {
