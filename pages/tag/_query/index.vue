@@ -1,9 +1,9 @@
 <template>
 	<div class="container">
-			<h1 id="title">
-				tag: “{{ searchQuery }}”
-			</h1>
-		<NewsGrid :postList="foundPages" />
+		<h1 id="title">
+			Tag: “{{ searchQuery }}”
+		</h1>
+		<NewsGrid :postList="foundPosts" />
 	</div>
 </template>
 
@@ -24,11 +24,6 @@ export default {
 		foundPosts () {
 			return this.$store.state.posts.filter((blog) => {
 				return blog.title.concat(" ", blog.content, " ", blog.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase())
-			})
-		},
-		foundPages () {
-			return this.$store.state.pages.filter((page) => {
-				return page.title.concat(" ", page.content).toLowerCase().match(this.searchQuery.toLowerCase())
 			})
 		}
 	},

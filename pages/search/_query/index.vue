@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
 		<h1 id="title">
-			search: “{{ searchQuery }}”
+			Search: “{{ searchQuery }}”
 		</h1>
 		<p>We found {{ searchResults.length }} results for your search.</p>
 		<NewsGrid :postList="searchResults" />
