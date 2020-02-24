@@ -1,9 +1,9 @@
 <template>
-	<Article :title="Title" :content="Content" :picture="Picture" :tags="Tags" />
+	<PostArticle :title="Title" :content="Content" :picture="Picture" :tags="Tags" />
 </template>
 
 <script>
-import Article from "~/components/Article"
+import PostArticle from "~/components/PostArticle"
 export default {
 	async validate ({ params, store }) {
 		if (store.state.posts === null) {
@@ -18,7 +18,7 @@ export default {
 		}
 	},
 	components: {
-		Article
+		PostArticle
 	},
 	data () {
 		return {
