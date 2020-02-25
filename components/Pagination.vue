@@ -3,7 +3,12 @@
 		<a v-if="currentPageNum > 1" :href="beforeLink" class="pagination-previous">Previous</a>
 		<a v-if="currentPageNum < postsLen" :href="afterLink" class="pagination-next">Next</a>
 		<ul class="pagination-list">
-			<li><span class="pagination-ellipsis">&hellip;</span></li>
+			<li v-if="currentPageNum > 2">
+				<a :href="firstLink" class="pagination-link" aria-label="Goto page 1">1</a>
+			</li>
+			<li v-if="currentPageNum > 2">
+				<span class="pagination-ellipsis">&hellip;</span>
+			</li>
 			<li v-if="currentPageNum > 1">
 				<a :href="beforeLink" :aria-label="`Goto page ${before}`" class="pagination-link">{{ before }}</a>
 			</li>
@@ -11,7 +16,12 @@
 			<li v-if="currentPageNum < postsLen">
 				<a :href="afterLink" :aria-label="`Goto page ${after}`" class="pagination-link">{{ after }}</a>
 			</li>
-			<li><span class="pagination-ellipsis">&hellip;</span></li>
+			<li v-if="currentPageNum < postsLen - 1">
+				<span class="pagination-ellipsis">&hellip;</span>
+			</li>
+			<li v-if="currentPageNum < postsLen - 1">
+				<a :href="lastLink" class="pagination-link" aria-label="Goto page 86">{{ postsLen }}</a>
+			</li>
 		</ul>
 	</nav>
 </template>
@@ -42,6 +52,9 @@ export default {
 				return this.currentPageNum + 1
 			}
 		},
+		firstLink () {
+			return this.$store.state.posts.find(post => post.count === 1).slug
+		},
 		beforeLink () {
 			return this.$store.state.posts.find(post => post.count === this.before).slug
 		},
@@ -50,6 +63,9 @@ export default {
 		},
 		afterLink () {
 			return this.$store.state.posts.find(post => post.count === this.after).slug
+		},
+		lastLink () {
+			return this.$store.state.posts.find(post => post.count === this.postsLen).slug
 		}
 	}
 }
