@@ -1,7 +1,7 @@
 <template>
 	<nav class="pagination is-centered" role="navigation" aria-label="pagination">
-		<a :href="beforeLink" class="pagination-previous">Previous</a>
-		<a :href="afterLink" class="pagination-next">Next</a>
+		<a v-if="currentPageNum>1" :href="beforeLink" class="pagination-previous">Previous</a>
+		<a v-if="currentPageNum<postsLen" :href="afterLink" class="pagination-next">Next</a>
 		<ul class="pagination-list">
 			<li><a :href="firstLink" class="pagination-link" aria-label="Goto page 1">1</a></li>
 			<li><span class="pagination-ellipsis">&hellip;</span></li>
