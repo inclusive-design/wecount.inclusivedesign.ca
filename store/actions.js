@@ -20,10 +20,6 @@ export default {
 			const date = new Date(r.data[i].date).toLocaleString("en-us", dateOptions)
 			let picture = "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
 			let tags = []
-<<<<<<< HEAD
-=======
-			let count = 0
->>>>>>> b415cd749694124f1c4a860a0846b3c75119eb29
 			let altTag = ""
 
 			if (postType === "posts") {
@@ -35,11 +31,7 @@ export default {
 				altTag = pic.data.alt_text
 			}
 
-<<<<<<< HEAD
 			Results.push({ slug, title, date, picture, altTag, content, tags, dateTime, count })
-=======
-			Results.push({ slug, title, date, picture, altTag, content, tags, count, dateTime })
->>>>>>> b415cd749694124f1c4a860a0846b3c75119eb29
 		}
 		if (postType === "posts") {
 			context.commit("REFRESH_POSTS", Results)
