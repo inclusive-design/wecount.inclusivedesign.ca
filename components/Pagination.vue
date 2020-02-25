@@ -24,13 +24,21 @@ export default {
 	},
 	computed: {
 		postLen () {
-			return this.$store.state.post.length()
+			return this.$store.state.posts.length
 		},
 		before () {
-			return this.currentPageNum - 1
+			if (this.currentPageNum <= 1) {
+				return 1
+			} else {
+				return this.currentPageNum - 1
+			}
 		},
 		after () {
-			return this.currentPageNum + 1
+			if (this.currentPageNum >= this.postLen) {
+				return this.postLen
+			} else {
+				return this.currentPageNum + 1
+			}
 		},
 		firstLink () {
 			return this.$store.state.posts.find(post => post.count === 1).slug
@@ -45,7 +53,7 @@ export default {
 			return this.$store.state.posts.find(post => post.count === this.after).slug
 		},
 		lastLink () {
-			return this.$store.state.posts.find(post => post.count === this.postLen).slug
+			return this.$store.state.posts.find(post => post.count === 2).slug
 		}
 	}
 }

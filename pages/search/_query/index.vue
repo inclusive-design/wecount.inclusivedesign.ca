@@ -1,39 +1,18 @@
 <template>
-	<b-row align-h="center">
-		<div id="container">
-			<h1 id="title">
-				<b>SEARCH: "{{ searchQuery }}"</b>
-			</h1>
-			<p>We found {{ pagesPosts.length }} results for your search.</p>
-			<b-row v-for="row in groupedPosts" :key="row.id">
-				<b-col id="api-content" v-for="x in row" :key="x.id">
-					<Post
-						v-if="row.length>1"
-						:picture="x.picture"
-						:title="x.title"
-						:date="x.date"
-						:slug="x.slug"
-					/>
-					<Post
-						v-else
-						:picture="x.picture"
-						:title="x.title"
-						:date="x.date"
-						:slug="x.slug"
-						style="width: 50%"
-					/>
-				</b-col>
-			</b-row>
-		</div>
-	</b-row>
+	<div class="container">
+		<h1 class="title">
+			Search: “{{ searchQuery }}”
+		</h1>
+		<p>We found {{ searchResults.length }} results for your search.</p>
+		<NewsGrid :postList="searchResults" />
+	</div>
 </template>
 
 <script>
-import _ from "lodash"
-import Post from "~/components/Post"
+import NewsGrid from "~/components/NewsGrid"
 export default {
 	components: {
-		Post
+		NewsGrid
 	},
 	data () {
 		return {
@@ -41,27 +20,20 @@ export default {
 	},
 	computed: {
 		searchQuery () {
-			// const myRegexp = /rch\?s=(.*)/
-			// const currentPath = this.$nuxt.$route.fullPath
-			// const match = myRegexp.exec(currentPath)
-			// return match[1]
 			return decodeURIComponent(this.$nuxt.$route.fullPath.match(/rch\?s=(.*)/)[1])
 		},
-		filterdBlogs () {
+		foundPosts () {
 			return this.$store.state.posts.filter((blog) => {
 				return blog.title.concat(" ", blog.content, " ", blog.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase())
 			})
 		},
-		filteredPages () {
+		foundPages () {
 			return this.$store.state.pages.filter((page) => {
 				return page.title.concat(" ", page.content).toLowerCase().match(this.searchQuery.toLowerCase())
 			})
 		},
-		pagesPosts () {
-			return this.filterdBlogs.concat(this.filteredPages)
-		},
-		groupedPosts () {
-			return _.chunk(this.pagesPosts, 2)
+		searchResults () {
+			return this.foundPosts.concat(this.foundPages)
 		}
 	},
 	fetch ({ store }) {
