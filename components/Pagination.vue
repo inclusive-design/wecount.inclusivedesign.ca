@@ -1,12 +1,16 @@
 <template>
 	<nav class="pagination is-centered" role="navigation" aria-label="pagination">
-		<a v-if="currentPageNum>1" :href="beforeLink" class="pagination-previous">Previous</a>
-		<a v-if="currentPageNum<postsLen" :href="afterLink" class="pagination-next">Next</a>
+		<a v-if="currentPageNum > 1" :href="beforeLink" class="pagination-previous">Previous</a>
+		<a v-if="currentPageNum < postsLen" :href="afterLink" class="pagination-next">Next</a>
 		<ul class="pagination-list">
 			<li><span class="pagination-ellipsis">&hellip;</span></li>
-			<li><a v-if="currentPageNum>1" :href="beforeLink" :aria-label="`Goto page ${beforeLink}`" class="pagination-link">{{ before }}</a></li>
+			<li v-if="currentPageNum > 1">
+				<a :href="beforeLink" :aria-label="`Goto page ${before}`" class="pagination-link">{{ before }}</a>
+			</li>
 			<li><a :href="currentLink" :aria-label="`Goto page ${currentPageNum}`" class="pagination-link is-current" aria-current="page">{{ currentPageNum }}</a></li>
-			<li><a v-if="currentPageNum<postsLen" :href="afterLink" :aria-label="`Goto page ${afterLink}`" class="pagination-link">{{ after }}</a></li>
+			<li v-if="currentPageNum < postsLen">
+				<a :href="afterLink" :aria-label="`Goto page ${after}`" class="pagination-link">{{ after }}</a>
+			</li>
 			<li><span class="pagination-ellipsis">&hellip;</span></li>
 		</ul>
 	</nav>
