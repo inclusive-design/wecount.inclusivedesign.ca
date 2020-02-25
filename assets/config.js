@@ -14,7 +14,8 @@ const Config = {
 	apiBase: "/wp-json/wp/v2/",
 	contactEmail: "wecount@inclusivedesign.ca",
 	socialMedia: [],
-	funders: []
+	funders: [],
+	dev: (process.env.NODE_ENV !== "production")
 }
 
 module.exports = Config
