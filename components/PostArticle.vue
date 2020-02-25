@@ -10,7 +10,6 @@
 				{{ t }}
 			</nuxt-link>
 		</div>
-		<hr class="lineBreak">
 		<Pagination :currentPageNum="currentPageNum" />
 	</article>
 </template>

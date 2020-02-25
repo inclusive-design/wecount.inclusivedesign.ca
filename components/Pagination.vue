@@ -1,7 +1,7 @@
 <template>
 	<nav class="pagination is-centered" role="navigation" aria-label="pagination">
-		<a class="pagination-previous">Previous</a>
-		<a class="pagination-next">Next page</a>
+		<a :href="beforeLink" class="pagination-previous">Previous</a>
+		<a :href="afterLink" class="pagination-next">Next page</a>
 		<ul class="pagination-list">
 			<li><a :href="firstLink" class="pagination-link" aria-label="Goto page 1">1</a></li>
 			<li><span class="pagination-ellipsis">&hellip;</span></li>
@@ -9,7 +9,7 @@
 			<li><a :href="currentLink" class="pagination-link is-current" aria-label="Page 46" aria-current="page">{{ currentPageNum }}</a></li>
 			<li><a :href="afterLink" class="pagination-link" aria-label="Goto page 47">{{ after }}</a></li>
 			<li><span class="pagination-ellipsis">&hellip;</span></li>
-			<li><a :href="lastLink" class="pagination-link" aria-label="Goto page 86">{{ postLen }}</a></li>
+			<li><a :href="lastLink" class="pagination-link" aria-label="Goto page 86">{{ postsLen }}</a></li>
 		</ul>
 	</nav>
 </template>
@@ -23,7 +23,7 @@ export default {
 		}
 	},
 	computed: {
-		postLen () {
+		postsLen () {
 			return this.$store.state.posts.length
 		},
 		before () {
@@ -34,8 +34,8 @@ export default {
 			}
 		},
 		after () {
-			if (this.currentPageNum >= this.postLen) {
-				return this.postLen
+			if (this.currentPageNum >= this.postsLen) {
+				return this.postsLen
 			} else {
 				return this.currentPageNum + 1
 			}
@@ -53,7 +53,7 @@ export default {
 			return this.$store.state.posts.find(post => post.count === this.after).slug
 		},
 		lastLink () {
-			return this.$store.state.posts.find(post => post.count === 2).slug
+			return this.$store.state.posts.find(post => post.count === this.postsLen).slug
 		}
 	}
 }
