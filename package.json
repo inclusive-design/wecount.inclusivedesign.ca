@@ -1,8 +1,13 @@
 {
-	"name": "we_count",
-	"version": "1.0.0",
-	"description": "We Count Project",
-	"author": "Ted Thompson",
+	"name": "@wecount/wecount.inclusivedesign.ca",
+	"version": "1.0.0-alpha.0",
+	"description": "The source files for the We Count website, built with Nuxt.",
+	"license": "CC-BY-4.0",
+	"contributors": [
+		"Ted Thompson <tthompson@ocadu.ca> (https://github.com/TeddTech)",
+		"Justin Obara <jobara@ocadu.ca> (https://github.com/jobara)",
+		"Ned Zimmerman <nzimmerman@ocadu.ca> (https://github.com/greatislander)"
+	],
 	"private": true,
 	"scripts": {
 		"dev": "nuxt",
