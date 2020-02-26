@@ -1,14 +1,14 @@
 <template>
-	<Article :title="title" :content="content" />
+	<PageArticle :title="title" :content="content" />
 </template>
 
 <script>
 import axios from "axios"
-import Article from "~/components/Article"
+import PageArticle from "~/components/PageArticle"
 import Config from "~/assets/config"
 export default {
 	components: {
-		Article
+		PageArticle
 	},
 	data () {
 		return {

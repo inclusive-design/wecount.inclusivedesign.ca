@@ -1,12 +1,12 @@
 <template>
-	<Article :title="title" :content="content" />
+	<PageArticle :title="title" :content="content" />
 </template>
 
 <script>
-import Article from "~/components/Article"
+import PageArticle from "~/components/PageArticle"
 export default {
 	components: {
-		Article
+		PageArticle
 	},
 	props: {
 		error: {
