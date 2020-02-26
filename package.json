@@ -59,6 +59,9 @@
 		],
 		"*.{js,vue}": [
 			"eslint"
+		],
+		"*.md": [
+			"markdownlint --ignore-path .gitignore --ignore LICENSE.md --ignore .github/**/*.md"
 		]
 	}
 }
