@@ -6,7 +6,7 @@
 			<li v-if="currentPageNum > 2">
 				<a :href="firstLink" class="pagination-link" aria-label="Goto page 1">1</a>
 			</li>
-			<li v-if="currentPageNum > 2">
+			<li v-if="before - 1 > 1">
 				<span class="pagination-ellipsis">&hellip;</span>
 			</li>
 			<li v-if="currentPageNum > 1">
@@ -16,11 +16,11 @@
 			<li v-if="currentPageNum < postsLen">
 				<a :href="afterLink" :aria-label="`Goto page ${after}`" class="pagination-link">{{ after }}</a>
 			</li>
-			<li v-if="currentPageNum < postsLen - 1">
+			<li v-if="postsLen - after > 1">
 				<span class="pagination-ellipsis">&hellip;</span>
 			</li>
 			<li v-if="currentPageNum < postsLen - 1">
-				<a :href="lastLink" class="pagination-link" aria-label="Goto page 86">{{ postsLen }}</a>
+				<a :href="lastLink" :aria-label="`Goto page ${postsLen}`" class="pagination-link">{{ postsLen }}</a>
 			</li>
 		</ul>
 	</nav>
@@ -69,7 +69,7 @@ export default {
 			return this.pageLinks[this.after - 1]
 		},
 		lastLink () {
-			return this.pageLinks[this.pageLen - 1]
+			return this.pageLinks[this.postsLen - 1]
 		}
 	}
 }
