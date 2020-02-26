@@ -25,7 +25,18 @@ export default {
 						}
 					})
 
-					callback(null, pageRoutes.concat(postRoutes))
+					const fullPostList = this.$store.state.posts
+					const indexLen = Math.ceil(fullPostList.length / 10)
+					const pageNums = Array(indexLen).fill().map((x, i) => i + 1)
+
+					const newsPaginationRoutes = pageNums.map((ind) => {
+						return {
+							route: "/news-and-views/page/" + ind,
+							payload: ind
+						}
+					})
+
+					callback(null, pageRoutes.concat(postRoutes, newsPaginationRoutes))
 				}))
 				.catch(callback)
 		}

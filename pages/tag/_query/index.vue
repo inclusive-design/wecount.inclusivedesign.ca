@@ -4,14 +4,17 @@
 			Tag: “{{ searchQuery }}”
 		</h1>
 		<NewsGrid :postList="foundPosts" />
+		<Pagination />
 	</div>
 </template>
 
 <script>
+import Pagination from "~/components/Pagination"
 import NewsGrid from "~/components/NewsGrid"
 export default {
 	components: {
-		NewsGrid
+		NewsGrid,
+		Pagination
 	},
 	data () {
 		return {

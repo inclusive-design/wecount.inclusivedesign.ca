@@ -10,7 +10,7 @@
 				{{ t }}
 			</nuxt-link>
 		</div>
-		<Pagination :currentPageNum="currentPageNum" />
+		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
 	</article>
 </template>
 
@@ -39,6 +39,12 @@ export default {
 		}
 	},
 	computed: {
+		pageNums () {
+			return this.$store.state.posts
+		},
+		pageLinks () {
+			return Array(this.pageNums.length).fill().map((x, i) => this.pageNums[i].slug)
+		},
 		currentPageNum () {
 			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).count
 		}

@@ -4,15 +4,19 @@
 			Search: “{{ searchQuery }}”
 		</h1>
 		<p>We found {{ searchResults.length }} results for your search.</p>
-		<NewsGrid :postList="searchResults" />
+		<NewsGrid :postList="pagePostList[$route.params.page - 1]" />
+		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="$route.params.page" />
 	</div>
 </template>
 
 <script>
+import _ from "lodash"
+import Pagination from "~/components/Pagination"
 import NewsGrid from "~/components/NewsGrid"
 export default {
 	components: {
-		NewsGrid
+		NewsGrid,
+		Pagination
 	},
 	data () {
 		return {
@@ -34,6 +38,16 @@ export default {
 		},
 		searchResults () {
 			return this.foundPosts.concat(this.foundPages)
+		},
+		pageNums () {
+			const indexLen = Math.ceil(this.searchResults.length / 10)
+			return Array(indexLen).fill().map((x, i) => i + 1)
+		},
+		pageLinks () {
+			return Array(this.pageNums.length).fill().map((x, i) => "{ path: '/search', query: { s: this.searchQuery, page: this.pageNums[i]}}")
+		},
+		pagePostList () {
+			return _.chunk(this.searchResults, 10)
 		}
 	},
 	fetch ({ store }) {

@@ -32,11 +32,15 @@ export default {
 		currentPageNum: {
 			type: Number,
 			default: 2
+		},
+		pageLinks: {
+			type: Array,
+			default: () => []
 		}
 	},
 	computed: {
 		postsLen () {
-			return this.$store.state.posts.length
+			return this.pageLinks.length
 		},
 		before () {
 			if (this.currentPageNum <= 1) {
@@ -53,19 +57,19 @@ export default {
 			}
 		},
 		firstLink () {
-			return this.$store.state.posts.find(post => post.count === 1).slug
+			return this.pageLinks[0]
 		},
 		beforeLink () {
-			return this.$store.state.posts.find(post => post.count === this.before).slug
+			return this.pageLinks[this.before - 1]
 		},
 		currentLink () {
-			return this.$store.state.posts.find(post => post.count === this.currentPageNum).slug
+			return this.pageLinks[this.currentPageNum - 1]
 		},
 		afterLink () {
-			return this.$store.state.posts.find(post => post.count === this.after).slug
+			return this.pageLinks[this.after - 1]
 		},
 		lastLink () {
-			return this.$store.state.posts.find(post => post.count === this.postsLen).slug
+			return this.pageLinks[this.pageLen - 1]
 		}
 	}
 }
