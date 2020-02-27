@@ -8,7 +8,7 @@ export default {
 		routes (callback) {
 			axios.all([
 				axios.get(`${Config.wpDomain}${Config.apiBase}pages`),
-				axios.get(`${Config.wpDomain}${Config.apiBase}posts`)
+				axios.get(`${Config.wpDomain}${Config.apiBase}posts?per_page=100`)
 			])
 				.then(axios.spread(function (pages, posts) {
 					const pageRoutes = pages.data.map((page) => {
