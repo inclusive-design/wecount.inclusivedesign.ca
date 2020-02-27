@@ -4,8 +4,8 @@
 			Search: “{{ searchQuery }}”
 		</h1>
 		<p>We found {{ searchResults.length }} results for your search.</p>
-		<NewsGrid :postList="pagePostList[$route.params.page - 1]" />
-		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="$route.params.page" />
+		<NewsGrid :postList="pagePostList[(($route.query.page) ? $route.query.page: 1) - 1]" />
+		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="$route.query.page" />
 	</div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
 	},
 	computed: {
 		searchQuery () {
-			return decodeURIComponent(this.$nuxt.$route.fullPath.match(/rch\?s=(.*)/)[1])
+			return decodeURIComponent(this.$route.query.s)
 		},
 		foundPosts () {
 			return this.$store.state.posts.filter((blog) => {
@@ -44,7 +44,7 @@ export default {
 			return Array(indexLen).fill().map((x, i) => i + 1)
 		},
 		pageLinks () {
-			return Array(this.pageNums.length).fill().map((x, i) => "{ path: '/search', query: { s: this.searchQuery, page: this.pageNums[i]}}")
+			return Array(this.pageNums.length).fill().map((x, i) => JSON.parse(`{ "path": "/search", "query": { "s": "${this.searchQuery}", "page": ${i + 1}}}`))
 		},
 		pagePostList () {
 			return _.chunk(this.searchResults, 10)

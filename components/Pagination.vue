@@ -1,26 +1,42 @@
 <template>
 	<nav class="pagination is-centered" role="navigation" aria-label="pagination">
-		<a v-if="currentPageNum > 1" :href="beforeLink" class="pagination-previous">Previous</a>
-		<a v-if="currentPageNum < postsLen" :href="afterLink" class="pagination-next">Next</a>
+		<nuxt-link v-if="currentPageNum > 1" :to="beforeLink" class="pagination-previous">
+			Previous
+		</nuxt-link>
+		<nuxt-link v-if="currentPageNum < postsLen" :to="afterLink" class="pagination-next">
+			Next
+		</nuxt-link>
 		<ul class="pagination-list">
 			<li v-if="currentPageNum > 2">
-				<a :href="firstLink" class="pagination-link" aria-label="Goto page 1">1</a>
+				<nuxt-link :to="firstLink" class="pagination-link" aria-label="Goto page 1">
+					1
+				</nuxt-link>
 			</li>
 			<li v-if="before - 1 > 1">
 				<span class="pagination-ellipsis">&hellip;</span>
 			</li>
 			<li v-if="currentPageNum > 1">
-				<a :href="beforeLink" :aria-label="`Goto page ${before}`" class="pagination-link">{{ before }}</a>
+				<nuxt-link :to="beforeLink" :aria-label="`Goto page ${before}`" class="pagination-link">
+					{{ before }}
+				</nuxt-link>
 			</li>
-			<li><a :href="currentLink" :aria-label="`Goto page ${currentPageNum}`" class="pagination-link is-current" aria-current="page">{{ currentPageNum }}</a></li>
+			<li>
+				<nuxt-link :to="currentLink" :aria-label="`Goto page ${currentPageNum}`" class="pagination-link is-current" aria-current="page">
+					{{ currentPageNum }}
+				</nuxt-link>
+			</li>
 			<li v-if="currentPageNum < postsLen">
-				<a :href="afterLink" :aria-label="`Goto page ${after}`" class="pagination-link">{{ after }}</a>
+				<nuxt-link :to="afterLink" :aria-label="`Goto page ${after}`" class="pagination-link">
+					{{ after }}
+				</nuxt-link>
 			</li>
 			<li v-if="postsLen - after > 1">
 				<span class="pagination-ellipsis">&hellip;</span>
 			</li>
 			<li v-if="currentPageNum < postsLen - 1">
-				<a :href="lastLink" :aria-label="`Goto page ${postsLen}`" class="pagination-link">{{ postsLen }}</a>
+				<nuxt-link :to="lastLink" :aria-label="`Goto page ${postsLen}`" class="pagination-link">
+					{{ postsLen }}
+				</nuxt-link>
 			</li>
 		</ul>
 	</nav>
@@ -31,7 +47,7 @@ export default {
 	props: {
 		currentPageNum: {
 			type: Number,
-			default: 2
+			default: 1
 		},
 		pageLinks: {
 			type: Array,
