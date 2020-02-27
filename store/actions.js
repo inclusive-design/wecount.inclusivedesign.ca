@@ -4,12 +4,11 @@ import Config from "~/assets/config"
 export default {
 	fetchApiData: async (context, postType) => {
 		const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}${postType}`)).headers["x-wp-totalpages"]
-		const totalNestedResults = []
+		const totalResults = []
 		let count = 0
 
-		for (let index = 0; index < totalPages; index++) {
-			const Results = []
-			const r = await axios.get(`${Config.wpDomain}${Config.apiBase}${postType}`)
+		for (let index = 1; index <= totalPages; index++) {
+			const r = await axios.get(`${Config.wpDomain}${Config.apiBase}${postType}?page=${index}`)
 
 			for (let i = 0; i < r.data.length; i++) {
 				const slug = (r.data[i].slug === "home") ? "/" : r.data[i].slug
@@ -33,19 +32,15 @@ export default {
 					}
 					if (r.data[i]._links["wp:featuredmedia"] !== undefined) {
 						const api = r.data[i]._links["wp:featuredmedia"][0].href
-						const pic = await axios.get(api)
-						picture = pic.data.source_url
+						const pic = await axios.get(api.replace("http://wecount.test", Config.wpDomain)) // TODO: Remove this replace function
+						picture = pic.data.source_url.replace("http://wecount.test", Config.wpDomain) // TODO: Remove this replace function
 						altTag = pic.data.alt_text
 					}
 				}
 
-				Results.push({ slug, title, date, picture, altTag, content, tags, dateTime, count })
+				totalResults.push({ slug, title, date, picture, altTag, content, tags, dateTime, count })
 			}
-
-			totalNestedResults.push(Results)
 		}
-
-		const totalResults = totalNestedResults.flat()
 
 		if (postType === "posts") {
 			context.commit("REFRESH_POSTS", totalResults)

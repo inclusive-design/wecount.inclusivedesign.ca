@@ -3,8 +3,8 @@
 		<h1 class="title">
 			Tag: “{{ searchQuery }}”
 		</h1>
-		<NewsGrid :postList="pagePostList[(($route.query.page) ? $route.query.page: 1) - 1]" />
-		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="$route.query.page" />
+		<NewsGrid :postList="pagePostList[$route.query.page ? parseInt($route.query.page) - 1 : 0]" />
+		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="$route.query.page ? parseInt($route.query.page) : 1" />
 	</div>
 </template>
 
@@ -27,15 +27,18 @@ export default {
 		},
 		foundPosts () {
 			return this.$store.state.posts.filter((blog) => {
-				return blog.title.concat(" ", blog.content, " ", blog.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase())
+				return blog.tags.join(" ").toLowerCase().match(this.searchQuery.toLowerCase())
 			})
 		},
-		pageNums () {
-			const indexLen = Math.ceil(this.foundPosts.length / 10)
-			return Array(indexLen).fill().map((x, i) => i + 1)
+		pageCount () {
+			return Math.ceil(this.foundPosts.length / 10)
 		},
 		pageLinks () {
-			return Array(this.pageNums.length).fill().map((x, i) => JSON.parse(`{ "path": "/tag", "query": { "s": "${this.searchQuery}", "page": ${i + 1}}}`))
+			const pageLinks = []
+			for (let i = 1; i <= this.pageCount; i++) {
+				pageLinks.push(`/tag?s=${this.searchQuery}&page=${i}`)
+			}
+			return pageLinks
 		},
 		pagePostList () {
 			return _.chunk(this.foundPosts, 10)

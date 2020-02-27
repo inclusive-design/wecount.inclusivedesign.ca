@@ -4,8 +4,8 @@
 			Search: “{{ searchQuery }}”
 		</h1>
 		<p>We found {{ searchResults.length }} results for your search.</p>
-		<NewsGrid :postList="pagePostList[(($route.query.page) ? $route.query.page: 1) - 1]" />
-		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="$route.query.page" />
+		<NewsGrid :postList="pagePostList[$route.query.page ? parseInt($route.query.page) - 1 : 0]" />
+		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="$route.query.page ? parseInt($route.query.page) : 1" />
 	</div>
 </template>
 
@@ -39,12 +39,15 @@ export default {
 		searchResults () {
 			return this.foundPosts.concat(this.foundPages)
 		},
-		pageNums () {
-			const indexLen = Math.ceil(this.searchResults.length / 10)
-			return Array(indexLen).fill().map((x, i) => i + 1)
+		pageCount () {
+			return Math.ceil(this.searchResults.length / 10)
 		},
 		pageLinks () {
-			return Array(this.pageNums.length).fill().map((x, i) => JSON.parse(`{ "path": "/search", "query": { "s": "${this.searchQuery}", "page": ${i + 1}}}`))
+			const pageLinks = []
+			for (let i = 1; i <= this.pageCount; i++) {
+				pageLinks.push(`/search?s=${this.searchQuery}&page=${i}`)
+			}
+			return pageLinks
 		},
 		pagePostList () {
 			return _.chunk(this.searchResults, 10)
