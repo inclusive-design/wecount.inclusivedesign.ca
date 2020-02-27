@@ -25,7 +25,7 @@ export default {
 						}
 					})
 
-					const fullPostList = this.$store.state.posts
+					const fullPostList = posts.data
 					const indexLen = Math.ceil(fullPostList.length / 10)
 					const pageNums = Array(indexLen).fill().map((x, i) => i + 1)
 
