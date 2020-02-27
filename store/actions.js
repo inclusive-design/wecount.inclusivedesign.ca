@@ -47,11 +47,15 @@ export default {
 
 			if (postType === "posts") {
 				count += 1
-				tags = r.data[i].pure_taxonomies.tags.map(({ name }) => name)
-				const api = r.data[i]._links["wp:featuredmedia"][0].href
-				const pic = await axios.get(api)
-				picture = pic.data.source_url
-				altTag = pic.data.alt_text
+				if (r.data[i].pure_taxonomies.tags !== undefined) {
+					tags = r.data[i].pure_taxonomies.tags.map(({ name }) => name)
+				}
+				if (r.data[i]._links["wp:featuredmedia"] !== undefined) {
+					const api = r.data[i]._links["wp:featuredmedia"][0].href
+					const pic = await axios.get(api)
+					picture = pic.data.source_url
+					altTag = pic.data.alt_text
+				}
 			}
 
 			Results.push({ slug, title, date, picture, altTag, content, tags, dateTime, count })
