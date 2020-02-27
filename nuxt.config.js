@@ -25,9 +25,9 @@ export default {
 						}
 					})
 
-					const fullPostList = posts.data
-					const indexLen = Math.ceil(fullPostList.length / 10)
-					const pageNums = Array(indexLen).fill().map((x, i) => i + 1)
+					const totalPages = posts.headers["x-wp-totalpages"]
+					const pageCount = Math.ceil(totalPages / 10)
+					const pageNums = Array(pageCount).fill().map((x, i) => i + 1)
 
 					const newsPaginationRoutes = pageNums.map((ind) => {
 						return {

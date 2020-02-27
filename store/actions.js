@@ -32,8 +32,8 @@ export default {
 					}
 					if (r.data[i]._links["wp:featuredmedia"] !== undefined) {
 						const api = r.data[i]._links["wp:featuredmedia"][0].href
-						const pic = await axios.get(api.replace("http://wecount.test", Config.wpDomain)) // TODO: Remove this replace function
-						picture = pic.data.source_url.replace("http://wecount.test", Config.wpDomain) // TODO: Remove this replace function
+						const pic = await axios.get(api)
+						picture = pic.data.source_url
 						altTag = pic.data.alt_text
 					}
 				}

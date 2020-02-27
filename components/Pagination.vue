@@ -55,9 +55,17 @@ export default {
 		}
 	},
 	computed: {
+		/**
+	 * Count of paginated links.
+	 * @method
+	 */
 		postsLen () {
 			return this.pageLinks.length
 		},
+		/**
+	 * Page number previous to current page number if current page number is less than or equal to 1 then value is 1.
+	 * @method
+	 */
 		before () {
 			if (this.currentPageNum <= 1) {
 				return 1
@@ -65,6 +73,10 @@ export default {
 				return this.currentPageNum - 1
 			}
 		},
+		/**
+	 * Page number after current page number if current page number is greater than or equal to total count of paginated links(postLen) then value is postLen.
+	 * @method
+	 */
 		after () {
 			if (this.currentPageNum >= this.postsLen) {
 				return this.postsLen
@@ -72,18 +84,38 @@ export default {
 				return this.currentPageNum + 1
 			}
 		},
+		/**
+	 * Link to first paginated page.
+	 * @method
+	 */
 		firstLink () {
 			return this.pageLinks[0]
 		},
+		/**
+	 * Link to previous paginated page.
+	 * @method
+	 */
 		beforeLink () {
 			return this.pageLinks[this.before - 1]
 		},
+		/**
+	 * Link to current paginated page.
+	 * @method
+	 */
 		currentLink () {
 			return this.pageLinks[this.currentPageNum - 1]
 		},
+		/**
+	 * Link to next paginated page.
+	 * @method
+	 */
 		afterLink () {
 			return this.pageLinks[this.after - 1]
 		},
+		/**
+	 * Link to last paginated page.
+	 * @method
+	 */
 		lastLink () {
 			return this.pageLinks[this.postsLen - 1]
 		}
