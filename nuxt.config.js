@@ -14,33 +14,12 @@ export default {
 				newsPaginationRoutes.push({ route: `/news-and-views/page/${postPage}`, payload: postPage })
 			}
 
-			// const r = await axios.get(`${Config.wpDomain}${Config.apiBase}posts`)
-			// postPagesAPI.push({ route: `/news-and-views/${r.data[0].slug}`, payload: r.data })
-
 			axios.all([
-				// axios.get(`${Config.wpDomain}${Config.apiBase}pages`),
-				// axios.get(`${Config.wpDomain}${Config.apiBase}posts`)
-				// postPagesAPI[0]
 				...postPagesAPI
 			])
 				.then(axios.spread((posts) => {
-					// const pageRoutes = pages.data.map((page) => {
-					// 	return {
-					// 		route: (page.slug !== "home") ? "/" + page.slug : "/",
-					// 		payload: page
-					// 	}
-					// })
-
-					// const totalPostRoutes = []
-
-					// const L = postPageResponses.data.map((post) => {
-					// 	return {
-					// 		route: "news-and-views/",
-					// 		payload: post
-					// 	}
-					// })
-					// totalPostRoutes.push(L)
-
+					// replace line below with this when totalPages > 1:
+					// const postRoutes = posts.data.map((...post) => {
 					const postRoutes = posts.data.map((post) => {
 						return {
 							route: "/news-and-views/" + post.slug,
