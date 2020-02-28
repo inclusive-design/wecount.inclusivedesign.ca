@@ -5,18 +5,41 @@ export default {
 	mode: "universal",
 	generate: {
 		fallback: true,
-		routes (callback) {
+		async routes (callback) {
+			const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}posts`)).headers["x-wp-totalpages"]
+			const postPagesAPI = []
+			const newsPaginationRoutes = []
+			for (let postPage = 1; postPage <= totalPages; postPage++) {
+				postPagesAPI.push(axios.get(`${Config.wpDomain}${Config.apiBase}posts?page=${postPage}`))
+				newsPaginationRoutes.push({ route: `/news-and-views/page/${postPage}`, payload: postPage })
+			}
+
+			// const r = await axios.get(`${Config.wpDomain}${Config.apiBase}posts`)
+			// postPagesAPI.push({ route: `/news-and-views/${r.data[0].slug}`, payload: r.data })
+
 			axios.all([
-				axios.get(`${Config.wpDomain}${Config.apiBase}pages`),
-				axios.get(`${Config.wpDomain}${Config.apiBase}posts?per_page=100`)
+				// axios.get(`${Config.wpDomain}${Config.apiBase}pages`),
+				// axios.get(`${Config.wpDomain}${Config.apiBase}posts`)
+				// postPagesAPI[0]
+				...postPagesAPI
 			])
-				.then(axios.spread(function (pages, posts) {
-					const pageRoutes = pages.data.map((page) => {
-						return {
-							route: (page.slug !== "home") ? "/" + page.slug : "/",
-							payload: page
-						}
-					})
+				.then(axios.spread((posts) => {
+					// const pageRoutes = pages.data.map((page) => {
+					// 	return {
+					// 		route: (page.slug !== "home") ? "/" + page.slug : "/",
+					// 		payload: page
+					// 	}
+					// })
+
+					// const totalPostRoutes = []
+
+					// const L = postPageResponses.data.map((post) => {
+					// 	return {
+					// 		route: "news-and-views/",
+					// 		payload: post
+					// 	}
+					// })
+					// totalPostRoutes.push(L)
 
 					const postRoutes = posts.data.map((post) => {
 						return {
@@ -25,18 +48,7 @@ export default {
 						}
 					})
 
-					const totalPages = posts.headers["x-wp-totalpages"]
-					const pageCount = Math.ceil(totalPages / 10)
-					const pageNums = Array(pageCount).fill().map((x, i) => i + 1)
-
-					const newsPaginationRoutes = pageNums.map((ind) => {
-						return {
-							route: "/news-and-views/page/" + ind,
-							payload: ind
-						}
-					})
-
-					callback(null, pageRoutes.concat(postRoutes, newsPaginationRoutes))
+					callback(null, [...newsPaginationRoutes, ...postRoutes])
 				}))
 				.catch(callback)
 		}

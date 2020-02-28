@@ -2,7 +2,7 @@
 	<article>
 		<h1>{{ title }}</h1>
 		<NewsGrid :postList="pagePostList[parseInt($route.params.num) - 1]" />
-		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="parseInt($route.params.num)" />
+		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="parseInt($route.params.num)" />
 	</article>
 </template>
 
@@ -22,12 +22,11 @@ export default {
 		}
 	},
 	computed: {
-		pageNums () {
-			const indexLen = Math.ceil(this.fullPostList.length / 10)
-			return Array(indexLen).fill().map((x, i) => i + 1)
+		pageCount () {
+			return Math.ceil(this.fullPostList.length / 10)
 		},
 		pageLinks () {
-			return Array(this.pageNums.length).fill().map((x, i) => "/news-and-views/page/" + this.pageNums[i])
+			return Array(this.pageCount).fill().map((x, i) => "/news-and-views/page/" + (i + 1))
 		},
 		pagePostList () {
 			return _.chunk(this.fullPostList, 10)
