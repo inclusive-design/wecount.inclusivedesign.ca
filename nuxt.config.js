@@ -5,19 +5,21 @@ export default {
 	mode: "universal",
 	generate: {
 		fallback: true,
-		routes (callback) {
-			axios.all([
-				axios.get(`${Config.wpDomain}${Config.apiBase}pages`),
-				axios.get(`${Config.wpDomain}${Config.apiBase}posts`)
-			])
-				.then(axios.spread(function (pages, posts) {
-					const pageRoutes = pages.data.map((page) => {
-						return {
-							route: (page.slug !== "home") ? "/" + page.slug : "/",
-							payload: page
-						}
-					})
+		async routes (callback) {
+			const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}posts`)).headers["x-wp-totalpages"]
+			const postPagesAPI = []
+			const newsPaginationRoutes = []
+			for (let postPage = 1; postPage <= totalPages; postPage++) {
+				postPagesAPI.push(axios.get(`${Config.wpDomain}${Config.apiBase}posts?page=${postPage}`))
+				newsPaginationRoutes.push({ route: `/news-and-views/page/${postPage}`, payload: postPage })
+			}
 
+			axios.all([
+				...postPagesAPI
+			])
+				.then(axios.spread((posts) => {
+					// replace line below with this when totalPages > 1:
+					// const postRoutes = posts.data.map((...post) => {
 					const postRoutes = posts.data.map((post) => {
 						return {
 							route: "/news-and-views/" + post.slug,
@@ -25,7 +27,7 @@ export default {
 						}
 					})
 
-					callback(null, pageRoutes.concat(postRoutes))
+					callback(null, [...newsPaginationRoutes, ...postRoutes])
 				}))
 				.catch(callback)
 		}
@@ -59,7 +61,6 @@ export default {
 	** Plugins to load before mounting the App
 	*/
 	plugins: [
-		"@/plugins/bootstrap-vue"
 	],
 	/*
 	** Nuxt.js dev-modules
@@ -72,8 +73,6 @@ export default {
 	** Nuxt.js modules
 	*/
 	modules: [
-		// Doc: https://bootstrap-vue.js.org
-		"bootstrap-vue/nuxt",
 		// Doc: https://axios.nuxtjs.org/usage
 		"@nuxtjs/axios",
 		"@nuxtjs/pwa",

@@ -1,36 +1,21 @@
 <template>
-	<b-row align-h="center">
-		<div id="container">
-			<h1 id="title">
-				<b>TAG: "{{ searchQuery }}"</b>
-			</h1>
-			<b-row v-for="row in groupedPosts" :key="row.id">
-				<b-col id="api-content" v-for="x in row" :key="x.id">
-					<Post
-						v-if="row.length>1"
-						:picture="x.picture"
-						:title="x.title"
-						:date="x.date"
-						:slug="x.slug"
-					/>
-					<Post
-						v-else
-						:picture="x.picture"
-						:title="x.title"
-						:date="x.date"
-						:slug="x.slug"
-						style="width: 50%"
-					/>
-				</b-col>
-			</b-row>
-		</div>
-	</b-row>
+	<div class="container">
+		<h1 class="title">
+			Tag: “{{ searchQuery }}”
+		</h1>
+		<NewsGrid :postList="pagePostList[$route.query.page ? parseInt($route.query.page) - 1 : 0]" />
+		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="$route.query.page ? parseInt($route.query.page) : 1" />
+	</div>
 </template>
 
 <script>
 import _ from "lodash"
+import Pagination from "~/components/Pagination"
+import NewsGrid from "~/components/NewsGrid"
 export default {
 	components: {
+		NewsGrid,
+		Pagination
 	},
 	data () {
 		return {
@@ -38,15 +23,25 @@ export default {
 	},
 	computed: {
 		searchQuery () {
-			return decodeURIComponent(this.$nuxt.$route.fullPath.match(/tag\?s=(.*)/)[1])
+			return decodeURIComponent(this.$route.query.s)
 		},
-		filterdBlogs () {
+		foundPosts () {
 			return this.$store.state.posts.filter((blog) => {
-				return blog.title.concat(" ", blog.content, " ", blog.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase())
+				return blog.tags.join(" ").toLowerCase().match(this.searchQuery.toLowerCase())
 			})
 		},
-		groupedPosts () {
-			return _.chunk(this.filterdBlogs, 2)
+		pageCount () {
+			return Math.ceil(this.foundPosts.length / 10)
+		},
+		pageLinks () {
+			const pageLinks = []
+			for (let i = 1; i <= this.pageCount; i++) {
+				pageLinks.push(`/tag?s=${this.searchQuery}&page=${i}`)
+			}
+			return pageLinks
+		},
+		pagePostList () {
+			return _.chunk(this.foundPosts, 10)
 		}
 	},
 	fetch ({ store }) {

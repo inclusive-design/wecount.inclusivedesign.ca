@@ -2,7 +2,7 @@
 // This is where I plan to put the global variables for the api endpoints. They are hardcoded for now.
 "use strict"
 
-const Config = {
+export default {
 	appTitle: "We Count",
 	appTitleShort: "WC",
 	appDescription: "We Count Project",
@@ -14,7 +14,6 @@ const Config = {
 	apiBase: "/wp-json/wp/v2/",
 	contactEmail: "wecount@inclusivedesign.ca",
 	socialMedia: [],
-	funders: []
+	funders: [],
+	dev: (process.env.NODE_ENV !== "production")
 }
-
-module.exports = Config
