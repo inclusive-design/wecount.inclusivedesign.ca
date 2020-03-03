@@ -40,7 +40,6 @@ export default {
 						})
 					}
 
-					// What happened to the page routes (for /about, /tools, etc.)?
 					callback(null, [...newsPaginationRoutes, ...postRoutes])
 				}))
 				.catch(callback)
