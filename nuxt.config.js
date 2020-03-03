@@ -40,7 +40,6 @@ export default {
 						})
 					}
 
-					// What happened to the page routes (for /about, /tools, etc.)?
 					callback(null, [...newsPaginationRoutes, ...postRoutes])
 				}))
 				.catch(callback)
@@ -68,7 +67,7 @@ export default {
 	** Global CSS
 	*/
 	css: [
-		"~/assets/css/main.css"
+		"~/assets/css/main.scss"
 	],
 	/*
 	** Plugins to load before mounting the App
@@ -90,7 +89,8 @@ export default {
 		"@nuxtjs/axios",
 		"@nuxtjs/pwa",
 		// Doc: https://github.com/nuxt-community/dotenv-module
-		"@nuxtjs/dotenv"
+		"@nuxtjs/dotenv",
+		"@nuxtjs/style-resources"
 	],
 	/*
 	** Axios module configuration
