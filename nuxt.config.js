@@ -6,18 +6,25 @@ export default {
 	generate: {
 		fallback: true,
 		async routes (callback) {
+			// Determine how many pages of posts are available
 			const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}posts`)).headers["x-wp-totalpages"]
+			// Create empty array to hold all retrieved post data in chunks of 10
 			const postPagesAPI = []
+			// Create empty array to hold all pagination routes for the News and Views page (e.g. /page/1, /page/2, etc)
 			const newsPaginationRoutes = []
 			for (let postPage = 1; postPage <= totalPages; postPage++) {
+				// Add each page of posts to postPagesAPI
 				postPagesAPI.push(axios.get(`${Config.wpDomain}${Config.apiBase}posts?page=${postPage}`))
+				// Add each page index to newsPaginationRoutes
 				newsPaginationRoutes.push({ route: `/news-and-views/page/${postPage}`, payload: postPage })
 			}
 
+			// Spread the entries in postPagesAPI and fetch each post
 			axios.all([
 				...postPagesAPI
 			])
 				.then(axios.spread((posts) => {
+					// Add each post to the postRoutes variable
 					// replace line below with this when totalPages > 1:
 					// const postRoutes = posts.data.map((...post) => {
 					const postRoutes = posts.data.map((post) => {
@@ -27,6 +34,7 @@ export default {
 						}
 					})
 
+					// What happened to the page routes (for /about, /tools, etc.)?
 					callback(null, [...newsPaginationRoutes, ...postRoutes])
 				}))
 				.catch(callback)
