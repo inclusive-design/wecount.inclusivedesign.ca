@@ -29,7 +29,7 @@ export default {
 					// const postRoutes = posts.data.map((...post) => {
 					const postRoutes = posts.data.map((post) => {
 						return {
-							route: "/news-and-views/" + post.slug,
+							route: `/news-and-views/${post.slug}`,
 							payload: post
 						}
 					})
