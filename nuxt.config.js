@@ -28,16 +28,19 @@ export default {
 			])
 				.then(axios.spread((posts) => {
 					// Add each post to the postRoutes variable
-					// replace line below with this when totalPages > 1:
-					// const postRoutes = posts.data.map((...post) => {
-					const postRoutes = posts.data.map((post) => {
-						return {
-							route: `/news-and-views/${post.slug}`,
-							payload: post
-						}
-					})
 
-					// What happened to the page routes (for /about, /tools, etc.)?
+					const postRoutes = []
+
+					if (totalPages > 1) {
+						posts.data.map((...post) => {
+							postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
+						})
+					} else {
+						posts.data.map((post) => {
+							postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
+						})
+					}
+
 					callback(null, [...newsPaginationRoutes, ...postRoutes])
 				}))
 				.catch(callback)
