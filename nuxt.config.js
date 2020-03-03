@@ -21,21 +21,24 @@ export default {
 					payload: postPage // Is this necessary?
 				})
 			}
-
 			// Spread the entries in postPagesAPI and fetch each post
 			axios.all([
 				...postPagesAPI
 			])
 				.then(axios.spread((posts) => {
 					// Add each post to the postRoutes variable
-					// replace line below with this when totalPages > 1:
-					// const postRoutes = posts.data.map((...post) => {
-					const postRoutes = posts.data.map((post) => {
-						return {
-							route: `/news-and-views/${post.slug}`,
-							payload: post
-						}
-					})
+
+					const postRoutes = []
+
+					if (totalPages > 1) {
+						posts.data.map((...post) => {
+							postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
+						})
+					} else {
+						posts.data.map((post) => {
+							postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
+						})
+					}
 
 					// What happened to the page routes (for /about, /tools, etc.)?
 					callback(null, [...newsPaginationRoutes, ...postRoutes])
