@@ -16,7 +16,10 @@ export default {
 				// Add each page of posts to postPagesAPI
 				postPagesAPI.push(axios.get(`${Config.wpDomain}${Config.apiBase}posts?page=${postPage}`))
 				// Add each page index to newsPaginationRoutes
-				newsPaginationRoutes.push({ route: `/news-and-views/page/${postPage}`, payload: postPage })
+				newsPaginationRoutes.push({
+					route: `/news-and-views/page/${postPage}`,
+					payload: postPage // Is this necessary?
+				})
 			}
 
 			// Spread the entries in postPagesAPI and fetch each post
