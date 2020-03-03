@@ -1,5 +1,3 @@
-@import "bulma/sass/utlilities/_all.sass"
+@import "node_modules/bulma/sass/utlilities/_all.sass"
 
-
-
-// @import "~bulma" This line causes build to fail but will be needed later when this file is filled out
+@import "node_modules/bulma/bulma" // This line causes build to fail but will be needed later when this file is filled out
