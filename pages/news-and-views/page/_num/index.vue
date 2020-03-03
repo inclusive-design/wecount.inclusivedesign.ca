@@ -1,8 +1,8 @@
 <template>
 	<article>
 		<h1>{{ title }}</h1>
-		<NewsGrid :postList="pagePostList[0]" />
-		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="1" />
+		<NewsGrid :postList="pagePostList[parseInt($route.params.num) - 1]" />
+		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="parseInt($route.params.num)" />
 	</article>
 </template>
 

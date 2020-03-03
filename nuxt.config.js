@@ -5,27 +5,43 @@ export default {
 	mode: "universal",
 	generate: {
 		fallback: true,
-		routes (callback) {
+		async routes (callback) {
+			// Determine how many pages of posts are available
+			const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}posts`)).headers["x-wp-totalpages"]
+			// Create empty array to hold all retrieved post data in chunks of 10
+			const postPagesAPI = []
+			// Create empty array to hold all pagination routes for the News and Views page (e.g. /page/1, /page/2, etc)
+			const newsPaginationRoutes = []
+			for (let postPage = 1; postPage <= totalPages; postPage++) {
+				// Add each page of posts to postPagesAPI
+				postPagesAPI.push(axios.get(`${Config.wpDomain}${Config.apiBase}posts?page=${postPage}`))
+				// Add each page index to newsPaginationRoutes
+				newsPaginationRoutes.push({
+					route: `/news-and-views/page/${postPage}`,
+					payload: postPage // Is this necessary?
+				})
+			}
+			// Spread the entries in postPagesAPI and fetch each post
 			axios.all([
-				axios.get(`${Config.wpDomain}${Config.apiBase}pages`),
-				axios.get(`${Config.wpDomain}${Config.apiBase}posts`)
+				...postPagesAPI
 			])
-				.then(axios.spread(function (pages, posts) {
-					const pageRoutes = pages.data.map((page) => {
-						return {
-							route: (page.slug !== "home") ? "/" + page.slug : "/",
-							payload: page
-						}
-					})
+				.then(axios.spread((posts) => {
+					// Add each post to the postRoutes variable
 
-					const postRoutes = posts.data.map((post) => {
-						return {
-							route: "/news-and-views/" + post.slug,
-							payload: post
-						}
-					})
+					const postRoutes = []
 
-					callback(null, pageRoutes.concat(postRoutes))
+					if (totalPages > 1) {
+						posts.data.map((...post) => {
+							postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
+						})
+					} else {
+						posts.data.map((post) => {
+							postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
+						})
+					}
+
+					// What happened to the page routes (for /about, /tools, etc.)?
+					callback(null, [...newsPaginationRoutes, ...postRoutes])
 				}))
 				.catch(callback)
 		}

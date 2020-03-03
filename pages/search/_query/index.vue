@@ -1,18 +1,22 @@
 <template>
 	<div class="container">
-		<h1 id="title">
+		<h1 class="title">
 			Search: “{{ searchQuery }}”
 		</h1>
 		<p>We found {{ searchResults.length }} results for your search.</p>
-		<NewsGrid :postList="searchResults" />
+		<NewsGrid :postList="pagePostList[$route.query.page ? parseInt($route.query.page) - 1 : 0]" />
+		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="$route.query.page ? parseInt($route.query.page) : 1" />
 	</div>
 </template>
 
 <script>
+import _ from "lodash"
+import Pagination from "~/components/Pagination"
 import NewsGrid from "~/components/NewsGrid"
 export default {
 	components: {
-		NewsGrid
+		NewsGrid,
+		Pagination
 	},
 	data () {
 		return {
@@ -20,7 +24,7 @@ export default {
 	},
 	computed: {
 		searchQuery () {
-			return decodeURIComponent(this.$nuxt.$route.fullPath.match(/rch\?s=(.*)/)[1])
+			return decodeURIComponent(this.$route.query.s)
 		},
 		foundPosts () {
 			return this.$store.state.posts.filter((blog) => {
@@ -34,6 +38,19 @@ export default {
 		},
 		searchResults () {
 			return this.foundPosts.concat(this.foundPages)
+		},
+		pageCount () {
+			return Math.ceil(this.searchResults.length / 10)
+		},
+		pageLinks () {
+			const pageLinks = []
+			for (let i = 1; i <= this.pageCount; i++) {
+				pageLinks.push(`/search?s=${this.searchQuery}&page=${i}`)
+			}
+			return pageLinks
+		},
+		pagePostList () {
+			return _.chunk(this.searchResults, 10)
 		}
 	},
 	fetch ({ store }) {
