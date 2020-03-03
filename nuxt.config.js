@@ -90,8 +90,14 @@ export default {
 		"@nuxtjs/pwa",
 		// Doc: https://github.com/nuxt-community/dotenv-module
 		"@nuxtjs/dotenv",
-		"@nuxtjs/style-resources"
+		"@nuxtjs/style-resources",
+		"nuxt-webfontloader"
 	],
+	webfontloader: {
+		google: {
+			families: ["Fira+Sans:400,400i,500,600,700&display=swap"]
+		}
+	},
 	/*
 	** Axios module configuration
 	** See https://axios.nuxtjs.org/options

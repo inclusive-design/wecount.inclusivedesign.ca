@@ -1,7 +1,11 @@
-@import "~bulma/sass/utilities/_all";
+/**
+ * Bulma Customizations are made in abstracts/_variables.scss
+ *
+ * @see: https://bulma.io/documentation/customize/variables/
+ */
+@import "abstracts/abstracts";
 
-/** Bulma Customizations **/
-
+/** Bulma **/
 @import "~bulma";
 
 /** Partials **/
@@ -11,5 +15,4 @@
 @import "layout/layout";
 @import "pages/pages";
 @import "themes/themes";
-@import "abstracts/abstracts";
 @import "vendors/vendors";
