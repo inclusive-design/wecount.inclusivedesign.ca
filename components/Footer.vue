@@ -6,7 +6,7 @@
 		<p>
 			Hosted with <nuxt-link to="https://netlify.com">
 				Netlify
-			</nuxt-link>.
+			</nuxt-link>
 		</p>
 	</footer>
 </template>
