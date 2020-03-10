@@ -1,5 +1,7 @@
 # We Count
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d63b3d00-fd5f-47d7-8e43-d09bf4e8eb4f/deploy-status)](https://app.netlify.com/sites/wecount/deploys)
+
 The source files for the We Count website, built with [Nuxt](https://nuxtjs.org/).
 
 ## Getting Started
