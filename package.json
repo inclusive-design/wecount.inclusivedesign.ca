@@ -16,10 +16,10 @@
 		"generate": "nuxt generate --fail-on-error",
 		"lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
 		"lint:css": "stylelint \"**/**.{scss,vue}\"",
-		"lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --ignore .github/**/*.md",
+		"lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md",
 		"lint-fix:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
 		"lint-fix:css": "stylelint \"**/**.{scss,vue}\" --fix",
-		"lint-fix:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --ignore .github/**/*.md --fix",
+		"lint-fix:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --fix",
 		"lint": "npm-run-all lint:js lint:css lint:md",
 		"lint:fix": "npm-run-all lint-fix:*",
 		"test": "npm run lint"
@@ -66,7 +66,7 @@
 			"eslint"
 		],
 		"*.md": [
-			"markdownlint --ignore-path .gitignore --ignore LICENSE.md --ignore .github/**/*.md"
+			"markdownlint"
 		]
 	}
 }
