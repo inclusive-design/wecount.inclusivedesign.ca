@@ -1,5 +1,6 @@
 // Base styles.
 
+// Typography
 h1 {
 	font-size: 4em ;
 	font-weight: semi-bold ;
@@ -16,3 +17,15 @@ p {
 	font-size: 1em ;
 	font-weight: regular ;
 }
+
+// Links and Buttons
+a {
+	color: #6895c6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #FADC90;
+}
+
