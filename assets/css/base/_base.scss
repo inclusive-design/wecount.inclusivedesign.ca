@@ -24,8 +24,29 @@ a {
 	font-weight: bold;
 	text-decoration: none;
 }
-
-a:hover {
+a:hover,
+a:focus {
 	background-color: #FADC90;
 }
 
+button {
+	background-color: #cee6c5;
+	border: 1px solid #8CAABB;
+	border-radius: 70px;
+	box-sizing: border-box;
+	transform: perspective(1px) translateZ(0);
+  }
+button:before {
+	border: 1px solid #8CAABB;
+	border-radius: 70px;
+	content: '';
+	opacity: 0;
+	position: absolute;
+  }
+button:hover:before, button:focus:before, button:active:before {
+	bottom: -3px;
+	left: 0px;
+	opacity: 1;
+	right: -3px;
+	top: 3px;
+  }
