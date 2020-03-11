@@ -2,6 +2,7 @@
 
 // Typography
 * {
+  box-sizing: border-box;
   font-family: $family-sans-serif;
 }
 
@@ -26,26 +27,30 @@ p {
 
 // Links and Buttons
 a {
-  color: #6895c6;
+  color: $blue-dark;
   font-weight: bold;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  background-color: #fadc90;
+  background-color: $orange-focus;
 }
 
 button {
-  background-color: #cee6c5;
-  border: 1px solid #8caabb;
+  background-color: $green-light;
+  border: 2px solid $blue-alt-light;
   border-radius: 70px;
-  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 400;
+  height: 53px;
+  line-height: 34px;
+  padding: 9px 34px;
   transform: perspective(1px) translateZ(0);
 }
 
 button::before {
-  border: 1px solid #8caabb;
+  border: 2px solid $blue-alt-light;
   border-radius: 70px;
   content: '';
   opacity: 0;
@@ -55,9 +60,9 @@ button::before {
 button:hover::before,
 button:focus::before,
 button:active::before {
-  bottom: -3px;
+  bottom: -7px;
   left: 0;
   opacity: 1;
-  right: -3px;
-  top: 3px;
+  right: -6px;
+  top: 5px;
 }
