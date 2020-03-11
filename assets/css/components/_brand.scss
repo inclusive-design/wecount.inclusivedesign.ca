@@ -1,0 +1,37 @@
+.logo {
+  width: calc(200 / 16 * 1rem);
+}
+
+[class^="fl-theme"] .logo-element,
+[class^="gpii-ext-theme"] .logo-element {
+  fill: none;
+  stroke: var(--logo-stroke);
+  stroke-linecap: round;
+  stroke-width: 0.1875rem;
+}
+
+.fl-theme-wb,
+.gpii-ext-theme-wb {
+  --logo-stroke: #{$white};
+}
+
+.fl-theme-yb,
+.gpii-ext-theme-yb {
+  --logo-stroke: #{$yellow};
+}
+
+.fl-theme-bw,
+.gpii-ext-theme-bw,
+.fl-theme-by,
+.gpii-ext-theme-by,
+.fl-theme-bbr,
+.gpii-ext-theme-bbr {
+  --logo-stroke: #{$black};
+}
+
+.fl-theme-gw .logo-element,
+.gpii-ext-theme-gw .logo-element,
+.fl-theme-gd .logo-element,
+.gpii-ext-theme-gd .logo-element {
+  --logo-stroke: #{$grey};
+}
