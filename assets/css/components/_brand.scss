@@ -2,8 +2,10 @@
   width: calc(200 / 16 * 1rem);
 }
 
-[class^="fl-theme"] .logo-element,
-[class^="gpii-ext-theme"] .logo-element {
+[class^="fl-theme"] .logo path,
+[class^="fl-theme"] .logo circle,
+[class^="gpii-ext-theme"] .logo path,
+[class^="gpii-ext-theme"] .logo circle {
   fill: none;
   stroke: var(--logo-stroke);
   stroke-linecap: round;
