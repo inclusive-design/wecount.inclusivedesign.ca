@@ -2,51 +2,59 @@
 
 // Typography
 h1 {
-	font-size: 4em ;
-	font-weight: semi-bold ;
+  font-size: 4em;
+  font-weight: semi-bold;
 }
+
 h2 {
-	font-size: 3em ;
-	font-weight: medium ;
+  font-size: 3em;
+  font-weight: medium;
 }
+
 h3 {
-	font-size: 1.5em ;
-	font-weight: bold ;
+  font-size: 1.5em;
+  font-weight: bold;
 }
+
 p {
-	font-size: 1em ;
-	font-weight: regular ;
+  font-size: 1em;
+  font-weight: regular;
 }
 
 // Links and Buttons
 a {
-	color: #6895c6;
-	font-weight: bold;
-	text-decoration: none;
+  color: #6895c6;
+  font-weight: bold;
+  text-decoration: none;
 }
+
 a:hover,
 a:focus {
-	background-color: #FADC90;
+  background-color: #fadc90;
 }
 
 button {
-	background-color: #cee6c5;
-	border: 1px solid #8CAABB;
-	border-radius: 70px;
-	box-sizing: border-box;
-	transform: perspective(1px) translateZ(0);
-  }
-button:before {
-	border: 1px solid #8CAABB;
-	border-radius: 70px;
-	content: '';
-	opacity: 0;
-	position: absolute;
-  }
-button:hover:before, button:focus:before, button:active:before {
-	bottom: -3px;
-	left: 0px;
-	opacity: 1;
-	right: -3px;
-	top: 3px;
-  }
+  background-color: #cee6c5;
+  border: 1px solid #8caabb;
+  border-radius: 70px;
+  box-sizing: border-box;
+  transform: perspective(1px) translateZ(0);
+}
+
+button::before {
+  border: 1px solid #8caabb;
+  border-radius: 70px;
+  content: '';
+  opacity: 0;
+  position: absolute;
+}
+
+button:hover::before,
+button:focus::before,
+button:active::before {
+  bottom: -3px;
+  left: 0;
+  opacity: 1;
+  right: -3px;
+  top: 3px;
+}
