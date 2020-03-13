@@ -28,9 +28,6 @@
 		"@nuxtjs/axios": "^5.9.5",
 		"@nuxtjs/dotenv": "^1.4.0",
 		"@nuxtjs/pwa": "^3.0.0-beta.20",
-		"@nuxtjs/style-resources": "^1.0.0",
-		"@nuxtjs/svg": "^0.1.6",
-		"bulma": "^0.8.0",
 		"nuxt": "^2.0.0"
 	},
 	"devDependencies": {
