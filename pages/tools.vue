@@ -17,7 +17,6 @@ export default {
 		}
 	},
 	asyncData (context) {
-		// DELETE ASAP
 		// check if you got a payload first
 		if (context.payload) {
 		// extract the page object passed from nuxt.config.js
