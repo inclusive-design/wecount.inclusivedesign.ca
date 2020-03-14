@@ -30,15 +30,15 @@ export default {
 
 					const postRoutes = []
 
-					if (totalPages > 1) {
-						posts.data.map((...post) => {
-							postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
-						})
-					} else {
-						posts.data.map((post) => {
-							postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
-						})
-					}
+					// if (totalPages > 1) {
+					// 	posts.data.map((...post) => {
+					// 		postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
+					// 	})
+					// } else {
+					// 	posts.data.map((post) => {
+					// 		postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
+					// 	})
+					// }
 
 					callback(null, [...newsPaginationRoutes, ...postRoutes])
 				}))
