@@ -48,19 +48,17 @@ export default {
 	// },
 	asyncData (context) {
 		return axios.get(`${Config.wpDomain}${Config.apiBase}posts`).then((response) => {
-			const res = response.data.filter(x => x.slug === context.params.slug)[0]
-			let picture = "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
+			const defaultPicture = "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
+			const res = response.data.filter(post => post.slug === context.params.slug)[0]
 			// let altTag = ""
-			if (res._links["wp:featuredmedia"] !== undefined) {
-				const api = res._links["wp:featuredmedia"][0].href
-				const pic = axios.get(api)
-				picture = pic.source_url
-				// altTag = pic.data.alt_text
-			}
+			const api = res._links["wp:featuredmedia"][0].href
+			const pic = axios.get(api)
+			const picture = pic.source_url
+			// altTag = pic.data.alt_text
 			return {
 				title: res.title.rendered,
 				content: res.content.rendered,
-				picture,
+				picture: picture || defaultPicture,
 				tags: res.pure_taxonomies.tags.map(({ name }) => name)
 
 			}
