@@ -29,7 +29,8 @@
 		"@nuxtjs/dotenv": "^1.4.0",
 		"@nuxtjs/pwa": "^3.0.0-beta.20",
 		"@nuxtjs/svg": "^0.1.6",
-		"nuxt": "^2.0.0"
+		"nuxt": "^2.0.0",
+		"sanitize.css": "^11.0.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^8.3.5",
