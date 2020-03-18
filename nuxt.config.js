@@ -1,11 +1,28 @@
 import axios from "axios"
 import Config from "./assets/config"
 
+import StaticRoutesBuilder from "./shared/StaticRoutesBuilder"
+
 export default {
 	mode: "universal",
 	generate: {
 		fallback: true,
 		async routes (callback) {
+			// 1. Build routes for site pages
+			// 1.1 The static route for /news-and-views is excluded as it needs to be splitted into separate /news and /views routes
+			const siteRoutes = await StaticRoutesBuilder.sitePages(["news-and-views"])
+
+			// 1.2 The route /home in siteRoutes built above needs serve the root index page at "/"
+			// Rename the route "/home" to "/"
+			const homeRoute = siteRoutes.map(function (oneRoute) {
+				if (oneRoute.route === "/home") {
+					oneRoute.route = "/"
+				}
+			})
+
+			//2. Build routes for news pages: /news/page/{pageNum}
+			const newsRoutes = await StaticRoutesBuilder.categoryPages("/news", 1)
+
 			// Determine how many pages of posts are available
 			const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}posts`)).headers["x-wp-totalpages"]
 			// Create empty array to hold all retrieved post data in chunks of 10
@@ -40,7 +57,7 @@ export default {
 						})
 					}
 
-					callback(null, [...newsPaginationRoutes, ...postRoutes])
+					callback(null, [...newsPaginationRoutes, ...postRoutes, ...siteRoutes])
 				}))
 				.catch(callback)
 		}

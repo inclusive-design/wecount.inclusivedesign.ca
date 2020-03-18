@@ -5,9 +5,9 @@
 		</h1>
 		<img :src="picture" class="postImage">
 		<div v-html="content" class="api-content" />
-		<div v-for="(t, index) in tags" :key="index">
-			<nuxt-link :to="{ path: '/tag', query: { s: t }}">
-				{{ t }}
+		<div v-for="(tag, index) in tags" :key="index">
+			<nuxt-link :to="{ path: '/tag/' + tag +'/1'}">
+				{{ tag }}
 			</nuxt-link>
 		</div>
 		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
