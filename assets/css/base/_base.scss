@@ -2,7 +2,6 @@
 
 // Typography.
 * {
-  box-sizing: border-box;
   font-family: $family-sans-serif;
 }
 
@@ -35,6 +34,10 @@ a {
 a:hover,
 a:focus {
   background-color: $orange-focus;
+}
+
+a:focus {
+  outline: none;
 }
 
 button {
@@ -74,7 +77,11 @@ button::-moz-focus-inner {
   outline: none;
 }
 
+button:focus {
+  outline: none;
+}
+
 button:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 currentColor;
+  text-shadow: 0 0 0 $grey-dark;
 }
