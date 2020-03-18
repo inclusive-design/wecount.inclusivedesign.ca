@@ -7,22 +7,22 @@
 }
 
 h1 {
-  font-size: 4em;
+  font-size: rem(64);
   font-weight: $font-weight-semibold;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: rem(48);
   font-weight: $font-weight-medium;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: rem(24);
   font-weight: $font-weight-bold;
 }
 
 p {
-  font-size: 1em;
+  font-size: rem(16);
 }
 
 // Links and Buttons.
