@@ -1,5 +1,11 @@
+$browser-context: 16;
+
 /** Typography **/
 $family-sans-serif: "Fira Sans", sans-serif;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
 
 /** Colours **/
 
@@ -13,7 +19,7 @@ $gold-light: #ffe6a7;
 
 // Secondary
 $black: #000;
-$black-bis: #313131;
+$grey-dark: #313131;
 $navy-dark: #162439;
 $navy: #203149;
 $navy-light: #2e405b;
@@ -23,3 +29,5 @@ $blue-alt-light:#8caabb;
 $green:#b0d0be;
 $green-light: #cee6c5;
 $green-pale: #f7fff4;
+
+$orange-focus: #fadc90;
