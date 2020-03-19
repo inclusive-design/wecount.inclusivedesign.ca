@@ -1,0 +1,53 @@
+// Header styles
+
+header {
+    .brand {
+        a {
+            font-size: rem(48);
+            padding-right: rem(16);
+            color: $black;
+            font-weight: normal;
+        }
+
+        svg {
+            width: rem(48);
+            margin: rem(-8) rem(16) 0 rem(16);
+        }
+    }
+
+    .site-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $navy-light;
+
+        .nav-bar {
+            display: flex;
+            flex: 1;
+            justify-content: space-around;
+
+            a {
+                color: $white;
+                padding: rem(32) rem(10);
+                font-weight: normal;
+
+                &:hover {
+                    color: $navy-light;
+                }
+            }
+        }
+
+        .search-container {
+            margin-right: rem(48);
+
+            input[type="search"] {
+                border: 0;
+                border-radius: rem(28);
+                font-size: rem(16);
+                padding: rem(16) rem(34);
+                width: rem(240);
+            }
+        }
+    }
+}

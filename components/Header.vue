@@ -1,8 +1,10 @@
 <template>
 	<header>
 		<Brand />
-		<NavBar />
-		<SearchForm />
+		<div class="site-nav">
+			<NavBar />
+			<SearchForm />
+		</div>
 	</header>
 </template>
 

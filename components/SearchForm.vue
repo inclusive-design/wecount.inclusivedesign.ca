@@ -1,11 +1,12 @@
 <template>
 	<div class="search-container">
 		<form id="search-form" action="/search">
-			<label for="search">Search for:</label>
-			<input id="search" type="search" placeholder="Search..." name="s">
-			<button type="submit">
-				Search
-			</button>
+			<input
+				name="s"
+				type="search"
+				placeholder="Search..."
+				title="Enter keywords for a site-wide search"
+				aria-label="Enter keywords for a site-wide search">
 		</form>
 	</div>
 </template>
