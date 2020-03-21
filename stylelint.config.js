@@ -4,6 +4,7 @@ module.exports = {
 		"stylelint-order"
 	],
 	"rules": {
+		"indentation": 4,
 		"order/order": [
 			"custom-properties",
 			"declarations"

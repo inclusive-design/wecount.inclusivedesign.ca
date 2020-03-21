@@ -5,46 +5,40 @@ header {
         a {
             color: $black;
             font-size: rem(48);
-            padding-right: rem(16);
             font-weight: normal;
+            padding-right: rem(16);
         }
 
         svg {
-            width: rem(48);
             margin: rem(-8) rem(16) 0 rem(16);
+            width: rem(48);
         }
     }
 
     .site-nav {
-        display: flex;
-        flex-direction: row;
-        padding: 0 rem(16);
-        align-items: center;
-        justify-content: space-between;
         align-items: center;
         background-color: $navy-light;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 rem(16);
 
         // Toggle menu button on mobile design
-        // Override the default button styles from _base.scss
+        // Override the default button styles from _base.scss and apply the new style
         button {
             background: none;
             border: none;
             border-radius: 0;
             box-shadow: none;
+            color: $white;
             font-size: rem(16);
-            padding: 0;
+            padding: rem(8);
         }
 
-        button:before {
+        button::before {
             content: none;
         }
         // End of overriding the default button styles from _base.scss
-
-        // Apply styles for menu toggle button
-        button {
-            color: $white;
-            padding: rem(8);
-        }
 
         button:hover {
             background-color: $orange-focus;
@@ -52,23 +46,24 @@ header {
 
         // Styles for the navigation menu
         nav {
-            display: none;
-            position: absolute;
             background: $navy-dark;
-            top: rem(120);
+            display: none;
             left: 0;
+            position: absolute;
+            top: rem(120);
             width: 100%;
 
             a {
-                float: none;
-                display: block;
-                text-align: left;
-                margin: rem(16) rem(16);
                 border-bottom: solid $white 1px;
                 color: $white;
+                display: block;
+                float: none;
                 font-weight: normal;
+                margin: rem(16) rem(16);
+                text-align: left;
 
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     color: $navy-light;
                 }
             }
@@ -80,25 +75,25 @@ header {
 
         // Styles for the search container
         .search-container {
-            display: flex;
             align-items: center;
+            display: flex;
 
             input[type="search"] {
+                background-color: white;
+                background-image: url("../../static/img/search.svg");
+                background-position: center;
+                background-repeat: no-repeat;
                 border: 0;
                 border-radius: 50%;
+                outline: none;
                 padding: rem(8) rem(16);
                 width: rem(16);
-                background-image: url("../../static/img/search.svg");
-                background-repeat: no-repeat;
-                background-color: white;
-                background-position: center;
-                outline: none;
 
                 &:focus {
-                    border-radius: rem(28);
-                    width: rem(160);
                     background-position: left rem(8) center;
+                    border-radius: rem(28);
                     padding-left: rem(32);
+                    width: rem(160);
                 }
             }
         }
@@ -115,17 +110,23 @@ header {
             }
 
             nav {
+                background-color: transparent;
                 display: flex;
                 flex: 1;
                 flex-direction: row;
                 justify-content: space-around;
                 position: inherit;
-                background-color: transparent;
 
                 a {
-                    padding: rem(32) rem(10);
-                    border-bottom: none;
+                    border: solid 1rem $navy-light;
                     margin: 0;
+                    padding: rem(16) rem(10);
+                }
+
+                // When the user is in a section (other than the Home page), underline this particular item
+                // in the top level navigation.
+                a.nuxt-link-active {
+                    border-bottom: solid rem(16) $orange-focus;
                 }
             }
 
@@ -134,12 +135,13 @@ header {
             }
 
             .search-container {
-                input[type="search"], input[type="search"]:focus {
+                input[type="search"],
+                input[type="search"]:focus {
+                    background-position: left rem(8) center;
                     border-radius: rem(28);
+                    font-size: inherit;
                     padding: rem(16) rem(48);
                     width: rem(240);
-                    font-size: inherit;
-                    background-position: left rem(8) center;
                 }
             }
         }
