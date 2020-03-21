@@ -6,7 +6,8 @@
 				type="search"
 				placeholder="Search..."
 				title="Enter keywords for a site-wide search"
-				aria-label="Enter keywords for a site-wide search">
+				aria-label="Enter keywords for a site-wide search"
+			>
 		</form>
 	</div>
 </template>

@@ -3,9 +3,9 @@
 header {
     .brand {
         a {
+            color: $black;
             font-size: rem(48);
             padding-right: rem(16);
-            color: $black;
             font-weight: normal;
         }
 
@@ -18,35 +18,129 @@ header {
     .site-nav {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        padding: 0 rem(16);
+        align-items: center;
+        justify-content: space-between;
         align-items: center;
         background-color: $navy-light;
 
-        .nav-bar {
-            display: flex;
-            flex: 1;
-            justify-content: space-around;
+        // Toggle menu button on mobile design
+        // Override the default button styles from _base.scss
+        button {
+            background: none;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            font-size: rem(16);
+            padding: 0;
+        }
+
+        button:before {
+            content: none;
+        }
+        // End of overriding the default button styles from _base.scss
+
+        // Apply styles for menu toggle button
+        button {
+            color: $white;
+            padding: rem(8);
+        }
+
+        button:hover {
+            background-color: $orange-focus;
+        }
+
+        // Styles for the navigation menu
+        nav {
+            display: none;
+            position: absolute;
+            background: $navy-dark;
+            top: rem(120);
+            left: 0;
+            width: 100%;
 
             a {
+                float: none;
+                display: block;
+                text-align: left;
+                margin: rem(16) rem(16);
+                border-bottom: solid $white 1px;
                 color: $white;
-                padding: rem(32) rem(10);
                 font-weight: normal;
 
-                &:hover {
+                &:hover, &:focus {
                     color: $navy-light;
                 }
             }
         }
 
+        button[aria-expanded="true"] + nav {
+            display: block;
+        }
+
+        // Styles for the search container
         .search-container {
-            margin-right: rem(48);
+            display: flex;
+            align-items: center;
 
             input[type="search"] {
                 border: 0;
-                border-radius: rem(28);
-                font-size: rem(16);
-                padding: rem(16) rem(34);
-                width: rem(240);
+                border-radius: 50%;
+                padding: rem(8) rem(16);
+                width: rem(16);
+                background-image: url("../../static/img/search.svg");
+                background-repeat: no-repeat;
+                background-color: white;
+                background-position: center;
+                outline: none;
+
+                &:focus {
+                    border-radius: rem(28);
+                    width: rem(160);
+                    background-position: left rem(8) center;
+                    padding-left: rem(32);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        .site-nav {
+            justify-content: space-around;
+
+            button {
+                display: none;
+            }
+
+            nav {
+                display: flex;
+                flex: 1;
+                flex-direction: row;
+                justify-content: space-around;
+                position: inherit;
+                background-color: transparent;
+
+                a {
+                    padding: rem(32) rem(10);
+                    border-bottom: none;
+                    margin: 0;
+                }
+            }
+
+            button[aria-expanded="true"] + nav {
+                display: flex;
+            }
+
+            .search-container {
+                input[type="search"], input[type="search"]:focus {
+                    border-radius: rem(28);
+                    padding: rem(16) rem(48);
+                    width: rem(240);
+                    font-size: inherit;
+                    background-position: left rem(8) center;
+                }
             }
         }
     }
