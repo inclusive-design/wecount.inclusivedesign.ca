@@ -5,7 +5,7 @@ header {
         a {
             color: $black;
             font-size: rem(48);
-            font-weight: normal;
+            font-weight: $font-weight-normal;
             padding-right: rem(16);
         }
 
@@ -57,7 +57,7 @@ header {
                 color: $white;
                 display: block;
                 float: none;
-                font-weight: normal;
+                ight: normal;
                 margin: rem(16) rem(16);
                 text-align: left;
                 white-space: nowrap;
