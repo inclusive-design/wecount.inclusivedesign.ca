@@ -54,7 +54,6 @@ header {
             width: 100%;
 
             a {
-                border-bottom: solid $white 1px;
                 color: $white;
                 display: block;
                 float: none;
@@ -126,8 +125,8 @@ header {
                 // When the user is in a section (other than the Home page), underline this particular item
                 // in the top level navigation.
                 a.nuxt-link-active {
-                    border-bottom: 1rem solid $orange-focus;
-                    padding-bottom: 1rem;
+                    border-bottom: rem(16) solid $orange-focus;
+                    padding-bottom: rem(16);
                 }
             }
 
