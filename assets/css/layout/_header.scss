@@ -1,6 +1,9 @@
 // Header styles
 
 header {
+  margin: auto;
+  max-width: $max-width-margins;
+
   .brand {
     a {
       color: $black;
@@ -38,9 +41,9 @@ header {
     button::before {
       content: none;
     }
-    // End of overriding the default button styles from _base.scss
 
-    button:hover {
+    button:hover,
+    button:focus {
       background-color: $orange-focus;
     }
 
@@ -118,15 +121,13 @@ header {
         position: inherit;
 
         a {
-          margin: 0;
-          padding: rem(32) rem(10);
+          padding: rem(16) rem(10) rem(16) 0;
         }
 
         // When the user is in a section (other than the Home page), underline this particular item
         // in the top level navigation.
         a.nuxt-link-active {
-          border-bottom: rem(16) solid $orange-focus;
-          padding-bottom: rem(16);
+          border-bottom: rem(2) solid $orange-focus;
         }
       }
 
