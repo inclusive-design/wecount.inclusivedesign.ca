@@ -21,7 +21,7 @@ export default {
 					day: "numeric"
 				}
 				const date = new Date(r.data[i].date).toLocaleString("en-us", dateOptions)
-				let picture = "~/assets/images/logo.svg"
+				let picture = null
 				let tags = []
 				let altTag = ""
 
