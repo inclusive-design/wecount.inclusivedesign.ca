@@ -7,14 +7,19 @@
 			<a :href="'mailto:' + email">{{ email }}</a><br>
 			IDRC<br>
 			205 Richmond Street West<br>
-			<img src="~/static/img/idrc.png">
+			<IdrcLogo />
 		</p>
 	</div>
 </template>
 
 <script>
 import Config from "~/assets/config"
+import IdrcLogo from "~/assets/images/logo_idrc_black_no_background.svg?inline"
+
 export default {
+	components: {
+		IdrcLogo
+	},
 	data () {
 		return {
 			email: Config.contactEmail

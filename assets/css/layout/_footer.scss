@@ -1,0 +1,41 @@
+// Footer styles.
+
+footer {
+  align-items: center;
+  background: $navy-light;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  font-size: rem(16);
+  line-height: rem(29);
+  margin: auto;
+  max-width: $max-width-margins;
+
+  h2 {
+    font-size: rem(16);
+    font-weight: bold;
+  }
+
+  div {
+    margin-bottom: rem(16);
+  }
+
+  .contact-info {
+    a {
+      font-weight: $font-weight-normal;
+    }
+
+    svg {
+      width: rem(160);
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    align-content: flex-start;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

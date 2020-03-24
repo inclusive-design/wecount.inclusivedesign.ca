@@ -3,11 +3,11 @@
 		<ContactInfo />
 		<SocialMedia />
 		<Funders />
-		<p>
+		<!-- <p>
 			Hosted with <nuxt-link to="https://netlify.com">
 				Netlify
 			</nuxt-link>
-		</p>
+		</p> -->
 	</footer>
 </template>
 

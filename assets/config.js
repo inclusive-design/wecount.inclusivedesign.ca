@@ -13,7 +13,12 @@ export default {
 	loadDbName: "starter_wp",
 	apiBase: "/wp-json/wp/v2/",
 	contactEmail: "wecount@inclusivedesign.ca",
-	socialMedia: [],
+	socialMedias: [{
+		id: "facebook",
+		title: "Facebook",
+		href: "",
+		svg: "~/assets/images/Facebook.svg"
+	}],
 	funders: [],
 	dev: (process.env.NODE_ENV !== "production")
 }
