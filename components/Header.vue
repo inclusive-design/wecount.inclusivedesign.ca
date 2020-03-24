@@ -3,7 +3,7 @@
 		<Brand />
 		<div class="site-nav">
 			<button id="menuToggleButton" @click="toggleNavMenu()" href="javascript:void(0);" aria-expanded="false">
-				&#9776;&nbsp;Menu
+				<MenuIcon />&nbsp;Menu
 			</button>
 			<NavBar />
 			<SearchForm />
@@ -17,11 +17,14 @@
 import Brand from "~/components/Brand"
 import NavBar from "~/components/NavBar"
 import SearchForm from "~/components/SearchForm"
+import MenuIcon from "~/assets/images/menu.svg?inline"
+
 export default {
 	components: {
 		Brand,
 		NavBar,
-		SearchForm
+		SearchForm,
+		MenuIcon
 	},
 	data () {
 		return {
