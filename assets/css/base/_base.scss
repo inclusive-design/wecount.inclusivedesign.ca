@@ -15,7 +15,8 @@ h2 {
   font-weight: $font-weight-medium;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: rem(24);
   font-weight: $font-weight-bold;
 }
@@ -88,9 +89,9 @@ button:-moz-focusring {
 
 // News
 
-.news-item {
-  background: #fff;
-  box-sizing: border-box;
-  height: rem(252);
-  width: rem(397);
-}
+// .news-item {
+//   background: #fff;
+//   box-sizing: border-box;
+//   height: rem(252);
+//   width: rem(397);
+// }

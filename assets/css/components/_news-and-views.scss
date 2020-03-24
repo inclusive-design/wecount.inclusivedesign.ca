@@ -1,0 +1,34 @@
+figure {
+  height: 298px;
+  width: 311px;
+}
+
+/* resize images */
+figure img {
+  height: auto;
+  width: 100%;
+}
+
+.news-grid {
+  display: grid;
+  grid-gap: 30px 38px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+// News
+.news-item {
+  background: #fff;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+  figure {
+    height: 252px;
+    width: 397px;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

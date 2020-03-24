@@ -4,8 +4,8 @@
 		<figure class="preview-media">
 			<img :src="picture" :alt="altTag" class="news-item-img">
 		</figure>
-		<h2>
-			<nuxt-link :to="'/news-and-views/' + slug" class="news-item">
+		<h2 class="h3">
+			<nuxt-link :to="'/news-and-views/' + slug">
 				{{ title }}
 			</nuxt-link>
 		</h2>
@@ -20,7 +20,7 @@ export default {
 	props: {
 		picture: {
 			type: String,
-			default: "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
+			default: "~/assets/images/logo.svg"
 		},
 		altTag: {
 			type: String,
