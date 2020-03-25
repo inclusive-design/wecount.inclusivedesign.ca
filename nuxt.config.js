@@ -6,46 +6,32 @@ export default {
 	generate: {
 		fallback: true,
 		async routes (callback) {
-			// TODO: The re-work of building static routes will be addressed in a separate pull request for
+			// TODO: The re-work of building static routes will be addressed in a separate issue:
 			// https://github.com/inclusive-design/wecount.inclusivedesign.ca/issues/90
-			
+
 			// Determine how many pages of posts are available
-			const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}posts`)).headers["x-wp-totalpages"]
+			const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}posts?categories=8`)).headers["x-wp-totalpages"]
 			// Create empty array to hold all retrieved post data in chunks of 10
-			const postPagesAPI = []
+			const postRoutes = []
 			// Create empty array to hold all pagination routes for the News and Views page (e.g. /page/1, /page/2, etc)
 			const newsPaginationRoutes = []
 			for (let postPage = 1; postPage <= totalPages; postPage++) {
-				// Add each page of posts to postPagesAPI
-				postPagesAPI.push(axios.get(`${Config.wpDomain}${Config.apiBase}posts?page=${postPage}`))
+				const response = await axios.get(`${Config.wpDomain}${Config.apiBase}posts?categories=8&page=${postPage}`)
 				// Add each page index to newsPaginationRoutes
 				newsPaginationRoutes.push({
 					route: `/views/page/${postPage}`,
 					payload: postPage // Is this necessary?
 				})
+
+				// Add routes for posts
+				response.data.map(function (onePost) {
+					postRoutes.push({
+						route: `/views/${onePost.slug}`,
+						payload: onePost
+					})
+				})
 			}
-			// Spread the entries in postPagesAPI and fetch each post
-			axios.all([
-				...postPagesAPI
-			])
-				.then(axios.spread((posts) => {
-					// Add each post to the postRoutes variable
-
-					const postRoutes = []
-
-					if (totalPages > 1) {
-						posts.data.map((...post) => {
-							postRoutes.push({ route: `/views/${post.slug}`, payload: post })
-						})
-					} else {
-						posts.data.map((post) => {
-							postRoutes.push({ route: `/views/${post.slug}`, payload: post })
-						})
-					}
-
-					callback(null, [...newsPaginationRoutes, ...postRoutes])
-				}))
-				.catch(callback)
+			callback(null, [...newsPaginationRoutes, ...postRoutes])
 		}
 	},
 	/*
