@@ -10,17 +10,22 @@
 				{{ t }}
 			</nuxt-link>
 		</div>
-		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
+		<Pagination v-if="pageNums > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
 	</article>
 </template>
 
 <script>
 import Pagination from "~/components/Pagination"
+
 export default {
 	components: {
 		Pagination
 	},
 	props: {
+		posts: {
+			type: Array,
+			default: () => []
+		},
 		title: {
 			type: String,
 			default: "Untitled"
@@ -33,6 +38,10 @@ export default {
 			type: String,
 			default: "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
 		},
+		altTag: {
+			type: String,
+			default: "post thumbnail"
+		},
 		tags: {
 			type: Array,
 			default: () => []
@@ -40,13 +49,13 @@ export default {
 	},
 	computed: {
 		pageNums () {
-			return this.$store.state.posts
+			return this.posts.length
 		},
 		pageLinks () {
-			return Array(this.pageNums.length).fill().map((x, i) => this.pageNums[i].slug)
+			return Array(this.pageNums).fill().map((x, i) => this.posts[i].slug)
 		},
 		currentPageNum () {
-			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).count
+			return this.posts.find(post => post.slug === this.$route.params.slug).count
 		}
 	}
 }

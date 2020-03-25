@@ -2,10 +2,10 @@
 	<!-- This compenent is used by data from pages api call as well as post api call -->
 	<article>
 		<figure class="preview-media">
-			<img :src="picture" :alt="altTag" class="news-item-img">
+			<img :src="picture" :alt="altTag" class="views-item-img">
 		</figure>
 		<h2>
-			<nuxt-link :to="'/news-and-views/' + slug" class="news-item">
+			<nuxt-link :to="'/views/' + slug" class="views-item">
 				{{ title }}
 			</nuxt-link>
 		</h2>

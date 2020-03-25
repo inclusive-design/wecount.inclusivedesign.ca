@@ -1,7 +1,7 @@
 <template>
 	<article>
 		<h1>{{ title }}</h1>
-		<NewsGrid :postList="pagePostList[parseInt($route.params.num) - 1]" />
+		<NewsGrid :postList="newsChunksByPage[parseInt($route.params.num) - 1]" />
 		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="parseInt($route.params.num)" />
 	</article>
 </template>
@@ -17,23 +17,23 @@ export default {
 	},
 	data () {
 		return {
-			title: "News and Views",
-			fullPostList: this.$store.state.posts
+			title: "Views",
+			allViews: this.$store.state.views
 		}
 	},
 	computed: {
 		pageCount () {
-			return Math.ceil(this.fullPostList.length / 10)
+			return Math.ceil(this.allViews.length / 10)
 		},
 		pageLinks () {
-			return Array(this.pageCount).fill().map((x, i) => "/news-and-views/page/" + (i + 1))
+			return Array(this.pageCount).fill().map((x, i) => "/views/page/" + (i + 1))
 		},
-		pagePostList () {
-			return _.chunk(this.fullPostList, 10)
+		newsChunksByPage () {
+			return _.chunk(this.allViews, 10)
 		}
 	},
 	fetch ({ store }) {
-		return store.dispatch("fetchApiData", "posts")
+		return store.dispatch("fetchViews")
 	}
 }
 </script>

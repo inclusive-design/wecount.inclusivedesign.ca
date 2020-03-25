@@ -15,5 +15,6 @@ export default {
 	contactEmail: "wecount@inclusivedesign.ca",
 	socialMedia: [],
 	funders: [],
+	numOfRecsPerPage: 10,
 	dev: (process.env.NODE_ENV !== "production")
 }
