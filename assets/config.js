@@ -9,7 +9,7 @@ export default {
 	appThemeColor: "#fffffff",
 	appBgColor: "#00172c ",
 	appIcon: "assets/app-icon.png",
-	wpDomain: "https://wecount.inclusivedesign.ca",
+	wpDomain: "https://wecount-cms.inclusivedesign.ca",
 	loadDbName: "starter_wp",
 	apiBase: "/wp-json/wp/v2/",
 	contactEmail: "wecount@inclusivedesign.ca",
