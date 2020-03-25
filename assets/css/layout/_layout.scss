@@ -1,1 +1,15 @@
 // Layout styles.
+body {
+  background-attachment: fixed;
+  background-image: url("../images/WeCount website background_distribution.svg");
+  background-position: right rem(1);
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-position: right rem(70);
+    background-size: contain;
+  }
+}
