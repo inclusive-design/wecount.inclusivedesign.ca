@@ -3,7 +3,7 @@
 		<h1 class="title">
 			{{ title }}
 		</h1>
-		<img v-if="picture" :src="picture">
+		<img v-if="picture" :src="picture" class="news-item-img">
 		<WeCountLogo v-else class="news-item-img" />
 		<div v-html="content" class="api-content" />
 		<div v-for="(t, index) in tags" :key="index">
@@ -12,7 +12,6 @@
 			</nuxt-link>
 		</div>
 		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
-		</wecountlogo>
 	</article>
 </template>
 

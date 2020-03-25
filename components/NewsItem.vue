@@ -2,7 +2,7 @@
 	<!-- This compenent is used by data from pages api call as well as post api call -->
 	<article>
 		<figure class="preview-media">
-			<img v-if="picture" :src="picture" :alt="altTag">
+			<img v-if="picture" :src="picture" :alt="altTag" class="news-item-img">
 			<WeCountLogo v-else class="news-item-img" />
 		</figure>
 		<h2 class="h3">

@@ -1,11 +1,9 @@
 figure {
   height: rem(298px);
-  width: rem(311px);
 }
 
 /* resize images */
-.news-item-img,
-figure img {
+.news-item-img {
   display: block;
   margin: 0 auto;
   max-height: 100%;
@@ -20,18 +18,17 @@ figure img {
   display: grid;
   grid-gap: rem(30px) rem(38px);
   grid-template-columns: repeat(1, 1fr);
-}
 
-.news-grid .api-content {
-  background: #fff;
-  border: 1px solid #000;
-  box-sizing: border-box;
+  .api-content {
+    background: #fff;
+    border: 1px solid #000;
+    box-sizing: border-box;
+  }
 }
 
 @media screen and (min-width: 600px) {
   figure {
     height: rem(252px);
-    width: rem(397px);
   }
 
   .news-grid {
