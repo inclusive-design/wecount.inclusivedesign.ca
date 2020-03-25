@@ -1,12 +1,14 @@
 <template>
 	<header>
 		<Brand />
-		<div class="site-nav">
-			<button id="menuToggleButton" @click="toggleNavMenu()" href="javascript:void(0);" aria-expanded="false">
-				<MenuIcon />&nbsp;Menu
-			</button>
-			<NavBar />
-			<SearchForm />
+		<div class="site-nav-wrapper">
+			<div class="site-nav">
+				<button id="menuToggleButton" @click="toggleNavMenu()" href="javascript:void(0);" aria-expanded="false">
+					<MenuIcon />&nbsp;Menu
+				</button>
+				<NavBar />
+				<SearchForm />
+			</div>
 		</div>
 	</header>
 </template>
