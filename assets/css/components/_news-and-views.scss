@@ -31,8 +31,8 @@
   .news-grid {
     grid-template-columns: repeat(2, 1fr);
 
-    figure {
-      display: block !important;
+    .api-content .news-item figure {
+      display: block;
       height: rem(252);
     }
   }
