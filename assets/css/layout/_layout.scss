@@ -1,15 +1,30 @@
 // Layout styles.
+@import "header";
+
 body {
   background-attachment: fixed;
   background-image: url("../images/WeCount website background_distribution.svg");
-  background-position: right rem(1);
+  background-position: rem(650) rem(200);
   background-repeat: repeat-x;
   background-size: cover;
 }
 
-@media screen and (min-width: 600px) {
+article {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75ch;
+  padding: rem(0) rem(27);
+}
+
+@media screen and (min-width: 1024px) {
   body {
-    background-position: right rem(70);
-    background-size: contain;
+    background-position: rem(750) rem(1);
+    background-size: 900px rem(700);
+  }
+
+  article {
+    background-color: $white;
+    max-width: 130ch;
+    padding: rem(1) rem(60);
   }
 }

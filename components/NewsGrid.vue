@@ -9,6 +9,7 @@
 				:date="post.date"
 				:dateTime="post.dateTime"
 				:slug="post.slug"
+				class="news-item"
 			/>
 		</div>
 	</div>
