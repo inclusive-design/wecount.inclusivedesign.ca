@@ -1,13 +1,15 @@
 <template>
 	<footer>
-		<ContactInfo />
-		<SocialMedia />
-		<Funders />
-		<!-- <p>
+		<div class="footer-content">
+			<ContactInfo />
+			<SocialMedia />
+			<Funders />
+		</div>
+		<p class="netlify-notice">
 			Hosted with <nuxt-link to="https://netlify.com">
 				Netlify
 			</nuxt-link>
-		</p> -->
+		</p>
 	</footer>
 </template>
 
