@@ -17,7 +17,22 @@ export default {
 		id: "facebook",
 		title: "Facebook",
 		href: "",
-		svg: "~/assets/images/Facebook.svg"
+		svg: "Facebook.svg"
+	}, {
+		id: "youtube",
+		title: "YouTube",
+		href: "",
+		svg: "YouTube.svg"
+	}, {
+		id: "instagram",
+		title: "Instagram",
+		href: "",
+		svg: "Instagram.svg"
+	}, {
+		id: "twitter",
+		title: "Twitter",
+		href: "",
+		svg: "Twitter.svg"
 	}],
 	funders: [],
 	dev: (process.env.NODE_ENV !== "production")

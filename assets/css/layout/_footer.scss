@@ -36,9 +36,15 @@ footer {
     .social-media {
       ul {
         list-style: none;
+        padding: 0;
 
-        img {
-          width: rem(32);
+        li {
+          display: inline;
+          padding: rem(5);
+
+          img {
+            width: rem(32);
+          }
         }
       }
     }
