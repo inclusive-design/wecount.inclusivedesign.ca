@@ -2,7 +2,7 @@
 	<article>
 		<h1>{{ title }}</h1>
 		<NewsGrid :postList="pagePostList[parseInt($route.params.num) - 1]" />
-		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="parseInt($route.params.num)" />
+		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="parseInt($route.params.num)" class="test" />
 	</article>
 </template>
 

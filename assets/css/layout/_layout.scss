@@ -1,4 +1,6 @@
 // Layout styles.
+@import "header";
+
 article {
   margin-left: auto;
   margin-right: auto;
@@ -9,6 +11,6 @@ article {
 @media screen and (min-width: 1024px) {
   article {
     max-width: 130ch;
-    padding: rem(0) (60);
+    padding: rem(0) rem(60);
   }
 }
