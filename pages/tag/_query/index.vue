@@ -12,6 +12,8 @@
 import _ from "lodash"
 import Pagination from "~/components/Pagination"
 import NewsGrid from "~/components/NewsGrid"
+import Config from "~/assets/config.js"
+
 export default {
 	components: {
 		NewsGrid,
@@ -19,6 +21,7 @@ export default {
 	},
 	data () {
 		return {
+			numOfRecsPerPage: Config.numOfRecsPerPage
 		}
 	},
 	computed: {
@@ -39,7 +42,7 @@ export default {
 			return [...this.foundNews, ...this.foundViews]
 		},
 		pageCount () {
-			return Math.ceil(this.searchResults.length / 10)
+			return Math.ceil(this.searchResults.length / this.numOfRecsPerPage)
 		},
 		pageLinks () {
 			const pageLinks = []
@@ -49,7 +52,7 @@ export default {
 			return pageLinks
 		},
 		pagePostList () {
-			return _.chunk(this.searchResults, 10)
+			return _.chunk(this.searchResults, this.numOfRecsPerPage)
 		}
 	},
 	fetch ({ store }) {

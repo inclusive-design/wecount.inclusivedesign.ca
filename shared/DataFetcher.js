@@ -5,11 +5,10 @@ export default {
 	async categorizedItems (categoryId) {
 		// The fuction to process returned data from the Wordpress API
 		const processItems = function (items) {
-			const processedResults = []
-			items.map(function (oneItem) {
+			return items.map(function (oneItem) {
 				// The counter is used to navigate from post to post when viewing individual news or views
 				count += 1
-				const structuredItem = {
+				return {
 					slug: oneItem.slug,
 					title: oneItem.title.rendered,
 					content: oneItem.content.rendered,
@@ -22,11 +21,11 @@ export default {
 					tags: oneItem.pure_taxonomies.tags ? oneItem.pure_taxonomies.tags.map(({ name }) => name) : [],
 					picture: oneItem._links["wp:featuredmedia"] ? oneItem._embedded["wp:featuredmedia"][0].source_url : null,
 					altTag: oneItem._links["wp:featuredmedia"] ? oneItem._embedded["wp:featuredmedia"][0].alt_text : "",
+					// For news, "href" points to the external news links. For views, "href" is customized to show views content.
+					href: oneItem.acf.link,
 					count
 				}
-				processedResults.push(structuredItem)
 			})
-			return processedResults
 		}
 
 		// According to the Wordpress API for pagination and embedding: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/

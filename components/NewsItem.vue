@@ -5,9 +5,8 @@
 			<img :src="picture" :alt="altTag" class="views-item-img">
 		</figure>
 		<h2>
-			<nuxt-link :to="'/views/' + slug" class="views-item">
-				{{ title }}
-			</nuxt-link>
+			<a v-if="isExternalHref" :href="href" v-html="title" class="views-item" target="_blank" />
+			<nuxt-link v-else :to="href" v-html="title" class="views-item" />
 		</h2>
 		<div class="date">
 			<time :datetime="dateTime">{{ date }}</time>
@@ -38,9 +37,13 @@ export default {
 			type: String,
 			default: ""
 		},
-		slug: {
+		href: {
 			type: String,
 			default: ""
+		},
+		isExternalHref: {
+			type: Boolean,
+			default: false
 		}
 	}
 }

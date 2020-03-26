@@ -1,8 +1,6 @@
 <template>
 	<article>
-		<h1 class="title">
-			{{ title }}
-		</h1>
+		<h1 v-html="title" class="title" />
 		<img :src="picture" class="postImage">
 		<div v-html="content" class="api-content" />
 		<div v-for="(t, index) in tags" :key="index">

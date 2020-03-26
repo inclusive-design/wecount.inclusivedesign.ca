@@ -8,7 +8,8 @@
 				:title="post.title"
 				:date="post.date"
 				:dateTime="post.dateTime"
-				:slug="post.slug"
+				:href="post.href"
+				:isExternalHref="post.isExternalHref"
 			/>
 		</div>
 	</div>
