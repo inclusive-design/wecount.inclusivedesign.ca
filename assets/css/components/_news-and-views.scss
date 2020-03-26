@@ -12,6 +12,7 @@
       padding: rem(8) rem(34);
 
       figure {
+        display: none;
         height: rem(298);
 
         /* resize images */
@@ -31,6 +32,7 @@
     grid-template-columns: repeat(2, 1fr);
 
     figure {
+      display: block !important;
       height: rem(252);
     }
   }
