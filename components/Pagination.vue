@@ -1,12 +1,11 @@
 <template>
 	<nav class="pagination is-centered" role="navigation" aria-label="pagination">
-		<nuxt-link v-if="currentPageNum > 1" :to="beforeLink" class="pagination-previous">
-			Previous
-		</nuxt-link>
-		<nuxt-link v-if="currentPageNum < postsLen" :to="afterLink" class="pagination-next">
-			Next
-		</nuxt-link>
 		<ul class="pagination-list">
+			<li>
+				<nuxt-link v-if="currentPageNum > 1" :to="beforeLink" class="pagination-previous">
+					<Previous class="prev-next" />
+				</nuxt-link>
+			</li>
 			<li v-if="currentPageNum > 2">
 				<nuxt-link :to="firstLink" class="pagination-link" aria-label="Goto page 1">
 					1
@@ -38,12 +37,23 @@
 					{{ postsLen }}
 				</nuxt-link>
 			</li>
+			<li>
+				<nuxt-link v-if="currentPageNum < postsLen" :to="afterLink" class="pagination-next">
+					<Next class="prev-next" />
+				</nuxt-link>
+			</li>
 		</ul>
 	</nav>
 </template>
 
 <script>
+import Previous from "~/assets/images/prev.svg?inline"
+import Next from "~/assets/images/next.svg?inline"
 export default {
+	components: {
+		Previous,
+		Next
+	},
 	props: {
 		currentPageNum: {
 			type: Number,

@@ -6,7 +6,7 @@
 }
 
 h1 {
-  font-size: rem(64);
+  font-size: rem(48);
   font-weight: $font-weight-semibold;
 }
 
@@ -15,7 +15,8 @@ h2 {
   font-weight: $font-weight-medium;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: rem(24);
   font-weight: $font-weight-bold;
 }
@@ -84,4 +85,10 @@ button:focus {
 button:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 $grey-dark;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: rem(64);
+  }
 }
