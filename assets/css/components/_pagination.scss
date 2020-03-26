@@ -25,28 +25,17 @@
 
   .pagination-link {
     background-color: #f7c12c;
-    border: 1px solid transparent;
     border-radius: 100%;
-    display: block;
     float: left;
     font-size: rem(24);
     font-weight: 400;
     height: rem(53);
     line-height: rem(50);
-    margin: 0 rem(5);
-    padding: 0;
-    text-decoration: none;
+    margin: 0 rem(13);
     width: rem(53);
-    &.active { cursor: default; }
-    &:active { outline: none; }
 
     &:hover {
       background-color: #ffa500;
-    }
-
-    &.active,
-    &:active {
-      background-color: #ffa100;
     }
   }
 
