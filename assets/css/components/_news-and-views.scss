@@ -12,6 +12,7 @@
       padding: rem(8) rem(34);
 
       figure {
+        display: none;
         height: rem(298);
 
         /* resize images */
@@ -30,7 +31,8 @@
   .news-grid {
     grid-template-columns: repeat(2, 1fr);
 
-    figure {
+    .api-content .news-item figure {
+      display: block;
       height: rem(252);
     }
   }
