@@ -6,17 +6,15 @@ export default {
 	generate: {
 		fallback: true,
 		async routes (callback) {
-			// TODO: The re-work of building static routes will be addressed in a separate issue:
-			// https://github.com/inclusive-design/wecount.inclusivedesign.ca/issues/90
-
+			const viewsAPI = Config.wpDomain + Config.apiBase + "posts?categories=8"
 			// Determine how many pages of posts are available
-			const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}posts?categories=8`)).headers["x-wp-totalpages"]
+			const totalPages = await (await axios.get(`${viewsAPI}`)).headers["x-wp-totalpages"]
 			// Create empty array to hold all retrieved post data in chunks of 10
 			const postRoutes = []
 			// Create empty array to hold all pagination routes for the News and Views page (e.g. /page/1, /page/2, etc)
 			const newsPaginationRoutes = []
 			for (let postPage = 1; postPage <= totalPages; postPage++) {
-				const response = await axios.get(`${Config.wpDomain}${Config.apiBase}posts?categories=8&page=${postPage}`)
+				const response = await axios.get(`${viewsAPI}&page=${postPage}`)
 				// Add each page index to newsPaginationRoutes
 				newsPaginationRoutes.push({
 					route: `/views/page/${postPage}`,
