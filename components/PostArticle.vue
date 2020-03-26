@@ -1,7 +1,8 @@
 <template>
 	<article>
 		<h1 v-html="title" class="title" />
-		<img :src="picture" class="postImage">
+		<img v-if="picture" :src="picture" class="news-item-img">
+		<WeCountLogo v-else class="news-item-img" />
 		<div v-html="content" class="api-content" />
 		<div v-for="(t, index) in tags" :key="index">
 			<nuxt-link :to="{ path: '/tag', query: { s: t }}">
@@ -14,10 +15,12 @@
 
 <script>
 import Pagination from "~/components/Pagination"
+import WeCountLogo from "~/assets/images/logo.svg?inline"
 
 export default {
 	components: {
-		Pagination
+		Pagination,
+		WeCountLogo
 	},
 	props: {
 		posts: {
@@ -34,7 +37,7 @@ export default {
 		},
 		picture: {
 			type: String,
-			default: "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
+			default: null
 		},
 		altTag: {
 			type: String,

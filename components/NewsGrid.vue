@@ -10,6 +10,7 @@
 				:dateTime="post.dateTime"
 				:href="post.href"
 				:isExternalHref="post.isExternalHref"
+				class="news-item"
 			/>
 		</div>
 	</div>
