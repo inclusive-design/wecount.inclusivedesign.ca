@@ -21,7 +21,7 @@ export default {
 					day: "numeric"
 				}
 				const date = new Date(r.data[i].date).toLocaleString("en-us", dateOptions)
-				let picture = "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
+				let picture = null
 				let tags = []
 				let altTag = ""
 
