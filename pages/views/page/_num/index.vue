@@ -20,22 +20,11 @@ export default {
 	data () {
 		return {
 			title: "Views",
-			numOfRecsPerPage: Config.numOfRecsPerPage
+			numOfRecsPerPage: Config.numOfRecsPerPage,
+			allViews: this.$store.state.views
 		}
 	},
 	computed: {
-		allViews () {
-			// To avoid directly mutate array/objects returned by the VueX state.
-			// See https://github.com/nuxt/nuxt.js/issues/1917
-			const allViews = this.$store.state.views
-
-			// Compose "href" that redirects to the view content
-			return allViews.map(function (oneView) {
-				oneView.href = "/views/" + oneView.slug
-				oneView.isExternalHref = false
-				return oneView
-			})
-		},
 		pageCount () {
 			return Math.ceil(this.allViews.length / this.numOfRecsPerPage)
 		},

@@ -2,7 +2,7 @@ import axios from "axios"
 import Config from "../assets/config"
 
 export default {
-	async categorizedItems (categoryId) {
+	async categorizedItems (categoryType, categoryId) {
 		// The fuction to process returned data from the Wordpress API
 		const processItems = function (items) {
 			return items.map(function (oneItem) {
@@ -22,7 +22,8 @@ export default {
 					picture: oneItem._links["wp:featuredmedia"] ? oneItem._embedded["wp:featuredmedia"][0].source_url : null,
 					altTag: oneItem._links["wp:featuredmedia"] ? oneItem._embedded["wp:featuredmedia"][0].alt_text : "",
 					// For news, "href" points to the external news links. For views, "href" is customized to show views content.
-					href: oneItem.acf.link,
+					href: categoryType === "news" ? oneItem.acf.link : "/views/" + oneItem.slug,
+					isExternalHref: categoryType === "news",
 					count
 				}
 			})
