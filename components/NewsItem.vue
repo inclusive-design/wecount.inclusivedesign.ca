@@ -41,10 +41,6 @@ export default {
 			type: String,
 			default: ""
 		},
-		content: {
-			type: String,
-			default: ""
-		},
 		previewContent: {
 			type: String,
 			default: ""

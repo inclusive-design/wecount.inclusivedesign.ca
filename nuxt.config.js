@@ -12,11 +12,11 @@ export default {
 			// Create empty array to hold all retrieved post data in chunks of 10
 			const postRoutes = []
 			// Create empty array to hold all pagination routes for the News and Views page (e.g. /page/1, /page/2, etc)
-			const newsPaginationRoutes = []
+			const viewsPaginationRoutes = []
 			for (let postPage = 1; postPage <= totalPages; postPage++) {
 				const response = await axios.get(`${viewsAPI}&page=${postPage}`)
-				// Add each page index to newsPaginationRoutes
-				newsPaginationRoutes.push({
+				// Add each page index to viewsPaginationRoutes
+				viewsPaginationRoutes.push({
 					route: `/views/page/${postPage}`,
 					payload: postPage // Is this necessary?
 				})
@@ -29,7 +29,7 @@ export default {
 					})
 				})
 			}
-			callback(null, [...newsPaginationRoutes, ...postRoutes])
+			callback(null, [...viewsPaginationRoutes, ...postRoutes])
 		}
 	},
 	/*

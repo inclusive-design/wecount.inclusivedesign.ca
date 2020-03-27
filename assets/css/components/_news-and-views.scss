@@ -45,6 +45,7 @@
         text-align: justify;
       }
 
+      // create the ellipsis
       .preview-content::before {
         bottom: 0;
         content: '...';
@@ -52,9 +53,9 @@
         right: 0;
       }
 
-      // hide ... if we have text, which is less than or equal to max lines
+      // hide the ellipsis if we have text, which is less than or equal to max lines
       .preview-content::after {
-        background: white;
+        background: $white;
         content: '';
         height: rem(16);
         margin-top: rem(3.2);

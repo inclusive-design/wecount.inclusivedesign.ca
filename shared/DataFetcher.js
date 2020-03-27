@@ -65,12 +65,10 @@ export default {
 		// fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
 		const pageAPI = Config.wpDomain + Config.apiBase + "pages?per_page=100"
 
-		// Fetch records for the first page as well as the number of total pages
 		const response = await axios.get(`${pageAPI}`)
 		const results = []
 
 		response.data.map(function (onePage) {
-			// The counter is used to navigate from post to post when viewing individual news or views
 			const structuredItem = {
 				slug: onePage.slug,
 				title: onePage.title.rendered,
