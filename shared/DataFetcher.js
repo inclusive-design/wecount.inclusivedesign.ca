@@ -8,9 +8,14 @@ export default {
 			return items.map(function (oneItem) {
 				// The counter is used to navigate from post to post when viewing individual news or views
 				count += 1
+
+				// Strip html tags to get pure text for the content preview
+				const previewContent = oneItem.content.rendered.replace(/<\/?[^>]+(>|$)/g, "")
+
 				return {
 					slug: oneItem.slug,
 					title: oneItem.title.rendered,
+					author: oneItem._embedded.author[0].name,
 					content: oneItem.content.rendered,
 					date: new Date(oneItem.date).toLocaleString("en-us", {
 						year: "numeric",
@@ -24,6 +29,8 @@ export default {
 					// For news, "href" points to the external news links. For views, "href" is customized to show views content.
 					href: categoryType === "news" ? oneItem.acf.link : "/views/" + oneItem.slug,
 					isExternalHref: categoryType === "news",
+					showPreviewImage: categoryType !== "news",
+					previewContent,
 					count
 				}
 			})
