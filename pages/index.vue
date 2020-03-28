@@ -1,14 +1,36 @@
 <template>
-	<PageArticle :title="title" :content="content" />
+	<article>
+		<PageArticle :title="title" :content="content" class="article-homepage" />
+		<ul class="homepage-cards">
+			<a href="/views/page/1"><div class="card">
+				<h3>Read current views <br> in inclusive <br> data science</h3>
+				<Blue class="c1" />
+			</div></a>
+			<a href="/tools/"><div class="card c2">
+				<h3>Find inclusive<br> data tools</h3>
+				<Green />
+			</div></a>
+			<a href="/inclusion-challenges/"><div class="card c3">
+				<h3>Participate in our <br> inclusion challenge <br> workshops</h3>
+				<Yellow />
+			</div></a>
+		</ul>
+	</article>
 </template>
 
 <script>
 import axios from "axios"
 import PageArticle from "~/components/PageArticle"
 import Config from "~/assets/config"
+import Blue from "~/assets/images/Home page tile_blue_cropped.svg?inline"
+import Green from "~/assets/images/Home page tile_green_cropped.svg?inline"
+import Yellow from "~/assets/images/Home page tile_yellow_cropped.svg?inline"
 export default {
 	components: {
-		PageArticle
+		PageArticle,
+		Blue,
+		Green,
+		Yellow
 	},
 	data () {
 		return {
@@ -29,7 +51,7 @@ export default {
 			return axios.get(`${Config.wpDomain}${Config.apiBase}pages`).then((response) => {
 				const res = response.data.filter(x => x.slug === "home")[0]
 				return {
-					title: res.title.rendered.toUpperCase(),
+					title: res.title.rendered,
 					content: res.content.rendered
 				}
 			})

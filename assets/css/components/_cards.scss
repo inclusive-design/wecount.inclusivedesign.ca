@@ -1,0 +1,43 @@
+.homepage-cards {
+  display: grid;
+  grid-gap: rem(38);
+  grid-template-columns: repeat(3, 1fr);
+
+  .card {
+    // background-repeat: no-repeat;
+    border: 1px solid #000;
+    // box-sizing: border-box;
+    // display: block;
+    // height: rem(213);
+    // margin: 0 auto;
+    // max-height: 100%;
+    // max-width: 100%;
+
+    h3 {
+      color: $navy-light;
+      // font-size: rem(24);
+      font-weight: $font-weight-medium;
+      line-height: rem(29);
+      margin: rem(9) rem(16);
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  .c1 {
+    // background-image: url("../images/Home page tile_blue_cropped.svg");
+    // background-position: rem(-90) rem(7);
+    // background-size: cover;
+    // padding: 0;
+    // float: left;
+  }
+
+  .c2 {
+    // background-image: url("../images/Home page tile_green_cropped.svg");
+    // background-position: right;
+  }
+
+  .c3 {
+    // background-image: url("../images/Home page tile_yellow_cropped.svg");
+  }
+}
