@@ -14,7 +14,7 @@ export default {
 			title: "Views",
 			baseHref: "/views",
 			allViews: this.$store.state.views,
-			currentPageNum: parseInt(this.$route.params.num)
+			currentPageNum: 1
 		}
 	},
 	fetch ({ store }) {

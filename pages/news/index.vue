@@ -14,7 +14,7 @@ export default {
 			title: "News",
 			baseHref: "/news",
 			allNews: this.$store.state.news,
-			currentPageNum: parseInt(this.$route.params.num)
+			currentPageNum: 1
 		}
 	},
 	fetch ({ store }) {

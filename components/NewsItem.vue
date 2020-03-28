@@ -6,10 +6,10 @@
 			<WeCountLogo v-else class="news-item-img" />
 		</figure>
 		<h2 class="h3">
-			<a v-if="isExternalHref" :href="href" v-html="title" target="_blank" />
+			<a v-if="isExternalHref" :href="href" v-html="title" />
 			<nuxt-link v-else :to="href" v-html="title" />
 		</h2>
-		<div v-html="author" class="author" />
+		<div v-if="!isExternalHref" v-html="author" class="author" />
 		<div class="date">
 			<time :datetime="dateTime">{{ date }}</time>
 		</div>
