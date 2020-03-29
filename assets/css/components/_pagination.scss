@@ -18,11 +18,11 @@
     display: inline;
     text-align: center;
 
-    .pagination-ellipsis {
+    a.is-current .pagination-ellipsis {
       color: $blue-alt;
     }
 
-    a.nuxt-link-active {
+    a.is-current {
       background-color: $green-pale;
       border: rem(2) solid #6085b3; // no color variable available
     }
