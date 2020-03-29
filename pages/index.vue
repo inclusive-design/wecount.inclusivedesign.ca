@@ -2,18 +2,18 @@
 	<article>
 		<PageArticle :title="title" :content="content" class="article-homepage" />
 		<div class="homepage-cards">
-			<a href="/views/page/1"><div class="card">
+			<a href="/views/page/1">
 				<h3>Read current views <br> in inclusive <br> data science</h3>
-				<Blue class="c1" />
-			</div></a>
-			<a href="/tools/"><div class="card">
-				<h3>Find inclusive<br> data tools</h3>
-				<Green class="c2" />
-			</div></a>
-			<a href="/inclusion-challenges/"><div class="card">
+				<BlueTile />
+			</a>
+			<a href="/tools/">
+				<h3 class="green-title">Find inclusive<br> data tools</h3>
+				<GreenTile />
+			</a>
+			<a href="/inclusion-challenges/">
 				<h3>Participate in our <br> inclusion challenge <br> workshops</h3>
-				<Yellow class="c3" />
-			</div></a>
+				<YellowTile />
+			</a>
 		</div>
 	</article>
 </template>
@@ -22,15 +22,15 @@
 import axios from "axios"
 import PageArticle from "~/components/PageArticle"
 import Config from "~/assets/config"
-import Blue from "~/assets/images/Home page tile_blue_cropped.svg?inline"
-import Green from "~/assets/images/Home page tile_green_cropped.svg?inline"
-import Yellow from "~/assets/images/Home page tile_yellow_cropped.svg?inline"
+import BlueTile from "~/assets/images/blue_tile.svg?inline"
+import GreenTile from "~/assets/images/green_tile.svg?inline"
+import YellowTile from "~/assets/images/yellow_tile.svg?inline"
 export default {
 	components: {
 		PageArticle,
-		Blue,
-		Green,
-		Yellow
+		BlueTile,
+		GreenTile,
+		YellowTile
 	},
 	data () {
 		return {

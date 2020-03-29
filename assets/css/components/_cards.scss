@@ -7,24 +7,22 @@
     width: 100%;
   }
 
-  .card {
-    // background-repeat: no-repeat;
-    border: 1px solid #000;
-    // box-sizing: border-box;
-    // display: block;
-    // height: rem(213);
-    // margin: 0 auto;
-    // max-height: 100%;
-    // max-width: 100%;
+  a {
+    border: 1px solid #000; //This is hear to see the space the svg should be taking up
+    height: rem(213);
 
     h3 {
       color: $navy-light;
-      // font-size: rem(24);
       font-weight: $font-weight-medium;
-      line-height: rem(29);
+      line-height: rem(35);
       margin: rem(9) rem(16);
       position: absolute;
-      z-index: 1;
+      z-index: 2;
+    }
+
+    .green-title { // Unable to position center card correctly
+      float: right;
+      position: relative;
     }
   }
 }
