@@ -13,6 +13,8 @@
 import _ from "lodash"
 import Pagination from "~/components/Pagination"
 import NewsGrid from "~/components/NewsGrid"
+import Config from "~/assets/config.js"
+
 export default {
 	components: {
 		NewsGrid,
@@ -20,27 +22,33 @@ export default {
 	},
 	data () {
 		return {
+			numOfRecsPerPage: Config.numOfRecsPerPage
 		}
 	},
 	computed: {
 		searchQuery () {
 			return decodeURIComponent(this.$route.query.s)
 		},
-		foundPosts () {
-			return this.$store.state.posts.filter((blog) => {
-				return blog.title.concat(" ", blog.content, " ", blog.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase())
+		foundNews () {
+			return this.$store.state.news.filter((oneNews) => {
+				return oneNews.title.concat(" ", oneNews.content, " ", oneNews.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase())
 			})
 		},
-		foundPages () {
-			return this.$store.state.pages.filter((page) => {
+		foundViews () {
+			return this.$store.state.views.filter((oneViews) => {
+				return oneViews.title.concat(" ", oneViews.content, " ", oneViews.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase())
+			})
+		},
+		foundSitePages () {
+			return this.$store.state.sitePages.filter((page) => {
 				return page.title.concat(" ", page.content).toLowerCase().match(this.searchQuery.toLowerCase())
 			})
 		},
 		searchResults () {
-			return this.foundPosts.concat(this.foundPages)
+			return [...this.foundNews, ...this.foundViews, ...this.foundSitePages]
 		},
 		pageCount () {
-			return Math.ceil(this.searchResults.length / 10)
+			return Math.ceil(this.searchResults.length / this.numOfRecsPerPage)
 		},
 		pageLinks () {
 			const pageLinks = []
@@ -50,13 +58,14 @@ export default {
 			return pageLinks
 		},
 		pagePostList () {
-			return _.chunk(this.searchResults, 10)
+			return _.chunk(this.searchResults, this.numOfRecsPerPage)
 		}
 	},
 	fetch ({ store }) {
 		return Promise.all([
-			store.dispatch("fetchApiData", "posts"),
-			store.dispatch("fetchApiData", "pages")
+			store.dispatch("fetchNews"),
+			store.dispatch("fetchViews"),
+			store.dispatch("fetchSitePages")
 		])
 	}
 }

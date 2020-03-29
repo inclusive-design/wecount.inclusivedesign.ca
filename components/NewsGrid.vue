@@ -6,9 +6,13 @@
 				:picture="post.picture"
 				:altTag="post.altTag"
 				:title="post.title"
+				:author="post.author"
+				:previewContent="post.previewContent"
 				:date="post.date"
 				:dateTime="post.dateTime"
-				:slug="post.slug"
+				:href="post.href"
+				:isExternalHref="post.isExternalHref"
+				:showPreviewImage="post.showPreviewImage"
 				class="news-item"
 			/>
 		</div>
