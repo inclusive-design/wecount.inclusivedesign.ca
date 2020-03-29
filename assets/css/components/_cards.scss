@@ -1,7 +1,11 @@
 .homepage-cards {
   display: grid;
-  grid-gap: rem(38);
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: rem(20);
+  grid-template-columns: repeat(1, 1fr);
+
+  svg {
+    width: 100%;
+  }
 
   .card {
     // background-repeat: no-repeat;
@@ -23,21 +27,11 @@
       z-index: 1;
     }
   }
+}
 
-  .c1 {
-    // background-image: url("../images/Home page tile_blue_cropped.svg");
-    // background-position: rem(-90) rem(7);
-    // background-size: cover;
-    // padding: 0;
-    // float: left;
-  }
-
-  .c2 {
-    // background-image: url("../images/Home page tile_green_cropped.svg");
-    // background-position: right;
-  }
-
-  .c3 {
-    // background-image: url("../images/Home page tile_yellow_cropped.svg");
+@media screen and (min-width: 1024px) {
+  .homepage-cards {
+    grid-gap: rem(38);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

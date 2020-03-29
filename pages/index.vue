@@ -1,20 +1,20 @@
 <template>
 	<article>
 		<PageArticle :title="title" :content="content" class="article-homepage" />
-		<ul class="homepage-cards">
+		<div class="homepage-cards">
 			<a href="/views/page/1"><div class="card">
 				<h3>Read current views <br> in inclusive <br> data science</h3>
 				<Blue class="c1" />
 			</div></a>
-			<a href="/tools/"><div class="card c2">
+			<a href="/tools/"><div class="card">
 				<h3>Find inclusive<br> data tools</h3>
-				<Green />
+				<Green class="c2" />
 			</div></a>
-			<a href="/inclusion-challenges/"><div class="card c3">
+			<a href="/inclusion-challenges/"><div class="card">
 				<h3>Participate in our <br> inclusion challenge <br> workshops</h3>
-				<Yellow />
+				<Yellow class="c3" />
 			</div></a>
-		</ul>
+		</div>
 	</article>
 </template>
 
