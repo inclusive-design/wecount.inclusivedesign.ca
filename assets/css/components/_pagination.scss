@@ -39,6 +39,11 @@
     }
   }
 
+  .pagination-ellipsis,
+  .pagination-ellipsis:hover {
+    background-color: inherit;
+  }
+
   .pagination-previous {
     float: left;
   }
