@@ -1,8 +1,6 @@
 <template>
 	<article>
-		<h1 class="title">
-			{{ title }}
-		</h1>
+		<h1 v-html="title" class="title" />
 		<img v-if="picture" :src="picture" class="news-item-img">
 		<WeCountLogo v-else class="news-item-img" />
 		<div v-html="content" class="api-content" />
@@ -11,7 +9,7 @@
 				{{ t }}
 			</nuxt-link>
 		</div>
-		<Pagination v-if="pageNums.length > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
+		<Pagination v-if="pageNums > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
 	</article>
 </template>
 
@@ -24,6 +22,10 @@ export default {
 		WeCountLogo
 	},
 	props: {
+		posts: {
+			type: Array,
+			default: () => []
+		},
 		title: {
 			type: String,
 			default: "Untitled"
@@ -36,6 +38,10 @@ export default {
 			type: String,
 			default: null
 		},
+		altTag: {
+			type: String,
+			default: "post thumbnail"
+		},
 		tags: {
 			type: Array,
 			default: () => []
@@ -43,13 +49,13 @@ export default {
 	},
 	computed: {
 		pageNums () {
-			return this.$store.state.posts
+			return this.posts.length
 		},
 		pageLinks () {
-			return Array(this.pageNums.length).fill().map((x, i) => this.pageNums[i].slug)
+			return Array(this.pageNums).fill().map((x, i) => this.posts[i].slug)
 		},
 		currentPageNum () {
-			return this.$store.state.posts.find(post => post.slug === this.$route.params.slug).count
+			return this.posts.findIndex(post => post.slug === this.$route.params.slug) + 1
 		}
 	}
 }

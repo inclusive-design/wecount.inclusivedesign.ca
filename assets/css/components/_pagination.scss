@@ -18,7 +18,7 @@
     display: inline;
     text-align: center;
 
-    a.nuxt-link-active {
+    a.is-current {
       background-color: #ffa100;
     }
   }
@@ -37,6 +37,11 @@
     &:hover {
       background-color: #ffa500;
     }
+  }
+
+  .pagination-ellipsis,
+  .pagination-ellipsis:hover {
+    background-color: inherit;
   }
 
   .pagination-previous {

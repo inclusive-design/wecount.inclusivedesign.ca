@@ -1,8 +1,14 @@
 export default {
-	REFRESH_POSTS: (state, Posts) => {
-		state.posts = Posts
+	setNews: (state, news) => {
+		state.news = news
+		state.isNewsFetched = true
 	},
-	REFRESH_PAGES: (state, Pages) => {
-		state.pages = Pages
+	setViews: (state, views) => {
+		state.views = views
+		state.isViewsFetched = true
+	},
+	setSitePages: (state, sitePages) => {
+		state.sitePages = sitePages
+		state.isSitePagesFetched = true
 	}
 }
