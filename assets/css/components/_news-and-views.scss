@@ -15,13 +15,53 @@
         display: none;
         height: rem(298);
 
-        /* resize images */
+        // resize images
         .news-item-img {
           display: block;
           margin: 0 auto;
           max-height: 100%;
           max-width: 100%;
         }
+      }
+
+      .author {
+        font-weight: $font-weight-semibold;
+      }
+
+      .date {
+        padding-bottom: rem(8);
+      }
+
+      // Apply ellipsis on the third line to the preview content.
+      // Reference: http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+      .preview-content {
+        line-height: rem(19.2);
+        margin-bottom: rem(16);
+        margin-right: rem(-16);
+        max-height: rem(57.6);
+        overflow: hidden;
+        padding-right: rem(16);
+        position: relative;
+        text-align: justify;
+      }
+
+      // create the ellipsis
+      .preview-content::before {
+        bottom: 0;
+        content: '...';
+        position: absolute;
+        right: 0;
+      }
+
+      // hide the ellipsis if we have text, which is less than or equal to max lines
+      .preview-content::after {
+        background: $white;
+        content: '';
+        height: rem(16);
+        margin-top: rem(3.2);
+        position: absolute;
+        right: 0;
+        width: rem(16);
       }
     }
   }

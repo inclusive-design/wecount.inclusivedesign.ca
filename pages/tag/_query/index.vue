@@ -12,6 +12,8 @@
 import _ from "lodash"
 import Pagination from "~/components/Pagination"
 import NewsGrid from "~/components/NewsGrid"
+import Config from "~/assets/config.js"
+
 export default {
 	components: {
 		NewsGrid,
@@ -19,19 +21,28 @@ export default {
 	},
 	data () {
 		return {
+			numOfRecsPerPage: Config.numOfRecsPerPage
 		}
 	},
 	computed: {
 		searchQuery () {
 			return decodeURIComponent(this.$route.query.s)
 		},
-		foundPosts () {
-			return this.$store.state.posts.filter((blog) => {
-				return blog.tags.join(" ").toLowerCase().match(this.searchQuery.toLowerCase())
+		foundNews () {
+			return this.$store.state.news.filter((oneNews) => {
+				return oneNews.tags.join(" ").toLowerCase().match(this.searchQuery.toLowerCase())
 			})
 		},
+		foundViews () {
+			return this.$store.state.views.filter((oneViews) => {
+				return oneViews.tags.join(" ").toLowerCase().match(this.searchQuery.toLowerCase())
+			})
+		},
+		searchResults () {
+			return [...this.foundNews, ...this.foundViews]
+		},
 		pageCount () {
-			return Math.ceil(this.foundPosts.length / 10)
+			return Math.ceil(this.searchResults.length / this.numOfRecsPerPage)
 		},
 		pageLinks () {
 			const pageLinks = []
@@ -41,11 +52,14 @@ export default {
 			return pageLinks
 		},
 		pagePostList () {
-			return _.chunk(this.foundPosts, 10)
+			return _.chunk(this.searchResults, this.numOfRecsPerPage)
 		}
 	},
 	fetch ({ store }) {
-		return store.dispatch("fetchApiData", "posts")
+		return Promise.all([
+			store.dispatch("fetchNews"),
+			store.dispatch("fetchViews")
+		])
 	}
 }
 </script>
