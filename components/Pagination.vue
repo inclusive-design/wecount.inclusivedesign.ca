@@ -12,7 +12,7 @@
 				</nuxt-link>
 			</li>
 			<li v-if="before - 1 > 1">
-				<span class="pagination-ellipsis">&hellip;</span>
+				<span class="pagination-ellipsis pagination-link">&hellip;</span>
 			</li>
 			<li v-if="currentPageNum > 1">
 				<nuxt-link :to="beforeLink" :aria-label="`Goto page ${before}`" class="pagination-link">
@@ -30,7 +30,7 @@
 				</nuxt-link>
 			</li>
 			<li v-if="postsLen - after > 1">
-				<span class="pagination-ellipsis">&hellip;</span>
+				<span class="pagination-ellipsis pagination-link">&hellip;</span>
 			</li>
 			<li v-if="currentPageNum < postsLen - 1">
 				<nuxt-link :to="lastLink" :aria-label="`Goto page ${postsLen}`" class="pagination-link">

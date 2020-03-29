@@ -6,29 +6,30 @@ export default {
 	generate: {
 		fallback: true,
 		async routes (callback) {
+			const viewsAPI = Config.wpDomain + Config.apiBase + "posts?categories=8"
 			// Determine how many pages of posts are available
-			const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}posts`)).headers["x-wp-totalpages"]
+			const totalPages = await (await axios.get(`${viewsAPI}`)).headers["x-wp-totalpages"]
 			// Create empty array to hold all retrieved post data in chunks of 10
 			const postRoutes = []
 			// Create empty array to hold all pagination routes for the News and Views page (e.g. /page/1, /page/2, etc)
-			const newsPaginationRoutes = []
+			const viewsPaginationRoutes = []
 			for (let postPage = 1; postPage <= totalPages; postPage++) {
-				const response = await axios.get(`${Config.wpDomain}${Config.apiBase}posts?page=${postPage}`)
-				// Add each page index to newsPaginationRoutes
-				newsPaginationRoutes.push({
-					route: `/news-and-views/page/${postPage}`,
+				const response = await axios.get(`${viewsAPI}&page=${postPage}`)
+				// Add each page index to viewsPaginationRoutes
+				viewsPaginationRoutes.push({
+					route: `/views/page/${postPage}`,
 					payload: postPage // Is this necessary?
 				})
 
 				// Add routes for posts
 				response.data.map(function (onePost) {
 					postRoutes.push({
-						route: `/news-and-views/${onePost.slug}`,
+						route: `/views/${onePost.slug}`,
 						payload: onePost
 					})
 				})
 			}
-			callback(null, [...newsPaginationRoutes, ...postRoutes])
+			callback(null, [...viewsPaginationRoutes, ...postRoutes])
 		}
 	},
 	/*
