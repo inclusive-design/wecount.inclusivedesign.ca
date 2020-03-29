@@ -1,6 +1,6 @@
 <template>
 	<div class="funders">
-		<h2>Funded by</h2>
+		<p>Supported by Innovation, Science and Economic Development Canada’s Accessible Technology Program.</p>
 		<ul>
 			<li v-for="f in funders" :key="f.id">
 				<nuxt-link :to="f.href">
