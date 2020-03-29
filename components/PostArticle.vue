@@ -56,7 +56,7 @@ export default {
 			return Array(this.pageNums).fill().map((x, i) => this.posts[i].slug)
 		},
 		currentPageNum () {
-			return this.posts.find(post => post.slug === this.$route.params.slug).count
+			return this.posts.findIndex(post => post.slug === this.$route.params.slug) + 1
 		}
 	}
 }

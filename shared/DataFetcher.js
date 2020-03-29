@@ -6,9 +6,6 @@ export default {
 		// The fuction to process returned data from the Wordpress API
 		const processItems = function (items) {
 			return items.map(function (oneItem) {
-				// The counter is used to navigate from post to post when viewing individual news or views
-				count += 1
-
 				// Strip html tags to get pure text for the content preview
 				const previewContent = oneItem.content.rendered.replace(/<\/?[^>]+(>|$)/g, "")
 
@@ -30,8 +27,7 @@ export default {
 					href: categoryType === "news" ? oneItem.acf.link : "/views/" + oneItem.slug,
 					isExternalHref: categoryType === "news",
 					showPreviewImage: categoryType !== "news",
-					previewContent,
-					count
+					previewContent
 				}
 			})
 		}
@@ -45,7 +41,6 @@ export default {
 		const firstPageRequest = baseCategoryAPI + "&page=1"
 		const firstPageResponse = await axios.get(`${firstPageRequest}`)
 		const totalPages = firstPageResponse.headers["x-wp-totalpages"]
-		let count = 0
 		let results = []
 
 		results = processItems(firstPageResponse.data)
