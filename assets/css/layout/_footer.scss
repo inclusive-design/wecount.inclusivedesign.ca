@@ -20,6 +20,8 @@ footer {
     }
 
     .contact-info {
+      width: 100%;
+
       a {
         font-weight: $font-weight-normal;
       }
@@ -27,10 +29,16 @@ footer {
       svg {
         width: rem(160);
       }
+
+      .logo-ocadu {
+        padding-top: rem(32);
+        text-align: center;
+      }
     }
 
     .social-media {
       align-self: center;
+      padding-bottom: rem(32);
     }
 
     .nav-home-about,
@@ -79,6 +87,7 @@ footer {
   }
 
   p.netlify-notice {
+    padding-top: rem(32);
     text-align: center;
   }
 }
@@ -116,6 +125,14 @@ footer {
       .contact-info {
         grid-column: 1/3;
         grid-row: 2/3;
+
+        .logo-ocadu-wrapper {
+          display: inline-flex;
+
+          .logo-ocadu {
+            padding: 0;
+          }
+        }
       }
 
       .social-media {
@@ -128,9 +145,14 @@ footer {
       }
 
       .funders {
+        align-self: end;
         grid-column: 5/6;
         line-height: rem(19);
       }
+    }
+
+    p.netlify-notice {
+      padding-top: 0;
     }
   }
 }

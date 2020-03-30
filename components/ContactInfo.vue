@@ -3,22 +3,29 @@
 		<h2>
 			Contact Us
 		</h2>
-		<p>
+		<div>
 			<a :href="'mailto:' + email">{{ email }}</a><br>
 			IDRC<br>
 			205 Richmond Street West<br>
-			<IdrcLogo />
-		</p>
+			<div class="logo-ocadu-wrapper">
+				<IdrcLogo />
+				<div class="logo-ocadu">
+					<OcaduLogo />
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
 <script>
 import Config from "~/assets/config"
-import IdrcLogo from "~/assets/images/logo_idrc_black_no_background.svg?inline"
+import IdrcLogo from "~/assets/images/logo_idrc.svg?inline"
+import OcaduLogo from "~/assets/images/logo_ocadu.svg?inline"
 
 export default {
 	components: {
-		IdrcLogo
+		IdrcLogo,
+		OcaduLogo
 	},
 	data () {
 		return {
