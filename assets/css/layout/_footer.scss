@@ -9,6 +9,16 @@ footer {
   .netlify-notice {
     padding-top: rem(32);
     text-align: center;
+
+    a {
+      color: $white;
+      font-weight: $font-weight-normal;
+
+      &:hover,
+      &:focus {
+        color: $navy-light;
+      }
+    }
   }
 
   .footer-content {
@@ -28,8 +38,18 @@ footer {
     .contact-info {
       width: 100%;
 
-      svg {
-        width: rem(160);
+      a {
+        color: $white;
+        font-weight: $font-weight-normal;
+
+        svg {
+          width: rem(160);
+        }
+
+        &:hover,
+        &:focus {
+          color: $navy-light;
+        }
       }
 
       .logo-ocadu {
@@ -43,21 +63,6 @@ footer {
     .nav-our-data,
     .nav-inclusion-challenges {
       display: none;
-    }
-
-    .contact-info,
-    .netlify-notice {
-      a {
-        color: $white;
-        font-weight: $font-weight-normal;
-
-        &:hover,
-        &:focus {
-          svg {
-            color: $navy-light;
-          }
-        }
-      }
     }
 
     .social-media {
