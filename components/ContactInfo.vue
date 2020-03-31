@@ -8,9 +8,15 @@
 			IDRC<br>
 			205 Richmond Street West<br>
 			<div class="logo-ocadu-wrapper">
-				<IdrcLogo />
+				<a href="https://idrc.ocadu.ca/">
+					<IdrcLogo />
+					<span class="screen-reader-only">Inclusive Design Research Centre</span>
+				</a>
 				<div class="logo-ocadu">
-					<OcaduLogo />
+					<a href="https://ocadu.ca/">
+						<OcaduLogo />
+						<span class="screen-reader-only">OCAD University</span>
+					</a>
 				</div>
 			</div>
 		</div>
