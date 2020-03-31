@@ -1,0 +1,30 @@
+.post-article {
+  .author {
+    font-style: italic;
+  }
+
+  .date {
+    padding-bottom: rem(8);
+  }
+
+  .api-content {
+    margin-bottom: rem(80);
+  }
+
+  .tags {
+    display: block;
+    margin-bottom: rem(80);
+
+    div {
+      padding: 0 rem(16);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post-article {
+    .tags {
+      display: inline-flex;
+    }
+  }
+}
