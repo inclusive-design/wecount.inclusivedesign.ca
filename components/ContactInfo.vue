@@ -4,9 +4,13 @@
 			Contact Us
 		</h2>
 		<div>
-			<a :href="'mailto:' + email">{{ email }}</a><br>
-			IDRC<br>
-			205 Richmond Street West<br>
+			<address>
+				<a :href="'mailto:' + email">{{ email }}</a><br>
+				IDRC<br>
+				205 Richmond Street West<br>
+				Toronto, ON M5V 1V3<br>
+			</address>
+
 			<div class="logo-ocadu-wrapper">
 				<a href="https://idrc.ocadu.ca/">
 					<IdrcLogo />
