@@ -9,6 +9,8 @@ article {
   padding: rem(0) rem(27);
 }
 
+// Hide an element visually without hiding it from screen readers
+// Reference: https://tailwindcss.com/docs/screen-readers/#app
 .screen-reader-only {
   border-width: 0;
   clip: rect(0, 0, 0, 0);
