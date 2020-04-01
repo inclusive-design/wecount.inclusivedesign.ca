@@ -6,6 +6,7 @@
 					{{ h.title }}
 				</nuxt-link>
 			</li> -->
+			<!-- The above <li> below are hard coded to show an example of how styles will look. This will be replaced by the commented out html code above. -->
 			<li>
 				<nuxt-link to="#title1">
 					title1
@@ -26,7 +27,6 @@
 </template>
 
 <script>
-// The above <li> are coded to show an example of how styles will look. This will be replaced by the commented out html code above.
 export default {
 	props: {
 		headers: {
