@@ -2,7 +2,7 @@
 	<article>
 		<PageArticle :title="title" :content="content" class="article-homepage" />
 		<div class="homepage-cards">
-			<a class="blue card" href="/views/page/1">
+			<a class="blue card" href="/views/">
 				<h3>Read current views in inclusive data science</h3>
 			</a>
 			<a class="green card" href="/tools/">
