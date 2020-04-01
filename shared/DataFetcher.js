@@ -1,13 +1,15 @@
 import axios from "axios"
 import Config from "../assets/config"
+import Utils from "./Utils"
 
+// Share data fetch functions
 export default {
 	async categorizedItems (categoryType, categoryId) {
 		// The fuction to process returned data from the Wordpress API
 		const processItems = function (items) {
 			return items.map(function (oneItem) {
 				// Strip html tags to get pure text for the content preview
-				const previewContent = oneItem.content.rendered.replace(/<\/?[^>]+(>|$)/g, "")
+				const previewContent = Utils.stripHtmlTags(oneItem.content.rendered)
 
 				return {
 					slug: oneItem.slug,
@@ -61,16 +63,19 @@ export default {
 		const pageAPI = Config.wpDomain + Config.apiBase + "pages?per_page=100"
 
 		const response = await axios.get(`${pageAPI}`)
-		const results = []
 
-		response.data.map(function (onePage) {
-			const structuredItem = {
+		return response.data.map(function (onePage) {
+			// Strip html tags to get pure text for the content preview
+			const previewContent = Utils.stripHtmlTags(onePage.content.rendered)
+
+			return {
 				slug: onePage.slug,
 				title: onePage.title.rendered,
-				content: onePage.content.rendered
+				content: onePage.content.rendered,
+				href: "/" + onePage.slug + "/",
+				isExternalHref: false,
+				previewContent
 			}
-			results.push(structuredItem)
 		})
-		return results
 	}
 }
