@@ -2,17 +2,14 @@
 	<article>
 		<PageArticle :title="title" :content="content" class="article-homepage" />
 		<div class="homepage-cards">
-			<a href="/views/page/1">
-				<h3>Read current views <br> in inclusive <br> data science</h3>
-				<BlueTile />
+			<a class="blue card" href="/views/page/1">
+				<h3>Read current views in inclusive data science</h3>
 			</a>
-			<a href="/tools/">
-				<h3 class="green-title">Find inclusive<br> data tools</h3>
-				<GreenTile />
+			<a class="green card" href="/tools/">
+				<h3 class="green-title">Find inclusive data tools</h3>
 			</a>
-			<a href="/inclusion-challenges/">
-				<h3>Participate in our <br> inclusion challenge <br> workshops</h3>
-				<YellowTile />
+			<a class="yellow card" href="/inclusion-challenges/">
+				<h3>Participate in our inclusion challenge workshops</h3>
 			</a>
 		</div>
 	</article>
@@ -22,15 +19,9 @@
 import axios from "axios"
 import PageArticle from "~/components/PageArticle"
 import Config from "~/assets/config"
-import BlueTile from "~/assets/images/blue_tile.svg?inline"
-import GreenTile from "~/assets/images/green_tile.svg?inline"
-import YellowTile from "~/assets/images/yellow_tile.svg?inline"
 export default {
 	components: {
-		PageArticle,
-		BlueTile,
-		GreenTile,
-		YellowTile
+		PageArticle
 	},
 	data () {
 		return {
