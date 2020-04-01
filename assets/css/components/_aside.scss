@@ -1,0 +1,43 @@
+aside {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  aside {
+    display: inherit;
+    float: left;
+    padding-top: rem(58);
+
+    ul {
+      border-left: 1px solid #465d8b;
+      list-style-type: none;
+      margin-left: rem(45);
+      padding: 0 rem(0);
+
+      li {
+        line-height: rem(34);
+        margin: 0 0 rem(23) 0;
+        padding-left: rem(30);
+
+        &:active {
+          border-left: rem(5) solid #465d8b;
+          font-weight: $font-weight-bold;
+          left: rem(-3);
+          margin: 0 0 rem(23) 0;
+          padding-left: rem(30);
+          position: relative;
+        }
+
+        a {
+          color: $navy-light;
+          font-size: rem(24);
+          font-weight: $font-weight-normal;
+
+          &:active {
+            font-weight: $font-weight-bold;
+          }
+        }
+      }
+    }
+  }
+}
