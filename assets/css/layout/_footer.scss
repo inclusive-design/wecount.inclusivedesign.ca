@@ -63,13 +63,15 @@ footer {
 
         svg {
           padding: rem(32) rem(16) rem(16) 0;
-          width: rem(176);
+          width: rem(240);
         }
       }
 
-      .logo-ocadu {
+      .logo-ocadu-wrapper {
         text-align: center;
+      }
 
+      .logo-ocadu {
         a svg {
           padding: rem(16);
           width: rem(128);
@@ -195,9 +197,14 @@ footer {
         grid-column: 1/2;
         grid-row: 2/3;
 
+        a {
+          svg {
+            width: rem(176);
+          }
+        }
+
         .logo-ocadu-wrapper {
           display: inline-flex;
-          padding-top: rem(16);
 
           a {
             display: inline-block;
