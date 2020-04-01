@@ -35,6 +35,17 @@ footer {
       font-weight: bold;
     }
 
+    .funders {
+      a {
+        color: $white;
+      }
+
+      svg {
+        padding: rem(16) rem(16) rem(16) 0;
+        width: rem(144);
+      }
+    }
+
     .contact-info {
       width: 100%;
 
@@ -43,18 +54,18 @@ footer {
         font-weight: $font-weight-normal;
 
         svg {
-          width: rem(160);
-        }
-
-        &:hover,
-        &:focus {
-          color: $navy-light;
+          padding: rem(32) rem(16) rem(16) 0;
+          width: rem(176);
         }
       }
 
       .logo-ocadu {
-        padding-top: rem(32);
         text-align: center;
+
+        a svg {
+          padding: rem(16);
+          width: rem(128);
+        }
       }
     }
 
@@ -63,6 +74,22 @@ footer {
     .nav-our-data,
     .nav-inclusion-challenges {
       display: none;
+    }
+
+    .nav-home-about,
+    .nav-tools,
+    .nav-our-data,
+    .nav-inclusion-challenges,
+    .contact-info,
+    .funders {
+      a:hover,
+      a:focus {
+        color: $navy-light;
+
+        svg: {
+          color: $navy-light;
+        }
+      }
     }
 
     .social-media {
