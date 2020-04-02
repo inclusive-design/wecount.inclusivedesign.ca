@@ -31,6 +31,7 @@ footer {
     max-width: $max-width-margins;
 
     h2 {
+      color: $white;
       font-size: rem(16);
       font-weight: bold;
     }
@@ -98,10 +99,10 @@ footer {
 
       .social-media-icons {
         display: grid;
-        grid-gap: rem(16);
+        grid-row-gap: rem(16);
         grid-template-columns: repeat(2, auto);
         margin: auto;
-        width: rem(96);
+        width: rem(144);
 
         div {
           justify-self: center;
@@ -109,9 +110,9 @@ footer {
 
         a {
           svg {
-            height: rem(40);
+            height: rem(60);
             stroke-width: 3px;
-            width: rem(40);
+            width: rem(60);
           }
 
           &:hover,
@@ -221,8 +222,15 @@ footer {
         align-self: auto;
 
         .social-media-icons {
+          grid-gap: rem(16);
           grid-template-columns: repeat(4, auto);
           margin: inherit;
+          width: rem(96);
+
+          a svg {
+            height: rem(50);
+            width: rem(50);
+          }
         }
       }
     }
