@@ -34,6 +34,11 @@
       font-weight: $font-weight-normal;
       margin: rem(8);
       padding: rem(5) rem(16);
+
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
