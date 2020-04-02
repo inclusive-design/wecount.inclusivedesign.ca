@@ -1,8 +1,10 @@
 <template>
 	<div id="defaultContainer">
 		<Header />
-		<Aside />
-		<nuxt />
+		<main>
+			<Aside />
+			<nuxt />
+		</main>
 		<Footer />
 	</div>
 </template>
