@@ -6,11 +6,13 @@
 }
 
 h1 {
+  color: $grey-dark;
   font-size: rem(48);
   font-weight: $font-weight-semibold;
 }
 
 h2 {
+  color: $grey-dark;
   font-size: rem(48);
   font-weight: $font-weight-medium;
 }
@@ -46,7 +48,7 @@ button {
   border: 0;
   border-radius: rem(28);
   box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
-  color: $grey-dark;
+  color: $green-dark;
   font-size: rem(24);
   font-weight: 400;
   height: rem(54);
@@ -84,7 +86,7 @@ button:focus {
 
 button:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 $grey-dark;
+  text-shadow: 0 0 0 $green-dark;
 }
 
 @media screen and (min-width: 1024px) {
