@@ -1,5 +1,6 @@
 .post-article {
   .author {
+    color: $grey-light;
     font-style: italic;
   }
 
@@ -8,23 +9,31 @@
   }
 
   .api-content {
-    margin-bottom: rem(80);
+    border-bottom: 1px solid $black;
+    margin-bottom: rem(24);
+    padding-bottom: rem(160);
+  }
+
+  .tags-info {
+    p {
+      font-size: rem(24);
+      font-weight: $font-weight-bold;
+      margin: rem(8);
+    }
   }
 
   .tags {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: rem(80);
 
-    div {
-      padding: 0 rem(16);
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .post-article {
-    .tags {
-      display: inline-flex;
+    a {
+      background-color: $gold-light;
+      border-radius: rem(20);
+      color: $blue-alt;
+      font-weight: $font-weight-normal;
+      margin: rem(8);
+      padding: rem(5) rem(16);
     }
   }
 }
