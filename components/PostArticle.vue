@@ -9,7 +9,7 @@
 		<div v-html="postToRender.content" class="api-content" />
 
 		<section class="tags-info">
-			<p>Active Tags</p>
+			<h3>Active Tags</h3>
 			<div class="tags">
 				<nuxt-link v-for="(t, index) in postToRender.tags" :key="index" :to="{ path: '/tag', query: { s: t }}">
 					{{ t }}

@@ -5,19 +5,18 @@
   }
 
   .date {
-    padding-bottom: rem(8);
+    margin-bottom: rem(32);
   }
 
   .api-content {
-    border-bottom: 1px solid $black;
+    border-bottom: 2px solid $green-dark;
     margin-bottom: rem(24);
     padding-bottom: rem(160);
   }
 
   .tags-info {
-    p {
-      font-size: rem(24);
-      font-weight: $font-weight-bold;
+    h3 {
+      color: $green-dark;
       margin: rem(8);
     }
   }
