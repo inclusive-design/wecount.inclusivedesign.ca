@@ -11,8 +11,8 @@
 					1
 				</nuxt-link>
 			</li>
-			<li v-if="before - 1 > 1">
-				<span class="pagination-ellipsis pagination-link">&hellip;</span>
+			<li v-if="before - 1 > 1" class="pagination-ellipsis">
+				<span>&hellip;</span>
 			</li>
 			<!-- when the current page is 2, this link points to page 1, which needs to show on the mobile style -->
 			<li v-if="currentPageNum > 1" v-bind:class="{'hide-on-mobile': hideProceedingPageButton}">
@@ -31,8 +31,8 @@
 					{{ after }}
 				</nuxt-link>
 			</li>
-			<li v-if="postsLen - after > 1">
-				<span class="pagination-ellipsis pagination-link">&hellip;</span>
+			<li v-if="postsLen - after > 1" class="pagination-ellipsis">
+				<span>&hellip;</span>
 			</li>
 			<li v-if="currentPageNum < postsLen - 1">
 				<nuxt-link :to="lastLink" :aria-label="`Goto page ${postsLen}`" class="pagination-link">
