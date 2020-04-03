@@ -1,8 +1,13 @@
 // Layout styles.
 @import "header";
 
-article {
+main {
+  margin: 0 auto;
   max-width: 75ch;
+  width: 100%;
+}
+
+article {
   padding: rem(0) rem(27);
 
   h2:not(.h3) {
@@ -50,12 +55,15 @@ figcaption:hover {
 }
 
 @media screen and (min-width: rem(1024)) {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
+  }
+
   main {
-    display: flex;
+    max-width: 130ch;
 
     article {
-      margin-right: auto;
-      max-width: 130ch;
       padding: rem(0) rem(60);
 
       .wp-block-image ~ h2 {

@@ -1,10 +1,12 @@
 <template>
 	<div id="defaultContainer">
 		<Header />
-		<main>
+		<div class="content-wrapper">
 			<Aside />
-			<nuxt />
-		</main>
+			<main>
+				<nuxt />
+			</main>
+		</div>
 		<Footer />
 	</div>
 </template>
