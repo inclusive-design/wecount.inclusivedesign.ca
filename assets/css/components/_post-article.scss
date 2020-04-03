@@ -28,15 +28,16 @@
 
     a {
       background-color: $gold-light;
+      border: 1px solid transparent;
       border-radius: rem(20);
       color: $blue-alt;
       font-weight: $font-weight-bold;
-      margin: rem(8);
+      margin: rem(8) rem(16) rem(8) 0;
       padding: rem(5) rem(16);
 
       &:focus,
       &:hover {
-        text-decoration: underline;
+        border: 1px solid $blue-alt;
       }
     }
   }
