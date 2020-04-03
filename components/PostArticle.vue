@@ -23,7 +23,6 @@
 
 <script>
 import Pagination from "~/components/Pagination"
-import WeCountLogo from "~/assets/images/logo_wecount.svg?inline"
 export default {
 	components: {
 		Pagination
