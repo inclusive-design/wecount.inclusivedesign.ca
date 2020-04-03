@@ -1,14 +1,22 @@
 <template>
-	<article>
-		<h1 v-html="title" class="title" />
-		<img v-if="picture" :src="picture" class="news-item-img">
-		<WeCountLogo v-else class="news-item-img" />
-		<div v-html="content" class="api-content" />
-		<div v-for="(t, index) in tags" :key="index">
-			<nuxt-link :to="{ path: '/tag', query: { s: t }}">
-				{{ t }}
-			</nuxt-link>
-		</div>
+	<article class="post-article">
+		<h1 v-html="postToRender.title" class="title" />
+
+		<div v-html="postToRender.author" class="author" />
+
+		<div v-html="postToRender.date" class="date" />
+
+		<div v-html="postToRender.content" class="api-content" />
+
+		<section class="tags-info">
+			<h3>Active Tags</h3>
+			<div class="tags">
+				<nuxt-link v-for="(t, index) in postToRender.tags" :key="index" :to="{ path: '/tag', query: { s: t }}">
+					{{ t }}
+				</nuxt-link>
+			</div>
+		</section>
+
 		<Pagination v-if="pageNums > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
 	</article>
 </template>
@@ -18,44 +26,27 @@ import Pagination from "~/components/Pagination"
 import WeCountLogo from "~/assets/images/logo_wecount.svg?inline"
 export default {
 	components: {
-		Pagination,
-		WeCountLogo
+		Pagination
 	},
 	props: {
-		posts: {
+		allPosts: {
 			type: Array,
 			default: () => []
 		},
-		title: {
-			type: String,
-			default: "Untitled"
-		},
-		content: {
-			type: String,
-			default: "No content found"
-		},
-		picture: {
-			type: String,
-			default: null
-		},
-		altTag: {
-			type: String,
-			default: "post thumbnail"
-		},
-		tags: {
-			type: Array,
+		postToRender: {
+			type: Object,
 			default: () => []
 		}
 	},
 	computed: {
 		pageNums () {
-			return this.posts.length
+			return this.allPosts.length
 		},
 		pageLinks () {
-			return Array(this.pageNums).fill().map((x, i) => this.posts[i].slug)
+			return Array(this.pageNums).fill().map((x, i) => this.allPosts[i].slug)
 		},
 		currentPageNum () {
-			return this.posts.findIndex(post => post.slug === this.$route.params.slug) + 1
+			return this.allPosts.findIndex(post => post.slug === this.$route.params.slug) + 1
 		}
 	}
 }
