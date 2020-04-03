@@ -5,7 +5,7 @@
   }
 
   .date {
-    margin-bottom: rem(32);
+    margin-bottom: rem(64);
   }
 
   .api-content {
@@ -17,7 +17,7 @@
   .tags-info {
     h3 {
       color: $green-dark;
-      margin: rem(8);
+      margin: rem(8) 0;
     }
   }
 
@@ -30,7 +30,7 @@
       background-color: $gold-light;
       border-radius: rem(20);
       color: $blue-alt;
-      font-weight: $font-weight-normal;
+      font-weight: $font-weight-bold;
       margin: rem(8);
       padding: rem(5) rem(16);
 
