@@ -34,11 +34,28 @@
     line-height: rem(40);
     margin: rem(10) rem(2);
     width: rem(45);
-    &:active { outline: none; }
+    transform: perspective(rem(5)) translateZ(0);
+  }
 
-    &:hover {
-      background-color: $green-pale;
-    }
+  .pagination-link::before {
+    border-radius: 100%;
+    box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
+    content: '';
+    height: 100%;
+    left: 0;
+    margin: rem(1) rem(1);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .pagination-link:hover::before,
+  .pagination-link:focus::before,
+  .pagination-link:active::before {
+    opacity: 1;
+    left: rem(2);
+    top: rem(2);
   }
 
   .pagination-ellipsis {
@@ -92,8 +109,12 @@
       display: block;
     }
 
+    li:not(:first-child):not(:last-child) {
+      padding-top: rem(4);
+    }
+
     .pagination-list {
-      width: rem(800);
+      width: rem(640);
     }
 
     .pagination-link {
