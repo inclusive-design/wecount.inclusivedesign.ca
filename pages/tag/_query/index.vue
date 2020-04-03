@@ -1,5 +1,5 @@
 <template>
-	<article>
+	<article class="container">
 		<h1 class="title">
 			Tag: “{{ searchQuery }}”
 		</h1>

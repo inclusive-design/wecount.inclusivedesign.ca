@@ -1,5 +1,5 @@
 <template>
-	<PostArticle :posts="views" :title="title" :content="content" :picture="picture" :tags="tags" />
+	<PostArticle :allPosts="views" :postToRender="viewToRender" />
 </template>
 
 <script>
@@ -28,17 +28,8 @@ export default {
 		views () {
 			return this.$store.state.views
 		},
-		title () {
-			return this.views.find(post => post.slug === this.$route.params.slug).title
-		},
-		picture () {
-			return this.views.find(post => post.slug === this.$route.params.slug).picture
-		},
-		content () {
-			return this.views.find(post => post.slug === this.$route.params.slug).content
-		},
-		tags () {
-			return this.views.find(post => post.slug === this.$route.params.slug).tags
+		viewToRender () {
+			return this.views.find(view => view.slug === this.$route.params.slug)
 		}
 	}
 }
