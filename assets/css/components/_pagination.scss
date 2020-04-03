@@ -33,8 +33,8 @@
     height: rem(45);
     line-height: rem(40);
     margin: rem(10) rem(2);
-    width: rem(45);
     transform: perspective(rem(5)) translateZ(0);
+    width: rem(45);
   }
 
   .pagination-link::before {
@@ -53,8 +53,8 @@
   .pagination-link:hover::before,
   .pagination-link:focus::before,
   .pagination-link:active::before {
-    opacity: 1;
     left: rem(2);
+    opacity: 1;
     top: rem(2);
   }
 
