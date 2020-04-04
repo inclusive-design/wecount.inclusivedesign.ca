@@ -4,43 +4,45 @@
 			<nav aria-label="Footer" class="footer-nav">
 				<ul>
 					<li>
-						<nuxt-link to="/" aria-label="Go to Home">
+						<!-- Adding "exact" to make sure "nuxt-link-active" class only applies to the current selected link -->
+						<!-- See https://github.com/nuxt/nuxt.js/issues/2214 -->
+						<nuxt-link to="/" exact>
 							Home
 						</nuxt-link>
 					</li>
 
 					<li>
-						<nuxt-link to="/about/" aria-label="Go to About">
+						<nuxt-link to="/about/" exact>
 							About
 						</nuxt-link>
 					</li>
 
 					<li>
-						<nuxt-link to="/tools/" aria-label="Go to Tools">
+						<nuxt-link to="/tools/" exact>
 							Tools
 						</nuxt-link>
 					</li>
 
 					<li>
-						<nuxt-link to="/inclusion-challenges/" aria-label="Go to Inclusion Challenges">
+						<nuxt-link to="/inclusion-challenges/" exact>
 							Inclusion Challenges
 						</nuxt-link>
 					</li>
 
 					<li>
-						<nuxt-link to="/our-data/" aria-label="Go to Our Data">
+						<nuxt-link to="/our-data/" exact>
 							Our Data
 						</nuxt-link>
 					</li>
 
 					<li>
-						<nuxt-link to="/news/page/1" aria-label="Go to News">
+						<nuxt-link to="/news/" exact>
 							News
 						</nuxt-link>
 					</li>
 
 					<li>
-						<nuxt-link to="/views/page/1" aria-label="Go to Views">
+						<nuxt-link to="/views/" exact>
 							Views
 						</nuxt-link>
 					</li>

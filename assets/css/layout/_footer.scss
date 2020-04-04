@@ -151,6 +151,7 @@ footer {
         a {
           color: $green-light;
           font-weight: $font-weight-semibold;
+          padding: rem(8) rem(10);
         }
 
         ul {
@@ -159,6 +160,7 @@ footer {
 
           li {
             margin-bottom: rem(36);
+            text-decoration: underline;
           }
 
           li:nth-child(1),

@@ -31,8 +31,6 @@ export default {
 			// reason for using function can be found here: https://github.com/vuejs/vue/issues/1032 and here: https://vuejs.org/v2/guide/components-props.html#Prop-Validation
 			default: () => []
 		}
-	},
-	computed: {
 	}
 }
 </script>
