@@ -1,8 +1,6 @@
 // Header styles
 
 header {
-  margin: auto;
-
   .brand {
     margin: auto;
     max-width: $max-width-margins;
@@ -97,7 +95,7 @@ header {
 
         input[type="search"] {
           background-color: white;
-          background-image: url("../../static/img/search.svg");
+          background-image: url("../images/search.svg");
           background-position: center;
           background-repeat: no-repeat;
           border: 0;
@@ -145,7 +143,7 @@ header {
           // When the user is in a section (other than the Home page), underline this particular item
           // in the top level navigation.
           a.nuxt-link-active {
-            border-bottom: rem(2) solid $orange-focus;
+            border-bottom: rem(2) solid $white;
           }
         }
 
