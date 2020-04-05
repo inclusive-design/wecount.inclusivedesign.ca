@@ -95,6 +95,8 @@ footer {
 
     .social-media {
       align-self: center;
+      // TODO: Temporarily hide the "social media" section before social media accounts for WeCount are set up
+      display: none;
       padding-bottom: rem(32);
 
       .social-media-icons {
@@ -190,6 +192,8 @@ footer {
 
       .funders {
         align-self: end;
+        grid-column: 2/3;
+        grid-row: 2/3;
         line-height: rem(19);
 
         a {
