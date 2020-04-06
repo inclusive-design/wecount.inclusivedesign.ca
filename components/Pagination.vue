@@ -16,7 +16,7 @@
 			</li>
 			<!-- when the current page is 2, this link points to page 1, which needs to show on the mobile style -->
 			<li v-if="currentPageNum > 1" v-bind:class="{'hide-on-mobile': hideProceedingPageButton}">
-				<nuxt-link :to="beforeLink" :aria-label="`Goto page ${before}`" class="pagination-link">
+				<nuxt-link :to="beforeLink" class="pagination-link">
 					{{ before }}
 				</nuxt-link>
 			</li>
@@ -27,7 +27,7 @@
 			</li>
 			<!-- when the current page is the second to the last page, this link points to the last page, which needs to show on the mobile style -->
 			<li v-if="currentPageNum < postsLen" v-bind:class="{'hide-on-mobile': hideFollowingPageButton}">
-				<nuxt-link :to="afterLink" :aria-label="`Goto page ${after}`" class="pagination-link">
+				<nuxt-link :to="afterLink" class="pagination-link">
 					{{ after }}
 				</nuxt-link>
 			</li>
