@@ -1,23 +1,6 @@
 // Header styles
 
 header {
-  .brand {
-    margin: auto;
-    max-width: $max-width-margins;
-
-    a {
-      color: $black;
-      font-size: rem(48);
-      font-weight: $font-weight-normal;
-      padding-right: rem(16);
-    }
-
-    svg {
-      margin: rem(-8) rem(16) 0 rem(16);
-      width: rem(48);
-    }
-  }
-
   .site-nav-wrapper {
     background-color: $navy-light;
     width: 100%;
