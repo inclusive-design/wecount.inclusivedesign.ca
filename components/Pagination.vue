@@ -3,7 +3,7 @@
 		<ul class="pagination-list">
 			<li>
 				<nuxt-link v-if="currentPageNum > 1" :to="beforeLink" class="pagination-previous">
-					<Previous class="prev-next" />
+					<Previous class="previous" />
 				</nuxt-link>
 			</li>
 			<li v-if="currentPageNum > 2">
@@ -11,10 +11,11 @@
 					1
 				</nuxt-link>
 			</li>
-			<li v-if="before - 1 > 1">
-				<span class="pagination-ellipsis pagination-link">&hellip;</span>
+			<li v-if="before - 1 > 1" class="pagination-ellipsis">
+				<span>&hellip;</span>
 			</li>
-			<li v-if="currentPageNum > 1">
+			<!-- when the current page is 2, this link points to page 1, which needs to show on the mobile style -->
+			<li v-if="currentPageNum > 1" v-bind:class="{'hide-on-mobile': hideProceedingPageButton}">
 				<nuxt-link :to="beforeLink" class="pagination-link">
 					{{ before }}
 				</nuxt-link>
@@ -24,13 +25,14 @@
 					{{ currentPageNum }}
 				</nuxt-link>
 			</li>
-			<li v-if="currentPageNum < postsLen">
+			<!-- when the current page is the second to the last page, this link points to the last page, which needs to show on the mobile style -->
+			<li v-if="currentPageNum < postsLen" v-bind:class="{'hide-on-mobile': hideFollowingPageButton}">
 				<nuxt-link :to="afterLink" class="pagination-link">
 					{{ after }}
 				</nuxt-link>
 			</li>
-			<li v-if="postsLen - after > 1">
-				<span class="pagination-ellipsis pagination-link">&hellip;</span>
+			<li v-if="postsLen - after > 1" class="pagination-ellipsis">
+				<span>&hellip;</span>
 			</li>
 			<li v-if="currentPageNum < postsLen - 1">
 				<nuxt-link :to="lastLink" class="pagination-link">
@@ -39,7 +41,7 @@
 			</li>
 			<li>
 				<nuxt-link v-if="currentPageNum < postsLen" :to="afterLink" class="pagination-next">
-					<Next class="prev-next" />
+					<Next class="next" />
 				</nuxt-link>
 			</li>
 		</ul>
@@ -128,6 +130,22 @@ export default {
 	 */
 		lastLink () {
 			return this.pageLinks[this.postsLen - 1]
+		},
+		/**
+	 * Whether the current page is the page 2 or 3, all page buttons before the current page number need to show
+	 *
+	 * @method
+	 */
+		hideProceedingPageButton () {
+			return this.currentPageNum !== 2 && this.currentPageNum !== 3
+		},
+		/**
+	 * Whether the current page is the second or the third to the last page, in which case all buttons after the
+	 * current page number should show.
+	 * @method
+	 */
+		hideFollowingPageButton () {
+			return this.currentPageNum !== this.postsLen - 1 && this.currentPageNum !== this.postsLen - 2
 		}
 	}
 }
