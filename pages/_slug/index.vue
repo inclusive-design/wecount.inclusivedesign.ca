@@ -20,7 +20,7 @@ export default {
 		return axios.get(`${Config.wpDomain}${Config.apiBase}pages`).then((response) => {
 			const res = response.data.filter(x => x.slug === context.params.slug)[0]
 			return {
-				title: res.title.rendered.toUpperCase(),
+				title: res.title.rendered,
 				content: res.content.rendered
 			}
 		})
