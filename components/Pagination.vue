@@ -7,7 +7,7 @@
 				</nuxt-link>
 			</li>
 			<li v-if="currentPageNum > 2">
-				<nuxt-link :to="firstLink" class="pagination-link" aria-label="Goto page 1">
+				<nuxt-link :to="firstLink" class="pagination-link">
 					1
 				</nuxt-link>
 			</li>
@@ -15,17 +15,17 @@
 				<span class="pagination-ellipsis pagination-link">&hellip;</span>
 			</li>
 			<li v-if="currentPageNum > 1">
-				<nuxt-link :to="beforeLink" :aria-label="`Goto page ${before}`" class="pagination-link">
+				<nuxt-link :to="beforeLink" class="pagination-link">
 					{{ before }}
 				</nuxt-link>
 			</li>
 			<li>
-				<nuxt-link :to="currentLink" :aria-label="`Goto page ${currentPageNum}`" class="pagination-link is-current" aria-current="page">
+				<nuxt-link :to="currentLink" class="pagination-link is-current" aria-current="page">
 					{{ currentPageNum }}
 				</nuxt-link>
 			</li>
 			<li v-if="currentPageNum < postsLen">
-				<nuxt-link :to="afterLink" :aria-label="`Goto page ${after}`" class="pagination-link">
+				<nuxt-link :to="afterLink" class="pagination-link">
 					{{ after }}
 				</nuxt-link>
 			</li>
@@ -33,7 +33,7 @@
 				<span class="pagination-ellipsis pagination-link">&hellip;</span>
 			</li>
 			<li v-if="currentPageNum < postsLen - 1">
-				<nuxt-link :to="lastLink" :aria-label="`Goto page ${postsLen}`" class="pagination-link">
+				<nuxt-link :to="lastLink" class="pagination-link">
 					{{ postsLen }}
 				</nuxt-link>
 			</li>

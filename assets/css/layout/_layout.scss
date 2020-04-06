@@ -1,5 +1,17 @@
 // Layout styles.
 @import "header";
+@import "footer";
+
+// Sticky footer. See https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+#defaultContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+}
 
 main {
   margin: 0 auto;
@@ -48,6 +60,20 @@ figcaption:hover {
   border: rem(1) solid #555;
   padding: rem(5) 0;
   text-align: center;
+}
+
+// Hide an element visually without hiding it from screen readers
+// Reference: https://tailwindcss.com/docs/screen-readers/#app
+.screen-reader-only {
+  border-width: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .size-large {
