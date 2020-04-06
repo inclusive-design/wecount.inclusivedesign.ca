@@ -9,7 +9,7 @@ aside {
 
     nav {
       ul {
-        border-left: 1px solid #465d8b;
+        border-left: 1px solid $green-dark;
         list-style-type: none;
         margin-left: rem(45);
         padding: 0 rem(0);
@@ -23,7 +23,7 @@ aside {
           word-wrap: break-word;
 
           &:active {
-            border-left: rem(5) solid #465d8b;
+            border-left: rem(5) solid $green-dark;
             font-weight: $font-weight-bold;
             left: rem(-3);
             margin: 0 0 rem(23) 0;
