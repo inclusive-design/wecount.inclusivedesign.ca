@@ -48,6 +48,16 @@ article {
   .wp-block-image + * {
     margin-top: rem(50);
   }
+
+  .api-content {
+    display: block;
+
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+  }
 }
 
 /*
@@ -97,6 +107,12 @@ figcaption:hover {
   .content-wrapper {
     display: grid;
     grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  article {
+    background-color: $white;
+    padding: 0 rem(60);
   }
 
   main {
