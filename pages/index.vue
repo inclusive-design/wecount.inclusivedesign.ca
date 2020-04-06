@@ -5,7 +5,7 @@
 			<a class="blue card" href="/views/">
 				<h3>Read current views in inclusive data science</h3>
 			</a>
-			<a class="green card" href="/tools/">
+			<a class="green card" href="/tools/" style="display: none;">
 				<h3 class="green-title">Find inclusive data tools</h3>
 			</a>
 			<a class="yellow card" href="/inclusion-challenges/">
