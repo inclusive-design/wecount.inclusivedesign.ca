@@ -1,15 +1,43 @@
-.logo {
-  width: calc(200 / 16 * 1rem);
+.brand {
+  height: rem(72);
+  margin: auto;
+  max-width: $max-width-margins;
+
+  a {
+    align-items: center;
+    color: $navy-dark;
+    display: flex;
+    height: inherit;
+    padding-right: rem(16);
+  }
+
+  .logo {
+    height: rem(52);
+    margin: 0 rem(16);
+  }
+
+  .logotype {
+    width: rem(200);
+  }
 }
 
-[class^="fl-theme"] .logo path,
-[class^="fl-theme"] .logo circle,
-[class^="gpii-ext-theme"] .logo path,
-[class^="gpii-ext-theme"] .logo circle {
-  fill: none;
-  stroke: var(--logo-stroke, currentColor);
-  stroke-linecap: round;
-  stroke-width: 0.1875rem;
+@media screen and (min-width: rem(1024)) {
+  .brand {
+    a {
+      display: inline-flex;
+    }
+  }
+}
+
+[class^="fl-theme"],
+[class^="gpii-ext-theme"] {
+  .logo circle,
+  .logo path {
+    fill: none;
+    stroke: var(--logo-stroke, currentColor);
+    stroke-linecap: round;
+    stroke-width: 0.1875rem;
+  }
 }
 
 .fl-theme-bbr,
