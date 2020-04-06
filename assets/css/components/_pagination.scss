@@ -94,13 +94,23 @@
     text-align: right;
   }
 
+  .pagination-next,
+  .pagination-previous {
+    color: $green-dark;
+  }
+
   .pagination-next:hover,
-  .pagination-previous:hover {
+  .pagination-previous:hover,
+  .pagination-next:focus,
+  .pagination-previous:focus {
     background-color: transparent;
 
     svg {
       fill: $green-dark;
-      stroke-width: "1";
+
+      path {
+        stroke-width: 0.25;
+      }
     }
   }
 }
