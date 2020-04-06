@@ -33,7 +33,7 @@
     font-weight: 400;
     height: rem(45);
     line-height: rem(45);
-    margin: rem(10) rem(10);
+    margin: rem(10) rem(5);
     transform: perspective(rem(5)) translateZ(0);
     width: rem(45);
   }
@@ -58,15 +58,15 @@
   }
 
   .pagination-ellipsis {
-    margin: 0 rem(6);
-    position: relative;
+    margin: rem(9) rem(0);
+    // position: relative;
 
     span {
-      bottom: 0;
+      // bottom: 0;
       color: $blue-alt;
       font-size: rem(24);
-      left: rem(-8);
-      position: absolute;
+      // left: rem(-8);
+      // position: absolute;
     }
   }
 
@@ -106,6 +106,10 @@
     .previous,
     .next {
       margin: 0 rem(20);
+    }
+
+    .pagination-ellipsis {
+      margin: rem(4) rem(0);
     }
 
     li.hide-on-mobile {
