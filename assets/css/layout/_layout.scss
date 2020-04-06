@@ -2,6 +2,14 @@
 @import "header";
 @import "footer";
 
+body {
+  background-attachment: fixed;
+  background-image: url("../images/background.svg");
+  background-position: rem(650) rem(200);
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
 // Sticky footer. See https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 #defaultContainer {
   display: flex;
@@ -39,6 +47,16 @@ article {
 
   .wp-block-image + * {
     margin-top: rem(50);
+  }
+
+  .api-content {
+    display: block;
+
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
   }
 }
 
@@ -81,16 +99,27 @@ figcaption:hover {
 }
 
 @media screen and (min-width: rem(1024)) {
+  body {
+    background-position: rem(750) rem(1);
+  }
+
   .content-wrapper {
     display: grid;
     grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  article {
+    background-color: $white;
+    padding: 0 rem(60);
   }
 
   main {
     max-width: 130ch;
 
     article {
-      padding: rem(0) rem(60);
+      background-color: $white;
+      padding: rem(1) rem(60);
 
       .wp-block-image ~ h2 {
         margin-top: $img-size-medium;
