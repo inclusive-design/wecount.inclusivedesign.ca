@@ -8,10 +8,11 @@
   .card {
     background-color: white;
     background-repeat: no-repeat;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.25);
 
-    &:hover {
-      box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
+    &:hover,
+    &:focus {
+      box-shadow: rem(10) rem(10) rem(10) rgba(0, 0, 0, 0.25);
     }
   }
 
