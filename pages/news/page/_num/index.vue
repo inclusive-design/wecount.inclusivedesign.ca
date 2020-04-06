@@ -19,7 +19,7 @@ export default {
 	},
 	head () {
 		return {
-			titleTemplate: this.title + " | %s"
+			titleTemplate: this.title + " (Page " + this.currentPageNum + ") | %s"
 		}
 	},
 	fetch ({ store }) {

@@ -4,7 +4,7 @@
 			Tag: “{{ searchQuery }}”
 		</h1>
 		<NewsGrid :postList="pagePostList[$route.query.page ? parseInt($route.query.page) - 1 : 0]" />
-		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="$route.query.page ? parseInt($route.query.page) : 1" />
+		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
 	</article>
 </template>
 
@@ -26,12 +26,15 @@ export default {
 	},
 	head () {
 		return {
-			titleTemplate: this.searchQuery + " | Tag | %s"
+			titleTemplate: this.searchQuery + " (Page " + this.currentPageNum + ") | Tag | %s"
 		}
 	},
 	computed: {
 		searchQuery () {
 			return decodeURIComponent(this.$route.query.s)
+		},
+		currentPageNum () {
+			return this.$route.query.page ? parseInt(this.$route.query.page) : 1
 		},
 		foundNews () {
 			return this.$store.state.news.filter((oneNews) => {
