@@ -24,6 +24,11 @@ export default {
 			numOfRecsPerPage: Config.numOfRecsPerPage
 		}
 	},
+	head () {
+		return {
+			titleTemplate: this.searchQuery + " | Tag | %s"
+		}
+	},
 	computed: {
 		searchQuery () {
 			return decodeURIComponent(this.$route.query.s)

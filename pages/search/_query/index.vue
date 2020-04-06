@@ -25,6 +25,11 @@ export default {
 			numOfRecsPerPage: Config.numOfRecsPerPage
 		}
 	},
+	head () {
+		return {
+			titleTemplate: "Search | %s"
+		}
+	},
 	computed: {
 		searchQuery () {
 			return decodeURIComponent(this.$route.query.s)

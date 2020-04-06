@@ -17,6 +17,11 @@ export default {
 			currentPageNum: 1
 		}
 	},
+	head () {
+		return {
+			titleTemplate: this.title + " | %s"
+		}
+	},
 	fetch ({ store }) {
 		return store.dispatch("fetchNews")
 	}
