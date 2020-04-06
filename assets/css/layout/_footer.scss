@@ -1,0 +1,248 @@
+// Footer styles.
+
+footer {
+  background: $navy-light;
+  color: $white;
+  margin-top: rem(30);
+  padding: rem(16) rem(32);
+
+  .netlify-notice {
+    padding-top: rem(32);
+    text-align: center;
+
+    a {
+      color: $white;
+      font-weight: $font-weight-normal;
+
+      &:hover,
+      &:focus {
+        color: $navy-light;
+      }
+    }
+  }
+
+  .footer-content {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    font-size: rem(16);
+    line-height: rem(29);
+    margin: auto;
+    max-width: $max-width-margins;
+
+    h2 {
+      color: $white;
+      font-size: rem(16);
+      font-weight: bold;
+    }
+
+    .funders {
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: $white;
+      }
+
+      svg {
+        padding: rem(13) rem(13) rem(13) 0;
+        width: rem(144);
+      }
+    }
+
+    .contact-info {
+      width: 100%;
+
+      address {
+        font-style: normal;
+      }
+
+      a {
+        color: $white;
+        font-weight: $font-weight-normal;
+
+        svg {
+          padding: rem(32) rem(16) rem(16) 0;
+          width: rem(240);
+        }
+      }
+
+      .logo-ocadu-wrapper {
+        text-align: center;
+      }
+
+      .logo-ocadu {
+        a svg {
+          padding: rem(16);
+          width: rem(128);
+        }
+      }
+    }
+
+    .footer-nav {
+      display: none;
+    }
+
+    .footer-nav,
+    .contact-info,
+    .funders {
+      a:hover,
+      a:focus {
+        color: $navy-light;
+      }
+    }
+
+    .social-media {
+      align-self: center;
+      // TODO: Temporarily hide the "social media" section before social media accounts for WeCount are set up
+      display: none;
+      padding-bottom: rem(32);
+
+      .social-media-icons {
+        display: grid;
+        grid-row-gap: rem(16);
+        grid-template-columns: repeat(2, auto);
+        margin: auto;
+        width: rem(144);
+
+        div {
+          justify-self: center;
+        }
+
+        a {
+          svg {
+            height: rem(60);
+            stroke-width: 3px;
+            width: rem(60);
+          }
+
+          &:hover,
+          &:focus {
+            background-color: inherit;
+
+            svg {
+              fill: $navy-light;
+              stroke: $white;
+              stroke-linecap: round;
+
+              path {
+                fill: $navy-light;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    margin-top: rem(0);
+
+    .footer-content {
+      display: grid;
+      grid-row-gap: rem(16);
+      grid-template-columns: 3.8fr 1.2fr;
+      padding: rem(32) rem(48);
+
+      .footer-nav {
+        display: block;
+
+        a {
+          color: $green-light;
+          font-weight: $font-weight-semibold;
+          padding: rem(8) rem(10);
+        }
+
+        ul {
+          display: grid;
+          grid-template-columns: repeat(4, auto);
+
+          li {
+            margin-bottom: rem(36);
+            text-decoration: underline;
+          }
+
+          li:nth-child(1),
+          li:nth-child(2) {
+            grid-column: 1/2;
+          }
+
+          li:nth-child(3) {
+            grid-column: 2/3;
+          }
+
+          li:nth-child(4) {
+            grid-column: 3/4;
+          }
+
+          li:nth-child(5),
+          li:nth-child(6),
+          li:nth-child(7) {
+            grid-column: 4/5;
+          }
+
+          li:nth-last-child(-n+5):not(:last-child) {
+            margin-top: rem(-64);
+          }
+        }
+      }
+
+      .funders {
+        align-self: end;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        line-height: rem(19);
+
+        a {
+          display: inline-block;
+        }
+      }
+
+      .contact-info {
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+        a {
+          svg {
+            width: rem(176);
+          }
+        }
+
+        .logo-ocadu-wrapper {
+          display: inline-flex;
+
+          a {
+            display: inline-block;
+          }
+
+          .logo-ocadu {
+            padding: 0;
+          }
+        }
+      }
+
+      .social-media {
+        align-self: auto;
+
+        .social-media-icons {
+          grid-gap: rem(16);
+          grid-template-columns: repeat(4, auto);
+          margin: inherit;
+          width: rem(96);
+
+          a svg {
+            height: rem(50);
+            width: rem(50);
+          }
+        }
+      }
+    }
+
+    .netlify-notice {
+      padding-top: 0;
+    }
+  }
+}

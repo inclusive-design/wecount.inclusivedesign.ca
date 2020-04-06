@@ -3,11 +3,16 @@
   grid-gap: rem(38);
   grid-template-columns: repeat(1, 1fr);
   padding-bottom: rem(151);
+  padding-top: rem(50);
 
   .card {
     background-color: white;
     background-repeat: no-repeat;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
+    }
   }
 
   .blue {

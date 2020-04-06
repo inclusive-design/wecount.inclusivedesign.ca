@@ -1,6 +1,6 @@
 <template>
 	<article>
-		<PageArticle :title="title" :content="content" class="article-homepage" />
+		<PageArticle :title="title" :content="content" />
 		<div class="homepage-cards">
 			<a class="blue card" href="/views/">
 				<h3>Read current views in inclusive data science</h3>

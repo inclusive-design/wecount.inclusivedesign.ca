@@ -1,5 +1,6 @@
 // Layout styles.
 @import "header";
+@import "footer";
 
 body {
   background-attachment: fixed;
@@ -9,22 +10,131 @@ body {
   background-size: cover;
 }
 
-article:not(.article-homepage) {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 75ch;
-  padding: rem(0) rem(27);
+// Sticky footer. See https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+#defaultContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-@media screen and (min-width: 1024px) {
+.content-wrapper {
+  flex: 1;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 75ch;
+  width: 100%;
+}
+
+article {
+  padding: rem(0) rem(27);
+
+  h2:not(.h3) {
+    border-bottom: rem(5) solid $gold;
+    padding-bottom: rem(12);
+  }
+
+  .wp-block-image {
+    figure {
+      margin-left: 0;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .wp-block-image + * {
+    margin-top: rem(50);
+  }
+}
+
+/*
+ * Default WP Alignment Classes
+ *****************************************************************************/
+figcaption {
+  color: #ddd;
+  display: block;
+  font-size: 75%;
+  font-style: italic;
+  font-weight: 100;
+  padding: 0;
+  text-align: center;
+}
+
+figcaption:hover {
+  background: #444;
+  border: rem(1) solid #555;
+  padding: rem(5) 0;
+  text-align: center;
+}
+
+// Hide an element visually without hiding it from screen readers
+// Reference: https://tailwindcss.com/docs/screen-readers/#app
+.screen-reader-only {
+  border-width: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.size-large {
+  height: $img-size-medium; // need to decide and set other size variables
+}
+
+@media screen and (min-width: rem(1024)) {
   body {
     background-position: rem(750) rem(1);
     background-size: 900px rem(700);
   }
 
-  article:not(.article-homepage) {
-    background-color: $white;
-    max-width: 110ch;
-    padding: rem(1) rem(60);
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
+  }
+
+  main {
+    max-width: 130ch;
+
+    article {
+      background-color: $white;
+      padding: rem(1) rem(60);
+
+      .wp-block-image ~ h2 {
+        margin-top: $img-size-medium;
+      }
+    }
+  }
+
+  /*
+ * Default WP Alignment Classes
+ *****************************************************************************/
+
+  .aligncenter,
+  .alignleft,
+  .alignright {
+    display: block;
+    padding: 0;
+  }
+
+  .aligncenter {
+    float: none;
+    margin: 0.5em auto 1em;
+  }
+
+  .alignright {
+    float: right;
+    margin: 0.5em 0 1em 1em;
+  }
+
+  .alignleft {
+    float: left;
+    margin: 0.5em 1em 1em 0;
   }
 }
