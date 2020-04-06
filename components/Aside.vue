@@ -1,13 +1,12 @@
 <template>
 	<aside>
-		<nav>
+		<nav v-if="headers.length > 0">
 			<ul>
-				<!-- TODO: Uncomment the code below when the secondary nav items are available -->
-				<!-- <li v-for="h in headers" :key="h.id">
+				<li v-for="h in headers" :key="h.id">
 					<nuxt-link :to="h.href">
-					{{ h.title }}
+						{{ h.title }}
 					</nuxt-link>
-					</li> -->
+				</li>
 			</ul>
 		</nav>
 	</aside>
