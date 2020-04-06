@@ -59,14 +59,10 @@
 
   .pagination-ellipsis {
     margin: rem(9) rem(0);
-    // position: relative;
 
     span {
-      // bottom: 0;
       color: $blue-alt;
       font-size: rem(24);
-      // left: rem(-8);
-      // position: absolute;
     }
   }
 
@@ -74,7 +70,10 @@
     a.is-current {
       background-color: $green-pale;
       box-shadow: 0 0 0 rem(2) $green-dark inset;
-      &::before { box-shadow: 0 0 0 rem(2) $green-dark inset; }
+
+      &::before {
+        box-shadow: 0 0 0 rem(2) $green-dark inset;
+      }
     }
   }
 
