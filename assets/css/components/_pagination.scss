@@ -97,6 +97,11 @@
   .pagination-next:hover,
   .pagination-previous:hover {
     background-color: transparent;
+
+    svg {
+      fill: $green-dark;
+      stroke-width: "1";
+    }
   }
 }
 
