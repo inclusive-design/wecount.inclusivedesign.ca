@@ -100,17 +100,13 @@ figcaption {
     grid-template-rows: auto auto;
   }
 
-  article {
-    background-color: $white;
-    padding: 0 rem(60);
-  }
-
   main {
     max-width: 130ch;
 
     article {
       background-color: $white;
       padding: rem(1) rem(60);
+      padding-bottom: rem(62);
 
       .wp-block-image ~ h2 {
         margin-top: $img-size-medium;
