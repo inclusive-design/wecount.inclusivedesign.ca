@@ -6,7 +6,7 @@ The source files for the We Count website, built with [Nuxt](https://nuxtjs.org/
 
 ## Getting Started
 
-To work on the project, you need install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
+To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
 
 Then, clone the project from GitHub. Enter the following in your command line:
 
