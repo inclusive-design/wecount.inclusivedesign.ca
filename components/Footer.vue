@@ -1,6 +1,7 @@
 <template>
 	<footer>
 		<div class="footer-content">
+			<!-- TODO: Remove style attribute. -->
 			<nav aria-label="Footer" class="footer-nav" style="display: none;">
 				<ul>
 					<li>
@@ -18,6 +19,7 @@
 					</li>
 
 					<li>
+						<!-- TODO: Remove style attribute. -->
 						<nuxt-link to="/tools/" style="display: none;" exact>
 							Tools
 						</nuxt-link>
@@ -30,6 +32,7 @@
 					</li>
 
 					<li>
+						<!-- TODO: Remove style attribute. -->
 						<nuxt-link to="/our-data/" style="display: none;" exact>
 							Our Data
 						</nuxt-link>
@@ -51,7 +54,7 @@
 
 			<ContactInfo />
 
-			<SocialMedia style="display: none;" />
+			<SocialMedia />
 
 			<Funders />
 		</div>
