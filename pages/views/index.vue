@@ -22,8 +22,8 @@ export default {
 		return {
 			titleTemplate: this.title + " (Page " + this.currentPageNum + ") | %s",
 			meta: [
-				{ hid: "og:title", name: "og:title", content: this.title + " (Page " + this.currentPageNum + ") | We Count" },
-				{ hid: "og:url", name: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
+				{ hid: "og:title", property: "og:title", content: this.title + " (Page " + this.currentPageNum + ") | We Count" },
+				{ hid: "og:url", property: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
 			]
 		}
 	},
