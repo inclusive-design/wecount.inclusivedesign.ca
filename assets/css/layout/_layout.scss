@@ -5,7 +5,7 @@
 body {
   background-attachment: fixed;
   background-image: url("../images/background.svg");
-  background-position: rem(650) rem(200);
+  background-position: -50vw 25vh;
   background-repeat: repeat-x;
   background-size: cover;
 }
@@ -91,7 +91,7 @@ figcaption {
 
 @media screen and (min-width: rem(1024)) {
   body {
-    background-position: rem(750) rem(1);
+    background-position: -25vw bottom;
   }
 
   .content-wrapper {
