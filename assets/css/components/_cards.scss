@@ -2,11 +2,10 @@
   display: grid;
   grid-gap: rem(38);
   grid-template-columns: repeat(1, 1fr);
-  padding-bottom: rem(89);
-  padding-top: rem(50);
+  padding: rem(89) rem(60) rem(50);
 
   .card {
-    background-color: white;
+    background-color: $white;
     background-repeat: no-repeat;
     box-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.25);
 
@@ -51,9 +50,11 @@
 
 @media screen and (min-width: 1024px) {
   .homepage-cards {
+    background-color: $white;
     grid-gap: rem(38);
     // TODO: Make 3 columns again.
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 0;
 
     a {
       .green-title {
