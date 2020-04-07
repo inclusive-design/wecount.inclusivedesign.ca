@@ -17,6 +17,11 @@ export default {
 			currentPageNum: parseInt(this.$route.params.num)
 		}
 	},
+	head () {
+		return {
+			titleTemplate: this.title + " (Page " + this.currentPageNum + ") | %s"
+		}
+	},
 	fetch ({ store }) {
 		return store.dispatch("fetchViews")
 	}

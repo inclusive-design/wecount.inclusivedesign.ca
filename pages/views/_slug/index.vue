@@ -12,16 +12,16 @@ export default {
 		const linkList = store.state.views.map(({ slug }) => slug)
 		return linkList.includes(params.slug)
 	},
-	head () {
-		return {
-			title: this.title
-		}
-	},
 	components: {
 		PostArticle
 	},
 	data () {
 		return {
+		}
+	},
+	head () {
+		return {
+			titleTemplate: this.viewToRender.title + " | %s"
 		}
 	},
 	computed: {

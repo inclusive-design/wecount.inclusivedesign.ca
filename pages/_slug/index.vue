@@ -16,6 +16,11 @@ export default {
 			content: ""
 		}
 	},
+	head () {
+		return {
+			titleTemplate: this.title + " | %s"
+		}
+	},
 	asyncData (context) {
 		return axios.get(`${Config.wpDomain}${Config.apiBase}pages`).then((response) => {
 			const res = response.data.filter(x => x.slug === context.params.slug)[0]

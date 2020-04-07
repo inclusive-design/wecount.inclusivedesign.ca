@@ -5,7 +5,7 @@
 		</h1>
 		<p>We found {{ searchResults.length }} results for your search.</p>
 		<NewsGrid :postList="pagePostList[$route.query.page ? parseInt($route.query.page) - 1 : 0]" />
-		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="$route.query.page ? parseInt($route.query.page) : 1" />
+		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
 	</article>
 </template>
 
@@ -25,9 +25,17 @@ export default {
 			numOfRecsPerPage: Config.numOfRecsPerPage
 		}
 	},
+	head () {
+		return {
+			titleTemplate: "Search (Page " + this.currentPageNum + ") | %s"
+		}
+	},
 	computed: {
 		searchQuery () {
 			return decodeURIComponent(this.$route.query.s)
+		},
+		currentPageNum () {
+			return this.$route.query.page ? parseInt(this.$route.query.page) : 1
 		},
 		foundNews () {
 			return this.$store.state.news.filter((oneNews) => {

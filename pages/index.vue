@@ -29,6 +29,11 @@ export default {
 			content: ""
 		}
 	},
+	head () {
+		return {
+			titleTemplate: "Home | %s"
+		}
+	},
 	asyncData (context) {
 		// check if you got a payload first
 		if (context.payload) {
