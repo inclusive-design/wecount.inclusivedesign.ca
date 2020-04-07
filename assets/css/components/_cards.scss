@@ -52,7 +52,8 @@
 @media screen and (min-width: 1024px) {
   .homepage-cards {
     grid-gap: rem(38);
-    grid-template-columns: repeat(3, 1fr);
+    // TODO: Make 3 columns again.
+    grid-template-columns: repeat(2, 1fr);
 
     a {
       .green-title {
