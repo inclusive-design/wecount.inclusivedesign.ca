@@ -6,7 +6,7 @@ export default {
 	appTitle: "We Count",
 	appShortTitle: "We Count",
 	appDescription: "Removing bias and exclusion in the data economy.",
-	appThemeColor: "#fffffF",
+	appThemeColor: "#ffffff",
 	appBgColor: "#ffffff",
 	wpDomain: "https://wecount-cms.inclusivedesign.ca",
 	apiBase: "/wp-json/wp/v2/",
