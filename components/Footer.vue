@@ -18,7 +18,7 @@
 					</li>
 
 					<li>
-						<nuxt-link to="/tools/" exact>
+						<nuxt-link to="/tools/" style="display: none;" exact>
 							Tools
 						</nuxt-link>
 					</li>
@@ -30,7 +30,7 @@
 					</li>
 
 					<li>
-						<nuxt-link to="/our-data/" exact>
+						<nuxt-link to="/our-data/" style="display: none;" exact>
 							Our Data
 						</nuxt-link>
 					</li>
