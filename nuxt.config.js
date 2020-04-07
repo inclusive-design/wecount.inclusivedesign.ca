@@ -6,7 +6,7 @@ export default {
 	generate: {
 		fallback: true,
 		async routes (callback) {
-			const viewsAPI = Config.wpDomain + Config.apiBase + "posts?categories=8"
+			const viewsAPI = Config.wpDomain + Config.apiBase + "posts?categories=1"
 			// Determine how many pages of posts are available
 			const totalPages = await (await axios.get(`${viewsAPI}`)).headers["x-wp-totalpages"]
 			// Create empty array to hold all retrieved post data in chunks of 10
