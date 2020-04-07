@@ -18,7 +18,11 @@ export default {
 	},
 	head () {
 		return {
-			titleTemplate: this.title + " | %s"
+			titleTemplate: this.title + " | %s",
+			meta: [
+				{ hid: "og:title", name: "og:title", content: this.title + " | We Count" },
+				{ hid: "og:url", name: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
+			]
 		}
 	},
 	asyncData (context) {

@@ -8,6 +8,7 @@ export default {
 	appDescription: "Removing bias and exclusion in the data economy.",
 	appThemeColor: "#ffffff",
 	appBgColor: "#ffffff",
+	appBaseUrl: "https://wecount.inclusivedesign.ca", // TODO: Figure out how to determine this at generate time.
 	wpDomain: "https://wecount-cms.inclusivedesign.ca",
 	apiBase: "/wp-json/wp/v2/",
 	contactEmail: "wecount@inclusivedesign.ca",

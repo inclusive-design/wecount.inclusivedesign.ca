@@ -27,7 +27,11 @@ export default {
 	},
 	head () {
 		return {
-			titleTemplate: "Search (Page " + this.currentPageNum + ") | %s"
+			titleTemplate: "Search (Page " + this.currentPageNum + ") | %s",
+			meta: [
+				{ hid: "og:title", name: "og:title", content: this.title + " (Page " + this.currentPageNum + ") | We Count" },
+				{ hid: "og:url", name: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
+			]
 		}
 	},
 	computed: {

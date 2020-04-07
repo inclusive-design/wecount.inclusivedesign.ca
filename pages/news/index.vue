@@ -4,6 +4,7 @@
 
 <script>
 import Posts from "~/components/Posts"
+import Config from "~/assets/config"
 
 export default {
 	components: {
@@ -19,7 +20,11 @@ export default {
 	},
 	head () {
 		return {
-			titleTemplate: this.title + " (Page " + this.currentPageNum + ") | %s"
+			titleTemplate: this.title + " (Page " + this.currentPageNum + ") | %s",
+			meta: [
+				{ hid: "og:title", name: "og:title", content: this.title + " (Page " + this.currentPageNum + ") | We Count" },
+				{ hid: "og:url", name: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
+			]
 		}
 	},
 	fetch ({ store }) {
