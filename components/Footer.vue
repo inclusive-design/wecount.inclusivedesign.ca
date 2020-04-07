@@ -1,7 +1,7 @@
 <template>
 	<footer>
 		<div class="footer-content">
-			<nav aria-label="Footer" class="footer-nav">
+			<nav aria-label="Footer" class="footer-nav" style="display: none;">
 				<ul>
 					<li>
 						<!-- Adding "exact" to make sure "nuxt-link-active" class only applies to the current selected link -->
@@ -51,7 +51,7 @@
 
 			<ContactInfo />
 
-			<SocialMedia />
+			<SocialMedia style="display: none;" />
 
 			<Funders />
 		</div>
