@@ -1,12 +1,12 @@
 import axios from "axios"
-import Config from "./assets/config"
+import config from "./assets/config"
 
 export default {
 	mode: "universal",
 	generate: {
 		fallback: true,
 		async routes (callback) {
-			const viewsAPI = Config.wpDomain + Config.apiBase + "posts?categories=8"
+			const viewsAPI = config.wpDomain + config.apiBase + "posts?categories=8"
 			// Determine how many pages of posts are available
 			const totalPages = await (await axios.get(`${viewsAPI}`)).headers["x-wp-totalpages"]
 			// Create empty array to hold all retrieved post data in chunks of 10
@@ -40,10 +40,10 @@ export default {
 		meta: [
 			{ charset: "utf-8" },
 			{ name: "viewport", content: "width=device-width, initial-scale=1" },
-			{ hid: "description", name: "description", content: process.env.npm_package_description || "" }
+			{ hid: "og:image", name: "og:image", content: "/og-image.png" } // TODO: Customize per page.
 		],
 		link: [
-			{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+			{ rel: "icon", type: "image/png", href: "/favicon.png" }
 		]
 	},
 	/*
@@ -83,6 +83,13 @@ export default {
 	webfontloader: {
 		google: {
 			families: ["Fira+Sans:400,400i,500,600,700&display=swap"]
+		}
+	},
+	pwa: {
+		manifest: {
+			name: config.appTitle,
+			short_name: config.appShortTitle,
+			description: config.appDescription
 		}
 	},
 	/*

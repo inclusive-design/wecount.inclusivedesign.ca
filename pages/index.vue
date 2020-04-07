@@ -32,7 +32,11 @@ export default {
 	},
 	head () {
 		return {
-			titleTemplate: "Home | %s"
+			titleTemplate: "Home | %s",
+			meta: [
+				{ hid: "og:title", name: "og:title", content: "Home | We Count" },
+				{ hid: "og:url", name: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
+			]
 		}
 	},
 	asyncData (context) {
