@@ -1,7 +1,8 @@
 <template>
 	<footer>
 		<div class="footer-content">
-			<nav aria-label="Footer" class="footer-nav">
+			<!-- TODO: Remove style attribute. -->
+			<nav aria-label="Footer" class="footer-nav" style="display: none;">
 				<ul>
 					<li>
 						<!-- Adding "exact" to make sure "nuxt-link-active" class only applies to the current selected link -->
@@ -18,7 +19,8 @@
 					</li>
 
 					<li>
-						<nuxt-link to="/tools/" exact>
+						<!-- TODO: Remove style attribute. -->
+						<nuxt-link to="/tools/" style="display: none;" exact>
 							Tools
 						</nuxt-link>
 					</li>
@@ -30,7 +32,8 @@
 					</li>
 
 					<li>
-						<nuxt-link to="/our-data/" exact>
+						<!-- TODO: Remove style attribute. -->
+						<nuxt-link to="/our-data/" style="display: none;" exact>
 							Our Data
 						</nuxt-link>
 					</li>
