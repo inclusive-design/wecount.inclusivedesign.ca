@@ -7,7 +7,7 @@
 				:altTag="post.altTag"
 				:title="post.title"
 				:author="post.author"
-				:previewContent="post.previewContent"
+				:excerpt="post.excerpt"
 				:date="post.date"
 				:dateTime="post.dateTime"
 				:href="post.href"
