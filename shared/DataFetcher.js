@@ -8,14 +8,13 @@ export default {
 		// The fuction to process returned data from the Wordpress API
 		const processItems = function (items) {
 			return items.map(function (oneItem) {
-				// Strip html tags to get pure text for the content preview
-				const previewContent = Utils.stripHtmlTags(oneItem.content.rendered)
-
 				return {
 					slug: oneItem.slug,
 					title: oneItem.title.rendered,
 					author: oneItem._embedded.author[0].name,
 					content: oneItem.content.rendered,
+					// Strip html tags to get pure text for the content preview
+					excerpt: Utils.stripHtmlTags(oneItem.excerpt.rendered),
 					date: new Date(oneItem.date).toLocaleString("en-us", {
 						year: "numeric",
 						month: "long",
@@ -28,8 +27,7 @@ export default {
 					// For news, "href" points to the external news links. For views, "href" is customized to show views content.
 					href: categoryType === "news" ? oneItem.acf.link : "/views/" + oneItem.slug,
 					isExternalHref: categoryType === "news",
-					showPreviewImage: categoryType !== "news",
-					previewContent
+					showPreviewImage: categoryType !== "news"
 				}
 			})
 		}
@@ -65,16 +63,14 @@ export default {
 		const response = await axios.get(`${pageAPI}`)
 
 		return response.data.map(function (onePage) {
-			// Strip html tags to get pure text for the content preview
-			const previewContent = Utils.stripHtmlTags(onePage.content.rendered)
-
 			return {
 				slug: onePage.slug,
 				title: onePage.title.rendered,
 				content: onePage.content.rendered,
+				// Strip html tags to get pure text for the content preview
+				excerpt: Utils.stripHtmlTags(onePage.content.rendered),
 				href: "/" + onePage.slug + "/",
-				isExternalHref: false,
-				previewContent
+				isExternalHref: false
 			}
 		})
 	}
