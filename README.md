@@ -1,6 +1,9 @@
 # We Count
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d63b3d00-fd5f-47d7-8e43-d09bf4e8eb4f/deploy-status)](https://app.netlify.com/sites/wecount/deploys)
+[![License](https://img.shields.io/github/license/inclusive-design/wecount.inclusivedesign.ca?style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/LICENSE.md)
+[![GitHub Release](https://img.shields.io/github/v/release/inclusive-design/wecount.inclusivedesign.ca?sort=semver&style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/releases/latest)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/inclusive-design/wecount.inclusivedesign.ca/Test%20and%20build?label=github&style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/actions)
+[![Netlify Status](https://img.shields.io/netlify/d63b3d00-fd5f-47d7-8e43-d09bf4e8eb4f?style=flat-square)](https://app.netlify.com/sites/wecount/deploys)
 
 The source files for the We Count website, built with [Nuxt](https://nuxtjs.org/).
 
@@ -8,17 +11,36 @@ The source files for the We Count website, built with [Nuxt](https://nuxtjs.org/
 
 To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
 
-Then, clone the project from GitHub. Enter the following in your command line:
+Then, clone the project from GitHub. [Create a fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+with your GitHub account, then enter the following in your command line (make sure to replace `your-username` with your username):
 
 ```bash
-git clone https://github.com/inclusive-design/wecount.inclusivedesign.ca.git
+git clone https://github.com/your-username/wecount.inclusivedesign.ca.git
 ```
 
-From the root of the cloned project, enter the following in your command line:
+From the root of the cloned project, enter the following in your command line to install dependencies:
 
 ```bash
 npm ci
 ```
+
+## How to Contribute
+
+We do all of our work in branches. If you are starting work on a new feature or bug fix, create a new branch from `dev`:
+
+```bash
+git checkout dev
+git checkout -b your-branch-name
+```
+
+Give your branch a descriptive name:
+
+- For a new feature, call it `feat/description-of-feature`
+- For a bug fix, call it `fix/description-of-bug`
+
+When committing your changes, use [Conventional Commits](https://conventionalcommits.org/).
+
+When your work is complete, open a pull request against the `dev` branch.
 
 ## How to Run
 
@@ -49,8 +71,11 @@ The static website's files will be in the newly-created `dist` directory in the 
 
 ## How to Deploy
 
-This repository is connected to [Netlify](https://netlify.com). Updating the master branch will trigger
-a new build and deployment of the project to this [temporary URL](https://wecount.netlify.com/).
+This repository is connected to [Netlify](https://netlify.com), and commits will be automatically deployed as follows:
+
+- Pull request #175 (for example): [https://deploy-preview-175--wecount.netlify.app](https://deploy-preview-175--wecount.netlify.app)
+- Branch `dev`: [https://dev--wecount.netlify.app](https://dev--wecount.netlify.app)
+- Branch `master`: [https://wecount.inclusivedesign.ca](https://wecount.inclusivedesign.ca)
 
 ## License
 
