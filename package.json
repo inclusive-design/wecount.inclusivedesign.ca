@@ -1,6 +1,6 @@
 {
   "name": "@wecount/wecount.inclusivedesign.ca",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The source files for the We Count website, built with Nuxt.",
   "license": "CC-BY-4.0",
   "contributors": [
