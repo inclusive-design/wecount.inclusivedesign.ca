@@ -4,8 +4,8 @@
 
 body {
   background-attachment: fixed;
-  background-image: url("../images/background.svg");
-  background-position: -50vw 25vh;
+  background-image: url("../images/background-distribution.svg");
+  background-position: 0 center;
   background-repeat: repeat-x;
   background-size: cover;
 }
@@ -32,7 +32,6 @@ article {
 
   h2:not(.h3) {
     border-bottom: rem(5) solid $gold;
-    padding-bottom: rem(12);
   }
 
   .wp-block-image {
@@ -91,7 +90,7 @@ figcaption {
 
 @media screen and (min-width: rem(1024)) {
   body {
-    background-position: -25vw bottom;
+    background-position: center;
   }
 
   .content-wrapper {
