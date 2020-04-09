@@ -59,9 +59,7 @@
 			<Funders />
 		</div>
 		<p class="netlify-notice">
-			Hosted with <nuxt-link to="https://netlify.com">
-				Netlify
-			</nuxt-link>
+			Hosted with <a rel="external nofollower noopener" href="https://netlify.com">Netlify</a>
 		</p>
 	</footer>
 </template>
