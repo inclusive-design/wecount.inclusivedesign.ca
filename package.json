@@ -4,7 +4,7 @@
   "description": "The source files for the We Count website, built with Nuxt.",
   "license": "CC-BY-4.0",
   "contributors": [
-		"Cindy Li <cli@ocadu.ca> (https://github.com/cindyli)",
+    "Cindy Li <cli@ocadu.ca> (https://github.com/cindyli)",
     "Justin Obara <jobara@ocadu.ca> (https://github.com/jobara)",
     "Ted Thompson <tthompson@ocadu.ca> (https://github.com/TeddTech)",
     "Ned Zimmerman <nzimmerman@ocadu.ca> (https://github.com/greatislander)"
@@ -22,10 +22,10 @@
     "lint-fix:css": "stylelint \"**/**.{scss,vue}\" --fix",
     "lint-fix:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --fix",
     "lint": "npm-run-all lint:js lint:css lint:md",
-		"lint:fix": "npm-run-all lint-fix:*",
-		"release:major": "npx release major",
-		"release:minor": "npx release minor",
-		"release:patch": "npx release patch",
+    "lint:fix": "npm-run-all lint-fix:*",
+    "release:major": "release major",
+    "release:minor": "release minor",
+    "release:patch": "release patch",
     "test": "npm run lint"
   },
   "dependencies": {
@@ -50,6 +50,7 @@
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
     "nuxt-webfontloader": "^1.1.0",
+    "release": "^6.1.0",
     "sass-loader": "^8.0.2",
     "stylelint": "^13.3.0",
     "stylelint-config-standard-scss": "^1.1.0",
