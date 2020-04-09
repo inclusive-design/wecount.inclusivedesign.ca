@@ -43,6 +43,7 @@ footer {
 
       a {
         color: $white;
+        display: inline-block;
       }
 
       svg {
@@ -70,6 +71,10 @@ footer {
 
       .logo-ocadu-wrapper {
         text-align: center;
+
+        a {
+          display: inline-block;
+        }
       }
 
       .logo-ocadu {
@@ -111,6 +116,8 @@ footer {
         }
 
         a {
+          color: $white;
+
           svg {
             height: rem(60);
             stroke-width: 3px;
@@ -195,10 +202,6 @@ footer {
         grid-column: 2/3;
         grid-row: 2/3;
         line-height: rem(19);
-
-        a {
-          display: inline-block;
-        }
       }
 
       .contact-info {
@@ -213,10 +216,6 @@ footer {
 
         .logo-ocadu-wrapper {
           display: inline-flex;
-
-          a {
-            display: inline-block;
-          }
 
           .logo-ocadu {
             padding: 0;

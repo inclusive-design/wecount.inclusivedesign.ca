@@ -1,18 +1,19 @@
 <template>
-	<article>
+	<div>
 		<PageArticle :title="title" :content="content" />
 		<div class="homepage-cards">
 			<a class="blue card" href="/views/">
 				<h3>Read current views in inclusive data science</h3>
 			</a>
-			<a class="green card" href="/tools/">
+			<!-- TODO: Remove hidden attribute -->
+			<a class="green card" href="/tools/" hidden>
 				<h3 class="green-title">Find inclusive data tools</h3>
 			</a>
 			<a class="yellow card" href="/inclusion-challenges/">
 				<h3>Participate in our inclusion challenge workshops</h3>
 			</a>
 		</div>
-	</article>
+	</div>
 </template>
 
 <script>
@@ -27,6 +28,15 @@ export default {
 		return {
 			title: "",
 			content: ""
+		}
+	},
+	head () {
+		return {
+			titleTemplate: "Home | %s",
+			meta: [
+				{ hid: "og:title", property: "og:title", content: "Home | We Count" },
+				{ hid: "og:url", property: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
+			]
 		}
 	},
 	asyncData (context) {

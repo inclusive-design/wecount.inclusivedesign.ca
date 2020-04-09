@@ -4,8 +4,8 @@
 
 body {
   background-attachment: fixed;
-  background-image: url("../images/background.svg");
-  background-position: rem(650) rem(200);
+  background-image: url("../images/background-distribution.svg");
+  background-position: 0 center;
   background-repeat: repeat-x;
   background-size: cover;
 }
@@ -32,7 +32,6 @@ article {
 
   h2:not(.h3) {
     border-bottom: rem(5) solid $gold;
-    padding-bottom: rem(12);
   }
 
   .wp-block-image {
@@ -91,7 +90,7 @@ figcaption {
 
 @media screen and (min-width: rem(1024)) {
   body {
-    background-position: rem(750) rem(1);
+    background-position: center;
   }
 
   .content-wrapper {
@@ -100,17 +99,13 @@ figcaption {
     grid-template-rows: auto auto;
   }
 
-  article {
-    background-color: $white;
-    padding: 0 rem(60);
-  }
-
   main {
     max-width: 130ch;
 
     article {
       background-color: $white;
       padding: rem(1) rem(60);
+      padding-bottom: rem(62);
 
       .wp-block-image ~ h2 {
         margin-top: $img-size-medium;

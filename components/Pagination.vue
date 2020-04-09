@@ -1,5 +1,5 @@
 <template>
-	<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+	<nav class="pagination is-centered" aria-label="pagination">
 		<ul class="pagination-list">
 			<li>
 				<nuxt-link v-if="currentPageNum > 1" :to="beforeLink" class="pagination-previous">

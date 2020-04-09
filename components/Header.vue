@@ -3,7 +3,7 @@
 		<Brand />
 		<div class="site-nav-wrapper">
 			<div class="site-nav">
-				<button id="menuToggleButton" @click="toggleNavMenu()" href="javascript:void(0);" aria-expanded="false">
+				<button id="menuToggleButton" @click="toggleNavMenu()" aria-expanded="false">
 					<MenuIcon />&nbsp;Menu
 				</button>
 				<NavBar />

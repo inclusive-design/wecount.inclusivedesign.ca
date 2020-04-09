@@ -13,7 +13,7 @@
 		<div class="date">
 			<time :datetime="dateTime">{{ date }}</time>
 		</div>
-		<div v-html="previewContent" class="preview-content" />
+		<div v-html="excerpt" class="preview-content" />
 	</article>
 </template>
 
@@ -41,7 +41,7 @@ export default {
 			type: String,
 			default: ""
 		},
-		previewContent: {
+		excerpt: {
 			type: String,
 			default: ""
 		},
