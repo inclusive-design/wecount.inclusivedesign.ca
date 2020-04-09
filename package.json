@@ -4,8 +4,9 @@
   "description": "The source files for the We Count website, built with Nuxt.",
   "license": "CC-BY-4.0",
   "contributors": [
-    "Ted Thompson <tthompson@ocadu.ca> (https://github.com/TeddTech)",
+		"Cindy Li <cli@ocadu.ca> (https://github.com/cindyli)",
     "Justin Obara <jobara@ocadu.ca> (https://github.com/jobara)",
+    "Ted Thompson <tthompson@ocadu.ca> (https://github.com/TeddTech)",
     "Ned Zimmerman <nzimmerman@ocadu.ca> (https://github.com/greatislander)"
   ],
   "private": true,
@@ -21,7 +22,10 @@
     "lint-fix:css": "stylelint \"**/**.{scss,vue}\" --fix",
     "lint-fix:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --fix",
     "lint": "npm-run-all lint:js lint:css lint:md",
-    "lint:fix": "npm-run-all lint-fix:*",
+		"lint:fix": "npm-run-all lint-fix:*",
+		"release:major": "npx release major",
+		"release:minor": "npx release minor",
+		"release:patch": "npx release patch",
     "test": "npm run lint"
   },
   "dependencies": {

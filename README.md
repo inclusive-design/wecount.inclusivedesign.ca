@@ -24,24 +24,6 @@ From the root of the cloned project, enter the following in your command line to
 npm ci
 ```
 
-## How to Contribute
-
-We do all of our work in branches. If you are starting work on a new feature or bug fix, create a new branch from `dev`:
-
-```bash
-git checkout dev
-git checkout -b your-branch-name
-```
-
-Give your branch a descriptive name:
-
-- For a new feature, call it `feat/description-of-feature`
-- For a bug fix, call it `fix/description-of-bug`
-
-When committing your changes, use [Conventional Commits](https://conventionalcommits.org/).
-
-When your work is complete, open a pull request against the `dev` branch.
-
 ## How to Run
 
 To run the website in local development mode, enter the following in your command line:
@@ -58,6 +40,12 @@ enter the following in the command line:
 ```bash
 npm run lint
 ```
+
+We use the following lint configurations:
+
+- [ESLint (JS/Vue)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/.eslintrc.js)
+- [Stylelint (CSS/SCSS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/stylelint.config.js)
+- [MarkdownLint (Markdown)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/.markdownlint.json)
 
 ## How to Build
 
