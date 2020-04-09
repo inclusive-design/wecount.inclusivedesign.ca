@@ -1,72 +1,78 @@
 {
-  "name": "@wecount/wecount.inclusivedesign.ca",
-  "version": "1.0.2",
-  "description": "The source files for the We Count website, built with Nuxt.",
-  "license": "CC-BY-4.0",
-  "contributors": [
-    "Ted Thompson <tthompson@ocadu.ca> (https://github.com/TeddTech)",
-    "Justin Obara <jobara@ocadu.ca> (https://github.com/jobara)",
-    "Ned Zimmerman <nzimmerman@ocadu.ca> (https://github.com/greatislander)"
-  ],
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate --fail-on-error",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:css": "stylelint \"**/**.{scss,vue}\"",
-    "lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md",
-    "lint-fix:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
-    "lint-fix:css": "stylelint \"**/**.{scss,vue}\" --fix",
-    "lint-fix:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --fix",
-    "lint": "npm-run-all lint:js lint:css lint:md",
-    "lint:fix": "npm-run-all lint-fix:*",
-    "test": "npm run lint"
-  },
-  "dependencies": {
-    "@nuxtjs/axios": "^5.9.7",
-    "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "@nuxtjs/svg": "^0.1.7",
-    "nuxt": "^2.12.2",
-    "sanitize.css": "^11.0.0"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
-    "@nuxtjs/eslint-config": "^1.0.1",
-    "@nuxtjs/eslint-module": "^1.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-nuxt": "^0.5.2",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.1.2",
-    "markdownlint-cli": "^0.22.0",
-    "node-sass": "^4.13.1",
-    "npm-run-all": "^4.1.5",
-    "nuxt-webfontloader": "^1.1.0",
-    "sass-loader": "^8.0.2",
-    "stylelint": "^13.3.0",
-    "stylelint-config-standard-scss": "^1.1.0",
-    "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.16.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "*.{scss,vue}": [
-      "stylelint"
-    ],
-    "*.{js,vue}": [
-      "eslint"
-    ],
-    "*.md": [
-      "markdownlint"
-    ]
-  }
+	"name": "@wecount/wecount.inclusivedesign.ca",
+	"version": "1.0.2",
+	"description": "The source files for the We Count website, built with Nuxt.",
+	"license": "CC-BY-4.0",
+	"author": "OCAD University <idrc@ocadu.ca>",
+	"contributors": [
+		"Cindy Li <cli@ocadu.ca> (https://github.com/cindyli)",
+		"Justin Obara <jobara@ocadu.ca> (https://github.com/jobara)",
+		"Ted Thompson <tthompson@ocadu.ca> (https://github.com/TeddTech)",
+		"Ned Zimmerman <nzimmerman@ocadu.ca> (https://github.com/greatislander)"
+	],
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate --fail-on-error",
+		"lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+		"lint:css": "stylelint \"**/**.{scss,vue}\"",
+		"lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md",
+		"lint-fix:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+		"lint-fix:css": "stylelint \"**/**.{scss,vue}\" --fix",
+		"lint-fix:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --fix",
+		"lint": "npm-run-all lint:js lint:css lint:md",
+		"lint:fix": "npm-run-all lint-fix:*",
+		"release:major": "release major",
+		"release:minor": "release minor",
+		"release:patch": "release patch",
+		"test": "npm run lint"
+	},
+	"dependencies": {
+		"@nuxtjs/axios": "^5.9.7",
+		"@nuxtjs/dotenv": "^1.4.0",
+		"@nuxtjs/pwa": "^3.0.0-beta.20",
+		"@nuxtjs/svg": "^0.1.7",
+		"nuxt": "^2.12.2",
+		"sanitize.css": "^11.0.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^8.3.5",
+		"@commitlint/config-conventional": "^8.3.4",
+		"@nuxtjs/eslint-config": "^1.0.1",
+		"@nuxtjs/eslint-module": "^1.0.0",
+		"babel-eslint": "^10.1.0",
+		"eslint": "^6.8.0",
+		"eslint-plugin-nuxt": "^0.5.2",
+		"husky": "^4.2.3",
+		"lint-staged": "^10.1.2",
+		"markdownlint-cli": "^0.22.0",
+		"node-sass": "^4.13.1",
+		"npm-run-all": "^4.1.5",
+		"nuxt-webfontloader": "^1.1.0",
+		"release": "^6.1.0",
+		"sass-loader": "^8.0.2",
+		"stylelint": "^13.3.0",
+		"stylelint-config-standard-scss": "^1.1.0",
+		"stylelint-order": "^4.0.0",
+		"stylelint-scss": "^3.16.0"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"lint-staged": {
+		"*.{scss,vue}": [
+			"stylelint"
+		],
+		"*.{js,vue}": [
+			"eslint"
+		],
+		"*.md": [
+			"markdownlint"
+		]
+	}
 }
