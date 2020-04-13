@@ -1,8 +1,20 @@
 <template>
 	<div class="brand">
 		<nuxt-link to="/">
-			<img src="~/static/img/We Count logos_colour and bw-01.png" alt="Logo for Project We Count">
-			We Count
+			<WeCountLogo />
+			<WeCountLogoType />
+			<span class="screen-reader-only">We Count</span>
 		</nuxt-link>
 	</div>
 </template>
+<script>
+import WeCountLogo from "~/assets/images/logo_wecount.svg?inline"
+import WeCountLogoType from "~/assets/images/logotype.svg?inline"
+
+export default {
+	components: {
+		WeCountLogo,
+		WeCountLogoType
+	}
+}
+</script>

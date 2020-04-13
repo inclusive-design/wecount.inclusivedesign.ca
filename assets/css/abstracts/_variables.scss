@@ -1,5 +1,14 @@
+$browser-context: 16;
+
 /** Typography **/
 $family-sans-serif: "Fira Sans", sans-serif;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/** Max Widths **/
+$max-width-margins: rem(1600);
 
 /** Colours **/
 
@@ -13,13 +22,26 @@ $gold-light: #ffe6a7;
 
 // Secondary
 $black: #000;
-$black-bis: #313131;
+$grey-light: #6c6c6c;
+$grey-dark: #313131;
 $navy-dark: #162439;
 $navy: #203149;
 $navy-light: #2e405b;
 
-$blue-alt: #5e82ae;
+$blue-alt: #5c81a9;
 $blue-alt-light:#8caabb;
 $green:#b0d0be;
 $green-light: #cee6c5;
+$green-dark: #465d8b;
 $green-pale: #f7fff4;
+
+$orange-focus: #fadc90;
+$orange-light: #5c81a9;
+
+// UIO
+$yellow: #ff0;
+$white: #fff;
+$grey: #bdbdbb;
+
+// Images
+$img-size-medium: rem(262); // need to decide and set other size variables

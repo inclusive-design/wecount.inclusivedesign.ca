@@ -1,5 +1,5 @@
 import axios from "axios"
-import Config from "./assets/config"
+import config from "./assets/config"
 
 import StaticRoutesBuilder from "./shared/StaticRoutesBuilder"
 
@@ -23,43 +23,31 @@ export default {
 			//2. Build routes for news pages: /news/page/{pageNum}
 			const newsRoutes = await StaticRoutesBuilder.categoryPages("/news", 1)
 
+			const viewsAPI = config.wpDomain + config.apiBase + "posts?categories=1"
+
 			// Determine how many pages of posts are available
-			const totalPages = await (await axios.get(`${Config.wpDomain}${Config.apiBase}posts`)).headers["x-wp-totalpages"]
+			const totalPages = await (await axios.get(`${viewsAPI}`)).headers["x-wp-totalpages"]
 			// Create empty array to hold all retrieved post data in chunks of 10
-			const postPagesAPI = []
+			const postRoutes = []
 			// Create empty array to hold all pagination routes for the News and Views page (e.g. /page/1, /page/2, etc)
-			const newsPaginationRoutes = []
+			const viewsPaginationRoutes = []
 			for (let postPage = 1; postPage <= totalPages; postPage++) {
-				// Add each page of posts to postPagesAPI
-				postPagesAPI.push(axios.get(`${Config.wpDomain}${Config.apiBase}posts?page=${postPage}`))
-				// Add each page index to newsPaginationRoutes
-				newsPaginationRoutes.push({
-					route: `/news-and-views/page/${postPage}`,
+				const response = await axios.get(`${viewsAPI}&page=${postPage}`)
+				// Add each page index to viewsPaginationRoutes
+				viewsPaginationRoutes.push({
+					route: `/views/page/${postPage}`,
 					payload: postPage // Is this necessary?
 				})
+
+				// Add routes for posts
+				response.data.map(function (onePost) {
+					postRoutes.push({
+						route: `/views/${onePost.slug}`,
+						payload: onePost
+					})
+				})
 			}
-			// Spread the entries in postPagesAPI and fetch each post
-			axios.all([
-				...postPagesAPI
-			])
-				.then(axios.spread((posts) => {
-					// Add each post to the postRoutes variable
-
-					const postRoutes = []
-
-					if (totalPages > 1) {
-						posts.data.map((...post) => {
-							postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
-						})
-					} else {
-						posts.data.map((post) => {
-							postRoutes.push({ route: `/news-and-views/${post.slug}`, payload: post })
-						})
-					}
-
-					callback(null, [...newsPaginationRoutes, ...postRoutes, ...siteRoutes])
-				}))
-				.catch(callback)
+			callback(null, [...viewsPaginationRoutes, ...postRoutes])
 		}
 	},
 	/*
@@ -70,10 +58,10 @@ export default {
 		meta: [
 			{ charset: "utf-8" },
 			{ name: "viewport", content: "width=device-width, initial-scale=1" },
-			{ hid: "description", name: "description", content: process.env.npm_package_description || "" }
+			{ hid: "og:image", property: "og:image", content: "/og-image.png" } // TODO: Customize per page.
 		],
 		link: [
-			{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+			{ rel: "icon", type: "image/png", href: "/favicon.png" }
 		]
 	},
 	/*
@@ -107,11 +95,19 @@ export default {
 		"@nuxtjs/pwa",
 		// Doc: https://github.com/nuxt-community/dotenv-module
 		"@nuxtjs/dotenv",
+		"@nuxtjs/svg",
 		"nuxt-webfontloader"
 	],
 	webfontloader: {
 		google: {
 			families: ["Fira+Sans:400,400i,500,600,700&display=swap"]
+		}
+	},
+	pwa: {
+		manifest: {
+			name: config.appTitle,
+			short_name: config.appShortTitle,
+			description: config.appDescription
 		}
 	},
 	/*

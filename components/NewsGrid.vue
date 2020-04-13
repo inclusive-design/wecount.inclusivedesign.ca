@@ -6,9 +6,14 @@
 				:picture="post.picture"
 				:altTag="post.altTag"
 				:title="post.title"
+				:author="post.author"
+				:excerpt="post.excerpt"
 				:date="post.date"
 				:dateTime="post.dateTime"
-				:slug="post.slug"
+				:href="post.href"
+				:isExternalHref="post.isExternalHref"
+				:showPreviewImage="post.showPreviewImage"
+				class="news-item"
 			/>
 		</div>
 	</div>
@@ -26,8 +31,6 @@ export default {
 			// reason for using function can be found here: https://github.com/vuejs/vue/issues/1032 and here: https://vuejs.org/v2/guide/components-props.html#Prop-Validation
 			default: () => []
 		}
-	},
-	computed: {
 	}
 }
 </script>

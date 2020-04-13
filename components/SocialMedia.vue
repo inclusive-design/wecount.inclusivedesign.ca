@@ -1,13 +1,14 @@
 <template>
 	<div class="social-media">
 		<h2>Follow us on social media</h2>
-		<ul>
-			<li v-for="s in socialMedia" :key="s.id">
-				<nuxt-link :to="s.href">
-					{{ s.title }}
+		<div class="social-media-icons">
+			<div v-for="s in socialMedias" :key="s.id">
+				<nuxt-link :to="s.href" rel="external">
+					<div v-html="s.svg" />
+					<span v-html="s.id" class="screen-reader-only" />
 				</nuxt-link>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -16,7 +17,7 @@ import Config from "~/assets/config"
 export default {
 	data () {
 		return {
-			socialMedia: Config.socialMedia
+			socialMedias: Config.socialMedias
 		}
 	}
 }

@@ -1,26 +1,33 @@
 <template>
 	<!-- This compenent is used by data from pages api call as well as post api call -->
 	<article>
-		<figure class="preview-media">
-			<img :src="picture" :alt="altTag" class="news-item-img">
+		<figure v-if="showPreviewImage" class="preview-media">
+			<img v-if="picture" :src="picture" :alt="altTag" class="news-item-img">
+			<WeCountLogo v-else class="news-item-img" />
 		</figure>
-		<h2>
-			<nuxt-link :to="'/news-and-views/' + slug" class="news-item">
-				{{ title }}
-			</nuxt-link>
+		<h2 class="h3">
+			<a v-if="isExternalHref" :href="href" v-html="title" />
+			<nuxt-link v-else :to="href" v-html="title" />
 		</h2>
+		<div v-if="!isExternalHref" v-html="author" class="author" />
 		<div class="date">
 			<time :datetime="dateTime">{{ date }}</time>
 		</div>
+		<div v-html="excerpt" class="preview-content" />
 	</article>
 </template>
 
 <script>
+import WeCountLogo from "~/assets/images/logo_wecount.svg?inline"
+
 export default {
+	components: {
+		WeCountLogo
+	},
 	props: {
 		picture: {
 			type: String,
-			default: "https://wecount.inclusivedesign.ca/wp-content/uploads/2019/10/We-Count-logos_colour-and-bw-01.png"
+			default: null
 		},
 		altTag: {
 			type: String,
@@ -30,6 +37,14 @@ export default {
 			type: String,
 			default: "Untitled Post"
 		},
+		author: {
+			type: String,
+			default: ""
+		},
+		excerpt: {
+			type: String,
+			default: ""
+		},
 		date: {
 			type: String,
 			default: ""
@@ -38,9 +53,17 @@ export default {
 			type: String,
 			default: ""
 		},
-		slug: {
+		href: {
 			type: String,
 			default: ""
+		},
+		isExternalHref: {
+			type: Boolean,
+			default: false
+		},
+		showPreviewImage: {
+			type: Boolean,
+			default: false
 		}
 	}
 }
