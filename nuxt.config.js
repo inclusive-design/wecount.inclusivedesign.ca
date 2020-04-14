@@ -1,37 +1,55 @@
-import axios from "axios";
-import config from "./assets/config";
-
-import StaticRoutesBuilder from "./shared/StaticRoutesBuilder"
+import _ from "lodash";
+import Config from "./assets/config";
+import DataFetcher from "./shared/DataFetcher";
 
 export default {
 	mode: "universal",
 	generate: {
 		fallback: true,
 		async routes (callback) {
-			const viewsAPI = config.wpDomain + config.apiBase + "posts?categories=1";
-			// Determine how many pages of posts are available
-			const totalPages = await (await axios.get(`${viewsAPI}`)).headers["x-wp-totalpages"];
-			// Create empty array to hold all retrieved post data in chunks of 10
-			const postRoutes = [];
-			// Create empty array to hold all pagination routes for the News and Views page (e.g. /page/1, /page/2, etc)
-			const viewsPaginationRoutes = [];
-			for (let postPage = 1; postPage <= totalPages; postPage++) {
-				const response = await axios.get(`${viewsAPI}&page=${postPage}`);
-				// Add each page index to viewsPaginationRoutes
-				viewsPaginationRoutes.push({
-					route: `/views/page/${postPage}`,
-					payload: postPage // Is this necessary?
-				});
+			// 1. Build routes for site pages
+			const sitePages = await DataFetcher.sitePages();
+			const sitePagesRoutes = sitePages.map(function (oneSitePage) {
+				return {
+					route: oneSitePage.slug === "home" ? "/" : `/${oneSitePage.slug}`,
+					payload: {
+						title: oneSitePage.title,
+						content: oneSitePage.content
+					}
+				};
+			});
 
-				// Add routes for posts
-				response.data.map(function (onePost) {
-					postRoutes.push({
-						route: `/views/${onePost.slug}`,
-						payload: onePost
-					});
-				});
-			}
-			callback(null, [...viewsPaginationRoutes, ...postRoutes]);
+			// 2. Build routes for news pages: /news/page/{pageNum}
+			const news = await DataFetcher.categorizedItems("news", 8);
+			const newsInPage = _.chunk(news, Config.numOfRecsPerPage);
+			for (let i = 1; i <= newsInPage.length; i++) {
+				})
+
+			// const viewsAPI = Config.wpDomain + Config.apiBase + "posts?categories=1"
+			//
+			// // Determine how many pages of posts are available
+			// const totalPages = await (await axios.get(`${viewsAPI}`)).headers["x-wp-totalpages"]
+			// // Create empty array to hold all retrieved post data in chunks of 10
+			// const postRoutes = []
+			// // Create empty array to hold all pagination routes for the News and Views page (e.g. /page/1, /page/2, etc)
+			// const viewsPaginationRoutes = []
+			// for (let postPage = 1; postPage <= totalPages; postPage++) {
+			// 	const response = await axios.get(`${viewsAPI}&page=${postPage}`)
+			// 	// Add each page index to viewsPaginationRoutes
+			// 	viewsPaginationRoutes.push({
+			// 		route: `/views/page/${postPage}`,
+			// 		payload: postPage // Is this necessary?
+			// 	})
+			//
+			// 	// Add routes for posts
+			// 	response.data.map(function (onePost) {
+			// 		postRoutes.push({
+			// 			route: `/views/${onePost.slug}`,
+			// 			payload: onePost
+			// 		})
+			// 	})
+			// }
+			callback(null, [...sitePagesRoutes]);
 		}
 	},
 	/*
@@ -89,9 +107,9 @@ export default {
 	},
 	pwa: {
 		manifest: {
-			name: config.appTitle,
-			short_name: config.appShortTitle,
-			description: config.appDescription
+			name: Config.appTitle,
+			short_name: Config.appShortTitle,
+			description: Config.appDescription
 		}
 	},
 	/*

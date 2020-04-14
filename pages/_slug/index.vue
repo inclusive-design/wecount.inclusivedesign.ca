@@ -3,9 +3,10 @@
 </template>
 
 <script>
-import axios from "axios";
-import PageArticle from "~/components/PageArticle";
 import Config from "~/assets/config";
+import DataFetcher from "~/shared/DataFetcher";
+import PageArticle from "~/components/PageArticle";
+
 export default {
 	components: {
 		PageArticle
@@ -25,14 +26,22 @@ export default {
 			]
 		};
 	},
-	asyncData (context) {
-		return axios.get(`${Config.wpDomain}${Config.apiBase}pages`).then((response) => {
-			const res = response.data.filter(x => x.slug === context.params.slug)[0];
+	async asyncData (context) {
+		if (context.payload) {
+			// Extract the page object passed from nuxt.config.js for building the static page
 			return {
-				title: res.title.rendered,
-				content: res.content.rendered
+				title: context.payload.title,
+				content: context.payload.content
 			};
-		});
+		} else {
+			// Build the dynamic page when starting the website using `npm run dev`
+			const sitePages = await DataFetcher.sitePages();
+			const res = sitePages.filter(oneSitePage => oneSitePage.slug === context.params.slug)[0];
+			return {
+				title: res.title,
+				content: res.content
+			};
+		}
 	}
 };
 </script>
