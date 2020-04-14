@@ -2,6 +2,6 @@
 
 export default {
 	stripHtmlTags (inputString) {
-		return inputString.replace(/<\/?[^>]+(>|$)/g, "")
+		return inputString.replace(/<\/?[^>]+(>|$)/g, "");
 	}
-}
+};

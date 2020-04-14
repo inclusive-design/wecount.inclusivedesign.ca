@@ -2,95 +2,95 @@
 
 // Typography.
 * {
-  font-family: $family-sans-serif;
+	font-family: $family-sans-serif;
 }
 
 h1 {
-  color: $grey-dark;
-  font-size: rem(48);
-  font-weight: $font-weight-semibold;
+	color: $grey-dark;
+	font-size: rem(48);
+	font-weight: $font-weight-semibold;
 }
 
 h2 {
-  color: $grey-dark;
-  font-size: rem(48);
-  font-weight: $font-weight-medium;
+	color: $grey-dark;
+	font-size: rem(48);
+	font-weight: $font-weight-medium;
 }
 
 h3,
 .h3 {
-  font-size: rem(24);
-  font-weight: $font-weight-bold;
+	font-size: rem(24);
+	font-weight: $font-weight-bold;
 }
 
 p {
-  font-size: rem(16);
+	font-size: rem(16);
 }
 
 // Links and Buttons.
 a {
-  color: $blue-alt;
-  font-weight: $font-weight-bold;
-  text-decoration: none;
+	color: $blue-alt;
+	font-weight: $font-weight-bold;
+	text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  background-color: $orange-focus;
+	background-color: $orange-focus;
 }
 
 a:focus {
-  outline: none;
+	outline: none;
 }
 
 button {
-  background-color: $green-light;
-  border: 0;
-  border-radius: rem(28);
-  box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
-  color: $green-dark;
-  font-size: rem(24);
-  font-weight: 400;
-  height: rem(54);
-  line-height: (34 / 24);
-  padding: rem(8) rem(34);
-  transform: perspective(rem(1)) translateZ(0);
+	background-color: $green-light;
+	border: 0;
+	border-radius: rem(28);
+	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
+	color: $green-dark;
+	font-size: rem(24);
+	font-weight: 400;
+	height: rem(54);
+	line-height: (34 / 24);
+	padding: rem(8) rem(34);
+	transform: perspective(rem(1)) translateZ(0);
 }
 
 button::before {
-  border-radius: rem(26);
-  box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
-  content: '';
-  height: rem(54);
-  left: 0;
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  width: 100%;
+	border-radius: rem(26);
+	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
+	content: '';
+	height: rem(54);
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 button:hover::before,
 button:focus::before,
 button:active::before {
-  left: rem(4);
-  top: rem(4);
+	left: rem(4);
+	top: rem(4);
 }
 
 button::-moz-focus-inner {
-  outline: none;
+	outline: none;
 }
 
 button:focus {
-  outline: none;
+	outline: none;
 }
 
 button:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 $green-dark;
+	color: transparent;
+	text-shadow: 0 0 0 $green-dark;
 }
 
 @media screen and (min-width: 1024px) {
-  h1 {
-    font-size: rem(64);
-  }
+	h1 {
+		font-size: rem(64);
+	}
 }

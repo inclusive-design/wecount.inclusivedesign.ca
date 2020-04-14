@@ -3,8 +3,8 @@
 </template>
 
 <script>
-import Posts from "~/components/Posts"
-import Config from "~/assets/config"
+import Posts from "~/components/Posts";
+import Config from "~/assets/config";
 
 export default {
 	components: {
@@ -16,7 +16,7 @@ export default {
 			baseHref: "/news",
 			allNews: this.$store.state.news,
 			currentPageNum: 1
-		}
+		};
 	},
 	head () {
 		return {
@@ -25,10 +25,10 @@ export default {
 				{ hid: "og:title", property: "og:title", content: this.title + " (Page " + this.currentPageNum + ") | We Count" },
 				{ hid: "og:url", property: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
 			]
-		}
+		};
 	},
 	fetch ({ store }) {
-		return store.dispatch("fetchNews")
+		return store.dispatch("fetchNews");
 	}
-}
+};
 </script>
