@@ -19,9 +19,8 @@
 					</li>
 
 					<li>
-						<!-- TODO: Remove style attribute. -->
-						<nuxt-link to="/tools/" style="display: none;" exact>
-							Tools
+						<nuxt-link to="/learn/" exact>
+							Learn
 						</nuxt-link>
 					</li>
 

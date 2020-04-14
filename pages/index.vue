@@ -5,9 +5,8 @@
 			<a class="blue card" href="/views/">
 				<h3>Read current views in inclusive data science</h3>
 			</a>
-			<!-- TODO: Remove hidden attribute -->
-			<a class="green card" href="/tools/" hidden>
-				<h3 class="green-title">Find inclusive data tools</h3>
+			<a class="green card" href="/learn/">
+				<h3 class="green-title">Find data tools and resources</h3>
 			</a>
 			<a class="yellow card" href="/inclusion-challenges/">
 				<h3>Participate in our inclusion challenge workshops</h3>
