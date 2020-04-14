@@ -49,8 +49,8 @@
 </template>
 
 <script>
-import Previous from "~/assets/images/prev.svg?inline"
-import Next from "~/assets/images/next.svg?inline"
+import Previous from "~/assets/images/prev.svg?inline";
+import Next from "~/assets/images/next.svg?inline";
 export default {
 	components: {
 		Previous,
@@ -72,7 +72,7 @@ export default {
 	 * @method
 	 */
 		postsLen () {
-			return this.pageLinks.length
+			return this.pageLinks.length;
 		},
 		/**
 	 * Page number previous to current page number if current page number is less than or equal to 1 then value is 1.
@@ -80,9 +80,9 @@ export default {
 	 */
 		before () {
 			if (this.currentPageNum <= 1) {
-				return 1
+				return 1;
 			} else {
-				return this.currentPageNum - 1
+				return this.currentPageNum - 1;
 			}
 		},
 		/**
@@ -91,9 +91,9 @@ export default {
 	 */
 		after () {
 			if (this.currentPageNum >= this.postsLen) {
-				return this.postsLen
+				return this.postsLen;
 			} else {
-				return this.currentPageNum + 1
+				return this.currentPageNum + 1;
 			}
 		},
 		/**
@@ -101,35 +101,35 @@ export default {
 	 * @method
 	 */
 		firstLink () {
-			return this.pageLinks[0]
+			return this.pageLinks[0];
 		},
 		/**
 	 * Link to previous paginated page.
 	 * @method
 	 */
 		beforeLink () {
-			return this.pageLinks[this.before - 1]
+			return this.pageLinks[this.before - 1];
 		},
 		/**
 	 * Link to current paginated page.
 	 * @method
 	 */
 		currentLink () {
-			return this.pageLinks[this.currentPageNum - 1]
+			return this.pageLinks[this.currentPageNum - 1];
 		},
 		/**
 	 * Link to next paginated page.
 	 * @method
 	 */
 		afterLink () {
-			return this.pageLinks[this.after - 1]
+			return this.pageLinks[this.after - 1];
 		},
 		/**
 	 * Link to last paginated page.
 	 * @method
 	 */
 		lastLink () {
-			return this.pageLinks[this.postsLen - 1]
+			return this.pageLinks[this.postsLen - 1];
 		},
 		/**
 	 * Whether the current page is the page 2 or 3, all page buttons before the current page number need to show
@@ -137,7 +137,7 @@ export default {
 	 * @method
 	 */
 		hideProceedingPageButton () {
-			return this.currentPageNum !== 2 && this.currentPageNum !== 3
+			return this.currentPageNum !== 2 && this.currentPageNum !== 3;
 		},
 		/**
 	 * Whether the current page is the second or the third to the last page, in which case all buttons after the
@@ -145,8 +145,8 @@ export default {
 	 * @method
 	 */
 		hideFollowingPageButton () {
-			return this.currentPageNum !== this.postsLen - 1 && this.currentPageNum !== this.postsLen - 2
+			return this.currentPageNum !== this.postsLen - 1 && this.currentPageNum !== this.postsLen - 2;
 		}
 	}
-}
+};
 </script>

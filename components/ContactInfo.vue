@@ -28,9 +28,9 @@
 </template>
 
 <script>
-import Config from "~/assets/config"
-import IdrcLogo from "~/assets/images/logo_idrc.svg?inline"
-import OcaduLogo from "~/assets/images/logo_ocadu.svg?inline"
+import Config from "~/assets/config";
+import IdrcLogo from "~/assets/images/logo_idrc.svg?inline";
+import OcaduLogo from "~/assets/images/logo_ocadu.svg?inline";
 
 export default {
 	components: {
@@ -40,7 +40,7 @@ export default {
 	data () {
 		return {
 			email: Config.contactEmail
-		}
+		};
 	}
-}
+};
 </script>
