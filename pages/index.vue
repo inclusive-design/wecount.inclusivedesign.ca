@@ -57,6 +57,13 @@ export default {
 				}
 			})
 		}
+	},
+	fetch ({ store }) {
+		return Promise.all([
+			store.dispatch("fetchNews"),
+			store.dispatch("fetchViews"),
+			store.dispatch("fetchSitePages")
+		])
 	}
 }
 </script>

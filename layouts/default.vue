@@ -36,7 +36,7 @@ export default {
 	// 	// 	stateArray = this.$store.state.sitePages
 	// 	// }
 		return {
-			headers: this.$store.state.sitePages.find(x => x.slug === this.$route.params.slug)
+			headers: []
 			// 		headers: this.$store.state.sitePages.find(function (onePage) {
 			// 			// const currentPath = this.$route.path
 			// 			// remove the starting and ending slashes from currentPath
@@ -68,6 +68,10 @@ export default {
 	},
 	methods: {
 		setAriaCurrent () {
+			this.headers = []
+			if (this.$route.params.slug) {
+				this.headers = this.$store.state.sitePages.find(x => x.slug === this.$route.params.slug).headers
+			}
 			this.$nextTick(() => {
 				const app = this.$el
 				const currents = app.querySelectorAll("[aria-current]")
