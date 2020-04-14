@@ -64,9 +64,9 @@
 </template>
 
 <script>
-import ContactInfo from "~/components/ContactInfo"
-import SocialMedia from "~/components/SocialMedia"
-import Funders from "~/components/Funders"
+import ContactInfo from "~/components/ContactInfo";
+import SocialMedia from "~/components/SocialMedia";
+import Funders from "~/components/Funders";
 export default {
 	components: {
 		ContactInfo,
@@ -76,7 +76,7 @@ export default {
 	data () {
 		return {
 			today: new Date()
-		}
+		};
 	}
-}
+};
 </script>

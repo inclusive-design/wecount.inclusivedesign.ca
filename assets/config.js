@@ -1,6 +1,6 @@
 // TODO:
 // This is where I plan to put the global variables for the api endpoints. They are hardcoded for now.
-"use strict"
+"use strict";
 
 export default {
 	appTitle: "We Count",
@@ -36,4 +36,4 @@ export default {
 	}],
 	numOfRecsPerPage: 10,
 	dev: (process.env.NODE_ENV !== "production")
-}
+};

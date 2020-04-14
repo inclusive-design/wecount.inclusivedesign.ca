@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import WeCountLogo from "~/assets/images/logo_wecount.svg?inline"
+import WeCountLogo from "~/assets/images/logo_wecount.svg?inline";
 
 export default {
 	components: {
@@ -66,5 +66,5 @@ export default {
 			default: false
 		}
 	}
-}
+};
 </script>

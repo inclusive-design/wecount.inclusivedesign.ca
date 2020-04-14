@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import Header from "~/components/Header"
-import Aside from "~/components/Aside"
-import Footer from "~/components/Footer"
+import Header from "~/components/Header";
+import Aside from "~/components/Aside";
+import Footer from "~/components/Footer";
 export default {
 	components: {
 		Header,
@@ -30,29 +30,29 @@ export default {
 			// Watch the DOM update
 			this.$nextTick(() => {
 				setTimeout(() => {
-					this.setAriaCurrent()
-				}, 0)
-			})
+					this.setAriaCurrent();
+				}, 0);
+			});
 		}
 	},
 	mounted () {
-		this.setAriaCurrent()
+		this.setAriaCurrent();
 	},
 	methods: {
 		setAriaCurrent () {
 			this.$nextTick(() => {
-				const app = this.$el
-				const currents = app.querySelectorAll("[aria-current]")
+				const app = this.$el;
+				const currents = app.querySelectorAll("[aria-current]");
 				if (currents) {
 					currents.forEach((current) => {
-						current.removeAttribute("aria-current")
-					})
+						current.removeAttribute("aria-current");
+					});
 				}
 				app.querySelectorAll(".nuxt-link-exact-active").forEach((current) => {
-					current.setAttribute("aria-current", "page")
-				})
-			})
+					current.setAttribute("aria-current", "page");
+				});
+			});
 		}
 	}
-}
+};
 </script>
