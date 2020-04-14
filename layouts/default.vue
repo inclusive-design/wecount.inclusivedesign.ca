@@ -36,7 +36,7 @@ export default {
 	// 	// 	stateArray = this.$store.state.sitePages
 	// 	// }
 		return {
-			headers: this.$store.state.sitePages.find(x => x.slug === this.$route.params.slug).headers
+			headers: this.$store.state.sitePages.find(x => x.slug === this.$route.params.slug)
 			// 		headers: this.$store.state.sitePages.find(function (onePage) {
 			// 			// const currentPath = this.$route.path
 			// 			// remove the starting and ending slashes from currentPath
