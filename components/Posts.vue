@@ -7,10 +7,10 @@
 </template>
 
 <script>
-import _ from "lodash"
-import Pagination from "~/components/Pagination"
-import NewsGrid from "~/components/NewsGrid"
-import Config from "~/assets/config.js"
+import _ from "lodash";
+import Pagination from "~/components/Pagination";
+import NewsGrid from "~/components/NewsGrid";
+import Config from "~/assets/config.js";
 
 export default {
 	components: {
@@ -38,18 +38,18 @@ export default {
 	data () {
 		return {
 			numOfRecsPerPage: Config.numOfRecsPerPage
-		}
+		};
 	},
 	computed: {
 		pageCount () {
-			return Math.ceil(this.allPosts.length / this.numOfRecsPerPage)
+			return Math.ceil(this.allPosts.length / this.numOfRecsPerPage);
 		},
 		pageLinks () {
-			return Array(this.pageCount).fill().map((x, i) => this.baseHref + "/page/" + (i + 1))
+			return Array(this.pageCount).fill().map((x, i) => this.baseHref + "/page/" + (i + 1));
 		},
 		postsChunksByPage () {
-			return _.chunk(this.allPosts, this.numOfRecsPerPage)
+			return _.chunk(this.allPosts, this.numOfRecsPerPage);
 		}
 	}
-}
+};
 </script>

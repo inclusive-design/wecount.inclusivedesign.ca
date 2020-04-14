@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import Config from "~/assets/config"
-import CanadaLogo from "~/assets/images/logo_canada.svg?inline"
+import Config from "~/assets/config";
+import CanadaLogo from "~/assets/images/logo_canada.svg?inline";
 
 export default {
 	components: {
@@ -21,7 +21,7 @@ export default {
 	data () {
 		return {
 			funders: Config.funders
-		}
+		};
 	}
-}
+};
 </script>

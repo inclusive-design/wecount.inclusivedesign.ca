@@ -19,5 +19,5 @@ export default {
 			default: "No content found"
 		}
 	}
-}
+};
 </script>
