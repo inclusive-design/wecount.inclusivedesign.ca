@@ -102,10 +102,10 @@ export default {
 	** Build configuration
 	*/
 	build: {
-		postcss: {
-			preset: {
-				browsers: "> 1%"
-			}
+		/*
+		** You can extend webpack config here
+		*/
+		extend (config, ctx) {
 		}
 	}
 }
