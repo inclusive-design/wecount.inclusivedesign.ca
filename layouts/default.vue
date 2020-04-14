@@ -2,8 +2,15 @@
 	<div id="defaultContainer">
 		<Header />
 		<div class="content-wrapper">
-			<Aside />
+			<Aside :headers="headers" />
 			<main>
+				{{ this.$route.path }}
+				<br>
+				{{ this.$route.params }}
+				<br>
+				{{ /[^/](.*)/.exec(this.$route.path) }}
+				<br>
+				{{ /\/.*\//.exec(this.$route.path) }}
 				<nuxt />
 			</main>
 		</div>
@@ -20,6 +27,27 @@ export default {
 		Header,
 		Aside,
 		Footer
+	},
+	data () {
+	// 	// let stateArray = []
+	// 	// if (this.$route.path.includes("/views/")) {
+	// 	// 	stateArray = this.$store.state.views
+	// 	// } else {
+	// 	// 	stateArray = this.$store.state.sitePages
+	// 	// }
+		return {
+			headers: this.$store.state.sitePages.find(x => x.slug === this.$route.params.slug).headers
+			// 		headers: this.$store.state.sitePages.find(function (onePage) {
+			// 			// const currentPath = this.$route.path
+			// 			// remove the starting and ending slashes from currentPath
+			// 			// 1. /about/, /inclusion-challenges/
+			// 			// 	if regex matches "\/.*\/", extract .*
+			// 			// 2. /views/continuing-our-work-during-covid-19?s=...&tags=...
+			// 			//	if regex matches "\/views\/.*(?.*)", extract .*
+			// 			// const pageToParse = ["about", "/inclusion-challenges/"]
+			// 			// let slugFrom
+			// 		})
+		}
 	},
 	// In the future vue-router 4.x, <nuxt-link> will support a feature that automatically adds `aria-current="page"`
 	// to links that are active with exact match (https://router.vuejs.org/api/#exact-active-class). Before Nuxt used
