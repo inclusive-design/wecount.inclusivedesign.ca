@@ -9,20 +9,10 @@ export default {
 		// The fuction to process returned data from the Wordpress API
 		const processItems = function (items) {
 			return items.map(function (oneItem) {
-				// const sideMenuItems = []
-				if (categoryType === "views") {
-					// original content:
-					// aaa<h2>title</h2>
-					// aaa<h2 id="unique-id">title</h2>
-
-					// 1. extract side menu items for posts
-					// 2. create unique ids for each side menu items
-				}
 				return {
 					slug: oneItem.slug,
 					title: oneItem.title.rendered,
 					author: oneItem._embedded.author[0].name,
-					// content: oneItem.content.rendered,
 					content: SideMenu.injectHeaderID(oneItem.content.rendered),
 					headers: SideMenu.getHeaderList(oneItem.content.rendered),
 					// Strip html tags to get pure text for the content preview
@@ -73,24 +63,17 @@ export default {
 		const pageAPI = Config.wpDomain + Config.apiBase + "pages?per_page=100"
 
 		const response = await axios.get(`${pageAPI}`)
-		const slugsToExtractHeader = ["about", "inclusion-challenges"]
 
 		return response.data.map(function (onePage) {
-			const sideMenuItems = []
-			if (slugsToExtractHeader.includes(onePage.slug)) {
-				// extract headers
-			}
 			return {
 				slug: onePage.slug,
 				title: onePage.title.rendered,
-				// content: onePage.content.rendered,
 				content: SideMenu.injectHeaderID(onePage.content.rendered),
 				headers: SideMenu.getHeaderList(onePage.content.rendered),
 				// Strip html tags to get pure text for the content preview
 				excerpt: Utils.stripHtmlTags(onePage.content.rendered),
 				href: "/" + onePage.slug + "/",
-				isExternalHref: false,
-				sideMenuItems
+				isExternalHref: false
 			}
 		})
 	}

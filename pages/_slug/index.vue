@@ -4,6 +4,7 @@
 
 <script>
 import axios from "axios"
+import SideMenu from "~/shared/SideMenu"
 import PageArticle from "~/components/PageArticle"
 import Config from "~/assets/config"
 export default {
@@ -30,7 +31,7 @@ export default {
 			const res = response.data.filter(x => x.slug === context.params.slug)[0]
 			return {
 				title: res.title.rendered,
-				content: res.content.rendered
+				content: SideMenu.injectHeaderID(res.content.rendered)
 			}
 		})
 	}
