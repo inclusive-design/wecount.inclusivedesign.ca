@@ -1,44 +1,44 @@
 .post-article {
-  .author {
-    color: $grey-light;
-    font-style: italic;
-  }
+	.author {
+		color: $grey-light;
+		font-style: italic;
+	}
 
-  .date {
-    margin-bottom: rem(64);
-  }
+	.date {
+		margin-bottom: rem(64);
+	}
 
-  .api-content {
-    border-bottom: 2px solid $green-dark;
-    margin-bottom: rem(24);
-    padding-bottom: rem(160);
-  }
+	.api-content {
+		border-bottom: 2px solid $green-dark;
+		margin-bottom: rem(24);
+		padding-bottom: rem(160);
+	}
 
-  .tags-info {
-    h3 {
-      color: $green-dark;
-      margin: rem(8) 0;
-    }
-  }
+	.tags-info {
+		h3 {
+			color: $green-dark;
+			margin: rem(8) 0;
+		}
+	}
 
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: rem(80);
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: rem(80);
 
-    a {
-      background-color: $gold-light;
-      border: 1px solid transparent;
-      border-radius: rem(20);
-      color: $blue-alt;
-      font-weight: $font-weight-bold;
-      margin: rem(8) rem(16) rem(8) 0;
-      padding: rem(5) rem(16);
+		a {
+			background-color: $gold-light;
+			border: 1px solid transparent;
+			border-radius: rem(20);
+			color: $blue-alt;
+			font-weight: $font-weight-bold;
+			margin: rem(8) rem(16) rem(8) 0;
+			padding: rem(5) rem(16);
 
-      &:focus,
-      &:hover {
-        border: 1px solid $blue-alt;
-      }
-    }
-  }
+			&:focus,
+			&:hover {
+				border: 1px solid $blue-alt;
+			}
+		}
+	}
 }

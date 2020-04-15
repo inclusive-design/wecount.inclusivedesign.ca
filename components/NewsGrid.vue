@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import NewsItem from "~/components/NewsItem"
+import NewsItem from "~/components/NewsItem";
 export default {
 	components: {
 		NewsItem
@@ -32,5 +32,5 @@ export default {
 			default: () => []
 		}
 	}
-}
+};
 </script>

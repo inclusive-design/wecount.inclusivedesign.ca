@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import _ from "lodash"
-import Pagination from "~/components/Pagination"
-import NewsGrid from "~/components/NewsGrid"
-import Config from "~/assets/config.js"
+import _ from "lodash";
+import Pagination from "~/components/Pagination";
+import NewsGrid from "~/components/NewsGrid";
+import Config from "~/assets/config.js";
 
 export default {
 	components: {
@@ -22,7 +22,7 @@ export default {
 	data () {
 		return {
 			numOfRecsPerPage: Config.numOfRecsPerPage
-		}
+		};
 	},
 	head () {
 		return {
@@ -31,47 +31,47 @@ export default {
 				{ hid: "og:title", property: "og:title", content: this.title + " (Page " + this.currentPageNum + ") | We Count" },
 				{ hid: "og:url", property: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
 			]
-		}
+		};
 	},
 	computed: {
 		searchQuery () {
-			return decodeURIComponent(this.$route.query.s)
+			return decodeURIComponent(this.$route.query.s);
 		},
 		currentPageNum () {
-			return this.$route.query.page ? parseInt(this.$route.query.page) : 1
+			return this.$route.query.page ? parseInt(this.$route.query.page) : 1;
 		},
 		foundNews () {
 			return this.$store.state.news.filter((oneNews) => {
-				return oneNews.tags.join(" ").toLowerCase().match(this.searchQuery.toLowerCase())
-			})
+				return oneNews.tags.join(" ").toLowerCase().match(this.searchQuery.toLowerCase());
+			});
 		},
 		foundViews () {
 			return this.$store.state.views.filter((oneViews) => {
-				return oneViews.tags.join(" ").toLowerCase().match(this.searchQuery.toLowerCase())
-			})
+				return oneViews.tags.join(" ").toLowerCase().match(this.searchQuery.toLowerCase());
+			});
 		},
 		searchResults () {
-			return [...this.foundNews, ...this.foundViews]
+			return [...this.foundNews, ...this.foundViews];
 		},
 		pageCount () {
-			return Math.ceil(this.searchResults.length / this.numOfRecsPerPage)
+			return Math.ceil(this.searchResults.length / this.numOfRecsPerPage);
 		},
 		pageLinks () {
-			const pageLinks = []
+			const pageLinks = [];
 			for (let i = 1; i <= this.pageCount; i++) {
-				pageLinks.push(`/tag?s=${this.searchQuery}&page=${i}`)
+				pageLinks.push(`/tag?s=${this.searchQuery}&page=${i}`);
 			}
-			return pageLinks
+			return pageLinks;
 		},
 		pagePostList () {
-			return _.chunk(this.searchResults, this.numOfRecsPerPage)
+			return _.chunk(this.searchResults, this.numOfRecsPerPage);
 		}
 	},
 	fetch ({ store }) {
 		return Promise.all([
 			store.dispatch("fetchNews"),
 			store.dispatch("fetchViews")
-		])
+		]);
 	}
-}
+};
 </script>

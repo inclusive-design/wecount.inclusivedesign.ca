@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import Config from "~/assets/config"
+import Config from "~/assets/config";
 export default {
 	data () {
 		return {
 			socialMedias: Config.socialMedias
-		}
+		};
 	}
-}
+};
 </script>
