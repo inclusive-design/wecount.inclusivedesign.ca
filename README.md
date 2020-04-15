@@ -1,20 +1,27 @@
 # We Count
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d63b3d00-fd5f-47d7-8e43-d09bf4e8eb4f/deploy-status)](https://app.netlify.com/sites/wecount/deploys)
+[![License](https://img.shields.io/github/license/inclusive-design/wecount.inclusivedesign.ca?style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/LICENSE.md)
+[![GitHub Release](https://img.shields.io/github/v/release/inclusive-design/wecount.inclusivedesign.ca?sort=semver&style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/releases/latest)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/inclusive-design/wecount.inclusivedesign.ca/Test%20and%20build?label=github&style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/actions)
+[![Netlify Status](https://img.shields.io/netlify/d63b3d00-fd5f-47d7-8e43-d09bf4e8eb4f?style=flat-square)](https://app.netlify.com/sites/wecount/deploys)
 
 The source files for the We Count website, built with [Nuxt](https://nuxtjs.org/).
 
 ## Getting Started
 
+To contribute, please be sure to review our development processes as documented in the
+[contributing](https://github.com/inclusive-design/wecount.inclusivedesign.ca/tree/master/.github/CONTRIBUTING.md) guide.
+
 To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
 
-Then, clone the project from GitHub. Enter the following in your command line:
+Then, clone the project from GitHub. [Create a fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+with your GitHub account, then enter the following in your command line (make sure to replace `your-username` with your username):
 
 ```bash
-git clone https://github.com/inclusive-design/wecount.inclusivedesign.ca.git
+git clone https://github.com/your-username/wecount.inclusivedesign.ca.git
 ```
 
-From the root of the cloned project, enter the following in your command line:
+From the root of the cloned project, enter the following in your command line to install dependencies:
 
 ```bash
 npm ci
@@ -37,6 +44,12 @@ enter the following in the command line:
 npm run lint
 ```
 
+We use the following lint configurations:
+
+- [ESLint (JS/Vue)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/.eslintrc.js)
+- [Stylelint (CSS/SCSS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/stylelint.config.js)
+- [MarkdownLint (Markdown)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/.markdownlint.json)
+
 ## How to Build
 
 To build a static version of the website, enter the following in your command line:
@@ -49,8 +62,11 @@ The static website's files will be in the newly-created `dist` directory in the 
 
 ## How to Deploy
 
-This repository is connected to [Netlify](https://netlify.com). Updating the master branch will trigger
-a new build and deployment of the project to this [temporary URL](https://wecount.netlify.com/).
+This repository is connected to [Netlify](https://netlify.com), and commits will be automatically deployed as follows:
+
+- Pull request #175 (for example): [https://deploy-preview-175--wecount.netlify.app](https://deploy-preview-175--wecount.netlify.app)
+- Branch `dev`: [https://dev--wecount.netlify.app](https://dev--wecount.netlify.app)
+- Branch `master`: [https://wecount.inclusivedesign.ca](https://wecount.inclusivedesign.ca)
 
 ## License
 

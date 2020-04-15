@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import _ from "lodash"
-import Pagination from "~/components/Pagination"
-import NewsGrid from "~/components/NewsGrid"
-import Config from "~/assets/config.js"
+import _ from "lodash";
+import Pagination from "~/components/Pagination";
+import NewsGrid from "~/components/NewsGrid";
+import Config from "~/assets/config.js";
 
 export default {
 	components: {
@@ -25,7 +25,7 @@ export default {
 	data () {
 		return {
 			numOfRecsPerPage: Config.numOfRecsPerPage
-		}
+		};
 	},
 	head () {
 		return {
@@ -34,45 +34,45 @@ export default {
 				{ hid: "og:title", property: "og:title", content: this.title + " (Page " + this.currentPageNum + ") | We Count" },
 				{ hid: "og:url", property: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
 			]
-		}
+		};
 	},
 	computed: {
 		searchQuery () {
-			return decodeURIComponent(this.$route.query.s)
+			return decodeURIComponent(this.$route.query.s);
 		},
 		currentPageNum () {
-			return this.$route.query.page ? parseInt(this.$route.query.page) : 1
+			return this.$route.query.page ? parseInt(this.$route.query.page) : 1;
 		},
 		foundNews () {
 			return this.$store.state.news.filter((oneNews) => {
-				return oneNews.title.concat(" ", oneNews.content, " ", oneNews.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase())
-			})
+				return oneNews.title.concat(" ", oneNews.content, " ", oneNews.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase());
+			});
 		},
 		foundViews () {
 			return this.$store.state.views.filter((oneViews) => {
-				return oneViews.title.concat(" ", oneViews.content, " ", oneViews.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase())
-			})
+				return oneViews.title.concat(" ", oneViews.content, " ", oneViews.tags.join(" ")).toLowerCase().match(this.searchQuery.toLowerCase());
+			});
 		},
 		foundSitePages () {
 			return this.$store.state.sitePages.filter((page) => {
-				return page.title.concat(" ", page.content).toLowerCase().match(this.searchQuery.toLowerCase())
-			})
+				return page.title.concat(" ", page.content).toLowerCase().match(this.searchQuery.toLowerCase());
+			});
 		},
 		searchResults () {
-			return [...this.foundNews, ...this.foundViews, ...this.foundSitePages]
+			return [...this.foundNews, ...this.foundViews, ...this.foundSitePages];
 		},
 		pageCount () {
-			return Math.ceil(this.searchResults.length / this.numOfRecsPerPage)
+			return Math.ceil(this.searchResults.length / this.numOfRecsPerPage);
 		},
 		pageLinks () {
-			const pageLinks = []
+			const pageLinks = [];
 			for (let i = 1; i <= this.pageCount; i++) {
-				pageLinks.push(`/search?s=${this.searchQuery}&page=${i}`)
+				pageLinks.push(`/search?s=${this.searchQuery}&page=${i}`);
 			}
-			return pageLinks
+			return pageLinks;
 		},
 		pagePostList () {
-			return _.chunk(this.searchResults, this.numOfRecsPerPage)
+			return _.chunk(this.searchResults, this.numOfRecsPerPage);
 		}
 	},
 	fetch ({ store }) {
@@ -80,7 +80,7 @@ export default {
 			store.dispatch("fetchNews"),
 			store.dispatch("fetchViews"),
 			store.dispatch("fetchSitePages")
-		])
+		]);
 	}
-}
+};
 </script>

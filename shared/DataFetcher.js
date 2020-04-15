@@ -1,7 +1,7 @@
-import axios from "axios"
-import Config from "../assets/config"
-import Utils from "./Utils"
-import SideMenu from "./SideMenu"
+import axios from "axios";
+import Config from "../assets/config";
+import Utils from "./Utils";
+import SideMenu from "./SideMenu";
 
 // Share data fetch functions
 export default {
@@ -30,39 +30,39 @@ export default {
 					href: categoryType === "news" ? oneItem.acf.link : "/views/" + oneItem.slug,
 					isExternalHref: categoryType === "news",
 					showPreviewImage: categoryType !== "news"
-				}
-			})
-		}
+				};
+			});
+		};
 
 		// According to the Wordpress API for pagination and embedding: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/
 		// 1. Fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
 		// 2. Retrieve embedded resources in the main query
-		const baseCategoryAPI = Config.wpDomain + Config.apiBase + "posts?categories=" + categoryId + "&per_page=100&_embed"
+		const baseCategoryAPI = Config.wpDomain + Config.apiBase + "posts?categories=" + categoryId + "&per_page=100&_embed";
 
 		// Fetch records for the first page as well as the number of total pages
-		const firstPageRequest = baseCategoryAPI + "&page=1"
-		const firstPageResponse = await axios.get(`${firstPageRequest}`)
-		const totalPages = firstPageResponse.headers["x-wp-totalpages"]
-		let results = []
+		const firstPageRequest = baseCategoryAPI + "&page=1";
+		const firstPageResponse = await axios.get(`${firstPageRequest}`);
+		const totalPages = firstPageResponse.headers["x-wp-totalpages"];
+		let results = [];
 
-		results = processItems(firstPageResponse.data)
+		results = processItems(firstPageResponse.data);
 
 		// Fetch records for page 2 onwards
 		if (totalPages > 1) {
 			for (let currentPageNum = 2; currentPageNum <= totalPages; currentPageNum++) {
-				const currentPageResponse = await axios.get(`${baseCategoryAPI}&page=${currentPageNum}`)
-				results = results.concat(processItems(currentPageResponse.data))
+				const currentPageResponse = await axios.get(`${baseCategoryAPI}&page=${currentPageNum}`);
+				results = results.concat(processItems(currentPageResponse.data));
 			}
 		}
-		return results
+		return results;
 	},
 
 	async sitePages () {
 		// According to the Wordpress API for pagination and embedding: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/,
 		// fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
-		const pageAPI = Config.wpDomain + Config.apiBase + "pages?per_page=100"
+		const pageAPI = Config.wpDomain + Config.apiBase + "pages?per_page=100&order=asc&orderby=menu_order";
 
-		const response = await axios.get(`${pageAPI}`)
+		const response = await axios.get(`${pageAPI}`);
 
 		return response.data.map(function (onePage) {
 			return {
@@ -72,9 +72,10 @@ export default {
 				headers: SideMenu.getHeaderList(onePage.content.rendered),
 				// Strip html tags to get pure text for the content preview
 				excerpt: Utils.stripHtmlTags(onePage.content.rendered),
+				menu_order: onePage.menu_order,
 				href: "/" + onePage.slug + "/",
 				isExternalHref: false
-			}
-		})
+			};
+		});
 	}
-}
+};

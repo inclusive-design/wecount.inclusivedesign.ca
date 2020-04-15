@@ -8,7 +8,7 @@
 
 		<div v-html="postToRender.content" class="api-content" />
 
-		<section class="tags-info">
+		<section v-if="postToRender.tags.length > 0" class="tags-info">
 			<h3>Active Tags</h3>
 			<div class="tags">
 				<nuxt-link v-for="(t, index) in postToRender.tags" :key="index" :to="{ path: '/tag', query: { s: t }}">
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import Pagination from "~/components/Pagination"
+import Pagination from "~/components/Pagination";
 
 export default {
 	components: {
@@ -40,14 +40,14 @@ export default {
 	},
 	computed: {
 		pageNums () {
-			return this.allPosts.length
+			return this.allPosts.length;
 		},
 		pageLinks () {
-			return Array(this.pageNums).fill().map((x, i) => this.allPosts[i].slug)
+			return Array(this.pageNums).fill().map((x, i) => this.allPosts[i].slug);
 		},
 		currentPageNum () {
-			return this.allPosts.findIndex(post => post.slug === this.$route.params.slug) + 1
+			return this.allPosts.findIndex(post => post.slug === this.$route.params.slug) + 1;
 		}
 	}
-}
+};
 </script>
