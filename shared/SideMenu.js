@@ -8,7 +8,7 @@ export default {
 
 		const h2List = window.document.getElementsByTagName("h2");
 		for (let i = 0; i < h2List.length; i++) {
-			h2List[i].setAttribute("id", `#${encodeURIComponent(h2List[i].textContent)}`);
+			h2List[i].setAttribute("id", `${h2List[i].textContent.replace(/\s+/g, "-")}`);
 		}
 		return jsdom.serialize();
 	},
@@ -21,7 +21,7 @@ export default {
 		headerList = headerList.map(function (header) {
 			return {
 				title: header.textContent,
-				href: `#${encodeURIComponent(header.textContent)}`
+				href: `#${header.textContent.replace(/\s+/g, "-")}`
 			};
 		});
 		return headerList;
