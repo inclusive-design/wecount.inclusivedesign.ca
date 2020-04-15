@@ -40,6 +40,9 @@ export default {
 
 		sitePages.forEach((oneSitePage) => {
 			if (includeHomeItem && oneSitePage.slug === "home" && oneSitePage.menu_order === 0) {
+				// The title "Home" is hardcoded based on the slug is because the title received from the API response is
+				// `Creating an inclusive data ecosystem`, which doesn't provide any hint that it's a home page. And it also
+				// doesn't match what's on the design.
 				homeMenuItem.push({
 					slug: oneSitePage.slug,
 					title: "Home",
