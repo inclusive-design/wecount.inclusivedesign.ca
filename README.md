@@ -10,7 +10,7 @@ The source files for the We Count website, built with [Nuxt](https://nuxtjs.org/
 ## Getting Started
 
 To contribute, please be sure to review our development processes as documented in the
-[contributing](https://github.com/inclusive-design/wecount.inclusivedesign.ca/tree/master/.github/CONTRIBUTING.md) guide.
+[contributing](.github/CONTRIBUTING.md) guide.
 
 To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
 
