@@ -59,6 +59,11 @@ nuxt generate
 ```
 
 The static website's files will be in the newly-created `dist` directory in the root of the project.
+To preview the static website, enter the following into your command line:
+
+```bash
+npx serve dist
+```
 
 ## How to Deploy
 
