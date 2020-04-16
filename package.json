@@ -72,7 +72,7 @@
 			"eslint"
 		],
 		"*.md": [
-			"markdownlint"
+			"markdownlint --ignore LICENSE.md"
 		]
 	}
 }
