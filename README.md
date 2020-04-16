@@ -62,8 +62,7 @@ The static website's files will be in the newly-created `dist` directory in the 
 To preview the static website, enter the following into your command line:
 
 ```bash
-cd dist
-npx serve
+npx serve dist
 ```
 
 ## How to Deploy
