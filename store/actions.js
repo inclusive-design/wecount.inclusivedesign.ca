@@ -23,5 +23,9 @@ export default {
 			const sitePages = await DataFetcher.sitePages();
 			context.commit("setSitePages", sitePages);
 		}
+	},
+
+	nuxtServerInit ({ dispatch }) {
+		return dispatch("fetchSitePages");
 	}
 };
