@@ -2,7 +2,7 @@
 	"name": "@wecount/wecount.inclusivedesign.ca",
 	"version": "1.0.2",
 	"description": "The source files for the We Count website, built with Nuxt.",
-	"license": "CC-BY-4.0",
+	"license": "BSD-3-Clause",
 	"author": "OCAD University <idrc@ocadu.ca>",
 	"contributors": [
 		"Cindy Li <cli@ocadu.ca> (https://github.com/cindyli)",
