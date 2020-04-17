@@ -1,4 +1,5 @@
 // Shared utility functons
+import Config from "../assets/config";
 
 export default {
 	stripHtmlTags (inputString) {
@@ -61,5 +62,44 @@ export default {
 		});
 
 		return [...homeMenuItem, ...menuItems, ...extraMenuItemsToAppend];
+	},
+
+	/**
+	 * Generate static routes for categorized items such as "news" and "views".
+	 * @param {string} categoryType - The category type.
+	 * @param {array<Post>} allPosts - All posts in the given category type.
+	 * @param {boolean} includeTagRoutes - A flag indicating if static routes for tags that are associated with the post should be included.
+	 * @param {boolean} includePostRoutes - A flag indicating if static routes for posts should be included.
+	 * @return {array<Routes>} An array of static routes generted for this category.
+	 */
+	createStaticRoutesForCategorizedItems (categoryType, allPosts, includeTagRoutes, includePostRoutes) {
+		const numOfPages = Math.ceil(allPosts.length / Config.numOfRecsPerPage);
+		const postsRoutes = [];
+
+		for (let pageNum = 1; pageNum <= numOfPages; pageNum++) {
+			postsRoutes.push({
+				route: "/" + categoryType + "/page/" + pageNum
+			});
+		}
+
+		if (includeTagRoutes || includePostRoutes) {
+			allPosts.forEach((onePost) => {
+				if (includeTagRoutes) {
+					onePost.tags.forEach((tag) => {
+						postsRoutes.push({
+							route: "/tag/" + encodeURI(tag)
+						});
+					});
+				}
+
+				if (includePostRoutes) {
+					postsRoutes.push({
+						route: "/" + categoryType + "/" + onePost.slug
+					});
+				}
+			});
+		}
+
+		return postsRoutes;
 	}
 };

@@ -1,55 +1,33 @@
-import _ from "lodash";
 import Config from "./assets/config";
 import DataFetcher from "./shared/DataFetcher";
+import Utils from "./shared/Utils";
 
 export default {
 	mode: "universal",
 	generate: {
 		fallback: true,
-		async routes (callback) {
+		async routes () {
 			// 1. Build routes for site pages
 			const sitePages = await DataFetcher.sitePages();
 			const sitePagesRoutes = sitePages.map(function (oneSitePage) {
 				return {
-					route: oneSitePage.slug === "home" ? "/" : `/${oneSitePage.slug}`,
-					payload: {
-						title: oneSitePage.title,
-						content: oneSitePage.content
-					}
+					route: oneSitePage.slug === "home" ? "/" : `/${oneSitePage.slug}`
 				};
 			});
 
 			// 2. Build routes for news pages: /news/page/{pageNum}
+			// The static root news page "/news" is automatically built. It doesn't need to be explicitly included
+			// in the returned routes array.
 			const news = await DataFetcher.categorizedItems("news", 8);
-			const newsInPage = _.chunk(news, Config.numOfRecsPerPage);
-			for (let i = 1; i <= newsInPage.length; i++) {
-				})
+			const newsRoutes = Utils.createStaticRoutesForCategorizedItems("news", news, true, false);
 
-			// const viewsAPI = Config.wpDomain + Config.apiBase + "posts?categories=1"
-			//
-			// // Determine how many pages of posts are available
-			// const totalPages = await (await axios.get(`${viewsAPI}`)).headers["x-wp-totalpages"]
-			// // Create empty array to hold all retrieved post data in chunks of 10
-			// const postRoutes = []
-			// // Create empty array to hold all pagination routes for the News and Views page (e.g. /page/1, /page/2, etc)
-			// const viewsPaginationRoutes = []
-			// for (let postPage = 1; postPage <= totalPages; postPage++) {
-			// 	const response = await axios.get(`${viewsAPI}&page=${postPage}`)
-			// 	// Add each page index to viewsPaginationRoutes
-			// 	viewsPaginationRoutes.push({
-			// 		route: `/views/page/${postPage}`,
-			// 		payload: postPage // Is this necessary?
-			// 	})
-			//
-			// 	// Add routes for posts
-			// 	response.data.map(function (onePost) {
-			// 		postRoutes.push({
-			// 			route: `/views/${onePost.slug}`,
-			// 			payload: onePost
-			// 		})
-			// 	})
-			// }
-			callback(null, [...sitePagesRoutes]);
+			// 3. Build routes for views pages: /views/page/{pageNum}
+			// The static root views page "/views" is automatically built. It doesn't need to be explicitly included
+			// in the returned routes array.
+			const views = await DataFetcher.categorizedItems("views", 1);
+			const viewsRoutes = Utils.createStaticRoutesForCategorizedItems("views", views, true, true);
+
+			return [...sitePagesRoutes, ...newsRoutes, ...viewsRoutes];
 		}
 	},
 	/*

@@ -4,7 +4,6 @@
 
 <script>
 import Config from "~/assets/config";
-import DataFetcher from "~/shared/DataFetcher";
 import PageArticle from "~/components/PageArticle";
 
 export default {
@@ -12,9 +11,10 @@ export default {
 		PageArticle
 	},
 	data () {
+		const currentPage = this.$store.state.sitePages.filter(oneSitePage => oneSitePage.slug === this.$route.params.slug)[0];
 		return {
-			title: "",
-			content: ""
+			title: currentPage.title,
+			content: currentPage.content
 		};
 	},
 	head () {
@@ -26,22 +26,8 @@ export default {
 			]
 		};
 	},
-	async asyncData (context) {
-		if (context.payload) {
-			// Extract the page object passed from nuxt.config.js for building the static page
-			return {
-				title: context.payload.title,
-				content: context.payload.content
-			};
-		} else {
-			// Build the dynamic page when starting the website using `npm run dev`
-			const sitePages = await DataFetcher.sitePages();
-			const res = sitePages.filter(oneSitePage => oneSitePage.slug === context.params.slug)[0];
-			return {
-				title: res.title,
-				content: res.content
-			};
-		}
+	fetch ({ store }) {
+		return store.dispatch("fetchSitePages");
 	}
 };
 </script>

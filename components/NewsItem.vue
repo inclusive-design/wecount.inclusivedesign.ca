@@ -7,7 +7,9 @@
 		</figure>
 		<h2 class="h3">
 			<a v-if="isExternalHref" :href="href" v-html="title" />
-			<nuxt-link v-else :to="href" v-html="title" />
+			<!-- Use v-if instead of v-else below is to work around an issue that <nuxt-link> does not
+			convert to <a> tag in SSR mode when v-else is used. See https://github.com/nuxt/nuxt.js/issues/5388 -->
+			<nuxt-link v-if="!isExternalHref" :to="href" v-html="title" />
 		</h2>
 		<div v-if="!isExternalHref" v-html="author" class="author" />
 		<div class="date">
