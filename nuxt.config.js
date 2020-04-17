@@ -9,7 +9,7 @@ export default {
 		async routes () {
 			// 1. Build routes for site pages
 			const sitePages = await DataFetcher.sitePages();
-			const sitePagesRoutes = sitePages.map(function (oneSitePage) {
+			const sitePagesRoutes = sitePages.map((oneSitePage) => {
 				return {
 					route: oneSitePage.slug === "home" ? "/" : `/${oneSitePage.slug}`
 				};

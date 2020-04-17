@@ -25,10 +25,14 @@ export default {
 		PageArticle
 	},
 	data () {
-		const currentPage = this.$store.state.sitePages.filter(oneSitePage => oneSitePage.slug === "home")[0];
-		return {
+		const currentPage = this.$store.state.sitePages.find(oneSitePage => oneSitePage.slug === "home");
+
+		return currentPage ? {
 			title: currentPage.title,
 			content: currentPage.content
+		} : {
+			title: "Not Found",
+			content: undefined
 		};
 	},
 	head () {
