@@ -13,13 +13,20 @@ export default {
 	data () {
 		const currentPage = this.$store.state.sitePages.find(oneSitePage => oneSitePage.slug === this.$route.params.slug);
 
-		return currentPage ? {
-			title: currentPage.title,
-			content: currentPage.content
-		} : {
-			title: "Not Found",
-			content: undefined
-		};
+		if (currentPage) {
+			return {
+				title: currentPage.title,
+				content: currentPage.content
+			};
+		} else {
+			this.$nuxt.error({
+				statusCode: 404
+			});
+			return {
+				title: "Page not found",
+				content: ""
+			};
+		}
 	},
 	head () {
 		return {

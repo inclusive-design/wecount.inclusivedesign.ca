@@ -27,12 +27,9 @@ export default {
 	data () {
 		const currentPage = this.$store.state.sitePages.find(oneSitePage => oneSitePage.slug === "home");
 
-		return currentPage ? {
+		return {
 			title: currentPage.title,
 			content: currentPage.content
-		} : {
-			title: "Not Found",
-			content: undefined
 		};
 	},
 	head () {
