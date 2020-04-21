@@ -35,7 +35,8 @@ export default {
 		// According to the Wordpress API for pagination and embedding: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/
 		// 1. Fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
 		// 2. Retrieve embedded resources in the main query
-		const baseCategoryAPI = Config.wpDomain + Config.apiBase + "posts?categories=" + categoryId + "&per_page=100&_embed";
+		// 3. Order by the modified date in descending order
+		const baseCategoryAPI = Config.wpDomain + Config.apiBase + "posts?categories=" + categoryId + "&per_page=100&orderby=modified&order=desc&_embed";
 
 		// Fetch records for the first page as well as the number of total pages
 		const firstPageRequest = baseCategoryAPI + "&page=1";
@@ -57,7 +58,8 @@ export default {
 
 	async sitePages () {
 		// According to the Wordpress API for pagination and embedding: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/,
-		// fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
+		// 1. fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
+		// 2. Order by the menu order in ascending order
 		const pageAPI = Config.wpDomain + Config.apiBase + "pages?per_page=100&order=asc&orderby=menu_order";
 
 		const response = await axios.get(`${pageAPI}`);

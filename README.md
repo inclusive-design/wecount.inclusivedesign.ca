@@ -10,7 +10,7 @@ The source files for the We Count website, built with [Nuxt](https://nuxtjs.org/
 ## Getting Started
 
 To contribute, please be sure to review our development processes as documented in the
-[contributing](https://github.com/inclusive-design/wecount.inclusivedesign.ca/tree/master/.github/CONTRIBUTING.md) guide.
+[contributing](.github/CONTRIBUTING.md) guide.
 
 To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
 
@@ -59,6 +59,11 @@ nuxt generate
 ```
 
 The static website's files will be in the newly-created `dist` directory in the root of the project.
+To preview the static website, enter the following into your command line:
+
+```bash
+npx serve dist
+```
 
 ## How to Deploy
 

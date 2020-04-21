@@ -3,18 +3,30 @@
 </template>
 
 <script>
-import axios from "axios";
-import PageArticle from "~/components/PageArticle";
 import Config from "~/assets/config";
+import PageArticle from "~/components/PageArticle";
+
 export default {
 	components: {
 		PageArticle
 	},
 	data () {
-		return {
-			title: "",
-			content: ""
-		};
+		const currentPage = this.$store.state.sitePages.find(oneSitePage => oneSitePage.slug === this.$route.params.slug);
+
+		if (currentPage) {
+			return {
+				title: currentPage.title,
+				content: currentPage.content
+			};
+		} else {
+			this.$nuxt.error({
+				statusCode: 404
+			});
+			return {
+				title: "Page not found",
+				content: ""
+			};
+		}
 	},
 	head () {
 		return {
@@ -25,14 +37,8 @@ export default {
 			]
 		};
 	},
-	asyncData (context) {
-		return axios.get(`${Config.wpDomain}${Config.apiBase}pages`).then((response) => {
-			const res = response.data.filter(x => x.slug === context.params.slug)[0];
-			return {
-				title: res.title.rendered,
-				content: res.content.rendered
-			};
-		});
+	fetch ({ store }) {
+		return store.dispatch("fetchSitePages");
 	}
 };
 </script>

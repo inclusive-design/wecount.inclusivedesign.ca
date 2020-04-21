@@ -17,17 +17,19 @@
 </template>
 
 <script>
-import axios from "axios";
-import PageArticle from "~/components/PageArticle";
 import Config from "~/assets/config";
+import PageArticle from "~/components/PageArticle";
+
 export default {
 	components: {
 		PageArticle
 	},
 	data () {
+		const currentPage = this.$store.state.sitePages.find(oneSitePage => oneSitePage.slug === "home");
+
 		return {
-			title: "",
-			content: ""
+			title: currentPage.title,
+			content: currentPage.content
 		};
 	},
 	head () {
@@ -39,24 +41,8 @@ export default {
 			]
 		};
 	},
-	asyncData (context) {
-		// check if you got a payload first
-		if (context.payload) {
-		// extract the page object passed from nuxt.config.js
-			return {
-				title: context.payload.title.rendered.toUpperCase(),
-				content: context.payload.content.rendered
-			};
-		} else {
-		// if you got no context, go ahead and make the API request
-			return axios.get(`${Config.wpDomain}${Config.apiBase}pages`).then((response) => {
-				const res = response.data.filter(x => x.slug === "home")[0];
-				return {
-					title: res.title.rendered,
-					content: res.content.rendered
-				};
-			});
-		}
+	fetch ({ store }) {
+		return store.dispatch("fetchSitePages");
 	}
 };
 </script>
