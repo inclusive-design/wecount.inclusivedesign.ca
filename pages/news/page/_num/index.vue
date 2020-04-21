@@ -1,5 +1,7 @@
 <template>
-	<Posts :currentPageNum="currentPageNum" :allPosts="allNews" :title="title" :baseHref="baseHref" />
+	<main>
+		<Posts :currentPageNum="currentPageNum" :allPosts="allNews" :title="title" :baseHref="baseHref" />
+	</main>
 </template>
 
 <script>

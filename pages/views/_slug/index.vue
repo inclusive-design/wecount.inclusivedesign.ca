@@ -1,8 +1,14 @@
 <template>
-	<PostArticle :allPosts="views" :postToRender="viewToRender" />
+	<div class="content-wrapper">
+		<Aside :headers="headers" />
+		<main>
+			<PostArticle :allPosts="views" :postToRender="viewToRender" />
+		</main>
+	</div>
 </template>
 
 <script>
+import Aside from "~/components/Aside";
 import PostArticle from "~/components/PostArticle";
 import Config from "~/assets/config";
 export default {
@@ -14,10 +20,12 @@ export default {
 		return linkList.includes(params.slug);
 	},
 	components: {
-		PostArticle
+		PostArticle,
+		Aside
 	},
 	data () {
 		return {
+			headers: this.$store.state.views.find(x => x.slug === this.$route.params.slug).headers || []
 		};
 	},
 	head () {

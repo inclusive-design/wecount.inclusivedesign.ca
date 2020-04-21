@@ -95,7 +95,7 @@ figcaption {
 
 	.content-wrapper {
 		display: grid;
-		grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
+		grid-template-columns: 1fr minmax(75ch, 130ch) 23ch;
 		grid-template-rows: auto auto;
 	}
 

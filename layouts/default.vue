@@ -1,24 +1,17 @@
 <template>
 	<div id="defaultContainer">
 		<Header />
-		<div class="content-wrapper">
-			<Aside :headers="headers" />
-			<main>
-				<nuxt />
-			</main>
-		</div>
+		<nuxt />
 		<Footer />
 	</div>
 </template>
 
 <script>
 import Header from "~/components/Header";
-import Aside from "~/components/Aside";
 import Footer from "~/components/Footer";
 export default {
 	components: {
 		Header,
-		Aside,
 		Footer
 	},
 	data () {
@@ -44,19 +37,9 @@ export default {
 		this.setAriaCurrent();
 	},
 	methods: {
+		// The patch that sets `aria-current="page"`
+		// to links that are active with exact match (https://router.vuejs.org/api/#exact-active-class)
 		setAriaCurrent () {
-			// Logic for sideMenu
-			let stateArray = [];
-			if (this.$route.path.includes("/views/")) {
-				stateArray = this.$store.state.views;
-			} else {
-				stateArray = this.$store.state.sitePages;
-			}
-			this.headers = [];
-			if (this.$route.params.slug) {
-				this.headers = stateArray.find(x => x.slug === this.$route.params.slug).headers;
-			}
-			//
 			this.$nextTick(() => {
 				const app = this.$el;
 				const currents = app.querySelectorAll("[aria-current]");

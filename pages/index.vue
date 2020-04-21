@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<main>
 		<PageArticle :title="title" :content="content" />
 		<div class="homepage-cards">
 			<a class="blue card" href="/views/">
@@ -13,7 +13,7 @@
 				<h3>Participate in our inclusion challenge workshops</h3>
 			</a>
 		</div>
-	</div>
+	</main>
 </template>
 
 <script>

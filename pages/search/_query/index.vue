@@ -1,14 +1,16 @@
 <template>
-	<article>
-		<h1 class="title">
-			Search: “{{ searchQuery }}”
-		</h1>
-		<p role="status">
-			We found {{ searchResults.length }} results for your search.
-		</p>
-		<NewsGrid :postList="pagePostList[$route.query.page ? parseInt($route.query.page) - 1 : 0]" />
-		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
-	</article>
+	<main>
+		<article>
+			<h1 class="title">
+				Search: “{{ searchQuery }}”
+			</h1>
+			<p role="status">
+				We found {{ searchResults.length }} results for your search.
+			</p>
+			<NewsGrid :postList="pagePostList[$route.query.page ? parseInt($route.query.page) - 1 : 0]" />
+			<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
+		</article>
+	</main>
 </template>
 
 <script>

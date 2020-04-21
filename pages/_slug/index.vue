@@ -1,14 +1,21 @@
 <template>
-	<PageArticle :title="title" :content="content" />
+	<div class="content-wrapper">
+		<Aside :headers="headers" />
+		<main>
+			<PageArticle :title="title" :content="content" />
+		</main>
+	</div>
 </template>
 
 <script>
+import Aside from "~/components/Aside";
 import Config from "~/assets/config";
 import PageArticle from "~/components/PageArticle";
 
 export default {
 	components: {
-		PageArticle
+		PageArticle,
+		Aside
 	},
 	data () {
 		const currentPage = this.$store.state.sitePages.find(oneSitePage => oneSitePage.slug === this.$route.params.slug);
@@ -16,7 +23,8 @@ export default {
 		if (currentPage) {
 			return {
 				title: currentPage.title,
-				content: currentPage.content
+				content: currentPage.content,
+				headers: this.$store.state.sitePages.find(x => x.slug === this.$route.params.slug).headers || []
 			};
 		} else {
 			this.$nuxt.error({
@@ -28,6 +36,9 @@ export default {
 			};
 		}
 	},
+	fetch ({ store }) {
+		return store.dispatch("fetchSitePages");
+	},
 	head () {
 		return {
 			titleTemplate: this.title + " | %s",
@@ -36,9 +47,6 @@ export default {
 				{ hid: "og:url", property: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
 			]
 		};
-	},
-	fetch ({ store }) {
-		return store.dispatch("fetchSitePages");
 	}
 };
 </script>

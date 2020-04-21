@@ -1,11 +1,13 @@
 <template>
-	<article class="container">
-		<h1 class="title">
-			Tag: “{{ searchQuery }}”
-		</h1>
-		<NewsGrid :postList="pagePostList[$route.query.page ? parseInt($route.query.page) - 1 : 0]" />
-		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
-	</article>
+	<main>
+		<article class="container">
+			<h1 class="title">
+				Tag: “{{ searchQuery }}”
+			</h1>
+			<NewsGrid :postList="pagePostList[$route.query.page ? parseInt($route.query.page) - 1 : 0]" />
+			<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
+		</article>
+	</main>
 </template>
 
 <script>
