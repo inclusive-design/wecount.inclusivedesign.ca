@@ -44,5 +44,5 @@ export default {
 	fetch ({ store }) {
 		return store.dispatch("fetchSitePages");
 	}
-};
+}; // test and build rerun
 </script>
