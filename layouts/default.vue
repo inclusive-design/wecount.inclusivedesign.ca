@@ -14,11 +14,6 @@ export default {
 		Header,
 		Footer
 	},
-	data () {
-		return {
-			headers: []
-		};
-	},
 	// In the future vue-router 4.x, <nuxt-link> will support a feature that automatically adds `aria-current="page"`
 	// to links that are active with exact match (https://router.vuejs.org/api/#exact-active-class). Before Nuxt used
 	// by the WeCount website is upgraded to that version, the code below is to patch the system with the same feature.

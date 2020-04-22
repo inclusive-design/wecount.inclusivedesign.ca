@@ -101,10 +101,12 @@ export default {
 	*/
 	build: {
 		/*
-				** You can extend webpack config here
-				*/
+		** You can extend webpack config here
+		*/
 		extend (config, { isDev, isClient }) {
 			if (isClient) {
+				// the following are settings for dependencies that are needed to use jsdom which is being implemented in the shared/SideMenu.js file
+				// this solution comes from here: https://github.com/nuxt-community/dotenv-module/issues/11#issuecomment-376780588
 				config.node = {
 					fs: "empty",
 					child_process: "empty"
