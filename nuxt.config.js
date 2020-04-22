@@ -108,8 +108,10 @@ export default {
 				// the following are settings for dependencies that are needed to use jsdom which is being implemented in the shared/SideMenu.js file
 				// this solution comes from here: https://github.com/nuxt-community/dotenv-module/issues/11#issuecomment-376780588
 				config.node = {
+					child_process: "empty",
 					fs: "empty",
-					child_process: "empty"
+					net: "empty",
+					tls: "empty"
 				};
 			}
 		}
