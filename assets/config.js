@@ -9,7 +9,7 @@ export default {
 	appThemeColor: "#ffffff",
 	appBgColor: "#ffffff",
 	appBaseUrl: "https://wecount.inclusivedesign.ca", // TODO: Figure out how to determine this at generate time.
-	wpDomain: (process.env.CONTEXT === "production") ? "https://wecount-cms.inclusivedesign.ca" : "https://wecount-dev.inclusivedesign.ca",
+	wpDomain: "https://wecount-cms.inclusivedesign.ca",
 	apiBase: "/wp-json/wp/v2/",
 	contactEmail: "wecount@inclusivedesign.ca",
 	// Using raw SVG content is to work around the issue with dynamically loading and injecting inline SVGs into the template.
