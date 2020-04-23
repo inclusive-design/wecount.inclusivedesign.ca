@@ -1,0 +1,30 @@
+// Styles for the search container
+.search-container {
+	align-items: center;
+	display: flex;
+
+	input[type="search"] {
+		background-color: white;
+		background-image: url("../images/search.svg");
+		background-position: left rem(8) center;
+		background-repeat: no-repeat;
+		border: 0;
+		border-radius: rem(28);
+		outline: none;
+		padding: rem(16) rem(48);
+
+		&:focus {
+			background-position: left rem(8) center;
+			border-radius: rem(28);
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.search-container {
+		input[type="search"],
+		input[type="search"]:focus {
+			font-size: inherit;
+		}
+	}
+}

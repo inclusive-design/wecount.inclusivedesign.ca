@@ -1,6 +1,7 @@
 <template>
-	<article>
+	<article class="posts">
 		<h1>{{ title }}</h1>
+		<SearchForm v-if="title==='Views'" :placeholder="placeholderForSerch" :ariaLabel="ariaLabelForSearch" :context="searchContext" />
 		<NewsGrid :postList="postsChunksByPage[currentPageNum - 1]" />
 		<Pagination v-if="pageCount > 1" :pageLinks="pageLinks" :currentPageNum="currentPageNum" />
 	</article>
@@ -10,11 +11,13 @@
 import _ from "lodash";
 import Pagination from "~/components/Pagination";
 import NewsGrid from "~/components/NewsGrid";
+import SearchForm from "~/components/SearchForm";
 import Config from "~/assets/config.js";
 
 export default {
 	components: {
 		NewsGrid,
+		SearchForm,
 		Pagination
 	},
 	props: {
@@ -37,7 +40,10 @@ export default {
 	},
 	data () {
 		return {
-			numOfRecsPerPage: Config.numOfRecsPerPage
+			numOfRecsPerPage: Config.numOfRecsPerPage,
+			placeholderForSerch: "Search posts ...",
+			ariaLabelForSearch: "Enter keywords for a search in posts",
+			searchContext: "views"
 		};
 	},
 	computed: {

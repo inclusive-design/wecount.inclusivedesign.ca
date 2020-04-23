@@ -74,19 +74,10 @@ header {
 				display: block;
 			}
 
-			// Styles for the search container
 			.search-container {
-				align-items: center;
-				display: flex;
-
 				input[type="search"] {
-					background-color: white;
-					background-image: url("../images/search.svg");
 					background-position: center;
-					background-repeat: no-repeat;
-					border: 0;
 					border-radius: 50%;
-					outline: none;
 					padding: rem(8) rem(16);
 					width: rem(16);
 
@@ -142,8 +133,7 @@ header {
 					input[type="search"]:focus {
 						background-position: left rem(8) center;
 						border-radius: rem(28);
-						font-size: inherit;
-						padding: rem(16) rem(48);
+						padding-left: rem(32);
 						width: rem(240);
 					}
 				}

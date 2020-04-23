@@ -40,6 +40,9 @@ export default {
 		searchQuery () {
 			return decodeURIComponent(this.$route.query.s);
 		},
+		searchContext () {
+			return decodeURIComponent(this.$route.query.context);
+		},
 		currentPageNum () {
 			return this.$route.query.page ? parseInt(this.$route.query.page) : 1;
 		},
@@ -59,7 +62,7 @@ export default {
 			});
 		},
 		searchResults () {
-			return [...this.foundNews, ...this.foundViews, ...this.foundSitePages];
+			return this.searchContext === "views" ? this.foundViews : [...this.foundNews, ...this.foundViews, ...this.foundSitePages];
 		},
 		pageCount () {
 			return Math.ceil(this.searchResults.length / this.numOfRecsPerPage);

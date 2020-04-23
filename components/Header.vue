@@ -7,7 +7,7 @@
 					<MenuIcon />&nbsp;Menu
 				</button>
 				<NavBar :navMenu="navMenu" />
-				<SearchForm />
+				<SearchForm :placeholder="placeholderForSerch" :ariaLabel="ariaLabelForSearch" />
 			</div>
 		</div>
 	</header>
@@ -26,6 +26,12 @@ export default {
 		NavBar,
 		SearchForm,
 		MenuIcon
+	},
+	data () {
+		return {
+			placeholderForSerch: "Search...",
+			ariaLabelForSearch: "Enter keywords for a site-wide search"
+		};
 	},
 	computed: {
 		navMenu () {

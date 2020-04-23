@@ -1,3 +1,23 @@
+.posts {
+	.search-container {
+		padding-bottom: rem(27);
+
+		form {
+			flex: 1;
+		}
+
+		input[type="search"] {
+			border: 1px solid $green-dark;
+			height: rem(41);
+			width: 100%;
+		}
+
+		::placeholder {
+			color: $green-dark;
+		}
+	}
+}
+
 .news-grid {
 	display: grid;
 	grid-gap: rem(30) rem(38);
@@ -69,6 +89,15 @@
 }
 
 @media screen and (min-width: 1024px) {
+	.posts {
+		.search-container {
+			input[type="search"] {
+				float: right;
+				width: rem(208);
+			}
+		}
+	}
+
 	.news-grid {
 		grid-template-columns: repeat(2, 1fr);
 
