@@ -1,5 +1,0 @@
-[context.deploy-preview.environment]
-	WP_DOMAIN = "https://wecount-dev.inclusivedesign.ca"
-
-[context.branch-deploy.environment]
-	WP_DOMAIN = "https://wecount-cms.inclusivedesign.ca"
