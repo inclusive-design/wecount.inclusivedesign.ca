@@ -19,6 +19,7 @@ module.exports = {
 		"quotes": [2, "double", { "avoidEscape": true }],
 		"import/no-named-as-default": 0,
 		"semi": [2, "always"],
-		"vue/html-indent": [1, "tab"]
+		"vue/html-indent": [1, "tab"],
+		"no-console": "off"
 	}
 }
