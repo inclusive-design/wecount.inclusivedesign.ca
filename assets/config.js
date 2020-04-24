@@ -9,7 +9,9 @@ export default {
 	appThemeColor: "#ffffff",
 	appBgColor: "#ffffff",
 	appBaseUrl: "https://wecount.inclusivedesign.ca", // TODO: Figure out how to determine this at generate time.
-	wpDomain: "https://wecount-cms.inclusivedesign.ca",
+	// The environment variable process.env.CONTEXT is the netlify deploy context. See https://docs.netlify.com/configure-builds/environment-variables/#build-metadata
+	// The Wordpress domain points to the production at the production deploy while it points to the dev Wordpress backend in other cases.
+	wpDomain: process.env.CONTEXT === "production" ? "https://wecount-cms.inclusivedesign.ca" : "https://wecount-dev.inclusivedesign.ca",
 	apiBase: "/wp-json/wp/v2/",
 	contactEmail: "wecount@inclusivedesign.ca",
 	// Using raw SVG content is to work around the issue with dynamically loading and injecting inline SVGs into the template.

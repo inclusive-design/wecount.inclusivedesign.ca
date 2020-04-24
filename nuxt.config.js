@@ -4,6 +4,9 @@ import Utils from "./shared/Utils";
 
 export default {
 	mode: "universal",
+	env: {
+		CONTEXT: process.env.CONTEXT || "dev"
+	},
 	generate: {
 		fallback: true,
 		async routes () {
