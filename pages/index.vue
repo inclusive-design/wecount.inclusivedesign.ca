@@ -2,16 +2,18 @@
 	<main>
 		<PageArticle :title="title" :content="content" />
 		<div class="homepage-cards">
-			<a class="blue card" href="/views/">
+			<nuxt-link class="blue card" to="/views/">
 				<h3>Read current views in inclusive data science</h3>
-			</a>
+			</nuxt-link>
 			<!-- TODO: Remove hidden attribute -->
-			<a class="green card" href="/tools/" hidden>
-				<h3 class="green-title">Find inclusive data tools</h3>
-			</a>
-			<a class="yellow card" href="/inclusion-challenges/">
+			<nuxt-link class="green card" to="/tools/" hidden>
+				<h3 class="green-title">
+					Find inclusive data tools
+				</h3>
+			</nuxt-link>
+			<nuxt-link class="yellow card" to="/inclusion-challenges/">
 				<h3>Participate in our inclusion challenge workshops</h3>
-			</a>
+			</nuxt-link>
 		</div>
 	</main>
 </template>
@@ -24,14 +26,6 @@ export default {
 	components: {
 		PageArticle
 	},
-	data () {
-		const currentPage = this.$store.state.sitePages.find(oneSitePage => oneSitePage.slug === "home");
-
-		return {
-			title: currentPage.title,
-			content: currentPage.content
-		};
-	},
 	head () {
 		return {
 			titleTemplate: "Home | %s",
@@ -41,8 +35,12 @@ export default {
 			]
 		};
 	},
-	fetch ({ store }) {
-		return store.dispatch("fetchSitePages");
+	asyncData ({ $axios, $payloadURL, route, store }) {
+		if (process.static && process.client && $payloadURL) {
+			return $axios.$get($payloadURL(route));
+		}
+
+		return store.state.sitePages.find(oneSitePage => oneSitePage.slug === "home");
 	}
 };
 </script>

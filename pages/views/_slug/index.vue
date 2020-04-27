@@ -12,21 +12,9 @@ import Aside from "~/components/Aside";
 import PostArticle from "~/components/PostArticle";
 import Config from "~/assets/config";
 export default {
-	async validate ({ params, store }) {
-		await store.dispatch("fetchViews");
-
-		// Verify the requested views is valid
-		const linkList = store.state.views.map(({ slug }) => slug);
-		return linkList.includes(params.slug);
-	},
 	components: {
 		PostArticle,
 		Aside
-	},
-	data () {
-		return {
-			headers: this.$store.state.views.find(x => x.slug === this.$route.params.slug).headers || []
-		};
 	},
 	head () {
 		return {
@@ -37,13 +25,18 @@ export default {
 			]
 		};
 	},
-	computed: {
-		views () {
-			return this.$store.state.views;
-		},
-		viewToRender () {
-			return this.views.find(view => view.slug === this.$route.params.slug);
+	async asyncData ({ $axios, $payloadURL, route, store }) {
+		if (process.static && process.client && $payloadURL) {
+			return $axios.$get($payloadURL(route));
 		}
+		await store.dispatch("fetchViews");
+		const views = store.state.views;
+
+		return {
+			headers: store.state.views.find(x => x.slug === route.params.slug).headers || [],
+			views,
+			viewToRender: views.find(view => view.slug === route.params.slug)
+		};
 	}
 };
 </script>

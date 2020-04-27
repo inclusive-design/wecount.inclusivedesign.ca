@@ -17,28 +17,6 @@ export default {
 		PageArticle,
 		Aside
 	},
-	data () {
-		const currentPage = this.$store.state.sitePages.find(oneSitePage => oneSitePage.slug === this.$route.params.slug);
-
-		if (currentPage) {
-			return {
-				title: currentPage.title,
-				content: currentPage.content,
-				headers: this.$store.state.sitePages.find(x => x.slug === this.$route.params.slug).headers || []
-			};
-		} else {
-			this.$nuxt.error({
-				statusCode: 404
-			});
-			return {
-				title: "Page not found",
-				content: ""
-			};
-		}
-	},
-	fetch ({ store }) {
-		return store.dispatch("fetchSitePages");
-	},
 	head () {
 		return {
 			titleTemplate: this.title + " | %s",
@@ -47,6 +25,13 @@ export default {
 				{ hid: "og:url", property: "og:url", content: Config.appBaseUrl + this.$nuxt.$route.fullPath }
 			]
 		};
+	},
+	asyncData ({ $axios, $payloadURL, route, store }) {
+		if (process.static && process.client && $payloadURL) {
+			return $axios.$get($payloadURL(route));
+		}
+
+		return store.state.sitePages.find(oneSitePage => oneSitePage.slug === route.params.slug);
 	}
 };
 </script>

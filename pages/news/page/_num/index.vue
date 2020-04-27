@@ -12,14 +12,6 @@ export default {
 	components: {
 		Posts
 	},
-	data () {
-		return {
-			title: "News",
-			baseHref: "/news",
-			allNews: this.$store.state.news,
-			currentPageNum: parseInt(this.$route.params.num)
-		};
-	},
 	head () {
 		return {
 			titleTemplate: this.title + " (Page " + this.currentPageNum + ") | %s",
@@ -29,8 +21,19 @@ export default {
 			]
 		};
 	},
-	fetch ({ store }) {
-		return store.dispatch("fetchNews");
+	async asyncData ({ $axios, $payloadURL, route, store }) {
+		if (process.static && process.client && $payloadURL) {
+			return $axios.$get($payloadURL(route));
+		}
+
+		await store.dispatch("fetchNews");
+
+		return {
+			title: "News",
+			baseHref: "/news",
+			currentPageNum: parseInt(route.params.num),
+			allNews: store.state.news
+		};
 	}
 };
 </script>

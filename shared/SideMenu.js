@@ -1,27 +1,28 @@
-import "jsdom";
+import "cheerio";
 export default {
 	initDomParser (content) {
-		const JSDOM = require("jsdom").JSDOM;
-		const jsdom = new JSDOM(content);
+		const cheerio = require("cheerio");
+		const domParser = cheerio.load(content);
 
-		return jsdom;
+		return domParser;
 	},
 	injectHeaderID (content) {
 		const domParser = this.initDomParser(content);
-		const h2List = domParser.window.document.getElementsByTagName("h2");
-		for (let i = 0; i < h2List.length; i++) {
-			h2List[i].setAttribute("id", `${h2List[i].textContent.replace(/\s+/g, "-")}`);
-		}
-		return domParser.serialize();
+
+		domParser("h2").each(function () {
+			domParser(this).attr("id", `${domParser(this).text().replace(/\s+/g, "-")}`);
+		});
+
+		return domParser("body").html();
 	},
 	getHeaderList (content) {
 		const domParser = this.initDomParser(content);
 
-		return Array.from(domParser.window.document.getElementsByTagName("h2"), (header) => {
+		return domParser("h2").map(function () {
 			return {
-				title: header.textContent,
-				href: `#${header.textContent.replace(/\s+/g, "-")}`
+				title: domParser(this).text(),
+				href: `#${domParser(this).text().replace(/\s+/g, "-")}`
 			};
-		});
+		}).get();
 	}
 };

@@ -1,3 +1,4 @@
+import cheerio from "cheerio";
 import Config from "./assets/config";
 import DataFetcher from "./shared/DataFetcher";
 import Utils from "./shared/Utils";
@@ -11,7 +12,8 @@ export default {
 			const sitePages = await DataFetcher.sitePages();
 			const sitePagesRoutes = sitePages.map((oneSitePage) => {
 				return {
-					route: oneSitePage.slug === "home" ? "/" : `/${oneSitePage.slug}`
+					route: oneSitePage.slug === "home" ? "/" : `/${oneSitePage.slug}`,
+					payload: oneSitePage
 				};
 			});
 
@@ -43,6 +45,29 @@ export default {
 		link: [
 			{ rel: "icon", type: "image/png", href: "/favicon.png" }
 		]
+	},
+	render: { resourceHints: false },
+	hooks: {
+		// remove uneeded js scripts
+		"generate:page": (page) => {
+			const doc = cheerio.load(page.html);
+			doc("body script[src='/_nuxt/aac6f7dcb0388507b165.js']").remove();
+			doc("body script[src='/_nuxt/1d92bb16939a3bd4b12c.js']").remove();
+			doc("body script[src='/_nuxt/234986189beee12e84ec.js']").remove();
+			doc("body script[src='/_nuxt/f736595ea028e41700eb.js']").remove();
+			doc("body script[src='/_nuxt/a505d88abcce0fe26ca5.js']").remove();
+			doc("body script[src='/_nuxt/a270ac255c3fe8a1bf09.js']").remove();
+			doc("body script[src='/_nuxt/2a0a1aa1fb0b901148da.js']").remove();
+			doc("body script[src='/_nuxt/18221cb8a030429f60ce.js']").remove();
+			doc("body script[src='/_nuxt/25ff9b6e59014552c50d.js']").remove();
+			doc("body script[src='/_nuxt/5f0da8c10b7512ce3419.js']").remove();
+			doc("body script[src='/_nuxt/682497037c538f8067a0.js']").remove();
+			doc("body script[src='/_nuxt/921c2bc6e9c521c39ee4.js']").remove();
+			doc("body script[src='/_nuxt/234986189beee12e84ec.js']").remove();
+			doc("body script[src='/_nuxt/../server/client.manifest.json ']").remove();
+			doc("head link").remove();
+			page.html = doc.html();
+		}
 	},
 	/*
 	** Customize the progress-bar color
@@ -76,7 +101,8 @@ export default {
 		// Doc: https://github.com/nuxt-community/dotenv-module
 		"@nuxtjs/dotenv",
 		"@nuxtjs/svg",
-		"nuxt-webfontloader"
+		"nuxt-webfontloader",
+		"nuxt-payload-extractor"
 	],
 	webfontloader: {
 		google: {
@@ -103,15 +129,7 @@ export default {
 		/*
 		** You can extend webpack config here
 		*/
-		extend (config, { isDev, isClient }) {
-			if (isClient) {
-				// the following are settings for dependencies that are needed to use jsdom which is being implemented in the shared/SideMenu.js file
-				// this solution comes from here: https://github.com/nuxt-community/dotenv-module/issues/11#issuecomment-376780588
-				config.node = {
-					fs: "empty",
-					child_process: "empty"
-				};
-			}
+		extend (config, ctx) {
 		}
 	}
 };

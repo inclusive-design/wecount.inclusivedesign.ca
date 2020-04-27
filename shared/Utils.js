@@ -97,11 +97,14 @@ export default {
 	createStaticRoutesForCategorizedItems (categoryType, allPosts, includeTagRoutes, includePostRoutes) {
 		const numOfPages = Math.ceil(allPosts.length / Config.numOfRecsPerPage);
 		const postsRoutes = [];
+		let k = 0;
 
 		for (let pageNum = 1; pageNum <= numOfPages; pageNum++) {
 			postsRoutes.push({
-				route: "/" + categoryType + "/page/" + pageNum
+				route: "/" + categoryType + "/page/" + pageNum,
+				payload: allPosts.slice(k, k + Config.numOfRecsPerPage) || allPosts.slice(k, allPosts.length)
 			});
+			k += Config.numOfRecsPerPage;
 		}
 
 		if (includeTagRoutes || includePostRoutes) {
@@ -109,14 +112,18 @@ export default {
 				if (includeTagRoutes) {
 					onePost.tags.forEach((tag) => {
 						postsRoutes.push({
-							route: "/tag/" + encodeURI(tag)
+							route: "/tag/" + tag.toLowerCase().replace(/\s+/g, "-"),
+							payload: allPosts.filter(function (x) {
+								return x.tags.includes(tag);
+							})
 						});
 					});
 				}
 
 				if (includePostRoutes) {
 					postsRoutes.push({
-						route: "/" + categoryType + "/" + onePost.slug
+						route: "/" + categoryType + "/" + onePost.slug,
+						payload: onePost
 					});
 				}
 			});
