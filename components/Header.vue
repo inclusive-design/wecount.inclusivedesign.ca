@@ -6,7 +6,7 @@
 				<button id="menuToggleButton" @click="toggleNavMenu()" aria-expanded="false">
 					<MenuIcon />&nbsp;Menu
 				</button>
-				<NavBar :navMenu="navMenu" />
+				<NavBar />
 				<SearchForm />
 			</div>
 		</div>
@@ -14,7 +14,8 @@
 </template>
 
 <script>
-import Utils from "~/shared/Utils";
+// TODO
+// Want to make this more of a modal
 import Brand from "~/components/Brand";
 import NavBar from "~/components/NavBar";
 import SearchForm from "~/components/SearchForm";
@@ -27,10 +28,13 @@ export default {
 		SearchForm,
 		MenuIcon
 	},
-	computed: {
-		navMenu () {
-			return Utils.generateNavMenu(this.$store.state.sitePages);
-		}
+	data () {
+		return {
+			// Used on the mobile design to determine whether the navigation menu should be shown.
+			// Set to true when a user clicks on the "menu" icon to see the navigation menu.
+			// Set to false when a user clicks on the "menu" icon again to hide the navigation menu.
+			showMenu: false
+		};
 	},
 	mounted () {
 		// Attach the DOM listener that closes the navigation menu when the user clicks on anywhere

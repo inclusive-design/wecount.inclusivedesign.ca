@@ -163,7 +163,7 @@ footer {
 
 				ul {
 					display: grid;
-					grid-template-columns: repeat(3, auto);
+					grid-template-columns: repeat(4, auto);
 
 					li {
 						margin-bottom: rem(36);
@@ -179,12 +179,17 @@ footer {
 						grid-column: 2/3;
 					}
 
-					li:nth-child(4),
-					li:nth-child(5) {
+					li:nth-child(4) {
 						grid-column: 3/4;
 					}
 
-					li:nth-last-child(-n+3) {
+					li:nth-child(5),
+					li:nth-child(6),
+					li:nth-child(7) {
+						grid-column: 4/5;
+					}
+
+					li:nth-last-child(-n+5):not(:last-child) {
 						margin-top: rem(-64);
 					}
 				}
