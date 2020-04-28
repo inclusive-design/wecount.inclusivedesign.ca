@@ -11,7 +11,7 @@ mix.copyDirectory("./src/fonts", "./src/_includes/static/fonts")
 
 mix.options({
 	processCssUrls: false,
-	postCss: []
+	postCss: [require("autoprefixer")]
 });
 
 if (mix.inProduction()) {
