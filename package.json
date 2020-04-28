@@ -76,7 +76,7 @@
       "stylelint"
     ],
     "*.md": [
-      "markdownlint --ignore LICENSE.md"
+      "markdownlint --ignore LICENSE.md --ignore .github/**/*.md"
     ]
   }
 }
