@@ -10,8 +10,8 @@ module.exports = async function () {
             duration: "1d",
             type: "json"
         });
-    
-        return response;    
+
+        return response;
     } catch(e) {
         console.log( "Failed getting views." );
         return [];
