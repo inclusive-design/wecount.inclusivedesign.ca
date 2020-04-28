@@ -2,7 +2,7 @@
     <ul>
         {%- for pageItem in pageData %}
             {%- if pageItem.menu_order > 0 %}
-                <li><a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title.rendered }}</a></li>
+                <li><a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title }}</a></li>
             {%- endif %}
         {%- endfor %}
         <li><a {% if page.url === '/news/' %}aria-current="page" {% endif %}href="/news/">News</a></li>

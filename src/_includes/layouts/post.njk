@@ -5,19 +5,19 @@
 
 {% block content %}
 <article class="post-article">
-    <h1>{{ postItem.title.rendered }}</h1>
-    <div class="author">By {{ postItem._embedded.author[0].name }}</div>
-    <time class="date" datetime="{{ postItem.date | w3DateFilter }}" class="dt-published">{{ postItem.date | dateFilter }}</time>
-    <div class="api-content">{{ postItem.content.rendered | safe }}</div>
+    <h1>{{ postItem.title | safe }}</h1>
+    <div class="author">By {{ postItem.author }}</div>
+    <time class="date" datetime="{{ postItem.dateTime | w3DateFilter }}" class="dt-published">{{ postItem.dateTime | dateFilter }}</time>
+    <div class="api-content">{{ postItem.content | safe }}</div>
     <section class="tags-info">
         <h3>Tags</h3>
 				{% for tag in tags %}
 				<p>{{ tag }}</p>
 				{% endfor %}
         <div class="tags">
-        {% for tag in postItem.pure_taxonomies.tags %}
+        {% for tag in postItem.tags %}
         {# TODO: Tag archives. #}
-        <a href="/tags/{{ tag.slug }}">{{ tag.name | safe }}</a>
+        <a href="/tags/{{ tag }}">{{ tag | safe }}</a>
         {% endfor %}
         </div>
     </section>

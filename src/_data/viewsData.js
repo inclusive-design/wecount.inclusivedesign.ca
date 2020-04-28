@@ -1,20 +1,6 @@
-const Cache = require("@11ty/eleventy-cache-assets");
-const api = require('./api');
-
-const route = '/posts?per_page=100&categories=1&_embed'
+const dataFetcher = require("../utils/data-fetcher");
 
 module.exports = async function () {
-     // TODO: Paginate.
-     try {
-        let response = await Cache(`${api.base}${route}`, {
-            duration: "1d",
-            type: "json"
-        });
-
-        return response;
-    } catch(e) {
-        console.log( "Failed getting views." );
-        return [];
-    }
+    return dataFetcher.categorizedItems('views', 1);
 };
 

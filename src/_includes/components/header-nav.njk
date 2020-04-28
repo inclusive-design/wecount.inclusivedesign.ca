@@ -3,7 +3,7 @@
     <span id="primary-nav-label" class="screen-reader-only">Primary Navigation</span>
         {%- for pageItem in pageData %}
             {%- if pageItem.menu_order > 0 %}
-                <a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title.rendered }}</a>
+                <a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title }}</a>
             {%- endif %}
         {%- endfor %}
         <a {% if page.url === '/news/' %}aria-current="page" {% endif %}href="/news/">News</a>

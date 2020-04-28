@@ -6,4 +6,4 @@ pagination:
 permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
 layout: layouts/page.njk
 ---
-{{ pageItem.content.rendered | safe }}
+{{ pageItem.content | safe }}
