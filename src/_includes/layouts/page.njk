@@ -1,13 +1,13 @@
 {% extends 'layouts/base.njk' %}
 
-{% set title = pageItem.title %}
-{% set excerpt = pageItem.excerpt %}
+{% set pageTitle = pageItem.title %}
+{% set pageExcerpt = pageItem.excerpt %}
 
 {% block content %}
 {% if page.url === '/' %}
 <div>
     <article>
-    <h1 class="title">{{ title }}</h1>
+    <h1 class="title">{{ pageTitle }}</h1>
     <div class="api-content">
     {{ content | safe }}
     </div>
@@ -27,7 +27,7 @@
 
 {% else %}
 <article class="page">
-    <h1>{{ title }}</h1>
+    <h1>{{ pageTitle }}</h1>
     <div class="api-content">
         {{ content | safe }}
     </div>

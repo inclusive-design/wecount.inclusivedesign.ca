@@ -1,10 +1,10 @@
+{% if title %}
+{% set pageTitle = title %}
+{% endif %}
 <!doctype html>
 	<html lang="en-ca">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta name="description" content="{{ excerpt | striptags if excerpt else 'Removing bias and exclusion in the data economy.' }}">
-		<title>{{ title }} | {{ site.title }}</title>
+		{% include 'globals/meta.njk' %}
 		<link rel="stylesheet" href="/css/main.css" />
 		<script src="/js/main.js" defer></script>
 		{% block headerScripts %}

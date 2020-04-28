@@ -1,5 +1,5 @@
 const axios = require("axios");
-const api = require("../_data/api");
+const env = require("../_data/env");
 
 // Share data fetch functions
 module.exports = {
@@ -29,7 +29,7 @@ module.exports = {
 		// 1. Fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
 		// 2. Retrieve embedded resources in the main query
 		// 3. Order by the modified date in descending order
-		const baseCategoryAPI = api.base + "/posts?categories=" + categoryId + "&per_page=100&orderby=modified&order=desc&_embed";
+		const baseCategoryAPI = env.api + "/posts?categories=" + categoryId + "&per_page=100&orderby=modified&order=desc&_embed";
 
 		// Fetch records for the first page as well as the number of total pages
 		const firstPageRequest = baseCategoryAPI + "&page=1";
@@ -75,7 +75,7 @@ module.exports = {
 		// 1. Fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
 		// 2. Retrieve embedded resources in the main query
 		// 3. Order by the modified date in descending order
-		const baseCategoryAPI = api.base + "/posts?per_page=100&orderby=modified&order=desc&_embed";
+		const baseCategoryAPI = env.api + "/posts?per_page=100&orderby=modified&order=desc&_embed";
 
 		// Fetch records for the first page as well as the number of total pages
 		const firstPageRequest = baseCategoryAPI + "&page=1";
@@ -108,7 +108,7 @@ module.exports = {
 
 		// According to the Wordpress API for pagination and embedding: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/
 		// 1. Fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
-		const baseTagsAPI = api.base + "/tags?per_page=100";
+		const baseTagsAPI = env.api + "/tags?per_page=100";
 
 		// Fetch records for the first page as well as the number of total pages
 		const firstPageRequest = baseTagsAPI + "&page=1";
@@ -132,7 +132,7 @@ module.exports = {
 		// According to the Wordpress API for pagination and embedding: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/,
 		// 1. fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
 		// 2. Order by the menu order in ascending order
-		const pageAPI = api.base + "/pages?per_page=100&order=asc&orderby=menu_order";
+		const pageAPI = env.api + "/pages?per_page=100&order=asc&orderby=menu_order";
 
 		const response = await axios.get(`${pageAPI}`);
 

@@ -1,7 +1,7 @@
 {% extends 'layouts/base.njk' %}
 
-{% set title = postItem.title.rendered %}
-{% set excerpt = postItem.excerpt.rendered %}
+{% set pageTitle = postItem.title %}
+{% set pageExcerpt = postItem.excerpt %}
 
 {% block content %}
 <article class="post-article">
