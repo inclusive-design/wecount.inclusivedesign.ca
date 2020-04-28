@@ -21,7 +21,7 @@ export default {
 			]
 		};
 	},
-	async asyncData ({ $axios, $payloadURL, route, store }) {
+	async asyncData ({ $axios, $payloadURL, route, store, payload }) {
 		if (process.static && process.client && $payloadURL) {
 			return $axios.$get($payloadURL(route));
 		}
@@ -32,7 +32,7 @@ export default {
 			title: "Views",
 			baseHref: "/views",
 			currentPageNum: parseInt(route.params.num),
-			allViews: store.state.views
+			allViews: payload
 		};
 	}
 };

@@ -25,7 +25,7 @@ export default {
 			]
 		};
 	},
-	async asyncData ({ $axios, $payloadURL, route, store }) {
+	async asyncData ({ $axios, $payloadURL, route, store, payload }) {
 		if (process.static && process.client && $payloadURL) {
 			return $axios.$get($payloadURL(route));
 		}
@@ -33,9 +33,9 @@ export default {
 		const views = store.state.views;
 
 		return {
-			headers: store.state.views.find(x => x.slug === route.params.slug).headers || [],
+			headers: payload.headers || [],
 			views,
-			viewToRender: views.find(view => view.slug === route.params.slug)
+			viewToRender: payload
 		};
 	}
 };

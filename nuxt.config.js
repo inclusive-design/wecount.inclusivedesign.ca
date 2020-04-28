@@ -2,6 +2,7 @@ import cheerio from "cheerio";
 import Config from "./assets/config";
 import DataFetcher from "./shared/DataFetcher";
 import Utils from "./shared/Utils";
+import SideMenu from "./shared/SideMenu";
 
 export default {
 	mode: "universal",
@@ -11,6 +12,8 @@ export default {
 			// 1. Build routes for site pages
 			const sitePages = await DataFetcher.sitePages();
 			const sitePagesRoutes = sitePages.map((oneSitePage) => {
+				oneSitePage.content = SideMenu.injectHeaderID(oneSitePage.content);
+				oneSitePage.headers = SideMenu.getHeaderList(oneSitePage.content);
 				return {
 					route: oneSitePage.slug === "home" ? "/" : `/${oneSitePage.slug}`,
 					payload: oneSitePage
@@ -27,8 +30,14 @@ export default {
 			// The static root views page "/views" is automatically built. It doesn't need to be explicitly included
 			// in the returned routes array.
 			const views = await DataFetcher.categorizedItems("views", 1);
-			const viewsRoutes = Utils.createStaticRoutesForCategorizedItems("views", views, true, true);
-
+			let viewsRoutes = Utils.createStaticRoutesForCategorizedItems("views", views, true, true);
+			viewsRoutes = viewsRoutes.map((x) => {
+				if (x.payload.headers) {
+					x.payload.content = SideMenu.injectHeaderID(x.payload.content);
+					x.payload.headers = SideMenu.getHeaderList(x.payload.content);
+				}
+				return x;
+			});
 			return [...sitePagesRoutes, ...newsRoutes, ...viewsRoutes];
 		}
 	},
@@ -66,6 +75,8 @@ export default {
 			doc("body script[src='/_nuxt/234986189beee12e84ec.js']").remove();
 			doc("body script[src='/_nuxt/../server/client.manifest.json ']").remove();
 			doc("head link").remove();
+			doc("body script[src='/_nuxt/payload*.js']").remove();
+			doc("body script[src='/_nuxt/*/payload*.js']").remove();
 			page.html = doc.html();
 		}
 	},

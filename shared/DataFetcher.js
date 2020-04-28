@@ -1,7 +1,6 @@
 import axios from "axios";
 import Config from "../assets/config";
 import Utils from "./Utils";
-import SideMenu from "./SideMenu";
 
 // Share data fetch functions
 export default {
@@ -13,8 +12,8 @@ export default {
 					slug: oneItem.slug,
 					title: oneItem.title.rendered,
 					author: oneItem._embedded.author[0].name,
-					content: SideMenu.injectHeaderID(oneItem.content.rendered),
-					headers: SideMenu.getHeaderList(oneItem.content.rendered),
+					content: oneItem.content.rendered,
+					headers: [],
 					// Strip html tags to get pure text for the content preview
 					excerpt: Utils.stripHtmlTags(oneItem.excerpt.rendered),
 					date: new Date(oneItem.date).toLocaleString("en-us", {
@@ -70,8 +69,8 @@ export default {
 			return {
 				slug: onePage.slug,
 				title: onePage.title.rendered,
-				content: SideMenu.injectHeaderID(onePage.content.rendered),
-				headers: SideMenu.getHeaderList(onePage.content.rendered),
+				content: onePage.content.rendered,
+				headers: [],
 				// Strip html tags to get pure text for the content preview
 				excerpt: Utils.stripHtmlTags(onePage.content.rendered),
 				menu_order: onePage.menu_order,

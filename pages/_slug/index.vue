@@ -26,12 +26,12 @@ export default {
 			]
 		};
 	},
-	asyncData ({ $axios, $payloadURL, route, store }) {
+	asyncData ({ $axios, $payloadURL, route, store, payload }) {
 		if (process.static && process.client && $payloadURL) {
 			return $axios.$get($payloadURL(route));
 		}
 
-		return store.state.sitePages.find(oneSitePage => oneSitePage.slug === route.params.slug);
+		return payload;
 	}
 };
 </script>
