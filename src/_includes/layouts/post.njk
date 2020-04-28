@@ -11,6 +11,9 @@
     <div class="api-content">{{ postItem.content.rendered | safe }}</div>
     <section class="tags-info">
         <h3>Tags</h3>
+				{% for tag in tags %}
+				<p>{{ tag }}</p>
+				{% endfor %}
         <div class="tags">
         {% for tag in postItem.pure_taxonomies.tags %}
         {# TODO: Tag archives. #}

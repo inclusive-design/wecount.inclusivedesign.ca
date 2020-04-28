@@ -91,3 +91,6 @@ sw.*
 
 # Virtual Environment Settings
 Pipfile
+
+# Static files
+src/_includes/static
