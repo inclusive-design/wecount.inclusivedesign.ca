@@ -20,11 +20,13 @@
     "mix": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "start": "npm run clean && concurrently \"npm run watch:site\" \"npm run watch:assets\"",
     "lint:css": "stylelint src/scss/**/*.scss",
-    "lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md",
-    "lint-fix:css": "stylelint src/scss/**/*.scss --fix",
-    "lint-fix:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --fix",
+		"lint:js": "eslint \"**/*.js\"",
+		"lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md",
     "lint": "run-s lint:*",
-    "lint:fix": "npm-run-all lint-fix:*",
+    "lint-fix:css": "stylelint src/scss/**/*.scss --fix",
+    "lint-fix:js": "eslint \"**/*.js\" --fix",
+    "lint-fix:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --fix",
+    "lint-fix": "npm-run-all lint-fix:*",
     "release:major": "release major",
     "release:minor": "release minor",
     "release:patch": "release patch",
@@ -45,6 +47,7 @@
     "concurrently": "^5.2.0",
     "cross-env": "^7.0.2",
     "eleventy-plugin-error-overlay": "^0.1.2",
+    "eslint": "^6.8.0",
     "html-minifier": "^4.0.0",
     "husky": "^4.2.3",
     "laravel-mix": "^5.0.4",
@@ -71,6 +74,9 @@
     }
   },
   "lint-staged": {
+		"*.js": [
+      "eslint"
+    ],
     "*.scss": [
       "stylelint"
     ],
