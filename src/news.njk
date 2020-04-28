@@ -1,19 +1,19 @@
 ---
-title: Views
-permalink: /views/
+title: News
+permalink: /news/
 ---
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-    <article class="views">
-        <h1>Views</h1>
+    <article class="news">
+        <h1>News</h1>
         <div class="news-grid">
-            {% for viewsItem in viewsData %}
+            {% for item in collections.news %}
             <div class="api-content">
-            {% include 'components/views-item.njk' %}
+            {% include 'components/grid-item.njk' %}
             </div>
             {% endfor %}
-        </div>      
+        </div>
         {# TODO: Pagination. #}
     </article>
 {% endblock %}

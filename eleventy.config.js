@@ -2,15 +2,57 @@ const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
 const errorOverlay = require('eleventy-plugin-error-overlay');
 const fs = require('fs');
 
+const dataFetcher = require("./src/utils/data-fetcher");
 const htmlMinifyTransform = require('./src/transforms/html-minify.js');
 const parseTransform = require('./src/transforms/parse.js');
 const dateFilter = require('./src/filters/date.js');
 const markdownFilter = require('./src/filters/markdown.js');
 const w3DateFilter = require('./src/filters/w3-date.js');
 
-module.exports = function(eleventyConfig) { 
+module.exports = function(eleventyConfig) {
   // Use .eleventyignore instead of .gitignore.
-  eleventyConfig.setUseGitIgnore(false);
+	eleventyConfig.setUseGitIgnore(false);
+
+	// Add custom collections.
+	eleventyConfig.addCollection("pages", async function(collection) {
+		collection = dataFetcher.sitePages();
+		return collection;
+	});
+
+	eleventyConfig.addCollection("posts", async function(collection) {
+		collection = dataFetcher.sitePosts();
+		return collection;
+	});
+
+	eleventyConfig.addCollection("news", async function(collection) {
+		collection = dataFetcher.categorizedItems('news', 8);
+    return collection;
+	});
+
+	eleventyConfig.addCollection("views", async function(collection) {
+		collection = dataFetcher.categorizedItems('views', 1);
+		return collection;
+	});
+
+	eleventyConfig.addCollection("tags", async function(collection) {
+		collection = await dataFetcher.siteTags();
+		posts = await dataFetcher.sitePosts();
+		collection.map(tag => {
+			const taggedPosts = posts.filter(post => {
+				return post.tags.includes(tag.title);
+			});
+
+			if (taggedPosts.length) {
+				tag.posts = taggedPosts;
+			}
+
+			return tag;
+		});
+		return collection;
+	});
+
+	// Add plugins.
+	eleventyConfig.addPlugin(errorOverlay);
 
   // Add filters.
   eleventyConfig.addFilter('dateFilter', dateFilter);
@@ -26,7 +68,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({'src/_includes/static/fonts': 'fonts'});
 	eleventyConfig.addPassthroughCopy({'src/_includes/static/images': 'images'});
   eleventyConfig.addPassthroughCopy({'src/_includes/static/js': 'js'});
-  
+
 	// Configure BrowserSync.
 	eleventyConfig.setBrowserSyncConfig({
     callbacks: {
@@ -43,7 +85,7 @@ module.exports = function(eleventyConfig) {
 			}
 		}
   });
-  
+
   return {
     dir: {
       input: 'src',

@@ -1,7 +1,7 @@
 <button id="menuToggleButton" aria-expanded="false">{% include 'svg/menu.svg' %}&nbsp;Menu</button>
 <nav aria-labelledby="primary-nav-label">
     <span id="primary-nav-label" class="screen-reader-only">Primary Navigation</span>
-        {%- for pageItem in pageData %}
+        {%- for pageItem in collections.pages %}
             {%- if pageItem.menu_order > 0 %}
                 <a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title }}</a>
             {%- endif %}

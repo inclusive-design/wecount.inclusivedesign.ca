@@ -17,7 +17,7 @@
         <div class="tags">
         {% for tag in postItem.tags %}
         {# TODO: Tag archives. #}
-        <a href="/tags/{{ tag }}">{{ tag | safe }}</a>
+        <a href="/tags/{{ tag | slug }}">{{ tag | safe }}</a>
         {% endfor %}
         </div>
     </section>

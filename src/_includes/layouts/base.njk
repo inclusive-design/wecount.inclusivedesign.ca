@@ -7,9 +7,8 @@
 		<title>{{ title }} | {{ site.title }}</title>
 		<link rel="stylesheet" href="/css/main.css" />
 		<script src="/js/main.js" defer></script>
-		{% if page.url === '/search/' %}
-		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-		{% endif %}
+		{% block headerScripts %}
+		{% endblock %}
 	</head>
 	<body>
 		<div id="defaultContainer">

@@ -94,3 +94,6 @@ Pipfile
 
 # Static files
 src/_includes/static
+
+# Local Netlify folder
+.netlify

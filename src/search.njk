@@ -7,7 +7,7 @@ permalink: /search/
 {% block content %}
     <article class="search">
         <h1>Search results: {{ '{{ searchQuery }}' }}</h1>
-        <p v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
+        <p role="status" v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
         <ul v-if="searchResults.length > 0">
             <li v-for="result in searchResults">
                 <a :href="result.url">{{ '{{ result.title }}' }}</a>
@@ -16,13 +16,17 @@ permalink: /search/
     </article>
 {% endblock %}
 
+{% block headerScripts %}
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+{% endblock %}
+
 {% block footerScripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 <script>
     const params = new URLSearchParams(window.location.search);
     const searchQuery = params.get('s');
     const app = new Vue({
-        el: '#main',
+        el: '#defaultContainer',
         mounted() {
             let vm = this
             axios.get(
@@ -41,7 +45,7 @@ permalink: /search/
                     });
                     console.log(results);
                     vm.searchResults = results;
-                    vm.searchStatus = false;
+                    vm.searchStatus = `We found ${results.length} results for your search.`;
                 })
         },
         data: {
