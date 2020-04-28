@@ -1,7 +1,7 @@
 {
   "name": "@wecount/wecount.inclusivedesign.ca",
-  "version": "1.1.1",
-  "description": "The source files for the We Count website, built with Nuxt.",
+  "version": "2.0.0-dev",
+  "description": "The source files for the We Count website, built with Eleventy.",
   "license": "BSD-3-Clause",
   "author": "OCAD University <idrc@ocadu.ca>",
   "contributors": [
@@ -12,51 +12,58 @@
   ],
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate --fail-on-error",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:css": "stylelint \"**/**.{scss,vue}\"",
+    "build:assets": "cross-env NODE_ENV=production run-s mix",
+    "build:site": "eleventy --config=eleventy.config.js",
+    "build": "run-s build:*",
+    "clean": "run-p clean:*",
+    "clean:dist": "rimraf dist",
+    "mix": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "start": "npm run clean && concurrently \"npm run watch:site\" \"npm run watch:assets\"",
+    "lint:css": "stylelint src/scss/**/*.scss",
     "lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md",
-    "lint-fix:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
-    "lint-fix:css": "stylelint \"**/**.{scss,vue}\" --fix",
+    "lint-fix:css": "stylelint src/scss/**/*.scss --fix",
     "lint-fix:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --fix",
-    "lint": "npm-run-all lint:js lint:css lint:md",
+    "lint": "run-s lint:*",
     "lint:fix": "npm-run-all lint-fix:*",
     "release:major": "release major",
     "release:minor": "release minor",
     "release:patch": "release patch",
-    "test": "npm run lint"
+    "test": "run-s lint",
+    "watch:assets": "cross-env NODE_ENV=development run-s \"mix -- --watch\"",
+    "watch:site": "ELEVENTY_ENV=development eleventy --serve --port=3000 --config=eleventy.config.js"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.9.7",
-    "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "@nuxtjs/svg": "^0.1.7",
-    "nuxt": "^2.12.2",
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
     "sanitize.css": "^11.0.0"
   },
   "devDependencies": {
+    "@11ty/eleventy-cache-assets": "^2.0.0",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@nuxtjs/eslint-config": "^1.0.1",
-    "@nuxtjs/eslint-module": "^1.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-nuxt": "^0.5.2",
+    "@tbranyen/jsdom": "^13.0.0",
+    "axios": "^0.19.2",
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "eleventy-plugin-error-overlay": "^0.1.2",
+    "html-minifier": "^4.0.0",
     "husky": "^4.2.3",
-    "lint-staged": "^10.1.2",
+    "laravel-mix": "^5.0.4",
+    "lint-staged": "^10.0.8",
+    "markdown-it": "^10.0.0",
     "markdownlint-cli": "^0.22.0",
-    "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
-    "nuxt-webfontloader": "^1.1.0",
     "release": "^6.1.0",
+    "resolve-url-loader": "^3.1.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
-    "stylelint": "^13.3.0",
+    "slugify": "^1.4.0",
+    "stylelint": "^13.2.1",
     "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.16.0"
+    "stylelint-scss": "^3.15.0",
+    "vue-template-compiler": "^2.6.11"
   },
   "husky": {
     "hooks": {
@@ -65,11 +72,8 @@
     }
   },
   "lint-staged": {
-    "*.{scss,vue}": [
+    "*.scss": [
       "stylelint"
-    ],
-    "*.{js,vue}": [
-      "eslint"
     ],
     "*.md": [
       "markdownlint --ignore LICENSE.md"

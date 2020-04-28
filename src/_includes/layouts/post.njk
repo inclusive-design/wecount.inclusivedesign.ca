@@ -1,0 +1,23 @@
+{% extends 'layouts/base.njk' %}
+
+{% set title = postItem.title.rendered %}
+{% set excerpt = postItem.excerpt.rendered %}
+
+{% block content %}
+<article class="post-article">
+    <h1>{{ postItem.title.rendered }}</h1>
+    <div class="author">By {{ postItem._embedded.author[0].name }}</div>
+    <time class="date" datetime="{{ postItem.date | w3DateFilter }}" class="dt-published">{{ postItem.date | dateFilter }}</time>
+    <div class="api-content">{{ postItem.content.rendered | safe }}</div>
+    <section class="tags-info">
+        <h3>Tags</h3>
+        <div class="tags">
+        {% for tag in postItem.pure_taxonomies.tags %}
+        {# TODO: Tag archives. #}
+        <a href="/tags/{{ tag.slug }}">{{ tag.name | safe }}</a>
+        {% endfor %}
+        </div>
+    </section>
+    {# TODO: Pagination. #}
+<article>
+{% endblock %}

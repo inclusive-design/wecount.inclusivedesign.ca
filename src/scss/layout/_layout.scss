@@ -1,0 +1,141 @@
+// Layout styles.
+@import "header";
+@import "footer";
+
+body {
+	background-attachment: fixed;
+	background-image: url("../images/distribution--background.svg");
+	background-position: 0 center;
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+
+// Sticky footer. See https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+#defaultContainer {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.content-wrapper {
+	flex: 1;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 75ch;
+	width: 100%;
+}
+
+article {
+	padding: rem(0) rem(27);
+
+	h2:not(.h3) {
+		border-bottom: rem(5) solid $gold;
+	}
+
+	.wp-block-image {
+		figure {
+			margin-left: 0;
+
+			img {
+				height: 100%;
+			}
+		}
+	}
+
+	.wp-block-image + * {
+		margin-top: rem(50);
+	}
+
+	.api-content {
+		display: block;
+
+		&::after {
+			clear: both;
+			content: "";
+			display: table;
+		}
+	}
+}
+
+/*
+ * Default WP Alignment Classes
+ *****************************************************************************/
+figcaption {
+	display: block;
+	font-size: rem(14);
+	font-style: italic;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+// Hide an element visually without hiding it from screen readers
+// Reference: https://tailwindcss.com/docs/screen-readers/#app
+.screen-reader-only {
+	border-width: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.size-large {
+	height: $img-size-medium; // need to decide and set other size variables
+}
+
+@media screen and (min-width: rem(1024)) {
+	body {
+		background-position: center;
+	}
+
+	.content-wrapper {
+		display: grid;
+		grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
+		grid-template-rows: auto auto;
+	}
+
+	main {
+		max-width: 130ch;
+
+		article {
+			background-color: $white;
+			padding: rem(1) rem(60);
+			padding-bottom: rem(62);
+
+			.wp-block-image ~ h2 {
+				margin-top: $img-size-medium;
+			}
+		}
+	}
+
+	/*
+ * Default WP Alignment Classes
+ *****************************************************************************/
+
+	.aligncenter,
+	.alignleft,
+	.alignright {
+		display: block;
+		padding: 0;
+	}
+
+	.aligncenter {
+		float: none;
+		margin: 0.5em auto 1em;
+	}
+
+	.alignright {
+		float: right;
+		margin: 0.5em 0 1em 1em;
+	}
+
+	.alignleft {
+		float: left;
+		margin: 0.5em 1em 1em 0;
+	}
+}

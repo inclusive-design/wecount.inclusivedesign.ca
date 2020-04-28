@@ -1,0 +1,12 @@
+<button id="menuToggleButton" aria-expanded="false">{% include 'svg/menu.svg' %}&nbsp;Menu</button>
+<nav aria-labelledby="primary-nav-label">
+    <span id="primary-nav-label" class="screen-reader-only">Primary Navigation</span>
+        {%- for pageItem in pageData %}
+            {%- if pageItem.menu_order > 0 %}
+                <a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title.rendered }}</a>
+            {%- endif %}
+        {%- endfor %}
+        <a {% if page.url === '/news/' %}aria-current="page" {% endif %}href="/news/">News</a>
+        <a {% if page.url === '/views/' %}aria-current="page" {% endif %} href="/views/">Views</a>
+    </ul>
+</nav>

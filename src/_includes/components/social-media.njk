@@ -1,0 +1,15 @@
+<div class="social-media">
+    <h2>Follow us on social media</h2>
+    <div class="social-media-icons">
+        {% for network, url in social %}
+        <div>
+            <a href="{{ url }}" rel="external">
+                <div>
+                    {% include 'svg/' + network + '.svg' %}
+                </div>
+                <span class="screen-reader-only">{{ network }}</span>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

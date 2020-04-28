@@ -1,0 +1,29 @@
+<!doctype html>
+	<html lang="en-ca">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="{{ excerpt | striptags if excerpt else 'Removing bias and exclusion in the data economy.' }}">
+		<title>{{ title }} | {{ site.title }}</title>
+		<link rel="stylesheet" href="/css/main.css" />
+		<script src="/js/main.js" defer></script>
+		{% if page.url === '/search/' %}
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+		{% endif %}
+	</head>
+	<body>
+		<div id="defaultContainer">
+			{% include 'components/header.njk' %}
+			<div class="content-wrapper">
+				<aside id="toc"></aside>
+				<main>
+				{% block content %}
+				{% endblock %}
+				</main>
+			</div>
+			{% include 'components/footer.njk' %}
+		</div>
+		{% block footerScripts %}
+		{% endblock %}
+	</body>
+</html>

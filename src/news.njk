@@ -1,0 +1,19 @@
+---
+title: News
+permalink: /news/
+---
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+    <article class="news">
+        <h1>News</h1>
+        <div class="news-grid">
+            {% for newsItem in newsData %}
+            <div class="api-content">
+            {% include 'components/news-item.njk' %}
+            </div>
+            {% endfor %}
+        </div>    
+        {# TODO: Pagination. #}
+    </article>
+{% endblock %}

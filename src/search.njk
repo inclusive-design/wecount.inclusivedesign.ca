@@ -1,0 +1,55 @@
+---
+title: Search
+permalink: /search/
+---
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+    <article class="search">
+        <h1>Search results: {{ '{{ searchQuery }}' }}</h1>
+        <p v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
+        <ul v-if="searchResults.length > 0">
+            <li v-for="result in searchResults">
+                <a :href="result.url">{{ '{{ result.title }}' }}</a>
+            </li>
+        </ul>
+    </article>
+{% endblock %}
+
+{% block footerScripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const searchQuery = params.get('s');
+    const app = new Vue({
+        el: '#main',
+        mounted() {
+            let vm = this
+            axios.get(
+                    `{{ api.base }}/search?per_page=100&_embed&search=${searchQuery}`
+                )
+                .then(function (response) {
+                    const results = [];
+                    Array.prototype.forEach.call(response.data, item => {
+                        let url;
+                        if (item.subtype === 'page') {
+                           url = item._embedded.self[0].slug !== 'home' ? `/${item._embedded.self[0].slug}/` : '/';
+                        } else if (item.subtype === 'post') {
+                           url = item._embedded.self[0].acf.link || `/views/${item._embedded.self[0].slug}/`;
+                        }
+                        results.push({ title: item.title, url });
+                    });
+                    console.log(results);
+                    vm.searchResults = results;
+                    vm.searchStatus = false;
+                })
+        },
+        data: {
+            searchQuery: params.get('s'),
+            searchStatus: 'Searching...',
+            searchResults: []
+        },
+        computed: {}
+    })
+</script>
+{% endblock %}

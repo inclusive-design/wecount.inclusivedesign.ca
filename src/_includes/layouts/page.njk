@@ -1,0 +1,27 @@
+{% extends 'layouts/base.njk' %}
+
+{% set title = pageItem.title.rendered %}
+{% set excerpt = pageItem.excerpt.rendered %}
+
+{% block content %}
+{% if page.url === '/' %}
+<div>
+    <article>
+    <h1 class="title">{{ title }}</h1>
+    <div class="api-content">
+    {{ content | safe }}
+    </div>
+    </article>
+    <div class="homepage-cards"><a href="/views/" class="blue card"><h3>Read current views in inclusive data science</h3></a> <a href="/tools/" class="green card" hidden=""><h3 class="green-title">Find inclusive data tools</h3></a> <a href="/inclusion-challenges/" class="yellow card"><h3>Participate in our inclusion challenge workshops</h3></a></div>
+</div>
+
+{% else %}
+<article class="page">
+    <h1>{{ title }}</h1>
+    <div class="api-content">
+        {{ content | safe }}
+    </div>
+</article>
+{% endif %}
+{% endblock %}
+{{ content | safe }}
