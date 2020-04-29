@@ -19,6 +19,7 @@
         </div>
     </section>
 		{% endif %}
-    {% include 'components/pagination.njk' %}
-<article>
+		{% if pagination.pages.length > 1 %}
+		{% include 'components/pagination.njk' %}
+		{% endif %}<article>
 {% endblock %}
