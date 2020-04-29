@@ -128,7 +128,7 @@ header {
 
 					// When the user is in a section (other than the Home page), underline this particular item
 					// in the top level navigation.
-					a.nuxt-link-active {
+					a[aria-current="page"] {
 						border-bottom: rem(2) solid $white;
 					}
 				}
