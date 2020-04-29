@@ -58,9 +58,8 @@ export default {
 
 	async sitePages () {
 		// According to the Wordpress API for pagination and embedding: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/,
-		// 1. fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
-		// 2. Order by the menu order in ascending order
-		const pageAPI = Config.wpDomain + Config.apiBase + "pages?per_page=100&order=asc&orderby=menu_order";
+		// fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
+		const pageAPI = Config.wpDomain + Config.apiBase + "pages?per_page=100";
 
 		const response = await axios.get(`${pageAPI}`);
 
@@ -71,7 +70,6 @@ export default {
 				content: onePage.content.rendered,
 				// Strip html tags to get pure text for the content preview
 				excerpt: Utils.stripHtmlTags(onePage.content.rendered),
-				menu_order: onePage.menu_order,
 				href: "/" + onePage.slug + "/",
 				isExternalHref: false
 			};
