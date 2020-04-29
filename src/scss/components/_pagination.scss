@@ -86,14 +86,6 @@
 		flex: 1;
 	}
 
-	li:first-child {
-		text-align: left;
-	}
-
-	li:last-child {
-		text-align: right;
-	}
-
 	.pagination-next,
 	.pagination-previous {
 		color: $green-dark;

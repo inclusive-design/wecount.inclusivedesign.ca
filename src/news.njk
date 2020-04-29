@@ -1,19 +1,24 @@
 ---
-title: News
-permalink: /news/
+permalink: /news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
+pagination:
+  data: collections.news
+  size: 10
 ---
 {% extends 'layouts/base.njk' %}
+
+{% set currentPage = pagination.pageNumber + 1 %}
+{% set pageTitle = 'News (Page ' + currentPage + ')' %}
 
 {% block content %}
     <article class="news">
         <h1>News</h1>
         <div class="news-grid">
-            {% for item in collections.news %}
+            {% for item in pagination.items %}
             <div class="api-content">
             {% include 'components/grid-item.njk' %}
             </div>
             {% endfor %}
         </div>
-        {# TODO: Pagination. #}
+        {% include 'components/pagination.njk' %}
     </article>
 {% endblock %}

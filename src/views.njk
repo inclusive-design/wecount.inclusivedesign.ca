@@ -1,20 +1,25 @@
 ---
-title: Views
-permalink: /views/
+permalink: /views/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
 pageContext: views
+pagination:
+  data: collections.views
+  size: 10
 ---
 {% extends 'layouts/base.njk' %}
+
+{% set currentPage = pagination.pageNumber + 1 %}
+{% set pageTitle = 'Views (Page ' + currentPage + ')' %}
 
 {% block content %}
     <article class="views">
         <h1>Views</h1>
         <div class="news-grid">
-            {% for item in collections.views %}
+            {% for item in pagination.items %}
             <div class="api-content">
             {% include 'components/grid-item.njk' %}
             </div>
             {% endfor %}
         </div>
-        {# TODO: Pagination. #}
+        {% include 'components/pagination.njk' %}
     </article>
 {% endblock %}

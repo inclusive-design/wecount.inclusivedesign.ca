@@ -4,15 +4,11 @@
     <article class="tags">
         <h1>Tag: {{ tagItem.title }}</h1>
         <div class="news-grid">
-            {% for item in collections.tags %}
-						{% if tagItem.slug === item.slug %}
-							{% for item in item.posts %}
-							<div class="api-content">
-							{% include 'components/grid-item.njk' %}
-							</div>
-							{% endfor %}
-						{% endif %}
-            {% endfor %}
+					{% for item in tagItem.posts %}
+					<div class="api-content">
+					{% include 'components/grid-item.njk' %}
+					</div>
+					{% endfor %}
         </div>
         {# TODO: Pagination. #}
     </article>

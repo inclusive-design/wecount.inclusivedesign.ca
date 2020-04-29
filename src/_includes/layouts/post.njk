@@ -9,18 +9,16 @@
     <div class="author">By {{ postItem.author }}</div>
     <time class="date" datetime="{{ postItem.dateTime | w3DateFilter }}" class="dt-published">{{ postItem.dateTime | dateFilter }}</time>
     <div class="api-content">{{ postItem.content | safe }}</div>
+		{% if postItem.tags.length > 0 %}
     <section class="tags-info">
         <h3>Tags</h3>
-				{% for tag in tags %}
-				<p>{{ tag }}</p>
-				{% endfor %}
         <div class="tags">
         {% for tag in postItem.tags %}
-        {# TODO: Tag archives. #}
         <a href="/tags/{{ tag | slug }}">{{ tag | safe }}</a>
         {% endfor %}
         </div>
     </section>
-    {# TODO: Pagination. #}
+		{% endif %}
+    {% include 'components/pagination.njk' %}
 <article>
 {% endblock %}
