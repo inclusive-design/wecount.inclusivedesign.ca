@@ -1,14 +1,16 @@
 <article class="news-item">
-		{% if pageContext === 'views' %}
+		{% if item.category === 'views' %}
     <figure class="preview-media">
-        {% include 'svg/placeholder.svg' %}
+				<svg class="logo news-item-img">
+						<use xlink:href="#placeholder" />
+				</svg>
     </figure>
 		{% endif %}
     <h2 class="h3">
         <a href="{{ item.href }}">{{ item.title | safe }}</a>
     </h2>
-		{% if pageContext === 'views' %}
-    <div class="author">By {{ item.author | safe }}</div>
+		{% if item.category === 'views' %}
+    <div class="author">{{ item.author | safe }}</div>
 		{% endif %}
     <div class="date">
         <time datetime="{{ item.dateTime | w3DateFilter }}" class="dt-published">{{ item.dateTime | dateFilter }}</time>
