@@ -5,7 +5,7 @@
 			<a class="pagination-previous" href="{{ pagination.href.previous }}">{% include 'svg/prev.svg' %}<span class="screen-reader-only">previous</span></a>
 		</li>
 		{%- else %}
-		<span></span>{# TODO: Layout breaks without this empty element. #}
+		<li></li>{# TODO: Layout breaks without this empty element. #}
 		{%- endif %}
 		{%- if pagination.pageNumber > 1 %}
 		<li>
@@ -45,7 +45,7 @@
 			<a class="pagination-next" href="{{ pagination.href.next }}">{% include 'svg/next.svg' %}<span class="screen-reader-only">next</span></a>
 		</li>
 		{%- else %}
-		<span></span>{# TODO: Layout breaks without this empty element. #}
+		<li></li>{# TODO: Layout breaks without this empty element. #}
 		{%- endif %}
 	</ul>
 </nav>
