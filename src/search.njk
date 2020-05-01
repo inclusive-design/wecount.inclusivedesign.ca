@@ -5,14 +5,42 @@ permalink: /search/
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="placeholder" viewBox="-4 -4 224 224">
+            {% include 'svg/placeholder.svg' %}
+        </symbol>
+    </svg>
+
     <article class="search">
         <h1>Search results: {{ '{{ searchQuery }}' }}</h1>
         <p role="status" v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
-        <ul v-if="searchResults.length > 0">
-            <li v-for="result in searchResults">
-                <a :href="result.url">{{ '{{ result.title }}' }}</a>
-            </li>
-        </ul>
+        <div class="news-grid" v-if="searchResults.length > 0">
+          <div v-for="item in searchResults" :key="item.id" class="api-content">
+              <article class="news-item">
+                  <figure v-if="item.category==='views'" class="preview-media">
+                      <svg class="logo news-item-img">
+                          <use xlink:href="#placeholder" />
+                      </svg>
+                  </figure>
+
+                  <h2 class="h3">
+                      <a :href="item.href">
+                          {{ '{{ item.title }}' }}
+                      </a>
+                  </h2>
+
+                  <div v-if="item.category==='views'" class="author">
+                      {{ '{{ item.author }}' }}
+                  </div>
+
+                  <div v-if="item.dateTime" class="date">
+                      <time :datetime="item.dateTime" class="dt-published">{{ '{{ item.dateTime }}' }}</time>
+                  </div>
+
+                  <div v-html="item.excerpt" class="preview-content" />
+              </article>
+          </div>
+      </div>
     </article>
 {% endblock %}
 
@@ -22,38 +50,6 @@ permalink: /search/
 
 {% block footerScripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-<script>
-    const params = new URLSearchParams(window.location.search);
-    const searchQuery = params.get('s');
-    const app = new Vue({
-        el: '#defaultContainer',
-        mounted() {
-            let vm = this
-            axios.get(
-                    `{{ api.base }}/search?per_page=100&_embed&search=${searchQuery}`
-                )
-                .then(function (response) {
-                    const results = [];
-                    Array.prototype.forEach.call(response.data, item => {
-                        let url;
-                        if (item.subtype === 'page') {
-                           url = item._embedded.self[0].slug !== 'home' ? `/${item._embedded.self[0].slug}/` : '/';
-                        } else if (item.subtype === 'post') {
-                           url = item._embedded.self[0].acf.link || `/views/${item._embedded.self[0].slug}/`;
-                        }
-                        results.push({ title: item.title, url });
-                    });
-                    console.log(results);
-                    vm.searchResults = results;
-                    vm.searchStatus = `We found ${results.length} results for your search.`;
-                })
-        },
-        data: {
-            searchQuery: params.get('s'),
-            searchStatus: 'Searching...',
-            searchResults: []
-        },
-        computed: {}
-    })
-</script>
+<script src="/js/utils.js"></script>
+<script src="/js/search.js"></script>
 {% endblock %}

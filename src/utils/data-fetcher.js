@@ -8,6 +8,7 @@ module.exports = {
 		const processItems = function (items) {
 			return items.map(function (item) {
 				return {
+					category: categoryType,
 					slug: item.slug,
 					title: item.title.rendered,
 					author: item._embedded.author[0].name,
@@ -18,9 +19,7 @@ module.exports = {
 					picture: item._links["wp:featuredmedia"] ? item._embedded["wp:featuredmedia"][0].source_url : null,
 					altTag: item._links["wp:featuredmedia"] ? item._embedded["wp:featuredmedia"][0].alt_text : "",
 					// For news, "href" points to the external news links. For views, "href" is customized to show views content.
-					href: categoryType === "news" ? item.acf.link : "/views/" + item.slug,
-					isExternalHref: categoryType === "news",
-					showPreviewImage: categoryType !== "news"
+					href: categoryType === "news" ? item.acf.link : "/views/" + item.slug
 				};
 			});
 		};
@@ -64,9 +63,7 @@ module.exports = {
 					picture: item._links["wp:featuredmedia"] ? item._embedded["wp:featuredmedia"][0].source_url : null,
 					altTag: item._links["wp:featuredmedia"] ? item._embedded["wp:featuredmedia"][0].alt_text : "",
 					// For news, "href" points to the external news links. For views, "href" is customized to show views content.
-					href: item.pure_taxonomies.categories[0].slug === "news" ? item.acf.link : "/views/" + item.slug,
-					isExternalHref: item.pure_taxonomies.categories[0].slug === "news",
-					showPreviewImage: item.pure_taxonomies.categories[0].slug !== "news"
+					href: item.pure_taxonomies.categories[0].slug === "news" ? item.acf.link : "/views/" + item.slug
 				};
 			});
 		};
@@ -143,8 +140,7 @@ module.exports = {
 				content: page.content.rendered,
 				excerpt: page.excerpt.rendered,
 				menu_order: page.menu_order,
-				href: "/" + page.slug + "/",
-				isExternalHref: false
+				href: page.slug === "home" ? "/" : "/" + page.slug + "/"
 			};
 		});
 	}

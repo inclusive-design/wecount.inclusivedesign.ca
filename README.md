@@ -29,7 +29,8 @@ npm ci
 
 ## How to Run
 
-To run the website in local development mode, enter the following in your command line:
+To run the website in local development mode that supports a live reload at file changes, enter the following in your
+command line:
 
 ```bash
 npm run start
