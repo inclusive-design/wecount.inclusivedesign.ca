@@ -9,9 +9,8 @@ module.exports = function(value, outputPath) {
 		});
 
 		const document = DOM.window.document;
-		const articleTitle = document.querySelector("main article h1");
 		const articleHeadings = [
-			...document.querySelectorAll("main article.post h2, main article.post h3, main article.page h2, main article.page h3")
+			...document.querySelectorAll("main article.post-article h2, main article.page h2")
 		];
 
 		if (articleHeadings.length) {
@@ -23,7 +22,6 @@ module.exports = function(value, outputPath) {
 			tocLabel.className = "sr-only";
 			tocLabel.id = "toc-nav-label";
 
-			articleHeadings.unshift(articleTitle);
 			articleHeadings.forEach(heading => {
 				const headingSlug = slugify(heading.textContent.toLowerCase());
 
