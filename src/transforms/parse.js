@@ -9,6 +9,7 @@ module.exports = function(value, outputPath) {
 		});
 
 		const document = DOM.window.document;
+		const articleTitle = document.querySelector("main article h1");
 		const articleHeadings = [
 			...document.querySelectorAll("main article.post-article h2, main article.page h2")
 		];
@@ -22,6 +23,7 @@ module.exports = function(value, outputPath) {
 			tocLabel.className = "sr-only";
 			tocLabel.id = "toc-nav-label";
 
+			articleHeadings.unshift(articleTitle);
 			articleHeadings.forEach(heading => {
 				const headingSlug = slugify(heading.textContent.toLowerCase());
 
