@@ -1,24 +1,19 @@
-var double = "double";
-
 module.exports = {
-	root: true,
 	env: {
-		browser: true,
-		node: true
+		es6: true,
+		node: true,
+		browser: true
 	},
+	extends: "eslint:recommended",
 	parserOptions: {
-		parser: 'babel-eslint'
+		sourceType: "module",
+		ecmaVersion: 2017
 	},
-	extends: [
-		'@nuxtjs',
-		'plugin:nuxt/recommended'
-	],
+	"ignorePatterns": ["src/_includes/static/", "dist"],
 	rules: {
 		"indent": [1, "tab"],
-		"no-tabs": 0,
-		"quotes": [2, "double", { "avoidEscape": true }],
-		"import/no-named-as-default": 0,
-		"semi": [2, "always"],
-		"vue/html-indent": [1, "tab"]
+		"linebreak-style": ["error", "unix"],
+		quotes: ["error", "double"],
+		semi: ["error", "always"]
 	}
-}
+};

@@ -5,7 +5,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/inclusive-design/wecount.inclusivedesign.ca/Test%20and%20build?label=github&style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/actions)
 [![Netlify Status](https://img.shields.io/netlify/d63b3d00-fd5f-47d7-8e43-d09bf4e8eb4f?style=flat-square)](https://app.netlify.com/sites/wecount/deploys)
 
-The source files for the We Count website, built with [Nuxt](https://nuxtjs.org/).
+The source files for the We Count website, built with [Eleventy](https://11ty.dev/).
 
 ## Getting Started
 
@@ -29,10 +29,11 @@ npm ci
 
 ## How to Run
 
-To run the website in local development mode, enter the following in your command line:
+To run the website in local development mode that supports a live reload at file changes, enter the following in your
+command line:
 
 ```bash
-npm run dev
+npm run start
 ```
 
 ## How to Test
@@ -46,7 +47,7 @@ npm run lint
 
 We use the following lint configurations:
 
-- [ESLint (JS/Vue)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/.eslintrc.js)
+- TODO: [ESLint (JS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/.eslintrc.js)
 - [Stylelint (CSS/SCSS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/stylelint.config.js)
 - [MarkdownLint (Markdown)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/.markdownlint.json)
 
@@ -55,14 +56,7 @@ We use the following lint configurations:
 To build a static version of the website, enter the following in your command line:
 
 ```bash
-nuxt generate
-```
-
-The static website's files will be in the newly-created `dist` directory in the root of the project.
-To preview the static website, enter the following into your command line:
-
-```bash
-npx serve dist
+npm run build
 ```
 
 ## How to Deploy

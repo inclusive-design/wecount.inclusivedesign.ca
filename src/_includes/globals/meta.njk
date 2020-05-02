@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ pageTitle }} | {{ site.title }}</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+<meta name="author" content="{{ site.author }}">
+<meta name="description" content="{{ pageExcerpt | striptags if pageExcerpt else site.description }}">
+<meta name="theme-color" content="#fff">
+<meta name="og:type" property="og:type" content="website">
+<meta name="og:site_name" property="og:site_name" content="{{ site.title }}">
+<meta name="og:description" property="og:description" content="{{ pageExcerpt | striptags if pageExcerpt else site.description }}">
+<meta property="og:image" content="{{ env.baseUrl if env.baseUrl }}/images/og-image.png">
+<meta property="og:title" content="{{ pageTitle }} | {{ site.title }}">
+<meta property="og:url" content="{{ env.baseUrl if env.baseUrl }}{{ page.url }}">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/icon.png" sizes="512x512">
