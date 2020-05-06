@@ -1,0 +1,51 @@
+<nav class="pagination" aria-label="pagination">
+	<ul class="pagination-list">
+		{%- if pagination.href.previous %}
+		<li>
+			<a class="pagination-previous" href="{{ pagination.href.previous }}">{% include 'svg/prev.svg' %}<span class="screen-reader-only">previous</span></a>
+		</li>
+		{%- else %}
+		<li></li>{# TODO: Layout breaks without this empty element. #}
+		{%- endif %}
+		{%- if pagination.pageNumber > 1 %}
+		<li>
+			<a class="pagination-link" href="{{ pagination.href.first }}">1</a>
+		</li>
+		{%- endif %}
+		{%- if pagination.pageNumber > 2 %}
+		<li class="pagination-ellipsis">
+			<span>&hellip;</span>
+		</li>
+		{%- endif %}
+		{%- if pagination.pageNumber > 0 %}
+		{% if pagination.pageNumber !== 1 and pagination.pageNumber !== 2 %}<li class="hide-on-mobile">{% else %}<li>{% endif %}
+			<a class="pagination-link" href="{{ pagination.hrefs[ pagination.pageNumber - 1 ] }}">{{ pagination.pageNumber }}</a>
+		</li>
+		{%- endif %}
+		<li>
+			<a class="pagination-link is-current" href="{{ pagination.hrefs[ pagination.pageNumber ] }}" aria-current="page">{{ pagination.pageNumber + 1 }}</a>
+		</li>
+		{%- if pagination.pageNumber < pagination.pages.length - 2 %}
+		{% if pagination.pageNumber !== pagination.pages.length - 2 and pagination.pageNumber !== pagination.pages.length - 3 %}<li class="hide-on-mobile">{% else %}<li>{% endif %}
+			<a class="pagination-link" href="{{ pagination.hrefs[ pagination.pageNumber + 1 ] }}">{{ pagination.pageNumber + 2 }}</a>
+		</li>
+		{%- endif %}
+		{%- if pagination.pageNumber < pagination.pages.length - 3 %}
+		<li class="pagination-ellipsis">
+			<span>&hellip;</span>
+		</li>
+		{%- endif %}
+		{%- if pagination.pageNumber < pagination.pages.length - 1 %}
+		<li>
+			<a class="pagination-link" href="{{ pagination.href.last }}">{{ pagination.pages.length }}</a>
+		</li>
+		{%- endif %}
+		{%- if pagination.href.next %}
+		<li>
+			<a class="pagination-next" href="{{ pagination.href.next }}">{% include 'svg/next.svg' %}<span class="screen-reader-only">next</span></a>
+		</li>
+		{%- else %}
+		<li></li>{# TODO: Layout breaks without this empty element. #}
+		{%- endif %}
+	</ul>
+</nav>
