@@ -29,6 +29,20 @@ p {
 	font-size: rem(16);
 }
 
+//UIO
+.flc-toc-tocContainer {
+	background-color: $white;
+	padding-top: rem(39.84);
+
+	.flc-toc-header {
+		margin-top: 0;
+	}
+}
+
+.flc-toc-tocContainer * {
+	margin: $white;
+}
+
 // Links and Buttons.
 a {
 	color: $blue-alt;
@@ -43,32 +57,6 @@ a:focus {
 
 a:focus {
 	outline: none;
-}
-
-button {
-	background-color: $green-light;
-	border: 0;
-	border-radius: rem(28);
-	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
-	color: $green-dark;
-	font-size: rem(24);
-	font-weight: 400;
-	height: rem(54);
-	line-height: (34 / 24);
-	padding: rem(8) rem(34);
-	transform: perspective(rem(1)) translateZ(0);
-}
-
-button::before {
-	border-radius: rem(26);
-	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
-	content: '';
-	height: rem(54);
-	left: 0;
-	opacity: 1;
-	position: absolute;
-	top: 0;
-	width: 100%;
 }
 
 button:hover::before,
@@ -89,6 +77,32 @@ button:focus {
 button:-moz-focusring {
 	color: transparent;
 	text-shadow: 0 0 0 $green-dark;
+}
+
+button:not(.fl-prefsEditor-buttons button) {
+	background-color: $green-light;
+	border: 0;
+	border-radius: rem(28);
+	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
+	color: $green-dark;
+	font-size: rem(24);
+	font-weight: 400;
+	height: rem(54);
+	line-height: (34 / 24);
+	padding: rem(8) rem(34);
+	transform: perspective(rem(1)) translateZ(0);
+}
+
+button::before:not(.fl-prefsEditor-buttons button) {
+	border-radius: rem(26);
+	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
+	content: '';
+	height: rem(54);
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 @media screen and (min-width: 1024px) {

@@ -9,6 +9,14 @@
 		<script src="/js/main.js" defer></script>
 		{% block headerScripts %}
 		{% endblock %}
+		<!-- CSS files for UI Options-->
+    <link rel="stylesheet" type="text/css" href="/infusion/src/framework/core/css/fluid.css" />
+    <link rel="stylesheet" type="text/css" href="/infusion/src/framework/preferences/css/Enactors.css" />
+    <link rel="stylesheet" type="text/css" href="/infusion/src/framework/preferences/css/PrefsEditor.css" />
+    <link rel="stylesheet" type="text/css" href="/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+
+    <!-- The Infusion Library for UI Options -->
+    <script type="text/javascript" src="/infusion/infusion-custom.js"></script>
 	</head>
 	<body>
 		<div id="defaultContainer">
@@ -16,6 +24,7 @@
 			<div class="content-wrapper">
 				<aside id="toc"></aside>
 				<main>
+				<nav class="flc-toc-tocContainer"> </nav>
 				{% block content %}
 				{% endblock %}
 				</main>
@@ -24,5 +33,16 @@
 		</div>
 		{% block footerScripts %}
 		{% endblock %}
+		<script type="text/javascript">
+        $(document).ready(function () {
+            fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+                tocTemplate: "/infusion/src/components/tableOfContents/html/TableOfContents.html",
+                terms: {
+                    templatePrefix: "/infusion/src/framework/preferences/html",
+                    messagePrefix: "/infusion/src/framework/preferences/messages"
+                }
+            });
+        })
+    </script>
 	</body>
 </html>
