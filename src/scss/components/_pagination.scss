@@ -89,12 +89,25 @@
 	.pagination-next,
 	.pagination-previous {
 		color: $green-dark;
+		float: left;
+		line-height: rem(45);
+		margin: rem(10) rem(5);
 
 		svg {
 			fill: none;
+			height: rem(24);
 			stroke: currentColor;
 			stroke-width: 2;
+			width: rem(14);
 		}
+	}
+
+	.pagination-previous {
+		float: right;
+	}
+
+	.pagination-next {
+		float: left;
 	}
 
 	.pagination-next:hover,
