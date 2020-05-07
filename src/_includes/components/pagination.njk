@@ -1,12 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="previous" width="14" height="24" viewBox="0 0 14 24">
+				{% include 'svg/prev.svg' %}
+		</symbol>
+		<symbol id="next" width="14" height="24" viewBox="0 0 14 24">
+				{% include 'svg/next.svg' %}
+		</symbol>
+</svg>
+
 <nav class="pagination" aria-label="pagination">
 	<ul class="pagination-list">
-		{%- if pagination.href.previous %}
 		<li>
-			<a class="pagination-previous" href="{{ pagination.href.previous }}">{% include 'svg/prev.svg' %}<span class="screen-reader-only">previous</span></a>
+			{%- if pagination.href.previous %}
+			<a class="pagination-previous" href="{{ pagination.href.previous }}">
+				<svg><use xlink:href="#previous" /></svg>
+				<span class="screen-reader-only">previous</span>
+			</a>
+			{%- endif %}
 		</li>
-		{%- else %}
-		<li></li>{# TODO: Layout breaks without this empty element. #}
-		{%- endif %}
 		{%- if pagination.pageNumber > 1 %}
 		<li>
 			<a class="pagination-link" href="{{ pagination.href.first }}">1</a>
@@ -40,12 +50,13 @@
 			<a class="pagination-link" href="{{ pagination.href.last }}">{{ pagination.pages.length }}</a>
 		</li>
 		{%- endif %}
-		{%- if pagination.href.next %}
 		<li>
-			<a class="pagination-next" href="{{ pagination.href.next }}">{% include 'svg/next.svg' %}<span class="screen-reader-only">next</span></a>
+			{%- if pagination.href.next %}
+			<a class="pagination-next" href="{{ pagination.href.next }}">
+				<svg><use xlink:href="#next" /></svg>
+				<span class="screen-reader-only">next</span>
+			</a>
+			{%- endif %}
 		</li>
-		{%- else %}
-		<li></li>{# TODO: Layout breaks without this empty element. #}
-		{%- endif %}
 	</ul>
 </nav>
