@@ -9,8 +9,7 @@ mix.js("./src/js/utils.js", "./src/_includes/static/js/utils.js");
 mix.js("./src/js/search.js", "./src/_includes/static/js/search.js");
 
 mix.copyDirectory("./src/fonts", "./src/_includes/static/fonts")
-	.copyDirectory("./src/images", "./src/_includes/static/images")
-	.copyDirectory("./infusion", "./src/_includes/static/infusion");
+	.copyDirectory("./src/images", "./src/_includes/static/images");
 
 mix.options({
 	processCssUrls: false,
