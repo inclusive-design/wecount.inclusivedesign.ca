@@ -29,20 +29,6 @@ p {
 	font-size: rem(16);
 }
 
-//UIO
-.flc-toc-tocContainer {
-	background-color: $white;
-	padding-top: rem(39.84);
-
-	.flc-toc-header {
-		margin-top: 0;
-	}
-}
-
-.flc-toc-tocContainer * {
-	margin: $white;
-}
-
 // Links and Buttons.
 a {
 	color: $blue-alt;
