@@ -18,7 +18,7 @@ permalink: /search/
 	</svg>
 
 	<article class="search">
-		<h1>Search results: "{{ '{{ searchQuery }}' }}"</h1>
+		<h1>Search results: “{{ '{{ searchQuery }}' }}”</h1>
 		<p role="status" v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
 		<div class="news-grid" v-if="resultsToDisplay.length > 0">
 		  <div v-for="item in resultsToDisplay" :key="item.id" class="api-content">
@@ -61,9 +61,9 @@ permalink: /search/
 					</a>
 				</li>
 				<li v-if="pagination.pageNumber > 1">
-					<a :href="pagination.href.first" class="pagination-link d-1">1</a>
+					<a :href="pagination.href.first" class="pagination-link">1</a>
 				</li>
-				<li v-if="pagination.pageNumber > 2" class="pagination-ellipsis d-first-ellipsis">
+				<li v-if="pagination.pageNumber > 2" class="pagination-ellipsis">
 					<span>&hellip;</span>
 				</li>
 
@@ -85,7 +85,7 @@ permalink: /search/
 					</a>
 				</li>
 
-				<li v-if="pagination.pageNumber < pagination.pages.length - 3" class="pagination-ellipsis d-last-ellipsis">
+				<li v-if="pagination.pageNumber < pagination.pages.length - 3" class="pagination-ellipsis">
 					<span>&hellip;</span>
 				</li>
 				<li v-if="pagination.pageNumber < pagination.pages.length - 1">
