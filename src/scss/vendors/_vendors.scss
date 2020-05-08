@@ -14,7 +14,21 @@
 	margin: $white;
 }
 
-.fl-prefsEditor-buttons {
-	border: 1px solid #465d8b; // stying is taking affect on border top only
-	box-sizing: border-box;
+.fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+	background: $white !important;
+	border: 1px solid $green-dark !important;
+	border-radius: 0 0 rem(30) rem(30) !important;
+	border-top: 1px solid $white !important;
+	box-shadow: none !important;
+	box-sizing: border-box !important;
+	padding: rem(10) rem(20) !important;
+
+	button {
+		color: $black !important;
+		font-family: Roboto !important;
+		font-size: rem(16) !important;
+		font-style: normal !important;
+		font-weight: $font-weight-normal !important;
+		line-height: rem(19) !important;
+	}
 }
