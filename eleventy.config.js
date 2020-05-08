@@ -67,7 +67,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"src/_includes/static/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/_includes/static/images": "images"});
 	eleventyConfig.addPassthroughCopy({"src/_includes/static/js": "js"});
-	eleventyConfig.addPassthroughCopy({"src/_includes/static/infusion": "infusion"});
+	eleventyConfig.addPassthroughCopy({"src/_includes/static/lib/infusion": "lib/infusion"});
 
 	// Configure BrowserSync.
 	eleventyConfig.setBrowserSyncConfig({

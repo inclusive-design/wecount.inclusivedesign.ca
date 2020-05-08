@@ -10,12 +10,12 @@
 		{% block headerScripts %}
 		{% endblock %}
 		<!-- CSS files for UI Options-->
-    <link rel="stylesheet" type="text/css" href="/infusion/dist/assets/src/framework/preferences/css/Enactors.css" />
-    <link rel="stylesheet" type="text/css" href="/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css" />
-    <link rel="stylesheet" type="text/css" href="/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
 
     <!-- The Infusion Library for UI Options -->
-    <script type="text/javascript" src="/infusion/dist/infusion-uio.min.js"></script>
+    <script type="text/javascript" src="/lib/infusion/dist/infusion-uio.min.js"></script>
 	</head>
 	<body>
 		<div id="defaultContainer">
@@ -35,12 +35,12 @@
 		<script type="text/javascript">
         $(document).ready(function () {
             fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
-                tocTemplate: "/infusion/src/components/tableOfContents/html/TableOfContents.html",
+                tocTemplate: "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
                 terms: {
-                    templatePrefix: "/infusion/src/framework/preferences/html",
-                    messagePrefix: "/infusion/src/framework/preferences/messages"
+                    templatePrefix: "/lib/infusion/src/framework/preferences/html",
+                    messagePrefix: "/lib/infusion/src/framework/preferences/messages"
                 },
-								"tocMessage": "/infusion/src/framework/preferences/messages/tableOfContents-enactor.json"
+								"tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json"
             });
         })
     </script>
