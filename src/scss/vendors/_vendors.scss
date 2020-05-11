@@ -2,6 +2,21 @@
 
 //UIO
 
+//toc
+.flc-toc-tocContainer {
+	background-color: $white;
+	padding-top: rem(39.84);
+
+	.flc-toc-header {
+		margin-top: 0;
+	}
+}
+
+.flc-toc-tocContainer * {
+	margin: $white;
+}
+
+//uio tab
 #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 	background: $white;
 	border: 1px solid $green-dark;
@@ -18,5 +33,45 @@
 		font-style: normal;
 		font-weight: $font-weight-normal;
 		line-height: rem(19);
+	}
+}
+
+//focus
+.fl-theme-bw {
+	@include focus-style($black);
+}
+
+.fl-theme-wb {
+	@include focus-style($white);
+}
+
+.fl-theme-by {
+	@include focus-style($black);
+}
+
+.fl-theme-yb {
+	@include focus-style($yellow);
+}
+
+.fl-theme-lgdg {
+	@include focus-style($grey);
+}
+
+.fl-theme-gw {
+	@include focus-style($grey);
+}
+
+.fl-theme-gd {
+	@include focus-style($grey);
+}
+
+.fl-theme-bbr {
+	@include focus-style($black);
+}
+
+#defaultContainer .content-wrapper .pagination .pagination-list {
+	.pagination-next,
+	.pagination-previous {
+		border: none;
 	}
 }

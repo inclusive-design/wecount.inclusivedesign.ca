@@ -1,1 +1,11 @@
 // Mixins.
+@mixin focus-style($c) {
+	a:focus,
+	a:hover,
+	#defaultContainer header .site-nav-wrapper .site-nav nav a:focus,
+	#defaultContainer header .site-nav-wrapper .site-nav nav a:hover,
+	#defaultContainer .content-wrapper .tags-info .tags a:focus,
+	#defaultContainer .content-wrapper .tags-info .tags a:hover, {
+		border: rem(2) solid $c;
+	}
+}
