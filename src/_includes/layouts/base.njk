@@ -33,16 +33,28 @@
 		{% block footerScripts %}
 		{% endblock %}
 		<script type="text/javascript">
-        $(document).ready(function () {
-            fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
-                tocTemplate: "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
-                terms: {
-                    templatePrefix: "/lib/infusion/src/framework/preferences/html",
-                    messagePrefix: "/lib/infusion/src/framework/preferences/messages"
-                },
-								"tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json"
+            $(document).ready(function () {
+                fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
+                    auxiliarySchema: {
+                        terms: {
+                            "templatePrefix": "/lib/infusion/src/framework/preferences/html",
+                            "messagePrefix": "/lib/infusion/src/framework/preferences/messages"
+                        },
+                        "fluid.prefs.tableOfContents": {
+                            enactor: {
+                                "tocTemplate": "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
+                                "tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json",
+                                ignoreForToC: {
+                                    "overviewPanel": ".flc-overviewPanel"
+                                }
+                            }
+                        }
+                    },
+                    prefsEditorLoader: {
+                        lazyLoad: true
+                    }
+                });
             });
-        })
     </script>
 	</body>
 </html>
