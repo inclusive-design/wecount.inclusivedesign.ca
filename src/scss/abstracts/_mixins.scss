@@ -5,8 +5,17 @@
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:focus,
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:hover,
 	#defaultContainer .content-wrapper .tags-info .tags a:focus,
-	#defaultContainer .content-wrapper .tags-info .tags a:hover, {
+	#defaultContainer .content-wrapper .tags-info .tags a:hover,
+	.search-container:focus,
+	.search-container:hover,
+	.card:focus,
+	.card:hover {
 		// border: rem(2) solid $c;
 		box-shadow: inset 0 0 0 rem(2) $c;
+	}
+
+	a[href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home"]:focus,
+	a[href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home"]:hover {
+		box-shadow: inset 0 0 0 rem(8) $c;
 	}
 }
