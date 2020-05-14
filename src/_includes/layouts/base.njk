@@ -10,9 +10,9 @@
 		{% block headerScripts %}
 		{% endblock %}
 		<!-- CSS files for UI Options-->
-    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css" />
-    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css" />
-    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+    <link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css" as="style" onload="this.rel='stylesheet'" />
+    <link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css" as="style" onload="this.rel='stylesheet'" />
+    <link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" as="style" onload="this.rel='stylesheet'" />
 
     <!-- The Infusion Library for UI Options -->
     <script type="text/javascript" src="/lib/infusion/dist/infusion-uio.min.js"></script>
@@ -33,10 +33,10 @@
 		{% block footerScripts %}
 		{% endblock %}
 		<script type="text/javascript">
-            $(document).ready(function () {
+        $(document).ready(function () {
                 fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
                     auxiliarySchema: {
-                        terms: {
+                terms: {
                             "templatePrefix": "/lib/infusion/src/framework/preferences/html",
                             "messagePrefix": "/lib/infusion/src/framework/preferences/messages"
                         },
@@ -49,7 +49,7 @@
                                 }
                             }
                         }
-                    },
+                },
                     prefsEditorLoader: {
                         lazyLoad: true
                     }
