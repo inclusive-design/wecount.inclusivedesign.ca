@@ -35,6 +35,13 @@
 		<script type="text/javascript">
         $(document).ready(function () {
                 fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
+                    preferences: [
+                        "fluid.prefs.lineSpace",
+                        "fluid.prefs.textFont",
+                        "fluid.prefs.contrast",
+                        "fluid.prefs.tableOfContents",
+                        "fluid.prefs.enhanceInputs"
+                    ],
                     auxiliarySchema: {
                 terms: {
                             "templatePrefix": "/lib/infusion/src/framework/preferences/html",
