@@ -38,40 +38,33 @@
 
 //focus
 .fl-theme-bw {
-	@include focus-style($black);
+	@include uio-focus-style($black);
 }
 
 .fl-theme-wb {
-	@include focus-style($white);
+	@include uio-focus-style($white);
 }
 
 .fl-theme-by {
-	@include focus-style($black);
+	@include uio-focus-style($black);
 }
 
 .fl-theme-yb {
-	@include focus-style($yellow);
+	@include uio-focus-style($yellow);
 }
 
 .fl-theme-lgdg {
-	@include focus-style($grey);
+	@include uio-focus-style($grey);
 }
 
 .fl-theme-gw {
-	@include focus-style($grey);
+	@include uio-focus-style($grey);
 }
 
 .fl-theme-gd {
-	@include focus-style($grey);
+	@include uio-focus-style($grey);
 }
 
 .fl-theme-bbr {
-	@include focus-style($black);
-}
-
-#defaultContainer .content-wrapper .pagination .pagination-list {
-	.pagination-next,
-	.pagination-previous {
-		border: none;
-	}
+	@include uio-focus-style($black);
 }
