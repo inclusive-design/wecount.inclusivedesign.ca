@@ -1,22 +1,21 @@
 {% if title %}
-{% set pageTitle = title %}
+	{% set pageTitle = title %}
 {% endif %}
 <!doctype html>
-	<html lang="en-ca">
+<html lang="en-ca">
 	<head>
 		{% include 'globals/meta.njk' %}
-		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/main.css"/>
 		<script src="/js/main.js" defer></script>
 		<link rel="preload" href="/lib/infusion/dist/infusion-uio.min.js" as="script">
-		{% block headerScripts %}
-		{% endblock %}
+		{% block headerScripts %}{% endblock %}
 		<!-- CSS files for UI Options-->
-    <link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css" as="style" onload="this.rel='stylesheet'" />
-    <link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css" as="style" onload="this.rel='stylesheet'" />
-    <link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" as="style" onload="this.rel='stylesheet'" />
+		<link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css" as="style" onload="this.rel='stylesheet'"/>
+		<link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css" as="style" onload="this.rel='stylesheet'"/>
+		<link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" as="style" onload="this.rel='stylesheet'"/>
 
-    <!-- The Infusion Library for UI Options -->
-    <script type="text/javascript" src="/lib/infusion/dist/infusion-uio.min.js"></script>
+		<!-- The Infusion Library for UI Options -->
+		<script type="text/javascript" src="/lib/infusion/dist/infusion-uio.min.js"></script>
 	</head>
 	<body>
 		<div id="defaultContainer">
@@ -24,45 +23,39 @@
 			<div class="content-wrapper">
 				<aside id="toc"></aside>
 				<main>
-				<nav class="flc-toc-tocContainer"> </nav>
-				{% block content %}
-				{% endblock %}
+					<nav class="flc-toc-tocContainer"></nav>
+					{% block content %}{% endblock %}
 				</main>
 			</div>
 			{% include 'components/footer.njk' %}
 		</div>
-		{% block footerScripts %}
-		{% endblock %}
+		{% block footerScripts %}{% endblock %}
 		<script type="text/javascript">
-        $(document).ready(function () {
-                fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
-                    preferences: [
-                        "fluid.prefs.lineSpace",
-                        "fluid.prefs.textFont",
-                        "fluid.prefs.contrast",
-                        "fluid.prefs.tableOfContents",
-                        "fluid.prefs.enhanceInputs"
-                    ],
-                    auxiliarySchema: {
-                terms: {
-                            "templatePrefix": "/lib/infusion/src/framework/preferences/html",
-                            "messagePrefix": "/lib/infusion/src/framework/preferences/messages"
-                        },
-                        "fluid.prefs.tableOfContents": {
-                            enactor: {
-                                "tocTemplate": "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
-                                "tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json",
-                                ignoreForToC: {
-                                    "overviewPanel": ".flc-overviewPanel"
-                                }
-                            }
-                        }
-                },
-                    prefsEditorLoader: {
-                        lazyLoad: true
-                    }
-                });
-            });
-    </script>
+			$(document).ready(function () {
+				fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
+					preferences: [
+						"fluid.prefs.lineSpace", "fluid.prefs.textFont", "fluid.prefs.contrast", "fluid.prefs.tableOfContents", "fluid.prefs.enhanceInputs"
+					],
+					auxiliarySchema: {
+						terms: {
+							"templatePrefix": "/lib/infusion/src/framework/preferences/html",
+							"messagePrefix": "/lib/infusion/src/framework/preferences/messages"
+						},
+						"fluid.prefs.tableOfContents": {
+							enactor: {
+								"tocTemplate": "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
+								"tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json",
+								ignoreForToC: {
+									"overviewPanel": ".flc-overviewPanel"
+								}
+							}
+						}
+					},
+					prefsEditorLoader: {
+						lazyLoad: true
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
