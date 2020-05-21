@@ -1,6 +1,6 @@
 // Mixins.
 @mixin adapt-to-highContrast($fColor, $bColor) {
-	// social media icons
+	// Social media icons
 	footer .footer-content .social-media .social-media-icons a {
 		svg path {
 			fill: $bColor;
@@ -14,5 +14,10 @@
 				stroke: $bColor;
 			}
 		}
+	}
+
+	// Hide ellipsis when a post excerpt is fully displayed
+	.news-grid .api-content .news-item .preview-content::after {
+		background: $bColor;
 	}
 }

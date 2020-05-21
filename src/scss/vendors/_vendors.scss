@@ -70,7 +70,7 @@ $UIOThemes:
 	"fl-theme-bbr" "gpii-ext-theme-bbr" #000 #b96;
 
 @each $uioTheme, $uioPlusTheme, $fColor, $bColor in $UIOThemes {
-	.#{$uioTheme}, .#{$uioPlusTheme} {
+	.#{$uioPlusTheme}, .#{$uioTheme} {
 		--theme-fill: #{$bColor};
 		--placeholder-stroke: #{$fColor};
 
