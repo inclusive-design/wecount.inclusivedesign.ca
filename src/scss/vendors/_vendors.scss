@@ -20,3 +20,57 @@
 		line-height: rem(19);
 	}
 }
+
+// To adapt to UIO high contrast themes
+[class^="gpii-ext-theme"],
+[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
+	// logo
+	.logo circle,
+	.logo path {
+		fill: none;
+		stroke: var(--logo-stroke, currentColor);
+		stroke-linecap: round;
+		stroke-width: 0.1875rem;
+	}
+
+	// search icon
+	header .site-nav-wrapper .site-nav .search-container svg {
+		fill: currentColor;
+	}
+
+	// placeholder images on the "views" page
+	svg.news-item-img use {
+		fill: currentColor;
+	}
+}
+
+.fl-theme-bbr,
+.gpii-ext-theme-bbr {
+	--logo-stroke: #{$black};
+}
+
+.fl-theme-gw,
+.gpii-ext-theme-gw,
+.fl-theme-gd,
+.gpii-ext-theme-gd {
+	--logo-stroke: #{$grey};
+}
+
+// For styles that require foreground and background colors from each theme
+$highContrastThemes:
+	"fl-theme-bw" #000 #fff,
+	"fl-theme-wb" #fff #000,
+	"fl-theme-yb" #ff0 #000,
+	"fl-theme-by" #000 #ff0,
+	"fl-theme-lgdg" #bdbdbb #555,
+	"fl-theme-gd" #888 #222,
+	"fl-theme-gw" #6c6c6c #fff,
+	"fl-theme-bbr" #000 #b96;
+
+@each $theme, $fColor, $bColor in $highContrastThemes {
+	.#{$theme} {
+		--theme-fill: $bColor;
+
+		@include uio-focus-style($fColor, $bColor);
+	}
+}

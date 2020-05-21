@@ -1,20 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-	<symbol id="search-icon" width="21" height="22" viewBox="0 0 21 22">
-		{% include 'svg/search.svg' %}
-	</symbol>
-</svg>
-
 <div class="search-container">
-	<svg id="search-svg"><use xlink:href="#search-icon" /></svg>
+	{% include 'svg/search.svg' %}
 	<form id="search-form" method="get" action="/search/">
 		<input name="s" type="search" placeholder="Search..." aria-label="Enter keywords for a site-wide search">
 	</form>
 </div>
-
-<script>
-// Trigger the focus on the input search box when clicking on the search icon that overlays on the input box
-// espcially with the mobile layout.
-document.getElementById("search-svg").onclick = function () {
-  document.getElementById("search-form").getElementsByTagName("input")[0].focus();
-};
-</script>

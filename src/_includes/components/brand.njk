@@ -1,16 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-	<symbol id="logo" viewBox="-4 -4 224 224">
-		{% include 'svg/logo.svg' %}
-	</symbol>
-	<symbol id="logotype" viewBox="0 0 287 49">
-		{% include 'svg/logotype.svg' %}
-	</symbol>
-</svg>
-
 <div class="brand">
-	<a {% if page.url === '/' %}aria-current="page"{% endif %} rel="home" href="/">
-		<svg class="logo"><use xlink:href="#logo" /></svg>
-		<svg class="logotype"><use xlink:href="#logotype" /></svg>
-		<span class="screen-reader-only">We Count</span>
-	</a>
+    <a {% if page.url === '/' %}aria-current="page"{% endif %} rel="home" href="/">
+        {% include 'svg/logo.svg' %}
+        {% include 'svg/logotype.svg' %}
+        <span class="screen-reader-only">We Count</span>
+    </a>
 </div>

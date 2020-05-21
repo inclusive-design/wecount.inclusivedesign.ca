@@ -1,1 +1,18 @@
 // Mixins.
+@mixin uio-focus-style($fColor, $bColor) {
+	// social media icons
+	footer .footer-content .social-media .social-media-icons a {
+		svg path {
+			fill: $bColor;
+			stroke: $fColor;
+		}
+
+		&:hover,
+		&:focus {
+			svg path {
+				fill: $fColor;
+				stroke: $bColor;
+			}
+		}
+	}
+}
