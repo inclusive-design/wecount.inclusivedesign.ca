@@ -1,5 +1,5 @@
 // Mixins.
-@mixin uio-focus-style($fColor, $bColor) {
+@mixin adapt-to-highContrast($fColor, $bColor) {
 	// social media icons
 	footer .footer-content .social-media .social-media-icons a {
 		svg path {

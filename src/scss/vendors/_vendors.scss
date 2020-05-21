@@ -71,6 +71,6 @@ $highContrastThemes:
 	.#{$theme} {
 		--theme-fill: $bColor;
 
-		@include uio-focus-style($fColor, $bColor);
+		@include adapt-to-highContrast($fColor, $bColor);
 	}
 }
