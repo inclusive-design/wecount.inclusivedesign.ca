@@ -37,34 +37,8 @@
 }
 
 //focus
-.fl-theme-bw {
-	@include uio-focus-style($black);
-}
-
-.fl-theme-wb {
-	@include uio-focus-style($white);
-}
-
-.fl-theme-by {
-	@include uio-focus-style($black);
-}
-
-.fl-theme-yb {
-	@include uio-focus-style($yellow);
-}
-
-.fl-theme-lgdg {
-	@include uio-focus-style($grey);
-}
-
-.fl-theme-gw {
-	@include uio-focus-style($grey);
-}
-
-.fl-theme-gd {
-	@include uio-focus-style($grey);
-}
-
-.fl-theme-bbr {
-	@include uio-focus-style($black);
+@each $theme, $colour in $uio-themes {
+	.fl-theme-#{$theme} {
+		@include uio-focus-style($colour);
+	}
 }
