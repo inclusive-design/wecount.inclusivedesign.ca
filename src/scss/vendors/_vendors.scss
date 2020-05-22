@@ -33,7 +33,7 @@
 		stroke-width: 0.1875rem;
 	}
 
-	// Search icon
+	// Search icon; IDRC, OCADU and Canada logos
 	header .site-nav-wrapper .site-nav .search-container svg {
 		fill: currentColor;
 	}
@@ -64,15 +64,15 @@ $UIOThemes:
 	"fl-theme-wb" "gpii-ext-theme-wb" #fff #000,
 	"fl-theme-yb" "gpii-ext-theme-yb" #ff0 #000,
 	"fl-theme-by" "gpii-ext-theme-by" #000 #ff0,
-	"fl-theme-lgdg" "gpii-ext-theme-lgdg" #bdbdbb #555,
+	"fl-theme-lgdg" "gpii-ext-theme-lgdg" #bdbdbb,
 	"fl-theme-gd" "gpii-ext-theme-gd" #888 #222,
 	"fl-theme-gw" "gpii-ext-theme-gw" #6c6c6c #fff,
 	"fl-theme-bbr" "gpii-ext-theme-bbr" #000 #b96;
 
 @each $uioTheme, $uioPlusTheme, $fColor, $bColor in $UIOThemes {
 	.#{$uioPlusTheme}, .#{$uioTheme} {
-		// Placeholder images on the "views" page
-		--theme-fill: #{$bColor};
+		--theme-background-fill: #{$bColor};
+		--theme-link-fill: currentColor;
 		--placeholder-stroke: #{$fColor};
 
 		@include adapt-to-highContrast($fColor, $bColor);

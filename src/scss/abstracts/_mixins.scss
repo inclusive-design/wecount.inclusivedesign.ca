@@ -3,7 +3,7 @@
 	// Social media icons
 	footer .footer-content .social-media .social-media-icons a {
 		svg path {
-			fill: $fColor;
+			fill: currentColor;
 			stroke: $bColor;
 		}
 
@@ -11,7 +11,7 @@
 		&:focus {
 			svg path {
 				fill: $bColor;
-				stroke: $fColor;
+				stroke: currentColor;
 			}
 		}
 	}
