@@ -71,6 +71,7 @@ $UIOThemes:
 
 @each $uioTheme, $uioPlusTheme, $fColor, $bColor in $UIOThemes {
 	.#{$uioPlusTheme}, .#{$uioTheme} {
+		// Placeholder images on the "views" page
 		--theme-fill: #{$bColor};
 		--placeholder-stroke: #{$fColor};
 

@@ -3,15 +3,15 @@
 	// Social media icons
 	footer .footer-content .social-media .social-media-icons a {
 		svg path {
-			fill: $bColor;
-			stroke: $fColor;
+			fill: $fColor;
+			stroke: $bColor;
 		}
 
 		&:hover,
 		&:focus {
 			svg path {
-				fill: $fColor;
-				stroke: $bColor;
+				fill: $bColor;
+				stroke: $fColor;
 			}
 		}
 	}
