@@ -8,7 +8,11 @@ permalink: "tags/{{ oneTagPage.slug }}/{% if oneTagPage.pageNumber %}page/{{ one
 {% extends 'layouts/base.njk' %}
 
 {% set pagination = oneTagPage.pagination %}
-{% set pageTitle = 'Tags (' + oneTagPage.title + ')' %}
+{% if oneTagPage.pageNumber %}
+  {% set pageTitle = 'Tags (' + oneTagPage.title + ' | Page ' + oneTagPage.pageNumber + ')' %}
+{% else %}
+  {% set pageTitle = 'Tags (' + oneTagPage.title + ' | Page 1)' %}
+{% endif %}
 
 {% block content %}
 	<article class="tags">
