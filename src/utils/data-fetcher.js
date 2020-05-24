@@ -53,7 +53,7 @@ module.exports = {
 		const processItems = function (items) {
 			return items.map(function (item) {
 				return {
-					category: item.categories[0] === 1 ? "views" : "news",
+					category: item.categories.includes(1) ? "views" : "news",
 					slug: item.slug,
 					title: item.title.rendered,
 					author: item._embedded.author[0].name,
