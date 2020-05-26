@@ -11,7 +11,7 @@ permalink: "tags/{{ oneTagPage.slug }}/{% if oneTagPage.pageNumber %}page/{{ one
 {% if oneTagPage.pageNumber %}
   {% set pageTitle = 'Tag: “' + oneTagPage.title + '” (Page ' + oneTagPage.pageNumber + ')' %}
 {% else %}
-  {% set pageTitle = 'Tags “' + oneTagPage.title + '” (Page 1)' %}
+  {% set pageTitle = 'Tag: “' + oneTagPage.title + '” (Page 1)' %}
 {% endif %}
 
 {% block content %}
