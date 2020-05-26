@@ -9,9 +9,9 @@ permalink: "tags/{{ oneTagPage.slug }}/{% if oneTagPage.pageNumber %}page/{{ one
 
 {% set pagination = oneTagPage.pagination %}
 {% if oneTagPage.pageNumber %}
-  {% set pageTitle = 'Tags (' + oneTagPage.title + ' | Page ' + oneTagPage.pageNumber + ')' %}
+  {% set pageTitle = 'Tag: “' + oneTagPage.title + '” | Page ' + oneTagPage.pageNumber %}
 {% else %}
-  {% set pageTitle = 'Tags (' + oneTagPage.title + ' | Page 1)' %}
+  {% set pageTitle = 'Tags “' + oneTagPage.title + '” | Page 1' %}
 {% endif %}
 
 {% block content %}
