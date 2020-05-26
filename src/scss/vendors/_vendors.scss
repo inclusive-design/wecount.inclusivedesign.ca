@@ -47,16 +47,14 @@ a[href="https://ocadu.ca/"] {
 	}
 }
 
-.blue,
-.green,
-.yellow {
-	background-image: none;
-}
-
-@each $theme, $foregroundColor in $uio-themes {
+@each $theme, $foregroundColor, $backgroundColor in $uio-themes {
 	.fl-theme-#{$theme} {
-		@include uio-focus-style($foregroundColor);
+		.blue,
+		.green,
+		.yellow {
+			background-image: none;
+		}
+
+		@include uio-focus-style($foregroundColor, $backgroundColor);
 	}
 }
-
-// test for uio tab

@@ -39,7 +39,15 @@ $orange-focus: #fadc90;
 $orange-light: #5c81a9;
 
 // UIO
-$uio-themes: ("bw": #000, "wb": #fff, "yb": #ff0, "by": #000, "lgdg": #bdbdbb, "gd": #888, "gw":  #6c6c6c, "bbr": #000);
+$uio-themes:
+	"bw" #000 #fff,
+	"wb" #fff #000,
+	"yb" #ff0 #000,
+	"by" #000 #ff0,
+	"lgdg" #bdbdbb #555,
+	"gd" #888 #222,
+	"gw" #6c6c6c #fff,
+	"bbr" #000 #b96;
 $yellow: #ff0;
 $white: #fff;
 $grey: #bdbdbb;
