@@ -19,9 +19,9 @@
 //uio tab
 #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 	background: $white;
-	border: 1px solid $green-dark;
+	border: rem(1) solid $green-dark;
 	border-radius: 0 0 rem(30) rem(30);
-	border-top: 1px solid $white;
+	border-top: none;
 	box-shadow: none;
 	box-sizing: border-box;
 	padding: rem(10) rem(20);
@@ -33,6 +33,17 @@
 		font-style: normal;
 		font-weight: $font-weight-normal;
 		line-height: rem(19);
+	}
+
+	&:hover,
+	&:focus-within {
+		border: rem(3) solid $green-dark;
+		border-top: none;
+		margin-right: rem(70);
+
+		button {
+			font-weight: $font-weight-bold;
+		}
 	}
 }
 
