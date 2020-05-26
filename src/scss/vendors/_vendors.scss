@@ -1,22 +1,8 @@
 // Vendor-specific styles.
 
-//UIO
+// UIO
 
-//toc
-.flc-toc-tocContainer {
-	background-color: $white;
-	padding-top: rem(39.84);
-
-	.flc-toc-header {
-		margin-top: 0;
-	}
-}
-
-.flc-toc-tocContainer * {
-	margin: $white;
-}
-
-//uio tab
+// uio tab
 #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 	background: $white;
 	border: rem(1) solid $green-dark;
@@ -47,10 +33,29 @@
 	}
 }
 
-//focus
-@each $theme, $colour in $uio-themes {
+// focus
+a[href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home"],
+a[href="https://idrc.ocadu.ca/"],
+a[href="https://ocadu.ca/"] {
+	padding: rem(5);
+}
+
+#defaultContainer .content-wrapper .pagination .pagination-list {
+	.pagination-next,
+	.pagination-previous {
+		box-shadow: none;
+	}
+}
+
+.blue,
+.green,
+.yellow {
+	background-image: none;
+}
+
+@each $theme, $foregroundColor in $uio-themes {
 	.fl-theme-#{$theme} {
-		@include uio-focus-style($colour);
+		@include uio-focus-style($foregroundColor);
 	}
 }
 

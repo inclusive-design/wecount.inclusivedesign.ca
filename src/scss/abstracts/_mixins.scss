@@ -1,45 +1,25 @@
 // Mixins.
-@mixin uio-focus-style($c) {
-	a[href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home"],
-	a[href="https://idrc.ocadu.ca/"],
-	a[href="https://ocadu.ca/"] {
-		padding: rem(5);
-	}
-
+@mixin uio-focus-style($foregroundColor) {
 	a:focus,
 	a:hover,
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:focus,
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:hover,
 	#defaultContainer .content-wrapper .tags-info .tags a:focus,
 	#defaultContainer .content-wrapper .tags-info .tags a:hover,
-	#search-form input:focus,
-	#search-form input:hover,
+	#search-form input,
 	.card:focus,
 	.card:hover {
-		box-shadow: inset 0 0 0 rem(2) $c;
-	}
-
-	#defaultContainer .content-wrapper .pagination .pagination-list {
-		.pagination-next,
-		.pagination-previous {
-			box-shadow: none;
-		}
-	}
-
-	.blue,
-	.green,
-	.yellow {
-		background-image: none;
+		box-shadow: inset 0 0 0 rem(2) $foregroundColor;
 	}
 
 	li .pagination-link,
 	li .pagination-link::before {
-		box-shadow: 0 0 0 rem(2) $c inset;
+		box-shadow: 0 0 0 rem(2) $foregroundColor inset;
 	}
 
 	li a[aria-current="page"], // TODO: get inner and outer dashed border to overlap
 	li a[aria-current="page"]::before {
-		border: rem(1) $c;
+		border: rem(1) $foregroundColor;
 		border-style: dashed;
 		box-shadow: none;
 	}
