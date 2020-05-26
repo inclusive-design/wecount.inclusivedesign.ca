@@ -35,7 +35,16 @@
 			$(document).ready(function () {
 				fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
 					preferences: [
-						"fluid.prefs.lineSpace", "fluid.prefs.textFont", "fluid.prefs.contrast", "fluid.prefs.tableOfContents", "fluid.prefs.enhanceInputs"
+						"fluid.prefs.lineSpace",
+						"fluid.prefs.textFont",
+						"fluid.prefs.contrast",
+						"fluid.prefs.tableOfContents",
+						"fluid.prefs.enhanceInputs",
+						// TODO :Simplify (not part of prefs framework for now, Justin may add it) - currently "demo.prefs.simplify"
+						// TODO: Text to speech,
+						"fluid.prefs.syllabification"
+						// TODO: Word spacing (optional),
+						// TODO: Letter spacing (optional),
 					],
 					auxiliarySchema: {
 						terms: {
