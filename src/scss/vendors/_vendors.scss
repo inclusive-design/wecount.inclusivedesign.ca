@@ -18,6 +18,12 @@
 		font-style: normal;
 		font-weight: $font-weight-normal;
 		line-height: rem(19);
+
+		&:hover,
+		&:focus {
+			background-color: $orange-focus;
+			font-weight: $font-weight-bold;
+		}
 	}
 
 	&:hover,
@@ -25,9 +31,5 @@
 		border: rem(3) solid $green-dark;
 		border-top: none;
 		margin-right: rem(70);
-
-		button:not(.fl-prefsEditor-reset) {
-			font-weight: $font-weight-bold;
-		}
 	}
 }
