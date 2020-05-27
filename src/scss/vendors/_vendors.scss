@@ -22,14 +22,6 @@
 		&:hover,
 		&:focus {
 			background-color: $orange-focus;
-			font-weight: $font-weight-bold;
 		}
-	}
-
-	&:hover,
-	&:focus-within {
-		border: rem(3) solid $green-dark;
-		border-top: none;
-		margin-right: rem(70);
 	}
 }
