@@ -1,9 +1,11 @@
 <footer>
     <div class="footer-content">
-        {% include 'components/footer-nav.njk' %}
+		<!-- TODO: Switched order of social-media component with footer-nav component for purpose of proper tab indexing order.
+		 					 This needs to be switched back once footer-nav component is properly implemented. -->
+				{% include 'components/social-media.njk' %}
         {% include 'components/contact-info.njk' %}
-        {% include 'components/social-media.njk' %}
-        {% include 'components/funders.njk' %} 
+				{% include 'components/footer-nav.njk' %}
+        {% include 'components/funders.njk' %}
     </div>
     <p class="netlify-notice">Hosted with <a rel="external nofollower noopener" href="https://netlify.com">Netlify</a></p>
 </footer>
