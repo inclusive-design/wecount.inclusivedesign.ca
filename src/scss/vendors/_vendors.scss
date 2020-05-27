@@ -33,3 +33,40 @@
 		margin-right: rem(70);
 	}
 }
+
+.fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+	display: inline-block;
+	padding-top: 0;
+
+	button {
+		border: 0;
+
+		&:not(.fl-prefsEditor-reset) {
+			padding: rem(10) 0;
+		}
+	}
+
+	button[aria-label="Show Display Preferences"] {
+		margin-top: rem(13);
+	}
+
+	button[aria-label="Hide Display Preferences"] {
+		padding-left: rem(10);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+		display: block;
+		padding-top: rem(10);
+
+		button[aria-label="Hide Display Preferences"] {
+			padding: 0;
+		}
+
+		button[aria-label="Show Display Preferences"] {
+			margin-top: 0;
+			padding: 0;
+		}
+	}
+}
