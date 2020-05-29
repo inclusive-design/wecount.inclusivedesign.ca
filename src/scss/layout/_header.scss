@@ -50,7 +50,7 @@ header {
 				display: none;
 				left: 0;
 				position: absolute;
-				top: rem(120);
+				top: rem(184);
 				width: 100%;
 
 				a {
@@ -123,6 +123,7 @@ header {
 					flex-direction: row;
 					justify-content: space-around;
 					position: inherit;
+					top: rem(120);
 
 					a {
 						border-bottom: none;
