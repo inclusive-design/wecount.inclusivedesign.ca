@@ -31,6 +31,9 @@
     <div class="site-nav-wrapper">
         <div class="site-nav">
             {% include 'components/header-nav.njk' %}
+
+						{% set placeholderForSearch = "Search..." %}
+            {% set ariaLabelForSearch = "Enter keywords for a site-wide search" %}
             {% include 'components/search.njk' %}
         </div>
     </div>

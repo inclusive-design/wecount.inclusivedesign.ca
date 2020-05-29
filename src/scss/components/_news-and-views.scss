@@ -131,6 +131,32 @@
 	fill: var(--theme-background-fill, #6895c6);
 }
 
+.views {
+	.search-container {
+		padding-bottom: rem(27);
+
+		svg {
+			margin-left: rem(5);
+		}
+
+		form {
+			flex: 1;
+		}
+
+		input[type="search"] {
+			border: 1px solid $green-dark;
+			border-radius: rem(28);
+			height: rem(41);
+			padding-left: rem(48);
+			width: 100%;
+		}
+
+		::placeholder {
+			color: $green-dark;
+		}
+	}
+}
+
 .news-grid {
 	display: grid;
 	grid-gap: rem(30) rem(38);
@@ -202,6 +228,22 @@
 }
 
 @media screen and (min-width: 1024px) {
+	.views {
+		.search-container {
+			margin-left: auto;
+			width: rem(192);
+
+			svg {
+				margin-left: rem(0);
+			}
+
+			input[type="search"] {
+				float: right;
+				width: rem(208);
+			}
+		}
+	}
+
 	.news-grid {
 		grid-template-columns: repeat(2, 1fr);
 

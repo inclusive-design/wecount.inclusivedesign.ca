@@ -12,6 +12,11 @@ pagination:
 {% block content %}
 	<article class="views">
 		<h1>Views</h1>
+
+    {% set placeholderForSearch = "Search posts ..." %}
+    {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
+    {% include 'components/search.njk' %}
+
 		<div class="news-grid">
 			{% for item in pagination.items %}
 			<div class="api-content">
