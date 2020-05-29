@@ -4,34 +4,17 @@
 <!doctype html>
 <html lang="en-ca">
 	<head>
+		{% include 'globals/google-analytics.njk' %}
 		{% include 'globals/meta.njk' %}
 		<link rel="stylesheet" href="/css/main.css"/>
 		<script src="/js/main.js" defer></script>
 		<link rel="preload" href="/lib/infusion/dist/infusion-uio.min.js" as="script">
 		{% block headerScripts %}{% endblock %}
 
-		<!-- Fonts -->
-		<link rel="preload" href="/lib/infusion/dist/assets/src/lib/opensans/fonts/OpenSans-Light.woff" as="font" />
-		<link rel="preload" href="/lib/infusion/dist/assets/src/lib/opensans/fonts/OpenSans-Regular.woff" as="font" />
-		<link rel="preload" href="/lib/infusion/dist/assets/src/lib/opensans/fonts/OpenSans-SemiBold.woff" as="font" />
-
-		<link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/fonts/PrefsFramework-Icons.woff" as="font" />
-
-		<link rel="preload" href="/lib/infusion/src/components/orator/fonts/Orator-Icons.woff" as="font" />
-
-		<link rel="preload" href="lib/infusion/dist/assets/src/lib/open-dyslexic/fonts/OpenDyslexic-Bold.woff" as="font" />
-		<link rel="preload" href="lib/infusion/dist/assets/src/lib/open-dyslexic/fonts/OpenDyslexic-BoldItalic.woff" as="font" />
-		<link rel="preload" href="lib/infusion/dist/assets/src/lib/open-dyslexic/fonts/OpenDyslexic-Italic.woff" as="font" />
-		<link rel="preload" href="lib/infusion/dist/assets/src/lib/open-dyslexic/fonts/OpenDyslexic-Regular.woff" as="font" />
-
 		<!-- CSS files for UI Options-->
-		<link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css" as="style" />
-		<link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css" as="style" />
-		<link rel="preload" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" as="style" />
-
-    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css" />
-    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css" />
-    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+		<link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css"/>
+		<link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css"/>
+		<link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css"/>
 
 		<!-- The Infusion Library for UI Options -->
 		<script type="text/javascript" src="/lib/infusion/dist/infusion-uio.min.js"></script>
@@ -53,7 +36,11 @@
 			$(document).ready(function () {
 				fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
 					preferences: [
-						"fluid.prefs.lineSpace", "fluid.prefs.textFont", "fluid.prefs.contrast", "fluid.prefs.tableOfContents", "fluid.prefs.enhanceInputs"
+						"fluid.prefs.lineSpace",
+						"fluid.prefs.textFont",
+						"fluid.prefs.contrast",
+						"fluid.prefs.tableOfContents",
+						"fluid.prefs.enhanceInputs"
 					],
 					auxiliarySchema: {
 						terms: {
@@ -63,10 +50,7 @@
 						"fluid.prefs.tableOfContents": {
 							enactor: {
 								"tocTemplate": "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
-								"tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json",
-								ignoreForToC: {
-									"overviewPanel": ".flc-overviewPanel"
-								}
+								"tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json"
 							}
 						}
 					},

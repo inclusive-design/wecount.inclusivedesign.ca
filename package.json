@@ -37,7 +37,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "infusion": "3.0.0-dev.20200514T192349Z.6ec8e0fcf.UIO-WeCount",
+    "infusion": "3.0.0-dev.20200525T134420Z.23c88e1ba.UIO-WeCount",
     "sanitize.css": "^11.0.0"
   },
   "devDependencies": {

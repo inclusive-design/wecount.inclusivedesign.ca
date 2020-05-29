@@ -10,23 +10,17 @@ pagination:
 {% set pageTitle = 'Views (Page ' + currentPage + ')' %}
 
 {% block content %}
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol id="placeholder" viewBox="-4 -4 224 224">
-            {% include 'svg/placeholder.svg' %}
-        </symbol>
-    </svg>
-
-    <article class="views">
-        <h1>Views</h1>
-        <div class="news-grid">
-            {% for item in pagination.items %}
-            <div class="api-content">
-            {% include 'components/grid-item.njk' %}
-            </div>
-            {% endfor %}
-        </div>
-				{% if pagination.pages.length > 1 %}
-        {% include 'components/pagination.njk' %}
-				{% endif %}
-    </article>
+	<article class="views">
+		<h1>Views</h1>
+		<div class="news-grid">
+			{% for item in pagination.items %}
+			<div class="api-content">
+			{% include 'components/grid-item.njk' %}
+			</div>
+			{% endfor %}
+		</div>
+    {% if pagination.pages.length > 1 %}
+		  {% include 'components/pagination.njk' %}
+    {% endif %}
+	</article>
 {% endblock %}
