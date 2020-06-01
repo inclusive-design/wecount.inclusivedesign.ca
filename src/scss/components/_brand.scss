@@ -29,8 +29,8 @@
 	}
 }
 
-[class^="fl-theme"],
-[class^="gpii-ext-theme"] {
+[class^="gpii-ext-theme"],
+[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
 	.logo circle,
 	.logo path {
 		fill: none;

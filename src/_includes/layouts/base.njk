@@ -1,16 +1,39 @@
 {% if title %}
-{% set pageTitle = title %}
+	{% set pageTitle = title %}
 {% endif %}
 <!doctype html>
-	<html lang="en-ca">
+<html lang="en-ca">
 	<head>
 		{% include 'globals/matomo-analytics.njk' %}
 		{% include 'globals/google-analytics.njk' %}
 		{% include 'globals/meta.njk' %}
-		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/main.css"/>
 		<script src="/js/main.js" defer></script>
-		{% block headerScripts %}
-		{% endblock %}
+		<link rel="preload" href="/lib/infusion/dist/infusion-uio.min.js" as="script">
+		{% block headerScripts %}{% endblock %}
+
+		<!-- Fonts -->
+		<link rel="preload" href="/fonts/fira-sans-v10-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/fira-sans-v10-latin-italic.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/fira-sans-v10-latin-500.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/fira-sans-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/fira-sans-v10-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+		<link rel="preload" href="/fonts/fira-sans-v10-latin-regular.woff" as="font" type="font/woff" crossorigin />
+		<link rel="preload" href="/fonts/fira-sans-v10-latin-italic.woff" as="font" type="font/woff" crossorigin />
+		<link rel="preload" href="/fonts/fira-sans-v10-latin-500.woff" as="font" type="font/woff" crossorigin />
+		<link rel="preload" href="/fonts/fira-sans-v10-latin-600.woff" as="font" type="font/woff" crossorigin />
+		<link rel="preload" href="/fonts/fira-sans-v10-latin-700.woff" as="font" type="font/woff" crossorigin />
+		<link rel="preload" href="/fonts/roboto-v20-latin-regular.woff" as="font" type="font/woff" crossorigin />
+
+		<!-- CSS files for UI Options-->
+		<link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css"/>
+		<link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css"/>
+		<link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css"/>
+
+		<!-- The Infusion Library for UI Options -->
+		<script type="text/javascript" src="/lib/infusion/dist/infusion-uio.min.js"></script>
 	</head>
 	<body>
 		<div id="defaultContainer">
@@ -18,13 +41,40 @@
 			<div class="content-wrapper">
 				<aside id="toc"></aside>
 				<main>
-				{% block content %}
-				{% endblock %}
+					<nav class="flc-toc-tocContainer"></nav>
+					{% block content %}{% endblock %}
 				</main>
 			</div>
 			{% include 'components/footer.njk' %}
 		</div>
-		{% block footerScripts %}
-		{% endblock %}
+		{% block footerScripts %}{% endblock %}
+		<script type="text/javascript">
+			$(document).ready(function () {
+				fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
+					preferences: [
+						"fluid.prefs.lineSpace",
+						"fluid.prefs.textFont",
+						"fluid.prefs.contrast",
+						"fluid.prefs.tableOfContents",
+						"fluid.prefs.enhanceInputs"
+					],
+					auxiliarySchema: {
+						terms: {
+							"templatePrefix": "/lib/infusion/src/framework/preferences/html",
+							"messagePrefix": "/lib/infusion/src/framework/preferences/messages"
+						},
+						"fluid.prefs.tableOfContents": {
+							enactor: {
+								"tocTemplate": "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
+								"tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json"
+							}
+						}
+					},
+					prefsEditorLoader: {
+						lazyLoad: true
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
