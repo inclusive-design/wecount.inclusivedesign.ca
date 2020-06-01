@@ -1,5 +1,11 @@
 // Footer styles.
 
+// For the canada logo: the color of the flag is red by default but is able to adapt
+// to the color determined by the selected UIO high contrast theme.
+.fill-f00 {
+	fill: var(--theme-link-fill, #f00);
+}
+
 footer {
 	background: $navy-light;
 	color: $white;
@@ -47,6 +53,7 @@ footer {
 			}
 
 			svg {
+				height: rem(60);
 				padding: rem(13) rem(13) rem(13) 0;
 				width: rem(144);
 			}
@@ -65,11 +72,10 @@ footer {
 
 				svg {
 					padding: rem(32) rem(16) rem(16) 0;
-					width: rem(240);
 				}
 			}
 
-			.logo-ocadu-wrapper {
+			.footer-logos {
 				text-align: center;
 
 				a {
@@ -77,11 +83,22 @@ footer {
 				}
 			}
 
-			.logo-ocadu {
+			.ocadu-logo-wrapper {
 				a svg {
+					height: rem(128);
 					padding: rem(16);
 					width: rem(128);
 				}
+			}
+
+			.idrc-logo {
+				height: rem(104);
+				width: rem(240);
+			}
+
+			.ocadu-logo {
+				height: rem(128);
+				width: rem(128);
 			}
 		}
 
@@ -206,16 +223,20 @@ footer {
 				grid-column: 1/2;
 				grid-row: 2/3;
 
-				a {
-					svg {
-						width: rem(176);
-					}
+				.idrc-logo {
+					height: rem(96);
+					width: rem(176);
 				}
 
-				.logo-ocadu-wrapper {
+				.ocadu-logo {
+					height: rem(72);
+					width: rem(176);
+				}
+
+				.footer-logos {
 					display: inline-flex;
 
-					.logo-ocadu {
+					.ocadu-logo-wrapper {
 						padding: 0;
 					}
 				}
