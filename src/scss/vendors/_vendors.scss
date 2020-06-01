@@ -28,10 +28,13 @@
 }
 
 // focus and hover
-a[href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home"],
-a[href="https://idrc.ocadu.ca/"],
-a[href="https://ocadu.ca/"] {
-	padding: rem(5);
+footer {
+	.funders,
+	.footer-logos {
+		a {
+			padding: rem(5);
+		}
+	}
 }
 
 #defaultContainer .content-wrapper .pagination .pagination-list {
@@ -46,6 +49,7 @@ a[href="https://ocadu.ca/"] {
 }
 
 @each $theme, $foregroundColor, $backgroundColor in $uio-themes {
+	.gpii-ext-theme-#{$theme},
 	.fl-theme-#{$theme} {
 		.blue,
 		.green,
