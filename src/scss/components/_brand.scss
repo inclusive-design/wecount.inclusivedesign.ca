@@ -14,9 +14,11 @@
 	.logo {
 		height: rem(52);
 		margin: 0 rem(16);
+		width: rem(52);
 	}
 
 	.logotype {
+		height: rem(32);
 		width: rem(200);
 	}
 }
@@ -27,27 +29,4 @@
 			display: inline-flex;
 		}
 	}
-}
-
-[class^="gpii-ext-theme"],
-[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
-	.logo circle,
-	.logo path {
-		fill: none;
-		stroke: var(--logo-stroke, currentColor);
-		stroke-linecap: round;
-		stroke-width: 0.1875rem;
-	}
-}
-
-.fl-theme-bbr,
-.gpii-ext-theme-bbr {
-	--logo-stroke: #{$black};
-}
-
-.fl-theme-gw,
-.gpii-ext-theme-gw,
-.fl-theme-gd,
-.gpii-ext-theme-gd {
-	--logo-stroke: #{$grey};
 }

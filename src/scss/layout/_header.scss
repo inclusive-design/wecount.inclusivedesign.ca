@@ -27,6 +27,7 @@ header {
 				padding: rem(8);
 
 				svg {
+					height: rem(32);
 					padding: rem(3.2);
 					pointer-events: none;
 					width: rem(32);
@@ -49,7 +50,7 @@ header {
 				display: none;
 				left: 0;
 				position: absolute;
-				top: rem(120);
+				top: rem(184);
 				width: 100%;
 
 				a {
@@ -79,11 +80,15 @@ header {
 				align-items: center;
 				display: flex;
 
+				svg {
+					fill: white;
+					height: rem(24);
+					margin: rem(-29);
+					width: rem(24);
+					z-index: 1;
+				}
+
 				input[type="search"] {
-					background-color: white;
-					background-image: url("../images/search.svg");
-					background-position: center;
-					background-repeat: no-repeat;
 					border: 0;
 					border-radius: 50%;
 					outline: none;
@@ -91,7 +96,6 @@ header {
 					width: rem(16);
 
 					&:focus {
-						background-position: left rem(8) center;
 						border-radius: rem(28);
 						padding-left: rem(32);
 						width: rem(160);
@@ -119,6 +123,7 @@ header {
 					flex-direction: row;
 					justify-content: space-around;
 					position: inherit;
+					top: rem(120);
 
 					a {
 						border-bottom: none;
@@ -138,9 +143,12 @@ header {
 				}
 
 				.search-container {
+					svg {
+						margin: rem(-40);
+					}
+
 					input[type="search"],
 					input[type="search"]:focus {
-						background-position: left rem(8) center;
 						border-radius: rem(28);
 						font-size: inherit;
 						padding: rem(16) rem(48);

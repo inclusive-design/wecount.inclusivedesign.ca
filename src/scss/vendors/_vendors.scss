@@ -22,14 +22,48 @@
 		&:hover,
 		&:focus {
 			background-color: $orange-focus;
-			font-weight: $font-weight-bold;
 		}
 	}
+}
 
-	&:hover,
-	&:focus-within {
-		border: rem(3) solid $green-dark;
-		border-top: none;
-		margin-right: rem(70);
+// To adapt to UIO high contrast themes
+[class^="gpii-ext-theme"],
+[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
+	// WeCount logo
+	.logo circle,
+	.logo path {
+		fill: none;
+		stroke: var(--logo-stroke, currentColor);
+		stroke-linecap: round;
+		stroke-width: 0.1875rem;
+	}
+
+	// Search icon; IDRC, OCADU and Canada logos
+	header .site-nav-wrapper .site-nav .search-container svg {
+		fill: currentColor;
+	}
+
+	// Canada logo
+	--theme-link-fill: currentColor;
+
+	// Placeholder images on the "views" page
+	svg.news-item-img use {
+		stroke: var(--placeholder-stroke, currentColor);
+		stroke-linecap: round;
+		stroke-width: 0.1875rem;
+	}
+}
+
+// For styles that require foreground and background colors from each theme
+@each $theme, $fColor, $bColor in $UIOThemes {
+	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
+		// WeCount logo
+		--logo-stroke: #{$fColor};
+
+		// The placeholder svg on the "views" page
+		--theme-background-fill: #{$bColor};
+		--placeholder-stroke: #{$fColor};
+
+		@include adapt-to-highContrast($fColor, $bColor);
 	}
 }
