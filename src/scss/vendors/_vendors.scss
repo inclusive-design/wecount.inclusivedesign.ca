@@ -1,1 +1,27 @@
 // Vendor-specific styles.
+
+//UIO
+
+#defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+	background: $white;
+	border: rem(1) solid $green-dark;
+	border-radius: 0 0 rem(30) rem(30);
+	border-top: none;
+	box-shadow: none;
+	box-sizing: border-box;
+	padding: rem(10) rem(20);
+
+	button {
+		color: $black;
+		font-family: "Roboto", sans-serif;
+		font-size: rem(16);
+		font-style: normal;
+		font-weight: $font-weight-normal;
+		line-height: rem(19);
+
+		&:hover,
+		&:focus {
+			background-color: $orange-focus;
+		}
+	}
+}
