@@ -1,4 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="canada-logo" viewBox="0 0 143.11 34.11">
+		{% include 'svg/canada.svg' %}
+	</symbol>
+</svg>
+
 <div class="funders">
-    <p>Supported by Innovation, Science and Economic Development Canada’s Accessible Technology Program.</p>
-    <div><a href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home">{% include 'svg/canada.svg' %} <span class="screen-reader-only">Accessible Technology Program</span></a></div>
+  <p>Supported by Innovation, Science and Economic Development Canada’s Accessible Technology Program.</p>
+  <div>
+    <a href="https://www.ic.gc.ca/eic/site/118.nsf/eng/home">
+      <svg><use xlink:href="#canada-logo" /></svg>
+      <span class="screen-reader-only">Accessible Technology Program</span>
+    </a>
+  </div>
 </div>

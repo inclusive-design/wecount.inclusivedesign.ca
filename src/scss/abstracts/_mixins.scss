@@ -29,8 +29,27 @@
 			0 0 0 rem(4) $backgroundColor,
 			0 0 0 rem(6) $foregroundColor;
 	}
+}
 
-	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]::before {
-		box-shadow: none;
+@mixin adapt-to-highContrast($fColor, $bColor) {
+	// Social media icons
+	footer .footer-content .social-media .social-media-icons a {
+		svg path {
+			fill: currentColor;
+			stroke: $bColor;
+		}
+
+		&:hover,
+		&:focus {
+			svg path {
+				fill: $bColor;
+				stroke: currentColor;
+			}
+		}
+	}
+
+	// Hide ellipsis when a post excerpt is fully displayed
+	.news-grid .api-content .news-item .preview-content::after {
+		background: $bColor;
 	}
 }

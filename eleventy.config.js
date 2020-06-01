@@ -1,12 +1,16 @@
+/* global chunkArray, createPagination */
+
 const errorOverlay = require("eleventy-plugin-error-overlay");
 const fs = require("fs");
 
-const dataFetcher = require("./src/utils/data-fetcher");
+const dataFetcher = require("./src/utils/data-fetcher.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
 const markdownFilter = require("./src/filters/markdown.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
+
+require("./src/js/utils.js");
 
 module.exports = function(eleventyConfig) {
 	// Use .eleventyignore instead of .gitignore.
@@ -33,21 +37,43 @@ module.exports = function(eleventyConfig) {
 		return collection;
 	});
 
-	eleventyConfig.addCollection("tags", async function(collection) {
-		collection = await dataFetcher.siteTags();
+	eleventyConfig.addCollection("tags", async function() {
+		const tags = await dataFetcher.siteTags();
 		const posts = await dataFetcher.sitePosts();
-		collection.map(tag => {
+		const pageSize = 10;
+		let collectionTogo = [];
+
+		tags.map(tag => {
 			const taggedPosts = posts.filter(post => {
 				return post.tags.includes(tag.title);
 			});
 
 			if (taggedPosts.length) {
-				tag.posts = taggedPosts;
-			}
+				const postsInPage = chunkArray(taggedPosts, pageSize);
+				for (let pageNumber = 1; pageNumber <= postsInPage.length; pageNumber++) {
+					let pagination;
+					if (pageNumber === 1) {
+						// Add the root page that has the same content as the first page
+						pagination = createPagination(taggedPosts, pageSize, 1, "/tags/" + tag.slug + "/page/:page");
+						collectionTogo.push({
+							slug: tag.slug,
+							title: tag.title,
+							posts: postsInPage[0],
+							pagination: pagination
+						});
+					}
 
-			return tag;
+					collectionTogo.push({
+						slug: tag.slug,
+						title: tag.title,
+						pageNumber: pageNumber,
+						posts: postsInPage[pageNumber - 1],
+						pagination: pagination ? pagination : createPagination(taggedPosts, pageSize, pageNumber, "/tags/" + tag.slug + "/page/:page")
+					});
+				}
+			}
 		});
-		return collection;
+		return collectionTogo;
 	});
 
 	// Add plugins.
