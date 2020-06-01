@@ -1,12 +1,20 @@
-<button id="menuToggleButton" aria-expanded="false">{% include 'svg/menu.svg' %}&nbsp;Menu</button>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="menu-icon" viewBox="0 0 1536 1536">
+		{% include 'svg/menu.svg' %}
+	</symbol>
+</svg>
+
+<button id="menuToggleButton" aria-expanded="false">
+  <svg><use xlink:href="#menu-icon" /></svg>&nbsp;Menu
+</button>
+
 <nav aria-labelledby="primary-nav-label">
-    <span id="primary-nav-label" class="screen-reader-only">Primary Navigation</span>
-        {%- for pageItem in collections.pages %}
-            {%- if pageItem.menu_order > 0 %}
-                <a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title }}</a>
-            {%- endif %}
-        {%- endfor %}
-        <a {% if page.url === '/news/' %}aria-current="page" {% endif %}href="/news/">News</a>
-        <a {% if page.url === '/views/' %}aria-current="page" {% endif %} href="/views/">Views</a>
-    </ul>
+  <span id="primary-nav-label" class="screen-reader-only">Primary Navigation</span>
+  {%- for pageItem in collections.pages %}
+      {%- if pageItem.menu_order > 0 %}
+          <a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title }}</a>
+      {%- endif %}
+  {%- endfor %}
+  <a {% if page.url === '/news/' %}aria-current="page" {% endif %}href="/news/">News</a>
+  <a {% if page.url === '/views/' %}aria-current="page" {% endif %} href="/views/">Views</a>
 </nav>
