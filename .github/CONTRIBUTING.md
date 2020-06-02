@@ -24,8 +24,11 @@ When committing your changes, use [Conventional Commits](https://conventionalcom
 [linted](https://github.com/inclusive-design/wecount.inclusivedesign.ca#how-to-lint);
 you must address any linting errors before submitting a pull request.
 
-When your work is complete, open a pull request against the [dev][dev] branch.
-Please make sure to fill out the pull request template.
+When your work is complete, open a pull request against the [dev][dev] branch:
+
+- The title of the pull request is in the format of `<type>: <description> (resolves <issue-id>)`
+  - For example, for a new feature that resolves the issue id #1, the title is `feat: description of the feature (resolves #1)`. This makes sure the issue id(s) is included in the commit history for easy access in the future.
+- Please make sure to fill out the pull request template.
 
 We merge all pull requests using [squash commits](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-merges#squash-and-merge-your-pull-request-commits).
 

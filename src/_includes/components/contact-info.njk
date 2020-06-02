@@ -1,23 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="idrc-logo" viewBox="0 0 289 74">
+		{% include 'svg/idrc.svg' %}
+	</symbol>
+	<symbol id="ocadu-logo" viewBox="0 0 93 78">
+		{% include 'svg/ocadu.svg' %}
+	</symbol>
+</svg>
+
 <div class="contact-info">
-    <h2>Contact Us</h2>
-    <div>
-        <address>
-            <a href="mailto:wecount@inclusivedesign.ca">wecount@inclusivedesign.ca</a><br>
+	<h2>Contact Us</h2>
+	<div>
+		<address>
+			<a href="mailto:wecount@inclusivedesign.ca">wecount@inclusivedesign.ca</a><br>
 			IDRC<br>
 			205 Richmond Street West<br>
 			Toronto, ON M5V 1V3
-        </address>
-        <div class="logo-ocadu-wrapper">
-            <a href="https://idrc.ocadu.ca/">
-                {% include 'svg/idrc.svg' %}
-                <span class="screen-reader-only">Inclusive Design Research Centre</span>
-            </a>
-            <div class="logo-ocadu">
-                <a href="https://ocadu.ca/">
-                    {% include 'svg/ocadu.svg' %}
-                    <span class="screen-reader-only">OCAD University</span>
-                </a>
-            </div>
-        </div>
-    </div>
+		</address>
+		<div class="footer-logos">
+			<a href="https://idrc.ocadu.ca/">
+				<svg class="idrc-logo"><use xlink:href="#idrc-logo" /></svg>
+				<span class="screen-reader-only">Inclusive Design Research Centre</span>
+			</a>
+			<div class="ocadu-logo-wrapper">
+				<a href="https://ocadu.ca/">
+					<svg class="ocadu-logo"><use xlink:href="#ocadu-logo" /></svg>
+					<span class="screen-reader-only">OCAD University</span>
+				</a>
+			</div>
+		</div>
+	</div>
 </div>
