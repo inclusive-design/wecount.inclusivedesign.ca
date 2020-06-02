@@ -28,32 +28,34 @@
 }
 
 // uio constrast focus and hover
-footer {
-	.funders,
-	.footer-logos {
-		a {
-			padding: rem(5);
-		}
-	}
-}
-
-#defaultContainer .content-wrapper .pagination .pagination-list {
-	.pagination-next,
-	.pagination-previous {
-		box-shadow: none;
-	}
-}
-
-#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]::before {
-	box-shadow: none;
-}
-
 @each $theme, $foregroundColor, $backgroundColor in $uio-themes {
 	.gpii-ext-theme-#{$theme},
 	.fl-theme-#{$theme} {
+		@include uio-focus-style($foregroundColor, $backgroundColor);
+
 		#defaultContainer button {
 			padding-left: rem(3);
 			padding-right: rem(3);
+		}
+
+		footer {
+			.funders,
+			.footer-logos {
+				a {
+					padding: rem(5);
+				}
+			}
+		}
+
+		#defaultContainer .content-wrapper .pagination .pagination-list {
+			.pagination-next,
+			.pagination-previous {
+				box-shadow: none;
+			}
+		}
+
+		#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]::before {
+			box-shadow: none;
 		}
 
 		.blue,
@@ -61,8 +63,6 @@ footer {
 		.yellow {
 			background-image: none;
 		}
-
-		@include uio-focus-style($foregroundColor, $backgroundColor);
 	}
 }
 
