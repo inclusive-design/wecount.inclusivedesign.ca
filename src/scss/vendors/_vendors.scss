@@ -26,23 +26,31 @@
 	}
 }
 
+#defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar {
+	border-bottom: none;
+	box-shadow: none;
+}
+
 .fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 	display: inline-block;
+	height: rem(80);
 	padding-top: 0;
 
 	button {
-		border: 0;
+		padding: rem(10) 0;
+	}
 
-		&:not(.fl-prefsEditor-reset) {
-			padding: rem(10) 0;
-		}
+	.fl-prefsEditor-reset {
+		border: none;
+		padding-bottom: rem(5);
 	}
 
 	button[aria-label="Show Display Preferences"] {
-		margin-top: rem(13);
+		margin-top: rem(20);
 	}
 
 	button[aria-label="Hide Display Preferences"] {
+		border-bottom: 2px solid #ccc;
 		padding-left: rem(10);
 	}
 }
@@ -50,9 +58,16 @@
 @media screen and (min-width: 1024px) {
 	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 		display: block;
+		height: auto;
 		padding-top: rem(10);
 
+		.fl-prefsEditor-reset {
+			padding: 0;
+			padding-left: rem(12.8);
+		}
+
 		button[aria-label="Hide Display Preferences"] {
+			border: none;
 			padding: 0;
 		}
 
