@@ -32,7 +32,6 @@ footer {
 		display: flex;
 		flex-direction: column;
 		font-size: rem(16);
-		line-height: rem(29);
 		margin: auto;
 		max-width: $max-width-margins;
 
@@ -216,7 +215,6 @@ footer {
 				align-self: end;
 				grid-column: 2/3;
 				grid-row: 2/3;
-				line-height: rem(19);
 			}
 
 			.contact-info {
