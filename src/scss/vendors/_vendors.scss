@@ -42,6 +42,7 @@
 
 	.fl-prefsEditor-reset {
 		border: none;
+		margin-left: rem(10);
 		padding-bottom: rem(5);
 	}
 
@@ -51,6 +52,7 @@
 
 	button[aria-label="Hide Display Preferences"] {
 		border-bottom: 2px solid #ccc;
+		margin-left: rem(10);
 		padding-left: rem(10);
 	}
 }
@@ -60,6 +62,10 @@
 		display: block;
 		height: auto;
 		padding-top: rem(10);
+
+		button:not(.fl-prefsEditor-reset) {
+			margin: 0 rem(8);
+		}
 
 		.fl-prefsEditor-reset {
 			padding: 0;
