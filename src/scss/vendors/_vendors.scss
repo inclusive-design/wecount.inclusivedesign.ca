@@ -27,7 +27,7 @@
 	}
 }
 
-// focus and hover
+// uio constrast focus and hover
 footer {
 	.funders,
 	.footer-logos {
@@ -51,6 +51,11 @@ footer {
 @each $theme, $foregroundColor, $backgroundColor in $uio-themes {
 	.gpii-ext-theme-#{$theme},
 	.fl-theme-#{$theme} {
+		#defaultContainer button {
+			padding-left: rem(3);
+			padding-right: rem(3);
+		}
+
 		.blue,
 		.green,
 		.yellow {

@@ -8,13 +8,12 @@
 	#defaultContainer .content-wrapper .tags-info .tags a:hover,
 	#search-form input,
 	.card:focus,
-	.card:hover {
-		box-shadow: inset 0 0 0 rem(2) $foregroundColor;
-	}
-
+	.card:hover,
+	button:focus,
+	button:hover,
 	li .pagination-link,
 	li .pagination-link::before {
-		box-shadow: 0 0 0 rem(2) $foregroundColor inset;
+		box-shadow: inset 0 0 0 rem(2) $foregroundColor;
 	}
 
 	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"] {
