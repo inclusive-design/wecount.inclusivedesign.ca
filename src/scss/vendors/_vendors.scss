@@ -33,8 +33,8 @@
 
 .fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 	display: inline-block;
-	height: rem(80);
-	padding-top: 0;
+	height: rem(88);
+	padding: 0;
 
 	button {
 		padding: rem(10) 0;
@@ -42,25 +42,30 @@
 
 	.fl-prefsEditor-reset {
 		border: none;
-		margin-left: rem(8);
-		padding-bottom: rem(5);
+		margin-left: rem(9);
+		padding-bottom: rem(1);
+		padding-top: rem(5);
 	}
 
 	button[aria-expanded="false"] {
 		margin-top: rem(20);
+		word-spacing: -2px;
 	}
 
 	button[aria-expanded="true"] {
 		border-bottom: 2px solid #ccc;
-		margin-left: rem(8);
+		margin-left: rem(5);
+		padding-bottom: rem(15);
 		padding-left: rem(10);
+		width: 97%;
 	}
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40em) { // This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button styles on desktop and mobile.
 	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 		display: block;
 		height: auto;
+		padding: 0.625rem 1.25rem;
 		padding-top: rem(10);
 
 		button:not(.fl-prefsEditor-reset) {
@@ -75,6 +80,7 @@
 		button[aria-expanded="true"] {
 			border: none;
 			padding: 0;
+			width: unset;
 		}
 
 		button[aria-expanded="false"] {
