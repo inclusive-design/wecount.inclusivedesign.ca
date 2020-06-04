@@ -31,6 +31,64 @@
 	}
 }
 
+.fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+	display: inline-block;
+	height: rem(88);
+	padding: 0;
+
+	button {
+		padding: rem(10) 0;
+	}
+
+	.fl-prefsEditor-reset {
+		border: none;
+		margin-left: rem(9);
+		padding-bottom: rem(1);
+		padding-top: rem(5);
+	}
+
+	button[aria-expanded="false"] {
+		margin-top: rem(20);
+		word-spacing: -2px;
+	}
+
+	button[aria-expanded="true"] {
+		border-bottom: 2px solid #ccc;
+		margin-left: rem(5);
+		padding-bottom: rem(15);
+		padding-left: rem(10);
+		width: 97%;
+	}
+}
+
+@media screen and (min-width: 40em) { // This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button styles on desktop and mobile.
+	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+		display: block;
+		height: auto;
+		padding: rem(10) rem(20);
+
+		button:not(.fl-prefsEditor-reset) {
+			margin: 0 rem(8);
+		}
+
+		.fl-prefsEditor-reset {
+			padding: 0;
+			padding-left: rem(12.8);
+		}
+
+		button[aria-expanded="true"] {
+			border: none;
+			padding: 0;
+			width: unset;
+		}
+
+		button[aria-expanded="false"] {
+			margin-top: 0;
+			padding: 0;
+		}
+	}
+}
+
 // To adapt to UIO high contrast themes
 [class^="gpii-ext-theme"],
 [class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
@@ -40,7 +98,7 @@
 		fill: none;
 		stroke: var(--logo-stroke, currentColor);
 		stroke-linecap: round;
-		stroke-width: 0.1875rem;
+		stroke-width: rem(3);
 	}
 
 	// Search icon; IDRC, OCADU and Canada logos
@@ -55,7 +113,7 @@
 	svg.news-item-img use {
 		stroke: var(--placeholder-stroke, currentColor);
 		stroke-linecap: round;
-		stroke-width: 0.1875rem;
+		stroke-width: rem(3);
 	}
 }
 
