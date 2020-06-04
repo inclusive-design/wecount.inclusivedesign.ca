@@ -1,6 +1,65 @@
 // Vendor-specific styles.
 
-//UIO
+// UIO
+
+// To adapt to UIO high contrast themes
+[class^="gpii-ext-theme"],
+[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
+	// WeCount logo
+	.logo circle,
+	.logo path {
+		fill: none;
+		stroke: var(--logo-stroke, currentColor);
+		stroke-linecap: round;
+		stroke-width: 0.1875rem;
+	}
+
+	// Search icon; IDRC, OCADU and Canada logos
+	header .site-nav-wrapper .site-nav .search-container svg {
+		fill: currentColor;
+		height: 1.3rem;
+		margin: -1.6rem;
+		width: 1.2rem;
+	}
+
+	// Canada logo
+	--theme-link-fill: currentColor;
+
+	// Placeholder images on the "views" page
+	svg.news-item-img use {
+		stroke: var(--placeholder-stroke, currentColor);
+		stroke-linecap: round;
+		stroke-width: 0.1875rem;
+	}
+
+	#defaultContainer {
+		.fl-prefsEditor-buttons button {
+			padding-left: rem(3);
+			padding-right: rem(3);
+		}
+
+		.content-wrapper .pagination .pagination-list {
+			.pagination-next,
+			.pagination-previous {
+				box-shadow: none;
+			}
+		}
+
+		.content-wrapper main .pagination .pagination-list li a[aria-current="page"]::before {
+			box-shadow: none;
+		}
+
+		.blue,
+		.green,
+		.yellow {
+			background-image: none;
+		}
+
+		footer .funders .footer-logos a {
+			padding: rem(5);
+		}
+	}
+}
 
 #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar {
 	border-bottom: none;
@@ -31,34 +90,6 @@
 	}
 }
 
-// To adapt to UIO high contrast themes
-[class^="gpii-ext-theme"],
-[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
-	// WeCount logo
-	.logo circle,
-	.logo path {
-		fill: none;
-		stroke: var(--logo-stroke, currentColor);
-		stroke-linecap: round;
-		stroke-width: 0.1875rem;
-	}
-
-	// Search icon; IDRC, OCADU and Canada logos
-	header .site-nav-wrapper .site-nav .search-container svg {
-		fill: currentColor;
-	}
-
-	// Canada logo
-	--theme-link-fill: currentColor;
-
-	// Placeholder images on the "views" page
-	svg.news-item-img use {
-		stroke: var(--placeholder-stroke, currentColor);
-		stroke-linecap: round;
-		stroke-width: 0.1875rem;
-	}
-}
-
 // For styles that require foreground and background colors from each theme
 @each $theme, $fColor, $bColor in $UIOThemes {
 	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
@@ -70,5 +101,20 @@
 		--placeholder-stroke: #{$fColor};
 
 		@include adapt-to-highContrast($fColor, $bColor);
+
+		// uio constrast focus and hover
+		@include uio-focus-style($fColor, $bColor);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	[class^="gpii-ext-theme"],
+	[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
+		// Search icon; IDRC, OCADU and Canada logos
+		header .site-nav-wrapper .site-nav .search-container svg {
+			height: 1.5rem;
+			margin: -2.5rem;
+			width: 1.5rem;
+		}
 	}
 }
