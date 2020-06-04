@@ -65,8 +65,7 @@
 	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 		display: block;
 		height: auto;
-		padding: 0.625rem 1.25rem;
-		padding-top: rem(10);
+		padding: rem(10) rem(20);
 
 		button:not(.fl-prefsEditor-reset) {
 			margin: 0 rem(8);
@@ -99,7 +98,7 @@
 		fill: none;
 		stroke: var(--logo-stroke, currentColor);
 		stroke-linecap: round;
-		stroke-width: 0.1875rem;
+		stroke-width: rem(3);
 	}
 
 	// Search icon; IDRC, OCADU and Canada logos
@@ -114,7 +113,7 @@
 	svg.news-item-img use {
 		stroke: var(--placeholder-stroke, currentColor);
 		stroke-linecap: round;
-		stroke-width: 0.1875rem;
+		stroke-width: rem(3);
 	}
 }
 
