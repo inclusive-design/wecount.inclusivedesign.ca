@@ -106,3 +106,15 @@
 		@include uio-focus-style($fColor, $bColor);
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	[class^="gpii-ext-theme"],
+	[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
+		// Search icon; IDRC, OCADU and Canada logos
+		header .site-nav-wrapper .site-nav .search-container svg {
+			height: 1.5rem;
+			margin: -2.5rem;
+			width: 1.5rem;
+		}
+	}
+}
