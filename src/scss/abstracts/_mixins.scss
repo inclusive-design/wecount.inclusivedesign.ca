@@ -30,14 +30,6 @@
 		}
 	}
 
-	// // Current page pagination hover/focus styling for uio contrast themes
-	// #defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]:hover,
-	// #defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]:focus {
-	// 	box-shadow:
-	// 		0 0 0 rem(4) $bColor,
-	// 		0 0 0 rem(6) $fColor;
-	// }
-
 	// Hide ellipsis when a post excerpt is fully displayed
 	.news-grid .api-content .news-item .preview-content::after {
 		background: $bColor;
