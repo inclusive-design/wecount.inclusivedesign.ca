@@ -1,5 +1,5 @@
 // Mixins.
-@mixin uio-focus-style($foregroundColor, $backgroundColor) {
+@mixin uio-focus-style($fColor, $bColor) {
 	a:focus,
 	a:hover,
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:focus,
@@ -13,20 +13,20 @@
 	button:hover,
 	li .pagination-link,
 	li .pagination-link::before {
-		box-shadow: inset 0 0 0 rem(2) $foregroundColor;
+		box-shadow: inset 0 0 0 rem(2) $fColor;
 	}
 
 	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"] {
-		background-color: $foregroundColor !important; // Enactors.css in infusion uses !important on this element
+		background-color: $fColor !important; // Enactors.css in infusion uses !important on this element
 		box-shadow: none;
-		color: $backgroundColor !important; // Enactors.css in infusion uses !important on this element
+		color: $bColor !important; // Enactors.css in infusion uses !important on this element
 	}
 
 	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]:hover,
 	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]:focus {
 		box-shadow:
-			0 0 0 rem(4) $backgroundColor,
-			0 0 0 rem(6) $foregroundColor;
+			0 0 0 rem(4) $bColor,
+			0 0 0 rem(6) $fColor;
 	}
 }
 
