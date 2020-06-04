@@ -1,19 +1,6 @@
 /* global $, fluid */
 
 $(document).ready(function () {
-	fluid.defaults("fluid.prefs.schemas.lineSpace", {
-		gradeNames: ["fluid.prefs.schemas"],
-		schema: {
-			"fluid.prefs.lineSpace": {
-				"type": "number",
-				"default": 1,
-				"minimum": 1,
-				"maximum": 2,
-				"multipleOf": 0.1
-			}
-		}
-	});
-
 	fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
 		preferences: [
 			"fluid.prefs.lineSpace",
@@ -44,6 +31,13 @@ $(document).ready(function () {
 		},
 		prefsEditorLoader: {
 			lazyLoad: true
+		},
+		schema: {
+			properties: {
+				"fluid.prefs.lineSpace": {
+					"minimum": 1
+				}
+			}
 		}
 	});
 });
