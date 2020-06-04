@@ -1,36 +1,6 @@
 // Mixins.
-@mixin uio-focus-style($fColor, $bColor) {
-	a:focus,
-	a:hover,
-	#defaultContainer header .site-nav-wrapper .site-nav nav a:focus,
-	#defaultContainer header .site-nav-wrapper .site-nav nav a:hover,
-	#defaultContainer .content-wrapper .tags-info .tags a:focus,
-	#defaultContainer .content-wrapper .tags-info .tags a:hover,
-	#search-form input,
-	.card:focus,
-	.card:hover,
-	button:focus,
-	button:hover,
-	li .pagination-link,
-	li .pagination-link::before {
-		box-shadow: inset 0 0 0 rem(2) $fColor;
-	}
 
-	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"] {
-		background-color: $fColor !important; // Enactors.css in infusion uses !important on this element
-		box-shadow: none;
-		color: $bColor !important; // Enactors.css in infusion uses !important on this element
-	}
-
-	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]:hover,
-	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]:focus {
-		box-shadow:
-			0 0 0 rem(4) $bColor,
-			0 0 0 rem(6) $fColor;
-	}
-}
-
-@mixin adapt-to-highContrast($fColor, $bColor) {
+@mixin adapt-to-contrastThemes($fColor, $bColor) {
 	// Social media icons
 	footer .footer-content .social-media .social-media-icons a {
 		svg path {
@@ -46,6 +16,27 @@
 			}
 		}
 	}
+
+	// Current page pagination styling for uio contrast themes
+	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"] {
+		background-color: $fColor !important; // Enactors.css in infusion uses !important on this element
+		box-shadow: none;
+		color: $bColor !important; // Enactors.css in infusion uses !important on this element
+		&:hover,
+		&:focus {
+			box-shadow:
+				0 0 0 rem(4) $bColor,
+				0 0 0 rem(6) $fColor;
+		}
+	}
+
+	// // Current page pagination hover/focus styling for uio contrast themes
+	// #defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]:hover,
+	// #defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]:focus {
+	// 	box-shadow:
+	// 		0 0 0 rem(4) $bColor,
+	// 		0 0 0 rem(6) $fColor;
+	// }
 
 	// Hide ellipsis when a post excerpt is fully displayed
 	.news-grid .api-content .news-item .preview-content::after {
