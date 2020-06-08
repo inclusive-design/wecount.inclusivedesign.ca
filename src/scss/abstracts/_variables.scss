@@ -13,6 +13,7 @@ $max-width-margins: rem(1600);
 /** Colors **/
 
 // Primary
+$white: #fff;
 $blue-dark: #6895c6;
 $blue: #84bcde;
 $blue-light: #acdde9;
@@ -38,10 +39,16 @@ $green-pale: #f7fff4;
 $orange-focus: #fadc90;
 $orange-light: #5c81a9;
 
-// UIO
-$yellow: #ff0;
-$white: #fff;
-$grey: #bdbdbb;
-
 // Images
 $img-size-medium: rem(262); // need to decide and set other size variables
+
+// UIO themes
+$UIOThemes:
+	"bw" #000 #fff,
+	"wb" #fff #000,
+	"yb" #ff0 #000,
+	"by" #000 #ff0,
+	"lgdg" #bdbdbb #555,
+	"gd" #888 #222,
+	"gw" #6c6c6c #fff,
+	"bbr" #000 #b96;

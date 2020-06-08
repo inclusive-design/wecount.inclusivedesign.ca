@@ -2,26 +2,89 @@
 
 //UIO
 
-#defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
-	background: $white;
-	border: rem(1) solid $green-dark;
-	border-radius: 0 0 rem(30) rem(30);
-	border-top: none;
+#defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar {
+	border-bottom: none;
 	box-shadow: none;
-	box-sizing: border-box;
-	padding: rem(10) rem(20);
+
+	.fl-prefsEditor-buttons {
+		background: $white;
+		border: rem(1) solid $green-dark;
+		border-radius: 0 0 rem(30) rem(30);
+		border-top: none;
+		box-shadow: none;
+		box-sizing: border-box;
+		padding: rem(10) rem(20);
+
+		button {
+			color: $black;
+			font-family: "Roboto", sans-serif;
+			font-size: rem(16);
+			font-style: normal;
+			font-weight: $font-weight-normal;
+			line-height: rem(19);
+
+			&:hover,
+			&:focus {
+				background-color: $orange-focus;
+			}
+		}
+	}
+}
+
+.fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+	display: inline-block;
+	height: rem(88);
+	padding: 0;
 
 	button {
-		color: $black;
-		font-family: "Roboto", sans-serif;
-		font-size: rem(16);
-		font-style: normal;
-		font-weight: $font-weight-normal;
-		line-height: rem(19);
+		padding: rem(10) 0;
+	}
 
-		&:hover,
-		&:focus {
-			background-color: $orange-focus;
+	.fl-prefsEditor-reset {
+		border: none;
+		margin-left: rem(9);
+		padding-bottom: rem(1);
+		padding-top: rem(5);
+	}
+
+	button[aria-expanded="false"] {
+		margin-top: rem(20);
+		word-spacing: -2px;
+	}
+
+	button[aria-expanded="true"] {
+		border-bottom: 2px solid #ccc;
+		margin-left: rem(5);
+		padding-bottom: rem(15);
+		padding-left: rem(10);
+		width: 97%;
+	}
+}
+
+@media screen and (min-width: 40em) { // This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button styles on desktop and mobile.
+	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+		display: block;
+		height: auto;
+		padding: rem(10) rem(20);
+
+		button:not(.fl-prefsEditor-reset) {
+			margin: 0 rem(8);
+		}
+
+		.fl-prefsEditor-reset {
+			padding: 0;
+			padding-left: rem(12.8);
+		}
+
+		button[aria-expanded="true"] {
+			border: none;
+			padding: 0;
+			width: unset;
+		}
+
+		button[aria-expanded="false"] {
+			margin-top: 0;
+			padding: 0;
 		}
 	}
 }
@@ -29,56 +92,39 @@
 // To adapt to UIO high contrast themes
 [class^="gpii-ext-theme"],
 [class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
-	// Logo
+	// WeCount logo
 	.logo circle,
 	.logo path {
 		fill: none;
 		stroke: var(--logo-stroke, currentColor);
 		stroke-linecap: round;
-		stroke-width: 0.1875rem;
+		stroke-width: rem(3);
 	}
 
 	// Search icon; IDRC, OCADU and Canada logos
-	.views .search-container svg,
 	header .site-nav-wrapper .site-nav .search-container svg {
 		fill: currentColor;
 	}
+
+	// Canada logo
+	--theme-link-fill: currentColor;
 
 	// Placeholder images on the "views" page
 	svg.news-item-img use {
 		stroke: var(--placeholder-stroke, currentColor);
 		stroke-linecap: round;
-		stroke-width: 0.1875rem;
+		stroke-width: rem(3);
 	}
 }
 
-.fl-theme-bbr,
-.gpii-ext-theme-bbr {
-	--logo-stroke: #{$black};
-}
-
-.fl-theme-gw,
-.gpii-ext-theme-gw,
-.fl-theme-gd,
-.gpii-ext-theme-gd {
-	--logo-stroke: #{$grey};
-}
-
 // For styles that require foreground and background colors from each theme
-$UIOThemes:
-	"fl-theme-bw" "gpii-ext-theme-bw" #000 #fff,
-	"fl-theme-wb" "gpii-ext-theme-wb" #fff #000,
-	"fl-theme-yb" "gpii-ext-theme-yb" #ff0 #000,
-	"fl-theme-by" "gpii-ext-theme-by" #000 #ff0,
-	"fl-theme-lgdg" "gpii-ext-theme-lgdg" #bdbdbb,
-	"fl-theme-gd" "gpii-ext-theme-gd" #888 #222,
-	"fl-theme-gw" "gpii-ext-theme-gw" #6c6c6c #fff,
-	"fl-theme-bbr" "gpii-ext-theme-bbr" #000 #b96;
+@each $theme, $fColor, $bColor in $UIOThemes {
+	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
+		// WeCount logo
+		--logo-stroke: #{$fColor};
 
-@each $uioTheme, $uioPlusTheme, $fColor, $bColor in $UIOThemes {
-	.#{$uioPlusTheme}, .#{$uioTheme} {
+		// The placeholder svg on the "views" page
 		--theme-background-fill: #{$bColor};
-		--theme-link-fill: currentColor;
 		--placeholder-stroke: #{$fColor};
 
 		@include adapt-to-highContrast($fColor, $bColor);
