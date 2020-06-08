@@ -105,15 +105,3 @@
 		}
 	}
 }
-
-@media screen and (min-width: 1024px) {
-	[class^="gpii-ext-theme"],
-	[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
-		// Search icon; IDRC, OCADU and Canada logos
-		header .site-nav-wrapper .site-nav .search-container svg {
-			height: rem(24);
-			margin: rem(-40);
-			width: rem(24);
-		}
-	}
-}

@@ -109,4 +109,13 @@
 	.news-grid .api-content .news-item .preview-content::after {
 		background: $bColor;
 	}
+
+	@media screen and (min-width: 1024px) {
+		// Search icon positioning
+		header .site-nav-wrapper .site-nav .search-container svg {
+			height: rem(24);
+			margin: rem(-40);
+			width: rem(24);
+		}
+	}
 }
