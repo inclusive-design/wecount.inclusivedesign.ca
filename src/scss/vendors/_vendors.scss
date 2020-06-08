@@ -91,6 +91,20 @@
 	}
 }
 
+// For styles that require foreground and background colors from each theme
+@each $theme, $fColor, $bColor in $UIOThemes {
+	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
+		// WeCount logo
+		--logo-stroke: #{$fColor};
+
+		// The placeholder svg on the "views" page
+		--theme-background-fill: #{$bColor};
+		--placeholder-stroke: #{$fColor};
+
+		@include adapt-to-contrastThemes($fColor, $bColor);
+	}
+}
+
 // This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button styles on desktop and mobile.
 @media screen and (min-width: 40em) {
 	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
@@ -117,20 +131,6 @@
 			margin-top: 0;
 			padding: 0;
 		}
-	}
-}
-
-// For styles that require foreground and background colors from each theme
-@each $theme, $fColor, $bColor in $UIOThemes {
-	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
-		// WeCount logo
-		--logo-stroke: #{$fColor};
-
-		// The placeholder svg on the "views" page
-		--theme-background-fill: #{$bColor};
-		--placeholder-stroke: #{$fColor};
-
-		@include adapt-to-contrastThemes($fColor, $bColor);
 	}
 }
 
