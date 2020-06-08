@@ -113,11 +113,4 @@ permalink: /search/
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 <script src="/js/utils.js"></script>
 <script src="/js/search.js"></script>
-<script>
-// Trigger the focus on the input search box when clicking on the search icon that overlays on the input box
-// espcially with the mobile layout.
-document.getElementById("search-svg").onclick = function () {
-  document.getElementById("search-form").getElementsByTagName("input")[0].focus();
-};
-</script>
 {% endblock %}

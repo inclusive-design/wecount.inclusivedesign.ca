@@ -8,6 +8,7 @@ mix.js("./src/js/main.js", "./src/_includes/static/js/main.js");
 mix.js("./src/js/uio.js", "./src/_includes/static/js/uio.js");
 mix.js("./src/js/utils.js", "./src/_includes/static/js/utils.js");
 mix.js("./src/js/search.js", "./src/_includes/static/js/search.js");
+mix.js("./src/js/views-dynamic-handler.js", "./src/_includes/static/js/views-dynamic-handler.js");
 
 mix.copyDirectory("./src/fonts", "./src/_includes/static/fonts")
 	.copyDirectory("./src/images", "./src/_includes/static/images")

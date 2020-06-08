@@ -1,0 +1,8 @@
+---
+permalink: views.json
+---
+[
+{%- for item in collections.views %}
+	{{ item | dump | safe }},
+{%- endfor %}
+]
