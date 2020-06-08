@@ -89,19 +89,19 @@
 		}
 
 		.fl-prefsEditor-reset {
-			padding: 0;
+			padding: 0 rem(3);
 			padding-left: rem(12.8);
 		}
 
 		button[aria-expanded="true"] {
 			border: none;
-			padding: 0;
+			padding: 0 rem(3);
 			width: unset;
 		}
 
 		button[aria-expanded="false"] {
 			margin-top: 0;
-			padding: 0;
+			padding: 0 rem(3);
 		}
 	}
 }
