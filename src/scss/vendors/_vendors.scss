@@ -5,60 +5,8 @@
 // To adapt to UIO high contrast themes
 
 // TODO: Address style lint errors when line below is uncommented
-// [class^="gpii-ext-theme"],
+[class^="gpii-ext-theme"],
 [class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
-	// WeCount logo
-	.logo circle,
-	.logo path {
-		fill: none;
-		stroke: var(--logo-stroke, currentColor);
-		stroke-linecap: round;
-		stroke-width: rem(3);
-	}
-
-	// fix overlap of box-shadow on footer links
-	footer {
-		.funders a,
-		.footer-logos a {
-			padding: rem(5);
-		}
-	}
-
-	// UIO focus style focus/hover styles for links in uio contrast themes
-	#defaultContainer a:focus,
-	#defaultContainer a:hover,
-	#defaultContainer header .site-nav-wrapper .site-nav nav a:focus,
-	#defaultContainer header .site-nav-wrapper .site-nav nav a:hover,
-	#defaultContainer .content-wrapper .tags-info .tags a:focus,
-	#defaultContainer .content-wrapper .tags-info .tags a:hover,
-	#search-form input,
-	.card:focus,
-	.card:hover,
-	button:focus,
-	button:hover,
-	li .pagination-link,
-	li .pagination-link::before {
-		box-shadow: inset 0 0 0 rem(2) currentColor;
-	}
-
-	// Search icon; IDRC, OCADU and Canada logos
-	header .site-nav-wrapper .site-nav .search-container svg {
-		fill: currentColor;
-		height: rem(19.2);
-		margin: -rem(25.6);
-		width: rem(19.2);
-	}
-
-	// Canada logo
-	--theme-link-fill: currentColor;
-
-	// Placeholder images on the "views" page
-	svg.news-item-img use {
-		stroke: var(--placeholder-stroke, currentColor);
-		stroke-linecap: round;
-		stroke-width: rem(3);
-	}
-
 	#defaultContainer {
 		// fix overlap of box-shadow on buttons
 		.fl-prefsEditor-buttons button {
@@ -66,7 +14,7 @@
 			padding-right: rem(3);
 		}
 
-		// undo default colour from next previous and current pagination
+		// undo default focus/hover styling on next, previous and current pagination
 		.content-wrapper main .pagination .pagination-list {
 			.pagination-next,
 			.pagination-previous,
