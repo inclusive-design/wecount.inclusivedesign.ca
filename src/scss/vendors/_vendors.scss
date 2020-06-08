@@ -2,34 +2,6 @@
 
 // UIO
 
-// To adapt to UIO high contrast themes
-[class^="gpii-ext-theme"],
-[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
-	#defaultContainer {
-		// fix overlap of box-shadow on buttons
-		.fl-prefsEditor-buttons button {
-			padding-left: rem(3);
-			padding-right: rem(3);
-		}
-
-		// undo default focus/hover styling on next, previous and current pagination
-		.content-wrapper main .pagination .pagination-list {
-			.pagination-next,
-			.pagination-previous,
-			li a[aria-current="page"]::before {
-				box-shadow: none;
-			}
-		}
-
-		// cards and homepage have no background in contrast themes
-		.blue,
-		.green,
-		.yellow {
-			background-image: none;
-		}
-	}
-}
-
 // UIO tab styling
 #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar {
 	border-bottom: none;
