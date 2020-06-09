@@ -2,7 +2,7 @@
 
 // *** UIO ***
 
-// UIO button style
+// UIO button style by default
 #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar {
 	border-bottom: none;
 	box-shadow: none;
@@ -32,7 +32,7 @@
 	}
 }
 
-// Stlying for when enhance inputs is turned on
+// UIO button style when enhance inputs is turned on
 .fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 	display: inline-block;
 	height: rem(88);
@@ -60,6 +60,33 @@
 		padding-bottom: rem(15);
 		padding-left: rem(10);
 		width: 97%;
+	}
+}
+
+// UIO table of content
+.flc-toc-tocContainer {
+	font-size: rem(18);
+	font-weight: $font-weight-semibold;
+	padding: rem(0) rem(27);
+
+	.flc-toc-header {
+		margin-bottom: rem(16);
+	}
+
+	// h1 list style: filled circle
+	ul {
+		list-style: initial;
+		margin-left: rem(16);
+	}
+
+	// h2 list style: empty circle
+	ul ul {
+		list-style: circle;
+	}
+
+	// h3 list style: filled square
+	ul ul ul {
+		list-style: square;
 	}
 }
 
@@ -96,5 +123,12 @@
 			margin-top: 0;
 			padding: 0 rem(3);
 		}
+	}
+}
+
+@media screen and (min-width: rem(1024)) {
+	// UIO table of content
+	.flc-toc-tocContainer {
+		padding: rem(1) rem(60);
 	}
 }

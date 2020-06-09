@@ -107,7 +107,7 @@ header {
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: rem(1024)) {
 	header {
 		.site-nav-wrapper {
 			.site-nav {
