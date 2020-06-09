@@ -1,7 +1,8 @@
 // Vendor-specific styles.
 
-//UIO
+// *** UIO ***
 
+// UIO button style
 #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar {
 	border-bottom: none;
 	box-shadow: none;
@@ -31,6 +32,7 @@
 	}
 }
 
+// Stlying for when enhance inputs is turned on
 .fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 	display: inline-block;
 	height: rem(88);
@@ -61,7 +63,15 @@
 	}
 }
 
-@media screen and (min-width: 40em) { // This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button styles on desktop and mobile.
+// To adapt to UIO contrast themes
+@each $theme, $fColor, $bColor in $UIOThemes {
+	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
+		@include adapt-to-uioThemes($fColor, $bColor);
+	}
+}
+
+// This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button styles on desktop and mobile.
+@media screen and (min-width: 40em) {
 	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 		display: block;
 		height: auto;
@@ -72,61 +82,19 @@
 		}
 
 		.fl-prefsEditor-reset {
-			padding: 0;
+			padding: 0 rem(3);
 			padding-left: rem(12.8);
 		}
 
 		button[aria-expanded="true"] {
 			border: none;
-			padding: 0;
+			padding: 0 rem(3);
 			width: unset;
 		}
 
 		button[aria-expanded="false"] {
 			margin-top: 0;
-			padding: 0;
+			padding: 0 rem(3);
 		}
-	}
-}
-
-// To adapt to UIO high contrast themes
-[class^="gpii-ext-theme"],
-[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
-	// WeCount logo
-	.logo circle,
-	.logo path {
-		fill: none;
-		stroke: var(--logo-stroke, currentColor);
-		stroke-linecap: round;
-		stroke-width: rem(3);
-	}
-
-	// Search icon; IDRC, OCADU and Canada logos
-	header .site-nav-wrapper .site-nav .search-container svg {
-		fill: currentColor;
-	}
-
-	// Canada logo
-	--theme-link-fill: currentColor;
-
-	// Placeholder images on the "views" page
-	svg.news-item-img use {
-		stroke: var(--placeholder-stroke, currentColor);
-		stroke-linecap: round;
-		stroke-width: rem(3);
-	}
-}
-
-// For styles that require foreground and background colors from each theme
-@each $theme, $fColor, $bColor in $UIOThemes {
-	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
-		// WeCount logo
-		--logo-stroke: #{$fColor};
-
-		// The placeholder svg on the "views" page
-		--theme-background-fill: #{$bColor};
-		--placeholder-stroke: #{$fColor};
-
-		@include adapt-to-highContrast($fColor, $bColor);
 	}
 }
