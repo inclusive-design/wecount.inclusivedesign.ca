@@ -1,8 +1,8 @@
 // Vendor-specific styles.
 
-// UIO
+// *** UIO ***
 
-// UIO tab styling
+// UIO button style
 #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar {
 	border-bottom: none;
 	box-shadow: none;
@@ -63,17 +63,10 @@
 	}
 }
 
-// For styles that require foreground and background colors from each theme
+// To adapt to UIO contrast themes
 @each $theme, $fColor, $bColor in $UIOThemes {
 	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
-		// WeCount logo
-		--logo-stroke: #{$fColor};
-
-		// The placeholder svg on the "views" page
-		--theme-background-fill: #{$bColor};
-		--placeholder-stroke: #{$fColor};
-
-		@include adapt-to-contrastThemes($fColor, $bColor);
+		@include adapt-to-uioThemes($fColor, $bColor);
 	}
 }
 
