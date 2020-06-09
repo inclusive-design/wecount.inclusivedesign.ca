@@ -1,7 +1,67 @@
 // Mixins.
-@mixin uio-focus-style($fColor, $bColor) {
-	a:focus,
-	a:hover,
+
+// To adapt to UIO contrast themes
+@mixin adapt-to-uioThemes($fColor, $bColor) {
+	// WeCount logo
+	.logo circle,
+	.logo path {
+		fill: none;
+		stroke: var(--logo-stroke, currentColor);
+		stroke-linecap: round;
+		stroke-width: rem(3);
+	}
+
+	--logo-stroke: #{$fColor};
+
+	// Search icon; IDRC, OCADU and Canada logos
+	header .site-nav-wrapper .site-nav .search-container svg {
+		fill: currentColor;
+		height: rem(19.2);
+		margin: rem(-25.6);
+		width: rem(19.2);
+	}
+
+	// Canada logo
+	--theme-link-fill: currentColor;
+
+	// Placeholder images on the "views" page
+	svg.news-item-img use {
+		stroke: var(--placeholder-stroke, currentColor);
+		stroke-linecap: round;
+		stroke-width: rem(3);
+	}
+
+	--theme-background-fill: #{$bColor};
+	--placeholder-stroke: #{$fColor};
+
+	// Focus/hover styles for SVGs on the footer
+	footer .footer-content {
+		// Logos on the footer
+		.funders a,
+		.footer-logos a {
+			padding: rem(5);
+		}
+
+		// Social media icons
+		.social-media .social-media-icons a {
+			svg path {
+				fill: currentColor;
+				stroke: $bColor;
+			}
+
+			&:hover,
+			&:focus {
+				svg path {
+					fill: $bColor;
+					stroke: currentColor;
+				}
+			}
+		}
+	}
+
+	// Focus/hover styles for links
+	#defaultContainer a:focus,
+	#defaultContainer a:hover,
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:focus,
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:hover,
 	#defaultContainer .content-wrapper .tags-info .tags a:focus,
@@ -13,42 +73,56 @@
 	button:hover,
 	li .pagination-link,
 	li .pagination-link::before {
-		box-shadow: inset 0 0 0 rem(2) $fColor;
+		box-shadow: inset 0 0 0 rem(2) currentColor;
 	}
 
-	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"] {
-		background-color: $fColor !important; // Enactors.css in infusion uses !important on this element
-		box-shadow: none;
-		color: $bColor !important; // Enactors.css in infusion uses !important on this element
-	}
-
-	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]:hover,
-	#defaultContainer .content-wrapper main .pagination .pagination-list li a[aria-current="page"]:focus {
-		box-shadow:
-			0 0 0 rem(4) $bColor,
-			0 0 0 rem(6) $fColor;
-	}
-}
-
-@mixin adapt-to-highContrast($fColor, $bColor) {
-	// Social media icons
-	footer .footer-content .social-media .social-media-icons a {
-		svg path {
-			fill: currentColor;
-			stroke: $bColor;
+	#defaultContainer {
+		// UIO buttons
+		.fl-prefsEditor-buttons button {
+			padding-left: rem(3);
+			padding-right: rem(3);
 		}
 
-		&:hover,
-		&:focus {
-			svg path {
-				fill: $bColor;
-				stroke: currentColor;
+		// Pagination on the contrast theme: previous, next, current page
+		.content-wrapper main .pagination .pagination-list {
+			.pagination-next,
+			.pagination-previous,
+			li a[aria-current="page"]::before {
+				box-shadow: none;
 			}
+		}
+
+		.content-wrapper main .pagination .pagination-list li a[aria-current="page"] {
+			background-color: $fColor !important; // Enactors.css in infusion uses !important on this element
+			box-shadow: none;
+			color: $bColor !important; // Enactors.css in infusion uses !important on this element
+			&:hover,
+			&:focus {
+				box-shadow:
+					0 0 0 rem(4) $bColor,
+					0 0 0 rem(6) $fColor;
+			}
+		}
+
+		// Home page cards: hide background images on UIO contrast themes
+		.blue,
+		.green,
+		.yellow {
+			background-image: none;
 		}
 	}
 
 	// Hide ellipsis when a post excerpt is fully displayed
 	.news-grid .api-content .news-item .preview-content::after {
 		background: $bColor;
+	}
+
+	@media screen and (min-width: 1024px) {
+		// Adjust the position of the search icon on the header
+		header .site-nav-wrapper .site-nav .search-container svg {
+			height: rem(24);
+			margin: rem(-40);
+			width: rem(24);
+		}
 	}
 }

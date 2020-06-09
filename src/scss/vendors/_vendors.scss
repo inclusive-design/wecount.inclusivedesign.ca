@@ -1,66 +1,8 @@
 // Vendor-specific styles.
 
-// UIO
+// *** UIO ***
 
-// To adapt to UIO high contrast themes
-[class^="gpii-ext-theme"],
-[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
-	// WeCount logo
-	.logo circle,
-	.logo path {
-		fill: none;
-		stroke: var(--logo-stroke, currentColor);
-		stroke-linecap: round;
-		stroke-width: 0.1875rem;
-	}
-
-	// Search icon; IDRC, OCADU and Canada logos
-	header .site-nav-wrapper .site-nav .search-container svg {
-		fill: currentColor;
-		height: 1.3rem;
-		margin: -1.6rem;
-		width: 1.2rem;
-	}
-
-	// Canada logo
-	--theme-link-fill: currentColor;
-
-	// Placeholder images on the "views" page
-	svg.news-item-img use {
-		stroke: var(--placeholder-stroke, currentColor);
-		stroke-linecap: round;
-		stroke-width: 0.1875rem;
-	}
-
-	#defaultContainer {
-		.fl-prefsEditor-buttons button {
-			padding-left: rem(3);
-			padding-right: rem(3);
-		}
-
-		.content-wrapper .pagination .pagination-list {
-			.pagination-next,
-			.pagination-previous {
-				box-shadow: none;
-			}
-		}
-
-		.content-wrapper main .pagination .pagination-list li a[aria-current="page"]::before {
-			box-shadow: none;
-		}
-
-		.blue,
-		.green,
-		.yellow {
-			background-image: none;
-		}
-
-		footer .funders .footer-logos a {
-			padding: rem(5);
-		}
-	}
-}
-
+// UIO button style
 #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar {
 	border-bottom: none;
 	box-shadow: none;
@@ -90,31 +32,69 @@
 	}
 }
 
-// For styles that require foreground and background colors from each theme
-@each $theme, $fColor, $bColor in $UIOThemes {
-	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
-		// WeCount logo
-		--logo-stroke: #{$fColor};
+// Stlying for when enhance inputs is turned on
+.fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+	display: inline-block;
+	height: rem(88);
+	padding: 0;
 
-		// The placeholder svg on the "views" page
-		--theme-background-fill: #{$bColor};
-		--placeholder-stroke: #{$fColor};
+	button {
+		padding: rem(10) 0;
+	}
 
-		@include adapt-to-highContrast($fColor, $bColor);
+	.fl-prefsEditor-reset {
+		border: none;
+		margin-left: rem(9);
+		padding-bottom: rem(1);
+		padding-top: rem(5);
+	}
 
-		// uio constrast focus and hover
-		@include uio-focus-style($fColor, $bColor);
+	button[aria-expanded="false"] {
+		margin-top: rem(20);
+		word-spacing: -2px;
+	}
+
+	button[aria-expanded="true"] {
+		border-bottom: 2px solid #ccc;
+		margin-left: rem(5);
+		padding-bottom: rem(15);
+		padding-left: rem(10);
+		width: 97%;
 	}
 }
 
-@media screen and (min-width: 1024px) {
-	[class^="gpii-ext-theme"],
-	[class^="fl-theme"]:not(.fl-theme-prefsEditor-default) {
-		// Search icon; IDRC, OCADU and Canada logos
-		header .site-nav-wrapper .site-nav .search-container svg {
-			height: 1.5rem;
-			margin: -2.5rem;
-			width: 1.5rem;
+// To adapt to UIO contrast themes
+@each $theme, $fColor, $bColor in $UIOThemes {
+	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
+		@include adapt-to-uioThemes($fColor, $bColor);
+	}
+}
+
+// This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button styles on desktop and mobile.
+@media screen and (min-width: 40em) {
+	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+		display: block;
+		height: auto;
+		padding: rem(10) rem(20);
+
+		button:not(.fl-prefsEditor-reset) {
+			margin: 0 rem(8);
+		}
+
+		.fl-prefsEditor-reset {
+			padding: 0 rem(3);
+			padding-left: rem(12.8);
+		}
+
+		button[aria-expanded="true"] {
+			border: none;
+			padding: 0 rem(3);
+			width: unset;
+		}
+
+		button[aria-expanded="false"] {
+			margin-top: 0;
+			padding: 0 rem(3);
 		}
 	}
 }
