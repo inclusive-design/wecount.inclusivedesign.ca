@@ -73,20 +73,15 @@
 		margin-bottom: rem(16);
 	}
 
-	// h1 list style: filled circle
+	// The list style for h1: solid circle
 	ul {
 		list-style: initial;
 		margin-left: rem(16);
 	}
 
-	// h2 list style: empty circle
+	// The list style for h2 and other heading levels: empty circle
 	ul ul {
 		list-style: circle;
-	}
-
-	// h3 list style: filled square
-	ul ul ul {
-		list-style: square;
 	}
 }
 
