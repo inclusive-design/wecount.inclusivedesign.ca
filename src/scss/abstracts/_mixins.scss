@@ -117,7 +117,12 @@
 		background: $bColor;
 	}
 
-	@media screen and (min-width: 1024px) {
+	// UIO table of content
+	.flc-toc-tocContainer ul li::before {
+		color: $fColor;
+	}
+
+	@media screen and (min-width: rem(1024)) {
 		// Adjust the position of the search icon on the header
 		header .site-nav-wrapper .site-nav .search-container svg {
 			height: rem(24);

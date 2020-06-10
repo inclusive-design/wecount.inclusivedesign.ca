@@ -100,10 +100,10 @@ figcaption {
 	}
 
 	main {
+		background-color: $white;
 		max-width: 130ch;
 
 		article {
-			background-color: $white;
 			padding: rem(1) rem(60);
 			padding-bottom: rem(62);
 

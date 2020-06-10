@@ -201,7 +201,7 @@
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: rem(1024)) {
 	.news-grid {
 		grid-template-columns: repeat(2, 1fr);
 
