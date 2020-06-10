@@ -65,8 +65,6 @@
 
 // UIO table of content
 .flc-toc-tocContainer {
-	font-size: rem(18);
-	font-weight: $font-weight-semibold;
 	padding: rem(0) rem(27);
 
 	.flc-toc-header {
@@ -75,13 +73,27 @@
 
 	// The list style for h1: solid circle
 	ul {
-		list-style: initial;
+		list-style: none;
 		margin-left: rem(16);
+
+		a {
+			color: $navy-light;
+			font-size: rem(18);
+			font-weight: $font-weight-semibold;
+		}
+	}
+
+	ul li::before {
+		color: $navy-light;
+		content: "\25CF";
+		display: inline-block;
+		margin-left: rem(-16);
+		width: rem(12);
 	}
 
 	// The list style for h2 and other heading levels: empty circle
-	ul ul {
-		list-style: circle;
+	ul ul li::before {
+		content: "\25CB";
 	}
 }
 
