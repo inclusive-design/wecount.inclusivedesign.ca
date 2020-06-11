@@ -5,23 +5,27 @@
 </svg>
 
 <article class="news-item">
-		{% if item.category === 'views' %}
-    <figure class="preview-media">
-				<svg class="logo news-item-img">
-						<use xlink:href="#placeholder" />
-				</svg>
-    </figure>
+	{% if item.category === 'views' %}
+  <figure class="preview-media">
+		{% if item.picture %}
+		<img src="{{ item.picture | safe }}" alt="{{ item.altTag }}" loading="lazy">
+		{% else %}
+		<svg class="logo news-item-img">
+			<use xlink:href="#placeholder" />
+		</svg>
 		{% endif %}
-    <h2 class="h3">
-        <a href="{{ item.href }}">{{ item.title | safe }}</a>
-    </h2>
-		{% if item.category === 'views' %}
-    <div class="author">{{ item.author | safe }}</div>
-		{% endif %}
-    <div class="date">
-        <time datetime="{{ item.dateTime | w3DateFilter }}" class="dt-published">{{ item.dateTime | dateFilter }}</time>
-    </div>
-    <div class="preview-content">
-        {{ item.excerpt | striptags | safe }}
-    </div>
+  </figure>
+	{% endif %}
+  <h2 class="h3">
+    <a href="{{ item.href }}">{{ item.title | safe }}</a>
+  </h2>
+	{% if item.category === 'views' %}
+  <div class="author">{{ item.author | safe }}</div>
+	{% endif %}
+  <div class="date">
+    <time datetime="{{ item.dateTime | w3DateFilter }}" class="dt-published">{{ item.dateTime | dateFilter }}</time>
+  </div>
+  <div class="preview-content">
+    {{ item.excerpt | striptags | safe }}
+  </div>
 </article>

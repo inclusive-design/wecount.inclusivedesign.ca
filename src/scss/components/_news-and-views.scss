@@ -148,11 +148,17 @@
 				display: none;
 				height: rem(298);
 
-				// resize images
+				// Style the placeholder images
 				.news-item-img {
 					display: block;
 					height: 100%;
 					margin: 0 auto;
+					width: 100%;
+				}
+
+				// Style featured images
+				img {
+					height: auto;
 					width: 100%;
 				}
 			}

@@ -1,3 +1,11 @@
+---
+pagination:
+    data: collections.views
+    size: 1
+    alias: postItem
+permalink: "views/{{ postItem.slug }}/"
+---
+
 {% extends 'layouts/base.njk' %}
 
 {% set pageTitle = postItem.title %}

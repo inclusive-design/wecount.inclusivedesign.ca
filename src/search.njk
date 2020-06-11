@@ -26,9 +26,10 @@ permalink: /search/
 			  when https://github.com/11ty/eleventy-plugin-vue is released #}
 			  <article class="news-item">
 				  <figure v-if="item.category==='views'" class="preview-media">
-					  <svg class="logo news-item-img">
+					  <svg v-if="item.picture===null" class="logo news-item-img">
 						  <use xlink:href="#placeholder" />
 					  </svg>
+						<img v-else :src="item.picture" :alt="item.altTag" loading="lazy">
 				  </figure>
 
 				  <h2 class="h3">
