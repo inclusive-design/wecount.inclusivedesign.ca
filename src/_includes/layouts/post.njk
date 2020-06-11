@@ -5,21 +5,22 @@
 
 {% block content %}
 <article class="post-article">
-    <h1>{{ postItem.title | safe }}</h1>
-    <div class="author">By {{ postItem.author }}</div>
-    <time class="date" datetime="{{ postItem.dateTime | w3DateFilter }}" class="dt-published">{{ postItem.dateTime | dateFilter }}</time>
-    <div class="api-content">{{ postItem.content | safe }}</div>
-		{% if postItem.tags.length > 0 %}
-    <section class="tags-info">
-        <h3>Tags</h3>
-        <div class="tags">
-        {% for tag in postItem.tags %}
-        <a href="/tags/{{ tag | slug }}">{{ tag | safe }}</a>
-        {% endfor %}
-        </div>
-    </section>
-		{% endif %}
-		{% if pagination.pages.length > 1 %}
-		{% include 'components/pagination.njk' %}
-		{% endif %}<article>
+  <h1>{{ postItem.title | safe }}</h1>
+  <div class="author">By {{ postItem.author }}</div>
+  <time class="date" datetime="{{ postItem.dateTime | w3DateFilter }}" class="dt-published">{{ postItem.dateTime | dateFilter }}</time>
+  <div class="api-content">{{ postItem.content | safe }}</div>
+	{% if postItem.tags.length > 0 %}
+  <section class="tags-info">
+    <h3>Tags</h3>
+    <div class="tags">
+    {% for tag in postItem.tags %}
+    <a href="/tags/{{ tag | slug }}">{{ tag | safe }}</a>
+    {% endfor %}
+    </div>
+  </section>
+	{% endif %}
+	{% if pagination.pages.length > 1 %}
+	{% include 'components/pagination.njk' %}
+	{% endif %}
+</article>
 {% endblock %}
