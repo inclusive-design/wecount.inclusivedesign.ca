@@ -8,7 +8,7 @@
 	{% if item.category === 'views' %}
   <figure class="preview-media">
 		{% if item.picture %}
-		<img src="{{ item.picture | safe }}" alt="{{ item.altTag }}" loading="lazy">
+		<img src="{{ item.picture | safe }}" alt="{{ item.altTag }}">
 		{% else %}
 		<svg class="logo news-item-img">
 			<use xlink:href="#placeholder" />
