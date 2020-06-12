@@ -146,10 +146,6 @@
 				display: none;
 			}
 
-			.content-preview {
-				padding: rem(1) rem(60);
-			}
-
 			.author {
 				color: $grey-light;
 				font-style: italic;
@@ -204,6 +200,10 @@
 			.preview-media-wrapper {
 				@include aspect-ratio(16, 9);
 
+				.content {
+					display: block;
+				}
+
 				// Style the placeholder images
 				.placeholder-img {
 					height: 100%;
@@ -217,6 +217,10 @@
 					width: 100%;
 				}
 			}
+		}
+
+		.content-preview {
+			padding: rem(1) rem(60);
 		}
 	}
 }
