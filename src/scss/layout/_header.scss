@@ -7,7 +7,6 @@ header {
 	.search-container {
 		align-items: center;
 		display: flex;
-		margin-left: rem(40);
 
 		svg {
 			fill: white;
@@ -118,6 +117,8 @@ header {
 @media screen and (min-width: rem(1024)) {
 	header {
 		.search-container {
+			margin-left: rem(80);
+
 			svg {
 				margin: rem(-40);
 			}
