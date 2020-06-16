@@ -1,4 +1,16 @@
 .post-article {
+	.preview-media-wrapper {
+		@include aspect-ratio(16, 9);
+
+		margin-top: rem(16);
+
+		img {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+
 	.author {
 		color: $grey-light;
 		font-style: italic;

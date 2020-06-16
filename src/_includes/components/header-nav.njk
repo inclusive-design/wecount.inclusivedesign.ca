@@ -4,17 +4,22 @@
 	</symbol>
 </svg>
 
-<button id="menuToggleButton" aria-expanded="false">
-  <svg><use xlink:href="#menu-icon" /></svg>&nbsp;Menu
-</button>
+{% set searchAction = "/search/" %}
+{% set placeholderForSearch = "Search..." %}
+{% set ariaLabelForSearch = "Enter keywords for a site-wide search" %}
 
-<nav aria-labelledby="primary-nav-label">
-  <span id="primary-nav-label" class="screen-reader-only">Primary Navigation</span>
-  {%- for pageItem in collections.pages %}
-      {%- if pageItem.menu_order > 0 %}
-          <a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title }}</a>
-      {%- endif %}
-  {%- endfor %}
-  <a {% if page.url === '/news/' %}aria-current="page" {% endif %}href="/news/">News</a>
-  <a {% if page.url === '/views/' %}aria-current="page" {% endif %} href="/views/">Views</a>
-</nav>
+<div class="nav-wideScreen">
+	{% include 'components/nav-menu.njk' %}
+	{% include 'components/search-container.njk' %}
+</div>
+
+<div class="nav-smallScreen">
+	<nav class="starter-nav">
+		<button id="menuToggleButton" aria-expanded="false">
+		  <svg><use xlink:href="#menu-icon" /></svg>&nbsp;Menu
+		</button>
+		{% include 'components/search-container.njk' %}
+	</nav>
+
+	{% include 'components/nav-menu.njk' %}
+</div>

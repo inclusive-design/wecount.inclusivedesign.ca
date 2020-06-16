@@ -10,8 +10,13 @@ pagination:
 {% set pageTitle = 'Views (Page ' + currentPage + ')' %}
 
 {% block content %}
-  {# For static page generation #}
-	<article class="views static-view">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="placeholder" viewBox="-4 -4 224 224">
+      {% include 'svg/placeholder.svg' %}
+    </symbol>
+  </svg>
+
+  <article class="views static-view">
 		<h1>Views</h1>
     {% include 'components/search-views.njk' %}
 		<div class="news-grid">
