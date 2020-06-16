@@ -18,7 +18,11 @@ $(document).ready(function () {
 			"fluid.prefs.tableOfContents": {
 				enactor: {
 					"tocTemplate": "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
-					"tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json"
+					"tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json",
+					ignoreForToC: {
+						"footer": "footer",
+						"tags": ".tags-info"
+					}
 				}
 			},
 			"fluid.prefs.syllabification": {

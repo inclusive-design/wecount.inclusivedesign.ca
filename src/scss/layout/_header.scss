@@ -3,55 +3,95 @@
 header {
 	background-color: $white;
 
+	// Styles for the search container
+	.search-container {
+		align-items: center;
+		display: flex;
+
+		svg {
+			fill: white;
+			height: rem(24);
+			margin: rem(-29);
+			width: rem(24);
+			z-index: 1;
+		}
+
+		input[type="search"] {
+			border: 0;
+			border-radius: 50%;
+			outline: none;
+			padding: rem(8) rem(16);
+			width: rem(16);
+
+			&:focus {
+				border-radius: rem(28);
+				padding-left: rem(32);
+				width: rem(160);
+			}
+		}
+	}
+
 	.site-nav-wrapper {
 		background-color: $navy-light;
 		width: 100%;
 
 		.site-nav {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			margin: auto;
-			max-width: $max-width-margins;
-			padding: 0 rem(16);
+			.nav-wideScreen {
+				display: none;
+			}
 
-			// Toggle menu button on mobile design
-			// Override the default button styles from _base.scss and apply the new style
-			button {
-				background: none;
-				border: none;
-				border-radius: 0;
-				box-shadow: none;
-				color: $white;
-				font-size: rem(16);
-				padding: rem(8);
+			.nav-smallScreen {
+				display: flex;
+				flex-direction: column;
+				position: relative;
 
-				svg {
-					height: rem(32);
-					padding: rem(3.2);
-					pointer-events: none;
-					width: rem(32);
+				.starter-nav {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					margin: auto;
+					padding: 0 rem(16);
+					width: 100%;
+
+					// Toggle menu button on mobile design
+					// Override the default button styles from _base.scss and apply the new style
+					button {
+						background: none;
+						border: none;
+						border-radius: 0;
+						box-shadow: none;
+						color: $white;
+						font-size: rem(16);
+						padding: rem(8);
+
+						svg {
+							height: rem(32);
+							padding: rem(3.2);
+							pointer-events: none;
+							width: rem(32);
+						}
+					}
+
+					button::before {
+						content: none;
+					}
+
+					button:hover,
+					button:focus {
+						background-color: $orange-focus;
+						color: $navy-light;
+					}
 				}
 			}
 
-			button::before {
-				content: none;
-			}
-
-			button:hover,
-			button:focus {
-				background-color: $orange-focus;
-				color: $navy-light;
-			}
-
 			// Styles for the navigation menu
-			nav {
+			nav.primary-nav {
 				background: $navy-dark;
 				display: none;
-				left: 0;
 				position: absolute;
-				top: rem(184);
-				width: 100%;
+				top: rem(48);
+				width: 100vw;
+				z-index: 2;
 
 				a {
 					border-bottom: solid rem(2);
@@ -70,53 +110,46 @@ header {
 					}
 				}
 			}
-
-			button[aria-expanded="true"] + nav {
-				display: block;
-			}
-
-			// Styles for the search container
-			.search-container {
-				align-items: center;
-				display: flex;
-
-				svg {
-					fill: white;
-					height: rem(24);
-					margin: rem(-29);
-					width: rem(24);
-					z-index: 1;
-				}
-
-				input[type="search"] {
-					border: 0;
-					border-radius: 50%;
-					outline: none;
-					padding: rem(8) rem(16);
-					width: rem(16);
-
-					&:focus {
-						border-radius: rem(28);
-						padding-left: rem(32);
-						width: rem(160);
-					}
-				}
-			}
 		}
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: rem(1024)) {
 	header {
+		.search-container {
+			margin-left: rem(80);
+
+			svg {
+				margin: rem(-40);
+			}
+
+			input[type="search"],
+			input[type="search"]:focus {
+				border-radius: rem(28);
+				font-size: inherit;
+				padding: rem(16) rem(48);
+				width: rem(240);
+			}
+		}
+
 		.site-nav-wrapper {
 			.site-nav {
 				justify-content: space-around;
 
-				button {
+				.nav-smallScreen {
 					display: none;
 				}
 
-				nav {
+				.nav-wideScreen {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					margin: auto;
+					max-width: $max-width-margins;
+					padding: 0 rem(16);
+				}
+
+				nav.primary-nav {
 					background-color: transparent;
 					display: flex;
 					flex: 1;
@@ -124,9 +157,12 @@ header {
 					justify-content: space-around;
 					position: inherit;
 					top: rem(120);
+					width: auto;
+					z-index: 0;
 
 					a {
 						border-bottom: none;
+						float: none;
 						margin: rem(24);
 						padding: rem(8) rem(10);
 					}
@@ -135,24 +171,6 @@ header {
 					// in the top level navigation.
 					a[aria-current="page"] {
 						border-bottom: rem(2) solid $white;
-					}
-				}
-
-				button[aria-expanded="true"] + nav {
-					display: flex;
-				}
-
-				.search-container {
-					svg {
-						margin: rem(-40);
-					}
-
-					input[type="search"],
-					input[type="search"]:focus {
-						border-radius: rem(28);
-						font-size: inherit;
-						padding: rem(16) rem(48);
-						width: rem(240);
 					}
 				}
 			}

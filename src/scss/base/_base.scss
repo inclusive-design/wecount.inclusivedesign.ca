@@ -91,7 +91,7 @@ button::before:not(.fl-prefsEditor-buttons button) {
 	width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: rem(1024)) {
 	h1 {
 		font-size: rem(64);
 	}

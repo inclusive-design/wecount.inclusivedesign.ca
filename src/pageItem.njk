@@ -1,9 +1,0 @@
----
-pagination:
-    data: collections.pages
-    size: 1
-    alias: pageItem
-permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
-layout: layouts/page.njk
----
-{{ pageItem.content | safe }}

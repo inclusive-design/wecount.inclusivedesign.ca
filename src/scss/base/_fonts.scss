@@ -1,5 +1,5 @@
 @font-face {
-	font-display: optional;
+	font-display: swap;
 	font-family: 'Fira Sans';
 	font-style: normal;
 	font-weight: 400;
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-	font-display: optional;
+	font-display: swap;
 	font-family: 'Fira Sans';
 	font-style: italic;
 	font-weight: 400;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-	font-display: optional;
+	font-display: swap;
 	font-family: 'Fira Sans';
 	font-style: normal;
 	font-weight: 500;
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-	font-display: optional;
+	font-display: swap;
 	font-family: 'Fira Sans';
 	font-style: normal;
 	font-weight: 600;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-	font-display: optional;
+	font-display: swap;
 	font-family: 'Fira Sans';
 	font-style: normal;
 	font-weight: 700;
@@ -59,17 +59,13 @@
 }
 
 @font-face {
-	font-display: optional;
+	font-display: swap;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
 	src:
 		local('Roboto'),
 		local('Roboto-Regular'),
-		url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 		url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
-		url('../fonts/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+		url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Modern Browsers */
 }

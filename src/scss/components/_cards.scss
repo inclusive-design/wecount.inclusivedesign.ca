@@ -48,7 +48,7 @@
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: rem(1024)) {
 	.homepage-cards {
 		background-color: $white;
 		grid-gap: rem(38);

@@ -3,7 +3,7 @@ aside {
 	justify-self: end;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: rem(1024)) {
 	aside {
 		display: inherit;
 		padding-top: rem(58);
