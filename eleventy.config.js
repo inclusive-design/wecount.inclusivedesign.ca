@@ -1,6 +1,7 @@
 /* global chunkArray, createPagination */
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
+const pluginSass = require("eleventy-plugin-sass");
 const fs = require("fs");
 
 const dataFetcher = require("./src/utils/data-fetcher.js");
@@ -78,6 +79,10 @@ module.exports = function(eleventyConfig) {
 
 	// Add plugins.
 	eleventyConfig.addPlugin(errorOverlay);
+	eleventyConfig.addPlugin(pluginSass, {
+		watch: ["src/**/*.scss"],
+		sourcemaps: process.env.ELEVENTY_ENV === "development" ? true : false
+	});
 
 	// Add filters.
 	eleventyConfig.addFilter("dateFilter", dateFilter);
@@ -90,10 +95,10 @@ module.exports = function(eleventyConfig) {
 
 	// Configure passthrough file copy.
 	eleventyConfig.addPassthroughCopy({"src/_includes/static/css": "css"});
-	eleventyConfig.addPassthroughCopy({"src/_includes/static/fonts": "fonts"});
-	eleventyConfig.addPassthroughCopy({"src/_includes/static/images": "images"});
-	eleventyConfig.addPassthroughCopy({"src/_includes/static/js": "js"});
-	eleventyConfig.addPassthroughCopy({"src/_includes/static/lib/infusion": "lib/infusion"});
+	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
+	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
+	eleventyConfig.addPassthroughCopy({"src/images": "images"});
+	eleventyConfig.addPassthroughCopy({"src/js": "js"});
 
 	// Configure BrowserSync.
 	eleventyConfig.setBrowserSyncConfig({
