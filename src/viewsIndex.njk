@@ -3,6 +3,6 @@ permalink: views.json
 ---
 [
 {%- for item in collections.views %}
-	{{ item | dump | safe }},
+	{{ item | dump | safe }}{% if not loop.last %},{% endif %}
 {%- endfor %}
 ]

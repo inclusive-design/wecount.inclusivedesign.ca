@@ -1,9 +1,10 @@
 // For search functionality on the header.
 
-/* global Vue, axios, htmlDecode, convertDate, stripHtmlTags, createPagination */
+/* global Vue, axios, search, createPagination */
 
 const params = new URLSearchParams(window.location.search);
-const searchQuery = params.get("s").toLowerCase();
+let searchQuery = params.get("s");
+searchQuery = searchQuery ? searchQuery.toLowerCase() : undefined;
 let pageInQuery = params.get("page");
 const pageSize = 10;
 
@@ -11,30 +12,27 @@ new Vue({
 	el: "#defaultContainer",
 	mounted() {
 		let vm = this;
-		axios.get(
-			window.location.origin + "/views.json"
-		).then(function (response) {
-			// Perform the search
-			const results = response.data.filter((oneRecord) => {
-				// Convert the fetched data to displayable values to work around the issue with using vue v-if and
-				// v-html in nunjucks templates.
-				oneRecord.title = htmlDecode(oneRecord.title);
-				oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime): undefined;
-				oneRecord.excerpt = stripHtmlTags(oneRecord.excerpt);
+		if (searchQuery) {
+			axios.get(
+				window.location.origin + "/views.json"
+			).then(function (response) {
+				// Hide the static view section and show the dynamic search and filtering result section
+				document.querySelector(".views.static-view").style.display = "none";
+				document.querySelector(".views.dynamic-view").style.display = "block";
 
-				const tagsInString = oneRecord.tags ? oneRecord.tags.join(" ") : "";
-				return oneRecord.title.concat(" ", oneRecord.content, " ", tagsInString).toLowerCase().match(searchQuery);
+				// Perform the search
+				const results = search(response, searchQuery);
+
+				// Paginate search results
+				let pagination;
+				if (results.length > pageSize) {
+					pagination = createPagination(results, pageSize, pageInQuery, "/views/?s=" + searchQuery + "&page=:page");
+				}
+				vm.pagination = pagination;
+				vm.resultsToDisplay = pagination ? pagination.items : results;
+				vm.searchStatus = `We found ${results.length} results.`;
 			});
-
-			// Paginate search results
-			let pagination;
-			if (results.length > pageSize) {
-				pagination = createPagination(results, pageSize, pageInQuery, "/search/?s=" + searchQuery + "&page=:page");
-			}
-			vm.pagination = pagination;
-			vm.resultsToDisplay = pagination ? pagination.items : results;
-			vm.searchStatus = `We found ${results.length} results for your search.`;
-		});
+		}
 	},
 	data: {
 		searchQuery: params.get("s"),

@@ -131,6 +131,11 @@
 	fill: var(--theme-background-fill, #6895c6);
 }
 
+// Initially show the static generated page and hide the dynamic page section for the search and filtering result.
+.views.dynamic-view {
+	display: none;
+}
+
 .views {
 	.search-container {
 		padding-bottom: rem(27);
@@ -154,10 +159,6 @@
 		::placeholder {
 			color: $green-dark;
 		}
-	}
-
-	.dynamic-view {
-		display: none;
 	}
 }
 
