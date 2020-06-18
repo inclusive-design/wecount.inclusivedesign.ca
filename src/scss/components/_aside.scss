@@ -28,7 +28,6 @@ aside {
 
 					&:active {
 						border-left: rem(5) solid $green-dark;
-						font-weight: $font-weight-bold;
 						left: rem(-3);
 						margin: 0 0 rem(23) 0;
 						padding-left: rem(30);
@@ -39,11 +38,21 @@ aside {
 						color: $navy-light;
 						font-size: rem(24);
 						font-weight: $font-weight-normal;
+					}
 
-						&:active {
+					&:first-child {
+						a {
 							font-weight: $font-weight-bold;
 						}
 					}
+				}
+
+				li.active {
+					border-left: rem(5) solid $green-dark;
+					left: rem(-3);
+					margin: 0 0 rem(23) 0;
+					padding-left: rem(30);
+					position: relative;
 				}
 			}
 		}

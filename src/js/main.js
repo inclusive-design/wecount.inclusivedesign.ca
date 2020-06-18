@@ -25,3 +25,26 @@ document.addEventListener("click", (event) => {
 document.querySelector(".site-nav .nav-smallScreen .search-container svg").addEventListener("click", () => {
 	document.querySelector(".site-nav .nav-smallScreen .search-container #search-form input").focus();
 });
+
+// Configuration for observer window size/location in viewport
+const observerOptions = {
+	rootMargin: "0% 0% -80% 0%"
+};
+
+// This object keeps track of the current content section during scroll and applies the active styling to the corresponding side menu nav item
+const contentHeaderObserver = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const id = entry.target.getAttribute("id");
+		if (entry.isIntersecting) {
+			document.querySelectorAll("aside#toc nav li").forEach((x) => {
+				x.classList.remove("active");
+			});
+			document.querySelector(`aside#toc nav li a[href="#${id}"]`).parentElement.classList.add("active");
+		}
+	});
+}, observerOptions);
+
+// Track all h1 and h2 in content
+document.querySelectorAll("main article.post-article h1, main article.page h1, main article.post-article h2, main article.page h2").forEach((section) => {
+	contentHeaderObserver.observe(section);
+});
