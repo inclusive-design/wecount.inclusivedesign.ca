@@ -94,7 +94,6 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addTransform("parse", parseTransform);
 
 	// Configure passthrough file copy.
-	eleventyConfig.addPassthroughCopy({"src/_includes/static/css": "css"});
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});
