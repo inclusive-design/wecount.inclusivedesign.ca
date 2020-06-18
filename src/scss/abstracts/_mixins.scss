@@ -38,14 +38,6 @@
 
 	--logo-stroke: #{$fColor};
 
-	// Search icon; IDRC, OCADU and Canada logos
-	header .site-nav-wrapper .site-nav .search-container svg {
-		fill: currentColor;
-		height: rem(19.2);
-		margin: rem(-25.6);
-		width: rem(19.2);
-	}
-
 	// Canada logo
 	--theme-link-fill: currentColor;
 
@@ -135,6 +127,25 @@
 		.yellow {
 			background-image: none;
 		}
+	}
+
+	// The search container on the "Views" page
+	.views .search-container {
+		svg {
+			fill: currentColor;
+		}
+
+		::placeholder {
+			color: $fColor;
+		}
+	}
+
+	// The search icon on the header
+	header .site-nav-wrapper .site-nav .search-container svg {
+		fill: currentColor;
+		height: rem(19.2);
+		margin: rem(-25.6);
+		width: rem(19.2);
 	}
 
 	// Hide ellipsis when a post excerpt is fully displayed
