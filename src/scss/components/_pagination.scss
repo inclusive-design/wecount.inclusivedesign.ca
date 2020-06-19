@@ -2,7 +2,7 @@
 	display: block;
 	line-height: rem(32);
 	list-style: none;
-	margin-top: rem(62);
+	margin-top: rem(27);
 	padding: 0;
 	text-align: center;
 
@@ -126,6 +126,8 @@
 
 @media screen and (min-width: rem(1024)) {
 	.pagination {
+		margin-top: rem(62);
+
 		.previous,
 		.next {
 			margin: 0 rem(20);
