@@ -12,7 +12,7 @@
   ],
   "private": true,
   "scripts": {
-    "build": "eleventy --config=eleventy.config.js",
+    "build": "npm run clean && eleventy --config=eleventy.config.js",
     "clean": "rimraf dist",
     "start": "npm run clean && ELEVENTY_ENV=development eleventy --serve --port=3000 --config=eleventy.config.js",
     "lint:css": "stylelint src/scss/**/*.scss",
@@ -49,16 +49,12 @@
     "markdownlint-cli": "^0.22.0",
     "npm-run-all": "^4.1.5",
     "release": "^6.1.0",
-    "resolve-url-loader": "^3.1.0",
     "rimraf": "^3.0.2",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
     "slugify": "^1.4.0",
     "stylelint": "^13.2.1",
     "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.15.0",
-    "vue-template-compiler": "^2.6.11"
+    "stylelint-scss": "^3.15.0"
   },
   "husky": {
     "hooks": {
