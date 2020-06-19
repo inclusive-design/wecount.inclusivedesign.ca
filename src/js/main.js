@@ -23,5 +23,5 @@ document.addEventListener("click", (event) => {
 // Clicking the search svg on the header enlarges the search input box and places the focus in it.
 // This is required for the mobile layout where the search icon overlays on top of the input field.
 document.querySelector(".site-nav .nav-smallScreen .search-container svg").addEventListener("click", () => {
-	document.querySelector(".site-nav .nav-smallScreen .search-container #search-form input").focus();
+	document.querySelector(".site-nav .nav-smallScreen .search-container input").focus();
 });

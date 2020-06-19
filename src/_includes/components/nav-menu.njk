@@ -1,5 +1,4 @@
-<nav class="primary-nav" aria-labelledby="primary-nav-label">
-  <span id="primary-nav-label" class="screen-reader-only">Primary Navigation</span>
+<nav class="primary-nav" aria-label="Primary Navigation">
   {%- for pageItem in collections.pages %}
     {%- if pageItem.menu_order > 0 %}
     <a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title }}</a>
