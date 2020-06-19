@@ -28,7 +28,7 @@ main {
 }
 
 article {
-	padding: rem(0) rem(27);
+	padding: rem(0) rem(27) rem(27) rem(27);
 
 	h2:not(.h3) {
 		border-bottom: rem(5) solid $gold;
