@@ -27,6 +27,7 @@ document.querySelector(".site-nav .nav-smallScreen .search-container svg").addEv
 });
 
 // Configuration for observer window size/location in viewport
+// Reference: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Creating_an_intersection_observer
 const observerOptions = {
 	rootMargin: "0% 0% -80% 0%"
 };
@@ -44,7 +45,7 @@ const contentHeaderObserver = new IntersectionObserver(entries => {
 	});
 }, observerOptions);
 
-// Track all h1 and h2 in content
+// Track all h1 and h2 in content for the following pages: About, Inclusion Challenges, Views post page
 document.querySelectorAll("main article.post-article h1, main article.page h1, main article.post-article h2, main article.page h2").forEach((section) => {
 	contentHeaderObserver.observe(section);
 });
