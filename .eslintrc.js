@@ -9,7 +9,7 @@ module.exports = {
 		sourceType: "module",
 		ecmaVersion: 2017
 	},
-	"ignorePatterns": ["src/_includes/static/", "dist"],
+	"ignorePatterns": ["dist"],
 	rules: {
 		"indent": [1, "tab"],
 		"linebreak-style": ["error", "unix"],

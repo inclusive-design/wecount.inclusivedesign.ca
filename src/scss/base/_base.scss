@@ -65,7 +65,7 @@ button:-moz-focusring {
 	text-shadow: 0 0 0 $green-dark;
 }
 
-button:not(.fl-prefsEditor-buttons button) {
+button:not(.fl-prefsEditor-buttons) button {
 	background-color: $green-light;
 	border: 0;
 	border-radius: rem(28);
@@ -79,7 +79,7 @@ button:not(.fl-prefsEditor-buttons button) {
 	transform: perspective(rem(1)) translateZ(0);
 }
 
-button::before:not(.fl-prefsEditor-buttons button) {
+button::before:not(.fl-prefsEditor-buttons) button {
 	border-radius: rem(26);
 	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
 	content: '';
