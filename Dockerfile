@@ -1,5 +1,7 @@
 FROM node:12.18.0-alpine AS builder
 
+RUN apk add --no-cache python make git g++
+
 WORKDIR /app
 
 COPY package*.json ./
