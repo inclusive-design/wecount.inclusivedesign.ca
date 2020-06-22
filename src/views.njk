@@ -16,7 +16,10 @@ pagination:
 
   <article class="views static-view">
 		<h1>Views</h1>
-    {% include 'components/search-views.njk' %}
+    {% set searchAction = "/views/" %}
+    {% set placeholderForSearch = "Search posts ..." %}
+    {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
+    {% include 'components/search-container.njk' %}
 		<div class="news-grid">
 			{% for item in pagination.items %}
 			<div class="api-content">
@@ -33,6 +36,12 @@ pagination:
 	<article class="views dynamic-view">
     <h1>Views{{ '{{ searchTitle }}' }}</h1>
 		<p role="status" v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
+    <div class="search-container">
+    	<svg><use xlink:href="#search" /></svg>
+    	<form method="get" action="/views/">
+    		<input name="s" type="search" placeholder="Search posts ..." aria-label="Enter keywords for a search in posts" :value="searchQuery">
+    	</form>
+    </div>
 		<div class="news-grid" v-if="resultsToDisplay.length > 0">
 		  <div v-for="item in resultsToDisplay" :key="item.id" class="api-content">
 			  {# TODO: The gride item layout below can go into a sharable vue template script
