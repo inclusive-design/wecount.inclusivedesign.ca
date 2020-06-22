@@ -1,13 +1,11 @@
 ---
+title: Views
 permalink: /views/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
 pagination:
   data: collections.views
   size: 10
 ---
 {% extends 'layouts/base.njk' %}
-
-{% set currentPage = pagination.pageNumber + 1 %}
-{% set pageTitle = 'Views (Page ' + currentPage + ')' %}
 
 {% block content %}
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -33,7 +31,7 @@ pagination:
 
   {# For displaying dynamic search and filtering results #}
 	<article class="views dynamic-view">
-    <h1>Search results: “{{ '{{ searchQuery }}' }}”</h1>
+    <h1>Views{{ '{{ searchTitle }}' }}</h1>
 		<p role="status" v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
 		<div class="news-grid" v-if="resultsToDisplay.length > 0">
 		  <div v-for="item in resultsToDisplay" :key="item.id" class="api-content">

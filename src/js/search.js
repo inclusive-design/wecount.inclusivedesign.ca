@@ -32,6 +32,5 @@ new Vue({
 		searchStatus: "Searching...",
 		resultsToDisplay: [],
 		pagination: null
-	},
-	computed: {}
+	}
 });

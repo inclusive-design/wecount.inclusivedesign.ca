@@ -30,12 +30,14 @@ new Vue({
 				}
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
+				vm.searchTitle = ` search results: “${searchQuery}”`;
 				vm.searchStatus = `We found ${results.length} results.`;
 			});
 		}
 	},
 	data: {
 		searchQuery: params.get("s"),
+		searchTitle: "",
 		searchStatus: "Searching...",
 		resultsToDisplay: [],
 		pagination: null
