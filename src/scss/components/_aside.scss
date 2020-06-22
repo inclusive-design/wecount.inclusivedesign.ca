@@ -22,13 +22,13 @@ aside {
 				li {
 					left: rem(-2);
 					margin: 0 0 rem(23) 0;
-					padding-left: rem(28);
+					padding-left: rem(23);
 					width: rem(151);
 					word-wrap: break-word;
 
 					&:active {
 						box-shadow: rem(5) 0 0 0 inset $green-dark;
-						padding-left: rem(30);
+						padding-left: rem(25);
 						position: relative;
 					}
 
@@ -47,10 +47,14 @@ aside {
 
 				li.active {
 					box-shadow: rem(5) 0 0 0 inset $green-dark;
-					padding-left: rem(30);
+					padding-left: rem(25);
 					position: relative;
 				}
 			}
 		}
+	}
+
+	.fl-input-enhanced #defaultContainer aside nav ul li:first-child a {
+		font-size: rem(30) !important; // Enactors.css in infusion uses !important on this element
 	}
 }

@@ -42,4 +42,14 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
 </article>
 {% endif %}
 {% endblock %}
-{{ content | safe }}
+
+{% block footerScripts %}
+<script src="/js/content-header-observer.js"></script>
+<script>
+	// Track all h1 and h2 in content for the About and Inclusion Challenges page.
+document.querySelectorAll("main article.page h1, main article.page h2, header").forEach((section) => {
+	const contentHeaderObserver = getSideMenuObserver();
+	contentHeaderObserver.observe(section);
+});
+</script>
+{% endblock %}

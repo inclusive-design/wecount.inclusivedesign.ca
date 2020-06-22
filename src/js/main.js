@@ -25,27 +25,3 @@ document.addEventListener("click", (event) => {
 document.querySelector(".site-nav .nav-smallScreen .search-container svg").addEventListener("click", () => {
 	document.querySelector(".site-nav .nav-smallScreen .search-container input").focus();
 });
-
-// Configuration for observer window size/location in viewport.
-// Reference: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Creating_an_intersection_observer
-const observerOptions = {
-	rootMargin: "0% 0% -94% 0%" // The observer action kicks in when the target elements are in the top 6% of the viewport.
-};
-
-// This object keeps track of the current content section during scroll and applies the active styling to the corresponding side menu nav item.
-const contentHeaderObserver = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-		const id = entry.target.getAttribute("id");
-		if (entry.isIntersecting) {
-			document.querySelectorAll("aside#toc nav li").forEach((x) => {
-				x.classList.remove("active");
-			});
-			document.querySelector(`aside#toc nav li a[href="#${id}"]`).parentElement.classList.add("active");
-		}
-	});
-}, observerOptions);
-
-// Track all h1 and h2 in content for the following pages: About, Inclusion Challenges, Views post page.
-document.querySelectorAll("main article.post-article h1, main article.page h1, main article.post-article h2, main article.page h2").forEach((section) => {
-	contentHeaderObserver.observe(section);
-});

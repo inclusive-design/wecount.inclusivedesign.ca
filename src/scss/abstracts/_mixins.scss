@@ -84,6 +84,23 @@
 		}
 	}
 
+	// Side Menu
+	#defaultContainer aside nav ul {
+		box-shadow: rem(1) 0 0 0 inset currentColor;
+
+		li {
+			box-shadow: rem(1) 0 0 0 inset currentColor;
+
+			&:active {
+				box-shadow: rem(5) 0 0 0 inset currentColor;
+			}
+		}
+
+		li.active {
+			box-shadow: rem(5) 0 0 0 inset currentColor;
+		}
+	}
+
 	// Focus/hover styles for links
 	#defaultContainer a:focus,
 	#defaultContainer a:hover,
