@@ -10,7 +10,7 @@ aside {
 
 		nav {
 			ul {
-				box-shadow: rem(1) 0 0 0 inset $green-dark;
+				box-shadow: rem(1) 0 0 0 $green-dark inset;
 				list-style-type: none;
 				margin-left: rem(45);
 				padding: 0 rem(0);
@@ -27,7 +27,7 @@ aside {
 					word-wrap: break-word;
 
 					&:active {
-						box-shadow: rem(5) 0 0 0 inset $green-dark;
+						box-shadow: rem(5) 0 0 0 $green-dark inset;
 						padding-left: rem(25);
 						position: relative;
 					}
@@ -46,7 +46,7 @@ aside {
 				}
 
 				li.active {
-					box-shadow: rem(5) 0 0 0 inset $green-dark;
+					box-shadow: rem(5) 0 0 0 $green-dark inset;
 					padding-left: rem(25);
 					position: relative;
 				}

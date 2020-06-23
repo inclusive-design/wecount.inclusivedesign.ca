@@ -14,7 +14,10 @@ getSideMenuObserver = function () {
 				document.querySelectorAll("aside#toc nav li").forEach((x) => {
 					x.classList.remove("active");
 				});
-				id ? document.querySelector(`aside#toc nav li a[href="#${id}"]`).parentElement.classList.add("active") : null;
+				// When the header is in the top 6% of the viewport the side menu will stop highlighting items.
+				if (id) {
+					document.querySelector(`aside#toc nav li a[href="#${id}"]`).parentElement.classList.add("active");
+				}
 			}
 		});
 	}, observerOptions);
