@@ -14,7 +14,8 @@ getSideMenuObserver = function () {
 				document.querySelectorAll("aside#toc nav li").forEach((x) => {
 					x.classList.remove("active");
 				});
-				// When the header is in the top 6% of the viewport the side menu will stop highlighting items.
+				// When the observer detects the intersecting of an element with a specific "id", set the corresponding item on the side menu to active state.
+				// Stop highlighting all items on the side menu if the intersecting element doesn't have an "id" attribute.
 				if (id) {
 					document.querySelector(`aside#toc nav li a[href="#${id}"]`).parentElement.classList.add("active");
 				}
