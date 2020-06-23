@@ -10,17 +10,14 @@ module.exports = function(value, outputPath) {
 
 		const document = DOM.window.document;
 		const articleHeadings = [
-			...document.querySelectorAll("main article.post-article h2, main article.page h2")
+			...document.querySelectorAll("main article.post-article h1, main article.page h1, main article.post-article h2, main article.page h2")
 		];
 
 		if (articleHeadings.length) {
 			const toc = document.querySelector("aside#toc");
 			const tocNav = document.createElement("nav");
-			const tocLabel = document.createElement("span");
 			const tocUl = document.createElement("ul");
-			tocNav.setAttribute("aria-labelledby", "toc-nav-label");
-			tocLabel.className = "sr-only";
-			tocLabel.id = "toc-nav-label";
+			tocNav.setAttribute("aria-label", "Secondary Navigation");
 
 			articleHeadings.forEach(heading => {
 				const headingSlug = slugify(heading.textContent.toLowerCase());
@@ -35,7 +32,6 @@ module.exports = function(value, outputPath) {
 				tocUl.appendChild(tocLi);
 			});
 
-			tocNav.appendChild(tocLabel);
 			tocNav.appendChild(tocUl);
 			toc.appendChild(tocNav);
 		}
