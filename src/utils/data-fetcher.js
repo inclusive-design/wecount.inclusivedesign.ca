@@ -64,7 +64,7 @@ module.exports = {
 					picture: item._links["wp:featuredmedia"] ? item._embedded["wp:featuredmedia"][0].source_url : null,
 					altTag: item._links["wp:featuredmedia"] ? item._embedded["wp:featuredmedia"][0].alt_text : "",
 					// For news, "href" points to the external news links. For views, "href" is customized to show views content.
-					href: item.pure_taxonomies.categories[0].slug === "news" ? item.acf.link : "/views/" + item.slug
+					href: item.pure_taxonomies.categories[0].slug === "news" ? item.acf.link : "/views/" + item.slug + "/"
 				};
 			});
 		};
