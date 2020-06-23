@@ -15,7 +15,7 @@ document.addEventListener("click", (event) => {
 		const expanded = "true" === event.target.getAttribute("aria-expanded") || false;
 		toggleMenu(!expanded);
 	} else {
-		// click anywhere else on the page closes the pop up menu
+		// click anywhere else on the page closes the pop up menu.
 		toggleMenu(false);
 	}
 });

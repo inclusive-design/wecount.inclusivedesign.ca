@@ -10,25 +10,25 @@ aside {
 
 		nav {
 			ul {
-				border-left: 1px solid $green-dark;
+				box-shadow: rem(1) 0 0 0 $green-dark inset;
 				list-style-type: none;
 				margin-left: rem(45);
 				padding: 0 rem(0);
+				position: -webkit-sticky;
+				position: sticky;
+				top: rem(58);
 				width: rem(195);
 
 				li {
-					line-height: rem(34);
+					left: rem(-2);
 					margin: 0 0 rem(23) 0;
-					padding-left: rem(30);
+					padding-left: rem(23);
 					width: rem(151);
 					word-wrap: break-word;
 
 					&:active {
-						border-left: rem(5) solid $green-dark;
-						font-weight: $font-weight-bold;
-						left: rem(-3);
-						margin: 0 0 rem(23) 0;
-						padding-left: rem(30);
+						box-shadow: rem(5) 0 0 0 $green-dark inset;
+						padding-left: rem(25);
 						position: relative;
 					}
 
@@ -36,13 +36,25 @@ aside {
 						color: $navy-light;
 						font-size: rem(24) !important; // Enactors.css in infusion uses !important on this element
 						font-weight: $font-weight-normal;
+					}
 
-						&:active {
+					&:first-child {
+						a {
 							font-weight: $font-weight-bold;
 						}
 					}
 				}
+
+				li.active {
+					box-shadow: rem(5) 0 0 0 $green-dark inset;
+					padding-left: rem(25);
+					position: relative;
+				}
 			}
 		}
+	}
+
+	.fl-input-enhanced #defaultContainer aside nav ul li:first-child a {
+		font-size: rem(30) !important; // Enactors.css in infusion uses !important on this element
 	}
 }
