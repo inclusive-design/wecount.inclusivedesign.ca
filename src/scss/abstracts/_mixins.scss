@@ -152,6 +152,10 @@
 			fill: currentColor;
 		}
 
+		input[type="search"] {
+			border: none;
+		}
+
 		::placeholder {
 			color: $fColor;
 		}
