@@ -141,7 +141,7 @@
 		padding-bottom: rem(27);
 
 		svg {
-			margin-left: rem(5);
+			margin-left: rem(16);
 		}
 
 		form {
@@ -151,7 +151,7 @@
 		input[type="search"] {
 			border: 1px solid $green-dark;
 			border-radius: rem(28);
-			height: rem(41);
+			margin-left: rem(-8);
 			padding-left: rem(48);
 			width: 100%;
 		}
@@ -225,15 +225,15 @@
 	.views {
 		.search-container {
 			margin-left: auto;
-			width: rem(192);
+			width: rem(256);
 
 			svg {
-				margin-left: rem(0);
+				margin-left: rem(16);
 			}
 
 			input[type="search"] {
 				float: right;
-				width: rem(208);
+				width: rem(256);
 			}
 		}
 	}
