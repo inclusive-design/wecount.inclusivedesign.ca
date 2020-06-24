@@ -1,35 +1,29 @@
 // Shared utility functions
 
-/* global chunkArray, htmlDecode, convertDate, stripHtmlTags */
-
-// eslint-disable-next-line
-convertDate = function (inputDate) {
+function convertDate(inputDate) {
 	const dateObject = new Date(inputDate);
 
 	const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 	return `${months[dateObject.getMonth()]} ${dateObject.getDate()}, ${dateObject.getFullYear()}`;
-};
+}
 
-// eslint-disable-next-line
-stripHtmlTags = function (inputString) {
+function stripHtmlTags(inputString) {
 	return inputString.replace(/<\/?[^>]+(>|$)/g, "");
-};
+}
 
-// eslint-disable-next-line
-htmlDecode = function (input) {
+function htmlDecode(input) {
 	let el = document.createElement("div");
 	el.innerHTML = input;
 	return el.innerText;
-};
+}
 
-// eslint-disable-next-line
-chunkArray = function (inputArray, chunkSize) {
+function chunkArray(inputArray, chunkSize) {
 	return Array(Math.ceil(inputArray.length / chunkSize)).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
-};
+}
 
 // eslint-disable-next-line
-createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplate) {
+function createPagination(dataArray, pageSize, pageInQuery, hrefTemplate) {
 	const dataInChunk = chunkArray(dataArray, pageSize);
 	pageInQuery = pageInQuery ? (parseInt(pageInQuery) > 1 ? parseInt(pageInQuery) : 1) : 1;
 	let hrefs = [];
@@ -60,10 +54,14 @@ createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplate) {
 		hideFollowingPageButton: pageInQuery !== dataInChunk.length - 1 && pageInQuery !== dataInChunk.length - 2
 	};
 	return pagination;
-};
+}
+
+function escapeSpecialChars(data) {
+	return data.replace(/[!@#$%^&*()+=\-[\]\\';,./{}|":<>?~_]/g, "\\$&");
+}
 
 // eslint-disable-next-line
-search = function (dataSet, searchQuery) {
+function search(dataSet, searchQuery) {
 	return dataSet.data.filter((oneRecord) => {
 		// Convert the fetched data to displayable values to work around the issue with using vue v-if and
 		// v-html in nunjucks templates.
@@ -72,6 +70,6 @@ search = function (dataSet, searchQuery) {
 		oneRecord.excerpt = stripHtmlTags(oneRecord.excerpt);
 
 		const tagsInString = oneRecord.tags ? oneRecord.tags.join(" ") : "";
-		return oneRecord.title.concat(" ", oneRecord.content, " ", tagsInString).toLowerCase().match(searchQuery);
+		return oneRecord.title.concat(" ", oneRecord.content, " ", tagsInString).toLowerCase().match(escapeSpecialChars(searchQuery));
 	});
-};
+}

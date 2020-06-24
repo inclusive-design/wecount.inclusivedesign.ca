@@ -1,12 +1,11 @@
-/* global $, toggleMenu */
+/* global $ */
 
 // Clicking the menu toggle button on the mobile layout opens up the popup menu
 // and sets the button "aria-expanded" attribute value properly.
-// eslint-disable-next-line
-toggleMenu = function (expanded) {
+function toggleMenu(expanded) {
 	document.getElementById("menuToggleButton").setAttribute("aria-expanded", expanded);
 	$($(".nav-smallScreen").children("nav.primary-nav")[0]).toggle(expanded);
-};
+}
 
 // Clicking the menu toggle button on the mobile layout opens up the popup menu.
 // Clicking anywhere else closes this popup menu.
