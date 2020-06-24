@@ -6,8 +6,9 @@ module.exports = {
 				emulatedFormFactor: process.env.EMULATE_DEVICE || "mobile",
 				// Do not apply any throttling
 				throttlingMethod: "provided",
-				// Skipping due to errors with reports see: http2 https://github.com/GoogleChrome/lighthouse/issues/6539
-				skipAudits: ["uses-http2"],
+				// Skipping "uses-http2" due to errors with reports see: http2 https://github.com/GoogleChrome/lighthouse/issues/6539
+				// Skipping "is-crawlable" because Netlify's preview preview for PRs add `x-robots-tag: noindex`
+				skipAudits: ["uses-http2", "is-crawlable"],
 				// Select the categories to analyze
 				onlyCategories: ["performance", "accessibility", "best-practices", "seo"]
 			}
