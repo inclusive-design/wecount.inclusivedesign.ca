@@ -1,6 +1,6 @@
 <div class="search-container">
-	{% include 'svg/search.svg' %}
-	<form method="get" action="/search/">
-		<input name="s" type="search" placeholder="Search..." aria-label="Enter keywords for a site-wide search">
+	<svg><use xlink:href="#search" /></svg>
+	<form method="get" action="{{ searchAction }}">
+		<input name="s" type="search" placeholder="{{ placeholderForSearch }}" aria-label="{{ ariaLabelForSearch }}">
 	</form>
 </div>

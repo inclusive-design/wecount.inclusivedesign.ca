@@ -131,6 +131,37 @@
 	fill: var(--theme-background-fill, #6895c6);
 }
 
+// Initially show the static generated page and hide the dynamic page section for the search and filtering result.
+.views.dynamic-view {
+	display: none;
+}
+
+.views {
+	.search-container {
+		padding-bottom: rem(27);
+
+		svg {
+			margin-left: rem(16);
+		}
+
+		form {
+			flex: 1;
+		}
+
+		input[type="search"] {
+			border: 1px solid $green-dark;
+			border-radius: rem(28);
+			margin-left: rem(-8);
+			padding-left: rem(48);
+			width: 100%;
+		}
+
+		::placeholder {
+			color: $green-dark;
+		}
+	}
+}
+
 .news-grid {
 	display: grid;
 	grid-gap: rem(30) rem(38);
@@ -191,6 +222,22 @@
 }
 
 @media screen and (min-width: rem(1024)) {
+	.views {
+		.search-container {
+			margin-left: auto;
+			width: rem(288);
+
+			svg {
+				margin-left: rem(16);
+			}
+
+			input[type="search"] {
+				float: right;
+				width: rem(288);
+			}
+		}
+	}
+
 	.news-grid {
 		grid-template-columns: repeat(2, 1fr);
 

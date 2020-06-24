@@ -1,13 +1,11 @@
 ---
+title: News
 permalink: /news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
 pagination:
   data: collections.news
   size: 10
 ---
 {% extends 'layouts/base.njk' %}
-
-{% set currentPage = pagination.pageNumber + 1 %}
-{% set pageTitle = 'News (Page ' + currentPage + ')' %}
 
 {% block content %}
 	<article class="news">

@@ -1,6 +1,6 @@
 // Shared utility functions
 
-/* global chunkArray */
+/* global chunkArray, htmlDecode, convertDate, stripHtmlTags, escapeSpecialChars */
 
 // eslint-disable-next-line
 convertDate = function (inputDate) {
@@ -60,4 +60,23 @@ createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplate) {
 		hideFollowingPageButton: pageInQuery !== dataInChunk.length - 1 && pageInQuery !== dataInChunk.length - 2
 	};
 	return pagination;
+};
+
+// eslint-disable-next-line
+escapeSpecialChars = function (data) {
+	return data.replace(/[!@#$%^&*()+=\-[\]\\';,./{}|":<>?~_]/g, "\\$&");
+};
+
+// eslint-disable-next-line
+search = function (dataSet, searchQuery) {
+	return dataSet.data.filter((oneRecord) => {
+		// Convert the fetched data to displayable values to work around the issue with using vue v-if and
+		// v-html in nunjucks templates.
+		oneRecord.title = htmlDecode(oneRecord.title);
+		oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime): undefined;
+		oneRecord.excerpt = stripHtmlTags(oneRecord.excerpt);
+
+		const tagsInString = oneRecord.tags ? oneRecord.tags.join(" ") : "";
+		return oneRecord.title.concat(" ", oneRecord.content, " ", tagsInString).toLowerCase().match(escapeSpecialChars(searchQuery));
+	});
 };
