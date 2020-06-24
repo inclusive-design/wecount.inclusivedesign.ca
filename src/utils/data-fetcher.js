@@ -27,8 +27,8 @@ module.exports = {
 		// According to the Wordpress API for pagination and embedding: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/
 		// 1. Fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
 		// 2. Retrieve embedded resources in the main query
-		// 3. Order by the modified date in descending order
-		const baseCategoryAPI = env.api + "/posts?categories=" + categoryId + "&per_page=100&orderby=modified&order=desc&_embed";
+		// 3. Order by the published date in descending order
+		const baseCategoryAPI = env.api + "/posts?categories=" + categoryId + "&per_page=100&orderby=date&order=desc&_embed";
 
 		// Fetch records for the first page as well as the number of total pages
 		const firstPageRequest = baseCategoryAPI + "&page=1";
