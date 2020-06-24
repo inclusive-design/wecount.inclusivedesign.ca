@@ -17,7 +17,7 @@ pagination:
   <article class="views static-view">
 		<h1>Views</h1>
     {% set searchAction = "/views/" %}
-    {% set placeholderForSearch = "Search posts ..." %}
+    {% set placeholderForSearch = "Search posts..." %}
     {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
     {% include 'components/search-container.njk' %}
 		<div class="news-grid">
@@ -39,7 +39,7 @@ pagination:
     <div class="search-container">
     	<svg><use xlink:href="#search" /></svg>
     	<form method="get" action="/views/">
-    		<input name="s" type="search" placeholder="Search posts ..." aria-label="Enter keywords for a search in posts" :value="searchQuery">
+    		<input name="s" type="search" placeholder="Search posts..." aria-label="Enter keywords for a search in posts" :value="searchQuery">
     	</form>
     </div>
 		<div class="news-grid" v-if="resultsToDisplay.length > 0">
