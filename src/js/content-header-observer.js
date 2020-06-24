@@ -5,7 +5,7 @@ const observerOptions = {
 };
 
 // eslint-disable-next-line
-function getSideMenuObserver() {
+getSideMenuObserver = function () {
 	// This object keeps track of the current content section during scroll and applies the active styling to the corresponding side menu nav item.
 	return new IntersectionObserver(entries => {
 		entries.forEach(entry => {
@@ -22,4 +22,4 @@ function getSideMenuObserver() {
 			}
 		});
 	}, observerOptions);
-}
+};

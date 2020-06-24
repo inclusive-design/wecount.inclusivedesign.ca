@@ -1,29 +1,35 @@
 // Shared utility functions
 
-function convertDate(inputDate) {
+/* global chunkArray, htmlDecode, convertDate, stripHtmlTags, escapeSpecialChars */
+
+// eslint-disable-next-line
+convertDate = function (inputDate) {
 	const dateObject = new Date(inputDate);
 
 	const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 	return `${months[dateObject.getMonth()]} ${dateObject.getDate()}, ${dateObject.getFullYear()}`;
-}
+};
 
-function stripHtmlTags(inputString) {
+// eslint-disable-next-line
+stripHtmlTags = function (inputString) {
 	return inputString.replace(/<\/?[^>]+(>|$)/g, "");
-}
+};
 
-function htmlDecode(input) {
+// eslint-disable-next-line
+htmlDecode = function (input) {
 	let el = document.createElement("div");
 	el.innerHTML = input;
 	return el.innerText;
-}
-
-function chunkArray(inputArray, chunkSize) {
-	return Array(Math.ceil(inputArray.length / chunkSize)).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
-}
+};
 
 // eslint-disable-next-line
-function createPagination(dataArray, pageSize, pageInQuery, hrefTemplate) {
+chunkArray = function (inputArray, chunkSize) {
+	return Array(Math.ceil(inputArray.length / chunkSize)).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
+};
+
+// eslint-disable-next-line
+createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplate) {
 	const dataInChunk = chunkArray(dataArray, pageSize);
 	pageInQuery = pageInQuery ? (parseInt(pageInQuery) > 1 ? parseInt(pageInQuery) : 1) : 1;
 	let hrefs = [];
@@ -54,14 +60,15 @@ function createPagination(dataArray, pageSize, pageInQuery, hrefTemplate) {
 		hideFollowingPageButton: pageInQuery !== dataInChunk.length - 1 && pageInQuery !== dataInChunk.length - 2
 	};
 	return pagination;
-}
-
-function escapeSpecialChars(data) {
-	return data.replace(/[!@#$%^&*()+=\-[\]\\';,./{}|":<>?~_]/g, "\\$&");
-}
+};
 
 // eslint-disable-next-line
-function search(dataSet, searchQuery) {
+escapeSpecialChars = function (data) {
+	return data.replace(/[!@#$%^&*()+=\-[\]\\';,./{}|":<>?~_]/g, "\\$&");
+};
+
+// eslint-disable-next-line
+search = function (dataSet, searchQuery) {
 	return dataSet.data.filter((oneRecord) => {
 		// Convert the fetched data to displayable values to work around the issue with using vue v-if and
 		// v-html in nunjucks templates.
@@ -72,4 +79,4 @@ function search(dataSet, searchQuery) {
 		const tagsInString = oneRecord.tags ? oneRecord.tags.join(" ") : "";
 		return oneRecord.title.concat(" ", oneRecord.content, " ", tagsInString).toLowerCase().match(escapeSpecialChars(searchQuery));
 	});
-}
+};
