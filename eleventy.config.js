@@ -23,11 +23,6 @@ module.exports = function(eleventyConfig) {
 		return collection;
 	});
 
-	eleventyConfig.addCollection("posts", async function(collection) {
-		collection = dataFetcher.sitePosts();
-		return collection;
-	});
-
 	eleventyConfig.addCollection("news", async function(collection) {
 		collection = dataFetcher.categorizedItems("news", 8);
 		return collection;

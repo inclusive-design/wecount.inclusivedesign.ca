@@ -1,6 +1,6 @@
 // Shared utility functions
 
-/* global chunkArray, htmlDecode, convertDate, stripHtmlTags, escapeSpecialChars */
+/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars */
 
 // eslint-disable-next-line
 convertDate = function (inputDate) {
@@ -26,6 +26,27 @@ htmlDecode = function (input) {
 // eslint-disable-next-line
 chunkArray = function (inputArray, chunkSize) {
 	return Array(Math.ceil(inputArray.length / chunkSize)).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
+};
+
+// eslint-disable-next-line
+processPosts = function (posts) {
+	return posts.map(function (onePost) {
+		const categoryType = onePost.categories.includes(1) ? "views" : "news";
+		return {
+			category: categoryType,
+			slug: onePost.slug,
+			title: onePost.title.rendered,
+			author: onePost._embedded.author[0].name,
+			content: onePost.content.rendered,
+			excerpt: onePost.excerpt.rendered,
+			dateTime: onePost.date,
+			tags: onePost.pure_taxonomies.tags ? onePost.pure_taxonomies.tags.map(({ name }) => name) : [],
+			picture: onePost._links["wp:featuredmedia"] ? onePost._embedded["wp:featuredmedia"][0].source_url : null,
+			altTag: onePost._links["wp:featuredmedia"] ? onePost._embedded["wp:featuredmedia"][0].alt_text : "",
+			// For news, "href" points to the external news links. For views, "href" is customized to show views content.
+			href: categoryType === "news" ? onePost.acf.link : "/views/" + onePost.slug + "/"
+		};
+	});
 };
 
 // eslint-disable-next-line
