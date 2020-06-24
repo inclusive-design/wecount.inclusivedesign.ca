@@ -1,0 +1,36 @@
+name: Lighthouse CI - Desktop
+
+on: [push, pull_request]
+
+jobs:
+  lhci:
+    name: Lighthouse CI
+    if: ${{ github.repository_owner == 'inclusive-design'}}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Wait for the Netlify Preview
+      uses: jakepartusch/wait-for-netlify-action@v1
+      id: netlify
+      with:
+        site_name: 'wecount'
+    - name: Audit URLs using Lighthouse
+      uses: treosh/lighthouse-ci-action@v3
+      with:
+        runs: 3
+        urls: |
+          ${{ steps.netlify.outputs.url }}
+          ${{ steps.netlify.outputs.url }}/404.html
+          ${{ steps.netlify.outputs.url }}/about/
+          ${{ steps.netlify.outputs.url }}/inclusion-challenges/
+          ${{ steps.netlify.outputs.url }}/news/
+          ${{ steps.netlify.outputs.url }}/views/
+          ${{ steps.netlify.outputs.url }}/views/page/11/
+          ${{ steps.netlify.outputs.url }}/views/the-importance-of-peripheral-vision/
+          ${{ steps.netlify.outputs.url }}/tags/ai/
+          ${{ steps.netlify.outputs.url }}/search/?s=inclusive
+        uploadArtifacts: true
+        temporaryPublicStorage: true
+        configPath: ./.lighthouserc.js
+      env:
+        EMULATE_DEVICE: desktop
