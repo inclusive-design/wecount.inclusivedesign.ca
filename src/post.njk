@@ -26,7 +26,7 @@ permalink: "views/{{ postItem.slug }}/"
   <div class="api-content">{{ postItem.content | safe }}</div>
 	{% if postItem.tags.length > 0 %}
   <section class="tags-info">
-    <h3>Tags</h3>
+    <h2 class="h3">Tags</h2>
     <div class="tags">
     {% for tag in postItem.tags %}
     <a href="/tags/{{ tag | slug }}/">{{ tag | safe }}</a>
