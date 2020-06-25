@@ -16,13 +16,6 @@ permalink: "views/{{ postItem.slug }}/"
   <h1>{{ postItem.title | safe }}</h1>
   <div class="author">By {{ postItem.author }}</div>
   <time class="date" datetime="{{ postItem.dateTime | w3DateFilter }}" class="dt-published">{{ postItem.dateTime | dateFilter }}</time>
-  {% if postItem.picture %}
-  <div class="preview-media-wrapper">
-    <figure class="content">
-      <img src="{{ postItem.picture | safe }}" alt="{{ postItem.altTag }}">
-    </figure>
-	</div>
-  {% endif %}
   <div class="api-content">{{ postItem.content | safe }}</div>
 	{% if postItem.tags.length > 0 %}
   <section class="tags-info">
