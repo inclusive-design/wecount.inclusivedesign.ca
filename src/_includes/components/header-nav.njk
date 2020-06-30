@@ -7,13 +7,14 @@
 	</symbol>
 </svg>
 
-{% set searchAction = "/search/" %}
 {% set placeholderForSearch = "Search..." %}
 {% set ariaLabelForSearch = "Enter keywords for a site-wide search" %}
 
 <div class="nav-wideScreen">
 	{% include 'components/nav-menu.njk' %}
-	{% include 'components/search-container.njk' %}
+	<form method="get" action="/search/">
+		{% include 'components/search-container.njk' %}
+	</form>
 </div>
 
 <div class="nav-smallScreen">
@@ -21,7 +22,9 @@
 		<button id="menuToggleButton" aria-expanded="false">
 		  <svg><use xlink:href="#menu-icon" /></svg>&nbsp;Menu
 		</button>
-		{% include 'components/search-container.njk' %}
+		<form method="get" action="/search/">
+			{% include 'components/search-container.njk' %}
+		</form>
 	</nav>
 
 	{% include 'components/nav-menu.njk' %}

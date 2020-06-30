@@ -144,16 +144,17 @@
 			margin-left: rem(16);
 		}
 
-		form {
-			flex: 1;
-		}
-
 		input[type="search"] {
 			border: 1px solid $green-dark;
 			border-radius: rem(28);
 			margin-left: rem(-8);
 			padding-left: rem(48);
 			width: 100%;
+
+			&:focus {
+				padding-left: rem(48);
+				width: 100%;
+			}
 		}
 
 		::placeholder {

@@ -1,8 +1,9 @@
 // Component-specific styles.
+@import "aside";
 @import "brand";
-@import "search-container";
+@import "cards";
+@import "filter";
 @import "news-and-views";
 @import "pagination";
-@import "cards";
-@import "aside";
 @import "post-article";
+@import "search-container";

@@ -1,0 +1,29 @@
+<div class="filter">
+	<div class="filter-header">
+		<h2>{{ filterTitle}}</h2>
+		<button type="button" class="filter-expand-button" aria-expanded="false">
+			<svg><use xlink:href="#expand" /></svg>
+		</button>
+	</div>
+
+	<div class="filter-body">
+		<ul class="filter-choices">
+			{% for tag in tagsOfViews %}
+			{% set tagId = tag | slug | randomizeFilter %}
+			<li>
+				<input class="filter-checkbox" type="checkbox" id="{{ tagId }}" name="{{ tag | slug }}" value="{{ tag }}">
+				<label for="{{ tagId }}">{{ tag }}</label>
+			</li>
+			{% endfor %}
+		</ul>
+
+		<div class="filter-buttons">
+			<button class="apply-button" type="submit">
+				<svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
+			</button>
+			<button class="reset-button" type="reset">
+				<svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
+			</button>
+		</div>
+	</div>
+</div>

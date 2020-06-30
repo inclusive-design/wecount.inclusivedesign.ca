@@ -1,6 +1,6 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, createPagination */
+/* global Vue, axios, search, createPagination, $ */
 
 const params = new URLSearchParams(window.location.search);
 let searchQuery = params.get("s");
@@ -43,4 +43,22 @@ new Vue({
 		pagination: null
 	},
 	computed: {}
+});
+
+// Clicking the expand button on the filter header opens/closes the filter
+document.querySelector(".filter .filter-expand-button").addEventListener("click", (e) => {
+	e.preventDefault();
+
+	// Set button "aria-expanded" value
+	const button = document.querySelector(".filter .filter-expand-button");
+	const currentExpandedValue = button.getAttribute("aria-expanded");
+	console.log("currentExpandedValue: ", currentExpandedValue);
+	button.setAttribute("aria-expanded", currentExpandedValue === "true" ? "false" : "true");
+
+	// Open/close the filter
+	// Find the form filter by using its relative position with the button instead of a css selector is to work around
+	// the case when there are 2 filters (one for the static view and one for the dynamic view) are on the page. Clicking
+	// on one of expand buttons only opens the form that this button corresponds to.
+	const form = $(button).parent().siblings();
+	form[currentExpandedValue === "true" ? "hide" : "show"]();
 });

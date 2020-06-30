@@ -1,0 +1,157 @@
+// Styles for the search container
+.filter {
+	border: 1px solid $blue-alt-light;
+	margin-bottom: rem(48);
+
+	// Initially hide the filter form
+	.filter-body {
+		border-top: 1px solid $blue-alt-light;
+		display: none;
+	}
+
+	// Transparent buttons
+	button {
+		background-color: transparent;
+		background-repeat: no-repeat;
+		border: none;
+		cursor: pointer;
+		outline: none;
+		overflow: hidden;
+	}
+
+	// Custom checkboxes. Reference: https://codepen.io/spacemonkey/pen/vmZROv
+	.filter-checkbox {
+		opacity: 0; // hide it
+		position: absolute; // take it out of document flow
+
+		& + label {
+			cursor: pointer;
+			padding: 0;
+			position: relative;
+		}
+
+		// Box.
+		& + label::before {
+			border: 1px solid $blue-alt-light;
+			content: '';
+			display: inline-block;
+			height: rem(20);
+			margin-right: rem(10);
+			vertical-align: text-top;
+			width: rem(20);
+		}
+
+		// Box focus
+		&:focus + label::before {
+			box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+		}
+
+		// Checkmark. Could be replaced with an image
+		&:checked + label::after {
+			background: $blue-alt-light;
+			box-shadow:
+				2px 0 0 $blue-alt-light,
+				4px 0 0 $blue-alt-light,
+				4px -2px 0 $blue-alt-light,
+				4px -4px 0 $blue-alt-light,
+				4px -6px 0 $blue-alt-light,
+				4px -8px 0 $blue-alt-light;
+			content: '';
+			height: 2px;
+			left: rem(5);
+			position: absolute;
+			top: rem(9);
+			transform: rotate(45deg);
+			width: 2px;
+		}
+	}
+	// End of custom checkboxes
+
+	.filter-header {
+		background-color: $gold-light;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		h2 {
+			border-bottom: none;
+			font-size: rem(24);
+			line-height: rem(8);
+			padding-left: rem(8);
+		}
+
+		button {
+			margin-right: rem(16);
+		}
+
+		svg {
+			height: rem(24);
+			width: rem(24);
+		}
+	}
+
+	.filter-choices {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			padding: rem(4) rem(8);
+		}
+	}
+
+	.filter-buttons {
+		background-color: $grey-lighter;
+		border-top: 1px solid $blue-alt-light;
+		display: flex;
+		justify-content: flex-end;
+		padding: rem(8) 0;
+
+		svg {
+			fill: none;
+			height: rem(24);
+			margin-right: rem(8);
+			width: rem(24);
+		}
+
+		span {
+			font-size: rem(12);
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.filter {
+		.filter-header {
+			h2 {
+				font-size: rem(48);
+				padding-left: rem(16);
+			}
+
+			button {
+				margin-right: rem(24);
+			}
+		}
+
+		.filter-choices {
+			li {
+				padding: rem(4) rem(16);
+			}
+		}
+
+		.filter-buttons {
+			font-size: rem(16);
+
+			button {
+				margin-right: rem(8);
+				padding: rem(4);
+			}
+
+			span {
+				font-size: rem(16);
+			}
+		}
+	}
+}
