@@ -1,4 +1,18 @@
-// Styles for the search container
+// Styles for the filter
+
+// CSS classes for filter buttons
+.stroke-black {
+	stroke: var(--currentColor, black);
+}
+
+.fill-black {
+	fill: var(--currentColor, black);
+}
+
+.fill-c4c4c4 {
+	fill: var(--currentColor, #c4c4c4);
+}
+
 .filter {
 	border: 1px solid $blue-alt-light;
 	margin-bottom: rem(48);

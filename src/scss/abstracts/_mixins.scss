@@ -27,29 +27,26 @@
 
 // To adapt to UIO contrast themes
 @mixin adapt-to-uioThemes($fColor, $bColor) {
+	// Customized colors
+	--currentColor: currentColor;
+	--bColor: #{$bColor};
+	--fColor: #{$fColor};
+
 	// WeCount logo
 	.logo circle,
 	.logo path {
 		fill: none;
-		stroke: var(--logo-stroke, currentColor);
+		stroke: var(--fColor, currentColor);
 		stroke-linecap: round;
 		stroke-width: rem(3);
 	}
-
-	--logo-stroke: #{$fColor};
-
-	// Canada logo
-	--theme-link-fill: currentColor;
 
 	// Placeholder images on the "views" page
 	svg.placeholder-img use {
-		stroke: var(--placeholder-stroke, currentColor);
+		stroke: var(--fColor, currentColor);
 		stroke-linecap: round;
 		stroke-width: rem(3);
 	}
-
-	--theme-background-fill: #{$bColor};
-	--placeholder-stroke: #{$fColor};
 
 	// Focus/hover styles for SVGs on the footer
 	footer .footer-content {
