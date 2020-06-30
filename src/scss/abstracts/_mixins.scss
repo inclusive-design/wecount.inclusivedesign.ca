@@ -179,6 +179,26 @@
 		color: $fColor;
 	}
 
+	// The filter checkboxes
+	.filter-checkbox {
+		// Box.
+		& + label::before {
+			border: 1px solid $fColor;
+		}
+
+		// Checkmark
+		&:checked + label::after {
+			background: $fColor;
+			box-shadow:
+				2px 0 0 $fColor,
+				4px 0 0 $fColor,
+				4px -2px 0 $fColor,
+				4px -4px 0 $fColor,
+				4px -6px 0 $fColor,
+				4px -8px 0 $fColor;
+		}
+	}
+
 	@media screen and (min-width: rem(1024)) {
 		// Adjust the position of the search icon on the header
 		header .site-nav-wrapper .site-nav .search-container svg {

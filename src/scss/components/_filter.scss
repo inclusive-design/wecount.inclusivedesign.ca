@@ -46,7 +46,7 @@
 			box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 		}
 
-		// Checkmark. Could be replaced with an image
+		// Checkmark
 		&:checked + label::after {
 			background: $blue-alt-light;
 			box-shadow:

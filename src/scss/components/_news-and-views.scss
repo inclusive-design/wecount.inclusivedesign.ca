@@ -228,12 +228,9 @@
 			margin-left: auto;
 			width: rem(288);
 
-			svg {
-				margin-left: rem(16);
-			}
-
 			input[type="search"] {
 				float: right;
+				margin-left: 0;
 				width: rem(288);
 			}
 		}
