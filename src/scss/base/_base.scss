@@ -45,6 +45,9 @@ a:focus {
 	outline: none;
 }
 
+.wp-block-file__button:hover::before,
+.wp-block-file__button:focus::before,
+.wp-block-file__button:active::before,
 button:hover::before,
 button:focus::before,
 button:active::before {
@@ -52,19 +55,24 @@ button:active::before {
 	top: rem(4);
 }
 
+.wp-block-file__button::-moz-focus-inner,
 button::-moz-focus-inner {
 	outline: none;
 }
 
+.wp-block-file__button:focus,
 button:focus {
 	outline: none;
 }
 
+.wp-block-file__button:-moz-focusring,
 button:-moz-focusring {
 	color: transparent;
 	text-shadow: 0 0 0 $green-dark;
 }
 
+// stylelint-disable-next-line
+.wp-block-file__button,
 button:not(.fl-prefsEditor-buttons) button {
 	background-color: $green-light;
 	border: 0;
@@ -79,6 +87,8 @@ button:not(.fl-prefsEditor-buttons) button {
 	transform: perspective(rem(1)) translateZ(0);
 }
 
+// stylelint-disable-next-line
+.wp-block-file__button,
 button::before:not(.fl-prefsEditor-buttons) button {
 	border-radius: rem(26);
 	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
@@ -91,8 +101,32 @@ button::before:not(.fl-prefsEditor-buttons) button {
 	width: 100%;
 }
 
+.wp-block-file {
+	text-align: center;
+
+	.wp-block-file__button {
+		display: block;
+		font-size: rem(14);
+		height: auto;
+		margin: auto;
+		margin-top: rem(8);
+		position: relative;
+		top: rem(-3);
+	}
+}
+
 @media screen and (min-width: rem(1024)) {
 	h1 {
 		font-size: rem(64);
+	}
+
+	.wp-block-file {
+		margin-bottom: rem(20);
+		text-align: unset;
+
+		.wp-block-file__button {
+			display: inline;
+			margin-left: rem(50);
+		}
 	}
 }
