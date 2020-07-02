@@ -107,11 +107,8 @@ button::before:not(.fl-prefsEditor-buttons) button {
 	.wp-block-file__button {
 		display: block;
 		font-size: rem(14);
+		font-weight: $font-weight-medium;
 		height: auto;
-		margin: auto;
-		margin-top: rem(8);
-		position: relative;
-		top: rem(-3);
 	}
 }
 
@@ -121,12 +118,10 @@ button::before:not(.fl-prefsEditor-buttons) button {
 	}
 
 	.wp-block-file {
-		margin-bottom: rem(20);
 		text-align: unset;
 
 		.wp-block-file__button {
 			display: inline;
-			margin-left: rem(50);
 		}
 	}
 }
