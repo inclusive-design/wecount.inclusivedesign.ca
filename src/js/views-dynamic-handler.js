@@ -52,7 +52,6 @@ document.querySelector(".filter .filter-expand-button").addEventListener("click"
 	// Set button "aria-expanded" value
 	const button = document.querySelector(".filter .filter-expand-button");
 	const currentExpandedValue = button.getAttribute("aria-expanded");
-	console.log("currentExpandedValue: ", currentExpandedValue);
 	button.setAttribute("aria-expanded", currentExpandedValue === "true" ? "false" : "true");
 
 	// Open/close the filter

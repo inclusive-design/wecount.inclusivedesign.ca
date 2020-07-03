@@ -9,10 +9,12 @@
 	<div class="filter-body">
 		<ul class="filter-choices">
 			{% for tag in tagsOfViews %}
-			{% set tagId = tag | slug | randomizeFilter %}
+			{# Since there are 2 filters on the "Views" page (one for the static view and the other for the dynamic view),
+			randomize the "id" of checkboxes to make sure every ID is unique on the page to avoid the html validation error. #}
+			{% set tagId = tag.slug | randomizeFilter %}
 			<li>
-				<input class="filter-checkbox" type="checkbox" id="{{ tagId }}" name="{{ tag | slug }}" value="{{ tag }}">
-				<label for="{{ tagId }}">{{ tag }}</label>
+				<input class="filter-checkbox" type="checkbox" id="{{ tagId }}" name="{{ tag.slug }}">
+				<label for="{{ tagId }}">{{ tag.name }}</label>
 			</li>
 			{% endfor %}
 		</ul>

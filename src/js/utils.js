@@ -40,7 +40,7 @@ processPosts = function (posts) {
 			content: onePost.content.rendered,
 			excerpt: onePost.excerpt.rendered,
 			dateTime: onePost.date,
-			tags: onePost.pure_taxonomies.tags ? onePost.pure_taxonomies.tags.map(({ name }) => name) : [],
+			tags: onePost.pure_taxonomies.tags ? onePost.pure_taxonomies.tags.map(({slug, name}) => ({slug, name})) : [],
 			picture: onePost._links["wp:featuredmedia"] ? onePost._embedded["wp:featuredmedia"][0].source_url : null,
 			altTag: onePost._links["wp:featuredmedia"] ? onePost._embedded["wp:featuredmedia"][0].alt_text : "",
 			// For news, "href" points to the external news links. For views, "href" is customized to show views content.

@@ -106,7 +106,7 @@
 
 	.filter-choices {
 		display: grid;
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: repeat(1, auto);
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -150,6 +150,8 @@
 		}
 
 		.filter-choices {
+			grid-template-columns: repeat(2, auto);
+
 			li {
 				padding: rem(4) rem(16);
 			}

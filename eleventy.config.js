@@ -42,7 +42,8 @@ module.exports = function(eleventyConfig) {
 
 		tags.map(tag => {
 			const taggedPosts = posts.filter(post => {
-				return post.tags.includes(tag.title);
+				const postTagSlugs = post.tags.map(({slug}) => slug);
+				return postTagSlugs.includes(tag.slug);
 			});
 
 			if (taggedPosts.length) {
