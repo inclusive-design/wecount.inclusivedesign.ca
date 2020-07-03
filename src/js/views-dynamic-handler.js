@@ -1,36 +1,59 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, createPagination, $ */
+/* global Vue, axios, search, createPagination, processDisplayResults, filter, $ */
 
+const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
 let searchQuery = params.get("s");
-searchQuery = searchQuery ? searchQuery.toLowerCase() : undefined;
 let pageInQuery = params.get("page");
-const pageSize = 10;
+
+// Get tags to filter
+let tags = [];
+for (let p of params) {
+	if (p[0] !== "s" && p[0] !== "page") {
+		tags.push(p[0]);
+	}
+}
 
 new Vue({
 	el: "#defaultContainer",
 	mounted() {
 		let vm = this;
-		if (searchQuery) {
+		let pagination;
+
+		if (searchQuery || tags.length > 0) {
+			// Hide the static view section and show the dynamic search and filtering result section
+			document.querySelector(".views.static-view").style.display = "none";
+			document.querySelector(".views.dynamic-view").style.display = "block";
+
 			axios.get(
 				window.location.origin + "/views.json"
 			).then(function (response) {
-				// Hide the static view section and show the dynamic search and filtering result section
-				document.querySelector(".views.static-view").style.display = "none";
-				document.querySelector(".views.dynamic-view").style.display = "block";
+				// Search
+				let results = response.data;
+				if (searchQuery) {
+					results = search(results, searchQuery);
+				}
 
-				// Perform the search
-				const results = search(response, searchQuery);
+				// Filter by tags
+				if (tags.length > 0)
+				{
+					results = filter(results, tags);
+				}
+
+				// Convert some post values to formats that can be displayed
+				if (results.length > 0) {
+					results = processDisplayResults(results);
+				}
 
 				// Paginate search results
-				let pagination;
 				if (results.length > pageSize) {
 					pagination = createPagination(results, pageSize, pageInQuery, "/views/?s=" + searchQuery + "&page=:page");
 				}
+
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
-				vm.searchTitle = ` search results: “${searchQuery}”`;
+				vm.searchTitle = searchQuery ? ` search results: “${searchQuery}”` : "";
 				vm.searchStatus = `We found ${results.length} results.`;
 			});
 		}

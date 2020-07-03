@@ -1,6 +1,6 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, createPagination */
+/* global Vue, axios, search, createPagination, processDisplayResults */
 
 const params = new URLSearchParams(window.location.search);
 const searchQuery = params.get("s").toLowerCase();
@@ -11,11 +11,18 @@ new Vue({
 	el: "#defaultContainer",
 	mounted() {
 		let vm = this;
+		let results = [];
+
 		axios.get(
 			window.location.origin + "/index.json"
 		).then(function (response) {
 			// Perform the search
-			const results = search(response, searchQuery);
+			results = search(response.data, searchQuery);
+
+			// Convert some post values to formats that can be displayed
+			if (results.length > 0) {
+				results = processDisplayResults(results);
+			}
 
 			// Paginate search results
 			let pagination;

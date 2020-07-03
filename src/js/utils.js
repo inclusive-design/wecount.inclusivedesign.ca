@@ -89,15 +89,35 @@ escapeSpecialChars = function (data) {
 };
 
 // eslint-disable-next-line
-search = function (dataSet, searchQuery) {
-	return dataSet.data.filter((oneRecord) => {
-		// Convert the fetched data to displayable values to work around the issue with using vue v-if and
-		// v-html in nunjucks templates.
+processDisplayResults = function (inArray) {
+	return inArray.map((oneRecord) => {
 		oneRecord.title = htmlDecode(oneRecord.title);
 		oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime): undefined;
 		oneRecord.excerpt = stripHtmlTags(oneRecord.excerpt);
+		return oneRecord;
+	});
+};
 
-		const tagsInString = oneRecord.tags ? oneRecord.tags.join(" ") : "";
-		return oneRecord.title.concat(" ", oneRecord.content, " ", tagsInString).toLowerCase().match(escapeSpecialChars(searchQuery));
+// eslint-disable-next-line
+search = function (dataSet, searchQuery) {
+	searchQuery = searchQuery.toLowerCase();
+	return dataSet.filter((oneRecord) => {
+		const tagNames = oneRecord.tags ? oneRecord.tags.map(({name}) => name) : [];
+		return oneRecord.title.concat(" ", oneRecord.content, " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchQuery));
+	});
+};
+
+/*
+ * Filter the data set with records that have one or more matching tag(s) in the given tag slugs array.
+ * @param {Array<Object>} dataSet - The data set that the filter is performed upon. Each object in this array contains a field named "tags"
+ * that in a format of:
+ * tags: {slug: {String}, name: {String}}
+ * @param {Array<String>} tagSlugs - An array of tag slugs to
+ */
+// eslint-disable-next-line
+filter = function (dataSet, tagSlugs) {
+	return dataSet.filter((oneRecord) => {
+		const recordSlugs = oneRecord.tags ? oneRecord.tags.map(({slug}) => slug) : [];
+		return recordSlugs.some(slug => tagSlugs.indexOf(slug) >= 0);
 	});
 };

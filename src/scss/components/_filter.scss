@@ -56,20 +56,26 @@
 		}
 
 		// Box focus
-		&:focus + label::before {
-			box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+		&:focus + label::before,
+		&:hover + label::before {
+			border: 2.5px solid $blue-alt-light;
+		}
+
+		// Box checked
+		&:checked + label::before {
+			background: $blue-alt-light;
 		}
 
 		// Checkmark
 		&:checked + label::after {
 			background: $blue-alt-light;
 			box-shadow:
-				2px 0 0 $blue-alt-light,
-				4px 0 0 $blue-alt-light,
-				4px -2px 0 $blue-alt-light,
-				4px -4px 0 $blue-alt-light,
-				4px -6px 0 $blue-alt-light,
-				4px -8px 0 $blue-alt-light;
+				2px 0 0 white,
+				4px 0 0 white,
+				4px -2px 0 white,
+				4px -4px 0 white,
+				4px -6px 0 white,
+				4px -8px 0 white;
 			content: '';
 			height: 2px;
 			left: rem(5);
