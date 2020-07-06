@@ -48,6 +48,11 @@
 		stroke-width: rem(3);
 	}
 
+	// Tags
+	.post-article .tags a {
+		box-shadow: 0 0 0 rem(1) currentColor inset;
+	}
+
 	// Focus/hover styles for SVGs on the footer
 	footer .footer-content {
 		// Logos on the footer
