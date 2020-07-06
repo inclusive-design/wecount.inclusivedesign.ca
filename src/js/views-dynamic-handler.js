@@ -2,16 +2,31 @@
 
 /* global Vue, axios, search, createPagination, processDisplayResults, filter, $ */
 
+function toggleFilter(toggeleButton, expandedState) {
+	if (!expandedState) {
+		const currentExpandedValue = toggeleButton.getAttribute("aria-expanded");
+		expandedState = currentExpandedValue === "true" ? "false" : "true";
+	}
+	toggeleButton.setAttribute("aria-expanded", expandedState);
+
+	// Open/close the filter
+	// Find the form filter by using its relative position with the button instead of a css selector is to work around
+	// the case when there are 2 filters (one for the static view and one for the dynamic view) are on the page. Clicking
+	// on one of expand buttons only opens the form that this button corresponds to.
+	const filter = $(toggeleButton).parent().siblings();
+	filter[expandedState === "false" ? "hide" : "show"]();
+}
+
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
 let searchQuery = params.get("s");
 let pageInQuery = params.get("page");
 
-// Get tags to filter
-let tags = [];
+// Get selected tags to filter
+let selectedTags = [];
 for (let p of params) {
 	if (p[0] !== "s" && p[0] !== "page") {
-		tags.push(p[0]);
+		selectedTags.push(p[0]);
 	}
 }
 
@@ -21,24 +36,24 @@ new Vue({
 		let vm = this;
 		let pagination;
 
-		if (searchQuery || tags.length > 0) {
+		if (searchQuery || selectedTags.length > 0) {
 			// Hide the static view section and show the dynamic search and filtering result section
 			document.querySelector(".views.static-view").style.display = "none";
 			document.querySelector(".views.dynamic-view").style.display = "block";
 
 			axios.get(
-				window.location.origin + "/views.json"
+				window.location.origin + "/viewsWithTags.json"
 			).then(function (response) {
 				// Search
-				let results = response.data;
+				let results = response.data.views;
 				if (searchQuery) {
 					results = search(results, searchQuery);
 				}
 
-				// Filter by tags
-				if (tags.length > 0)
+				// Filter by selected tags
+				if (selectedTags.length > 0)
 				{
-					results = filter(results, tags);
+					results = filter(results, selectedTags);
 				}
 
 				// Convert some post values to formats that can be displayed
@@ -51,6 +66,7 @@ new Vue({
 					pagination = createPagination(results, pageSize, pageInQuery, "/views/?s=" + searchQuery + "&page=:page");
 				}
 
+				vm.tags = response.data.tags;
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
 				vm.searchTitle = searchQuery ? ` search results: “${searchQuery}”` : "";
@@ -62,6 +78,7 @@ new Vue({
 		searchQuery: params.get("s"),
 		searchTitle: "",
 		searchStatus: "Searching...",
+		tags: [],
 		resultsToDisplay: [],
 		pagination: null
 	},
@@ -69,18 +86,11 @@ new Vue({
 });
 
 // Clicking the expand button on the filter header opens/closes the filter
-document.querySelector(".filter .filter-expand-button").addEventListener("click", (e) => {
-	e.preventDefault();
+const expandButtons = document.querySelectorAll(".filter .filter-expand-button");
 
-	// Set button "aria-expanded" value
-	const button = document.querySelector(".filter .filter-expand-button");
-	const currentExpandedValue = button.getAttribute("aria-expanded");
-	button.setAttribute("aria-expanded", currentExpandedValue === "true" ? "false" : "true");
-
-	// Open/close the filter
-	// Find the form filter by using its relative position with the button instead of a css selector is to work around
-	// the case when there are 2 filters (one for the static view and one for the dynamic view) are on the page. Clicking
-	// on one of expand buttons only opens the form that this button corresponds to.
-	const form = $(button).parent().siblings();
-	form[currentExpandedValue === "true" ? "hide" : "show"]();
-});
+for (let i = 0; i < expandButtons.length; i++) {
+	expandButtons[i].addEventListener("click", (e) => {
+		e.preventDefault();
+		toggleFilter(expandButtons[i]);
+	});
+}

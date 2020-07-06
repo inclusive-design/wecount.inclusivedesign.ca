@@ -30,9 +30,7 @@ pagination:
       {% set placeholderForSearch = "Search posts..." %}
       {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
       {% include 'components/search-container.njk' %}
-    </form>
 
-    <form method="get" action="/views/">
       {% set filterTitle = "Tags Filters" %}
       {% set filterAction = "/views/" %}
       {% include 'components/filter.njk' %}
@@ -57,9 +55,38 @@ pagination:
 		<p role="status" v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
 
     <form method="get" action="/views/">
+      {# Search form #}
       <div class="search-container">
       	<svg><use xlink:href="#search" /></svg>
-    		<input name="s" type="search" placeholder="Search posts..." aria-label="Enter keywords for a search in posts" :value="searchQuery">
+    		<input type="search" name="s" :value="searchQuery" placeholder="Search posts..." aria-label="Enter keywords for a search in posts">
+      </div>
+
+      {# Filter form #}
+      <div class="filter">
+      	<div class="filter-header">
+      		<h2>Tags Filters</h2>
+      		<button type="button" class="filter-expand-button" aria-expanded="false">
+      			<svg><use xlink:href="#expand" /></svg>
+      		</button>
+      	</div>
+
+      	<div class="filter-body">
+      		<ul class="filter-choices">
+      			<li v-for="tag in tags">
+      				<input class="filter-checkbox" type="checkbox" :id="tag.slug" :name="tag.slug">
+      				<label :for="tag.slug">{{ '{{ tag.name }}' }}</label>
+      			</li>
+      		</ul>
+
+      		<div class="filter-buttons">
+      			<button class="apply-button" type="submit">
+      				<svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
+      			</button>
+      			<button class="reset-button" type="reset">
+      				<svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
+      			</button>
+      		</div>
+      	</div>
       </div>
     </form>
 

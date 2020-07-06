@@ -98,6 +98,25 @@ processDisplayResults = function (inArray) {
 	});
 };
 
+/*
+ * Find and return an array of unique tags.
+ * @param {Array<Object>} posts - An array of posts to find unique tags. Each object in this array contains a field named "tags"
+ * that in a format of:
+ * tags: [{slug: {String}, name: {String}}, ...]
+ * @return An array of tag slugs to
+ */
+// eslint-disable-next-line
+getUniqueTags = function (posts) {
+	let tags = [];
+	posts.map(post => {
+		tags = tags.concat(post.tags.filter(({slug}) => {
+			const currentTagSlugs = tags.map(({slug}) => slug);
+			return currentTagSlugs.indexOf(slug) < 0;
+		}));
+	});
+	return tags;
+};
+
 // eslint-disable-next-line
 search = function (dataSet, searchQuery) {
 	searchQuery = searchQuery.toLowerCase();
@@ -111,8 +130,9 @@ search = function (dataSet, searchQuery) {
  * Filter the data set with records that have one or more matching tag(s) in the given tag slugs array.
  * @param {Array<Object>} dataSet - The data set that the filter is performed upon. Each object in this array contains a field named "tags"
  * that in a format of:
- * tags: {slug: {String}, name: {String}}
- * @param {Array<String>} tagSlugs - An array of tag slugs to
+ * tags: [{slug: {String}, name: {String}}, ...]
+ * @param {Array<String>} tagSlugs - An array of tag slugs to match.
+ * @return A subset of the input `dataSet` that have matched tag slug(s) in `tagSlugs`
  */
 // eslint-disable-next-line
 filter = function (dataSet, tagSlugs) {

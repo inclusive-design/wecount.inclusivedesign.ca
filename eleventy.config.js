@@ -1,4 +1,4 @@
-/* global chunkArray, createPagination */
+/* global chunkArray, createPagination, getUniqueTags */
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginSass = require("eleventy-plugin-sass");
@@ -19,19 +19,25 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.setUseGitIgnore(false);
 
 	// Add custom collections.
-	eleventyConfig.addCollection("pages", async function(collection) {
-		collection = dataFetcher.sitePages();
-		return collection;
+	eleventyConfig.addCollection("pages", async function() {
+		return dataFetcher.sitePages();
 	});
 
-	eleventyConfig.addCollection("news", async function(collection) {
-		collection = dataFetcher.categorizedItems("news", 8);
-		return collection;
+	eleventyConfig.addCollection("news", async function() {
+		return dataFetcher.categorizedItems("news", 8);
 	});
 
-	eleventyConfig.addCollection("views", async function(collection) {
-		collection = dataFetcher.categorizedItems("views", 1);
-		return collection;
+	eleventyConfig.addCollection("views", async function() {
+		return dataFetcher.categorizedItems("views", 1);
+	});
+
+	eleventyConfig.addCollection("viewsTags", async function() {
+		const viewsPromise = dataFetcher.categorizedItems("views", 1);
+		return new Promise((resolve) => {
+			viewsPromise.then(views => {
+				resolve(getUniqueTags(views));
+			});
+		});
 	});
 
 	eleventyConfig.addCollection("tags", async function() {
