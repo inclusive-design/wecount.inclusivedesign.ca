@@ -90,6 +90,11 @@
 		}
 	}
 
+	// Styles for buttons
+	.wp-block-file__button {
+		box-shadow: 0 0 0 rem(1) currentColor inset;
+	}
+
 	// Focus/hover styles for links
 	#defaultContainer a:focus,
 	#defaultContainer a:hover,
@@ -103,7 +108,9 @@
 	button:focus,
 	button:hover,
 	li .pagination-link,
-	li .pagination-link::before {
+	li .pagination-link::before,
+	.wp-block-file__button:focus,
+	.wp-block-file__button:hover {
 		box-shadow: 0 0 0 rem(2) currentColor inset;
 	}
 
