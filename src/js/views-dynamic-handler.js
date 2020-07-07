@@ -19,7 +19,7 @@ function toggleFilter(toggeleButton, expandedState) {
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
-let searchQuery = params.get("s");
+let searchQuery = params.get("s") ? params.get("s").trim() : undefined;
 let pageInQuery = params.get("page");
 
 // Get selected tags to filter
@@ -66,7 +66,13 @@ new Vue({
 					pagination = createPagination(results, pageSize, pageInQuery, "/views/?s=" + searchQuery + "&page=:page");
 				}
 
-				vm.tags = response.data.tags;
+				vm.tags = response.data.tags.map(tag => {
+					return {
+						slug: tag.slug,
+						name: tag.name,
+						checked: selectedTags.includes(tag.slug)
+					};
+				});
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
 				vm.searchTitle = searchQuery ? ` search results: “${searchQuery}”` : "";
@@ -75,7 +81,7 @@ new Vue({
 		}
 	},
 	data: {
-		searchQuery: params.get("s"),
+		searchQuery: searchQuery,
 		searchTitle: "",
 		searchStatus: "Searching...",
 		tags: [],
@@ -94,3 +100,17 @@ for (let i = 0; i < expandButtons.length; i++) {
 		toggleFilter(expandButtons[i]);
 	});
 }
+
+// Clicking "reset filter" buttons unchecks all filter selections
+const resetFilterButtons = document.querySelectorAll(".filter .reset-button");
+
+for (let i = 0; i < resetFilterButtons.length; i++) {
+	resetFilterButtons[i].addEventListener("click", () => {
+		$(".filter-checkbox").prop("checked", false);
+	});
+}
+
+// Clicking the "reset filter" button on the dynamic view also submits the form to perform the search and filter
+document.querySelector(".dynamic-view .reset-button").addEventListener("click", () => {
+	document.querySelector(".dynamic-view form").submit();
+});

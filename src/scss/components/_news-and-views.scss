@@ -136,6 +136,12 @@
 	display: none;
 }
 
+// Initially hide the filter form on the static generated page
+.static-view .filter-body {
+	border-top: 1px solid $blue-alt-light;
+	display: none;
+}
+
 .views {
 	.search-container {
 		padding-bottom: rem(27);

@@ -17,12 +17,6 @@
 	border: 1px solid $blue-alt-light;
 	margin-bottom: rem(48);
 
-	// Initially hide the filter form
-	.filter-body {
-		border-top: 1px solid $blue-alt-light;
-		display: none;
-	}
-
 	// Transparent buttons
 	button {
 		background-color: transparent;
