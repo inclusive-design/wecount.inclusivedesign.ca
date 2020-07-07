@@ -1,6 +1,6 @@
 // Styles for the filter
 
-// CSS classes for filter buttons
+// CSS classes for "apply filter" and "reset filter" buttons
 .stroke-black {
 	stroke: var(--currentColor, black);
 }
@@ -11,6 +11,13 @@
 
 .fill-c4c4c4 {
 	fill: var(--currentColor, #c4c4c4);
+}
+
+// CSS classes for the "expand filter" button
+.expand-svg {
+	color: var(--expand-button-color, $gold-light);
+	stroke: var(--expand-button-stroke-color, $blue-alt-light);
+	stroke-width: rem(4);
 }
 
 .filter {
@@ -132,6 +139,13 @@
 
 		span {
 			font-size: rem(12);
+		}
+	}
+
+	.filter-expand-button {
+		&:focus,
+		&:hover {
+			--expand-button-color: #{$blue-alt-light};
 		}
 	}
 }

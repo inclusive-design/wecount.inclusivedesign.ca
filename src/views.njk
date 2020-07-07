@@ -23,9 +23,9 @@ pagination:
   	</symbol>
   </svg>
 
-  <article class="views static-view">
-		<h1>Views</h1>
+  <h1>Views</h1>
 
+  <article class="views static-view">
     <form method="get" action="/views/">
       {% set placeholderForSearch = "Search posts..." %}
       {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
@@ -51,14 +51,11 @@ pagination:
 
   {# For displaying dynamic search and filtering results #}
 	<article class="views dynamic-view">
-    <h1>Views{{ '{{ searchTitle }}' }}</h1>
-		<p role="status" v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
-
     <form method="get" action="/views/">
       {# Search #}
       <div class="search-container">
       	<svg><use xlink:href="#search" /></svg>
-    		<input type="search" name="s" :value="searchQuery" placeholder="Search posts..." aria-label="Enter keywords for a search in posts">
+    		<input type="search" name="s" :value="searchTerm" placeholder="Search posts..." aria-label="Enter keywords for a search in posts">
       </div>
 
       {# Filter #}
@@ -89,6 +86,20 @@ pagination:
       	</div>
       </div>
     </form>
+
+    <p role="status" class="search-result" v-if="searchResult">{{ '{{ searchResult }}' }}</p>
+
+    <div class="applied-tags" v-if="selectedTags.length > 0">
+      <p class="applied-tags-title">Applied Tags:</p>
+      <div class="tags">
+        <p v-for="tag in selectedTags">{{ '{{ tag.name }}' }}</p>
+      </div>
+    </div>
+
+    <div class="search-term-container" v-if="searchTerm">
+      <p class="search-term-title">Search Term:</p>
+      <p class="search-term">“{{ '{{ searchTerm }}' }}”</p>
+    </div>
 
 		<div class="news-grid" v-if="resultsToDisplay.length > 0">
 		  <div v-for="item in resultsToDisplay" :key="item.id" class="api-content">

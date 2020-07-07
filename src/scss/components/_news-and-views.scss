@@ -169,6 +169,28 @@
 	}
 }
 
+.search-result {
+	color: $green-dark;
+	font-size: rem(24);
+	font-weight: $font-weight-bold;
+	margin-top: rem(-32);
+}
+
+.applied-tags-title,
+.search-term-title {
+	color: $green-dark;
+	font-size: rem(18);
+	font-weight: $font-weight-bold;
+}
+
+.tags {
+	margin-top: rem(-16);
+}
+
+.search-term {
+	margin-top: rem(-8);
+}
+
 .news-grid {
 	display: grid;
 	grid-gap: rem(30) rem(38);

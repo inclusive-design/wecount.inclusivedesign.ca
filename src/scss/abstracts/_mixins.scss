@@ -48,9 +48,34 @@
 		stroke-width: rem(3);
 	}
 
+	// "Expand filter" button
+	.filter-expand-button {
+		--expand-button-color: #{$bColor};
+		--expand-button-stroke-color: #{$fColor};
+
+		background-color: #{$bColor} !important;
+
+		svg {
+			background-color: #{$bColor} !important;
+		}
+
+		&:focus,
+		&:hover {
+			--expand-button-color: currentColor;
+		}
+	}
+
 	// Tags
-	.post-article .tags a {
-		box-shadow: 0 0 0 rem(1) currentColor inset;
+	.tags {
+		a,
+		p {
+			box-shadow: 0 0 0 rem(1) currentColor inset;
+
+			&:focus,
+			&:hover {
+				box-shadow: 0 0 0 rem(2) currentColor inset;
+			}
+		}
 	}
 
 	// Focus/hover styles for SVGs on the footer
@@ -105,13 +130,11 @@
 	#defaultContainer a:hover,
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:focus,
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:hover,
-	#defaultContainer .content-wrapper .tags-info .tags a:focus,
-	#defaultContainer .content-wrapper .tags-info .tags a:hover,
 	.search-container input,
 	.card:focus,
 	.card:hover,
-	button:focus,
-	button:hover,
+	button:not(.filter-expand-button):focus,
+	button:not(.filter-expand-button):hover,
 	li .pagination-link,
 	li .pagination-link::before,
 	.wp-block-file__button:focus,

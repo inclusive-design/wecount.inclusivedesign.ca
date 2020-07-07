@@ -2,6 +2,15 @@
 
 /* global Vue, axios, search, createPagination, processDisplayResults, filter, $ */
 
+/*
+ * Toggle the filter by:
+ * 1. set the proper "aria-expanded" for the toggle button;
+ * 2. hide/show the filter body based on the toggle state.
+ * @param {Array<Object>} dataSet - The data set that the filter is performed upon. Each object in this array contains a field named "tags"
+ * that in a format of:
+ * tags: [{slug: {String}, name: {String}}, ...]
+ * @param {Array<String>} tagSlugs - An array of tag slugs to match.
+ */
 function toggleFilter(toggeleButton, expandedState) {
 	if (!expandedState) {
 		const currentExpandedValue = toggeleButton.getAttribute("aria-expanded");
@@ -19,7 +28,7 @@ function toggleFilter(toggeleButton, expandedState) {
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
-let searchQuery = params.get("s") ? params.get("s").trim() : undefined;
+let searchTerm = params.get("s") ? params.get("s").trim() : undefined;
 let pageInQuery = params.get("page");
 
 // Get selected tags to filter
@@ -36,7 +45,7 @@ new Vue({
 		let vm = this;
 		let pagination;
 
-		if (searchQuery || selectedTags.length > 0) {
+		if (searchTerm || selectedTags.length > 0) {
 			// Hide the static view section and show the dynamic search and filtering result section
 			document.querySelector(".views.static-view").style.display = "none";
 			document.querySelector(".views.dynamic-view").style.display = "block";
@@ -46,8 +55,8 @@ new Vue({
 			).then(function (response) {
 				// Search
 				let results = response.data.views;
-				if (searchQuery) {
-					results = search(results, searchQuery);
+				if (searchTerm) {
+					results = search(results, searchTerm);
 				}
 
 				// Filter by selected tags
@@ -63,7 +72,7 @@ new Vue({
 
 				// Paginate search results
 				if (results.length > pageSize) {
-					pagination = createPagination(results, pageSize, pageInQuery, "/views/?s=" + searchQuery + "&page=:page");
+					pagination = createPagination(results, pageSize, pageInQuery, "/views/?s=" + searchTerm + "&page=:page");
 				}
 
 				vm.tags = response.data.tags.map(tag => {
@@ -73,17 +82,18 @@ new Vue({
 						checked: selectedTags.includes(tag.slug)
 					};
 				});
+				vm.selectedTags = response.data.tags.filter(tag => {
+					return selectedTags.includes(tag.slug);
+				});
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
-				vm.searchTitle = searchQuery ? ` search results: “${searchQuery}”` : "";
-				vm.searchStatus = `We found ${results.length} results.`;
+				vm.searchResult = `${results.length} of ${response.data.views.length} resources matched`;
 			});
 		}
 	},
 	data: {
-		searchQuery: searchQuery,
-		searchTitle: "",
-		searchStatus: "Searching...",
+		searchTerm: searchTerm,
+		searchResult: "Searching...",
 		tags: [],
 		resultsToDisplay: [],
 		pagination: null
