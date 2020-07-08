@@ -2,30 +2,6 @@
 
 /* global Vue, axios, search, createPagination, processDisplayResults, filter, $ */
 
-/*
- * Toggle the filter by:
- * 1. set the proper "aria-expanded" for the toggle button;
- * 2. hide/show the filter body based on the toggle state.
- * @param {Array<Object>} dataSet - The data set that the filter is performed upon. Each object in this array contains a field named "tags"
- * that in a format of:
- * tags: [{slug: {String}, name: {String}}, ...]
- * @param {Array<String>} tagSlugs - An array of tag slugs to match.
- */
-function toggleFilter(toggeleButton, expandedState) {
-	if (!expandedState) {
-		const currentExpandedValue = toggeleButton.getAttribute("aria-expanded");
-		expandedState = currentExpandedValue === "true" ? "false" : "true";
-	}
-	toggeleButton.setAttribute("aria-expanded", expandedState);
-
-	// Open/close the filter
-	// Find the form filter by using its relative position with the button instead of a css selector is to work around
-	// the case when there are 2 filters (one for the static view and one for the dynamic view) are on the page. Clicking
-	// on one of expand buttons only opens the form that this button corresponds to.
-	const filter = $(toggeleButton).parent().siblings();
-	filter[expandedState === "false" ? "hide" : "show"]();
-}
-
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
 let searchTerm = params.get("s") ? params.get("s").trim() : undefined;
@@ -107,7 +83,16 @@ const expandButtons = document.querySelectorAll(".filter .filter-expand-button")
 for (let i = 0; i < expandButtons.length; i++) {
 	expandButtons[i].addEventListener("click", (e) => {
 		e.preventDefault();
-		toggleFilter(expandButtons[i]);
+		const currentExpandedValue = expandButtons[i].getAttribute("aria-expanded");
+		const expandedState = currentExpandedValue === "true" ? "false" : "true";
+		expandButtons[i].setAttribute("aria-expanded", expandedState);
+
+		// Open/close the filter
+		// Find the form filter by using its relative position with the button instead of a css selector is to work around
+		// the case when there are 2 filters (one for the static view and one for the dynamic view) are on the page. Clicking
+		// on one of expand buttons only opens the form that this button corresponds to.
+		const filter = $(expandButtons[i]).parent().siblings();
+		filter[expandedState === "false" ? "hide" : "show"]();
 	});
 }
 

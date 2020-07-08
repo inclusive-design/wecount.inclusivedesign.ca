@@ -167,28 +167,30 @@
 			color: $green-dark;
 		}
 	}
-}
 
-.search-result {
-	color: $green-dark;
-	font-size: rem(24);
-	font-weight: $font-weight-bold;
-	margin-top: rem(-32);
-}
+	.search-result {
+		color: $green-dark;
+		font-size: rem(24);
+		font-weight: $font-weight-bold;
+		margin-top: rem(-32);
+	}
 
-.applied-tags-title,
-.search-term-title {
-	color: $green-dark;
-	font-size: rem(18);
-	font-weight: $font-weight-bold;
-}
+	.applied-tags-title,
+	.search-term-title {
+		color: $green-dark;
+		font-size: rem(18);
+		font-weight: $font-weight-bold;
+	}
 
-.tags {
-	margin-top: rem(-16);
-}
+	.tags {
+		@include tags();
 
-.search-term {
-	margin-top: rem(-8);
+		margin: rem(-16) 0 rem(16) 0;
+	}
+
+	.search-term {
+		margin: rem(-8) 0 rem(32) 0;
+	}
 }
 
 .news-grid {

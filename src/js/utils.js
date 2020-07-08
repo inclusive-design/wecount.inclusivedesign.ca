@@ -2,6 +2,11 @@
 
 /* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars */
 
+/*
+ * Convert a date into the format of "Month day, Year".
+ * @param {String} inputDate - A string of date.
+ * @return The string in the format of "Month day, Year".
+ */
 // eslint-disable-next-line
 convertDate = function (inputDate) {
 	const dateObject = new Date(inputDate);
@@ -11,11 +16,21 @@ convertDate = function (inputDate) {
 	return `${months[dateObject.getMonth()]} ${dateObject.getDate()}, ${dateObject.getFullYear()}`;
 };
 
+/*
+ * Remove html tags from the input string.
+ * @param {String} inputString - The string to remove html tags.
+ * @return The string with html tags removed.
+ */
 // eslint-disable-next-line
 stripHtmlTags = function (inputString) {
 	return inputString.replace(/<\/?[^>]+(>|$)/g, "");
 };
 
+/*
+ * Extract text from a html string.
+ * @param {String} input - The string to extract text from.
+ * @return The extracted text.
+ */
 // eslint-disable-next-line
 htmlDecode = function (input) {
 	let el = document.createElement("div");
@@ -23,11 +38,22 @@ htmlDecode = function (input) {
 	return el.innerText;
 };
 
+/*
+ * Chunk (split) the array into smaller arrays with the given chunk size at its most.
+ * @param {Array<Anything>} inputArray - The input array to chunk.
+ * @param {Number} chunkSize - The size of smaller arrays to chunk to.
+ * @return An array of smaller arrays with the given chunk size at its most.
+ */
 // eslint-disable-next-line
 chunkArray = function (inputArray, chunkSize) {
 	return Array(Math.ceil(inputArray.length / chunkSize)).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
 };
 
+/*
+ * Process the WordPress returned data structure to the format required by WeCount site.
+ * @param {Array<Object>} posts - Posts returned by the WordPress REST API.
+ * @return An array of object that re in the format required by WeCount site.
+ */
 // eslint-disable-next-line
 processPosts = function (posts) {
 	return posts.map(function (onePost) {
@@ -49,6 +75,14 @@ processPosts = function (posts) {
 	});
 };
 
+/*
+ * Create the pagination object for the input data set.
+ * @param {Array<Object>} dataArray - The data set to create the pagination object for.
+ * @param {Number} pageSize - The number of records on a page.
+ * @param {Number} pageInQuery - The current page number.
+ * @param {String} hrefTemplate - The href to redirect to when a page number is clicked.
+ * @return Generate a pagination object in this data structure: https://www.11ty.dev/docs/pagination/#paging-an-array.
+ */
 // eslint-disable-next-line
 createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplate) {
 	const dataInChunk = chunkArray(dataArray, pageSize);
@@ -83,11 +117,21 @@ createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplate) {
 	return pagination;
 };
 
+/*
+ * Escape special characters in a string by adding double slashes in front.
+ * @param {String} data - The string to escape special characters within it.
+ * @return The same string with special characters within it escaped.
+ */
 // eslint-disable-next-line
 escapeSpecialChars = function (data) {
 	return data.replace(/[!@#$%^&*()+=\-[\]\\';,./{}|":<>?~_]/g, "\\$&");
 };
 
+/*
+ * Process each object in the data set to convert some field value to formats for display.
+ * @param {Array<Object>} dataSet - The data set to process.
+ * @return The same set of the data set with fields converted.
+ */
 // eslint-disable-next-line
 processDisplayResults = function (inArray) {
 	return inArray.map((oneRecord) => {
@@ -117,12 +161,18 @@ getUniqueTags = function (posts) {
 	return tags;
 };
 
+/*
+ * Search the data set with records that match the search term.
+ * @param {Array<Object>} dataSet - The data set that the search is performed upon.
+ * @param {String} searchTerm - The search term.
+ * @return A subset of the input `dataSet` that have matched term in any of these fields: title, content, tags.
+ */
 // eslint-disable-next-line
-search = function (dataSet, searchQuery) {
-	searchQuery = searchQuery.toLowerCase();
+search = function (dataSet, searchTerm) {
+	searchTerm = searchTerm.toLowerCase();
 	return dataSet.filter((oneRecord) => {
 		const tagNames = oneRecord.tags ? oneRecord.tags.map(({name}) => name) : [];
-		return oneRecord.title.concat(" ", oneRecord.content, " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchQuery));
+		return oneRecord.title.concat(" ", oneRecord.content, " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchTerm));
 	});
 };
 

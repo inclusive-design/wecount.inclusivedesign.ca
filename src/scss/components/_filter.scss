@@ -15,7 +15,7 @@
 
 // CSS classes for the "expand filter" button
 .expand-svg {
-	color: var(--expand-button-color, $gold-light);
+	fill: var(--expand-button-color, $gold-light);
 	stroke: var(--expand-button-stroke-color, $blue-alt-light);
 	stroke-width: rem(4);
 }
@@ -128,13 +128,13 @@
 		border-top: 1px solid $blue-alt-light;
 		display: flex;
 		justify-content: flex-end;
-		padding: rem(8) 0;
 
 		svg {
 			fill: none;
-			height: rem(24);
-			margin-right: rem(8);
-			width: rem(24);
+			height: rem(40);
+			margin-right: rem(3);
+			padding: rem(3);
+			width: rem(40);
 		}
 
 		span {
@@ -142,11 +142,19 @@
 		}
 	}
 
-	.filter-expand-button {
+	.apply-button,
+	.reset-button {
 		&:focus,
 		&:hover {
-			--expand-button-color: #{$blue-alt-light};
+			svg {
+				background-color: $gold-light;
+			}
 		}
+	}
+
+	.filter-expand-button:focus,
+	.filter-expand-button:hover {
+		--expand-button-color: #{$blue-alt-light};
 	}
 }
 
