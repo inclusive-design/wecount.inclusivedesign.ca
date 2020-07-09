@@ -110,6 +110,7 @@
 			&:focus,
 			&:hover {
 				--expand-button-color: #{$fColor};
+				--expand-button-stroke-color: #{$bColor};
 			}
 		}
 

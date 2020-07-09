@@ -155,6 +155,7 @@
 	.filter-expand-button:focus,
 	.filter-expand-button:hover {
 		--expand-button-color: #{$blue-alt-light};
+		--expand-button-stroke-color: #{$gold-light};
 	}
 }
 
