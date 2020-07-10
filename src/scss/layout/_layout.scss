@@ -34,20 +34,6 @@ article {
 		border-bottom: rem(5) solid $gold;
 	}
 
-	.wp-block-image {
-		figure {
-			margin-left: 0;
-
-			img {
-				height: 100%;
-			}
-		}
-	}
-
-	.wp-block-image + * {
-		margin-top: rem(50);
-	}
-
 	.api-content {
 		display: block;
 
@@ -57,17 +43,59 @@ article {
 			display: table;
 		}
 	}
-}
 
-/*
- * Default WP Alignment Classes
+	/*
+ * Default WP image Alignment Classes
  *****************************************************************************/
-figcaption {
-	display: block;
-	font-size: rem(14);
-	font-style: italic;
-	padding: 1rem 0;
-	text-align: center;
+	figure {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.wp-block-image {
+		img {
+			height: 100%;
+			max-width: 100%;
+		}
+
+		figcaption {
+			caption-side: bottom;
+			display: table-caption;
+			font-size: rem(14);
+			font-style: italic;
+			padding: 1rem 0;
+			text-align: center;
+		}
+
+		.alignleft {
+			float: left;
+			margin-right: rem(25);
+			margin-top: 0;
+		}
+
+		.alignright {
+			float: right;
+			margin-left: rem(25);
+			margin-top: 0;
+		}
+	}
+
+	.wp-block-image figure .alignfull {
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		margin-right: calc(-100vw / 2 + 100% / 2);
+		max-width: 100vw;
+	}
+
+	.wp-block-image figure .alignwide {
+		margin-left: -100px;
+		margin-right: -100px;
+		max-width: 1024px;
+	}
+
+	.wp-block-image figure > *.alignwide {
+		max-width: 1024px;
+	}
 }
 
 // Hide an element visually without hiding it from screen readers
@@ -82,10 +110,6 @@ figcaption {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
-}
-
-.size-large {
-	height: $img-size-medium; // need to decide and set other size variables
 }
 
 @media screen and (min-width: rem(1024)) {
@@ -106,36 +130,6 @@ figcaption {
 		article {
 			padding: rem(1) rem(60);
 			padding-bottom: rem(62);
-
-			.wp-block-image ~ h2 {
-				margin-top: $img-size-medium;
-			}
 		}
-	}
-
-	/*
- * Default WP Alignment Classes
- *****************************************************************************/
-
-	.aligncenter,
-	.alignleft,
-	.alignright {
-		display: block;
-		padding: 0;
-	}
-
-	.aligncenter {
-		float: none;
-		margin: 0.5em auto 1em;
-	}
-
-	.alignright {
-		float: right;
-		margin: 0.5em 0 1em 1em;
-	}
-
-	.alignleft {
-		float: left;
-		margin: 0.5em 1em 1em 0;
 	}
 }
