@@ -17,7 +17,7 @@
 .expand-svg {
 	fill: var(--expand-button-color, $gold-light);
 	stroke: var(--expand-button-stroke-color, $blue-alt-light);
-	stroke-width: rem(4);
+	stroke-width: var(--expand-button-stroke-width, rem(4));
 }
 
 .filter {
@@ -156,6 +156,7 @@
 	.filter-expand-button:hover {
 		--expand-button-color: #{$blue-alt-light};
 		--expand-button-stroke-color: #{$gold-light};
+		--expand-button-stroke-width: rem(1);
 	}
 }
 
