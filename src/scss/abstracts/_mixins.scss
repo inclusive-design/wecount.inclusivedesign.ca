@@ -185,8 +185,6 @@
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:focus,
 	#defaultContainer header .site-nav-wrapper .site-nav nav a:hover,
 	.search-container input,
-	.card:focus,
-	.card:hover,
 	button:not(.filter-expand-button):focus,
 	button:not(.filter-expand-button):hover,
 	li .pagination-link,
@@ -224,11 +222,15 @@
 			}
 		}
 
-		// Home page cards: hide background images on UIO contrast themes
-		.blue,
-		.green,
-		.yellow {
+		// Home page cards: hide background images and adjust box shadows on UIO contrast themes
+		.card {
 			background-image: none;
+			box-shadow: 0 rem(4) rem(4) currentColor;
+
+			&:focus,
+			&:hover {
+				box-shadow: rem(10) rem(10) rem(10) currentColor;
+			}
 		}
 	}
 
