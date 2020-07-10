@@ -150,11 +150,10 @@
 			}
 		}
 
-		// Home page cards: hide background images on UIO contrast themes
-		.blue,
-		.green,
-		.yellow {
+		// Home page cards: hide background images and adjust box shadows on UIO contrast themes
+		.card {
 			background-image: none;
+			box-shadow: 0 rem(4) rem(4) currentColor;
 		}
 	}
 
