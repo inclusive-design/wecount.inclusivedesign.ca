@@ -47,11 +47,11 @@
 
 		// Box.
 		& + label::before {
-			border: 1px solid $blue-alt-light;
 			content: '';
 			display: inline-block;
 			height: rem(20);
 			margin-right: rem(10);
+			outline: 1px solid $blue-alt-light;
 			vertical-align: text-top;
 			width: rem(20);
 		}
