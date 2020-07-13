@@ -80,22 +80,6 @@ article {
 			margin-top: 0;
 		}
 	}
-
-	.wp-block-image figure .alignfull {
-		margin-left: calc(-100vw / 2 + 100% / 2);
-		margin-right: calc(-100vw / 2 + 100% / 2);
-		max-width: 100vw;
-	}
-
-	.wp-block-image figure .alignwide {
-		margin-left: rem(-100);
-		margin-right: rem(-100);
-		max-width: 100%;
-	}
-
-	.wp-block-image figure > *.alignwide {
-		max-width: 100%;
-	}
 }
 
 // Hide an element visually without hiding it from screen readers
