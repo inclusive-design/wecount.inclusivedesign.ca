@@ -45,7 +45,7 @@ article {
 	}
 
 	/*
- * Default WP image Alignment Classes
+	WP selector's customized styles for the WeCount website
  *****************************************************************************/
 	figure {
 		display: table;
@@ -88,13 +88,13 @@ article {
 	}
 
 	.wp-block-image figure .alignwide {
-		margin-left: -100px;
-		margin-right: -100px;
-		max-width: 1024px;
+		margin-left: rem(-100);
+		margin-right: rem(-100);
+		max-width: rem(1024);
 	}
 
 	.wp-block-image figure > *.alignwide {
-		max-width: 1024px;
+		max-width: rem(1024);
 	}
 }
 
@@ -103,13 +103,13 @@ article {
 .screen-reader-only {
 	border-width: 0;
 	clip: rect(0, 0, 0, 0);
-	height: 1px;
-	margin: -1px;
+	height: rem(1);
+	margin: rem(-1);
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
 	white-space: nowrap;
-	width: 1px;
+	width: rem(1);
 }
 
 @media screen and (min-width: rem(1024)) {
