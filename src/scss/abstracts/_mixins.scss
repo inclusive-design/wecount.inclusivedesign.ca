@@ -30,8 +30,7 @@
 	display: flex;
 	flex-wrap: wrap;
 
-	a,
-	p {
+	a {
 		background-color: $gold-light;
 		border-radius: rem(20);
 		box-shadow: 0 0 0 rem(1) transparent inset;
@@ -39,6 +38,11 @@
 		font-weight: $font-weight-bold;
 		margin: rem(8) rem(16) rem(8) 0;
 		padding: rem(5) rem(16);
+
+		&:focus,
+		&:hover {
+			box-shadow: 0 0 0 rem(1) $blue-alt inset;
+		}
 	}
 }
 
@@ -65,34 +69,24 @@
 		stroke-width: rem(3);
 	}
 
+	// Filter
 	.filter {
 		.filter-checkbox {
 			// Box
 			& + label::before {
-				border: 1px solid $fColor;
-			}
-
-			// Box focus
-			&:focus + label::before,
-			&:hover + label::before {
-				border: 2.5px solid $fColor;
-			}
-
-			// Box checked
-			&:checked + label::before {
-				background: $fColor;
+				outline: rem(1) solid $fColor;
 			}
 
 			// Checkmark
 			&:checked + label::after {
 				background: $fColor;
 				box-shadow:
-					2px 0 0 $bColor,
-					4px 0 0 $bColor,
-					4px -2px 0 $bColor,
-					4px -4px 0 $bColor,
-					4px -6px 0 $bColor,
-					4px -8px 0 $bColor;
+					rem(2) 0 0 $bColor,
+					rem(4) 0 0 $bColor,
+					rem(4) rem(-2) 0 $bColor,
+					rem(4) rem(-4) 0 $bColor,
+					rem(4) rem(-6) 0 $bColor,
+					rem(4) rem(-8) 0 $bColor;
 			}
 		}
 
@@ -114,9 +108,47 @@
 			}
 		}
 
+		// Apply and reset buttons
 		.filter-buttons {
 			background-color: $grey-lighter;
 		}
+	}
+
+	// Custom styles when "enhance inputs" is enabled
+	&.fl-input-enhanced .filter-checkbox + label::before {
+		outline: rem(3) double $fColor;
+	}
+
+	// Box checked
+	.filter .filter-checkbox:checked + label::before {
+		background: $fColor;
+	}
+
+	// Box focus
+	.filter .filter-checkbox:focus + label::before,
+	.filter .filter-checkbox:hover + label::before {
+		outline: rem(2.5) solid $fColor;
+	}
+
+	// Box focus when "enhance inputs" is enabled
+	&.fl-input-enhanced .filter-checkbox:focus + label::before,
+	&.fl-input-enhanced .filter-checkbox:hover + label::before {
+		border: rem(2.5) solid $fColor;
+		outline: rem(3.5) double $fColor;
+	}
+
+	// Box checked and focus/hover
+	.filter .filter-checkbox:checked:focus + label::before,
+	.filter .filter-checkbox:checked:hover + label::before {
+		outline: rem(3) double $fColor;
+	}
+
+	// Box checked and focus/hover when "enhance inputs" is enabled
+	&.fl-input-enhanced .filter-checkbox:checked:focus + label::before,
+	&.fl-input-enhanced .filter-checkbox:checked:hover + label::before {
+		border: rem(1) solid $bColor;
+		box-shadow: 0 0 0 rem(1) $fColor inset;
+		outline: rem(3) double $fColor;
 	}
 
 	// Tags

@@ -21,7 +21,7 @@
 }
 
 .filter {
-	border: 1px solid $blue-alt-light;
+	border: rem(1) solid $blue-alt-light;
 	margin-bottom: rem(48);
 
 	// Transparent buttons
@@ -45,45 +45,34 @@
 			position: relative;
 		}
 
-		// Box.
+		// Box
 		& + label::before {
 			content: '';
 			display: inline-block;
 			height: rem(20);
 			margin-right: rem(10);
-			outline: 1px solid $blue-alt-light;
+			outline: rem(1) solid $blue-alt-light;
 			vertical-align: text-top;
 			width: rem(20);
-		}
-
-		// Box focus
-		&:focus + label::before,
-		&:hover + label::before {
-			border: 2.5px solid $blue-alt-light;
-		}
-
-		// Box checked
-		&:checked + label::before {
-			background: $blue-alt-light;
 		}
 
 		// Checkmark
 		&:checked + label::after {
 			background: $blue-alt-light;
 			box-shadow:
-				2px 0 0 white,
-				4px 0 0 white,
-				4px -2px 0 white,
-				4px -4px 0 white,
-				4px -6px 0 white,
-				4px -8px 0 white;
+				rem(2) 0 0 white,
+				rem(4) 0 0 white,
+				rem(4) rem(-2) 0 white,
+				rem(4) rem(-4) 0 white,
+				rem(4) rem(-6) 0 white,
+				rem(4) rem(-8) 0 white;
 			content: '';
-			height: 2px;
+			height: rem(2);
 			left: rem(5);
 			position: absolute;
 			top: rem(9);
 			transform: rotate(45deg);
-			width: 2px;
+			width: rem(2);
 		}
 	}
 	// End of custom checkboxes
@@ -125,7 +114,7 @@
 
 	.filter-buttons {
 		background-color: $grey-lighter;
-		border-top: 1px solid $blue-alt-light;
+		border-top: rem(1) solid $blue-alt-light;
 		display: flex;
 		justify-content: flex-end;
 
@@ -156,8 +145,46 @@
 	.filter-expand-button:hover {
 		--expand-button-color: #{$blue-alt-light};
 		--expand-button-stroke-color: #{$gold-light};
-		--expand-button-stroke-width: rem(1);
+		--expand-button-stroke-width: 0;
 	}
+}
+
+// Custom styles when "enhance inputs" is enabled
+// Box
+.fl-input-enhanced .filter-checkbox + label::before {
+	outline: rem(3) double $blue-alt-light;
+}
+
+// Box checked
+.filter .filter-checkbox:checked + label::before {
+	background: $blue-alt-light;
+}
+
+// Box focus
+.filter .filter-checkbox:focus + label::before,
+.filter .filter-checkbox:hover + label::before {
+	outline: rem(2.5) solid $blue-alt-light;
+}
+
+// Box focus when "enhance inputs" is enabled
+.fl-input-enhanced .filter-checkbox:focus + label::before,
+.fl-input-enhanced .filter-checkbox:hover + label::before {
+	border: rem(2.5) solid $blue-alt-light;
+	outline: rem(3.5) double $blue-alt-light;
+}
+
+// Box checked and focus/hover
+.filter .filter-checkbox:checked:focus + label::before,
+.filter .filter-checkbox:checked:hover + label::before {
+	outline: rem(3) double $blue-alt-light;
+}
+
+// Box checked and focus/hover
+.fl-input-enhanced .filter-checkbox:checked:focus + label::before,
+.fl-input-enhanced .filter-checkbox:checked:hover + label::before {
+	border: rem(1) solid white;
+	box-shadow: 0 0 0 rem(1) $blue-alt-light inset;
+	outline: rem(3) double $blue-alt-light;
 }
 
 @media screen and (min-width: 1024px) {

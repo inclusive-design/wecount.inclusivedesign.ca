@@ -98,13 +98,6 @@
 	}
 }
 
-// Custom styles when "enhance inputs" is enabled
-.fl-input-enhanced {
-	.filter-checkbox + label::before {
-		outline: 3px double $blue-alt-light;
-	}
-}
-
 // To adapt to UIO contrast themes
 @each $theme, $fColor, $bColor in $UIOThemes {
 	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {

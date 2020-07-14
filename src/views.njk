@@ -12,8 +12,11 @@ pagination:
     <symbol id="placeholder" viewBox="-4 -4 224 224">
       {% include 'svg/placeholder.svg' %}
     </symbol>
-    <symbol id="expand" viewBox="0 0 28 16">
-  		{% include 'svg/expand.svg' %}
+    <symbol id="arrowup" viewBox="0 0 39 23">
+      {% include 'svg/arrowup.svg' %}
+    </symbol>
+    <symbol id="arrowdown" viewBox="0 0 39 24">
+  		{% include 'svg/arrowdown.svg' %}
   	</symbol>
   	<symbol id="apply" viewBox="0 0 26 26" fill="none">
   		{% include 'svg/apply.svg' %}
@@ -27,7 +30,7 @@ pagination:
     <h1>Views</h1>
 
     <form method="get" action="/views/">
-      {% set placeholderForSearch = "Search posts..." %}
+      {% set placeholderForSearch = "Search views..." %}
       {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
       {% include 'components/search-container.njk' %}
 
@@ -57,7 +60,7 @@ pagination:
       {# Search #}
       <div class="search-container">
       	<svg><use xlink:href="#search" /></svg>
-    		<input type="search" name="s" :value="searchTerm" placeholder="Search posts..." aria-label="Enter keywords for a search in posts">
+    		<input type="search" name="s" :value="searchTerm" placeholder="Search views..." aria-label="Enter keywords for a search in posts">
       </div>
 
       {# Filter #}
@@ -65,7 +68,8 @@ pagination:
       	<div class="filter-header">
       		<h2>Tags Filters</h2>
       		<button type="button" class="filter-expand-button" aria-expanded="true">
-      			<svg><use xlink:href="#expand" /></svg>
+      			<svg class="arrowdown"><use xlink:href="#arrowdown" /></svg>
+      			<svg class="arrowup"><use xlink:href="#arrowup" /></svg>
       		</button>
       	</div>
 
@@ -94,7 +98,7 @@ pagination:
     <div class="applied-tags" v-if="selectedTags.length > 0">
       <p class="applied-tags-title">Applied Tags:</p>
       <div class="tags">
-        <p v-for="tag in selectedTags">{{ '{{ tag.name }}' }}</p>
+        <a v-for="tag in selectedTags" :href="'/tags/' + tag.slug + '/'">{{ '{{ tag.name }}' }}</a>
       </div>
     </div>
 
