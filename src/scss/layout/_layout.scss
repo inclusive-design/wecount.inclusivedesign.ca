@@ -44,16 +44,28 @@ article {
 		}
 	}
 
-	/*
-	WP selector's customized styles for the WeCount website
- *****************************************************************************/
+	// WP selector's customized styles for the WeCount website
 	figure {
 		display: table;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.wp-block-image {
+	.alignleft {
+		float: left;
+		margin-right: rem(25);
+		margin-top: 0;
+	}
+
+	.alignright {
+		float: right;
+		margin-left: rem(25);
+		margin-top: 0;
+	}
+
+	.wp-block-image,
+	.wp-block-audio,
+	.wp-block-embed {
 		img {
 			height: 100%;
 			max-width: 100%;
@@ -66,18 +78,6 @@ article {
 			font-style: italic;
 			padding: 1rem 0;
 			text-align: center;
-		}
-
-		.alignleft {
-			float: left;
-			margin-right: rem(25);
-			margin-top: 0;
-		}
-
-		.alignright {
-			float: right;
-			margin-left: rem(25);
-			margin-top: 0;
 		}
 	}
 }
