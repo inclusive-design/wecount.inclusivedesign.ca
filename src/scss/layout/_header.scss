@@ -3,11 +3,13 @@
 header {
 	background-color: $white;
 
-	// Styles for the search container
-	.search-container {
+	form {
 		align-items: center;
 		display: flex;
+	}
 
+	// Styles for the search container
+	.search-container {
 		svg {
 			fill: white;
 			height: rem(24);
