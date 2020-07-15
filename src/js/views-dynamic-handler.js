@@ -4,7 +4,7 @@
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
-let searchTerm = params.get("s") ? params.get("s").trim() : undefined;
+let searchTerm = params.get("s") ? params.get("s").trim() : "";
 let pageInQuery = params.get("page");
 
 // Get selected tags to filter
@@ -36,9 +36,11 @@ new Vue({
 				}
 
 				// Filter by selected tags
+				let tagsQuery = "";
 				if (selectedTags.length > 0)
 				{
 					results = filter(results, selectedTags);
+					tagsQuery = selectedTags.join("=on&") + "=on";
 				}
 
 				// Convert some post values to formats that can be displayed
@@ -48,7 +50,7 @@ new Vue({
 
 				// Paginate search results
 				if (results.length > pageSize) {
-					pagination = createPagination(results, pageSize, pageInQuery, "/views/?s=" + searchTerm + "&page=:page");
+					pagination = createPagination(results, pageSize, pageInQuery, "/views/?s=" + searchTerm + "&" + tagsQuery + "&page=:page");
 				}
 
 				vm.tags = response.data.tags.map(tag => {
