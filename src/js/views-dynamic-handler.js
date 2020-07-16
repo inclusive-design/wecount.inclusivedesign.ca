@@ -105,6 +105,7 @@ for (let i = 0; i < expandButtons.length; i++) {
 		const currentExpandedValue = expandButtons[i].getAttribute("aria-expanded");
 		const expandedState = currentExpandedValue === "true" ? "false" : "true";
 		expandButtons[i].setAttribute("aria-expanded", expandedState);
+		expandButtons[i].setAttribute("aria-label", expandedState === "true" ? "collapse" : "expand");
 
 		// Open/close the filter
 		// Find the form filter by using its relative position with the button instead of a css selector is to work around
