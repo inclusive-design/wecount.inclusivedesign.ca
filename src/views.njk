@@ -12,14 +12,33 @@ pagination:
     <symbol id="placeholder" viewBox="-4 -4 224 224">
       {% include 'svg/placeholder.svg' %}
     </symbol>
+    <symbol id="arrowup" viewBox="0 0 39 23">
+      {% include 'svg/arrowup.svg' %}
+    </symbol>
+    <symbol id="arrowdown" viewBox="0 0 39 24">
+  		{% include 'svg/arrowdown.svg' %}
+  	</symbol>
+  	<symbol id="apply" viewBox="0 0 26 26" fill="none">
+  		{% include 'svg/apply.svg' %}
+  	</symbol>
+  	<symbol id="reset" viewBox="0 0 26 26" fill="none">
+  		{% include 'svg/reset.svg' %}
+  	</symbol>
   </svg>
 
   <article class="views static-view">
-		<h1>Views</h1>
-    {% set searchAction = "/views/" %}
-    {% set placeholderForSearch = "Search posts..." %}
-    {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
-    {% include 'components/search-container.njk' %}
+    <h1>Views</h1>
+
+    <form method="get" action="/views/">
+      {% set placeholderForSearch = "Search views..." %}
+      {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
+      {% include 'components/search-container.njk' %}
+
+      {% set filterTitle = "Tags Filters" %}
+      {% set filterAction = "/views/" %}
+      {% include 'components/filter.njk' %}
+    </form>
+
 		<div class="news-grid">
 			{% for item in pagination.items %}
 			<div class="api-content">
@@ -27,6 +46,7 @@ pagination:
 			</div>
 			{% endfor %}
 		</div>
+
     {% if pagination.pages.length > 1 %}
 		  {% include 'components/pagination.njk' %}
     {% endif %}
@@ -34,14 +54,59 @@ pagination:
 
   {# For displaying dynamic search and filtering results #}
 	<article class="views dynamic-view">
-    <h1>Views{{ '{{ searchTitle }}' }}</h1>
-		<p role="status" v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
-    <div class="search-container">
-    	<svg><use xlink:href="#search" /></svg>
-    	<form method="get" action="/views/">
-    		<input name="s" type="search" placeholder="Search posts..." aria-label="Enter keywords for a search in posts" :value="searchQuery">
-    	</form>
+    <h1>Views</h1>
+
+    <form method="get" action="/views/">
+      {# Search #}
+      <div class="search-container">
+      	<svg><use xlink:href="#search" /></svg>
+    		<input type="search" name="s" :value="searchTerm" placeholder="Search views..." aria-label="Enter keywords for a search in posts">
+      </div>
+
+      {# Filter #}
+      <div class="filter">
+      	<div class="filter-header">
+      		<h2>Tags Filters</h2>
+      		<button type="button" class="filter-expand-button" aria-expanded="true">
+      			<svg class="arrowdown"><use xlink:href="#arrowdown" /></svg>
+      			<svg class="arrowup"><use xlink:href="#arrowup" /></svg>
+      		</button>
+      	</div>
+
+      	<div class="filter-body">
+      		<ul class="filter-choices">
+      			<li v-for="tag in tags">
+      				<input class="filter-checkbox" type="checkbox" v-model="tag.checked" :id="tag.slug" :name="tag.slug">
+      				<label :for="tag.slug">{{ '{{ tag.name }}' }}</label>
+      			</li>
+      		</ul>
+
+      		<div class="filter-buttons">
+      			<button class="apply-button" type="submit">
+      				<svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
+      			</button>
+      			<button class="reset-button" type="button">
+      				<svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
+      			</button>
+      		</div>
+      	</div>
+      </div>
+    </form>
+
+    <p role="status" class="search-result" v-if="searchResult">{{ '{{ searchResult }}' }}</p>
+
+    <div class="applied-tags" v-if="selectedTags.length > 0">
+      <p class="applied-tags-title">Applied Tags:</p>
+      <div class="tags">
+        <a v-for="tag in selectedTags" :href="'/tags/' + tag.slug + '/'">{{ '{{ tag.name }}' }}</a>
+      </div>
     </div>
+
+    <div class="search-term-container" v-if="searchTerm">
+      <p class="search-term-title">Search Term:</p>
+      <p class="search-term">“{{ '{{ searchTerm }}' }}”</p>
+    </div>
+
 		<div class="news-grid" v-if="resultsToDisplay.length > 0">
 		  <div v-for="item in resultsToDisplay" :key="item.id" class="api-content">
 			  {# TODO: The gride item layout below can go into a sharable vue template script

@@ -28,33 +28,34 @@
     "release:patch": "release patch"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "eleventy-plugin-sass": "^1.0.0",
     "infusion": "3.0.0-dev.20200525T134420Z.23c88e1ba.UIO-WeCount",
-    "sanitize.css": "^11.0.0"
+    "sanitize.css": "^11.0.1",
+    "uuid": "^8.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
     "@tbranyen/jsdom": "^13.0.0",
-    "autoprefixer": "^9.7.6",
+    "autoprefixer": "^9.8.4",
     "axios": "^0.19.2",
     "eleventy-plugin-error-overlay": "^0.1.2",
-    "eslint": "^6.8.0",
+    "eslint": "^7.3.1",
     "html-minifier": "^4.0.0",
     "husky": "^4.2.3",
-    "lint-staged": "^10.0.8",
-    "markdown-it": "^10.0.0",
-    "markdownlint-cli": "^0.22.0",
+    "lint-staged": "^10.2.11",
+    "markdown-it": "^11.0.0",
+    "markdownlint-cli": "^0.23.2",
     "npm-run-all": "^4.1.5",
     "release": "^6.1.0",
     "rimraf": "^3.0.2",
-    "slugify": "^1.4.0",
-    "stylelint": "^13.2.1",
+    "slugify": "^1.4.4",
+    "stylelint": "^13.6.1",
     "stylelint-config-standard-scss": "^1.1.0",
-    "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.15.0"
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
   },
   "husky": {
     "hooks": {

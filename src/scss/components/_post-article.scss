@@ -22,23 +22,8 @@
 	}
 
 	.tags {
-		display: flex;
-		flex-wrap: wrap;
+		@include tags();
+
 		margin-bottom: rem(80);
-
-		a {
-			background-color: $gold-light;
-			border-radius: rem(20);
-			box-shadow: 0 0 0 rem(1) transparent inset;
-			color: $blue-alt;
-			font-weight: $font-weight-bold;
-			margin: rem(8) rem(16) rem(8) 0;
-			padding: rem(5) rem(16);
-
-			&:focus,
-			&:hover {
-				box-shadow: 0 0 0 rem(1) $blue-alt inset;
-			}
-		}
 	}
 }

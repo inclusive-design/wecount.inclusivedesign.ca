@@ -18,7 +18,7 @@ permalink: /search/
 	</svg>
 
 	<article class="search">
-		<h1>Search results: “{{ '{{ searchQuery }}' }}”</h1>
+		<h1>Search results: “{{ '{{ searchTerm }}' }}”</h1>
 		<p role="status" v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
 		<div class="news-grid" v-if="resultsToDisplay.length > 0">
 		  <div v-for="item in resultsToDisplay" :key="item.id" class="api-content">
