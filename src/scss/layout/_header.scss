@@ -119,7 +119,7 @@ header {
 @media screen and (min-width: rem(1024)) {
 	header {
 		.search-container {
-			margin-left: rem(80);
+			margin-left: rem(64);
 
 			svg {
 				margin: rem(-40);
@@ -148,7 +148,7 @@ header {
 					justify-content: space-between;
 					margin: auto;
 					max-width: $max-width-margins;
-					padding: 0 rem(16);
+					padding: 0 rem(8);
 				}
 
 				nav.primary-nav {
@@ -165,8 +165,8 @@ header {
 					a {
 						border-bottom: none;
 						float: none;
-						margin: rem(24);
-						padding: rem(8) rem(10);
+						margin: rem(24) rem(8);
+						padding: rem(8) rem(5);
 					}
 
 					// When the user is in a section (other than the Home page), underline this particular item
