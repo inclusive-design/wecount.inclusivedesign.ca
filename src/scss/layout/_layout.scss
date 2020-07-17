@@ -45,6 +45,26 @@ article {
 	}
 
 	// WP customized styles for the WeCount website
+
+	// WP styles for vertically aligning text within Media & Text blocks
+	.is-vertically-aligned-center .wp-block-media-text__content {
+		align-items: center;
+		display: flex;
+	}
+
+	.is-vertically-aligned-bottom .wp-block-media-text__content {
+		align-items: flex-end;
+		display: flex;
+	}
+	// WP styles for horizontally aligning text within Media & Text blocks
+	.has-text-align-center {
+		text-align: center;
+	}
+
+	.has-text-align-right {
+		text-align: right;
+	}
+
 	figure {
 		display: table;
 		margin-left: auto;
@@ -67,13 +87,17 @@ article {
 	.wp-block-media-text,
 	.wp-block-group {
 		img {
-			height: 100%;
 			max-width: 100%;
 		}
 
 		audio {
 			max-width: 100%;
 		}
+	}
+
+	video {
+		max-height: rem(580);
+		width: 100%;
 	}
 
 	figcaption {
@@ -87,9 +111,7 @@ article {
 }
 
 // The folowing CSS rule ensures that video content fits within the viewport for mobile and iPad views
-.wp-block-embed__wrapper iframe,
-video {
-	height: 100%;
+.wp-block-embed__wrapper iframe {
 	width: 100%;
 }
 // Hide an element visually without hiding it from screen readers
