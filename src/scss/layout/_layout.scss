@@ -34,20 +34,6 @@ article {
 		border-bottom: rem(5) solid $gold;
 	}
 
-	.wp-block-image {
-		figure {
-			margin-left: 0;
-
-			img {
-				height: 100%;
-			}
-		}
-	}
-
-	.wp-block-image + * {
-		margin-top: rem(50);
-	}
-
 	.api-content {
 		display: block;
 
@@ -57,35 +43,112 @@ article {
 			display: table;
 		}
 	}
+
+	// WP customized styles for the WeCount website
+
+	.has-small-font-size {
+		font-size: rem(13.48);
+	}
+
+	.has-normal-font-size {
+		font-size: rem(16);
+	}
+
+	.has-large-font-size {
+		font-size: rem(20.21);
+	}
+
+	.has-larger-font-size {
+		font-size: rem(26.95);
+	}
+
+	// WP styles for vertically aligning text within Media & Text blocks
+	.is-vertically-aligned-top .wp-block-media-text__content {
+		align-self: start;
+	}
+
+	.is-vertically-aligned-center .wp-block-media-text__content {
+		align-self: center;
+	}
+
+	.is-vertically-aligned-bottom .wp-block-media-text__content {
+		align-self: end;
+	}
+
+	// WP styles for horizontally aligning text within Media & Text blocks
+	.has-text-align-left {
+		text-align: left;
+	}
+
+	.has-text-align-center {
+		text-align: center;
+	}
+
+	.has-text-align-right {
+		text-align: right;
+	}
+
+	figure {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	// The folowing CSS rule ensures video content is the width of the article element in mobile and iPad views
+	.wp-block-video,
+	.is-type-video {
+		min-width: 100%;
+	}
+
+	.wp-block-group {
+		margin-top: rem(12);
+	}
+
+	// The folowing CSS rule ensures content fits within the viewport for mobile and iPad views
+	.wp-block-image,
+	.wp-block-audio,
+	.wp-block-embed,
+	.wp-block-media-text,
+	.wp-block-group {
+		img {
+			max-width: 100%;
+		}
+
+		audio {
+			max-width: 100%;
+		}
+	}
+
+	video {
+		max-height: rem(580);
+		width: 100%;
+	}
+
+	figcaption {
+		caption-side: bottom;
+		display: table-caption;
+		font-size: rem(14);
+		font-style: italic;
+		padding: 1rem 0;
+		text-align: center;
+	}
 }
 
-/*
- * Default WP Alignment Classes
- *****************************************************************************/
-figcaption {
-	display: block;
-	font-size: rem(14);
-	font-style: italic;
-	padding: 1rem 0;
-	text-align: center;
+// The folowing CSS rule ensures that video content fits within the viewport for mobile and iPad views
+.wp-block-embed__wrapper iframe {
+	width: 100%;
 }
-
 // Hide an element visually without hiding it from screen readers
 // Reference: https://tailwindcss.com/docs/screen-readers/#app
 .screen-reader-only {
 	border-width: 0;
 	clip: rect(0, 0, 0, 0);
-	height: 1px;
-	margin: -1px;
+	height: rem(1);
+	margin: rem(-1);
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
 	white-space: nowrap;
-	width: 1px;
-}
-
-.size-large {
-	height: $img-size-medium; // need to decide and set other size variables
+	width: rem(1);
 }
 
 @media screen and (min-width: rem(1024)) {
@@ -107,35 +170,87 @@ figcaption {
 			padding: rem(1) rem(60);
 			padding-bottom: rem(62);
 
-			.wp-block-image ~ h2 {
-				margin-top: $img-size-medium;
+			// WP customized styles for the WeCount website in Desktop and iPad Pro views
+			.wp-block-video,
+			.is-type-video {
+				min-width: auto;
+			}
+
+			.alignleft {
+				float: left;
+				margin-right: rem(25);
+				margin-top: 0;
+			}
+
+			.alignright {
+				float: right;
+				margin-left: rem(25);
+				margin-top: 0;
+			}
+
+			// Styling for media and text block with media on the left
+			.wp-block-media-text {
+				display: grid;
+
+				.wp-block-media-text__content {
+					margin-left: rem(25);
+				}
+
+				img {
+					width: 100%;
+				}
+			}
+
+			// Styling for media and text block with media on the right
+			.has-media-on-the-right {
+				.wp-block-media-text__media {
+					grid-column: 2;
+					grid-row: 1;
+				}
+
+				.wp-block-media-text__content {
+					grid-column: 1;
+					grid-row: 1;
+					margin-left: 0;
+					margin-right: rem(25);
+				}
+			}
+
+			.wp-block-group {
+				display: grid;
+
+				p {
+					margin: 0 auto;
+				}
+			}
+
+			.is-type-video .wp-block-embed__wrapper iframe,
+			.wp-block-video video {
+				height: rem(326);
+				width: rem(580);
+			}
+
+			.alignleft,
+			.alignright {
+				.wp-block-embed__wrapper iframe {
+					height: 100%;
+					width: 100%;
+				}
 			}
 		}
 	}
+}
 
-	/*
- * Default WP Alignment Classes
- *****************************************************************************/
-
-	.aligncenter,
-	.alignleft,
-	.alignright {
-		display: block;
-		padding: 0;
-	}
-
-	.aligncenter {
-		float: none;
-		margin: 0.5em auto 1em;
-	}
-
-	.alignright {
-		float: right;
-		margin: 0.5em 0 1em 1em;
-	}
-
-	.alignleft {
-		float: left;
-		margin: 0.5em 1em 1em 0;
+// This media query breakpoint comes the landscape mode of the iPad Pro.
+// From here the larger size of the iframe will be implemented for aligned left or aligned right embedded media.
+@media screen and (min-width: rem(1366)) {
+	main article {
+		.alignleft,
+		.alignright {
+			.wp-block-embed__wrapper iframe {
+				height: rem(326);
+				width: rem(580);
+			}
+		}
 	}
 }
