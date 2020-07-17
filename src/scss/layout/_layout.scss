@@ -46,17 +46,40 @@ article {
 
 	// WP customized styles for the WeCount website
 
+	.has-small-font-size {
+		font-size: rem(13.48);
+	}
+
+	.has-normal-font-size {
+		font-size: rem(16);
+	}
+
+	.has-large-font-size {
+		font-size: rem(20.21);
+	}
+
+	.has-larger-font-size {
+		font-size: rem(26.95);
+	}
+
 	// WP styles for vertically aligning text within Media & Text blocks
+	.is-vertically-aligned-top .wp-block-media-text__content {
+		align-self: start;
+	}
+
 	.is-vertically-aligned-center .wp-block-media-text__content {
-		align-items: center;
-		display: flex;
+		align-self: center;
 	}
 
 	.is-vertically-aligned-bottom .wp-block-media-text__content {
-		align-items: flex-end;
-		display: flex;
+		align-self: end;
 	}
+
 	// WP styles for horizontally aligning text within Media & Text blocks
+	.has-text-align-left {
+		text-align: left;
+	}
+
 	.has-text-align-center {
 		text-align: center;
 	}
@@ -218,6 +241,8 @@ article {
 	}
 }
 
+// This media query breakpoint comes the landscape mode of the iPad Pro.
+// From here the larger size of the iframe will be implemented for aligned left or aligned right embedded media.
 @media screen and (min-width: rem(1366)) {
 	main article {
 		.alignleft,
