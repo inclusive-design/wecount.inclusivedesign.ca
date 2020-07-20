@@ -1,4 +1,4 @@
-/* global chunkArray, createPagination */
+/* global chunkArray, createPagination, getUniqueTags */
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginSass = require("eleventy-plugin-sass");
@@ -10,6 +10,7 @@ const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
 const markdownFilter = require("./src/filters/markdown.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
+const randomizeFilter = require("./src/filters/randomize.js");
 
 require("./src/js/utils.js");
 
@@ -18,24 +19,25 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.setUseGitIgnore(false);
 
 	// Add custom collections.
-	eleventyConfig.addCollection("pages", async function(collection) {
-		collection = dataFetcher.sitePages();
-		return collection;
+	eleventyConfig.addCollection("pages", async function() {
+		return dataFetcher.sitePages();
 	});
 
-	eleventyConfig.addCollection("posts", async function(collection) {
-		collection = dataFetcher.sitePosts();
-		return collection;
+	eleventyConfig.addCollection("news", async function() {
+		return dataFetcher.categorizedItems("news", 8);
 	});
 
-	eleventyConfig.addCollection("news", async function(collection) {
-		collection = dataFetcher.categorizedItems("news", 8);
-		return collection;
+	eleventyConfig.addCollection("views", async function() {
+		return dataFetcher.categorizedItems("views", 1);
 	});
 
-	eleventyConfig.addCollection("views", async function(collection) {
-		collection = dataFetcher.categorizedItems("views", 1);
-		return collection;
+	eleventyConfig.addCollection("viewsTags", async function() {
+		const viewsPromise = dataFetcher.categorizedItems("views", 1);
+		return new Promise((resolve) => {
+			viewsPromise.then(views => {
+				resolve(getUniqueTags(views));
+			});
+		});
 	});
 
 	eleventyConfig.addCollection("tags", async function() {
@@ -46,7 +48,8 @@ module.exports = function(eleventyConfig) {
 
 		tags.map(tag => {
 			const taggedPosts = posts.filter(post => {
-				return post.tags.includes(tag.title);
+				const postTagSlugs = post.tags.map(({slug}) => slug);
+				return postTagSlugs.includes(tag.slug);
 			});
 
 			if (taggedPosts.length) {
@@ -88,6 +91,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("dateFilter", dateFilter);
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
+	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
 
 	// Add transforms.
 	eleventyConfig.addTransform("htmlmin", htmlMinifyTransform);

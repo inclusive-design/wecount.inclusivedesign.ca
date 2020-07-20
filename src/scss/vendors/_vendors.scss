@@ -2,6 +2,11 @@
 
 // *** UIO ***
 
+.fl-panelBar-wideScreen {
+	margin: auto;
+	max-width: rem(1600);
+}
+
 // UIO button style by default
 #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar {
 	border-bottom: none;
