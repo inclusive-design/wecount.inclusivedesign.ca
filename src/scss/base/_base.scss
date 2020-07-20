@@ -9,24 +9,30 @@
 
 h1 {
 	color: $grey-dark;
-	font-size: rem(48);
+	font-size: rem(35);
 	font-weight: $font-weight-semibold;
 }
 
 h2 {
 	color: $grey-dark;
-	font-size: rem(48);
+	font-size: rem(24);
 	font-weight: $font-weight-medium;
 }
 
 h3,
 .h3 {
-	font-size: rem(24);
+	font-size: rem(18);
+	font-weight: $font-weight-bold;
+}
+
+h4 {
+	font-size: rem(16);
 	font-weight: $font-weight-bold;
 }
 
 p {
-	font-size: rem(16);
+	font-size: rem(14);
+	font-weight: $font-weight-normal;
 }
 
 // Links and Buttons.
@@ -114,7 +120,24 @@ button::before:not(.fl-prefsEditor-buttons) button {
 
 @media screen and (min-width: rem(1024)) {
 	h1 {
-		font-size: rem(64);
+		font-size: rem(50);
+	}
+
+	h2 {
+		font-size: rem(35);
+	}
+
+	h3,
+	.h3 {
+		font-size: rem(24);
+	}
+
+	h4 {
+		font-size: rem(18);
+	}
+
+	p {
+		font-size: rem(18);
 	}
 
 	.wp-block-file {
