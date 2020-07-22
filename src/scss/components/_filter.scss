@@ -85,7 +85,6 @@
 
 		h2 {
 			border-bottom: none;
-			font-size: rem(24);
 			line-height: rem(8);
 			padding-left: rem(8);
 		}
@@ -133,6 +132,10 @@
 
 	.apply-button,
 	.reset-button {
+		span {
+			display: inline-flex;
+		}
+
 		&:focus,
 		&:hover {
 			svg {
@@ -191,7 +194,7 @@
 	.filter {
 		.filter-header {
 			h2 {
-				font-size: rem(48);
+				font-size: rem(35);
 				padding-left: rem(16);
 			}
 
