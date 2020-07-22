@@ -22,13 +22,13 @@ aside {
 				li {
 					left: rem(-2);
 					margin: 0 0 rem(23) 0;
-					padding-left: rem(21);
-					width: rem(152);
+					padding-left: rem(20);
+					width: rem(158);
 					word-wrap: break-word;
 
 					&:active {
 						box-shadow: rem(5) 0 0 0 $green-dark inset;
-						padding-left: rem(23);
+						padding-left: rem(22);
 						position: relative;
 					}
 
@@ -47,7 +47,7 @@ aside {
 
 				li.active {
 					box-shadow: rem(5) 0 0 0 $green-dark inset;
-					padding-left: rem(23);
+					padding-left: rem(22);
 					position: relative;
 				}
 			}
