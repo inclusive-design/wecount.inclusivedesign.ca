@@ -12,18 +12,21 @@ footer {
 	margin-top: rem(30);
 	padding: rem(16) rem(32);
 
+	a {
+		color: $white;
+
+		&:hover,
+		&:focus {
+			color: $navy-light;
+		}
+	}
+
 	.netlify-notice {
 		padding-top: rem(32);
 		text-align: center;
 
 		a {
-			color: $white;
 			font-weight: $font-weight-normal;
-
-			&:hover,
-			&:focus {
-				color: $navy-light;
-			}
 		}
 	}
 
@@ -48,12 +51,10 @@ footer {
 			}
 
 			.hewlett-href {
-				color: $white;
 				font-weight: $font-weight-normal;
 			}
 
 			.funder-logo {
-				color: $white;
 				display: inline-block;
 			}
 
@@ -72,7 +73,6 @@ footer {
 			}
 
 			a {
-				color: $white;
 				font-weight: $font-weight-normal;
 
 				svg {
@@ -111,15 +111,6 @@ footer {
 			display: none;
 		}
 
-		.footer-nav,
-		.contact-info,
-		.funders {
-			.funder-logo:hover,
-			.funder-logo:focus {
-				color: $navy-light;
-			}
-		}
-
 		.social-media {
 			align-self: center;
 			padding-bottom: rem(32);
@@ -136,8 +127,6 @@ footer {
 				}
 
 				a {
-					color: $white;
-
 					svg {
 						height: rem(60);
 						stroke-width: 2px;
