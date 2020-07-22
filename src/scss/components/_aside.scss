@@ -26,6 +26,12 @@ aside {
 					width: rem(158);
 					word-wrap: break-word;
 
+					&.active {
+						box-shadow: rem(5) 0 0 0 $green-dark inset;
+						padding-left: rem(22);
+						position: relative;
+					}
+
 					a {
 						color: $navy-light;
 						font-size: rem(18) !important; // Enactors.css in infusion uses !important on this element
@@ -37,12 +43,6 @@ aside {
 							font-weight: $font-weight-bold;
 						}
 					}
-				}
-
-				li.active {
-					box-shadow: rem(5) 0 0 0 $green-dark inset;
-					padding-left: rem(22);
-					position: relative;
 				}
 			}
 		}

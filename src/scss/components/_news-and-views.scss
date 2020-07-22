@@ -221,6 +221,7 @@
 			// Apply ellipsis on the third line to the preview content.
 			// Reference: http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
 			.preview-content {
+				font-size: rem(14);
 				line-height: rem(19.2);
 				margin-bottom: rem(16);
 				margin-right: rem(-16);
@@ -291,6 +292,10 @@
 					object-fit: cover;
 					width: 100%;
 				}
+			}
+
+			.preview-content {
+				font-size: rem(18);
 			}
 		}
 

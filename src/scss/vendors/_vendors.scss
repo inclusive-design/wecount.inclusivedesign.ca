@@ -83,7 +83,7 @@
 
 		a {
 			color: $navy-light;
-			font-size: rem(18);
+			font-size: rem(14);
 			font-weight: $font-weight-semibold;
 		}
 	}
@@ -143,5 +143,9 @@
 	// UIO table of content
 	.flc-toc-tocContainer {
 		padding: rem(1) rem(60);
+
+		ul a {
+			font-size: rem(18);
+		}
 	}
 }
