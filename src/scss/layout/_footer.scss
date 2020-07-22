@@ -44,9 +44,15 @@ footer {
 		.funders {
 			p {
 				margin: 0;
+				padding-bottom: rem(2);
 			}
 
-			a {
+			.hewlett-href {
+				color: $white;
+				font-weight: $font-weight-normal;
+			}
+
+			.funder-logo {
 				color: $white;
 				display: inline-block;
 			}
@@ -108,8 +114,8 @@ footer {
 		.footer-nav,
 		.contact-info,
 		.funders {
-			a:hover,
-			a:focus {
+			.funder-logo:hover,
+			.funder-logo:focus {
 				color: $navy-light;
 			}
 		}
