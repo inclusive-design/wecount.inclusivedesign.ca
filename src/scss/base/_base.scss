@@ -30,11 +30,6 @@ h4 {
 	font-weight: $font-weight-bold;
 }
 
-p {
-	font-size: rem(14);
-	font-weight: $font-weight-normal;
-}
-
 // Links and Buttons.
 a {
 	color: $blue-alt;
@@ -133,10 +128,6 @@ button::before:not(.fl-prefsEditor-buttons) button {
 	}
 
 	h4 {
-		font-size: rem(18);
-	}
-
-	p {
 		font-size: rem(18);
 	}
 

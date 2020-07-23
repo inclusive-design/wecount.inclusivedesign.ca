@@ -19,6 +19,7 @@ body {
 
 .content-wrapper {
 	flex: 1;
+	font-size: rem(14);
 }
 
 main {
@@ -158,6 +159,7 @@ article {
 
 	.content-wrapper {
 		display: grid;
+		font-size: rem(18);
 		grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
 		grid-template-rows: auto auto;
 	}
