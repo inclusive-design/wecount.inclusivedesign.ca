@@ -63,7 +63,6 @@ header {
 						border-radius: 0;
 						box-shadow: none;
 						color: $white;
-						font-size: rem(16);
 						padding: rem(8);
 
 						svg {
@@ -128,7 +127,6 @@ header {
 			input[type="search"],
 			input[type="search"]:focus {
 				border-radius: rem(28);
-				font-size: inherit;
 				padding: rem(16) rem(48);
 				width: rem(240);
 			}
