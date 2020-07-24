@@ -61,9 +61,10 @@ footer {
 			}
 
 			.hewlett-logo {
-				height: rem(80);
+				height: rem(64);
+				margin-bottom: rem(16);
 				padding: rem(13) rem(13) 0 0;
-				width: rem(288);
+				width: rem(232);
 			}
 		}
 
@@ -215,6 +216,11 @@ footer {
 
 				svg {
 					margin-bottom: rem(16);
+				}
+
+				.hewlett-logo {
+					height: rem(80);
+					width: rem(288);
 				}
 			}
 
