@@ -32,7 +32,7 @@ h4 {
 
 // Links and Buttons.
 a {
-	color: $blue-alt;
+	color: $blue-alt-contrast;
 	font-weight: $font-weight-bold;
 	text-decoration: none;
 }
@@ -40,6 +40,7 @@ a {
 a:hover,
 a:focus {
 	background-color: $orange-focus;
+	color: $blue-alt-dark;
 }
 
 a:focus {
