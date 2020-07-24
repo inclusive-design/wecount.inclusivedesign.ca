@@ -31,7 +31,7 @@ p {
 
 // Links and Buttons.
 a {
-	color: $blue-alt;
+	color: #5879a0;
 	font-weight: $font-weight-bold;
 	text-decoration: none;
 }
@@ -39,6 +39,7 @@ a {
 a:hover,
 a:focus {
 	background-color: $orange-focus;
+	color: #4d6b8d;
 }
 
 a:focus {
