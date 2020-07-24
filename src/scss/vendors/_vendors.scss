@@ -19,21 +19,26 @@
 		border-top: none;
 		box-shadow: none;
 		box-sizing: border-box;
+		max-height: rem(50);
 		padding: rem(10) rem(20);
 
 		button {
 			color: $black;
 			font-family: "Roboto", sans-serif;
-			font-size: rem(16);
+			font-size: rem(12);
 			font-style: normal;
 			font-weight: $font-weight-normal;
 			line-height: rem(19);
-			padding: 0;
 
 			&:hover,
 			&:focus {
 				background-color: $orange-focus;
 			}
+		}
+
+		button[aria-expanded="false"] {
+			padding: 0;
+			text-align: center;
 		}
 	}
 }
@@ -42,10 +47,11 @@
 .fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 	display: inline-block;
 	height: rem(88);
+	max-height: rem(88);
 	padding: 0;
 
 	button {
-		font-size: 105% !important;
+		font-size: 95% !important;
 		padding: rem(10) 0;
 	}
 
@@ -57,7 +63,8 @@
 	}
 
 	button[aria-expanded="false"] {
-		margin-top: rem(20);
+		display: block;
+		margin: rem(23) auto 0;
 		word-spacing: -2px;
 	}
 
@@ -114,6 +121,10 @@
 
 // This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button styles on desktop and mobile.
 @media screen and (min-width: 40em) {
+	#defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons button {
+		font-size: rem(16);
+	}
+
 	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 		display: block;
 		height: auto;
