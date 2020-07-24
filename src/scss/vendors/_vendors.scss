@@ -36,7 +36,7 @@
 			}
 		}
 
-		button[aria-expanded="false"] {
+		.fl-prefsEditor-showHide[aria-expanded="false"] {
 			padding: 0;
 			text-align: center;
 		}
@@ -52,7 +52,6 @@
 
 	button {
 		font-size: 95% !important;
-		padding: rem(10) 0;
 	}
 
 	.fl-prefsEditor-reset {
@@ -65,14 +64,14 @@
 	.fl-prefsEditor-showHide[aria-expanded="false"] {
 		display: block;
 		margin: rem(23) auto 0;
+		padding: rem(10) 0;
 		word-spacing: -2px;
 	}
 
 	.fl-prefsEditor-showHide[aria-expanded="true"] {
 		border-bottom: 2px solid #ccc;
 		margin-left: rem(5);
-		padding-bottom: rem(15);
-		padding-left: rem(10);
+		padding: rem(10) 0 rem(15) rem(10);
 		width: 97%;
 	}
 }
@@ -130,6 +129,10 @@
 		height: auto;
 		padding: rem(10) rem(20);
 
+		button {
+			font-size: 125% !important;
+		}
+
 		button:not(.fl-prefsEditor-reset) {
 			margin: 0 rem(8);
 		}
@@ -139,13 +142,13 @@
 			padding-left: rem(12.8);
 		}
 
-		button[aria-expanded="true"] {
+		.fl-prefsEditor-showHide[aria-expanded="true"] {
 			border: none;
 			padding: 0 rem(3);
 			width: unset;
 		}
 
-		button[aria-expanded="false"] {
+		.fl-prefsEditor-showHide[aria-expanded="false"] {
 			margin-top: 0;
 			padding: 0 rem(3);
 		}
