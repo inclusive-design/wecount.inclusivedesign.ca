@@ -19,12 +19,13 @@
 		border-top: none;
 		box-shadow: none;
 		box-sizing: border-box;
+		max-height: rem(50);
 		padding: rem(10) rem(20);
 
 		button {
 			color: $black;
 			font-family: "Roboto", sans-serif;
-			font-size: rem(16);
+			font-size: rem(12);
 			font-style: normal;
 			font-weight: $font-weight-normal;
 			line-height: rem(19);
@@ -34,6 +35,11 @@
 				background-color: $orange-focus;
 			}
 		}
+
+		.fl-prefsEditor-showHide[aria-expanded="false"] {
+			padding: 0;
+			text-align: center;
+		}
 	}
 }
 
@@ -41,10 +47,11 @@
 .fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 	display: inline-block;
 	height: rem(88);
+	max-height: rem(88);
 	padding: 0;
 
 	button {
-		padding: rem(10) 0;
+		font-size: 95% !important;
 	}
 
 	.fl-prefsEditor-reset {
@@ -54,16 +61,17 @@
 		padding-top: rem(5);
 	}
 
-	button[aria-expanded="false"] {
-		margin-top: rem(20);
+	.fl-prefsEditor-showHide[aria-expanded="false"] {
+		display: block;
+		margin: rem(23) auto 0;
+		padding: rem(10) 0;
 		word-spacing: -2px;
 	}
 
-	button[aria-expanded="true"] {
+	.fl-prefsEditor-showHide[aria-expanded="true"] {
 		border-bottom: 2px solid #ccc;
 		margin-left: rem(5);
-		padding-bottom: rem(15);
-		padding-left: rem(10);
+		padding: rem(10) 0 rem(15) rem(10);
 		width: 97%;
 	}
 }
@@ -83,7 +91,6 @@
 
 		a {
 			color: $navy-light;
-			font-size: rem(18);
 			font-weight: $font-weight-semibold;
 		}
 	}
@@ -112,10 +119,18 @@
 
 // This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button styles on desktop and mobile.
 @media screen and (min-width: 40em) {
+	#defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons button {
+		font-size: rem(16);
+	}
+
 	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 		display: block;
 		height: auto;
 		padding: rem(10) rem(20);
+
+		button {
+			font-size: 125% !important;
+		}
 
 		button:not(.fl-prefsEditor-reset) {
 			margin: 0 rem(8);
@@ -126,13 +141,13 @@
 			padding-left: rem(12.8);
 		}
 
-		button[aria-expanded="true"] {
+		.fl-prefsEditor-showHide[aria-expanded="true"] {
 			border: none;
 			padding: 0 rem(3);
 			width: unset;
 		}
 
-		button[aria-expanded="false"] {
+		.fl-prefsEditor-showHide[aria-expanded="false"] {
 			margin-top: 0;
 			padding: 0 rem(3);
 		}
