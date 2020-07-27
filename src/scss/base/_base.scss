@@ -125,3 +125,9 @@ button::before:not(.fl-prefsEditor-buttons) button {
 		}
 	}
 }
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+	.title {
+		font-size: 2rem;
+	}
+}
