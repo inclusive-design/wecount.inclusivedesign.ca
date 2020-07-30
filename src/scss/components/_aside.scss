@@ -22,19 +22,19 @@ aside {
 				li {
 					left: rem(-2);
 					margin: 0 0 rem(23) 0;
-					padding-left: rem(23);
-					width: rem(151);
+					padding-left: rem(20);
+					width: rem(158);
 					word-wrap: break-word;
 
-					&:active {
+					&.active {
 						box-shadow: rem(5) 0 0 0 $green-dark inset;
-						padding-left: rem(25);
+						padding-left: rem(22);
 						position: relative;
 					}
 
 					a {
 						color: $navy-light;
-						font-size: rem(24) !important; // Enactors.css in infusion uses !important on this element
+						font-size: rem(18) !important; // Enactors.css in infusion uses !important on this element
 						font-weight: $font-weight-normal;
 					}
 
@@ -44,17 +44,7 @@ aside {
 						}
 					}
 				}
-
-				li.active {
-					box-shadow: rem(5) 0 0 0 $green-dark inset;
-					padding-left: rem(25);
-					position: relative;
-				}
 			}
 		}
-	}
-
-	.fl-input-enhanced #defaultContainer aside nav ul li:first-child a {
-		font-size: rem(30) !important; // Enactors.css in infusion uses !important on this element
 	}
 }

@@ -34,14 +34,13 @@ footer {
 		align-items: baseline;
 		display: flex;
 		flex-direction: column;
-		font-size: rem(16);
 		margin: auto;
 		max-width: $max-width-margins;
 
 		h2 {
 			color: $white;
 			font-size: rem(16);
-			font-weight: bold;
+			font-weight: $font-weight-bold;
 		}
 
 		.funders {
