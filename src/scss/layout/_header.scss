@@ -82,6 +82,10 @@ header {
 						background-color: $orange-focus;
 						color: $navy-light;
 					}
+
+					#menuToggleButton::after {
+						content: "Menu";
+					}
 				}
 			}
 
@@ -175,5 +179,12 @@ header {
 				}
 			}
 		}
+	}
+}
+
+// This media query breakpoint comes the width of the Galaxy Fold screen.
+@media screen and (max-width: rem(280)) {
+	header .site-nav-wrapper .site-nav .nav-smallScreen .starter-nav #menuToggleButton::after {
+		content: "";
 	}
 }
