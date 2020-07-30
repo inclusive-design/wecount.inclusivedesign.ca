@@ -34,7 +34,7 @@ pagination:
       {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
       {% include 'components/search-container.njk' %}
 
-      {% set filterTitle = "Tags Filters" %}
+      {% set filterTitle = "Search Filters" %}
       {% set filterAction = "/views/" %}
       {% include 'components/filter.njk' %}
     </form>
@@ -66,7 +66,7 @@ pagination:
       {# Filter #}
       <div class="filter">
       	<div class="filter-header">
-      		<h2>Tags Filters</h2>
+      		<h2 class="h3">Search Filters</h2>
       		<button type="button" class="filter-expand-button" aria-expanded="true" aria-label="collapse">
       			<svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
       			<svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
