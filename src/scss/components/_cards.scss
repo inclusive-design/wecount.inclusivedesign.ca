@@ -52,8 +52,7 @@
 	.homepage-cards {
 		background-color: $white;
 		grid-gap: rem(38);
-		// TODO: Make 3 columns again.
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		padding-top: 0;
 
 		a {

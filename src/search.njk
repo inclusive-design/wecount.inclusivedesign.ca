@@ -22,7 +22,7 @@ permalink: /search/
 		<p role="status" v-if="searchStatus">{{ '{{ searchStatus }}' }}</p>
 		<div class="news-grid" v-if="resultsToDisplay.length > 0">
 		  <div v-for="item in resultsToDisplay" :key="item.id" class="api-content">
-			  {# TODO: The gride item layout below can go into a sharable vue template script
+			  {# TODO: The grid item layout below can go into a sharable vue template script
 			  when https://github.com/11ty/eleventy-plugin-vue is released #}
 			  <article class="news-item">
 					<div class="preview-media-wrapper">
