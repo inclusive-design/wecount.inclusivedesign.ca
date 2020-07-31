@@ -108,6 +108,13 @@
 
 		li {
 			padding: rem(4) rem(8);
+
+			// Hanging indent for label texts
+			label {
+				display: block;
+				padding-left: rem(29);
+				text-indent: rem(-30);
+			}
 		}
 	}
 
