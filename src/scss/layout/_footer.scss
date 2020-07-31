@@ -49,8 +49,12 @@ footer {
 				padding-bottom: rem(2);
 			}
 
-			.funder-logo {
-				display: inline-block;
+			div {
+				text-align: center;
+
+				.funder-logo {
+					display: inline-block;
+				}
 			}
 
 			.canada-logo {
@@ -212,6 +216,10 @@ footer {
 				align-self: end;
 				grid-column: 2/3;
 				grid-row: 2/3;
+
+				div {
+					text-align: start;
+				}
 
 				svg {
 					margin-bottom: rem(16);
