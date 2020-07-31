@@ -82,6 +82,10 @@ header {
 						background-color: $orange-focus;
 						color: $navy-light;
 					}
+
+					#menuToggleButton .screen-reader-only {
+						display: none;
+					}
 				}
 			}
 
@@ -183,6 +187,10 @@ header {
 	header .site-nav-wrapper .site-nav .nav-smallScreen .starter-nav #menuToggleButton {
 		span {
 			display: none;
+		}
+
+		.screen-reader-only {
+			display: inline;
 		}
 	}
 }
