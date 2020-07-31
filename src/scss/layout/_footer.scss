@@ -121,15 +121,32 @@ footer {
 			align-self: center;
 			padding-bottom: rem(32);
 
+			h2 {
+				text-align: center;
+			}
+
 			.social-media-icons {
 				display: grid;
 				grid-row-gap: rem(16);
-				grid-template-columns: repeat(2, auto);
+				grid-template-columns: repeat(5, auto);
 				margin: auto;
-				width: rem(144);
 
 				div {
-					justify-self: center;
+					&:nth-child(2) {
+						grid-column-start: 3;
+					}
+
+					&:nth-child(3) {
+						grid-column-start: 5;
+					}
+
+					&:nth-child(4) {
+						grid-column-start: 2;
+					}
+
+					&:nth-child(5) {
+						grid-column-start: 4;
+					}
 				}
 
 				a {
@@ -257,11 +274,33 @@ footer {
 			.social-media {
 				align-self: auto;
 
+				h2 {
+					text-align: start;
+				}
+
 				.social-media-icons {
 					grid-gap: rem(16);
-					grid-template-columns: repeat(4, auto);
+					grid-template-columns: repeat(5, auto);
 					margin: inherit;
 					width: rem(96);
+
+					div {
+						&:nth-child(2) {
+							grid-column-start: 2;
+						}
+
+						&:nth-child(3) {
+							grid-column-start: 3;
+						}
+
+						&:nth-child(4) {
+							grid-column-start: 4;
+						}
+
+						&:nth-child(5) {
+							grid-column-start: 5;
+						}
+					}
 
 					a svg {
 						height: rem(50);
