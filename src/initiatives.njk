@@ -1,0 +1,30 @@
+---
+title: Initiatives
+permalink: /initiatives/
+---
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+	<article class="initiatives">
+		<h1>Initiatives</h1>
+    <p>We Count has a lot of things on the go. You can learn and co-create with us. Here are some of our upcoming and recent activities.</p>
+		<div>
+			{% for workshop in collections.workshops %}
+			<div class="api-content">
+			{% include 'components/workshop.njk' %}
+			</div>
+			{% endfor %}
+		</div>
+	</article>
+{% endblock %}
+
+{% block footerScripts %}
+<script src="/js/content-header-observer.js"></script>
+<script>
+	// Track all h1 and h2 in content for the About and Inclusion Challenges page.
+document.querySelectorAll("main article.page h1, main article.page h2, header").forEach((section) => {
+	const contentHeaderObserver = getSideMenuObserver();
+	contentHeaderObserver.observe(section);
+});
+</script>
+{% endblock %}

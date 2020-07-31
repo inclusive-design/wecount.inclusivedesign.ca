@@ -1,5 +1,6 @@
 /* global processPosts */
 
+// Communicate with WordPress APIs to access data
 const axios = require("axios");
 const env = require("../_data/env");
 
