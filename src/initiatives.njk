@@ -22,7 +22,7 @@ permalink: /initiatives/
 <script src="/js/content-header-observer.js"></script>
 <script>
 	// Track all h1 and h2 in content for the About and Inclusion Challenges page.
-document.querySelectorAll("main article.page h1, main article.page h2, header").forEach((section) => {
+document.querySelectorAll("main article.initiatives h1, main article.initiatives h2, header").forEach((section) => {
 	const contentHeaderObserver = getSideMenuObserver();
 	contentHeaderObserver.observe(section);
 });

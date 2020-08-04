@@ -1,6 +1,9 @@
 // Communicate with Airtable APIs to access data
 const ApiKey = process.env.AIRTABLE_API_KEY;
 const airtable = require("airtable");
+var md = require("markdown-it")({
+	breaks: true
+});
 
 airtable.configure({
 	apiKey: ApiKey
@@ -20,14 +23,18 @@ module.exports = {
 			}).eachPage(function page(records, fetchNextPage) {
 				records.forEach(record => {
 					let image = record.get("image");
+					let title = record.get("title");
+					let shortDescription = record.get("short_description");
+					let fullDescription = record.get("full_description");
+
 					workshops.push({
 						id: record.getId(),
-						title: record.get("title"),
+						title: title ? md.render(title) : undefined,
 						date: record.get("date"),
-						shortDescription: record.get("shortDescription"),
-						fullDescription: record.get("fullDescription"),
+						shortDescription: shortDescription ? md.render(shortDescription) : undefined,
+						fullDescription: fullDescription ? md.render(fullDescription) : undefined,
 						imageUrl: image ? image[0].url : undefined,
-						altTag: record.get("altTag")
+						imageAlt: record.get("image_alt")
 					});
 				});
 				fetchNextPage();

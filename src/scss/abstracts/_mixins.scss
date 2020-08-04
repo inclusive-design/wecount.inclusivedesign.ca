@@ -164,6 +164,16 @@
 		}
 	}
 
+	// The Initiatives page
+	.initiatives {
+		a:focus,
+		a:hover {
+			img {
+				box-shadow: rem(-10) rem(10) rem(10) currentColor;
+			}
+		}
+	}
+
 	// Focus/hover styles for SVGs on the footer
 	footer .footer-content {
 		// Logos on the footer
