@@ -1,4 +1,4 @@
-name: Test and build
+name: Test
 
 on: [push, pull_request]
 
@@ -12,10 +12,9 @@ jobs:
       with:
         path: node_modules
         key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
-    - name: npm install, build, and test
+    - name: npm lint and install
       run: |
+        npm run lint
         npm ci
-        npm test
-        npm run build
       env:
         CI: true
