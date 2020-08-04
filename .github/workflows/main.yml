@@ -12,9 +12,9 @@ jobs:
       with:
         path: node_modules
         key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
-    - name: npm lint and install
+    - name: npm install and lint
       run: |
-        npm run lint
         npm ci
+        npm run lint
       env:
         CI: true
