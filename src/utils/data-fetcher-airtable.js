@@ -1,12 +1,11 @@
 // Communicate with Airtable APIs to access data
-const ApiKey = process.env.AIRTABLE_API_KEY;
 const airtable = require("airtable");
 var md = require("markdown-it")({
 	breaks: true
 });
 
 airtable.configure({
-	apiKey: ApiKey
+	apiKey: process.env.AIRTABLE_API_KEY
 });
 
 var base = airtable.base("appalfcvZ68ydXxx5");
