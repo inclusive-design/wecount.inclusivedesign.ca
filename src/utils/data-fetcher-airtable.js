@@ -4,6 +4,7 @@ var md = require("markdown-it")({
 	breaks: true
 });
 
+console.log("process.env: ", process.env);
 airtable.configure({
 	apiKey: process.env.AIRTABLE_API_KEY
 });
