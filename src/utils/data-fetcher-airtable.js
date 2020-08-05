@@ -1,4 +1,5 @@
 // Communicate with Airtable APIs to access data
+const env = require("../_data/env");
 const airtable = require("airtable");
 var md = require("markdown-it")({
 	breaks: true
@@ -8,7 +9,7 @@ airtable.configure({
 	apiKey: process.env.AIRTABLE_API_KEY
 });
 
-var base = airtable.base("appalfcvZ68ydXxx5");
+var base = airtable.base(env.airtableBase);
 
 // Share data fetch functions
 module.exports = {
