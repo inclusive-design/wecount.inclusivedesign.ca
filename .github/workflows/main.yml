@@ -15,8 +15,6 @@ jobs:
     - name: npm install and lint
       env:
         CI: true
-        AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
       run: |
         npm ci
         npm run lint
-        npm run build "$AIRTABLE_API_KEY" "$CI"

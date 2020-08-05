@@ -8,7 +8,6 @@ airtable.configure({
 	apiKey: process.env.AIRTABLE_API_KEY
 });
 
-console.log("process.env: ", process.env);
 var base = airtable.base("appalfcvZ68ydXxx5");
 
 // Share data fetch functions
