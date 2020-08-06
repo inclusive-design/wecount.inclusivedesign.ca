@@ -3,12 +3,6 @@
   publish = "dist"
   functions = "functions"
 
-[dev]
-  command = "npm run start"
-  targetPort = 3000
-  publish = "dist"
-  autoLaunch = true
-
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
