@@ -1,0 +1,16 @@
+.initiatives {
+	.workshop {
+		padding: 0;
+
+		a:focus,
+		a:hover {
+			img {
+				box-shadow: rem(-10) rem(10) rem(10) rgba(0, 0, 0, 0.25);
+			}
+		}
+
+		.workshop-image {
+			max-width: 100%;
+		}
+	}
+}
