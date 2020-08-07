@@ -5,7 +5,19 @@
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/inclusive-design/wecount.inclusivedesign.ca/Test%20and%20build?label=github&style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/actions)
 [![Netlify Status](https://img.shields.io/netlify/d63b3d00-fd5f-47d7-8e43-d09bf4e8eb4f?style=flat-square)](https://app.netlify.com/sites/wecount/deploys)
 
-The source files for the We Count website, built with [Eleventy](https://11ty.dev/).
+The source code for the We Count website.
+
+The front end of the website is built with [Eleventy](https://11ty.dev/).
+
+The website uses 2 backend APIs:
+
+- WordPress API where WeCount team members create news, views and some site pages;
+  - The production WordPress site: [https://wecount-cms.inclusivedesign.ca/](https://wecount-cms.inclusivedesign.ca/)
+  - The development WordPress site: [https://wecount-dev.inclusivedesign.ca/](https://wecount-dev.inclusivedesign.ca/)
+- [Airtable API](https://airtable.com/api) that serves workshop information, user comments for workshops, AI resources and
+tools data.
+  - The production table: WeCount
+  - The development table: WeCount_DEV
 
 ## Getting Started
 
@@ -33,8 +45,12 @@ To run the website in local development mode that supports a live reload at file
 command line:
 
 ```bash
+# For security concerns, WECOUNT_API_KEY is only available for the WeCount team members
+export AIRTABLE_API_KEY=WECOUNT_API_KEY
 npm run start
 ```
+
+The website will be available at [http://localhost:3000](http://localhost:3000).
 
 ## How to Test
 
@@ -56,8 +72,13 @@ We use the following lint configurations:
 To build a static version of the website, enter the following in your command line:
 
 ```bash
+# For security concerns, WECOUNT_API_KEY is only available for the WeCount team members
+export AIRTABLE_API_KEY=WECOUNT_API_KEY
 npm run build
+npx serve dist
 ```
+
+The website will be available at [http://localhost:5000](http://localhost:5000)
 
 ## How to Deploy
 
