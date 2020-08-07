@@ -9,9 +9,9 @@ module.exports = function(value, outputPath) {
 		});
 
 		const document = DOM.window.document;
-		const articleHeadings = [
-			...document.querySelectorAll("main article.post-article h1, main article.page h1, main article.post-article h2, main article.page h2")
-		];
+		const articleHeadings = [...document.querySelectorAll(
+			"main article.post-article h1, main article.post-article h2, main article.page h1, main article.page h2, main article.initiatives h1, main article.initiatives h2"
+		)];
 
 		if (articleHeadings.length) {
 			const toc = document.querySelector("aside#toc");
