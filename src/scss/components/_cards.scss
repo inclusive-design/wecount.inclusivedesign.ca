@@ -17,19 +17,17 @@
 
 	.blue {
 		background-image: url("../images/distribution--blue.svg");
-		background-position-x: rem(-80);
-		background-size: 120% 162%;
+		background-position: 95% 100%;
 	}
 
 	.green {
 		background-image: url("../images/distribution--green.svg");
-		background-position: rem(-100) rem(10);
-		background-size: 100% 100%;
+		background-position: 85% 80%;
 	}
 
 	.yellow {
 		background-image: url("../images/distribution--yellow.svg");
-		background-size: 200% 101%;
+		background-position: 85% 80%;
 	}
 
 	a {
@@ -52,8 +50,7 @@
 	.homepage-cards {
 		background-color: $white;
 		grid-gap: rem(38);
-		// TODO: Make 3 columns again.
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		padding-top: 0;
 
 		a {
