@@ -25,3 +25,6 @@ document.addEventListener("click", (event) => {
 document.querySelector(".site-nav .nav-smallScreen .search-container svg").addEventListener("click", () => {
 	document.querySelector(".site-nav .nav-smallScreen .search-container input").focus();
 });
+
+var h1 = document.getElementById("project-we-count-evaluates-toronto's-quayside-master-innovation-and-development-plan");
+h1.innerHTML = "Project We Count evaluates Toronto’s Quayside Master Innovation and Developm&shy;ent Plan";
