@@ -23,21 +23,20 @@ airtable.configure({
 
 const base = airtable.base(env.airtableBase);
 
-const sendEmail = () => {
-// const sendEmail = ({ timestamp, name, comment }) => {
+const sendEmail = ({ timestamp, name, comment }) => {
 	var transporter = nodemailer.createTransport({
 		service: "gmail",
 		auth: {
-			user: "wecount.info@gmail.com",
-			pass: "ilpbxrvongwclvdd"
+			user: process.env.EMAIL_FROM,
+			pass: process.env.EMAIL_FROM_PWD
 		}
 	});
 
 	var mailOptions = {
-		from: "wecount.info@gmail.com",
-		to: "cli@ocadu.ca",
+		from: process.env.EMAIL_FROM,
+		to: process.env.EMAIL_TO,
 		subject: "A new comment is posted on the WeCount website",
-		text: "Sent!"
+		text: "Below is the content of the new comment:\r\n\r\nPost Date: " + timestamp + "\r\nAuthor: " + name + "\r\nComment: " + comment + "\r\n\r\nWeCount Team"
 	};
 
 	return new Promise((resolve, reject) => {
@@ -108,5 +107,4 @@ exports.handler = async function(event, context, callback) {
 			body: "Saved successfully!"
 		});
 	}
-
 };

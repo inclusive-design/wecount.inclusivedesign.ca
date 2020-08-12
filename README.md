@@ -41,18 +41,52 @@ npm ci
 
 ## How to Run
 
-To run the website in local development mode that supports a live reload at file changes, enter the following in your
-command line:
+The website uses [Netlify Functions](https://functions.netlify.com/) to provide a server side endpoint that supports
+the save of user comments for workshops on the "Initiatives" page. To run the website in local development mode that
+supports a live reload at file changes, there are two ways to test the website with and without Netlify Functions.
+The latter is easier than the former:
+
+### Test the website with Netlify Functions
+
+1. Follow [Netlify instructions](https://docs.netlify.com/functions/build-with-javascript/#tools) to install tools for testing
+and deploying Netlify functions locally;
+2. After the tool set up, using Netlify Dev as an example, run following commands:
 
 ```bash
-# For security concerns, WECOUNT_API_KEY is only available for the WeCount team members
+# Due to security concerns, these environment variables are only available to WeCount team members
+export AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
+export EMAIL_FROM=EMAIL_TO_VALUE
+export EMAIL_FROM_PWD=EMAIL_FROM_PWD_VALUE
+export EMAIL_TO=EMAIL_TO_VALUE
+netlify dev
+```
+
+Look for this box in your console output:
+
+```bash
+   ┌──────────────────────────────────────────────────┐
+   │                                                  │
+   │   * Server now ready on http://localhost:64939   │
+   │                                                  │
+   └──────────────────────────────────────────────────┘
+```
+
+The website will be available at [http://localhost:3000](http://localhost:64939).
+
+### Test the website without Netlify Functions
+
+Note that the website launched via this testing method cannot save user comments to Airtable due to the absence of the
+server side save function.
+
+```bash
+# Due to security concerns, these environment variables are only available to WeCount team members
 export AIRTABLE_API_KEY=WECOUNT_API_KEY
 npm run start
 ```
 
 The website will be available at [http://localhost:3000](http://localhost:3000).
 
-## How to Test
+## How to Lint
 
 To lint JavaScript, CSS and Markdown files in the project (including JavaScript and CSS in Vue components),
 enter the following in the command line:
@@ -69,10 +103,13 @@ We use the following lint configurations:
 
 ## How to Build
 
+Note that the website launched via this build method cannot save user comments to Airtable due to the absence of the
+server side save function.
+
 To build a static version of the website, enter the following in your command line:
 
 ```bash
-# For security concerns, WECOUNT_API_KEY is only available for the WeCount team members
+# Due to security concerns, these environment variables are only available to WeCount team members
 export AIRTABLE_API_KEY=WECOUNT_API_KEY
 npm run build
 npx serve dist
