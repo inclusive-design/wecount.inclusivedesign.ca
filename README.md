@@ -73,7 +73,7 @@ This website can also be served with [Docker](https://docs.docker.com/get-docker
 
 Once you have Docker installed, run the following commands to build a Docker image and start a container:
 
-- Build the image: `docker build -t wecount .`
+- Build the image: `docker build -t wecount`
 - Run the container: `docker run --name wecount -p 8000:80 wecount`
 
 The website will be available at [http://localhost:8000](http://localhost:8000)
