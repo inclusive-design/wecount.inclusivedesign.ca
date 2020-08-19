@@ -88,21 +88,6 @@ This repository is connected to [Netlify](https://netlify.com), and commits will
 - Branch `dev`: [https://dev--wecount.netlify.app](https://dev--wecount.netlify.app)
 - Branch `master`: [https://wecount.inclusivedesign.ca](https://wecount.inclusivedesign.ca)
 
-## How to Deploy using Docker
-
-This website can also be served with [Docker](https://docs.docker.com/get-docker/) container.
-
-Once you have Docker installed, run the following commands to build a Docker image and start a container:
-
-- Build the image: `docker build -t wecount .`
-- Run the container: `docker run --name wecount -p 8000:80 wecount`
-
-The website will be available at [http://localhost:8000](http://localhost:8000)
-
-- To stop and remove the container: `docker rm -f wecount`
-
-If you make changes to the code, repeat the steps to build the image and start a new container.
-
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
