@@ -45,6 +45,7 @@ const sendEmail = ({ timestamp, name, comment }) => {
 				console.error(error);
 				return reject(error);
 			} else {
+        console.log("Email sent from: " + process.env.EMAIL_FROM);
         console.log("Email sent to: " + process.env.EMAIL_TO);
 				console.log("Email sent: " + info.response);
 				resolve();
