@@ -199,7 +199,7 @@
 	outline: rem(3) double $blue-alt-light;
 }
 
-@media screen and (min-width: 1024px) {
+@include breakpoint-up(lg) {
 	.filter {
 		.filter-header {
 			h2 {

@@ -11,3 +11,7 @@
 
 	@return $pixels / $context * 1rem;
 }
+
+@function breakpoint-value($name, $breakpoints: $breakpoints) {
+	@return map-get($breakpoints, $name);
+}

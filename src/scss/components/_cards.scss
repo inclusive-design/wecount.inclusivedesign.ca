@@ -46,7 +46,7 @@
 	}
 }
 
-@media screen and (min-width: rem(1024)) {
+@include breakpoint-up(lg) {
 	.homepage-cards {
 		background-color: $white;
 		grid-gap: rem(38);
