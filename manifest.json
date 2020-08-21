@@ -1,0 +1,20 @@
+{
+  "name": "We Count",
+  "short_name": "WeCount",
+  "description": "Removing bias and exclusion in the data economy.",
+  "theme_color": "#162439",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [{
+    "src": "/images/logo-192.png",
+    "type": "image/png",
+    "sizes": "192x192",
+    "purpose": "any maskable"
+  }, {
+    "src": "/images/logo-512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }]
+}
