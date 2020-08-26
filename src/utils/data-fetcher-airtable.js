@@ -9,7 +9,7 @@ airtable.configure({
 	apiKey: process.env.AIRTABLE_API_KEY
 });
 
-var base = airtable.base(env.airtableBase);
+const base = airtable.base(env.airtableBase);
 
 // Share data fetch functions
 module.exports = {
