@@ -17,6 +17,7 @@ form.addEventListener("submit", (event) => {
 
 		// Define what happens on successful data submission
 		XHR.addEventListener( "load", function() {
+			console.log( event.target.responseText );
 			setSubmittedComment();
 		} );
 
@@ -26,12 +27,16 @@ form.addEventListener("submit", (event) => {
 		} );
 
 		// Set up our request
-		console.log(window.location.origin);
+		console.log("ADDRESS ORIGIN:", window.location.origin);
 		XHR.open( "POST", window.location.origin + "/api/comments" );
 
 		// The data sent is what the user provided in the form
 		console.log(FD);
 		XHR.send( FD );
+
+		for(var pair of FD.entries()) {
+			console.log(pair[0]+ ", "+ pair[1]);
+		}
 
 
 	}
@@ -40,10 +45,15 @@ form.addEventListener("submit", (event) => {
 function setRequiredMessage(input){
 
 	if (input.value.trim() === "") {
+
+		const submittedCommentMessage = document.querySelector(".submitted-comment-message");
+		submittedCommentMessage.setAttribute("style", "display: none;");
+
 		// show required message
 		const formControl = input.parentElement;
 		const requiredMessage = formControl.querySelector(".required");
 		requiredMessage.setAttribute("style", "display: inline;");
+
 
 		return false;
 

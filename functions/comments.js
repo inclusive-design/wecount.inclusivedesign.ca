@@ -88,7 +88,7 @@ exports.handler = async function(event, context, callback) {
 	if (event.httpMethod !== "POST" || !incomingData["name"] || !incomingData["comment"] || !incomingData["workshopId"]) {
 		callback(null, {
 			statusCode: 400,
-			body: "Invalid HTTP request method or missing field values."
+			body: `Invalid HTTP request method or missing field values.  ${event.httpMethod} ${incomingData["name"]} ${incomingData["comment"]} ${incomingData["workshopId"]}`
 		});
 	} else {
 		const timestamp = new Date().toISOString();
