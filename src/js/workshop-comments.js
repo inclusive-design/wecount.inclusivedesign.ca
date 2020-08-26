@@ -15,9 +15,10 @@ form.addEventListener("submit", (event) => {
 		// Bind the FormData object and the form element
 		const FD = new FormData( form );
 
+		console.log( event.target.responseText );
+
 		// Define what happens on successful data submission
 		XHR.addEventListener( "load", function() {
-			console.log( event.target.responseText );
 			setSubmittedComment();
 		} );
 
@@ -37,6 +38,9 @@ form.addEventListener("submit", (event) => {
 		for(var pair of FD.entries()) {
 			console.log(pair[0]+ ", "+ pair[1]);
 		}
+
+		XHR.send( FD );
+		console.log(FD);
 
 
 	}
