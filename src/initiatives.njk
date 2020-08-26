@@ -1,6 +1,9 @@
 ---
 title: Initiatives
-permalink: /initiatives/
+permalink: /initiatives/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
+pagination:
+  data: collections.workshops
+  size: 10
 ---
 {% extends 'layouts/base.njk' %}
 
@@ -11,7 +14,7 @@ permalink: /initiatives/
 		<div>
 			{% for workshop in collections.workshops %}
 			<div class="api-content">
-			{% include 'components/workshop.njk' %}
+				{% include 'components/workshop.njk' %}
 			</div>
 			{% endfor %}
 		</div>

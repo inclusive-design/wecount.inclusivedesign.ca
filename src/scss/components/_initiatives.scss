@@ -1,6 +1,186 @@
+.workshop-image {
+	max-width: 100%;
+}
+
+.comments {
+	margin-top: rem(50);
+
+	p:first-child {
+		color: $grey-light;
+	}
+
+	.comment-name {
+		color: $black;
+		font-weight: $font-weight-medium;
+	}
+
+	.submitted-comment {
+		color: $grey-light;
+		display: none;
+
+		.comment-name {
+			color: $grey-light;
+		}
+	}
+
+	.comment {
+		margin-bottom: rem(60);
+		padding-bottom: rem(1);
+	}
+}
+
+.submitted-comment-message {
+	display: none;
+	margin: auto auto;
+	text-align: center;
+
+	span {
+		background: $gold-light;
+		border-radius: rem(3);
+		display: block;
+		padding: rem(12);
+	}
+}
+
+.input-comment {
+	margin-bottom: rem(100);
+
+	.asterisk-def {
+		color: $grey-light;
+		display: inline;
+		font-size: rem(20);
+	}
+
+	.form-control {
+		margin-bottom: rem(40);
+
+		.required {
+			display: none;
+
+			&:invalid {
+				display: block;
+			}
+		}
+
+		&:required {
+			border: red solid;
+		}
+	}
+
+	input[name="name"] {
+		height: rem(45);
+		width: 100%;
+	}
+
+	textarea {
+		height: rem(138);
+		width: 100%;
+	}
+
+	input,
+	textarea {
+		border: rem(1) solid $green-dark;
+		border-radius: rem(12);
+		display: block;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	span {
+		color: $red;
+		font-size: rem(20);
+		font-style: italic;
+		font-weight: $font-weight-bold;
+		margin-right: rem(7);
+	}
+
+	h3 {
+		font-size: rem(24);
+		margin-bottom: 0;
+	}
+
+	h4 {
+		display: inline;
+		font-size: rem(20);
+		font-weight: $font-weight-medium;
+		margin-right: rem(20);
+	}
+
+	button {
+		background-color: $white;
+		border: 0;
+		border-radius: rem(33);
+		box-shadow: 0 0 0 rem(1) $green-dark inset;
+		box-sizing: border-box;
+		color: $green-dark;
+		float: right;
+		font-size: rem(16);
+		font-weight: $font-weight-semibold;
+		height: rem(41);
+		line-height: rem(19);
+		margin: rem(29) 0;
+		padding: rem(8) rem(34);
+		transform: perspective(rem(1)) translateZ(0);
+		width: 100%;
+	}
+
+	button::before {
+		border-radius: rem(26);
+		box-shadow: 0 0 0 rem(1) $green-dark inset;
+		content: '';
+		height: rem(41);
+		left: 0;
+		opacity: 1;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	button:hover::before,
+	button:focus::before,
+	button:active::before {
+		left: rem(4);
+		top: rem(4);
+	}
+
+	button::-moz-focus-inner {
+		outline: none;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	button:-moz-focusring {
+		color: transparent;
+		text-shadow: 0 0 0 $green-dark;
+	}
+}
+
+.workshop-page .description {
+	margin-bottom: rem(100);
+
+	h3 {
+		border-bottom: rem(5) solid $gold;
+		line-height: rem(60);
+	}
+
+	p:first-child {
+		border-bottom: rem(5) solid $gold;
+		font-size: rem(24);
+		line-height: rem(60);
+	}
+}
+
 .initiatives {
 	.workshop {
 		padding: 0;
+
+		.description p:first-child {
+			font-size: rem(24);
+		}
 
 		a:focus,
 		a:hover {
@@ -8,9 +188,29 @@
 				box-shadow: rem(-10) rem(10) rem(10) rgba(0, 0, 0, 0.25);
 			}
 		}
+	}
+}
 
-		.workshop-image {
-			max-width: 100%;
+@media screen and (min-width: rem(1024)) {
+	.input-comment button {
+		width: auto;
+	}
+}
+
+// This media query breakpoint comes the width of the Galaxy Fold screen.
+@media screen and (min-width: 40em) {
+	.input-comment input[name="name"] {
+		width: rem(263);
+	}
+}
+
+// This media query breakpoint comes the width of the Galaxy Fold screen.
+@media screen and (max-width: rem(280)) {
+	.input-comment button {
+		height: rem(54);
+
+		&::before {
+			height: rem(54);
 		}
 	}
 }
