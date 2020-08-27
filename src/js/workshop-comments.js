@@ -39,6 +39,9 @@ form.addEventListener("submit", (event) => {
 		console.log(FD);
 		const jsonFormData = JSON.stringify(Object.fromEntries(FD));
 		console.log(jsonFormData);
+
+		XHR.setRequestHeader("Content-Type", "application/json");
+
 		XHR.send(jsonFormData);
 
 		for(var pair of FD.entries()) {
