@@ -1,21 +1,25 @@
+console.log("Is this working???????");
+
 const form = document.getElementById("comment-form");
 
 const name = document.getElementById("name");
 const comment = document.getElementById("comment");
-console.log("Is this working???????");
 
 form.addEventListener("submit", (event) => {
 	console.log("HELLLLLLP");
 	event.preventDefault();
 
+	const name = document.getElementById("name");
+	const comment = document.getElementById("comment");
 	if (setRequiredMessage(name) & setRequiredMessage(comment)) {
 
 		const XHR = new XMLHttpRequest();
 
 		// Bind the FormData object and the form element
+		const form = document.getElementById("comment-form");
 		const FD = new FormData( form );
 
-		console.log( event.target.responseText );
+		console.log( event.target );
 
 		// Define what happens on successful data submission
 		XHR.addEventListener( "load", function() {
@@ -38,11 +42,6 @@ form.addEventListener("submit", (event) => {
 		for(var pair of FD.entries()) {
 			console.log(pair[0]+ ", "+ pair[1]);
 		}
-
-		XHR.send( FD );
-		console.log(FD);
-
-
 	}
 });
 
@@ -57,7 +56,6 @@ function setRequiredMessage(input){
 		const formControl = input.parentElement;
 		const requiredMessage = formControl.querySelector(".required");
 		requiredMessage.setAttribute("style", "display: inline;");
-
 
 		return false;
 
@@ -84,6 +82,13 @@ function setSubmittedComment() {
 
 	submittedCommentName.innerText = name.value.trim();
 	submittedCommentComment.innerText = comment.value.trim();
+
+	const postedCommentHTML = `<article class="comment submitted-comment">
+																<p><span class="comment-name">${ submittedCommentName.innerText }</span> | <span class="comment-date">${submittedCommentDate.innerText}</span></p>
+																<p class="comment-comment">${submittedCommentComment.innerText}</p>
+															</article>`;
+
+	document.getElementsByClassName("comments").innerHTML += postedCommentHTML;
 
 
 	const submittedCommentMessage = document.querySelector(".submitted-comment-message");
