@@ -42,10 +42,6 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 		</div>
 
 		<div class="comments">
-				<article class="comment submitted-comment">
-					<p><span class="comment-name"></span> | <span class="comment-date"></span></p>
-					<p class="comment-comment"></p>
-				</article>
 			{% for comment in workshopItem.comments %}
 				{% include 'components/comment.njk' %}
 			{% endfor %}

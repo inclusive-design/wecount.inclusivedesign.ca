@@ -81,8 +81,6 @@ const saveComment = async ({ timestamp, name, comment, workshopId }) => {
 
 exports.handler = async function(event, context, callback) {
 	const incomingData = qs.parse(event.body);
-	console.log(event);
-	console.log(incomingData);
 
 	// Reject the request when:
 	// 1. Not a POST request;
@@ -90,7 +88,7 @@ exports.handler = async function(event, context, callback) {
 	if (event.httpMethod !== "POST" || !incomingData["name"] || !incomingData["comment"] || !incomingData["workshopId"]) {
 		callback(null, {
 			statusCode: 400,
-			body: `Invalid HTTP request method or missing field values.  ${event.httpMethod} ${incomingData["name"]} ${incomingData["comment"]} ${incomingData["workshopId"]} ${event.body}`
+			body: `Invalid HTTP request method or missing field values.  ${event.httpMethod} ${incomingData["name"]} ${incomingData["comment"]} ${incomingData["workshopId"]} ${incomingData} ${event.body}`
 		});
 	} else {
 		const timestamp = new Date().toISOString();

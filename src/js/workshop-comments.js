@@ -19,7 +19,7 @@ form.addEventListener("submit", (event) => {
 		const form = document.getElementById("comment-form");
 		const FD = new FormData( form );
 
-		console.log( event.target );
+		console.log( "OG FORM", event.target );
 
 		// Define what happens on successful data submission
 		XHR.addEventListener( "load", function() {
@@ -37,7 +37,9 @@ form.addEventListener("submit", (event) => {
 
 		// The data sent is what the user provided in the form
 		console.log(FD);
-		XHR.send( FD );
+		const jsonFormData = JSON.stringify(Object.fromEntries(FD));
+		console.log(jsonFormData);
+		XHR.send(jsonFormData);
 
 		for(var pair of FD.entries()) {
 			console.log(pair[0]+ ", "+ pair[1]);
@@ -70,7 +72,12 @@ function setRequiredMessage(input){
 
 function setSubmittedComment() {
 
-	const submittedComment = document.querySelector(".submitted-comment");
+	const tempWrapper = document.createElement("div");
+	tempWrapper.innerHTML = "<article class='comment submitted-comment'><p><span class='comment-name'></span> | <span class='comment-date'></span></p><p class='comment-comment'></p></article>";
+	const commentsDiv = document.getElementsByClassName("comments")[0];
+	commentsDiv.prepend(tempWrapper.firstChild);
+
+	const submittedComment = commentsDiv.firstChild;
 
 	const submittedCommentDate = submittedComment.querySelector(".comment-date");
 	const submittedCommentName = submittedComment.querySelector(".comment-name");
@@ -83,17 +90,6 @@ function setSubmittedComment() {
 	submittedCommentName.innerText = name.value.trim();
 	submittedCommentComment.innerText = comment.value.trim();
 
-	const postedCommentHTML = `<article class="comment submitted-comment">
-																<p><span class="comment-name">${ submittedCommentName.innerText }</span> | <span class="comment-date">${submittedCommentDate.innerText}</span></p>
-																<p class="comment-comment">${submittedCommentComment.innerText}</p>
-															</article>`;
-
-	document.getElementsByClassName("comments").innerHTML += postedCommentHTML;
-
-
 	const submittedCommentMessage = document.querySelector(".submitted-comment-message");
 	submittedCommentMessage.setAttribute("style", "display: block;");
-
-	submittedComment.setAttribute("style", "display: block;");
-
 }
