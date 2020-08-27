@@ -25,6 +25,22 @@
 	.comment {
 		margin-bottom: rem(60);
 		padding-bottom: rem(1);
+		padding-left: 0;
+	}
+}
+
+.workshop-page .description {
+	margin-bottom: rem(100);
+
+	h3 {
+		border-bottom: rem(5) solid $gold;
+		line-height: rem(60);
+	}
+
+	p:first-child {
+		border-bottom: rem(5) solid $gold;
+		font-size: rem(24);
+		line-height: rem(60);
 	}
 }
 
@@ -41,8 +57,8 @@
 	}
 }
 
-.input-comment {
-	margin-bottom: rem(100);
+#comment-form {
+	margin-bottom: rem(150);
 
 	.asterisk-def {
 		color: $grey-light;
@@ -59,10 +75,6 @@
 			&:invalid {
 				display: block;
 			}
-		}
-
-		&:required {
-			border: red solid;
 		}
 	}
 
@@ -81,13 +93,14 @@
 		border: rem(1) solid $green-dark;
 		border-radius: rem(12);
 		display: block;
+		margin-top: rem(3);
 
 		&:focus {
 			outline: none;
 		}
 	}
 
-	span {
+	span:not(.fl-syllabification-separator) {
 		color: $red;
 		font-size: rem(20);
 		font-style: italic;
@@ -158,21 +171,6 @@
 	}
 }
 
-.workshop-page .description {
-	margin-bottom: rem(100);
-
-	h3 {
-		border-bottom: rem(5) solid $gold;
-		line-height: rem(60);
-	}
-
-	p:first-child {
-		border-bottom: rem(5) solid $gold;
-		font-size: rem(24);
-		line-height: rem(60);
-	}
-}
-
 .initiatives {
 	.workshop {
 		padding: 0;
@@ -191,21 +189,21 @@
 }
 
 @media screen and (min-width: rem(1024)) {
-	.input-comment button {
+	#comment-form button {
 		width: auto;
 	}
 }
 
 // This media query breakpoint comes the width of the Galaxy Fold screen.
 @media screen and (min-width: 40em) {
-	.input-comment input[name="name"] {
+	#comment-form input[name="name"] {
 		width: rem(263);
 	}
 }
 
 // This media query breakpoint comes the width of the Galaxy Fold screen.
 @media screen and (max-width: rem(280)) {
-	.input-comment button {
+	#comment-form button {
 		height: rem(54);
 
 		&::before {

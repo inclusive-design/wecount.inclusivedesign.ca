@@ -15,7 +15,6 @@
 const env = require("../src/_data/env");
 const airtable = require("airtable");
 const nodemailer = require("nodemailer");
-// const qs = require("querystring");
 
 airtable.configure({
 	apiKey: process.env.AIRTABLE_API_KEY
@@ -80,7 +79,6 @@ const saveComment = async ({ timestamp, name, comment, workshopId }) => {
 };
 
 exports.handler = async function(event, context, callback) {
-	// const incomingData = qs.parse(event.body);
 	const incomingData = JSON.parse(event.body);
 
 	// Reject the request when:
@@ -89,7 +87,7 @@ exports.handler = async function(event, context, callback) {
 	if (event.httpMethod !== "POST" || !incomingData["name"] || !incomingData["comment"] || !incomingData["workshopId"]) {
 		callback(null, {
 			statusCode: 400,
-			body: `Invalid HTTP request method or missing field values.  ${event.httpMethod} ${incomingData["name"]} ${incomingData["comment"]} ${incomingData["workshopId"]} ${typeof incomingData} ${incomingData}`
+			body: "Invalid HTTP request method or missing field values."
 		});
 	} else {
 		const timestamp = new Date().toISOString();

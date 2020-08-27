@@ -229,6 +229,8 @@
 	.search-container input,
 	button:not(.filter-expand-button):focus,
 	button:not(.filter-expand-button):hover,
+	#comment-form button,
+	#comment-form button::before,
 	li .pagination-link,
 	li .pagination-link::before,
 	.wp-block-file__button:focus,

@@ -1,30 +1,22 @@
-console.log("Is this working???????");
-
 const form = document.getElementById("comment-form");
 
 const name = document.getElementById("name");
 const comment = document.getElementById("comment");
 
 form.addEventListener("submit", (event) => {
-	console.log("HELLLLLLP");
 	event.preventDefault();
 
-	const name = document.getElementById("name");
-	const comment = document.getElementById("comment");
 	if (setRequiredMessage(name) & setRequiredMessage(comment)) {
 
 		const XHR = new XMLHttpRequest();
 
 		// Bind the FormData object and the form element
-		const form = document.getElementById("comment-form");
 		const FD = new FormData( form );
-
-		console.log( "OG FORM", event.target );
 
 		// Define what happens on successful data submission
 		XHR.addEventListener( "load", function() {
 			setSubmittedComment();
-		} );
+		});
 
 		// Define what happens in case of error
 		XHR.addEventListener( "error", function() {
@@ -32,21 +24,12 @@ form.addEventListener("submit", (event) => {
 		} );
 
 		// Set up our request
-		console.log("ADDRESS ORIGIN:", window.location.origin);
 		XHR.open( "POST", window.location.origin + "/api/comments" );
 
 		// The data sent is what the user provided in the form
-		console.log(FD);
 		const jsonFormData = JSON.stringify(Object.fromEntries(FD));
-		console.log(jsonFormData);
-
 		XHR.setRequestHeader("Content-Type", "application/json");
-
 		XHR.send(jsonFormData);
-
-		for(var pair of FD.entries()) {
-			console.log(pair[0]+ ", "+ pair[1]);
-		}
 	}
 });
 
