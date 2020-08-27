@@ -86,10 +86,10 @@ exports.handler = async function(event, context, callback) {
 	// Reject the request when:
 	// 1. Not a POST request;
 	// 2. Doesn"t provide "name" or "comment" values
-	if (event.httpMethod !== "POST" || !incomingData.name || !incomingData.comment || !incomingData.workshopId) {
+	if (event.httpMethod !== "POST" || !event.body.name || !event.body.comment || !event.body.workshopId) {
 		callback(null, {
 			statusCode: 400,
-			body: `Invalid HTTP request method or missing field values.  ${event.httpMethod} ${incomingData.name} ${incomingData.comment} ${incomingData.workshopId} ${incomingData} ${event.httpMethod !== "POST"} ${!incomingData.name} ${!incomingData.comment} ${!incomingData.workshopId}`
+			body: `Invalid HTTP request method or missing field values.  ${event.httpMethod} ${event.body.name} ${event.body.comment} ${event.body.workshopId} ${incomingData} ${event.httpMethod !== "POST"}`
 		});
 	} else {
 		const timestamp = new Date().toISOString();
