@@ -68,6 +68,7 @@ footer {
 			a {
 				color: $white;
 				font-weight: $font-weight-normal;
+				white-space: nowrap;
 
 				svg {
 					padding: rem(32) rem(16) rem(16) 0;
