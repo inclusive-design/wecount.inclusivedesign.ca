@@ -2,36 +2,18 @@
 	display: grid;
 	grid-gap: rem(38);
 	grid-template-columns: repeat(1, 1fr);
-	padding: rem(89) rem(60) rem(50);
+	padding: 0 rem(32) rem(50) rem(32);
 
 	.card {
 		background-color: $white;
 		background-repeat: no-repeat;
 		box-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.25);
+		height: rem(192);
 
 		&:hover,
 		&:focus {
 			box-shadow: rem(10) rem(10) rem(10) rgba(0, 0, 0, 0.25);
 		}
-	}
-
-	.blue {
-		background-image: url("../images/distribution--blue.svg");
-		background-position: 95% 100%;
-	}
-
-	.green {
-		background-image: url("../images/distribution--green.svg");
-		background-position: 85% 80%;
-	}
-
-	.yellow {
-		background-image: url("../images/distribution--yellow.svg");
-		background-position: 85% 80%;
-	}
-
-	a {
-		height: rem(213);
 
 		h2 {
 			color: $navy-light;
@@ -39,10 +21,21 @@
 			line-height: rem(22);
 			margin: rem(15) rem(19);
 		}
+	}
 
-		.green-title {
-			margin-left: rem(145);
-		}
+	.blue {
+		background-image: url("../images/distribution--blue.svg");
+		background-position: 95% 80%;
+	}
+
+	.green {
+		background-image: url("../images/distribution--green.svg");
+		background-position: 85% 70%;
+	}
+
+	.yellow {
+		background-image: url("../images/distribution--yellow.svg");
+		background-position: 95% 80%;
 	}
 }
 
@@ -51,12 +44,10 @@
 		background-color: $white;
 		grid-gap: rem(38);
 		grid-template-columns: repeat(3, 1fr);
-		padding-top: 0;
+		padding: 0 rem(60) rem(50) rem(60);
 
-		a {
-			.green-title {
-				margin-left: rem(86);
-			}
+		.card {
+			background-position: 85% 60%;
 		}
 	}
 }
