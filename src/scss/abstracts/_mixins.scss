@@ -309,7 +309,7 @@
 		color: $fColor;
 	}
 
-	@media screen and (min-width: rem(1024)) {
+	@include breakpoint-up(lg) {
 		// Adjust the position of the search icon on the header
 		header .site-nav-wrapper .site-nav .search-container svg {
 			height: rem(24);

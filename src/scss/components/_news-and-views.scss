@@ -251,7 +251,7 @@
 	}
 }
 
-@media screen and (min-width: rem(1024)) {
+@include breakpoint-up(lg) {
 	.views {
 		.search-container {
 			margin-left: auto;
