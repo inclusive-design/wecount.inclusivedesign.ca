@@ -33,7 +33,7 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 				<span>*</span><label for="comment"><h4>Post a comment or question</h4></label><span class="required">Required</span>
 				<textarea id="comment" type="text" name="comment" :value="commentTerm" placeholder="" aria-label="Enter your comment"></textarea>
 				<input type="hidden" name="workshopId" id="workshopId" value="{{ workshopItem.id }}">
-				<button type="submit">Post a comment</button>
+				<button id="post-comment" type="submit">Post a comment</button>
 			</div>
 		</form>
 
