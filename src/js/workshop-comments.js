@@ -23,7 +23,9 @@ commentForm.addEventListener("submit", (event) => {
 
 		// Define what happens in case of error
 		XHR.addEventListener( "error", function() {
-			alert( "Oops! Something went wrong. Sorry Your comment was not submitted." );
+			// Show successful comment submission message
+			const submittedCommentMessage = document.querySelector(".post-failure-message");
+			submittedCommentMessage.setAttribute("style", "display: block;");
 			disableFields(false);
 		} );
 
@@ -95,7 +97,7 @@ function setSubmittedComment() {
 	commentForm.reset();
 
 	// Show successful comment submission message
-	const submittedCommentMessage = document.querySelector(".submitted-comment-message");
+	const submittedCommentMessage = document.querySelector(".post-success-message");
 	submittedCommentMessage.setAttribute("style", "display: block;");
 }
 

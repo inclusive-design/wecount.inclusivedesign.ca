@@ -44,7 +44,6 @@
 	text-align: center;
 
 	span {
-		background: $gold-light;
 		border-radius: rem(3);
 		display: block;
 		padding: rem(12);
@@ -54,6 +53,14 @@
 		display: inline;
 		padding: 0;
 	}
+}
+
+.post-success-messsage span {
+	background: $gold-light;
+}
+
+.post-failure-message span {
+	background: $red-light;
 }
 
 #comment-form {
@@ -185,21 +192,21 @@
 	}
 }
 
-@media screen and (min-width: rem(1024)) {
+@include breakpoint-up(lg) {
 	#comment-form button {
 		width: auto;
 	}
 }
 
 // This media query breakpoint comes the width of the Galaxy Fold screen.
-@media screen and (min-width: 40em) {
+@include breakpoint-up(sm) {
 	#comment-form input[name="name"] {
 		width: rem(263);
 	}
 }
 
 // This media query breakpoint comes the width of the Galaxy Fold screen.
-@media screen and (max-width: rem(280)) {
+@include breakpoint-down(xs) {
 	#comment-form button {
 		height: rem(54);
 
