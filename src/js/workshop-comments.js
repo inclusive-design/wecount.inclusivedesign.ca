@@ -51,11 +51,11 @@ function requiredFieldVerified(fieldName){
 	const formControl = fieldName.parentElement;
 	const requiredMessage = formControl.querySelector(".required");
 
-	if (fieldName.value.trim() === "") {
+	// Hide comment submission message
+	const submittedCommentMessage = document.querySelector(".submitted-comment-message");
+	submittedCommentMessage.setAttribute("style", "display: none;");
 
-		// Hide successful comment submission message
-		const submittedCommentMessage = document.querySelector(".submitted-comment-message");
-		submittedCommentMessage.setAttribute("style", "display: none;");
+	if (fieldName.value.trim() === "") {
 
 		// Show required message
 		requiredMessage.setAttribute("style", "display: inline;");
