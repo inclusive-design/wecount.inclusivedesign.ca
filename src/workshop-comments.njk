@@ -20,16 +20,16 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 
 		<form id="comment-form">
 			<h3>Comments</h3>
-			<div class="form-control">
+			<div class="form-field">
 				<span>*</span><p class="asterisk-def"> Indicates required field</p>
 			</div>
 
-			<div class="form-control">
+			<div class="form-field">
 				<span>*</span><label for="name"><h4>Name</h4></label><span class="required">Required</span>
 				<input id="name" type="text" name="name" :value="nameTerm" placeholder="" aria-label="Enter your name">
 			</div>
 
-			<div class="form-control">
+			<div class="form-field">
 				<span>*</span><label for="comment"><h4>Post a comment or question</h4></label><span class="required">Required</span>
 				<textarea id="comment" type="text" name="comment" :value="commentTerm" placeholder="" aria-label="Enter your comment"></textarea>
 				<input type="hidden" name="workshopId" id="workshopId" value="{{ workshopItem.id }}">
@@ -37,7 +37,7 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 			</div>
 		</form>
 
-		<div class="submitted-comment-message">
+		<div class="submitted-comment-message" aria-live="assertive">
 			<span>Thank you for submitting your comment. It will be posted on the page once it is approved</span>
 		</div>
 

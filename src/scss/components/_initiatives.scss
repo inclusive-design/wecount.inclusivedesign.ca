@@ -36,17 +36,11 @@
 		border-bottom: rem(5) solid $gold;
 		line-height: rem(60);
 	}
-
-	p:first-child {
-		border-bottom: rem(5) solid $gold;
-		font-size: rem(24);
-		line-height: rem(60);
-	}
 }
 
 .submitted-comment-message {
 	display: none;
-	margin: auto auto;
+	margin: auto;
 	text-align: center;
 
 	span {
@@ -71,7 +65,7 @@
 		font-size: rem(20);
 	}
 
-	.form-control {
+	.form-field {
 		margin-bottom: rem(40);
 
 		.required {
@@ -83,22 +77,24 @@
 		}
 	}
 
-	input[name="name"] {
+	input {
 		height: rem(45);
-		width: 100%;
 	}
 
 	textarea {
 		height: rem(138);
-		width: 100%;
 	}
 
 	input,
 	textarea {
 		border: rem(1) solid $green-dark;
 		border-radius: rem(12);
+		box-sizing: border-box;
 		display: block;
+		font-size: rem(18);
 		margin-top: rem(3);
+		padding: rem(15);
+		width: 100%;
 
 		&:focus {
 			outline: none;
@@ -179,10 +175,6 @@
 .initiatives {
 	.workshop {
 		padding: 0;
-
-		.description p:first-child {
-			font-size: rem(24);
-		}
 
 		a:focus,
 		a:hover {
