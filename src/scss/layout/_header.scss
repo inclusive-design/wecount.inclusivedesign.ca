@@ -119,7 +119,7 @@ header {
 	}
 }
 
-@media screen and (min-width: rem(1024)) {
+@include breakpoint-up(lg) {
 	header {
 		.search-container {
 			margin-left: rem(80);
@@ -183,7 +183,7 @@ header {
 }
 
 // This media query breakpoint comes the width of the Galaxy Fold screen.
-@media screen and (max-width: rem(280)) {
+@include breakpoint-down(xs) {
 	header .site-nav-wrapper .site-nav .nav-smallScreen .starter-nav #menuToggleButton {
 		span {
 			display: none;

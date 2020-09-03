@@ -176,7 +176,7 @@ footer {
 	}
 }
 
-@media screen and (min-width: rem(768)) {
+@include breakpoint-up(md) {
 	footer {
 		margin-top: rem(0);
 

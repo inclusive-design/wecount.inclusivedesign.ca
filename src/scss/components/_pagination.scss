@@ -124,7 +124,7 @@
 	}
 }
 
-@media screen and (min-width: rem(1024)) {
+@include breakpoint-up(lg) {
 	.pagination {
 		margin-top: rem(62);
 

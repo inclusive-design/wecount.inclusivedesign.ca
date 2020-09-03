@@ -113,7 +113,7 @@ button::before:not(.fl-prefsEditor-buttons) button {
 	}
 }
 
-@media screen and (min-width: rem(1024)) {
+@include breakpoint-up(lg) {
 	h1 {
 		font-size: rem(50);
 	}
