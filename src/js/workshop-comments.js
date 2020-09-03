@@ -17,13 +17,15 @@ commentForm.addEventListener("submit", (event) => {
 
 		// Define what happens on successful data submission
 		XHR.addEventListener( "load", function() {
+
 			setSubmittedComment();
 			disableFields(false);
 		});
 
 		// Define what happens in case of error
 		XHR.addEventListener( "error", function() {
-			// Show successful comment submission message
+
+			// Show failed comment submission message
 			const submittedCommentMessage = document.querySelector(".post-failure-message");
 			submittedCommentMessage.setAttribute("style", "display: block;");
 			disableFields(false);
