@@ -28,7 +28,7 @@
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@include breakpoint-up(lg) {
 	.search-container {
 		svg {
 			margin: rem(-40);

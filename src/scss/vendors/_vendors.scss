@@ -118,7 +118,7 @@
 }
 
 // This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button styles on desktop and mobile.
-@media screen and (min-width: 40em) {
+@include breakpoint-up(sm) {
 	#defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons button {
 		font-size: rem(16);
 	}
@@ -154,7 +154,7 @@
 	}
 }
 
-@media screen and (min-width: rem(1024)) {
+@include breakpoint-up(lg) {
 	// UIO table of content
 	.flc-toc-tocContainer {
 		padding: rem(1) rem(60);
