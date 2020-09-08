@@ -2,6 +2,8 @@
 	display: block;
 	line-height: rem(32);
 	list-style: none;
+	margin-left: -10%;
+	margin-right: -10%;
 	margin-top: rem(27);
 	padding: 0;
 	text-align: center;
@@ -154,6 +156,23 @@
 			line-height: rem(53);
 			margin: 0 rem(13);
 			width: rem(53);
+		}
+	}
+}
+
+// This media query breakpoint comes the width of the Galaxy Fold screen.
+@include breakpoint-down(xs) {
+	.pagination {
+		.pagination-link {
+			font-size: rem(18);
+			height: rem(42);
+			line-height: rem(43);
+			margin: rem(10) rem(3);
+			width: rem(42);
+		}
+
+		.pagination-ellipsis span {
+			font-size: rem(18);
 		}
 	}
 }
