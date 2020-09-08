@@ -1,6 +1,6 @@
 .pagination {
 	display: block;
-	line-height: rem(32);
+	line-height: rem(38);
 	list-style: none;
 	margin-left: -10%;
 	margin-right: -10%;
@@ -32,7 +32,7 @@
 		border-radius: 100%;
 		box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
 		float: left;
-		font-size: rem(24);
+		font-size: rem(18);
 		font-weight: 400;
 		height: rem(45);
 		line-height: rem(45);
@@ -65,7 +65,7 @@
 
 		span {
 			color: $blue-alt;
-			font-size: rem(24);
+			font-size: rem(18);
 		}
 	}
 
@@ -137,6 +137,10 @@
 
 		.pagination-ellipsis {
 			margin: rem(4) rem(0);
+
+			span {
+				font-size: rem(24);
+			}
 		}
 
 		li.hide-on-mobile {
@@ -152,6 +156,7 @@
 		}
 
 		.pagination-link {
+			font-size: rem(24);
 			height: rem(53);
 			line-height: rem(53);
 			margin: 0 rem(13);
@@ -164,15 +169,15 @@
 @include breakpoint-down(xs) {
 	.pagination {
 		.pagination-link {
-			font-size: rem(18);
 			height: rem(42);
 			line-height: rem(43);
 			margin: rem(10) rem(3);
 			width: rem(42);
 		}
 
-		.pagination-ellipsis span {
-			font-size: rem(18);
+		.pagination-next,
+		.pagination-previous {
+			line-height: rem(40);
 		}
 	}
 }
