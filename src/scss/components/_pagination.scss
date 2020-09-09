@@ -129,6 +129,8 @@
 @include breakpoint-up(lg) {
 	.pagination {
 		line-height: rem(35);
+		margin-left: auto;
+		margin-right: auto;
 		margin-top: rem(62);
 
 		.previous,
