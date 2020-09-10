@@ -10,7 +10,7 @@ const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
-const metaTitleFilter = require("./src/filters/meta-title.js");
+const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
@@ -97,7 +97,7 @@ module.exports = function(eleventyConfig) {
 
 	// Add filters.
 	eleventyConfig.addFilter("dateFilter", dateFilter);
-	eleventyConfig.addFilter("metaTitleFilter", metaTitleFilter);
+	eleventyConfig.addFilter("htmlSymbolFilter", htmlSymbolFilter);
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);

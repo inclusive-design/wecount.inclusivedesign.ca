@@ -3,17 +3,6 @@
 /* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars */
 
 /*
- * Remove soft hyphens and replace &#8217; with apostrophe.
- * @param {String} webpageString - A string with one or more soft hyphens or &#8217;.
- * @return The string with soft hyphens removed and &#8217; replaced with an apostrophe.
- */
-// eslint-disable-next-line
-metaTitle = function (webpageString) {
-	webpageString = webpageString.replace(/&#8217;/g, "’");
-	return webpageString.replace(/&shy;/g, "");
-};
-
-/*
  * Convert a date into the format of "Month day, Year".
  * @param {String} inputDate - A string of date.
  * @return The string in the format of "Month day, Year".
