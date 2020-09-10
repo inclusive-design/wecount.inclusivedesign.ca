@@ -83,7 +83,7 @@ exports.handler = async function(event, context, callback) {
 
 	// Reject the request when:
 	// 1. Not a POST request;
-	// 2. Doesn"t provide "name" or "comment" values
+	// 2. Doesn’t provide "name" or "comment" values
 	if (event.httpMethod !== "POST" || !incomingData["name"] || !incomingData["comment"] || !incomingData["workshopId"]) {
 		callback(null, {
 			statusCode: 400,
