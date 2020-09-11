@@ -6,37 +6,49 @@ const comment = document.getElementById("comment");
 commentForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 
-	if (requiredFieldVerified(name) & requiredFieldVerified(comment)) {
+	// Hide comment submission message
+	// Note: It's necessary to hide succesful/failed submitted comment message indicators programmatically even though they have been hidden initially by CSS
+	// in the case the same user submits more comments after submitting an initial comment
+	const submittedCommentMessage = document.querySelector(".save-response");
+	submittedCommentMessage.setAttribute("style", "display: none;");
 
+	if (requiredFieldVerified(name) & requiredFieldVerified(comment)) {
 		disableFields(true);
+
+		const submittedCommentMessage = document.querySelector(".post-failure-message");
 
 		const XHR = new XMLHttpRequest();
 
 		// Bind the FormData object and the form element
 		const commentFormData = new FormData( commentForm );
 
-		// Define what happens on successful data submission
+		// submit and add comment to top of comment section of page on successful data submission
 		XHR.addEventListener( "load", function() {
+			console.log("CONNECTION STATUS ON LOAD: ", XHR.status);
 
-			setSubmittedComment();
+			if (XHR.status === 200) {
+				setSubmittedComment();
+			} else {
+				submittedCommentMessage.setAttribute("style", "display: block;");
+			}
 			disableFields(false);
 		});
 
 		// Define what happens in case of error
 		XHR.addEventListener( "error", function() {
-
+			console.log("CONNECTION STATUS ON ERROR: ", XHR.status);
 			// Show failed comment submission message
-			const submittedCommentMessage = document.querySelector(".post-failure-message");
 			submittedCommentMessage.setAttribute("style", "display: block;");
 			disableFields(false);
 		} );
 
 		// Set up our request
 		XHR.open( "POST", window.location.origin + "/api/comments" );
+		// XHR.open( "GET", "/" );
 
 		// The data sent is what the user provided in the form
 		const jsonFormData = JSON.stringify(Object.fromEntries(commentFormData));
-		XHR.setRequestHeader("Content-Type", "application/json");
+		// XHR.setRequestHeader("Content-Type", "application/json");
 		XHR.send(jsonFormData);
 	}
 });
@@ -47,24 +59,18 @@ commentForm.addEventListener("submit", (event) => {
  * @return {Boolean} -  False if value is an empty string and true otherwise.
  */
 function requiredFieldVerified(fieldName){
-
 	const formControl = fieldName.parentElement;
 	const requiredMessage = formControl.querySelector(".required");
 
-	// Hide comment submission message
-	const submittedCommentMessage = document.querySelector(".submitted-comment-message");
-	submittedCommentMessage.setAttribute("style", "display: none;");
-
 	if (fieldName.value.trim() === "") {
-
 		// Show required message
 		requiredMessage.setAttribute("style", "display: inline;");
 
 		return false;
-
 	} else {
-
 		// Hide required message
+		// Note: It's necessary to hide "required" indicators programmatically even though they have been hidden initially by CSS
+		// in the case the same user submits more comments after submitting an initial comment
 		requiredMessage.setAttribute("style", "display: none;");
 
 		return true;
@@ -75,12 +81,11 @@ function requiredFieldVerified(fieldName){
  * Add new comment to the given workshop's page temporarily.
  */
 function setSubmittedComment() {
-
 	// Add comment to the top of the comments section of workshop page
-	const tempWrapper = document.createElement("div");
-	tempWrapper.innerHTML = "<article class='comment submitted-comment'><p><span class='comment-name'></span> | <span class='comment-date'></span></p><p class='comment-text'></p></article>";
+	const newCommentDiv = document.createElement("div");
+	newCommentDiv.innerHTML = "<article class='comment submitted-comment'><p><span class='comment-name'></span> | <span class='comment-date'></span></p><p class='comment-text'></p></article>";
 	const commentsDiv = document.getElementsByClassName("comments")[0];
-	commentsDiv.prepend(tempWrapper.firstChild);
+	commentsDiv.prepend(newCommentDiv.firstChild);
 
 	const submittedCommentDiv = commentsDiv.firstChild;
 	const submittedDate = submittedCommentDiv.querySelector(".comment-date");
