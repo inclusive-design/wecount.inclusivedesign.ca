@@ -6,6 +6,34 @@ const comment = document.getElementById("comment");
 commentForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 
+	// // Collaborated with Cindy
+	// const nameDOMElement = document.getElementById("name")
+	// const name = nameDOMElement.value.trim();
+	// const commentDOMElement = document.getElementById("comment");
+	// const comment = commentDOMElement.value.trim();
+
+	// // Initial clean up
+	// // 1. hide all required indicators;
+	// // 2. hide success and failure messages
+	// applyVisibility(DOMselector, toDisplay, displayType);
+	// toShow: boolean
+	// displayType: [Optional] the value for the "display" css attribute
+
+	// // Verification step to make sure name and comment values are not empty
+	// if (name === "") {
+	// 	showRequiredIndicator(nameDOMElement);
+	// 	return;
+	// }
+
+	// if (comment === "") {
+	// 	showRequiredIndicator(commentDOMElement);
+	// 	return;
+	// }
+	// // End of collaboration
+
+	const name = document.getElementById("name");
+	const comment = document.getElementById("comment");
+
 	// Hide comment submission message
 	// Note: It's necessary to hide succesful/failed submitted comment message indicators programmatically even though they have been hidden initially by CSS
 	// in the case the same user submits more comments after submitting an initial comment
@@ -19,6 +47,7 @@ commentForm.addEventListener("submit", (event) => {
 
 		const XHR = new XMLHttpRequest();
 
+		const commentForm = document.getElementById("comment-form");
 		// Bind the FormData object and the form element
 		const commentFormData = new FormData( commentForm );
 
@@ -43,13 +72,45 @@ commentForm.addEventListener("submit", (event) => {
 		} );
 
 		// Set up our request
-		XHR.open( "POST", window.location.origin + "/api/comments" );
-		// XHR.open( "GET", "/" );
+		// XHR.open( "POST", window.location.origin + "/api/comments" );
+		XHR.open( "GET", "/" );
 
 		// The data sent is what the user provided in the form
 		const jsonFormData = JSON.stringify(Object.fromEntries(commentFormData));
 		// XHR.setRequestHeader("Content-Type", "application/json");
+		console.log("NAME VALUE: ");
+		console.log(name.value.trim());
+
+		console.log("COMMENT VALUE: ");
+		console.log(comment.value.trim());
+
+		console.log("COMMENT-FROM-DATA: ");
+		console.log(commentFormData);
+
+		console.log("FORM DATA: ");
+		console.log(commentForm);
+
+		console.log("FORM DATA STRING: ");
+		console.log(jsonFormData);
+
 		XHR.send(jsonFormData);
+
+		console.log("-------------------------------------------------");
+
+		console.log("NAME VALUE: ");
+		console.log(name.value.trim());
+
+		console.log("COMMENT VALUE: ");
+		console.log(comment.value.trim());
+
+		console.log("COMMENT-FROM-DATA: ");
+		console.log(commentFormData);
+
+		console.log("FORM DATA: ");
+		console.log(commentForm);
+
+		console.log("FORM DATA STRING: ");
+		console.log(jsonFormData);
 	}
 });
 
@@ -100,8 +161,8 @@ function setSubmittedComment() {
 	submittedName.innerText = name.value.trim();
 	submittedComment.innerText = comment.value.trim();
 
-	// Clear Test Fields
-	commentForm.reset();
+	// Clear Text Fields
+	// commentForm.reset();
 
 	// Show successful comment submission message
 	const submittedCommentMessage = document.querySelector(".post-success-message");
