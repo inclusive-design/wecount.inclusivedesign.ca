@@ -118,8 +118,7 @@ function setSubmittedComment() {
 	submittedComment.innerText = commentDOMElement.value.trim();
 
 	// Show successful comment submission message
-	const submittedCommentMessage = document.querySelector(".post-success-message");
-	submittedCommentMessage.setAttribute("style", "display: block;");
+	applyVisibility(document.querySelector(".post-success-message"), true , "block");
 }
 
 /*
