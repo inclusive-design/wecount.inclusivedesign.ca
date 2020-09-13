@@ -1,141 +1,97 @@
 const commentForm = document.getElementById("comment-form");
 
-const name = document.getElementById("name");
-const comment = document.getElementById("comment");
+const nameDOMElement = document.getElementById("name");
+const commentDOMElement = document.getElementById("comment");
 
 commentForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 
-	// // Collaborated with Cindy
-	// const nameDOMElement = document.getElementById("name")
-	// const name = nameDOMElement.value.trim();
-	// const commentDOMElement = document.getElementById("comment");
-	// const comment = commentDOMElement.value.trim();
+	const nameDOMElement = document.getElementById("name");
+	const name = nameDOMElement.value.trim();
+	const commentDOMElement = document.getElementById("comment");
+	const comment = commentDOMElement.value.trim();
 
-	// // Initial clean up
-	// // 1. hide all required indicators;
-	// // 2. hide success and failure messages
-	// applyVisibility(DOMselector, toDisplay, displayType);
-	// toShow: boolean
-	// displayType: [Optional] the value for the "display" css attribute
+	const submittedCommentMessage = document.querySelector(".post-failure-message");
 
-	// // Verification step to make sure name and comment values are not empty
-	// if (name === "") {
-	// 	showRequiredIndicator(nameDOMElement);
-	// 	return;
-	// }
+	disableFields(true);
 
-	// if (comment === "") {
-	// 	showRequiredIndicator(commentDOMElement);
-	// 	return;
-	// }
-	// // End of collaboration
-
-	const name = document.getElementById("name");
-	const comment = document.getElementById("comment");
-
+	// Hide required message
+	// Note: It's necessary to hide "required" indicators programmatically even though they have been hidden initially by CSS
+	// in the case the same user submits more comments after submitting an initial comment
+	document.querySelectorAll(".required").forEach(element => {
+		applyVisibility(element, false);
+	});
 	// Hide comment submission message
 	// Note: It's necessary to hide succesful/failed submitted comment message indicators programmatically even though they have been hidden initially by CSS
 	// in the case the same user submits more comments after submitting an initial comment
-	const submittedCommentMessage = document.querySelector(".save-response");
-	submittedCommentMessage.setAttribute("style", "display: none;");
+	document.querySelectorAll(".save-response").forEach(element => {
+		applyVisibility(element, false);
+	});
 
-	if (requiredFieldVerified(name) & requiredFieldVerified(comment)) {
-		disableFields(true);
-
-		const submittedCommentMessage = document.querySelector(".post-failure-message");
-
-		const XHR = new XMLHttpRequest();
-
-		const commentForm = document.getElementById("comment-form");
-		// Bind the FormData object and the form element
-		const commentFormData = new FormData( commentForm );
-
-		// submit and add comment to top of comment section of page on successful data submission
-		XHR.addEventListener( "load", function() {
-			console.log("CONNECTION STATUS ON LOAD: ", XHR.status);
-
-			if (XHR.status === 200) {
-				setSubmittedComment();
-			} else {
-				submittedCommentMessage.setAttribute("style", "display: block;");
-			}
-			disableFields(false);
+	// Verify input Fields
+	if ((name === "") & (comment === "")) {
+		document.querySelectorAll(".required").forEach(element => {
+			applyVisibility(element, true, "inline");
 		});
+		disableFields(false);
+		return;
+	}
 
-		// Define what happens in case of error
-		XHR.addEventListener( "error", function() {
-			console.log("CONNECTION STATUS ON ERROR: ", XHR.status);
+	if (name === "") {
+		applyVisibility(document.querySelector(".required-name"), true, "inline");
+		disableFields(false);
+		return;
+	}
+
+	if (comment === "") {
+		applyVisibility(document.querySelector(".required-comment"), true, "inline");
+		disableFields(false);
+		return;
+	}
+
+	const XHR = new XMLHttpRequest();
+
+	const commentForm = document.getElementById("comment-form");
+	// Bind the FormData object and the form element
+	const commentFormData = new FormData( commentForm );
+
+	// submit and add comment to top of comment section of page on successful data submission
+	XHR.addEventListener( "load", function() {
+		if (XHR.status === 200) {
+			setSubmittedComment();
+			// Clear Text Fields
+			commentForm.reset();
+		} else {
 			// Show failed comment submission message
 			submittedCommentMessage.setAttribute("style", "display: block;");
-			disableFields(false);
-		} );
+		}
+		disableFields(false);
+	});
 
-		// Set up our request
-		// XHR.open( "POST", window.location.origin + "/api/comments" );
-		XHR.open( "GET", "/" );
+	// Show failure message in case of error
+	XHR.addEventListener( "error", function() {
+		// Show failed comment submission message
+		submittedCommentMessage.setAttribute("style", "display: block;");
+		disableFields(false);
+	} );
 
-		// The data sent is what the user provided in the form
-		const jsonFormData = JSON.stringify(Object.fromEntries(commentFormData));
-		// XHR.setRequestHeader("Content-Type", "application/json");
-		console.log("NAME VALUE: ");
-		console.log(name.value.trim());
+	// Set up our request
+	XHR.open( "POST", window.location.origin + "/api/comments" );
 
-		console.log("COMMENT VALUE: ");
-		console.log(comment.value.trim());
-
-		console.log("COMMENT-FROM-DATA: ");
-		console.log(commentFormData);
-
-		console.log("FORM DATA: ");
-		console.log(commentForm);
-
-		console.log("FORM DATA STRING: ");
-		console.log(jsonFormData);
-
-		XHR.send(jsonFormData);
-
-		console.log("-------------------------------------------------");
-
-		console.log("NAME VALUE: ");
-		console.log(name.value.trim());
-
-		console.log("COMMENT VALUE: ");
-		console.log(comment.value.trim());
-
-		console.log("COMMENT-FROM-DATA: ");
-		console.log(commentFormData);
-
-		console.log("FORM DATA: ");
-		console.log(commentForm);
-
-		console.log("FORM DATA STRING: ");
-		console.log(jsonFormData);
-	}
+	// The data sent is what the user provided in the form
+	const jsonFormData = JSON.stringify(Object.fromEntries(commentFormData));
+	XHR.setRequestHeader("Content-Type", "application/json");
+	XHR.send(jsonFormData);
 });
 
 /*
- * Verify text is entered in the given field.
- * @param {DomElement} filedName - The DOM Element to parse.
- * @return {Boolean} -  False if value is an empty string and true otherwise.
+ * Hide/show required and success messages
+ * @param {DOMElement} DOMselector - The DOM Element to parse.
+ * @param {Boolean} toDisplay - value is true to show and false to hide
+ * @param {String}[Optional] displayType - CSS display value to apply
  */
-function requiredFieldVerified(fieldName){
-	const formControl = fieldName.parentElement;
-	const requiredMessage = formControl.querySelector(".required");
-
-	if (fieldName.value.trim() === "") {
-		// Show required message
-		requiredMessage.setAttribute("style", "display: inline;");
-
-		return false;
-	} else {
-		// Hide required message
-		// Note: It's necessary to hide "required" indicators programmatically even though they have been hidden initially by CSS
-		// in the case the same user submits more comments after submitting an initial comment
-		requiredMessage.setAttribute("style", "display: none;");
-
-		return true;
-	}
+function applyVisibility(DOMselector, toShow, displayType = "none") {
+	toShow ? DOMselector.setAttribute("style", `display: ${displayType};`) : DOMselector.setAttribute("style", "display: none;");
 }
 
 /*
@@ -158,11 +114,8 @@ function setSubmittedComment() {
 
 	// Add values of comment
 	submittedDate.innerText = `${months[dateObject.getMonth()]} ${dateObject.getDate()}, ${dateObject.getFullYear()}`;
-	submittedName.innerText = name.value.trim();
-	submittedComment.innerText = comment.value.trim();
-
-	// Clear Text Fields
-	// commentForm.reset();
+	submittedName.innerText = nameDOMElement.value.trim();
+	submittedComment.innerText = commentDOMElement.value.trim();
 
 	// Show successful comment submission message
 	const submittedCommentMessage = document.querySelector(".post-success-message");
@@ -174,7 +127,19 @@ function setSubmittedComment() {
  * @param {Boolean} sendingStatus - Boolean value indicating whether or not post request is in the send state.
  */
 function disableFields(sendingStatus) {
-	document.getElementById("post-comment").disabled = sendingStatus;
-	document.getElementById("name").disabled = sendingStatus;
-	document.getElementById("comment").disabled = sendingStatus;
+	// Comment form submit button
+	const postCommentButton = document.getElementById("post-comment");
+	sendingStatus ? postCommentButton.setAttribute("style", "background-color: #f3f3f3") : postCommentButton.setAttribute("style", "background-color: #fff");
+	postCommentButton.disabled = sendingStatus;
+
+	// Comment form input fields
+	const nameField = document.getElementById("name");
+	const commentField = document.getElementById("comment");
+
+	const commentFormFields = [nameField, commentField];
+
+	commentFormFields.forEach( field => {
+		sendingStatus ? field.setAttribute("style", "background-color: #f3f3f3") : field.setAttribute("style", "background-color: #fff");
+		field.readOnly = sendingStatus;
+	});
 }

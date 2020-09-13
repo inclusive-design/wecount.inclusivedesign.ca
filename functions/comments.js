@@ -1,3 +1,4 @@
+
 /**
  * Handle client requests for adding comments for workshops. This script does:
  * 1. Save the comment to Airtable;
@@ -87,7 +88,7 @@ exports.handler = async function(event, context, callback) {
 	if (event.httpMethod !== "POST" || !incomingData["name"] || !incomingData["comment"] || !incomingData["workshopId"]) {
 		callback(null, {
 			statusCode: 400,
-			body: `Invalid HTTP request method or missing field values.  ${event.httpMethod} ${incomingData["name"]} ${incomingData["comment"]} ${incomingData["workshopId"]} ${typeof incomingData} ${incomingData}`
+			body: "Invalid HTTP request method or missing field values."
 		});
 	} else {
 		const timestamp = new Date().toISOString();
