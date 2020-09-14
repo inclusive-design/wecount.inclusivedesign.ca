@@ -37,11 +37,11 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 			</div>
 		</form>
 
-		<div class="save-response post-success-message" role="status">
+		<div class="submit-success-message" role="status">
 			<span>Thank you for submitting your comment. It will be posted on the page once it is approved</span>
 		</div>
 
-		<div class="save-response post-failure-message" role="alert">
+		<div class="submit-failure-message" role="alert">
 			<span>There was an error submitting your comment. Please try again</span>
 		</div>
 
@@ -54,5 +54,6 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 {% endblock %}
 
 {% block footerScripts %}
+<script src="/js/utils.js"></script>
 <script src="/js/workshop-comments.js"></script>
 {% endblock %}

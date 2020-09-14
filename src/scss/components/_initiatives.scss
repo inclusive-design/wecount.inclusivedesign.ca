@@ -38,7 +38,8 @@
 	}
 }
 
-.save-response {
+.submit-success-message,
+.submit-failure-message {
 	display: none;
 	margin: auto;
 	text-align: center;
@@ -55,11 +56,11 @@
 	}
 }
 
-.post-success-message span {
+.submit-success-message span {
 	background: $gold-light;
 }
 
-.post-failure-message span {
+.submit-failure-message span {
 	background: $red-light;
 }
 

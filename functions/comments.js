@@ -1,4 +1,3 @@
-
 /**
  * Handle client requests for adding comments for workshops. This script does:
  * 1. Save the comment to Airtable;
