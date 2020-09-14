@@ -25,12 +25,12 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 			</div>
 
 			<div class="form-field">
-				<span>*</span><label for="name"><h4>Name</h4></label><span class="required required-name">Required</span>
+				<span>*</span><label for="name"><h4>Name</h4></label><span class="required-name">Required</span>
 				<input id="name" type="text" name="name" placeholder="" aria-label="Enter your name">
 			</div>
 
 			<div class="form-field">
-				<span>*</span><label for="comment"><h4>Post a comment or question</h4></label><span class="required required-comment">Required</span>
+				<span>*</span><label for="comment"><h4>Post a comment or question</h4></label><span class="required-comment">Required</span>
 				<textarea id="comment" type="text" name="comment" placeholder="" aria-label="Enter your comment"></textarea>
 				<input type="hidden" name="workshopId" id="workshopId" value="{{ workshopItem.id }}">
 				<button id="post-comment" type="submit">Post a comment</button>

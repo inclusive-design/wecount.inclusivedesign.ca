@@ -15,7 +15,7 @@ commentForm.addEventListener("submit", (event) => {
 	// Hide required and comment submission message.
 	// Note: It's necessary to hide "required" and "succesful/failed" submitted comment message indicators programmatically even though they have been hidden initially by CSS
 	// in the case the same user submits more comments after submitting an initial comment.
-	document.querySelectorAll(".required, .submit-success-message, .submit-failure-message").forEach(element => {
+	document.querySelectorAll(".required-name, .required-comment, .submit-success-message, .submit-failure-message").forEach(element => {
 		applyVisibility(element, false);
 	});
 
@@ -113,20 +113,26 @@ function showSubmittedComment(nameField, commentField) {
 
 /*
  * Disable the "post a comment" button and text fields when the post request is in the process of sending.
- * @param {Boolean} sendingStatus - Boolean value indicating whether or not post request is in the send state.
+ * @param {Boolean} disabled - Boolean value indicating whether or not post request is in the send state.
  */
-function disableFields(sendingStatus) {
-	const backgroundColor = sendingStatus ? "#f3f3f3" : "#fff";
+function disableFields(disabled) {
+	// WARN: Input Field elements with the disabled attribute are not submitted in form submissions.
+	// A work around is implemented here by using the readonly attribute instead combined with styling the background color.
+	// Reference: https://stackoverflow.com/questions/7357256/disabled-form-inputs-do-not-appear-in-the-request
+
+	// Changing the background color of the input fields is only applicable when not applying UIO themes.
+	// When a UIO theme is selected, the background color will remain the same as what is set by the theme.
+	const backgroundColor = disabled ? "#f3f3f3" : "#fff";
 
 	// Comment form submit button.
 	const postCommentButton = document.getElementById("post-comment");
 	postCommentButton.setAttribute("style", "background-color: " + backgroundColor);
-	postCommentButton.disabled = sendingStatus;
+	postCommentButton.disabled = disabled;
 
 	// Comment form input fields.
 	const commentFormFields = document.querySelectorAll("#name, #comment");
 	commentFormFields.forEach( field => {
 		field.setAttribute("style", "background-color: " + backgroundColor);
-		field.readOnly = sendingStatus;
+		field.readOnly = disabled;
 	});
 }

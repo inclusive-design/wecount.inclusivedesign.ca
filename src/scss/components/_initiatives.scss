@@ -76,7 +76,8 @@
 	.form-field {
 		margin-bottom: rem(40);
 
-		.required {
+		.required-name,
+		.required-comment {
 			display: none;
 
 			&:invalid {
