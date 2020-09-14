@@ -47,7 +47,7 @@ commentForm.addEventListener("submit", (event) => {
 	// Submit and add comment to top of comment section of page on successful data submission.
 	XHR.addEventListener( "load", function() {
 		if (XHR.status === 200) {
-			showSubmittedComment(nameDomElement, commentDomElement);
+			showSubmittedComment(name, comment);
 			// Show successful comment submission message.
 			applyVisibility(document.querySelector(".submit-success-message"), true , "block");
 			// Clear Text Fields.
@@ -107,8 +107,8 @@ function showSubmittedComment(nameField, commentField) {
 
 	// Add values of comment.
 	submittedDate.innerText = convertDate(dateObject);
-	submittedName.innerText = nameField.value.trim();
-	submittedComment.innerText = commentField.value.trim();
+	submittedName.innerText = nameField;
+	submittedComment.innerText = commentField;
 }
 
 /*
@@ -116,7 +116,7 @@ function showSubmittedComment(nameField, commentField) {
  * @param {Boolean} disabled - Boolean value indicating whether or not post request is in the send state.
  */
 function disableFields(disabled) {
-	// WARN: Input Field elements with the disabled attribute are not submitted in form submissions.
+	// WARN: Input field elements with the disabled attribute set to true are not submitted in form submissions.
 	// A work around is implemented here by using the readonly attribute instead combined with styling the background color.
 	// Reference: https://stackoverflow.com/questions/7357256/disabled-form-inputs-do-not-appear-in-the-request
 
@@ -124,12 +124,12 @@ function disableFields(disabled) {
 	// When a UIO theme is selected, the background color will remain the same as what is set by the theme.
 	const backgroundColor = disabled ? "#f3f3f3" : "#fff";
 
-	// Comment form submit button.
+	// Disable/enable and set background color of post a comment button
 	const postCommentButton = document.getElementById("post-comment");
 	postCommentButton.setAttribute("style", "background-color: " + backgroundColor);
 	postCommentButton.disabled = disabled;
 
-	// Comment form input fields.
+	// Disable/enable and set background color of comment form input fields
 	const commentFormFields = document.querySelectorAll("#name, #comment");
 	commentFormFields.forEach( field => {
 		field.setAttribute("style", "background-color: " + backgroundColor);
