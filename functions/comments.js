@@ -15,7 +15,6 @@
 const env = require("../src/_data/env");
 const airtable = require("airtable");
 const nodemailer = require("nodemailer");
-const qs = require("querystring");
 
 airtable.configure({
 	apiKey: process.env.AIRTABLE_API_KEY
@@ -80,7 +79,7 @@ const saveComment = async ({ timestamp, name, comment, workshopId }) => {
 };
 
 exports.handler = async function(event, context, callback) {
-	const incomingData = qs.parse(event.body);
+	const incomingData = JSON.parse(event.body);
 
 	// Reject the request when:
 	// 1. Not a POST request;

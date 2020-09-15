@@ -114,7 +114,7 @@ article {
 			max-width: 100%;
 		}
 
-		// Blur imags which are missing alt tags altogether
+		// Blur images which are missing alt tags altogether
 		// or whose alt tags begin with "This image has an empty alt attribute"
 		img:not([alt]),
 		img[alt^="This image has an empty alt attribute"] {
