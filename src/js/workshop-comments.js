@@ -75,7 +75,7 @@ commentForm.addEventListener("submit", (event) => {
 	XHR.send(jsonFormData);
 });
 
-/*
+/**
  * Hide/show required and success messages.
  * @param {DOMElement} domSelector - The DOM Element to parse.
  * @param {Boolean} toShow - value equals true to show and equals false to hide.
@@ -86,12 +86,12 @@ function applyVisibility(domSelector, toShow, displayType) {
 	domSelector.setAttribute("style", `display:  ${displayType};`);
 }
 
-/*
+/**
  * Display the new comment on the current page.
- * @param {DOMElement} nameField - DOM element of name field in comment form.
- * @param {DOMElement} commentField - DOM element of comment field in comment form.
+ * @param {String} name - DOM element of name field in comment form.
+ * @param {String} comment - DOM element of comment field in comment form.
  */
-function showSubmittedComment(nameField, commentField) {
+function showSubmittedComment(name, comment) {
 	// Add comment to the top of the comments section of workshop page.
 	const newCommentDiv = document.createElement("div");
 	newCommentDiv.innerHTML = "<article class='comment submitted-comment'><p><span class='comment-name'></span> | <span class='comment-date'></span></p><p class='comment-text'></p></article>";
@@ -107,11 +107,11 @@ function showSubmittedComment(nameField, commentField) {
 
 	// Add values of comment.
 	submittedDate.innerText = convertDate(dateObject);
-	submittedName.innerText = nameField;
-	submittedComment.innerText = commentField;
+	submittedName.innerText = name;
+	submittedComment.innerText = comment;
 }
 
-/*
+/**
  * Disable the "post a comment" button and text fields when the post request is in the process of sending.
  * @param {Boolean} disabled - Boolean value indicating whether or not post request is in the send state.
  */
