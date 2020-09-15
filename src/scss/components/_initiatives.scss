@@ -134,7 +134,7 @@
 		background-color: $white;
 		border: 0;
 		border-radius: rem(33);
-		box-shadow: 0 0 0 rem(1) $green-dark inset;
+		box-shadow: 0 0 0 rem(1.2) $green-dark inset;
 		box-sizing: border-box;
 		color: $green-dark;
 		float: right;
@@ -145,12 +145,11 @@
 		margin: rem(29) 0;
 		padding: rem(8) rem(34);
 		transform: perspective(rem(1)) translateZ(0);
-		width: 100%;
 	}
 
 	button::before {
 		border-radius: rem(26);
-		box-shadow: 0 0 0 rem(1) $green-dark inset;
+		box-shadow: 0 0 0 rem(1.2) $green-dark inset;
 		content: '';
 		height: rem(41);
 		left: 0;
