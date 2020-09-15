@@ -134,7 +134,7 @@
 		background-color: $white;
 		border: 0;
 		border-radius: rem(33);
-		box-shadow: 0 0 0 rem(1.2) $green-dark inset;
+		box-shadow: 0 0 0 rem(2) $green-dark inset;
 		box-sizing: border-box;
 		color: $green-dark;
 		float: right;
@@ -149,7 +149,7 @@
 
 	button::before {
 		border-radius: rem(26);
-		box-shadow: 0 0 0 rem(1.2) $green-dark inset;
+		box-shadow: 0 0 0 rem(2) $green-dark inset;
 		content: '';
 		height: rem(41);
 		left: 0;
