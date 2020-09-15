@@ -88,8 +88,8 @@ function applyVisibility(domSelector, toShow, displayType) {
 
 /**
  * Display the new comment on the current page.
- * @param {String} name - DOM element of name field in comment form.
- * @param {String} comment - DOM element of comment field in comment form.
+ * @param {String} name - Text of name field in comment form.
+ * @param {String} comment - Text of comment field in comment form.
  */
 function showSubmittedComment(name, comment) {
 	// Add comment to the top of the comments section of workshop page.
