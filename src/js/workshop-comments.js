@@ -135,4 +135,7 @@ function disableFields(disabled) {
 		field.setAttribute("style", "background-color: " + backgroundColor);
 		field.readOnly = disabled;
 	});
+
+	// While UIO themes are turned on the opacity of the comment form will change while disabled instead of the input fields background color
+	disabled ? commentForm.classList.add("disable-form") : commentForm.classList.remove("disable-form");
 }
