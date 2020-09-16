@@ -199,7 +199,7 @@
 	}
 }
 
-// This media query breakpoint comes the width of the Galaxy Fold screen.
+// Same as the UIO breakpoint for UIO adaptation.
 @include breakpoint-up(sm) {
 	#comment-form input[name="name"] {
 		width: rem(263);
