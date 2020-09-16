@@ -4,7 +4,6 @@
     <a {% if page.url === '/' + pageItem.slug + '/' %}aria-current="page" {% endif %}href="/{{ pageItem.slug }}/">{{ pageItem.title }}</a>
     {%- endif %}
   {%- endfor %}
-  <a {% if page.url === '/initiatives/' %}aria-current="page" {% endif %}href="/initiatives/">Initiatives</a>
   <a {% if page.url === '/news/' %}aria-current="page" {% endif %}href="/news/">News</a>
   <a {% if page.url === '/views/' %}aria-current="page" {% endif %} href="/views/">Views</a>
 </nav>
