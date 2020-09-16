@@ -56,14 +56,14 @@ commentForm.addEventListener("submit", (event) => {
 			// Show failed comment submission message.
 			submitFailureMessage.setAttribute("style", "display: block;");
 		}
-		// disableFields(false);
+		disableFields(false);
 	});
 
 	// Show failure message in case of error.
 	XHR.addEventListener( "error", function() {
 		// Show failed comment submission message.
 		submitFailureMessage.setAttribute("style", "display: block;");
-		// disableFields(false);
+		disableFields(false);
 	} );
 
 	// Set up our request.
@@ -112,8 +112,8 @@ function showSubmittedComment(name, comment) {
 }
 
 /**
- * Toggle "disable-element" class on given element
- * @param {DOMElement} element - DOM element to add or remove "disable-element" class
+ * Toggle "disable-element" class on given element.
+ * @param {DOMElement} element - DOM element to add or remove "disable-element" class.
  * @param {Boolean} disabled - Boolean value indicating whether or not post request is in the send state.
  */
 function reduceOpacity(element, disabled) {
