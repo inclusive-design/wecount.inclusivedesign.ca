@@ -1,5 +1,27 @@
+// initiatives page: Workshop section
+.workshop {
+	padding: 0;
+
+	a:focus,
+	a:hover {
+		img {
+			box-shadow: rem(-10) rem(10) rem(10) rgba(0, 0, 0, 0.25);
+		}
+	}
+}
+
 .workshop-image {
 	max-width: 100%;
+}
+
+// Workshop page
+.workshop-page .description {
+	margin-bottom: rem(100);
+
+	h3 {
+		border-bottom: rem(5) solid $gold;
+		line-height: rem(60);
+	}
 }
 
 .comments {
@@ -26,15 +48,6 @@
 		margin-bottom: rem(60);
 		padding-bottom: rem(1);
 		padding-left: 0;
-	}
-}
-
-.workshop-page .description {
-	margin-bottom: rem(100);
-
-	h3 {
-		border-bottom: rem(5) solid $gold;
-		line-height: rem(60);
 	}
 }
 
@@ -180,26 +193,13 @@
 	}
 }
 
-.initiatives {
-	.workshop {
-		padding: 0;
-
-		a:focus,
-		a:hover {
-			img {
-				box-shadow: rem(-10) rem(10) rem(10) rgba(0, 0, 0, 0.25);
-			}
-		}
-	}
-}
-
 @include breakpoint-up(lg) {
 	#comment-form button {
 		width: auto;
 	}
 }
 
-// This media query breakpoint comes the width of the Galaxy Fold screen.
+// Same as the UIO breakpoint for UIO adaptation.
 @include breakpoint-up(sm) {
 	#comment-form input[name="name"] {
 		width: rem(263);
