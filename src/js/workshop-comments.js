@@ -128,7 +128,7 @@ function disableFields(disabled) {
 	const postCommentButton = document.getElementById("post-comment");
 	postCommentButton.setAttribute("style", "background-color: " + backgroundColor);
 	postCommentButton.disabled = disabled;
-	// While UIO themes are turned on the opacity of the post a commnet button will change while disabled instead of background color
+	// When UIO themes are turned on the opacity of the post a commnet button will change while disabled instead of background color
 	disabled ? postCommentButton.classList.add("disable-form") : postCommentButton.classList.remove("disable-form");
 
 	// Disable/enable and set background color of comment form input fields
@@ -136,7 +136,7 @@ function disableFields(disabled) {
 	commentFormFields.forEach( field => {
 		field.setAttribute("style", "background-color: " + backgroundColor);
 		field.readOnly = disabled;
-		// While UIO themes are turned on the opacity of the input fields will change while disabled instead of background color
+		// When UIO themes are turned on the opacity of the input fields will change while disabled instead of background color
 		disabled ? field.classList.add("disable-form") : field.classList.remove("disable-form");
 	});
 }
