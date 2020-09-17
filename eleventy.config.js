@@ -2,12 +2,15 @@
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginSass = require("eleventy-plugin-sass");
+const pluginPWA = require("eleventy-plugin-pwa");
 const fs = require("fs");
 
-const dataFetcher = require("./src/utils/data-fetcher.js");
+const dataFetcherWp = require("./src/utils/data-fetcher-wp.js");
+const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
+const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
@@ -20,19 +23,23 @@ module.exports = function(eleventyConfig) {
 
 	// Add custom collections.
 	eleventyConfig.addCollection("pages", async function() {
-		return dataFetcher.sitePages();
+		return dataFetcherWp.sitePages();
+	});
+
+	eleventyConfig.addCollection("workshops", async function() {
+		return dataFetcherAirtable.workshops();
 	});
 
 	eleventyConfig.addCollection("news", async function() {
-		return dataFetcher.categorizedItems("news", 8);
+		return dataFetcherWp.categorizedItems("news", 8);
 	});
 
 	eleventyConfig.addCollection("views", async function() {
-		return dataFetcher.categorizedItems("views", 1);
+		return dataFetcherWp.categorizedItems("views", 1);
 	});
 
 	eleventyConfig.addCollection("viewsTags", async function() {
-		const viewsPromise = dataFetcher.categorizedItems("views", 1);
+		const viewsPromise = dataFetcherWp.categorizedItems("views", 1);
 		return new Promise((resolve) => {
 			viewsPromise.then(views => {
 				resolve(getUniqueTags(views));
@@ -41,8 +48,8 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("tags", async function() {
-		const tags = await dataFetcher.siteTags();
-		const posts = await dataFetcher.sitePosts();
+		const tags = await dataFetcherWp.siteTags();
+		const posts = await dataFetcherWp.sitePosts();
 		const pageSize = 10;
 		let collectionTogo = [];
 
@@ -86,9 +93,11 @@ module.exports = function(eleventyConfig) {
 		watch: ["src/**/*.scss"],
 		sourcemaps: process.env.ELEVENTY_ENV === "development" ? true : false
 	});
+	eleventyConfig.addPlugin(pluginPWA);
 
 	// Add filters.
 	eleventyConfig.addFilter("dateFilter", dateFilter);
+	eleventyConfig.addFilter("htmlSymbolFilter", htmlSymbolFilter);
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
@@ -98,6 +107,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addTransform("parse", parseTransform);
 
 	// Configure passthrough file copy.
+	eleventyConfig.addPassthroughCopy({"manifest.json": "manifest.json"});
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});

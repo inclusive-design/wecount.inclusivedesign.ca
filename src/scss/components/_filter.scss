@@ -108,6 +108,13 @@
 
 		li {
 			padding: rem(4) rem(8);
+
+			// Hanging indent for label texts
+			label {
+				display: block;
+				padding-left: rem(29);
+				text-indent: rem(-30);
+			}
 		}
 	}
 
@@ -132,6 +139,8 @@
 
 	.apply-button,
 	.reset-button {
+		padding: rem(1) rem(3);
+
 		span {
 			display: inline-flex;
 		}
@@ -190,7 +199,7 @@
 	outline: rem(3) double $blue-alt-light;
 }
 
-@media screen and (min-width: 1024px) {
+@include breakpoint-up(lg) {
 	.filter {
 		.filter-header {
 			h2 {

@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{ pageTitle }} | {{ site.title }}</title>
+<title>{{ pageTitle | htmlSymbolFilter }} | {{ site.title }}</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
@@ -14,4 +14,5 @@
 <meta property="og:title" content="{{ pageTitle }} | {{ site.title }}">
 <meta property="og:url" content="{{ env.baseUrl if env.baseUrl }}{{ page.url }}">
 <link rel="icon" type="image/png" href="/images/favicon.png">
-<link rel="apple-touch-icon" href="/images/icon.png" sizes="512x512">
+<link rel="apple-touch-icon" href="/images/logo-512.png" sizes="512x512">
+<link rel="manifest" href="/manifest.json">

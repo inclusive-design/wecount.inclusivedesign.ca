@@ -1,6 +1,6 @@
 // Mixins.
 
-// Maintain aspect ration of a container
+// Maintain aspect ratio of a container
 @mixin aspect-ratio($width, $height) {
 	position: relative;
 
@@ -25,7 +25,7 @@
 	}
 }
 
-// Maintain aspect ration of a container
+// Maintain aspect ratio of a container
 @mixin tags() {
 	display: flex;
 	flex-wrap: wrap;
@@ -164,6 +164,22 @@
 		}
 	}
 
+	// The Initiatives page
+	.initiatives {
+		a:focus,
+		a:hover {
+			img {
+				box-shadow: rem(-10) rem(10) rem(10) currentColor;
+			}
+		}
+	}
+
+	// Workshop Page
+	.disabled-element,
+	.submitted-comment {
+		opacity: 0.7;
+	}
+
 	// Focus/hover styles for SVGs on the footer
 	footer .footer-content {
 		// Logos on the footer
@@ -219,6 +235,8 @@
 	.search-container input,
 	button:not(.filter-expand-button):focus,
 	button:not(.filter-expand-button):hover,
+	#comment-form button,
+	#comment-form button::before,
 	li .pagination-link,
 	li .pagination-link::before,
 	.wp-block-file__button:focus,
@@ -299,7 +317,7 @@
 		color: $fColor;
 	}
 
-	@media screen and (min-width: rem(1024)) {
+	@include breakpoint-up(lg) {
 		// Adjust the position of the search icon on the header
 		header .site-nav-wrapper .site-nav .search-container svg {
 			height: rem(24);

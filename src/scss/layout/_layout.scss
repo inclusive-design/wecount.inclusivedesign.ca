@@ -4,7 +4,7 @@
 
 body {
 	background-attachment: fixed;
-	background-image: url("../images/distribution--background.svg");
+	background-image: url("../images/background.svg");
 	background-position: 0 center;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -113,6 +113,13 @@ article {
 		audio {
 			max-width: 100%;
 		}
+
+		// Blur images which are missing alt tags altogether
+		// or whose alt tags begin with "This image has an empty alt attribute"
+		img:not([alt]),
+		img[alt^="This image has an empty alt attribute"] {
+			filter: blur(10px);
+		}
 	}
 
 	video {
@@ -148,7 +155,7 @@ article {
 	width: rem(1);
 }
 
-@media screen and (min-width: rem(1024)) {
+@include breakpoint-up(lg) {
 	body {
 		background-position: center;
 	}
@@ -241,7 +248,7 @@ article {
 
 // This media query breakpoint comes the landscape mode of the iPad Pro.
 // From here the larger size of the iframe will be implemented for aligned left or aligned right embedded media.
-@media screen and (min-width: rem(1366)) {
+@include breakpoint-up(xl) {
 	main article {
 		.alignleft,
 		.alignright {

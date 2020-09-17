@@ -90,7 +90,7 @@ button:not(.fl-prefsEditor-buttons) button {
 }
 
 // stylelint-disable-next-line
-.wp-block-file__button,
+.wp-block-file__button::before,
 button::before:not(.fl-prefsEditor-buttons) button {
 	border-radius: rem(26);
 	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
@@ -113,7 +113,7 @@ button::before:not(.fl-prefsEditor-buttons) button {
 	}
 }
 
-@media screen and (min-width: rem(1024)) {
+@include breakpoint-up(lg) {
 	h1 {
 		font-size: rem(50);
 	}
