@@ -124,15 +124,15 @@ function disableFields(disabled) {
 	// When a UIO theme is selected, the background color will remain the same as what is set by the theme.
 	const backgroundColor = disabled ? "#f3f3f3" : "#fff";
 
-	// Disable/enable and set background color of post a comment button
-	const postCommentButton = document.getElementById("post-comment");
-	postCommentButton.setAttribute("style", "background-color: " + backgroundColor);
-	postCommentButton.disabled = disabled;
-
-	// Disable/enable and set background color of comment form input fields
-	const commentFormFields = document.querySelectorAll("#name, #comment");
-	commentFormFields.forEach( field => {
-		field.setAttribute("style", "background-color: " + backgroundColor);
-		field.readOnly = disabled;
+	const commentFormElms = document.querySelectorAll("#name, #comment, #post-comment");
+	commentFormElms.forEach( element => {
+		// Set background color of comment form element.
+		element.setAttribute("style", "background-color: " + backgroundColor);
+		const elmType = element.nodeName.toLowerCase();
+		// Disable/enable comment form element.
+		element[elmType === "button" ? "disabled" : "readOnly"] = disabled;
+		// When UIO themes are turned on, reduce the opacity of form elements as a disabled indicator instead of changing the background color.
+		// The css class "disabled-element" is only defined with UIO themes.
+		element.classList[disabled ? "add" : "remove"]("disabled-element");
 	});
 }
