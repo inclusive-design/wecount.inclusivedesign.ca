@@ -112,15 +112,6 @@ function showSubmittedComment(name, comment) {
 }
 
 /**
- * Toggle "disable-element" class on given element.
- * @param {DOMElement} element - DOM element to add or remove "disable-element" class.
- * @param {Boolean} disabled - Boolean value indicating whether or not post request is in the send state.
- */
-function reduceOpacity(element, disabled) {
-	element.classList[disabled ? "add" : "remove"]("disable-element");
-}
-
-/**
  * Disable the "post a comment" button and text fields when the post request is in the process of sending.
  * @param {Boolean} disabled - Boolean value indicating whether or not post request is in the send state.
  */
@@ -133,19 +124,15 @@ function disableFields(disabled) {
 	// When a UIO theme is selected, the background color will remain the same as what is set by the theme.
 	const backgroundColor = disabled ? "#f3f3f3" : "#fff";
 
-	// Disable/enable and set background color of "post a comment" button.
-	const postCommentButton = document.getElementById("post-comment");
-	postCommentButton.setAttribute("style", "background-color: " + backgroundColor);
-	postCommentButton.disabled = disabled;
-	// When UIO themes are turned on, the opacity of the "post a comment" button will change while disabled instead of background color.
-	reduceOpacity(postCommentButton, disabled);
-
-	// Disable/enable and set background color of comment form input fields
-	const commentFormFields = document.querySelectorAll("#name, #comment");
-	commentFormFields.forEach( field => {
-		field.setAttribute("style", "background-color: " + backgroundColor);
-		field.readOnly = disabled;
-		// When UIO themes are turned on, the opacity of the input fields will change while disabled instead of background color.
-		reduceOpacity(field, disabled);
+	const commentFormElms = document.querySelectorAll("#name, #comment, #post-comment");
+	commentFormElms.forEach( element => {
+		// Set background color of comment form element.
+		element.setAttribute("style", "background-color: " + backgroundColor);
+		const elmType = element.nodeName.toLowerCase();
+		// Disable/enable comment form element.
+		element[elmType === "button" ? "disabled" : "readOnly"] = disabled;
+		// When UIO themes are turned on, reduce the opacity of form elements as a disabled indicator instead of changing the background color.
+		// The css class "disable-element" is only defined with UIO themes.
+		element.classList[disabled ? "add" : "remove"]("disable-element");
 	});
 }
