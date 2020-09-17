@@ -132,7 +132,7 @@ function disableFields(disabled) {
 		// Disable/enable comment form element.
 		element[elmType === "button" ? "disabled" : "readOnly"] = disabled;
 		// When UIO themes are turned on, reduce the opacity of form elements as a disabled indicator instead of changing the background color.
-		// The css class "disable-element" is only defined with UIO themes.
-		element.classList[disabled ? "add" : "remove"]("disable-element");
+		// The css class "disabled-element" is only defined with UIO themes.
+		element.classList[disabled ? "add" : "remove"]("disabled-element");
 	});
 }
