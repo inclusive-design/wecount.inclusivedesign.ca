@@ -50,14 +50,15 @@ The latter is easier than the former:
 
 1. Follow [Netlify instructions](https://docs.netlify.com/functions/build-with-javascript/#tools) to install tools for testing
 and deploying Netlify functions locally;
-2. After the tool set up, using Netlify Dev as an example, run following commands:
+2. Once the tool is set up, using Netlify Dev as an example, run following commands:
 
 ```bash
 # Due to security concerns, these environment variables are only available to WeCount team members
 export AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
 export EMAIL_FROM=EMAIL_TO_VALUE
 export EMAIL_FROM_PWD=EMAIL_FROM_PWD_VALUE
-export EMAIL_TO=EMAIL_TO_VALUE
+export EMAIL_TO_PRODUCTION=PRODUCTION_SITE_MODERATOR_EMAIL
+export EMAIL_TO_DEV=DEV_SITE_MODERATOR_EMAIL
 netlify dev
 ```
 

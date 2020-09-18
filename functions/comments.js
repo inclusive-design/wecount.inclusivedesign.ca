@@ -33,7 +33,7 @@ const sendEmail = ({ timestamp, name, comment }) => {
 
 	var mailOptions = {
 		from: process.env.EMAIL_FROM,
-		to: process.env.EMAIL_TO,
+		to: env.moderatorEmail,
 		subject: "A new comment is posted on the WeCount website",
 		text: "Below is the content of the new comment:\r\n\r\nPost Date: " + timestamp + "\r\nAuthor: " + name + "\r\nComment: " + comment + "\r\n\r\nWeCount Team"
 	};
