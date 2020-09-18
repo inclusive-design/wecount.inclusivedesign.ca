@@ -172,7 +172,13 @@ search = function (dataSet, searchTerm) {
 	searchTerm = searchTerm.toLowerCase();
 	return dataSet.filter((oneRecord) => {
 		const tagNames = oneRecord.tags ? oneRecord.tags.map(({name}) => name) : [];
-		return oneRecord.title.toLowerCase().concat(" ", oneRecord.content.toLowerCase(), " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchTerm));
+		console.log("search term: ", escapeSpecialChars(searchTerm));
+		if (oneRecord.slug === "the-importance-of-peripheral-vision" || oneRecord.slug === "learn" || oneRecord.slug === "continuing-our-work-during-covid-19") {
+			console.log("slug: ", oneRecord.slug);
+			console.log("match result: ", oneRecord.title.concat(" ", oneRecord.content, " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchTerm)));
+			console.log("joined: ", oneRecord.title.concat(" ", oneRecord.content, " ", tagNames.join(" ")).toLowerCase());
+		}
+		return oneRecord.title.concat(" ", oneRecord.content, " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchTerm));
 	});
 };
 
