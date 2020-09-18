@@ -172,7 +172,7 @@ search = function (dataSet, searchTerm) {
 	searchTerm = searchTerm.toLowerCase();
 	return dataSet.filter((oneRecord) => {
 		const tagNames = oneRecord.tags ? oneRecord.tags.map(({name}) => name) : [];
-		return oneRecord.title.concat(" ", oneRecord.content, " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchTerm));
+		return oneRecord.title.toLowerCase().concat(" ", oneRecord.content.toLowerCase(), " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchTerm));
 	});
 };
 
