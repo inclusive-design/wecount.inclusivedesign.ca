@@ -2,7 +2,7 @@
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginSass = require("eleventy-plugin-sass");
-const pluginPWA = require("eleventy-plugin-pwa");
+// const pluginPWA = require("eleventy-plugin-pwa");
 const fs = require("fs");
 
 const dataFetcherWp = require("./src/utils/data-fetcher-wp.js");
@@ -93,7 +93,7 @@ module.exports = function(eleventyConfig) {
 		watch: ["src/**/*.scss"],
 		sourcemaps: process.env.ELEVENTY_ENV === "development" ? true : false
 	});
-	eleventyConfig.addPlugin(pluginPWA);
+	// eleventyConfig.addPlugin(pluginPWA);
 
 	// Add filters.
 	eleventyConfig.addFilter("dateFilter", dateFilter);
