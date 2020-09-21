@@ -91,11 +91,11 @@ exports.handler = async function(event, context, callback) {
 			body: "Invalid HTTP request method or missing field values."
 		});
 	} else {
-    const deployType = getDeployType(event);
-    const moderatorEmail = deployType === "production" ? process.env.EMAIL_TO_PRODUCTION : process.env.EMAIL_TO_DEV;
+		const deployType = getDeployType(event);
+		const moderatorEmail = deployType === "production" ? process.env.EMAIL_TO_PRODUCTION : process.env.EMAIL_TO_DEV;
 		const airtableBase = deployType === "production" ? process.env.AIRTABLE_BASE_PRODUCTION : process.env.AIRTABLE_BASE_DEV;
 
-    airtable.configure({
+		airtable.configure({
 			apiKey: process.env.AIRTABLE_API_KEY
 		});
 		const base = airtable.base(airtableBase);
