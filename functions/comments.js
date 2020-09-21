@@ -22,6 +22,9 @@ airtable.configure({
 
 const base = airtable.base(env.airtableBase);
 
+console.log("context: ", process.env.CONTEXT);
+console.log("base: ", base);
+
 const sendEmail = ({ timestamp, name, comment }) => {
 	var transporter = nodemailer.createTransport({
 		service: "gmail",
