@@ -12,12 +12,19 @@
  * curl -X POST -d "name=test%20person&comment=a%20test%20comment&workshopId=recH5jhXKOYfeXYvP" [host-server]/api/comments
  */
 
-const env = require("../src/_data/env");
 const airtable = require("airtable");
 const nodemailer = require("nodemailer");
 
-const sendEmail = ({ timestamp, name, comment }) => {
-	var transporter = nodemailer.createTransport({
+// Due to a known issue with Netlify: Netlify functions cannot access netlify.toml context environment variables
+// (see https://community.netlify.com/t/netlify-toml-context-env-variables-do-not-apply-to-functions/410), this
+// netlify function cannot distinguish the production and dev deploys by checking process.env.CONTEXT, the workaround
+// is to check the URL to differentiate.
+const getDeployType = (event) => {
+	return event.headers.referer.startsWith("https://wecount.inclusivedesign.ca") ? "production" : "dev";
+};
+
+const sendEmail = (moderatorEmail, { timestamp, name, comment }) => {
+	const transporter = nodemailer.createTransport({
 		service: "gmail",
 		auth: {
 			user: process.env.EMAIL_FROM,
@@ -25,9 +32,9 @@ const sendEmail = ({ timestamp, name, comment }) => {
 		}
 	});
 
-	var mailOptions = {
+	const mailOptions = {
 		from: process.env.EMAIL_FROM,
-		to: env.moderatorEmail,
+		to: moderatorEmail,
 		subject: "A new comment is posted on the WeCount website",
 		text: "Below is the content of the new comment:\r\n\r\nPost Date: " + timestamp + "\r\nAuthor: " + name + "\r\nComment: " + comment + "\r\n\r\nWeCount Team"
 	};
@@ -84,15 +91,13 @@ exports.handler = async function(event, context, callback) {
 			body: "Invalid HTTP request method or missing field values."
 		});
 	} else {
-		airtable.configure({
+    const deployType = getDeployType(event);
+    const moderatorEmail = deployType === "production" ? process.env.EMAIL_TO_PRODUCTION : process.env.EMAIL_TO_DEV;
+		const airtableBase = deployType === "production" ? process.env.AIRTABLE_BASE_PRODUCTION : process.env.AIRTABLE_BASE_DEV;
+
+    airtable.configure({
 			apiKey: process.env.AIRTABLE_API_KEY
 		});
-
-		// Due to a known issue with Netlify: Netlify functions cannot access netlify.toml context environment variables
-		// (see https://community.netlify.com/t/netlify-toml-context-env-variables-do-not-apply-to-functions/410), this
-		// netlify function cannot distinguish the production and dev deploys by checking process.env.CONTEXT, the workaround
-		// is to check the URL to differentiate.
-		const airtableBase = event.headers.referer.startsWith("https://wecount.inclusivedesign.ca") ? process.env.AIRTABLE_BASE_PRODUCTION : process.env.AIRTABLE_BASE_DEV;
 		const base = airtable.base(airtableBase);
 
 		const timestamp = new Date().toISOString();
@@ -104,7 +109,7 @@ exports.handler = async function(event, context, callback) {
 		};
 
 		await saveComment(base, data);
-		await sendEmail(data);
+		await sendEmail(moderatorEmail, data);
 
 		callback(null, {
 			statusCode: 200,
