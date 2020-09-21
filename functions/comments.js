@@ -16,15 +16,6 @@ const env = require("../src/_data/env");
 const airtable = require("airtable");
 const nodemailer = require("nodemailer");
 
-airtable.configure({
-	apiKey: process.env.AIRTABLE_API_KEY
-});
-
-const base = airtable.base(env.airtableBase);
-
-console.log("context: ", process.env.CONTEXT);
-console.log("base: ", base);
-
 const sendEmail = ({ timestamp, name, comment }) => {
 	var transporter = nodemailer.createTransport({
 		service: "gmail",
@@ -54,7 +45,7 @@ const sendEmail = ({ timestamp, name, comment }) => {
 	});
 };
 
-const saveComment = async ({ timestamp, name, comment, workshopId }) => {
+const saveComment = async (base, { timestamp, name, comment, workshopId }) => {
 	return new Promise((resolve, reject) => {
 		base("comments").create([
 			{
@@ -93,6 +84,17 @@ exports.handler = async function(event, context, callback) {
 			body: "Invalid HTTP request method or missing field values."
 		});
 	} else {
+		airtable.configure({
+			apiKey: process.env.AIRTABLE_API_KEY
+		});
+
+		// Due to a known issue with Netlify: Netlify functions cannot access netlify.toml context environment variables
+		// (see https://community.netlify.com/t/netlify-toml-context-env-variables-do-not-apply-to-functions/410), this
+		// netlify function cannot distinguish the production and dev deploys by checking process.env.CONTEXT, the workaround
+		// is to check the URL to differentiate.
+		const airtableBase = event.headers.referer.startsWith("https://wecount.inclusivedesign.ca") ? process.env.AIRTABLE_BASE_PRODUCTION : process.env.AIRTABLE_BASE_DEV;
+		const base = airtable.base(airtableBase);
+
 		const timestamp = new Date().toISOString();
 		const data = {
 			timestamp: timestamp,
@@ -101,7 +103,7 @@ exports.handler = async function(event, context, callback) {
 			workshopId: incomingData["workshopId"]
 		};
 
-		await saveComment(data);
+		await saveComment(base, data);
 		await sendEmail(data);
 
 		callback(null, {
