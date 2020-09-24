@@ -246,9 +246,9 @@ article {
 	}
 }
 
-// This media query breakpoint comes the landscape mode of the iPad Pro.
-// From here the larger size of the iframe will be implemented for aligned left or aligned right embedded media.
 @include breakpoint-up(xl) {
+	// When screen sizes >= the iPad Pro landscape mode, use larger sizes for embedded media elements that
+	// are aligned left or right.
 	main article {
 		.alignleft,
 		.alignright {
