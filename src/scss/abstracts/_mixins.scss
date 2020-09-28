@@ -79,14 +79,7 @@
 
 			// Checkmark
 			&:checked + label::after {
-				background: $fColor;
-				box-shadow:
-					rem(2) 0 0 $bColor,
-					rem(4) 0 0 $bColor,
-					rem(4) rem(-2) 0 $bColor,
-					rem(4) rem(-4) 0 $bColor,
-					rem(4) rem(-6) 0 $bColor,
-					rem(4) rem(-8) 0 $bColor;
+				color: $bColor;
 			}
 		}
 

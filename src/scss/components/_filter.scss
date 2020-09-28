@@ -59,19 +59,13 @@
 		// Checkmark
 		&:checked + label::after {
 			background: $blue-alt-light;
-			box-shadow:
-				rem(2) 0 0 white,
-				rem(4) 0 0 white,
-				rem(4) rem(-2) 0 white,
-				rem(4) rem(-4) 0 white,
-				rem(4) rem(-6) 0 white,
-				rem(4) rem(-8) 0 white;
-			content: '';
+			color: $white;
+			content: '\2713';
+			font-size: rem(18);
 			height: rem(2);
-			left: rem(5);
+			left: rem(32);
 			position: absolute;
-			top: rem(9);
-			transform: rotate(45deg);
+			top: 0;
 			width: rem(2);
 		}
 	}
@@ -194,7 +188,7 @@
 // Box checked and focus/hover
 .fl-input-enhanced .filter-checkbox:checked:focus + label::before,
 .fl-input-enhanced .filter-checkbox:checked:hover + label::before {
-	border: rem(1) solid white;
+	border: rem(1) solid $white;
 	box-shadow: 0 0 0 rem(1) $blue-alt-light inset;
 	outline: rem(3) double $blue-alt-light;
 }
