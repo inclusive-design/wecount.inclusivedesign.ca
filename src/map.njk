@@ -1,0 +1,39 @@
+---
+title: Accessibility Map
+permalink: /map/
+---
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+  {% include 'components/map.html' %}
+{% endblock %}
+
+{% block headerScripts %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+<link rel="stylesheet" href="/lib/fluid-covid-map-viz/src/css/mapviz.css" />
+
+<script src="/lib/infusion/src/components/tooltip/js/Tooltip.js"></script>
+
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="/lib/papaparse/papaparse.js"></script>
+
+<script src="/lib/fluid-covid-map-viz/src/js/colour.js"></script>
+<script src="/lib/fluid-covid-map-viz/src/js/leafletMap.js"></script>
+<script src="/lib/fluid-covid-map-viz/src/js/CSVResource.js"></script>
+<script src="/lib/fluid-covid-map-viz/src/js/covidMap.js"></script>
+{% endblock %}
+
+{% block footerScripts %}
+<script>
+$(document).ready(function () {
+	fluid.mapviz.covid.map(".fl-mapviz-container", {
+		dataUrl: window.location.origin + "/assessment_centre_locations.csv"
+    // Note: when fluid.mapviz.covid.map() supports the fetch of a remote data file, the line below can be uncommented.
+    // Using this line now leads to "Cross-Origin Request Blocked" error.
+    // For now, eleventy.config.js copies "node_modules/fluid-covid-map-viz/data/assessment_centre_locations.csv" to
+    // the root directory of the deployed site to avoid this issue.
+		// dataUrl: "https://github.com/cindyli/covid-assessment-centres/blob/trigger-map-deploy/latest.csv"
+	});
+});
+</script>
+{% endblock %}
