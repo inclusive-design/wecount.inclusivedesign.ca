@@ -5,12 +5,11 @@ permalink: /map/
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  {% include 'components/map.html' %}
+  {% include '../node_modules/fluid-covid-map-viz/build/html/template.html' %}
 {% endblock %}
 
 {% block headerScripts %}
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-<link rel="stylesheet" href="/lib/fluid-covid-map-viz/src/css/mapviz.css" />
+<link rel="stylesheet" href="/lib/fluid-covid-map-viz/build/css/fluid-covid-map-viz-all.css" />
 
 <script src="/lib/infusion/src/components/tooltip/js/Tooltip.js"></script>
 
@@ -21,6 +20,8 @@ permalink: /map/
 <script src="/lib/fluid-covid-map-viz/src/js/leafletMap.js"></script>
 <script src="/lib/fluid-covid-map-viz/src/js/CSVResource.js"></script>
 <script src="/lib/fluid-covid-map-viz/src/js/covidMap.js"></script>
+
+{# <script src="/lib/fluid-covid-map-viz/build/js/fluid-covid-map-viz.js"></script> #}
 {% endblock %}
 
 {% block footerScripts %}
