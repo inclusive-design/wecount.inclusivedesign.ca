@@ -5,7 +5,7 @@ permalink: /map/
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  {% include '../node_modules/fluid-covid-map-viz/build/html/template.html' %}
+	{% include '../node_modules/fluid-covid-map-viz/build/html/template.html' %}
 {% endblock %}
 
 {% block headerScripts %}
@@ -29,10 +29,10 @@ permalink: /map/
 $(document).ready(function () {
 	fluid.mapviz.covid.map(".fl-mapviz-container", {
 		dataUrl: window.location.origin + "/assessment_centre_locations.csv"
-    // Note: when fluid.mapviz.covid.map() supports the fetch of a remote data file, uncomment the line below.
-    // Using this line now leads to "Cross-Origin Request Blocked" error.
-    // For now, eleventy.config.js copies "node_modules/fluid-covid-map-viz/data/assessment_centre_locations.csv" to
-    // the root directory of the deployed site to avoid this issue.
+		// Note: when fluid.mapviz.covid.map() supports the fetch of a remote data file, uncomment the line below.
+		// Using this line now leads to "Cross-Origin Request Blocked" error.
+		// For now, eleventy.config.js copies "node_modules/fluid-covid-map-viz/data/assessment_centre_locations.csv" to
+		// the root directory of the deployed site to avoid this issue.
 		// dataUrl: "https://github.com/cindyli/covid-assessment-centres/blob/trigger-map-deploy/latest.csv"
 	});
 });
