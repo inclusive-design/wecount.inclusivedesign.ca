@@ -28,10 +28,10 @@ permalink: /map/
 <script>
 $(document).ready(function () {
 	fluid.mapviz.covid.map(".fl-mapviz-container", {
-		dataUrl: window.location.origin + "/assessment_centre_locations.csv"
+		// dataUrl: window.location.origin + "/assessment_centre_locations.csv"
 		// Note: The server serves `/api/getMapData` API that returns the covid csv data in a string. However, using
 		// it as `dataUrl` throws this error: Failure loading resources for component at path map-2a4bkf2t-38
-		// dataUrl: window.location.origin + "/api/getMapData"
+		dataUrl: window.location.origin + "/api/getMapData"
 	});
 });
 </script>
