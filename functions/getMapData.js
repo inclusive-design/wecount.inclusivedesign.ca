@@ -42,7 +42,7 @@ exports.handler = function(event, context, callback) {
 			axios.get(dataFileUrl).then(function (content) {
 				callback(null, {
 					statusCode: 200,
-					body: JSON.stringify(content.data)
+					body: content.data
 				});
 			}).catch(function (error) {
 				errorCallback(callback, error);
