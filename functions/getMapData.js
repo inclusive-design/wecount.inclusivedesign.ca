@@ -11,13 +11,13 @@
 
 const axios = require("axios");
 
-const dataRepoUrl = "https://raw.githubusercontent.com/cindyli/covid-assessment-centres/trigger-map-deploy/";
-const dataInfoUrl = dataRepoUrl + "latest.json";
+const dataRepoUrl = "https://raw.githubusercontent.com/cindyli/covid-assessment-centres/trigger-map-deploy/ODS/";
+const latestInfoUrl = dataRepoUrl + "latest.json";
 
 const errorCallback = function (callback, error) {
 	callback(null, {
 		statusCode: 400,
-		body: "Failed at fetching from the URL (" + dataInfoUrl + ") with error: " + error
+		body: "Failed at fetching from the URL (" + latestInfoUrl + ") with error: " + error
 	});
 };
 
@@ -29,16 +29,9 @@ exports.handler = function(event, context, callback) {
 			body: "Invalid HTTP request method."
 		});
 	} else {
-		axios.get(dataInfoUrl).then(function (dataInfo) {
-			// const latestFileInfo = JSON.parse(dataInfo);
-			const latestFileInfo = dataInfo.data;
-
-			let branchName, latestFileName;
-			for (branchName in latestFileInfo) {
-				latestFileName = latestFileInfo[branchName];
-			}
-
-			const dataFileUrl = dataRepoUrl + branchName + "/" + latestFileName;
+		axios.get(latestInfoUrl).then(function (dataInfo) {
+			const latestFileContent = dataInfo.data;
+			const dataFileUrl = dataRepoUrl + latestFileContent.fileName;
 			axios.get(dataFileUrl).then(function (content) {
 				callback(null, {
 					statusCode: 200,
