@@ -109,9 +109,7 @@ module.exports = function(eleventyConfig) {
 	// Configure passthrough file copy.
 	eleventyConfig.addPassthroughCopy({"manifest.json": "manifest.json"});
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
-	eleventyConfig.addPassthroughCopy({"node_modules/papaparse": "lib/papaparse"});
 	eleventyConfig.addPassthroughCopy({"node_modules/fluid-covid-map-viz": "lib/fluid-covid-map-viz"});
-	eleventyConfig.addPassthroughCopy({"node_modules/fluid-covid-map-viz/data/assessment_centre_locations.csv": "assessment_centre_locations.csv"});
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});
 	eleventyConfig.addPassthroughCopy({"src/js": "js"});
