@@ -33,7 +33,7 @@
     "airtable": "^0.10.0",
     "eleventy-plugin-pwa": "^1.0.8",
     "eleventy-plugin-sass": "^1.1.1",
-    "infusion": "^3.0.0-dev.20200923T142259Z.a37069020.UIO-WeCount",
+    "infusion": "^3.0.0-dev.20201007T193943Z.440be20ec.FLUID-6145",
     "nodemailer": "^6.4.11",
     "sanitize.css": "^12.0.1",
     "uuid": "^8.3.0"
