@@ -11,7 +11,7 @@
 
 const axios = require("axios");
 
-const dataRepoUrl = "https://raw.githubusercontent.com/cindyli/covid-assessment-centres/trigger-map-deploy/ODS/";
+const dataRepoUrl = "https://raw.githubusercontent.com/inclusive-design/covid-assessment-centres/master/ODS/";
 const latestInfoUrl = dataRepoUrl + "latest.json";
 
 const errorCallback = function (callback, error) {
