@@ -25,19 +25,23 @@
 	}
 
 	.blue {
+		background-color: $blue-grey;
 		background-image: url("../images/blue.svg");
 	}
 
 	.green {
+		background-color: $green-grey;
 		background-image: url("../images/green.svg");
 	}
 
 	.yellow {
+		background-color: $yellow;
 		background-image: url("../images/yellow.svg");
 	}
 
-	.purple {
-		background-image: url("../images/purple.svg");
+	.azure {
+		background-color: $azure;
+		background-image: url("../images/azure.svg");
 	}
 }
 
