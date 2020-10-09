@@ -206,7 +206,7 @@
 	}
 }
 
-// This media query breakpoint comes the width of the Galaxy Fold screen.
+// This media query breakpoint is for the Galaxy Fold screen.
 @include breakpoint-down(xs) {
 	#comment-form button {
 		height: rem(54);

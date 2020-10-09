@@ -182,7 +182,7 @@ header {
 	}
 }
 
-// This media query breakpoint comes the width of the Galaxy Fold screen.
+// This media query breakpoint is for the Galaxy Fold screen.
 @include breakpoint-down(xs) {
 	header .site-nav-wrapper .site-nav .nav-smallScreen .starter-nav #menuToggleButton {
 		span {
