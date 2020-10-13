@@ -19,6 +19,14 @@ $(document).ready(function () {
 	// Set all bio descption paragraphs as live regions
 	$(document.querySelectorAll(".wp-block-media-text")).siblings("p").attr("aria-live", "polite");
 
+	// Break all names that use <h2> into two lines after the first name section
+	let names = $(document.querySelectorAll("h2"));
+
+	for (let i = 0; i < names.length; i++) {
+		const replaceTo = names[i].innerHTML.replace(" ", " <br />");
+		names[i].innerHTML = replaceTo;
+	}
+
 	// Clicking the expand link opens/closes the corresponding bio description
 	const expandLinks = document.querySelectorAll(".wp-block-button__link");
 

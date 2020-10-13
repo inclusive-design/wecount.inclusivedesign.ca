@@ -107,7 +107,8 @@
 @include breakpoint-down(xs) {
 	.advisory-panel {
 		& > .api-content > .wp-block-group > .wp-block-group__inner-container > .wp-block-group > .wp-block-group__inner-container > .wp-block-group {
-			margin: 0 -1.5rem;
+			margin-left: -1.5rem;
+			margin-right: -1.5rem;
 		}
 	}
 }
