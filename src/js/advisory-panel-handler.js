@@ -6,13 +6,13 @@
 // Also adjust the aria attributes of the link correspondingly.
 function toggleExpandState(expandLink) {
 	const currentExpandedValue = expandLink.getAttribute("aria-expanded");
-	const expandedState = currentExpandedValue === "true" ? "false" : "true";
-	expandLink.setAttribute("aria-expanded", expandedState);
-	expandLink.setAttribute("aria-label", expandedState === "true" ? "collapse" : "expand");
+	expandLink.setAttribute("aria-expanded", currentExpandedValue === "true" ? "false" : "true");
+	expandLink.setAttribute("aria-label", currentExpandedValue === "true" ? "expand" : "collapse");
+	expandLink.innerHTML = currentExpandedValue === "true" ? "+" : "-";
 
 	// Toggle the bio description
 	const bioDesc = $(expandLink).closest(".wp-block-media-text").siblings("p");
-	bioDesc[expandedState === "false" ? "hide" : "show"]();
+	bioDesc[currentExpandedValue === "true" ? "hide" : "show"]();
 }
 
 $(document).ready(function () {
