@@ -19,11 +19,15 @@ $(document).ready(function () {
 	// Set all bio descption paragraphs as live regions
 	$(document.querySelectorAll(".wp-block-media-text")).siblings("p").attr("aria-live", "polite");
 
-	// Break all names that use <h2> into two lines after the first name section
+	// Pre-process all advisor names in h2:
+	// 1. Break all names into two lines after the first name;
+	// 2. Replace all occurrences of "&amp;" with "&" to make sure soft hyphens (&shy;) embedded in names are
+	// displayed as html codes. When special characters "&" went through WordPress functions, they were escaped
+	// into displayable "&amp;".
 	let names = $(document.querySelectorAll("h2"));
 
 	for (let i = 0; i < names.length; i++) {
-		const replaceTo = names[i].innerHTML.replace(" ", " <br />");
+		const replaceTo = names[i].innerHTML.replace(" ", " <br />").replaceAll("&amp;", "&");
 		names[i].innerHTML = replaceTo;
 	}
 
