@@ -105,13 +105,3 @@
 		}
 	}
 }
-
-// This media query breakpoint is for the Galaxy Fold screen.
-@include breakpoint-down(xs) {
-	.advisory-panel {
-		& > .api-content > .wp-block-group > .wp-block-group__inner-container > .wp-block-group > .wp-block-group__inner-container > .wp-block-group {
-			margin-left: -1.5rem;
-			margin-right: -1.5rem;
-		}
-	}
-}
