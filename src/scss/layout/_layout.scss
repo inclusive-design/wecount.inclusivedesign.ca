@@ -44,134 +44,97 @@ article {
 			display: table;
 		}
 	}
-}
 
-// WP customized styles
-.has-small-font-size {
-	font-size: 84%;
-}
+	// WP customized styles for the WeCount website
 
-.has-large-font-size {
-	font-size: 126%;
-}
-
-.has-larger-font-size {
-	font-size: 168%;
-}
-
-// WP styles for vertically aligning text within Media & Text blocks
-.is-vertically-aligned-top .wp-block-media-text__content {
-	align-self: start;
-}
-
-.is-vertically-aligned-center .wp-block-media-text__content {
-	align-self: center;
-}
-
-.is-vertically-aligned-bottom .wp-block-media-text__content {
-	align-self: end;
-}
-
-// WP styles for horizontally aligning text within Media & Text blocks
-.has-text-align-left {
-	text-align: left;
-}
-
-.has-text-align-center {
-	text-align: center;
-}
-
-.has-text-align-right {
-	text-align: right;
-}
-
-figure {
-	display: table;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-// Styling for media and text block with media on the left
-.wp-block-media-text {
-	display: grid;
-
-	.wp-block-media-text__content {
-		margin-left: rem(25);
+	.has-small-font-size {
+		font-size: 84%;
 	}
 
-	.wp-block-media-text__media {
+	.has-large-font-size {
+		font-size: 126%;
+	}
+
+	.has-larger-font-size {
+		font-size: 168%;
+	}
+
+	// WP styles for vertically aligning text within Media & Text blocks
+	.is-vertically-aligned-top .wp-block-media-text__content {
+		align-self: start;
+	}
+
+	.is-vertically-aligned-center .wp-block-media-text__content {
 		align-self: center;
 	}
 
-	img {
-		height: auto;
+	.is-vertically-aligned-bottom .wp-block-media-text__content {
+		align-self: end;
+	}
+
+	// WP styles for horizontally aligning text within Media & Text blocks
+	.has-text-align-left {
+		text-align: left;
+	}
+
+	.has-text-align-center {
+		text-align: center;
+	}
+
+	.has-text-align-right {
+		text-align: right;
+	}
+
+	figure {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	// The folowing CSS rule ensures video content is the width of the article element in mobile and iPad views
+	.wp-block-video,
+	.is-type-video {
+		min-width: 100%;
+	}
+
+	.wp-block-group {
+		margin-top: rem(12);
+	}
+
+	// The folowing CSS rule ensures content fits within the viewport for mobile and iPad views
+	.wp-block-image,
+	.wp-block-audio,
+	.wp-block-embed,
+	.wp-block-media-text,
+	.wp-block-group {
+		img {
+			max-width: 100%;
+		}
+
+		audio {
+			max-width: 100%;
+		}
+
+		// Blur images which are missing alt tags altogether
+		// or whose alt tags begin with "This image has an empty alt attribute"
+		img:not([alt]),
+		img[alt^="This image has an empty alt attribute"] {
+			filter: blur(10px);
+		}
+	}
+
+	video {
+		max-height: rem(580);
 		width: 100%;
 	}
-}
 
-// Styling for media and text block with media on the right
-.has-media-on-the-right {
-	.wp-block-media-text__media {
-		grid-column: 2;
-		grid-row: 1;
+	figcaption {
+		caption-side: bottom;
+		display: table-caption;
+		font-size: rem(14);
+		font-style: italic;
+		padding: 1rem 0;
+		text-align: center;
 	}
-
-	.wp-block-media-text__content {
-		grid-column: 1;
-		grid-row: 1;
-		margin-left: 0;
-	}
-}
-
-// The folowing CSS rule ensures video content is the width of the article element in mobile and iPad views
-.wp-block-video,
-.is-type-video {
-	min-width: 100%;
-}
-
-.wp-block-group {
-	display: grid;
-	margin-top: rem(12);
-
-	p {
-		margin: 0 auto;
-	}
-}
-
-// The folowing CSS rule ensures content fits within the viewport for mobile and iPad views
-.wp-block-image,
-.wp-block-audio,
-.wp-block-embed,
-.wp-block-media-text,
-.wp-block-group {
-	img {
-		max-width: 100%;
-	}
-
-	audio {
-		max-width: 100%;
-	}
-
-	// Blur images which are missing alt tags altogether
-	// or whose alt tags begin with "This image has an empty alt attribute"
-	img:not([alt]),
-	img[alt^="This image has an empty alt attribute"] {
-		filter: blur(10px);
-	}
-}
-
-video {
-	max-height: rem(580);
-	width: 100%;
-}
-
-figcaption {
-	caption-side: bottom;
-	display: table-caption;
-	font-size: rem(14);
-	font-style: italic;
-	padding: 1rem 0;
-	text-align: center;
 }
 
 // The folowing CSS rule ensures that video content fits within the viewport for mobile and iPad views
@@ -211,57 +174,74 @@ figcaption {
 		article {
 			padding: rem(1) rem(60);
 			padding-bottom: rem(62);
-		}
 
-		// WP customized styles for Desktop and iPad Pro views
-		.wp-block-video,
-		.is-type-video {
-			min-width: auto;
-		}
-
-		.alignleft {
-			float: left;
-			margin-right: rem(25);
-			margin-top: 0;
-		}
-
-		.alignright {
-			float: right;
-			margin-left: rem(25);
-			margin-top: 0;
-		}
-
-		// Styling for media and text block with media on the left
-		.wp-block-media-text {
-			.wp-block-media-text__content {
-				margin-left: rem(25);
+			// WP customized styles for the WeCount website in Desktop and iPad Pro views
+			.wp-block-video,
+			.is-type-video {
+				min-width: auto;
 			}
 
-			img {
-				height: 100%;
-				width: 100%;
-			}
-		}
-
-		// Styling for media and text block with media on the right
-		.has-media-on-the-right {
-			.wp-block-media-text__content {
-				margin-left: 0;
+			.alignleft {
+				float: left;
 				margin-right: rem(25);
+				margin-top: 0;
 			}
-		}
 
-		.is-type-video .wp-block-embed__wrapper iframe,
-		.wp-block-video video {
-			height: rem(326);
-			width: rem(580);
-		}
+			.alignright {
+				float: right;
+				margin-left: rem(25);
+				margin-top: 0;
+			}
 
-		.alignleft,
-		.alignright {
-			.wp-block-embed__wrapper iframe {
-				height: 100%;
-				width: 100%;
+			// Styling for media and text block with media on the left
+			.wp-block-media-text {
+				display: grid;
+
+				.wp-block-media-text__content {
+					margin-left: rem(25);
+				}
+
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+
+			// Styling for media and text block with media on the right
+			.has-media-on-the-right {
+				.wp-block-media-text__media {
+					grid-column: 2;
+					grid-row: 1;
+				}
+
+				.wp-block-media-text__content {
+					grid-column: 1;
+					grid-row: 1;
+					margin-left: 0;
+					margin-right: rem(25);
+				}
+			}
+
+			.wp-block-group {
+				display: grid;
+
+				p {
+					margin: 0 auto;
+				}
+			}
+
+			.is-type-video .wp-block-embed__wrapper iframe,
+			.wp-block-video video {
+				height: rem(326);
+				width: rem(580);
+			}
+
+			.alignleft,
+			.alignright {
+				.wp-block-embed__wrapper iframe {
+					height: 100%;
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -270,11 +250,13 @@ figcaption {
 @include breakpoint-up(xl) {
 	// When screen sizes >= the iPad Pro landscape mode, use larger sizes for embedded media elements that
 	// are aligned left or right.
-	.alignleft,
-	.alignright {
-		.wp-block-embed__wrapper iframe {
-			height: rem(326);
-			width: rem(580);
+	main article {
+		.alignleft,
+		.alignright {
+			.wp-block-embed__wrapper iframe {
+				height: rem(326);
+				width: rem(580);
+			}
 		}
 	}
 }
