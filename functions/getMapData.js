@@ -11,7 +11,7 @@
 
 const axios = require("axios");
 
-const dataRepoUrl = "https://raw.githubusercontent.com/inclusive-design/covid-assessment-centres/master/ODS/";
+const dataRepoUrl = "https://raw.githubusercontent.com/inclusive-design/covid-assessment-centres/main/ODC/";
 const latestInfoUrl = dataRepoUrl + "latest.json";
 
 const errorCallback = function (callback, error) {
