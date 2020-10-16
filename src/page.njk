@@ -30,7 +30,7 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 			<a href="/inclusion-challenges/" class="yellow card">
 				<h2>Participate in our inclusion challenge workshops</h2>
 			</a>
-			<a href="/badges/" class="purple card">
+			<a href="/badges/" class="azure card">
 				<h2>Earn We Count Badges</h2>
 			</a>
 		</div>
@@ -49,6 +49,13 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 			{% include 'components/workshop.njk' %}
 		</div>
 		{% endfor %}
+	</div>
+</article>
+
+{% elif pageItem.slug === 'advisory-panel' %}
+<article class="advisory-panel">
+	<div class="api-content">
+		{{ pageItem.content | safe }}
 	</div>
 </article>
 
@@ -71,4 +78,8 @@ document.querySelectorAll("main article.page h1, main article.page h2, header").
 	contentHeaderObserver.observe(section);
 });
 </script>
+
+{% if pageItem.slug === 'advisory-panel' %}
+	<script src="/js/advisory-panel-handler.js"></script>
+{% endif %}
 {% endblock %}
