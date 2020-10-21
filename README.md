@@ -101,9 +101,9 @@ npm run lint
 
 We use the following lint configurations:
 
-- TODO: [ESLint (JS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/.eslintrc.js)
-- [Stylelint (CSS/SCSS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/stylelint.config.js)
-- [MarkdownLint (Markdown)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/master/.markdownlint.json)
+- TODO: [ESLint (JS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/.eslintrc.js)
+- [Stylelint (CSS/SCSS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/stylelint.config.js)
+- [MarkdownLint (Markdown)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/.markdownlint.json)
 
 ## How to Build
 
@@ -127,7 +127,7 @@ This repository is connected to [Netlify](https://netlify.com), and commits will
 
 - Pull request #175 (for example): [https://deploy-preview-175--wecount.netlify.app](https://deploy-preview-175--wecount.netlify.app)
 - Branch `dev`: [https://dev--wecount.netlify.app](https://dev--wecount.netlify.app)
-- Branch `master`: [https://wecount.inclusivedesign.ca](https://wecount.inclusivedesign.ca)
+- Branch `main`: [https://wecount.inclusivedesign.ca](https://wecount.inclusivedesign.ca)
 
 ## License
 
