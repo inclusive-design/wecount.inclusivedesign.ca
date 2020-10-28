@@ -37,7 +37,7 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 </div>
 
 {% elif pageItem.slug === 'initiatives' %}
-<article class="page">
+<article class="page {{ pageItem.slug }}">
 	<h1 class="title">{{ pageTitle }}</h1>
 	<div class="api-content">
 		{{ pageItem.content | safe }}
@@ -60,7 +60,7 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 </article>
 
 {% else %}
-<article class="page">
+<article class="page {{ pageItem.slug }}">
 	<h1>{{ pageTitle }}</h1>
 	<div class="api-content">
 		{{ pageItem.content | safe }}
