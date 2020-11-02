@@ -79,14 +79,7 @@
 
 			// Checkmark
 			&:checked + label::after {
-				background: $fColor;
-				box-shadow:
-					rem(2) 0 0 $bColor,
-					rem(4) 0 0 $bColor,
-					rem(4) rem(-2) 0 $bColor,
-					rem(4) rem(-4) 0 $bColor,
-					rem(4) rem(-6) 0 $bColor,
-					rem(4) rem(-8) 0 $bColor;
+				color: $bColor;
 			}
 		}
 
@@ -281,6 +274,11 @@
 			&:hover {
 				box-shadow: rem(10) rem(10) rem(10) currentColor;
 			}
+		}
+
+		// Advisory panel page
+		.advisory-panel > .api-content > .wp-block-group > .wp-block-group__inner-container > .wp-block-group > .wp-block-group__inner-container > .wp-block-group {
+			box-shadow: 0 rem(4) rem(4) currentColor;
 		}
 	}
 

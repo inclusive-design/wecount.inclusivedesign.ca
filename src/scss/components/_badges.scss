@@ -1,0 +1,10 @@
+// CSS classes for the "Badges" page
+.badges {
+	h3 {
+		margin-bottom: 0;
+
+		& + div p {
+			margin-top: rem(6);
+		}
+	}
+}

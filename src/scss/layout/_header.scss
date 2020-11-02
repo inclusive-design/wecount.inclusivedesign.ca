@@ -11,7 +11,7 @@ header {
 	// Styles for the search container
 	.search-container {
 		svg {
-			fill: white;
+			fill: $white;
 			height: rem(24);
 			margin: rem(-29);
 			width: rem(24);
@@ -182,7 +182,7 @@ header {
 	}
 }
 
-// This media query breakpoint comes the width of the Galaxy Fold screen.
+// This media query breakpoint is for the Galaxy Fold screen.
 @include breakpoint-down(xs) {
 	header .site-nav-wrapper .site-nav .nav-smallScreen .starter-nav #menuToggleButton {
 		span {

@@ -85,6 +85,8 @@ server side save function.
 ```bash
 # Due to security concerns, these environment variables are only available to WeCount team members
 export AIRTABLE_API_KEY=WECOUNT_API_KEY
+export AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
+export AIRTABLE_BASE_DEV=AIRTABLE_BASE_VALUE_FOR_DEV
 npm run start
 ```
 
