@@ -1,0 +1,38 @@
+// CSS classes for the "Team" page
+.team {
+	h2:not(.h3) {
+		border-bottom: none;
+		color: $green-dark;
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	.wp-block-columns {
+		.wp-block-column {
+			border-bottom: rem(5) solid $gold;
+			// Increase the distance among every name card on the mobile view
+			padding-top: rem(32);
+			width: 100%;
+
+			& > p {
+				padding-bottom: rem(32);
+			}
+		}
+	}
+}
+
+@include breakpoint-up(lg) {
+	.team {
+		.wp-block-columns {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			// Only increase the distance among every row of name cards on the desktop view
+			padding-top: rem(32);
+
+			.wp-block-column {
+				padding-top: 0;
+				width: rem(376);
+			}
+		}
+	}
+}
