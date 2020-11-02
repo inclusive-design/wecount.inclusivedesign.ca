@@ -1,7 +1,7 @@
 <article class="workshop">
 	<h2>{{ workshop.title | safe }}</h2>
 	{% if workshop.imageUrl %}
-	<a href="/initiatives/{{ workshop.id }}">
+	<a href="/initiatives/{{ workshop.id }}/index.html">
 		<img class="workshop-image" src="{{ workshop.imageUrl | safe }}" alt="{{ workshop.imageAlt }}">
 	</a>
 	{% endif %}
