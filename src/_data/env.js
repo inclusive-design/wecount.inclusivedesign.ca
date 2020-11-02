@@ -1,5 +1,5 @@
 module.exports = {
-	wpApi: "https://wecount-cms.inclusivedesign.ca/wp-json/wp/v2",
+	wpApi: "https://wecount-dev.inclusivedesign.ca/wp-json/wp/v2",
 	airtableBase: process.env.AIRTABLE_BASE_DEV,
 	// wpApi: "https://wecount-cms.inclusivedesign.ca/wp-json/wp/v2",
 	// airtableBase: process.env.AIRTABLE_BASE_PRODUCTION,
