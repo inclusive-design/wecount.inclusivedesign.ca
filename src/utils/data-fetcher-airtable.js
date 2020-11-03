@@ -19,6 +19,7 @@ module.exports = {
 
 			base("workshops").select({
 				view: "Grid view",
+				filterByFormula: "NOT({title} = '')",
 				sort: [{field: "date", direction: "desc"}]
 			}).eachPage(function page(records, fetchNextPage) {
 				records.forEach(record => {
