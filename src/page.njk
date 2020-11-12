@@ -41,14 +41,13 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 	<h1 class="title">{{ pageTitle }}</h1>
 	<div class="api-content">
 		{{ pageItem.content | safe }}
-	</div>
 
-	<div>
-		{% for workshop in collections.workshops %}
-		<div class="api-content">
-			{% include "components/workshop.njk" %}
+		<div class="workshops">
+			{% for workshop in collections.workshops %}
+				{% include "components/workshop.njk" %}
+			{% endfor %}
 		</div>
-		{% endfor %}
+
 	</div>
 </article>
 
