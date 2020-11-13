@@ -1,10 +1,15 @@
-<article class="workshop">
-	<h2>{{ workshop.title | safe }}</h2>
-	{% if workshop.imageUrl %}
-	<a href="/initiatives/{{ workshop.id }}">
-		<img class="workshop-image" src="{{ workshop.imageUrl | safe }}" alt="{{ workshop.imageAlt }}">
-	</a>
-	{% endif %}
-
-	<div class="description">{{ workshop.shortDescription | safe }}</div>
-</article>
+<div class="one-workshop">
+	<div class="workshop-narrative">
+		<h2 class="h3"><a href="/initiatives/{{ workshop.id }}">{{ workshop.title | safe }}</a></h2>
+		<div class="description">{{ workshop.shortDescription | safe }}</div>
+	</div>
+	<div class="workshop-image">
+		<a href="/initiatives/{{ workshop.id }}">
+			{% if workshop.previewImageUrl %}
+				<img src="{{ workshop.previewImageUrl | safe }}" alt="{{ workshop.imageAlt }}">
+			{% else %}
+				<img src="/images/workshop.png" alt="{{ workshop.title | safe }}">
+			{% endif %}
+		</a>
+	</div>
+</div>
