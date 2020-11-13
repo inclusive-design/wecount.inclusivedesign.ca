@@ -23,7 +23,8 @@ module.exports = {
 				sort: [{field: "date", direction: "desc"}]
 			}).eachPage(function page(records, fetchNextPage) {
 				records.forEach(record => {
-					let image = record.get("image");
+					let previewImage = record.get("preview_image");
+					let coverImage = record.get("cover_image");
 					let title = record.get("title");
 					let shortDescription = record.get("short_description");
 					let fullDescription = record.get("full_description");
@@ -59,7 +60,8 @@ module.exports = {
 						date: record.get("date"),
 						shortDescription: shortDescription ? md.render(shortDescription) : undefined,
 						fullDescription: fullDescription ? md.render(fullDescription) : undefined,
-						imageUrl: image ? image[0].url : undefined,
+						previewImageUrl: previewImage ? previewImage[0].url : undefined,
+						coverImageUrl: coverImage ? coverImage[0].url : undefined,
 						imageAlt: record.get("image_alt"),
 						comments
 					});

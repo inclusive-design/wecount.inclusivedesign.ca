@@ -5,8 +5,8 @@
 	</div>
 	<div class="workshop-image">
 		<a href="/initiatives/{{ workshop.id }}">
-			{% if workshop.imageUrl %}
-				<img src="{{ workshop.imageUrl | safe }}" alt="{{ workshop.imageAlt }}">
+			{% if workshop.previewImageUrl %}
+				<img src="{{ workshop.previewImageUrl | safe }}" alt="{{ workshop.imageAlt }}">
 			{% else %}
 				<img src="/images/workshop.png" alt="{{ workshop.title | safe }}">
 			{% endif %}

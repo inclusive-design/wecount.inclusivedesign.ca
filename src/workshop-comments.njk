@@ -12,8 +12,8 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 {% block content %}
 	<article class="workshop-page">
 		<h1>{{ workshopItem.title | safe }}</h1>
-		{% if workshopItem.imageUrl %}
-		<img class="workshop-cover-image" src="{{ workshopItem.imageUrl | safe }}" alt="{{ workshopItem.imageAlt }}">
+		{% if workshopItem.coverImageUrl %}
+		<img class="workshop-cover-image" src="{{ workshopItem.coverImageUrl | safe }}" alt="{{ workshopItem.imageAlt }}">
 		{% endif %}
 
 		<div class="description">{{ workshopItem.fullDescription | safe }}</div>

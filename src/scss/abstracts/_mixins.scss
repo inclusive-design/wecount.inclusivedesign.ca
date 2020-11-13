@@ -158,12 +158,19 @@
 	}
 
 	// Initiatives page: Workshop section
-	.workshops {
-		.one-workshop {
-			box-shadow: rem(0) rem(0) rem(7) currentColor;
+	.one-workshop {
+		box-shadow: rem(0) rem(0) rem(7) currentColor;
 
-			&:hover {
-				box-shadow: 0 0 rem(35) currentColor;
+		&:hover {
+			box-shadow: 0 0 rem(35) currentColor;
+		}
+	}
+
+	.workshop-image {
+		a:focus,
+		a:hover {
+			img {
+				box-shadow: 0 0 0 rem(4) currentColor inset;
 			}
 		}
 	}
