@@ -9,11 +9,12 @@
 		margin: rem(32) 0 rem(32) 0;
 
 		&:hover {
-			border-radius: rem(18);
+			box-shadow: 0 0 rem(35) rgba(0, 0, 0, 0.55);
 		}
 
 		// Workshop title and descriptions
 		.workshop-narrative {
+			border-radius: rem(18) rem(18) 0 0;
 			min-height: rem(350);
 			padding: 0 rem(16) rem(16) rem(16);
 
@@ -26,6 +27,10 @@
 
 		// Workshop images
 		.workshop-image {
+			// In order to apply border-radius, all inner elements need to have the same border-radius applied.
+			// This includes the wrapper div.workshop-image and inner img element.
+
+			border-radius: 0 0 rem(18) rem(18);
 			height: 100%;
 
 			img {
@@ -39,6 +44,9 @@
 
 			a:focus,
 			a:hover {
+				// Override the default background-color for a:hover
+				background-color: transparent;
+
 				img {
 					box-shadow: 0 0 0 rem(4) $navy-light inset;
 				}
@@ -243,11 +251,16 @@
 			grid-template-rows: 100%;
 
 			.workshop-narrative {
+				border-radius: rem(18) 0 0 rem(18);
 				min-height: rem(336);
 				padding: 0 rem(16) 0 rem(32);
 			}
 
+			// In order to apply border-radius, all inner elements need to have the same border-radius applied.
+			// This includes the wrapper div.workshop-image and inner img element.
 			.workshop-image {
+				border-radius: 0 rem(18) rem(18) 0;
+
 				img {
 					border-radius: 0 rem(18) rem(18) 0;
 				}
