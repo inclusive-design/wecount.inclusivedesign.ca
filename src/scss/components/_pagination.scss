@@ -174,7 +174,7 @@
 	}
 }
 
-// This media query breakpoint comes the width of the Galaxy Fold screen.
+// This media query breakpoint is for the Galaxy Fold screen.
 @include breakpoint-down(xs) {
 	.pagination .pagination-link {
 		margin: rem(10) rem(3);
