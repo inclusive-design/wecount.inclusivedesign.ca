@@ -6,7 +6,7 @@
 	<div class="workshop-image">
 		<a href="/initiatives/{{ workshop.id }}">
 			{% if workshop.previewImageUrl %}
-				<img src="{{ workshop.previewImageUrl | safe }}" alt="{{ workshop.imageAlt }}">
+				<img src="{{ workshop.previewImageUrl | safe }}" alt="{{ workshop.imageAlt if workshop.imageAlt else workshop.title }}">
 			{% else %}
 				<img src="/images/workshop.png" alt="{{ workshop.title | safe }}">
 			{% endif %}
