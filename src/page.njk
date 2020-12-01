@@ -51,16 +51,6 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 	</div>
 </article>
 
-{% elif pageItem.slug === "advisory-panel" or pageItem.slug === "team" %}
-<article class="{{ pageItem.slug }}">
-	{% if pageItem.slug === "team" %}
-	<h1 class="title">{{ pageTitle }}</h1>
-	{% endif %}
-	<div class="api-content">
-		{{ pageItem.content | safe }}
-	</div>
-</article>
-
 {% else %}
 <article class="page {{ pageItem.slug }}">
 	<h1>{{ pageTitle }}</h1>
