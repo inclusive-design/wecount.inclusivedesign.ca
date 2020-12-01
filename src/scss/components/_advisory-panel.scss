@@ -7,8 +7,8 @@
 	h2:not(.h3) {
 		border-bottom: none;
 		color: $green-dark;
+		font-weight: $font-weight-semibold;
 		margin: 0;
-		text-transform: uppercase;
 	}
 
 	img {
@@ -73,9 +73,12 @@
 	// Add box shadows to bio description paragraphs
 	& > .api-content > .wp-block-group > .wp-block-group__inner-container > .wp-block-group > .wp-block-group__inner-container > .wp-block-group {
 		background-color: $white;
-		box-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.25);
+		border-radius: rem(10);
+		box-shadow: rem(0) rem(0) rem(7) rgba(0, 0, 0, 0.25);
 
 		& > .wp-block-group__inner-container {
+			// In order to apply border-radius, the inner element need to have the same border-radius applied.
+			border-radius: rem(10);
 			padding: rem(16);
 		}
 	}
@@ -103,5 +106,13 @@
 				justify-self: end;
 			}
 		}
+	}
+}
+
+// This media query breakpoint is for the Galaxy Fold screen.
+@include breakpoint-down(xs) {
+	.api-content > .wp-block-group > .wp-block-group__inner-container > .wp-block-group > .wp-block-group__inner-container > .wp-block-group {
+		margin-left: rem(-8);
+		margin-right: rem(-8);
 	}
 }
