@@ -25,7 +25,7 @@
 	}
 }
 
-// Maintain aspect ratio of a container
+// The general css for tags
 @mixin tags() {
 	display: flex;
 	flex-wrap: wrap;
@@ -236,8 +236,12 @@
 	.search-container input,
 	button:not(.filter-expand-button):focus,
 	button:not(.filter-expand-button):hover,
+	// The "post a comment" button on the Workshop page
 	#comment-form button,
 	#comment-form button::before,
+	// The "register here" button on the Intiatives page
+	.registration-button,
+	.registration-button::before,
 	li .pagination-link,
 	li .pagination-link::before,
 	.wp-block-file__button:focus,
