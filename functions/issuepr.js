@@ -23,6 +23,7 @@ const githubAPI = config.githubAPI;
 const latestFileTemplate = config.latestFileTemplate;
 const branchNameTemplate = config.branchNameTemplate;
 
+console.log("dataSourceUrl: ", dataSourceUrl);
 // The name of the temporary local directory for cloning the covid data repo locally
 const clonedLocalDir = "covid-data-repo";
 

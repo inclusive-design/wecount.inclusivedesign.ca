@@ -80,6 +80,7 @@ const saveComment = async (base, { timestamp, name, comment, workshopId }) => {
 };
 
 exports.handler = async function(event, context, callback) {
+	console.log("in comments handler");
 	const incomingData = JSON.parse(event.body);
 
 	// Reject the request when:
