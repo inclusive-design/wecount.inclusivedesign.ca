@@ -1,0 +1,13 @@
+---
+title: Issue Pull Request
+permalink: "issuepr/"
+---
+{% extends 'layouts/base.njk' %}
+
+{% set pageTitle = workshopItem.title %}
+
+{% block content %}
+	<form action="/api/issuepr" method="post">
+		<button type="submit">Issue a Pull Request</button>
+	</form>
+{% endblock %}
