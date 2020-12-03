@@ -1,0 +1,22 @@
+// Contains all configs used by scripts/fetchODCDataFiles.js for updating newly published ODC data files of
+// COVID-19 assessment centre locations into WeCount Github repository.
+{
+	// The webpage URL where the data file for COVID-19 assessment centre locations is published.
+	dataSourceUrl: "https://data.ontario.ca/api/3/action/package_show?id=covid-19-assessment-centre-locations",
+
+	// The directory where the downloaded data file should be placed in the COVID-19 data repository.
+	// This directory is relative to the root directory of the repository.
+	dataDirInRepo: "ODC",
+
+	// The central COVID-19 data repository on Github
+	covidDataRepoUrl: "https://github.com/cindyli/covid-assessment-centres.git",
+
+	// Github GraphQL API for programmatically issuing pull requests
+	githubAPI: "https://api.github.com/graphql",
+
+	// The template of latest.json in the COVID-19 data repository. All template variables have a prefix of `$`
+	latestFileTemplate: "{\n\t\"fileName\": \"$filename\"\n}\n",
+
+	// The template of the branch name that the pull request is issued from.  All template variables have a prefix of `$`
+	branchNameTemplate: "ODC-new-data-file-$timestamp"
+}
