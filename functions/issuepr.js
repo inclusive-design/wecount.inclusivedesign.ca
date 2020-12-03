@@ -32,12 +32,14 @@ const matches = re.exec(wecountprojectRepoUrl);
 const accessToken = matches[1];
 
 exports.handler = async function(event, context, callback) {
+	console.log("in issuepr handler");
 	if (event.httpMethod !== "POST") {
 		callback(null, {
 			statusCode: 400,
 			body: "Only accept POST requests."
 		});
 	} else {
+		console.log("before fetching ODC API");
 		// Find the date of the data file currently on the ODC website
 		const dataSourceResponse = await utils.getDataSource(dataSourceUrl);
 
