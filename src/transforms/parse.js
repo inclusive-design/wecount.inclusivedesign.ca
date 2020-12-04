@@ -27,7 +27,11 @@ module.exports = function(value, outputPath) {
 				const tocLi = document.createElement("li");
 				const tocLink = document.createElement("a");
 				tocLink.setAttribute("href", `#${headingSlug}`);
-				tocLink.textContent = heading.textContent;
+				// Some headings on the main page are explicitly using soft hyphens (&shy;) for words to be properly hyphened on
+				// the mobile sized screens. This creates an issue that these hyphens are picked up and shown as `&shy;` on the side
+				// menu. Considering the side menu is only shown on the desktop view not on the mobile view and hyphens are unnecessary
+				// on the desktop view, these soft hyphens can be removed from the side menu.
+				tocLink.textContent = heading.textContent.replace(/&shy;/g, "");
 				tocLi.appendChild(tocLink);
 				tocUl.appendChild(tocLi);
 			});

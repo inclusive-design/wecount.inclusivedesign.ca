@@ -2,11 +2,14 @@
 	<div class="workshop-narrative">
 		<h2 class="h3"><a href="/initiatives/{{ workshop.id }}">{{ workshop.title | safe }}</a></h2>
 		<div class="description">{{ workshop.shortDescription | safe }}</div>
+		{% if workshop.registrationUrl %}
+		<a href={{ workshop.registrationUrl }} class="registration-button">Register here</a>
+		{% endif %}
 	</div>
 	<div class="workshop-image">
 		<a href="/initiatives/{{ workshop.id }}">
 			{% if workshop.previewImageUrl %}
-				<img src="{{ workshop.previewImageUrl | safe }}" alt="{{ workshop.imageAlt }}">
+				<img src="{{ workshop.previewImageUrl | safe }}" alt="{{ workshop.imageAlt if workshop.imageAlt else workshop.title }}">
 			{% else %}
 				<img src="/images/workshop.png" alt="{{ workshop.title | safe }}">
 			{% endif %}
