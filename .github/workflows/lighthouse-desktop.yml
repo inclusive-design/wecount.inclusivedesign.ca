@@ -26,6 +26,8 @@ jobs:
           ${{ steps.netlify.outputs.url }}/initiatives/
           ${{ steps.netlify.outputs.url }}/badges/
           ${{ steps.netlify.outputs.url }}/learn/
+          ${{ steps.netlify.outputs.url }}/team/
+          ${{ steps.netlify.outputs.url }}/advisory-panel/
           ${{ steps.netlify.outputs.url }}/news/
           ${{ steps.netlify.outputs.url }}/views/
           ${{ steps.netlify.outputs.url }}/views/page/11/
