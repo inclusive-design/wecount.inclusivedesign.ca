@@ -63,8 +63,9 @@ module.exports = {
 						fullDescription: fullDescription ? md.render(fullDescription) : undefined,
 						registrationUrl,
 						previewImageUrl: previewImage ? previewImage[0].url : undefined,
+						previewImageAltText: record.get("preview_alt_text"),
 						coverImageUrl: coverImage ? coverImage[0].url : undefined,
-						imageAlt: record.get("image_alt"),
+						coverImageAltText: record.get("cover_alt_text"),
 						comments
 					});
 				});
