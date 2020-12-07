@@ -7,12 +7,10 @@
 		{% endif %}
 	</div>
 	<div class="workshop-image">
-		<a href="/initiatives/{{ workshop.id }}">
-			{% if workshop.previewImageUrl %}
-				<img src="{{ workshop.previewImageUrl | safe }}" alt="{{ workshop.imageAlt if workshop.imageAlt else workshop.title }}">
-			{% else %}
-				<img src="/images/workshop.png" alt="{{ workshop.title | safe }}">
-			{% endif %}
-		</a>
+		{% if workshop.previewImageUrl %}
+			<img src="{{ workshop.previewImageUrl | safe }}" {% if workshop.previewImageAltText %}alt="{{ workshop.previewImageAltText}}"{% else %}role="presentation"{% endif %}>
+		{% else %}
+			<img src="/images/workshop.png" role="presentation">
+		{% endif %}
 	</div>
 </div>

@@ -13,7 +13,7 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 	<article class="workshop-page">
 		<h1>{{ workshopItem.title | safe }}</h1>
 		{% if workshopItem.coverImageUrl %}
-		<img class="workshop-cover-image" src="{{ workshopItem.coverImageUrl | safe }}" alt="{{ workshopItem.imageAlt }}">
+		<img class="workshop-cover-image" src="{{ workshopItem.coverImageUrl | safe }}" alt="{{ workshopItem.coverImageAltText }}">
 		{% endif %}
 
 		<div class="description">{{ workshopItem.fullDescription | safe }}</div>
