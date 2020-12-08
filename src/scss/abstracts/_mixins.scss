@@ -166,15 +166,6 @@
 		}
 	}
 
-	.workshop-image {
-		a:focus,
-		a:hover {
-			img {
-				box-shadow: 0 0 0 rem(4) currentColor inset;
-			}
-		}
-	}
-
 	// Workshop Page
 	.disabled-element,
 	.submitted-comment {

@@ -35,21 +35,8 @@
 
 			img {
 				border-radius: 0 0 rem(18) rem(18);
-				box-shadow: 0 0 0 rem(4) transparent inset;
 				height: 100%;
-				// Add initial padding to leave room for the inset box shadow to display at focus/hover
-				padding: rem(4);
 				width: 100%;
-			}
-
-			a:focus,
-			a:hover {
-				// Override the default background-color for a:hover
-				background-color: transparent;
-
-				img {
-					box-shadow: 0 0 0 rem(4) $navy-light inset;
-				}
 			}
 		}
 	}
