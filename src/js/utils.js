@@ -62,7 +62,7 @@ processPosts = function (posts) {
 			category: categoryType,
 			slug: onePost.slug,
 			title: onePost.title.rendered,
-			author: onePost._embedded.author[0].name,
+			author: categoryType === "views" ? onePost.acf.custom_author : null,
 			content: onePost.content.rendered,
 			excerpt: onePost.excerpt.rendered,
 			dateTime: onePost.date,
