@@ -1,3 +1,22 @@
+// Workshop page
+.workshop-page {
+	.workshop-cover-image {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+	}
+
+	.description {
+		margin-bottom: rem(100);
+
+		h3 {
+			border-bottom: rem(5) solid $gold;
+			line-height: rem(60);
+		}
+	}
+}
+
 // Initiatives page: Workshop section
 .workshops {
 	// Every workshop card
@@ -23,6 +42,11 @@
 				border-bottom: rem(2) solid $grey-shade;
 				padding-bottom: rem(16);
 			}
+
+			.description {
+				color: $black;
+				font-weight: $font-weight-normal;
+			}
 		}
 
 		// Workshop images
@@ -38,25 +62,6 @@
 				height: 100%;
 				width: 100%;
 			}
-		}
-	}
-}
-
-// Workshop page
-.workshop-page {
-	.workshop-cover-image {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 100%;
-	}
-
-	.description {
-		margin-bottom: rem(100);
-
-		h3 {
-			border-bottom: rem(5) solid $gold;
-			line-height: rem(60);
 		}
 	}
 }
@@ -182,8 +187,7 @@
 }
 
 // Button style shared by the "register here" button on the Intiatives page and the "post a comment" button on the Workshop page
-#comment-form button,
-.registration-button {
+#comment-form button {
 	background-color: $white;
 	border: 0;
 	border-radius: rem(33);
@@ -236,16 +240,6 @@
 	margin: rem(29) 0;
 }
 
-.workshops .registration-button {
-	float: left;
-
-	&:focus,
-	&:hover,
-	&:active {
-		background-color: white;
-	}
-}
-
 @include breakpoint-up(lg) {
 	// Initiatives page: Workshop section
 	.workshops {
@@ -291,9 +285,5 @@
 		&::before {
 			height: rem(54);
 		}
-	}
-
-	.registration-button {
-		padding: rem(8) rem(16);
 	}
 }

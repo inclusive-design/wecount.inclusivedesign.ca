@@ -26,7 +26,6 @@ module.exports = {
 					let title = record.get("title");
 					let shortDescription = record.get("short_description");
 					let fullDescription = record.get("full_description");
-					let registrationUrl = record.get("registration_url");
 					let previewImage = record.get("preview_image");
 					let coverImage = record.get("cover_image");
 					let comments = [];
@@ -61,7 +60,6 @@ module.exports = {
 						date: record.get("date"),
 						shortDescription: shortDescription ? md.render(shortDescription) : undefined,
 						fullDescription: fullDescription ? md.render(fullDescription) : undefined,
-						registrationUrl,
 						previewImageUrl: previewImage ? previewImage[0].url : undefined,
 						previewImageAltText: record.get("preview_alt_text"),
 						coverImageUrl: coverImage ? coverImage[0].url : undefined,
