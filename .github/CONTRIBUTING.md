@@ -36,7 +36,7 @@ We merge all pull requests using [squash commits](https://help.github.com/en/git
 
 Issues and their corresponding pull requests will be assigned to a milestone by the development team. Once all
 of the issues in a given milestone have been resolved, the development team will close the milestone and merge the [dev][dev]
-branch into [master][master].
+branch into [main][main].
 A release will then be tagged and a changelog generated, as follows:
 
 - For [patch releases](https://semver.org/#spec-item-6), you can tag the release and generate a changelog by
@@ -49,4 +49,4 @@ running `npm run release:major`
 Only at this point will the changes in that release be [deployed to the production site](https://github.com/inclusive-design/wecount.inclusivedesign.ca#how-to-deploy).
 
 [dev]: https://github.com/inclusive-design/wecount.inclusivedesign.ca/tree/dev
-[master]: https://github.com/inclusive-design/wecount.inclusivedesign.ca/tree/master
+[main]: https://github.com/inclusive-design/wecount.inclusivedesign.ca/tree/main

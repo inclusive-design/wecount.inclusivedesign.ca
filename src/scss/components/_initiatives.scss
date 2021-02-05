@@ -1,26 +1,68 @@
-// Initiatives page: Workshop section
-.workshop {
-	padding: 0;
+// Workshop page
+.workshop-page {
+	.workshop-cover-image {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+	}
 
-	a:focus,
-	a:hover {
-		img {
-			box-shadow: rem(-10) rem(10) rem(10) rgba(0, 0, 0, 0.25);
+	.description {
+		margin-bottom: rem(100);
+
+		h3 {
+			border-bottom: rem(5) solid $gold;
+			line-height: rem(60);
 		}
 	}
 }
 
-.workshop-image {
-	max-width: 100%;
-}
+// Initiatives page: Workshop section
+.workshops {
+	// Every workshop card
+	.one-workshop {
+		border-radius: rem(18);
+		box-shadow: rem(0) rem(0) rem(7) rgba(0, 0, 0, 0.25);
+		display: grid;
+		grid-template-rows: auto rem(227);
+		margin: rem(32) 0 rem(32) 0;
 
-// Workshop page
-.workshop-page .description {
-	margin-bottom: rem(100);
+		&:hover {
+			box-shadow: 0 0 rem(35) rgba(0, 0, 0, 0.55);
+		}
 
-	h3 {
-		border-bottom: rem(5) solid $gold;
-		line-height: rem(60);
+		// Workshop title and descriptions
+		.workshop-narrative {
+			border-radius: rem(18) rem(18) 0 0;
+			min-height: rem(350);
+			padding: 0 rem(16) rem(16) rem(16);
+
+			// Workshop titles
+			h2 {
+				border-bottom: rem(2) solid $grey-shade;
+				padding-bottom: rem(16);
+			}
+
+			.description {
+				color: $black;
+				font-weight: $font-weight-normal;
+			}
+		}
+
+		// Workshop images
+		.workshop-image {
+			// In order to apply border-radius, all inner elements need to have the same border-radius applied.
+			// This includes the wrapper div.workshop-image and inner img element.
+
+			border-radius: 0 0 rem(18) rem(18);
+			height: 100%;
+
+			img {
+				border-radius: 0 0 rem(18) rem(18);
+				height: 100%;
+				width: 100%;
+			}
+		}
 	}
 }
 
@@ -142,25 +184,24 @@
 		font-weight: $font-weight-medium;
 		margin-right: rem(20);
 	}
+}
 
-	button {
-		background-color: $white;
-		border: 0;
-		border-radius: rem(33);
-		box-shadow: 0 0 0 rem(2) $green-dark inset;
-		box-sizing: border-box;
-		color: $green-dark;
-		float: right;
-		font-size: rem(16);
-		font-weight: $font-weight-semibold;
-		height: rem(41);
-		line-height: rem(19);
-		margin: rem(29) 0;
-		padding: rem(8) rem(34);
-		transform: perspective(rem(1)) translateZ(0);
-	}
+// Button style shared by the "register here" button on the Intiatives page and the "post a comment" button on the Workshop page
+#comment-form button {
+	background-color: $white;
+	border: 0;
+	border-radius: rem(33);
+	box-shadow: 0 0 0 rem(2) $green-dark inset;
+	box-sizing: border-box;
+	color: $green-dark;
+	font-size: rem(16);
+	font-weight: $font-weight-semibold;
+	height: rem(41);
+	line-height: rem(24);
+	padding: rem(8) rem(34);
+	transform: perspective(rem(1)) translateZ(0);
 
-	button::before {
+	&::before {
 		border-radius: rem(26);
 		box-shadow: 0 0 0 rem(2) $green-dark inset;
 		content: '';
@@ -172,28 +213,58 @@
 		width: 100%;
 	}
 
-	button:hover::before,
-	button:focus::before,
-	button:active::before {
+	&:hover::before,
+	&:focus::before,
+	&:active::before {
 		left: rem(4);
 		top: rem(4);
 	}
 
-	button::-moz-focus-inner {
+	&::-moz-focus-inner {
 		outline: none;
 	}
 
-	button:focus {
+	&:focus {
 		outline: none;
 	}
 
-	button:-moz-focusring {
+	&:-moz-focusring {
 		color: transparent;
 		text-shadow: 0 0 0 $green-dark;
 	}
 }
 
+// Use higher specificity to define special style for two buttons to avoid css linting errors
+.workshop-page #comment-form button {
+	float: right;
+	margin: rem(29) 0;
+}
+
 @include breakpoint-up(lg) {
+	// Initiatives page: Workshop section
+	.workshops {
+		.one-workshop {
+			grid-template-columns: 70% 30%;
+			grid-template-rows: 100%;
+
+			.workshop-narrative {
+				border-radius: rem(18) 0 0 rem(18);
+				min-height: rem(336);
+				padding: 0 rem(16) rem(16) rem(32);
+			}
+
+			// In order to apply border-radius, all inner elements need to have the same border-radius applied.
+			// This includes the wrapper div.workshop-image and inner img element.
+			.workshop-image {
+				border-radius: 0 rem(18) rem(18) 0;
+
+				img {
+					border-radius: 0 rem(18) rem(18) 0;
+				}
+			}
+		}
+	}
+
 	#comment-form button {
 		width: auto;
 	}

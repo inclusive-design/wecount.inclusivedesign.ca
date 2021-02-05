@@ -25,7 +25,7 @@
 	}
 }
 
-// Maintain aspect ratio of a container
+// The general css for tags
 @mixin tags() {
 	display: flex;
 	flex-wrap: wrap;
@@ -158,12 +158,11 @@
 	}
 
 	// Initiatives page: Workshop section
-	.workshop {
-		a:focus,
-		a:hover {
-			img {
-				box-shadow: rem(-10) rem(10) rem(10) currentColor;
-			}
+	.one-workshop {
+		box-shadow: rem(0) rem(0) rem(7) currentColor;
+
+		&:hover {
+			box-shadow: 0 0 rem(35) currentColor;
 		}
 	}
 
@@ -228,6 +227,7 @@
 	.search-container input,
 	button:not(.filter-expand-button):focus,
 	button:not(.filter-expand-button):hover,
+	// The "post a comment" button on the Workshop page
 	#comment-form button,
 	#comment-form button::before,
 	li .pagination-link,
@@ -278,7 +278,7 @@
 
 		// Advisory panel page
 		.advisory-panel > .api-content > .wp-block-group > .wp-block-group__inner-container > .wp-block-group > .wp-block-group__inner-container > .wp-block-group {
-			box-shadow: 0 rem(4) rem(4) currentColor;
+			box-shadow: rem(0) rem(0) rem(7) currentColor;
 		}
 	}
 

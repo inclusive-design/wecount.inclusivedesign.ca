@@ -19,13 +19,15 @@ module.exports = {
 
 			base("workshops").select({
 				view: "Grid view",
+				filterByFormula: "NOT({title} = '')",
 				sort: [{field: "date", direction: "desc"}]
 			}).eachPage(function page(records, fetchNextPage) {
 				records.forEach(record => {
-					let image = record.get("image");
 					let title = record.get("title");
 					let shortDescription = record.get("short_description");
 					let fullDescription = record.get("full_description");
+					let previewImage = record.get("preview_image");
+					let coverImage = record.get("cover_image");
 					let comments = [];
 
 					let workshopFilterFormula = "{recID (from workshops)} = '" + record.id + "'";
@@ -58,8 +60,10 @@ module.exports = {
 						date: record.get("date"),
 						shortDescription: shortDescription ? md.render(shortDescription) : undefined,
 						fullDescription: fullDescription ? md.render(fullDescription) : undefined,
-						imageUrl: image ? image[0].url : undefined,
-						imageAlt: record.get("image_alt"),
+						previewImageUrl: previewImage ? previewImage[0].url : undefined,
+						previewImageAltText: record.get("preview_alt_text"),
+						coverImageUrl: coverImage ? coverImage[0].url : undefined,
+						coverImageAltText: record.get("cover_alt_text"),
 						comments
 					});
 				});

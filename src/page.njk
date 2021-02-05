@@ -6,13 +6,13 @@ pagination:
 permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 ---
 
-{% extends 'layouts/base.njk' %}
+{% extends "layouts/base.njk" %}
 
 {% set pageTitle = pageItem.title %}
 {% set pageExcerpt = pageItem.excerpt %}
 
 {% block content %}
-{% if page.url === '/' %}
+{% if page.url === "/" %}
 <div>
 		<article>
 		<h1 class="title">{{ pageTitle }}</h1>
@@ -25,9 +25,9 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 				<h2>Read current views in inclusive data science</h2>
 			</a>
 			<a href="/learn/" class="green card">
-				<h2>Find inclusive data tools</h2>
+				<h2>Search the We Count Library</h2>
 			</a>
-			<a href="/inclusion-challenges/" class="yellow card">
+			<a href="/initiatives/" class="yellow card">
 				<h2>Participate in our inclusion challenge workshops</h2>
 			</a>
 			<a href="/badges/" class="azure card">
@@ -36,31 +36,23 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 		</div>
 </div>
 
-{% elif pageItem.slug === 'initiatives' %}
-<article class="page">
+{% elif pageItem.slug === "initiatives" %}
+<article class="page {{ pageItem.slug }}">
 	<h1 class="title">{{ pageTitle }}</h1>
 	<div class="api-content">
 		{{ pageItem.content | safe }}
-	</div>
 
-	<div>
-		{% for workshop in collections.workshops %}
-		<div class="api-content">
-			{% include 'components/workshop.njk' %}
+		<div class="workshops">
+			{% for workshop in collections.workshops %}
+				{% include "components/workshop.njk" %}
+			{% endfor %}
 		</div>
-		{% endfor %}
-	</div>
-</article>
 
-{% elif pageItem.slug === 'advisory-panel' %}
-<article class="advisory-panel">
-	<div class="api-content">
-		{{ pageItem.content | safe }}
 	</div>
 </article>
 
 {% else %}
-<article class="page">
+<article class="page {{ pageItem.slug }}">
 	<h1>{{ pageTitle }}</h1>
 	<div class="api-content">
 		{{ pageItem.content | safe }}
@@ -79,7 +71,10 @@ document.querySelectorAll("main article.page h1, main article.page h2, header").
 });
 </script>
 
-{% if pageItem.slug === 'advisory-panel' %}
+{% if pageItem.slug === "advisory-panel" %}
 	<script src="/js/advisory-panel-handler.js"></script>
+{% endif %}
+{% if pageItem.slug === "team" %}
+	<script src="/js/team-handler.js"></script>
 {% endif %}
 {% endblock %}
