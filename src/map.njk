@@ -5,19 +5,20 @@ permalink: /map/
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-	{% include '../node_modules/fluid-covid-map-viz/build/html/template.html' %}
+	{% include '../node_modules/covid-data-monitor/build/html/template.html' %}
 {% endblock %}
 
 {% block headerScripts %}
-<link rel="stylesheet" href="/lib/fluid-covid-map-viz/build/css/fluid-covid-map-viz-all.css" />
-<script src="/lib/fluid-covid-map-viz/build/js/fluid-covid-map-viz.js"></script>
+<link rel="stylesheet" href="/lib/covid-data-monitor/build/css/covid-data-monitor-all.css" />
+<script src="/lib/covid-data-monitor/build/js/covid-data-monitor.js"></script>
 {% endblock %}
 
 {% block footerScripts %}
 <script>
 $(document).ready(function () {
-	fluid.mapviz.covid.map(".fl-mapviz-container", {
-		dataUrl: window.location.origin + "/api/getMapData"
+	fluid.covidMap.map(".fl-mapviz-container", {
+		dataUrl: window.location.origin + "/api/getMapData",
+		searchResultTemplateUrl: window.location.origin + "/lib/covid-data-monitor/build/html/searchResultTemplate.html"
 	});
 });
 </script>

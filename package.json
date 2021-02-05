@@ -31,6 +31,7 @@
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
     "airtable": "^0.10.0",
+    "covid-data-monitor": "cindyli/covid-data-monitor#latest",
     "eleventy-plugin-pwa": "^1.0.8",
     "eleventy-plugin-sass": "^1.1.1",
     "infusion": "^3.0.0-dev.20210204T181946Z.3ed160b36.FLUID-6580",
