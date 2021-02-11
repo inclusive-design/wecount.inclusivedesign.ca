@@ -6,10 +6,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: npm install and lint
-      env:
-        CI: true
-      run: |
-        npm ci
-        npm run lint
+    - name: Prepare git
+      run: git config --global core.autocrlf false
+
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js 14
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+
+    - name: Install Node.js dependencies
+      run: npm install
+
+    - name: Run code linter
+      run: npm run lint
