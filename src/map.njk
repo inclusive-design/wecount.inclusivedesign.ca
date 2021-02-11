@@ -16,6 +16,8 @@ permalink: /map/
 {% block footerScripts %}
 <script>
 $(document).ready(function () {
+	document.getElementById("defaultContainer").classList.add("map");
+
 	fluid.covidMap.map(".fl-mapviz-container", {
 		dataUrl: window.location.origin + "/api/getMapData",
 		searchResultTemplateUrl: window.location.origin + "/lib/covid-data-monitor/build/html/searchResultTemplate.html"
