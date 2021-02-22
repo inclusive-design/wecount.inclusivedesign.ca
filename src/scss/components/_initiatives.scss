@@ -24,7 +24,6 @@
 		border-radius: rem(18);
 		box-shadow: rem(0) rem(0) rem(7) rgba(0, 0, 0, 0.25);
 		display: grid;
-		grid-template-rows: auto rem(227);
 		margin: rem(32) 0 rem(32) 0;
 
 		&:hover {
@@ -33,8 +32,7 @@
 
 		// Workshop title and descriptions
 		.workshop-narrative {
-			border-radius: rem(18) rem(18) 0 0;
-			min-height: rem(350);
+			border-radius: rem(18) rem(18) rem(18) rem(18);
 			padding: 0 rem(16) rem(16) rem(16);
 
 			// Workshop titles
@@ -51,17 +49,7 @@
 
 		// Workshop images
 		.workshop-image {
-			// In order to apply border-radius, all inner elements need to have the same border-radius applied.
-			// This includes the wrapper div.workshop-image and inner img element.
-
-			border-radius: 0 0 rem(18) rem(18);
-			height: 100%;
-
-			img {
-				border-radius: 0 0 rem(18) rem(18);
-				height: 100%;
-				width: 100%;
-			}
+			display: none;
 		}
 	}
 }
@@ -256,10 +244,14 @@
 			// In order to apply border-radius, all inner elements need to have the same border-radius applied.
 			// This includes the wrapper div.workshop-image and inner img element.
 			.workshop-image {
-				border-radius: 0 rem(18) rem(18) 0;
+				border-radius: 0 0 rem(18) rem(18);
+				display: block;
+				height: 100%;
 
 				img {
-					border-radius: 0 rem(18) rem(18) 0;
+					border-radius: 0 0 rem(18) rem(18);
+					height: 100%;
+					width: 100%;
 				}
 			}
 		}
