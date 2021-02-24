@@ -17,44 +17,6 @@
 	}
 }
 
-// Initiatives page: Workshop section
-.workshops {
-	// Every workshop card
-	.one-workshop {
-		border-radius: rem(18);
-		box-shadow: rem(0) rem(0) rem(7) rgba(0, 0, 0, 0.25);
-		display: grid;
-		margin: rem(32) 0 rem(32) 0;
-
-		&:hover {
-			box-shadow: 0 0 rem(35) rgba(0, 0, 0, 0.55);
-		}
-
-		// Workshop title and descriptions
-		.workshop-narrative {
-			border-radius: rem(18) rem(18) rem(18) rem(18);
-			min-height: rem(208);
-			padding: 0 rem(16) rem(16) rem(16);
-
-			// Workshop titles
-			h2 {
-				border-bottom: rem(2) solid $grey-shade;
-				padding-bottom: rem(16);
-			}
-
-			.description {
-				color: $black;
-				font-weight: $font-weight-normal;
-			}
-		}
-
-		// Workshop images
-		.workshop-image {
-			display: none;
-		}
-	}
-}
-
 .comments {
 	margin-top: rem(50);
 
@@ -230,34 +192,6 @@
 }
 
 @include breakpoint-up(lg) {
-	// Initiatives page: Workshop section
-	.workshops {
-		.one-workshop {
-			grid-template-columns: 70% 30%;
-			grid-template-rows: 100%;
-
-			.workshop-narrative {
-				border-radius: rem(18) 0 0 rem(18);
-				min-height: rem(336);
-				padding: 0 rem(16) rem(16) rem(32);
-			}
-
-			// In order to apply border-radius, all inner elements need to have the same border-radius applied.
-			// This includes the wrapper div.workshop-image and inner img element.
-			.workshop-image {
-				border-radius: 0 0 rem(18) rem(18);
-				display: block;
-				height: 100%;
-
-				img {
-					border-radius: 0 0 rem(18) rem(18);
-					height: 100%;
-					width: 100%;
-				}
-			}
-		}
-	}
-
 	#comment-form button {
 		width: auto;
 	}

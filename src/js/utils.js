@@ -1,6 +1,6 @@
 // Shared utility functions
 
-/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars */
+/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars, slugify */
 
 /*
  * Convert a date into the format of "Month day, Year".
@@ -190,4 +190,58 @@ filter = function (dataSet, tagSlugs) {
 		const recordSlugs = oneRecord.tags ? oneRecord.tags.map(({slug}) => slug) : [];
 		return recordSlugs.some(slug => tagSlugs.indexOf(slug) >= 0);
 	});
+};
+
+/*
+ * Replace special characters in the input string to understandable characters.
+ * @param {String} str - The input string to have special characters replaced.
+ * @return A string with all special characters replaced.
+ */
+// eslint-disable-next-line
+slugify = function (str) {
+	const from = "àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;";
+	const to = "aaaaaaaaaacccddeeeeeeeegghiiiiiilmnnnnoooooooooprrsssssttuuuuuuuuuwxyyzzz------";
+	const p = new RegExp(from.split("").join("|"), "g");
+
+	// 1. Replace spaces with -
+	// 2. Replace special characters
+	return str.toString().toLowerCase().replace(/\s+/g, "-").replace(p, c => to.charAt(from.indexOf(c)));
+};
+
+/*
+ * Generate the content in the <aside> element.
+ * @param {Object} document - The html document object.
+ * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
+ * to be rendered in <aside>.
+ */
+// eslint-disable-next-line
+generateAside = function (document, selectors) {
+	const articleHeadings = [...document.querySelectorAll(selectors)];
+
+	if (articleHeadings.length) {
+		const toc = document.querySelector("aside#toc");
+		const tocNav = document.createElement("nav");
+		const tocUl = document.createElement("ul");
+		tocNav.setAttribute("aria-label", "Secondary Navigation");
+
+		articleHeadings.forEach(heading => {
+			const headingSlug = slugify(heading.textContent.toLowerCase());
+
+			heading.setAttribute("id", headingSlug);
+
+			const tocLi = document.createElement("li");
+			const tocLink = document.createElement("a");
+			tocLink.setAttribute("href", `#${headingSlug}`);
+			// Some headings on the main page are explicitly using soft hyphens (&shy;) for words to be properly hyphened on
+			// the mobile sized screens. This creates an issue that these hyphens are picked up and shown as `&shy;` on the side
+			// menu. Considering the side menu is only shown on the desktop view not on the mobile view and hyphens are unnecessary
+			// on the desktop view, these soft hyphens can be removed from the side menu.
+			tocLink.textContent = heading.textContent.replace(/&shy;/g, "");
+			tocLi.appendChild(tocLink);
+			tocUl.appendChild(tocLi);
+		});
+
+		tocNav.appendChild(tocUl);
+		toc.appendChild(tocNav);
+	}
 };
