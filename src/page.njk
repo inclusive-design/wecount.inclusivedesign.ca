@@ -41,13 +41,17 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 	<h1 class="title">{{ pageTitle }}</h1>
 	<div class="api-content">
 		{{ pageItem.content | safe }}
-
 		<div class="workshops">
 			{% for workshop in collections.workshops %}
-				{% include "components/workshop.njk" %}
+				{% set tileURL = "/initiatives/" + workshop.id %}
+				{% set title = workshop.title %}
+				{% set description = workshop.shortDescription %}
+				{% set defaultPreviewImageUrl = "/images/workshop.png" %}
+				{% set previewImageUrl = workshop.previewImageUrl %}
+				{% set previewImageAltText = workshop.previewImageAltText %}
+				{% include "components/tile-item.njk" %}
 			{% endfor %}
 		</div>
-
 	</div>
 </article>
 
