@@ -51,7 +51,6 @@ new Vue({
 			document.querySelector(".views.static-view").style.display = "none";
 			document.querySelector(".views.dynamic-view").style.display = "block";
 			isStaticViewVisible = false;
-			console.log("set isStaticViewVisible to false");
 
 			axios.get(
 				window.location.origin + "/viewsWithTags.json"
