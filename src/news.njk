@@ -9,7 +9,8 @@ pagination:
 
 {% block content %}
 	<article class="news">
-		<h1>News</h1>
+        <h1>{{ intro.title }}</h1>
+        {{ intro.content | safe }}
 		<div class="news-grid">
 			{% for item in pagination.items %}
 			<div class="api-content">

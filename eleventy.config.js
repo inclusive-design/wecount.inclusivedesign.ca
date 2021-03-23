@@ -15,15 +15,30 @@ const markdownFilter = require("./src/filters/markdown.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
 
+// Slugs for pages that should be excluded as public pages from the WeCount website.
+const privatePageSlugs = ["views", "news"];
+
 require("./src/js/utils.js");
 
 module.exports = function(eleventyConfig) {
 	// Use .eleventyignore instead of .gitignore.
 	eleventyConfig.setUseGitIgnore(false);
 
-	// Add custom collections.
-	eleventyConfig.addCollection("pages", async function() {
+	// "allPages" contains both public pages and pages that define partial contents such as intro paragraphs
+	// in the News and Views pages.
+	eleventyConfig.addCollection("allPages", async function() {
 		return dataFetcherWp.sitePages();
+	});
+
+	// "publicPages" only contains public pages that are accessible via WeCount website URLs.
+	eleventyConfig.addCollection("publicPages", async function() {
+		const publicPagesPromise = dataFetcherWp.sitePages();
+		return new Promise((resolve) => {
+			publicPagesPromise.then(pages => {
+				const results = pages.filter(page => !privatePageSlugs.includes(page.slug));
+				resolve(results);
+			});
+		});
 	});
 
 	eleventyConfig.addCollection("workshops", async function() {
