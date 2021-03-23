@@ -147,7 +147,7 @@ processDisplayResults = function (inArray) {
  * @param {Array<Object>} posts - An array of posts to find unique tags. Each object in this array contains a field named "tags"
  * that in a format of:
  * tags: [{slug: {String}, name: {String}}, ...]
- * @return An array of tag slugs to
+ * @return An array of unique tag slugs.
  */
 // eslint-disable-next-line
 getUniqueTags = function (posts) {
@@ -159,6 +159,30 @@ getUniqueTags = function (posts) {
 		}));
 	});
 	return tags;
+};
+
+/*
+ * Extract the page title and intro paragraphs from the data collection for pages.
+ * @param {Array<Object>} allPages - data.collections.allPages
+ * @param {String} pageSlug - The slug of the page to extract the info for.
+ * @return An object containing the page title and intro.
+ */
+// eslint-disable-next-line
+extractPageIntro = function (allPages, pageSlug) {
+	let rtn = {
+		title: null,
+		content: null
+	};
+	for (const page of allPages) {
+		if (page.slug === pageSlug) {
+			rtn = {
+				title: page.title,
+				content: page.content
+			};
+			break;
+		}
+	}
+	return rtn;
 };
 
 /*

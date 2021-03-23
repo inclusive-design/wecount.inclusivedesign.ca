@@ -27,8 +27,8 @@ pagination:
 	</svg>
 
 	<article class="views static-view">
-		<h1>Views</h1>
-
+		<h1>{{ intro.title }}</h1>
+        {{ intro.content | safe }}
 		<form method="get" action="/views/">
 			{% set placeholderForSearch = "Search views..." %}
 			{% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
@@ -59,7 +59,8 @@ pagination:
 
 	{# For displaying dynamic search and filtering results #}
 	<article class="views dynamic-view">
-		<h1>Views</h1>
+        <h1>{{ intro.title }}</h1>
+        {{ intro.content | safe }}
 
 		<form method="get" action="/views/">
 			{# Search #}
