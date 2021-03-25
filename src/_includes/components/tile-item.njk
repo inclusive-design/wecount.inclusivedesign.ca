@@ -14,9 +14,9 @@
 		</div>
 		<div class="tile-image">
 			{% if previewImageUrl %}
-				<img src="{{ previewImageUrl | safe }}" {% if previewImageAltText %}alt="{{ previewImageAltText}}"{% else %}role="presentation"{% endif %}>
+				<img src="{{ previewImageUrl | safe }}" {% if previewImageAltText %}alt="{{ previewImageAltText}}"{% else %}role="presentation" alt=""{% endif %}>
 			{% elif defaultPreviewImageUrl %}
-				<img src="{{ defaultPreviewImageUrl }}" role="presentation">
+				<img src="{{ defaultPreviewImageUrl }}" role="presentation" alt="">
 			{% else %}
 				<svg class="logo placeholder-img">
 					<use xlink:href="#placeholder" />
