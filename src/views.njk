@@ -70,9 +70,9 @@ pagination:
 			</div>
 
 			{# Filter #}
-			<fieldset class="filter">
+			<div class="filter">
 				<div class="filter-header">
-					<legend><h2 class="h3">Search Filters</h2></legend>
+					<h2 class="h3">Search Filters</h2>
 					<button type="button" class="filter-expand-button" aria-expanded="true" aria-label="collapse">
 						<svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
 						<svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
@@ -96,7 +96,7 @@ pagination:
 						</button>
 					</div>
 				</div>
-			</fieldset>
+			</div>
 		</form>
 
 		<h3 role="status" class="search-result" v-if="searchResult">{{ '{{ searchResult }}' }}</h3>
