@@ -99,17 +99,17 @@ pagination:
 			</div>
 		</form>
 
-		<p role="status" class="search-result" v-if="searchResult">{{ '{{ searchResult }}' }}</p>
+		<h3 role="status" class="search-result" v-if="searchResult">{{ '{{ searchResult }}' }}</h3>
 
 		<div class="applied-tags" v-if="selectedTags.length > 0">
-			<p class="applied-tags-title">Applied Tags:</p>
+			<h4 class="search-for-title">Applied Tags:</p>
 			<div class="tags">
 				<a v-for="tag in selectedTags" :href="'/tags/' + tag.slug + '/'">{{ '{{ tag.name }}' }}</a>
 			</div>
 		</div>
 
 		<div class="search-term-container" v-if="searchTerm">
-			<p class="search-term-title">Search Term:</p>
+			<h4 class="search-for-title">Search Term:</h4>
 			<p class="search-term">“{{ '{{ searchTerm }}' }}”</p>
 		</div>
 

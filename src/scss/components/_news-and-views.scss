@@ -170,15 +170,11 @@
 
 	.search-result {
 		color: $green-dark;
-		font-size: rem(24);
-		font-weight: $font-weight-bold;
 		margin-top: rem(-32);
 	}
 
-	.applied-tags-title,
-	.search-term-title {
+	.search-for-title {
 		color: $green-dark;
-		font-weight: $font-weight-bold;
 	}
 
 	.tags {
