@@ -1,0 +1,4 @@
+{
+	"permalink": "/initiatives/{{ id }}/",
+	"layout": "layouts/workshop.njk"
+}

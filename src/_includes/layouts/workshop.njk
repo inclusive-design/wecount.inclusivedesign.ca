@@ -1,22 +1,15 @@
----
-pagination:
-    data: collections.workshops
-    size: 1
-    alias: workshopItem
-permalink: "initiatives/{{ workshopItem.id }}/"
----
 {% extends 'layouts/base.njk' %}
 
-{% set pageTitle = workshopItem.title %}
+{% set pageTitle = page.title %}
 
 {% block content %}
 	<article class="workshop-page">
-		<h1>{{ workshopItem.title | safe }}</h1>
-		{% if workshopItem.coverImageUrl %}
-		<img class="workshop-cover-image" src="{{ workshopItem.coverImageUrl | safe }}" alt="{{ workshopItem.coverImageAltText }}">
+		<h1>{{ title | safe }}</h1>
+		{% if coverImageUrl %}
+		<img class="workshop-cover-image" src="{{ coverImageUrl | safe }}" alt="{{ coverImageAltText }}">
 		{% endif %}
 
-		<div class="description">{{ workshopItem.fullDescription | safe }}</div>
+		<div class="description">{{ content | safe }}</div>
 
 		<form id="comment-form">
 			<h3>Comments</h3>
@@ -32,7 +25,7 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 			<div class="form-field">
 				<span>*</span><h4><label for="comment">Post a comment or question</label></h4><span class="required-comment">Required</span>
 				<textarea id="comment" name="comment" placeholder="" aria-label="Enter your comment"></textarea>
-				<input type="hidden" name="workshopId" id="workshopId" value="{{ workshopItem.id }}">
+				<input type="hidden" name="workshopId" id="workshopId" value="{{ id }}">
 				<button id="post-comment" type="submit">Post a comment</button>
 			</div>
 		</form>
@@ -46,7 +39,7 @@ permalink: "initiatives/{{ workshopItem.id }}/"
 		</div>
 
 		<div class="comments">
-			{% for comment in workshopItem.comments %}
+			{% for comment in page.comments %}
 				{% include 'components/comment.njk' %}
 			{% endfor %}
 		</div>

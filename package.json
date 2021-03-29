@@ -15,6 +15,8 @@
     "build": "npm run clean && eleventy --config=eleventy.config.js",
     "clean": "rimraf dist",
     "start": "npm run clean && ELEVENTY_ENV=development eleventy --serve --port=3000 --config=eleventy.config.js",
+		"start:debug": "DEBUG=Eleventy* npm start",
+    "start:cms": "concurrently \"npm start\" \"npx netlify-cms-proxy-server\"",
     "lint:css": "stylelint src/scss/**/*.scss",
     "lint:js": "eslint \"**/*.js\"",
     "lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md",
@@ -44,6 +46,7 @@
     "@tbranyen/jsdom": "^13.0.0",
     "autoprefixer": "^10.2.4",
     "axios": "^0.21.1",
+    "concurrently": "^6.0.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
     "eslint": "^7.20.0",
     "html-minifier": "^4.0.0",
@@ -57,7 +60,8 @@
     "stylelint": "^13.11.0",
     "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.19.0"
+    "stylelint-scss": "^3.19.0",
+    "turndown": "^7.0.0"
   },
   "husky": {
     "hooks": {

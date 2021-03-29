@@ -6,12 +6,12 @@ const pluginPWA = require("eleventy-plugin-pwa");
 const fs = require("fs");
 
 const dataFetcherWp = require("./src/utils/data-fetcher-wp.js");
-const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
+const turndownFilter = require("./src/filters/turndown.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
 
@@ -41,8 +41,10 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.addCollection("workshops", async function() {
-		return dataFetcherAirtable.workshops();
+	eleventyConfig.addCollection("workshops", collection => {
+		return [
+			...collection.getFilteredByGlob("src/workshops/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
+		].reverse();
 	});
 
 	eleventyConfig.addCollection("news", async function() {
@@ -116,6 +118,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
+	eleventyConfig.addFilter("turndownFilter", turndownFilter);
 
 	// Add transforms.
 	eleventyConfig.addTransform("htmlmin", htmlMinifyTransform);
@@ -127,6 +130,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});
 	eleventyConfig.addPassthroughCopy({"src/js": "js"});
+	eleventyConfig.addPassthroughCopy({"src/admin/config.yml": "admin/config.yml"});
 
 	// Configure BrowserSync.
 	eleventyConfig.setBrowserSyncConfig({

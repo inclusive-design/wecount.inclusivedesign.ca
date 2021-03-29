@@ -10,7 +10,7 @@
 				<time datetime="{{ dateTime | w3DateFilter }}" class="dt-published">{{ dateTime | dateFilter }}</time>
 			</div>
 			{% endif %}
-			<div class="description">{{ description | striptags | safe }}</div>
+			<div class="description">{{ description | markdownFilter | safe }}</div>
 		</div>
 		<div class="tile-image">
 			{% if previewImageUrl %}
