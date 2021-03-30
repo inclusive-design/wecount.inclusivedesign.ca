@@ -2,7 +2,8 @@
 const { build } = require("estrella");
 
 build({
-	entry: "src/admin/cms.jsx",
+	entry: "src/admin/cms.js",
 	outfile: "dist/admin/cms.js",
 	bundle: true,
+	loader: {".js": "jsx"}
 });

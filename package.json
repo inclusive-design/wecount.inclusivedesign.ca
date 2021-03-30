@@ -51,6 +51,7 @@
     "concurrently": "^6.0.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
     "eslint": "^7.20.0",
+    "eslint-plugin-react": "^7.23.1",
     "estrella": "^1.4.0",
     "html-minifier": "^4.0.0",
     "husky": "^5.1.1",
