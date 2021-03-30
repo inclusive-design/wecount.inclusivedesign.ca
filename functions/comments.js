@@ -60,9 +60,7 @@ const saveComment = async (base, { timestamp, name, comment, workshopId }) => {
 					"post_date": timestamp,
 					"name": name,
 					"comment": comment,
-					"workshop": [
-						workshopId
-					],
+					"workshopId": workshopId,
 					"reviewed": false
 				}
 			}

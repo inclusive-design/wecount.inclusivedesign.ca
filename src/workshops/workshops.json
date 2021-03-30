@@ -1,4 +1,4 @@
 {
-	"permalink": "/initiatives/{{ id }}/",
+	"permalink": "/initiatives/{{ title | slug }}/",
 	"layout": "layouts/workshop.njk"
 }

@@ -1,6 +1,7 @@
 ---
 title: The Metric Society and Surveillance
 id: rec9ZsM9uU1e1yeAi
+permalink: /initiatives/rec9ZsM9uU1e1yeAi/
 eventDate: '2021-04-28'
 shortDescription: |-
   Join us for a discussion with author Steffen Mau and other panelists.

@@ -1,6 +1,7 @@
 ---
 title: AI Employment Systems
 id: rechIn59lpbMoCvQ0
+permalink: '/initiatives/rechIn59lpbMoCvQ0/'
 eventDate: '2020-11-03'
 shortDescription: >-
   A group of expert panellists will give an introduction to AI and machine

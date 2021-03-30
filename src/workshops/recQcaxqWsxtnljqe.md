@@ -1,6 +1,7 @@
 ---
 title: Inclusive AI for HR
 id: recQcaxqWsxtnljqe
+permalink: '/initiatives/recQcaxqWsxtnljqe/'
 eventDate: '2020-12-01'
 shortDescription: >-
   Panelists will highlight some of the potential problems that arise from AI in

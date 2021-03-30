@@ -1,6 +1,7 @@
 ---
 title: Accessible Surveys
 id: recM2F4PCtF3ufqZ3
+permalink: '/initiatives/recM2F4PCtF3ufqZ3/'
 eventDate: '2020-08-04'
 shortDescription: "A\_conversation on\_accessible survey platforms, hosted by the Inclusive Design Research Centre. Join the discussion with David Berman, Roland Van Oostveen, Pina D'Intino, Julia Foster, Sarah Stadder Wise, Michelle Borgal, and members of the inclusive design community.\n\nAugust 4, 2020, 2:00 – 3:30 PM (EST)"
 previewImageUrl: >-

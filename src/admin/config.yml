@@ -13,12 +13,10 @@ collections:
     folder: "src/workshops"
     slug: "{{title}}"
     create: true
-    editor:
-      preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "ID", name: "id", widget: "hidden"}
-      - {label: "Event Date", name: "eventDate", widget: "date", required: false}
+      - {label: "ID", name: "id", widget: "uuid"}
+      - {label: "Event Date", name: "eventDate", widget: "datetime", required: false}
       - {label: "Short Description", name: "shortDescription", widget: "markdown"}
       - {label: "Permalink", name: "permalink", widget: "string", required: false}
       - {label: "Preview Image", name: "previewImageUrl", widget: "image", required: false}

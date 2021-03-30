@@ -1,4 +1,8 @@
+{% if previewMode %}
+{% extends 'layouts/preview.njk' %}
+{% else %}
 {% extends 'layouts/base.njk' %}
+{% endif %}
 
 {% set pageTitle = page.title %}
 
@@ -39,8 +43,10 @@
 		</div>
 
 		<div class="comments">
-			{% for comment in page.comments %}
+			{% for comment in collections.comments %}
+				{% if comment.workshopId === id %}
 				{% include 'components/comment.njk' %}
+				{% endif %}
 			{% endfor %}
 		</div>
 	</article>

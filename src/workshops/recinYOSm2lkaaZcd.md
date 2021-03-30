@@ -1,6 +1,7 @@
 ---
 title: AI Hiring System Policies
 id: recinYOSm2lkaaZcd
+permalink: '/initiatives/recinYOSm2lkaaZcd/'
 eventDate: '2020-11-17'
 shortDescription: >-
   Panelists will discuss how machine learning models can carry bias when

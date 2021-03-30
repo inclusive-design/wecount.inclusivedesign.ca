@@ -1,6 +1,7 @@
 ---
 title: AI and AT Apps
 id: rechCtfzoi4gYQKvU
+permalink: '/initiatives/rechCtfzoi4gYQKvU/'
 eventDate: '2020-09-23'
 shortDescription: >-
   Artificial intelligence is rapidly advancing to think like us and to deep

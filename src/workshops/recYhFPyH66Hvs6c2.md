@@ -1,6 +1,7 @@
 ---
 title: Building Indigenous Future Imaginaries
 id: recYhFPyH66Hvs6c2
+permalink: '/initiatives/recYhFPyH66Hvs6c2/'
 eventDate: '2020-12-09'
 shortDescription: >-
   Based on Jason Lewis’s research-creation work, this webinar will explore the

@@ -1,6 +1,7 @@
 ---
 title: 'Bias In, Bias Out'
 id: recoPfZIdOPjEYnpY
+permalink: '/initiatives/recoPfZIdOPjEYnpY/'
 eventDate: '2020-07-08'
 shortDescription: >-
   Dr. Toon Calders (University of Antwerp) explains how predictions made using

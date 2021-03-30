@@ -5,12 +5,14 @@ const pluginSass = require("eleventy-plugin-sass");
 const pluginPWA = require("eleventy-plugin-pwa");
 const fs = require("fs");
 
+const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
 const dataFetcherWp = require("./src/utils/data-fetcher-wp.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
+const slugFilter = require("./src/filters/slug.js");
 const turndownFilter = require("./src/filters/turndown.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
@@ -45,6 +47,10 @@ module.exports = function(eleventyConfig) {
 		return [
 			...collection.getFilteredByGlob("src/workshops/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
 		].reverse();
+	});
+
+	eleventyConfig.addCollection("comments", async function() {
+		return dataFetcherAirtable.comments();
 	});
 
 	eleventyConfig.addCollection("news", async function() {
@@ -118,6 +124,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
+	eleventyConfig.addFilter("slug", slugFilter);
 	eleventyConfig.addFilter("turndownFilter", turndownFilter);
 
 	// Add transforms.
@@ -127,6 +134,7 @@ module.exports = function(eleventyConfig) {
 	// Configure passthrough file copy.
 	eleventyConfig.addPassthroughCopy({"manifest.json": "manifest.json"});
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
+	eleventyConfig.addPassthroughCopy("node_modules/nunjucks/browser/nunjucks-slim.js");
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});
 	eleventyConfig.addPassthroughCopy({"src/js": "js"});
