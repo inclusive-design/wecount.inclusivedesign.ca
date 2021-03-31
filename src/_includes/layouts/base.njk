@@ -1,41 +1,41 @@
 {% if title %}
-	{% set pageTitle = title %}
+  {% set pageTitle = title %}
 {% endif %}
 <!doctype html>
 <html lang="en-ca">
-	<head>
-		{% include 'globals/matomo-analytics.njk' %}
-		{% include 'globals/service-worker.njk' %}
-		{% include 'globals/meta.njk' %}
-		<link rel="stylesheet" href="/scss/main.css"/>
-		<script src="/js/main.js" defer></script>
-		<link rel="preload" href="/lib/infusion/dist/infusion-uio.min.js" as="script">
-		{% block headerScripts %}{% endblock %}
+  <head>
+    {% include 'globals/matomo-analytics.njk' %}
+    {% include 'globals/service-worker.njk' %}
+    {% include 'globals/meta.njk' %}
+    <link rel="stylesheet" href="/scss/main.css"/>
+    <script src="/js/main.js" defer></script>
+    <link rel="preload" href="/lib/infusion/dist/infusion-uio.min.js" as="script">
+    {% block headerScripts %}{% endblock %}
 
-		<!-- CSS files for UI Options-->
-		<link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css"/>
-		<link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css"/>
-		<link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css"/>
+    <!-- CSS files for UI Options-->
+    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css"/>
+    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css"/>
+    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css"/>
 
-		<!-- The Infusion Library for UI Options -->
-		<script src="/lib/infusion/dist/infusion-uio.min.js"></script>
-	</head>
-	<body>
-		<div id="defaultContainer">
-			{% include 'components/header.njk' %}
-			<div class="content-wrapper">
-				<aside id="toc"></aside>
-				<main>
-					<nav class="flc-toc-tocContainer"></nav>
-					{% block content %}{% endblock %}
-				</main>
-			</div>
-			{% include 'components/footer.njk' %}
-		</div>
-		{% block footerScripts %}{% endblock %}
-		{% if page.url === "/" %}
-		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-		{% endif %}
-		<script src="/js/uio.js" defer></script>
-	</body>
+    <!-- The Infusion Library for UI Options -->
+    <script src="/lib/infusion/dist/infusion-uio.min.js"></script>
+  </head>
+  <body>
+    <div id="defaultContainer">
+      {% include 'components/header.njk' %}
+      <div class="content-wrapper">
+        <aside id="toc"></aside>
+        <main>
+          <nav class="flc-toc-tocContainer"></nav>
+          {% block content %}{% endblock %}
+        </main>
+      </div>
+      {% include 'components/footer.njk' %}
+    </div>
+    {% block footerScripts %}{% endblock %}
+    {% if page.url === "/" %}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
+    <script src="/js/uio.js" defer></script>
+  </body>
 </html>

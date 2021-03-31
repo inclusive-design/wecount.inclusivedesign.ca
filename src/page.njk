@@ -3,7 +3,7 @@ pagination:
   data: collections.publicPages
   size: 1
   alias: pageItem
-permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
+permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
 ---
 
 {% extends "layouts/base.njk" %}
@@ -14,53 +14,53 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 {% block content %}
 {% if page.url === "/" %}
 <div>
-		<article>
-		<h1 class="title">{{ pageTitle }}</h1>
-		<div class="api-content">
-		{{ pageItem.content | safe }}
-		</div>
-		</article>
-		<div class="homepage-cards">
-			<a href="/views/" class="blue card">
-				<h2>Read current views in inclusive data science</h2>
-			</a>
-			<a href="/learn/" class="green card">
-				<h2>Search the We Count Library</h2>
-			</a>
-			<a href="/initiatives/" class="yellow card">
-				<h2>Participate in our inclusion challenge workshops</h2>
-			</a>
-			<a href="/badges/" class="azure card">
-				<h2>Earn We Count Badges</h2>
-			</a>
-		</div>
+    <article>
+    <h1 class="title">{{ pageTitle }}</h1>
+    <div class="api-content">
+    {{ pageItem.content | safe }}
+    </div>
+    </article>
+    <div class="homepage-cards">
+      <a href="/views/" class="blue card">
+        <h2>Read current views in inclusive data science</h2>
+      </a>
+      <a href="/learn/" class="green card">
+        <h2>Search the We Count Library</h2>
+      </a>
+      <a href="/initiatives/" class="yellow card">
+        <h2>Participate in our inclusion challenge workshops</h2>
+      </a>
+      <a href="/badges/" class="azure card">
+        <h2>Earn We Count Badges</h2>
+      </a>
+    </div>
 </div>
 
 {% elif pageItem.slug === "initiatives" %}
 <article class="page {{ pageItem.slug }}">
-	<h1 class="title">{{ pageTitle }}</h1>
-	<div class="api-content">
-		{{ pageItem.content | safe }}
-		<div class="workshops">
-			{% for workshop in collections.workshops %}
-				{% set tileURL = "/initiatives/" + workshop.data.id %}
-				{% set title = workshop.data.title %}
-				{% set description = workshop.data.shortDescription %}
-				{% set defaultPreviewImageUrl = "/images/workshop.png" %}
-				{% set previewImageUrl = workshop.data.previewImageUrl %}
-				{% set previewImageAltText = workshop.data.previewImageAltText %}
-				{% include "components/tile-item.njk" %}
-			{% endfor %}
-		</div>
-	</div>
+  <h1 class="title">{{ pageTitle }}</h1>
+  <div class="api-content">
+    {{ pageItem.content | safe }}
+    <div class="workshops">
+      {% for workshop in collections.workshops %}
+        {% set tileURL = "/initiatives/" + workshop.data.id %}
+        {% set title = workshop.data.title %}
+        {% set description = workshop.data.shortDescription %}
+        {% set defaultPreviewImageUrl = "/images/workshop.png" %}
+        {% set previewImageUrl = workshop.data.previewImageUrl %}
+        {% set previewImageAltText = workshop.data.previewImageAltText %}
+        {% include "components/tile-item.njk" %}
+      {% endfor %}
+    </div>
+  </div>
 </article>
 
 {% else %}
 <article class="page {{ pageItem.slug }}">
-	<h1>{{ pageTitle }}</h1>
-	<div class="api-content">
-		{{ pageItem.content | safe }}
-	</div>
+  <h1>{{ pageTitle }}</h1>
+  <div class="api-content">
+    {{ pageItem.content | safe }}
+  </div>
 </article>
 {% endif %}
 {% endblock %}
@@ -68,17 +68,17 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug	}}/"
 {% block footerScripts %}
 <script src="/js/content-header-observer.js"></script>
 <script>
-	// Track all h1 and h2 in content for the About and Inclusion Challenges page.
+  // Track all h1 and h2 in content for the About and Inclusion Challenges page.
 document.querySelectorAll("main article.page h1, main article.page h2, header").forEach((section) => {
-	const contentHeaderObserver = getSideMenuObserver();
-	contentHeaderObserver.observe(section);
+  const contentHeaderObserver = getSideMenuObserver();
+  contentHeaderObserver.observe(section);
 });
 </script>
 
 {% if pageItem.slug === "advisory-panel" %}
-	<script src="/js/advisory-panel-handler.js"></script>
+  <script src="/js/advisory-panel-handler.js"></script>
 {% endif %}
 {% if pageItem.slug === "team" %}
-	<script src="/js/team-handler.js"></script>
+  <script src="/js/team-handler.js"></script>
 {% endif %}
 {% endblock %}

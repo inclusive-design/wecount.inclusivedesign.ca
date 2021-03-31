@@ -1,27 +1,27 @@
 <a href="{{ tileURL }}">
-	<div class="tile-item">
-		<div class="tile-narrative">
-			<h2 class="h3">{{ title | safe }}</h2>
-			{% if author %}
-			<div class="author">{{ author | safe }}</div>
-			{% endif %}
-			{% if dateTime %}
-			<div class="date">
-				<time datetime="{{ dateTime | w3DateFilter }}" class="dt-published">{{ dateTime | dateFilter }}</time>
-			</div>
-			{% endif %}
-			<div class="description">{{ description | markdownFilter | safe }}</div>
-		</div>
-		<div class="tile-image">
-			{% if previewImageUrl %}
-				<img src="{{ previewImageUrl | safe }}" {% if previewImageAltText %}alt="{{ previewImageAltText}}"{% else %}role="presentation" alt=""{% endif %}>
-			{% elif defaultPreviewImageUrl %}
-				<img src="{{ defaultPreviewImageUrl }}" role="presentation" alt="">
-			{% else %}
-				<svg class="logo placeholder-img">
-					<use xlink:href="#placeholder" />
-				</svg>
-			{% endif %}
-		</div>
-	</div>
+  <div class="tile-item">
+    <div class="tile-narrative">
+      <h2 class="h3">{{ title | safe }}</h2>
+      {% if author %}
+      <div class="author">{{ author | safe }}</div>
+      {% endif %}
+      {% if dateTime %}
+      <div class="date">
+        <time datetime="{{ dateTime | w3DateFilter }}" class="dt-published">{{ dateTime | dateFilter }}</time>
+      </div>
+      {% endif %}
+      <div class="description">{{ description | markdownFilter | safe }}</div>
+    </div>
+    <div class="tile-image">
+      {% if previewImageUrl %}
+        <img src="{{ previewImageUrl | safe }}" {% if previewImageAltText %}alt="{{ previewImageAltText}}"{% else %}role="presentation" alt=""{% endif %}>
+      {% elif defaultPreviewImageUrl %}
+        <img src="{{ defaultPreviewImageUrl }}" role="presentation" alt="">
+      {% else %}
+        <svg class="logo placeholder-img">
+          <use xlink:href="#placeholder" />
+        </svg>
+      {% endif %}
+    </div>
+  </div>
 </a>
