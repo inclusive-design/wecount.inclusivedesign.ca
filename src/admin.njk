@@ -4,14 +4,14 @@ permalink: '/admin/index.html'
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Content Manager</title>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <!-- Include the script that builds the page and powers Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@2.10.103/dist/netlify-cms.js"></script>
+	<!-- Include the script that builds the page and powers Netlify CMS -->
+	<script src="https://unpkg.com/netlify-cms@2.10.103/dist/netlify-cms.js"></script>
 	{% if env.context === "dev" %}
 	<script src="https://unpkg.com/react@16.14.0/umd/react.development.js"></script>
 	{% else %}
@@ -19,7 +19,7 @@ permalink: '/admin/index.html'
 	{% endif %}
 	<script src="https://unpkg.com/prop-types@15.6/prop-types.js"></script>
 	<script src="/node_modules/nunjucks/browser/nunjucks-slim.js"></script>
-  <script src="templates.js"></script>
-  <script src="cms.js"></script>
+	<script src="templates.js"></script>
+	<script src="cms.js"></script>
 </body>
 </html>
