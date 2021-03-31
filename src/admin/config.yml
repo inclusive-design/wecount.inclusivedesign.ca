@@ -16,7 +16,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "ID", name: "id", widget: "uuid"}
-      - {label: "Event Date", name: "eventDate", widget: "datetime", required: false}
+      - {label: "Event Date", name: "eventDate", widget: "datetime", time_format: false, required: false}
       - {label: "Short Description", name: "shortDescription", widget: "markdown"}
       - {label: "Permalink", name: "permalink", widget: "string", required: false}
       - {label: "Preview Image", name: "previewImageUrl", widget: "image", required: false}
