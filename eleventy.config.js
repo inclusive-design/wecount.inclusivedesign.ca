@@ -115,7 +115,9 @@ module.exports = function(eleventyConfig) {
 		watch: ["src/**/*.scss"],
 		sourcemaps: process.env.ELEVENTY_ENV === "development" ? true : false
 	});
-	eleventyConfig.addPlugin(pluginPWA);
+	eleventyConfig.addPlugin(pluginPWA, {
+		globIgnores: ["admin/*"]
+	});
 
 	// Add filters.
 	eleventyConfig.addFilter("dateFilter", dateFilter);
