@@ -37,9 +37,9 @@ Machine learning, a subset of artificial intelligence, depends on the quality, o
 
 You will learn:
 
-*   How predictive algorithms and data mining affect different populations in a discriminatory manner
-*   How specific data resources are used to train and reinforce machine learning models to produce biased outputs  
+* How predictive algorithms and data mining affect different populations in a discriminatory manner
+* How specific data resources are used to train and reinforce machine learning models to produce biased outputs  
     Learn and earn badges from this event:
 
-1.  Watch the accessible [Bias In, Bias Out webinar](https://youtu.be/NNrknIYLbrc)
-2.  [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply)
+1. Watch the accessible [Bias In, Bias Out webinar](https://youtu.be/NNrknIYLbrc)
+2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply)

@@ -10,7 +10,7 @@ collections:
   - name: workshops
     label: Workshops
     label_singular: Workshop
-    folder: "src/workshops"
+    folder: "src/collections/workshops"
     slug: "{{title}}"
     create: true
     fields:

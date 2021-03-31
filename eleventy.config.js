@@ -13,7 +13,6 @@ const dateFilter = require("./src/filters/date.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
 const slugFilter = require("./src/filters/slug.js");
-const turndownFilter = require("./src/filters/turndown.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
 
@@ -45,7 +44,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("workshops", collection => {
 		return [
-			...collection.getFilteredByGlob("src/workshops/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
+			...collection.getFilteredByGlob("src/collections/workshops/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
 		].reverse();
 	});
 
@@ -125,7 +124,6 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
 	eleventyConfig.addFilter("slug", slugFilter);
-	eleventyConfig.addFilter("turndownFilter", turndownFilter);
 
 	// Add transforms.
 	eleventyConfig.addTransform("htmlmin", htmlMinifyTransform);
@@ -142,6 +140,7 @@ module.exports = function(eleventyConfig) {
 
 	// Configure BrowserSync.
 	eleventyConfig.setBrowserSyncConfig({
+		...eleventyConfig.browserSyncConfig,
 		callbacks: {
 			ready: (error, browserSync) => {
 				// TODO: Add custom 404 page.
