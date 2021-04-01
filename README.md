@@ -262,7 +262,7 @@ To build and serve a static version of the website, enter the following in your 
 ```bash
 # Due to security concerns, these environment variables are only available to WeCount team members
 export AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
-AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
+export AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
 npm run build
 npm run serve
 ```
