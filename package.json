@@ -19,6 +19,7 @@
     "dev": "cross-env ELEVENTY_ENV=development eleventy --serve --port=3000 --config=eleventy.config.js",
     "start": "npm-run-all clean start:*",
     "start:eleventy": "concurrently \"npm run dev\" \"./build-cms.js -w\" \"npx netlify-cms-proxy-server\"",
+		"serve": "npx serve dist",
     "lint:css": "stylelint src/scss/**/*.scss",
     "lint:js": "eslint \"**/*.js\"",
     "lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --ignore src/collections/",
