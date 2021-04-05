@@ -11,6 +11,7 @@ collections:
     label: Initiatives
     label_singular: Initiative
     folder: "src/collections/initiatives"
+    sortable_fields: ['eventDate', 'title']
     slug: "{{title}}"
     create: true
     fields:
