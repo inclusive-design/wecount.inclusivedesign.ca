@@ -1,62 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-		<symbol id="previous" width="14" height="24" viewBox="0 0 14 24">
-				{% include 'svg/prev.svg' %}
-		</symbol>
-		<symbol id="next" width="14" height="24" viewBox="0 0 14 24">
-				{% include 'svg/next.svg' %}
-		</symbol>
+    <symbol id="previous" width="14" height="24" viewBox="0 0 14 24">
+        {% include 'svg/prev.svg' %}
+    </symbol>
+    <symbol id="next" width="14" height="24" viewBox="0 0 14 24">
+        {% include 'svg/next.svg' %}
+    </symbol>
 </svg>
 
 <nav class="pagination" aria-label="pagination">
-	<ul class="pagination-list">
-		<li>
-			{%- if pagination.href.previous %}
-			<a class="pagination-previous" href="{{ pagination.href.previous }}">
-				<svg><use xlink:href="#previous" /></svg>
-				<span class="screen-reader-only">previous</span>
-			</a>
-			{%- endif %}
-		</li>
-		{%- if pagination.pageNumber > 1 %}
-		<li>
-			<a class="pagination-link" href="{{ pagination.href.first }}">1</a>
-		</li>
-		{%- endif %}
-		{%- if pagination.pageNumber > 2 %}
-		<li class="pagination-ellipsis">
-			<span>&hellip;</span>
-		</li>
-		{%- endif %}
-		{%- if pagination.pageNumber > 0 %}
-		{% if pagination.pageNumber !== 1 and pagination.pageNumber !== 2 %}<li class="hide-on-mobile">{% else %}<li>{% endif %}
-			<a class="pagination-link" href="{{ pagination.hrefs[ pagination.pageNumber - 1 ] }}">{{ pagination.pageNumber }}</a>
-		</li>
-		{%- endif %}
-		<li>
-			<a class="pagination-link is-current" href="{{ pagination.hrefs[ pagination.pageNumber ] }}" aria-current="page">{{ pagination.pageNumber + 1 }}</a>
-		</li>
-		{%- if pagination.pageNumber < pagination.pages.length - 2 %}
-		{% if pagination.pageNumber !== pagination.pages.length - 2 and pagination.pageNumber !== pagination.pages.length - 3 %}<li class="hide-on-mobile">{% else %}<li>{% endif %}
-			<a class="pagination-link" href="{{ pagination.hrefs[ pagination.pageNumber + 1 ] }}">{{ pagination.pageNumber + 2 }}</a>
-		</li>
-		{%- endif %}
-		{%- if pagination.pageNumber < pagination.pages.length - 3 %}
-		<li class="pagination-ellipsis">
-			<span>&hellip;</span>
-		</li>
-		{%- endif %}
-		{%- if pagination.pageNumber < pagination.pages.length - 1 %}
-		<li>
-			<a class="pagination-link" href="{{ pagination.href.last }}">{{ pagination.pages.length }}</a>
-		</li>
-		{%- endif %}
-		<li>
-			{%- if pagination.href.next %}
-			<a class="pagination-next" href="{{ pagination.href.next }}">
-				<svg><use xlink:href="#next" /></svg>
-				<span class="screen-reader-only">next</span>
-			</a>
-			{%- endif %}
-		</li>
-	</ul>
+  <ul class="pagination-list">
+    <li>
+      {%- if pagination.href.previous %}
+      <a class="pagination-previous" href="{{ pagination.href.previous }}">
+        <svg><use xlink:href="#previous" /></svg>
+        <span class="screen-reader-only">previous</span>
+      </a>
+      {%- endif %}
+    </li>
+    {%- if pagination.pageNumber > 1 %}
+    <li>
+      <a class="pagination-link" href="{{ pagination.href.first }}">1</a>
+    </li>
+    {%- endif %}
+    {%- if pagination.pageNumber > 2 %}
+    <li class="pagination-ellipsis">
+      <span>&hellip;</span>
+    </li>
+    {%- endif %}
+    {%- if pagination.pageNumber > 0 %}
+    {% if pagination.pageNumber !== 1 and pagination.pageNumber !== 2 %}<li class="hide-on-mobile">{% else %}<li>{% endif %}
+      <a class="pagination-link" href="{{ pagination.hrefs[ pagination.pageNumber - 1 ] }}">{{ pagination.pageNumber }}</a>
+    </li>
+    {%- endif %}
+    <li>
+      <a class="pagination-link is-current" href="{{ pagination.hrefs[ pagination.pageNumber ] }}" aria-current="page">{{ pagination.pageNumber + 1 }}</a>
+    </li>
+    {%- if pagination.pageNumber < pagination.pages.length - 2 %}
+    {% if pagination.pageNumber !== pagination.pages.length - 2 and pagination.pageNumber !== pagination.pages.length - 3 %}<li class="hide-on-mobile">{% else %}<li>{% endif %}
+      <a class="pagination-link" href="{{ pagination.hrefs[ pagination.pageNumber + 1 ] }}">{{ pagination.pageNumber + 2 }}</a>
+    </li>
+    {%- endif %}
+    {%- if pagination.pageNumber < pagination.pages.length - 3 %}
+    <li class="pagination-ellipsis">
+      <span>&hellip;</span>
+    </li>
+    {%- endif %}
+    {%- if pagination.pageNumber < pagination.pages.length - 1 %}
+    <li>
+      <a class="pagination-link" href="{{ pagination.href.last }}">{{ pagination.pages.length }}</a>
+    </li>
+    {%- endif %}
+    <li>
+      {%- if pagination.href.next %}
+      <a class="pagination-next" href="{{ pagination.href.next }}">
+        <svg><use xlink:href="#next" /></svg>
+        <span class="screen-reader-only">next</span>
+      </a>
+      {%- endif %}
+    </li>
+  </ul>
 </nav>

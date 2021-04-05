@@ -1,30 +1,30 @@
 <article class="news-item">
-	{% if item.category === 'views' %}
-	<div class="preview-media-wrapper">
-	  <figure class="content">
-			{% if item.picture %}
-			<img src="{{ item.picture | safe }}" alt="{{ item.altTag }}">
-			{% else %}
-			<svg class="logo placeholder-img">
-				<use xlink:href="#placeholder" />
-			</svg>
-			{% endif %}
-	  </figure>
-	</div>
-	{% endif %}
+  {% if item.category === 'views' %}
+  <div class="preview-media-wrapper">
+    <figure class="content">
+      {% if item.picture %}
+      <img src="{{ item.picture | safe }}" alt="{{ item.altTag }}">
+      {% else %}
+      <svg class="logo placeholder-img">
+        <use xlink:href="#placeholder" />
+      </svg>
+      {% endif %}
+    </figure>
+  </div>
+  {% endif %}
 
-	<div class="content-preview">
-	  <h2 class="h3">
-	    <a href="{{ item.href }}">{{ item.title | safe }}</a>
-	  </h2>
-		{% if item.category === 'views' %}
-	  <div class="author">{{ item.author | safe }}</div>
-		{% endif %}
-	  <div class="date">
-	    <time datetime="{{ item.dateTime | w3DateFilter }}" class="dt-published">{{ item.dateTime | dateFilter }}</time>
-	  </div>
-	  <div class="preview-content">
-	    {{ item.excerpt | striptags | safe }}
-	  </div>
-	</div>
+  <div class="content-preview">
+    <h2 class="h3">
+      <a href="{{ item.href }}">{{ item.title | safe }}</a>
+    </h2>
+    {% if item.category === 'views' %}
+    <div class="author">{{ item.author | safe }}</div>
+    {% endif %}
+    <div class="date">
+      <time datetime="{{ item.dateTime | w3DateFilter }}" class="dt-published">{{ item.dateTime | dateFilter }}</time>
+    </div>
+    <div class="preview-content">
+      {{ item.excerpt | striptags | safe }}
+    </div>
+  </div>
 </article>
