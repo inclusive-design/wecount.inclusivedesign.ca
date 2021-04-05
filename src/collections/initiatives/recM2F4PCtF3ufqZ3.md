@@ -3,7 +3,7 @@ title: Accessible Surveys
 id: recM2F4PCtF3ufqZ3
 permalink: /initiatives/recM2F4PCtF3ufqZ3/
 eventDate: 2020-08-04T03:00:00.000Z
-coverImageUrl: https://dl.airtable.com/.attachments/f5d282fcac73b5359a4562c21c560c9b/88950a55/AccessibleSurveyPlatforms_1024x536.png
+coverImageUrl: /images/uploads/AccessibleSurveyPlatforms_1024x536.png
 coverImageAltText: Online Conversation on Accessible Survey Platforms. Tuesday,
   August 4th. 2:00 PM - 3:30 PM. Register for free
 shortDescription: >-
@@ -14,7 +14,7 @@ shortDescription: >-
 
 
   August 4, 2020, 2:00 – 3:30 PM (EST)
-previewImageUrl: https://dl.airtable.com/.attachments/1f23e46ecca1375046369ab8229ddb0a/e7d8f19f/group82.jpg
+previewImageUrl: /images/uploads/group82.jpg
 previewImageAltText: ""
 ---
 ### **Conversation on Accessible Survey Platforms**

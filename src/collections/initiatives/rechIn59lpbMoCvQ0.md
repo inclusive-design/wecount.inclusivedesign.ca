@@ -3,7 +3,7 @@ title: AI Employment Systems
 id: rechIn59lpbMoCvQ0
 permalink: /initiatives/rechIn59lpbMoCvQ0/
 eventDate: 2020-11-03T04:00:00.000Z
-coverImageUrl: https://dl.airtable.com/.attachments/e009434f107a90b2fefa03b4d4b1c17c/389e0a0b/FWDlogoBforprocessing4x1.png
+coverImageUrl: /images/uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disability logo"
 shortDescription: >-
   A group of expert panellists will give an introduction to AI and machine
@@ -12,7 +12,7 @@ shortDescription: >-
 
 
   November 3, 2020, 1:30 AM – 3:00 PM (EST)
-previewImageUrl: https://dl.airtable.com/.attachments/a7ee9e72dce2d5984b09859514002846/b5d4579a/8eb229f4.jpg
+previewImageUrl: /images/uploads/8eb229f4.jpg
 previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### **Risks and Opportunities of AI, Smart Systems and Automation for Employment of Persons with Disabilities**

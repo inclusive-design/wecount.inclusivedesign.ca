@@ -3,7 +3,7 @@ title: AI Hiring System Policies
 id: recinYOSm2lkaaZcd
 permalink: /initiatives/recinYOSm2lkaaZcd/
 eventDate: 2020-11-17T04:00:00.000Z
-coverImageUrl: https://dl.airtable.com/.attachments/9935b2fd722ef75380c526413dda9c7b/4a2fa489/FWDlogoDforprocessing4x.png
+coverImageUrl: /images/uploads/FWDlogoDforprocessing4x.png
 coverImageAltText: "FWD: Future of Work and Disabiltiy logo"
 shortDescription: >-
   Panelists will discuss how machine learning models can carry bias when
@@ -12,7 +12,7 @@ shortDescription: >-
 
 
   November 17, 2020, 1:30 PM – 3:00 PM (EST)
-previewImageUrl: https://dl.airtable.com/.attachments/33fe9e24513aba22038e1ba9341373b0/f931be32/8eb229f4.jpg
+previewImageUrl: /images/uploads/8eb229f4.jpg
 previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### **Identifying and Addressing Bias in Machine Learning Models on Selection of Candidates from a Policy Perspective**

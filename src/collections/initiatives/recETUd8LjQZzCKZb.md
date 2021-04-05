@@ -11,11 +11,9 @@ shortDescription: >-
 
 
   Date: TBC
-previewImageUrl: >-
-  https://dl.airtable.com/.attachments/8685289e2b7db0233c0c0b75f7141043/e4cae8fd/TWITTER_FB_Event_Cover_-_Coded_Bias_Screening_Intr1.png
+previewImageUrl: /images/uploads/TWITTER_FB_Event_Cover_-_Coded_Bias_Screening_Intr1.png
 previewImageAltText: ''
-coverImageUrl: >-
-  https://dl.airtable.com/.attachments/416aee35eda4248c5f779bbb64180345/00213d46/TWITTER_FB_Event_Cover_-_Coded_Bias_Screening_Intr1.png
+coverImageUrl: /images/uploads/TWITTER_FB_Event_Cover_-_Coded_Bias_Screening_Intr1-full.png
 coverImageAltText: Coded Bias
 ---
 ### Coded Bias

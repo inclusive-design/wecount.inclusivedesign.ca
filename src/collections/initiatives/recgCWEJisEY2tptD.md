@@ -3,7 +3,7 @@ title: Coding to Learn and Create
 id: recgCWEJisEY2tptD
 permalink: /initiatives/recgCWEJisEY2tptD/
 eventDate: 2020-11-18T04:00:00.000Z
-coverImageUrl: https://dl.airtable.com/.attachments/c72edeb9f3106b43e761808d1b17d8db/5626a2d9/CodingtoLearnandCreate.png
+coverImageUrl: /images/uploads/CodingtoLearnandCreate.png
 coverImageAltText: Coding to Learn and Create logo
 shortDescription: >-
   Looking for something exciting and creative for your kids in November? Coding
@@ -13,7 +13,7 @@ shortDescription: >-
   Part 1: November 18, 2020, 10:30 AM – 12:00 PM (EST)\
 
   Part 2: November 25, 2020, 10:30 AM – 12:00 PM (EST)
-previewImageUrl: https://dl.airtable.com/.attachments/ec07093a46ae62b0f4c03e480e144332/1af8de1d/32aae9c7.jpg
+previewImageUrl: /images/uploads/32aae9c7.jpeg
 previewImageAltText: ""
 ---
 ### Coding to Learn and Create
