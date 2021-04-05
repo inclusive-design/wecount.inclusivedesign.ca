@@ -1,8 +1,13 @@
 ---
 title: AI and AT Apps
 id: rechCtfzoi4gYQKvU
-permalink: '/initiatives/rechCtfzoi4gYQKvU/'
-eventDate: '2020-09-23'
+permalink: /initiatives/rechCtfzoi4gYQKvU/
+eventDate: 2020-09-23T03:00:00.000Z
+coverImageUrl: https://dl.airtable.com/.attachments/709f7f1cfde717570d651d91c4fc9ba8/e8186373/Roger-Melko-Activity_1024x536.png
+coverImageAltText: "AI-Powered Mobile Assistive Technology Apps: Risks and
+  Benefits. Part 1: Wednesday September 23 at 10:30 AM – 12 PM (EDT). Part 2:
+  Wednesday October 7 at 10:30 AM – 12 PM (EDT). Part 3: Wednesday, October 21
+  at 10:30 AM – 12 PM (EDT)."
 shortDescription: >-
   Artificial intelligence is rapidly advancing to think like us and to deep
   dream through machine learning, so how can it be used to improve
@@ -18,16 +23,8 @@ shortDescription: >-
 
 
   **Available badges:** Learner, Brainstormer, Communicator
-previewImageUrl: >-
-  https://dl.airtable.com/.attachments/2c1d41996ca1a0ea12c174622a6263e1/03fc6fff/group81.jpg
-previewImageAltText: ''
-coverImageUrl: >-
-  https://dl.airtable.com/.attachments/709f7f1cfde717570d651d91c4fc9ba8/e8186373/Roger-Melko-Activity_1024x536.png
-coverImageAltText: >-
-  AI-Powered Mobile Assistive Technology Apps: Risks and Benefits. Part 1:
-  Wednesday September 23 at 10:30 AM – 12 PM (EDT). Part 2: Wednesday October 7
-  at 10:30 AM – 12 PM (EDT). Part 3: Wednesday, October 21 at 10:30 AM – 12 PM
-  (EDT).
+previewImageUrl: https://dl.airtable.com/.attachments/2c1d41996ca1a0ea12c174622a6263e1/03fc6fff/group81.jpg
+previewImageAltText: ""
 ---
 ### **AI-Powered Mobile Assistive Technology Apps: Risks and Benefits**
 

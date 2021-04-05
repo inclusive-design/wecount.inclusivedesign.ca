@@ -1,8 +1,11 @@
 ---
 title: Building Indigenous Future Imaginaries
 id: recYhFPyH66Hvs6c2
-permalink: '/initiatives/recYhFPyH66Hvs6c2/'
-eventDate: '2020-12-09'
+permalink: /initiatives/recYhFPyH66Hvs6c2/
+eventDate: 2020-12-09T04:00:00.000Z
+coverImageUrl: https://dl.airtable.com/.attachments/c0ee5a1d64a329193fcdc4927d0fd99c/daf31af9/Dec-9_wordpress-Copy.jpg
+coverImageAltText: "Digging DEEPer webinar: Building Indigenous Future
+  Imaginaries with Jason Lewis, Wednesday, December 9, 2020, 10:30AM-12PM (EST)"
 shortDescription: >-
   Based on Jason Lewis’s research-creation work, this webinar will explore the
   concept of the future imaginary and make an argument as to why it is important
@@ -10,14 +13,8 @@ shortDescription: >-
 
 
   December 9, 2020, 10:30 AM – 12:00 PM (EST)
-previewImageUrl: >-
-  https://dl.airtable.com/.attachments/5ee684fdca745da709972339c0d21249/5cf277db/IPAI.Quartet.Artist-KariNoe.CourtesyoftheInitiativeforIndigenousFutures1.png
-previewImageAltText: ''
-coverImageUrl: >-
-  https://dl.airtable.com/.attachments/c0ee5a1d64a329193fcdc4927d0fd99c/daf31af9/Dec-9_wordpress-Copy.jpg
-coverImageAltText: >-
-  Digging DEEPer webinar: Building Indigenous Future Imaginaries with Jason
-  Lewis, Wednesday, December 9, 2020, 10:30AM-12PM (EST)
+previewImageUrl: https://dl.airtable.com/.attachments/5ee684fdca745da709972339c0d21249/5cf277db/IPAI.Quartet.Artist-KariNoe.CourtesyoftheInitiativeforIndigenousFutures1.png
+previewImageAltText: ""
 ---
 ### **22nd-Century Proto-Typing: Strategies for Building Indigenous Future Imaginaries**
 

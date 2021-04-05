@@ -1,8 +1,10 @@
 ---
 title: Inclusive AI for HR
 id: recQcaxqWsxtnljqe
-permalink: '/initiatives/recQcaxqWsxtnljqe/'
-eventDate: '2020-12-01'
+permalink: /initiatives/recQcaxqWsxtnljqe/
+eventDate: 2020-12-01T04:00:00.000Z
+coverImageUrl: https://dl.airtable.com/.attachments/86d904094f06956b8b1c27c44a3200ab/3a114e96/FWDlogoEforprocessing4x.png
+coverImageAltText: "FWD: Future of Work and Disability logo"
 shortDescription: >-
   Panelists will highlight some of the potential problems that arise from AI in
   the hiring process and brainstorm ideas to make this process more inclusive
@@ -10,12 +12,8 @@ shortDescription: >-
 
 
   December 1, 2020, 1:30 PM – 3:00 PM (EST)
-previewImageUrl: >-
-  https://dl.airtable.com/.attachments/cb2fa9385908de354217a00c863776ed/10b888f9/8eb229f4.jpg
-previewImageAltText: 'FWD: Future of Work and Disability'
-coverImageUrl: >-
-  https://dl.airtable.com/.attachments/86d904094f06956b8b1c27c44a3200ab/3a114e96/FWDlogoEforprocessing4x.png
-coverImageAltText: 'FWD: Future of Work and Disability logo'
+previewImageUrl: https://dl.airtable.com/.attachments/cb2fa9385908de354217a00c863776ed/10b888f9/8eb229f4.jpg
+previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### **How to Make Artificial Intelligence Inclusive for Hiring and HR**
 
