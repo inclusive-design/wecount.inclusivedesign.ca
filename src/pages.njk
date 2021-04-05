@@ -1,0 +1,15 @@
+---
+pagination:
+    data: collections.publicPages
+    size: 1
+    alias: pageItem
+permalink: "pages/{{ pageItem.slug }}.md"
+---
+---
+title: "{{ pageItem.title }}"
+permalink: {{ pageItem.href }}
+excerpt: -|
+  {{ pageItem.excerpt | turndownFilter | safe }}
+menu_order: {{ pageItem.menu_order }}
+---
+{{ pageItem.content | turndownFilter | safe }}

@@ -12,6 +12,7 @@ const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
+const turndownFilter = require("./src/filters/turndown.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
 
@@ -116,6 +117,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
+	eleventyConfig.addFilter("turndownFilter", turndownFilter);
 
 	// Add transforms.
 	eleventyConfig.addTransform("htmlmin", htmlMinifyTransform);
