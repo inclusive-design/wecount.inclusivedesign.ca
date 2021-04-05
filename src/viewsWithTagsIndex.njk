@@ -2,14 +2,14 @@
 permalink: viewsWithTags.json
 ---
 {
-	"views": [
-	{%- for item in collections.views %}
-		{{ item | dump | safe }}{% if not loop.last %},{% endif %}
-	{%- endfor %}
-	],
-	"tags": [
-	{%- for item in collections.viewsTags %}
-		{{ item | dump | safe }}{% if not loop.last %},{% endif %}
-	{%- endfor %}
-	]
+  "views": [
+  {%- for item in collections.views %}
+    {{ item | dump | safe }}{% if not loop.last %},{% endif %}
+  {%- endfor %}
+  ],
+  "tags": [
+  {%- for item in collections.viewsTags %}
+    {{ item | dump | safe }}{% if not loop.last %},{% endif %}
+  {%- endfor %}
+  ]
 }
