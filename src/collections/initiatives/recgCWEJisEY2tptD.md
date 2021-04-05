@@ -13,7 +13,7 @@ shortDescription: >-
   Part 1: November 18, 2020, 10:30 AM – 12:00 PM (EST)\
 
   Part 2: November 25, 2020, 10:30 AM – 12:00 PM (EST)
-previewImageUrl: /images/uploads/32aae9c7.jpeg
+previewImageUrl: /images/uploads/32aae9c7.jpg
 previewImageAltText: ""
 ---
 ### Coding to Learn and Create
