@@ -28,7 +28,7 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
         <h2>Search the We Count Library</h2>
       </a>
       <a href="/initiatives/" class="yellow card">
-        <h2>Participate in our inclusion challenge workshops</h2>
+        <h2>Participate in our inclusion challenge initiatives</h2>
       </a>
       <a href="/badges/" class="azure card">
         <h2>Earn We Count Badges</h2>
@@ -41,14 +41,14 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
   <h1 class="title">{{ pageTitle }}</h1>
   <div class="api-content">
     {{ pageItem.content | safe }}
-    <div class="workshops">
-      {% for workshop in collections.workshops %}
-        {% set tileURL = "/initiatives/" + workshop.data.id %}
-        {% set title = workshop.data.title %}
-        {% set description = workshop.data.shortDescription %}
-        {% set defaultPreviewImageUrl = "/images/workshop.png" %}
-        {% set previewImageUrl = workshop.data.previewImageUrl %}
-        {% set previewImageAltText = workshop.data.previewImageAltText %}
+    <div class="initiatives">
+      {% for initiative in collections.initiatives %}
+        {% set tileURL = "/initiatives/" + initiative.data.id %}
+        {% set title = initiative.data.title %}
+        {% set description = initiative.data.shortDescription %}
+        {% set defaultPreviewImageUrl = "/images/initiative.png" %}
+        {% set previewImageUrl = initiative.data.previewImageUrl %}
+        {% set previewImageAltText = initiative.data.previewImageAltText %}
         {% include "components/tile-item.njk" %}
       {% endfor %}
     </div>

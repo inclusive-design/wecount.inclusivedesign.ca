@@ -11,14 +11,14 @@ The front end of the website is built with [Eleventy](https://11ty.dev/).
 
 The website uses [Netlify CMS](https://netlifycms.org) to manage the following content:
 
-- [workshops](src/collections/workshops)
+- [initiatives](src/collections/initiatives)
 
 The website also uses two backend APIs:
 
 - WordPress API where We Count team members create news, views and some site pages;
   - The production WordPress site: [https://wecount-cms.inclusivedesign.ca/](https://wecount-cms.inclusivedesign.ca/)
   - The development WordPress site: [https://wecount-dev.inclusivedesign.ca/](https://wecount-dev.inclusivedesign.ca/)
-- [Airtable API](https://airtable.com/api) that serves workshop information, user comments for workshops, AI resources and
+- [Airtable API](https://airtable.com/api) that serves user comments for initiatives, AI resources and
 tools data.
   - The production table: WeCount
   - The development table: WeCount_DEV
@@ -54,13 +54,13 @@ CMS, a team administrator must invite you to create a Netlify Identity account.
 
 The CMS is configured via a [config.yml](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/config.yml)
 file according to Netlify CMS' [specifications](https://www.netlifycms.org/docs/configuration-options/).
-As an example, here is the configuration for the workshops collection, stored in [`src/collections/workshops`](src/collections/workshops):
+As an example, here is the configuration for the initiatives collection, stored in [`src/collections/initiatives`](src/collections/initiatives):
 
 ```yaml
-  - name: workshops
-    label: Workshops
-    label_singular: Workshop
-    folder: "src/collections/workshops"
+  - name: initiatives
+    label: Initiatives
+    label_singular: Initiative
+    folder: "src/collections/initiatives"
     slug: "{{title}}"
     create: true
     fields:
@@ -70,7 +70,7 @@ As an example, here is the configuration for the workshops collection, stored in
       - label: "Event ID"
         name: "id"
         widget: "uuid"
-        hint: "The ID is used to associate comments with this workshop and cannot be edited."
+        hint: "The ID is used to associate comments with this initiative and cannot be edited."
       - label: "Permanent Link"
         name: "permalink"
         widget: "string"
@@ -114,13 +114,13 @@ For information on individual widgets and their configuration, see Netlify CMS' 
 ### Previews
 
 Netlify CMS supports [preview templates](https://www.netlifycms.org/docs/customization/) for CMS content, which must be
-a React component registered with the following code (the following examples are for workshops):
+a React component registered with the following code (the following examples are for initiatives):
 
 ```javascript
-CMS.registerPreviewTemplate("workshops", Workshop);
+CMS.registerPreviewTemplate("initiatives", Initiative);
 ```
 
-The `Workshop` React component is created in [src/admin/cms.js](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js)
+The `Initiative` React component is created in [src/admin/cms.js](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js)
 based on a technique demonstrated in [Andy Bell's Hylia Eleventy starter kit](https://github.com/hankchizljaw/hylia):
 
 1. The site's Nunjucks templates are [precompiled](https://mozilla.github.io/nunjucks/api.html#precompiling) and copied
@@ -129,7 +129,7 @@ based on a technique demonstrated in [Andy Bell's Hylia Eleventy starter kit](ht
    React component accepts a data object and a Nunjucks template path, renders the Nunjucks template with the supplied
    data using [Nunjucks Slim](https://mozilla.github.io/nunjucks/getting-started.html#when-in-the-browser), and outputs
    the resulting HTML.
-3. The specific [`Workshop`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js#L35-L52)
+3. The specific [`Initiative`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js#L35-L52)
   React component passes the Preview component the entry object (from Netlify CMS), the Nunjucks template path (relative
   to `src/_includes`), and a function which maps the entry object's data to what's needed in the Nunjucks template expects.
 
@@ -147,7 +147,7 @@ CMS interface.
 ## How to Run
 
 The website uses [Netlify Functions](https://functions.netlify.com/) to provide a server side endpoint that supports
-the save of user comments for workshops on the "Initiatives" page. To run the website in local development mode that
+the save of user comments for initiatives on the "Initiatives" page. To run the website in local development mode that
 supports a live reload at file changes, there are two ways to test the website with and without Netlify Functions.
 The latter is easier than the former:
 

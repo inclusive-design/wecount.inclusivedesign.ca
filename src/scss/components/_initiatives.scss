@@ -1,6 +1,6 @@
-// Workshop page
-.workshop-page {
-	.workshop-cover-image {
+// Initiative page
+.initiative-page {
+	.initiative-cover-image {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -137,7 +137,7 @@
 	}
 }
 
-// Button style shared by the "register here" button on the Intiatives page and the "post a comment" button on the Workshop page
+// Button style shared by the "register here" button on the Intiatives page and the "post a comment" button on the Initiative page
 #comment-form button {
 	background-color: $white;
 	border: 0;
@@ -186,7 +186,7 @@
 }
 
 // Use higher specificity to define special style for two buttons to avoid css linting errors
-.workshop-page #comment-form button {
+.initiative-page #comment-form button {
 	float: right;
 	margin: rem(29) 0;
 }

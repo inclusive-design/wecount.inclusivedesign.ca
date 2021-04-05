@@ -16,7 +16,7 @@ module.exports = class {
 				{
 					include: [
 						"preview.njk",
-						"workshop.njk",
+						"initiative.njk",
 						"\\.svg$"
 					]
 				}

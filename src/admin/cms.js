@@ -32,10 +32,10 @@ Preview.propTypes = {
 CMS.registerWidget("uuid", UuidControl, UuidPreview);
 CMS.registerPreviewStyle("/scss/main.css");
 
-const Workshop = ({ entry }) => (
+const Initative = ({ entry }) => (
 	<Preview
 		entry={entry}
-		path="layouts/workshop.njk"
+		path="layouts/initiative.njk"
 		context={({ title, id, eventDate, shortDescription, previewImageUrl, previewImageAltText, coverImageUrl, coverImageAltText, body }) => ({
 			previewMode: true,
 			title,
@@ -51,8 +51,8 @@ const Workshop = ({ entry }) => (
 	/>
 );
 
-Workshop.propTypes = {
+Initative.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
-CMS.registerPreviewTemplate("workshops", Workshop);
+CMS.registerPreviewTemplate("initiatives", Initative);

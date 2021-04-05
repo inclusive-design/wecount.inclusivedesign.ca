@@ -7,10 +7,10 @@
 {% set pageTitle = page.title %}
 
 {% block content %}
-  <article class="workshop-page">
+  <article class="initiative-page">
     <h1>{{ title | safe }}</h1>
     {% if coverImageUrl %}
-    <img class="workshop-cover-image" src="{{ coverImageUrl | safe }}" alt="{{ coverImageAltText }}">
+    <img class="initiative-cover-image" src="{{ coverImageUrl | safe }}" alt="{{ coverImageAltText }}">
     {% endif %}
 
     <div class="description">{{ content | safe }}</div>
@@ -29,7 +29,7 @@
       <div class="form-field">
         <span>*</span><h4><label for="comment">Post a comment or question</label></h4><span class="required-comment">Required</span>
         <textarea id="comment" name="comment" placeholder="" aria-label="Enter your comment"></textarea>
-        <input type="hidden" name="workshopId" id="workshopId" value="{{ id }}">
+        <input type="hidden" name="initiativeId" id="initiativeId" value="{{ id }}">
         <button id="post-comment" type="submit">Post a comment</button>
       </div>
     </form>
@@ -44,7 +44,7 @@
 
     <div class="comments">
       {% for comment in collections.comments %}
-        {% if comment.workshopId === id %}
+        {% if comment.initiativeId === id %}
         {% include 'components/comment.njk' %}
         {% endif %}
       {% endfor %}
@@ -54,5 +54,5 @@
 
 {% block footerScripts %}
 <script src="/js/utils.js"></script>
-<script src="/js/workshop-comments.js"></script>
+<script src="/js/initiative-comments.js"></script>
 {% endblock %}

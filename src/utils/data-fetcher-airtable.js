@@ -23,7 +23,7 @@ module.exports = {
 						name: rec.get("name"),
 						date: rec.get("post_date"),
 						comment: rec.get("comment"),
-						workshopId: rec.get("workshopId")
+						initiativeId: rec.get("initiativeId")
 					};
 					comments.push(commentProps);
 				});

@@ -42,9 +42,9 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.addCollection("workshops", collection => {
+	eleventyConfig.addCollection("initiatives", collection => {
 		return [
-			...collection.getFilteredByGlob("src/collections/workshops/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
+			...collection.getFilteredByGlob("src/collections/initiatives/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
 		].reverse();
 	});
 

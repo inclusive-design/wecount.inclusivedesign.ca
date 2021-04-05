@@ -1,15 +1,15 @@
 /**
- * Handle client requests for adding comments for workshops. This script does:
+ * Handle client requests for adding comments for initiatives. This script does:
  * 1. Save the comment to Airtable;
  * 2. Send an email to moderator that a new comment has been posted and waiting for a review/
  *
  * Accepted requirements:
  * 1. must be a POST request;
  * 2. The incoming payload is in form/multipart MIME data format and must have values for 3 field:
- * name, comment, workshopId
+ * name, comment, initiativeId
  *
  * The example of a curl command to test this endpoint:
- * curl -X POST -d "name=test%20person&comment=a%20test%20comment&workshopId=recH5jhXKOYfeXYvP" [host-server]/api/comments
+ * curl -X POST -d "name=test%20person&comment=a%20test%20comment&initiativeId=recH5jhXKOYfeXYvP" [host-server]/api/comments
  */
 
 const airtable = require("airtable");
@@ -52,7 +52,7 @@ const sendEmail = (moderatorEmail, { timestamp, name, comment }) => {
 	});
 };
 
-const saveComment = async (base, { timestamp, name, comment, workshopId }) => {
+const saveComment = async (base, { timestamp, name, comment, initiativeId }) => {
 	return new Promise((resolve, reject) => {
 		base("comments").create([
 			{
@@ -60,7 +60,7 @@ const saveComment = async (base, { timestamp, name, comment, workshopId }) => {
 					"post_date": timestamp,
 					"name": name,
 					"comment": comment,
-					"workshopId": workshopId,
+					"initiativeId": initiativeId,
 					"reviewed": false
 				}
 			}
@@ -83,7 +83,7 @@ exports.handler = async function(event, context, callback) {
 	// Reject the request when:
 	// 1. Not a POST request;
 	// 2. Doesn’t provide "name" or "comment" values
-	if (event.httpMethod !== "POST" || !incomingData["name"] || !incomingData["comment"] || !incomingData["workshopId"]) {
+	if (event.httpMethod !== "POST" || !incomingData["name"] || !incomingData["comment"] || !incomingData["initiativeId"]) {
 		callback(null, {
 			statusCode: 400,
 			body: "Invalid HTTP request method or missing field values."
@@ -103,7 +103,7 @@ exports.handler = async function(event, context, callback) {
 			timestamp: timestamp,
 			name: incomingData["name"],
 			comment: incomingData["comment"],
-			workshopId: incomingData["workshopId"]
+			initiativeId: incomingData["initiativeId"]
 		};
 
 		await saveComment(base, data);

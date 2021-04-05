@@ -92,7 +92,7 @@ function applyVisibility(domSelector, toShow, displayType) {
  * @param {String} comment - Text of comment field in comment form.
  */
 function showSubmittedComment(name, comment) {
-	// Add comment to the top of the comments section of workshop page.
+	// Add comment to the top of the comments section of initiative page.
 	const newCommentDiv = document.createElement("div");
 	newCommentDiv.innerHTML = "<article class='comment submitted-comment'><p><span class='comment-name'></span> | <span class='comment-date'></span></p><p class='comment-text'></p></article>";
 	const commentsDiv = document.getElementsByClassName("comments")[0];

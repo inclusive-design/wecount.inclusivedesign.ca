@@ -8,13 +8,13 @@
 		box-shadow: 0 0 rem(35) rgba(0, 0, 0, 0.55);
 	}
 
-	// Workshop title and descriptions
+	// Initiative title and descriptions
 	.tile-narrative {
 		border-radius: rem(18) rem(18) rem(18) rem(18);
 		min-height: rem(208);
 		padding: 0 rem(16) rem(16) rem(16);
 
-		// Workshop titles
+		// Initiative titles
 		h2 {
 			border-bottom: rem(2) solid $grey-shade;
 			padding-bottom: rem(16);
@@ -38,7 +38,7 @@
 		}
 	}
 
-	// Workshop images
+	// Initiative images
 	.tile-image {
 		display: none;
 	}

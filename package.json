@@ -22,7 +22,7 @@
     "serve": "npx serve dist",
     "lint:css": "stylelint src/scss/**/*.scss",
     "lint:js": "eslint \"**/*.js\"",
-    "lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --ignore src/collections/",
+    "lint:md": "markdownlint \"**/***.md\" --ignore-path .gitignore --ignore LICENSE.md --ignore src/collections/ --ignore .github/**/*.md",
     "lint": "run-s lint:*",
     "lint-fix:css": "npm run lint:css -- --fix",
     "lint-fix:js": "npm run lint:js -- --fix",
@@ -80,7 +80,7 @@
       "stylelint"
     ],
     "*.md": [
-      "markdownlint --ignore LICENSE.md --ignore .github/**/*.md"
+      "markdownlint --ignore LICENSE.md --ignore src/collections/ --ignore .github/**/*.md"
     ]
   }
 }

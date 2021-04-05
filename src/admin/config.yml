@@ -7,10 +7,10 @@ site_url: "https://wecount.inclusivedesign.ca"
 media_folder: "src/images/uploads"
 public_folder: "/images/uploads"
 collections:
-  - name: workshops
-    label: Workshops
-    label_singular: Workshop
-    folder: "src/collections/workshops"
+  - name: initiatives
+    label: Initiatives
+    label_singular: Initiative
+    folder: "src/collections/initiatives"
     slug: "{{title}}"
     create: true
     fields:
@@ -20,7 +20,7 @@ collections:
       - label: "Event ID"
         name: "id"
         widget: "uuid"
-        hint: "The ID is used to associate comments with this workshop and cannot be edited."
+        hint: "The ID is used to associate comments with this initiative and cannot be edited."
       - label: "Permanent Link"
         name: "permalink"
         widget: "string"
