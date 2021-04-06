@@ -30,7 +30,7 @@ Preview.propTypes = {
 };
 
 CMS.registerWidget("uuid", UuidControl, UuidPreview);
-CMS.registerPreviewStyle("/scss/main.css");
+CMS.registerPreviewStyle("/css/main.css");
 
 const Initative = ({ entry }) => (
 	<Preview

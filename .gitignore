@@ -94,6 +94,3 @@ Pipfile
 
 # Local Netlify folder
 .netlify
-
-# Local environment variables file
-.env
