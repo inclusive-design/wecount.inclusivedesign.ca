@@ -2,7 +2,9 @@
 title: Coded Bias
 id: recETUd8LjQZzCKZb
 permalink: /initiatives/recETUd8LjQZzCKZb/
-eventDate: ''
+eventDate: ""
+coverImageUrl: /images/uploads/cat2.jpg
+coverImageAltText: Coded Bias
 shortDescription: >-
   *Coded Bias* explores the fallout of MIT researcher Joy Buolamwini’s startling
   discovery that facial recognition does not see dark-skinned faces accurately
@@ -11,13 +13,18 @@ shortDescription: >-
 
 
   Date: TBC
-previewImageUrl: /images/uploads/TWITTER_FB_Event_Cover_-_Coded_Bias_Screening_Intr1.png
-previewImageAltText: ''
-coverImageUrl: /images/uploads/TWITTER_FB_Event_Cover_-_Coded_Bias_Screening_Intr1-full.png
-coverImageAltText: Coded Bias
+
+
+  continue with the short desc
+previewImageUrl: /images/uploads/cat1.jpg
+previewImageAltText: ""
 ---
+### updated content top
+
 ### Coded Bias
 
-_[Coded Bias](https://www.codedbias.com/about)_ explores the fallout of MIT media lab researcher Joy Buolamwini’s startling discovery that facial recognition does not see dark-skinned faces accurately and her journey to push for the first-ever legislation in the U.S. to govern against bias in the algorithms that impact us all.
+*[Coded Bias](https://www.codedbias.com/about)* explores the fallout of MIT media lab researcher Joy Buolamwini’s startling discovery that facial recognition does not see dark-skinned faces accurately and her journey to push for the first-ever legislation in the U.S. to govern against bias in the algorithms that impact us all.
 
 Date: TBC
+
+updated content bottom
