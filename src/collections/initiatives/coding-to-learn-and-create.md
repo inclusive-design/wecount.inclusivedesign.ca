@@ -1,7 +1,6 @@
 ---
 title: Coding to Learn and Create
 id: recgCWEJisEY2tptD
-permalink: /initiatives/recgCWEJisEY2tptD/
 eventDate: 2020-11-18T04:00:00.000Z
 coverImageUrl: /images/uploads/CodingtoLearnandCreate.png
 coverImageAltText: Coding to Learn and Create logo

@@ -1,7 +1,6 @@
 ---
 title: Coded Bias
 id: recETUd8LjQZzCKZb
-permalink: /initiatives/recETUd8LjQZzCKZb/
 eventDate: ''
 shortDescription: >-
   *Coded Bias* explores the fallout of MIT researcher Joy Buolamwini’s startling

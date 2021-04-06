@@ -1,7 +1,6 @@
 ---
 title: Accessible Surveys
 id: recM2F4PCtF3ufqZ3
-permalink: /initiatives/recM2F4PCtF3ufqZ3/
 eventDate: 2020-08-04T03:00:00.000Z
 coverImageUrl: /images/uploads/AccessibleSurveyPlatforms_1024x536.png
 coverImageAltText: Online Conversation on Accessible Survey Platforms. Tuesday,

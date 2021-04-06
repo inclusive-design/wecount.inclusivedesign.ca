@@ -1,7 +1,6 @@
 ---
 title: Inclusive AI for HR
 id: recQcaxqWsxtnljqe
-permalink: /initiatives/recQcaxqWsxtnljqe/
 eventDate: 2020-12-01T04:00:00.000Z
 coverImageUrl: /images/uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disability logo"

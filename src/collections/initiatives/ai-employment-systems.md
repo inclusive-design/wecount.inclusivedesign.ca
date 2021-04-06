@@ -1,7 +1,6 @@
 ---
 title: AI Employment Systems
 id: rechIn59lpbMoCvQ0
-permalink: /initiatives/rechIn59lpbMoCvQ0/
 eventDate: 2020-11-03T04:00:00.000Z
 coverImageUrl: /images/uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disability logo"
