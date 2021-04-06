@@ -18,7 +18,7 @@ env.addFilter("slug", slugFilter);
 env.addFilter("w3DateFilter", w3DateFilter);
 
 const Preview = ({ entry, path, context }) => {
-	const data = context(entry.get("data").toJS());
+	const data = context(entry.get("data").toJS(), entry);
 	const html = env.render(path, data);
 	return <div dangerouslySetInnerHTML={{ __html: html }}/>;
 };
@@ -32,27 +32,28 @@ Preview.propTypes = {
 CMS.registerWidget("uuid", UuidControl, UuidPreview);
 CMS.registerPreviewStyle("/css/main.css");
 
-const Initative = ({ entry }) => (
-	<Preview
+const Initative = ({ entry, getAsset }) => {
+	return <Preview
 		entry={entry}
 		path="layouts/initiative.njk"
-		context={({ title, id, eventDate, shortDescription, previewImageUrl, previewImageAltText, coverImageUrl, coverImageAltText, body }) => ({
+		context={({title, id, eventDate, shortDescription, previewImageAltText, coverImageAltText, body }, entry) => ({
 			previewMode: true,
 			title,
 			id,
 			eventDate,
 			shortDescription,
-			previewImageUrl,
+			previewImageUrl: getAsset(entry.getIn(["data", "previewImageUrl"])),
 			previewImageAltText,
-			coverImageUrl,
+			coverImageUrl: getAsset(entry.getIn(["data", "coverImageUrl"])),
 			coverImageAltText,
 			content: markdownFilter(body || ""),
 		})}
-	/>
-);
+	/>;
+};
 
 Initative.propTypes = {
-	entry: PropTypes.object.isRequired
+	entry: PropTypes.object.isRequired,
+	getAsset: PropTypes.object.isRequired
 };
 
 CMS.registerPreviewTemplate("initiatives", Initative);
