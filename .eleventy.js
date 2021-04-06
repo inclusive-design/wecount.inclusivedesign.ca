@@ -129,7 +129,6 @@ module.exports = function(eleventyConfig) {
 	// Configure passthrough file copy.
 	eleventyConfig.addPassthroughCopy({"manifest.json": "manifest.json"});
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
-	eleventyConfig.addPassthroughCopy("node_modules/nunjucks/browser/nunjucks-slim.js");
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});
 	eleventyConfig.addPassthroughCopy({"src/js": "js"});
