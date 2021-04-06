@@ -1,3 +1,4 @@
 {
-	"permalink": false
+	"permalink": "/{{ title | slug }}/",
+	"layout": "layouts/page"
 }

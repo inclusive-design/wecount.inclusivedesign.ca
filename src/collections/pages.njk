@@ -1,6 +1,6 @@
 ---
 pagination:
-    data: collections.publicPages
+    data: collections.wpPublicPages
     size: 1
     alias: pageItem
 permalink: "pages/{{ pageItem.slug }}.md"
@@ -8,8 +8,11 @@ permalink: "pages/{{ pageItem.slug }}.md"
 ---
 title: "{{ pageItem.title }}"
 permalink: {{ pageItem.href }}
+slug: {{ pageItem.slug }}
+{% if pageItem.excerpt -%}
 excerpt: -|
   {{ pageItem.excerpt | turndownFilter | safe }}
+{%- endif %}
 menu_order: {{ pageItem.menu_order }}
 ---
 {{ pageItem.content | turndownFilter | safe }}

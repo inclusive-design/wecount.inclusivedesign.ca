@@ -1,15 +1,7 @@
----
-pagination:
-  data: collections.publicPages
-  size: 1
-  alias: pageItem
-permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
----
-
 {% extends "layouts/base.njk" %}
 
-{% set pageTitle = pageItem.title %}
-{% set pageExcerpt = pageItem.excerpt %}
+{% set pageTitle = title %}
+{% set pageExcerpt = excerpt %}
 
 {% block content %}
 {% if page.url === "/" %}
@@ -17,7 +9,7 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
     <article>
     <h1 class="title">{{ pageTitle }}</h1>
     <div class="api-content">
-    {{ pageItem.content | safe }}
+    {{ content | safe }}
     </div>
     </article>
     <div class="homepage-cards">
@@ -36,11 +28,11 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
     </div>
 </div>
 
-{% elif pageItem.slug === "initiatives" %}
-<article class="page {{ pageItem.slug }}">
+{% elif page.url === "/initiatives/" %}
+<article class="page initiatives">
   <h1 class="title">{{ pageTitle }}</h1>
   <div class="api-content">
-    {{ pageItem.content | safe }}
+    {{ content | safe }}
     <div class="initiatives">
       {% for initiative in collections.initiatives %}
         {% set tileURL = "/initiatives/" + initiative.data.id %}
@@ -56,10 +48,10 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
 </article>
 
 {% else %}
-<article class="page {{ pageItem.slug }}">
+<article class="page {{ title | slug }}">
   <h1>{{ pageTitle }}</h1>
   <div class="api-content">
-    {{ pageItem.content | safe }}
+    {{ content | safe }}
   </div>
 </article>
 {% endif %}
@@ -75,10 +67,10 @@ document.querySelectorAll("main article.page h1, main article.page h2, header").
 });
 </script>
 
-{% if pageItem.slug === "advisory-panel" %}
+{% if page.url === "/advisory-panel/" %}
   <script src="/js/advisory-panel-handler.js"></script>
 {% endif %}
-{% if pageItem.slug === "team" %}
+{% if page.url === "/team/" %}
   <script src="/js/team-handler.js"></script>
 {% endif %}
 {% endblock %}

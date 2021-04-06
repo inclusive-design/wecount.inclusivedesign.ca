@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// "publicPages" only contains public pages that are accessible via WeCount website URLs.
-	eleventyConfig.addCollection("publicPages", async function() {
+	eleventyConfig.addCollection("wpPublicPages", async function() {
 		const publicPagesPromise = dataFetcherWp.sitePages();
 		return new Promise((resolve) => {
 			publicPagesPromise.then(pages => {
@@ -41,6 +41,12 @@ module.exports = function(eleventyConfig) {
 				resolve(results);
 			});
 		});
+	});
+
+	eleventyConfig.addCollection("publicPages", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/pages/*.md")
+		];
 	});
 
 	eleventyConfig.addCollection("initiatives", collection => {
