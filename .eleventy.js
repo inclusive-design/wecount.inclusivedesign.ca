@@ -1,7 +1,6 @@
 /* global chunkArray, createPagination, getUniqueTags */
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
-const pluginSass = require("eleventy-plugin-sass");
 const pluginPWA = require("eleventy-plugin-pwa");
 const fs = require("fs");
 
@@ -22,8 +21,8 @@ const privatePageSlugs = ["views", "news"];
 require("./src/js/utils.js");
 
 module.exports = function(eleventyConfig) {
-	// Use .eleventyignore instead of .gitignore.
-	eleventyConfig.setUseGitIgnore(false);
+	// Watch SCSS files.
+	eleventyConfig.addWatchTarget("./src/scss/");
 
 	// "allPages" contains both public pages and pages that define partial contents such as intro paragraphs
 	// in the News and Views pages.
@@ -111,10 +110,6 @@ module.exports = function(eleventyConfig) {
 
 	// Add plugins.
 	eleventyConfig.addPlugin(errorOverlay);
-	eleventyConfig.addPlugin(pluginSass, {
-		watch: ["src/**/*.scss"],
-		sourcemaps: process.env.ELEVENTY_ENV === "development" ? true : false
-	});
 	eleventyConfig.addPlugin(pluginPWA, {
 		globIgnores: ["admin/*"]
 	});
