@@ -43,7 +43,7 @@ permalink: "/{{ '/' if pageItem.slug === 'home' else pageItem.slug  }}/"
     {{ pageItem.content | safe }}
     <div class="initiatives">
       {% for initiative in collections.initiatives %}
-        {% set tileURL = "/initiatives/" + initiative.data.id %}
+        {% set tileURL = initiative.url %}
         {% set title = initiative.data.title %}
         {% set description = initiative.data.shortDescription %}
         {% set defaultPreviewImageUrl = "/images/initiative.png" %}
