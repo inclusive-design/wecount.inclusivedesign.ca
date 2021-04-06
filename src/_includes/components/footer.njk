@@ -5,4 +5,5 @@
     {% include 'components/funders.njk' %}
   </div>
   <p class="netlify-notice">Hosted with <a rel="external nofollower noopener" href="https://netlify.com">Netlify</a></p>
+  {% if page.url == "/" %}<div data-netlify-identity-button></div>{% endif %}
 </footer>
