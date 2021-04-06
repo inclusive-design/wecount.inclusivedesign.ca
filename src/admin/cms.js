@@ -33,7 +33,6 @@ CMS.registerWidget("uuid", UuidControl, UuidPreview);
 CMS.registerPreviewStyle("/css/main.css");
 
 const Initative = ({ entry, getAsset }) => {
-	console.log();
 	return <Preview
 		entry={entry}
 		path="layouts/initiative.njk"
