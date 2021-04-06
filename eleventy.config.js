@@ -116,7 +116,7 @@ module.exports = function(eleventyConfig) {
 		sourcemaps: process.env.ELEVENTY_ENV === "development" ? true : false
 	});
 	eleventyConfig.addPlugin(pluginPWA, {
-		globIgnores: ["admin/*"]
+		globIgnores: ["admin/*", "login/*"]
 	});
 
 	// Add filters.
