@@ -1,7 +1,6 @@
 ---
 title: AI Hiring System Policies
 id: recinYOSm2lkaaZcd
-permalink: /initiatives/recinYOSm2lkaaZcd/
 eventDate: 2020-11-17T04:00:00.000Z
 coverImageUrl: /images/uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disabiltiy logo"

@@ -1,7 +1,6 @@
 ---
 title: Bias In, Bias Out
 id: recoPfZIdOPjEYnpY
-permalink: /initiatives/recoPfZIdOPjEYnpY/
 eventDate: 2020-07-08T03:00:00.000Z
 coverImageUrl: /images/uploads/ToonCalders_Wordpress_2010x1052.png
 coverImageAltText: Digging DEEPer Webinar on Machine Learning Discrimination by

@@ -1,7 +1,6 @@
 ---
 title: Building Indigenous Future Imaginaries
 id: recYhFPyH66Hvs6c2
-permalink: /initiatives/recYhFPyH66Hvs6c2/
 eventDate: 2020-12-09T04:00:00.000Z
 coverImageUrl: /images/uploads/Dec-9_wordpress-Copy.jpg
 coverImageAltText: "Digging DEEPer webinar: Building Indigenous Future

@@ -1,7 +1,6 @@
 ---
 title: AI and AT Apps
 id: rechCtfzoi4gYQKvU
-permalink: /initiatives/rechCtfzoi4gYQKvU/
 eventDate: 2020-09-23T03:00:00.000Z
 coverImageUrl: /images/uploads/Roger-Melko-Activity_1024x536.png
 coverImageAltText: "AI-Powered Mobile Assistive Technology Apps: Risks and
