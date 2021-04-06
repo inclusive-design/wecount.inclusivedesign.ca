@@ -1,7 +1,6 @@
 ---
 title: The Metric Society and Surveillance
 id: rec9ZsM9uU1e1yeAi
-permalink: /initiatives/rec9ZsM9uU1e1yeAi/
 eventDate: 2021-04-28T03:00:00.000Z
 coverImageUrl: ""
 coverImageAltText: ""
