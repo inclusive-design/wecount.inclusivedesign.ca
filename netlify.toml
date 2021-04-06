@@ -21,3 +21,9 @@
   status = 200
   force = true
   conditions = {Role = ["admin"]}
+
+[[redirects]]
+  from = "/admin"
+  status = 200
+  force = true
+  conditions = {Role = ["admin"]}
