@@ -2,7 +2,7 @@
 title: The Metric Society and Surveillance
 id: rec9ZsM9uU1e1yeAi
 eventDate: 2021-04-28T03:00:00.000Z
-coverImageUrl: ""
+coverImageUrl: /images/uploads/cat1.jpg
 coverImageAltText: ""
 shortDescription: >-
   In today’s world, numbers are in the ascendancy, and everything and everybody
@@ -15,10 +15,12 @@ shortDescription: >-
 
 
   **Click to register**
-previewImageUrl: ""
+previewImageUrl: /images/uploads/cat2.jpg
 previewImageAltText: ""
 ---
 ### The Metric Society and the Unmeasurable
+
+editing content
 
 In today’s world, numbers are in the ascendancy. Societies dominated by star ratings, scores, likes and lists are rapidly emerging, as data are collected on virtually every aspect of our lives. From annual university rankings, ratings agencies and fitness tracking technologies to our credit score and health status, everything and everybody is measured and evaluated. Join Steffen Mau, Virginia Eubanks and Jutta Treviranus in conversation for a critical analysis of this increasingly pervasive phenomenon.
 
