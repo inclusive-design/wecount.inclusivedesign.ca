@@ -17,7 +17,7 @@ shortDescription: >-
 
   **Click to register**
 previewImageUrl: /images/uploads/metric-society_wordpress_2010x1052-copy.png
-previewImageAltText: ""
+previewImageAltText: Decorative
 ---
 ### The Metric Society and the Unmeasurable
 
