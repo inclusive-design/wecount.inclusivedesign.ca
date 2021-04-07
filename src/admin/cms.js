@@ -1,4 +1,5 @@
-/* global CMS, nunjucks, PropTypes, React */
+/* eslint-disable react/display-name */
+/* global CMS, createClass, nunjucks, PropTypes, React */
 
 import {UuidControl, UuidPreview} from "netlify-cms-widget-uuid-v4";
 import dateFilter from "../filters/date";
@@ -18,21 +19,13 @@ env.addFilter("randomizeFilter", randomizeFilter);
 env.addFilter("slug", slugFilter);
 env.addFilter("w3DateFilter", w3DateFilter);
 
-const shortcodePreviews = {
-	youtube: (str) => {
-		const pattern = /{% youtube "(\S+)" %}/g;
-		const replacer = (str, match) => (`![YouTube video](http://img.youtube.com/vi/${getId(match)}/maxresdefault.jpg#block)`);
-		return str.replace(pattern, replacer);
-	}
-};
-
-const Preview = ({ entry, path, context }) => {
+const NunjucksPreview = ({ entry, path, context }) => {
 	const data = context(entry.get("data").toJS(), entry);
 	const html = env.render(path, data);
 	return <div dangerouslySetInnerHTML={{ __html: html }}/>;
 };
 
-Preview.propTypes = {
+NunjucksPreview.propTypes = {
 	entry: PropTypes.object.isRequired,
 	path: PropTypes.string.isRequired,
 	context: PropTypes.func.isRequired
@@ -40,31 +33,25 @@ Preview.propTypes = {
 
 CMS.registerPreviewStyle("/css/main.css");
 
-const Page = ({ entry }) => {
-
-	return <Preview
-		entry={entry}
-		path="layouts/page.njk"
-		context={({title, body}) => {
-			Object.keys(shortcodePreviews).map(shortcode => {
-				body = shortcodePreviews[shortcode](body);
-			});
-			return {
-				previewMode: true,
-				title,
-				content: markdownFilter(body || ""),
-			};
-		}
-		}
-	/>;
-};
+const Page = createClass({
+	render: function() {
+		return <main>
+			<article className="page">
+				<h1>{this.props.entry.getIn(["data", "title"])}</h1>
+				<>
+					{this.props.widgetFor("body")}
+				</>
+			</article>
+		</main>;
+	}
+});
 
 Page.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
 const Initative = ({ entry, getAsset }) => {
-	return <Preview
+	return <NunjucksPreview
 		entry={entry}
 		path="layouts/initiative.njk"
 		context={({title, id, eventDate, shortDescription, previewImageAltText, coverImageAltText, body }, entry) => ({
@@ -91,10 +78,57 @@ CMS.registerPreviewTemplate("pages", Page);
 CMS.registerPreviewTemplate("initiatives", Initative);
 
 CMS.registerWidget("uuid", UuidControl, UuidPreview);
-
+CMS.registerEditorComponent({
+	id: "image-and-text",
+	label: "Image and Text",
+	fields: [
+		{
+			name: "image",
+			label: "Image",
+			widget: "image",
+			required: true
+		},
+		{
+			name: "alt",
+			label: "Alternative Text",
+			widget: "string"
+		},
+		{
+			name: "imagePosition",
+			label: "Image Position",
+			widget: "select",
+			options: [{value:"left", label: "Left"}, {value:"right", label: "Right"}]
+		},
+		{
+			name: "verticalAlignment",
+			label: "Vertical Alignment",
+			widget: "select",
+			options: [{value:"top", label: "Top"}, {value:"center", label: "Center"}, {value:"bottom", label: "Bottom"}]
+		}
+	],
+	pattern: /^{% imageAndText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimageAndText %}/,
+	fromBlock: function (match) {
+		return {
+			image: match[1],
+			alt: match[2],
+			imagePosition: match[3],
+			verticalAlignment: match[4],
+			content: match[5]
+		};
+	},
+	toBlock: function (obj) {
+		return `{% imageAndText "${obj.image}", "${obj.alt}", "${obj.imagePosition}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimageAndText %}`;
+	},
+	toPreview: function (obj) {
+		return `<div class="wp-block-media-text has-media-on-the-${obj.imagePosition} is-vertically-aligned-${obj.verticalAlignment} is-stacked-on-mobile">
+		<figure class="wp-block-media-text__media"><img src="${obj.image}" alt="${obj.alt}" /></figure>
+		<div class="wp-block-media-text__content">${markdownFilter(obj.content)}</div>
+		</div>`;
+	}
+});
 CMS.registerEditorComponent({
 	id: "youtube",
-	label: "YouTube",
+	label: "YouTube Embed",
 	fields: [
 		{name: "url", label: "YouTube Video URL", widget: "string"},
 	],
@@ -108,9 +142,8 @@ CMS.registerEditorComponent({
 		return `{% youtube "${obj.url}" %}`;
 	},
 	toPreview: function(obj) {
-		console.log(getId(obj.url));
 		return (
-			"<img src=\"http://img.youtube.com/vi/" + getId(obj.url) + "/maxresdefault.jpg#block\" alt=\"Youtube Video\"/>"
+			"<p><img src=\"http://img.youtube.com/vi/" + getId(obj.url) + "/maxresdefault.jpg#block\" alt=\"Youtube Video\"/></p>"
 		);
 	}
 });

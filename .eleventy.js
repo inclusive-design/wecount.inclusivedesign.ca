@@ -16,6 +16,7 @@ const turndownFilter = require("./src/filters/turndown.js");
 const slugFilter = require("./src/filters/slug.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
+const imageAndTextShortcode = require("./src/shortcodes/image-and-text.js");
 const youtubeShortcode = require("./src/shortcodes/youtube.js");
 
 // Slugs for pages that should be excluded as public pages from the WeCount website.
@@ -135,7 +136,9 @@ module.exports = function(eleventyConfig) {
 
 
 	// Add shortcodes.
+	eleventyConfig.addPairedShortcode("imageAndText", imageAndTextShortcode);
 	eleventyConfig.addShortcode("youtube", youtubeShortcode);
+
 
 	// Add transforms.
 	eleventyConfig.addTransform("htmlmin", htmlMinifyTransform);
