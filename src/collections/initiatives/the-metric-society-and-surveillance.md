@@ -1,7 +1,7 @@
 ---
 title: The Metric Society and Surveillance
 id: rec9ZsM9uU1e1yeAi
-eventDate: 2021-04-28T03:00:00.000Z
+eventDate: 2021-04-29T03:00:00.000Z
 coverImageUrl: /images/uploads/metric-society_wordpress_2010x1052.png
 coverImageAltText: "Digging DEEPer Webinar The Metric Society and the
   Unmeasurable: Wednesday, April 28, 2021, 10:30 AM – 12:00 PM (EDT)"
