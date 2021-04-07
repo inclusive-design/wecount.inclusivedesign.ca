@@ -10,9 +10,9 @@ shortDescription: >-
 
 
   Date: TBC
-previewImageUrl: /images/uploads/TWITTER_FB_Event_Cover_-_Coded_Bias_Screening_Intr1.png
+previewImageUrl: /uploads/TWITTER_FB_Event_Cover_-_Coded_Bias_Screening_Intr1.png
 previewImageAltText: ''
-coverImageUrl: /images/uploads/TWITTER_FB_Event_Cover_-_Coded_Bias_Screening_Intr1-full.png
+coverImageUrl: /uploads/TWITTER_FB_Event_Cover_-_Coded_Bias_Screening_Intr1-full.png
 coverImageAltText: Coded Bias
 ---
 ### Coded Bias

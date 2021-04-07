@@ -4,8 +4,8 @@ backend:
 local_backend: true
 publish_mode: editorial_workflow
 site_url: "https://wecount.inclusivedesign.ca"
-media_folder: "src/images/uploads"
-public_folder: "/images/uploads"
+media_folder: "src/uploads"
+public_folder: "/uploads"
 collections:
   - name: initiatives
     label: Initiatives

@@ -2,7 +2,7 @@
 title: Coding to Learn and Create
 id: recgCWEJisEY2tptD
 eventDate: 2020-11-18T04:00:00.000Z
-coverImageUrl: /images/uploads/CodingtoLearnandCreate.png
+coverImageUrl: /uploads/CodingtoLearnandCreate.png
 coverImageAltText: Coding to Learn and Create logo
 shortDescription: >-
   Looking for something exciting and creative for your kids in November? Coding
@@ -12,7 +12,7 @@ shortDescription: >-
   Part 1: November 18, 2020, 10:30 AM – 12:00 PM (EST)\
 
   Part 2: November 25, 2020, 10:30 AM – 12:00 PM (EST)
-previewImageUrl: /images/uploads/32aae9c7.jpg
+previewImageUrl: /uploads/32aae9c7.jpg
 previewImageAltText: ""
 ---
 ### Coding to Learn and Create

@@ -2,7 +2,7 @@
 title: AI and AT Apps
 id: rechCtfzoi4gYQKvU
 eventDate: 2020-09-23T03:00:00.000Z
-coverImageUrl: /images/uploads/Roger-Melko-Activity_1024x536.png
+coverImageUrl: /uploads/Roger-Melko-Activity_1024x536.png
 coverImageAltText: "AI-Powered Mobile Assistive Technology Apps: Risks and
   Benefits. Part 1: Wednesday September 23 at 10:30 AM – 12 PM (EDT). Part 2:
   Wednesday October 7 at 10:30 AM – 12 PM (EDT). Part 3: Wednesday, October 21
@@ -22,7 +22,7 @@ shortDescription: >-
 
 
   **Available badges:** Learner, Brainstormer, Communicator
-previewImageUrl: /images/uploads/group81.jpg
+previewImageUrl: /uploads/group81.jpg
 previewImageAltText: ""
 ---
 ### **AI-Powered Mobile Assistive Technology Apps: Risks and Benefits**

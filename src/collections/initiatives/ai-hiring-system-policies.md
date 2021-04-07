@@ -2,7 +2,7 @@
 title: AI Hiring System Policies
 id: recinYOSm2lkaaZcd
 eventDate: 2020-11-17T04:00:00.000Z
-coverImageUrl: /images/uploads/FWDlogoBforprocessing4x1.png
+coverImageUrl: /uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disabiltiy logo"
 shortDescription: >-
   Panelists will discuss how machine learning models can carry bias when
@@ -11,7 +11,7 @@ shortDescription: >-
 
 
   November 17, 2020, 1:30 PM – 3:00 PM (EST)
-previewImageUrl: /images/uploads/8eb229f4.jpg
+previewImageUrl: /uploads/8eb229f4.jpg
 previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### **Identifying and Addressing Bias in Machine Learning Models on Selection of Candidates from a Policy Perspective**
