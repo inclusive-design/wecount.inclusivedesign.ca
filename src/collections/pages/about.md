@@ -46,7 +46,7 @@ An innovative and fair data ecosystem that serves diversity through opportunity 
 *   Shea Tanis, Coleman Institute
 *   Shari Trewin, IBM
 
-[Learn more about We Count Advisory Panel](https://wecount.inclusivedesign.ca/advisory-panel/)
+[Learn more about We Count Advisory Panel](/advisory-panel/)
 
 ## Sign up to learn more about We Count
 
