@@ -18,6 +18,8 @@ previewImageAltText: ""
 ---
 ### **Conversation on Accessible Survey Platforms**
 
+new content
+
 A conversation on accessible survey platforms, hosted by the Inclusive Design Research Centre. Join the discussion with David Berman, Roland Van Oostveen, Pina D'Intino, Julia Foster, Sarah Stadder Wise, Michelle Borgal, and members of the inclusive design community.
 
 August 4, 2020, 2:00 – 3:30 PM (EST)
