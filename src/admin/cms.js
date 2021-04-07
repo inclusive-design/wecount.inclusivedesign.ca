@@ -7,6 +7,7 @@ import markdownFilter from "../filters/markdown";
 import randomizeFilter from "../filters/randomize";
 import slugFilter from "../filters/slug";
 import w3DateFilter from "../filters/w3-date";
+import getId from "../utils/extract-youtube-id.js";
 
 const env = nunjucks.configure();
 
@@ -16,6 +17,14 @@ env.addFilter("markdownFilter", markdownFilter);
 env.addFilter("randomizeFilter", randomizeFilter);
 env.addFilter("slug", slugFilter);
 env.addFilter("w3DateFilter", w3DateFilter);
+
+const shortcodePreviews = {
+	youtube: (str) => {
+		const pattern = /{% youtube "(\S+)" %}/g;
+		const replacer = (str, match) => (`![YouTube video](http://img.youtube.com/vi/${getId(match)}/maxresdefault.jpg#block)`);
+		return str.replace(pattern, replacer);
+	}
+};
 
 const Preview = ({ entry, path, context }) => {
 	const data = context(entry.get("data").toJS(), entry);
@@ -29,8 +38,30 @@ Preview.propTypes = {
 	context: PropTypes.func.isRequired
 };
 
-CMS.registerWidget("uuid", UuidControl, UuidPreview);
 CMS.registerPreviewStyle("/css/main.css");
+
+const Page = ({ entry }) => {
+
+	return <Preview
+		entry={entry}
+		path="layouts/page.njk"
+		context={({title, body}) => {
+			Object.keys(shortcodePreviews).map(shortcode => {
+				body = shortcodePreviews[shortcode](body);
+			});
+			return {
+				previewMode: true,
+				title,
+				content: markdownFilter(body || ""),
+			};
+		}
+		}
+	/>;
+};
+
+Page.propTypes = {
+	entry: PropTypes.object.isRequired
+};
 
 const Initative = ({ entry, getAsset }) => {
 	return <Preview
@@ -56,4 +87,31 @@ Initative.propTypes = {
 	getAsset: PropTypes.object.isRequired
 };
 
+CMS.registerPreviewTemplate("pages", Page);
 CMS.registerPreviewTemplate("initiatives", Initative);
+
+CMS.registerWidget("uuid", UuidControl, UuidPreview);
+
+CMS.registerEditorComponent({
+	id: "youtube",
+	label: "YouTube",
+	fields: [
+		{name: "url", label: "YouTube Video URL", widget: "string"},
+	],
+	pattern: /^{% youtube "(\S+)" %}$/,
+	fromBlock: function(match) {
+		return {
+			url: match[1]
+		};
+	},
+	toBlock: function(obj) {
+		return `{% youtube "${obj.url}" %}`;
+	},
+	toPreview: function(obj) {
+		console.log(getId(obj.url));
+		return (
+			"<img src=\"http://img.youtube.com/vi/" + getId(obj.url) + "/maxresdefault.jpg#block\" alt=\"Youtube Video\"/>"
+		);
+	}
+});
+

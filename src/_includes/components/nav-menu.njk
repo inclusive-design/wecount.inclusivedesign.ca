@@ -1,5 +1,5 @@
 <nav class="primary-nav" aria-label="Primary Navigation">
-  {% set navItems = collections.publicPages | eleventyNavigation %}
+  {% set navItems = collections.pages | eleventyNavigation %}
   {%- for item in navItems %}
     {%- if item.order > 0 %}
     <a {% if page.url === item.url %}aria-current="page" {% endif %}href="{{ item.url }}">{{ item.key }}</a>

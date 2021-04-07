@@ -91,6 +91,11 @@ figure {
 	margin-right: auto;
 }
 
+p img {
+	height: auto;
+	max-width: 100%;
+}
+
 // Styling for media and text block with media on the left
 .wp-block-media-text {
 	display: grid;
@@ -124,8 +129,7 @@ figure {
 }
 
 // The folowing CSS rule ensures video content is the width of the article element in mobile and iPad views
-.wp-block-video,
-.is-type-video {
+.embed--youtube {
 	min-width: 100%;
 }
 
@@ -214,8 +218,7 @@ figcaption {
 		}
 
 		// WP customized styles for Desktop and iPad Pro views
-		.wp-block-video,
-		.is-type-video {
+		.embed--youtube {
 			min-width: auto;
 		}
 
@@ -251,8 +254,7 @@ figcaption {
 			}
 		}
 
-		.is-type-video .wp-block-embed__wrapper iframe,
-		.wp-block-video video {
+		.embed--youtube iframe {
 			height: rem(326);
 			width: rem(580);
 		}

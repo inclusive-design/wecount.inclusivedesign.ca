@@ -16,6 +16,7 @@ const turndownFilter = require("./src/filters/turndown.js");
 const slugFilter = require("./src/filters/slug.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
+const youtubeShortcode = require("./src/shortcodes/youtube.js");
 
 // Slugs for pages that should be excluded as public pages from the WeCount website.
 const privatePageSlugs = ["views", "news"];
@@ -43,7 +44,7 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.addCollection("publicPages", collection => {
+	eleventyConfig.addCollection("pages", collection => {
 		return [
 			...collection.getFilteredByGlob("src/collections/pages/*.md")
 		];
@@ -132,6 +133,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("turndownFilter", turndownFilter);
 	eleventyConfig.addFilter("slug", slugFilter);
 
+
+	// Add shortcodes.
+	eleventyConfig.addShortcode("youtube", youtubeShortcode);
+
 	// Add transforms.
 	eleventyConfig.addTransform("htmlmin", htmlMinifyTransform);
 	eleventyConfig.addTransform("parse", parseTransform);
@@ -142,6 +147,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});
+	eleventyConfig.addPassthroughCopy({"src/uploads": "uploads"});
 	eleventyConfig.addPassthroughCopy({"src/js": "js"});
 	eleventyConfig.addPassthroughCopy({"src/admin/config.yml": "admin/config.yml"});
 

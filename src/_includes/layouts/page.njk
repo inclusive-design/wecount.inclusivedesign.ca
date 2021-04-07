@@ -1,4 +1,8 @@
-{% extends "layouts/base.njk" %}
+{% if previewMode %}
+{% extends 'layouts/preview.njk' %}
+{% else %}
+{% extends 'layouts/base.njk' %}
+{% endif %}
 
 {% set pageTitle = title %}
 {% set pageExcerpt = excerpt %}
@@ -7,10 +11,10 @@
 {% if page.url === "/" %}
 <div>
     <article>
-    <h1 class="title">{{ pageTitle }}</h1>
-    <div class="api-content">
-    {{ content | safe }}
-    </div>
+      <h1 class="title">{{ pageTitle }}</h1>
+      <div class="api-content">
+      {{ content | safe }}
+      </div>
     </article>
     <div class="homepage-cards">
       <a href="/views/" class="blue card">

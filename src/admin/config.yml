@@ -7,12 +7,42 @@ site_url: "https://wecount.inclusivedesign.ca"
 media_folder: "src/uploads"
 public_folder: "/uploads"
 collections:
+  - name: pages
+    label: Pages
+    label_singular: Page
+    folder: "src/collections/pages"
+    sortable_fields: ['title']
+    slug: "{{title}}"
+    preview_path: "{{slug}}"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Navigation Order"
+        name: "menu_order"
+        widget: number
+        default: 0
+        required: true
+        hint: |-
+          This determines where the page should appear in the primary navigation. To hide the page from the primary navigation, set the value to zero.
+      - label: "Permanent Link"
+        name: "permalink"
+        widget: "string"
+        required: false
+        hint: |-
+          If you do not specify a permanent link, one will be automatically generated from the page title.
+          Permalinks must have the format /page-title/ (the trailing slash is required).
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
   - name: initiatives
     label: Initiatives
     label_singular: Initiative
     folder: "src/collections/initiatives"
     sortable_fields: ['eventDate', 'title']
     slug: "{{title}}"
+    preview_path: "initiatives/{{slug}}"
     create: true
     fields:
       - label: "Event Title"

@@ -8,13 +8,19 @@ menu_order: 3
 ---
 To achieve We Count’s goal of an inclusive and balanced data ecosystem for persons with disabilities, We Count is issuing an ongoing call for challenges.
 
-A We Count Challenge is a data ecosystem inclusion problem that results from things like:
+A We Count Challenge is a data ecosystem inclusion problem that creates barriers to participation or other risks from things like:
 
-*   Exclusion from data sets
-*   Bias in data systems
-*   Participation restrictions
-*   Limited employability
-*   Vulnerability to data abuse and misuse
+*   **Exclusion from data sets** — ensures that decisions and knowledge based on data won’t take people with disabilities into account
+*   **Ableism and bias in data systems** — causes AI and machine learning tools to incorrectly respond to individuals who present differently
+*   **Inaccessible data science and visualization tools** — limits the ability for individuals to create from data, learn about data science or be employed in the field
+*   **Data abuse and misuse** — a concern for all that is heightened for those who are already subject to bias and discrimination
+
+We Count is providing opportunities for stakeholders to raise and address data ecosystem challenges, especially those that impact people with disabilities. Here are examples of challenges already submitted by We Count collaborators:
+
+*   Creating data sets that help identify barriers to employment, such as access to accessible washrooms at workplaces
+*   Effectively sharing information on elevator operation status for all elevators
+*   Collecting data on screen reader interoperability to improve accessibility
+*   Developing strategies for voice recognition systems to support use by individuals with dysarthric speech or other “difficult to recognize” speech patterns, like accents
 
 To tackle these challenges, We Count is assembling diverse, knowledgeable teams for challenge workshops.
 
@@ -32,8 +38,8 @@ As data becomes the main source for truth and value, persons with disabilities a
 
 ## Submit a challenge
 
-Do you know an inclusion challenge in data systems or the data economy? Nominate your challenge to We Count at our [nomination form](https://forms.gle/bcsvB48o6amgusdq6).
+Do you know an inclusion challenge in data systems or the data economy? Nominate your challenge with our [nomination form](https://forms.gle/bcsvB48o6amgusdq6).
 
 ## Sign up
 
-Are you interested in hearing about We Count activities or do you want to be contacted to learn about ways you can participate? If yes then send us your contact information on our [contact form](https://forms.gle/WuCk59iQtiRX3sLC7).
+Are you interested in hearing about We Count activities or do you want to be contacted to learn about ways you can participate? If yes, then send us your contact information on our [contact form](https://forms.gle/WuCk59iQtiRX3sLC7).
