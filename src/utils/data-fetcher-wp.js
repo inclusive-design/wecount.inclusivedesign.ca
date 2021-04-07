@@ -96,7 +96,7 @@ module.exports = {
 		// According to the Wordpress API for pagination and embedding: https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/,
 		// 1. fetch 100 records per page (the maxium number per page supported by Wordpress) to fasten the query
 		// 2. Order by the menu order in ascending order
-		const pageAPI = env.wpApi + "/pages?per_page=100&order=asc&orderby=menu_order";
+		const pageAPI = "https://wecount-cms.inclusivedesign.ca/wp-json/wp/v2/pages?per_page=100&order=asc&orderby=menu_order";
 
 		const response = await axios.get(`${pageAPI}`);
 

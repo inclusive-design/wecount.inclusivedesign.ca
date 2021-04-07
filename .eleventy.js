@@ -2,6 +2,7 @@
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginPWA = require("eleventy-plugin-pwa");
+const eleventyNavigation = require("@11ty/eleventy-navigation");
 const fs = require("fs");
 
 const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
@@ -117,6 +118,7 @@ module.exports = function(eleventyConfig) {
 
 	// Add plugins.
 	eleventyConfig.addPlugin(errorOverlay);
+	eleventyConfig.addPlugin(eleventyNavigation);
 	eleventyConfig.addPlugin(pluginPWA, {
 		globIgnores: ["admin/*"]
 	});
