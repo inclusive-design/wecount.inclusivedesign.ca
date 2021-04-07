@@ -26,7 +26,7 @@ In today’s world, numbers are in the ascendancy. Societies dominated by star r
 
 April 28, 2021, 10:30 AM – 12:00 PM (EDT)
 
-[Register here for the free webinar.](https://ocadu.zoom.us/webinar/register/9016171231601/WN_qAc4q5VnSmihxmhoSCgJyA)
+[Register here for the free webinar](https://ocadu.zoom.us/webinar/register/9016171231601/WN_qAc4q5VnSmihxmhoSCgJyA)
 
 **Panelists:**
 
