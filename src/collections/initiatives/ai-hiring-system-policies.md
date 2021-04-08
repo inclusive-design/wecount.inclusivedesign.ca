@@ -22,7 +22,7 @@ November 17, 2020, 1:30 PM – 3:00 PM (EST)
 
 [AI Hiring System Policies webinar video](https://youtu.be/Tq230FBgoiU)
 
-[AI Hiring System Policies transcript](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/03/Future-of-Work_AI-Hiring-System-Policies_Nov-17_Transcript.docx)
+[AI Hiring System Policies transcript](/uploads/Future-of-Work_AI-Hiring-System-Policies_Nov-17_Transcript.docx)
 
 **Panelists:**
 

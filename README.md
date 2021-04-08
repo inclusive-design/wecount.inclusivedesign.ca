@@ -12,10 +12,11 @@ The front end of the website is built with [Eleventy](https://11ty.dev/).
 The website uses [Netlify CMS](https://netlifycms.org) to manage the following content:
 
 - [initiatives](src/collections/initiatives)
+- [pages](src/collections/pages)
 
 The website also uses two backend APIs:
 
-- WordPress API where We Count team members create news, views and some site pages;
+- WordPress API where We Count team members create news and views;
   - The production WordPress site: [https://wecount-cms.inclusivedesign.ca/](https://wecount-cms.inclusivedesign.ca/)
   - The development WordPress site: [https://wecount-dev.inclusivedesign.ca/](https://wecount-dev.inclusivedesign.ca/)
 - [Airtable API](https://airtable.com/api) that serves user comments for initiatives, AI resources and

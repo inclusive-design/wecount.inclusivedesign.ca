@@ -22,7 +22,7 @@ November 3, 2020, 1:30 AM – 3:00 PM (EST)
 
 [AI Employment Systems webinar video](https://youtu.be/C_2lFeH9y2I)
 
-[AI Employment Systems transcript](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/03/Future-of-Work_AI-Employment-Systems_Nov-3_Transcript.docx)
+[AI Employment Systems transcript](/uploads/Future-of-Work_AI-Employment-Systems_Nov-3_Transcript.docx)
 
 **Panelists:**
 

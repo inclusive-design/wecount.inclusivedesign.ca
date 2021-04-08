@@ -55,7 +55,7 @@ Learn and earn badges from this event:
 1. Watch the accessible [AI and AT Apps webinar](https://youtu.be/OGqcg2p_Etg)
 2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QHEE2ZaDRaNLJ/apply)
 
-For additional information on the topic, listen to [Dr. Roger Melko’s CBC podcast](https://www.cbc.ca/radio/ideas/machines-that-can-think-real-benefits-the-apocalypse-or-dog-spaghetti-1.5429046) (read the [transcript](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/01/Transcript-CBC-Ideas-Podcast.docx)).
+For additional information on the topic, listen to [Dr. Roger Melko’s CBC podcast](https://www.cbc.ca/radio/ideas/machines-that-can-think-real-benefits-the-apocalypse-or-dog-spaghetti-1.5429046) (read the [transcript](/uploads/Transcript-CBC-Ideas-Podcast.docx)).
 
 ### Earn a Brainstormer badge
 
@@ -73,13 +73,13 @@ Inspired by Dr. Roger Melko’s CBC podcast, you will explore selected mobile ap
 
 Mobile apps:
 
-* **[Envision](https://www.letsenvision.com/):** An app that uses Optical Character Recognition (OCR) to read text, food packaging, posters and display screens, as well as describing scenes and colours around you. [Activity](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/01/Envision.docx).
-* **[Supersense](https://www.supersense.app/):** A scanner application for blind and visually impaired users that uses AI to read text and images from applications. Note: Supersense offers a seven-day free trial period. Once you have finished your badge activity, make sure to cancel your subscription before the first payment triggers. [Activity](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/01/SuperSense.docx).
-* **[MapinHood](https://mapinhood.com/):** A personalized pedestrian navigation app that will require outdoor activities for testing. You may use it while completing your daily activities in the community, such as walking your dog or running errands. Please follow social distancing rules when using this app. [Activity](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/01/MapinHood.docx).
-* **[Seeing AI](https://www.microsoft.com/en-us/ai/seeing-ai):** An intelligent camera app that uses image classification, AI, and the cloud. [Activity](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/01/Seeing-AI.docx).
-* **[Ava](https://www.ava.me/):** Natural language processing is used to transcribe conversations in real-time for the deaf and hearing impaired to participate in spoken conversation. Live captions for all conversations. [Activity](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/01/Ava.docx).
+* **[Envision](https://www.letsenvision.com/):** An app that uses Optical Character Recognition (OCR) to read text, food packaging, posters and display screens, as well as describing scenes and colours around you. [Activity](/uploads/Envision.docx).
+* **[Supersense](https://www.supersense.app/):** A scanner application for blind and visually impaired users that uses AI to read text and images from applications. Note: Supersense offers a seven-day free trial period. Once you have finished your badge activity, make sure to cancel your subscription before the first payment triggers. [Activity](/uploads/SuperSense.docx).
+* **[MapinHood](https://mapinhood.com/):** A personalized pedestrian navigation app that will require outdoor activities for testing. You may use it while completing your daily activities in the community, such as walking your dog or running errands. Please follow social distancing rules when using this app. [Activity](/uploads/MapinHood.docx).
+* **[Seeing AI](https://www.microsoft.com/en-us/ai/seeing-ai):** An intelligent camera app that uses image classification, AI, and the cloud. [Activity](/uploads/Seeing-AI.docx).
+* **[Ava](https://www.ava.me/):** Natural language processing is used to transcribe conversations in real-time for the deaf and hearing impaired to participate in spoken conversation. Live captions for all conversations. [Activity](/uploads/Ava.docx).
 
-For additional information on the topic, listen to [Dr. Roger Melko’s CBC podcast](https://www.cbc.ca/radio/ideas/machines-that-can-think-real-benefits-the-apocalypse-or-dog-spaghetti-1.5429046) (read the [transcript](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/01/Transcript-CBC-Ideas-Podcast.docx)).
+For additional information on the topic, listen to [Dr. Roger Melko’s CBC podcast](https://www.cbc.ca/radio/ideas/machines-that-can-think-real-benefits-the-apocalypse-or-dog-spaghetti-1.5429046) (read the [transcript](/uploads/Transcript-CBC-Ideas-Podcast.docx)).
 
 ### Earn a Communicator badge
 
@@ -94,4 +94,4 @@ Communicate and earn badges from this event:
 1. Watch the accessible [AI and AT Apps webinar](https://youtu.be/OGqcg2p_Etg)
 2. [Apply for your Communicator badge](https://factory.cancred.ca/c/earnablebadge/QGPPISaDRa5HL/apply)
 
-For additional information on the topic, listen to [Dr. Roger Melko’s CBC podcast](https://www.cbc.ca/radio/ideas/machines-that-can-think-real-benefits-the-apocalypse-or-dog-spaghetti-1.5429046) (read the [transcript](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/01/Transcript-CBC-Ideas-Podcast.docx)).
+For additional information on the topic, listen to [Dr. Roger Melko’s CBC podcast](https://www.cbc.ca/radio/ideas/machines-that-can-think-real-benefits-the-apocalypse-or-dog-spaghetti-1.5429046) (read the [transcript](/uploads/Transcript-CBC-Ideas-Podcast.docx)).
