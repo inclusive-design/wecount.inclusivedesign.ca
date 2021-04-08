@@ -126,10 +126,14 @@ CMS.registerEditorComponent({
 	toBlock: function (obj) {
 		return `{% expander "${obj.image}", "${obj.alt}", "${obj.title}", "${obj.subtitle}" %}\n${obj.content}\n{% endexpander %}`;
 	},
-	toPreview: function (obj) {
+	toPreview: function (obj, getAsset, fields) {
 		const {content, image, alt, title, subtitle} = obj;
+		const imageField = fields.find(f => f.get("widget") === "image");
+		const src = getAsset(image, imageField);
+		return expanderShortcode(content, src, alt, title, subtitle)
 		// Show expanded state for preview purposes.
-		return expanderShortcode(content, image, alt, title, subtitle).replace(" hidden", "").replace("aria-expanded=\"false\"", "aria-expanded=\"true\"");
+			.replace(" hidden", "")
+			.replace("aria-expanded=\"false\"", "aria-expanded=\"true\"");
 	}
 });
 CMS.registerEditorComponent({
@@ -179,9 +183,11 @@ CMS.registerEditorComponent({
 	toBlock: function (obj) {
 		return `{% imageAndText "${obj.image}", "${obj.alt}", "${obj.imagePosition}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimageAndText %}`;
 	},
-	toPreview: function (obj) {
+	toPreview: function (obj, getAsset, fields) {
 		const {content, image, alt, imagePosition, verticalAlignment} = obj;
-		return imageAndTextShortcode(content, image, alt, imagePosition, verticalAlignment);
+		const imageField = fields.find(f => f.get("widget") === "image");
+		const src = getAsset(image, imageField);
+		return imageAndTextShortcode(content, src, alt, imagePosition, verticalAlignment);
 	}
 });
 CMS.registerEditorComponent({
