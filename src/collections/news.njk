@@ -1,0 +1,23 @@
+---
+pagination:
+    data: collections.wpNews
+    size: 1
+    alias: newsItem
+permalink: "wp-news/{{ newsItem.title | slug }}.md"
+---
+---
+title: "{{ newsItem.title | safe }}"
+link: {{ newsItem.href }}
+date: {{ newsItem.dateTime }}
+{% if newsItem.picture %}
+picture: {{ newsItem.picture }}
+{% endif %}
+{% if newsItem.altText %}
+altText: |-
+  {{ newsItem.altText }}
+{% endif %}
+{% if newsItem.excerpt -%}
+excerpt: |-
+  {{ newsItem.excerpt | turndownFilter | safe }}
+{%- endif %}
+---

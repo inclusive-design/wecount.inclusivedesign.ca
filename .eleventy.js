@@ -74,13 +74,13 @@ module.exports = function(eleventyConfig) {
 		];
 	});
 
-	// eleventyConfig.addCollection("wpNews", async function() {
-	// 	return dataFetcherWp.categorizedItems("news", 8);
-	// });
+	eleventyConfig.addCollection("wpNews", async function() {
+		return dataFetcherWp.categorizedItems("news", 8);
+	});
 
-	// eleventyConfig.addCollection("wpViews", async function() {
-	// 	return dataFetcherWp.categorizedItems("views", 1);
-	// });
+	eleventyConfig.addCollection("wpViews", async function() {
+		return dataFetcherWp.categorizedItems("views", 1);
+	});
 
 	// eleventyConfig.addCollection("wpViewsTags", async function() {
 	// 	const viewsPromise = dataFetcherWp.categorizedItems("views", 1);

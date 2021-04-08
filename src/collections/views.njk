@@ -1,0 +1,24 @@
+---
+pagination:
+    data: collections.wpViews
+    size: 1
+    alias: viewsItem
+permalink: "wp-views/{{ viewsItem.title | slug }}.md"
+---
+---
+title: "{{ viewsItem.title | safe }}"
+date: {{ viewsItem.dateTime }}
+author: {{ viewsItem.author }}
+{% if viewsItem.picture %}
+picture: {{ viewsItem.picture }}
+{% endif %}
+{% if viewsItem.altText %}
+altText: |-
+  {{ viewsItem.altText }}
+{% endif %}
+{% if viewsItem.excerpt -%}
+excerpt: |-
+  {{ viewsItem.excerpt | turndownFilter | safe }}
+{%- endif %}
+---
+{{ viewsItem.content | turndownFilter | safe }}
