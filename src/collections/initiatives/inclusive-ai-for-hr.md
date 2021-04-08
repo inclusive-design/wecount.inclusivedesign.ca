@@ -2,7 +2,7 @@
 title: Inclusive AI for HR
 id: recQcaxqWsxtnljqe
 eventDate: 2020-12-01T04:00:00.000Z
-coverImageUrl: /images/uploads/FWDlogoBforprocessing4x1.png
+coverImageUrl: /uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disability logo"
 shortDescription: >-
   Panelists will highlight some of the potential problems that arise from AI in
@@ -11,7 +11,7 @@ shortDescription: >-
 
 
   December 1, 2020, 1:30 PM – 3:00 PM (EST)
-previewImageUrl: /images/uploads/8eb229f4.jpg
+previewImageUrl: /uploads/8eb229f4.jpg
 previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### **How to Make Artificial Intelligence Inclusive for Hiring and HR**

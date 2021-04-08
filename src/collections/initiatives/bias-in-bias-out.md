@@ -2,7 +2,7 @@
 title: Bias In, Bias Out
 id: recoPfZIdOPjEYnpY
 eventDate: 2020-07-08T03:00:00.000Z
-coverImageUrl: /images/uploads/tooncalders_2048x1072.png
+coverImageUrl: /uploads/tooncalders_2048x1072.png
 coverImageAltText: Digging DEEPer Webinar on Machine Learning Discrimination by
   Dr. Toon Calders on July 8, 2020, 11AM-12PM
 shortDescription: >-
@@ -14,7 +14,7 @@ shortDescription: >-
 
 
   **Available badges:** Learner
-previewImageUrl: /images/uploads/Group83.jpg
+previewImageUrl: /uploads/Group83.jpg
 previewImageAltText: ""
 ---
 ### **Machine Learning Discrimination: Bias In, Bias Out**

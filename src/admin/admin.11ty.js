@@ -15,8 +15,10 @@ module.exports = class {
 				path.join(__dirname, "../_includes/"),
 				{
 					include: [
+						"page.njk",
 						"preview.njk",
 						"initiative.njk",
+						"tile-item.njk",
 						"\\.svg$"
 					]
 				}

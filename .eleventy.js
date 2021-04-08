@@ -2,6 +2,7 @@
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginPWA = require("eleventy-plugin-pwa");
+const eleventyNavigation = require("@11ty/eleventy-navigation");
 const fs = require("fs");
 
 const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
@@ -11,9 +12,13 @@ const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
+const turndownFilter = require("./src/filters/turndown.js");
 const slugFilter = require("./src/filters/slug.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
+const expanderShortcode = require("./src/shortcodes/expander.js");
+const imageAndTextShortcode = require("./src/shortcodes/image-and-text.js");
+const youtubeShortcode = require("./src/shortcodes/youtube.js");
 
 // Slugs for pages that should be excluded as public pages from the WeCount website.
 const privatePageSlugs = ["views", "news"];
@@ -31,7 +36,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// "publicPages" only contains public pages that are accessible via WeCount website URLs.
-	eleventyConfig.addCollection("publicPages", async function() {
+	eleventyConfig.addCollection("wpPublicPages", async function() {
 		const publicPagesPromise = dataFetcherWp.sitePages();
 		return new Promise((resolve) => {
 			publicPagesPromise.then(pages => {
@@ -39,6 +44,12 @@ module.exports = function(eleventyConfig) {
 				resolve(results);
 			});
 		});
+	});
+
+	eleventyConfig.addCollection("pages", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/pages/*.md")
+		];
 	});
 
 	eleventyConfig.addCollection("initiatives", collection => {
@@ -110,6 +121,7 @@ module.exports = function(eleventyConfig) {
 
 	// Add plugins.
 	eleventyConfig.addPlugin(errorOverlay);
+	eleventyConfig.addPlugin(eleventyNavigation);
 	eleventyConfig.addPlugin(pluginPWA, {
 		globIgnores: ["admin/*"]
 	});
@@ -120,7 +132,15 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
+	eleventyConfig.addFilter("turndownFilter", turndownFilter);
 	eleventyConfig.addFilter("slug", slugFilter);
+
+
+	// Add shortcodes.
+	eleventyConfig.addPairedShortcode("expander", expanderShortcode);
+	eleventyConfig.addPairedShortcode("imageAndText", imageAndTextShortcode);
+	eleventyConfig.addShortcode("youtube", youtubeShortcode);
+
 
 	// Add transforms.
 	eleventyConfig.addTransform("htmlmin", htmlMinifyTransform);
@@ -132,6 +152,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});
+	eleventyConfig.addPassthroughCopy({"src/uploads": "uploads"});
 	eleventyConfig.addPassthroughCopy({"src/js": "js"});
 	eleventyConfig.addPassthroughCopy({"src/admin/config.yml": "admin/config.yml"});
 
