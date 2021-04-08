@@ -29,23 +29,6 @@ module.exports = function(eleventyConfig) {
 	// Watch SCSS files.
 	eleventyConfig.addWatchTarget("./src/scss/");
 
-	// "allPages" contains both public pages and pages that define partial contents such as intro paragraphs
-	// in the News and Views pages.
-	// eleventyConfig.addCollection("allPages", async function() {
-	// 	return dataFetcherWp.sitePages();
-	// });
-
-	// "publicPages" only contains public pages that are accessible via WeCount website URLs.
-	// eleventyConfig.addCollection("wpPublicPages", async function() {
-	// 	const publicPagesPromise = dataFetcherWp.sitePages();
-	// 	return new Promise((resolve) => {
-	// 		publicPagesPromise.then(pages => {
-	// 			const results = pages.filter(page => !privatePageSlugs.includes(page.slug));
-	// 			resolve(results);
-	// 		});
-	// 	});
-	// });
-
 	eleventyConfig.addCollection("pages", collection => {
 		return [
 			...collection.getFilteredByGlob("src/collections/pages/*.md")
