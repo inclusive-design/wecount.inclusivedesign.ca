@@ -96,7 +96,7 @@ p img {
 	max-width: 100%;
 }
 
-// Styling for media and text block with media on the left
+// Base styling for media and text block
 .wp-block-media-text {
 	display: grid;
 
@@ -112,6 +112,11 @@ p img {
 		height: auto;
 		width: 100%;
 	}
+}
+
+// Styling for media and text block with media on the left
+.has-media-on-the-left {
+	grid-template-columns: 15% auto;
 }
 
 // Styling for media and text block with media on the right
@@ -235,7 +240,7 @@ figcaption {
 		}
 
 		// Styling for media and text block with media on the left
-		.wp-block-media-text {
+		.has-media-on-the-left {
 			.wp-block-media-text__content {
 				margin-left: rem(25);
 			}
