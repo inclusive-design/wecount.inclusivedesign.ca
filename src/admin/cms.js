@@ -8,6 +8,8 @@ import markdownFilter from "../filters/markdown";
 import randomizeFilter from "../filters/randomize";
 import slugFilter from "../filters/slug";
 import w3DateFilter from "../filters/w3-date";
+import expanderShortcode from "../shortcodes/expander.js";
+import imageAndTextShortcode from "../shortcodes/image-and-text.js";
 import getId from "../utils/extract-youtube-id.js";
 
 const env = nunjucks.configure();
@@ -79,6 +81,58 @@ CMS.registerPreviewTemplate("initiatives", Initative);
 
 CMS.registerWidget("uuid", UuidControl, UuidPreview);
 CMS.registerEditorComponent({
+	id: "expander",
+	label: "Expander",
+	fields: [
+		{
+			name: "image",
+			label: "Image",
+			widget: "image",
+			required: true
+		},
+		{
+			name: "alt",
+			label: "Alternative Text",
+			widget: "string"
+		},
+		{
+			name: "title",
+			label: "Title",
+			widget: "string",
+			required: true
+		},
+		{
+			name: "subtitle",
+			label: "Subtitle",
+			widget: "string"
+		},
+		{
+			name: "content",
+			label: "Content",
+			widget: "markdown",
+			required: true
+		}
+	],
+	pattern: /^{% expander "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endexpander %}/,
+	fromBlock: function (match) {
+		return {
+			image: match[1],
+			alt: match[2],
+			title: match[3],
+			subtitle: match[4],
+			content: match[5]
+		};
+	},
+	toBlock: function (obj) {
+		return `{% expander "${obj.image}", "${obj.alt}", "${obj.title}", "${obj.subtitle}" %}\n${obj.content}\n{% endexpander %}`;
+	},
+	toPreview: function (obj) {
+		const {content, image, alt, title, subtitle} = obj;
+		// Show expanded state for preview purposes.
+		return expanderShortcode(content, image, alt, title, subtitle).replace(" hidden", "").replace("aria-expanded=\"false\"", "aria-expanded=\"true\"");
+	}
+});
+CMS.registerEditorComponent({
 	id: "image-and-text",
 	label: "Image and Text",
 	fields: [
@@ -104,6 +158,12 @@ CMS.registerEditorComponent({
 			label: "Vertical Alignment",
 			widget: "select",
 			options: [{value:"top", label: "Top"}, {value:"center", label: "Center"}, {value:"bottom", label: "Bottom"}]
+		},
+		{
+			name: "content",
+			label: "Content",
+			widget: "markdown",
+			required: true
 		}
 	],
 	pattern: /^{% imageAndText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimageAndText %}/,
@@ -120,10 +180,8 @@ CMS.registerEditorComponent({
 		return `{% imageAndText "${obj.image}", "${obj.alt}", "${obj.imagePosition}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimageAndText %}`;
 	},
 	toPreview: function (obj) {
-		return `<div class="wp-block-media-text has-media-on-the-${obj.imagePosition} is-vertically-aligned-${obj.verticalAlignment} is-stacked-on-mobile">
-		<figure class="wp-block-media-text__media"><img src="${obj.image}" alt="${obj.alt}" /></figure>
-		<div class="wp-block-media-text__content">${markdownFilter(obj.content)}</div>
-		</div>`;
+		const {content, image, alt, imagePosition, verticalAlignment} = obj;
+		return imageAndTextShortcode(content, image, alt, imagePosition, verticalAlignment);
 	}
 });
 CMS.registerEditorComponent({
