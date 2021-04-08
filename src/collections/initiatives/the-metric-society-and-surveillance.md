@@ -1,9 +1,11 @@
 ---
-title: The Metric Society and Surveillance
+title: The Metric Society and the Unmeasurable
 id: rec9ZsM9uU1e1yeAi
-eventDate: 2021-04-28T03:00:00.000Z
-coverImageUrl: ""
-coverImageAltText: ""
+permalink: ""
+eventDate: 2021-04-29T03:00:00.000Z
+coverImageUrl: /uploads/metric-society_wordpress_2010x1052.png
+coverImageAltText: "Digging DEEPer Webinar The Metric Society and the
+  Unmeasurable: Wednesday, April 28, 2021, 10:30 AM – 12:00 PM (EDT)"
 shortDescription: >-
   In today’s world, numbers are in the ascendancy, and everything and everybody
   is measured and evaluated. Join Steffen Mau, Virginia Eubanks and Jutta
@@ -15,8 +17,8 @@ shortDescription: >-
 
 
   **Click to register**
-previewImageUrl: ""
-previewImageAltText: ""
+previewImageUrl: /uploads/metric-society_wordpress_2010x1052-copy.png
+previewImageAltText: Decorative
 ---
 ### The Metric Society and the Unmeasurable
 
@@ -24,7 +26,7 @@ In today’s world, numbers are in the ascendancy. Societies dominated by star r
 
 April 28, 2021, 10:30 AM – 12:00 PM (EDT)
 
-[Register here for the free webinar.](https://ocadu.zoom.us/webinar/register/9016171231601/WN_qAc4q5VnSmihxmhoSCgJyA)
+[Register here for the free webinar](https://ocadu.zoom.us/webinar/register/9016171231601/WN_qAc4q5VnSmihxmhoSCgJyA)
 
 **Panelists:**
 
