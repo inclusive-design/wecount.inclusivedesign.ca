@@ -2,8 +2,8 @@
   {% if item.category === 'views' %}
   <div class="preview-media-wrapper">
     <figure class="content">
-      {% if item.picture %}
-      <img src="{{ item.picture | safe }}" alt="{{ item.altTag }}">
+      {% if item.data.picture %}
+      <img src="{{ item.picture | safe }}" alt="{{ item.data.altTag }}">
       {% else %}
       <svg class="logo placeholder-img">
         <use xlink:href="#placeholder" />
@@ -15,16 +15,16 @@
 
   <div class="content-preview">
     <h2 class="h3">
-      <a href="{{ item.href }}">{{ item.title | safe }}</a>
+      <a href="{{ item.url if item.url else item.data.link }}">{{ item.data.title | safe }}</a>
     </h2>
     {% if item.category === 'views' %}
-    <div class="author">{{ item.author | safe }}</div>
+    <div class="author">{{ item.data.author | safe }}</div>
     {% endif %}
     <div class="date">
-      <time datetime="{{ item.dateTime | w3DateFilter }}" class="dt-published">{{ item.dateTime | dateFilter }}</time>
+      <time datetime="{{ item.data.date | w3DateFilter }}" class="dt-published">{{ item.data.date | dateFilter }}</time>
     </div>
     <div class="preview-content">
-      {{ item.excerpt | striptags | safe }}
+      {{ item.data.excerpt | striptags | safe }}
     </div>
   </div>
 </article>

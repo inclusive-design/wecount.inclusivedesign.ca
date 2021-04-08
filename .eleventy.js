@@ -31,20 +31,20 @@ module.exports = function(eleventyConfig) {
 
 	// "allPages" contains both public pages and pages that define partial contents such as intro paragraphs
 	// in the News and Views pages.
-	eleventyConfig.addCollection("allPages", async function() {
-		return dataFetcherWp.sitePages();
-	});
+	// eleventyConfig.addCollection("allPages", async function() {
+	// 	return dataFetcherWp.sitePages();
+	// });
 
 	// "publicPages" only contains public pages that are accessible via WeCount website URLs.
-	eleventyConfig.addCollection("wpPublicPages", async function() {
-		const publicPagesPromise = dataFetcherWp.sitePages();
-		return new Promise((resolve) => {
-			publicPagesPromise.then(pages => {
-				const results = pages.filter(page => !privatePageSlugs.includes(page.slug));
-				resolve(results);
-			});
-		});
-	});
+	// eleventyConfig.addCollection("wpPublicPages", async function() {
+	// 	const publicPagesPromise = dataFetcherWp.sitePages();
+	// 	return new Promise((resolve) => {
+	// 		publicPagesPromise.then(pages => {
+	// 			const results = pages.filter(page => !privatePageSlugs.includes(page.slug));
+	// 			resolve(results);
+	// 		});
+	// 	});
+	// });
 
 	eleventyConfig.addCollection("pages", collection => {
 		return [
@@ -62,62 +62,74 @@ module.exports = function(eleventyConfig) {
 		return dataFetcherAirtable.comments();
 	});
 
-	eleventyConfig.addCollection("news", async function() {
-		return dataFetcherWp.categorizedItems("news", 8);
+	eleventyConfig.addCollection("news", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/news/*.md").sort((a, b) => b.data.date - a.data.date)
+		];
 	});
 
-	eleventyConfig.addCollection("views", async function() {
-		return dataFetcherWp.categorizedItems("views", 1);
+	eleventyConfig.addCollection("views", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/views/*.md").sort((a, b) => b.data.date - a.data.date)
+		];
 	});
 
-	eleventyConfig.addCollection("viewsTags", async function() {
-		const viewsPromise = dataFetcherWp.categorizedItems("views", 1);
-		return new Promise((resolve) => {
-			viewsPromise.then(views => {
-				resolve(getUniqueTags(views));
-			});
-		});
-	});
+	// eleventyConfig.addCollection("wpNews", async function() {
+	// 	return dataFetcherWp.categorizedItems("news", 8);
+	// });
 
-	eleventyConfig.addCollection("tags", async function() {
-		const tags = await dataFetcherWp.siteTags();
-		const posts = await dataFetcherWp.sitePosts();
-		const pageSize = 10;
-		let collectionTogo = [];
+	// eleventyConfig.addCollection("wpViews", async function() {
+	// 	return dataFetcherWp.categorizedItems("views", 1);
+	// });
 
-		tags.map(tag => {
-			const taggedPosts = posts.filter(post => {
-				const postTagSlugs = post.tags.map(({slug}) => slug);
-				return postTagSlugs.includes(tag.slug);
-			});
+	// eleventyConfig.addCollection("wpViewsTags", async function() {
+	// 	const viewsPromise = dataFetcherWp.categorizedItems("views", 1);
+	// 	return new Promise((resolve) => {
+	// 		viewsPromise.then(views => {
+	// 			resolve(getUniqueTags(views));
+	// 		});
+	// 	});
+	// });
 
-			if (taggedPosts.length) {
-				const postsInPage = chunkArray(taggedPosts, pageSize);
-				for (let pageNumber = 1; pageNumber <= postsInPage.length; pageNumber++) {
-					let pagination;
-					if (pageNumber === 1) {
-						// Add the root page that has the same content as the first page
-						pagination = createPagination(taggedPosts, pageSize, 1, "/tags/" + tag.slug + "/page/:page");
-						collectionTogo.push({
-							slug: tag.slug,
-							title: tag.title,
-							posts: postsInPage[0],
-							pagination: pagination
-						});
-					}
+	// eleventyConfig.addCollection("tags", async function() {
+	// 	const tags = await dataFetcherWp.siteTags();
+	// 	const posts = await dataFetcherWp.sitePosts();
+	// 	const pageSize = 10;
+	// 	let collectionTogo = [];
 
-					collectionTogo.push({
-						slug: tag.slug,
-						title: tag.title,
-						pageNumber: pageNumber,
-						posts: postsInPage[pageNumber - 1],
-						pagination: pagination ? pagination : createPagination(taggedPosts, pageSize, pageNumber, "/tags/" + tag.slug + "/page/:page")
-					});
-				}
-			}
-		});
-		return collectionTogo;
-	});
+	// 	tags.map(tag => {
+	// 		const taggedPosts = posts.filter(post => {
+	// 			const postTagSlugs = post.tags.map(({slug}) => slug);
+	// 			return postTagSlugs.includes(tag.slug);
+	// 		});
+
+	// 		if (taggedPosts.length) {
+	// 			const postsInPage = chunkArray(taggedPosts, pageSize);
+	// 			for (let pageNumber = 1; pageNumber <= postsInPage.length; pageNumber++) {
+	// 				let pagination;
+	// 				if (pageNumber === 1) {
+	// 					// Add the root page that has the same content as the first page
+	// 					pagination = createPagination(taggedPosts, pageSize, 1, "/tags/" + tag.slug + "/page/:page");
+	// 					collectionTogo.push({
+	// 						slug: tag.slug,
+	// 						title: tag.title,
+	// 						posts: postsInPage[0],
+	// 						pagination: pagination
+	// 					});
+	// 				}
+
+	// 				collectionTogo.push({
+	// 					slug: tag.slug,
+	// 					title: tag.title,
+	// 					pageNumber: pageNumber,
+	// 					posts: postsInPage[pageNumber - 1],
+	// 					pagination: pagination ? pagination : createPagination(taggedPosts, pageSize, pageNumber, "/tags/" + tag.slug + "/page/:page")
+	// 				});
+	// 			}
+	// 		}
+	// 	});
+	// 	return collectionTogo;
+	// });
 
 	// Add plugins.
 	eleventyConfig.addPlugin(errorOverlay);
