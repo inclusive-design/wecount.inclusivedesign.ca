@@ -69,16 +69,51 @@ module.exports = function(eleventyConfig) {
     return Array.from(tagsSet).sort();
 	});
 
-	// eleventyConfig.addCollection("tagList", collection => {
-  //   const tagsSet = new Set();
-  //   collection.getAll().forEach(item => {
-  //     if (!item.data.tags) return;
-  //     item.data.tags
-  //       .filter(tag => !['pages', 'initiatives', 'news', 'views', 'comments'].includes(tag))
-  //       .forEach(tag => tagsSet.add(tag));
-  //   });
-  //   return Array.from(tagsSet).sort();
-  // });
+	eleventyConfig.addCollection("allTags", collection => {
+    const tagsSet = new Set();
+
+    collection.getAll().forEach(item => {
+      if (!item.data.tags) return;
+      item.data.tags
+        .filter(tag => !['pages', 'initiatives', 'news', 'views', 'comments'].includes(tag))
+        .forEach(tag => tagsSet.add(tag));
+    });
+    const tags = Array.from(tagsSet).sort();
+		const pageSize = 10;
+		let collectionTogo = [];
+
+		tags.map(tag => {
+			const slug = slugFilter(tag);
+			const taggedPosts = collection.getFilteredByTag(tag).reverse();
+
+			if (taggedPosts.length) {
+				const postsInPage = chunkArray(taggedPosts, pageSize);
+				for (let pageNumber = 1; pageNumber <= postsInPage.length; pageNumber++) {
+					let pagination;
+					if (pageNumber === 1) {
+						// Add the root page that has the same content as the first page
+						pagination = createPagination(taggedPosts, pageSize, 1, "/tags/" + slug + "/page/:page");
+						collectionTogo.push({
+							slug: slug,
+							title: tag,
+							posts: postsInPage[0],
+							pagination: pagination
+						});
+					}
+
+					collectionTogo.push({
+						slug: slug,
+						title: tag,
+						pageNumber: pageNumber,
+						posts: postsInPage[pageNumber - 1],
+						pagination: pagination ? pagination : createPagination(taggedPosts, pageSize, pageNumber, "/tags/" + slug + "/page/:page")
+					});
+				}
+			}
+		});
+
+		return collectionTogo;
+  });
 
 	// eleventyConfig.addCollection("wpNews", async function() {
 	// 	return dataFetcherWp.categorizedItems("news", 8);
@@ -97,7 +132,7 @@ module.exports = function(eleventyConfig) {
 	// 	});
 	// });
 
-	// eleventyConfig.addCollection("tags", async function() {
+	// eleventyConfig.addCollection("wpTags", async function() {
 	// 	const tags = await dataFetcherWp.siteTags();
 	// 	const posts = await dataFetcherWp.sitePosts();
 	// 	const pageSize = 10;

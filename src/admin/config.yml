@@ -40,6 +40,75 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+  - name: news
+    label: News
+    label_singular: News Entry
+    folder: "src/collections/news"
+    sortable_fields: ['title', 'date']
+    preview_path: "/news/"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Link"
+        name: "link"
+        widget: "string"
+        hint: "The link to the external news item or attached resource."
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        time_format: false
+        hint: "The publication date of the item."
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        hint: "The excerpt is shown in search results."
+  - name: views
+    label: Views
+    label_singular: Views Entry
+    folder: "src/collections/views"
+    sortable_fields: ['title', 'date']
+    slug: "{{title}}"
+    preview_path: "views/{{slug}}"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Permanent Link"
+        name: "permalink"
+        widget: "string"
+        required: false
+        hint: |-
+          If you do not specify a permanent link, one will be automatically generated from the title.
+          Permalinks must have the format /views/entry-title/ (the trailing slash is required).
+      - label: "Author"
+        name: "author"
+        widget: string
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        time_format: false
+        hint: "The publication date of the item."
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+      - label: "Preview Image"
+        name: "picture"
+        widget: "image"
+        required: false
+      - label: "Preview Image Alt Text"
+        name: "altTag"
+        widget: "string"
+        required: false
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        hint: "The excerpt is shown in search results."
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
   - name: initiatives
     label: Initiatives
     label_singular: Initiative

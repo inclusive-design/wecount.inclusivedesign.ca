@@ -1,9 +1,9 @@
 ---
 pagination:
-  data: collections.tagsList
+  data: collections.allTags
   size: 1
   alias: oneTagPage
-permalink: "tags/{{ oneTagPage | slug }}/{% if oneTagPage.pageNumber %}page/{{ oneTagPage.pageNumber }}/{% endif %}"
+permalink: "tags/{{ oneTagPage.slug }}/{% if oneTagPage.pageNumber %}page/{{ oneTagPage.pageNumber }}/{% endif %}"
 ---
 {% extends 'layouts/base.njk' %}
 

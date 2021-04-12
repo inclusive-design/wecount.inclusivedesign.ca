@@ -17,8 +17,9 @@ module.exports = class {
 					include: [
 						"page.njk",
 						"preview.njk",
+						"news.njk",
 						"initiative.njk",
-						"tile-item.njk",
+						"grid-item.njk",
 						"\\.svg$"
 					]
 				}

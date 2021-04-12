@@ -10,6 +10,7 @@ excerpt: |-
 tags:
   - Future of Work
   - FWD
+permalink: /views/fwd/
 ---
 ![](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/FWD-logoE-for-processing@4x-1.png)
 

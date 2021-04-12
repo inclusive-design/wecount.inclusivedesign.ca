@@ -5,7 +5,11 @@ pagination:
   data: collections.news
   size: 10
 ---
+{% if previewMode %}
+{% extends 'layouts/preview.njk' %}
+{% else %}
 {% extends 'layouts/base.njk' %}
+{% endif %}
 
 {% block content %}
 <article class="news">

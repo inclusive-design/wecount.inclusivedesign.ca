@@ -24,7 +24,7 @@ env.addFilter("w3DateFilter", w3DateFilter);
 const NunjucksPreview = ({ entry, path, context }) => {
 	const data = context(entry.get("data").toJS(), entry);
 	const html = env.render(path, data);
-	return <div dangerouslySetInnerHTML={{ __html: html }}/>;
+	return <div dangerouslySetInnerHTML={{ __html: html }} />;
 };
 
 NunjucksPreview.propTypes = {
@@ -49,6 +49,64 @@ const Page = createClass({
 });
 
 Page.propTypes = {
+	entry: PropTypes.object.isRequired
+};
+
+const News = ({ entry }) => {
+	return <NunjucksPreview
+		entry={entry}
+		path="layouts/news.njk"
+		context={({title, date, link, excerpt}) => ({
+			title: "News",
+			previewMode: true,
+			pagination: {
+				items: [
+					{
+						data: {
+							title,
+							date: Date.parse(date),
+							link,
+							excerpt
+						}
+					}
+				]
+			}
+		})}
+	/>;
+};
+
+News.propTypes = {
+	entry: PropTypes.object.isRequired
+};
+
+const Views = createClass({
+	render: function() {
+		const tagItems = this.props.entry.getIn(["data", "tags"]);
+
+		const tags = [];
+
+		for (const [index, value] of tagItems.entries()) {
+			tags.push(<a key={index} href={"/tags/" + slugFilter(value)}>{value}</a>);
+		}
+
+		return <main>
+			<article className="post-article">
+				<h1>{this.props.entry.getIn(["data", "title"])}</h1>
+				<div className="author">{this.props.entry.getIn(["data", "author"])}</div>
+				<time>{dateFilter(this.props.entry.getIn(["data", "date"]))}</time>
+				<div className="api-content">
+					{this.props.widgetFor("body")}
+				</div>
+				<section className="tags-info">
+					<h2 className="h3">Tags</h2>
+					<div className="tags">{tags}</div>
+				</section>
+			</article>
+		</main>;
+	}
+});
+
+Views.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
@@ -77,6 +135,8 @@ Initative.propTypes = {
 };
 
 CMS.registerPreviewTemplate("pages", Page);
+CMS.registerPreviewTemplate("news", News);
+CMS.registerPreviewTemplate("views", Views);
 CMS.registerPreviewTemplate("initiatives", Initative);
 
 CMS.registerWidget("uuid", UuidControl, UuidPreview);
@@ -207,8 +267,7 @@ CMS.registerEditorComponent({
 	},
 	toPreview: function(obj) {
 		return (
-			"<p><img src=\"http://img.youtube.com/vi/" + getId(obj.url) + "/maxresdefault.jpg#block\" alt=\"Youtube Video\"/></p>"
+			`<figure class="embed--youtube"><iframe class="youtube-player video video--youtube" src="https://youtube.com/embed/${getId(obj.url)}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>`
 		);
 	}
 });
-
