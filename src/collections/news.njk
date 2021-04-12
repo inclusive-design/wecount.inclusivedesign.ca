@@ -7,17 +7,23 @@ permalink: "wp-news/{{ newsItem.title | slug }}.md"
 ---
 ---
 title: "{{ newsItem.title | safe }}"
-link: {{ newsItem.href }}
 date: {{ newsItem.dateTime }}
-{% if newsItem.picture %}
+link: {{ newsItem.href }}
+{%- if newsItem.picture %}
 picture: {{ newsItem.picture }}
-{% endif %}
-{% if newsItem.altText %}
+{%- endif %}
+{%- if newsItem.altText %}
 altText: |-
   {{ newsItem.altText }}
-{% endif %}
-{% if newsItem.excerpt -%}
+{%- endif %}
+{%- if newsItem.excerpt %}
 excerpt: |-
   {{ newsItem.excerpt | turndownFilter | safe }}
+{%- endif %}
+{%- if newsItem.tags %}
+tags:
+{%- for tag in newsItem.tags %}
+  - {{ tag.name }}
+{%- endfor %}
 {%- endif %}
 ---
