@@ -4,12 +4,15 @@ on:
   push:
     paths:
       - '**.js'
+      - '**.md'
       - '**.scss'
+      - '!src/collections/**.md'
   pull_request:
     paths:
       - '**.js'
+      - '**.md'
       - '**.scss'
-
+      - '!src/collections/**.md'
 jobs:
   lint:
     runs-on: ubuntu-latest
