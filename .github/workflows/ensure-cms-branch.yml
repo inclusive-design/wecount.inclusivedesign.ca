@@ -15,7 +15,7 @@ jobs:
       TARGET_BRANCH: "dev" # Default to dev branch
     steps:
     - uses: actions/checkout@v2
-    - uses: chrisdickinson/setup-yq@v1
+    - uses: mikefarah/yq@v4.6.3
     - name: Adjust target branch for environment
       if: endsWith(github.ref, '/main') # If the commit is in
       run: |
