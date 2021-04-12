@@ -1,6 +1,6 @@
-// Workshop page
-.workshop-page {
-	.workshop-cover-image {
+// Initiative page
+.initiative-page {
+	.initiative-cover-image {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -13,55 +13,6 @@
 		h3 {
 			border-bottom: rem(5) solid $gold;
 			line-height: rem(60);
-		}
-	}
-}
-
-// Initiatives page: Workshop section
-.workshops {
-	// Every workshop card
-	.one-workshop {
-		border-radius: rem(18);
-		box-shadow: rem(0) rem(0) rem(7) rgba(0, 0, 0, 0.25);
-		display: grid;
-		grid-template-rows: auto rem(227);
-		margin: rem(32) 0 rem(32) 0;
-
-		&:hover {
-			box-shadow: 0 0 rem(35) rgba(0, 0, 0, 0.55);
-		}
-
-		// Workshop title and descriptions
-		.workshop-narrative {
-			border-radius: rem(18) rem(18) 0 0;
-			min-height: rem(350);
-			padding: 0 rem(16) rem(16) rem(16);
-
-			// Workshop titles
-			h2 {
-				border-bottom: rem(2) solid $grey-shade;
-				padding-bottom: rem(16);
-			}
-
-			.description {
-				color: $black;
-				font-weight: $font-weight-normal;
-			}
-		}
-
-		// Workshop images
-		.workshop-image {
-			// In order to apply border-radius, all inner elements need to have the same border-radius applied.
-			// This includes the wrapper div.workshop-image and inner img element.
-
-			border-radius: 0 0 rem(18) rem(18);
-			height: 100%;
-
-			img {
-				border-radius: 0 0 rem(18) rem(18);
-				height: 100%;
-				width: 100%;
-			}
 		}
 	}
 }
@@ -186,7 +137,7 @@
 	}
 }
 
-// Button style shared by the "register here" button on the Intiatives page and the "post a comment" button on the Workshop page
+// Button style shared by the "register here" button on the Intiatives page and the "post a comment" button on the Initiative page
 #comment-form button {
 	background-color: $white;
 	border: 0;
@@ -235,36 +186,12 @@
 }
 
 // Use higher specificity to define special style for two buttons to avoid css linting errors
-.workshop-page #comment-form button {
+.initiative-page #comment-form button {
 	float: right;
 	margin: rem(29) 0;
 }
 
 @include breakpoint-up(lg) {
-	// Initiatives page: Workshop section
-	.workshops {
-		.one-workshop {
-			grid-template-columns: 70% 30%;
-			grid-template-rows: 100%;
-
-			.workshop-narrative {
-				border-radius: rem(18) 0 0 rem(18);
-				min-height: rem(336);
-				padding: 0 rem(16) rem(16) rem(32);
-			}
-
-			// In order to apply border-radius, all inner elements need to have the same border-radius applied.
-			// This includes the wrapper div.workshop-image and inner img element.
-			.workshop-image {
-				border-radius: 0 rem(18) rem(18) 0;
-
-				img {
-					border-radius: 0 rem(18) rem(18) 0;
-				}
-			}
-		}
-	}
-
 	#comment-form button {
 		width: auto;
 	}

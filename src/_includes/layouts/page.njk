@@ -1,0 +1,80 @@
+{% if previewMode %}
+{% extends 'layouts/preview.njk' %}
+{% else %}
+{% extends 'layouts/base.njk' %}
+{% endif %}
+
+{% set pageTitle = title %}
+{% set pageExcerpt = excerpt %}
+
+{% block content %}
+{% if page.url === "/" %}
+<div>
+    <article>
+      <h1 class="title">{{ pageTitle }}</h1>
+      <div class="api-content">
+      {{ content | safe }}
+      </div>
+    </article>
+    <div class="homepage-cards">
+      <a href="/views/" class="blue card">
+        <h2>Read current views in inclusive data science</h2>
+      </a>
+      <a href="/learn/" class="green card">
+        <h2>Search the We Count Library</h2>
+      </a>
+      <a href="/initiatives/" class="yellow card">
+        <h2>Participate in our inclusion challenge initiatives</h2>
+      </a>
+      <a href="/badges/" class="azure card">
+        <h2>Earn We Count Badges</h2>
+      </a>
+    </div>
+</div>
+
+{% elif page.url === "/initiatives/" %}
+<article class="page initiatives">
+  <h1 class="title">{{ pageTitle }}</h1>
+  <div class="api-content">
+    {{ content | safe }}
+    <div class="initiatives">
+      {% for initiative in collections.initiatives %}
+        {% set tileURL = initiative.url %}
+        {% set title = initiative.data.title %}
+        {% set description = initiative.data.shortDescription %}
+        {% set defaultPreviewImageUrl = "/images/initiative.png" %}
+        {% set previewImageUrl = initiative.data.previewImageUrl %}
+        {% set previewImageAltText = initiative.data.previewImageAltText %}
+        {% include "components/tile-item.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</article>
+
+{% else %}
+<article class="page {{ title | slug }}">
+  <h1>{{ pageTitle }}</h1>
+  <div class="api-content">
+    {{ content | safe }}
+  </div>
+</article>
+{% endif %}
+{% endblock %}
+
+{% block footerScripts %}
+<script src="/js/content-header-observer.js"></script>
+<script>
+  // Track all h1 and h2 in content for the About and Inclusion Challenges page.
+document.querySelectorAll("main article.page h1, main article.page h2, header").forEach((section) => {
+  const contentHeaderObserver = getSideMenuObserver();
+  contentHeaderObserver.observe(section);
+});
+</script>
+
+{% if page.url === "/advisory-panel/" %}
+  <script src="/js/expander.js"></script>
+{% endif %}
+{% if page.url === "/team/" %}
+  <script src="/js/team-handler.js"></script>
+{% endif %}
+{% endblock %}

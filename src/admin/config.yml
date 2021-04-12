@@ -1,0 +1,90 @@
+backend:
+  name: git-gateway
+  branch: dev
+local_backend: true
+publish_mode: editorial_workflow
+site_url: "https://wecount.inclusivedesign.ca"
+media_folder: "src/uploads"
+public_folder: "/uploads"
+collections:
+  - name: pages
+    label: Pages
+    label_singular: Page
+    folder: "src/collections/pages"
+    sortable_fields: ['title']
+    slug: "{{title}}"
+    preview_path: "{{slug}}"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Navigation Order"
+        name: "menu_order"
+        widget: number
+        default: 0
+        required: true
+        hint: |-
+          This determines where the page should appear in the primary navigation. To hide the page from the primary navigation, set the value to zero.
+      - label: "Permanent Link"
+        name: "permalink"
+        widget: "string"
+        required: false
+        hint: |-
+          If you do not specify a permanent link, one will be automatically generated from the page title.
+          Permalinks must have the format /page-title/ (the trailing slash is required).
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+  - name: initiatives
+    label: Initiatives
+    label_singular: Initiative
+    folder: "src/collections/initiatives"
+    sortable_fields: ['eventDate', 'title']
+    slug: "{{title}}"
+    preview_path: "initiatives/{{slug}}"
+    create: true
+    fields:
+      - label: "Event Title"
+        name: "title"
+        widget: "string"
+      - label: "Event ID"
+        name: "id"
+        widget: "uuid"
+        hint: "The ID is used to associate comments with this initiative and cannot be edited."
+      - label: "Permanent Link"
+        name: "permalink"
+        widget: "string"
+        required: false
+        hint: |-
+          If you do not specify a permanent link, one will be automatically generated from the event title.
+          Permalinks must have the format /initiatives/event-title/ (the trailing slash is required).
+      - label: "Event Date"
+        name: "eventDate"
+        widget: "datetime"
+        time_format: false
+        required: false
+      - label: "Cover Image"
+        name: "coverImageUrl"
+        widget: "image"
+        required: false
+      - label: "Cover Image Alt Text"
+        name: "coverImageAltText"
+        widget: "string"
+        required: false
+      - label: "Event Body"
+        name: "body"
+        widget: "markdown"
+      - label: "Short Description"
+        name: "shortDescription"
+        widget: "markdown"
+        hint: "The short description is shown on the Initiatives page."
+      - label: "Preview Image"
+        name: "previewImageUrl"
+        widget: "image"
+        required: false
+        hint: "The preview image is shown on the Initiatives page."
+      - label: "Preview Image Alt Text"
+        name: "previewImageAltText"
+        widget: "string"
+        required: false

@@ -3,12 +3,12 @@ permalink: index.json
 ---
 [
 {%- for item in collections.views %}
-	{{ item | dump | safe }},
+  {{ item | dump | safe }},
 {%- endfor %}
 {%- for item in collections.news %}
-	{{ item | dump | safe }},
+  {{ item | dump | safe }},
 {%- endfor %}
-{%- for item in collections.pages %}
-	{{ item | dump | safe }}{% if not loop.last %},{% endif %}
+{%- for item in collections.allPages %}
+  {{ item | dump | safe }}{% if not loop.last %},{% endif %}
 {%- endfor %}
 ]

@@ -1,33 +1,65 @@
 /* global chunkArray, createPagination, getUniqueTags */
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
-const pluginSass = require("eleventy-plugin-sass");
 const pluginPWA = require("eleventy-plugin-pwa");
+const eleventyNavigation = require("@11ty/eleventy-navigation");
 const fs = require("fs");
 
-const dataFetcherWp = require("./src/utils/data-fetcher-wp.js");
 const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
+const dataFetcherWp = require("./src/utils/data-fetcher-wp.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
+const turndownFilter = require("./src/filters/turndown.js");
+const slugFilter = require("./src/filters/slug.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
+const expanderShortcode = require("./src/shortcodes/expander.js");
+const imageAndTextShortcode = require("./src/shortcodes/image-and-text.js");
+const youtubeShortcode = require("./src/shortcodes/youtube.js");
+
+// Slugs for pages that should be excluded as public pages from the WeCount website.
+const privatePageSlugs = ["views", "news"];
 
 require("./src/js/utils.js");
 
 module.exports = function(eleventyConfig) {
-	// Use .eleventyignore instead of .gitignore.
-	eleventyConfig.setUseGitIgnore(false);
+	// Watch SCSS files.
+	eleventyConfig.addWatchTarget("./src/scss/");
 
-	// Add custom collections.
-	eleventyConfig.addCollection("pages", async function() {
+	// "allPages" contains both public pages and pages that define partial contents such as intro paragraphs
+	// in the News and Views pages.
+	eleventyConfig.addCollection("allPages", async function() {
 		return dataFetcherWp.sitePages();
 	});
 
-	eleventyConfig.addCollection("workshops", async function() {
-		return dataFetcherAirtable.workshops();
+	// "publicPages" only contains public pages that are accessible via WeCount website URLs.
+	eleventyConfig.addCollection("wpPublicPages", async function() {
+		const publicPagesPromise = dataFetcherWp.sitePages();
+		return new Promise((resolve) => {
+			publicPagesPromise.then(pages => {
+				const results = pages.filter(page => !privatePageSlugs.includes(page.slug));
+				resolve(results);
+			});
+		});
+	});
+
+	eleventyConfig.addCollection("pages", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/pages/*.md")
+		];
+	});
+
+	eleventyConfig.addCollection("initiatives", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/initiatives/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
+		];
+	});
+
+	eleventyConfig.addCollection("comments", async function() {
+		return dataFetcherAirtable.comments();
 	});
 
 	eleventyConfig.addCollection("news", async function() {
@@ -89,11 +121,10 @@ module.exports = function(eleventyConfig) {
 
 	// Add plugins.
 	eleventyConfig.addPlugin(errorOverlay);
-	eleventyConfig.addPlugin(pluginSass, {
-		watch: ["src/**/*.scss"],
-		sourcemaps: process.env.ELEVENTY_ENV === "development" ? true : false
+	eleventyConfig.addPlugin(eleventyNavigation);
+	eleventyConfig.addPlugin(pluginPWA, {
+		globIgnores: ["admin/*"]
 	});
-	eleventyConfig.addPlugin(pluginPWA);
 
 	// Add filters.
 	eleventyConfig.addFilter("dateFilter", dateFilter);
@@ -101,21 +132,34 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
+	eleventyConfig.addFilter("turndownFilter", turndownFilter);
+	eleventyConfig.addFilter("slug", slugFilter);
+
+
+	// Add shortcodes.
+	eleventyConfig.addPairedShortcode("expander", expanderShortcode);
+	eleventyConfig.addPairedShortcode("imageAndText", imageAndTextShortcode);
+	eleventyConfig.addShortcode("youtube", youtubeShortcode);
+
 
 	// Add transforms.
 	eleventyConfig.addTransform("htmlmin", htmlMinifyTransform);
 	eleventyConfig.addTransform("parse", parseTransform);
 
 	// Configure passthrough file copy.
+	eleventyConfig.addPassthroughCopy({"src/_redirects": "_redirects"});
 	eleventyConfig.addPassthroughCopy({"manifest.json": "manifest.json"});
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
 	eleventyConfig.addPassthroughCopy({"node_modules/covid-data-monitor": "lib/covid-data-monitor"});
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});
+	eleventyConfig.addPassthroughCopy({"src/uploads": "uploads"});
 	eleventyConfig.addPassthroughCopy({"src/js": "js"});
+	eleventyConfig.addPassthroughCopy({"src/admin/config.yml": "admin/config.yml"});
 
 	// Configure BrowserSync.
 	eleventyConfig.setBrowserSyncConfig({
+		...eleventyConfig.browserSyncConfig,
 		callbacks: {
 			ready: (error, browserSync) => {
 				// TODO: Add custom 404 page.
