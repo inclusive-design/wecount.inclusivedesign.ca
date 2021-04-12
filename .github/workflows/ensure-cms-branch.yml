@@ -1,0 +1,29 @@
+name: Ensure correct CMS branch
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+    paths:
+      - 'src/admin/config.yml' # Skip this action unless the Netlify CMS config file has changed.
+
+jobs:
+  ensure-cms-branch:
+    runs-on: ubuntu-latest
+    env:
+      TARGET_BRANCH: "dev" # Default to dev branch
+    steps:
+    - uses: actions/checkout@v2
+    - uses: chrisdickinson/setup-yq@v1
+    - name: Adjust target branch for environment
+      if: endsWith(github.ref, '/main') # If the commit is in
+      run: |
+        echo "TARGET_BRANCH=main" >> $GITHUB_ENV
+    - name: Update CMS branch configuration
+      run: yq eval -i '.backend.branch = "$TARGET_BRANCH"' src/admin/config.yml
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "chore: update CMS branch configuration"
+        file_pattern: src/admin/config.yml
