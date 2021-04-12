@@ -13,6 +13,8 @@ tags:
 ---
 This article provides an overview of key findings from an environmental scan conducted by the We Count team in May 2020. The scan relied on information available through online sources to explore how data ethics are being taught, expressed, and implemented within Canada by three stakeholders in the data ecosystem: Postsecondary Education (PSE) Institutions, [Data Service Providers](https://wecount.inclusivedesign.ca/views/environmental-scan-assessing-inclusionary-practice-in-canadian-data-services/), and [AI Firms](https://wecount.inclusivedesign.ca/views/environmental-scan-addressing-inclusionary-practice-in-canadian-ai-firms/).
 
+{% youtube "https://www.youtube.com/embed/NCjqn3QNmMM" %}
+
 The PSE portion of the environmental scan identified 46 AI-related programs across 29 Canadian PSE institutions and aimed to answer the following questions: Is AI ethics and fairness included in program curriculums? Do any programs address minority groups or outliers?
 
 ## **Highlights**
@@ -28,7 +30,7 @@ The PSE portion of the environmental scan identified 46 AI-related programs acro
 
 ## **Examples of Ethical AI Courses**
 
-![UBC logo](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/UBC-logo.png)
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/UBC-logo.png", "UBC logo", "right", "top" %}
 
 ### **University of British Columbia**
 
@@ -42,7 +44,9 @@ The PSE portion of the environmental scan identified 46 AI-related programs acro
 
 The legal, ethical, and security issues concerning data, including aggregated data. Proactive compliance with rules and, in their absence, principles for the responsible management of sensitive data. Case studies on privacy, human dignity, harm, the public good, legal issues, the role of ethics boards, and consent.
 
-![SFU logo](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/SFU.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/SFU.png", "SFU logo", "right", "top" %}
 
 ### **Simon Fraser University**
 
@@ -54,7 +58,9 @@ The legal, ethical, and security issues concerning data, including aggregated da
 
 An examination of social processes that are being automated and implications for good and evil, that may be entailed in the automation of procedures by which goods and services are allocated. Examination of what are dehumanizing and humanizing parts of systems and how systems can be designed to have a humanizing effect.
 
-![Queen's University logo](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Queens.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Queens.png", "Queen's University logo", "right", "top" %}
 
 ### **Queen’s University**
 
@@ -66,7 +72,9 @@ An examination of social processes that are being automated and implications for
 
 This course explores the profound implications of AI on business and society. The ethical and policy issues linked with the application of AI in business are covered in-depth, including such issues as overcoming the job displacement due to AI by job creation, ensuring the public good as AI pervades the new economy, and balancing privacy and transparency in AI related endeavors.
 
-![University of Toronto logo](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/UofT-e1608249714254.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/UofT-e1608249714254.png", "University of Toronto logo", "right", "top" %}
 
 ### **University of Toronto**
 
@@ -78,7 +86,9 @@ This course explores the profound implications of AI on business and society. Th
 
 Machine learning systems are becoming increasingly important in many domains where they are used to make predictions and decisions that often have life-altering consequences. As these systems are becoming ubiquitous, it is important to address issues of privacy, fairness and accountability. Most of the course will focus on algorithmic fairness.
 
-![York University logo](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/York.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/York.png", "York University logo", "right", "top" %}
 
 ### **York University**
 
@@ -92,7 +102,9 @@ Machine learning systems are becoming increasingly important in many domains whe
 
 This course is intended for students with professional interest in the social and ethical implications of AI. Topics include theoretical issues (could AI ever have moral rights?), practical issues (algorithmic bias, labor automation, data privacy), and professional issues (tech industry social responsibility).
 
-![University of Western Ontario logo](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Western.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Western.png", "University of Western Ontario logo", "right", "top" %}
 
 ### ****University of Western Ontario****
 
@@ -104,7 +116,9 @@ This course is intended for students with professional interest in the social an
 
 As we increasingly create a society where people have to interact with various automated systems, we need to be concerned about whether these systems could cause personal harm. More generally, there is the need to learn to design computer systems that are not implicitly biased in favor of one portion of the population over another.
 
-![University of Waterloo logo](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/UofW.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/UofW.png", "University of Waterloo logo", "right", "top" %}
 
 ### ******University of Waterloo******
 
@@ -118,7 +132,9 @@ As we increasingly create a society where people have to interact with various a
 
 Students must complete a 3-day workshop on Ethics in Data Science & Artificial Intelligence; alternatively, students can opt for CS 798: Artificial Intelligence Law, Ethics, and Policy.
 
-![Ontario Tech University logo](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/OTU-e1608250233884.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/OTU-e1608250233884.png", "Ontario Tech University logo", "right", "top" %}
 
 ### ********Ontario Tech University********
 
@@ -129,6 +145,8 @@ Students must complete a 3-day workshop on Ethics in Data Science & Artificial I
 **Course Description:**
 
 The development of laws and social mechanisms has not kept pace with the rapid development of computing. The impact that computing has on society will be examined in light of the need for professional ethics and appropriate laws and regulatory agencies.
+
+{% endimageAndText %}
 
 ## **Takeaways**
 

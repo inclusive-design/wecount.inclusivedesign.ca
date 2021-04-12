@@ -12,6 +12,8 @@ tags:
 ---
 This article provides an overview of key findings from an environmental scan conducted by the We Count team in May 2020. The scan relied on information available through online sources to explore how data ethics are being taught, expressed, and implemented within Canada by three stakeholders in the data ecosystem: [Postsecondary Education (PSE) Institutions](https://wecount.inclusivedesign.ca/views/environmental-scan-canadian-postsecondary-education-and-ai-ethics/), Data Service Providers, and [AI Firms](https://wecount.inclusivedesign.ca/views/environmental-scan-addressing-inclusionary-practice-in-canadian-ai-firms/).
 
+{% youtube "https://www.youtube.com/embed/NCjqn3QNmMM" %}
+
 The Data Service Provider portion of the environmental scan identified 27 companies with operations in Canada and aimed to answer the following questions: Who are the most popular data service providers in Canada? What is the main messaging regarding their service approaches? How are they addressing bias management and inclusion?
 
 ## **Highlights**
@@ -24,53 +26,7 @@ The Data Service Provider portion of the environmental scan identified 27 compan
 
 Companies usually offer a combination of services, such as provision, analysis, and software services. As such, companies were categorized into five classes:
 
-**Classification**
-
-**Description**
-
-**Examples**
-
-**% of Identified Companies**
-
-Data Exchange
-
-A marketplace where data sets are purchased from data providers, usually in raw formats. This is where 2nd and 3rd party data are purchased.  
-
-AWS Data Exchange  
-
-4%
-
-Data Provider
-
-Any company that wishes to sell its data directly or on a data exchange.  
-
-InfoCanada, Cleanlist, Direct Lead Data  
-
-11%
-
-Data & Insight Provider
-
-Offer 3rd party data sets and help curate and convert them into insights based on client needs.  
-
-Pelmorex, Experian, AggregateIQ  
-
-**19%**
-
-Data Research & Intelligence Partner
-
-Conduct their own research, such as surveys and focus groups. May also collect and curate data. Companies in this space usually have a client-facing consultatory practice.  
-
-Kantar, Ipsos, Vividata  
-
-**22%**
-
-Data Solutions
-
-Offer a combination of data services, such as a data management platform (DMP), data exchange, data sets, analytic toolkits, data onboarding, and business services.  
-
-Adobe Audience Manager, Liveramp, Salesforce  
-
-**44%**
+<table class="has-subtle-light-gray-background-color has-background"><thead><tr><th class="has-text-align-left" data-align="left"><strong>Classification</strong></th><th class="has-text-align-left" data-align="left"><strong>Description</strong></th><th class="has-text-align-left" data-align="left"><strong>Examples</strong></th><th class="has-text-align-left" data-align="left"><strong>% of Identified Companies</strong></th></tr></thead><tbody><tr><td class="has-text-align-left" data-align="left">Data Exchange</td><td class="has-text-align-left" data-align="left">A marketplace where data sets are purchased from data providers, usually in raw formats. This is where 2nd and 3rd party data are purchased. &nbsp;</td><td class="has-text-align-left" data-align="left">AWS Data Exchange &nbsp;</td><td class="has-text-align-left" data-align="left">4%</td></tr><tr><td class="has-text-align-left" data-align="left">Data Provider</td><td class="has-text-align-left" data-align="left">Any company that wishes to sell its data directly or on a data exchange. &nbsp;</td><td class="has-text-align-left" data-align="left">InfoCanada, Cleanlist, Direct Lead Data &nbsp;</td><td class="has-text-align-left" data-align="left">11%</td></tr><tr><td class="has-text-align-left" data-align="left">Data &amp; Insight Provider</td><td class="has-text-align-left" data-align="left">Offer 3rd party data sets and help curate and convert them into insights based on client needs. &nbsp;</td><td class="has-text-align-left" data-align="left">Pelmorex, Experian, AggregateIQ &nbsp;</td><td class="has-text-align-left" data-align="left"><strong>19%</strong></td></tr><tr><td class="has-text-align-left" data-align="left">Data Research &amp; Intelligence Partner</td><td class="has-text-align-left" data-align="left">Conduct their own research, such as surveys and focus groups. May also collect and curate data. Companies in this space usually have a client-facing consultatory practice. &nbsp;</td><td class="has-text-align-left" data-align="left">Kantar, Ipsos, Vividata &nbsp;</td><td class="has-text-align-left" data-align="left"><strong>22%</strong></td></tr><tr><td class="has-text-align-left" data-align="left">Data Solutions</td><td class="has-text-align-left" data-align="left">Offer a combination of data services, such as a data management platform (DMP), data exchange, data sets, analytic toolkits, data onboarding, and business services. &nbsp;</td><td class="has-text-align-left" data-align="left">Adobe Audience Manager, Liveramp, Salesforce &nbsp;</td><td class="has-text-align-left" data-align="left"><strong>44%</strong></td></tr></tbody></table>
 
 It is worth noting that 85% of the identified companies help interpret and make sense of the data they provide (Data & Insight Providers, Data Research & Intelligence Partners, Data Solutions).
 

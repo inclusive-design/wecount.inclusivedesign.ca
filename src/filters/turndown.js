@@ -6,6 +6,8 @@ module.exports = value => {
 		codeBlockStyle: "fenced"
 	});
 
+	td.keep(["table"]);
+
 	td.addRule("youtube", {
 		filter: ["iframe"],
 		replacement: (innerHTML, node) => {

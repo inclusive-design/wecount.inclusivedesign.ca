@@ -44,29 +44,41 @@ This theme introduced how AI creates both barriers and new opportunities for per
 
 ### Module 1: AI Employment Systems Webinar
 
+{% youtube "https://www.youtube.com/embed/C_2lFeH9y2I" %}
+
 #### Panelists
 
-![A photo of Anhong Guo](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Anhong-Guo.png)
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Anhong-Guo.png", "A photo of Anhong Guo", "left", "top" %}
 
 **Anhong Guo** is an Assistant Professor in Computer Science & Engineering at the University of Michigan. He has also worked in the Ability and Intelligent User Experiences groups in Microsoft Research, the HCI group of Snap Research, the Accessibility Engineering team at Google, and the Mobile Innovation Center of SAP America.
 
-![A photo of Shari Trewin](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Shari-Trewin-IBM.jpg)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Shari-Trewin-IBM.jpg", "A photo of Shari Trewin", "left", "top" %}
 
 **Shari Trewin** manages the IBM Accessibility Leadership Team, chairs the Association for Computing Machinery (ACM) Special Interest Group on Accessible Computing (SIGACCESS), and is a Distinguished Scientist of the ACM, a member of ACM’s Diversity and Inclusion Council.
 
-![A photo of Ben Tamblyn](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Ben-Tamblyn.jpg)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Ben-Tamblyn.jpg", "A photo of Ben Tamblyn", "left", "top" %}
 
 **Ben Tamblyn** is the Director of Inclusive Design at Microsoft. Ben has worked in a wide range of marketing, design and technical roles, and has a passion for design, inclusion and potential impact of technology on the world.
 
-![A photo of Chancey Fleet](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Chancey-Fleet.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Chancey-Fleet.png", "A photo of Chancey Fleet", "left", "top" %}
 
 **Chancey Fleet** was a 2018–19 Data & Society Fellow and is currently an Affiliate-in-Residence whose writing, organizing and advocacy aims to catalyze critical inquiry into how cloud-connected accessibility tools benefit and harm, empower and expose disability communities. Chancey is also the Assistive Technology Coordinator at the New York Public Library.
 
+{% endimageAndText %}
+
 #### Moderator
 
-![](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/03/Headshot-_2020-3-1024x984.jpg)
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/03/Headshot-_2020-3-1024x984.jpg", "", "left", "top" %}
 
 **Dr. Vera Roberts** is Senior Manager Research, Consulting and Projects at the Inclusive Design Research Centre (IDRC) at OCAD University. Vera’s primary research area is generating a culture of inclusion through outreach activities and implementation of inclusive technology and digital sharing platforms.
+
+{% endimageAndText %}
 
 ### Module 2: Storytelling Workshop
 
@@ -74,17 +86,23 @@ Storytelling can help us articulate our thoughts, feelings and experiences; it c
 
 #### Facilitators
 
-![A photo of Minette Samaroo](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Minette-Samaroo.png)
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Minette-Samaroo.png", "A photo of Minette Samaroo", "left", "top" %}
 
 **Minette Samaroo** is the President of AEBC Toronto Chapter. She is active in advocating for social change for persons with disabilities. In 2019, Minette led the development and execution of the Disability Advantage Program — a training program for employers that highlights the benefits of hiring and working with persons with disabilities.
 
-![A photo of Falaah Arif Khan](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Falaah-Arif-Khan.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Falaah-Arif-Khan.png", "A photo of Falaah Arif Khan", "left", "top" %}
 
 **Falaah Arif Khan** is an Artist-in-Residence at the Montreal AI Ethics Institute and the NYU Center for Responsible AI, as well as a Research Fellow in the Bhasha group at the International Institute of Information Technology, Hyderabad. His latest artwork includes the first volume of the _Superheroes of Deep Learning_ comics (with Zack Lipton) and the _Data, Responsibly_ comics.
 
-![A photo of Melissa Egan](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Melissa-Egan.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Melissa-Egan.png", "A photo of Melissa Egan", "left", "top" %}
 
 **Melissa Egan** is National Lead, Episodic Disabilities at Realize. Using her training in curriculum development and adult education, she helped create online learning webinars on episodic disabilities and employment. She has worked extensively with marginalized, LGBTQ and Indigenous people to develop and deliver workshops across Canada.
+
+{% endimageAndText %}
 
 ## Addressing Bias in ML Models on Candidate Selection
 
@@ -92,15 +110,21 @@ In this theme, the group learned about how machine learning models are not neutr
 
 ### AI Hiring System Policies Webinar
 
+{% youtube "https://www.youtube.com/embed/Tq230FBgoiU" %}
+
 #### Panelists
 
-![A photo of Alexandra Reeve Givens](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Alexandra-Reeve-Givens.png)
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Alexandra-Reeve-Givens.png", "A photo of Alexandra Reeve Givens", "left", "top" %}
 
 ****Alexandra Reeve Givens**** is the CEO of the Center for Democracy & Technology, a leading U.S. think tank that focuses on protecting democracy and individual rights in the digital age. The organization works on a wide range of tech policy issues, including consumer privacy to data and discrimination, free expression, surveillance, internet governance and competition.
 
-![A photo of Julia Stoyanovich](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Julia-Stoyanovich.png)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Julia-Stoyanovich.png", "A photo of Julia Stoyanovich", "left", "top" %}
 
 **Julia Stoyanovich** is an Assistant Professor of Computer Science and Engineering and of Data Science at New York University. Julia’s research focuses on responsible data management and analysis, including operationalizing fairness, diversity, transparency and data protection in all stages of the data science lifecycle. She is the founding director of the Center for Responsible AI at NYU, a comprehensive laboratory that is building a future in which responsible AI will be the only kind of AI accepted by society.
+
+{% endimageAndText %}
 
 #### Moderator
 
@@ -110,11 +134,15 @@ In this theme, the group learned about how machine learning models are not neutr
 
 In this module, participants explored policy through a co-design activity. The participants worked in groups to co-create approaches to AI and ML challenges in employment systems.
 
+{% youtube "https://www.youtube.com/embed/0TJiM6xziWQ" %}
+
 #### Guest Speaker
 
-![A photo of Abhishek Gupta](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Abhishek-Gupta.png)
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/Abhishek-Gupta.png", "A photo of Abhishek Gupta", "left", "top" %}
 
 **Abhishek Gupta** is the Founder and Principal Researcher at the [Montreal AI Ethics Institute](https://montrealethics.ai) and a Machine Learning Engineer at Microsoft, where he serves on the CSE Responsible AI Board. He is representing Canada for the International Visitor Leaders Program (IVLP) administered by the U.S. State Department as an expert on the future of work. His research focuses on applied technical and policy methods to address ethical, safety and inclusivity concerns in using AI in different domains. He has built the largest community driven, public consultation group on AI Ethics in the world.
+
+{% endimageAndText %}
 
 #### Activity
 
@@ -132,15 +160,21 @@ In this theme, our panel discussion highlighted some of the potential problems t
 
 ### Module 5: Inclusive AI for HR Webinar
 
+{% youtube "https://www.youtube.com/embed/0fBqJgt_w2E" %}
+
 #### Panelists
 
-![A photo of Shea Tanis](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Shea-Tanis-PhD.jpg)
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Shea-Tanis-PhD.jpg", "A photo of Shea Tanis", "left", "top" %}
 
 **Shea Tanis** is the Director for Policy and Advocacy at the Coleman Institute for Cognitive Disabilities at the University of Colorado. She is nationally recognized for her expertise in applied cognitive technology supports, cognitive accessibility and advancing the rights of people with cognitive disabilities to technology and information access.
 
-![](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Rich-Donovan-Return-on-Disability-Group.jpg)
+{% endimageAndText %}
+
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Rich-Donovan-Return-on-Disability-Group.jpg", "", "left", "top" %}
 
 **Rich Donovan** is CEO of the Return on Disability Group and is a globally recognized subject matter expert on the convergence of disability and corporate profitability. He has spent more than ten years focused on defining and unlocking the economic value of the disability market. In 2006 Rich founded Lime, the leading third-party recruiter in the disability space, where he worked with Google, PepsiCo, Bank of America/Merrill Lynch, IBM, TD Bank and others to help them attract and retain top talent from within the disability market.
+
+{% endimageAndText %}
 
 #### Moderator
 
@@ -152,14 +186,18 @@ In this module, participants had the opportunity to gather insights from previou
 
 #### Guest Speakers
 
-![](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/nugget.jpg)
+{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2021/02/nugget.jpg", "", "left", "top" %}
 
 Marian Pitel and Melissa Pike, members of nugget.ai’s science team, guided the presentation and activity, taking turns explaining key stages in nugget.ai’s operations and highlighting decisions and considerations that the nugget.ai team have had to make at these stages.
 
   
 At each stage, Marian and Melissa worked with the whole group in identifying the advantages of nugget.ai’s approach and any areas of opportunities. The participants were encouraged to reflect on nugget.ai’s business decisions, leaning on lessons that have emerged from the study group’s previous modules.
 
+{% endimageAndText %}
+
 #### Activity
+
+{% youtube "https://www.youtube.com/embed/vTDm5iyml0k" %}
 
 We discussed ideal candidates based on David Dame’s YouTube video, which focuses on the following questions:
 
