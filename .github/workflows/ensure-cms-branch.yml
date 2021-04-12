@@ -6,23 +6,23 @@ on:
       - main
       - dev
     paths:
-      - 'src/admin/config.yml' # Skip this action unless the Netlify CMS config file has changed.
+      - src/admin/config.yml # Skip this action unless the Netlify CMS config file has changed.
 
 jobs:
   ensure-cms-branch:
     runs-on: ubuntu-latest
     env:
-      TARGET_BRANCH: "dev" # Default to dev branch
+      target_branch: "dev" # Default to dev branch
     steps:
     - uses: actions/checkout@v2
     - name: Adjust target branch for environment
       if: endsWith(github.ref, '/main') # If the commit is in
       run: |
-        echo "TARGET_BRANCH=main" >> $GITHUB_ENV
+        echo "target_branch=main" >> $GITHUB_ENV
     - name: Update CMS branch configuration
       uses: mikefarah/yq@v4.6.3
       with:
-        cmd: yq eval -i '.backend.branch = "$TARGET_BRANCH"' src/admin/config.yml
+        cmd: yq eval -i '.backend.branch = "${{ env.target_branch }}"' src/admin/config.yml
     - name: Commit changes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
