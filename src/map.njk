@@ -19,7 +19,9 @@ $(document).ready(function () {
 	document.getElementById("defaultContainer").classList.add("map");
 
 	fluid.covidMap.map(".fl-mapviz-container", {
-		dataUrl: window.location.origin + "/api/getMapData",
+		dataUrl: "/lib/covid-data-monitor/data/merged/output.csv",
+		// Uncomment the line below when the workflow that merges the ODS dataset and the WeCount dataset is implemented.
+		// dataUrl: window.location.origin + "/api/getMapData",
 		searchResultTemplateUrl: window.location.origin + "/lib/covid-data-monitor/build/html/searchResultTemplate.html"
 	});
 });
