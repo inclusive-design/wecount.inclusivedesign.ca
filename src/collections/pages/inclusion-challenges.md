@@ -2,7 +2,7 @@
 title: "Challenges"
 permalink: /inclusion-challenges/
 slug: inclusion-challenges
-excerpt: -|
+excerpt: |-
   To achieve We Count’s goal of an inclusive and balanced data ecosystem for persons with disabilities, We Count is issuing an ongoing call for challenges. A We Count…
 menu_order: 3
 ---

@@ -3,6 +3,8 @@ title: "The Importance of Peripheral Vision"
 date: 2019-10-30T12:09:00
 author: Jutta Treviranus
 picture: https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2019/10/adrien-converse-WYmPNSUyfNg-unsplash-scaled.jpg
+altTag: |-
+  Abstract Image
 excerpt: |-
   Jutta Treviranus was invited to contribute this essay related to We Count to Some Thoughts, a collection of essays on smart cities.
 tags:

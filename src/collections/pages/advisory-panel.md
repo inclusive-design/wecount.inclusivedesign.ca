@@ -1,8 +1,8 @@
 ---
-title: "Advisory Panel"
+title: Advisory Panel
 permalink: /advisory-panel/
 slug: advisory-panel
-
+excerpt: Learn more about We Count Advisory Panel.
 menu_order: 0
 ---
 

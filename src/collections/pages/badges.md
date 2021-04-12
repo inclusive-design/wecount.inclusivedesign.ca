@@ -2,7 +2,8 @@
 title: Badges
 permalink: /badges/
 slug: badges
-excerpt: -| We Count badges enable earners to showcase their proficiency in the
+excerpt: |-
+  We Count badges enable earners to showcase their proficiency in the
   growing fields of AI, data systems and inclusive data practices as well as
   other skills. Badges, once…
 menu_order: 0

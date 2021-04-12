@@ -3,6 +3,8 @@ title: "How Virtual Care Is Revolutionizing Digital Health"
 date: 2020-11-02T19:03:10
 author: Rachel Spence
 picture: https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/06/ricardo-gomez-angel-2mjl2uvz9ic-unsplash-scaled.jpg
+altTag: |-
+  Abstract Image
 excerpt: |-
   Last month, Dr. Jutta Treviranus, Director of the IDRC, collaborated in the District 3 panel “How Virtual Care Is Revolutionizing Digital Health” and had an engaging conversation about…
 tags:

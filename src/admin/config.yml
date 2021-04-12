@@ -19,6 +19,10 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        hint: "The excerpt is shown in search results."
       - label: "Navigation Order"
         name: "menu_order"
         widget: number

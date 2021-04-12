@@ -12,6 +12,7 @@ const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
+const paginateFilter = require("./src/filters/paginate.js");
 const turndownFilter = require("./src/filters/turndown.js");
 const slugFilter = require("./src/filters/slug.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
@@ -57,13 +58,35 @@ module.exports = function(eleventyConfig) {
 		];
 	});
 
-	eleventyConfig.addCollection("wpNews", async function() {
-		return dataFetcherWp.categorizedItems("news", 8);
+	eleventyConfig.addCollection("viewsTags", collection => {
+		const tagsSet = new Set();
+    collection.getFilteredByGlob("src/collections/views/*.md").forEach(item => {
+      if (!item.data.tags) return;
+      item.data.tags
+        .filter(tag => !['pages', 'initiatives', 'news', 'views', 'comments'].includes(tag))
+        .forEach(tag => tagsSet.add(tag));
+    });
+    return Array.from(tagsSet).sort();
 	});
 
-	eleventyConfig.addCollection("wpViews", async function() {
-		return dataFetcherWp.categorizedItems("views", 1);
-	});
+	// eleventyConfig.addCollection("tagList", collection => {
+  //   const tagsSet = new Set();
+  //   collection.getAll().forEach(item => {
+  //     if (!item.data.tags) return;
+  //     item.data.tags
+  //       .filter(tag => !['pages', 'initiatives', 'news', 'views', 'comments'].includes(tag))
+  //       .forEach(tag => tagsSet.add(tag));
+  //   });
+  //   return Array.from(tagsSet).sort();
+  // });
+
+	// eleventyConfig.addCollection("wpNews", async function() {
+	// 	return dataFetcherWp.categorizedItems("news", 8);
+	// });
+
+	// eleventyConfig.addCollection("wpViews", async function() {
+	// 	return dataFetcherWp.categorizedItems("views", 1);
+	// });
 
 	// eleventyConfig.addCollection("wpViewsTags", async function() {
 	// 	const viewsPromise = dataFetcherWp.categorizedItems("views", 1);
@@ -129,7 +152,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
 	eleventyConfig.addFilter("turndownFilter", turndownFilter);
 	eleventyConfig.addFilter("slug", slugFilter);
-
+	eleventyConfig.addFilter("paginate", paginateFilter);
 
 	// Add shortcodes.
 	eleventyConfig.addPairedShortcode("expander", expanderShortcode);

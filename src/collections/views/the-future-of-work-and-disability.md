@@ -3,6 +3,8 @@ title: "The Future of Work and Disability"
 date: 2021-02-19T15:37:31
 author: David Pereyra
 picture: https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/06/joshua-hoehne-xOyh9Ofp_BE-unsplash-scaled.jpg
+altTag: |-
+  Abstract Image
 excerpt: |-
   The Future of Work and Disability project brought together a study group of fifteen people, many with lived experience of disabilities with researchers, artificial intelligence (AI) experts, data…
 tags:
