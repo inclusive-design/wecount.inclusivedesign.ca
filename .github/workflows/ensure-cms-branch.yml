@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Adjust target branch for environment
-      if: endsWith(github.ref, '/main') # If the commit is in
+      if: endsWith(github.ref, "/main") # If the commit is in
       run: |
         echo "target_branch=main" >> $GITHUB_ENV
     - name: Update CMS branch configuration
