@@ -58,6 +58,12 @@ module.exports = function(eleventyConfig) {
 		];
 	});
 
+	eleventyConfig.addCollection("resources", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/resources/*.md")
+		];
+	});
+
 	eleventyConfig.addCollection("comments", async function() {
 		return dataFetcherAirtable.comments();
 	});
