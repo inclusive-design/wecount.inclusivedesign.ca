@@ -13,12 +13,11 @@ The website uses [Netlify CMS](https://netlifycms.org) to manage the following c
 
 - [initiatives](src/collections/initiatives)
 - [pages](src/collections/pages)
+- [news](src/collections/news)
+- [views](src/collections/views)
 
-The website also uses two backend APIs:
+The website also uses one backend API:
 
-- WordPress API where We Count team members create news and views;
-  - The production WordPress site: [https://wecount-cms.inclusivedesign.ca/](https://wecount-cms.inclusivedesign.ca/)
-  - The development WordPress site: [https://wecount-dev.inclusivedesign.ca/](https://wecount-dev.inclusivedesign.ca/)
 - [Airtable API](https://airtable.com/api) that serves user comments for initiatives, AI resources and
 tools data.
   - The production table: WeCount
