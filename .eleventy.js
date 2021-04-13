@@ -1,4 +1,4 @@
-/* global chunkArray, createPagination, getUniqueTags */
+/* global chunkArray, createPagination */
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginPWA = require("eleventy-plugin-pwa");
@@ -6,7 +6,6 @@ const eleventyNavigation = require("@11ty/eleventy-navigation");
 const fs = require("fs");
 
 const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
-const dataFetcherWp = require("./src/utils/data-fetcher-wp.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
@@ -20,9 +19,6 @@ const randomizeFilter = require("./src/filters/randomize.js");
 const expanderShortcode = require("./src/shortcodes/expander.js");
 const imageAndTextShortcode = require("./src/shortcodes/image-and-text.js");
 const youtubeShortcode = require("./src/shortcodes/youtube.js");
-
-// Slugs for pages that should be excluded as public pages from the WeCount website.
-const privatePageSlugs = ["views", "news"];
 
 require("./src/js/utils.js");
 
@@ -60,25 +56,25 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("viewsTags", collection => {
 		const tagsSet = new Set();
-    collection.getFilteredByGlob("src/collections/views/*.md").forEach(item => {
-      if (!item.data.tags) return;
-      item.data.tags
-        .filter(tag => !['pages', 'initiatives', 'news', 'views', 'comments'].includes(tag))
-        .forEach(tag => tagsSet.add(tag));
-    });
-    return Array.from(tagsSet).sort();
+		collection.getFilteredByGlob("src/collections/views/*.md").forEach(item => {
+			if (!item.data.tags) return;
+			item.data.tags
+				.filter(tag => !["pages", "initiatives", "news", "views", "comments"].includes(tag))
+				.forEach(tag => tagsSet.add(tag));
+		});
+		return Array.from(tagsSet).sort();
 	});
 
 	eleventyConfig.addCollection("allTags", collection => {
-    const tagsSet = new Set();
+		const tagsSet = new Set();
 
-    collection.getAll().forEach(item => {
-      if (!item.data.tags) return;
-      item.data.tags
-        .filter(tag => !['pages', 'initiatives', 'news', 'views', 'comments'].includes(tag))
-        .forEach(tag => tagsSet.add(tag));
-    });
-    const tags = Array.from(tagsSet).sort();
+		collection.getAll().forEach(item => {
+			if (!item.data.tags) return;
+			item.data.tags
+				.filter(tag => !["pages", "initiatives", "news", "views", "comments"].includes(tag))
+				.forEach(tag => tagsSet.add(tag));
+		});
+		const tags = Array.from(tagsSet).sort();
 		const pageSize = 10;
 		let collectionTogo = [];
 
@@ -113,64 +109,7 @@ module.exports = function(eleventyConfig) {
 		});
 
 		return collectionTogo;
-  });
-
-	// eleventyConfig.addCollection("wpNews", async function() {
-	// 	return dataFetcherWp.categorizedItems("news", 8);
-	// });
-
-	// eleventyConfig.addCollection("wpViews", async function() {
-	// 	return dataFetcherWp.categorizedItems("views", 1);
-	// });
-
-	// eleventyConfig.addCollection("wpViewsTags", async function() {
-	// 	const viewsPromise = dataFetcherWp.categorizedItems("views", 1);
-	// 	return new Promise((resolve) => {
-	// 		viewsPromise.then(views => {
-	// 			resolve(getUniqueTags(views));
-	// 		});
-	// 	});
-	// });
-
-	// eleventyConfig.addCollection("wpTags", async function() {
-	// 	const tags = await dataFetcherWp.siteTags();
-	// 	const posts = await dataFetcherWp.sitePosts();
-	// 	const pageSize = 10;
-	// 	let collectionTogo = [];
-
-	// 	tags.map(tag => {
-	// 		const taggedPosts = posts.filter(post => {
-	// 			const postTagSlugs = post.tags.map(({slug}) => slug);
-	// 			return postTagSlugs.includes(tag.slug);
-	// 		});
-
-	// 		if (taggedPosts.length) {
-	// 			const postsInPage = chunkArray(taggedPosts, pageSize);
-	// 			for (let pageNumber = 1; pageNumber <= postsInPage.length; pageNumber++) {
-	// 				let pagination;
-	// 				if (pageNumber === 1) {
-	// 					// Add the root page that has the same content as the first page
-	// 					pagination = createPagination(taggedPosts, pageSize, 1, "/tags/" + tag.slug + "/page/:page");
-	// 					collectionTogo.push({
-	// 						slug: tag.slug,
-	// 						title: tag.title,
-	// 						posts: postsInPage[0],
-	// 						pagination: pagination
-	// 					});
-	// 				}
-
-	// 				collectionTogo.push({
-	// 					slug: tag.slug,
-	// 					title: tag.title,
-	// 					pageNumber: pageNumber,
-	// 					posts: postsInPage[pageNumber - 1],
-	// 					pagination: pagination ? pagination : createPagination(taggedPosts, pageSize, pageNumber, "/tags/" + tag.slug + "/page/:page")
-	// 				});
-	// 			}
-	// 		}
-	// 	});
-	// 	return collectionTogo;
-	// });
+	});
 
 	// Add plugins.
 	eleventyConfig.addPlugin(errorOverlay);
