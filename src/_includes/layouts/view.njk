@@ -1,32 +1,32 @@
----
-pagination:
-    data: collections.views
-    size: 1
-    alias: postItem
-permalink: "views/{{ postItem.slug }}/"
----
-
+{% if previewMode %}
+{% extends 'layouts/preview.njk' %}
+{% else %}
 {% extends 'layouts/base.njk' %}
+{% endif %}
 
-{% set pageTitle = postItem.title %}
-{% set pageExcerpt = postItem.excerpt %}
+{% set pageTitle = title %}
+{% set pageExcerpt = excerpt %}
+{% set pagination = collections.views | paginate(page) %}
 
 {% block content %}
 <article class="post-article">
-  <h1>{{ postItem.title | safe }}</h1>
-  <div class="author">By {{ postItem.author }}</div>
-  <time class="date" datetime="{{ postItem.dateTime | w3DateFilter }}" class="dt-published">{{ postItem.dateTime | dateFilter }}</time>
-  <div class="api-content">{{ postItem.content | safe }}</div>
-  {% if postItem.tags.length > 0 %}
+  <h1>{{ title | safe }}</h1>
+  <div class="author">By {{ author }}</div>
+  <time class="date" datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
+  <div class="api-content">{{ content | safe }}</div>
+
+
+  {% if tags.length > 0 %}
   <section class="tags-info">
     <h2 class="h3">Tags</h2>
     <div class="tags">
-    {% for tag in postItem.tags %}
-    <a href="/tags/{{ tag.slug }}/">{{ tag.name | safe }}</a>
+    {% for tag in tags %}
+    <a href="/tags/{{ tag | slug }}/">{{ tag | safe }}</a>
     {% endfor %}
     </div>
   </section>
   {% endif %}
+
   {% if pagination.pages.length > 1 %}
   {% include 'components/pagination.njk' %}
   {% endif %}

@@ -2,7 +2,8 @@
 title: Creating an inclusive data ecosystem
 permalink: /
 slug: home
-excerpt: -| We Count is a community-driven project to address the inherent bias
+excerpt: |-
+  We Count is a community-driven project to address the inherent bias
   against small minorities and outliers in artificial intelligence and data
   analytics. Disability often places you at the…
 menu_order: 0

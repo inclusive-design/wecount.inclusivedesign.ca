@@ -1,4 +1,4 @@
-/* global chunkArray, createPagination, getUniqueTags */
+/* global chunkArray, createPagination */
 
 const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginPWA = require("eleventy-plugin-pwa");
@@ -6,13 +6,12 @@ const eleventyNavigation = require("@11ty/eleventy-navigation");
 const fs = require("fs");
 
 const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
-const dataFetcherWp = require("./src/utils/data-fetcher-wp.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const dateFilter = require("./src/filters/date.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
-const turndownFilter = require("./src/filters/turndown.js");
+const paginateFilter = require("./src/filters/paginate.js");
 const slugFilter = require("./src/filters/slug.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
@@ -20,31 +19,28 @@ const expanderShortcode = require("./src/shortcodes/expander.js");
 const imageAndTextShortcode = require("./src/shortcodes/image-and-text.js");
 const youtubeShortcode = require("./src/shortcodes/youtube.js");
 
-// Slugs for pages that should be excluded as public pages from the WeCount website.
-const privatePageSlugs = ["views", "news"];
-
 require("./src/js/utils.js");
+
+/**
+ * Get an array of unique tags from a collection.
+ *
+ * @param {Object} collection An Eleventy collection defined via the collections API: https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting
+ * @returns {Array}
+ */
+const getUniqueTags = function(collection) {
+	const tagsSet = new Set();
+	collection.forEach(item => {
+		if (!item.data.tags) return;
+		item.data.tags
+			.filter(tag => !["pages", "initiatives", "news", "views", "comments"].includes(tag))
+			.forEach(tag => tagsSet.add(tag));
+	});
+	return Array.from(tagsSet).sort();
+};
 
 module.exports = function(eleventyConfig) {
 	// Watch SCSS files.
 	eleventyConfig.addWatchTarget("./src/scss/");
-
-	// "allPages" contains both public pages and pages that define partial contents such as intro paragraphs
-	// in the News and Views pages.
-	eleventyConfig.addCollection("allPages", async function() {
-		return dataFetcherWp.sitePages();
-	});
-
-	// "publicPages" only contains public pages that are accessible via WeCount website URLs.
-	eleventyConfig.addCollection("wpPublicPages", async function() {
-		const publicPagesPromise = dataFetcherWp.sitePages();
-		return new Promise((resolve) => {
-			publicPagesPromise.then(pages => {
-				const results = pages.filter(page => !privatePageSlugs.includes(page.slug));
-				resolve(results);
-			});
-		});
-	});
 
 	eleventyConfig.addCollection("pages", collection => {
 		return [
@@ -62,34 +58,30 @@ module.exports = function(eleventyConfig) {
 		return dataFetcherAirtable.comments();
 	});
 
-	eleventyConfig.addCollection("news", async function() {
-		return dataFetcherWp.categorizedItems("news", 8);
+	eleventyConfig.addCollection("news", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/news/*.md").sort((a, b) => b.data.date - a.data.date)
+		];
 	});
 
-	eleventyConfig.addCollection("views", async function() {
-		return dataFetcherWp.categorizedItems("views", 1);
+	eleventyConfig.addCollection("views", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/views/*.md").sort((a, b) => b.data.date - a.data.date)
+		];
 	});
 
-	eleventyConfig.addCollection("viewsTags", async function() {
-		const viewsPromise = dataFetcherWp.categorizedItems("views", 1);
-		return new Promise((resolve) => {
-			viewsPromise.then(views => {
-				resolve(getUniqueTags(views));
-			});
-		});
+	eleventyConfig.addCollection("viewsTags", collection => {
+		return getUniqueTags(collection.getFilteredByGlob("src/collections/views/*.md"));
 	});
 
-	eleventyConfig.addCollection("tags", async function() {
-		const tags = await dataFetcherWp.siteTags();
-		const posts = await dataFetcherWp.sitePosts();
+	eleventyConfig.addCollection("allTags", collection => {
+		const tags = getUniqueTags(collection.getAll());
 		const pageSize = 10;
 		let collectionTogo = [];
 
 		tags.map(tag => {
-			const taggedPosts = posts.filter(post => {
-				const postTagSlugs = post.tags.map(({slug}) => slug);
-				return postTagSlugs.includes(tag.slug);
-			});
+			const slug = slugFilter(tag);
+			const taggedPosts = collection.getFilteredByTag(tag).reverse();
 
 			if (taggedPosts.length) {
 				const postsInPage = chunkArray(taggedPosts, pageSize);
@@ -97,25 +89,26 @@ module.exports = function(eleventyConfig) {
 					let pagination;
 					if (pageNumber === 1) {
 						// Add the root page that has the same content as the first page
-						pagination = createPagination(taggedPosts, pageSize, 1, "/tags/" + tag.slug + "/page/:page");
+						pagination = createPagination(taggedPosts, pageSize, 1, "/tags/" + slug + "/page/:page");
 						collectionTogo.push({
-							slug: tag.slug,
-							title: tag.title,
+							slug: slug,
+							title: tag,
 							posts: postsInPage[0],
 							pagination: pagination
 						});
 					}
 
 					collectionTogo.push({
-						slug: tag.slug,
-						title: tag.title,
+						slug: slug,
+						title: tag,
 						pageNumber: pageNumber,
 						posts: postsInPage[pageNumber - 1],
-						pagination: pagination ? pagination : createPagination(taggedPosts, pageSize, pageNumber, "/tags/" + tag.slug + "/page/:page")
+						pagination: pagination ? pagination : createPagination(taggedPosts, pageSize, pageNumber, "/tags/" + slug + "/page/:page")
 					});
 				}
 			}
 		});
+
 		return collectionTogo;
 	});
 
@@ -132,9 +125,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
-	eleventyConfig.addFilter("turndownFilter", turndownFilter);
 	eleventyConfig.addFilter("slug", slugFilter);
-
+	eleventyConfig.addFilter("paginate", paginateFilter);
 
 	// Add shortcodes.
 	eleventyConfig.addPairedShortcode("expander", expanderShortcode);
