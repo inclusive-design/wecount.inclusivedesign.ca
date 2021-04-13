@@ -30,12 +30,10 @@
     "lint-fix:md": "npm run lint:md -- --fix",
     "lint-fix": "run-s lint-fix:*",
     "migrate:airtable": "cross-env CONTEXT=production run-s build airtable",
-    "migrate:wp": "run-s build wp:*",
     "release:major": "release major",
     "release:minor": "release minor",
     "release:patch": "release patch",
-    "prepare": "husky install",
-    "wp:pages": "cp dist/pages/*.md src/collections/pages"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",

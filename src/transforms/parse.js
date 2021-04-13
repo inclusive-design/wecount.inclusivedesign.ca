@@ -6,7 +6,7 @@ const {JSDOM} = jsdom;
 require("../js/utils.js");
 
 module.exports = function(value, outputPath) {
-	if (outputPath.endsWith(".html")) {
+	if (outputPath && outputPath.includes(".html")) {
 		const DOM = new JSDOM(value, {
 			resources: "usable"
 		});

@@ -2,7 +2,8 @@
 title: Learn
 permalink: /learn/
 slug: learn
-excerpt: -| In the coming months, we will have a searchable resource library to
+excerpt: |-
+  In the coming months, we will have a searchable resource library to
   support your learning. Until then, here are a few items to get you started. AI
   and…
 menu_order: 2

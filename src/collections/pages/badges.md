@@ -2,12 +2,13 @@
 title: Badges
 permalink: /badges/
 slug: badges
-excerpt: -| We Count badges enable earners to showcase their proficiency in the
+excerpt: |-
+  We Count badges enable earners to showcase their proficiency in the
   growing fields of AI, data systems and inclusive data practices as well as
   other skills. Badges, once…
 menu_order: 0
 ---
-![Horizontal rectangle banner of four badges of WeCount. Learner, brainstormer, collaborator and communicator. All the badges are hexagonal in shape.](/uploads/banner-06-1024x270.jpeg)
+![Horizontal rectangle banner of four badges of WeCount. Learner, brainstormer, collaborator and communicator. All the badges are hexagonal in shape.](/uploads/banner-06-1024x270.jpg)
 
 We Count badges enable earners to showcase their proficiency in the growing fields of AI, data systems and inclusive data practices as well as other skills. Badges, once earned, will be owned completely by the earner and can be shared across social media platforms, such as LinkedIn and Instagram, to display their achievement and showcase what has been learned. These badges are designed to address the interests, skills and availability of diverse participants. Earners can expect to work with and learn from a range of experts:
 

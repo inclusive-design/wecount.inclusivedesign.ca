@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 slug: about
-excerpt: -|
+excerpt: |-
   As data becomes the primary basis for determining truth and value, and data science drives the opportunities and risks of our digital economy, people with disabilities are likely…
 menu_order: 1
 ---

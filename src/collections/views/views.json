@@ -1,0 +1,5 @@
+{
+	"permalink": "/views/{{ title | slug }}/",
+	"layout": "layouts/view.njk",
+	"category": "views"
+}
