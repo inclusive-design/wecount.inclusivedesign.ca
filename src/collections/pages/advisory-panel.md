@@ -6,7 +6,7 @@ excerpt: Learn more about We Count Advisory Panel.
 menu_order: 0
 ---
 
-{% expander "/uploads/catherine-frazee.jpeg", "A photo of Catherine Frazee", "Catherine Frazee", "Ryerson School for Disability Studies" %}
+{% expander "/uploads/catherine-frazee.jpg", "A photo of Catherine Frazee", "Catherine Frazee", "Ryerson School for Disability Studies" %}
 
 Catherine Frazee is an Officer of the Order of Canada and professor emerita at Ryerson University in the School of Disability Studies. Her work has involved extensive community dialogue, contributions as an expert witness, strategic advice to national disability organizations, public debates and panel discussions, senate and parliamentary committee submissions, and the publication of essays. In 2015, she served on a panel appointed by the federal government that conducted public consultations and expert interviews on euthanasia and assisted suicide. Since then, Catherine is one of the co-authors of the Vulnerable Persons Standard, a detailed proposal of safeguards to ensure that medically assisted death would not jeopardize the lives of vulnerable people. Catherine received honorary doctorates from the University of New Brunswick in 2002, Dalhousie University in 2009, McMaster University in 2015 and Carleton University in 2018.
 
