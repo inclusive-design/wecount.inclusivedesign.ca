@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://knowledge.wharton.upenn.edu/article/who-is-responsible-for-biased-and-intrusive-algorithms/"
+keywords: []
+learnTags: ["ethics","fairness","dataset","bias","methods"]
 summary: |-
   While algorithms often make our lives more efficient, the same algorithms frequently violate our privacy and are biased and discriminatory. In the book _The Ethical Algorithm,_ the authors suggest that the solution is to embed precise definitions of fairness, accuracy, transparency and ethics at the algorithm’s design stage.
 ---

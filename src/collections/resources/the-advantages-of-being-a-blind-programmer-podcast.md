@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://changelog.com/podcast/206"
+keywords: []
+learnTags: ["disability"]
 summary: |-
   A podcast about the experiences and tools of a blind programmer.
 ---

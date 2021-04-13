@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://soundcloud.com/chine-labbe/timnit-gebru-on-the-limits-of"
+keywords: []
+learnTags: ["fairness","bias"]
 summary: |-
   A podcast episode that calls for the standardization of algorithms and that cautions against focusing on making them more fair without thinking about whether they should exist in the first place.
 ---

@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://pair.withgoogle.com/"
+keywords: []
+learnTags: ["ethics","fairness","dataset","bias","dataTools","methods","basicAI","education","inclusivePractice"]
 summary: |-
   The People + AI Research (PAIR) website is an interactive AI resource created by Google that includes a guide for a human-centred approach to AI, interactive essays on bias and fairness, information on open source tools and platforms, and relevant research articles. 
 ---

@@ -9,6 +9,8 @@ toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Integrating%20Ethics%20within%20Machine-learning%20Courses.pdf"
 link: "https://dl.acm.org/doi/fullHtml/10.1145/3341164"
+keywords: ["Machine learning","ethics","education"]
+learnTags: ["ethics","fairness","education"]
 summary: |-
   This study highlights the importance of teaching ethics in machine learning courses, offers a list of ethics questions for identifying potential issues within a machine learning project, and provides example course modules for teaching machine learning ethics while preserving core course content.
 ---

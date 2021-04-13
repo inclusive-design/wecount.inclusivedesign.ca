@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://www.micc.unifi.it/projects/advanced-web-applications/sentiment-analysis-of-tweets-from-twitter/"
+keywords: []
+learnTags: ["framework","dataset","machineLearning","methods","researchCentre"]
 summary: |-
   Overview and insights from a project that determines the sentiment analysis of Twitter data sets using a multimodal feature learning approach.
 ---

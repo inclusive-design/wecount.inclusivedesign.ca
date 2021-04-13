@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://www.openaccessgovernment.org/how-can-the-ai-sector-improve-diversity-standards/100334/"
+keywords: []
+learnTags: ["ethics","fairness","bias","business"]
 summary: |-
   In this article, Nikolas Kairinos delves into the difficult subject of diversity standards in the AI space and highlights the importance of transparency.
 

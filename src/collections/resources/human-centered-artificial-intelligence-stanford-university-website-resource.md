@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://hai.stanford.edu/"
+keywords: []
+learnTags: ["ethics","fairness","disability","methods","government","business"]
 summary: |-
   A human-centred AI resource hub developed within Stanford University that provides resources and course information related to AI and a wide range of topics.
 ---

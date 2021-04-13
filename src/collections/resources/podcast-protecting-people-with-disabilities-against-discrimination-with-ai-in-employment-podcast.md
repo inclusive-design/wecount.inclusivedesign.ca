@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://peatworks.org/podcast-protecting-people-with-disabilities-against-discrimination-with-ai-in-employment/"
+keywords: []
+learnTags: ["disability","bias","business","employment"]
 summary: |-
   A podcast stressing the importance of employers being aware of the benefits and risks of using AI in the hiring process, particularly when recruiting and interviewing people with disabilities.
 ---

@@ -9,6 +9,8 @@ toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Toward%20an%20Understanding%20of%20Responsible%20Artificial%20Intelligence%20Practices.pdf"
 link: "https://www.researchgate.net/publication/336149427_Toward_an_Understanding_of_Responsible_Artificial_Intelligence_Practices"
+keywords: []
+learnTags: ["ethics","fairness","framework","bias","solution","inclusivePractice"]
 summary: |-
   This paper seeks to fill the gap by exploring the practices of responsible AI and identifying the potential benefits when implementing responsible AI practices. 
 ---

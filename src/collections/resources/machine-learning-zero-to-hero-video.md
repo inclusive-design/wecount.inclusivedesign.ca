@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://www.youtube.com/watch?v=VwVg9jCtqaU"
+keywords: []
+learnTags: ["dataTools","solution","methods","education"]
 summary: |-
   A YouTube session from Google I/O ’19 that explains machine learning to those with coding experience, including a discussion of the image classification problem and the use of Tensor flow.
 ---

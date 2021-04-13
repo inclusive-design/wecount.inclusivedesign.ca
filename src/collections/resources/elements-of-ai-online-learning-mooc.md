@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://www.elementsofai.com/"
+keywords: []
+learnTags: ["ethics","fairness","bias","basicAI"]
 summary: |-
   The Elements of AI is a series of free online courses (MOOC) created by Reaktor and the University of Helsinki to educate a broad group of people on what AI is, what AI can be used for and how AI is created.
 ---

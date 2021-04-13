@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://youtu.be/ndA-Z_wJ31s"
+keywords: []
+learnTags: ["ethics","fairness","disability","bias","business","employment"]
 summary: |-
   A webinar that explores the unacknowledged risks to the more than 1.3 billion persons with disabilities that are triggered by the fast-growing use of AI-powered recruitment tools.
 ---

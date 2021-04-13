@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: true
 link: "http://opentranscripts.org/transcript/automating-inequality/"
+keywords: []
+learnTags: ["ethics","dataset","bias","machineLearning","government"]
 summary: |-
   A lecture given by Virginia Eubanks, associate professor of polticial science at the University of Albany and author of _Automating Inequality_, in which she discusses three cases where technology used in public policies is creating inequality: automated welfare system, electronic registry of unhoused persons, and statistical model used to predict which children are victims of abuse.
 ---

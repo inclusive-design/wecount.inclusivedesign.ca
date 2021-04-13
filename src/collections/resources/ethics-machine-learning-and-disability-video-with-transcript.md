@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: true
 link: "https://www.youtube.com/watch?time_continue=825&v=icoR_WRzMCs&feature=emb_logo"
+keywords: []
+learnTags: ["ethics","disability","dataset","machineLearning","methods","government","inclusivePractice"]
 summary: |-
    A panel discussion at Techshare Pro with accessibility experts on social and technological machine learning issues that need to be addressed. 
 ---

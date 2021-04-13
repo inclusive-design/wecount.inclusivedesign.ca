@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://cacm.acm.org/magazines/2019/8/238345-embedded-ethics/fulltext"
+keywords: []
+learnTags: ["ethics","education"]
 summary: |-
   The Embedded EthiCS approach, developed by Harvard, makes learning about ethical reasoning in computer science a central element of the curriculum.
 ---

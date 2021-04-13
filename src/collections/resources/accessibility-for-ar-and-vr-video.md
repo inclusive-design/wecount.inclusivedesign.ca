@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: true
 link: "https://www.youtube.com/watch?v=pW2oWy-ePS8&list=PLOU2XLYxmsIInFRc3M44HUTQc3b_YJ4-Y&index=17&t=0s"
+keywords: []
+learnTags: ["disability","dataTools","solution","methods"]
 summary: |-
   A video from Google I/O &#39;18 that discusses how VR and AR can be made more accessible to more users.
 ---

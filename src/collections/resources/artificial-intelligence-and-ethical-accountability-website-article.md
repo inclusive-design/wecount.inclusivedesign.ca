@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://er.educause.edu/blogs/2020/7/artificial-intelligence-and-ethical-accountability"
+keywords: []
+learnTags: ["ethics","fairness","disability","bias","dataTools","education","inclusivePractice"]
 summary: |-
   A look at how higher education institutions should address fairness, privacy, bias and public safety when selecting AI-enabled programs.
 ---

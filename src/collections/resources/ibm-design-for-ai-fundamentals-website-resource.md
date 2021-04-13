@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://www.ibm.com/design/ai/basics/ai"
+keywords: []
+learnTags: ["ethics","fairness","dataset","basicAI"]
 summary: |-
   A guide for non-technical people on the basics of AI.
 ---

@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://www.statistics.utoronto.ca/graduate/mscac-data-science"
+keywords: []
+learnTags: ["ethics","fairness","machineLearning","education","inclusivePractice","canadianLandscape"]
 summary: |-
   This program helps students build skills at the intersection of computer science and statistics, learning how to solve complex data challenges and gain hands-on industry experience. 
 ---

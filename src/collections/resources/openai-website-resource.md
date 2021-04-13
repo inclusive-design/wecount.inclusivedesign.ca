@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://openai.com/about/"
+keywords: []
+learnTags: ["dataTools","solution","methods","inclusivePractice","notForProfit"]
 summary: |-
   A website with AI resources for engineers and scientists to support the development of AI that benefits humanity.
 ---

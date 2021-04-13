@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://uxdesign.cc/latest-news-from-the-accessibility-front-legal-and-standards-landscape-5cc0938b3b28"
+keywords: []
+learnTags: ["fairness","disability","framework","inclusivePractice"]
 summary: |-
   A brief overview of the new WCAG 3.0 guidelines and the implications for Ontarians and Ontario businesses. 
 ---

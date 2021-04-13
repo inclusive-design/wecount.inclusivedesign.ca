@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: true
 link: "https://www.microsoft.com/en-us/ai/ai-for-accessibility-grants?activetab=pivot1%3aprimaryr2"
+keywords: []
+learnTags: ["disability","solution","machineLearning","business","employment","inclusivePractice"]
 summary: |-
   A Microsoft program that focuses on addressing 3 challenges in AI: employment, daily life, and communication and connection.
 ---

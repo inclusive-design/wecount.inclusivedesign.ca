@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://towardsdatascience.com/a-tutorial-on-fairness-in-machine-learning-3ff8ba1040cb"
+keywords: []
+learnTags: ["ethics","fairness","bias","machineLearning","methods","basicAI","inclusivePractice"]
 summary: |-
   This article highlights how unfairness in machine learning systems is mainly due to human bias existing in the training data.
 ---

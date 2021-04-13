@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://kadeshan.com/turkish-university-students-build-autonomous-wheelchair/"
+keywords: []
+learnTags: ["disability","machineLearning","methods","researchCentre"]
 summary: |-
   A group of Turkish university students have built an autonomous wheelchair that uses voice commands to operate the chair.
 ---

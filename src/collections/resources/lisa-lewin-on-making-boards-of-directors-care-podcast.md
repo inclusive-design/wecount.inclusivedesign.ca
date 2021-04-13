@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://soundcloud.com/chine-labbe/lisa-lewin-on-making-boards-of"
+keywords: []
+learnTags: ["ethics","business","inclusivePractice"]
 summary: |-
   A podcast episode that encourages boards of directors for big technology companies to push for more ethic practices and including all stakeholders in finding a solution.
 ---

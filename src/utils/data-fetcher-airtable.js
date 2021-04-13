@@ -1,5 +1,6 @@
 // Communicate with Airtable APIs to access data
 const env = require("../_data/env");
+const learnTags = require("../_data/learnTags.json");
 const airtable = require("airtable");
 
 airtable.configure({
@@ -60,8 +61,28 @@ module.exports = {
 						toolAccessibilityIssues: record.get("toolAccessibilityIssue") || [],
 						sharePointUrl: record.get("sharePointUrl"),
 						link: record.get("url"),
-						openSource: record.get("openSource") === "Yes"
+						openSource: record.get("openSource") === "Yes",
+						keywords: [],
+						learnTags: []
 					};
+
+					if (record.get("keywords")) {
+						const str = record.get("keywords");
+						if (str.includes(", ")) {
+							resource.keywords = str.split(", ");
+						} else if (str.includes("; ")) {
+							resource.keywords = str.split("; ");
+						} else if (str.includes(" · ")) {
+							resource.keywords = str.split(" · ");
+						}
+					}
+
+					Object.keys(learnTags).forEach(learnTag => {
+						if (record.get(learnTag)) {
+							resource.learnTags.push(learnTag);
+						}
+					});
+
 					literature.push(resource);
 				});
 

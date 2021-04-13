@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://www.slideshare.net/merriejune/centering-disability-perspectives-in-algorithmic-fairness-accountability-transparency-226143105"
+keywords: []
+learnTags: ["ethics","fairness","disability","bias","methods","government","business","inclusivePractice"]
 summary: |-
   Slides from a panel discussion held at the Conference on Fairness, Accountability and Transparency that covers a wide range of issues, including AI and accessibility, ethics, disability, inclusion/exclusion, bias, law, fintech, and future trends. 
 ---

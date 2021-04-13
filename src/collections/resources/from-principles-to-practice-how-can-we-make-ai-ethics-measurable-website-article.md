@@ -9,6 +9,8 @@ toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/from%20principles%20to%20practise.pdf"
 link: "https://ethicsofalgorithms.org/2020/04/02/from-principles-to-practice-how-can-we-make-ai-ethics-measurable/"
+keywords: []
+learnTags: ["ethics","fairness","framework","dataTools","methods"]
 summary: |-
   This working paper proposes the creation of an ethics label for AI systems that could be used by AI developers to communicate the quality of their products according to six key values: transparency, accountability, privacy, justice, reliability and environmental sustainability. 
 ---

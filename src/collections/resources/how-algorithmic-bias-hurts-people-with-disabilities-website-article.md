@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://slate.com/technology/2020/02/algorithmic-bias-people-with-disabilities.html"
+keywords: []
+learnTags: ["disability","dataset","bias","business","employment"]
 summary: |-
   An article that outlines the problematic nature of AI-based hiring practices for people with disabilties and other marginalized communities.
 ---

@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://www.adalovelaceinstitute.org/to-be-seen-we-must-be-measured-data-visualisation-and-inequality/"
+keywords: []
+learnTags: ["dataset","bias","government","researchCentre"]
 summary: |-
   An exploration of how data, bodies and experience entwine in situations of inequality and injustice, with a specific focus on the impacts of the COVID-19 pandemic.
 ---

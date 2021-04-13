@@ -9,6 +9,8 @@ toolAccessibilityIssues: ["Braille"]
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Statistical%20Software%20from%20a%20Blind%20Person%E2%80%99s%20Perspective.pdf?csf=1&web=1&e=1zLNYh"
 link: "https://journal.r-project.org/archive/2013-1/godfrey.pdf"
+keywords: []
+learnTags: ["dataTools","machineLearning","methods"]
 summary: |-
   This article shows how little is required to make R the most accessible statistical software currently available.
 ---

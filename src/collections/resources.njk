@@ -20,6 +20,8 @@ sharePointUrl: {{ resource.sharePointUrl | dump | safe }}
 {% endif -%}
 {% if resource.link -%}
 link: {{ resource.link | dump | safe }}
+keywords: {{ resource.keywords | dump | safe }}
+learnTags: {{ resource.learnTags | dump | safe }}
 {% endif -%}
 summary: |-
   {{ resource.summary -}}

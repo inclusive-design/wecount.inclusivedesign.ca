@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://peatworks.org/podcast-workplace-accessibility-and-inclusion/"
+keywords: []
+learnTags: ["business","employment","inclusivePractice"]
 summary: |-
   A podcast that explores the white paper &quot;Amplify Accessibility&quot; and methods for implementing the Web Content Accessibility Guidelines (WCAG).
 ---

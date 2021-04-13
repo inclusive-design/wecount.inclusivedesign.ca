@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://youtu.be/BfHaRUt7EXU"
+keywords: []
+learnTags: ["ethics","fairness","trust","bias","business"]
 summary: |-
   Featuring Renée Richardson Gosline, this installment of the MIT Sloan Experts Series looks at the consequences of how and when people trust bots and algorithms to help them make decisions, and what it means for society at large.
 ---

@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "http://varianceexplained.org/r/ds-ml-ai/"
+keywords: []
+learnTags: ["machineLearning","basicAI"]
 summary: |-
   An introduction to the differences between data science, machine learning and AI, and how they can be used together.
 ---

@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://soundcloud.com/chine-labbe/solon-barocas-on-teaching"
+keywords: []
+learnTags: ["ethics","education"]
 summary: |-
   A discussion of how ethics in data science should be taught to post-secondary students and what they need to know to be able to assess the social impact of their work.
 ---

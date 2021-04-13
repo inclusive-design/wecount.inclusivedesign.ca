@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Biased%20Programmers%20Or%20Biased%20Data%20A%20Field%20Experiment%20in%20Operationalizing%20AI%20Ethics.pdf"
+keywords: []
+learnTags: ["ethics","bias","business"]
 summary: |-
   A study about the sources of bias among AI developers that stresses how more diverse teams will reduce the chance for compounding biases.
 ---

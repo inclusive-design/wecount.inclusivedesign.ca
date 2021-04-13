@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://changelog.com/practicalai/17"
+keywords: []
+learnTags: ["fairness","bias","business","employment"]
 summary: |-
   A podcast that discusses biases in AI used for hiring practices and the importance of creating and using fair algorithms.
 ---

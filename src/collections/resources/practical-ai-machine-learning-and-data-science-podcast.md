@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://overcast.fm/itunes1406537385/practical-ai-machine-learning-data-science"
+keywords: []
+learnTags: ["ethics","fairness","dataset","dataTools","methods","government","business","employment"]
 summary: |-
   A podcast with 86 episodes and counting for people interested in working in AI and data science as well as experienced developers looking for tool tips.
 ---

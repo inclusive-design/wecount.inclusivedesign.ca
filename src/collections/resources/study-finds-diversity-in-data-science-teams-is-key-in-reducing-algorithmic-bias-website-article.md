@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://venturebeat.com/2020/12/09/columbia-researchers-find-white-men-are-the-worst-at-reducing-ai-bias/"
+keywords: []
+learnTags: ["ethics","bias","business"]
 summary: |-
   An analysis of a new study on sources of bias among AI developers that stresses how more diverse teams will reduce the chance for compounding biases.
 ---

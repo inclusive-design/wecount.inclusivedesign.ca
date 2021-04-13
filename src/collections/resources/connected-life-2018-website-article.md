@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://issuu.com/oxcl/docs/connected_life_2018_proceedings_new"
+keywords: []
+learnTags: []
 summary: |-
   Connected Life 2018
 ---

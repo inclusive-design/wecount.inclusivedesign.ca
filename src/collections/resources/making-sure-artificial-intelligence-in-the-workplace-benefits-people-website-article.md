@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://www.openaccessgovernment.org/artificial-intelligence-in-the-workplace/84208/"
+keywords: []
+learnTags: ["ethics","fairness","dataTools","methods","government","business"]
 summary: |-
   This article concentrates on the questions and challenges raised by AI systems when introduced into the workplace and provides some recommendations for successful integration.
 ---

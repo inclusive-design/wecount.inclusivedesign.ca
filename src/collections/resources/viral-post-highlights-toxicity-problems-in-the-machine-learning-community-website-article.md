@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 link: "https://syncedreview.com/2020/07/09/viral-post-highlights-toxicity-problems-in-the-machine-learning-community/"
+keywords: []
+learnTags: ["ethics","fairness","bias","education"]
 summary: |-
   A viral post highlights perceived peer review problems, the reproducibility crisis, and ethics and diversity issues in the machine learning community.
 ---

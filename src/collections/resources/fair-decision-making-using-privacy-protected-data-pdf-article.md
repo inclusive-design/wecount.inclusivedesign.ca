@@ -9,6 +9,8 @@ toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Fair%20decision%20making%20using%20privacy-protected%20data.pdf"
 link: "https://arxiv.org/abs/1905.12744"
+keywords: []
+learnTags: ["ethics","fairness","dataset","bias","methods"]
 summary: |-
   A paper that explores a new approach in studying the impact of privacy algorithms on the equitable treatment of individuals using real-world decisions made with sensitive public data.
 ---
