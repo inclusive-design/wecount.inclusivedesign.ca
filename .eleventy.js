@@ -27,7 +27,7 @@ require("./src/js/utils.js");
  * @param {Object} collection An Eleventy collection defined via the collections API: https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting
  * @returns {Array}
  */
-const getUsedTags = function(collection) {
+const getUniqueTags = function(collection) {
 	const tagsSet = new Set();
 	collection.forEach(item => {
 		if (!item.data.tags) return;
@@ -71,11 +71,11 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("viewsTags", collection => {
-		return getUsedTags(collection.getFilteredByGlob("src/collections/views/*.md"));
+		return getUniqueTags(collection.getFilteredByGlob("src/collections/views/*.md"));
 	});
 
 	eleventyConfig.addCollection("allTags", collection => {
-		const tags = getUsedTags(collection.getAll());
+		const tags = getUniqueTags(collection.getAll());
 		const pageSize = 10;
 		let collectionTogo = [];
 
