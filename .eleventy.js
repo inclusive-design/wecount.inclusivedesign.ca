@@ -21,6 +21,23 @@ const youtubeShortcode = require("./src/shortcodes/youtube.js");
 
 require("./src/js/utils.js");
 
+/**
+ * Get an array of unique tags from a collection.
+ *
+ * @param {Object} collection An Eleventy collection defined via the collections API: https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting
+ * @returns {Array}
+ */
+const getUsedTags = function(collection) {
+	const tagsSet = new Set();
+	collection.forEach(item => {
+		if (!item.data.tags) return;
+		item.data.tags
+			.filter(tag => !["pages", "initiatives", "news", "views", "comments"].includes(tag))
+			.forEach(tag => tagsSet.add(tag));
+	});
+	return Array.from(tagsSet).sort();
+};
+
 module.exports = function(eleventyConfig) {
 	// Watch SCSS files.
 	eleventyConfig.addWatchTarget("./src/scss/");
@@ -54,26 +71,11 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("viewsTags", collection => {
-		const tagsSet = new Set();
-		collection.getFilteredByGlob("src/collections/views/*.md").forEach(item => {
-			if (!item.data.tags) return;
-			item.data.tags
-				.filter(tag => !["pages", "initiatives", "news", "views", "comments"].includes(tag))
-				.forEach(tag => tagsSet.add(tag));
-		});
-		return Array.from(tagsSet).sort();
+		return getUsedTags(collection.getFilteredByGlob("src/collections/views/*.md"));
 	});
 
 	eleventyConfig.addCollection("allTags", collection => {
-		const tagsSet = new Set();
-
-		collection.getAll().forEach(item => {
-			if (!item.data.tags) return;
-			item.data.tags
-				.filter(tag => !["pages", "initiatives", "news", "views", "comments"].includes(tag))
-				.forEach(tag => tagsSet.add(tag));
-		});
-		const tags = Array.from(tagsSet).sort();
+		const tags = getUsedTags(collection.getAll());
 		const pageSize = 10;
 		let collectionTogo = [];
 
