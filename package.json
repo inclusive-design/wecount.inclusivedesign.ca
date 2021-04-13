@@ -12,7 +12,7 @@
   ],
   "private": true,
   "scripts": {
-    "airtable": "cp dist/airtable-resources/*.md src/collections/resources",
+    "airtable": "rimraf src/collections/resources/*.md && cp dist/airtable-resources/*.md src/collections/resources",
     "build": "npm-run-all clean -s build:*",
     "build:eleventy": "eleventy",
     "build:netlify-cms": "./build-cms.js",
