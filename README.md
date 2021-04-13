@@ -16,6 +16,10 @@ The website uses [Netlify CMS](https://netlifycms.org) to manage the following c
 - [news](src/collections/news)
 - [views](src/collections/views)
 
+The website uses [Netlify Large Media](https://docs.netlify.com/large-media/overview/) for storing uploaded files with
+Git LFS. Developers must install Git LFS and [consult the documentation for Netlify Large Media](https://docs.netlify.com/large-media/setup/)
+to ensure that they are working properly with the Git repository locally.
+
 The website also uses one backend API:
 
 - [Airtable API](https://airtable.com/api) that serves user comments for initiatives, AI resources and
