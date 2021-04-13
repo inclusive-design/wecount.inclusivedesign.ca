@@ -2,7 +2,7 @@
 title: "Update on City of Toronto Data for Equity Strategy"
 date: 2020-12-04T14:34:29
 author: Rachel Spence
-picture: https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/06/karim-manjra-Jhapo3aqx_0-unsplash-scaled.jpg
+picture: /uploads/karim-manjra-Jhapo3aqx_0-unsplash-scaled.jpg
 altTag: |-
   Abstract Image
 excerpt: |-

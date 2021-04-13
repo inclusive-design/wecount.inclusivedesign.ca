@@ -2,7 +2,7 @@
 title: "The Importance of Peripheral Vision"
 date: 2019-10-30T12:09:00
 author: Jutta Treviranus
-picture: https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2019/10/adrien-converse-WYmPNSUyfNg-unsplash-scaled.jpg
+picture: /uploads/adrien-converse-WYmPNSUyfNg-unsplash-scaled.jpg
 altTag: |-
   Abstract Image
 excerpt: |-

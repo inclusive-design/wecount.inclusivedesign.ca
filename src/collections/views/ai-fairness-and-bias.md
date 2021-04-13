@@ -2,7 +2,7 @@
 title: "AI, Fairness and Bias"
 date: 2020-12-22T15:01:23
 author: Jutta Treviranus
-picture: https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/06/mitchell-luo-U1Hhinvb-v4-unsplash-scaled.jpg
+picture: /uploads/mitchell-luo-U1Hhinvb-v4-unsplash-scaled.jpg
 altTag: |-
   Abstract Image
 excerpt: |-

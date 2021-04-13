@@ -2,7 +2,7 @@
 title: "Continuing Our Work During COVID-19"
 date: 2020-04-03T12:16:00
 author: Jutta Treviranus
-picture: https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/06/jj-ying-WmnsGyaFnCQ-unsplash-scaled.jpg
+picture: /uploads/jj-ying-WmnsGyaFnCQ-unsplash-scaled.jpg
 altTag: |-
   Abstract Image
 excerpt: |-
