@@ -1,0 +1,14 @@
+---
+title: "In AI Ethics, “Bad” Isn’t Good Enough"
+focus: "AI Ethics/Policy"
+source: "askell.io"
+readability: ["I"]
+type: "Blog"
+toolPurpose: []
+toolAccessibilityIssues: []
+openSource: false
+link: "https://askell.io/posts/2020/12/bad-isnt-good-enough"
+summary: |-
+  While AI ethicists focus on the harmful consequences of AI systems, this blog post discusses how we shouldn&#39;t conflate arguments that AI systems have harmful consequences with arguments about what we should do. 
+---
+

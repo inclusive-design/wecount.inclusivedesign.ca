@@ -38,5 +38,42 @@ module.exports = {
 				}
 			});
 		});
+	},
+	literature: async() => {
+		return new Promise((resolve) => {
+			const literature = [];
+
+			base("Literature Summary").select({
+				view: "Deduped"
+			}).eachPage(function page(records, fetchNextPage) {
+				records.forEach(function(record) {
+					let resource = {
+						title: record.get("title"),
+						focus: record.get("focus"),
+						edited: record.get("edited"),
+						summary: record.get("summary"),
+						readability: record.get("readability"),
+						source: record.get("source"),
+						abstract: record.get("abstract"),
+						type: record.get("resourceType") || "",
+						toolPurpose: record.get("toolPurpose") || [],
+						toolAccessibilityIssues: record.get("toolAccessibilityIssue") || [],
+						sharePointUrl: record.get("sharePointUrl"),
+						link: record.get("url"),
+						openSource: record.get("openSource") === "Yes"
+					};
+					literature.push(resource);
+				});
+
+				fetchNextPage();
+			}, function done(err) {
+				if (err) {
+					console.error("Error reading 'Literature' table from Airtable: ", err);
+					return;
+				} else {
+					resolve(literature);
+				}
+			});
+		});
 	}
 };

@@ -62,6 +62,10 @@ module.exports = function(eleventyConfig) {
 		return dataFetcherAirtable.comments();
 	});
 
+	eleventyConfig.addCollection("airtableResources", async function() {
+		return dataFetcherAirtable.literature();
+	});
+
 	eleventyConfig.addCollection("news", async function() {
 		return dataFetcherWp.categorizedItems("news", 8);
 	});
