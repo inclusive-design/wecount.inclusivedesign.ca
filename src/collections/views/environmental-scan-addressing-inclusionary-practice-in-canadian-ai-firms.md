@@ -2,7 +2,7 @@
 title: "Environmental Scan: Addressing Inclusionary Practice in Canadian AI Firms"
 date: 2020-12-17T18:33:24
 author: Ali Milad
-picture: https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/06/callum-wale-hzXtdogKFIE-unsplash-scaled.jpg
+picture: /uploads/callum-wale-hzXtdogKFIE-unsplash-scaled.jpg
 altTag: |-
   Abstract Image
 excerpt: |-
@@ -27,7 +27,7 @@ The AI Firm portion of the environmental scan identified 40 Canadian AI Firms an
 
 A considerable amount of identified AI Firms provide clients with services that fulfil business needs, such as providing business intelligence and aiding in the hiring process. The chart below details the types of services provided by the identified AI Firms.
 
-![Count of AI Firms by Type of Service graph](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Graph-1024x497.png)
+![Count of AI Firms by Type of Service graph](/uploads/Graph-1024x497.png)
 
 ## **Examples of company messaging**
 
@@ -79,14 +79,14 @@ Many websites position AI as a benefit and solution to human limitations:
 
 We are pleased to share the findings of this scan through the following accessible formats: 
 
-*   [Word: Ethical AI in the Data Ecosystem](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem.docx)
-*   [PDF: Ethical AI in the Data Ecosystem](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem.pdf)
-*   [PowerPoint: Ethical AI in the Data Ecosystem (with audio)](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan.pptx)
+*   [Word: Ethical AI in the Data Ecosystem](/uploads/Ethical-AI-in-the-Data-Ecosystem.docx)
+*   [PDF: Ethical AI in the Data Ecosystem](/uploads/Ethical-AI-in-the-Data-Ecosystem.pdf)
+*   [PowerPoint: Ethical AI in the Data Ecosystem (with audio)](/uploads/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan.pptx)
 *   [Video: Ethical AI in the Data Ecosystem](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan_Final.mp4)
 *   [YouTube video: Ethical AI in the Data Ecosystem](https://youtu.be/NCjqn3QNmMM) 
 
 We have also compiled lists of stakeholders identified during the scan for their proactive stance regarding data ethics and ethical AI:
 
-*   [Excel: Postsecondary Education Institutions](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Data-Science-Education.xlsx) 
-*   [Excel: Data Service Providers](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Data-Service-Providers.xlsx) 
-*   [Excel: AI Firms](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/AI-Firms.xlsx)
+*   [Excel: Postsecondary Education Institutions](/uploads/Data-Science-Education.xlsx) 
+*   [Excel: Data Service Providers](/uploads/Data-Service-Providers.xlsx) 
+*   [Excel: AI Firms](/uploads/AI-Firms.xlsx)

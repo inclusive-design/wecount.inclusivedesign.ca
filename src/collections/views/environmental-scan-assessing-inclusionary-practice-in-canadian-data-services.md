@@ -2,7 +2,7 @@
 title: "Environmental Scan: Assessing Inclusionary Practice in Canadian Data Services"
 date: 2020-12-17T18:33:18
 author: Ali Milad
-picture: https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/06/dynamicwang-bLIkWFelVKM-unsplash-scaled.jpg
+picture: /uploads/dynamicwang-bLIkWFelVKM-unsplash-scaled.jpg
 altTag: |-
   Abstract Image
 excerpt: |-
@@ -74,16 +74,16 @@ Most of website messaging is targeted towards potential clients and focuses on b
 
 ## Resources
 
-We are pleased to share the findings of this scan through the following accessible formats: 
+We are pleased to share the findings of this scan through the following accessible formats:
 
-*   [Word: Ethical AI in the Data Ecosystem](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem.docx)
-*   [PDF: Ethical AI in the Data Ecosystem](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem.pdf)
-*   [PowerPoint: Ethical AI in the Data Ecosystem (with audio)](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan.pptx)
+*   [Word: Ethical AI in the Data Ecosystem](/uploads/Ethical-AI-in-the-Data-Ecosystem.docx)
+*   [PDF: Ethical AI in the Data Ecosystem](/uploads/Ethical-AI-in-the-Data-Ecosystem.pdf)
+*   [PowerPoint: Ethical AI in the Data Ecosystem (with audio)](/uploads/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan.pptx)
 *   [Video: Ethical AI in the Data Ecosystem](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan_Final.mp4)
-*   [YouTube video: Ethical AI in the Data Ecosystem](https://youtu.be/NCjqn3QNmMM) 
+*   [YouTube video: Ethical AI in the Data Ecosystem](https://youtu.be/NCjqn3QNmMM)
 
 We have also compiled lists of stakeholders identified during the scan for their proactive stance regarding data ethics and ethical AI:
 
-*   [Excel: Postsecondary Education Institutions](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Data-Science-Education.xlsx) 
-*   [Excel: Data Service Providers](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Data-Service-Providers.xlsx) 
-*   [Excel: AI Firms](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/AI-Firms.xlsx)
+*   [Excel: Postsecondary Education Institutions](/uploads/Data-Science-Education.xlsx)
+*   [Excel: Data Service Providers](/uploads/Data-Service-Providers.xlsx)
+*   [Excel: AI Firms](/uploads/AI-Firms.xlsx)

@@ -2,7 +2,7 @@
 title: "Environmental Scan: Canadian Postsecondary Education and AI Ethics"
 date: 2020-12-17T18:33:09
 author: Ali Milad
-picture: https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/06/jared-arango-1-mh6U3qeGQ-unsplash-scaled.jpg
+picture: /uploads/jared-arango-1-mh6U3qeGQ-unsplash-scaled.jpg
 altTag: |-
   Abstract Image
 excerpt: |-
@@ -32,7 +32,7 @@ The PSE portion of the environmental scan identified 46 AI-related programs acro
 
 ## **Examples of Ethical AI Courses**
 
-{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/UBC-logo.png", "UBC logo", "right", "top" %}
+{% imageAndText "/uploads/UBC-logo.png", "UBC logo", "right", "top" %}
 
 ### **University of British Columbia**
 
@@ -48,7 +48,7 @@ The legal, ethical, and security issues concerning data, including aggregated da
 
 {% endimageAndText %}
 
-{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/SFU.png", "SFU logo", "right", "top" %}
+{% imageAndText "/uploads/SFU.png", "SFU logo", "right", "top" %}
 
 ### **Simon Fraser University**
 
@@ -62,7 +62,7 @@ An examination of social processes that are being automated and implications for
 
 {% endimageAndText %}
 
-{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Queens.png", "Queen's University logo", "right", "top" %}
+{% imageAndText "/uploads/Queens.png", "Queen's University logo", "right", "top" %}
 
 ### **Queen’s University**
 
@@ -76,7 +76,7 @@ This course explores the profound implications of AI on business and society. Th
 
 {% endimageAndText %}
 
-{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/UofT-e1608249714254.png", "University of Toronto logo", "right", "top" %}
+{% imageAndText "/uploads/UofT-e1608249714254.png", "University of Toronto logo", "right", "top" %}
 
 ### **University of Toronto**
 
@@ -90,7 +90,7 @@ Machine learning systems are becoming increasingly important in many domains whe
 
 {% endimageAndText %}
 
-{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/York.png", "York University logo", "right", "top" %}
+{% imageAndText "/uploads/York.png", "York University logo", "right", "top" %}
 
 ### **York University**
 
@@ -106,7 +106,7 @@ This course is intended for students with professional interest in the social an
 
 {% endimageAndText %}
 
-{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Western.png", "University of Western Ontario logo", "right", "top" %}
+{% imageAndText "/uploads/Western.png", "University of Western Ontario logo", "right", "top" %}
 
 ### ****University of Western Ontario****
 
@@ -120,7 +120,7 @@ As we increasingly create a society where people have to interact with various a
 
 {% endimageAndText %}
 
-{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/UofW.png", "University of Waterloo logo", "right", "top" %}
+{% imageAndText "/uploads/UofW.png", "University of Waterloo logo", "right", "top" %}
 
 ### ******University of Waterloo******
 
@@ -136,7 +136,7 @@ Students must complete a 3-day workshop on Ethics in Data Science & Artificial I
 
 {% endimageAndText %}
 
-{% imageAndText "https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/OTU-e1608250233884.png", "Ontario Tech University logo", "right", "top" %}
+{% imageAndText "/uploads/OTU-e1608250233884.png", "Ontario Tech University logo", "right", "top" %}
 
 ### ********Ontario Tech University********
 
@@ -161,14 +161,14 @@ The development of laws and social mechanisms has not kept pace with the rapid d
 
 We are pleased to share the findings of this scan through the following accessible formats: 
 
-*   [Word: Ethical AI in the Data Ecosystem](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem.docx)
-*   [PDF: Ethical AI in the Data Ecosystem](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem.pdf)
-*   [PowerPoint: Ethical AI in the Data Ecosystem (with audio)](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan.pptx)
+*   [Word: Ethical AI in the Data Ecosystem](/uploads/Ethical-AI-in-the-Data-Ecosystem.docx)
+*   [PDF: Ethical AI in the Data Ecosystem](/uploads/Ethical-AI-in-the-Data-Ecosystem.pdf)
+*   [PowerPoint: Ethical AI in the Data Ecosystem (with audio)](/uploads/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan.pptx)
 *   [Video: Ethical AI in the Data Ecosystem](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan_Final.mp4)
 *   [YouTube video: Ethical AI in the Data Ecosystem](https://youtu.be/NCjqn3QNmMM) 
 
 We have also compiled lists of stakeholders identified during the scan for their proactive stance regarding data ethics and ethical AI:
 
-*   [Excel: Postsecondary Education Institutions](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Data-Science-Education.xlsx) 
-*   [Excel: Data Service Providers](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/Data-Service-Providers.xlsx) 
-*   [Excel: AI Firms](https://wecount-cms.inclusivedesign.ca/wp-content/uploads/2020/12/AI-Firms.xlsx)
+*   [Excel: Postsecondary Education Institutions](/uploads/Data-Science-Education.xlsx) 
+*   [Excel: Data Service Providers](/uploads/Data-Service-Providers.xlsx) 
+*   [Excel: AI Firms](/uploads/AI-Firms.xlsx)
