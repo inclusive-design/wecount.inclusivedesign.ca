@@ -196,6 +196,7 @@ CMS.registerEditorComponent({
 			.replace("aria-expanded=\"false\"", "aria-expanded=\"true\"");
 	}
 });
+
 CMS.registerEditorComponent({
 	id: "image-and-text",
 	label: "Image and Text",
@@ -250,6 +251,7 @@ CMS.registerEditorComponent({
 		return imageAndTextShortcode(content, src, alt, imagePosition, verticalAlignment);
 	}
 });
+
 CMS.registerEditorComponent({
 	id: "youtube",
 	label: "YouTube Embed",
@@ -271,3 +273,34 @@ CMS.registerEditorComponent({
 		);
 	}
 });
+
+CMS.registerEditorComponent({
+	label: "File",
+	id: "file",
+	fromBlock: match =>
+		match && {
+			file: match[2],
+			text: match[1],
+		},
+	toBlock: ({ text, file }) =>
+		`[${text || ""}](${file || ""})`,
+	toPreview: (obj) => {
+		return <a href={obj.file || ""}>{obj.text}</a>;
+	},
+	pattern: /^\[(.*)\]\((.*?)\)$/,
+	fields: [
+		{
+			label: "File",
+			name: "file",
+			widget: "file",
+			media_library: {
+				allow_multiple: false,
+			},
+		},
+		{
+			label: "Link Text",
+			name: "text",
+		}
+	],
+});
+
