@@ -28,13 +28,10 @@
     "lint-fix:js": "npm run lint:js -- --fix",
     "lint-fix:md": "npm run lint:md -- --fix",
     "lint-fix": "run-s lint-fix:*",
-    "migrate:wp": "cross-env CONTEXT=production run-s build wp:*",
     "release:major": "release major",
     "release:minor": "release minor",
     "release:patch": "release patch",
-    "prepare": "husky install",
-    "wp:news": "cp dist/wp-news/*.md src/collections/news",
-    "wp:views": "cp dist/wp-views/*.md src/collections/views"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
