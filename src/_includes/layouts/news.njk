@@ -13,17 +13,17 @@ pagination:
 
 {% block content %}
 <article class="news">
-    <h1>{{ title }}</h1>
-        {{ content | safe }}
-    <div class="news-grid">
-      {% for item in pagination.items %}
-      <div class="api-content">
-      {% include 'components/grid-item.njk' %}
-      </div>
-      {% endfor %}
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+  <div class="news-grid">
+    {% for item in pagination.items %}
+    <div class="api-content">
+    {% include 'components/grid-item.njk' %}
     </div>
-    {% if pagination.pages.length > 1 %}
-      {% include 'components/pagination.njk' %}
-    {% endif %}
+    {% endfor %}
+  </div>
+  {% if pagination.pages.length > 1 %}
+    {% include 'components/pagination.njk' %}
+  {% endif %}
 </article>
 {% endblock %}
