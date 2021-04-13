@@ -47,7 +47,8 @@ permalink: index.json
   {
     "title": {{ item.data.title | dump | safe }},
     "content": {{ item.templateContent | dump | safe }},
-    "excerpt": {{ item.data.excerpt | dump | safe }}
+    "excerpt": {{ item.data.excerpt | dump | safe }},
+    "url": {{ item.url | dump | safe }}
   }{% if not loop.last %},{% endif %}
 {%- endfor %}
 ]
