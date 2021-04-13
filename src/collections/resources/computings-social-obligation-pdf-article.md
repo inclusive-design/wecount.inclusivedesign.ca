@@ -8,7 +8,6 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Computing's%20social%20obligation.pdf"
-summary: |-
-  An opinion piece on the need to integrate ethics in undergraduate computer science programs and for data scientists to view themselves as social activists.
+summary: "An opinion piece on the need to integrate ethics in undergraduate computer science programs and for data scientists to view themselves as social activists. "
 ---
 

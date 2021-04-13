@@ -10,7 +10,6 @@ openSource: false
 link: "http://gendershades.org/overview.html"
 keywords: []
 learnTags: ["fairness","bias","dataTools","machineLearning","methods","business","researchCentre"]
-summary: |-
-  An overview of how the Gender Shades project evaluates the accuracy of AI-powered gender classification systems.
+summary: "An overview of how the Gender Shades project evaluates the accuracy of AI-powered gender classification systems. "
 ---
 

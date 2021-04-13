@@ -10,7 +10,6 @@ openSource: false
 link: "https://www.montrealdeclaration-responsibleai.com/context"
 keywords: []
 learnTags: ["ethics","fairness","machineLearning","education","inclusivePractice","researchCentre","canadianLandscape"]
-summary: |-
-  The Montréal Declaration is a collective endeavour that aims to steer the development of AI to support the common good and guide social change by making recommendations.
+summary: "The Montréal Declaration is a collective endeavour that aims to steer the development of AI to support the common good and guide social change by making recommendations. "
 ---
 

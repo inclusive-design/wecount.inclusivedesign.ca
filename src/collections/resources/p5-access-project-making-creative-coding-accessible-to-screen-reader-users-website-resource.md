@@ -8,7 +8,6 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/NYU%20Ability%20Project.pdf"
-summary: |-
-  This project is an attempt to level the playing field with people who have low vision or blindness and want to learn to code.
+summary: "This project is an attempt to level the playing field with people who have low vision or blindness and want to learn to code. "
 ---
 

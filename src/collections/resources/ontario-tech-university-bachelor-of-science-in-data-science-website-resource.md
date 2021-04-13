@@ -10,7 +10,6 @@ openSource: false
 link: "https://ontariotechu.ca/programs/science/data-science.php"
 keywords: []
 learnTags: ["ethics","fairness","machineLearning","education","inclusivePractice","canadianLandscape"]
-summary: |-
-  Computer science students in the data science specialization develop critical problem-solving, analytical and computational skills that enables students to turn vast quantities of data into insight.
+summary: "Computer science students in the data science specialization develop critical problem-solving, analytical and computational skills that enables students to turn vast quantities of data into insight. "
 ---
 

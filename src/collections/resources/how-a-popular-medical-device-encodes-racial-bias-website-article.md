@@ -10,7 +10,6 @@ openSource: false
 link: "http://bostonreview.net/science-nature-race/amy-moran-thomas-how-popular-medical-device-encodes-racial-bias"
 keywords: []
 learnTags: ["ethics","fairness","trust","bias","notForProfit"]
-summary: |-
-  An article about how pulse oximeters give biased results for people with darker skin, which prompted a follow-up study. 
+summary: "An article about how pulse oximeters give biased results for people with darker skin, which prompted a follow-up study.  "
 ---
 

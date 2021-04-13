@@ -8,8 +8,7 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Counterfactual%20Fairness.pdf"
-summary: |-
-  A machine learning framework for modelling fairness using tools from causal inference.
+summary: "A machine learning framework for modelling fairness using tools from causal inference. "
 ---
 Machine learning can impact people with legal or ethical consequences when
 it is used to automate decisions in areas such as insurance, lending, hiring, and

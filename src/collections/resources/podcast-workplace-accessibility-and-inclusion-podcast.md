@@ -10,8 +10,7 @@ openSource: false
 link: "https://peatworks.org/podcast-workplace-accessibility-and-inclusion/"
 keywords: []
 learnTags: ["business","employment","inclusivePractice"]
-summary: |-
-  A podcast that explores the white paper &quot;Amplify Accessibility&quot; and methods for implementing the Web Content Accessibility Guidelines (WCAG).
+summary: "A podcast that explores the white paper \"Amplify Accessibility\" and methods for implementing the Web Content Accessibility Guidelines (WCAG). "
 ---
 Future of Work Podcast, Episode 9.
 

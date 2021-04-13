@@ -8,8 +8,7 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20Algorithm%20Audit.pdf?csf=1&web=1&e=sAFVQV"
-summary: |-
-  An article that proposes an auditing framework to guide the ethical assessment of an algorithm. 
+summary: "An article that proposes an auditing framework to guide the ethical assessment of an algorithm.  "
 ---
 In recent years, the ethical impact of AI has been increasingly scrutinized, with public scandals emerging over biased
 outcomes, lack of transparency, and the misuse of data. This has led to a growing mistrust of AI and increased calls for

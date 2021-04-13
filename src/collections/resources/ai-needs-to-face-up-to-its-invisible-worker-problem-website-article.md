@@ -10,7 +10,6 @@ openSource: false
 link: "https://www.technologyreview.com/2020/12/11/1014081/ai-machine-learning-crowd-gig-worker-problem-amazon-mechanical-turk/"
 keywords: []
 learnTags: ["ethics","fairness","business","employment"]
-summary: |-
-  Through an interview with Saiph Savage, this article explores how machine-learning models are trained by exploited, low-paid online gig workers.
+summary: "Through an interview with Saiph Savage, this article explores how machine-learning models are trained by exploited, low-paid online gig workers. "
 ---
 

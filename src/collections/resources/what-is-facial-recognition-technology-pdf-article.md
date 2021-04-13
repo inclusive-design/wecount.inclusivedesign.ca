@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.ajl.org/facial-recognition-technology"
 keywords: []
 learnTags: ["ethics","bias","dataTools","machineLearning","government","business","basicAI","notForProfit"]
-summary: |-
-  An overview of facial recognition technology and how it is used by the government and the private sector.
+summary: "An overview of facial recognition technology and how it is used by the government and the private sector. "
 ---
 

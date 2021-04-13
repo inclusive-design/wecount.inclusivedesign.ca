@@ -10,7 +10,6 @@ openSource: false
 link: "https://engineering.linkedin.com/blog/2020/lift-addressing-bias-in-large-scale-ai-applications"
 keywords: []
 learnTags: ["ethics","fairness","framework","bias","dataTools","solution","business","employment","inclusivePractice"]
-summary: |-
-  An introduction to the LinkedIn Fairness Toolkit (LiFT), an open source toolkit that provides a framework for measuring fairness in large-scale machine learning workflows. 
+summary: "An introduction to the LinkedIn Fairness Toolkit (LiFT), an open source toolkit that provides a framework for measuring fairness in large-scale machine learning workflows.  "
 ---
 

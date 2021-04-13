@@ -10,7 +10,6 @@ openSource: false
 link: "https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-accessibility-creating-reports"
 keywords: []
 learnTags: ["dataTools","machineLearning","methods"]
-summary: |-
-  This resource describes the accessibility features, tools, tips and considerations for creating accessible reports in Power BI.
+summary: "This resource describes the accessibility features, tools, tips and considerations for creating accessible reports in Power BI. "
 ---
 

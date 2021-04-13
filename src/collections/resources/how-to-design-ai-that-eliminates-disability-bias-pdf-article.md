@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.ft.com/content/f5bd21da-33b8-11ea-a329-0bcf87a328f2"
 keywords: []
 learnTags: ["ethics","fairness","disability","bias"]
-summary: |-
-  An article that highlights examples of AI-related bias against people with disabilities.
+summary: "An article that highlights examples of AI-related bias against people with disabilities. "
 ---
 

@@ -10,8 +10,7 @@ openSource: false
 link: "https://sites.research.google/euphonia/about/"
 keywords: []
 learnTags: ["disability","dataset","smallData","dataTools","solution","methods","inclusivePractice"]
-summary: |-
-  A Google AI research project that aims to collect speech samples from people with dysarthric speech to improve speech recognition models.
+summary: "A Google AI research project that aims to collect speech samples from people with dysarthric speech to improve speech recognition models. "
 ---
 For millions of people around the world whose speech is difficult for others to understand, face-to-face communication can be very challenging.
 

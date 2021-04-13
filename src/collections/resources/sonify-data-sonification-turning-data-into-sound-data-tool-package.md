@@ -10,7 +10,6 @@ openSource: true
 link: "https://cran.r-project.org/web/packages/sonify/index.html"
 keywords: []
 learnTags: ["dataTools","machineLearning","methods"]
-summary: |-
-  This Sonify package provides a substitute for R&#39;s plot function to simplify data analysis for the visually impaired.
+summary: "This Sonify package provides a substitute for R's plot function to simplify data analysis for the visually impaired. "
 ---
 

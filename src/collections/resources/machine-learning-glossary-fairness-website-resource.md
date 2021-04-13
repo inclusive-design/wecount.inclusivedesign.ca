@@ -10,7 +10,6 @@ openSource: false
 link: "https://developers.google.com/machine-learning/glossary/fairness"
 keywords: []
 learnTags: ["fairness","bias"]
-summary: |-
-  A glossary of machine learning terms related to fairness and bias.
+summary: "A glossary of machine learning terms related to fairness and bias. "
 ---
 

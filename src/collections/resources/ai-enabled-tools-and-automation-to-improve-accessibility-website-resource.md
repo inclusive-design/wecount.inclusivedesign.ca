@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.ibm.com/able/dynamic-assessment-plug-in.html"
 keywords: []
 learnTags: ["disability","dataTools","solution","inclusivePractice"]
-summary: |-
-  The IBM Accessibility Research team is focused helping development teams seamlessly integrate accessibility into the development process using a suite of IBM Automated Accessibility Tools.
+summary: "The IBM Accessibility Research team is focused helping development teams seamlessly integrate accessibility into the development process using a suite of IBM Automated Accessibility Tools. "
 ---
 

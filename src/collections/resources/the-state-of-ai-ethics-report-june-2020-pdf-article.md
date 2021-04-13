@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/S
 link: "https://montrealethics.ai/wp-content/uploads/2020/06/State-of-AI-Ethics-June-2020-report.pdf"
 keywords: []
 learnTags: ["ethics","fairness","trust","bias","researchCentre"]
-summary: |-
-  This MAIEI report captures the most relevant developments in AI ethics as of June 2020.
+summary: "This MAIEI report captures the most relevant developments in AI ethics as of June 2020. "
 ---
 

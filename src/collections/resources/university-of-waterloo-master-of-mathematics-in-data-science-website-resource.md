@@ -10,7 +10,6 @@ openSource: false
 link: "https://uwaterloo.ca/graduate-studies-academic-calendar/mathematics/data-science/master-mathematics-mmath-data-science"
 keywords: []
 learnTags: ["ethics","fairness","machineLearning","education","inclusivePractice","canadianLandscape"]
-summary: |-
-  The Master&#39;s of Mathematics (MMath) in Data Science is a research-based thesis master’s program. The principal degree requirements are four courses and a thesis.
+summary: "The Master's of Mathematics (MMath) in Data Science is a research-based thesis master’s program. The principal degree requirements are four courses and a thesis. "
 ---
 

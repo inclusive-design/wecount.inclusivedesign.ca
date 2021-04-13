@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/S
 link: "https://link.springer.com/article/10.1007/s43681-020-00004-5"
 keywords: []
 learnTags: ["fairness","disability","bias","basicAI"]
-summary: |-
-  An opinion piece that explores the day-to-day realities of how AI can support, and frustrate, disabled people, drawing conclusions about how AI might best be developed in the future.
+summary: "An opinion piece that explores the day-to-day realities of how AI can support, and frustrate, disabled people, drawing conclusions about how AI might best be developed in the future. "
 ---
 

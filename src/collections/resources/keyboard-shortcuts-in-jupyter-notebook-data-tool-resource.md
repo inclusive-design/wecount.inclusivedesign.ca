@@ -10,7 +10,6 @@ openSource: true
 link: "https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#keyboard-shortcuts"
 keywords: []
 learnTags: ["dataTools","machineLearning","methods"]
-summary: |-
-  Instructions for using keyboard shortcuts in Jupyter Notebook.
+summary: "Instructions for using keyboard shortcuts in Jupyter Notebook. "
 ---
 

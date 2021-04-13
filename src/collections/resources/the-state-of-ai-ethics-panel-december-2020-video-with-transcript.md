@@ -10,7 +10,6 @@ openSource: false
 link: "https://youtu.be/EcHKGhTxd8s"
 keywords: []
 learnTags: ["ethics","fairness","trust","bias","researchCentre"]
-summary: |-
-  An MAIEI panel on developments in AI ethics at the end of 2020.
+summary: "An MAIEI panel on developments in AI ethics at the end of 2020. "
 ---
 

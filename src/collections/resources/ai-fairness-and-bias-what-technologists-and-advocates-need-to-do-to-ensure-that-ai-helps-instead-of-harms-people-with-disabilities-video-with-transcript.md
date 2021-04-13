@@ -10,7 +10,6 @@ openSource: false
 link: "https://sighttechglobal.com/session/ai-fairness-and-bias-what-technologists-and-advocates-need-to-do-to-ensure-that-ai-helps-instead-of-harms-people-with-disabilities/"
 keywords: []
 learnTags: ["ethics","fairness","trust","disability","bias"]
-summary: |-
-  A Sight Tech Global 2020 panel that looks at examples of where AI technologies inject bias against people with disabilities and offers approaches to help address these issues from the ground up.
+summary: "A Sight Tech Global 2020 panel that looks at examples of where AI technologies inject bias against people with disabilities and offers approaches to help address these issues from the ground up. "
 ---
 

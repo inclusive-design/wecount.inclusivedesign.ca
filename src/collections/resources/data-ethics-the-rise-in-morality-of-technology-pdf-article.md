@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://wfanet.org/leadership/data-ethics-report"
 keywords: []
 learnTags: ["ethics","business"]
-summary: |-
-  A report that promotes industry-wide adoption of data ethics principles into company policy, raising awareness and empowering responsible decision-making.
+summary: "A report that promotes industry-wide adoption of data ethics principles into company policy, raising awareness and empowering responsible decision-making. "
 ---
 

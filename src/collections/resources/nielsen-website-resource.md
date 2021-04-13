@@ -10,7 +10,6 @@ openSource: false
 link: "https://www.nielsen.com/ca/en/"
 keywords: []
 learnTags: ["disability","dataset","dataBroker","smallData","inclusivePractice","canadianLandscape"]
-summary: |-
-  Leading global company that provides data, solutions and insights for decision-making for manufacturers and retailers.
+summary: "Leading global company that provides data, solutions and insights for decision-making for manufacturers and retailers. "
 ---
 

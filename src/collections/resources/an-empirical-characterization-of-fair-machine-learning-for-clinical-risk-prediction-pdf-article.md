@@ -8,8 +8,7 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/An%20Empirical%20Characterization%20of%20Fair%20Machine%20Learning%20For%20Clinical%20Risk%20Prediction.pdf?csf=1&web=1&e=Y1fKOs"
-summary: |-
-  A study by researchers from Stanford University concludes that the use of machine learning to guide clinical decision-making has the potential to worsen existing health disparities.
+summary: "A study by researchers from Stanford University concludes that the use of machine learning to guide clinical decision-making has the potential to worsen existing health disparities. "
 ---
 The use of machine learning to guide clinical decision making has the potential to worsen existing health
 disparities. Several recent works frame the problem as that of algorithmic fairness, a framework that has

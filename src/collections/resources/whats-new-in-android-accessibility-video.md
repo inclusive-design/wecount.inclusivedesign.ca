@@ -10,7 +10,6 @@ openSource: true
 link: "https://www.youtube.com/watch?v=Lcoc4aCLfqI&list=PLOU2XLYxmsIInFRc3M44HUTQc3b_YJ4-Y&index=12&t=0s"
 keywords: []
 learnTags: ["disability","dataTools","solution"]
-summary: |-
-  A video from Google I/O &#39;18 that covers the latest feature additions to Android P, provides an update on accessibility testing and best practices, and discusses new APIs that developers can use to create more accessible app experiences. 
+summary: "A video from Google I/O '18 that covers the latest feature additions to Android P, provides an update on accessibility testing and best practices, and discusses new APIs that developers can use to create more accessible app experiences.  "
 ---
 

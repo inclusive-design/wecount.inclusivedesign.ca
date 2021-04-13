@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.tandfonline.com/doi/pdf/10.1080/09638237.2020.1714011?needAccess=true"
 keywords: []
 learnTags: ["ethics","fairness","disability","dataset","dataTools"]
-summary: |-
-  If AI is to be increasingly used in the treatment and care of people with mental health problems then, this article argues, patients, service users and carers should participate as experts in its design, research and development. 
+summary: "If AI is to be increasingly used in the treatment and care of people with mental health problems then, this article argues, patients, service users and carers should participate as experts in its design, research and development.  "
 ---
 

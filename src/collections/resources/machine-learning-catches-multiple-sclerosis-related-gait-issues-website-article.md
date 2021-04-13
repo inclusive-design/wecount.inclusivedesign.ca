@@ -10,8 +10,6 @@ openSource: false
 link: "https://healthitanalytics.com/news/machine-learning-catches-multiple-sclerosis-related-gait-issues"
 keywords: []
 learnTags: ["disability","machineLearning","methods"]
-summary: |-
-  A machine learning tool uses gait data to help clinicians monitor the progression of walking problems related to multiple sclerosis.
-
+summary: "A machine learning tool uses gait data to help clinicians monitor the progression of walking problems related to multiple sclerosis.  "
 ---
 

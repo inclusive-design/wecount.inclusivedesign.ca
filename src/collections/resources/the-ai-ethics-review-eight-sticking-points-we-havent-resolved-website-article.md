@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://diginomica.com/ai-ethics-review-eight-sticking-points-we-havent-resolved"
 keywords: []
 learnTags: ["ethics","fairness","framework","basicAI"]
-summary: |-
-  An article that reviews how AI has changed in the last few years and highlights the top ethical issues that have arisen.
+summary: "An article that reviews how AI has changed in the last few years and highlights the top ethical issues that have arisen. "
 ---
 

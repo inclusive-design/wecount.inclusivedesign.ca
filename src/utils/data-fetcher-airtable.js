@@ -52,7 +52,7 @@ module.exports = {
 						title: record.get("title"),
 						focus: record.get("focus"),
 						edited: record.get("edited"),
-						summary: record.get("summary"),
+						summary: record.get("summary") ? record.get("summary").replace(/\n/g, " ") : "",
 						readability: record.get("readability"),
 						source: record.get("source"),
 						abstract: record.get("abstract"),

@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.anaconda.com/state-of-data-science-2020"
 keywords: []
 learnTags: ["ethics","business","education","researchCentre"]
-summary: |-
-  A survey that highlights how data science is maturing in commerical environments and academic institutions are preparing data science students for the workplace.
+summary: "A survey that highlights how data science is maturing in commerical environments and academic institutions are preparing data science students for the workplace. "
 ---
 

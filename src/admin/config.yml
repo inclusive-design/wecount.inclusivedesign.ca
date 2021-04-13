@@ -88,3 +88,140 @@ collections:
         name: "previewImageAltText"
         widget: "string"
         required: false
+  - name: resources
+    label: Resources
+    label_singular: Resource
+    folder: "src/collections/resources"
+    sortable_fields: ['title']
+    editor:
+      preview: false
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Focus"
+        name: "focus"
+        widget: "select"
+        options:
+          - AI and Disability/Outliers
+          - AI Ethics/Policy
+          - Methods or Design
+          - Bias
+          - Data Science Education
+          - Data Set
+          - Employment
+          - Tool
+          - Connected Life 2018
+      - label: "Source"
+        name: "source"
+        widget: "string"
+      - label: "Readability"
+        name: "readability"
+        widget: "select"
+        multiple: true
+        options:
+          - { label: "Beginner", value: "B" }
+          - { label: "Intermediate", value: "I" }
+          - { label: "Expert", value: "E" }
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options:
+          - PDF Article
+          - Website Article
+          - Website Resource
+          - Website with Video
+          - Video
+          - Video with Transcript
+          - Podcast
+          - Blog
+          - Data Tool Resource
+          - Data Tool Package
+          - Online Learning (MOOC)
+          - Slide Deck
+      - label: "Tool Purpose"
+        name: "toolPurpose"
+        widget: "select"
+        multiple: true
+        required: false
+        options:
+          - Create Content
+          - Consume Content
+          - Create Accessible Content
+      - label: "Tool Accessibility Issues"
+        name: "toolAccessibilityIssues"
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - General Accessibility
+          - Keyboard Accessibility
+          - Visual Enhancements
+          - Screen Reader
+          - Braille
+          - Chart Data Extraction
+          - JAWS
+          - VoiceOver
+          - NVDA
+          - Sonified Graphs
+          - Tactile Graphs
+      - label: Open Source
+        name: openSource
+        widget: boolean
+        default: false
+        required: false
+      - label: SharePoint URL
+        name: sharePointUrl
+        widget: string
+        required: false
+      - label: External Link
+        name: link
+        widget: string
+        required: false
+      - label: Keywords
+        name: keywords
+        widget: list
+        required: false
+      - label: "Learn Tags"
+        name: learnTags
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { value: "ethics", label: "Ethics"}
+          - { value: "fairness", label: "Fairness"}
+          - { value: "trust", label: "Trust"}
+          - { value: "disability", label: "Disability"}
+          - { value: "framework", label: "Framework"}
+          - { value: "dataset", label: "Data Collection/Data Set"}
+          - { value: "dataBroker", label: "Data Broker"}
+          - { value: "smallData", label: "Small Data"}
+          - { value: "bias", label: "Bias"}
+          - { value: "dataTools", label: "Data Tools"}
+          - { value: "solution", label: "Solution"}
+          - { value: "machineLearning", label: "Machine Learning"}
+          - { value: "methods", label: "Design/Methods"}
+          - { value: "government", label: "Government"}
+          - { value: "business", label: "Business"}
+          - { value: "basicAI", label: "Basic AI"}
+          - { value: "education", label: "Education"}
+          - { value: "employment", label: "Employment"}
+          - { value: "inclusivePractice", label: "Inclusive Practice"}
+          - { value: "notForProfit", label: "Not-for-Profit"}
+          - { value: "researchCentre", label: "Research Centre"}
+          - { value: "canadianLandscape", label: "Canadian Landscape"}
+      - label: Summary
+        name: summary
+        widget: markdown
+        minimal: true
+        buttons: ["bold", "italic"]
+        editor_components: []
+        required: false
+      - label: Abstract
+        name: body
+        widget: markdown
+        minimal: true
+        buttons: ["bold", "italic", "link"]
+        editor_components: []
+        required: false
+

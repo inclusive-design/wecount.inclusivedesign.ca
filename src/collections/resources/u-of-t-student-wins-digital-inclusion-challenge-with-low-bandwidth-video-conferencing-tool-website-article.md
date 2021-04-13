@@ -10,7 +10,6 @@ openSource: false
 link: "https://www.utoronto.ca/news/u-t-student-wins-digital-inclusion-challenge-low-bandwidth-video-conferencing-tool"
 keywords: []
 learnTags: ["fairness","dataTools","solution","machineLearning","methods","inclusivePractice"]
-summary: |-
-  A group of students have developed an innovative solution for low-bandwidth issues in northern communities that have made mental health resources difficult for community members to access.
+summary: "A group of students have developed an innovative solution for low-bandwidth issues in northern communities that have made mental health resources difficult for community members to access. "
 ---
 

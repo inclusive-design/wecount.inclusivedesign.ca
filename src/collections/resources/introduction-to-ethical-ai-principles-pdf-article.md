@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/S
 link: "https://montrealethics.ai/introduction-to-ethical-ai-principles/"
 keywords: []
 learnTags: ["ethics","basicAI","researchCentre"]
-summary: |-
-  An overview of six primary principles of ethical AI: fairness, accountability, human agency, transparency, privacy and respect to human rights.
+summary: "An overview of six primary principles of ethical AI: fairness, accountability, human agency, transparency, privacy and respect to human rights. "
 ---
 

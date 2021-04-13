@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.technologyreview.com/s/615400/trustworthy-ai-is-a-framework-to-help-manage-unique-risk/"
 keywords: []
 learnTags: ["ethics","fairness","trust","framework","methods","government","business"]
-summary: |-
-  Deloitte’s Trustworthy AI framework introduces six key dimensions that can help safeguard ethics and build a trustworthy AI strategy when considered collectively in the design, development, deployment, and operational phases of AI system implementation.
+summary: "Deloitte’s Trustworthy AI framework introduces six key dimensions that can help safeguard ethics and build a trustworthy AI strategy when considered collectively in the design, development, deployment, and operational phases of AI system implementation. "
 ---
 With the continued rapid expansion of artificial intelligence, businesses are facing challenges that are more human than machine.

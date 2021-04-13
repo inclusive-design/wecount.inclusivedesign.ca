@@ -10,7 +10,6 @@ openSource: false
 link: "https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G"
 keywords: []
 learnTags: ["fairness","bias","business","employment"]
-summary: |-
-  An exploration of Amazon&#39;s problematic AI recruiting tool and the need to scrap the project.
+summary: "An exploration of Amazon's problematic AI recruiting tool and the need to scrap the project. "
 ---
 

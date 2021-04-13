@@ -8,8 +8,7 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Towards%20an%20Inclusive%20AI%20Design.pdf"
-summary: |-
-  This article demonstrates how using a co-creative model, virtual meetings and physical engagement in AI design research can be more inclusive for those who do not traditionally participate due to race, gender, computer literacy and geography.
+summary: "This article demonstrates how using a co-creative model, virtual meetings and physical engagement in AI design research can be more inclusive for those who do not traditionally participate due to race, gender, computer literacy and geography. "
 ---
 We share two prototypes that explore different aspects of
 the design and application of inclusive AI. This approach to

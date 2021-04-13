@@ -10,7 +10,6 @@ openSource: false
 link: "https://www.nytimes.com/2020/12/22/health/oximeters-covid-black-patients.html"
 keywords: []
 learnTags: ["ethics","fairness","trust","bias"]
-summary: |-
-  A study showed that pulse oximeter devices, which measure oxygen levels in the blood, were three times more likely to give misleading readings among Black patients.
+summary: "A study showed that pulse oximeter devices, which measure oxygen levels in the blood, were three times more likely to give misleading readings among Black patients. "
 ---
 

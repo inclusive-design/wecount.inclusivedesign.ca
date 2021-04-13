@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/S
 link: "https://spectrum.library.concordia.ca/986506/7/Indigenous_Protocol_and_AI_2020.pdf"
 keywords: []
 learnTags: ["ethics","trust","framework"]
-summary: |-
-  A position paper that offers a range of ideas to take into consideration when entering into conversations that prioritize Indigenous perspectives in AI development.
+summary: "A position paper that offers a range of ideas to take into consideration when entering into conversations that prioritize Indigenous perspectives in AI development. "
 ---
 

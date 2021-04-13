@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.brookings.edu/research/ai-needs-more-regulation-not-less/"
 keywords: []
 learnTags: ["ethics","fairness","framework"]
-summary: |-
-  This article argues that the path forward for AI technology is not deregulation or prohibitions, but smart, proactive regulation that establishes a framework for both public protection and innovative growth.
+summary: "This article argues that the path forward for AI technology is not deregulation or prohibitions, but smart, proactive regulation that establishes a framework for both public protection and innovative growth. "
 ---
 

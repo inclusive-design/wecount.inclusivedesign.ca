@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.financialexpress.com/opinion/turning-brain-activity-to-text-with-ai-time-for-nations-to-debate-what-is-ethical-and-what-isnt/1918479/"
 keywords: []
 learnTags: ["ethics","fairness","disability","government"]
-summary: |-
-  Using AI to decode brain activity is useful for patients with speech disabilities, but as the article explains, ethical questions abound in the long term and need to be addressed.
+summary: "Using AI to decode brain activity is useful for patients with speech disabilities, but as the article explains, ethical questions abound in the long term and need to be addressed. "
 ---
 

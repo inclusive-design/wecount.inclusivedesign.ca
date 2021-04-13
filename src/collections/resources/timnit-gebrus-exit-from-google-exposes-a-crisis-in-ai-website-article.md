@@ -10,7 +10,6 @@ openSource: false
 link: "https://www.wired.com/story/timnit-gebru-exit-google-exposes-crisis-in-ai/"
 keywords: []
 learnTags: ["ethics","fairness","trust","bias","business"]
-summary: |-
-  Two Googlers argue that Timnit Gebru&#39;s exit from Google reveals systemic and highly problematic crises in the AI field.
+summary: "Two Googlers argue that Timnit Gebru's exit from Google reveals systemic and highly problematic crises in the AI field. "
 ---
 

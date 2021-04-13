@@ -10,7 +10,6 @@ openSource: false
 link: "https://points.datasociety.net/artificial-intelligence-human-rights-a-workshop-at-data-society-fd6358d72149"
 keywords: []
 learnTags: ["ethics","fairness","bias","government","business","education","researchCentre"]
-summary: |-
-  A summary of the multidisciplinary Workshop on Artificial Intelligence and Human Rights at the Data and Society Research Institute in New York.
+summary: "A summary of the multidisciplinary Workshop on Artificial Intelligence and Human Rights at the Data and Society Research Institute in New York. "
 ---
 

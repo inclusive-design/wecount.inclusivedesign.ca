@@ -23,7 +23,6 @@ link: {{ resource.link | dump | safe }}
 keywords: {{ resource.keywords | dump | safe }}
 learnTags: {{ resource.learnTags | dump | safe }}
 {% endif -%}
-summary: |-
-  {{ resource.summary -}}
+summary: {{ resource.summary | dump | safe }}
 ---
 {{ resource.abstract | safe }}

@@ -10,7 +10,6 @@ openSource: false
 link: "https://www.youtube.com/watch?v=TQHs8SA1qpk"
 keywords: []
 learnTags: ["ethics","disability","bias","business"]
-summary: |-
-  A detailed look at how deeply bias pervades even commonly used algorthms.
+summary: "A detailed look at how deeply bias pervades even commonly used algorthms. "
 ---
 

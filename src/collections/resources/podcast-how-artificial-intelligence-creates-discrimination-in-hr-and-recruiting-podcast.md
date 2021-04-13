@@ -10,8 +10,7 @@ openSource: false
 link: "https://peatworks.org/podcast-how-artificial-intelligence-creates-discrimination-in-hr-recruiting/"
 keywords: []
 learnTags: ["disability","bias","business","employment","inclusivePractice"]
-summary: |-
-  A podcast that looks at how artificial intelligence systems can be improved to better serve everyone, including people with disabilities.
+summary: "A podcast that looks at how artificial intelligence systems can be improved to better serve everyone, including people with disabilities. "
 ---
 Future of Work Podcast, Episode 2.
 

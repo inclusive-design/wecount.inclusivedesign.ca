@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.ajl.org/learn-more"
 keywords: []
 learnTags: ["ethics","fairness","bias","basicAI","notForProfit"]
-summary: |-
-  An overview of how AI systems are developed and how the harmful use of AI systems can be prevented.
+summary: "An overview of how AI systems are developed and how the harmful use of AI systems can be prevented. "
 ---
 

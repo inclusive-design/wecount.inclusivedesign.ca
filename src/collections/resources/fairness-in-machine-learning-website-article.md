@@ -10,7 +10,6 @@ openSource: false
 link: "http://sitn.hms.harvard.edu/uncategorized/2020/fairness-machine-learning/"
 keywords: []
 learnTags: ["ethics","fairness","bias","solution","machineLearning","methods"]
-summary: |-
-  An overview of the fairness problem in machine learning, including the cause of unfairness and possible solutions.
+summary: "An overview of the fairness problem in machine learning, including the cause of unfairness and possible solutions. "
 ---
 

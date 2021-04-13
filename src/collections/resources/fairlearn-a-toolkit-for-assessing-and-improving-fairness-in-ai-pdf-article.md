@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.microsoft.com/en-us/research/uploads/prod/2020/05/Fairlearn_whitepaper.pdf"
 keywords: []
 learnTags: ["fairness","trust","framework","bias","dataTools","solution","methods","inclusivePractice"]
-summary: |-
-  Fairlearn is an open source toolkit that empowers data scientists and developers to assess and improve the fairness of their AI systems through an interactive visualization dashboard and unfairness mitigation algorithms. 
+summary: "Fairlearn is an open source toolkit that empowers data scientists and developers to assess and improve the fairness of their AI systems through an interactive visualization dashboard and unfairness mitigation algorithms.  "
 ---
 

@@ -10,6 +10,6 @@ openSource: false
 link: "https://fortune.com/2021/01/31/ai-ethics-why-companies-are-thinking-twice-artificial-intelligence/"
 keywords: []
 learnTags: []
-summary: |-
-  ---
+summary: ""
+---
 

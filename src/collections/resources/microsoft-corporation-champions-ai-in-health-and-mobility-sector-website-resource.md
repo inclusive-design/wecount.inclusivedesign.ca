@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%
 link: "https://www.accessandmobilityprofessional.com/microsoft-corporation-champions-ai-in-health-and-mobility-sector/"
 keywords: []
 learnTags: ["disability","basicAI"]
-summary: |-
-  An overview of five reasons why Microsoft believes artificial intelligence needs to be embraced, with a special focus on health and the disability community.
+summary: "An overview of five reasons why Microsoft believes artificial intelligence needs to be embraced, with a special focus on health and the disability community. "
 ---
 

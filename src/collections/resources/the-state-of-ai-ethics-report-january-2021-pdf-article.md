@@ -11,7 +11,6 @@ sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/S
 link: "https://montrealethics.ai/wp-content/uploads/2021/01/The-State-of-AI-Ethics-Report-January-2021.pdf"
 keywords: []
 learnTags: ["ethics","fairness","trust","bias","researchCentre"]
-summary: |-
-  This MAIEI report captures the most relevant developments in AI ethics as of January 2021.
+summary: "This MAIEI report captures the most relevant developments in AI ethics as of January 2021. "
 ---
 
