@@ -28,7 +28,26 @@ The Data Service Provider portion of the environmental scan identified 27 compan
 
 Companies usually offer a combination of services, such as provision, analysis, and software services. As such, companies were categorized into five classes:
 
-<table class="has-subtle-light-gray-background-color has-background"><thead><tr><th class="has-text-align-left" data-align="left"><strong>Classification</strong></th><th class="has-text-align-left" data-align="left"><strong>Description</strong></th><th class="has-text-align-left" data-align="left"><strong>Examples</strong></th><th class="has-text-align-left" data-align="left"><strong>% of Identified Companies</strong></th></tr></thead><tbody><tr><td class="has-text-align-left" data-align="left">Data Exchange</td><td class="has-text-align-left" data-align="left">A marketplace where data sets are purchased from data providers, usually in raw formats. This is where 2nd and 3rd party data are purchased. &nbsp;</td><td class="has-text-align-left" data-align="left">AWS Data Exchange &nbsp;</td><td class="has-text-align-left" data-align="left">4%</td></tr><tr><td class="has-text-align-left" data-align="left">Data Provider</td><td class="has-text-align-left" data-align="left">Any company that wishes to sell its data directly or on a data exchange. &nbsp;</td><td class="has-text-align-left" data-align="left">InfoCanada, Cleanlist, Direct Lead Data &nbsp;</td><td class="has-text-align-left" data-align="left">11%</td></tr><tr><td class="has-text-align-left" data-align="left">Data &amp; Insight Provider</td><td class="has-text-align-left" data-align="left">Offer 3rd party data sets and help curate and convert them into insights based on client needs. &nbsp;</td><td class="has-text-align-left" data-align="left">Pelmorex, Experian, AggregateIQ &nbsp;</td><td class="has-text-align-left" data-align="left"><strong>19%</strong></td></tr><tr><td class="has-text-align-left" data-align="left">Data Research &amp; Intelligence Partner</td><td class="has-text-align-left" data-align="left">Conduct their own research, such as surveys and focus groups. May also collect and curate data. Companies in this space usually have a client-facing consultatory practice. &nbsp;</td><td class="has-text-align-left" data-align="left">Kantar, Ipsos, Vividata &nbsp;</td><td class="has-text-align-left" data-align="left"><strong>22%</strong></td></tr><tr><td class="has-text-align-left" data-align="left">Data Solutions</td><td class="has-text-align-left" data-align="left">Offer a combination of data services, such as a data management platform (DMP), data exchange, data sets, analytic toolkits, data onboarding, and business services. &nbsp;</td><td class="has-text-align-left" data-align="left">Adobe Audience Manager, Liveramp, Salesforce &nbsp;</td><td class="has-text-align-left" data-align="left"><strong>44%</strong></td></tr></tbody></table>
+1. **Data Exchange** (4% of identified companies)  
+   _A marketplace where data sets are purchased from data providers, usually in raw formats. This is where 2nd and 3rd party data are purchased._
+
+   Examples: AWS Data Exchange
+2. **Data Provider** (11% of identified companies)  
+   _Any company that wishes to sell its data directly or on a data exchange._
+
+   Examples: InfoCanada, Cleanlist, Direct Lead Data
+3. **Data & Insight Provider (19% of identified companies)**  
+   _Offer 3rd party data sets and help curate and convert them into insights based on client needs._
+
+   Examples: Pelmorex, Experian, AggregateIQ
+4. **Data Research & Intelligence Partner (22% of identified companies)**  
+   _Conduct their own research, such as surveys and focus groups. May also collect and curate data. Companies in this space usually have a client-facing consultatory practice._
+
+   Examples: Kantar, Ipsos, Vividata
+5. **Data Solutions (44% of identified companies)**  
+   _Offer a combination of data services, such as a data management platform (DMP), data exchange, data sets, analytic toolkits, data onboarding, and business services._
+
+   Examples: Adobe Audience Manager, Liveramp, Salesforce
 
 It is worth noting that 85% of the identified companies help interpret and make sense of the data they provide (Data & Insight Providers, Data Research & Intelligence Partners, Data Solutions).
 
