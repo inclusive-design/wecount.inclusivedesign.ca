@@ -1,6 +1,6 @@
 // Communicate with Airtable APIs to access data
 const env = require("../_data/env");
-const learnTags = require("../_data/learnTags.json");
+const tags = require("../_data/resourceTags.json");
 const airtable = require("airtable");
 
 airtable.configure({
@@ -77,9 +77,9 @@ module.exports = {
 						}
 					}
 
-					Object.keys(learnTags).forEach(learnTag => {
-						if (record.get(learnTag)) {
-							resource.learnTags.push(learnTag);
+					tags.resourceTags.forEach(learnTag => {
+						if (record.get(learnTag.value)) {
+							resource.learnTags.push(learnTag.value);
 						}
 					});
 

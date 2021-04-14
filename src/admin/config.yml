@@ -174,17 +174,12 @@ collections:
         widget: "string"
       - label: "Focus"
         name: "focus"
-        widget: "select"
-        options:
-          - AI and Disability/Outliers
-          - AI Ethics/Policy
-          - Methods or Design
-          - Bias
-          - Data Science Education
-          - Data Set
-          - Employment
-          - Tool
-          - Connected Life 2018
+        widget: relation
+        collection: resourceMetadata
+        file: resourceFocuses
+        value_field: resourceFocuses.*.value
+        display_fields: [resourceFocuses.*.value]
+        search_fields: [resourceFocuses.*.value]
       - label: "Source"
         name: "source"
         widget: "string"
@@ -198,46 +193,33 @@ collections:
           - { label: "Expert", value: "E" }
       - label: "Type"
         name: "type"
-        widget: "select"
-        options:
-          - PDF Article
-          - Website Article
-          - Website Resource
-          - Website with Video
-          - Video
-          - Video with Transcript
-          - Podcast
-          - Blog
-          - Data Tool Resource
-          - Data Tool Package
-          - Online Learning (MOOC)
-          - Slide Deck
+        widget: relation
+        required: true
+        collection: resourceMetadata
+        file: resourceTypes
+        value_field: resourceTypes.*.value
+        display_fields: [resourceTypes.*.value]
+        search_fields: [resourceTypes.*.value]
       - label: "Tool Purpose"
         name: "toolPurpose"
-        widget: "select"
+        widget: relation
         multiple: true
         required: false
-        options:
-          - Create Content
-          - Consume Content
-          - Create Accessible Content
+        collection: resourceMetadata
+        file: toolPurposes
+        value_field: toolPurposes.*.value
+        display_fields: [toolPurposes.*.value]
+        search_fields: [toolPurposes.*.value]
       - label: "Tool Accessibility Issues"
         name: "toolAccessibilityIssues"
-        widget: select
+        widget: relation
         multiple: true
         required: false
-        options:
-          - General Accessibility
-          - Keyboard Accessibility
-          - Visual Enhancements
-          - Screen Reader
-          - Braille
-          - Chart Data Extraction
-          - JAWS
-          - VoiceOver
-          - NVDA
-          - Sonified Graphs
-          - Tactile Graphs
+        collection: resourceMetadata
+        file: toolAccessibilityIssues
+        value_field: toolAccessibilityIssues.*.value
+        display_fields: [toolAccessibilityIssues.*.value]
+        search_fields: [toolAccessibilityIssues.*.value]
       - label: Open Source
         name: openSource
         widget: boolean
@@ -257,32 +239,14 @@ collections:
         required: false
       - label: "Learn Tags"
         name: learnTags
-        widget: select
+        widget: relation
         multiple: true
+        collection: resourceMetadata
+        file: resourceTags
+        value_field: resourceTags.*.value
+        display_fields: [resourceTags.*.label]
+        search_fields: [resourceTags.*.label]
         required: false
-        options:
-          - { value: "ethics", label: "Ethics"}
-          - { value: "fairness", label: "Fairness"}
-          - { value: "trust", label: "Trust"}
-          - { value: "disability", label: "Disability"}
-          - { value: "framework", label: "Framework"}
-          - { value: "dataset", label: "Data Collection/Data Set"}
-          - { value: "dataBroker", label: "Data Broker"}
-          - { value: "smallData", label: "Small Data"}
-          - { value: "bias", label: "Bias"}
-          - { value: "dataTools", label: "Data Tools"}
-          - { value: "solution", label: "Solution"}
-          - { value: "machineLearning", label: "Machine Learning"}
-          - { value: "methods", label: "Design/Methods"}
-          - { value: "government", label: "Government"}
-          - { value: "business", label: "Business"}
-          - { value: "basicAI", label: "Basic AI"}
-          - { value: "education", label: "Education"}
-          - { value: "employment", label: "Employment"}
-          - { value: "inclusivePractice", label: "Inclusive Practice"}
-          - { value: "notForProfit", label: "Not-for-Profit"}
-          - { value: "researchCentre", label: "Research Centre"}
-          - { value: "canadianLandscape", label: "Canadian Landscape"}
       - label: Summary
         name: summary
         widget: markdown
@@ -297,4 +261,84 @@ collections:
         buttons: ["bold", "italic", "link"]
         editor_components: []
         required: false
-
+  - name: resourceMetadata
+    label: Resource Metadata
+    files:
+      - label: Resource Types
+        name: resourceTypes
+        file: "src/_data/resourceTypes.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Resource Types"
+            label_singular: "Resource Type"
+            name: "resourceTypes"
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+      - label: Resource Focuses
+        name: resourceFocuses
+        file: "src/_data/resourceFocuses.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Focuses"
+            label_singular: "Focus"
+            name: "resourceFocuses"
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+      - label: Tool Purposes
+        name: toolPurposes
+        file: "src/_data/toolPurposes.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Tool Purposes"
+            label_singular: "Tool Purpose"
+            name: "toolPurposes"
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+      - label: "Tool Accessibility Issues"
+        name: toolAccessibilityIssues
+        file: "src/_data/toolAccessibilityIssues.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Tool Accessibility Issues"
+            label_singular: "Accessibility Issue"
+            name: "toolAccessibilityIssues"
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+      - label: Resource Tags
+        name: resourceTags
+        file: "src/_data/resourceTags.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Resource Tags"
+            label_singular: "Resource Tag"
+            name: "resourceTags"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+              - label: "Label"
+                name: "label"
+                widget: "string"
