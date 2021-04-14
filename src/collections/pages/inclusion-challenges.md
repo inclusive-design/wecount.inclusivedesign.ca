@@ -9,6 +9,8 @@ menu_order: 3
 ---
 To achieve We Count’s goal of an inclusive and balanced data ecosystem for persons with disabilities, We Count is issuing an ongoing call for challenges.
 
+{% youtube "https://youtu.be/cEnONDRi-_U" %}
+
 A We Count Challenge is a data ecosystem inclusion problem that creates barriers to participation or other risks from things like:
 
 * **Exclusion from data sets** — ensures that decisions and knowledge based on data won’t take people with disabilities into account
