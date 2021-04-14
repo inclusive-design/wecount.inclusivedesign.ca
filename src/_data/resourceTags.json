@@ -1,68 +1,40 @@
 {
 	"resourceTags": [
 		{
-			"value": "ethics",
-			"label": "Ethics"
-		},
-		{
-			"value": "fairness",
-			"label": "Fairness"
-		},
-		{
-			"value": "trust",
-			"label": "Trust"
-		},
-		{
-			"value": "disability",
-			"label": "Disability"
-		},
-		{
-			"value": "framework",
-			"label": "Framework"
-		},
-		{
-			"value": "dataset",
-			"label": "Data Collection/Data Set"
-		},
-		{
-			"value": "dataBroker",
-			"label": "Data Broker"
-		},
-		{
-			"value": "smallData",
-			"label": "Small Data"
+			"value": "basicAI",
+			"label": "Basic AI"
 		},
 		{
 			"value": "bias",
 			"label": "Bias"
 		},
 		{
+			"value": "business",
+			"label": "Business"
+		},
+		{
+			"value": "canadianLandscape",
+			"label": "Canadian Landscape"
+		},
+		{
+			"value": "dataBroker",
+			"label": "Data Broker"
+		},
+		{
+			"value": "dataset",
+			"label": "Data Collection/Data Set"
+		},
+		{
 			"value": "dataTools",
 			"label": "Data Tools"
-		},
-		{
-			"value": "solution",
-			"label": "Solution"
-		},
-		{
-			"value": "machineLearning",
-			"label": "Machine Learning"
 		},
 		{
 			"value": "methods",
 			"label": "Design/Methods"
 		},
 		{
-			"value": "government",
-			"label": "Government"
-		},
-		{
-			"value": "business",
-			"label": "Business"
-		},
-		{
-			"value": "basicAI",
-			"label": "Basic AI"
+			"value": "disability",
+			"label": "Disability"
 		},
 		{
 			"value": "education",
@@ -73,8 +45,28 @@
 			"label": "Employment"
 		},
 		{
+			"value": "ethics",
+			"label": "Ethics"
+		},
+		{
+			"value": "fairness",
+			"label": "Fairness"
+		},
+		{
+			"value": "framework",
+			"label": "Framework"
+		},
+		{
+			"value": "government",
+			"label": "Government"
+		},
+		{
 			"value": "inclusivePractice",
 			"label": "Inclusive Practice"
+		},
+		{
+			"value": "machineLearning",
+			"label": "Machine Learning"
 		},
 		{
 			"value": "notForProfit",
@@ -85,8 +77,16 @@
 			"label": "Research Centre"
 		},
 		{
-			"value": "canadianLandscape",
-			"label": "Canadian Landscape"
+			"value": "smallData",
+			"label": "Small Data"
+		},
+		{
+			"value": "solution",
+			"label": "Solution"
+		},
+		{
+			"value": "trust",
+			"label": "Trust"
 		}
 	]
 }

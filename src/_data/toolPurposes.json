@@ -1,13 +1,13 @@
 {
 	"toolPurposes": [
 		{
-			"value": "Create Content"
-		},
-		{
 			"value": "Consume Content"
 		},
 		{
 			"value": "Create Accessible Content"
+		},
+		{
+			"value": "Create Content"
 		}
 	]
 }

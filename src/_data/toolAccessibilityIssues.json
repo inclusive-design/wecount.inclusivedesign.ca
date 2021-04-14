@@ -1,37 +1,37 @@
 {
 	"toolAccessibilityIssues": [
 		{
-			"value": "General Accessibility"
-		},
-		{
-			"value": "Keyboard Accessibility"
-		},
-		{
-			"value": "Visual Enhancements"
-		},
-		{
-			"value": "Screen Reader"
-		},
-		{
 			"value": "Braille"
 		},
 		{
 			"value": "Chart Data Extraction"
 		},
 		{
+			"value": "General Accessibility"
+		},
+		{
 			"value": "JAWS"
 		},
 		{
-			"value": "VoiceOver"
+			"value": "Keyboard Accessibility"
 		},
 		{
 			"value": "NVDA"
+		},
+		{
+			"value": "Screen Reader"
 		},
 		{
 			"value": "Sonified Graphs"
 		},
 		{
 			"value": "Tactile Graphs"
+		},
+		{
+			"value": "Visual Enhancements"
+		},
+		{
+			"value": "VoiceOver"
 		}
 	]
 }

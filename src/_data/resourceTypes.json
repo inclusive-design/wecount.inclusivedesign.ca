@@ -1,7 +1,31 @@
 {
 	"resourceTypes": [
 		{
+			"value": "Blog"
+		},
+		{
+			"value": "Data Tool Package"
+		},
+		{
+			"value": "Data Tool Resource"
+		},
+		{
+			"value": "Online Learning (MOOC)"
+		},
+		{
 			"value": "PDF Article"
+		},
+		{
+			"value": "Podcast"
+		},
+		{
+			"value": "Slide Deck"
+		},
+		{
+			"value": "Video"
+		},
+		{
+			"value": "Video with Transcript"
 		},
 		{
 			"value": "Website Article"
@@ -11,30 +35,6 @@
 		},
 		{
 			"value": "Website with Video"
-		},
-		{
-			"value": "Video"
-		},
-		{
-			"value": "Video with Transcript"
-		},
-		{
-			"value": "Podcast"
-		},
-		{
-			"value": "Blog"
-		},
-		{
-			"value": "Data Tool Resource"
-		},
-		{
-			"value": "Data Tool Package"
-		},
-		{
-			"value": "Online Learning (MOOC)"
-		},
-		{
-			"value": "Slide Deck"
 		}
 	]
 }

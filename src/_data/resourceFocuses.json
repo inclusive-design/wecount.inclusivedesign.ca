@@ -1,16 +1,16 @@
 {
 	"resourceFocuses": [
 		{
-			"value": "AI and Disability/Outliers"
-		},
-		{
 			"value": "AI Ethics/Policy"
 		},
 		{
-			"value": "Methods or Design"
+			"value": "AI and Disability/Outliers"
 		},
 		{
 			"value": "Bias"
+		},
+		{
+			"value": "Connected Life 2018"
 		},
 		{
 			"value": "Data Science Education"
@@ -22,10 +22,10 @@
 			"value": "Employment"
 		},
 		{
-			"value": "Tool"
+			"value": "Methods or Design"
 		},
 		{
-			"value": "Connected Life 2018"
+			"value": "Tool"
 		}
 	]
 }
