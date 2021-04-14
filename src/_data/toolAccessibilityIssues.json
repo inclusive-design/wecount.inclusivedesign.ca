@@ -1,0 +1,37 @@
+{
+	"toolAccessibilityIssues": [
+		{
+			"value": "Braille"
+		},
+		{
+			"value": "Chart Data Extraction"
+		},
+		{
+			"value": "General Accessibility"
+		},
+		{
+			"value": "JAWS"
+		},
+		{
+			"value": "Keyboard Accessibility"
+		},
+		{
+			"value": "NVDA"
+		},
+		{
+			"value": "Screen Reader"
+		},
+		{
+			"value": "Sonified Graphs"
+		},
+		{
+			"value": "Tactile Graphs"
+		},
+		{
+			"value": "Visual Enhancements"
+		},
+		{
+			"value": "VoiceOver"
+		}
+	]
+}

@@ -17,8 +17,9 @@ The website uses [Netlify CMS](https://netlifycms.org) to manage the following c
 - [views](src/collections/views)
 
 The website uses [Netlify Large Media](https://docs.netlify.com/large-media/overview/) for storing uploaded files with
-Git LFS. Developers must install Git LFS and [consult the documentation for Netlify Large Media](https://docs.netlify.com/large-media/setup/)
-to ensure that they are working properly with the Git repository locally.
+Git LFS. Developers must install [Git LFS](https://git-lfs.github.com/) and
+[consult the documentation for Netlify Large Media](https://docs.netlify.com/large-media/setup/) to ensure that they are
+working properly with the Git repository locally.
 
 The website also uses one backend API:
 
@@ -32,7 +33,9 @@ tools data.
 To contribute, please be sure to review our development processes as documented in the
 [contributing](.github/CONTRIBUTING.md) guide.
 
-To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
+To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system,
+as well as [Git LFS](https://git-lfs.github.com/) to ensure that you can work with uploaded files managed via
+[Netlify Large Media](https://docs.netlify.com/large-media/overview/) while working with the Git repository locally.
 
 Then, clone the project from GitHub. [Create a fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 with your GitHub account, then enter the following in your command line (make sure to replace `your-username` with your username):
