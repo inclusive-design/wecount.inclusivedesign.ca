@@ -342,3 +342,30 @@ collections:
               - label: "Label"
                 name: "label"
                 widget: "string"
+      - label: Resource Categories
+        name: resourceCategories
+        file: "src/_data/resourceCategories.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Resource Categories"
+            label_singular: "Resource Category"
+            name: "resourceCategories"
+            widget: "list"
+            summary: "{{fields.categoryLabel}}"
+            fields:
+              - label: "Category ID"
+                name: "categoryId"
+                widget: "string"
+              - label: "Category Label"
+                name: "categoryLabel"
+                widget: "string"
+              - label: "Focuses"
+                name: "focuses"
+                widget: relation
+                multiple: true
+                collection: resourceMetadata
+                file: resourceFocuses
+                value_field: resourceFocuses.*.value
+                display_fields: [resourceFocuses.*.value]
+                search_fields: [resourceFocuses.*.value]
