@@ -188,9 +188,9 @@ collections:
         widget: "select"
         multiple: true
         options:
-          - { label: "Beginner", value: "B" }
-          - { label: "Intermediate", value: "I" }
-          - { label: "Expert", value: "E" }
+          - {label: "Beginner", value: "B"}
+          - {label: "Intermediate", value: "I"}
+          - {label: "Expert", value: "E"}
       - label: "Type"
         name: "type"
         widget: relation
