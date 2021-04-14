@@ -1,0 +1,24 @@
+{
+	"resourceCategories": [
+		{
+			"categoryId": "aiAndDisability",
+			"categoryLabel": "AI and disability, small minorities and outliers (for the general public)",
+			"focuses": ["AI and Disability/Outliers"]
+		},
+		{
+			"categoryId": "dataScience",
+			"categoryLabel": "Work for people with disabilities in data science ",
+			"focuses": ["Data Science Education", "AI and Disability/Outliers", "Employment"]
+		},
+		{
+			"categoryId": "aiEthics",
+			"categoryLabel": "AI ethics and policy",
+			"focuses": ["AI Ethics/Policy", "Bias"]
+		},
+		{
+			"categoryId": "designAndMethods",
+			"categoryLabel": "AI design and methods (for AI experts)",
+			"focuses": ["Data Science Education", "Data Set", "Tool", "Methods or Design"]
+		}
+	]
+}
