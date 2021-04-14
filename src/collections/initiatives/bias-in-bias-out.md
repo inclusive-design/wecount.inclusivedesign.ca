@@ -39,4 +39,4 @@ You will learn:
 Learn and earn badges from this event:
 
 1. Watch the accessible [Bias In, Bias Out webinar](https://youtu.be/NNrknIYLbrc)
-2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply)
+2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply) (four multiple choice and two short answer questions on the content of the webinar)
