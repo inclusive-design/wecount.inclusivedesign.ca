@@ -20,7 +20,9 @@ Panelists will discuss how machine learning models can carry bias when selecting
 
 November 17, 2020, 1:30 PM – 3:00 PM (EST)
 
-[AI Hiring System Policies webinar video](https://youtu.be/Tq230FBgoiU)
+{% youtube "https://youtu.be/Tq230FBgoiU" %}
+
+
 
 [AI Hiring System Policies transcript](/uploads/Future-of-Work_AI-Hiring-System-Policies_Nov-17_Transcript.docx)
 
