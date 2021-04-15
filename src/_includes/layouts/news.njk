@@ -1,0 +1,29 @@
+---
+title: News
+permalink: /news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
+pagination:
+  data: collections.news
+  size: 10
+---
+{% if previewMode %}
+{% extends 'layouts/preview.njk' %}
+{% else %}
+{% extends 'layouts/base.njk' %}
+{% endif %}
+
+{% block content %}
+<article class="news">
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+  <div class="news-grid">
+    {% for item in pagination.items %}
+    <div class="api-content">
+    {% include 'components/grid-item.njk' %}
+    </div>
+    {% endfor %}
+  </div>
+  {% if pagination.pages.length > 1 %}
+    {% include 'components/pagination.njk' %}
+  {% endif %}
+</article>
+{% endblock %}

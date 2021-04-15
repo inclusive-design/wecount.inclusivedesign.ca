@@ -1,0 +1,28 @@
+---
+test:
+pagination:
+    data: collections.airtableResources
+    size: 1
+    alias: resource
+permalink: "airtable-resources/{{ resource.title | slug }}{% if resource.type %}-{{ resource.type | slug }}{% endif %}.md"
+---
+---
+title: {{ resource.title | dump | safe }}
+focus: {{ resource.focus | dump | safe }}
+source: {{ resource.source | dump | safe }}
+readability: {{ resource.readability | dump | safe }}
+type: {{ resource.type | dump | safe }}
+toolPurpose: {{ resource.toolPurpose | dump | safe }}
+toolAccessibilityIssues: {{ resource.toolAccessibilityIssues | dump | safe }}
+openSource: {{ resource.openSource }}
+{% if resource.sharePointUrl -%}
+sharePointUrl: {{ resource.sharePointUrl | dump | safe }}
+{% endif -%}
+{% if resource.link -%}
+link: {{ resource.link | dump | safe }}
+keywords: {{ resource.keywords | dump | safe }}
+learnTags: {{ resource.learnTags | dump | safe }}
+{% endif -%}
+summary: {{ resource.summary | dump | safe }}
+---
+{{ resource.abstract | safe }}

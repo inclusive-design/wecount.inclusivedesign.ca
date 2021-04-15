@@ -1,0 +1,40 @@
+{
+	"resourceTypes": [
+		{
+			"value": "Blog"
+		},
+		{
+			"value": "Data Tool Package"
+		},
+		{
+			"value": "Data Tool Resource"
+		},
+		{
+			"value": "Online Learning (MOOC)"
+		},
+		{
+			"value": "PDF Article"
+		},
+		{
+			"value": "Podcast"
+		},
+		{
+			"value": "Slide Deck"
+		},
+		{
+			"value": "Video"
+		},
+		{
+			"value": "Video with Transcript"
+		},
+		{
+			"value": "Website Article"
+		},
+		{
+			"value": "Website Resource"
+		},
+		{
+			"value": "Website with Video"
+		}
+	]
+}

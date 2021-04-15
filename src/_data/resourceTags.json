@@ -1,0 +1,92 @@
+{
+	"resourceTags": [
+		{
+			"value": "basicAI",
+			"label": "Basic AI"
+		},
+		{
+			"value": "bias",
+			"label": "Bias"
+		},
+		{
+			"value": "business",
+			"label": "Business"
+		},
+		{
+			"value": "canadianLandscape",
+			"label": "Canadian Landscape"
+		},
+		{
+			"value": "dataBroker",
+			"label": "Data Broker"
+		},
+		{
+			"value": "dataset",
+			"label": "Data Collection/Data Set"
+		},
+		{
+			"value": "dataTools",
+			"label": "Data Tools"
+		},
+		{
+			"value": "methods",
+			"label": "Design/Methods"
+		},
+		{
+			"value": "disability",
+			"label": "Disability"
+		},
+		{
+			"value": "education",
+			"label": "Education"
+		},
+		{
+			"value": "employment",
+			"label": "Employment"
+		},
+		{
+			"value": "ethics",
+			"label": "Ethics"
+		},
+		{
+			"value": "fairness",
+			"label": "Fairness"
+		},
+		{
+			"value": "framework",
+			"label": "Framework"
+		},
+		{
+			"value": "government",
+			"label": "Government"
+		},
+		{
+			"value": "inclusivePractice",
+			"label": "Inclusive Practice"
+		},
+		{
+			"value": "machineLearning",
+			"label": "Machine Learning"
+		},
+		{
+			"value": "notForProfit",
+			"label": "Not-for-Profit"
+		},
+		{
+			"value": "researchCentre",
+			"label": "Research Centre"
+		},
+		{
+			"value": "smallData",
+			"label": "Small Data"
+		},
+		{
+			"value": "solution",
+			"label": "Solution"
+		},
+		{
+			"value": "trust",
+			"label": "Trust"
+		}
+	]
+}

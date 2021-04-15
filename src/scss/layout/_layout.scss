@@ -60,15 +60,15 @@ article {
 }
 
 // WP styles for vertically aligning text within Media & Text blocks
-.is-vertically-aligned-top .wp-block-media-text__content {
+.image-and-text--vertical-top .image-and-text__content {
 	align-self: start;
 }
 
-.is-vertically-aligned-center .wp-block-media-text__content {
+.image-and-text--vertical-center .image-and-text__content {
 	align-self: center;
 }
 
-.is-vertically-aligned-bottom .wp-block-media-text__content {
+.image-and-text--vertical-bottom .image-and-text__content {
 	align-self: end;
 }
 
@@ -97,14 +97,14 @@ p img {
 }
 
 // Base styling for media and text block
-.wp-block-media-text {
+.image-and-text {
 	display: grid;
 
-	.wp-block-media-text__content {
+	.image-and-text__content {
 		margin-left: rem(25);
 	}
 
-	.wp-block-media-text__media {
+	.image-and-text__media {
 		align-self: center;
 	}
 
@@ -115,18 +115,18 @@ p img {
 }
 
 // Styling for media and text block with media on the left
-.has-media-on-the-left {
+.image-and-text--image-left {
 	grid-template-columns: 15% auto;
 }
 
 // Styling for media and text block with media on the right
-.has-media-on-the-right {
-	.wp-block-media-text__media {
+.image-and-text--image-right {
+	.image-and-text__media {
 		grid-column: 2;
 		grid-row: 1;
 	}
 
-	.wp-block-media-text__content {
+	.image-and-text__content {
 		grid-column: 1;
 		grid-row: 1;
 		margin-left: 0;
@@ -151,7 +151,7 @@ p img {
 .wp-block-image,
 .wp-block-audio,
 .wp-block-embed,
-.wp-block-media-text,
+.image-and-text,
 .wp-block-group {
 	img {
 		max-width: 100%;
@@ -240,8 +240,8 @@ figcaption {
 		}
 
 		// Styling for media and text block with media on the left
-		.has-media-on-the-left {
-			.wp-block-media-text__content {
+		.image-and-text--image-left {
+			.image-and-text__content {
 				margin-left: rem(25);
 			}
 
@@ -252,8 +252,8 @@ figcaption {
 		}
 
 		// Styling for media and text block with media on the right
-		.has-media-on-the-right {
-			.wp-block-media-text__content {
+		.image-and-text--image-right {
+			.image-and-text__content {
 				margin-left: 0;
 				margin-right: rem(25);
 			}

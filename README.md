@@ -13,12 +13,16 @@ The website uses [Netlify CMS](https://netlifycms.org) to manage the following c
 
 - [initiatives](src/collections/initiatives)
 - [pages](src/collections/pages)
+- [news](src/collections/news)
+- [views](src/collections/views)
 
-The website also uses two backend APIs:
+The website uses [Netlify Large Media](https://docs.netlify.com/large-media/overview/) for storing uploaded files with
+Git LFS. Developers must install [Git LFS](https://git-lfs.github.com/) and
+[consult the documentation for Netlify Large Media](https://docs.netlify.com/large-media/setup/) to ensure that they are
+working properly with the Git repository locally.
 
-- WordPress API where We Count team members create news and views;
-  - The production WordPress site: [https://wecount-cms.inclusivedesign.ca/](https://wecount-cms.inclusivedesign.ca/)
-  - The development WordPress site: [https://wecount-dev.inclusivedesign.ca/](https://wecount-dev.inclusivedesign.ca/)
+The website also uses one backend API:
+
 - [Airtable API](https://airtable.com/api) that serves user comments for initiatives, AI resources and
 tools data.
   - The production table: WeCount
@@ -29,7 +33,9 @@ tools data.
 To contribute, please be sure to review our development processes as documented in the
 [contributing](.github/CONTRIBUTING.md) guide.
 
-To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
+To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system,
+as well as [Git LFS](https://git-lfs.github.com/) to ensure that you can work with uploaded files managed via
+[Netlify Large Media](https://docs.netlify.com/large-media/overview/) while working with the Git repository locally.
 
 Then, clone the project from GitHub. [Create a fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 with your GitHub account, then enter the following in your command line (make sure to replace `your-username` with your username):

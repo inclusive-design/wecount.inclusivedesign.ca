@@ -3,12 +3,52 @@ permalink: index.json
 ---
 [
 {%- for item in collections.views %}
-  {{ item | dump | safe }},
+  {
+    "title": {{ item.data.title | dump | safe }},
+    "category": "views",
+    "author": {{ item.data.author | dump | safe }},
+    "content": {{ item.templateContent | dump | safe }},
+    "excerpt": {{ item.data.excerpt | dump | safe }},
+    "date": {{ item.data.date | dump | safe }},
+    "tags": [
+      {% for tag in item.data.tags %}
+      {
+        "name": {{ tag | dump | safe }},
+        "slug": {{ tag | slug | dump | safe }}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ],
+    "picture": {{ item.data.picture | dump | safe }},
+    "altTag": {{ item.data.altTag | dump | safe }},
+    "url": {{ item.url | dump | safe }}
+  },
 {%- endfor %}
-{%- for item in collections.news %}
-  {{ item | dump | safe }},
+{%- for item in collections.views %}
+  {
+    "title": {{ item.data.title | dump | safe }},
+    "author": {{ item.data.author | dump | safe }},
+    "content": {{ item.templateContent | dump | safe }},
+    "excerpt": {{ item.data.excerpt | dump | safe }},
+    "date": {{ item.data.date | dump | safe }},
+    "tags": [
+      {% for tag in item.data.tags %}
+      {
+        "name": {{ tag | dump | safe }},
+        "slug": {{ tag | slug | dump | safe }}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ],
+    "picture": {{ item.data.picture | dump | safe }},
+    "altTag": {{ item.data.altTag | dump | safe }},
+    "url": {{ item.url | dump | safe }}
+  },
 {%- endfor %}
-{%- for item in collections.allPages %}
-  {{ item | dump | safe }}{% if not loop.last %},{% endif %}
+{%- for item in collections.pages %}
+  {
+    "title": {{ item.data.title | dump | safe }},
+    "content": {{ item.templateContent | dump | safe }},
+    "excerpt": {{ item.data.excerpt | dump | safe }},
+    "url": {{ item.url | dump | safe }}
+  }{% if not loop.last %},{% endif %}
 {%- endfor %}
 ]

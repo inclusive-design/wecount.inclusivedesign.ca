@@ -19,6 +19,10 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        hint: "The excerpt is shown in search results."
       - label: "Navigation Order"
         name: "menu_order"
         widget: number
@@ -36,6 +40,75 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+  - name: news
+    label: News
+    label_singular: News Entry
+    folder: "src/collections/news"
+    sortable_fields: ['title', 'date']
+    preview_path: "/news/"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Link"
+        name: "link"
+        widget: "string"
+        hint: "The link to the external news item or attached resource."
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        time_format: false
+        hint: "The publication date of the item."
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        hint: "The excerpt is shown in search results."
+  - name: views
+    label: Views
+    label_singular: Views Entry
+    folder: "src/collections/views"
+    sortable_fields: ['title', 'date']
+    slug: "{{title}}"
+    preview_path: "views/{{slug}}"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Permanent Link"
+        name: "permalink"
+        widget: "string"
+        required: false
+        hint: |-
+          If you do not specify a permanent link, one will be automatically generated from the title.
+          Permalinks must have the format /views/entry-title/ (the trailing slash is required).
+      - label: "Author"
+        name: "author"
+        widget: string
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        time_format: false
+        hint: "The publication date of the item."
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+      - label: "Preview Image"
+        name: "picture"
+        widget: "image"
+        required: false
+      - label: "Preview Image Alt Text"
+        name: "altTag"
+        widget: "string"
+        required: false
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        hint: "The excerpt is shown in search results."
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
   - name: initiatives
     label: Initiatives
     label_singular: Initiative
@@ -88,3 +161,211 @@ collections:
         name: "previewImageAltText"
         widget: "string"
         required: false
+  - name: resources
+    label: Resources
+    label_singular: Resource
+    folder: "src/collections/resources"
+    sortable_fields: ['title']
+    editor:
+      preview: false
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Focus"
+        name: "focus"
+        widget: relation
+        collection: resourceMetadata
+        file: resourceFocuses
+        value_field: resourceFocuses.*.value
+        display_fields: [resourceFocuses.*.value]
+        search_fields: [resourceFocuses.*.value]
+      - label: "Source"
+        name: "source"
+        widget: "string"
+      - label: "Readability"
+        name: "readability"
+        widget: "select"
+        multiple: true
+        options:
+          - {label: "Beginner", value: "B"}
+          - {label: "Intermediate", value: "I"}
+          - {label: "Expert", value: "E"}
+      - label: "Type"
+        name: "type"
+        widget: relation
+        required: true
+        collection: resourceMetadata
+        file: resourceTypes
+        value_field: resourceTypes.*.value
+        display_fields: [resourceTypes.*.value]
+        search_fields: [resourceTypes.*.value]
+      - label: "Tool Purpose"
+        name: "toolPurpose"
+        widget: relation
+        multiple: true
+        required: false
+        collection: resourceMetadata
+        file: toolPurposes
+        value_field: toolPurposes.*.value
+        display_fields: [toolPurposes.*.value]
+        search_fields: [toolPurposes.*.value]
+      - label: "Tool Accessibility Issues"
+        name: "toolAccessibilityIssues"
+        widget: relation
+        multiple: true
+        required: false
+        collection: resourceMetadata
+        file: toolAccessibilityIssues
+        value_field: toolAccessibilityIssues.*.value
+        display_fields: [toolAccessibilityIssues.*.value]
+        search_fields: [toolAccessibilityIssues.*.value]
+      - label: Open Source
+        name: openSource
+        widget: boolean
+        default: false
+        required: false
+      - label: SharePoint URL
+        name: sharePointUrl
+        widget: string
+        required: false
+      - label: External Link
+        name: link
+        widget: string
+        required: false
+      - label: Keywords
+        name: keywords
+        widget: list
+        required: false
+      - label: "Learn Tags"
+        name: learnTags
+        widget: relation
+        multiple: true
+        collection: resourceMetadata
+        file: resourceTags
+        value_field: resourceTags.*.value
+        display_fields: [resourceTags.*.label]
+        search_fields: [resourceTags.*.label]
+        required: false
+      - label: Summary
+        name: summary
+        widget: markdown
+        minimal: true
+        buttons: ["bold", "italic"]
+        editor_components: []
+        required: false
+      - label: Abstract
+        name: body
+        widget: markdown
+        minimal: true
+        buttons: ["bold", "italic", "link"]
+        editor_components: []
+        required: false
+  - name: resourceMetadata
+    label: Resource Metadata
+    files:
+      - label: Resource Types
+        name: resourceTypes
+        file: "src/_data/resourceTypes.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Resource Types"
+            label_singular: "Resource Type"
+            name: "resourceTypes"
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+      - label: Resource Focuses
+        name: resourceFocuses
+        file: "src/_data/resourceFocuses.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Focuses"
+            label_singular: "Focus"
+            name: "resourceFocuses"
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+      - label: Tool Purposes
+        name: toolPurposes
+        file: "src/_data/toolPurposes.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Tool Purposes"
+            label_singular: "Tool Purpose"
+            name: "toolPurposes"
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+      - label: "Tool Accessibility Issues"
+        name: toolAccessibilityIssues
+        file: "src/_data/toolAccessibilityIssues.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Tool Accessibility Issues"
+            label_singular: "Accessibility Issue"
+            name: "toolAccessibilityIssues"
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+      - label: Resource Tags
+        name: resourceTags
+        file: "src/_data/resourceTags.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Resource Tags"
+            label_singular: "Resource Tag"
+            name: "resourceTags"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+              - label: "Label"
+                name: "label"
+                widget: "string"
+      - label: Resource Categories
+        name: resourceCategories
+        file: "src/_data/resourceCategories.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Resource Categories"
+            label_singular: "Resource Category"
+            name: "resourceCategories"
+            widget: "list"
+            summary: "{{fields.categoryLabel}}"
+            fields:
+              - label: "Category ID"
+                name: "categoryId"
+                widget: "string"
+              - label: "Category Label"
+                name: "categoryLabel"
+                widget: "string"
+              - label: "Focuses"
+                name: "focuses"
+                widget: relation
+                multiple: true
+                collection: resourceMetadata
+                file: resourceFocuses
+                value_field: resourceFocuses.*.value
+                display_fields: [resourceFocuses.*.value]
+                search_fields: [resourceFocuses.*.value]
