@@ -11,7 +11,7 @@ shortDescription: >-
 
 
   December 8, 2020, 1:30 PM – 3:30 PM (EST)
-previewImageUrl: /uploads/group82.jpg
+previewImageUrl: /uploads/8eb229f4.jpg
 previewImageAltText: "FWD: Future of Work and Disability "
 ---
 ### Inclusive AI with nugget.ai
