@@ -6,8 +6,8 @@ coverImageUrl: /uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disability logo"
 shortDescription: >-
   Participants will have the opportunity to gather insights from previous
-  modules and apply them to thinking critically about nugget .ai’s operations as
-  a skills measurement technology company.
+  modules and apply them to thinking critically about nugget’s operations as a
+  skills measurement technology company.
 
 
   December 8, 2020, 1:30 PM – 3:30 PM (EST)
