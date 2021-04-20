@@ -11,7 +11,7 @@ shortDescription: >-
 
 
   November 24, 2020, 1:30 PM – 3:00 PM (EST)
-previewImageUrl: /uploads/8eb229f4.jpg
+previewImageUrl: ""
 previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### Addressing Bias in Machine Learning Models on Candidate Selection
