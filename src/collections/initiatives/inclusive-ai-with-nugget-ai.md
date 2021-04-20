@@ -6,7 +6,7 @@ coverImageUrl: /uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disability logo"
 shortDescription: >-
   Participants will have the opportunity to gather insights from previous
-  modules and apply them to thinking critically about nugget.ai’s operations as
+  modules and apply them to thinking critically about nugget .ai’s operations as
   a skills measurement technology company.
 
 
