@@ -12,6 +12,9 @@ shortDescription: >-
 
 
   December 9, 2020, 10:30 AM – 12:00 PM (EST)
+
+
+  **Available badges:** Learner
 previewImageUrl: /uploads/IPAI.Quartet.Artist-KariNoe.CourtesyoftheInitiativeforIndigenousFutures1.png
 previewImageAltText: ""
 ---
