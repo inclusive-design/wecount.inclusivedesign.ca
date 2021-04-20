@@ -11,6 +11,14 @@ permalink: /map/
 {% block headerScripts %}
 <link rel="stylesheet" href="/lib/covid-data-monitor/build/css/covid-data-monitor-all.css" />
 <script src="/lib/covid-data-monitor/build/js/covid-data-monitor.js"></script>
+<style>
+@media screen and (max-width: 1024px) {
+    /* A special class for the map page to hide table of contents on the mobile view. */
+    .hidden-on-mobile-for-map {
+        display: none;
+    }
+}
+</style>
 {% endblock %}
 
 {% block footerScripts %}
