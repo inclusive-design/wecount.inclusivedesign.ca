@@ -1,7 +1,7 @@
 ---
 title: Inclusive AI with nugget.ai
 id: 963926eb-a97a-40a7-8d89-bffa761a7657
-eventDate: 2021-04-14T19:50:29.229Z
+eventDate: 2020-12-08T20:50:29.229Z
 coverImageUrl: /uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disability logo"
 shortDescription: >-
@@ -10,7 +10,7 @@ shortDescription: >-
   a skills measurement technology company.
 
 
-  November , 2020,  AM –  PM (EST)
+  December 8, 2020, 1:30 PM – 3:30 PM (EST)
 previewImageUrl: /uploads/8eb229f4.jpg
 previewImageAltText: "FWD: Future of Work and Disability logo"
 ---
@@ -18,9 +18,7 @@ previewImageAltText: "FWD: Future of Work and Disability logo"
 
 In this module, participants will have the opportunity to gather insights from previous modules and apply them to thinking critically about nugget.ai’s operations as a skills measurement technology company. As such, this module will serve as a real-world case study through which participants will analyze and reflect on the business decisions of nugget.ai.
 
-November , 2020,  AM –  PM (EST)
-
-
+December 8, 2020, 1:30 PM – 3:30 PM (EST)
 
 [Inclusive AI with nugget.ai workshop video](https://youtu.be/zVXL-HhydFo)
 
