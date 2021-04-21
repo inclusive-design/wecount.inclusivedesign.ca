@@ -1,7 +1,7 @@
 ---
 title: The Metric Society and the Unmeasurable
 id: rec9ZsM9uU1e1yeAi
-permalink: ""
+permalink: /initiatives/metric-society/
 eventDate: 2021-04-29T03:00:00.000Z
 coverImageUrl: /uploads/metric-society_wordpress_2010x1052.png
 coverImageAltText: "Digging DEEPer Webinar The Metric Society and the
