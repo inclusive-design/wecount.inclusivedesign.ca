@@ -39,4 +39,4 @@ Learn and earn badges from this event:
 
 1. Watch the accessible [Building Indigenous Future Imaginaries webinar](https://youtu.be/R4FME84Sn2I)
 2. Read Jason Lewis’s award-winning essay: [Making Kin with the Machines](https://jods.mitpress.mit.edu/pub/lewis-arista-pechawis-kite/release/1)
-3. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply) (five short answer questions on the main themes of the webinar and the essay)
+3. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRIF1HaV773a5D0/apply) (five short answer questions on the main themes of the webinar and the essay)
