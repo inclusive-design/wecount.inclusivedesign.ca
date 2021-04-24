@@ -8,6 +8,8 @@ excerpt: |-
   other skills. Badges, once…
 
   more
+
+  and more
 menu_order: 0
 ---
 ![Horizontal rectangle banner of four badges of WeCount. Learner, brainstormer, collaborator and communicator. All the badges are hexagonal in shape.](/uploads/banner-06-1024x270.jpg)
