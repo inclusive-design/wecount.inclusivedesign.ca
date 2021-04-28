@@ -14,9 +14,6 @@ shortDescription: >-
 
 
   April 28, 2021, 10:30 AM – 12:00 PM (EDT)
-
-
-  **Click to register**
 previewImageUrl: /uploads/metric-society_wordpress_2010x1052-copy.png
 previewImageAltText: Decorative
 ---
@@ -25,8 +22,6 @@ previewImageAltText: Decorative
 In today’s world, numbers are in the ascendancy. Societies dominated by star ratings, scores, likes and lists are rapidly emerging, as data are collected on virtually every aspect of our lives. From annual university rankings, ratings agencies and fitness tracking technologies to our credit score and health status, everything and everybody is measured and evaluated. Join Steffen Mau, Virginia Eubanks and Jutta Treviranus in conversation for a critical analysis of this increasingly pervasive phenomenon.
 
 April 28, 2021, 10:30 AM – 12:00 PM (EDT)
-
-[Register here for the free webinar](https://ocadu.zoom.us/webinar/register/9016171231601/WN_qAc4q5VnSmihxmhoSCgJyA)
 
 **Panelists:**
 
