@@ -7,15 +7,16 @@
  * curl -X POST [host-server]/api/createBranch
  */
 
-const fs = require("fs");
-const rimraf = require("rimraf");
-const utils = require("./utils.js");
+// const fs = require("fs");
+// const rimraf = require("rimraf");
+// const utils = require("./utils.js");
+const { execSync } = require("child_process");
 
 // The name of the temporary local directory for cloning the covid data repo locally
-const clonedLocalDir = "/tmp/inverted-wordles";
-const dataRepoUrl = "https://github.com/cindyli/inverted-wordles";
-const branchName = "from-netlify";
-const repoUrl = process.env.GITHUB_ACCOUNT_URL;
+// const clonedLocalDir = "/tmp/inverted-wordles";
+// const dataRepoUrl = "https://github.com/cindyli/inverted-wordles";
+// const branchName = "from-netlify";
+// const repoUrl = process.env.GITHUB_ACCOUNT_URL;
 
 exports.handler = async function(event, context, callback) {
 	if (event.httpMethod !== "POST") {
@@ -24,24 +25,26 @@ exports.handler = async function(event, context, callback) {
 			body: "Only accept POST requests."
 		});
 	} else {
-		if (!fs.existsSync(clonedLocalDir)){
-			console.log("Creating a subdirectory in /tmp " + clonedLocalDir + "...");
-			fs.mkdirSync(clonedLocalDir);
-		}
+		execSync("git --version", {stdio: "inherit"});
 
-		console.log("Cloning repository...");
-		await utils.prepareLocalRepo(dataRepoUrl, clonedLocalDir, repoUrl);
+		// if (!fs.existsSync(clonedLocalDir)){
+		// 	console.log("Creating a subdirectory in /tmp " + clonedLocalDir + "...");
+		// 	fs.mkdirSync(clonedLocalDir);
+		// }
 		//
-		console.log("Creating a test file...");
-		fs.writeFileSync(clonedLocalDir + "/test.txt", "{a: \"b\"}");
-
-		console.log("Pushing updated files to a remote branch...");
-		await utils.createRemoteBranch(branchName, clonedLocalDir);
-
-		console.log("Cleaning up the cloned directory...");
-		rimraf.sync(clonedLocalDir);
-
-		console.log("Done!");
+		// console.log("Cloning repository...");
+		// await utils.prepareLocalRepo(dataRepoUrl, clonedLocalDir, repoUrl);
+		// //
+		// console.log("Creating a test file...");
+		// fs.writeFileSync(clonedLocalDir + "/test.txt", "{a: \"b\"}");
+		//
+		// console.log("Pushing updated files to a remote branch...");
+		// await utils.createRemoteBranch(branchName, clonedLocalDir);
+		//
+		// console.log("Cleaning up the cloned directory...");
+		// rimraf.sync(clonedLocalDir);
+		//
+		// console.log("Done!");
 
 		callback(null, {
 			statusCode: 200,
