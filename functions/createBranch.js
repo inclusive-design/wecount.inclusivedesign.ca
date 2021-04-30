@@ -12,7 +12,7 @@ const rimraf = require("rimraf");
 const utils = require("./utils.js");
 
 // The name of the temporary local directory for cloning the covid data repo locally
-const clonedLocalDir = "/tmp/inverted-wordles";
+const clonedLocalDir = "/tmp";
 const dataRepoUrl = "https://github.com/cindyli/inverted-wordles";
 const branchName = "from-netlify";
 const repoUrl = process.env.GITHUB_ACCOUNT_URL;
