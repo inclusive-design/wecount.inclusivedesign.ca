@@ -4,8 +4,8 @@ author: Jutta Treviranus
 date: 2020-12-22T15:01:23
 picture: /uploads/mitchell-luo-U1Hhinvb-v4-unsplash-scaled.jpg
 altTag: Abstract Image
-excerpt: Dr. Jutta Treviranus, Director of the IDRC, participated in the Sight
-  Tech Global 2020 panel "AI, Fairness and Bias" on December 2.
+excerpt: Dr. Jutta Treviranus participated in the Sight Tech Global 2020 panel
+  "AI, Fairness and Bias" on December 2.
 tags:
   - AI bias
   - inclusive
