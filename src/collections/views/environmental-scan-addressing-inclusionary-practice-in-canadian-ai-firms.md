@@ -1,12 +1,11 @@
 ---
 title: "Environmental Scan: Addressing Inclusionary Practice in Canadian AI Firms"
-date: 2020-12-17T18:33:24
 author: Ali Milad
+date: 2020-12-17T18:33:24
 picture: /uploads/callum-wale-hzXtdogKFIE-unsplash-scaled.jpg
-altTag: |-
-  Abstract Image
-excerpt: |-
-  This article provides an overview of key findings from an environmental scan conducted by the We Count team in May 2020. The scan relied on information available through…
+altTag: Abstract Image
+excerpt: "An overview of key findings from the AI Firm portion of the
+  environmental scan conducted by the We Count team in May 2020. "
 tags:
   - AI firms
   - Environmental Scan
