@@ -1,12 +1,11 @@
 ---
 title: "Environmental Scan: Canadian Postsecondary Education and AI Ethics"
-date: 2020-12-17T18:33:09
 author: Ali Milad
+date: 2020-12-17T18:33:09
 picture: /uploads/jared-arango-1-mh6U3qeGQ-unsplash-scaled.jpg
-altTag: |-
-  Abstract Image
-excerpt: |-
-  This article provides an overview of key findings from an environmental scan conducted by the We Count team in May 2020. The scan relied on information available through…
+altTag: Abstract Image
+excerpt: "An overview of key findings from the Postsecondary Education portion
+  of the environmental scan conducted by the We Count team in May 2020. "
 tags:
   - Environmental Scan
   - ethical AI
