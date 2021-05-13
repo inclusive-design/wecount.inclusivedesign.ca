@@ -9,7 +9,7 @@ toolAccessibilityIssues: ["Visual Enhancements"]
 openSource: true
 link: "https://www.tableau.com/about/blog/2016/4/examining-data-viz-rules-dont-use-red-green-together-53463"
 keywords: []
-learnTags: ["dataTools","machineLearning","methods"]
+learnTags: ["dataTools","methods","machineLearning"]
 summary: "An article with tips for applying data visualization rules to create colourblind-friendly visualizations. "
 ---
 

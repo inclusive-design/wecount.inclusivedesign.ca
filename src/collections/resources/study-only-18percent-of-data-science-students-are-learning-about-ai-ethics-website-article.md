@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://thenextweb.com/neural/2020/07/03/study-only-18-of-data-scientists-are-learning-about-ai-ethics/"
 keywords: []
-learnTags: ["ethics","business","education"]
+learnTags: ["business","education","ethics"]
 summary: "A summary of Anaconda's _2020 State of Data Science_ report with a focus on AI ethics. "
 ---
 

@@ -9,7 +9,7 @@ toolAccessibilityIssues: ["Chart Data Extraction"]
 openSource: true
 link: "https://automeris.io/WebPlotDigitizer/"
 keywords: []
-learnTags: ["dataTools","machineLearning","methods"]
+learnTags: ["dataTools","methods","machineLearning"]
 summary: "WebPlotDigitizer is a semi-automated tool that reverse engineers images of data visualizations to extract the underlying numerical data.  "
 ---
 

@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://peatworks.org/podcast-eliminating-algorithmic-bias-in-hiring-and-employment/"
 keywords: []
-learnTags: ["disability","bias","solution","business","employment","inclusivePractice"]
+learnTags: ["bias","business","disability","employment","inclusivePractice","solution"]
 summary: "A podcast that discusses approaches to reducing algorithmic bias in HR practices and the steps employers can take. "
 ---
 Future of Work Podcast, Episode 25.
