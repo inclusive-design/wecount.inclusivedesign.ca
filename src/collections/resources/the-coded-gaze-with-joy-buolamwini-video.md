@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://www.youtube.com/watch?v=Mk5gLInf7So"
 keywords: []
-learnTags: ["fairness","dataset","bias","dataTools","methods"]
+learnTags: ["bias","dataset","dataTools","methods","fairness"]
 summary: "Joy Buolamwini's keynote at the Stanford HAI 2019 Fall Conference about existing bias in facial recognition technologies. "
 ---
 

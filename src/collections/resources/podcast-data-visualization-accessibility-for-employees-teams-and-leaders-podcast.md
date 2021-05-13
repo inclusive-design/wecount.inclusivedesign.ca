@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://peatworks.org/podcast-data-visualization-accessibility-for-employees-teams-leaders/"
 keywords: []
-learnTags: ["disability","methods","business","inclusivePractice"]
+learnTags: ["business","methods","disability","inclusivePractice"]
 summary: "An overview of sonification and other innovative methods of making data visualizations more accessible to all users, including people with disabilities. "
 ---
 Future of Work Podcast, Episode 17.

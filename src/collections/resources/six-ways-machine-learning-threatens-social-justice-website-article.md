@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://bigthink.com/technology-innovation/machine-learning-ethics"
 keywords: []
-learnTags: ["ethics","fairness","trust","bias","machineLearning"]
+learnTags: ["bias","ethics","fairness","machineLearning","trust"]
 summary: "An article that delves into how machine learning is a powerful and imperfect tool that should not go unmonitored. "
 ---
 

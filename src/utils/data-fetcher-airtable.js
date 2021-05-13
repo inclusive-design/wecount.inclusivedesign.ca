@@ -1,6 +1,5 @@
 // Communicate with Airtable APIs to access data
 const env = require("../_data/env");
-const tags = require("../_data/resourceTags.json");
 const airtable = require("airtable");
 
 airtable.configure({
@@ -36,63 +35,6 @@ module.exports = {
 					return;
 				} else {
 					resolve(comments);
-				}
-			});
-		});
-	},
-	literature: async() => {
-		return new Promise((resolve) => {
-			const literature = [];
-
-			base("Literature Summary").select({
-				view: "Deduped"
-			}).eachPage(function page(records, fetchNextPage) {
-				records.forEach(function(record) {
-					let resource = {
-						title: record.get("title"),
-						focus: record.get("focus"),
-						edited: record.get("edited"),
-						summary: record.get("summary") ? record.get("summary").replace(/\n/g, " ") : "",
-						readability: record.get("readability"),
-						source: record.get("source"),
-						abstract: record.get("abstract"),
-						type: record.get("resourceType") || "",
-						toolPurpose: record.get("toolPurpose") || [],
-						toolAccessibilityIssues: record.get("toolAccessibilityIssue") || [],
-						sharePointUrl: record.get("sharePointUrl"),
-						link: record.get("url"),
-						openSource: record.get("openSource") === "Yes",
-						keywords: [],
-						learnTags: []
-					};
-
-					if (record.get("keywords")) {
-						const str = record.get("keywords");
-						if (str.includes(", ")) {
-							resource.keywords = str.split(", ");
-						} else if (str.includes("; ")) {
-							resource.keywords = str.split("; ");
-						} else if (str.includes(" · ")) {
-							resource.keywords = str.split(" · ");
-						}
-					}
-
-					tags.resourceTags.forEach(learnTag => {
-						if (record.get(learnTag.value)) {
-							resource.learnTags.push(learnTag.value);
-						}
-					});
-
-					literature.push(resource);
-				});
-
-				fetchNextPage();
-			}, function done(err) {
-				if (err) {
-					console.error("Error reading 'Literature' table from Airtable: ", err);
-					return;
-				} else {
-					resolve(literature);
 				}
 			});
 		});

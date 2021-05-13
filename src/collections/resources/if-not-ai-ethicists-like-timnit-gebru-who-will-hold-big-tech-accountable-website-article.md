@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://www.brookings.edu/blog/techtank/2020/12/17/if-not-ai-ethicists-like-timnit-gebru-who-will-hold-big-tech-accountable/"
 keywords: []
-learnTags: ["ethics","trust","bias","business"]
+learnTags: ["bias","business","ethics","trust"]
 summary: "An article that stresses the importance of AI ethicists and how ethical AI research can help make such systems more safe, fair and transparent. "
 ---
 

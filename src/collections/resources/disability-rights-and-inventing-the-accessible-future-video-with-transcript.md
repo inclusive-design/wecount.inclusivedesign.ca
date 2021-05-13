@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://sighttechglobal.com/session/disability-rights-and-inventing-the-accessible-future/"
 keywords: []
-learnTags: ["ethics","fairness","disability","bias","researchCentre"]
+learnTags: ["bias","disability","ethics","fairness","researchCentre"]
 summary: "A Sight Tech Global 2020 panel that discusses strategies for creating a future fully accessible to people with disabilities. "
 ---
 

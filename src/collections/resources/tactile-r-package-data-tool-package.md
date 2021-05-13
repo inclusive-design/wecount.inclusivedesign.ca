@@ -9,7 +9,7 @@ toolAccessibilityIssues: ["Tactile Graphs"]
 openSource: true
 link: "https://github.com/jooyoungseo/tactileR"
 keywords: []
-learnTags: ["dataTools","machineLearning","methods"]
+learnTags: ["dataTools","methods","machineLearning"]
 summary: "An R package for creating tactile graphics for users with visual impairments. "
 ---
 

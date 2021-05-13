@@ -9,7 +9,7 @@ toolAccessibilityIssues: ["VoiceOver"]
 openSource: false
 link: "https://www.sas.com/en_us/company-information/accessibility.html#m=video-sas-mobile-bi-for-ios"
 keywords: []
-learnTags: ["dataTools","machineLearning","methods"]
+learnTags: ["dataTools","methods","machineLearning"]
 summary: "A video that demonstrates the use of SAS Mobile BI with iOS VoiceOver. "
 ---
 

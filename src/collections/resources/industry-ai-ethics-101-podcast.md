@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://www.radicalai.org/industry-ai-ethics"
 keywords: []
-learnTags: ["ethics","bias","business"]
+learnTags: ["bias","business","ethics"]
 summary: "This Radical AI Podcast episode with Kathy Baxter explores what designing ethical AI actually entails. "
 ---
 

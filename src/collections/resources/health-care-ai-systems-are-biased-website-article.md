@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://www.scientificamerican.com/article/health-care-ai-systems-are-biased/"
 keywords: []
-learnTags: ["ethics","fairness","trust","bias"]
+learnTags: ["bias","ethics","fairness","trust"]
 summary: "An article about AI bias in healthcare that stresses the importance of using diverse data when training medical AI algorithms. "
 ---
 

@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://jods.mitpress.mit.edu/pub/lewis-arista-pechawis-kite/release/1"
 keywords: []
-learnTags: ["ethics","fairness","trust","framework","bias","methods","inclusivePractice"]
+learnTags: ["bias","methods","ethics","fairness","framework","inclusivePractice","trust"]
 summary: "An article that uses Indigenous epistemologies to analyze AI's place in society and its development and use. "
 ---
 

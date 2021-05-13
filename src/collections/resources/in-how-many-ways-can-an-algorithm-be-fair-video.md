@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://youtu.be/W8eWYkrfUuQ"
 keywords: []
-learnTags: ["fairness","bias","machineLearning"]
+learnTags: ["bias","fairness","machineLearning"]
 summary: "A seminar from the Alan Turing Institute about the challenges of implementing critical measures of fairness for technology policy and regulation. "
 ---
 

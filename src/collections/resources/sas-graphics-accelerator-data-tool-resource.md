@@ -9,7 +9,7 @@ toolAccessibilityIssues: ["Chart Data Extraction","Sonified Graphs","JAWS"]
 openSource: false
 link: "https://support.sas.com/software/products/graphics-accelerator/index.html#s1=1"
 keywords: []
-learnTags: ["dataTools","machineLearning","methods"]
+learnTags: ["dataTools","methods","machineLearning"]
 summary: "An overview of the SAS Graphics Accelerator, a browser extension that enables alternative presentations of data visualizations.  "
 ---
 
