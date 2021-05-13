@@ -23,8 +23,7 @@ working properly with the Git repository locally.
 
 The website also uses one backend API:
 
-- [Airtable API](https://airtable.com/api) that serves user comments for initiatives, AI resources and
-tools data.
+- [Airtable API](https://airtable.com/api) that serves user comments for initiatives.
   - The production table: WeCount
   - The development table: WeCount_DEV
 
