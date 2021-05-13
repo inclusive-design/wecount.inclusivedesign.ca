@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://www.adalovelaceinstitute.org/making-visible-the-invisible-what-public-engagement-uncovers-about-privilege-and-power-in-data-systems/"
 keywords: []
-learnTags: ["trust","bias","inclusivePractice","researchCentre"]
+learnTags: ["bias","inclusivePractice","researchCentre","trust"]
 summary: "Insights from the Citizens’ Biometrics Council and Community Voice workshops in the U.K. show how technology can mediate power asymmetries and privilege.  "
 ---
 

@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://observatoire-ia.ulaval.ca"
 keywords: []
-learnTags: ["ethics","fairness","machineLearning","education","inclusivePractice","researchCentre","canadianLandscape"]
+learnTags: ["canadianLandscape","education","ethics","fairness","inclusivePractice","machineLearning","researchCentre"]
 summary: "the Observatory helps communities, organizations and individuals maximize the positive outcomes of artificial intelligence and digital technology and minimize the negative effects of that technology. "
 ---
 

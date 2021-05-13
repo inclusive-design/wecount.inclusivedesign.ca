@@ -50,6 +50,20 @@ From the root of the cloned project, enter the following in your command line to
 npm ci
 ```
 
+Add _Large Media_ support to the local development environment:
+
+```bash
+netlify lm:install
+```
+
+After running the following command, the output may instruct you to run further commands; run these as well. **Please note
+ that the command will be different on every environment.**
+
+```bash
+# this is an example, the path may be different depending on the environment
+source /home/username/.config/netlify/helper/path.bash.inc
+```
+
 ## Content Management System (CMS)
 
 [Netlify CMS](https://netlifycms.org) is a client-side React application which manages files in a git repository,

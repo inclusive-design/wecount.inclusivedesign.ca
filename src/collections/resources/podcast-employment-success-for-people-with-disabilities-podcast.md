@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://peatworks.org/podcast-employment-success-for-people-with-disabilities/"
 keywords: []
-learnTags: ["disability","bias","machineLearning","business","employment","inclusivePractice","notForProfit"]
+learnTags: ["bias","business","disability","employment","inclusivePractice","machineLearning","notForProfit"]
 summary: "An exploration of the importance of inclusive hiring practices and accessible technologies for ensuring a diverse workforce, including persons with disabilities. "
 ---
 Future of Work Podcast, Episode 16.
