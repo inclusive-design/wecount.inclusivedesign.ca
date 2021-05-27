@@ -1,11 +1,12 @@
 {
   "name": "@wecount/wecount.inclusivedesign.ca",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "The source files for the We Count website, built with Eleventy.",
   "license": "BSD-3-Clause",
   "author": "OCAD University <idrc@ocadu.ca>",
   "contributors": [
     "Cindy Li <cli@ocadu.ca> (https://github.com/cindyli)",
+    "Gregor Moss <gmoss@ocadu.ca> (https://github.com/blueslug)",
     "Justin Obara <jobara@ocadu.ca> (https://github.com/jobara)",
     "Ted Thompson <tthompson@ocadu.ca> (https://github.com/TeddTech)",
     "Ned Zimmerman <nzimmerman@ocadu.ca> (https://github.com/greatislander)"
