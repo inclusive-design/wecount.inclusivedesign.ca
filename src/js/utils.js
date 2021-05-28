@@ -50,32 +50,6 @@ chunkArray = function (inputArray, chunkSize) {
 };
 
 /*
- * Process the WordPress returned data structure to the format required by WeCount site.
- * @param {Array<Object>} posts - Posts returned by the WordPress REST API.
- * @return An array of object that re in the format required by WeCount site.
- */
-// eslint-disable-next-line
-processPosts = function (posts) {
-	return posts.map(function (onePost) {
-		const categoryType = onePost.categories.includes(1) ? "views" : "news";
-		return {
-			category: categoryType,
-			slug: onePost.slug,
-			title: onePost.title.rendered,
-			author: categoryType === "views" ? onePost.acf.custom_author : null,
-			content: onePost.content.rendered,
-			excerpt: onePost.excerpt.rendered,
-			dateTime: onePost.date,
-			tags: onePost.pure_taxonomies.tags ? onePost.pure_taxonomies.tags.map(({slug, name}) => ({slug, name})) : [],
-			picture: onePost._links["wp:featuredmedia"] ? onePost._embedded["wp:featuredmedia"][0].source_url : null,
-			altTag: onePost._links["wp:featuredmedia"] ? onePost._embedded["wp:featuredmedia"][0].alt_text : "",
-			// For news, "href" points to the external news links. For views, "href" is customized to show views content.
-			href: categoryType === "news" ? onePost.acf.link : "/views/" + onePost.slug + "/"
-		};
-	});
-};
-
-/*
  * Create the pagination object for the input data set.
  * @param {Array<Object>} dataArray - The data set to create the pagination object for.
  * @param {Number} pageSize - The number of records on a page.
@@ -159,30 +133,6 @@ getUniqueTags = function (posts) {
 		}));
 	});
 	return tags;
-};
-
-/*
- * Extract the page title and intro paragraphs from the data collection for pages.
- * @param {Array<Object>} allPages - data.collections.allPages
- * @param {String} pageSlug - The slug of the page to extract the info for.
- * @return An object containing the page title and intro.
- */
-// eslint-disable-next-line
-extractPageIntro = function (allPages, pageSlug) {
-	let rtn = {
-		title: null,
-		content: null
-	};
-	for (const page of allPages) {
-		if (page.slug === pageSlug) {
-			rtn = {
-				title: page.title,
-				content: page.content
-			};
-			break;
-		}
-	}
-	return rtn;
 };
 
 /*
