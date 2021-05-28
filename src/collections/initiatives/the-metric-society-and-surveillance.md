@@ -23,6 +23,8 @@ In today’s world, numbers are in the ascendancy. Societies dominated by star r
 
 April 28, 2021, 10:30 AM – 12:00 PM (EDT)
 
+[The Metric Society and the Unmeasurable webinar video](https://youtu.be/G1gbAFlZjGE)
+
 **Panelists:**
 
 **Dr. Steffen Mau** works in the fields of comparative welfare research, social inequality and European integration. In his most recent book, *The Metric Society: On the Quantification of the Social*, Steffen Mau shows how metrics have become a form of social conditioning and how the rise of quantification has strengthened social hierarchies.
