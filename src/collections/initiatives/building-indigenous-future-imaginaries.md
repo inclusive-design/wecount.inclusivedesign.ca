@@ -24,6 +24,8 @@ Based on Jason Lewis’s research-creation work over the last two decades, this 
 
 December 9, 2020, 10:30 AM – 12:00 PM (EST)
 
+[Building Indigenous Future Imaginaries webinar video](https://youtu.be/R4FME84Sn2I)
+
 [Jason Lewis](http://jasonlewis.org/) is a digital media theorist, artist, and software designer. He founded Obx Laboratory for Experimental Media, where he directs research/creation projects exploring computation as a creative and cultural material. Lewis is deeply committed to developing intriguing new forms of expression by working on conceptual, critical, creative and technical levels simultaneously. He is the University Research Chair in Computational Media and the Indigenous Future Imaginary as well as Professor of Computation Arts at Concordia University, Montreal. Born and raised in northern California, Lewis is Hawaiian and Samoan.
 
 ### Earn a Learner badge
