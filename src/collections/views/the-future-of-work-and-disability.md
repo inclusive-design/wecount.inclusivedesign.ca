@@ -29,6 +29,38 @@ The study group met weekly for eight weeks in late 2020 and early 2021 and also 
 
 The final activity of the group is to co-create a report on their understandings that can be used to help develop standards and regulations that support diversity within employment data systems. Accessibility Standards Canada (ASC) will use the report to inform best practices and policies for AI use in the workplace.
 
+# Our Contributors
+
+The Future of Work and Disability had expert collaborators many of whom identify as having a disability formed a study group that was comprised of fourteen individuals, many with lived experiences of disability and/or knowledge of the AI field. The group was selected through a call for participation from the IDRC, and a selection process was used to ensure that there were diverse perspectives within the group for learning, collaborating and creation of the final report. Experts include:
+
+*Chris Butler*  
+
+*Theodore (Ted) Cooke*  
+
+*Katherine Gallagher*  
+
+*Kevin Keane*  
+
+*Mala Naraine*  
+
+*Runa Patel*  
+
+*Sricamalan (Sri) Pathmanathan, M.A., M.Sc.*  
+
+*Gaitrie Persaud*  
+
+*Ramin Raunak*  
+
+*Fran Quintero Rawlings*  
+
+*Janet Rodriguez*  
+
+*Cybele Sack*  
+
+*Christopher Sutton*  
+
+*Ricardo Wagner*  
+
 # Our Results
 
 In addition to our report to Accessibility Standards Canada, we created:
@@ -55,7 +87,9 @@ This theme introduced how AI creates both barriers and new opportunities for per
 
 
 
+
 **Anhong Guo** is an Assistant Professor in Computer Science & Engineering at the University of Michigan. He has also worked in the Ability and Intelligent User Experiences groups in Microsoft Research, the HCI group of Snap Research, the Accessibility Engineering team at Google, and the Mobile Innovation Center of SAP America.
+
 
 
 
@@ -65,7 +99,9 @@ This theme introduced how AI creates both barriers and new opportunities for per
 
 
 
+
 **Shari Trewin** manages the IBM Accessibility Leadership Team, chairs the Association for Computing Machinery (ACM) Special Interest Group on Accessible Computing (SIGACCESS), and is a Distinguished Scientist of the ACM, a member of ACM’s Diversity and Inclusion Council.
+
 
 
 
@@ -75,7 +111,9 @@ This theme introduced how AI creates both barriers and new opportunities for per
 
 
 
+
 **Ben Tamblyn** is the Director of Inclusive Design at Microsoft. Ben has worked in a wide range of marketing, design and technical roles, and has a passion for design, inclusion and potential impact of technology on the world.
+
 
 
 
@@ -85,7 +123,9 @@ This theme introduced how AI creates both barriers and new opportunities for per
 
 
 
+
 **Chancey Fleet** was a 2018–19 Data & Society Fellow and is currently an Affiliate-in-Residence whose writing, organizing and advocacy aims to catalyze critical inquiry into how cloud-connected accessibility tools benefit and harm, empower and expose disability communities. Chancey is also the Assistive Technology Coordinator at the New York Public Library.
+
 
 
 
@@ -97,7 +137,9 @@ This theme introduced how AI creates both barriers and new opportunities for per
 
 
 
+
 **Dr. Vera Roberts** is Senior Manager Research, Consulting and Projects at the Inclusive Design Research Centre (IDRC) at OCAD University. Vera’s primary research area is generating a culture of inclusion through outreach activities and implementation of inclusive technology and digital sharing platforms.
+
 
 
 
@@ -113,7 +155,9 @@ Storytelling can help us articulate our thoughts, feelings and experiences; it c
 
 
 
+
 **Minette Samaroo** is the President of AEBC Toronto Chapter. She is active in advocating for social change for persons with disabilities. In 2019, Minette led the development and execution of the Disability Advantage Program — a training program for employers that highlights the benefits of hiring and working with persons with disabilities.
+
 
 
 
@@ -123,7 +167,9 @@ Storytelling can help us articulate our thoughts, feelings and experiences; it c
 
 
 
+
 **Falaah Arif Khan** is an Artist-in-Residence at the Montreal AI Ethics Institute and the NYU Center for Responsible AI, as well as a Research Fellow in the Bhasha group at the International Institute of Information Technology, Hyderabad. His latest artwork includes the first volume of the _Superheroes of Deep Learning_ comics (with Zack Lipton) and the _Data, Responsibly_ comics.
+
 
 
 
@@ -133,7 +179,9 @@ Storytelling can help us articulate our thoughts, feelings and experiences; it c
 
 
 
+
 **Melissa Egan** is National Lead, Episodic Disabilities at Realize. Using her training in curriculum development and adult education, she helped create online learning webinars on episodic disabilities and employment. She has worked extensively with marginalized, LGBTQ and Indigenous people to develop and deliver workshops across Canada.
+
 
 
 
@@ -153,7 +201,9 @@ In this theme, the group learned about how machine learning models are not neutr
 
 
 
+
 ****Alexandra Reeve Givens**** is the CEO of the Center for Democracy & Technology, a leading U.S. think tank that focuses on protecting democracy and individual rights in the digital age. The organization works on a wide range of tech policy issues, including consumer privacy to data and discrimination, free expression, surveillance, internet governance and competition.
+
 
 
 
@@ -163,7 +213,9 @@ In this theme, the group learned about how machine learning models are not neutr
 
 
 
+
 **Julia Stoyanovich** is an Assistant Professor of Computer Science and Engineering and of Data Science at New York University. Julia’s research focuses on responsible data management and analysis, including operationalizing fairness, diversity, transparency and data protection in all stages of the data science lifecycle. She is the founding director of the Center for Responsible AI at NYU, a comprehensive laboratory that is building a future in which responsible AI will be the only kind of AI accepted by society.
+
 
 
 
@@ -185,7 +237,9 @@ In this module, participants explored policy through a co-design activity. The p
 
 
 
+
 **Abhishek Gupta** is the Founder and Principal Researcher at the [Montreal AI Ethics Institute](https://montrealethics.ai) and a Machine Learning Engineer at Microsoft, where he serves on the CSE Responsible AI Board. He is representing Canada for the International Visitor Leaders Program (IVLP) administered by the U.S. State Department as an expert on the future of work. His research focuses on applied technical and policy methods to address ethical, safety and inclusivity concerns in using AI in different domains. He has built the largest community driven, public consultation group on AI Ethics in the world.
+
 
 
 
@@ -215,7 +269,9 @@ In this theme, our panel discussion highlighted some of the potential problems t
 
 
 
+
 **Shea Tanis** is the Director for Policy and Advocacy at the Coleman Institute for Cognitive Disabilities at the University of Colorado. She is nationally recognized for her expertise in applied cognitive technology supports, cognitive accessibility and advancing the rights of people with cognitive disabilities to technology and information access.
+
 
 
 
@@ -225,7 +281,9 @@ In this theme, our panel discussion highlighted some of the potential problems t
 
 
 
+
 **Rich Donovan** is CEO of the Return on Disability Group and is a globally recognized subject matter expert on the convergence of disability and corporate profitability. He has spent more than ten years focused on defining and unlocking the economic value of the disability market. In 2006 Rich founded Lime, the leading third-party recruiter in the disability space, where he worked with Google, PepsiCo, Bank of America/Merrill Lynch, IBM, TD Bank and others to help them attract and retain top talent from within the disability market.
+
 
 
 
@@ -247,10 +305,12 @@ In this module, participants had the opportunity to gather insights from previou
 
 
 
+
 Marian Pitel and Melissa Pike, members of nugget.ai’s science team, guided the presentation and activity, taking turns explaining key stages in nugget.ai’s operations and highlighting decisions and considerations that the nugget.ai team have had to make at these stages.
 
   
 At each stage, Marian and Melissa worked with the whole group in identifying the advantages of nugget.ai’s approach and any areas of opportunities. The participants were encouraged to reflect on nugget.ai’s business decisions, leaning on lessons that have emerged from the study group’s previous modules.
+
 
 
 
