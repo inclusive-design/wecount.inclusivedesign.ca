@@ -41,10 +41,10 @@ April 28, 2021, 10:30 AM – 12:00 PM (EDT)
 You will learn:
 
 * How the rise of quantification has created and strengthened social hierarchies
-  How quantification could lead to standardization but does not necessarily capture social diversity and deviance 
-  About the importance of bottom-up, community-driven initiatives in addressing the top-down mismanagement of personal data and access to social services
+* How quantification could lead to standardization but does not necessarily capture social diversity and deviance 
+* About the importance of bottom-up, community-driven initiatives in addressing the top-down mismanagement of personal data and access to social services
 
 Learn and earn badges from this event:
 
 1. Watch the accessible [Metric Society and the Unmeasurable webinar](https://youtu.be/G1gbAFlZjGE) 
-   [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRZ70Ma1SCPa6F/apply) (five short answer questions on the main themes of the webinar)
+2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRZ70Ma1SCPa6F/apply) (five short answer questions on the main themes of the webinar)
