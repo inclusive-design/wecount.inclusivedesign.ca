@@ -1,7 +1,7 @@
 ---
 title: The Metric Society and the Unmeasurable
 id: rec9ZsM9uU1e1yeAi
-permalink: ""
+permalink: /initiatives/metric-society/
 eventDate: 2021-04-29T03:00:00.000Z
 coverImageUrl: /uploads/metric-society_wordpress_2010x1052.png
 coverImageAltText: "Digging DEEPer Webinar The Metric Society and the
@@ -16,7 +16,7 @@ shortDescription: >-
   April 28, 2021, 10:30 AM – 12:00 PM (EDT)
 
 
-  **Click to register**
+  **Available badges:** Learner
 previewImageUrl: /uploads/metric-society_wordpress_2010x1052-copy.png
 previewImageAltText: Decorative
 ---
@@ -26,7 +26,7 @@ In today’s world, numbers are in the ascendancy. Societies dominated by star r
 
 April 28, 2021, 10:30 AM – 12:00 PM (EDT)
 
-[Register here for the free webinar](https://ocadu.zoom.us/webinar/register/9016171231601/WN_qAc4q5VnSmihxmhoSCgJyA)
+[The Metric Society and the Unmeasurable webinar video](https://youtu.be/G1gbAFlZjGE)
 
 **Panelists:**
 
@@ -35,3 +35,16 @@ April 28, 2021, 10:30 AM – 12:00 PM (EDT)
 **Virginia Eubanks** is an Associate Professor of Political Science at the University at Albany, SUNY. She is the author of *Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor*; *Digital Dead End: Fighting for Social Justice in the Information Age*; and co-editor, with Alethia Jones, of *Ain’t Gonna Let Nobody Turn Me Around: Forty Years of Movement Building with Barbara Smith*. Her writing about technology and social justice has appeared in *Scientific American*, *The Nation*, *Harper’s*, and *Wired*. For two decades, Eubanks has worked in community technology and economic justice movements. She was a founding member of the [Our Data Bodies Project](http://www.odbproject.org/) and a 2016–2017 Fellow at [New America](https://www.newamerica.org/our-people/virginia-eubanks/). She lives in Troy, NY. 
 
 **Jutta Treviranus** is a full Professor at the Ontario College of Art and Design University (OCADU) in Toronto, Canada. She is the Director and Founder of the Inclusive Design Research Centre (IDRC) and the Inclusive Design Institute (IDI). Treviranus is a world expert in the field of Inclusive Design and has made appearances at the White House and the United Nations. An outspoken opponent of the scientific method and statistical reasoning, she has "led many international multi‐partner research networks that have created broadly implemented technical innovations that support inclusion." Her work has included designing open source content and helping implement accessibility legislation, standards, and specifications. In 2013, the Governor General of Canada awarded Treviranus the Queen's Diamond Jubilee Medal. ZoomerMedia chose Treviranus as one of Canada's Top 45 over 45 in 2012.
+
+### Earn a Learner badge
+
+You will learn:
+
+* How the rise of quantification has created and strengthened social hierarchies
+* How quantification could lead to standardization but does not necessarily capture social diversity and deviance 
+* About the importance of bottom-up, community-driven initiatives in addressing the top-down mismanagement of personal data and access to social services
+
+Learn and earn badges from this event:
+
+1. Watch the accessible [Metric Society and the Unmeasurable webinar](https://youtu.be/G1gbAFlZjGE) 
+2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRZ70Ma1SCPa6F/apply) (five short answer questions on the main themes of the webinar)

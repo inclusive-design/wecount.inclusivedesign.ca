@@ -18,29 +18,18 @@ permalink: index.json
       }{% if not loop.last %},{% endif %}
       {% endfor %}
     ],
-    "picture": {{ item.data.picture | dump | safe }},
-    "altTag": {{ item.data.altTag | dump | safe }},
+    "picture": {% if item.data.picture %} {{ item.data.picture | dump | safe }} {% else %} "" {% endif %},
+    "altTag": {% if item.data.altTag %} {{ item.data.altTag | dump | safe }} {% else %} "" {% endif %},
     "url": {{ item.url | dump | safe }}
   },
 {%- endfor %}
-{%- for item in collections.views %}
+{%- for item in collections.news %}
   {
     "title": {{ item.data.title | dump | safe }},
-    "author": {{ item.data.author | dump | safe }},
-    "content": {{ item.templateContent | dump | safe }},
+    "category": "news",
+    "url": {{ item.data.link | dump | safe }},
     "excerpt": {{ item.data.excerpt | dump | safe }},
-    "date": {{ item.data.date | dump | safe }},
-    "tags": [
-      {% for tag in item.data.tags %}
-      {
-        "name": {{ tag | dump | safe }},
-        "slug": {{ tag | slug | dump | safe }}
-      }{% if not loop.last %},{% endif %}
-      {% endfor %}
-    ],
-    "picture": {{ item.data.picture | dump | safe }},
-    "altTag": {{ item.data.altTag | dump | safe }},
-    "url": {{ item.url | dump | safe }}
+    "date": {{ item.data.date | dump | safe }}
   },
 {%- endfor %}
 {%- for item in collections.pages %}

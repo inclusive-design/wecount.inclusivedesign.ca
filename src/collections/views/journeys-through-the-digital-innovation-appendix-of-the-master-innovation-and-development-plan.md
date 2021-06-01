@@ -1,12 +1,13 @@
 ---
-title: "Journeys through the Digital Innovation Appendix of the Master Innovation and Development Plan"
-date: 2020-05-07T15:31:42
+title: Journeys through the Digital Innovation Appendix of the Master Innovation
+  and Development Plan
 author: Vera Roberts
+date: 2020-05-07T15:31:42
 picture: /uploads/ricardo-gomez-angel-9AdeEdYB2yk-unsplash-scaled.jpg
-altTag: |-
-  Abstract Image
-excerpt: |-
-  We Count worked with stakeholders to envision how the proposed technologies for the proposed Quayside “Smart City” project in Toronto could impact individuals with disabilities and their networks.…
+altTag: Abstract Image
+excerpt: We Count worked with stakeholders to envision how the proposed
+  technologies for the proposed Quayside “Smart City” project in Toronto could
+  impact individuals with disabilities and their networks.
 tags:
   - Digital Innovation Appendix
   - Master Innovation and Development Plan
