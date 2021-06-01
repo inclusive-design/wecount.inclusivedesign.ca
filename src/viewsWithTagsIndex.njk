@@ -18,8 +18,8 @@ permalink: viewsWithTags.json
         }{% if not loop.last %},{% endif %}
         {% endfor %}
       ],
-      "picture": {{ item.data.picture | dump | safe }},
-      "altTag": {{ item.data.altTag | dump | safe }},
+      "picture": {% if item.data.picture %} {{ item.data.picture | dump | safe }} {% else %} "" {% endif %},
+      "altTag": {% if item.data.altTag %} {{ item.data.altTag | dump | safe }} {% else %} "" {% endif %},
       "url": {{ item.url | dump | safe }}
     }{% if not loop.last %},{% endif %}
   {%- endfor %}
