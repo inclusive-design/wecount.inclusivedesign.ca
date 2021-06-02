@@ -3,12 +3,50 @@ permalink: index.json
 ---
 [
 {%- for item in collections.views %}
-	{{ item | dump | safe }},
+  {
+    "title": {{ item.data.title | dump | safe }},
+    "category": "views",
+    "author": {{ item.data.author | dump | safe }},
+    "content": {{ item.templateContent | dump | safe }},
+    "excerpt": {{ item.data.excerpt | dump | safe }},
+    "date": {{ item.data.date | dump | safe }},
+    "tags": [
+      {% for tag in item.data.tags %}
+      {
+        "name": {{ tag | dump | safe }},
+        "slug": {{ tag | slug | dump | safe }}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ],
+    "picture": {% if item.data.picture %} {{ item.data.picture | dump | safe }} {% else %} "" {% endif %},
+    "altTag": {% if item.data.altTag %} {{ item.data.altTag | dump | safe }} {% else %} "" {% endif %},
+    "url": {{ item.url | dump | safe }}
+  },
 {%- endfor %}
 {%- for item in collections.news %}
-	{{ item | dump | safe }},
+  {
+    "title": {{ item.data.title | dump | safe }},
+    "category": "news",
+    "url": {{ item.data.link | dump | safe }},
+    "excerpt": {{ item.data.excerpt | dump | safe }},
+    "date": {{ item.data.date | dump | safe }}
+  },
+{%- endfor %}
+{%- for item in collections.initiatives %}
+  {
+    "title": {{ item.data.title | dump | safe }},
+    "category": "initiative",
+    "url": {{ item.url | dump | safe }},
+    "content": {{ item.templateContent | dump | safe }},
+    "excerpt": {{ item.data.shortDescription | dump | safe }}
+  },
 {%- endfor %}
 {%- for item in collections.pages %}
-	{{ item | dump | safe }}{% if not loop.last %},{% endif %}
+  {
+    "title": {{ item.data.title | dump | safe }},
+    "content": {{ item.templateContent | dump | safe }},
+    "excerpt": {{ item.data.excerpt | dump | safe }},
+    "url": {{ item.url | dump | safe }}
+  }{% if not loop.last %},{% endif %}
 {%- endfor %}
 ]

@@ -60,15 +60,15 @@ article {
 }
 
 // WP styles for vertically aligning text within Media & Text blocks
-.is-vertically-aligned-top .wp-block-media-text__content {
+.image-and-text--vertical-top .image-and-text__content {
 	align-self: start;
 }
 
-.is-vertically-aligned-center .wp-block-media-text__content {
+.image-and-text--vertical-center .image-and-text__content {
 	align-self: center;
 }
 
-.is-vertically-aligned-bottom .wp-block-media-text__content {
+.image-and-text--vertical-bottom .image-and-text__content {
 	align-self: end;
 }
 
@@ -91,15 +91,20 @@ figure {
 	margin-right: auto;
 }
 
-// Styling for media and text block with media on the left
-.wp-block-media-text {
+p img {
+	height: auto;
+	max-width: 100%;
+}
+
+// Base styling for media and text block
+.image-and-text {
 	display: grid;
 
-	.wp-block-media-text__content {
+	.image-and-text__content {
 		margin-left: rem(25);
 	}
 
-	.wp-block-media-text__media {
+	.image-and-text__media {
 		align-self: center;
 	}
 
@@ -109,14 +114,19 @@ figure {
 	}
 }
 
+// Styling for media and text block with media on the left
+.image-and-text--image-left {
+	grid-template-columns: 15% auto;
+}
+
 // Styling for media and text block with media on the right
-.has-media-on-the-right {
-	.wp-block-media-text__media {
+.image-and-text--image-right {
+	.image-and-text__media {
 		grid-column: 2;
 		grid-row: 1;
 	}
 
-	.wp-block-media-text__content {
+	.image-and-text__content {
 		grid-column: 1;
 		grid-row: 1;
 		margin-left: 0;
@@ -124,8 +134,7 @@ figure {
 }
 
 // The folowing CSS rule ensures video content is the width of the article element in mobile and iPad views
-.wp-block-video,
-.is-type-video {
+.embed--youtube {
 	min-width: 100%;
 }
 
@@ -142,7 +151,7 @@ figure {
 .wp-block-image,
 .wp-block-audio,
 .wp-block-embed,
-.wp-block-media-text,
+.image-and-text,
 .wp-block-group {
 	img {
 		max-width: 100%;
@@ -214,8 +223,7 @@ figcaption {
 		}
 
 		// WP customized styles for Desktop and iPad Pro views
-		.wp-block-video,
-		.is-type-video {
+		.embed--youtube {
 			min-width: auto;
 		}
 
@@ -232,8 +240,8 @@ figcaption {
 		}
 
 		// Styling for media and text block with media on the left
-		.wp-block-media-text {
-			.wp-block-media-text__content {
+		.image-and-text--image-left {
+			.image-and-text__content {
 				margin-left: rem(25);
 			}
 
@@ -244,15 +252,14 @@ figcaption {
 		}
 
 		// Styling for media and text block with media on the right
-		.has-media-on-the-right {
-			.wp-block-media-text__content {
+		.image-and-text--image-right {
+			.image-and-text__content {
 				margin-left: 0;
 				margin-right: rem(25);
 			}
 		}
 
-		.is-type-video .wp-block-embed__wrapper iframe,
-		.wp-block-video video {
+		.embed--youtube iframe {
 			height: rem(326);
 			width: rem(580);
 		}

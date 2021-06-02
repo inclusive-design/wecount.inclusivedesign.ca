@@ -1,6 +1,6 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, createPagination, processDisplayResults, filter, $ */
+/* global Vue, axios, search, createPagination, processDisplayResults, filter, generateAside, getSideMenuObserver, $ */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -15,8 +15,33 @@ for (let p of params) {
 	}
 }
 
+let isStaticViewVisible = true;
+
+/*
+ * Set up aside menu by:
+ * 1. populate content with headings sourced from given selectors;
+ * 2. Highlight the aside item at scrolling with the current active heading.
+ * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
+ */
+function setupAside(selectors) {
+	// Populate content with headings sourced from given selectors;
+	generateAside(document, selectors);
+	// Highlight the scrolled-to content heading on the <aside> list.
+	document.querySelectorAll(selectors).forEach((section) => {
+		const contentHeaderObserver = getSideMenuObserver();
+		contentHeaderObserver.observe(section);
+	});
+}
+
 new Vue({
 	el: "#defaultContainer",
+	data: {
+		searchTerm: searchTerm,
+		searchResult: "Searching...",
+		tags: [],
+		resultsToDisplay: [],
+		pagination: null
+	},
 	mounted() {
 		let vm = this;
 		let pagination;
@@ -25,6 +50,7 @@ new Vue({
 			// Hide the static view section and show the dynamic search and filtering result section
 			document.querySelector(".views.static-view").style.display = "none";
 			document.querySelector(".views.dynamic-view").style.display = "block";
+			isStaticViewVisible = false;
 
 			axios.get(
 				window.location.origin + "/viewsWithTags.json"
@@ -69,15 +95,17 @@ new Vue({
 			});
 		}
 	},
-	data: {
-		searchTerm: searchTerm,
-		searchResult: "Searching...",
-		tags: [],
-		resultsToDisplay: [],
-		pagination: null
-	},
-	computed: {}
+	updated() {
+		// Re-setup the <aside> section when filter/search results are rendered
+		document.querySelector("aside#toc").innerHTML="";
+		setupAside("main article.dynamic-view h1, main article.dynamic-view h2");
+	}
 });
+
+// Set up the aside menu when pages using the static view are loaded
+if (isStaticViewVisible) {
+	setupAside("main article.static-view h1, main article.static-view h2");
+}
 
 /*
  * Show/hide the corresponding arrow up and down buttons based on the expand state

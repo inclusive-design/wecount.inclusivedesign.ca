@@ -157,8 +157,8 @@
 		}
 	}
 
-	// Initiatives page: Workshop section
-	.one-workshop {
+	// Tile item
+	.tile-item {
 		box-shadow: rem(0) rem(0) rem(7) currentColor;
 
 		&:hover {
@@ -166,7 +166,7 @@
 		}
 	}
 
-	// Workshop Page
+	// Initiative Page
 	.disabled-element,
 	.submitted-comment {
 		opacity: 0.7;
@@ -227,12 +227,9 @@
 	.search-container input,
 	button:not(.filter-expand-button):focus,
 	button:not(.filter-expand-button):hover,
-	// The "post a comment" button on the Workshop page
+	// The "post a comment" button on the Initiative page
 	#comment-form button,
 	#comment-form button::before,
-	// The "register here" button on the Intiatives page
-	.registration-button,
-	.registration-button::before,
 	li .pagination-link,
 	li .pagination-link::before,
 	.wp-block-file__button:focus,

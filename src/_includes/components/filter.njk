@@ -1,32 +1,32 @@
 <div class="filter">
-	<div class="filter-header">
-		<h2 class="h3">{{ filterTitle}}</h2>
-		<button type="button" class="filter-expand-button" aria-expanded="false" aria-label="expand">
-			<svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
-			<svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
-		</button>
-	</div>
+  <div class="filter-header">
+    <h2 class="h3">{{ filterTitle }}</h2>
+    <button type="button" class="filter-expand-button" aria-expanded="false" aria-label="expand">
+      <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
+      <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
+    </button>
+  </div>
 
-	<div class="filter-body">
-		<ul class="filter-choices">
-			{% for tag in tagsOfViews %}
-			{# Since there are 2 filters on the "Views" page (one for the static view and the other for the dynamic view),
-			randomize the "id" of checkboxes to make sure every ID is unique on the page to avoid the html validation error. #}
-			{% set tagId = tag.slug | randomizeFilter %}
-			<li>
-				<input class="filter-checkbox" type="checkbox" id="{{ tagId }}" name="{{ tag.slug }}">
-				<label for="{{ tagId }}">{{ tag.name }}</label>
-			</li>
-			{% endfor %}
-		</ul>
+  <div class="filter-body">
+    <ul class="filter-choices">
+      {% for tag in collections.viewsTags %}
+      {# Since there are 2 filters on the "Views" page (one for the static view and the other for the dynamic view),
+      randomize the "id" of checkboxes to make sure every ID is unique on the page to avoid the html validation error. #}
+      {% set tagId = tag | slug | randomizeFilter %}
+      <li>
+        <input class="filter-checkbox" type="checkbox" id="{{ tagId }}" name="{{ tag | slug }}">
+        <label for="{{ tagId }}">{{ tag }}</label>
+      </li>
+      {% endfor %}
+    </ul>
 
-		<div class="filter-buttons">
-			<button class="apply-button" type="submit">
-				<svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
-			</button>
-			<button class="reset-button" type="button">
-				<svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
-			</button>
-		</div>
-	</div>
+    <div class="filter-buttons">
+      <button class="apply-button" type="submit">
+        <svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
+      </button>
+      <button class="reset-button" type="button">
+        <svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
+      </button>
+    </div>
+  </div>
 </div>

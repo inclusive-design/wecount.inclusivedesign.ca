@@ -2,14 +2,34 @@
 permalink: viewsWithTags.json
 ---
 {
-	"views": [
-	{%- for item in collections.views %}
-		{{ item | dump | safe }}{% if not loop.last %},{% endif %}
-	{%- endfor %}
-	],
-	"tags": [
-	{%- for item in collections.viewsTags %}
-		{{ item | dump | safe }}{% if not loop.last %},{% endif %}
-	{%- endfor %}
-	]
+  "views": [
+  {%- for item in collections.views %}
+    {
+      "title": {{ item.data.title | dump | safe }},
+      "author": {{ item.data.author | dump | safe }},
+      "content": {{ item.templateContent | dump | safe }},
+      "excerpt": {{ item.data.excerpt | dump | safe }},
+      "date": {{ item.data.date | dump | safe }},
+      "tags": [
+        {% for tag in item.data.tags %}
+        {
+          "name": {{ tag | dump | safe }},
+          "slug": {{ tag | slug | dump | safe }}
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ],
+      "picture": {% if item.data.picture %} {{ item.data.picture | dump | safe }} {% else %} "" {% endif %},
+      "altTag": {% if item.data.altTag %} {{ item.data.altTag | dump | safe }} {% else %} "" {% endif %},
+      "url": {{ item.url | dump | safe }}
+    }{% if not loop.last %},{% endif %}
+  {%- endfor %}
+  ],
+  "tags": [
+  {%- for item in collections.viewsTags %}
+    {
+      "name": {{ item | dump | safe }},
+      "slug": {{ item | slug | dump | safe }}
+    }{% if not loop.last %},{% endif %}
+  {%- endfor %}
+  ]
 }

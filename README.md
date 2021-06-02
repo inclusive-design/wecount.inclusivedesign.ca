@@ -9,13 +9,21 @@ The source code for the We Count website.
 
 The front end of the website is built with [Eleventy](https://11ty.dev/).
 
-The website uses 2 backend APIs:
+The website uses [Netlify CMS](https://netlifycms.org) to manage the following content:
 
-- WordPress API where WeCount team members create news, views and some site pages;
-  - The production WordPress site: [https://wecount-cms.inclusivedesign.ca/](https://wecount-cms.inclusivedesign.ca/)
-  - The development WordPress site: [https://wecount-dev.inclusivedesign.ca/](https://wecount-dev.inclusivedesign.ca/)
-- [Airtable API](https://airtable.com/api) that serves workshop information, user comments for workshops, AI resources and
-tools data.
+- [initiatives](src/collections/initiatives)
+- [pages](src/collections/pages)
+- [news](src/collections/news)
+- [views](src/collections/views)
+
+The website uses [Netlify Large Media](https://docs.netlify.com/large-media/overview/) for storing uploaded files with
+Git LFS. Developers must install [Git LFS](https://git-lfs.github.com/) and
+[consult the documentation for Netlify Large Media](https://docs.netlify.com/large-media/setup/) to ensure that they are
+working properly with the Git repository locally.
+
+The website also uses one backend API:
+
+- [Airtable API](https://airtable.com/api) that serves user comments for initiatives.
   - The production table: WeCount
   - The development table: WeCount_DEV
 
@@ -24,7 +32,9 @@ tools data.
 To contribute, please be sure to review our development processes as documented in the
 [contributing](.github/CONTRIBUTING.md) guide.
 
-To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
+To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system,
+as well as [Git LFS](https://git-lfs.github.com/) to ensure that you can work with uploaded files managed via
+[Netlify Large Media](https://docs.netlify.com/large-media/overview/) while working with the Git repository locally.
 
 Then, clone the project from GitHub. [Create a fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 with your GitHub account, then enter the following in your command line (make sure to replace `your-username` with your username):
@@ -39,10 +49,125 @@ From the root of the cloned project, enter the following in your command line to
 npm ci
 ```
 
+Add _Large Media_ support to the local development environment:
+
+```bash
+netlify lm:install
+```
+
+After running the following command, the output may instruct you to run further commands; run these as well. **Please note
+ that the command will be different on every environment.**
+
+```bash
+# this is an example, the path may be different depending on the environment
+source /home/username/.config/netlify/helper/path.bash.inc
+```
+
+## Content Management System (CMS)
+
+[Netlify CMS](https://netlifycms.org) is a client-side React application which manages files in a git repository,
+creating pull requests when new content is drafted and merging them when it is published. Access to this website's
+CMS is managed via [Netlify Identity](https://docs.netlify.com/visitor-access/identity/). If you need access to the
+CMS, a team administrator must invite you to create a Netlify Identity account.
+
+### CMS Configuration
+
+The CMS is configured via a [config.yml](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/config.yml)
+file according to Netlify CMS' [specifications](https://www.netlifycms.org/docs/configuration-options/).
+As an example, here is the configuration for the initiatives collection, stored in [`src/collections/initiatives`](src/collections/initiatives):
+
+```yaml
+  - name: initiatives
+    label: Initiatives
+    label_singular: Initiative
+    folder: "src/collections/initiatives"
+    slug: "{{title}}"
+    create: true
+    fields:
+      - label: "Event Title"
+        name: "title"
+        widget: "string"
+      - label: "Event ID"
+        name: "id"
+        widget: "uuid"
+        hint: "The ID is used to associate comments with this initiative and cannot be edited."
+      - label: "Permanent Link"
+        name: "permalink"
+        widget: "string"
+        required: false
+        hint: |-
+          If you do not specify a permanent link, one will be automatically generated from the event title.
+          Permalinks must have the format /initiatives/event-title/ (the trailing slash is required).
+      - label: "Event Date"
+        name: "eventDate"
+        widget: "datetime"
+        time_format: false
+        required: false
+      - label: "Cover Image"
+        name: "coverImageUrl"
+        widget: "image"
+        required: false
+      - label: "Cover Image Alt Text"
+        name: "coverImageAltText"
+        widget: "string"
+        required: false
+      - label: "Event Body"
+        name: "body"
+        widget: "markdown"
+      - label: "Short Description"
+        name: "shortDescription"
+        widget: "markdown"
+        hint: "The short description is shown on the Initiatives page."
+      - label: "Preview Image"
+        name: "previewImageUrl"
+        widget: "image"
+        required: false
+        hint: "The preview image is shown on the Initiatives page."
+      - label: "Preview Image Alt Text"
+        name: "previewImageAltText"
+        widget: "string"
+        required: false
+```
+
+For information on individual widgets and their configuration, see Netlify CMS' [widget documentation](https://www.netlifycms.org/docs/widgets/).
+
+### Previews
+
+Netlify CMS supports [preview templates](https://www.netlifycms.org/docs/customization/) for CMS content, which must be
+a React component registered with the following code (the following examples are for initiatives):
+
+```javascript
+CMS.registerPreviewTemplate("initiatives", Initiative);
+```
+
+The `Initiative` React component is created in [src/admin/cms.js](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js)
+based on a technique demonstrated in [Andy Bell's Hylia Eleventy starter kit](https://github.com/hankchizljaw/hylia):
+
+1. The site's Nunjucks templates are [precompiled](https://mozilla.github.io/nunjucks/api.html#precompiling) and copied
+   to the admin directory of the built site (Eleventy handles this [here](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/admin.11ty.js)).
+2. A generic [`Preview`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js#L20-L24)
+   React component accepts a data object and a Nunjucks template path, renders the Nunjucks template with the supplied
+   data using [Nunjucks Slim](https://mozilla.github.io/nunjucks/getting-started.html#when-in-the-browser), and outputs
+   the resulting HTML.
+3. The specific [`Initiative`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js#L35-L52)
+  React component passes the Preview component the entry object (from Netlify CMS), the Nunjucks template path (relative
+  to `src/_includes`), and a function which maps the entry object's data to what's needed in the Nunjucks template expects.
+
+This approach allows the templates which Eleventy uses to render the production site to be consumed by Netlify CMS and
+used to generate live previews as content editors are updating content in the CMS interface.
+
+### Testing the CMS
+
+The CMS may be tested locally without authentication if the site is being run in development mode as documented below.
+Any changes made will be immediately reflected in the file system. This is a good way of making sure that CMS functionality
+behaves as expected, but content should not be edited this way under normal circumstances. Rather, content editors should
+log in under their Netlify Identity accounts at <https://wecount.inclusivedesign.ca/admin/> and create content through the
+CMS interface.
+
 ## How to Run
 
 The website uses [Netlify Functions](https://functions.netlify.com/) to provide a server side endpoint that supports
-the save of user comments for workshops on the "Initiatives" page. To run the website in local development mode that
+the save of user comments for initiatives on the "Initiatives" page. To run the website in local development mode that
 supports a live reload at file changes, there are two ways to test the website with and without Netlify Functions.
 The latter is easier than the former:
 
@@ -75,7 +200,29 @@ Look for this box in your console output:
    └──────────────────────────────────────────────────┘
 ```
 
-The website will be available at [http://localhost:3000](http://localhost:64939).
+The website will be available at [http://localhost:64939](http://localhost:64939).
+
+Alternatively, a `.env` file can be created within the local project directory and
+environment variables can be added directly to it as follows:
+
+```env
+AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
+EMAIL_FROM=EMAIL_TO_VALUE
+EMAIL_FROM_PWD=EMAIL_FROM_PWD_VALUE
+EMAIL_TO_PRODUCTION=PRODUCTION_SITE_MODERATOR_EMAIL
+EMAIL_TO_DEV=DEV_SITE_MODERATOR_EMAIL
+AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
+AIRTABLE_BASE_DEV=AIRTABLE_BASE_VALUE_FOR_DEV
+```
+
+(Note: `.env` is in the project's `.gitignore` file to prevent sensitive information from being accidentally
+committed to git.)
+
+If a `.env` file is used, the local development server can be started with the following command:
+
+```bash
+netlify dev
+```
 
 ### Test the website without Netlify Functions
 
@@ -91,6 +238,24 @@ npm run start
 ```
 
 The website will be available at [http://localhost:3000](http://localhost:3000).
+
+Alternatively, a `.env` file can be created within the local project directory and
+environment variables can be added directly to it as follows:
+
+```env
+AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
+AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
+AIRTABLE_BASE_DEV=AIRTABLE_BASE_VALUE_FOR_DEV
+```
+
+(Note: `.env` is in the project's `.gitignore` file to prevent sensitive information from being accidentally
+committed to git.)
+
+If a `.env` file is used, the local development server can be started with the following command:
+
+```bash
+npm run start
+```
 
 ## How to Lint
 
@@ -112,16 +277,35 @@ We use the following lint configurations:
 Note that the website launched via this build method cannot save user comments to Airtable due to the absence of the
 server side save function.
 
-To build a static version of the website, enter the following in your command line:
+To build and serve a static version of the website, enter the following in your command line:
 
 ```bash
 # Due to security concerns, these environment variables are only available to WeCount team members
-export AIRTABLE_API_KEY=WECOUNT_API_KEY
+export AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
+export AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
 npm run build
-npx serve dist
+npm run serve
 ```
 
-The website will be available at [http://localhost:5000](http://localhost:5000)
+The website will be available at [http://localhost:5000](http://localhost:5000).
+
+Alternatively, a `.env` file can be created within the local project directory and
+environment variables can be added directly to it as follows:
+
+```env
+AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
+AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
+```
+
+(Note: `.env` is in the project's `.gitignore` file to prevent sensitive information from being accidentally
+committed to git.)
+
+If a `.env` file is used, the site can be built and served with the following commands:
+
+```bash
+npm run build
+npm run serve
+```
 
 ## How to Deploy
 
