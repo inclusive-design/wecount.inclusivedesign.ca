@@ -23,7 +23,7 @@ The partners on this project are:
 
 [CNIB Foundation](cnib.ca)
 
-[Wavefront Centre for Communication Accessibilit](Wavefrontcentre.ca)y -- Wavefrontcentre.ca 
+[Wavefront Centre for Communication Accessibilit](Wavefrontcentre.ca)y 
 March of Dimes Canada -- Marchofdimes.ca 
 Fable Tech Labs -- Makeitfable.com 
 Iris Institute -- Irisinstitute.ca 
