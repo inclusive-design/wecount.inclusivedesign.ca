@@ -1,0 +1,44 @@
+---
+permalink: learnResources.json
+---
+{
+  "resources": [
+  {%- for item in collections.resources %}
+    {
+      "title": {{ item.data.title | dump | safe }},
+      "focus": {{ item.data.focus | dump | safe }},
+      "readability": [
+        {% for readabilityValue in item.data.readability %}
+        {{ readabilityValue | dump | safe }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ],
+      "type": {{ item.data.type | dump | safe }},
+      "toolPurpose": [
+        {% for purpose in item.data.toolPurpose %}
+        {{ purpose | dump | safe }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ],
+      "toolAccessibilityIssues": [
+        {% for issue in item.data.toolAccessibilityIssues %}
+        {{ issue | dump | safe }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ],
+      "openSource": {{ item.data.openSource | dump | safe }},
+      "link": {% if item.data.link %} {{ item.data.link | dump | safe }} {% else %} "" {% endif %},
+      "keywords": [
+        {% for keyword in item.data.keywords %}
+        {{ keyword | dump | safe }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ],
+      "learnTags": [
+        {% for tag in item.data.learnTags %}
+        {{ tag | dump | safe }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ],
+      "sharePointUrl": {% if item.data.sharePointUrl %} {{ item.data.sharePointUrl | dump | safe }} {% else %} "" {% endif %},
+      "source": {{ item.data.source | dump | safe }},
+      "summary": {{ item.data.summary | dump | safe }}
+    }{% if not loop.last %},{% endif %}
+  {%- endfor %}
+  ]
+}
