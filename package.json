@@ -1,6 +1,6 @@
 {
   "name": "@wecount/wecount.inclusivedesign.ca",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "The source files for the We Count website, built with Eleventy.",
   "license": "BSD-3-Clause",
   "author": "OCAD University <idrc@ocadu.ca>",
@@ -12,7 +12,6 @@
   ],
   "private": true,
   "scripts": {
-    "airtable": "rimraf src/collections/resources/*.md && cp dist/airtable-resources/*.md src/collections/resources",
     "build": "npm-run-all clean -s build:*",
     "build:eleventy": "eleventy",
     "build:netlify-cms": "./build-cms.js",
@@ -29,7 +28,6 @@
     "lint-fix:js": "npm run lint:js -- --fix",
     "lint-fix:md": "npm run lint:md -- --fix",
     "lint-fix": "run-s lint-fix:*",
-    "migrate:airtable": "cross-env CONTEXT=production run-s build airtable",
     "release:major": "release major",
     "release:minor": "release minor",
     "release:patch": "release patch",

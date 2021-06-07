@@ -64,10 +64,6 @@ module.exports = function(eleventyConfig) {
 		return dataFetcherAirtable.comments();
 	});
 
-	eleventyConfig.addCollection("airtableResources", async function() {
-		return dataFetcherAirtable.literature();
-	});
-
 	eleventyConfig.addCollection("news", collection => {
 		return [
 			...collection.getFilteredByGlob("src/collections/news/*.md").sort((a, b) => b.data.date - a.data.date)

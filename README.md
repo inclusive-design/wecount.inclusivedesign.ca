@@ -23,8 +23,7 @@ working properly with the Git repository locally.
 
 The website also uses one backend API:
 
-- [Airtable API](https://airtable.com/api) that serves user comments for initiatives, AI resources and
-tools data.
+- [Airtable API](https://airtable.com/api) that serves user comments for initiatives.
   - The production table: WeCount
   - The development table: WeCount_DEV
 
@@ -48,6 +47,20 @@ From the root of the cloned project, enter the following in your command line to
 
 ```bash
 npm ci
+```
+
+Add _Large Media_ support to the local development environment:
+
+```bash
+netlify lm:install
+```
+
+After running the following command, the output may instruct you to run further commands; run these as well. **Please note
+ that the command will be different on every environment.**
+
+```bash
+# this is an example, the path may be different depending on the environment
+source /home/username/.config/netlify/helper/path.bash.inc
 ```
 
 ## Content Management System (CMS)

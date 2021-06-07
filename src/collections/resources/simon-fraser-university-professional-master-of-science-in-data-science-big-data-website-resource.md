@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://www.sfu.ca/computing/current-students/graduate-students/academic-programs/professional-master-of-science-in-computer-science/about-the-program/big-data.html"
 keywords: []
-learnTags: ["ethics","fairness","machineLearning","education","inclusivePractice","canadianLandscape"]
+learnTags: ["canadianLandscape","education","ethics","fairness","inclusivePractice","machineLearning"]
 summary: "The big data concentration develops data architects who can create new tools that find value in the vast amounts of information generated toda and who are capable of offering insights that influence strategic decision-making. "
 ---
 

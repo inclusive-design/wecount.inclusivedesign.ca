@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://peatworks.org/podcast-apprenticeships-and-employing-people-with-disabilities/"
 keywords: []
-learnTags: ["disability","business","employment","inclusivePractice"]
+learnTags: ["business","disability","employment","inclusivePractice"]
 summary: "A podcast that discusses how inclusive apprenticeships can help technology companies find new, diverse talent. "
 ---
 Future of Work Podcast, Episode 12.

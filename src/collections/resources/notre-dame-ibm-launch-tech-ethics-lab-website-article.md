@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://www.insideindianabusiness.com/story/42320124/notre-dame-ibm-launch-tech-ethics-lab"
 keywords: []
-learnTags: ["ethics","education","researchCentre"]
+learnTags: ["education","ethics","researchCentre"]
 summary: "The University of Notre Dame and IBM are launching a collaboration that intends to address ethical concerns raised by the use of advanced technologies. "
 ---
 

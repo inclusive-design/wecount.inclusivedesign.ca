@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: false
 link: "https://www.protocol.com/amp/timnit-gebru-fired-ethics-google-2649129371"
 keywords: []
-learnTags: ["ethics","fairness","trust","bias","business"]
+learnTags: ["bias","business","ethics","fairness","trust"]
 summary: "An article that describes how Timnit Gebru's firing could damage Google's reputation and ethical AI research within tech companies. "
 ---
 

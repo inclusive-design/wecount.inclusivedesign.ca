@@ -9,7 +9,7 @@ toolAccessibilityIssues: []
 openSource: true
 link: "https://sway.office.com/ZIetX05BXMPoBLHk"
 keywords: []
-learnTags: ["disability","business","employment","inclusivePractice"]
+learnTags: ["business","disability","employment","inclusivePractice"]
 summary: "Microsoft's plan and programs for hiring persons with disabilities. "
 ---
 A Message from Microsoft’s Chief
