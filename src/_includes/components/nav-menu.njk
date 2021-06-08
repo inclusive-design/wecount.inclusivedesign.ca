@@ -5,5 +5,4 @@
     <a {% if page.url === item.url %}aria-current="page" {% endif %}href="{{ item.url }}">{{ item.key }}</a>
     {%- endif %}
   {%- endfor %}
-  <a {% if page.url === '/map/' %}aria-current="page" {% endif %} href="/map/">Map</a>
 </nav>
