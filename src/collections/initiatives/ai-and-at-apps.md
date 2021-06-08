@@ -29,7 +29,7 @@ previewImageAltText: ""
 
 Artificial intelligence is rapidly advancing to think like us and to deep dream through machine learning. How can we leverage this technology to improve accessibility, and at the same time, keep up with the ramifications? Inspired by Dr. Roger Melko’s CBC podcast, this three-part workshop will explore and dig deeper into the possibilities of AI-powered assistive technology mobile apps.
 
-[AI-Powered Mobile Assistive Technology Apps webinar video](https://youtu.be/OGqcg2p_Etg)
+[AI and AT Apps webinar video](https://youtu.be/OGqcg2p_Etg)
 
 This workshop is comprised of three sessions:
 
