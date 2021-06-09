@@ -9,8 +9,10 @@ excerpt: The development team has created a new workflow supported by the
 tags:
   - workflow
 ---
-The development team has created a new workflow supported by the Personal Data Storage, or Preferences server, where the user makes save/retrieve requests for their preferences while on a static site, such as when a user changes their UI Options (UIO) preferences and wants to save them.
+The development team is defining the workflow supported by the Personal Data Storage, or Preferences server, where the user makes save/retrieve requests for their preferences while on a static site, such as when a user changes their UI Options (UIO) preferences and wants to save them.
 
-The workflow describes the requests, responses, payloads and database structures needed to support static access and single sign-on workflows. It also includes an OAuth2 authorization sequence where users are authenticated by a third-party single sign-on (SSO) provider, such as Google or GitHub.
+The workflow describes the requests, responses, payloads and database structures needed to support static access and single sign-on workflows. It includes an OAuth2 authorization sequence where users are authenticated by a third-party single sign-on (SSO) provider, such as Google or GitHub.
 
-To find out more about the workflow, visit the [GitHub page](https://github.com/klown/preferencesServer/blob/doc-proxy-oauth2-access/doc/StaticWorkflow.md).
+![Web sequence diagram showing the series of requests and responses among UIO, the Edge Proxy server, the Preferences Server, and the Single Sign-on provider](https://raw.githubusercontent.com/klown/preferencesServer/doc-proxy-oauth2-access/doc/images/StaticAuthWorkflow.png?nf_resize=fit&w=600 "Preferences OpenID Connect Flow")
+
+To find out more about the workflow including a step-by-step description of the diagram, visit the [GitHub page](https://github.com/klown/preferencesServer/blob/doc-proxy-oauth2-access/doc/StaticWorkflow.md).
