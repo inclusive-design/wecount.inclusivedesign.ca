@@ -38,11 +38,11 @@ Inclusive Data Systems 
 
 ## Methodology 
 
- 
+## Design
+
+![Planning flow chart of covid-19 data monitoir](/uploads/flowchart.jpeg "Planning flow chart of covid-19 data monitoir")
 
 ## Results & Findings 
-
-
 
 ## Discussion 
 
@@ -61,19 +61,11 @@ Recommendations (for future research) 
 * Data collection methods:  
 * Interviews | Audio recording | Video recording | Photography | Note-taking | Content produced by participants (journals/diaries/personal correspondence) |Co-design|Workshop 
 
- 
-
 ## Limitations 
-
- 
 
 ## Conclusion 
 
-
-
 ## References 
-
-
 
 ## Questions 
 
