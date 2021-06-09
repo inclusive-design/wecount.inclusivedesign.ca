@@ -42,9 +42,9 @@ Inclusive Data Systems 
 
 ![Planning flow chart of covid-19 data monitoir](/uploads/data-monitor-01.jpg "Planning flow chart of covid-19 data monitoir")
 
-![](/uploads/data-monitor-landing-page.png)
+![](/uploads/screen-1-01.jpg)
 
-![](/uploads/mobile-views-landing-page.png)
+![]()
 
 ## Results & Findings 
 
