@@ -85,8 +85,10 @@ const Views = createClass({
 
 		const tags = [];
 
-		for (const [index, value] of tagItems.entries()) {
-			tags.push(<a key={index} href={"/tags/" + slugFilter(value)}>{value}</a>);
+		if (tagItems) {
+			for (const [index, value] of tagItems.entries()) {
+				tags.push(<a key={index} href={"/tags/" + slugFilter(value)}>{value}</a>);
+			}
 		}
 
 		return <main>
@@ -303,4 +305,3 @@ CMS.registerEditorComponent({
 		}
 	],
 });
-
