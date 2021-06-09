@@ -9,7 +9,7 @@ excerpt: Our development team has been hard at work creating an inverted Wordle
 tags:
   - Wordle
 ---
-Nowadays, when wordles and word cloud centres build wordles based on people's answers to a question, majority answers are emphasized while minority answers fade in the background. In order to make minority voices being heard, the development team is building a wordle tool that users have options to flip the algorithm to highlight either the majority or minority answers.
+Nowadays, when word cloud centres build wordles based on people's answers to a question, majority answers are emphasized while minority answers fade in the background. In order to make minority voices being heard, the development team is building a wordle tool that users have options to flip the algorithm to highlight either the majority or minority answers.
 
 Currently, this wordle tool includes 2 steps below. The further development will be based on the feedback.
 
