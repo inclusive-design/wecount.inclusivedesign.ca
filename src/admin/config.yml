@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: dev
+  branch: main
 local_backend: true
 publish_mode: editorial_workflow
 site_url: "https://wecount.inclusivedesign.ca"
