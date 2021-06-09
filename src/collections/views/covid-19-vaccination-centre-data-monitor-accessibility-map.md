@@ -44,6 +44,8 @@ Inclusive Data Systems 
 
 ![](/uploads/data-monitor-landing-page.png)
 
+![](/uploads/mobile-views-landing-page.png)
+
 ## Results & Findings 
 
 ## Discussion 
