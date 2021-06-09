@@ -11,18 +11,17 @@ tags:
 ---
 Nowadays, when wordles and word cloud centres build wordles based on people's answers to a question, majority answers are emphasized while minority answers fade in the background. In order to make minority voices being heard, the development team is building a wordle tool that users have options to flip the algorithm to highlight either the majority or minority answers.
 
-Right now, this wordle tool includes these steps:
+Currently, this wordle tool includes 2 steps below. The further development will be based on the feedback.
 
 1. People submit their answers to a question.
 
 ![Submit answers to a question](/uploads/question.png)
 
-2. The wordle is built dynamically by polling submitted answers every 5 seconds. By default, the less frequent words will be highlighted, unless the "conventional weighting" box is checked.
+2. The wordle is built dynamically by polling submitted answers every 5 seconds. By default, the less frequent words will be highlighted. When the "conventional weighting" box is checked, the more frequent words will be highlighted.
 
-![](/uploads/wordle.png)
+![The wordle is built dynamically by polling submitted answers every 5 seconds](/uploads/wordle.png)
 
 Visit these wiki pages to learn more about the technical details:
 
 1. [Inverted Wordle Architecture](https://wiki.fluidproject.org/display/fluid/Inverted+Wordles+Architecture)
-
 2. [Evaluation of Word Cloud Libraries](https://wiki.fluidproject.org/display/fluid/Evaluation+of+word+cloud+libraries)
