@@ -44,7 +44,7 @@ Inclusive Data Systems 
 
 ![](/uploads/screen-1-01.jpg)
 
-![]()
+![](/uploads/screen-2-02.jpg)
 
 ## Results & Findings 
 
