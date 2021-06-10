@@ -25,6 +25,8 @@ This map demonstration was created to show how these data gaps can be addres
 * Street view/photos linking to Google Maps 
 * Comments and insights   
 
+### Workflow for COVID-19 Map interface
+
 ![](/uploads/data-monitor-01.jpg)
 
 
