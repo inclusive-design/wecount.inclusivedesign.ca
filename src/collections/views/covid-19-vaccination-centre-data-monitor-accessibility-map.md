@@ -31,7 +31,7 @@ This map demonstration was created to show how these data gaps can be addres
 
 ![Wireframe showing the covid-19 testing centres on mobile and desktop view. ](/uploads/covid-19-data-monitor-03.jpg "City Navigation")
 
-![Wireframe showing the centre selection on mobile and desktop view. The pop-up displays the address, contact details and available accessibility features.](/uploads/covid-19-data-monitor-04.jpg "Centre Deatils")
+![Wireframe showing the centre selection on mobile and desktop view. The pop-up displays the address, contact details and available accessibility features.](/uploads/covid-19-data-monitor-04.jpg "Centre Details and Contact Information")
 
 ## Map Prototype
 
