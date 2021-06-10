@@ -1,6 +1,5 @@
 ---
-title: "Accessible Data Demonstration: COVID-19 Vaccination
-  Centre  Accessibility Map  "
+title: "COVID-19 Vaccination Centre Data Monitor: Accessibility Map  "
 author: Uttara Ghodke
 date: 2021-06-08T18:12:48.138Z
 excerpt: This is a COVID-19 data monitor prototype test
@@ -13,7 +12,7 @@ With the evolving COVID-19 public health measures and rapid emergence of testing
 
 ## Map Demonstration 
 
-This map demonstration was created to show how these data gaps can be addressed, providing a way to find accessibility information that is not included in these datasets. The map demonstration uses an **example dataset** and demonstrates how data visualization can be designed in an accessible format. Accessibility features in the map include: Accessible Entrances, Accessible Washrooms, Accessible Parking, Individual Service and Wait Accommodations.  
+This map demonstration was created to show how these data gaps can be addressed, providing a way to find accessibility information that is not included in these datasets. The map demonstration uses an example dataset and demonstrates how data visualization can be designed in an accessible format. Accessibility features in the map include: Accessible Entrances, Accessible Washrooms, Accessible Parking, Individual Service and Wait Accommodations.  
 
 1. A base map with markers over the testing centers 
 2. Each marker will be clickable and include the following: 
@@ -24,15 +23,11 @@ This map demonstration was created to show how these data gaps can be addres
 * Street view/photos linking to Google Maps 
 * Comments and insights   
 
-![line flowchart for the accessibility covid-19 map prototype](/uploads/data-monitor-01.jpg "Workflow for COVID-19 Map interface")
+![line flowchart for the accessibility covid-19 map prototype](/uploads/data-monitor-prototyping-flow-chart-01.jpg "Workflow for COVID-19 Map interface")
 
 ![Wireframe showing the landing page on mobile and desktop view. ](/uploads/covid-19-data-monitor-01.jpg "Landing Page ")
 
-
-
 ![Wireframe showing the city/area navigation on mobile and desktop view. ](/uploads/covid-19-data-monitor-02.jpg "Accessibility Features")
-
-These images show that data is presented visually with colour and map placement as well as with text that can be accessed by assistive technologies. The overall design is not compromised and the individual can choose how they want to access the information provided in the data set. The data set is significantly expanded to detail accessibility features such as access to individual service, wait accommodations, washrooms and entrances. 
 
 ![Wireframe showing the covid-19 testing centres on mobile and desktop view. ](/uploads/covid-19-data-monitor-03.jpg "City Navigation")
 
@@ -42,7 +37,7 @@ These images show that data is presented visually with colour and map placement 
 
 ### <https://wecount.inclusivedesign.ca/map/>
 
-**[](https://wecount.inclusivedesign.ca/map/)Please note that this is a map demonstration used for accessible data visualization purposes** 
+[](https://wecount.inclusivedesign.ca/map/)Please note that this is a map demonstration used for accessible data visualization purposes 
 
 ## Contributors: 
 
