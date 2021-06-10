@@ -1,7 +1,7 @@
 ---
 title: "COVID-19 Vaccination Centre Data Monitor: Accessibility Map Demonstration"
 permalink: /views/mapdemo/
-author: Uttara Ghodke
+author: Uttara Ghodke and Celine Nguyen
 date: 2021-06-08T18:12:48.138Z
 excerpt: This is a COVID-19 data monitor prototype test
 ---
