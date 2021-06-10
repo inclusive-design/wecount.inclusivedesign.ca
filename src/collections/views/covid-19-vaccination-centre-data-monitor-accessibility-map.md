@@ -1,6 +1,6 @@
 ---
 title: "COVID-19 Vaccination Centre Data Monitor: Accessibility Map  "
-permalink: mapdemo
+permalink: mapdemo/
 author: Uttara Ghodke
 date: 2021-06-08T18:12:48.138Z
 excerpt: This is a COVID-19 data monitor prototype test
