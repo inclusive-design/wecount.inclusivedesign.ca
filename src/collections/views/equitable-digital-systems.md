@@ -7,6 +7,8 @@ excerpt: "The Future of Work: Equitable Digital Systems* project is an
   initiative at the Inclusive Design Research Centre, OCAD U examining the
   accessibility of the digital tools and systems we rely upon for work."
 ---
+![](/uploads/eds-colored-03.png)
+
 *The Future of Work: Equitable Digital Systems* project is an initiative at the Inclusive Design Research Centre, OCAD U examining the accessibility of the digital tools and systems we rely upon for work. The focus of the project is on ensuring that current and emerging technology and digital systems and their associated practices are meeting the needs of and enabling work for people with disabilities. The project looks specifically at systems used by organizations that are regulated by the Accessible Canada Act, Bill C-81.
 
 One of the primary goals of the Equitable Digital Systems project is to create a catalog of the digital systems in use by organizations under Bill C-81. The purpose of cataloging these digital systems is to develop a comprehensive overview of the tools being used in workplaces, so the accessibility barriers can be better understood and addressed. The project also uses a comparative approach by using the international policy landscape to analyze local accessibility standards, regulations, and guidelines for digital systems. This analysis of international policies will help to identify the current gaps in Canadian regulations and will inform local stakeholders about the areas where both policy and practice can improve. This analysis will also identify where Canadian policy can lead international policy. In the process, we seek to capitalize on opportunities for inclusive design as we analyze the best strategies for the ethical integration of digital systems in the workplace.
