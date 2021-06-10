@@ -1,5 +1,5 @@
 ---
-title: "COVID-19 Vaccination Centre Data Monitor: Accessibility Map  "
+title: "COVID-19 Vaccination Centre Data Monitor: Accessibility Map Demonstration"
 permalink: /views/mapdemo/
 author: Uttara Ghodke
 date: 2021-06-08T18:12:48.138Z
@@ -11,7 +11,7 @@ With the evolving COVID-19 public health measures and rapid emergence of testing
 
 ## Map Demonstration 
 
-This map demonstration was created to show how these data gaps can be addressed, providing a way to find accessibility information that is not included in these datasets. The map demonstration uses an example dataset and demonstrates how data visualization can be designed in an accessible format. Accessibility features in the map include: Accessible Entrances, Accessible Washrooms, Accessible Parking, Individual Service and Wait Accommodations.  
+This map demonstration was created to show how these data gaps can be addressed, providing a way to find accessibility information that is not included in these datasets. The map demonstration uses an example dataset and demonstrates how data visualization can be designed in an accessible format. Accessibility features in the map include: Accessible Entrances, Accessible Washrooms, Accessible Parking, Individual Service and Wait Accommodations. Additional features of the map demonstration are:
 
 1. A base map with markers over the testing centers 
 2. Each marker will be clickable and include the following: 
@@ -48,7 +48,7 @@ The following images show that data can be presented visually through placement 
 
 ### <https://wecount.inclusivedesign.ca/map/>
 
-[](https://wecount.inclusivedesign.ca/map/)Please note that this is a map demonstration used for accessible data visualization purposes 
+[](https://wecount.inclusivedesign.ca/map/)Please note that this is a map demonstration used for accessible data visualization purposes.
 
 ## Contributors: 
 
