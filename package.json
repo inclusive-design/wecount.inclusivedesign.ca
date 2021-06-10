@@ -1,6 +1,6 @@
 {
   "name": "@wecount/wecount.inclusivedesign.ca",
-  "version": "2.5.1",
+  "version": "2.6.0",
   "description": "The source files for the We Count website, built with Eleventy.",
   "license": "BSD-3-Clause",
   "author": "OCAD University <idrc@ocadu.ca>",
