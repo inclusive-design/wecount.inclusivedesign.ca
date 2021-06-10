@@ -21,12 +21,12 @@ Throughout the Equitable Digital Systems project, people with disabilities will 
 
 The partners on this project are:
 
-[L'Arche Canada](www.larche.ca)\
-[CNIB](www.cnib.ca)\
-[Wavefront Centre for Communication Accessibilit](www.Wavefrontcentre.ca)y \
-[March of Dimes Canada](www.marchofdimes.ca)\
-[Fable Tech Labs](www.makeitfable.com)
-[Iris Institute](www.irisinstitute.ca) \
+L'Arche Canada\
+CNIB\
+Wavefront Centre for Communication Accessibility \
+March of Dimes Canada\
+Fable Tech Labs
+Iris Institute \
 READ Initiative and Canadian Accessibility Network \
-[Centre for Independent Living Toronto](www.CILT.ca) \
+Centre for Independent Living Toronto \
 Canadian Council of the Blind
