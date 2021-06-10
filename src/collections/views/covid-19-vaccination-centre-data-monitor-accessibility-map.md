@@ -6,8 +6,6 @@ excerpt: This is a COVID-19 data monitor prototype test
 ---
 <!--StartFragment-->
 
-# COVID-19 Accessibility Map – Website/Newsletter Writeup 
-
 ## Background 
 
 With the evolving COVID-19 public health measures and rapid emergence of testing centres, there were several access barriers to obtain information to get tested for COVID-19. In a study conducted on behalf of Statistics Canada, it was reported that approximately 1 in 10 participants were not able to access COVID-19 related testing or medical attention due to their long-term condition or disability (Yang, Dorrance & Aitken, 2020). The Ontario Digital Service (2021) maintains an open dataset describing COVID-19 testing centres in the province​ with basic data on the centre amenities, such as location, hours of operation, walk-in availability, and accessibility (yes/no response). More detailed data on accessibility in the testing centres is needed, which requires direct engagement with the disability community. This highlights the data, policy, and design gap in accessing a COVID-19 testing centre.  
@@ -28,8 +26,6 @@ This map demonstration was created to show how these data gaps can be addres
 ### Workflow for COVID-19 Map interface
 
 ![](/uploads/data-monitor-01.jpg)
-
-
 
 ![](/uploads/covid-19-data-monitor-01.jpg)
 
