@@ -35,7 +35,7 @@ The following images show that data can be presented visually through placement 
 
 ![Wireframe showing the landing page on mobile and desktop view. ](/uploads/covid-19-data-monitor-01.jpg "Landing Page ")
 
-### Accessibility Features
+### Accessibility features
 
 ![Wireframe showing the city/area navigation on mobile and desktop view. ](/uploads/covid-19-data-monitor-02.jpg "Accessibility Features")
 
