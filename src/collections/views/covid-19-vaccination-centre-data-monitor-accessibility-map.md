@@ -23,17 +23,15 @@ This map demonstration was created to show how these data gaps can be addres
 * Street view/photos linking to Google Maps 
 * Comments and insights   
 
-### Workflow for COVID-19 Map interface
+![line flowchart for the accessibility covid-19 map prototype](/uploads/data-monitor-01.jpg "Workflow for COVID-19 Map interface")
 
-![line flowchart for the accessibility covid-19 map prototype](/uploads/data-monitor-01.jpg)
+![Wireframe showing the landing page on mobile and desktop view. ](/uploads/covid-19-data-monitor-01.jpg "Landing Page ")
 
-![Wireframe showing the landing page on mobile and desktop view. ](/uploads/covid-19-data-monitor-01.jpg)
+![Wireframe showing the city/area navigation on mobile and desktop view. ](/uploads/covid-19-data-monitor-02.jpg "Accessibility Features")
 
-![Wireframe showing the city/area navigation on mobile and desktop view. ](/uploads/covid-19-data-monitor-02.jpg)
+![Wireframe showing the covid-19 testing centres on mobile and desktop view. ](/uploads/covid-19-data-monitor-03.jpg "City Navigation")
 
-![Wireframe showing the covid-19 testing centres on mobile and desktop view. ](/uploads/covid-19-data-monitor-03.jpg)
-
-![Wireframe showing the centre selection on mobile and desktop view. The pop-up displays the address, contact details and available accessibility features.](/uploads/covid-19-data-monitor-04.jpg)
+![Wireframe showing the centre selection on mobile and desktop view. The pop-up displays the address, contact details and available accessibility features.](/uploads/covid-19-data-monitor-04.jpg "Centre Deatils")
 
 ## Map Prototype
 
