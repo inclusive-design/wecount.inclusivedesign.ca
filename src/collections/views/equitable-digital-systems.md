@@ -1,6 +1,6 @@
 ---
 title: Equitable Digital Systems
-permalink: EDS
+permalink: views/EDS/
 author: Vera Roberts
 date: 2021-06-03T19:11:15.805Z
 excerpt: "The Future of Work: Equitable Digital Systems* project is an
