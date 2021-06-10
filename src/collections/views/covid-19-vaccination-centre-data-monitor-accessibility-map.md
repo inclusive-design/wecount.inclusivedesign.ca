@@ -27,7 +27,9 @@ This map demonstration was created to show how these data gaps can be addres
 
 ![line flowchart for the accessibility covid-19 map prototype](/uploads/data-monitor-prototyping-flow-chart-01.jpg "Workflow for COVID-19 Map interface")
 
-### Landing Page 
+The following images show that data can be presented visually through placement on the map and use of colour as well as in text formats that can be read or accessed  by assistive technology. The information is presentation is flexible without compromising the design of the map and allows the individual to choose how to engage with the information.
+
+### Landing Page
 
 ![Wireframe showing the landing page on mobile and desktop view. ](/uploads/covid-19-data-monitor-01.jpg "Landing Page ")
 
