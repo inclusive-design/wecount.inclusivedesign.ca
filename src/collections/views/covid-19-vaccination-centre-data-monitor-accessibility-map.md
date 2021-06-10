@@ -25,6 +25,18 @@ This map demonstration was created to show how these data gaps can be addres
 * Street view/photos linking to Google Maps 
 * Comments and insights   
 
+![](/uploads/data-monitor-01.jpg)
+
+
+
+![](/uploads/covid-19-data-monitor-01.jpg)
+
+![](/uploads/covid-19-data-monitor-02.jpg)
+
+![](/uploads/covid-19-data-monitor-03.jpg)
+
+![](/uploads/covid-19-data-monitor-04.jpg)
+
 ## Map Prototype
 
 ### <https://wecount.inclusivedesign.ca/map/>
