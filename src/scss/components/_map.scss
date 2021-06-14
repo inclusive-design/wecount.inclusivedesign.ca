@@ -1,5 +1,11 @@
 // The specificity of #defaultContainer.map is required to override the use of #defaultContainer in other css files
 #defaultContainer.map {
+	main {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+	}
+
 	// Hide the footer when the map is in the mobile view
 	footer {
 		display: none;
@@ -35,6 +41,10 @@
 		}
 
 		.content-wrapper {
+			#fl-mapviz-disclaimer {
+				margin-top: -2px;
+			}
+
 			.fl-mapviz-search-results,
 			.fl-mapviz-filter-panel,
 			.fl-mapviz-city-list {
