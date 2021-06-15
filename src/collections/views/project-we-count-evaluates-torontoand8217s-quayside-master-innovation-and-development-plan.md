@@ -1,6 +1,5 @@
 ---
-title: Project We Count Evaluates Toronto’s Quayside Master Innovation and
-  Development Plan
+title: We Count Evaluates Toronto’s Quayside Master Innovation and Development Plan
 author: Vera Roberts
 date: 2020-03-02T16:47:51
 picture: /uploads/colin-carter-w1g2o4J_4Dg-unsplash-scaled.jpg
