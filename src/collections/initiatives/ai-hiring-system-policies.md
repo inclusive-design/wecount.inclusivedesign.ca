@@ -5,9 +5,9 @@ eventDate: 2020-11-17T04:00:00.000Z
 coverImageUrl: /uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disabiltiy logo"
 shortDescription: >-
-  Panelists will discuss how machine learning models can carry bias when
-  selecting candidates, affecting persons with disabilities and other individual
-  differences.
+  Panelists Alexandra Reeve Givens and Julia Stoyanovich will discuss how
+  machine learning models can carry bias when selecting candidates, affecting
+  persons with disabilities and other individual differences.
 
 
   November 17, 2020, 1:30 PM – 3:00 PM (EST)
