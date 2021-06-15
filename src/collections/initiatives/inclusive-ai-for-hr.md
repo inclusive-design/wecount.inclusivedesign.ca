@@ -16,7 +16,7 @@ previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### **How to Make Artificial Intelligence Inclusive for Hiring and HR**
 
-Panelists will highlight some of the potential problems that arise from AI in the hiring process and brainstorm ideas to make this process more inclusive for persons with disabilities.
+Panelists Shea Tanis and Rich Donovan will highlight some of the potential problems that arise from AI in the hiring process and brainstorm ideas to make this process more inclusive for persons with disabilities.
 
 The ideas that are generated from this webinar will provide insights for the development of standards and regulations that support diversity within data systems, with a particular focus on the ethical and transparent collection of data and the development of models and decision-making structures that recognize and respond to diversity.
 
