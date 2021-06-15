@@ -1,5 +1,5 @@
 ---
-title: AI Employment Systems
+title: AI Systems & Employment
 id: rechIn59lpbMoCvQ0
 eventDate: 2020-11-03T04:00:00.000Z
 coverImageUrl: /uploads/FWDlogoBforprocessing4x1.png
@@ -16,7 +16,7 @@ previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### **Risks and Opportunities of AI, Smart Systems and Automation for Employment of Persons with Disabilities**
 
-A group of expert panellists will give an introduction to AI and machine learning with a focus on how AI creates both barriers and new opportunities for persons with disabilities in the hiring, training and retention of employees.
+Expert panelists Anhong Guo, Shari Trewin, Ben Tamblyn and Chancey Fleet give an introduction to AI and machine learning with a focus on how AI creates both barriers and new opportunities for persons with disabilities in the hiring, training and retention of employees.
 
 November 3, 2020, 1:30 AM – 3:00 PM (EST)
 
