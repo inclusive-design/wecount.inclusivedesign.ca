@@ -16,7 +16,7 @@ previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### **Identifying and Addressing Bias in Machine Learning Models on Selection of Candidates from a Policy Perspective**
 
-Panelists will discuss how machine learning models can carry bias when selecting candidates, affecting persons with disabilities and other individual differences. We will focus on the many legal and ethical implications of machine learning bias as we explore the best policies and practices that should be adopted by both tech companies in the design of their algorithms and the employment organizations that use them. This webinar offers an understanding of the policy issues at stake within this area of algorithmic bias.
+Panelists Alexandra Reeve Givens and Julia Stoyanovich will discuss how machine learning models can carry bias when selecting candidates, affecting persons with disabilities and other individual differences. We will focus on the many legal and ethical implications of machine learning bias as we explore the best policies and practices that should be adopted by both tech companies in the design of their algorithms and the employment organizations that use them. This webinar offers an understanding of the policy issues at stake within this area of algorithmic bias.
 
 November 17, 2020, 1:30 PM – 3:00 PM (EST)
 
