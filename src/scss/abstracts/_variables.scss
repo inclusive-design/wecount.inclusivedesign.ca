@@ -9,6 +9,8 @@ $font-weight-bold: 700;
 
 /** Max Widths **/
 $max-width-margins: rem(1600);
+$full-width-video-margins: calc(-100vw / 2 + 37.5ch - 1.6875rem);
+$full-width-video-widescreen-margins: calc(-100vw / 2 + 65ch - 3.75rem);
 
 /** Colors **/
 
@@ -50,6 +52,9 @@ $orange-focus: #fadc90;
 $orange-light: #5c81a9;
 
 $yellow: #ffcb70;
+
+$border-shadow-radius: 4px;
+$border-shadow-light: 0 0 $border-shadow-radius rgba(0, 0, 0, 0.25);
 
 // UIO themes
 $UIOThemes:

@@ -19,8 +19,8 @@ header {
 		}
 
 		input[type="search"] {
-			border: 0;
 			border-radius: 50%;
+			box-shadow: $border-shadow-light;
 			outline: none;
 			padding: rem(8) rem(16);
 			width: rem(16);
@@ -34,10 +34,15 @@ header {
 	}
 
 	.site-nav-wrapper {
-		background-color: $navy-light;
+		background-color: $white;
 		width: 100%;
 
 		.site-nav {
+			// drop shadow around nav element
+			box-shadow: $border-shadow-light;
+			// spacing for drop shadow, due to clipping by the next element
+			margin-bottom: $border-shadow-radius;
+
 			.nav-wideScreen {
 				display: none;
 			}
@@ -62,7 +67,7 @@ header {
 						border: none;
 						border-radius: 0;
 						box-shadow: none;
-						color: $white;
+						color: $black;
 						padding: rem(8);
 
 						svg {
@@ -80,7 +85,6 @@ header {
 					button:hover,
 					button:focus {
 						background-color: $orange-focus;
-						color: $navy-light;
 					}
 
 					#menuToggleButton .screen-reader-only {
@@ -89,9 +93,14 @@ header {
 				}
 			}
 
+			// To make room for the box-shadow on nav container
+			.content-wrapper {
+				margin-top: 4px;
+			}
+
 			// Styles for the navigation menu
 			nav.primary-nav {
-				background: $navy-dark;
+				background: $white;
 				display: none;
 				position: absolute;
 				top: rem(48);
@@ -100,19 +109,15 @@ header {
 
 				a {
 					border-bottom: solid rem(2);
-					color: $white;
+					color: $black;
 					display: block;
 					float: none;
 					font-size: rem(18) !important; // Enactors.css in infusion uses !important on this element
 					font-weight: $font-weight-normal;
 					margin: rem(16) rem(16);
 					text-align: left;
+					text-transform: uppercase;
 					white-space: nowrap;
-
-					&:hover,
-					&:focus {
-						color: $navy-light;
-					}
 				}
 			}
 		}
@@ -149,6 +154,7 @@ header {
 					flex-direction: row;
 					justify-content: space-between;
 					margin: auto;
+					margin-top: 1rem;
 					max-width: $max-width-margins;
 					padding: 0 rem(16);
 				}

@@ -14,10 +14,9 @@
 
 	.fl-prefsEditor-buttons {
 		background: $white;
-		border: rem(1) solid $green-dark;
+		border: none;
 		border-radius: 0 0 rem(30) rem(30);
-		border-top: none;
-		box-shadow: none;
+		box-shadow: $border-shadow-light;
 		box-sizing: border-box;
 		max-height: rem(50);
 		padding: rem(10) rem(20);

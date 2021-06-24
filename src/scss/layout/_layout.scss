@@ -2,14 +2,6 @@
 @import "header";
 @import "footer";
 
-body {
-	background-attachment: fixed;
-	background-image: url("../images/background.svg");
-	background-position: 0 center;
-	background-repeat: repeat-x;
-	background-size: cover;
-}
-
 // Sticky footer. See https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 #defaultContainer {
 	display: flex;
@@ -133,9 +125,40 @@ p img {
 	}
 }
 
-// The folowing CSS rule ensures video content is the width of the article element in mobile and iPad views
 .embed--youtube {
 	min-width: 100%;
+}
+
+// The folowing CSS rule ensures that video content fits within the viewport for mobile and iPad views
+.wp-block-embed__wrapper iframe {
+	width: 100%;
+}
+
+// Special styling rules for homepage content
+article .homepage-content {
+	// removes underline for "non-h3" h2's
+	h2 {
+		border: none;
+	}
+
+	// The folowing CSS rule ensures video content is the width of the viewport in mobile and iPad views
+	.embed--youtube {
+		// not yet supported in Safari. for support details, see:
+		// https://caniuse.com/mdn-css_properties_aspect-ratio
+		aspect-ratio: 16 / 9;
+		display: block;
+		margin-left: $full-width-video-margins;
+		margin-right: $full-width-video-margins;
+		position: relative;
+	}
+
+	.embed--youtube iframe {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
 }
 
 .wp-block-group {
@@ -183,10 +206,6 @@ figcaption {
 	text-align: center;
 }
 
-// The folowing CSS rule ensures that video content fits within the viewport for mobile and iPad views
-.wp-block-embed__wrapper iframe {
-	width: 100%;
-}
 // Hide an element visually without hiding it from screen readers
 // Reference: https://tailwindcss.com/docs/screen-readers/#app
 .screen-reader-only {
@@ -262,6 +281,15 @@ figcaption {
 		.embed--youtube iframe {
 			height: rem(326);
 			width: rem(580);
+		}
+
+		// Special styling rules for homepage content
+		article .homepage-content {
+			// to make the YouTube embed full-width
+			.embed--youtube {
+				margin-left: $full-width-video-widescreen-margins;
+				margin-right: $full-width-video-widescreen-margins;
+			}
 		}
 
 		.alignleft,
