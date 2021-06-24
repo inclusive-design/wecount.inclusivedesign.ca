@@ -38,3 +38,15 @@ November 3, 2020, 1:30 AM – 3:00 PM (EST)
 **Moderator:**
 
 **Dr. Vera Roberts** is Senior Manager Research, Consulting and Projects at the Inclusive Design Research Centre (IDRC) at OCAD University. Vera’s primary research area is generating a culture of inclusion through outreach activities and implementation of inclusive technology and digital sharing platforms.
+
+### Earn a Learner badge
+
+You will learn:
+
+* How new innovative technology solutions can potentially mitigate hiring biases for people with disabilities
+* How the “normative behaviour” screening is harming people with disabilities
+
+Learn and earn badges from this event:
+
+1. Watch the accessible [AI Employment Systems webinar](https://youtu.be/C_2lFeH9y2I)
+2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply) (five short answer questions)
