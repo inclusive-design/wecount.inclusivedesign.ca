@@ -40,7 +40,13 @@ See our [currently available badges](/badges/#earn-a-badge).
 
 
 
+
+
+
 The Learner badge allows the recipient to show off their knowledge without a comprehensive assessment.
+
+
+
 
 
 
@@ -60,7 +66,13 @@ The Learner badge allows the recipient to show off their knowledge without a com
 
 
 
+
+
+
 The Brainstormer badge demonstrates that the earner has helped We Count discover or outline solutions and approaches to in-house initiatives and inclusive design challenges.
+
+
+
 
 
 
@@ -74,7 +86,13 @@ The Brainstormer badge demonstrates that the earner has helped We Count discover
 ### Collaborator
 
 {% imageAndText "/uploads/Badges_final_COLLABORATOR-300x300.png", "Hexagonal 'Collaborator' badge with WeCount logo. The top part contains the WeCount logo and text and bottom part contains illustration of two men chatting and 'Collaborator' text.", "right", "top" %}
+
+
+
 The Collaborator badge demonstrates that the earner has participated in a co-creation or co-research activity.
+
+
+
 {% endimageAndText %}
 
 - - -
@@ -88,7 +106,13 @@ The Collaborator badge demonstrates that the earner has participated in a co-cre
 
 
 
+
+
+
 The Communicator badge demonstrates that earners have delivered presentations, project reports and visualizations of findings culminated in earlier phases of a challenge activity.
+
+
+
 
 
 
@@ -101,7 +125,61 @@ The Communicator badge demonstrates that earners have delivered presentations, p
 
 To view available badges, select an initiative from the list below:
 
-* [Bias In, Bias Out](/initiatives/bias-in-bias-out/) (Learner)
-* [AI and AT Apps](/initiatives/ai-and-at-apps/) (Learner, Brainstormer, Communicator)
-* [Building Indigenous Future Imaginaries](https://wecount.inclusivedesign.ca/initiatives/building-indigenous-future-imaginaries/) (Learner)
-* [The Metric Society and the Unmeasurable](https://wecount.inclusivedesign.ca/initiatives/metric-society/) (Learner)
+### Bias In, Bias Out
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply">
+         <img alt="Bias In, Bias Out Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>
+
+### AI and AT Apps
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QHEE2ZaDRaNLJ/apply">
+         <img alt="AI and AT Apps Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QGPO1ZaDRa5F8/apply">
+         <img alt="AI and AT Apps Brainstormer badge" src="/uploads/Badges_final_BRAINSTORMER-300x300.png"
+         width="125">
+      </a>
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QGPPISaDRa5HL/apply">
+         <img alt="AI and AT Apps Communicator badge" src="/uploads/Badges_final_COMMUNICATOR-300x300.png"
+         width="125">
+      </a>
+
+### AI Employment Systems
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply">
+         <img alt="AI Employment Systems Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>
+
+### AI Hiring System Policies
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply">
+         <img alt="AI Hiring System Policies Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>
+
+### Inclusive AI for HR
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply">
+         <img alt="Inclusive AI for HR Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>
+
+### Building Indigenous Future Imaginaries
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QRIF1HaV773a5D0/apply">
+         <img alt="Building Indigenous Future Imaginaries Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>
+
+### The Metric Society and the Unmeasurable 
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QRZ70Ma1SCPa6F/apply">
+         <img alt="The Metric Society and the Unmeasurable Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>
