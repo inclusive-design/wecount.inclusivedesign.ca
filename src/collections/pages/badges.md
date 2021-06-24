@@ -45,7 +45,9 @@ See our [currently available badges](/badges/#earn-a-badge).
 
 
 
+
 The Learner badge allows the recipient to show off their knowledge without a comprehensive assessment.
+
 
 
 
@@ -75,7 +77,9 @@ The Learner badge allows the recipient to show off their knowledge without a com
 
 
 
+
 The Brainstormer badge demonstrates that the earner has helped We Count discover or outline solutions and approaches to in-house initiatives and inclusive design challenges.
+
 
 
 
@@ -99,7 +103,9 @@ The Brainstormer badge demonstrates that the earner has helped We Count discover
 
 
 
+
 The Collaborator badge demonstrates that the earner has participated in a co-creation or co-research activity.
+
 
 
 
@@ -123,7 +129,9 @@ The Collaborator badge demonstrates that the earner has participated in a co-cre
 
 
 
+
 The Communicator badge demonstrates that earners have delivered presentations, project reports and visualizations of findings culminated in earlier phases of a challenge activity.
+
 
 
 
@@ -141,10 +149,38 @@ The Communicator badge demonstrates that earners have delivered presentations, p
 
 Our initiatives and their corresponding badges are listed below. 
 
-### [Bias In, Bias Out](https://wecount.inclusivedesign.ca/initiatives/bias-in-bias-out/)
+### [The Metric Society and the Unmeasurable](https://wecount.inclusivedesign.ca/initiatives/metric-society/)
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply">
-         <img alt="Bias In, Bias Out Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+<a href="https://factory.cancred.ca/c/earnablebadge/QRZ70Ma1SCPa6F/apply">
+         <img alt="The Metric Society and the Unmeasurable Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>
+
+### [Building Indigenous Future Imaginaries](https://wecount.inclusivedesign.ca/initiatives/building-indigenous-future-imaginaries/)
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QRIF1HaV773a5D0/apply">
+         <img alt="Building Indigenous Future Imaginaries Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>
+
+### [Inclusive AI for HR](https://wecount.inclusivedesign.ca/initiatives/inclusive-ai-for-hr/)
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply">
+         <img alt="Inclusive AI for HR Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>[](https://wecount.inclusivedesign.ca/initiatives/bias-in-bias-out/)
+
+### [AI Hiring System Policies](https://wecount.inclusivedesign.ca/initiatives/ai-hiring-system-policies/)
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply">
+         <img alt="AI Hiring System Policies Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+         width="125">
+      </a>
+
+### [AI Employment Systems](https://wecount.inclusivedesign.ca/initiatives/ai-systems-and-employment/)
+
+<a href="https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply">
+         <img alt="AI Employment Systems Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
          width="125">
       </a>
 
@@ -165,37 +201,9 @@ Our initiatives and their corresponding badges are listed below.
          width="125">
       </a>
 
-### [AI Employment Systems](https://wecount.inclusivedesign.ca/initiatives/ai-systems-and-employment/)
+### [Bias In, Bias Out](https://wecount.inclusivedesign.ca/initiatives/bias-in-bias-out/)
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply">
-         <img alt="AI Employment Systems Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
+<a href="https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply">
+         <img alt="Bias In, Bias Out Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
          width="125">
-      </a>
-
-### [AI Hiring System Policies](https://wecount.inclusivedesign.ca/initiatives/ai-hiring-system-policies/)
-
-<a href="https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply">
-         <img alt="AI Hiring System Policies Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
-         width="125">
-      </a>
-
-### [Inclusive AI for HR](https://wecount.inclusivedesign.ca/initiatives/inclusive-ai-for-hr/)
-
-<a href="https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply">
-         <img alt="Inclusive AI for HR Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
-         width="125">
-      </a>
-
-### [Building Indigenous Future Imaginaries](https://wecount.inclusivedesign.ca/initiatives/building-indigenous-future-imaginaries/)
-
-<a href="https://factory.cancred.ca/c/earnablebadge/QRIF1HaV773a5D0/apply">
-         <img alt="Building Indigenous Future Imaginaries Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
-         width="125">
-      </a>
-
-### [The Metric Society and the Unmeasurable](https://wecount.inclusivedesign.ca/initiatives/metric-society/)
-
-<a href="https://factory.cancred.ca/c/earnablebadge/QRZ70Ma1SCPa6F/apply">
-         <img alt="The Metric Society and the Unmeasurable Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
-         width="125">
-      </a>
+      </a>[](https://wecount.inclusivedesign.ca/initiatives/building-indigenous-future-imaginaries/)
