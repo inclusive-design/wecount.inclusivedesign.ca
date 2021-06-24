@@ -134,38 +134,38 @@ To view available badges, select an initiative from the list below:
 
 ### AI and AT Apps
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply">
+<a href="https://factory.cancred.ca/c/earnablebadge/QHEE2ZaDRaNLJ/apply">
          <img alt="AI and AT Apps Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
          width="125">
       </a>
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply">
+<a href="https://factory.cancred.ca/c/earnablebadge/QGPO1ZaDRa5F8/apply">
          <img alt="AI and AT Apps Brainstormer badge" src="/uploads/Badges_final_BRAINSTORMER-300x300.png"
          width="125">
       </a>
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply">
+<a href="https://factory.cancred.ca/c/earnablebadge/QGPPISaDRa5HL/apply">
          <img alt="AI and AT Apps Communicator badge" src="/uploads/Badges_final_COMMUNICATOR-300x300.png"
          width="125">
       </a>
 
 ### AI Employment Systems
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply">
+<a href="https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply">
          <img alt="AI Employment Systems Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
          width="125">
       </a>
 
 ### AI Hiring System Policies
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply">
+<a href="https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply">
          <img alt="AI Hiring System Policies Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
          width="125">
       </a>
 
 ### Inclusive AI for HR
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply">
+<a href="https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply">
          <img alt="Inclusive AI for HR Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
          width="125">
       </a>
