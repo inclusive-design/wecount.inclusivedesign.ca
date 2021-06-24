@@ -43,5 +43,5 @@ You will learn:
 
 Learn and earn badges from this event:
 
-1. Watch the accessible Inclusive AI for HR webinar
-2. Apply for your Learner badge (five short answer questions)
+1. Watch the accessible [Inclusive AI for HR webinar](https://youtu.be/0fBqJgt_w2E)
+2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply) (five short answer questions)
