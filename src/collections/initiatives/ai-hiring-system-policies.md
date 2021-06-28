@@ -11,6 +11,9 @@ shortDescription: >-
 
 
   November 17, 2020, 1:30 PM – 3:00 PM (EST)
+
+
+  **Available badges:** Learner
 previewImageUrl: /uploads/8eb229f4.jpg
 previewImageAltText: "FWD: Future of Work and Disability"
 ---
