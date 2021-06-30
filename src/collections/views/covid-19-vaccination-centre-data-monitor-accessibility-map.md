@@ -26,7 +26,9 @@ This map demonstration was created to show how these data gaps can be addres
 * Comments and insights
 
 ## Map demonstration
+
 You can access the prototype map visualization at 
+
 ### <https://wecount.inclusivedesign.ca/map/>
 
 Note that the whilst the locations of the testing centres are sourced from real data, their accessibility status is synthesized by a random algorithm for the purposes of this visualization.
@@ -61,18 +63,18 @@ The following images show that data can be presented visually through placement 
 
 ![Wireframe showing the centre selection on mobile and desktop view. The pop-up displays the address, contact details and available accessibility features.](/uploads/covid-19-data-monitor-04.jpg "Centre Details and Contact Information")
 
-## Contributors: 
+## Contributors
 
-* Antranig Basman - Senior Technical Architect​ 
-* Cindy Qi Li - Senior Inclusive Developer​  
-* Uttara Ghodke - Inclusive Designer​ 
-* Lisa Liskovoi - Inclusive Designer​ 
+* Antranig Basman – Senior Technical Architect​ 
+* Cindy Qi Li – Senior Inclusive Developer​  
+* Uttara Ghodke – Inclusive Designer​ 
+* Lisa Liskovoi – Inclusive Designer​ 
 * Michelle D'Souza – Senior Inclusive Developer 
 * Dana Ayotte – Senior Inclusive Designer 
-* David Pereyra - Project & Outreach Coordinator​ 
-* Vera Roberts - Senior Research Manager​ 
-* Celine Nguyen - Research Assistant 
-* Jutta Treviranus - Director​ 
+* David Pereyra – Project & Outreach Coordinator​ 
+* Vera Roberts – Senior Research Manager​ 
+* Celine Nguyen – Research Assistant 
+* Jutta Treviranus – Director​ 
 
 ## References
 
