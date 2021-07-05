@@ -9,8 +9,9 @@ $font-weight-bold: 700;
 
 /** Max Widths **/
 $max-width-margins: rem(1600);
-$full-width-video-margins: calc(-100vw / 2 + 37.5ch - 1.6875rem);
-$full-width-video-widescreen-margins: calc(-100vw / 2 + 65ch - 3.75rem);
+// the ch widths represent the max width of the 'main' element in narrow and wide viewports
+$full-width-video-margins: calc(-50vw + min(37.5ch, 50%));
+$full-width-video-widescreen-margins: calc(-50vw + min(65ch, 50%));
 
 /** Colors **/
 

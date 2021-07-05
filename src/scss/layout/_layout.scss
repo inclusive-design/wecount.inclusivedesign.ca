@@ -150,6 +150,14 @@ article .homepage-content {
 		margin-left: $full-width-video-margins;
 		margin-right: $full-width-video-margins;
 		position: relative;
+
+		// fallback for aspect-ratio
+		@supports not (aspect-ratio: auto) {
+			height: 0;
+			overflow: hidden;
+			padding-top: 56.25%; // 16:9
+			position: relative;
+		}
 	}
 
 	.embed--youtube iframe {
@@ -158,6 +166,14 @@ article .homepage-content {
 		position: absolute;
 		top: 0;
 		width: 100%;
+
+		// fallback for aspect-ratio
+		@supports not (aspect-ratio: auto) {
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 }
 
