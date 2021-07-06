@@ -11,6 +11,7 @@ footer {
 	color: $white;
 	margin-top: rem(30);
 	padding: rem(16) rem(32);
+	text-align: center;
 
 	a {
 		color: $white;
@@ -23,7 +24,6 @@ footer {
 
 	.netlify-notice {
 		padding-top: rem(32);
-		text-align: center;
 
 		a {
 			font-weight: $font-weight-normal;
@@ -50,8 +50,6 @@ footer {
 			}
 
 			div {
-				text-align: center;
-
 				.funder-logo {
 					display: inline-block;
 				}
@@ -87,8 +85,6 @@ footer {
 			}
 
 			.footer-logos {
-				text-align: center;
-
 				a {
 					display: inline-block;
 				}
@@ -116,10 +112,6 @@ footer {
 		.social-media {
 			align-self: center;
 			padding-bottom: rem(32);
-
-			h2 {
-				text-align: center;
-			}
 
 			.social-media-icons {
 				display: grid;
