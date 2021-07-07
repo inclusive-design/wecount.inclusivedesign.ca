@@ -1,5 +1,5 @@
 ---
-title: AI and Disability
+title: "AI and Disability: A Double-Edged Sword"
 id: 33c17d09-a071-4c08-b0ae-bd7a813d826c
 eventDate: 2021-07-22T22:44:32.431Z
 coverImageUrl: /uploads/ai-and-disability_wordpress_2010x1052.png
