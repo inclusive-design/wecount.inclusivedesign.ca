@@ -69,6 +69,32 @@ footer {
 			}
 		}
 
+		.subscribe {
+			a {
+				background-color: $white;
+				border-radius: rem(28);
+				color: $navy-light;
+				padding: rem(16) rem(32);
+
+				&:hover,
+				&:focus {
+					background-color: $navy-light;
+					border: solid 1px $white;
+					color: $white;
+				}
+			}
+
+			hr {
+				background: $white;
+				margin-top: rem(48);
+				width: 100%;
+			}
+
+			.subscribe-text {
+				margin-bottom: rem(32);
+			}
+		}
+
 		.contact-info {
 			width: 100%;
 
@@ -177,11 +203,8 @@ footer {
 			.funders {
 				align-self: end;
 				grid-column: 2/3;
-				grid-row: 2/3;
-
-				div {
-					text-align: start;
-				}
+				grid-row: 3/3;
+				text-align: start;
 
 				svg {
 					margin-bottom: rem(16);
@@ -195,7 +218,8 @@ footer {
 
 			.contact-info {
 				grid-column: 1/2;
-				grid-row: 2/3;
+				grid-row: 3/3;
+				text-align: start;
 
 				.idrc-logo {
 					height: rem(96);
@@ -218,6 +242,7 @@ footer {
 
 			.social-media {
 				align-self: auto;
+				grid-row: 2;
 
 				h2 {
 					text-align: start;
@@ -251,6 +276,17 @@ footer {
 						height: rem(50);
 						width: rem(50);
 					}
+				}
+			}
+
+			.subscribe {
+				grid-column: span 2;
+				grid-row: 1;
+				text-align: left;
+
+				hr {
+					background: $white;
+					width: 100%;
 				}
 			}
 		}
