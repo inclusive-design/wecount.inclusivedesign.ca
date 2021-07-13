@@ -74,7 +74,7 @@ footer {
 				background-color: $white;
 				border-radius: rem(28);
 				color: $navy-light;
-				padding: rem(16) rem(32);
+				padding: rem(8) rem(8);
 
 				&:hover,
 				&:focus {
@@ -283,6 +283,10 @@ footer {
 				grid-column: span 2;
 				grid-row: 1;
 				text-align: left;
+
+				a {
+					padding: rem(16) rem(32);
+				}
 
 				hr {
 					background: $white;
