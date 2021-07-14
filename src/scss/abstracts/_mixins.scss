@@ -305,6 +305,13 @@
 		width: rem(19.2);
 	}
 
+	// Outlines for the main Search input and Subscribe button
+	header .search-container input[type="search"],
+	footer .footer-content .subscribe a {
+		border-style: solid;
+		border-width: rem(2);
+	}
+
 	// Hide ellipsis when a post excerpt is fully displayed
 	.news-grid .api-content .news-item .preview-content::after {
 		background: $bColor;
