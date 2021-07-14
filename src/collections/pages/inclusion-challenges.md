@@ -5,7 +5,7 @@ slug: inclusion-challenges
 excerpt: To achieve We Count’s goal of an inclusive and balanced data ecosystem
   for persons with disabilities, We Count is issuing an ongoing call for
   challenges. A We Count…
-menu_order: 0
+menu_order: 3
 ---
 To achieve We Count’s goal of an inclusive and balanced data ecosystem for persons with disabilities, We Count is issuing an ongoing call for challenges.
 
