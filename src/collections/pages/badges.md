@@ -23,8 +23,6 @@ The badges fall under a variety of categories, such as Learner, Brainstormer, Co
 * **Collaborator badge** demonstrates that the earner has participated in a co-creation or co-research activity.
 * **Communicator badge** demonstrates that earners have delivered presentations, project reports and visualizations of findings culminated in earlier phases of a challenge activity.
 
-
-
 ## How are badges earned?
 
 We Count badges are earned by registering with and participating in We Count initiatives or challenges and completing assessments. You can “stack” your badges to earn new badges.
@@ -45,6 +43,7 @@ Our initiatives and their corresponding badges are listed below.
 
 
 
+
 #### The Metric Society and the Unmeasurable Learner badge
 
 You will learn:
@@ -58,13 +57,10 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
-
-
-
-
 #### AI and AT Apps Learner badge
 
 You will learn:
@@ -74,30 +70,9 @@ You will learn:
 * By sharing your experience with technology in an AI-supported world in a succinct and organized format
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QHEE2ZaDRaNLJ/apply)
-
-
-
-
 {% endimageAndText %}
 
-{% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
 
-
-
-
-#### AI and AT Apps Brainstormer badge
-
-You will brainstorm:
-
-* By using cases of AI in assistive technology apps to evaluate how they impact persons with disabilities and marginalized communities
-* By exploring various accessibility features and design considerations present in current AI-powered mobile application technology
-
-[Apply for your Brainstormer Badge](https://factory.cancred.ca/c/earnablebadge/QGPO1ZaDRa5F8/apply)
-
-
-
-
-{% endimageAndText %}
 
 #### AI and AT Apps Communicator Badge
 
