@@ -5,6 +5,7 @@ module.exports = {
 	],
 	"rules": {
 		"indentation": "tab",
+		"no-descending-specificity": null,
 		"order/order": [
 			"custom-properties",
 			"declarations"

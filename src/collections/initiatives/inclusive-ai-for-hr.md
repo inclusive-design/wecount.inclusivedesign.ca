@@ -11,12 +11,15 @@ shortDescription: >-
 
 
   December 1, 2020, 1:30 PM – 3:00 PM (EST)
+
+
+  **Available badges:** Learner
 previewImageUrl: /uploads/8eb229f4.jpg
 previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### **How to Make Artificial Intelligence Inclusive for Hiring and HR**
 
-Panelists will highlight some of the potential problems that arise from AI in the hiring process and brainstorm ideas to make this process more inclusive for persons with disabilities.
+Panelists Shea Tanis and Rich Donovan will highlight some of the potential problems that arise from AI in the hiring process and brainstorm ideas to make this process more inclusive for persons with disabilities.
 
 The ideas that are generated from this webinar will provide insights for the development of standards and regulations that support diversity within data systems, with a particular focus on the ethical and transparent collection of data and the development of models and decision-making structures that recognize and respond to diversity.
 
@@ -33,3 +36,15 @@ December 1, 2020, 1:30 PM – 3:00 PM (EST)
 **Moderator:**
 
 **Dr. Vera Roberts** is Senior Manager Research, Consulting and Projects at the Inclusive Design Research Centre (IDRC) at OCAD University. Vera’s primary research area is generating a culture of inclusion through outreach activities and implementation of inclusive technology and digital sharing platforms.
+
+### Earn a Learner badge
+
+You will learn:
+
+* How AI in hiring systems impacts the employment of people with disabilities
+* How to better develop AI-based hiring systems that are inclusive and transparent for people with disabilities
+
+Learn and earn badges from this event:
+
+1. Watch the accessible [Inclusive AI for HR webinar](https://youtu.be/0fBqJgt_w2E)
+2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply) (five short answer questions)
