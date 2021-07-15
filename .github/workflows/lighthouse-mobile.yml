@@ -29,7 +29,7 @@ jobs:
           ${{ steps.netlify.outputs.url }}/advisory-panel/
           ${{ steps.netlify.outputs.url }}/news/
           ${{ steps.netlify.outputs.url }}/views/
-          ${{ steps.netlify.outputs.url }}/views/page/11/
+          ${{ steps.netlify.outputs.url }}/views/page/1/
           ${{ steps.netlify.outputs.url }}/views/the-importance-of-peripheral-vision/
           ${{ steps.netlify.outputs.url }}/tags/ai/
           ${{ steps.netlify.outputs.url }}/search/?s=inclusive
