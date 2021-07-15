@@ -5,18 +5,21 @@ eventDate: 2020-11-17T04:00:00.000Z
 coverImageUrl: /uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disabiltiy logo"
 shortDescription: >-
-  Panelists will discuss how machine learning models can carry bias when
-  selecting candidates, affecting persons with disabilities and other individual
-  differences.
+  Panelists Alexandra Reeve Givens and Julia Stoyanovich will discuss how
+  machine learning models can carry bias when selecting candidates, affecting
+  persons with disabilities and other individual differences.
 
 
   November 17, 2020, 1:30 PM – 3:00 PM (EST)
+
+
+  **Available badges:** Learner
 previewImageUrl: /uploads/8eb229f4.jpg
 previewImageAltText: "FWD: Future of Work and Disability"
 ---
 ### **Identifying and Addressing Bias in Machine Learning Models on Selection of Candidates from a Policy Perspective**
 
-Panelists will discuss how machine learning models can carry bias when selecting candidates, affecting persons with disabilities and other individual differences. We will focus on the many legal and ethical implications of machine learning bias as we explore the best policies and practices that should be adopted by both tech companies in the design of their algorithms and the employment organizations that use them. This webinar offers an understanding of the policy issues at stake within this area of algorithmic bias.
+Panelists Alexandra Reeve Givens and Julia Stoyanovich will discuss how machine learning models can carry bias when selecting candidates, affecting persons with disabilities and other individual differences. We will focus on the many legal and ethical implications of machine learning bias as we explore the best policies and practices that should be adopted by both tech companies in the design of their algorithms and the employment organizations that use them. This webinar offers an understanding of the policy issues at stake within this area of algorithmic bias.
 
 November 17, 2020, 1:30 PM – 3:00 PM (EST)
 
@@ -33,3 +36,15 @@ November 17, 2020, 1:30 PM – 3:00 PM (EST)
 **Moderator:**
 
 **Dr. Vera Roberts** is Senior Manager Research, Consulting and Projects at the Inclusive Design Research Centre (IDRC) at OCAD University. Vera’s primary research area is generating a culture of inclusion through outreach activities and implementation of inclusive technology and digital sharing platforms.
+
+### Earn a Learner badge
+
+You will learn:
+
+* How legal frameworks and public policies can act against structural discrimination in candidate selection on the basis of disability
+* About the challenges to policy regulations for AI hiring systems
+
+Learn and earn badges from this event:
+
+1. Watch the accessible [AI Hiring System Policies webinar](https://youtu.be/Tq230FBgoiU) 
+2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply) (five short answer questions)
