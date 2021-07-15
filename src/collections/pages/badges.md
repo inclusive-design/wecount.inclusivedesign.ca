@@ -16,7 +16,14 @@ We Count badges enable earners to showcase their proficiency in the growing fiel
 * Technical and research assistants that specialize in data science
 * Inclusive design facilitators with expertise in inclusive co-design
 
-The badges fall under a variety of categories, such as Learner, Brainstormer, Collaborator and Communicator, and can be undertaken independently or together as part of a continuing project.
+The badges fall under a variety of categories, such as Learner, Brainstormer, Collaborator and Communicator, and can be undertaken independently or together as part of a continuing project:
+
+* **Learner badge** allows the recipient to show off their knowledge without a comprehensive assessment.
+* **Brainstormer badge** demonstrates that the earner has helped We Count discover or outline solutions and approaches to in-house initiatives and inclusive design challenges.
+* **Collaborator badge** demonstrates that the earner has participated in a co-creation or co-research activity.
+* **Communicator badge** demonstrates that earners have delivered presentations, project reports and visualizations of findings culminated in earlier phases of a challenge activity.
+
+
 
 ## How are badges earned?
 
@@ -29,175 +36,12 @@ We Count badges are earned by registering with and participating in We Count ini
 
 See our [currently available badges](/badges/#earn-a-badge).
 
-## Badge types
-
-### Learner
-
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "Hexagonal 'Learner' badge with WeCount logo. The top part contains the WeCount logo and text and bottom part contains illustration of a person reading a book and 'Learner' text.", "right", "top" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The Learner badge allows the recipient to show off their knowledge without a comprehensive assessment.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% endimageAndText %}
-
-- - -
-
-### Brainstormer
-
-{% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "Hexagonal 'Brainstormer' badge with WeCount logo. The top part contains the WeCount logo and text and bottom part contains illustration of a brain and 'Brainstormer' text.", "right", "top" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The Brainstormer badge demonstrates that the earner has helped We Count discover or outline solutions and approaches to in-house initiatives and inclusive design challenges.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% endimageAndText %}
-
-- - -
-
-### Collaborator
-
-{% imageAndText "/uploads/Badges_final_COLLABORATOR-300x300.png", "Hexagonal 'Collaborator' badge with WeCount logo. The top part contains the WeCount logo and text and bottom part contains illustration of two men chatting and 'Collaborator' text.", "right", "top" %}
-
-
-
-
-
-
-
-
-
-
-
-
-The Collaborator badge demonstrates that the earner has participated in a co-creation or co-research activity.
-
-
-
-
-
-
-
-
-
-
-
-
-{% endimageAndText %}
-
-- - -
-
-### Communicator
-
-{% imageAndText "/uploads/Badges_final_COMMUNICATOR-300x300.png", "Hexagonal 'Communicator' badge with WeCount logo. The top part contains the WeCount logo and text and bottom part contains illustration of two men chatting and 'Collaborator' text.", "right", "top" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The Communicator badge demonstrates that earners have delivered presentations, project reports and visualizations of findings culminated in earlier phases of a challenge activity.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% endimageAndText %}
-
 ## Earn a badge
 
 Our initiatives and their corresponding badges are listed below. 
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -213,9 +57,11 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -231,9 +77,11 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
+
 
 
 
@@ -245,6 +93,7 @@ You will brainstorm:
 * By exploring various accessibility features and design considerations present in current AI-powered mobile application technology
 
 [Apply for your Brainstormer Badge](https://factory.cancred.ca/c/earnablebadge/QGPO1ZaDRa5F8/apply)
+
 
 
 
