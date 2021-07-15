@@ -13,6 +13,10 @@ The current data ecosystem — an evolving system used to collect and analyze da
 
 We Count, a project of the Inclusive Design Research Centre at OCAD University, was created to address bias, discrimination and barriers to participation and employment for persons with disabilities within the field of data science and data-driven systems.
 
+## Challenges
+
+{% youtube "https://youtu.be/cEnONDRi-_U" %}
+
 We Count is guided by challenges nominated by the community. Learn more about We Count challenges and how to nominate your challenge on our[ Challenges page.](https://wecount.inclusivedesign.ca/inclusion-challenges)
 
 ## Mission
