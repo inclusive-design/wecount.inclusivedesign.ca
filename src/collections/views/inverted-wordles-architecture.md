@@ -18,9 +18,10 @@ Currently, this wordle tool includes two steps. Further development will be base
 
 2. The wordle is built dynamically by polling submitted answers every five seconds. By default, the less frequent words will be highlighted. When the "conventional weighting" box is checked, the more frequent words will be highlighted.
 
-![The wordle is built dynamically by polling submitted answers every 5 seconds](/uploads/wordle.png)
+![The wordle is built dynamically by polling submitted answers every 5 seconds](/uploads/wordle.jpg)
 
 Visit these wiki pages to learn more about the technical details:
 
 1. [Inverted Wordle Architecture](https://wiki.fluidproject.org/display/fluid/Inverted+Wordles+Architecture)
 2. [Evaluation of Word Cloud Libraries](https://wiki.fluidproject.org/display/fluid/Evaluation+of+word+cloud+libraries)
+3. [The Source Code in GitHub](https://github.com/inclusive-design/inverted-wordles/)
