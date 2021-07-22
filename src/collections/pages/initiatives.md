@@ -1,10 +1,10 @@
 ---
-title: "Initiatives"
+title: Events
 permalink: /initiatives/
 slug: initiatives
-excerpt: |-
-  We Count has a lot of things on the go. You can learn and co-create with us and earn micro-badges to show your effort. Here are some of…
-menu_order: 4
+excerpt: We Count has a lot of things on the go. You can learn and co-create
+  with us and earn micro-badges to show your effort. Here are some of…
+menu_order: 3
 ---
 We Count has a lot of things on the go. You can learn and co-create with us and earn micro-badges to show your effort. Here are some of our upcoming and ongoing learning activities.
 

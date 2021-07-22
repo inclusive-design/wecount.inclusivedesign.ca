@@ -148,6 +148,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"src/_redirects": "_redirects"});
 	eleventyConfig.addPassthroughCopy({"manifest.json": "manifest.json"});
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
+	eleventyConfig.addPassthroughCopy({"node_modules/covid-data-monitor": "lib/covid-data-monitor"});
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});
 	eleventyConfig.addPassthroughCopy({"src/uploads": "uploads"});

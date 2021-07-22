@@ -1,7 +1,7 @@
 ---
-title: Views
+title: Initiatives
 layout: layouts/views.njk
-menu_order: 6
-excerpt: "Discover more about We Count’s efforts, activities and viewpoints."
+excerpt: Discover more about We Count’s efforts, activities and viewpoints.
+menu_order: 2
 ---
 Discover more about We Count’s efforts, activities and viewpoints.
