@@ -38,13 +38,10 @@ See our [currently available badges](/badges/#earn-a-badge).
 
 Our initiatives and their corresponding badges are listed below. 
 
+### The Metric Society and the Unmeasurable
+
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
-
-
-
-
-
-#### The Metric Society and the Unmeasurable Learner badge
+#### Learner badge
 
 You will learn:
 
@@ -53,15 +50,64 @@ You will learn:
 * About the importance of bottom-up, community-driven initiatives in addressing the top-down mismanagement of personal data and access to social services
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRZ70Ma1SCPa6F/apply)
-
-
-
-
-
 {% endimageAndText %}
 
+### Building Indigenous Future Imaginaries
+
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
-#### AI and AT Apps Learner badge
+#### Learner badge
+
+You will learn:
+
+* How various Indigenous communities are contributing to AI technology to express and preserve their identity
+* How Indigenous ways of knowing are contributing to the global conversation regarding society and AI
+
+[Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRIF1HaV773a5D0/apply)
+{% endimageAndText %}
+
+### Inclusive AI for HR
+
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+#### Learner badge
+
+You will learn:
+
+* How AI in hiring systems impacts the employment of people with disabilities
+* How to better develop AI-based hiring systems that are inclusive and transparent for people with disabilities
+
+[Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply)
+{% endimageAndText %}
+
+### AI Hiring System Policies
+
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+#### Learner badge
+
+You will learn:
+
+* How legal frameworks and public policies can act against structural discrimination in candidate selection on the basis of disability
+* About the challenges to policy regulations for AI hiring systems
+
+[Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply)
+{% endimageAndText %}
+
+### AI Employment Systems
+
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+#### Learner badge
+
+You will learn:
+
+* How new innovative technology solutions can potentially mitigate hiring biases for people with disabilities
+* How the “normative behaviour” screening is harming people with disabilities
+
+[Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply)
+{% endimageAndText %}
+
+### AI and AT Apps
+
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+#### Learner badge
 
 You will learn:
 
@@ -72,46 +118,38 @@ You will learn:
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QHEE2ZaDRaNLJ/apply)
 {% endimageAndText %}
 
+{% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
+#### Brainstormer badge
 
+You will brainstorm:
 
-#### AI and AT Apps Communicator Badge
+* By using cases of AI in assistive technology apps to evaluate how they impact persons with disabilities and marginalized communities
+* By exploring various accessibility features and design considerations present in current AI-powered mobile application technology
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QGPPISaDRa5HL/apply">
-         <img alt="AI and AT Apps Communicator badge" src="/uploads/Badges_final_COMMUNICATOR-300x300.png"
-         width="150">
-      </a>
+[Apply for your Brainstormer badge](https://factory.cancred.ca/c/earnablebadge/QGPO1ZaDRa5F8/apply)
+{% endimageAndText %}
 
-#### Building Indigenous Future Imaginaries
+{% imageAndText "/uploads/Badges_final_COMMUNICATOR-300x300.png", "We Count Communicator badge", "left", "top" %}
+#### Communicator badge
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QRIF1HaV773a5D0/apply">
-         <img alt="Building Indigenous Future Imaginaries Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
-         width="150">
-      </a>
+You will communicate:
 
-#### Inclusive AI for HR
+* Your enthusiasm and support in discussing AI in society and the implications for persons with disabilities and other groups
+* A basic understanding of accessibility and usability in presentation documents using Microsoft Office or G Suite
+* Your ability to synthesize qualitative data based on the content from the previous Brainstormer badge within a presentation
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply">
-         <img alt="Inclusive AI for HR Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
-         width="150">
-      </a>
+[Apply for your Communicator badge](https://factory.cancred.ca/c/earnablebadge/QGPPISaDRa5HL/apply)
+{% endimageAndText %}
 
-#### AI Hiring System Policies
+### Bias In, Bias Out
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply">
-         <img alt="AI Hiring System Policies Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
-         width="150">
-      </a>
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+#### Learner badge
 
-#### AI Employment Systems
+You will learn:
 
-<a href="https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply">
-         <img alt="AI Employment Systems Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
-         width="150">
-      </a>
+* How predictive algorithms and data mining affect different populations in a discriminatory manner
+* How specific data resources are used to train and reinforce machine learning models to produce biased outputs
 
-#### Bias In, Bias Out
-
-<a href="https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply">
-         <img alt="Bias In, Bias Out Learner badge" src="/uploads/Badges_final_LEARNER-300x300.png"
-         width="150">
-      </a>
+[Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply)
+{% endimageAndText %}
