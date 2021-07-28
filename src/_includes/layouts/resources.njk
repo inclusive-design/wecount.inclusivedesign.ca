@@ -1,0 +1,29 @@
+---
+title: Resources
+permalink: /resources/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
+pagination:
+  data: collections.resources
+  size: 10
+---
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+   <article class="resources static-view">
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+
+    <div class="api-content">
+      {% for item in pagination.items %}
+        {% set tileURL = item.url %}
+        {# the following line seems to break the render operation, though it worked before... #}
+        {{ item.data.title | log }}
+        {% set title = item.data.title %}
+        {% include "components/tile-item-resource.njk" %}
+      {% endfor %}
+    </div>
+
+    {% if pagination.pages.length > 1 %}
+      {% include 'components/pagination.njk' %}
+    {% endif %}
+  </article>
+{% endblock %}
