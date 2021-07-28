@@ -1,5 +1,5 @@
 ---
-title: This <<< >>> broken ;#@$(@*&%
+title: This isn't broken?
 focus: Data Science Education
 source: my own source
 readability:
