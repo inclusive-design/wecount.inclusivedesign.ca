@@ -1,5 +1,5 @@
 ---
-title: "\"Less Than One\"-Shot Learning: Learning N Classes From M<N Samples"
+title: "\"Less Than One\"-Shot Learning: Learning N Classes From M&lt;N Samples"
 focus: "Methods or Design"
 source: "University of Waterloo"
 readability: ["E"]

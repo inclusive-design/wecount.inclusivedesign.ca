@@ -15,8 +15,6 @@ pagination:
     <div class="api-content">
       {% for item in pagination.items %}
         {% set tileURL = item.url %}
-        {# the following line seems to break the render operation, though it worked before... #}
-        {{ item.data.title | log }}
         {% set title = item.data.title %}
         {% include "components/tile-item-resource.njk" %}
       {% endfor %}
