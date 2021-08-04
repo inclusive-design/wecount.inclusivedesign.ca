@@ -9,7 +9,8 @@
 	}
 
 	// Initiative title and descriptions
-	.tile-narrative {
+	.tile-narrative,
+	.tile-resource {
 		border-radius: rem(18) rem(18) rem(18) rem(18);
 		min-height: rem(208);
 		padding: 0 rem(16) rem(16) rem(16);
@@ -49,7 +50,8 @@
 		grid-template-columns: 70% 30%;
 		grid-template-rows: 100%;
 
-		.tile-narrative {
+		.tile-narrative,
+		.tile-resource {
 			border-radius: rem(18) 0 0 rem(18);
 			min-height: rem(336);
 			padding: 0 rem(16) rem(16) rem(32);

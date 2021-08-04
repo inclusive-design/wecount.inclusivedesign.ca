@@ -16,6 +16,18 @@ pagination:
       {% for item in pagination.items %}
         {% set tileURL = item.url %}
         {% set title = item.data.title %}
+        {% set source = item.data.source %}
+        {% set mediaType = item.data.type %}
+        {% set readabilityList = item.data.readability %}
+        {% set focus = item.data.focus %}
+        {% set tags = item.data.learnTags %}
+        {# The following fields do not currently have a design associated with them #}
+        {% set purpose = item.data.toolPurpose %}
+        {% set issues = item.data.toolAccessibilityIssues %}
+        {% set openSource = item.data.openSource %}
+        {% set keywords = item.data.keywords %}
+        {% set sharePointUrl = item.data.sharePointUrl %}
+        {% set summary = item.data.summary %}
         {% include "components/tile-item-resource.njk" %}
       {% endfor %}
     </div>

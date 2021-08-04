@@ -1,7 +1,54 @@
 <a href="{{ tileURL }}">
   <div class="tile-item">
-    <div class="tile-narrative">
+    <div class="tile-resource">
       <h2 class="h3">{{ title | safe }}</h2>
+      {# TODO: localize these items/labels #}
+      <div class="info">
+        Source: {{ source | safe }}
+      </div>
+      <div class="info">
+        Media Type: {{ mediaType | safe }}
+      </div>
+      <div class="info">
+        Readability:
+          {%- for readability in readabilityList -%}
+          {# TODO: expand these values into terms based on a lookup list #}
+          {{ readability | safe }}{% if not loop.last %},{% endif %}
+          {%- endfor -%}
+      </div>
+      <div class="info">
+        Focus: {{ focus | safe }}
+      </div>
+      <div class="info">
+        Tags:
+          {%- for tag in tags -%}
+          {# TODO: expand these values into terms based on a lookup list #}
+          {{ tag | safe }}{% if not loop.last %}, {% endif %}
+          {%- endfor -%}
+      </div>
+      <hr />
+      {# TODO: format and show/hide this data appropriately #}
+      <div class="info">
+        Purpose: {{ purpose | safe }}
+      </div>
+      <div class="info">
+        Focus: {{ issues | safe }}
+      </div>
+      <div class="info">
+        Open source: {{ openSource | safe }}
+      </div>
+      <div class="info">
+        Keywords: {{ keywords | safe }}
+      </div>
+      <div class="info">
+        SharePoint URL: {{ sharePointUrl | safe }}
+      </div>
+      <div class="info">
+        Summary: {{ summary | safe }}
+      </div>
+      <div class="info">
+        Abstract: {{ item.data.abstract | safe }}
+      </div>
     </div>
   </div>
 </a>
