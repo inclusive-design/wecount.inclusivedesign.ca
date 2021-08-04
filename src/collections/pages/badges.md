@@ -8,7 +8,7 @@ excerpt: |-
   other skills. Badges, once…
 menu_order: 4
 ---
-![Horizontal rectangle banner of four badges of WeCount. Learner, brainstormer, collaborator and communicator. All the badges are hexagonal in shape.](/uploads/banner-06-1024x270.jpg)
+{% youtube "https://youtu.be/t5CSlGcmln8" %}
 
 We Count badges enable earners to showcase their proficiency in the growing fields of AI, data systems and inclusive data practices as well as other skills. Badges, once earned, will be owned completely by the earner and can be shared across social media platforms, such as LinkedIn and Instagram, to display their achievement and showcase what has been learned. These badges are designed to address the interests, skills and availability of diverse participants. Earners can expect to work with and learn from a range of experts:
 
@@ -24,6 +24,8 @@ The badges fall under a variety of categories, such as Learner, Brainstormer, Co
 * **Communicator badge** demonstrates that earners have delivered presentations, project reports and visualizations of findings culminated in earlier phases of a challenge activity.
 
 ## How are badges earned?
+
+![Horizontal rectangle banner of four badges of WeCount. Learner, brainstormer, collaborator and communicator. All the badges are hexagonal in shape.](/uploads/banner-06-1024x270.jpg)
 
 We Count badges are earned by registering with and participating in We Count initiatives or challenges and completing assessments. You can “stack” your badges to earn new badges.
 
@@ -41,6 +43,7 @@ Our initiatives and their corresponding badges are listed below.
 ### The Metric Society and the Unmeasurable
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 #### Learner badge
 
 You will learn:
@@ -50,11 +53,13 @@ You will learn:
 * About the importance of bottom-up, community-driven initiatives in addressing the top-down mismanagement of personal data and access to social services
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRZ70Ma1SCPa6F/apply)
+
 {% endimageAndText %}
 
 ### Building Indigenous Future Imaginaries
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 #### Learner badge
 
 You will learn:
@@ -63,11 +68,13 @@ You will learn:
 * How Indigenous ways of knowing are contributing to the global conversation regarding society and AI
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRIF1HaV773a5D0/apply)
+
 {% endimageAndText %}
 
 ### Inclusive AI for HR
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 #### Learner badge
 
 You will learn:
@@ -76,11 +83,13 @@ You will learn:
 * How to better develop AI-based hiring systems that are inclusive and transparent for people with disabilities
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply)
+
 {% endimageAndText %}
 
 ### AI Hiring System Policies
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 #### Learner badge
 
 You will learn:
@@ -89,11 +98,13 @@ You will learn:
 * About the challenges to policy regulations for AI hiring systems
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply)
+
 {% endimageAndText %}
 
 ### AI Employment Systems
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 #### Learner badge
 
 You will learn:
@@ -102,11 +113,13 @@ You will learn:
 * How the “normative behaviour” screening is harming people with disabilities
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply)
+
 {% endimageAndText %}
 
 ### AI and AT Apps
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 #### Learner badge
 
 You will learn:
@@ -116,9 +129,11 @@ You will learn:
 * By sharing your experience with technology in an AI-supported world in a succinct and organized format
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QHEE2ZaDRaNLJ/apply)
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
+
 #### Brainstormer badge
 
 You will brainstorm:
@@ -127,9 +142,11 @@ You will brainstorm:
 * By exploring various accessibility features and design considerations present in current AI-powered mobile application technology
 
 [Apply for your Brainstormer badge](https://factory.cancred.ca/c/earnablebadge/QGPO1ZaDRa5F8/apply)
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_COMMUNICATOR-300x300.png", "We Count Communicator badge", "left", "top" %}
+
 #### Communicator badge
 
 You will communicate:
@@ -139,11 +156,13 @@ You will communicate:
 * Your ability to synthesize qualitative data based on the content from the previous Brainstormer badge within a presentation
 
 [Apply for your Communicator badge](https://factory.cancred.ca/c/earnablebadge/QGPPISaDRa5HL/apply)
+
 {% endimageAndText %}
 
 ### Bias In, Bias Out
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 #### Learner badge
 
 You will learn:
@@ -152,4 +171,5 @@ You will learn:
 * How specific data resources are used to train and reinforce machine learning models to produce biased outputs
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply)
+
 {% endimageAndText %}
