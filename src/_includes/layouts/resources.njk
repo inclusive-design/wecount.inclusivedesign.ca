@@ -8,9 +8,41 @@ pagination:
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-   <article class="resources static-view">
+  {# TODO: dedupe this declaration #}
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="placeholder" viewBox="-4 -4 224 224">
+      {% include 'svg/placeholder.svg' %}
+    </symbol>
+    <symbol id="arrowup" viewBox="0 0 39 23">
+      {% include 'svg/arrowup.svg' %}
+    </symbol>
+    <symbol id="arrowdown" viewBox="0 0 39 24">
+      {% include 'svg/arrowdown.svg' %}
+    </symbol>
+    <symbol id="apply" viewBox="0 0 26 26" fill="none">
+      {% include 'svg/apply.svg' %}
+    </symbol>
+    <symbol id="reset" viewBox="0 0 26 26" fill="none">
+      {% include 'svg/reset.svg' %}
+    </symbol>
+  </svg>
+
+  <article class="resources static-view">
     <h1>{{ title }}</h1>
     {{ content | safe }}
+
+    <form method="get" action="/views/">
+      {# TODO: review the language used for search instruction and labelling #}
+      {% set placeholderForSearch = "Search resources..." %}
+      {% set ariaLabelForSearch = "Enter keywords for a search in resources" %}
+      {% include 'components/search-container.njk' %}
+
+      {% set topicsFilterTitle = "Topics" %}
+      {% set tagsFilterTitle = "Tags" %}
+      {% set typeFilterTitle = "Media Type" %}
+      {% set filterAction = "/resources/" %}
+      {% include 'components/filter-resources.njk' %}
+    </form>
 
     <div class="api-content">
       {% for item in pagination.items %}
@@ -21,12 +53,6 @@ pagination:
         {% set readabilityList = item.data.readability %}
         {% set focus = item.data.focus %}
         {% set tags = item.data.learnTags %}
-        {# The following fields do not currently have a design associated with them #}
-        {% set purpose = item.data.toolPurpose %}
-        {% set issues = item.data.toolAccessibilityIssues %}
-        {% set openSource = item.data.openSource %}
-        {% set keywords = item.data.keywords %}
-        {% set sharePointUrl = item.data.sharePointUrl %}
         {% set summary = item.data.summary %}
         {% include "components/tile-item-resource.njk" %}
       {% endfor %}
