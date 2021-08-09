@@ -8,6 +8,7 @@ const fs = require("fs");
 const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
+const categoryFromFocusFilter = require("./src/filters/categoryFromFocus.js");
 const dateFilter = require("./src/filters/date.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
@@ -126,6 +127,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Add filters.
+	eleventyConfig.addFilter("categoryFromFocus", categoryFromFocusFilter);
 	eleventyConfig.addFilter("dateFilter", dateFilter);
 	eleventyConfig.addFilter("htmlSymbolFilter", htmlSymbolFilter);
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
