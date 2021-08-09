@@ -4,51 +4,33 @@
       <h2 class="h3">{{ title | safe }}</h2>
       {# TODO: localize these items/labels #}
       <div class="info">
-        Source: {{ source | safe }}
-      </div>
-      <div class="info">
         Media Type: {{ mediaType | safe }}
       </div>
+      {% if readabilityList %}
       <div class="info">
         Readability:
+        <ul class="resource-readability-list">
           {%- for readability in readabilityList -%}
-          {# TODO: expand these values into terms based on a lookup list #}
-          {{ readability | safe }}{% if not loop.last %},{% endif %}
+          <li>{{ resourceReadabilityLevels[readability] | safe }}{% if not loop.last %},{% endif %}</li>
           {%- endfor -%}
+        </ul>
       </div>
+      {% endif %}
       <div class="info">
+        {# TODO: look up and show topic based on this item's focus #}
         Focus: {{ focus | safe }}
       </div>
+      {% if tags %}
       <div class="info">
         Tags:
+        <ul class="resource-tags">
           {%- for tag in tags -%}
           {# TODO: expand these values into terms based on a lookup list #}
-          {{ tag | safe }}{% if not loop.last %}, {% endif %}
+          <li>{{ tag | safe }}</li>
           {%- endfor -%}
+        </ul>
       </div>
-      <hr />
-      {# TODO: format and show/hide this data appropriately #}
-      <div class="info">
-        Purpose: {{ purpose | safe }}
-      </div>
-      <div class="info">
-        Focus: {{ issues | safe }}
-      </div>
-      <div class="info">
-        Open source: {{ openSource | safe }}
-      </div>
-      <div class="info">
-        Keywords: {{ keywords | safe }}
-      </div>
-      <div class="info">
-        SharePoint URL: {{ sharePointUrl | safe }}
-      </div>
-      <div class="info">
-        Summary: {{ summary | safe }}
-      </div>
-      <div class="info">
-        Abstract: {{ item.data.abstract | safe }}
-      </div>
+      {% endif %}
     </div>
   </div>
 </a>
