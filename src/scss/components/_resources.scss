@@ -1,0 +1,9 @@
+// Resources page
+.resources {
+	.api-content {
+		column-gap: 3rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		row-gap: 3rem;
+	}
+}

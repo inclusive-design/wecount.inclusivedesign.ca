@@ -72,4 +72,9 @@
 			}
 		}
 	}
+
+	.resources .tile-item {
+		grid-template-columns: 1fr;
+		margin: 0;
+	}
 }
