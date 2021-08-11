@@ -17,7 +17,6 @@
       </div>
       {% endif %}
       <div class="info">
-        {# TODO: look up and show topic based on this item's focus #}
         Topic: {{ focus | categoryFromFocus(resourceCategories.resourceCategories) }}
       </div>
       {% if tags %}
@@ -25,8 +24,7 @@
         Tags:
         <ul class="resource-tags">
           {%- for tag in tags -%}
-          {# TODO: expand these values into terms based on a lookup list #}
-          <li>{{ tag | safe }}</li>
+          <li>{{ tag | getResourceTagLabel(resourceTags.resourceTags) }}</li>
           {%- endfor -%}
         </ul>
       </div>

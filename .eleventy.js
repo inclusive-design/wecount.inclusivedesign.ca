@@ -10,6 +10,7 @@ const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const categoryFromFocusFilter = require("./src/filters/categoryFromFocus.js");
 const dateFilter = require("./src/filters/date.js");
+const getResourceTagLabelFilter = require("./src/filters/getResourceTagLabel.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
 const paginateFilter = require("./src/filters/paginate.js");
@@ -129,6 +130,7 @@ module.exports = function(eleventyConfig) {
 	// Add filters.
 	eleventyConfig.addFilter("categoryFromFocus", categoryFromFocusFilter);
 	eleventyConfig.addFilter("dateFilter", dateFilter);
+	eleventyConfig.addFilter("getResourceTagLabel", getResourceTagLabelFilter);
 	eleventyConfig.addFilter("htmlSymbolFilter", htmlSymbolFilter);
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
