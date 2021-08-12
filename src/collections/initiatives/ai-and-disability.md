@@ -12,9 +12,6 @@ shortDescription: >-
 
 
   July 22, 2021, 1:30 PM – 3:00 PM (EDT)
-
-
-  **Register now**
 previewImageUrl: /uploads/ai-and-disability_wordpress_2010x1052-small.png
 ---
 ### AI and Disability: A Double-Edged Sword
@@ -22,8 +19,6 @@ previewImageUrl: /uploads/ai-and-disability_wordpress_2010x1052-small.png
 To celebrate the anniversary of the We Count Digging Deeper Series, we’re bringing you a special webinar that features an intimate conversation between Wendy Chisholm and Jutta Treviranus about the complex relationship between innovative technology and disability, with a focus on artificial intelligence (AI). Drawing on their wealth of knowledge and experience, these panelists will discuss the risks and rewards of AI for people with disabilities, as well as what the future of the industry may hold for the disability community.
 
 July 22, 2021, 1:30 PM – 3:00 PM (EDT)
-
-[Register now](https://ocadu.zoom.us/webinar/register/1616255213315/WN_T9Z9icenRbisr5M-y0uRWw)
 
  **Panelists:**
 
