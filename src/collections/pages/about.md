@@ -97,4 +97,4 @@ Francisco Uy
 
 ## Sign up to learn more about We Count
 
-Are you interested in hearing about We Count activities or do you want to be contacted to learn about ways you can participate? If yes then send us your contact information on our [contact form](https://forms.gle/WuCk59iQtiRX3sLC7).
+Are you interested in hearing about We Count activities or do you want to be contacted to learn about ways you can participate? [Subscribe now](http://eepurl.com/hBMRev).
