@@ -20,6 +20,8 @@ To celebrate the anniversary of the We Count Digging Deeper Series, we’re brin
 
 July 22, 2021, 1:30 PM – 3:00 PM (EDT)
 
+[AI and Disability webinar video](https://youtu.be/3qdgMkIxjtY)
+
  **Panelists:**
 
  **Wendy Chisholm** has been working to make the world more equitable since 1995, when she started working on what would become the W3C’s Web Content Accessibility Guidelines, the basis of worldwide web accessibility policy. Since then, she co-wrote Universal Design for Web Applications with Matt May (O’Reilly, 2008), worked as a consultant, and appeared as Wonder Woman in a web comic with the other HTML5 Super Friends. In 2010, she joined Microsoft to infuse accessibility into their engineering processes and drove the development of what is now Accessibility Insights. As of 2018, she manages the selection and funding of projects for Microsoft’s AI for Accessibility program — a $25 million grant program to accelerate AI innovations that are developed with or by people with disabilities.
