@@ -117,6 +117,21 @@ processDisplayResults = function (inArray) {
 };
 
 /*
+ * Process each object in the data set to convert some field value to formats for display.
+ * @param {Array<Object>} dataSet - The data set to process.
+ * @return The same set of the data set with fields converted.
+ */
+// eslint-disable-next-line
+processResourcesDisplayResults = function (inArray) {
+	return inArray.map((oneRecord) => {
+		oneRecord.title = htmlDecode(oneRecord.title);
+		oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime): undefined;
+		oneRecord.summary = stripHtmlTags(oneRecord.summary);
+		return oneRecord;
+	});
+};
+
+/*
  * Find and return an array of unique tags.
  * @param {Array<Object>} posts - An array of posts to find unique tags. Each object in this array contains a field named "tags"
  * that in a format of:
@@ -163,6 +178,22 @@ filter = function (dataSet, tagSlugs) {
 	return dataSet.filter((oneRecord) => {
 		const recordSlugs = oneRecord.tags ? oneRecord.tags.map(({slug}) => slug) : [];
 		return recordSlugs.some(slug => tagSlugs.indexOf(slug) >= 0);
+	});
+};
+
+/*
+ * Filter the data set with records that have one or more matching tag(s) in the given tag slugs array.
+ * @param {Array<Object>} dataSet - The data set that the filter is performed upon. Each object in this array contains a field named "tags"
+ * that in a format of:
+ * tags: [{slug: {String}, name: {String}}, ...]
+ * @param {Array<String>} tagSlugs - An array of tag slugs to match.
+ * @return A subset of the input `dataSet` that have matched tag slug(s) in `tagSlugs`
+ */
+// eslint-disable-next-line
+filterResources = function (dataSet, tagSlugs) {
+	return dataSet.filter((oneRecord) => {
+		const recordSlugs = oneRecord.learnTags ? oneRecord.learnTags.map((tag) => tag) : [];
+		return recordSlugs.some(tag => tagSlugs.indexOf(tag) >= 0);
 	});
 };
 

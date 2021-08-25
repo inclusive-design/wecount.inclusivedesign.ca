@@ -40,5 +40,6 @@ permalink: resources.json
       "summary": {{ item.data.summary | dump | safe }}
     }{% if not loop.last %},{% endif %}
   {%- endfor %}
-  ]
+  ],
+  "tags": {{ resourceTags.resourceTags | dump | safe }}
 }

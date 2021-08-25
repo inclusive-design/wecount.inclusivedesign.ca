@@ -9,20 +9,20 @@
   </div>
 
   <div class="filter-body">
-    <ul class="filter-choices">
-      {% for value in resourceCategories.resourceCategories %}
-        <div>
-          <ul>
-            <li>Category ID: {{ value.categoryId }}</li>
-            <li>Category Label: {{ value.categoryLabel }}</li>
-            <li>Focuses: {% for focus in value.focuses -%}
-              {{ focus | safe }}{% if not loop.last %},{% endif %}
-              {%- endfor -%}</li>
-          </ul>
-        </div>
-      {% endfor %}
+    {# Topic selections #}
+    {% for value in resourceCategories.resourceCategories %}
+      <ul>
+        <li>Category ID: {{ value.categoryId }}</li>
+        <li>Category Label: {{ value.categoryLabel }}</li>
+        <li>Focuses: {% for focus in value.focuses -%}
+          {{ focus | safe }}{% if not loop.last %},{% endif %}
+          {%- endfor -%}</li>
+      </ul>
+    {% endfor %}
 
-      {% for tag in resourceTags %}
+    {# Tag selections #}
+    <ul class="filter-choices">
+      {% for tag in resourceTags.resourceTags  %}
         {# Since there are multiple filters on the page (both for the static view and for the dynamic view),
         randomize checkbox IDs to ensure they're unique and avoid html validation errors #}
         {% set tagId = tag.value | randomizeFilter %}
