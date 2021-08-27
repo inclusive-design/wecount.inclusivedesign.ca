@@ -2,6 +2,8 @@
 permalink: resources.json
 ---
 {
+  "resourceCategories": {{ resourceCategories.resourceCategories | dump | safe }},
+  "resourceReadabilityLevels": {{ resourceReadabilityLevels | dump | safe }},
   "resources": [
   {%- for item in collections.resources %}
     {
@@ -41,5 +43,6 @@ permalink: resources.json
     }{% if not loop.last %},{% endif %}
   {%- endfor %}
   ],
+  "resourceTypes": {{ resourceTypes.resourceTypes | dump | safe }},
   "tags": {{ resourceTags.resourceTags | dump | safe }}
 }

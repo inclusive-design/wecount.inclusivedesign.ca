@@ -40,7 +40,10 @@ new Vue({
 		searchResult: "Searching...",
 		tags: [],
 		resultsToDisplay: [],
-		pagination: null
+		pagination: null,
+		resourceCategories: [],
+		resourceReadabilityLevels: [],
+		resourceTypes: []
 	},
 	mounted() {
 		let vm = this;
@@ -92,6 +95,10 @@ new Vue({
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
 				vm.searchResult = `${results.length} of ${response.data.resources.length} resources matched`;
+
+				vm.resourceCategories = response.data.resourceCategories;
+				vm.resourceReadabilityLevels = response.data.resourceReadabilityLevels;
+				vm.resourceTypes = response.data.resourceTypes;
 			});
 		}
 	},

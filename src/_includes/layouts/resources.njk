@@ -126,11 +126,38 @@ pagination:
           <div class="tile-resource">
             <h2 class="h3">{{ '{{ item.title }}' }}</h2>
             <div class="info">
-              Media Type: {{ '{{ item.mediaType }}' }}
+              Media Type: {{ '{{ item.type }}' }}
             </div>
+
+            <div class="info" v-if="item.readability">
+              Readability:
+              <ul class="resource-readability-list">
+                <li v-for="(readabilityLevel, key, index) in item.readability">
+                  {{ '{{ resourceReadabilityLevels[readabilityLevel] }}' }}
+
+                  {# TODO: get this conditional comma working #}
+                  {# <span v-if="index !== Object.keys(item.readability).length - 1">, </span> #}
+                </li>
+              </ul>
+            </div>
+            
             <div class="info">
               Focus: {{ '{{ item.focus }}' }}
             </div>
+
+            <div class="info">
+              Topic: {{ '{{ resourceCategories[focus] }}' }}
+            </div>
+
+            <div class="info" v-if="item.learnTags">
+              Tags:
+              <ul class="resource-tags">
+                <li v-for="(tag, key, index) in item.learnTags">
+                  {{ '{{ tags.filter(singleTag => singleTag.value === tag)[0].label }}' }}
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </a>
