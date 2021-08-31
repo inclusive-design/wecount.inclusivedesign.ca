@@ -146,7 +146,7 @@ pagination:
             </div>
 
             <div class="info">
-              Topic: {{ '{{ resourceCategories[focus] }}' }}
+              Topic: {{ '{{ resourceCategories.filter(cat => cat.focuses.includes(item.focus))[0].categoryLabel }}' }}
             </div>
 
             <div class="info" v-if="item.learnTags">
