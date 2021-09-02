@@ -1,4 +1,17 @@
 <div class="filter">
+  {# Topic selections #}
+  <ul>
+    {% for category in resourceCategories.resourceCategories %}
+      {# Since there are multiple filters on the page (both for the static view and for the dynamic view),
+      randomize checkbox IDs to ensure they're unique and avoid html validation errors #}
+      {% set categoryId = category.categoryId | randomizeFilter %}
+      <li>
+        <input class="filter-checkbox" type="checkbox" id="{{ categoryId }}" name="{{ 'c_' + category.categoryId | slug }}">
+        <label for="{{ categoryId }}">{{ category.categoryLabel }}</label>
+      </li>
+    {% endfor %}
+  </ul>
+
   <div class="filter-header">
     {# TODO: Dedupe this control #}
     <h2 class="h3">{{ tagsFilterTitle }}</h2>
@@ -9,37 +22,37 @@
   </div>
 
   <div class="filter-body">
-    {# Topic selections #}
-    {% for value in resourceCategories.resourceCategories %}
-      <ul>
-        <li>Category ID: {{ value.categoryId }}</li>
-        <li>Category Label: {{ value.categoryLabel }}</li>
-        <li>Focuses: {% for focus in value.focuses -%}
-          {{ focus | safe }}{% if not loop.last %},{% endif %}
-          {%- endfor -%}</li>
-      </ul>
-    {% endfor %}
-
     {# Tag selections #}
     <ul class="filter-choices">
       {% for tag in resourceTags.resourceTags  %}
-        {# Since there are multiple filters on the page (both for the static view and for the dynamic view),
-        randomize checkbox IDs to ensure they're unique and avoid html validation errors #}
         {% set tagId = tag.value | randomizeFilter %}
         <li>
-          <input class="filter-checkbox" type="checkbox" id="{{ tagId }}" name="{{ tag.value | slug }}">
+          <input class="filter-checkbox" type="checkbox" id="{{ tagId }}" name="{{ 't_' + tag.value | slug }}">
           <label for="{{ tagId }}">{{ tag.label }}</label>
         </li>
       {% endfor %}
     </ul>
+  </div>
 
-    <div class="filter-buttons">
-      <button class="apply-button" type="submit">
-        <svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
-      </button>
-      <button class="reset-button" type="button">
-        <svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
-      </button>
-    </div>
+  <div class="filter-body">
+    {# Media Type selections #}
+    <ul class="filter-choices">
+      {% for mediaType in resourceTypes.resourceTypes  %}
+        {% set typeId = mediaType.value | randomizeFilter %}
+        <li>
+          <input class="filter-checkbox" type="checkbox" id="{{ typeId }}" name="{{ 'm_' + mediaType.value | slug }}">
+          <label for="{{ typeId }}">{{ mediaType.value }}</label>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="filter-buttons">
+    <button class="apply-button" type="submit">
+      <svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
+    </button>
+    <button class="reset-button" type="button">
+      <svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
+    </button>
   </div>
 </div>

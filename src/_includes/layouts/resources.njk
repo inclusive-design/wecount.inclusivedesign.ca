@@ -76,7 +76,7 @@ pagination:
         <input type="search" name="s" :value="searchTerm" placeholder="Search resources..." aria-label="Enter keywords for a search in resources">
       </div>
 
-      {# Filter #}
+      {# Tags filter #}
       <div class="filter">
         <div class="filter-header">
           <h2 class="h3">Search Filters</h2>
@@ -89,20 +89,20 @@ pagination:
         <div class="filter-body">
           <ul class="filter-choices">
             <li v-for="tag in tags">
-              <input class="filter-checkbox" type="checkbox" v-model="tag.checked" :id="tag.value" :name="tag.value">
+              <input class="filter-checkbox" type="checkbox" v-model="tag.checked" :id="tag.value" :name="'t_' + tag.value">
               <label :for="tag.value">{{ '{{ tag.label }}' }}</label>
             </li>
           </ul>
-
-          <div class="filter-buttons">
-            <button class="apply-button" type="submit">
-              <svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
-            </button>
-            <button class="reset-button" type="button">
-              <svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
-            </button>
-          </div>
         </div>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="apply-button" type="submit">
+          <svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
+        </button>
+        <button class="reset-button" type="button">
+          <svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
+        </button>
       </div>
     </form>
 

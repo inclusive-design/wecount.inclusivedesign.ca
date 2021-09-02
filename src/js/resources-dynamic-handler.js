@@ -8,10 +8,26 @@ let searchTerm = params.get("s") ? params.get("s").trim() : "";
 let pageInQuery = params.get("page");
 
 // Get selected tags to filter
+let selectedCategories = [];
 let selectedTags = [];
+let selectedTypes = [];
+
 for (let p of params) {
-	if (p[0] !== "s" && p[0] !== "page") {
-		selectedTags.push(p[0]);
+	let queryKeyPrefix = p[0].substr(0, 2); // only need to check the first two characters
+	let queryKeyWithoutPrefix = p[0].substr(2);
+
+	if (queryKeyPrefix !== "s" && queryKeyPrefix !== "pa") { // if it's not the search term or page number...
+		switch (queryKeyPrefix) {
+		case "c_": // category
+			selectedCategories.push(queryKeyWithoutPrefix);
+			break;
+		case "m_": // media type
+			selectedTypes.push(queryKeyWithoutPrefix);
+			break;
+		case "t_": // tag
+			selectedTags.push(queryKeyWithoutPrefix);
+			break;
+		}
 	}
 }
 
@@ -58,6 +74,11 @@ new Vue({
 			axios.get(
 				window.location.origin + "/resources.json"
 			).then(function (response) {
+				// Set up lookup arrays
+				vm.resourceCategories = response.data.resourceCategories;
+				vm.resourceReadabilityLevels = response.data.resourceReadabilityLevels;
+				vm.resourceTypes = response.data.resourceTypes;
+
 				// Search
 				let results = response.data.resources;
 				if (searchTerm) {
@@ -68,8 +89,16 @@ new Vue({
 				let tagsQuery = "";
 				if (selectedTags.length > 0)
 				{
-					results = filterResources(results, selectedTags);
-					tagsQuery = selectedTags.join("=on&") + "=on";
+					// results = filterResources(results, selectedTags);
+					let filterSettings = {
+						categories: vm.resourceCategories || [],
+						selectedCategories: selectedCategories || [],
+						selectedTags: selectedTags || [],
+						selectedTypes: selectedTypes || []
+					};
+
+					results = filterResources(results, filterSettings);
+					tagsQuery = selectedTags.map(tag => "t_" + tag).join("=on&") + "=on";
 				}
 
 				// Convert some post values to formats that can be displayed
@@ -95,10 +124,6 @@ new Vue({
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
 				vm.searchResult = `${results.length} of ${response.data.resources.length} resources matched`;
-
-				vm.resourceCategories = response.data.resourceCategories;
-				vm.resourceReadabilityLevels = response.data.resourceReadabilityLevels;
-				vm.resourceTypes = response.data.resourceTypes;
 			});
 		}
 	},
