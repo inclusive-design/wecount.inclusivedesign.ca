@@ -27,6 +27,8 @@ December 1, 2020, 1:30 PM – 3:00 PM (EST)
 
 [Inclusive AI for HR webinar video](https://youtu.be/0fBqJgt_w2E)
 
+[Inclusive AI for HR transcript](/uploads/future-of-work_inclusive-ai-for-hr_dec-1_transcript.docx)
+
 **Panelists:**
 
 **Shea Tanis** is the Director for Policy and Advocacy at the Coleman Institute for Cognitive Disabilities at the University of Colorado. She is nationally recognized for her expertise in applied cognitive technology supports, cognitive accessibility and advancing the rights of people with cognitive disabilities to technology and information access.
