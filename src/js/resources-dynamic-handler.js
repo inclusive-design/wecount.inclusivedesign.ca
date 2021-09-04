@@ -100,7 +100,9 @@ new Vue({
 					results = processResourcesDisplayResults(results);
 				}
 				
-				let tagsQuery = selectedTags.map(tag => "t_" + tag).join("=on&") + selectedCategories.map(cat => "c_" + cat).join("=on&") + selectedTypes.map(type => "t_" + type).join("=on&") + "=on";
+				let tagsQuery = selectedTags.map(tag => "t_" + tag).join("=on&") +
+					selectedCategories.map(cat => "c_" + cat).join("=on&") +
+					selectedTypes.map(type => "t_" + type).join("=on&") + "=on";
 				
 				// Paginate search results
 				if (results.length > pageSize) {
@@ -108,13 +110,11 @@ new Vue({
 				}
 
 				// add checked states for tags, categories and media types
-				vm.tags = response.data.tags.map(tag => ({ ...tag, checked: includesCaseInsensitive(selectedTags, tag.value)}));
+				vm.tags = response.data.tags.map(tag => ({ ...tag, checked: selectedTags.includes(tag.value)}));
 				vm.resourceCategories = response.data.resourceCategories.map(cat => ({ ...cat, checked: includesCaseInsensitive(selectedCategories, cat.categoryId)}));
 				vm.resourceTypes = response.data.resourceTypes.map(type => ({ ...type, checked: includesCaseInsensitive(selectedTypes, type.value)}));
-
-				vm.selectedTags = response.data.tags.filter(tag => {
-					return selectedTags.includes(tag.value);
-				});
+				
+				vm.selectedTags = response.data.tags.filter(tag => selectedTags.includes(tag.value));
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
 				vm.searchResult = `${results.length} of ${response.data.resources.length} resources matched`;

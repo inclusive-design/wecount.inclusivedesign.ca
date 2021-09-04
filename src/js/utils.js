@@ -1,6 +1,6 @@
 // Shared utility functions
 
-/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars, slugify */
+/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars, slugify, includesCaseInsensitive */
 
 /*
  * Convert a date into the format of "Month day, Year".
@@ -182,22 +182,14 @@ filter = function (dataSet, tagSlugs) {
 };
 
 /*
- * Filter the data set for records that satisfy one of the following criteria,
- * in descending order of priority:
+ * Filter the data set for records that satisfy one or more of the following criteria,
  * - at least one matching category (aka topic) in the selected categories array
  * - at least one matching tag in the selected tags array
  * - at lease one matching media type in the selected media types array
  * 
- * The Category criterion is treated as exclusive, i.e. even if the selected tags and media
- * types would match more results, if a given result is not part of the selected category or categories,
- * then it is not included in the matching records.
- * 
  * @param {Array<Object>} resources - The data set that the filter is performed upon.
- *     Each object in this array contains a field named "learnTags" with the format:
- *     tags: [{ value: {String}, label: {String} }, ...]
  * @param {Object} filterSettings - A collection of data and settings representing the filter selections
- * @param {Array<Object>} filterSettings.categories - The set of all categories (aka topics), with the format:
- *     [{ "categoryId": {String}, "categoryLabel": {String}, "focuses": [{String}] }, ...]
+ * @param {Array<Object>} filterSettings.categories - The set of all categories (aka topics)
  * @param {Array<String>} filterSettings.selectedCategories - An array of category values to match.
  * @param {Array<String>} filterSettings.selectedTags - An array of tag values to match.
  * @param {Array<String>} filterSettings.selectedTypes - An array of media types to match.
@@ -206,13 +198,12 @@ filter = function (dataSet, tagSlugs) {
  */
 // eslint-disable-next-line
 filterResources = function (resources, filterSettings) {
-	// cats, selectedCats, selectedTags, selectedTypes) {
-	return resources.filter((oneRecord) => {
-		const records = oneRecord.learnTags ? oneRecord.learnTags.map((tag) => tag) : [];
-		return records.some(tag => {
-			return (!filterSettings.selectedCategories || filterSettings.categories.filter(cat => cat.focuses.includes(oneRecord.focus)) &&
-				filterSettings.selectedTags.indexOf(tag) >= 0);
-		});
+	return resources.filter(oneRecord => {
+		let recordIsInSelectedCategories = filterSettings.categories.filter(cat => includesCaseInsensitive(filterSettings.selectedCategories, cat.categoryId)).some(cat => cat.focuses.includes(oneRecord.focus));
+		let recordIsInSelectedMediaTypes = filterSettings.selectedTypes.includes(oneRecord.type);
+		let recordIsInSelectedTags = oneRecord.learnTags.some(tag => filterSettings.selectedTags.indexOf(tag) >= 0);
+		
+		return recordIsInSelectedCategories || recordIsInSelectedMediaTypes || recordIsInSelectedTags;
 	});
 };
 
