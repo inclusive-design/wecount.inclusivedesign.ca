@@ -76,8 +76,16 @@ pagination:
         <input type="search" name="s" :value="searchTerm" placeholder="Search resources..." aria-label="Enter keywords for a search in resources">
       </div>
 
-      {# Tags filter #}
+      {# Resources filter #}
       <div class="filter">
+        {# Topic selections #}
+        <ul>
+            <li v-for="category in resourceCategories">
+              <input class="filter-checkbox" type="checkbox" v-model="category.checked" :id="category.categoryId" :name="'c_' + category.categoryId">
+              <label :for="category.categoryId">{{ '{{ category.categoryLabel }}' }}</label>
+            </li>
+        </ul>
+
         <div class="filter-header">
           <h2 class="h3">Search Filters</h2>
           <button type="button" class="filter-expand-button" aria-expanded="true" aria-label="collapse">
@@ -86,6 +94,7 @@ pagination:
           </button>
         </div>
 
+        {# Tag selections #}
         <div class="filter-body">
           <ul class="filter-choices">
             <li v-for="tag in tags">
@@ -94,15 +103,25 @@ pagination:
             </li>
           </ul>
         </div>
-      </div>
 
-      <div class="filter-buttons">
-        <button class="apply-button" type="submit">
-          <svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
-        </button>
-        <button class="reset-button" type="button">
-          <svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
-        </button>
+        {# Media Type selections #}
+        <div class="filter-body">
+          <ul class="filter-choices">
+            <li v-for="mediaType in resourceTypes">
+              <input class="filter-checkbox" type="checkbox" v-model="mediaType.checked" :id="mediaType.value" :name="'m_' + mediaType.value">
+              <label :for="mediaType.value">{{ '{{ mediaType.value }}' }}</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filter-buttons">
+          <button class="apply-button" type="submit">
+            <svg><use xlink:href="#apply" /></svg><span>Apply Filters</span>
+          </button>
+          <button class="reset-button" type="button">
+            <svg><use xlink:href="#reset" /></svg><span>Reset Filters</span>
+          </button>
+        </div>
       </div>
     </form>
 

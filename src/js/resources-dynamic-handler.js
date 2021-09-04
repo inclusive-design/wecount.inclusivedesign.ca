@@ -1,6 +1,6 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, createPagination, processResourcesDisplayResults, filterResources, generateAside, getSideMenuObserver, $ */
+/* global Vue, axios, search, createPagination, processResourcesDisplayResults, includesCaseInsensitive, filterResources, generateAside, getSideMenuObserver, $ */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -65,7 +65,7 @@ new Vue({
 		let vm = this;
 		let pagination;
 
-		if (searchTerm || selectedTags.length > 0) {
+		if (searchTerm || selectedTags.length > 0 || selectedCategories.length > 0 || selectedTypes.length > 0) {
 			// Hide the static view section and show the dynamic search and filtering result section
 			document.querySelector(".resources.static-view").style.display = "none";
 			document.querySelector(".resources.dynamic-view").style.display = "block";
@@ -85,39 +85,33 @@ new Vue({
 					results = search(results, searchTerm);
 				}
 
-				// Filter by selected tags
-				let tagsQuery = "";
-				if (selectedTags.length > 0)
-				{
-					// results = filterResources(results, selectedTags);
-					let filterSettings = {
-						categories: vm.resourceCategories || [],
-						selectedCategories: selectedCategories || [],
-						selectedTags: selectedTags || [],
-						selectedTypes: selectedTypes || []
-					};
+				// Filter by selected tags, categories or media types
+				let filterSettings = {
+					categories: vm.resourceCategories || [],
+					selectedCategories: selectedCategories || [],
+					selectedTags: selectedTags || [],
+					selectedTypes: selectedTypes || []
+				};
 
-					results = filterResources(results, filterSettings);
-					tagsQuery = selectedTags.map(tag => "t_" + tag).join("=on&") + "=on";
-				}
-
+				results = filterResources(results, filterSettings);
+				
 				// Convert some post values to formats that can be displayed
 				if (results.length > 0) {
 					results = processResourcesDisplayResults(results);
 				}
-
+				
+				let tagsQuery = selectedTags.map(tag => "t_" + tag).join("=on&") + selectedCategories.map(cat => "c_" + cat).join("=on&") + selectedTypes.map(type => "t_" + type).join("=on&") + "=on";
+				
 				// Paginate search results
 				if (results.length > pageSize) {
 					pagination = createPagination(results, pageSize, pageInQuery, "/resources/?s=" + searchTerm + "&" + tagsQuery + "&page=:page");
 				}
 
-				vm.tags = response.data.tags.map(tag => {
-					return {
-						value: tag.value,
-						label: tag.label,
-						checked: selectedTags.includes(tag.value)
-					};
-				});
+				// add checked states for tags, categories and media types
+				vm.tags = response.data.tags.map(tag => ({ ...tag, checked: includesCaseInsensitive(selectedTags, tag.value)}));
+				vm.resourceCategories = response.data.resourceCategories.map(cat => ({ ...cat, checked: includesCaseInsensitive(selectedCategories, cat.categoryId)}));
+				vm.resourceTypes = response.data.resourceTypes.map(type => ({ ...type, checked: includesCaseInsensitive(selectedTypes, type.value)}));
+
 				vm.selectedTags = response.data.tags.filter(tag => {
 					return selectedTags.includes(tag.value);
 				});
