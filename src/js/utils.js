@@ -233,6 +233,28 @@ slugify = function (str) {
 };
 
 /*
+ * Performs a case-insensitive search to determine whether a string array includes
+ * a certain value among its entries, returning true or false as appropriate.
+ * If inputStringArray is not exclusively an array of strings or if searchString
+ * isn't a string, then false is returned.
+ * 
+ * @param {String[]} inputStringArray - an array of strings to search over
+ * @param {String} searchString - a string to search the collection for
+ */
+// eslint-disable-next-line
+includesCaseInsensitive = function (inputStringArray, searchString) {
+	if (typeof searchString !== "string" || inputStringArray.some(str => typeof str !== "string")) {
+		return false; // TODO: consider throwing an exception instead
+	} else {
+		// normalize all string values by making them upper case
+		inputStringArray = inputStringArray.map(str => str.toUpperCase());
+		searchString = searchString.toUpperCase();
+
+		return inputStringArray.includes(searchString);
+	}
+};
+
+/*
  * Generate the content in the <aside> element.
  * @param {Object} document - The html document object.
  * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
