@@ -40,9 +40,23 @@ See our [currently available badges](/badges/#earn-a-badge).
 
 Our initiatives and their corresponding badges are listed below. 
 
+### AI and Disability: A Double-Edged Sword
+
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+#### Learner badge
+
+You will learn:
+
+* The risks and rewards of AI for people with disabilities 
+* How future developments in different industries may impact the disability community
+
+Apply for your Learner badge
+{% endimageAndText %}
+
 ### The Metric Society and the Unmeasurable
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 #### Learner badge
 
@@ -54,11 +68,13 @@ You will learn:
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRZ70Ma1SCPa6F/apply)
 
+
 {% endimageAndText %}
 
 ### Building Indigenous Future Imaginaries
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 #### Learner badge
 
@@ -69,11 +85,13 @@ You will learn:
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRIF1HaV773a5D0/apply)
 
+
 {% endimageAndText %}
 
 ### Inclusive AI for HR
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 #### Learner badge
 
@@ -84,11 +102,13 @@ You will learn:
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply)
 
+
 {% endimageAndText %}
 
 ### AI Hiring System Policies
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 #### Learner badge
 
@@ -99,11 +119,13 @@ You will learn:
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply)
 
+
 {% endimageAndText %}
 
 ### AI Employment Systems
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 #### Learner badge
 
@@ -114,11 +136,13 @@ You will learn:
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply)
 
+
 {% endimageAndText %}
 
 ### AI and AT Apps
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 #### Learner badge
 
@@ -130,9 +154,11 @@ You will learn:
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QHEE2ZaDRaNLJ/apply)
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
+
 
 #### Brainstormer badge
 
@@ -143,9 +169,11 @@ You will brainstorm:
 
 [Apply for your Brainstormer badge](https://factory.cancred.ca/c/earnablebadge/QGPO1ZaDRa5F8/apply)
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_COMMUNICATOR-300x300.png", "We Count Communicator badge", "left", "top" %}
+
 
 #### Communicator badge
 
@@ -157,11 +185,13 @@ You will communicate:
 
 [Apply for your Communicator badge](https://factory.cancred.ca/c/earnablebadge/QGPPISaDRa5HL/apply)
 
+
 {% endimageAndText %}
 
 ### Bias In, Bias Out
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 #### Learner badge
 
@@ -171,5 +201,6 @@ You will learn:
 * How specific data resources are used to train and reinforce machine learning models to produce biased outputs
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply)
+
 
 {% endimageAndText %}
