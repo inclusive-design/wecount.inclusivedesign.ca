@@ -12,6 +12,9 @@ shortDescription: >-
 
 
   July 22, 2021, 1:30 PM – 3:00 PM (EDT)
+
+
+  **Available badges:** Learner
 previewImageUrl: /uploads/ai-and-disability_wordpress_2010x1052-small.png
 ---
 ### AI and Disability: A Double-Edged Sword
@@ -38,4 +41,4 @@ You will learn:
 Learn and earn badges from this event:
 
 1. Watch the accessible [AI and Disability: A Double-Edged Sword webinar](https://youtu.be/3qdgMkIxjtY)
-2. Apply for your Learner badge
+2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QZ5R8Ya1Q08Ra34G/apply)
