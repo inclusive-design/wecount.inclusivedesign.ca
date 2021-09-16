@@ -168,6 +168,7 @@ collections:
     sortable_fields: ['title']
     editor:
       preview: false
+    create: true
     fields:
       - label: "Title"
         name: "title"
