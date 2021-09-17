@@ -1,7 +1,7 @@
 ---
 title: "The Era of Blind Faith in Big Data Must End"
 focus: "Bias"
-source: "Ted Talks"
+source: "TED Talks"
 readability: ["I"]
 type: "Video with Transcript"
 toolPurpose: []

@@ -1,7 +1,7 @@
 ---
 title: "How We Can Build AI to Help Humans, Not Hurt Us"
 focus: "Bias"
-source: "Ted Talks"
+source: "TED Talks"
 readability: ["I"]
 type: "Video with Transcript"
 toolPurpose: []
