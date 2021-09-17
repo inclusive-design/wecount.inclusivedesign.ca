@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Physics%20Webpages%20Create%20Barriers%20to%20Participation%20for%20People%20with%20Disabilities.pdf?csf=1&web=1&e=0eeClG"
+keywords: ["Accessibility","Webpage accessibility","STEM","Physics Education","Americans with Disabilities Act","Section 508","Disability studies"]
+learnTags: ["methods","disability","education","ethics","fairness","solution"]
 summary: "In this paper, five common accessibility errors identified on university physics webpages are presented, solutions for these errors are suggested, and the implications of these errors are discussed. "
 ---
 Background: While there have been numerous calls to increase the participation of people with disabilities in STEM, many postsecondary institutions are not equipped to support students with disabilities. We examined the accessibility of 139 webpages from 73 postsecondary institutions in the USA that contained information about the undergraduate physics curriculum and graduate research programs. We selected these webpages as they are common entry points for students interested in pursuing a physics degree. We used Tenon and Mac OS X’s VoiceOver software to assess the level of accessibility of these webpages as measured by alignment with the Web Content Accessibility Guidelines (WCAG) 2.0.

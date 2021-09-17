@@ -1,7 +1,7 @@
 ---
 title: "Machine Intelligence Makes Human Morals More Important"
 focus: "AI Ethics/Policy"
-source: "Ted Talks"
+source: "TED Talks"
 readability: ["I"]
 type: "Video with Transcript"
 toolPurpose: []

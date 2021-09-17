@@ -1,7 +1,7 @@
 ---
 title: "How to Keep Human Bias Out of AI"
 focus: "Bias"
-source: "Ted Talks"
+source: "TED Talks"
 readability: ["I"]
 type: "Video with Transcript"
 toolPurpose: []

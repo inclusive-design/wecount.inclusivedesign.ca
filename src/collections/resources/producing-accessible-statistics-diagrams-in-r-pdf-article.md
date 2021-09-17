@@ -8,6 +8,8 @@ toolPurpose: ["Create Accessible Content"]
 toolAccessibilityIssues: ["Screen Reader"]
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Producing%20Accessible%20Statistics%20Diagrams%20in%20R.pdf?csf=1&web=1&e=nPpcqO"
+keywords: ["Human-centered computing","Accessibility technologies","STEM Accessibility","accessible diagrams","Statistics"]
+learnTags: ["dataTools","methods","machineLearning"]
 summary: "A short paper that aims to provide an accessible way for blind users to easily and efficiently explore the data contained in diagrams such as bar charts, box plots and time series using the statistical software environment R. "
 ---
 Blind people are at risk of being left behind in the information age if efforts are not made to improve the access to information that is not traditionally conveyed in text, whether that text be accessed in braille, audio, or a computer’s screen reading software. Most  graphics summarise a
