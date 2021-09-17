@@ -12,6 +12,7 @@
   ],
   "private": true,
   "scripts": {
+    "airtable": "rimraf src/collections/resources/*.md",
     "build": "npm-run-all clean -s build:*",
     "build:mapDependency": "npm explore covid-data-monitor -- npm run build:noInfusion",
     "build:eleventy": "eleventy",
@@ -29,6 +30,7 @@
     "lint-fix:js": "npm run lint:js -- --fix",
     "lint-fix:md": "npm run lint:md -- --fix",
     "lint-fix": "run-s lint-fix:*",
+    "migrate:airtable": "cross-env CONTEXT=production run-s build airtable",
     "release:major": "release major",
     "release:minor": "release minor",
     "release:patch": "release patch",

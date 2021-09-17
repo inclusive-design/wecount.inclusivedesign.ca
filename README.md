@@ -1,5 +1,25 @@
 # We Count
 
+## ***NOTE: This branch is not intended to be merged into the upstream fork***
+
+### It is intended to preseve and archive the Airtable-to-Netlify CMS migration path for the Resources collection
+
+To run the migration, the changes shown in this commit must be present in the repository, and the Airtable API keys
+described below (under [How to Run](#how-to-run)).
+
+To perform the migration:
+
+1. Call the `migrate:airtable` npm script (this will clear the contents of `src/collections/resources`):
+
+    ```bash
+    npm run migrate:airtable
+    ```
+
+2. Navigate to `dist/airtable-resources`
+3. Copy or move the contents of this directory into `src/collections/resources`
+
+---
+
 [![License](https://img.shields.io/github/license/inclusive-design/wecount.inclusivedesign.ca?style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/LICENSE.md)
 [![GitHub Release](https://img.shields.io/github/v/release/inclusive-design/wecount.inclusivedesign.ca?sort=semver&style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/releases/latest)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/inclusive-design/wecount.inclusivedesign.ca/Test%20and%20build?label=github&style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/actions)
