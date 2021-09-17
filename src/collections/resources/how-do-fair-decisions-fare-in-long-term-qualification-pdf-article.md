@@ -8,6 +8,8 @@ toolPurpose: []
 toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/How%20Do%20Fair%20Decisions%20Fare%20in%20Long-Term%20Qualification.pdf?csf=1&web=1&e=UcdxrT"
+keywords: []
+learnTags: ["bias","fairness","framework"]
 summary: "A paper that studies the dynamics of population qualification and algorithmic decisions to analyze the long-term impact of static fairness constraints on the equality and improvement of group well-being. "
 ---
 Although many fairness criteria have been proposed for decision making, their
