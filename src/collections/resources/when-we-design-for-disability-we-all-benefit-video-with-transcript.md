@@ -1,7 +1,7 @@
 ---
 title: "When We Design for Disability, We All Benefit"
 focus: "AI and Disability/Outliers"
-source: "Ted Talks"
+source: "TED Talks"
 readability: ["B"]
 type: "Video with Transcript"
 toolPurpose: []
