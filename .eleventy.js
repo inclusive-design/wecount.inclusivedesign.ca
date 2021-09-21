@@ -58,7 +58,11 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("resources", collection => {
 		return [
-			...collection.getFilteredByGlob("src/collections/resources/*.md")
+			...collection.getFilteredByGlob("src/collections/resources/*.md").sort((a, b) => a.data.title.localeCompare(b.data.title, undefined, {
+				ignorePunctuation: "true",
+				sensitivity: "base",
+				usage: "sort"
+			}))
 		];
 	});
 
