@@ -13,6 +13,7 @@ learnTags:
   - researchCentre
   - ethics
   - fairness
+  - bias
 summary: Learn more about the current state of AI, its impacts and where the
   technology is moving in this AI100 report, written by multidisciplinary
   researchers in the field.
