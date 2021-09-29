@@ -183,9 +183,12 @@ filter = function (dataSet, tagSlugs) {
 
 /*
  * Filter the data set for records that satisfy one or more of the following criteria,
- * - at least one matching category (aka topic) in the selected categories array
- * - at least one matching tag in the selected tags array
- * - at lease one matching media type in the selected media types array
+ * - category (aka topic) in the selected categories
+ * - media type in the selected media types
+ * - at least one tag in the selected tags
+ * 
+ * If multiple criteria are selected, the intersections of the result sets for each
+ * criterion will be returned.
  * 
  * @param {Array<Object>} resources - The data set that the filter is performed upon.
  * @param {Object} filterSettings - A collection of data and settings representing the filter selections
@@ -198,13 +201,47 @@ filter = function (dataSet, tagSlugs) {
  */
 // eslint-disable-next-line
 filterResources = function (resources, filterSettings) {
-	return resources.filter(oneRecord => {
-		let recordIsInSelectedCategories = filterSettings.categories.filter(cat => includesCaseInsensitive(filterSettings.selectedCategories, cat.categoryId)).some(cat => cat.focuses.includes(oneRecord.focus));
-		let recordIsInSelectedMediaTypes = filterSettings.selectedTypes.includes(oneRecord.type);
-		let recordIsInSelectedTags = oneRecord.learnTags.some(tag => filterSettings.selectedTags.indexOf(tag) >= 0);
-		
-		return recordIsInSelectedCategories || recordIsInSelectedMediaTypes || recordIsInSelectedTags;
-	});
+	const noTagsSelected = !filterSettings.selectedTags || filterSettings.selectedTags.length === 0;
+	const noCategoriesSelected = !filterSettings.selectedCategories || filterSettings.selectedCategories.length === 0;
+	const noMediaTypesSelected = !filterSettings.selectedTypes || filterSettings.selectedTypes.length === 0;
+
+	if (noTagsSelected && noCategoriesSelected && noMediaTypesSelected) {
+		return resources; // If nothing is selected, return the entire set of resources
+	} else {
+		// TODO: find more elegant logic, this is repetitive
+		const singleCriterionFilter = (!noCategoriesSelected && noTagsSelected && noMediaTypesSelected) ||
+			(noCategoriesSelected && !noTagsSelected && noMediaTypesSelected) ||
+			(noCategoriesSelected && noTagsSelected && !noMediaTypesSelected);
+
+		const selectedFocuses = filterSettings.categories.filter(cat => includesCaseInsensitive(filterSettings.selectedCategories, cat.categoryId));
+
+		const recordsInSelectedCategories = resources.filter(oneRecord => selectedFocuses.some(cat => cat.focuses.includes(oneRecord.focus)));
+		const recordsInSelectedMediaTypes = resources.filter(oneRecord => filterSettings.selectedTypes.includes(oneRecord.type));
+		const recordsWithSelectedTags = resources.filter(oneRecord => oneRecord.learnTags.some(tag => filterSettings.selectedTags.indexOf(tag) >= 0));
+
+		if (singleCriterionFilter) {
+			if (recordsInSelectedCategories && recordsInSelectedCategories.length > 0 && noMediaTypesSelected && noTagsSelected) {
+				return recordsInSelectedCategories;
+			} else if (recordsWithSelectedTags && recordsWithSelectedTags.length > 0 && noMediaTypesSelected && noCategoriesSelected) {
+				return recordsWithSelectedTags;
+			} else if (recordsInSelectedMediaTypes && recordsInSelectedMediaTypes.length && noCategoriesSelected && noTagsSelected) {
+				return recordsInSelectedMediaTypes;
+			} else {
+				return []; // is this unreachable? I think it is...
+			}
+		} else {
+			// look for intersection matches
+			if (!noTagsSelected && !noCategoriesSelected && !noMediaTypesSelected) {
+				return recordsInSelectedCategories.filter(rec => recordsWithSelectedTags.includes(rec) && recordsInSelectedMediaTypes.includes(rec)); // all 3 combo
+			} else if (noTagsSelected) {
+				return recordsInSelectedCategories.filter(rec => recordsInSelectedMediaTypes.includes(rec)); // category-type combo
+			} else if (noCategoriesSelected) {
+				return recordsWithSelectedTags.filter(rec => recordsInSelectedMediaTypes.includes(rec)); // tag-type combo
+			} else if (noMediaTypesSelected) {
+				return recordsInSelectedCategories.filter(rec => recordsWithSelectedTags.includes(rec)); // category-tag combo
+			}
+		}
+	}
 };
 
 /*
