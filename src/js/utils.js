@@ -208,40 +208,36 @@ filterResources = function (resources, filterSettings) {
 	if (noTagsSelected && noCategoriesSelected && noMediaTypesSelected) {
 		return resources; // If nothing is selected, return the entire set of resources
 	} else {
-		// TODO: find more elegant logic, this is repetitive
-		const singleCriterionFilter = (!noCategoriesSelected && noTagsSelected && noMediaTypesSelected) ||
-			(noCategoriesSelected && !noTagsSelected && noMediaTypesSelected) ||
-			(noCategoriesSelected && noTagsSelected && !noMediaTypesSelected);
-
 		const selectedFocuses = filterSettings.categories.filter(cat => includesCaseInsensitive(filterSettings.selectedCategories, cat.categoryId));
 
 		const recordsInSelectedCategories = resources.filter(oneRecord => selectedFocuses.some(cat => cat.focuses.includes(oneRecord.focus)));
 		const recordsInSelectedMediaTypes = resources.filter(oneRecord => filterSettings.selectedTypes.includes(oneRecord.type));
 		const recordsWithSelectedTags = resources.filter(oneRecord => oneRecord.learnTags.some(tag => filterSettings.selectedTags.indexOf(tag) >= 0));
 
-		if (singleCriterionFilter) {
-			if (recordsInSelectedCategories && recordsInSelectedCategories.length > 0 && noMediaTypesSelected && noTagsSelected) {
-				return recordsInSelectedCategories;
-			} else if (recordsWithSelectedTags && recordsWithSelectedTags.length > 0 && noMediaTypesSelected && noCategoriesSelected) {
-				return recordsWithSelectedTags;
-			} else if (recordsInSelectedMediaTypes && recordsInSelectedMediaTypes.length && noCategoriesSelected && noTagsSelected) {
-				return recordsInSelectedMediaTypes;
-			} else {
-				return []; // is this unreachable? I think it is...
-			}
+		// if it's a single-criterion filter...
+		if (!noTagsSelected ^ !noCategoriesSelected ^ !noMediaTypesSelected && (noTagsSelected || noCategoriesSelected || noMediaTypesSelected)) {
+			// return the appropriate set of filtered results
+			return recordsWithSelectedTags.length > 0 ? recordsWithSelectedTags :
+				recordsInSelectedCategories.length > 0 ? recordsInSelectedCategories :
+					recordsInSelectedMediaTypes.length > 0 ? recordsInSelectedMediaTypes : [];
 		} else {
-			// look for intersection matches
-			if (!noTagsSelected && !noCategoriesSelected && !noMediaTypesSelected) {
-				return recordsInSelectedCategories.filter(rec => recordsWithSelectedTags.includes(rec) && recordsInSelectedMediaTypes.includes(rec)); // all 3 combo
-			} else if (noTagsSelected) {
-				return recordsInSelectedCategories.filter(rec => recordsInSelectedMediaTypes.includes(rec)); // category-type combo
-			} else if (noCategoriesSelected) {
-				return recordsWithSelectedTags.filter(rec => recordsInSelectedMediaTypes.includes(rec)); // tag-type combo
-			} else if (noMediaTypesSelected) {
-				return recordsInSelectedCategories.filter(rec => recordsWithSelectedTags.includes(rec)); // category-tag combo
-			}
+			// look for intersection matches, ignoring empty sets
+			return getIntersection(true, recordsInSelectedCategories, recordsWithSelectedTags, recordsInSelectedMediaTypes);
 		}
 	}
+};
+
+/*
+ * Get the intersection of two or more arrays. If no records intersect among the sets,
+ * returns an empty array
+ *
+ * @param {Boolean} ignoreEmptySets - If true, excludes empty sets from the operation
+ * @param {...Array<Object>} sets - An arbitrary number of arrays which may or may not contain shared records
+ * 
+ * @return {Array<Object>} the intersection of the given arrays
+ */
+const getIntersection = function (ignoreEmptySets, ...sets) {
+	return (ignoreEmptySets ? sets.filter(set => set.length > 0) : sets).reduce((prev, curr) => prev.filter(rec => curr.includes(rec)));
 };
 
 /*
