@@ -40,7 +40,7 @@
       {% for mediaType in resourceTypes.resourceTypes  %}
         {% set typeId = mediaType.value | randomizeFilter %}
         <li>
-          <input class="filter-checkbox" type="checkbox" id="{{ typeId }}" name="{{ 'm_' + mediaType.value | slug }}">
+          <input class="filter-checkbox" type="checkbox" id="{{ typeId }}" name="{{ 'm_' + mediaType.value }}">
           <label for="{{ typeId }}">{{ mediaType.value }}</label>
         </li>
       {% endfor %}
