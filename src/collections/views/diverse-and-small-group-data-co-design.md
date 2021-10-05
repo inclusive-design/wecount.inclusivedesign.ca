@@ -2,6 +2,7 @@
 title: Designing Proof and Evidence with Minorities and Outlier Data
 author: Vera Roberts
 date: 2021-09-08T17:16:41.302Z
+picture: /uploads/only-image_wordpress_designing-proof-and-evidence-with-minorities-and-outliers.jpg
 excerpt: In fall 2021 we examine small group data in a  co-design activity.
   Government policy decisions, and adjudicative rulings that interpret and
   reinforce them, are increasingly based on the collection and analysis of
