@@ -4,11 +4,13 @@
       <h2 class="h3">{{ title | safe }}</h2>
       {# TODO: localize these items/labels #}
       <div class="info">
+        <svg aria-hidden="true" tabindex="0"><use xlink:href="#media-type" /></svg>
         Media Type: {{ mediaType | safe }}
       </div>
       {% if readabilityList %}
       <div class="info">
-        Readability:
+        <svg aria-hidden="true" tabindex="0"><use xlink:href="#readability" /></svg>
+        Readability:&nbsp;
         <ul class="resource-readability-list">
           {%- for readability in readabilityList -%}
           <li>{{ resourceReadabilityLevels[readability] | safe }}{% if not loop.last %},{% endif %}</li>
@@ -17,12 +19,14 @@
       </div>
       {% endif %}
       <div class="info">
+        <svg aria-hidden="true" tabindex="0"><use xlink:href="#topics" /></svg>
         Topic: {{ focus | categoryFromFocus(resourceCategories.resourceCategories) }}
       </div>
       {% if tags %}
       <div class="info">
+        <svg aria-hidden="true" tabindex="0"><use xlink:href="#tags" /></svg>
         Tags:
-        <ul class="resource-tags">
+        <ul class="resource-tags-list">
           {%- for tag in tags -%}
           <li>{{ tag | getResourceTagLabel(resourceTags.resourceTags) }}</li>
           {%- endfor -%}
