@@ -10,10 +10,9 @@ coverImageAltText: This co-design activity addresses the challenge of working
   forms of evidence, proof and data for these groups, as well as strategies for
   collecting and providing evidence. Fall 2021
 shortDescription: >-
-  ## The Challenge of Proof
-
-
-  In preparation for our Minority and Outlier Data Co-design, we’re encouraging everyone to think about the challenge of proof for a small group, even a group that is just one person: you.
+  In preparation for our Minority and Outlier Data Co-design, we’re encouraging
+  everyone to think about the challenge of proof for a small group, even a group
+  that is just one person: you.
 
 
   Think of something you experience in your life that is difficult to demonstrate. Perhaps it’s an emotion you feel, a value you hold, or a pain you experience. How might you go about proving your experience to someone else? How might you document or demonstrate it? What kind of proof could you produce to convince someone about the validity of your experience?
