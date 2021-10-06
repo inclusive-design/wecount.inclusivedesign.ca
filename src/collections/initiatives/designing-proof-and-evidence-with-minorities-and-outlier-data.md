@@ -31,8 +31,7 @@ The recent policy changes to Medical Assistance in Dying (Bill C7) provide one e
 
 To learn more about this case study, please see [Catherine Frazee’s testimony](https://vimeo.com/477721742) to the Standing Committee on Justice and Human Rights, November 10, 2020.
 
-## 
-The Challenge of Proof
+### The Challenge of Proof
 
 In preparation for our Minority and Outlier Data Co-design, we’re encouraging everyone to think about the challenge of proof for a small group, even a group that is just one person: you.
 
