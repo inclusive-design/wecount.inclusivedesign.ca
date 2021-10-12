@@ -105,23 +105,35 @@ pagination:
       {# Resources filter #}
       <div class="filter">
         {# Topic selections #}
-        <ul>
-            <li v-for="category in resourceCategories">
-              <input class="filter-checkbox" type="checkbox" v-model="category.checked" :id="category.categoryId" :name="'c_' + category.categoryId">
-              <label :for="category.categoryId">{{ '{{ category.categoryLabel }}' }}</label>
-            </li>
-        </ul>
-
+        {# TODO: Dedupe this control #}
         <div class="filter-header">
-          <h2 class="h3">Search Filters</h2>
-          <button type="button" class="filter-expand-button" aria-expanded="true" aria-label="collapse">
+          <h2 class="h3">{{ topicsFilterTitle }}</h2>
+          <button type="button" class="filter-expand-button" data-section="topics" aria-expanded="false" aria-label="expand">
             <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
             <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
           </button>
         </div>
 
+        <div class="filter-body" data-section="topics">
+          <ul>
+              <li v-for="category in resourceCategories">
+                <input class="filter-checkbox" type="checkbox" v-model="category.checked" :id="category.categoryId" :name="'c_' + category.categoryId">
+                <label :for="category.categoryId">{{ '{{ category.categoryLabel }}' }}</label>
+              </li>
+          </ul>
+        </div>
+
         {# Tag selections #}
-        <div class="filter-body">
+        {# TODO: Dedupe this control #}
+        <div class="filter-header">
+          <h2 class="h3">{{ tagsFilterTitle }}</h2>
+          <button type="button" class="filter-expand-button" data-section="tags" aria-expanded="false" aria-label="expand">
+            <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
+            <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
+          </button>
+        </div>
+
+        <div class="filter-body" data-section="tags">
           <ul class="filter-choices">
             <li v-for="tag in tags">
               <input class="filter-checkbox" type="checkbox" v-model="tag.checked" :id="tag.value" :name="'t_' + tag.value">
@@ -131,7 +143,16 @@ pagination:
         </div>
 
         {# Media Type selections #}
-        <div class="filter-body">
+        {# TODO: Dedupe this control #}
+        <div class="filter-header">
+          <h2 class="h3">{{ typeFilterTitle }}</h2>
+          <button type="button" class="filter-expand-button" data-section="types" aria-expanded="false" aria-label="expand">
+            <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
+            <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
+          </button>
+        </div>
+
+        <div class="filter-body" data-section="types">
           <ul class="filter-choices">
             <li v-for="mediaType in resourceTypes">
               <input class="filter-checkbox" type="checkbox" v-model="mediaType.checked" :id="mediaType.value" :name="'m_' + mediaType.value">
