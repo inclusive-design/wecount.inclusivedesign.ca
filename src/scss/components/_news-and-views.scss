@@ -132,7 +132,8 @@
 }
 
 // Initially show the static generated page and hide the dynamic page section for the search and filtering result.
-.views.dynamic-view {
+.views.dynamic-view,
+.resources.dynamic-view {
 	display: none;
 }
 
