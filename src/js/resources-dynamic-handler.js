@@ -162,8 +162,12 @@ for (let i = 0; i < expandButtons.length; i++) {
 		expandButtons[i].setAttribute("aria-label", expandedState === "true" ? "collapse" : "expand");
 
 		// Open/close the appropriate filter
+		// Find the filter body by using its position relative to the button as well as the css selector
+		// since there are two elements that match the selector (one each for static the and dynamic views).
+		// Clicking on one of expand buttons only opens the form that this button corresponds to.
 		const filterBodySelector = ".filter-body[data-section=\"" + expandButtons[i].dataset.section + "\"]";
-		$(filterBodySelector)[expandedState === "false" ? "hide" : "show"]();
+		const filter = $(expandButtons[i]).parent().siblings(filterBodySelector);
+		filter[expandedState === "false" ? "hide" : "show"]();
 
 		// Show/hide the expand svg
 		setExpandSVGState(expandButtons[i], expandedState);
