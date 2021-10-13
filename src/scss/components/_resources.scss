@@ -1,5 +1,9 @@
 // Resources page
 .resources {
+	h1 {
+		margin-bottom: 0;
+	}
+
 	.api-content {
 		column-gap: 3rem;
 		display: grid;
@@ -8,10 +12,16 @@
 	}
 
 	.search-container {
+		margin: rem(32) 0 0 0;
+
 		input[type="search"] {
 			border: none;
 			box-shadow: 0 0 rem(7) rgba(0, 0, 0, 0.25);
 		}
+	}
+
+	.filter {
+		background-color: $grey-lightest;
 	}
 }
 
