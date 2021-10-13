@@ -1,7 +1,7 @@
 ---
 title: Resources
 layout: layouts/resources.njk
-excerpt: Discover more about We Count’s efforts, activities and viewpoints.
+excerpt: Search the We Count Library.
 menu_order: 6
 ---
 Support your learning through our searchable research library and discover valuable
