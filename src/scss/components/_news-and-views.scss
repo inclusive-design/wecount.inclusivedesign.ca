@@ -143,7 +143,8 @@
 	display: none;
 }
 
-.views {
+.views,
+.resources {
 	.search-container {
 		padding-bottom: rem(27);
 
@@ -154,7 +155,6 @@
 		input[type="search"] {
 			border: 1px solid $green-dark;
 			border-radius: rem(28);
-			margin-left: rem(-8);
 			padding-left: rem(48);
 			width: 100%;
 
@@ -186,6 +186,14 @@
 
 	.search-term {
 		margin: rem(-8) 0 rem(32) 0;
+	}
+}
+
+.views {
+	.search-container {
+		input[type="search"] {
+			margin-left: rem(-8);
+		}
 	}
 }
 
