@@ -16,12 +16,66 @@
 
 		input[type="search"] {
 			border: none;
-			box-shadow: 0 0 rem(7) rgba(0, 0, 0, 0.25);
+			box-shadow: 0 0 rem(7) $border-shadow-colour;
 		}
 	}
 
 	.filter {
 		background-color: $grey-lightest;
+		border: none;
+		border-radius: rem(9);
+		box-shadow: 0 0 rem(7) $border-shadow-colour;
+		padding: rem(24) rem(48);
+
+		h2 {
+			border-bottom: rem(1) solid $grey-mid-light;
+			font-size: rem(28);
+			font-weight: $font-weight-bold;
+			margin: 0;
+			padding-bottom: rem(16);
+			text-transform: uppercase;
+		}
+
+		h3 {
+			border-bottom: none;
+			color: $grey-dark;
+			font-size: rem(20);
+		}
+
+		.filter-buttons {
+			background-color: initial;
+			border-top: none;
+		}
+
+		.filter-header {
+			background-color: initial;
+			border-bottom: rem(1) solid $grey-mid-light;
+			margin: 0;
+
+			button {
+				margin-right: 0;
+				padding: 0;
+			}
+		}
+
+		.filter-expand-button {
+			--expand-button-color: none;
+			--expand-button-stroke-color: #{$grey-dark};
+
+			svg {
+				background-color: initial !important;
+
+				.expand-svg {
+					fill: none;
+				}
+			}
+
+			&:focus,
+			&:hover {
+				--expand-button-color: #{$grey-dark};
+				--expand-button-stroke-color: #{$grey-dark};
+			}
+		}
 	}
 }
 

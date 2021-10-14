@@ -63,6 +63,7 @@ pagination:
       {% set ariaLabelForSearch = "Enter keywords for a search in resources" %}
       {% include 'components/search-container.njk' %}
 
+      {% set filterHeading = "Filters" %}
       {% set topicsFilterTitle = "Topics" %}
       {% set tagsFilterTitle = "Tags" %}
       {% set typeFilterTitle = "Media Type" %}
@@ -104,10 +105,11 @@ pagination:
 
       {# Resources filter #}
       <div class="filter">
+        <h2>{{ filterHeading }}</h2>
         {# Topic selections #}
         {# TODO: Dedupe this control #}
         <div class="filter-header">
-          <h2 class="h3">{{ topicsFilterTitle }}</h2>
+          <h3>{{ topicsFilterTitle }}</h3>
           <button type="button" class="filter-expand-button" data-section="topics" aria-expanded="false" aria-label="expand">
             <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
             <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
@@ -126,7 +128,7 @@ pagination:
         {# Tag selections #}
         {# TODO: Dedupe this control #}
         <div class="filter-header">
-          <h2 class="h3">{{ tagsFilterTitle }}</h2>
+          <h3>{{ tagsFilterTitle }}</h3>
           <button type="button" class="filter-expand-button" data-section="tags" aria-expanded="false" aria-label="expand">
             <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
             <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
@@ -145,7 +147,7 @@ pagination:
         {# Media Type selections #}
         {# TODO: Dedupe this control #}
         <div class="filter-header">
-          <h2 class="h3">{{ typeFilterTitle }}</h2>
+          <h3>{{ typeFilterTitle }}</h3>
           <button type="button" class="filter-expand-button" data-section="types" aria-expanded="false" aria-label="expand">
             <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
             <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
