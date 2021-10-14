@@ -176,13 +176,6 @@ pagination:
 
     <h3 role="status" class="search-result" v-if="searchResult">{{ '{{ searchResult }}' }}</h3>
 
-    <div class="applied-tags" v-if="selectedTags.length > 0">
-      <h4 class="search-for-title">Applied Tags:</p>
-      <div class="tags">
-        <a v-for="tag in selectedTags" :href="'/tags/' + tag.value + '/'">{{ '{{ tag.name }}' }}</a>
-      </div>
-    </div>
-
     <div class="search-term-container" v-if="searchTerm">
       <h4 class="search-for-title">Search Term:</h4>
       <p class="search-term">“{{ '{{ searchTerm }}' }}”</p>
@@ -194,32 +187,30 @@ pagination:
           <div class="tile-resource">
             <h2 class="h3">{{ '{{ item.title }}' }}</h2>
             <div class="info">
+              <svg aria-hidden="true" tabindex="0"><use xlink:href="#media-type" /></svg>
               Media Type: {{ '{{ item.type }}' }}
             </div>
 
             <div class="info" v-if="item.readability">
-              Readability:
+              <svg aria-hidden="true" tabindex="0"><use xlink:href="#readability" /></svg>
+              Readability:&nbsp;
               <ul class="resource-readability-list">
-                <li v-for="(readabilityLevel, key, index) in item.readability">
-                  {{ '{{ resourceReadabilityLevels[readabilityLevel] }}' }}
-
-                  {# TODO: get this conditional comma working #}
-                  {# <span v-if="index !== Object.keys(item.readability).length - 1">, </span> #}
+                <li v-for="(readabilityLevel, index) in item.readability">
+                  {{ '{{ resourceReadabilityLevels[readabilityLevel] }}' }}{#
+                  #}<span v-if="index < item.readability.length - 1">,&nbsp;</span>
                 </li>
               </ul>
             </div>
             
             <div class="info">
-              Focus: {{ '{{ item.focus }}' }}
-            </div>
-
-            <div class="info">
+              <svg aria-hidden="true" tabindex="0"><use xlink:href="#topics" /></svg>
               Topic: {{ '{{ resourceCategories.filter(cat => cat.focuses.includes(item.focus))[0].categoryLabel }}' }}
             </div>
 
             <div class="info" v-if="item.learnTags">
+              <svg aria-hidden="true" tabindex="0"><use xlink:href="#tags" /></svg>
               Tags:
-              <ul class="resource-tags">
+              <ul class="resource-tags-list">
                 <li v-for="(tag, key, index) in item.learnTags">
                   {{ '{{ tags.filter(singleTag => singleTag.value === tag)[0].label }}' }}
                 </li>

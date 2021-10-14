@@ -7,6 +7,7 @@ permalink: resources.json
   "resources": [
   {%- for item in collections.resources %}
     {
+      "url": {{ item.url | dump | safe }},
       "title": {{ item.data.title | dump | safe }},
       "focus": {{ item.data.focus | dump | safe }},
       "readability": [
