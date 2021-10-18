@@ -83,6 +83,18 @@
 				--expand-button-stroke-color: #{$grey-dark};
 			}
 		}
+
+		.topic-choices {
+			display: flex;
+			flex-wrap: wrap;
+			gap: rem(16);
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				flex: 1 0 21%;
+			}
+		}
 	}
 }
 
