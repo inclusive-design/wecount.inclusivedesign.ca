@@ -183,6 +183,15 @@ for (let i = 0; i < resetFilterButtons.length; i++) {
 	});
 }
 
+// Clicking the text/icon for topics selects that topic in addition to the checkbox proper
+const topicTitles = document.querySelectorAll(".filter .topic-title");
+
+for (let i = 0; i < topicTitles.length; i++) {
+	topicTitles[i].addEventListener("click", () => {
+		$(topicTitles[i]).siblings(".topic-checkbox").find(".filter-checkbox").click();
+	});
+}
+
 // Clicking the "reset filter" button on the dynamic view also submits the form to perform the search and filter
 document.querySelector(".dynamic-view .reset-button").addEventListener("click", () => {
 	document.querySelector(".dynamic-view form").submit();

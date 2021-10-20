@@ -93,6 +93,16 @@
 
 			li {
 				flex: 1 0 21%;
+				text-align: center;
+
+				svg {
+					max-width: 100%;
+					min-width: 5rem;
+				}
+
+				.topic-title {
+					cursor: pointer;
+				}
 			}
 		}
 	}
