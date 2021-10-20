@@ -27,7 +27,7 @@ December 1, 2020, 1:30 PM – 3:00 PM (EST)
 
 [Inclusive AI for HR webinar video](https://youtu.be/0fBqJgt_w2E)
 
-[Inclusive AI for HR transcript](/uploads/future-of-work_inclusive-ai-for-hr_dec-1_transcript.docx)
+[Inclusive AI for HR transcript](src/uploads/future-of-work_inclusive-ai-for-hr_dec-1_transcript.docx)
 
 **Panelists:**
 
