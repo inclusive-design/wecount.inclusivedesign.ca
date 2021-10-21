@@ -17,7 +17,7 @@
         randomize checkbox IDs to ensure they're unique and avoid html validation errors #}
         {% set categoryId = category.categoryId | randomizeFilter %}
         <li>
-          <div class="topic-title">
+          <div class="topic-title {{ category.categoryId }}">
             <span id="{{ "title_" + categoryId }}">{{ category.categoryLabel }}</span>
             <svg>
               {# TODO: make this mapping configurable in the CMS #}

@@ -101,7 +101,38 @@
 				}
 
 				.topic-title {
+					border-radius: $topic-title-border-radius $topic-title-border-radius 0 0;
 					cursor: pointer;
+					height: 100%;
+					padding: rem(16);
+				}
+
+				// topic title background
+				.aiAndDisability { background-color: $azure; }
+				.dataScience { background-color: $blue-grey; }
+				.aiEthics { background-color: $green-grey; }
+				.designAndMethods { background-color: $yellow; }
+
+				.topic-checkbox {
+					background: $white;
+					border: 1px solid $blue-alt-light;
+					border-radius: 0 0 $topic-title-border-radius $topic-title-border-radius;
+				}
+
+				&:focus,
+				&:focus-within {
+					.topic-title,
+					.topic-checkbox {
+						border: 2px solid $black;
+					}
+
+					.topic-title {
+						border-bottom: none;
+					}
+
+					.topic-checkbox {
+						border-top: none;
+					}
 				}
 			}
 		}

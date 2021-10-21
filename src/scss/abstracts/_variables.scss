@@ -60,6 +60,8 @@ $border-shadow-radius: rem(4);
 $border-shadow-colour: rgba(0, 0, 0, 0.25);
 $border-shadow-light: 0 0 $border-shadow-radius $border-shadow-colour;
 
+$topic-title-border-radius: rem(8);
+
 // UIO themes
 $UIOThemes:
 	"bw" #000 #fff,
