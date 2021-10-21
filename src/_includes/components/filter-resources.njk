@@ -18,7 +18,7 @@
         {% set categoryId = category.categoryId | randomizeFilter %}
         <li>
           <div class="topic-title">
-            <span id="{{ "title" + categoryId }}">{{ category.categoryLabel }}</span>
+            <span id="{{ "title_" + categoryId }}">{{ category.categoryLabel }}</span>
             <svg>
               {# TODO: make this mapping configurable in the CMS #}
               {% if category.categoryId === "aiAndDisability" %}
@@ -33,7 +33,7 @@
             </svg>
           </div>
           <div class="topic-checkbox">
-            <input class="filter-checkbox" aria-labelledby="{{ "title" + categoryId }}" type="checkbox" id="{{ categoryId }}" name="{{ 'c_' + category.categoryId | slug }}">
+            <input class="filter-checkbox" aria-labelledby="{{ "title_" + categoryId }}" type="checkbox" id="{{ categoryId }}" name="{{ 'c_' + category.categoryId | slug }}">
             <label for="{{ categoryId }}"></label>
           </div>
         </li>
