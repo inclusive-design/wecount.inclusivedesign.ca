@@ -247,6 +247,7 @@ collections:
         value_field: resourceTags.*.value
         display_fields: [resourceTags.*.label]
         search_fields: [resourceTags.*.label]
+        options_length: 100
         required: false
       - label: Summary
         name: summary
