@@ -87,17 +87,16 @@
 		.topic-choices {
 			display: flex;
 			flex-wrap: wrap;
-			gap: rem(16);
+			gap: rem(48);
 			list-style: none;
 			padding-left: 0;
 
 			li {
-				flex: 1 0 21%;
+				flex: initial;
 				text-align: center;
 
 				svg {
-					max-width: 100%;
-					min-width: 5rem;
+					width: 100%;
 				}
 
 				.topic-title {
@@ -141,4 +140,19 @@
 
 .tile-item {
 	height: 100%;
+}
+
+@include breakpoint-up(lg) {
+	.resources {
+		.filter {
+			.topic-choices {
+				gap: rem(16);
+
+				li {
+					flex: 1 0 21%;
+					text-align: center;
+				}
+			}
+		}
+	}
 }
