@@ -81,12 +81,12 @@
       "label": "Small Data"
     },
     {
-      "value": "trust",
-      "label": "Trust"
-    },
-    {
       "value": "solution",
       "label": "Solution"
+    },
+    {
+      "value": "trust",
+      "label": "Trust"
     }
   ]
 }
