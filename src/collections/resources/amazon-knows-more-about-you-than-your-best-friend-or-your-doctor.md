@@ -1,5 +1,5 @@
 ---
-title: Amazon Knows More about You than Your Best Friend or Your Doctor
+title: Amazon Knows More about You Than Your Best Friend or Your Doctor
 focus: AI Ethics/Policy
 source: CBC
 readability:
