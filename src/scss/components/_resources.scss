@@ -102,8 +102,10 @@
 				.topic-title {
 					border-radius: $topic-title-border-radius $topic-title-border-radius 0 0;
 					cursor: pointer;
-					height: 100%;
-					padding: rem(16);
+					display: grid;
+					grid-template-columns: 2fr 1fr;
+					height: auto;
+					padding: rem(8);
 				}
 
 				// topic title background
@@ -148,6 +150,17 @@
 				li {
 					flex: 1 0 21%;
 					text-align: center;
+
+					.topic-title {
+						grid-template-columns: initial;
+						height: 100%;
+						padding: rem(16);
+						row-gap: 0;
+
+						svg {
+							align-self: end;
+						}
+					}
 				}
 			}
 		}
