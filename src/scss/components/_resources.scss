@@ -117,30 +117,19 @@
 					border: 1px solid $blue-alt-light;
 					border-radius: 0 0 $topic-title-border-radius $topic-title-border-radius;
 
-					.filter-checkbox + label::before {
-						margin-right: 0;
+					.filter-checkbox + label {
+						display: block;
+
+						&::before {
+							margin-right: 0;
+						}
+					}
+
+					.filter-checkbox:checked + label::after {
+						left: 50%;
+						margin-left: rem(-7);
 					}
 				}
-
-				/*
-					TODO: determine whether the design intends this to be a focus or hover state,
-					      or potentially some other state or combination thereof
-				*/
-				// &:focus,
-				// &:focus-within {
-				// 	.topic-title,
-				// 	.topic-checkbox {
-				// 		border: 2px solid $black;
-				// 	}
-
-				// 	.topic-title {
-				// 		border-bottom: none;
-				// 	}
-
-				// 	.topic-checkbox {
-				// 		border-top: none;
-				// 	}
-				// }
 			}
 		}
 	}
