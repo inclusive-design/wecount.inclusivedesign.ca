@@ -58,7 +58,6 @@
 
 		// Checkmark
 		&:checked + label::after {
-			background: $blue-alt-light;
 			color: $white;
 			content: '\2713';
 			font-size: rem(18);
