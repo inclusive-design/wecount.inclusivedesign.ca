@@ -5,10 +5,18 @@
 	}
 
 	.api-content {
-		column-gap: 3rem;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		row-gap: 3rem;
+		grid-template-columns: 1fr;
+		row-gap: rem(32);
+
+		.tile-item {
+			height: auto;
+			margin: 0;
+
+			.tile-resource {
+				padding: 0 rem(16) rem(8) rem(16);
+			}
+		}
 	}
 
 	.search-container {
@@ -25,6 +33,7 @@
 		border: none;
 		border-radius: rem(9);
 		box-shadow: 0 0 rem(7) $border-shadow-colour;
+		margin-bottom: rem(32);
 		padding: rem(8) rem(16);
 
 		h2 {
@@ -46,6 +55,7 @@
 		.filter-buttons {
 			background-color: initial;
 			border-top: none;
+			gap: rem(8);
 			margin-top: rem(24);
 
 			button {
@@ -97,17 +107,20 @@
 				text-align: center;
 
 				svg {
+					height: rem(80);
 					width: 100%;
 				}
 
 				.topic-title {
 					align-items: center;
 					border-radius: $topic-title-border-radius $topic-title-border-radius 0 0;
+					column-gap: rem(16);
 					cursor: pointer;
 					display: grid;
+					font-weight: $font-weight-semibold;
 					grid-template-columns: 2fr 1fr;
 					height: auto;
-					padding: rem(8);
+					padding: rem(16);
 				}
 
 				// topic title background
@@ -140,13 +153,24 @@
 	}
 }
 
-.tile-item {
-	height: 100%;
-}
-
 @include breakpoint-up(lg) {
 	.resources {
+		.api-content {
+			column-gap: rem(48);
+			grid-template-columns: 1fr 1fr;
+			row-gap: rem(48);
+
+			.tile-item {
+				height: 100%;
+
+				.tile-resource {
+					padding: 0 rem(16) rem(16) rem(16);
+				}
+			}
+		}
+
 		.filter {
+			margin-bottom: rem(48);
 			padding: rem(24) rem(40);
 
 			.topic-choices {
@@ -156,9 +180,15 @@
 					flex: 1 0 21%;
 					text-align: center;
 
+					svg {
+						height: auto;
+					}
+
 					.topic-title {
+						align-items: start;
+						column-gap: 0;
 						grid-template-columns: initial;
-						grid-template-rows: min-content min-content;
+						// grid-template-rows: min-content min-content;
 						height: 100%;
 						padding: rem(16);
 						row-gap: 0;
