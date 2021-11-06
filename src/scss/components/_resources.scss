@@ -25,7 +25,7 @@
 		border: none;
 		border-radius: rem(9);
 		box-shadow: 0 0 rem(7) $border-shadow-colour;
-		padding: rem(24) rem(40);
+		padding: rem(8) rem(16);
 
 		h2 {
 			border-bottom: rem(1) solid $grey-mid-light;
@@ -87,7 +87,8 @@
 		.topic-choices {
 			display: flex;
 			flex-wrap: wrap;
-			gap: rem(48);
+			font-size: rem(20);
+			gap: rem(18);
 			list-style: none;
 			padding-left: 0;
 
@@ -100,6 +101,7 @@
 				}
 
 				.topic-title {
+					align-items: center;
 					border-radius: $topic-title-border-radius $topic-title-border-radius 0 0;
 					cursor: pointer;
 					display: grid;
@@ -121,6 +123,7 @@
 
 					.filter-checkbox + label {
 						display: block;
+						font-size: rem(18);
 
 						&::before {
 							margin-right: 0;
@@ -144,6 +147,8 @@
 @include breakpoint-up(lg) {
 	.resources {
 		.filter {
+			padding: rem(24) rem(40);
+
 			.topic-choices {
 				gap: rem(16);
 
@@ -153,6 +158,7 @@
 
 					.topic-title {
 						grid-template-columns: initial;
+						grid-template-rows: min-content min-content;
 						height: 100%;
 						padding: rem(16);
 						row-gap: 0;
