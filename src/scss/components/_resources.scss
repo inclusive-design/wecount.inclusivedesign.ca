@@ -75,10 +75,8 @@
 			margin: 0;
 			padding: 0 rem(16);
 
-			&:focus,
 			&:hover {
-				border-radius: rem(8);
-				box-shadow: 0 0 rem(12) rgba(0, 0, 0, 0.6);
+				box-shadow: 0 rem(3) rem(2) rem(-2) rgba(0, 0, 0, 0.6);
 			}
 
 			button {
