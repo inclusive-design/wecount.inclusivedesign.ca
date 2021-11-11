@@ -32,7 +32,7 @@ for (let p of params) {
 }
 
 let isStaticViewVisible = true;
-  
+
 /*
  * Set up aside menu by:
  * 1. populate content with headings sourced from given selectors;
@@ -94,16 +94,16 @@ new Vue({
 				};
 
 				results = filterResources(results, filterSettings);
-				
+
 				// Convert some post values to formats that can be displayed
 				if (results.length > 0) {
 					results = processResourcesDisplayResults(results);
 				}
-				
+
 				let tagsQuery = selectedTags.map(tag => "t_" + tag).join("=on&") +
 					selectedCategories.map(cat => "c_" + cat).join("=on&") +
 					selectedTypes.map(type => "t_" + type).join("=on&") + "=on";
-				
+
 				// Paginate search results
 				if (results.length > pageSize) {
 					pagination = createPagination(results, pageSize, pageInQuery, "/resources/?s=" + searchTerm + "&" + tagsQuery + "&page=:page");
@@ -113,7 +113,7 @@ new Vue({
 				vm.tags = response.data.tags.map(tag => ({ ...tag, checked: selectedTags.includes(tag.value)}));
 				vm.resourceCategories = response.data.resourceCategories.map(cat => ({ ...cat, checked: includesCaseInsensitive(selectedCategories, cat.categoryId)}));
 				vm.resourceTypes = response.data.resourceTypes.map(type => ({ ...type, checked: includesCaseInsensitive(selectedTypes, type.value)}));
-				
+
 				vm.selectedTags = response.data.tags.filter(tag => selectedTags.includes(tag.value));
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
@@ -156,6 +156,7 @@ for (let i = 0; i < expandButtons.length; i++) {
 	// Add event listener for expand buttons
 	expandButtons[i].addEventListener("click", (e) => {
 		e.preventDefault();
+		e.stopPropagation();
 		const currentExpandedValue = expandButtons[i].getAttribute("aria-expanded");
 		const expandedState = currentExpandedValue === "true" ? "false" : "true";
 		expandButtons[i].setAttribute("aria-expanded", expandedState);
@@ -171,6 +172,16 @@ for (let i = 0; i < expandButtons.length; i++) {
 
 		// Show/hide the expand svg
 		setExpandSVGState(expandButtons[i], expandedState);
+	});
+}
+
+// clicking a filter header opens/closes the corresponding filter. It behaves the same as clicking the corresponding
+// expand/collapse button.
+const filterHeaders = document.querySelectorAll(".filter .filter-header");
+
+for (let i = 0; i < filterHeaders.length; i++) {
+	filterHeaders[i].addEventListener("click", () => {
+		$(filterHeaders[i]).find(".filter-expand-button").click();
 	});
 }
 
