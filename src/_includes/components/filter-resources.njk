@@ -56,7 +56,7 @@
       {% for tag in resourceTags.resourceTags  %}
         {% set tagId = tag.value | randomizeFilter %}
         <li>
-          <input class="filter-checkbox" type="checkbox" id="{{ tagId }}" name="{{ 't_' + tag.value | slug }}">
+          <input class="filter-checkbox" type="checkbox" id="{{ tagId }}" name="{{ 't_' + tag.value }}">
           <label for="{{ tagId }}">{{ tag.label }}</label>
         </li>
       {% endfor %}
