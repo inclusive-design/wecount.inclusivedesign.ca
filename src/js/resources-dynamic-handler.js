@@ -63,6 +63,9 @@ function bindChoiceChange(viewSelector) {
 			const counterElm = $(e.target.closest(".filter-body")).prev().find(".filter-selected-choice-counter")[0];
 			const currentCount = parseInt(counterElm.innerText);
 			counterElm.innerText = e.target.checked ? currentCount + 1 : currentCount - 1;
+
+			// Submit the form to perform a filter when a choice is selected or unselected
+			e.target.closest("form").submit();
 		});
 	}
 }
