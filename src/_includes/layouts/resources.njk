@@ -109,7 +109,7 @@ pagination:
         {# Topic selections #}
         {# TODO: Dedupe this control #}
         <div class="filter-header">
-          <h3>{{ topicsFilterTitle }}</h3>
+          <h3>{{ topicsFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">{{ '{{ selectedCategories.length }}' }}</span>)</h3>
           <button type="button" class="filter-expand-button" data-section="topics" aria-expanded="true" aria-label="expand">
             <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
             <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
@@ -128,7 +128,7 @@ pagination:
         {# Tag selections #}
         {# TODO: Dedupe this control #}
         <div class="filter-header">
-          <h3>{{ tagsFilterTitle }}</h3>
+          <h3>{{ tagsFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">{{ '{{ selectedTags.length }}' }}</span>)</h3>
           <button type="button" class="filter-expand-button" data-section="tags" aria-expanded="true" aria-label="expand">
             <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
             <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
@@ -147,7 +147,7 @@ pagination:
         {# Media Type selections #}
         {# TODO: Dedupe this control #}
         <div class="filter-header">
-          <h3>{{ typeFilterTitle }}</h3>
+          <h3>{{ typeFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">{{ '{{ selectedTypes.length }}' }}</span>)</h3>
           <button type="button" class="filter-expand-button" data-section="types" aria-expanded="true" aria-label="expand">
             <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
             <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
@@ -201,7 +201,7 @@ pagination:
                 </li>
               </ul>
             </div>
-            
+
             <div class="info">
               <svg aria-hidden="true" tabindex="0"><use xlink:href="#topics" /></svg>
               Topic: {{ '{{ resourceCategories.filter(cat => cat.focuses.includes(item.focus))[0].categoryLabel }}' }}

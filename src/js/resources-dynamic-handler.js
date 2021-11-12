@@ -49,6 +49,24 @@ function setupAside(selectors) {
 	});
 }
 
+/*
+ * Bind change events for filter choice checkboxes. When a choice is checked or unchecked, update the selected
+ * choices counter on the filter header.
+ * @param {String} viewSelector - The selector of the static or the dynamic view template
+ */
+function bindChoiceChange(viewSelector) {
+	// Clicking filter choices updates the corresponding counter
+	const filterCheckboxes = document.querySelectorAll(viewSelector + " .filter .filter-checkbox");
+
+	for (let i = 0; i < filterCheckboxes.length; i++) {
+		filterCheckboxes[i].addEventListener("change", (e) => {
+			const counterElm = $(e.target.closest(".filter-body")).prev().find(".filter-selected-choice-counter")[0];
+			const currentCount = parseInt(counterElm.innerText);
+			counterElm.innerText = e.target.checked ? currentCount + 1 : currentCount - 1;
+		});
+	}
+}
+
 new Vue({
 	el: "#defaultContainer",
 	data: {
@@ -59,7 +77,8 @@ new Vue({
 		pagination: null,
 		resourceCategories: [],
 		resourceReadabilityLevels: [],
-		resourceTypes: []
+		resourceTypes: [],
+		numOfUpdated: 0
 	},
 	mounted() {
 		let vm = this;
@@ -125,6 +144,12 @@ new Vue({
 		// Re-setup the <aside> section when filter/search results are rendered
 		document.querySelector("aside#toc").innerHTML="";
 		setupAside("main article.dynamic-view h1, main article.dynamic-view h2");
+
+		// Make sure change events for choice checkboxes in the dynamic view only bind once
+		if (this.numOfUpdated === 0) {
+			bindChoiceChange(".dynamic-view");
+			this.numOfUpdated = 1;
+		}
 	}
 });
 
@@ -132,6 +157,9 @@ new Vue({
 if (isStaticViewVisible) {
 	setupAside("main article.static-view h1, main article.static-view h2");
 }
+
+// Bind change events for all choice checkboxes in the static view template
+bindChoiceChange(".static-view");
 
 /*
  * Show/hide the corresponding arrow up and down buttons based on the expand state
