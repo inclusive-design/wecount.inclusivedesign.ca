@@ -1,0 +1,34 @@
+// Resource detail page
+.resource-detail {
+	h1 {
+		// margin-bottom: 0;
+	}
+
+	.features {
+		display: grid;
+		grid-template-columns: rem(80) auto;
+		row-gap: rem(32);
+
+		svg {
+			height: rem(48);
+			width: rem(48);
+		}
+
+		div {
+			align-self: center;
+		}
+
+		.feature-name {
+			color: $green-dark;
+			font-weight: $font-weight-bold;
+		}
+
+		.learn-tag {
+			background-color: $grey-light;
+			border-radius: rem(22);
+			display: inline-block;
+			margin: 0 rem(8);
+			padding: rem(8) rem(16);
+		}
+	}
+}
