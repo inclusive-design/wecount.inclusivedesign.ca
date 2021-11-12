@@ -186,58 +186,37 @@ filter = function (dataSet, tagSlugs) {
  * - category (aka topic) in the selected categories
  * - media type in the selected media types
  * - at least one tag in the selected tags
- * 
+ *
  * If multiple criteria are selected, the intersections of the result sets for each
  * criterion will be returned.
- * 
+ *
  * @param {Array<Object>} resources - The data set that the filter is performed upon.
  * @param {Object} filterSettings - A collection of data and settings representing the filter selections
  * @param {Array<Object>} filterSettings.categories - The set of all categories (aka topics)
  * @param {Array<String>} filterSettings.selectedCategories - An array of category values to match.
  * @param {Array<String>} filterSettings.selectedTags - An array of tag values to match.
  * @param {Array<String>} filterSettings.selectedTypes - An array of media types to match.
- *  
+ *
  * @return A subset of the input `dataSet` that satisfy the matching criteria outlined above
  */
 // eslint-disable-next-line
 filterResources = function (resources, filterSettings) {
-	const noTagsSelected = !filterSettings.selectedTags || filterSettings.selectedTags.length === 0;
-	const noCategoriesSelected = !filterSettings.selectedCategories || filterSettings.selectedCategories.length === 0;
-	const noMediaTypesSelected = !filterSettings.selectedTypes || filterSettings.selectedTypes.length === 0;
+	let results = resources;
 
-	if (noTagsSelected && noCategoriesSelected && noMediaTypesSelected) {
-		return resources; // If nothing is selected, return the entire set of resources
-	} else {
+	if (filterSettings.selectedCategories.length > 0) {
 		const selectedFocuses = filterSettings.categories.filter(cat => includesCaseInsensitive(filterSettings.selectedCategories, cat.categoryId));
-
-		const recordsInSelectedCategories = resources.filter(oneRecord => selectedFocuses.some(cat => cat.focuses.includes(oneRecord.focus)));
-		const recordsInSelectedMediaTypes = resources.filter(oneRecord => filterSettings.selectedTypes.includes(oneRecord.type));
-		const recordsWithSelectedTags = resources.filter(oneRecord => oneRecord.learnTags.some(tag => filterSettings.selectedTags.indexOf(tag) >= 0));
-
-		// if it's a single-criterion filter...
-		if (!noTagsSelected ^ !noCategoriesSelected ^ !noMediaTypesSelected && (noTagsSelected || noCategoriesSelected || noMediaTypesSelected)) {
-			// return the appropriate set of filtered results
-			return recordsWithSelectedTags.length > 0 ? recordsWithSelectedTags :
-				recordsInSelectedCategories.length > 0 ? recordsInSelectedCategories :
-					recordsInSelectedMediaTypes.length > 0 ? recordsInSelectedMediaTypes : [];
-		} else {
-			// look for intersection matches, ignoring empty sets
-			return getIntersection(true, recordsInSelectedCategories, recordsWithSelectedTags, recordsInSelectedMediaTypes);
-		}
+		results = results.filter(oneRecord => selectedFocuses.some(cat => cat.focuses.includes(oneRecord.focus)));
 	}
-};
 
-/*
- * Get the intersection of two or more arrays. If no records intersect among the sets,
- * returns an empty array
- *
- * @param {Boolean} ignoreEmptySets - If true, excludes empty sets from the operation
- * @param {...Array<Object>} sets - An arbitrary number of arrays which may or may not contain shared records
- * 
- * @return {Array<Object>} the intersection of the given arrays
- */
-const getIntersection = function (ignoreEmptySets, ...sets) {
-	return (ignoreEmptySets ? sets.filter(set => set.length > 0) : sets).reduce((prev, curr) => prev.filter(rec => curr.includes(rec)));
+	if (filterSettings.selectedTags.length > 0) {
+		results = results.filter(oneRecord => oneRecord.learnTags.some(tag => filterSettings.selectedTags.indexOf(tag) >= 0));
+	}
+
+	if (filterSettings.selectedTypes.length > 0) {
+		results = results.filter(oneRecord => filterSettings.selectedTypes.includes(oneRecord.type));
+	}
+
+	return results;
 };
 
 /*
@@ -261,7 +240,7 @@ slugify = function (str) {
  * a certain value among its entries, returning true or false as appropriate.
  * If inputStringArray is not exclusively an array of strings or if searchString
  * isn't a string, then false is returned.
- * 
+ *
  * @param {String[]} inputStringArray - an array of strings to search over
  * @param {String} searchString - a string to search the collection for
  */

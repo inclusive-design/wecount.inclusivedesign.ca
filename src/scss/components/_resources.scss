@@ -9,6 +9,11 @@
 		grid-template-columns: 1fr;
 		row-gap: rem(32);
 
+		a:hover,
+		a:focus {
+			border-radius: rem(18);
+		}
+
 		.tile-item {
 			height: auto;
 			margin: 0;
