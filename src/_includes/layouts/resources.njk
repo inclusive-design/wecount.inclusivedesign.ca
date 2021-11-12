@@ -89,8 +89,8 @@ pagination:
 
   {# For displaying dynamic search and filtering results #}
   <article class="resources dynamic-view">
-        <h1>{{ title }}</h1>
-        {{ content | safe }}
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
 
     <form method="get" action="/resources/">
       {# TODO: add :value to the search-container template and use template here #}
@@ -114,10 +114,21 @@ pagination:
         </div>
 
         <div class="filter-body" data-section="topics">
-          <ul>
+          <ul class="topic-choices">
               <li v-for="category in resourceCategories">
-                <input class="filter-checkbox" type="checkbox" v-model="category.checked" :id="category.categoryId" :name="'c_' + category.categoryId">
-                <label :for="category.categoryId">{{ '{{ category.categoryLabel }}' }}</label>
+                <div class="topic-title" :class="category.categoryId">
+                  <span id="{{ "title_" + categoryId }}">{{ '{{ category.categoryLabel }}' }}</span>
+                  <svg>
+                    <use v-if="category.categoryId === 'aiAndDisability'" xlink:href="#topic-ai-and-disability" />
+                    <use v-else-if="category.categoryId === 'dataScience'" xlink:href="#topic-work-for-pwd-in-data-science" />
+                    <use v-else-if="category.categoryId === 'aiEthics'" xlink:href="#topic-ai-fairness-ethics-and-policy" />
+                    <use v-else-if="category.categoryId === 'designAndMethods'" xlink:href="#topic-technical-information" />
+                  </svg>
+                </div>
+                <div class="topic-checkbox">
+                  <input class="filter-checkbox" :aria-labelledby="'title_' + category.categoryId" type="checkbox" v-model="category.checked" :id="category.categoryId" :name="'c_' + category.categoryId">
+                  <label :for="category.categoryId"></label>
+                </div>
               </li>
           </ul>
         </div>

@@ -70,6 +70,23 @@ function bindChoiceChange(viewSelector) {
 	}
 }
 
+/*
+ * Bind click handlers for topic checkbox titles. Clicking the text/icon for a given topic
+ * is treated the same as if the user had clicked on the checkbox itself
+ * 
+ * @param {String} viewSelector - The selector of the static or the dynamic view template
+ */
+function bindTopicTitleClick (viewSelector)
+{
+	const topicTitles = document.querySelectorAll(viewSelector + " .filter .topic-title");
+
+	for (let i = 0; i < topicTitles.length; i++) {
+		topicTitles[i].addEventListener("click", () => {
+			$(topicTitles[i]).siblings(".topic-checkbox").find(".filter-checkbox").click();
+		});
+	}
+}
+
 new Vue({
 	el: "#defaultContainer",
 	data: {
@@ -151,6 +168,7 @@ new Vue({
 		// Make sure change events for choice checkboxes in the dynamic view only bind once
 		if (this.numOfUpdated === 0) {
 			bindChoiceChange(".dynamic-view");
+			bindTopicTitleClick(".dynamic-view");
 			this.numOfUpdated = 1;
 		}
 	}
@@ -163,6 +181,9 @@ if (isStaticViewVisible) {
 
 // Bind change events for all choice checkboxes in the static view template
 bindChoiceChange(".static-view");
+
+// Bind topic title checkbox selection in the static view template
+bindTopicTitleClick(".static-view");
 
 /*
  * Show/hide the corresponding arrow up and down buttons based on the expand state
@@ -222,15 +243,6 @@ const resetFilterButtons = document.querySelectorAll(".filter .reset-button");
 for (let i = 0; i < resetFilterButtons.length; i++) {
 	resetFilterButtons[i].addEventListener("click", () => {
 		$(".filter-checkbox").prop("checked", false);
-	});
-}
-
-// Clicking the text/icon for topics selects that topic in addition to the checkbox proper
-const topicTitles = document.querySelectorAll(".filter .topic-title");
-
-for (let i = 0; i < topicTitles.length; i++) {
-	topicTitles[i].addEventListener("click", () => {
-		$(topicTitles[i]).siblings(".topic-checkbox").find(".filter-checkbox").click();
 	});
 }
 
