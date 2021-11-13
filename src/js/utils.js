@@ -152,6 +152,8 @@ getUniqueTags = function (posts) {
 
 /*
  * Search the data set with records that match the search term.
+ * Used in the site-wide search as well as on the Initiatives (formerly Views) page.
+ * 
  * @param {Array<Object>} dataSet - The data set that the search is performed upon.
  * @param {String} searchTerm - The search term.
  * @return A subset of the input `dataSet` that have matched term in any of these fields: title, content, tags.
@@ -162,6 +164,34 @@ search = function (dataSet, searchTerm) {
 	return dataSet.filter((oneRecord) => {
 		const tagNames = oneRecord.tags ? oneRecord.tags.map(({name}) => name) : [];
 		return oneRecord.title.concat(" ", oneRecord.content, " ", oneRecord.excerpt, " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchTerm));
+	});
+};
+
+/*
+ * Search the data set with records that match the search term. Used on the Resources page.
+ * 
+ * This search comprises the following fields:
+ * - title
+ * - learnTags
+ * - abstract
+ * - summary
+ * - keywords
+ * 
+ * @param {Array<Object>} dataSet - A set of Resource records upon which the search will be run
+ * @param {String} searchTerm - The term for which to search
+ * 
+ * @return A subset of the input `dataSet` that have matched term in any of the searched fields
+ */
+// eslint-disable-next-line
+searchResources = function (dataSet, searchTerm) {
+	searchTerm = searchTerm.toLowerCase();
+	return dataSet.filter((oneRecord) => {
+		const searchableContent = (oneRecord.title + " " +
+			oneRecord.learnTags.join(" ") + " " +
+			oneRecord.summary + " " +
+			oneRecord.keywords.join(" ") +
+			oneRecord.abstract).toLowerCase();
+		return searchableContent.match(escapeSpecialChars(searchTerm));
 	});
 };
 

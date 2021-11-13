@@ -1,6 +1,6 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, createPagination, processResourcesDisplayResults, includesCaseInsensitive, filterResources, generateAside, getSideMenuObserver, $ */
+/* global Vue, axios, searchResources, createPagination, processResourcesDisplayResults, includesCaseInsensitive, filterResources, generateAside, getSideMenuObserver, $ */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -76,7 +76,7 @@ function bindChoiceChange(viewSelector) {
  * 
  * @param {String} viewSelector - The selector of the static or the dynamic view template
  */
-function bindTopicTitleClick (viewSelector)
+function bindTopicTitleClick(viewSelector)
 {
 	const topicTitles = document.querySelectorAll(viewSelector + " .filter .topic-title");
 
@@ -121,7 +121,7 @@ new Vue({
 				// Search
 				let results = response.data.resources;
 				if (searchTerm) {
-					results = search(results, searchTerm);
+					results = searchResources(results, searchTerm);
 				}
 
 				// Filter by selected tags, categories or media types
