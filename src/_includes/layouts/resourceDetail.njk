@@ -75,15 +75,18 @@
           <svg><use xlink:href="#open-source" /></svg>
           <div><span class="feature-name">Open Source:</span> {{ openSource | safe }}</div>
 
+          {% if link %}
           <svg><use xlink:href="#share-point-url" /></svg>
-          <div><span class="feature-name">External URL:</span>
-              {% if link === "" %}N/A{% else %}<a href="{{ link }}">{{ link | safe }}</a>{% endif %}
+          <div><span class="feature-name">External URL:</span><a href="{{ link }}">{{ link | safe }}</a>
           </div>
+          {% endif %}
 
+          {% if sharePointUrl %}
           <svg><use xlink:href="#share-point-url" /></svg>
           <div><span class="feature-name">Share Point URL:</span>
-              {% if sharePointUrl === "" %}N/A{% else %}<a href="{{ sharePointUrl }}">{{ sharePointUrl | safe }}</a>{% endif %}
+              <a href="{{ sharePointUrl }}">{{ sharePointUrl | safe }}</a>
           </div>
+          {% endif %}
 
           <svg><use xlink:href="#keywords" /></svg>
           <div><span class="feature-name">Keywords:</span>
