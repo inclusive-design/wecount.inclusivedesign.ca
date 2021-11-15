@@ -40,7 +40,8 @@ permalink: resources.json
       ],
       "sharePointUrl": {% if item.data.sharePointUrl -%} {{- item.data.sharePointUrl | dump | safe -}} {%- else -%} "" {%- endif %},
       "source": {{ item.data.source | dump | safe }},
-      "summary": {{ item.data.summary | dump | safe }}
+      "summary": {{ item.data.summary | dump | safe -}},
+      "abstract": {{ item.template.frontMatter.content | replace("\n", "") | dump | safe }}
     }{% if not loop.last %},{% endif %}
   {%- endfor %}
   ],
