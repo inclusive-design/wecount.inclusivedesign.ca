@@ -1,4 +1,4 @@
 {
-	"permalink": "/resources/{{ title | slug }}/",
+	"permalink": "/resources/{{ title | slug }}-{{ type | slug }}/",
 	"layout": "layouts/resourceDetail.njk"
 }
