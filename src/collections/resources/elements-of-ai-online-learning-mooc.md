@@ -2,7 +2,7 @@
 title: "Elements of AI"
 focus: "Data Science Education"
 source: "Elements of AI"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Online Learning (MOOC)"
 toolPurpose: []
 toolAccessibilityIssues: []

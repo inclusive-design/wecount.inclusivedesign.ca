@@ -2,7 +2,7 @@
 title: "User Accessibility Options in MySQL Workbench"
 focus: "Tool"
 source: "MySQL"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["Visual Enhancements"]

@@ -2,7 +2,7 @@
 title: "A.I. Nation"
 focus: "AI Ethics/Policy"
 source: "WHYY"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

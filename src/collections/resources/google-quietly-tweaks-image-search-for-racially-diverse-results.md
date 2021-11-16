@@ -3,7 +3,7 @@ title: Google Quietly Tweaks Image Search for Racially Diverse Results
 focus: Bias
 source: BNN Bloomberg
 readability:
-  - I
+  - Intermediate
 type: Website Article
 openSource: false
 link: https://www.bnnbloomberg.ca/google-quietly-tweaks-image-search-for-racially-diverse-results-1.1668661

@@ -2,7 +2,7 @@
 title: "\"AI Gone Mental\": Engagement and Ethics in Data-Driven Technology for Mental Health"
 focus: "AI and Disability/Outliers"
 source: "Journal of Mental Health"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

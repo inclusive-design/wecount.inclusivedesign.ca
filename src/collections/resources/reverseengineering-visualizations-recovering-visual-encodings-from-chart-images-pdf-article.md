@@ -2,7 +2,7 @@
 title: "Reverse‐Engineering Visualizations: Recovering Visual Encodings from Chart Images"
 focus: "Tool"
 source: "EuroVis 2017"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: ["Create Accessible Content"]
 toolAccessibilityIssues: ["NVDA"]

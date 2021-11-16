@@ -2,7 +2,7 @@
 title: "Statistical Software from a Blind Person’s Perspective"
 focus: "Tool"
 source: "The R Journal"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["Braille"]

@@ -2,7 +2,7 @@
 title: "What’s in a Name?: Reducing Bias in Bios without Access to Protected Attributes"
 focus: "Methods or Design"
 source: "NAACL 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

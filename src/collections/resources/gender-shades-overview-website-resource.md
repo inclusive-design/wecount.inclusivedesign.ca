@@ -2,7 +2,7 @@
 title: "Gender Shades: Overview"
 focus: "Bias"
 source: "Gender Shades "
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

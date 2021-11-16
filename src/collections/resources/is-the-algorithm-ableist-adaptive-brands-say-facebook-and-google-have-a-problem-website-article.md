@@ -2,7 +2,7 @@
 title: "Is the Algorithm Ableist? Adaptive Brands say Facebook and Google Have a Problem"
 focus: "AI and Disability/Outliers"
 source: "Vogue Business"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

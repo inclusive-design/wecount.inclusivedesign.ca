@@ -2,7 +2,7 @@
 title: "Weapons of Math Destruction"
 focus: "Bias"
 source: "Talks at Google"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

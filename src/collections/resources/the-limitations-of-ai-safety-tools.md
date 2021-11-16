@@ -3,7 +3,7 @@ title: The Limitations of AI Safety Tools
 focus: AI Ethics/Policy
 source: VentureBeat
 readability:
-  - I
+  - Intermediate
 type: Website Article
 openSource: false
 link: https://venturebeat.com/2021/09/27/the-limitations-of-ai-safety-tools/

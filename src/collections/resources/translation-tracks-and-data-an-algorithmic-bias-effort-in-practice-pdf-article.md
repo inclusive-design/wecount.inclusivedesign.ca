@@ -2,7 +2,7 @@
 title: "Translation, Tracks and Data: An Algorithmic Bias Effort in Practice"
 focus: "Bias"
 source: "CHI 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

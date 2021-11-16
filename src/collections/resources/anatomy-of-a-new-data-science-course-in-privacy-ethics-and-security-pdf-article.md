@@ -2,7 +2,7 @@
 title: "Anatomy of a New Data Science Course in Privacy, Ethics, and Security"
 focus: "Data Science Education"
 source: "WCCCE 2018"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

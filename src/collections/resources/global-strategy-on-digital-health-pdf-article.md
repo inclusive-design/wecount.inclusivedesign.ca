@@ -2,7 +2,7 @@
 title: "Global Strategy on Digital Health"
 focus: "AI Ethics/Policy"
 source: "WHO"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

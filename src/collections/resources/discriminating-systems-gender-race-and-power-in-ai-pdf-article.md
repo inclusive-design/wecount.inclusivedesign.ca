@@ -2,7 +2,7 @@
 title: "Discriminating Systems: Gender, Race, and Power in AI"
 focus: "AI Ethics/Policy"
 source: "AI Now Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

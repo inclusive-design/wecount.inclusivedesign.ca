@@ -2,7 +2,7 @@
 title: "Microsoft Corporation Champions AI in Health and Mobility Sector"
 focus: "AI and Disability/Outliers"
 source: "Access and Mobility Professional"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

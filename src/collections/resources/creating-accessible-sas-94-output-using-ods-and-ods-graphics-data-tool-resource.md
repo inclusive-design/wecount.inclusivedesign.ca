@@ -2,7 +2,7 @@
 title: "Creating Accessible SAS 9.4 Output Using ODS and ODS Graphics"
 focus: "Tool"
 source: "SAS Institute"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Accessible Content"]
 toolAccessibilityIssues: ["General Accessibility"]

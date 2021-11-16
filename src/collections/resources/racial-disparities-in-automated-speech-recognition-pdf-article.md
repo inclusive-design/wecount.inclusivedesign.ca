@@ -2,7 +2,7 @@
 title: "Racial Disparities in Automated Speech Recognition"
 focus: "AI Ethics/Policy"
 source: "PNAS"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

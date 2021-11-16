@@ -2,7 +2,7 @@
 title: "Podcast: Protecting People with Disabilities Against Discrimination with AI in Employment"
 focus: "Employment"
 source: "Workology and PEAT"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -3,7 +3,7 @@ title: The Meaning of “Explainability Fosters Trust in AI”
 focus: AI Ethics/Policy
 source: SSRN
 readability:
-  - E
+  - Expert
 type: PDF Article
 openSource: false
 link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3916396

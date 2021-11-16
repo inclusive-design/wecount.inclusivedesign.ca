@@ -2,7 +2,7 @@
 title: "Diagnosing Gender Bias in Image\nRecognition Systems"
 focus: "Bias"
 source: "SOCIUS"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

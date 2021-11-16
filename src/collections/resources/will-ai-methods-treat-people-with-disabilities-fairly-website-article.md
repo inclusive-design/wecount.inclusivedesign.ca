@@ -2,7 +2,7 @@
 title: "Will AI Methods Treat People with Disabilities Fairly?"
 focus: "AI and Disability/Outliers"
 source: "MIT-IBM Watson AI Lab"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

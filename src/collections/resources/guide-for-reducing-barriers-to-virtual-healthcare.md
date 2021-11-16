@@ -3,8 +3,8 @@ title: Guide for Reducing Barriers to Virtual Healthcare
 focus: AI and Disability/Outliers
 source: IDRC
 readability:
-  - I
-  - E
+  - Intermediate
+  - Expert
 type: Website Resource
 openSource: false
 link: https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Guide+for+Reducing+Barriers+to+Virtual+Healthcare

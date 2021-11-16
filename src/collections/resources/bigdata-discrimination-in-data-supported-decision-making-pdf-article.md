@@ -2,7 +2,7 @@
 title: "#BigData: Discrimination in Data-Supported Decision Making"
 focus: "AI Ethics/Policy"
 source: "EU FRA"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

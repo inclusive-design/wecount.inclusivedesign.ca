@@ -2,7 +2,7 @@
 title: "Bias in Data-Driven Artificial Intelligence Systems — An Introductory Survey"
 focus: "Bias"
 source: "WIREs Data Mining and Knowledge Discovery Journal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

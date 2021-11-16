@@ -2,7 +2,7 @@
 title: "Sonify: Data Sonification - Turning Data into Sound"
 focus: "Tool"
 source: "CRAN"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Package"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["Sonified Graphs"]

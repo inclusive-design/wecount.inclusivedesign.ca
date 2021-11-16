@@ -2,7 +2,7 @@
 title: "How I'm Fighting Bias in Algorithms"
 focus: "Bias"
 source: "TED Talks"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

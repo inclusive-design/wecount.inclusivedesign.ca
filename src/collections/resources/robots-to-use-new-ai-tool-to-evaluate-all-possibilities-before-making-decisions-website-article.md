@@ -2,7 +2,7 @@
 title: "Robots to Use New AI Tool to Evaluate All Possibilities Before Making Decisions"
 focus: "Methods or Design"
 source: "EurekAlert!"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

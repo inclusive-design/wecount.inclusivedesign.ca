@@ -2,7 +2,7 @@
 title: "Base SAS 9.4: Accessibility Features"
 focus: "Tool"
 source: "SAS Institute"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["JAWS","Screen Reader","Visual Enhancements"]

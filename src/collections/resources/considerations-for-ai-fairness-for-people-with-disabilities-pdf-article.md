@@ -2,7 +2,7 @@
 title: "Considerations for AI Fairness for People with Disabilities"
 focus: "AI and Disability/Outliers"
 source: "AI Matters"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

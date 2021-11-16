@@ -2,7 +2,7 @@
 title: "Facial Recognition Technologies: A Primer"
 focus: "Data Science Education"
 source: "Algorithmic Justice League"
-readability: ["B"]
+readability: ["Beginner"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

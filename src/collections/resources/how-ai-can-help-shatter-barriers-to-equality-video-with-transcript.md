@@ -2,7 +2,7 @@
 title: "How AI Can Help Shatter Barriers to Equality"
 focus: "Bias"
 source: "TED Talks"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

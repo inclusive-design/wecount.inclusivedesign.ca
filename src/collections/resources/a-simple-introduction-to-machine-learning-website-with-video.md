@@ -2,7 +2,7 @@
 title: "A Simple Introduction to Machine Learning"
 focus: "Data Science Education"
 source: "Towards Data Science"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website with Video"
 toolPurpose: []
 toolAccessibilityIssues: []

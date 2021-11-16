@@ -2,7 +2,7 @@
 title: "Machine Learning Tutorial in Python"
 focus: "Data Science Education"
 source: "Edureka"
-readability: ["B","I"]
+readability: ["Beginner","Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

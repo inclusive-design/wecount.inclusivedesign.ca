@@ -2,7 +2,7 @@
 title: "Physics Webpages Create Barriers to Participation for People with Disabilities"
 focus: "AI and Disability/Outliers"
 source: "International Journal of STEM Education"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "TikTok Curbed Reach for People with Disabilities"
 focus: "Bias"
 source: "Netzpolitik"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

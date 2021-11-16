@@ -2,7 +2,7 @@
 title: "Ethics of Artificial Intelligence: Some Ethical Issues and Regulatory Challenges"
 focus: "AI Ethics/Policy"
 source: "Technology and Regulation Journal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -3,7 +3,7 @@ title: Why Facebook Shutting Down Its Old Facial Recognition System Doesn’t Ma
 focus: AI Ethics/Policy
 source: BuzzFeed News
 readability:
-  - I
+  - Intermediate
 type: Website Article
 openSource: false
 link: https://www.buzzfeednews.com/article/emilybakerwhite/facebook-faceprints-are-the-tip-of-the-biometric-iceberg

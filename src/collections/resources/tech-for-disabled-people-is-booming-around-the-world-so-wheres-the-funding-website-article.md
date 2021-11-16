@@ -2,7 +2,7 @@
 title: "Tech for Disabled People Is Booming Around the World. So Where’s the Funding?"
 focus: "AI and Disability/Outliers"
 source: "Rest of World"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

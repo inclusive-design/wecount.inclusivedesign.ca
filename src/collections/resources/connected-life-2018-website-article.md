@@ -2,7 +2,7 @@
 title: "Connected Life 2018"
 focus: "Connected Life 2018"
 source: "Connected Life 2018"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

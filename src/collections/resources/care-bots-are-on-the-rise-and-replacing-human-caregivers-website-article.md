@@ -2,7 +2,7 @@
 title: "\"Care Bots\" Are on the Rise and Replacing Human Caregivers"
 focus: "AI Ethics/Policy"
 source: "The Guardian"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

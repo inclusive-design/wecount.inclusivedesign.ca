@@ -2,7 +2,7 @@
 title: "How Algorithmic Bias Hurts People with Disabilities"
 focus: "Employment"
 source: "Slate "
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Hack Weeks as a Model for Data Science Education and Collaboration"
 focus: "Data Science Education"
 source: "PNAS"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

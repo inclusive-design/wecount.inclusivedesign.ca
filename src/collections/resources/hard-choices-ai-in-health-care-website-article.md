@@ -2,7 +2,7 @@
 title: "Hard Choices: AI in Health Care"
 focus: "AI Ethics/Policy"
 source: "Yale Medicine"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

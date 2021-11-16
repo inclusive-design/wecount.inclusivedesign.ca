@@ -2,7 +2,7 @@
 title: "AI for the Common Good?! Pitfalls, Challenges, and Ethics Pen-Testing"
 focus: "AI Ethics/Policy"
 source: "Paladyn, Journal of Behavioral Robotics"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

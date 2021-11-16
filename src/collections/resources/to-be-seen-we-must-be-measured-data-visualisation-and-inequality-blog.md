@@ -2,7 +2,7 @@
 title: "To Be Seen We Must Be Measured: Data Visualisation and Inequality"
 focus: "AI and Disability/Outliers"
 source: "Ada Lovelace Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Tackling Bias in Artificial Intelligence (and in Humans)"
 focus: "Bias"
 source: "McKinsey Global Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

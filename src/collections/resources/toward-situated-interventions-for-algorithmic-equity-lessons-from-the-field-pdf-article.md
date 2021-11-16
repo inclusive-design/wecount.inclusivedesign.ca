@@ -2,7 +2,7 @@
 title: "Toward Situated Interventions for Algorithmic Equity: Lessons from the Field"
 focus: "AI Ethics/Policy"
 source: "FAT 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

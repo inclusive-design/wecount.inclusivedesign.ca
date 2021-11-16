@@ -2,7 +2,7 @@
 title: "How Facebook Got Addicted to Spreading Misinformation"
 focus: "AI Ethics/Policy"
 source: "MIT Technology Review"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

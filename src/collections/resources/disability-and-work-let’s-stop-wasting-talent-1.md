@@ -3,7 +3,7 @@ title: "Disability and Work: Let’s Stop Wasting Talent"
 focus: AI and Disability/Outliers
 source: TEDx
 readability:
-  - I
+  - Intermediate
 type: Video
 openSource: false
 link: https://youtu.be/twaKuhvYpss

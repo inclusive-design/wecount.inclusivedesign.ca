@@ -2,7 +2,7 @@
 title: "What Makes Us Human Makes Us Also AI (ir)Responsible: When and How to Inject Your AI with R?"
 focus: "AI Ethics/Policy"
 source: "World Summit AI 2019"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

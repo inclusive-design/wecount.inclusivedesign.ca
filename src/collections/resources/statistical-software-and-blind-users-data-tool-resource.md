@@ -2,7 +2,7 @@
 title: "Statistical Software and Blind Users "
 focus: "Tool"
 source: "Massey University"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["Screen Reader"]

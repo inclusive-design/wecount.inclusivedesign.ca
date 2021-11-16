@@ -2,7 +2,7 @@
 title: "Now That Machines Can Learn, Can They Unlearn?"
 focus: "Methods or Design"
 source: "WIRED"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

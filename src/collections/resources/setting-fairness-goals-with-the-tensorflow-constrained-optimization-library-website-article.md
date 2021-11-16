@@ -2,7 +2,7 @@
 title: "Setting Fairness Goals with the TensorFlow Constrained Optimization Library "
 focus: "AI Ethics/Policy"
 source: "Google AI "
-readability: ["E"]
+readability: ["Expert"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

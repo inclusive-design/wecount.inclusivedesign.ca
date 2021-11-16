@@ -2,7 +2,7 @@
 title: "Queen's University: Master of Management Analytics"
 focus: "Data Science Education"
 source: "Queen's University"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

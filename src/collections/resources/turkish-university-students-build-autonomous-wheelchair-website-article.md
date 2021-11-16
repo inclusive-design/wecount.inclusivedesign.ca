@@ -2,7 +2,7 @@
 title: "Turkish University Students Build Autonomous Wheelchair"
 focus: "AI and Disability/Outliers"
 source: "Kadeshan"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Keyboard Shortcuts in Power BI Desktop"
 focus: "Tool"
 source: "Microsoft"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Content","Consume Content"]
 toolAccessibilityIssues: ["Keyboard Accessibility"]

@@ -2,7 +2,7 @@
 title: "Fairness and Abstraction in Sociotechnical Systems"
 focus: "Methods or Design"
 source: "Data and Society "
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "University of Waterloo: Master of Data Science & Artificial Intelligence "
 focus: "Data Science Education"
 source: "University of Waterloo"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

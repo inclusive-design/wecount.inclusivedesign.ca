@@ -2,7 +2,7 @@
 title: "Toward Accountable Discrimination-Aware Data Mining: The Importance of Keeping the Human in the Loop — and under the Looking-Glass"
 focus: "AI Ethics/Policy"
 source: "Big Data"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

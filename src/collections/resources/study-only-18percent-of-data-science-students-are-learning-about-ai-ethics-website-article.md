@@ -2,7 +2,7 @@
 title: "Study: Only 18% of Data Science Students Are Learning about AI Ethics"
 focus: "AI Ethics/Policy"
 source: "The Next Web"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

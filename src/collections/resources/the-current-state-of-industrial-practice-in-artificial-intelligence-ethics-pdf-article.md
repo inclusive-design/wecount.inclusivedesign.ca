@@ -2,7 +2,7 @@
 title: "The Current State of Industrial Practice in Artificial Intelligence Ethics"
 focus: "AI Ethics/Policy"
 source: "IEEE"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

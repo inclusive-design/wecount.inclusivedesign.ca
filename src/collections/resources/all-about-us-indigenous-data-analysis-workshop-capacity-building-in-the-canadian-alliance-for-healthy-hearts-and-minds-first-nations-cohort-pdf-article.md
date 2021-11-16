@@ -2,7 +2,7 @@
 title: "“All About Us”: Indigenous Data Analysis Workshop — Capacity Building in the Canadian Alliance for Healthy Hearts and Minds First Nations Cohort"
 focus: "Data Science Education"
 source: "Canadian Journal of Cardiology"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Why Are Artificial Intelligence Systems Biased?"
 focus: "Bias"
 source: "The Hill "
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

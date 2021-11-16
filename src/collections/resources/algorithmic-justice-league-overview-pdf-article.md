@@ -2,7 +2,7 @@
 title: "Algorithmic Justice League: Overview"
 focus: "AI Ethics/Policy"
 source: "Algorithmic Justice League"
-readability: ["B"]
+readability: ["Beginner"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

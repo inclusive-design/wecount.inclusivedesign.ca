@@ -2,7 +2,7 @@
 title: "COVID-19 and Rethinking the Role of AI in Assisting with the Mental Health Crisis"
 focus: "AI Ethics/Policy"
 source: "The Good AI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Accommodating Workers with Disabilities in the Post-Covid World"
 focus: "AI and Disability/Outliers"
 source: "Journal of Occupational and Environmental Hygiene"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

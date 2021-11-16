@@ -2,7 +2,7 @@
 title: "Amazon Scraps Secret AI Recruiting Tool That Showed Bias Against Women"
 focus: "Employment"
 source: "Reuters"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

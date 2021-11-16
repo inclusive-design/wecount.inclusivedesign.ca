@@ -2,7 +2,7 @@
 title: "A Reinforcement Learning and IoT Based System to Assist Patients with Disabilities"
 focus: "AI and Disability/Outliers"
 source: "AI4EIoTs 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

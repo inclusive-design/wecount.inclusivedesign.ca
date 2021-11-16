@@ -2,7 +2,7 @@
 title: "Podcast: Apprenticeships and Employing People with Disabilities"
 focus: "Employment"
 source: "Workology and PEAT"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

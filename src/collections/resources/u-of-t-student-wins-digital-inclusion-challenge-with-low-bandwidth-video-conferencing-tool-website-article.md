@@ -2,7 +2,7 @@
 title: "U of T Student Wins \"Digital Inclusion\" Challenge with Low-Bandwidth Video Conferencing Tool"
 focus: "Methods or Design"
 source: "U of T News"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

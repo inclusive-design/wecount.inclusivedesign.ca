@@ -4,7 +4,7 @@ title: "Gathering Strength, Gathering Storms: The One Hundred Year Study on
 focus: AI Ethics/Policy
 source: Stanford University
 readability:
-  - E
+  - Expert
 type: Website Resource
 openSource: false
 link: https://ai100.stanford.edu/2021-report/gathering-strength-gathering-storms-one-hundred-year-study-artificial-intelligence

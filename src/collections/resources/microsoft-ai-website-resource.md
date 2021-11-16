@@ -2,7 +2,7 @@
 title: "Microsoft AI"
 focus: "Data Science Education"
 source: "Microsoft"
-readability: ["B","I","E"]
+readability: ["Beginner","Intermediate","Expert"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

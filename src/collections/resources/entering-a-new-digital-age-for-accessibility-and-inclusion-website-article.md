@@ -2,7 +2,7 @@
 title: "Entering a New Digital Age for Accessibility and Inclusion"
 focus: "AI and Disability/Outliers"
 source: "UX Collective"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

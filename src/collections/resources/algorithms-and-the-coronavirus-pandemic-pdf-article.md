@@ -2,7 +2,7 @@
 title: "Algorithms and the Coronavirus Pandemic"
 focus: "AI Ethics/Policy"
 source: "Financial Times"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

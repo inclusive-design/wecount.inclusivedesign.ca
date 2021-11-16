@@ -2,7 +2,7 @@
 title: "Facial Recognition Technology Isn’t Good Just Because It’s Used to Arrest Neo-Nazis"
 focus: "AI Ethics/Policy"
 source: "Slate"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

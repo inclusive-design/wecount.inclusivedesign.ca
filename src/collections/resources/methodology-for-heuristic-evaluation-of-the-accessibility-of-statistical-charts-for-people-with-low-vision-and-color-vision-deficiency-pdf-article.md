@@ -2,7 +2,7 @@
 title: "Methodology for Heuristic Evaluation of the Accessibility of Statistical Charts for People with Low Vision and Color Vision Deficiency"
 focus: "AI and Disability/Outliers"
 source: "Universitat de Lleida"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

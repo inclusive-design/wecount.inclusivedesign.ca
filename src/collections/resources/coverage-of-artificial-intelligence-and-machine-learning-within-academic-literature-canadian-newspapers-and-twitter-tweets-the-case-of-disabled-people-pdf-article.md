@@ -2,7 +2,7 @@
 title: "Coverage of Artificial Intelligence and Machine Learning within Academic Literature, Canadian Newspapers, and Twitter Tweets: The Case of Disabled People"
 focus: "AI and Disability/Outliers"
 source: "Societies Journal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

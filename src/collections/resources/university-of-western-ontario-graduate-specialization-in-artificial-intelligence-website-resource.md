@@ -2,7 +2,7 @@
 title: "University of Western Ontario Graduate Specialization in Artificial Intelligence "
 focus: "Data Science Education"
 source: "University of Western Ontario"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

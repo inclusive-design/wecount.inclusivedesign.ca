@@ -2,7 +2,7 @@
 title: "Tactile Code Skimmer: A Tool to Help Blind Programmers Feel the Structure of Code"
 focus: "Methods or Design"
 source: "ACM ASSETS 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

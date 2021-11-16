@@ -2,7 +2,7 @@
 title: "Plum"
 focus: "AI and Disability/Outliers"
 source: "Plum"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

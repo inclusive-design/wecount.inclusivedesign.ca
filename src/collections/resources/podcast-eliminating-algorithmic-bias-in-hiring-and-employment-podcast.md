@@ -2,7 +2,7 @@
 title: "Podcast: Eliminating Algorithmic Bias in Hiring and Employment"
 focus: "Employment"
 source: "Workology and PEAT"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Interventions for Ranking in the Presence of Implicit Bias"
 focus: "Bias"
 source: "FAT 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

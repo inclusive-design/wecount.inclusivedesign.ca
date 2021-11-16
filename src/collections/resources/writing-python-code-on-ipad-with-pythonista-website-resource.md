@@ -2,7 +2,7 @@
 title: "Writing Python Code on iPad with Pythonista"
 focus: "Data Science Education"
 source: "Veronica With Four Eyes"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

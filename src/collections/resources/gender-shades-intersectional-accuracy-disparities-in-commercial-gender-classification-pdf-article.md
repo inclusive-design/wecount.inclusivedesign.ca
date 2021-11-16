@@ -2,7 +2,7 @@
 title: "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification"
 focus: "Bias"
 source: "Gender Shades "
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

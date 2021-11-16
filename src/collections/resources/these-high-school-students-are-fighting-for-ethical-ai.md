@@ -3,7 +3,7 @@ title: These High School Students Are Fighting for Ethical AI
 focus: AI Ethics/Policy
 source: CNN
 readability:
-  - I
+  - Intermediate
 type: Website Article
 openSource: false
 link: https://www.cnn.com/2021/09/29/tech/ethical-ai-youth-activists-encode-justice/index.html

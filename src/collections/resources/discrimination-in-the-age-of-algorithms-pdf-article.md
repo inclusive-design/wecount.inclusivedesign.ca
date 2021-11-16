@@ -2,7 +2,7 @@
 title: "Discrimination in the Age of Algorithms"
 focus: "Bias"
 source: "SSRN "
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

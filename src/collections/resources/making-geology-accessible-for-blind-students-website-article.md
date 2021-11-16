@@ -2,7 +2,7 @@
 title: "Making Geology Accessible for Blind Students"
 focus: "AI and Disability/Outliers"
 source: "Inside Higher Ed"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

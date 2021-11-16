@@ -2,7 +2,7 @@
 title: "What Does It Mean to \"Solve\" the Problem of Discrimination Inhiring?: Social, Technical and Legal Perspectives from the UK on Automated Hiring Systems"
 focus: "Employment"
 source: "FAT 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Understanding the Telework Experience of People with Disabilities"
 focus: "AI and Disability/Outliers"
 source: "ACM"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

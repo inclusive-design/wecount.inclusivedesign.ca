@@ -3,7 +3,7 @@ title: Facebook Rolls Out News Feed Change That Blocks Watchdogs from Gathering 
 focus: AI and Disability/Outliers
 source: The Markup
 readability:
-  - I
+  - Intermediate
 type: Website Article
 openSource: false
 link: https://themarkup.org/citizen-browser/2021/09/21/facebook-rolls-out-news-feed-change-that-blocks-watchdogs-from-gathering-data

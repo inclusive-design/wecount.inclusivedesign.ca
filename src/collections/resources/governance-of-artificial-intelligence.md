@@ -3,7 +3,7 @@ title: Governance of Artificial Intelligence
 focus: AI Ethics/Policy
 source: Policy and Society
 readability:
-  - E
+  - Expert
 type: PDF Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Governance%20of%20artificial%20intelligence.pdf?csf=1&web=1&e=a2Pwdo

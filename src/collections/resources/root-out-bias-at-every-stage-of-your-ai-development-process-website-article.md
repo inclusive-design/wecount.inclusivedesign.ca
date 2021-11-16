@@ -2,7 +2,7 @@
 title: "Root Out Bias at Every Stage of Your AI-Development Process"
 focus: "Bias"
 source: "Harvard Business Review"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

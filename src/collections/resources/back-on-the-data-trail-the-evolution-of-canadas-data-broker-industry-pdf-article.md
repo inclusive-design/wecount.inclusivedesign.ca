@@ -2,7 +2,7 @@
 title: "Back on the Data Trail: The Evolution of Canada’s Data Broker Industry"
 focus: "Data Set"
 source: "CIPPIC"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

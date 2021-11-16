@@ -2,7 +2,7 @@
 title: "International Observatory on the Societal Impacts of AI and Digital Technology"
 focus: "Data Science Education"
 source: "OBVIA"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

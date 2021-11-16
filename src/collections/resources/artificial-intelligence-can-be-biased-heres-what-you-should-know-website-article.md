@@ -2,7 +2,7 @@
 title: "Artificial Intelligence Can Be Biased. Here’s What You Should Know."
 focus: "Bias"
 source: "PBS Frontline"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

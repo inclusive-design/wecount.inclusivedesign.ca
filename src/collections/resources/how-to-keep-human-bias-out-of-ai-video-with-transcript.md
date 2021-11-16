@@ -2,7 +2,7 @@
 title: "How to Keep Human Bias Out of AI"
 focus: "Bias"
 source: "TED Talks"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

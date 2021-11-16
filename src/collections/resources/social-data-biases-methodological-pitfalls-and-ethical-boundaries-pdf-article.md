@@ -2,7 +2,7 @@
 title: "Social Data: Biases, Methodological Pitfalls, and Ethical Boundaries"
 focus: "Bias"
 source: "Frontiers in Big Data Journal"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

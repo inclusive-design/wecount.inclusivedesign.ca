@@ -3,7 +3,7 @@ title: AI Powered Disability Discrimination
 focus: AI and Disability/Outliers
 source: The GovLab
 readability:
-  - I
+  - Intermediate
 type: Video
 openSource: false
 link: https://youtu.be/1n5V_W9SAos

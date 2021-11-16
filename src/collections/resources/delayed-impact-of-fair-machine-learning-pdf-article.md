@@ -2,7 +2,7 @@
 title: "Delayed Impact of Fair Machine Learning"
 focus: "Methods or Design"
 source: "ICML 2018"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

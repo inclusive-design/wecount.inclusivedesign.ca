@@ -2,7 +2,7 @@
 title: "Using Causal Reasoning to Guide Algorithms Toward a Fairer World"
 focus: "Bias"
 source: "Shorenstein Center"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

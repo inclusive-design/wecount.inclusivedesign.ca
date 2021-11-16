@@ -2,7 +2,7 @@
 title: "Applause Targets AI Bias by Sourcing Training Data at Scale"
 focus: "Methods or Design"
 source: "VentureBeat"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

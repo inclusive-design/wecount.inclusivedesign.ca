@@ -2,7 +2,7 @@
 title: "AI for Accessibility Grants"
 focus: "Methods or Design"
 source: "Microsoft AI"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

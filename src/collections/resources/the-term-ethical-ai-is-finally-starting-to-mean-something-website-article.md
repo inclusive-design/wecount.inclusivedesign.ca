@@ -2,7 +2,7 @@
 title: "The Term \"Ethical AI\" Is Finally Starting to Mean Something"
 focus: "AI Ethics/Policy"
 source: "VentureBeat"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

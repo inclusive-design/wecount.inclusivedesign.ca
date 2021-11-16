@@ -2,7 +2,7 @@
 title: "Don't Believe Every AI You See"
 focus: "AI Ethics/Policy"
 source: "New America"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

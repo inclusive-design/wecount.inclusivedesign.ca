@@ -2,7 +2,7 @@
 title: "We Are AI"
 focus: "Data Science Education"
 source: "Peer 2 Peer University"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

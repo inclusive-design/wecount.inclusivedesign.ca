@@ -2,7 +2,7 @@
 title: "Study Finds Diversity in Data Science Teams Is Key in Reducing Algorithmic Bias"
 focus: "Bias"
 source: "VentureBeat"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

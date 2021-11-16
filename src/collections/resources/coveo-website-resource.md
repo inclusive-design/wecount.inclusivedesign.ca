@@ -2,7 +2,7 @@
 title: "Coveo"
 focus: "AI and Disability/Outliers"
 source: "Coveo"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

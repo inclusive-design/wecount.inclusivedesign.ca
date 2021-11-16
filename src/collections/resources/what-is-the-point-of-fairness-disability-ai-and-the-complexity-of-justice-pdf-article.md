@@ -2,7 +2,7 @@
 title: "What is the Point of Fairness?: Disability, AI and the Complexity of Justice"
 focus: "AI and Disability/Outliers"
 source: "SIGACCESS"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

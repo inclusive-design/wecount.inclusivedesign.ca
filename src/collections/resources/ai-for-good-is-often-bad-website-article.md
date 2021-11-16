@@ -2,7 +2,7 @@
 title: "AI for Good Is Often Bad"
 focus: "AI Ethics/Policy"
 source: "Wired"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

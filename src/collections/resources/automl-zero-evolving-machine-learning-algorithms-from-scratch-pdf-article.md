@@ -2,7 +2,7 @@
 title: "AutoML-Zero: Evolving Machine Learning Algorithms from Scratch"
 focus: "Methods or Design"
 source: "ICML 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

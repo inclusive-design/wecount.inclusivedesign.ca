@@ -2,7 +2,7 @@
 title: "Should More Public Trust in Data-Driven Systems Be the Goal?"
 focus: "AI and Disability/Outliers"
 source: "Ada Lovelace Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

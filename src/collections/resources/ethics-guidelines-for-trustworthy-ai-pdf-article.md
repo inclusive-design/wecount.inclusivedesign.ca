@@ -2,7 +2,7 @@
 title: "Ethics Guidelines for Trustworthy AI"
 focus: "AI Ethics/Policy"
 source: "European Commission"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "An Inclusive Digital Economy for People with Disabilities"
 focus: "AI and Disability/Outliers"
 source: "Fundación ONCE and the ILO Global Business and Disability Network"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

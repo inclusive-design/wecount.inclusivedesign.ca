@@ -2,7 +2,7 @@
 title: "Embedded Ethics: Some Technical and Ethical Challenges"
 focus: "Methods or Design"
 source: "Ethics and Information Technology Journal"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []
