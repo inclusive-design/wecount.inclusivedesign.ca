@@ -2,7 +2,7 @@
 title: "The relationship between trust in AI and trustworthy machine learning technologies"
 focus: "AI Ethics/Policy"
 source: "FAT 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

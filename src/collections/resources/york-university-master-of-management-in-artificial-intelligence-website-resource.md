@@ -2,7 +2,7 @@
 title: "York University: Master of Management in Artificial Intelligence"
 focus: "Data Science Education"
 source: "York University"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

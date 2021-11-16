@@ -2,7 +2,7 @@
 title: "Response to Office of the Privacy Commissioner of Canada Consultation Proposals Pertaining to Amendments to PIPEDA Relative to Artificial Intelligence"
 focus: "AI Ethics/Policy"
 source: "MAIEI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Breaking the Curse of Small Datasets in Machine Learning: Part 1"
 focus: "Data Set"
 source: "Towards Data Science"
-readability: ["E"]
+readability: ["Expert"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

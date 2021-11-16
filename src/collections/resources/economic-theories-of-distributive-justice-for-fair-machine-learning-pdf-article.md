@@ -2,7 +2,7 @@
 title: "Economic Theories of Distributive Justice for Fair Machine Learning"
 focus: "AI Ethics/Policy"
 source: "WWW 2019"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

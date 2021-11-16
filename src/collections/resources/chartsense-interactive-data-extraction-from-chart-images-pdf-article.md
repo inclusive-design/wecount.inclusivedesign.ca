@@ -2,7 +2,7 @@
 title: "ChartSense: Interactive Data Extraction from Chart Images"
 focus: "Tool"
 source: "CHI 2017"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: ["Consume Content"]
 toolAccessibilityIssues: ["Chart Data Extraction"]

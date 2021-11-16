@@ -2,7 +2,7 @@
 title: "Bridging the Gap"
 focus: "AI Ethics/Policy"
 source: "AI and Ethics"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

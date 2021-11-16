@@ -2,7 +2,7 @@
 title: "A Proposal for Identifying and Managing Bias in Artificial Intelligence"
 focus: "AI Ethics/Policy"
 source: "NIST"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

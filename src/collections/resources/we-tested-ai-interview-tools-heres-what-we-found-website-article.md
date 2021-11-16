@@ -2,7 +2,7 @@
 title: "We Tested AI Interview Tools. Here’s What We Found."
 focus: "Employment"
 source: "MIT Technology Review"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

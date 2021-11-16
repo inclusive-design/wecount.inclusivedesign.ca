@@ -2,7 +2,7 @@
 title: "What Are Important Ethical Implications of Using Facial Recognition Technology in Health Care?"
 focus: "AI Ethics/Policy"
 source: "AMA Journal of Ethics"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

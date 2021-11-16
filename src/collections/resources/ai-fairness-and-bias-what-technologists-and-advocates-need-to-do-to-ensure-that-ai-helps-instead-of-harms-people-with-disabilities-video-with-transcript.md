@@ -2,7 +2,7 @@
 title: "AI, Fairness and Bias: What Technologists and Advocates Need to Do to Ensure That AI Helps Instead of Harms People with Disabilities"
 focus: "AI and Disability/Outliers"
 source: "Sight Tech Global"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Fairness in Machine Learning"
 focus: "Bias"
 source: "SITN"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

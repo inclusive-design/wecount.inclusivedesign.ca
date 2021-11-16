@@ -2,7 +2,7 @@
 title: "How Can We Keep Algorithmic Racism Out of Canadian Health Care’s AI Toolkit?"
 focus: "Bias"
 source: "Globe and Mail"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

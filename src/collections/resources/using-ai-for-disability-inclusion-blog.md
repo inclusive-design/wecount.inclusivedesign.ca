@@ -2,7 +2,7 @@
 title: "Using AI for Disability Inclusion"
 focus: "AI and Disability/Outliers"
 source: "Disability:IN"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Six Ways Machine Learning Threatens Social Justice"
 focus: "AI Ethics/Policy"
 source: "Big Think"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

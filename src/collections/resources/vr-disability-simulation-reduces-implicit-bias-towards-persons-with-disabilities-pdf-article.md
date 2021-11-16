@@ -2,7 +2,7 @@
 title: "VR Disability Simulation Reduces Implicit Bias Towards Persons with Disabilities"
 focus: "Bias"
 source: "IEEE"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

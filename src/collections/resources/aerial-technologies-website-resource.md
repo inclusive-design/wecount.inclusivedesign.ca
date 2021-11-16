@@ -2,7 +2,7 @@
 title: "Aerial Technologies"
 focus: "AI and Disability/Outliers"
 source: "Aerial"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Tools of a Blind Programmer"
 focus: "AI and Disability/Outliers"
 source: "Parham Doustdar's Blog"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

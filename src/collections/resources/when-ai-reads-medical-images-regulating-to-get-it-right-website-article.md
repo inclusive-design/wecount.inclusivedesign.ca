@@ -2,7 +2,7 @@
 title: "When AI Reads Medical Images: Regulating to Get It Right"
 focus: "Methods or Design"
 source: "HAI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

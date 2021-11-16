@@ -2,7 +2,7 @@
 title: "The Algorithm Audit: Scoring the Algorithms That Score Us"
 focus: "Methods or Design"
 source: "Big Data and Society"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

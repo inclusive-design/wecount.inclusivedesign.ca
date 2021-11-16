@@ -2,7 +2,7 @@
 title: "How to Design AI That Eliminates Disability Bias"
 focus: "AI and Disability/Outliers"
 source: "Financial Times"
-readability: ["B"]
+readability: ["Beginner"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

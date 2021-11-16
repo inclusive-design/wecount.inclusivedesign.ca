@@ -2,7 +2,7 @@
 title: "Knowledge Design — Towards an Inclusive, AI Design Practice"
 focus: "Methods or Design"
 source: "AAAI 2018"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

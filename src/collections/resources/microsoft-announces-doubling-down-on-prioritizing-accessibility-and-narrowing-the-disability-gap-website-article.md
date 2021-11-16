@@ -2,7 +2,7 @@
 title: "Microsoft Announces \"Doubling Down\" on Prioritizing Accessibility and Narrowing the Disability Gap"
 focus: "AI and Disability/Outliers"
 source: "Forbes"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

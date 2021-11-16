@@ -2,7 +2,7 @@
 title: "AI Needs to Face Up to Its Invisible-Worker Problem"
 focus: "AI and Disability/Outliers"
 source: "MIT Technology Review"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

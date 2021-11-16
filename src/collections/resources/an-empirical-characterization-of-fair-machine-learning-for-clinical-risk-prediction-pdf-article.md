@@ -2,7 +2,7 @@
 title: "An Empirical Characterization of Fair Machine Learning for Clinical Risk Prediction"
 focus: "Bias"
 source: " Journal of Biomedical Informatics"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

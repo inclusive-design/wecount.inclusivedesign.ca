@@ -2,7 +2,7 @@
 title: "Fighting AI Bias: Explainability, Holistic Data Sets and Other Best Practices"
 focus: "Bias"
 source: "Enterprise AI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

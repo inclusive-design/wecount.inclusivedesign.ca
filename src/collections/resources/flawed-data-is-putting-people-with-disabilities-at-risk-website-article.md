@@ -2,7 +2,7 @@
 title: "Flawed Data Is Putting People with Disabilities at Risk"
 focus: "AI and Disability/Outliers"
 source: "Tech Crunch"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

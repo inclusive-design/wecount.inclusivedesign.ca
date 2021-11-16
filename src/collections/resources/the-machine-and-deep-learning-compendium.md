@@ -3,7 +3,7 @@ title: The Machine and Deep Learning Compendium
 focus: Data Science Education
 source: ML Compendium
 readability:
-  - E
+  - Expert
 type: Website Resource
 openSource: false
 link: https://book.mlcompendium.com/

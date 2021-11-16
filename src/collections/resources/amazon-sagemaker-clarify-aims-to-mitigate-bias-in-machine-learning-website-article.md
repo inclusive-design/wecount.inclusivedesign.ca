@@ -2,7 +2,7 @@
 title: "Amazon SageMaker Clarify Aims to Mitigate Bias in Machine Learning"
 focus: "Bias"
 source: "TechTarget"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

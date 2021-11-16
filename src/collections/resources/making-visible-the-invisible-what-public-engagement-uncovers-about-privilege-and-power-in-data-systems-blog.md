@@ -2,7 +2,7 @@
 title: "Making Visible the Invisible: What Public Engagement Uncovers about Privilege and Power in Data Systems"
 focus: "AI and Disability/Outliers"
 source: "Ada Lovelace Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

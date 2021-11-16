@@ -2,7 +2,7 @@
 title: "Effect of Confidence and Explanation on Accuracy and Trust Calibration in AI-Assisted Decision Making"
 focus: "Methods or Design"
 source: "FAT 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

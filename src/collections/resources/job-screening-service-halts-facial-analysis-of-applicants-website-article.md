@@ -2,7 +2,7 @@
 title: "Job Screening Service Halts Facial Analysis of Applicants"
 focus: "Employment"
 source: "Wired"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

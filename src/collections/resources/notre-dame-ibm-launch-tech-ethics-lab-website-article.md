@@ -2,7 +2,7 @@
 title: "Notre Dame, IBM Launch Tech Ethics Lab"
 focus: "AI Ethics/Policy"
 source: "Inside INdiana Business"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Making Sure Artificial Intelligence in the Workplace Benefits People"
 focus: "AI Ethics/Policy"
 source: "Open Access Government"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

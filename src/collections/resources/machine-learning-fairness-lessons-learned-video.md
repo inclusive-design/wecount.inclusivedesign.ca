@@ -2,7 +2,7 @@
 title: "Machine Learning Fairness: Lessons Learned"
 focus: "Methods or Design"
 source: "Google I/O 2019"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

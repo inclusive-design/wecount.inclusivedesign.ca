@@ -2,7 +2,7 @@
 title: "\"Trustworthy AI\" Is a Framework to Help Manage Unique Risk"
 focus: "AI Ethics/Policy"
 source: "Deloitte AI Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

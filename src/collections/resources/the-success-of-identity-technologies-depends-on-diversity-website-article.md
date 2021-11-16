@@ -2,7 +2,7 @@
 title: "The Success of Identity Technologies Depends on Diversity"
 focus: "Bias"
 source: "ITProPortal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

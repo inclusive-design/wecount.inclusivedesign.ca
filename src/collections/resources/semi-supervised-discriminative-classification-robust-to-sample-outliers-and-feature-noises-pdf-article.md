@@ -2,7 +2,7 @@
 title: "Semi-Supervised Discriminative Classification Robust to Sample-Outliers and Feature-Noises"
 focus: "Methods or Design"
 source: "IEEE"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

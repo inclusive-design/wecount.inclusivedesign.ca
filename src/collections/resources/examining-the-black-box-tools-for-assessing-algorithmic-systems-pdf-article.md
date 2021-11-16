@@ -2,7 +2,7 @@
 title: "Examining the Black Box: Tools for Assessing Algorithmic Systems"
 focus: "Methods or Design"
 source: "Ada Lovelace Institute"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

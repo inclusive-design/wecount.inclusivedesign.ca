@@ -2,7 +2,7 @@
 title: "Deep Learning Has a Size Problem"
 focus: "Methods or Design"
 source: "Heartbeat"
-readability: ["E"]
+readability: ["Expert"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

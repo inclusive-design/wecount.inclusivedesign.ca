@@ -2,7 +2,7 @@
 title: "Algorithmic Impact Assessments: A Practical Framework for Public Agency Accountability"
 focus: "AI Ethics/Policy"
 source: "AI Now Institute"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

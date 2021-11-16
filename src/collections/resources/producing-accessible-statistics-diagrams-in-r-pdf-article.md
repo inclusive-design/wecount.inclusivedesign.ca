@@ -2,7 +2,7 @@
 title: "Producing Accessible Statistics Diagrams in R"
 focus: "Tool"
 source: "W4A 2017"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: ["Create Accessible Content"]
 toolAccessibilityIssues: ["Screen Reader"]

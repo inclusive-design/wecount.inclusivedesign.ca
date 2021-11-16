@@ -2,7 +2,7 @@
 title: "The Dictatorship of Data"
 focus: "AI Ethics/Policy"
 source: "MIT Technology Review"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

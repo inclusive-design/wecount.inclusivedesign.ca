@@ -2,7 +2,7 @@
 title: "2020 State of Data Science"
 focus: "AI Ethics/Policy"
 source: "Anaconda"
-readability: ["B"]
+readability: ["Beginner"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

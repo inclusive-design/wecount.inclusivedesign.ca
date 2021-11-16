@@ -2,7 +2,7 @@
 title: "Toward Proactive Social Inclusion Powered by Machine Learning"
 focus: "Methods or Design"
 source: "Knowledge and Information Systems Journal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

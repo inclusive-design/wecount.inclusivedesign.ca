@@ -2,7 +2,7 @@
 title: "Stasis in AI Ethics"
 focus: "AI Ethics/Policy"
 source: "AI Village"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

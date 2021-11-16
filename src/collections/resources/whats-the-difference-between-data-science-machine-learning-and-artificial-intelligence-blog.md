@@ -2,7 +2,7 @@
 title: "What’s the Difference Between Data Science, Machine Learning, and Artificial Intelligence?"
 focus: "Data Science Education"
 source: "Variance Explained"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

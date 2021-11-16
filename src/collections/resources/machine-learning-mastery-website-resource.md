@@ -2,7 +2,7 @@
 title: "Machine Learning Mastery"
 focus: "Data Science Education"
 source: "Machine Learning Mastery"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

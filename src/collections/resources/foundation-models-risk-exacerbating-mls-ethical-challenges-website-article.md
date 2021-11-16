@@ -2,7 +2,7 @@
 title: "Foundation Models Risk Exacerbating ML’s Ethical Challenges"
 focus: "AI Ethics/Policy"
 source: "VentureBeat"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

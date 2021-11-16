@@ -2,7 +2,7 @@
 title: "How Regulators Can Get Facial Recognition Technology Right"
 focus: "Methods or Design"
 source: "Brookings"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

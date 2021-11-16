@@ -2,7 +2,7 @@
 title: "Protecting Privacy in an AI-Driven World"
 focus: "AI Ethics/Policy"
 source: "Brookings"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

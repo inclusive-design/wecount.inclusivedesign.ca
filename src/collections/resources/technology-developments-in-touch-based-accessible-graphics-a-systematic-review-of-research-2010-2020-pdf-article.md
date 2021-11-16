@@ -2,7 +2,7 @@
 title: "Technology Developments in Touch-Based Accessible Graphics: A Systematic Review of Research 2010-2020"
 focus: "AI and Disability/Outliers"
 source: "CHI 2021"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -3,7 +3,7 @@ title: AI and Disability Inclusion Toolkit
 focus: AI and Disability/Outliers
 source: PEATWorks
 readability:
-  - I
+  - Intermediate
 type: Website Resource
 openSource: false
 link: https://www.peatworks.org/ai-disability-inclusion-toolkit/

@@ -2,7 +2,7 @@
 title: "7 Types of Data Bias in Machine Learning"
 focus: "Bias"
 source: "Lionbridge"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

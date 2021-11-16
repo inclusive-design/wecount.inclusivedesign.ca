@@ -2,7 +2,7 @@
 title: "The Advantages of Being a Blind Programmer"
 focus: "AI and Disability/Outliers"
 source: "Changelog "
-readability: ["B"]
+readability: ["Beginner"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

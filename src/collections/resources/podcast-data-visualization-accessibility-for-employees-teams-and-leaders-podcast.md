@@ -2,7 +2,7 @@
 title: "Podcast: Data Visualization Accessibility for Employees, Teams, and Leaders"
 focus: "Methods or Design"
 source: "Workology and PEAT"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

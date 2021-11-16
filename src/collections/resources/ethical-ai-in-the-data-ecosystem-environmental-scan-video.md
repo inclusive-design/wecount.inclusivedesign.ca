@@ -2,7 +2,7 @@
 title: "Ethical AI in the Data Ecosystem Environmental Scan"
 focus: "AI Ethics/Policy"
 source: "We Count"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

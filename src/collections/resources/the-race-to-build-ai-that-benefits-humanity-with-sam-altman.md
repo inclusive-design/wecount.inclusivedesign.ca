@@ -3,7 +3,7 @@ title: The Race to Build AI That Benefits Humanity with Sam Altman
 focus: AI Ethics/Policy
 source: TED Talks
 readability:
-  - I
+  - Intermediate
 type: Podcast
 openSource: false
 link: https://www.ted.com/talks/the_ted_interview_the_race_to_build_ai_that_benefits_humanity_with_sam_altman

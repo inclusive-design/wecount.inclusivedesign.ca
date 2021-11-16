@@ -2,7 +2,7 @@
 title: "There Is Hope After All: Quantifying Opinion and Trustworthiness in Neural Networks"
 focus: "AI Ethics/Policy"
 source: "Frontiers in Artificial Intelligence Journal"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

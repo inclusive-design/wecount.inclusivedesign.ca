@@ -2,7 +2,7 @@
 title: "Machine Learning Catches Multiple Sclerosis-Related Gait Issues"
 focus: "Methods or Design"
 source: "Health IT Analytics"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

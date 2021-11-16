@@ -3,7 +3,7 @@ title: How Well Can an AI Mimic Human Ethics?
 focus: AI Ethics/Policy
 source: Vox
 readability:
-  - I
+  - Intermediate
 type: Website Article
 openSource: false
 link: https://www.vox.com/future-perfect/2021/10/27/22747333/artificial-intelligence-ethics-delphi-ai

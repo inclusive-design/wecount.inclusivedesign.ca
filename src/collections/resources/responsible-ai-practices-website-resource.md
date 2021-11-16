@@ -2,7 +2,7 @@
 title: "Responsible AI Practices"
 focus: "Methods or Design"
 source: "Google AI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

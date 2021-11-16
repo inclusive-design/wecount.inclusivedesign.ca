@@ -2,7 +2,7 @@
 title: "Requirements Engineering for People with Cognitive Disabilities: Exploring New Ways for Peer-Researchers and Developers to Cooperate"
 focus: "Methods or Design"
 source: "ICCHP 2018 "
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Simon Fraser University: Professional Master of Science in Data Science - Big Data"
 focus: "Data Science Education"
 source: "Simon Fraser University"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Neurotechnologies: Connecting Human Brains to Computers and Related Ethical Challenges"
 focus: "AI Ethics/Policy"
 source: "Parliamentary Technical Advisory (Chile)"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

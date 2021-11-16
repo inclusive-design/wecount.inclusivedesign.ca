@@ -2,7 +2,7 @@
 title: "Can We Protect AI from Our Biases?"
 focus: "Bias"
 source: "TED Talks"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

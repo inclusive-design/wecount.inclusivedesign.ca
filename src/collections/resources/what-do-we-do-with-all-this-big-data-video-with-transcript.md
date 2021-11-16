@@ -2,7 +2,7 @@
 title: "What Do We Do with All This Big Data?"
 focus: "AI Ethics/Policy"
 source: "TED Talks"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

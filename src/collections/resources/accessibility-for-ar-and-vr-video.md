@@ -2,7 +2,7 @@
 title: "Accessibility for AR and VR "
 focus: "AI and Disability/Outliers"
 source: "Google I/O 2018"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

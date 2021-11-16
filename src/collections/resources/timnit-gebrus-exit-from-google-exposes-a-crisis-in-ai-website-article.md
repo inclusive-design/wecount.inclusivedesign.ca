@@ -2,7 +2,7 @@
 title: "Timnit Gebru’s Exit from Google Exposes a Crisis in AI"
 focus: "AI Ethics/Policy"
 source: "Wired"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

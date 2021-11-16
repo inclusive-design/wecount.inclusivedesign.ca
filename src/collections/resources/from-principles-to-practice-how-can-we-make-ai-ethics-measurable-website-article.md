@@ -2,7 +2,7 @@
 title: "From Principles to Practice: How Can We Make AI Ethics Measurable?"
 focus: "AI Ethics/Policy"
 source: "Ethics of Algorithms"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

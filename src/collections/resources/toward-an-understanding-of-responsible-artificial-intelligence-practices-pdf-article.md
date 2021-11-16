@@ -2,7 +2,7 @@
 title: "Toward an Understanding of Responsible Artificial Intelligence Practices"
 focus: "AI Ethics/Policy"
 source: "HICSS 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

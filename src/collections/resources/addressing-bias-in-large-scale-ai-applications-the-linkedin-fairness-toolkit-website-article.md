@@ -2,7 +2,7 @@
 title: "Addressing Bias in Large-Scale AI Applications: The LinkedIn Fairness Toolkit"
 focus: "Bias"
 source: "LinkedIn"
-readability: ["E"]
+readability: ["Expert"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

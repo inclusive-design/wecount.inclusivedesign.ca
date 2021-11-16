@@ -2,7 +2,7 @@
 title: "Text Embedding Models Contain Bias. Here's Why That Matters."
 focus: "Bias"
 source: "Google"
-readability: ["E"]
+readability: ["Expert"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

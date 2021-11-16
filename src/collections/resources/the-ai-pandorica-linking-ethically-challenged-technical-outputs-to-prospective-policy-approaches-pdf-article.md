@@ -2,7 +2,7 @@
 title: "The A.I. Pandorica: Linking Ethically Challenged Technical Outputs to Prospective Policy Approaches"
 focus: "AI Ethics/Policy"
 source: "dg.o 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

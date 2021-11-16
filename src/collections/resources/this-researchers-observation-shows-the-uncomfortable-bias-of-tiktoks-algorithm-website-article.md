@@ -2,7 +2,7 @@
 title: "This Researcher's Observation Shows the Uncomfortable Bias of TikTok's Algorithm"
 focus: "Bias"
 source: "BuzzFeed News"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

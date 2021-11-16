@@ -2,7 +2,7 @@
 title: "AI-Enabled Tools and Automation to Improve Accessibility"
 focus: "AI and Disability/Outliers"
 source: "IBM "
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

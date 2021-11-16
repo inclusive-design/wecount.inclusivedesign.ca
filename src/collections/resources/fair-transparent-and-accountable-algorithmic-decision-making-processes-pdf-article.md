@@ -2,7 +2,7 @@
 title: "Fair, Transparent, and Accountable Algorithmic Decision-Making Processes"
 focus: "AI Ethics/Policy"
 source: "Springer Philosophy and Technology Journal"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

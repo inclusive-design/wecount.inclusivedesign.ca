@@ -2,7 +2,7 @@
 title: "What Do We Do About the Biases in AI?"
 focus: "Bias"
 source: "McKinsey Global Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

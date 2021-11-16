@@ -2,7 +2,7 @@
 title: "Omnia AI"
 focus: "AI and Disability/Outliers"
 source: "Omnia AI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

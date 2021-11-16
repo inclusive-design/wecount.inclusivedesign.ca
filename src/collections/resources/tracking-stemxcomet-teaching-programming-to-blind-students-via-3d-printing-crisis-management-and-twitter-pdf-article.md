@@ -2,7 +2,7 @@
 title: "Tracking @stemxcomet: Teaching Programming to Blind Students via 3D Printing, Crisis Management, and Twitter"
 focus: "Tool"
 source: "SIGCSE 2014"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["Tactile Graphs"]

@@ -2,7 +2,7 @@
 title: "Stradigi AI"
 focus: "AI and Disability/Outliers"
 source: "Stradigi AI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

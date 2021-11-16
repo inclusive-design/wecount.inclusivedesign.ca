@@ -2,7 +2,7 @@
 title: "Computing's Social Obligation"
 focus: "Data Science Education"
 source: "ACM Computers and Society Journal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

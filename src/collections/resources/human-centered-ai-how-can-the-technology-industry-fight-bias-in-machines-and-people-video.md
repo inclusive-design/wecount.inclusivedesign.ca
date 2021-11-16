@@ -2,7 +2,7 @@
 title: "Human-Centered AI: How Can the Technology Industry Fight Bias in Machines and People?"
 focus: "Bias"
 source: "MIT Sloan Experts Series"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

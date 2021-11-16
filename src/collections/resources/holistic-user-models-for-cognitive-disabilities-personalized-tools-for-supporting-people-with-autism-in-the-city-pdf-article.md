@@ -2,7 +2,7 @@
 title: "Holistic User Models for Cognitive Disabilities: Personalized Tools for Supporting People with Autism in the City"
 focus: "AI and Disability/Outliers"
 source: "UMAP 2018"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

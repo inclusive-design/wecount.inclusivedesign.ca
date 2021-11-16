@@ -2,7 +2,7 @@
 title: "Improving Fairness in Machine Learning Systems: What Do Industry Practitioners Need"
 focus: "AI Ethics/Policy"
 source: "CHI 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

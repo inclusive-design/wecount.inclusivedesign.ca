@@ -2,7 +2,7 @@
 title: "How Do Fair Decisions Fare in Long-Term Qualification?"
 focus: "Bias"
 source: "NeurIPS 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

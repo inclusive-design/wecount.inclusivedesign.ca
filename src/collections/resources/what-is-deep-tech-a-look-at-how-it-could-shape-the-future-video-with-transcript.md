@@ -2,7 +2,7 @@
 title: "What Is Deep Tech? A Look at How It Could Shape the Future"
 focus: "Methods or Design"
 source: "TED Talks"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

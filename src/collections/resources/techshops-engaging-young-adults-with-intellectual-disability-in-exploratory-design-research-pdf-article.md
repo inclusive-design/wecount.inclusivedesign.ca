@@ -2,7 +2,7 @@
 title: "\"TechShops\": Engaging Young Adults with Intellectual Disability in Exploratory Design Research"
 focus: "AI and Disability/Outliers"
 source: "CHI 2019"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

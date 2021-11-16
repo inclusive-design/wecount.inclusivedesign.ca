@@ -2,7 +2,7 @@
 title: "Want to Get Along With Robots? Pretend They’re Animals"
 focus: "AI Ethics/Policy"
 source: "WIRED"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

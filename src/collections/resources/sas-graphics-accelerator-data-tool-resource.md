@@ -2,7 +2,7 @@
 title: "SAS Graphics Accelerator"
 focus: "Tool"
 source: "SAS Institute"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Content","Consume Content"]
 toolAccessibilityIssues: ["Chart Data Extraction","Sonified Graphs","JAWS"]

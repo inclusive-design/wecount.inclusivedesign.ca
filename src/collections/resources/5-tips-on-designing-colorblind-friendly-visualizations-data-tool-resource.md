@@ -2,7 +2,7 @@
 title: "5 Tips on Designing Colorblind-Friendly Visualizations"
 focus: "Tool"
 source: "Tableau"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Accessible Content"]
 toolAccessibilityIssues: ["Visual Enhancements"]
@@ -12,4 +12,3 @@ keywords: []
 learnTags: ["dataTools","methods","machineLearning"]
 summary: "An article with tips for applying data visualization rules to create colourblind-friendly visualizations. "
 ---
-

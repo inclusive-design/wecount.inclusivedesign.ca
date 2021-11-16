@@ -2,7 +2,7 @@
 title: "A Decomposition of the Outlier Detection Problem into a Set of Supervised Learning Problems"
 focus: "Methods or Design"
 source: "Machine Learning Journal"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

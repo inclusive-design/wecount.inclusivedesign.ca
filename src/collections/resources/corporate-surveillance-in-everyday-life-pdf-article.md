@@ -2,7 +2,7 @@
 title: "Corporate Surveillance in Everyday Life"
 focus: "Data Set"
 source: "Cracked Labs"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

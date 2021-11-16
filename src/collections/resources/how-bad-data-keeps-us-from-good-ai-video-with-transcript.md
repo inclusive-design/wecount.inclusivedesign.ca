@@ -2,7 +2,7 @@
 title: "How Bad Data Keeps Us from Good AI"
 focus: "AI Ethics/Policy"
 source: "TED Talks"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

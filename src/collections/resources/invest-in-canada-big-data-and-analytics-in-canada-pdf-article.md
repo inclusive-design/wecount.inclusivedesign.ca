@@ -2,7 +2,7 @@
 title: "Invest in Canada: Big Data and Analytics in Canada"
 focus: "Employment"
 source: "Global Affairs Canada "
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []
