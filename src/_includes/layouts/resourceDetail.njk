@@ -64,16 +64,18 @@
 
           <svg><use xlink:href="#tool-purpose" /></svg>
           <div><span class="feature-name">Tool Purpose:</span>
-              {% if toolPurpose.length === 0 %}N/A{% else %}{{ toolPurpose | safe }}{% endif %}
+              {% if toolPurpose.length > 0 %}{{ toolPurpose | safe }}{% else %}N/A{% endif %}
           </div>
 
           <svg><use xlink:href="#accessibility" /></svg>
           <div><span class="feature-name">Tool Accessibility Issues:</span>
-              {% if toolAccessibilityIssues.length === 0 %}N/A{% else %}{{ toolAccessibilityIssues | safe }}{% endif %}
+              {% if toolAccessibilityIssues.length > 0 %}{{ toolAccessibilityIssues | safe }}{% else %}N/A{% endif %}
           </div>
 
           <svg><use xlink:href="#open-source" /></svg>
-          <div><span class="feature-name">Open Source:</span> {{ openSource | safe }}</div>
+          <div><span class="feature-name">Open Source:</span>
+              {% if openSource %}Yes{% else %}No{% endif %}
+          </div>
 
           {% if link %}
           <svg><use xlink:href="#share-point-url" /></svg>
@@ -90,7 +92,7 @@
 
           <svg><use xlink:href="#keywords" /></svg>
           <div><span class="feature-name">Keywords:</span>
-              {% if keywords.length === 0 %}N/A{% else %}{{ keywords | safe }}{% endif %}
+              {% if keywords.length > 0 %}{{ keywords | safe }}{% else %}N/A{% endif %}
           </div>
 
           <svg><use xlink:href="#learn-tags" /></svg>
@@ -108,7 +110,7 @@
 
           <svg><use xlink:href="#summary" /></svg>
           <div><span class="feature-name">Summary:</span>
-              {% if summary === "" %}N/A{% else %}{{ summary | safe }}{% endif %}
+              {% if summary and summary !== "" %}{{ summary | safe }}{% else %}N/A{% endif %}
           </div>
       </div>
   </div>
