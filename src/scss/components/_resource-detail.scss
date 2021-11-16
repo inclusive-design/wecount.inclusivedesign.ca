@@ -1,3 +1,21 @@
+.fill-465d8b {
+	fill: var(--currentColor, #465d8b);
+}
+
+.stroke-465d8b {
+	stroke: var(--currentColor, #465d8b);
+}
+
+.fill-stroke-465d8b {
+	fill: var(--currentColor, #465d8b);
+	stroke: var(--currentColor, #465d8b);
+}
+
+.fill-white-stroke-465d8b {
+	fill: var(--bColor, white);
+	stroke: var(--currentColor, #465d8b);
+}
+
 // Resource detail page
 .resource-detail {
 	h1 {
