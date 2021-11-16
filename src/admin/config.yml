@@ -166,8 +166,7 @@ collections:
     label_singular: Resource
     folder: "src/collections/resources"
     sortable_fields: ['title']
-    slug: "{{title}}-{{type}}"
-    preview_path: "resources/{{slug}}"
+    preview_path: "resources/{{filename}}"
     create: true
     fields:
       - label: "Title"
