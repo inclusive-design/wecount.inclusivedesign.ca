@@ -2,7 +2,7 @@
 title: "Pilot Program Embeds Ethics into U of T Undergraduate Technology Courses"
 focus: "Data Science Education"
 source: "U of T News"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

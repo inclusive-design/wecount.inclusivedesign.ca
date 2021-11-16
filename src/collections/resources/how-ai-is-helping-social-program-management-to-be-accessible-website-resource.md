@@ -2,7 +2,7 @@
 title: "How AI Is Helping Social Program Management to Be Accessible"
 focus: "AI and Disability/Outliers"
 source: "IBM"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

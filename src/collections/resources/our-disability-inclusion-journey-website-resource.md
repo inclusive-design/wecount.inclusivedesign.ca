@@ -2,7 +2,7 @@
 title: "Our Disability Inclusion Journey"
 focus: "Employment"
 source: "Microsoft "
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

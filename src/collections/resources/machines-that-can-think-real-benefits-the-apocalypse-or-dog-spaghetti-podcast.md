@@ -2,7 +2,7 @@
 title: "Machines That Can Think: Real Benefits, the Apocalypse, or “Dog-Spaghetti”?"
 focus: "Methods or Design"
 source: "CBC"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

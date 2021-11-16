@@ -2,7 +2,7 @@
 title: "Element AI"
 focus: "AI and Disability/Outliers"
 source: "Element AI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

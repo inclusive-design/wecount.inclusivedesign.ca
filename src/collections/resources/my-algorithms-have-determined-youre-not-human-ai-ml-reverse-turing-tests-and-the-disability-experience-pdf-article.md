@@ -2,7 +2,7 @@
 title: "My Algorithms Have Determined You’re Not Human: AI-ML, Reverse Turing-Tests, and the Disability Experience"
 focus: "AI and Disability/Outliers"
 source: "ASSETS 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

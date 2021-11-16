@@ -2,7 +2,7 @@
 title: "The Short Anthropological Guide to the Study of Ethical AI"
 focus: "AI Ethics/Policy"
 source: "MAIEI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

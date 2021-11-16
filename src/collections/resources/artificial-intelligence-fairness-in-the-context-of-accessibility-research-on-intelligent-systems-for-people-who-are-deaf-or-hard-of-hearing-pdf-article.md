@@ -2,7 +2,7 @@
 title: "Artificial Intelligence Fairness in the Context of Accessibility Research on Intelligent Systems for People who are Deaf or Hard of Hearing"
 focus: "AI and Disability/Outliers"
 source: "ACM ASSETS 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

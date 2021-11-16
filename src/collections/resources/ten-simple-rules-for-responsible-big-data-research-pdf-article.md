@@ -2,7 +2,7 @@
 title: "Ten Simple Rules for Responsible Big Data Research"
 focus: "AI Ethics/Policy"
 source: "PLOS Computational Biology Journal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

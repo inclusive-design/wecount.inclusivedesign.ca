@@ -2,7 +2,7 @@
 title: "Owning Ethics: Corporate Logics, Silicon Valley, and the Institutionalization of Ethics"
 focus: "AI Ethics/Policy"
 source: "Data and Society"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

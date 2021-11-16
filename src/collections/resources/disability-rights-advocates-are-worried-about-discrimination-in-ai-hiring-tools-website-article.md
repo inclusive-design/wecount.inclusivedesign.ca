@@ -2,7 +2,7 @@
 title: "Disability Rights Advocates Are Worried about Discrimination in AI Hiring Tools"
 focus: "AI and Disability/Outliers"
 source: "MIT Technology Review"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

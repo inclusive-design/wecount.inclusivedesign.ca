@@ -2,7 +2,7 @@
 title: "Responsible Use of Artificial Intelligence (AI)"
 focus: "AI Ethics/Policy"
 source: "Government of Canada"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

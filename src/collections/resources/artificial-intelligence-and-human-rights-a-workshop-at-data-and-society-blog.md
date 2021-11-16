@@ -2,7 +2,7 @@
 title: "Artificial Intelligence and Human Rights: A Workshop at Data and Society"
 focus: "AI Ethics/Policy"
 source: "Data and Society"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

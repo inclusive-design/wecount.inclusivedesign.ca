@@ -2,7 +2,7 @@
 title: "Accessible Computer Science for K-12 Students with Disabilities"
 focus: "AI and Disability/Outliers"
 source: "Auburn University"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

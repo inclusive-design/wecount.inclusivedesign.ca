@@ -2,7 +2,7 @@
 title: "University of British Columbia: Master of Data Science - Computational Linguistics"
 focus: "Data Science Education"
 source: "University of British Columbia"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

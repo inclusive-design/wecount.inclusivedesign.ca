@@ -2,7 +2,7 @@
 title: "University of Toronto: Master of Science in Applied Computing Concentration in Data Science"
 focus: "Data Science Education"
 source: "University of Toronto"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

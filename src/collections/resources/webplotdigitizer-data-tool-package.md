@@ -2,7 +2,7 @@
 title: "WebPlotDigitizer"
 focus: "Tool"
 source: "WebPlotDigitizer"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Package"
 toolPurpose: ["Create Accessible Content"]
 toolAccessibilityIssues: ["Chart Data Extraction"]

@@ -2,7 +2,7 @@
 title: "This Is How AI Bias Really Happens — and Why It’s So Hard to Fix"
 focus: "Bias"
 source: "MIT Technology Review"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

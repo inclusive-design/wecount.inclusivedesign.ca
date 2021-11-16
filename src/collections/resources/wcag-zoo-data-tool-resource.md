@@ -2,7 +2,7 @@
 title: "WCAG-Zoo"
 focus: "Tool"
 source: "Python"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Accessible Content"]
 toolAccessibilityIssues: ["General Accessibility"]

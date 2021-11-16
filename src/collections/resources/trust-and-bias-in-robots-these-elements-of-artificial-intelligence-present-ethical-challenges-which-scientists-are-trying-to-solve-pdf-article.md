@@ -2,7 +2,7 @@
 title: "Trust and Bias in Robots: These Elements of Artificial Intelligence Present Ethical Challenges, Which Scientists Are Trying to Solve"
 focus: "AI Ethics/Policy"
 source: "American Scientist"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

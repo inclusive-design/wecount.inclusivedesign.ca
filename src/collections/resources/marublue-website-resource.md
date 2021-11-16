@@ -2,7 +2,7 @@
 title: "Maru/Blue"
 focus: "Data Set"
 source: "Maru/Blue"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Accenture"
 focus: "AI and Disability/Outliers"
 source: "Accenture"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

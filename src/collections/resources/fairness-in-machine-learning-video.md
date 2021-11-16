@@ -2,7 +2,7 @@
 title: "Fairness in Machine Learning"
 focus: "Methods or Design"
 source: "NIPS 2017"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

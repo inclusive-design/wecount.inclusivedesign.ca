@@ -2,7 +2,7 @@
 title: "The Chronicles of AI Ethics: The Man, The Machine, And The Black Box"
 focus: "AI Ethics/Policy"
 source: "Forbes"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

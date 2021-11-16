@@ -2,7 +2,7 @@
 title: "Viral Post Highlights \"Toxicity Problems\" in the Machine Learning Community"
 focus: "AI Ethics/Policy"
 source: "Synced"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

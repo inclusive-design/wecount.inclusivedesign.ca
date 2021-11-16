@@ -2,7 +2,7 @@
 title: "Integrating Ethics within Machine-Learning Courses"
 focus: "Data Science Education"
 source: "ACM Transactions on Computing Education Journal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Embedded EthiCS: Integrating Ethics Across CS Education"
 focus: "Data Science Education"
 source: "ACM"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

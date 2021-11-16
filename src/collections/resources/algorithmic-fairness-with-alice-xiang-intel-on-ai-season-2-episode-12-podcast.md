@@ -2,7 +2,7 @@
 title: "Algorithmic Fairness with Alice Xiang – Intel on AI – Season 2, Episode 12"
 focus: "Bias"
 source: "Connected Social Media"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

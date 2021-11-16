@@ -2,7 +2,7 @@
 title: "Deconstructing Community-Based Collaborative Design: Towards More Equitable Participatory Design Engagement"
 focus: "Methods or Design"
 source: "CSCW 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

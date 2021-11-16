@@ -2,7 +2,7 @@
 title: "Fighting Bias in AI (and in Hiring)"
 focus: "Employment"
 source: "Practical AI "
-readability: ["B"]
+readability: ["Beginner"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

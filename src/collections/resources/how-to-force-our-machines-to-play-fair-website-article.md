@@ -2,7 +2,7 @@
 title: "How to Force Our Machines to Play Fair"
 focus: "AI Ethics/Policy"
 source: "Quanta Magazine"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

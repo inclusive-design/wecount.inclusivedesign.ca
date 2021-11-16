@@ -2,7 +2,7 @@
 title: "Project Euphonia"
 focus: "AI and Disability/Outliers"
 source: "Google "
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

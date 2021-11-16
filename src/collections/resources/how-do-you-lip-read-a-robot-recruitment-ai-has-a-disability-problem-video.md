@@ -2,7 +2,7 @@
 title: "How Do You Lip Read a Robot? – Recruitment AI has a Disability Problem"
 focus: "AI and Disability/Outliers"
 source: "Zero Project conference 2021"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

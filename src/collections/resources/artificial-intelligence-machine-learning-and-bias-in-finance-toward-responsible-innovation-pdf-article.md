@@ -2,7 +2,7 @@
 title: "Artificial Intelligence, Machine Learning, and Bias in Finance: Toward Responsible Innovation"
 focus: "AI Ethics/Policy"
 source: "Fordham Law Review"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

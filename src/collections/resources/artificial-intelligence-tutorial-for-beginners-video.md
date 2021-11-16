@@ -2,7 +2,7 @@
 title: "Artificial Intelligence Tutorial For Beginners"
 focus: "Data Science Education"
 source: "Edureka"
-readability: ["B","I"]
+readability: ["Beginner","Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "The Human Insights Missing from Big Data"
 focus: "Methods or Design"
 source: "TED Talks"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

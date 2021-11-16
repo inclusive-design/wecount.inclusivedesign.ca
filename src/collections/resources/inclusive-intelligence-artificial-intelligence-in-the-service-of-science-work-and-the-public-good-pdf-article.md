@@ -2,7 +2,7 @@
 title: "Inclusive Intelligence: Artificial Intelligence in the Service of Science, Work, and the Public Good"
 focus: "Data Science Education"
 source: "UC Berkeley"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

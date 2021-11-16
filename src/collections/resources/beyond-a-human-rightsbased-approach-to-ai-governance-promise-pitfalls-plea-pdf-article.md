@@ -2,7 +2,7 @@
 title: "Beyond a Human Rights–Based Approach to AI Governance: Promise, Pitfalls, Plea"
 focus: "AI Ethics/Policy"
 source: "SSRN"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

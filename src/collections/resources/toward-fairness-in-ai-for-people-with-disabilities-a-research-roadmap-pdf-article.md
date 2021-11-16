@@ -2,7 +2,7 @@
 title: "Toward Fairness in AI for People with Disabilities: A Research Roadmap"
 focus: "AI and Disability/Outliers"
 source: "ACM ASSETS 2019 "
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

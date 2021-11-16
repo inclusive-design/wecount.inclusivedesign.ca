@@ -2,7 +2,7 @@
 title: "AI and Biases 101: The Bakery Case"
 focus: "Bias"
 source: "The Good AI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

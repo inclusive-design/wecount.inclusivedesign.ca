@@ -2,7 +2,7 @@
 title: "In How Many Ways Can an Algorithm be Fair?"
 focus: "Bias"
 source: "Alan Turing Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

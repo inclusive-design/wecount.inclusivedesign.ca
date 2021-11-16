@@ -2,7 +2,7 @@
 title: "Challenges Facing Data Science in 2020 and Four Ways to Address Them"
 focus: "AI Ethics/Policy"
 source: "TechRepublic"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

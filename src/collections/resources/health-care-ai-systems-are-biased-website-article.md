@@ -2,7 +2,7 @@
 title: "Health Care AI Systems Are Biased"
 focus: "Bias"
 source: "Scientific American"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

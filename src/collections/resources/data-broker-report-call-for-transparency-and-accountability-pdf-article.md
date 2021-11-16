@@ -2,7 +2,7 @@
 title: "Data Broker Report - Call for Transparency and Accountability"
 focus: "Data Set"
 source: "U.S. Federal Trade Commission"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

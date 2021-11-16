@@ -2,7 +2,7 @@
 title: "Path-Specific Counterfactual Fairness"
 focus: "Methods or Design"
 source: "AAAI 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

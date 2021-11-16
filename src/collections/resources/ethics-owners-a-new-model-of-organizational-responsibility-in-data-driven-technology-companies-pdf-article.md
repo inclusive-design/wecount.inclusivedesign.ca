@@ -2,7 +2,7 @@
 title: "Ethics Owners: A New Model of Organizational Responsibility in Data-Driven Technology Companies"
 focus: "AI Ethics/Policy"
 source: "Data and Society"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

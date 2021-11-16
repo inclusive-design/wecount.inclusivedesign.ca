@@ -2,7 +2,7 @@
 title: "Integrating FATE/Critical Data Studies into Data Science Curricula: Where Are We Going and How Do We Get There?"
 focus: "Data Science Education"
 source: "FAT 2020"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

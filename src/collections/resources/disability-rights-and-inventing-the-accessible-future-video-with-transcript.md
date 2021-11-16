@@ -2,7 +2,7 @@
 title: "Disability Rights and Inventing the Accessible Future"
 focus: "AI and Disability/Outliers"
 source: "Sight Tech Global"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

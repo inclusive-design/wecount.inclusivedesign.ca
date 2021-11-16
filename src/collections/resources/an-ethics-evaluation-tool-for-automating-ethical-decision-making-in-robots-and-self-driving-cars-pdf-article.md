@@ -2,7 +2,7 @@
 title: "An Ethics Evaluation Tool for Automating Ethical Decision-Making in Robots and Self-Driving Cars"
 focus: "AI Ethics/Policy"
 source: "Applied Artificial Intelligence"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

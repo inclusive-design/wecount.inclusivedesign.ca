@@ -2,7 +2,7 @@
 title: "Industry AI Ethics 101"
 focus: "AI Ethics/Policy"
 source: "Radical AI"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

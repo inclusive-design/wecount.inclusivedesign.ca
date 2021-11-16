@@ -2,7 +2,7 @@
 title: "How People with Disabilities Are Using AI to Improve Their Lives"
 focus: "AI and Disability/Outliers"
 source: "NOVA"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Toward Trustworthy AI Development: Mechanisms for Supporting Verifiable Claims"
 focus: "AI Ethics/Policy"
 source: "arXiv"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Garbage In, Garbage Out: Face Recognition on Flawed Data"
 focus: "Methods or Design"
 source: "Georgetown Law"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

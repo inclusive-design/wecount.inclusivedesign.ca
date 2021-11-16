@@ -2,7 +2,7 @@
 title: "Artificial Intelligence Index Report 2019"
 focus: "Methods or Design"
 source: "Stanford HAI"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

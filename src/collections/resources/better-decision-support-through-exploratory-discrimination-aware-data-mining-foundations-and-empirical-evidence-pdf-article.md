@@ -2,7 +2,7 @@
 title: "Better Decision Support through Exploratory Discrimination-Aware Data Mining: Foundations and Empirical Evidence"
 focus: "Data Set"
 source: "Artificial Intelligence and Law"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

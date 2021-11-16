@@ -2,7 +2,7 @@
 title: "What Is Responsible and Sustainable Data Science?"
 focus: "AI Ethics/Policy"
 source: "Big Data and Society"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

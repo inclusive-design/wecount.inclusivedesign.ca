@@ -2,7 +2,7 @@
 title: "Counterfactual Fairness"
 focus: "Methods or Design"
 source: "NIPS 2017"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

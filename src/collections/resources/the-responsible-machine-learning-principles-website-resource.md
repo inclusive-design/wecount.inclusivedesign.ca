@@ -2,7 +2,7 @@
 title: "The Responsible Machine Learning Principles"
 focus: "AI Ethics/Policy"
 source: "The Institute for Ethical AI and Machine Learning"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

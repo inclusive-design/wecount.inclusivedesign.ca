@@ -2,7 +2,7 @@
 title: "PwC Canada"
 focus: "AI and Disability/Outliers"
 source: "PwC Canada"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

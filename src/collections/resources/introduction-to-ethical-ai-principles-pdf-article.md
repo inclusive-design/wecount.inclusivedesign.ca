@@ -2,7 +2,7 @@
 title: "Introduction to Ethical AI Principles"
 focus: "AI Ethics/Policy"
 source: "MAIEI"
-readability: ["B","I"]
+readability: ["Beginner","Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

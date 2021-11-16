@@ -2,7 +2,7 @@
 title: "The Disparate Effects of Strategic Manipulation"
 focus: "Methods or Design"
 source: "FAT 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

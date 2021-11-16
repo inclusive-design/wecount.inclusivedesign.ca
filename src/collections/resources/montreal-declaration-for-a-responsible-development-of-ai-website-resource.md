@@ -2,7 +2,7 @@
 title: "Montreal Declaration for a Responsible Development of AI"
 focus: "Data Science Education"
 source: "University of Montreal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

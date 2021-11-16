@@ -2,7 +2,7 @@
 title: "P5 Access Project: Making Creative Coding Accessible to Screen Reader Users"
 focus: "AI and Disability/Outliers"
 source: "NYU Ability Project"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Co-Designing Checklists to Understand Organizational Challenges and Opportunities around Fairness in AI"
 focus: "AI Ethics/Policy"
 source: "CHI 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

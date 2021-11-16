@@ -2,7 +2,7 @@
 title: "The Coded Gaze with Joy Buolamwini"
 focus: "Bias"
 source: "Stanford HAI 2019 Fall Conference"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

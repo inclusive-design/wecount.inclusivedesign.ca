@@ -2,7 +2,7 @@
 title: "Datasheets for Datasets"
 focus: "Data Set"
 source: "arXiv"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

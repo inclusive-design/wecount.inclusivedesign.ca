@@ -2,7 +2,7 @@
 title: "The Algorithmic Auditing Trap"
 focus: "AI Ethics/Policy"
 source: "OneZero"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

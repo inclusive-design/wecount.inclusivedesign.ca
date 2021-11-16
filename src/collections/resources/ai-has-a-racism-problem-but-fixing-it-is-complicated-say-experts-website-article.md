@@ -2,7 +2,7 @@
 title: "AI Has a Racism Problem, but Fixing It Is Complicated, Say Experts"
 focus: "Bias"
 source: "CBC News"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

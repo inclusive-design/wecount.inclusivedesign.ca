@@ -2,7 +2,7 @@
 title: "A Tutorial on Fairness in Machine Learning"
 focus: "Methods or Design"
 source: "Towards Data Science"
-readability: ["E"]
+readability: ["Expert"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

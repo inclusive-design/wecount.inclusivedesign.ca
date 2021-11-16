@@ -2,7 +2,7 @@
 title: "The Need to Regulate AI Implementation in Public Assistance Programs"
 focus: "AI Ethics/Policy"
 source: "Shorenstein Center"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

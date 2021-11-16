@@ -2,7 +2,7 @@
 title: "Understanding the Effect of Accuracy on Trust in Machine Learning Models"
 focus: "AI Ethics/Policy"
 source: "CHI 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

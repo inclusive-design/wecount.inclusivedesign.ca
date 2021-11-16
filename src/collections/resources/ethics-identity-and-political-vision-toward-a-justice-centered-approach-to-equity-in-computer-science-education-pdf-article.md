@@ -2,7 +2,7 @@
 title: "Ethics, Identity, and Political Vision: Toward a Justice-Centered Approach to Equity in Computer Science Education"
 focus: "Data Science Education"
 source: "Harvard Educational Review"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

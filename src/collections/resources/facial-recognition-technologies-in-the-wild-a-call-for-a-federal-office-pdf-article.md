@@ -2,7 +2,7 @@
 title: "Facial Recognition Technologies in the Wild: A Call for a Federal Office"
 focus: "AI Ethics/Policy"
 source: "Algorithmic Justice League"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

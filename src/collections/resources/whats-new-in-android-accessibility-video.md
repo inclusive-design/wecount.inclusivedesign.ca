@@ -2,7 +2,7 @@
 title: "What’s new in Android Accessibility "
 focus: "AI and Disability/Outliers"
 source: "Google I/O 2018"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

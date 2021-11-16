@@ -2,7 +2,7 @@
 title: "Unintended Machine Learning Biases as Social Barriers for Persons with Disabilities"
 focus: "AI and Disability/Outliers"
 source: "CHI 2016"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

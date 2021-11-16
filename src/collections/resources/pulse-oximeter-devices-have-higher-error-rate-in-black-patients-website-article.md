@@ -2,7 +2,7 @@
 title: "Pulse Oximeter Devices Have Higher Error Rate in Black Patients"
 focus: "Bias"
 source: "New York Times"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

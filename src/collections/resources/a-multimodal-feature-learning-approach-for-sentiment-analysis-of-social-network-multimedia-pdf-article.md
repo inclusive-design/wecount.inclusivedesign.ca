@@ -2,7 +2,7 @@
 title: "A Multimodal Feature Learning Approach for Sentiment Analysis of Social Network Multimedia"
 focus: "Methods or Design"
 source: "MICC "
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

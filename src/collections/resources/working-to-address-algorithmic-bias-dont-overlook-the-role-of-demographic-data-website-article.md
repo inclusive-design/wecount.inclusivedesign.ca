@@ -2,7 +2,7 @@
 title: "Working to Address Algorithmic Bias? Don’t Overlook the Role of Demographic Data"
 focus: "Bias"
 source: "AI&."
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Making Kin with the Machines"
 focus: "AI Ethics/Policy"
 source: "Journal of Design and Science"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

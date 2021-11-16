@@ -2,7 +2,7 @@
 title: "AI Needs More Regulation, Not Less"
 focus: "AI Ethics/Policy"
 source: "Brookings"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

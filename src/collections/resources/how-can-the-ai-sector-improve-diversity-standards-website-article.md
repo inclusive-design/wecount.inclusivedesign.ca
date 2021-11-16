@@ -2,7 +2,7 @@
 title: "How Can the AI Sector Improve Diversity Standards?"
 focus: "Bias"
 source: "Open Access Government"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

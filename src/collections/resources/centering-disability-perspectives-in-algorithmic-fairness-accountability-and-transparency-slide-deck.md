@@ -2,7 +2,7 @@
 title: "Centering Disability Perspectives in Algorithmic Fairness, Accountability, and Transparency"
 focus: "AI and Disability/Outliers"
 source: "FAT 2020"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Slide Deck"
 toolPurpose: []
 toolAccessibilityIssues: []

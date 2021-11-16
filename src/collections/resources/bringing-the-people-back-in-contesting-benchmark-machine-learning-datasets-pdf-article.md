@@ -2,7 +2,7 @@
 title: "Bringing the People Back In: Contesting Benchmark Machine Learning\nDatasets"
 focus: "Methods or Design"
 source: "ICML Workshop on Participatory Approaches to Machine Learning 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []
