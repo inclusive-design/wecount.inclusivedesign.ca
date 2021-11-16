@@ -2,7 +2,7 @@
 title: "Ontario Tech University: Bachelor of Science in Data Science "
 focus: "Data Science Education"
 source: "Ontario Tech University"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

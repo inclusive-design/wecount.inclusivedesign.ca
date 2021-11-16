@@ -2,7 +2,7 @@
 title: "AI in the Headlines: The Portrayal of the Ethical Issues of Artificial Intelligence in the Media"
 focus: "AI Ethics/Policy"
 source: "AI and Society Journal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

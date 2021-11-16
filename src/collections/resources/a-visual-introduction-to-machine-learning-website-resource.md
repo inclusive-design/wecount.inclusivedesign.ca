@@ -2,7 +2,7 @@
 title: "A Visual Introduction to Machine Learning"
 focus: "Data Science Education"
 source: "R2D3"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

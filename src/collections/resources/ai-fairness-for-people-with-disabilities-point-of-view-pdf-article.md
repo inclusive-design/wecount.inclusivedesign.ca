@@ -2,7 +2,7 @@
 title: "AI Fairness for People with Disabilities: Point of View "
 focus: "AI and Disability/Outliers"
 source: "IBM "
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Algorithm-Driven Hiring Tools: Innovative Recruitment or\nExpedited Disability Discrimination?"
 focus: "Bias"
 source: "Center for Democracy and Technology"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

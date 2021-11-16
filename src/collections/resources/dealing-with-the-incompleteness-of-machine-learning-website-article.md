@@ -2,7 +2,7 @@
 title: "Dealing with the Incompleteness of Machine Learning"
 focus: "Methods or Design"
 source: "ODSC"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

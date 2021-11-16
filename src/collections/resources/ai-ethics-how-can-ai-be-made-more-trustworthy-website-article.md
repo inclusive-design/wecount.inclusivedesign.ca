@@ -2,7 +2,7 @@
 title: "AI Ethics: How Can AI Be Made More Trustworthy?"
 focus: "AI Ethics/Policy"
 source: "Digital Journal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

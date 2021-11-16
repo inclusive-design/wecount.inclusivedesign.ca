@@ -2,7 +2,7 @@
 title: "Fair Decision Making Using Privacy-Protected Data"
 focus: "Methods or Design"
 source: "FAT 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

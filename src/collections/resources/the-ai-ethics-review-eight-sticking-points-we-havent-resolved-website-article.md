@@ -2,7 +2,7 @@
 title: "The AI Ethics Review - Eight Sticking Points We Haven't Resolved"
 focus: "AI Ethics/Policy"
 source: "Diginomia"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

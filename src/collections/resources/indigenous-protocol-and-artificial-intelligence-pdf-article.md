@@ -2,7 +2,7 @@
 title: "Indigenous Protocol and Artificial Intelligence"
 focus: "AI Ethics/Policy"
 source: "The Initiative for Indigenous Futures and CIFAR"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

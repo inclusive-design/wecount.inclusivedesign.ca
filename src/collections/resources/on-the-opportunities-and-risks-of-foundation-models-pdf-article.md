@@ -2,7 +2,7 @@
 title: "On the Opportunities and Risks of Foundation Models"
 focus: "Methods or Design"
 source: "CRFM and HAI"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

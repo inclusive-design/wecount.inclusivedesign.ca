@@ -2,7 +2,7 @@
 title: "The Neutstar Identity DMP"
 focus: "Data Set"
 source: "Neustar"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

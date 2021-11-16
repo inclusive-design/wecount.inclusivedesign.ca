@@ -2,7 +2,7 @@
 title: "Artificial Intelligence and Ethical Accountability"
 focus: "AI Ethics/Policy"
 source: "EDUCAUSE"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

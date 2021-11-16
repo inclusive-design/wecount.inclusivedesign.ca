@@ -2,7 +2,7 @@
 title: "Motivations and Risks of Machine Ethics"
 focus: "AI Ethics/Policy"
 source: "IEEE"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

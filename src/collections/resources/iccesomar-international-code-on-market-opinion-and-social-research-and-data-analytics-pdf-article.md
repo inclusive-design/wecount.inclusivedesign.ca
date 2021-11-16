@@ -2,7 +2,7 @@
 title: "ICC/ESOMAR International Code on Market, Opinion and Social Research and Data Analytics"
 focus: "AI Ethics/Policy"
 source: "ICC"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

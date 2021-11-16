@@ -2,7 +2,7 @@
 title: "Too Big a Word"
 focus: "AI Ethics/Policy"
 source: "Data and Society "
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

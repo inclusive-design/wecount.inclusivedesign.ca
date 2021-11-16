@@ -2,7 +2,7 @@
 title: "Consume Power BI Reports by Using Accessibility Features"
 focus: "Tool"
 source: "Microsoft"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Consume Content"]
 toolAccessibilityIssues: ["Screen Reader"]

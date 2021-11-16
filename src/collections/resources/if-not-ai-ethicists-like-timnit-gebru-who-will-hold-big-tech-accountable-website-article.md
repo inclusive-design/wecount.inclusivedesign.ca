@@ -2,7 +2,7 @@
 title: "If Not AI Ethicists like Timnit Gebru, Who Will Hold Big Tech Accountable?"
 focus: "AI Ethics/Policy"
 source: "Brookings"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

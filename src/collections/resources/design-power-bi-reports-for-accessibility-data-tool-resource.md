@@ -2,7 +2,7 @@
 title: "Design Power BI Reports for Accessibility"
 focus: "Tool"
 source: "Microsoft"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["Screen Reader"]

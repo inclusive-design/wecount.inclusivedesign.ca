@@ -2,7 +2,7 @@
 title: "Facebook’s Feckless \"Fairness Flow\" Won’t Fix Its Broken AI"
 focus: "AI Ethics/Policy"
 source: "TNW"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

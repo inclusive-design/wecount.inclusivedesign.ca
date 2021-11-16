@@ -2,7 +2,7 @@
 title: "Data for Equity Strategy: Supporting Equitable Services, Equity Priorities, Performance Measurement and Accountability"
 focus: "AI Ethics/Policy"
 source: "City of Toronto"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

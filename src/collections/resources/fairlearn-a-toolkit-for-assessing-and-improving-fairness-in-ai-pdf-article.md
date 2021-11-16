@@ -2,7 +2,7 @@
 title: "Fairlearn: A Toolkit for Assessing and Improving Fairness in AI"
 focus: "Methods or Design"
 source: "Microsoft"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

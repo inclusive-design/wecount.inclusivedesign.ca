@@ -2,7 +2,7 @@
 title: "Society‑in‑the‑Loop: Programming the Algorithmic Social Contract "
 focus: "AI Ethics/Policy"
 source: "Ethics and Information Technology Journal"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

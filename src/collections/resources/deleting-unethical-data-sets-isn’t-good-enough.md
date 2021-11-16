@@ -3,7 +3,7 @@ title: Deleting Unethical Data Sets Isn’t Good Enough
 focus: AI Ethics/Policy
 source: MIT Technology Review
 readability:
-  - I
+  - Intermediate
 type: Website Article
 openSource: false
 link: https://www.technologyreview.com/2021/08/13/1031836/ai-ethics-responsible-data-stewardship/

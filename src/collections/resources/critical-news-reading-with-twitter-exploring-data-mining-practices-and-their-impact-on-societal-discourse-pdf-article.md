@@ -2,7 +2,7 @@
 title: "Critical News Reading with Twitter? Exploring Data-Mining Practices and Their Impact on Societal Discourse"
 focus: "Methods or Design"
 source: "Communications Journal"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

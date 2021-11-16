@@ -2,7 +2,7 @@
 title: "For Some Employment Algorithms, Disability Discrimination by Default"
 focus: "Employment"
 source: "Brookings"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

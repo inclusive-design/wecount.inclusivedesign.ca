@@ -2,7 +2,7 @@
 title: "Algorithmic and AI Assessment Tools — A New Frontier in Disability Discrimination"
 focus: "AI and Disability/Outliers"
 source: "Forbes"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

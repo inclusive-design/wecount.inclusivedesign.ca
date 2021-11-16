@@ -2,7 +2,7 @@
 title: "Practical AI: Machine Learning and Data Science"
 focus: "Data Science Education"
 source: "Overcast"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

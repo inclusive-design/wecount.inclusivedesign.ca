@@ -2,7 +2,7 @@
 title: "Auditing for Algorithmic Discrimination"
 focus: "Bias"
 source: "Computer Weekly"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

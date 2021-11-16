@@ -2,7 +2,7 @@
 title: "Decoupled Classifiers for Group-Fair and Efficient Machine Learning"
 focus: "Methods or Design"
 source: "FAT 2018"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

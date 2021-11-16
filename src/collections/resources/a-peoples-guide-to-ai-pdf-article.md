@@ -2,7 +2,7 @@
 title: "A People’s Guide to AI"
 focus: "Data Science Education"
 source: "Allied Media Projects"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

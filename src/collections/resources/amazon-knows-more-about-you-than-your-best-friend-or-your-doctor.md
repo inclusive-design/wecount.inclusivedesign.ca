@@ -3,7 +3,7 @@ title: Amazon Knows More about You Than Your Best Friend or Your Doctor
 focus: AI Ethics/Policy
 source: CBC
 readability:
-  - I
+  - Intermediate
 type: Website Article
 openSource: false
 link: https://www.cbc.ca/documentaries/the-passionate-eye/amazon-knows-more-about-you-than-your-best-friend-or-your-doctor-1.5686470

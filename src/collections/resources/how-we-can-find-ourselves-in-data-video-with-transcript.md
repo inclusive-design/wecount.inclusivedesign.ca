@@ -2,7 +2,7 @@
 title: "How We Can Find Ourselves in Data"
 focus: "Data Set"
 source: "TED Talks"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

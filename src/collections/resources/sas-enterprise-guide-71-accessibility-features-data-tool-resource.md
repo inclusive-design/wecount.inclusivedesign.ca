@@ -2,7 +2,7 @@
 title: "SAS Enterprise Guide 7.1: Accessibility Features"
 focus: "Tool"
 source: "SAS Institute"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["JAWS"]

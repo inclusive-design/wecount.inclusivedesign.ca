@@ -2,7 +2,7 @@
 title: "How Humans and AI Can Work Together to Create Better Businesses"
 focus: "Methods or Design"
 source: "TED Talks"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

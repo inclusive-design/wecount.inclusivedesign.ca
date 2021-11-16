@@ -2,7 +2,7 @@
 title: "What Does Building a Fair AI Really Entail?"
 focus: "Methods or Design"
 source: "Harvard Business Review"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

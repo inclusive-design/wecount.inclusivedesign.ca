@@ -2,7 +2,7 @@
 title: "Biased Programmers? Or Biased Data? A Field Experiment in Operationalizing AI Ethics"
 focus: "Bias"
 source: "2020 NeurIPS"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

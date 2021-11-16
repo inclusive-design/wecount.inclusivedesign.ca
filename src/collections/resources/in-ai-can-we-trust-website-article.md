@@ -2,7 +2,7 @@
 title: "In AI (Can) We Trust?"
 focus: "AI Ethics/Policy"
 source: "Forbes"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

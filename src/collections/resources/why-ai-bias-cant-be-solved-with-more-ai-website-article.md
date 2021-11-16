@@ -2,7 +2,7 @@
 title: "Why AI Bias Can’t Be Solved with More AI"
 focus: "Bias"
 source: "BusinessCloud"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

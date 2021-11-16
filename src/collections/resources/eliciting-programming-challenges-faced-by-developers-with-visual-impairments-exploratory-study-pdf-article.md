@@ -2,7 +2,7 @@
 title: "Eliciting Programming Challenges Faced by Developers with Visual Impairments: Exploratory Study"
 focus: "AI and Disability/Outliers"
 source: "CHASE 2016"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

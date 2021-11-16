@@ -2,7 +2,7 @@
 title: "AI Governance: A Holistic Approach to Implement Ethics into AI"
 focus: "AI Ethics/Policy"
 source: "World Economic Forum"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

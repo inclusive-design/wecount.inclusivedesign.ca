@@ -2,7 +2,7 @@
 title: "Artificial Intelligence and Disability: Too Much Promise, Yet Too Little Substance?"
 focus: "AI and Disability/Outliers"
 source: "AI and Ethics"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

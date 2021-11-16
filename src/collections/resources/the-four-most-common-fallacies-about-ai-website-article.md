@@ -2,7 +2,7 @@
 title: "The Four Most Common Fallacies about AI"
 focus: "AI Ethics/Policy"
 source: "VentureBeat"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

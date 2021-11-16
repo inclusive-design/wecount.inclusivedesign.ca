@@ -2,7 +2,7 @@
 title: "Ethics, Machine Learning and Disability"
 focus: "AI and Disability/Outliers"
 source: "TechShare Pro 2019"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

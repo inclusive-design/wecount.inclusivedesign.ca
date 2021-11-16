@@ -2,7 +2,7 @@
 title: "Ethical AI Isn’t the Same as Trustworthy AI, and That Matters"
 focus: "AI Ethics/Policy"
 source: "VentureBeat"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

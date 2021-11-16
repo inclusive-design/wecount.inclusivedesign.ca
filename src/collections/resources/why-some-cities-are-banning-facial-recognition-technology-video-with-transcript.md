@@ -2,7 +2,7 @@
 title: "Why Some Cities Are Banning Facial Recognition Technology"
 focus: "AI Ethics/Policy"
 source: "WIRED"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

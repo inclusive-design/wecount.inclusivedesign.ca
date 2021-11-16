@@ -2,7 +2,7 @@
 title: "Personalizing SAS Visual Analytics: A Survey of Accessibility Features"
 focus: "Tool"
 source: "SAS Institute"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["Keyboard Accessibility","Visual Enhancements"]

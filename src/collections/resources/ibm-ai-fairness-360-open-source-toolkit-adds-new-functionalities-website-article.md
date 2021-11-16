@@ -2,7 +2,7 @@
 title: "IBM AI Fairness 360 Open Source Toolkit Adds New Functionalities"
 focus: "Methods or Design"
 source: "TechRepublic"
-readability: ["E"]
+readability: ["Expert"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

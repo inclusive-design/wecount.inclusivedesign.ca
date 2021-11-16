@@ -2,7 +2,7 @@
 title: "SAS Studio 3.6: Accessibility Features"
 focus: "Tool"
 source: "SAS Institute"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["VoiceOver","JAWS","NVDA"]

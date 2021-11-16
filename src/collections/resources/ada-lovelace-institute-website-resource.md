@@ -2,7 +2,7 @@
 title: "Ada Lovelace Institute "
 focus: "AI Ethics/Policy"
 source: "Ada Lovelace Institute "
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

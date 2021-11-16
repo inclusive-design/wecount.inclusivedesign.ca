@@ -2,7 +2,7 @@
 title: "Ipsos"
 focus: "Data Set"
 source: "Ipsos"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

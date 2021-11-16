@@ -2,7 +2,7 @@
 title: "The Danger of AI Is Weirder Than You Think"
 focus: "Methods or Design"
 source: "TED Talks"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Video with Transcript"
 toolPurpose: []
 toolAccessibilityIssues: []

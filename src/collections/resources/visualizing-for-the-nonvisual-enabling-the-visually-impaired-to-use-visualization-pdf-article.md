@@ -2,7 +2,7 @@
 title: "Visualizing for the Non‐Visual: Enabling the Visually Impaired to Use Visualization"
 focus: "Tool"
 source: "Computer Graphics Forum"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: ["Consume Content"]
 toolAccessibilityIssues: ["Screen Reader"]

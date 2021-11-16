@@ -2,7 +2,7 @@
 title: "Controlling Machine-Learning Algorithms and their Biases"
 focus: "Bias"
 source: "McKinsey Global Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Keyboard Shortcuts in Jupyter Lab"
 focus: "Tool"
 source: "Jupyter Notebook"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["Keyboard Accessibility"]

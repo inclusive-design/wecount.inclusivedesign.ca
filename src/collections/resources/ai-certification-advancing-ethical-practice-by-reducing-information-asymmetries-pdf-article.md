@@ -2,7 +2,7 @@
 title: "AI Certification: Advancing Ethical Practice by Reducing Information Asymmetries"
 focus: "AI Ethics/Policy"
 source: "IEEE Transactions on Technology and Society"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

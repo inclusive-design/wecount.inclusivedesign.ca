@@ -2,7 +2,7 @@
 title: "\"There's a Chilling Effect\": Google's Firing of Leading AI Ethicist Spurs Industry Outrage"
 focus: "AI Ethics/Policy"
 source: "Protocol"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Aversan Labs"
 focus: "AI and Disability/Outliers"
 source: "Aversan Labs"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

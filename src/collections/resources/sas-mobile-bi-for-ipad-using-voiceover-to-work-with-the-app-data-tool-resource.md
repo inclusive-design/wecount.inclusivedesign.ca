@@ -2,7 +2,7 @@
 title: "SAS Mobile BI for iPad: Using VoiceOver to Work with the App"
 focus: "Tool"
 source: "SAS Institute"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Resource"
 toolPurpose: ["Consume Content"]
 toolAccessibilityIssues: ["VoiceOver"]

@@ -2,7 +2,7 @@
 title: "Disability, Bias, and AI"
 focus: "AI and Disability/Outliers"
 source: "AI Now Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

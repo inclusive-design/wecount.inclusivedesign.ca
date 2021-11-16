@@ -2,7 +2,7 @@
 title: "Turning Brain Activity to Text with AI: Time for Nations to Debate What Is Ethical, and What Isn’t"
 focus: "AI Ethics/Policy"
 source: "Financial Express"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

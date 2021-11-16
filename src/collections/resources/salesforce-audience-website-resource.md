@@ -2,7 +2,7 @@
 title: "Salesforce Audience"
 focus: "Data Set"
 source: "Salesforce"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

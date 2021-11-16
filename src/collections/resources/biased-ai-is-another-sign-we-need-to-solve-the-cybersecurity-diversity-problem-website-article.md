@@ -2,7 +2,7 @@
 title: "Biased AI Is Another Sign We Need to Solve the Cybersecurity Diversity Problem"
 focus: "AI Ethics/Policy"
 source: "Security Intelligence"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

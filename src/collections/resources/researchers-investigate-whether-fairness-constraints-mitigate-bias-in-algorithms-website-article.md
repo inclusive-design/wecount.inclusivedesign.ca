@@ -2,7 +2,7 @@
 title: "Researchers Investigate Whether \"Fairness Constraints\" Mitigate Bias in Algorithms"
 focus: "Bias"
 source: "VentureBeat"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

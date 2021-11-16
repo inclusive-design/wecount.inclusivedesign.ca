@@ -2,7 +2,7 @@
 title: "In AI Ethics, “Bad” Isn’t Good Enough"
 focus: "AI Ethics/Policy"
 source: "askell.io"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Blog"
 toolPurpose: []
 toolAccessibilityIssues: []

@@ -2,7 +2,7 @@
 title: "Why Companies Are Thinking Twice about Using Artificial Intelligence"
 focus: "AI Ethics/Policy"
 source: "Fortune"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

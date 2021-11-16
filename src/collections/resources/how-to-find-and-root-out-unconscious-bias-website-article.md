@@ -2,7 +2,7 @@
 title: "How to Find and Root Out Unconscious Bias"
 focus: "Bias"
 source: "ITPro"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

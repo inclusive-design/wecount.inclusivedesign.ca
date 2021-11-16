@@ -2,7 +2,7 @@
 title: "Algorithms Behaving Badly: 2020 Edition"
 focus: "Bias"
 source: "The Markup"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

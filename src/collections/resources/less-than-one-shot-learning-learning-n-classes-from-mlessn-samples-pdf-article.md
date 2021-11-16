@@ -2,7 +2,7 @@
 title: "\"Less Than One\"-Shot Learning: Learning N Classes From M&lt;N Samples"
 focus: "Methods or Design"
 source: "University of Waterloo"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

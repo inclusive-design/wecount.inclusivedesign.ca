@@ -3,7 +3,7 @@ title: How Bad Data Keeps Us from Good AI
 focus: Methods or Design
 source: TED Talks
 readability:
-  - I
+  - Intermediate
 type: Video with Transcript
 openSource: false
 link: https://www.ted.com/talks/mainak_mazumdar_how_bad_data_keeps_us_from_good_ai

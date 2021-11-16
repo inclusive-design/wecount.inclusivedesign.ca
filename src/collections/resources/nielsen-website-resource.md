@@ -2,7 +2,7 @@
 title: "Nielsen"
 focus: "Data Set"
 source: "Nielsen"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Resource"
 toolPurpose: []
 toolAccessibilityIssues: []

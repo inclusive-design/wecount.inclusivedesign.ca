@@ -2,7 +2,7 @@
 title: "Making the Future of Work Inclusive of People with Disabilities"
 focus: "Employment"
 source: "Fundación ONCE and the ILO Global Business and Disability Network"
-readability: ["B"]
+readability: ["Beginner"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

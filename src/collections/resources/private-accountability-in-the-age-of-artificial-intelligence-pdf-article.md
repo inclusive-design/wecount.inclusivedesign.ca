@@ -2,7 +2,7 @@
 title: "Private Accountability in the Age of Artificial Intelligence"
 focus: "AI Ethics/Policy"
 source: "UCLA Law Journal"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

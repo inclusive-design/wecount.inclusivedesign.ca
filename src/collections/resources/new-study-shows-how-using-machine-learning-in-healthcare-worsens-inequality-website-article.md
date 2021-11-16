@@ -2,7 +2,7 @@
 title: "New Study Shows How Using Machine Learning in Healthcare Worsens Inequality"
 focus: "Bias"
 source: "Massive Science"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

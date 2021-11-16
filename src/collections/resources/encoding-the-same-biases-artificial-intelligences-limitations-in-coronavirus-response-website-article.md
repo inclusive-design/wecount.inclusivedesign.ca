@@ -2,7 +2,7 @@
 title: "\"Encoding the Same Biases\": Artificial Intelligence’s Limitations in Coronavirus Response"
 focus: "Bias"
 source: "Horizon Magazine"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

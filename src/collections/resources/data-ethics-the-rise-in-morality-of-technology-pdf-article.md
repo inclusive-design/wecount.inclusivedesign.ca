@@ -2,7 +2,7 @@
 title: "Data Ethics: The Rise in Morality of Technology"
 focus: "AI Ethics/Policy"
 source: "World Federation of Advertisers"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

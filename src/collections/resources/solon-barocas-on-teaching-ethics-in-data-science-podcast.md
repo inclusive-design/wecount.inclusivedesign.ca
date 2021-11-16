@@ -2,7 +2,7 @@
 title: "Solon Barocas on Teaching Ethics in Data Science"
 focus: "Data Science Education"
 source: "Good Code Podcast"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Podcast"
 toolPurpose: []
 toolAccessibilityIssues: []

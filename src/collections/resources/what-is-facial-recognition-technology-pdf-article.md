@@ -2,7 +2,7 @@
 title: "What Is Facial Recognition Technology?"
 focus: "Data Science Education"
 source: "Algorithmic Justice League"
-readability: ["B"]
+readability: ["Beginner"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

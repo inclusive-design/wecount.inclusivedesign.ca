@@ -2,7 +2,7 @@
 title: "Machine Learning Zero to Hero"
 focus: "Data Science Education"
 source: "Google I/O 2019"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Video"
 toolPurpose: []
 toolAccessibilityIssues: []

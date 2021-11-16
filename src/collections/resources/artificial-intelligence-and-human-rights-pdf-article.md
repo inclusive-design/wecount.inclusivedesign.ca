@@ -2,7 +2,7 @@
 title: "Artificial Intelligence and Human Rights"
 focus: "AI and Disability/Outliers"
 source: "Journal of Democracy"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

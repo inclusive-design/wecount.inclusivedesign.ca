@@ -2,7 +2,7 @@
 title: "Why Eliminating Bias in AI Is Key to Its Success"
 focus: "Bias"
 source: "ITProPortal"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

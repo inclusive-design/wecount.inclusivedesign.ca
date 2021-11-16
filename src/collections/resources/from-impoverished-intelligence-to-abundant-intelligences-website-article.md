@@ -2,7 +2,7 @@
 title: "From Impoverished Intelligence to Abundant Intelligences"
 focus: "AI Ethics/Policy"
 source: "Medium"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

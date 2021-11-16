@@ -2,7 +2,7 @@
 title: "WeBuildAI: Participatory Framework for Algorithmic Governance"
 focus: "Methods or Design"
 source: "CSCW 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

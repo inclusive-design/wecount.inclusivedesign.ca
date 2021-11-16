@@ -2,7 +2,7 @@
 title: "Fair Regression: Quantitative Definitions and Reduction-Based Algorithms"
 focus: "Methods or Design"
 source: "ICML 2019"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

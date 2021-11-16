@@ -2,7 +2,7 @@
 title: "Algorithmic Accountability Policy Toolkit"
 focus: "AI Ethics/Policy"
 source: "AI Now Institute"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

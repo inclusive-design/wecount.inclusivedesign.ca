@@ -2,7 +2,7 @@
 title: "The State of AI Ethics Report (April 2021)"
 focus: "AI Ethics/Policy"
 source: "MAIEI"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

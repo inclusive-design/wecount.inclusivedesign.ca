@@ -2,7 +2,7 @@
 title: "Sentiment Analysis of Tweets from Twitter"
 focus: "Methods or Design"
 source: "MICC"
-readability: ["E"]
+readability: ["Expert"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

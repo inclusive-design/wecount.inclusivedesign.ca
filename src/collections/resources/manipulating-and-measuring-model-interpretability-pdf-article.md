@@ -2,7 +2,7 @@
 title: "Manipulating and Measuring Model Interpretability"
 focus: "Methods or Design"
 source: "arXiv"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

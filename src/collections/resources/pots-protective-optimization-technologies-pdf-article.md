@@ -2,7 +2,7 @@
 title: "POTs: Protective Optimization Technologies"
 focus: "Methods or Design"
 source: "FAT 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

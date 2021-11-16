@@ -2,7 +2,7 @@
 title: "The Robots Occupying Our Sidewalks"
 focus: "AI and Disability/Outliers"
 source: "TechCrunch"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

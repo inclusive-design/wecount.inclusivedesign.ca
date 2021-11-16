@@ -2,7 +2,7 @@
 title: "Algorithmic Fair Use"
 focus: "Bias"
 source: "University of Chicago Law Review"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

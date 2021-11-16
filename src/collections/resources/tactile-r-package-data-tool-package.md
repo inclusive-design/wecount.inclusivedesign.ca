@@ -2,7 +2,7 @@
 title: "Tactile R Package"
 focus: "Tool"
 source: "GitHub"
-readability: ["E"]
+readability: ["Expert"]
 type: "Data Tool Package"
 toolPurpose: ["Create Content"]
 toolAccessibilityIssues: ["Tactile Graphs"]

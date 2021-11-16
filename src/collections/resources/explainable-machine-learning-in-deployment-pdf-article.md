@@ -2,7 +2,7 @@
 title: "Explainable Machine Learning in Deployment"
 focus: "Methods or Design"
 source: "FAT 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []

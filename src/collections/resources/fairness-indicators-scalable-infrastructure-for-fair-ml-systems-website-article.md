@@ -2,7 +2,7 @@
 title: "Fairness Indicators: Scalable Infrastructure for Fair ML Systems "
 focus: "Bias"
 source: "Google AI"
-readability: ["E"]
+readability: ["Expert"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

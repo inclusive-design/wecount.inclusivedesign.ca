@@ -2,7 +2,7 @@
 title: "Concordia’s Jason Edward Lewis Wants Ethical Artificial Intelligence with an Indigenous Worldview"
 focus: "AI Ethics/Policy"
 source: "Concordia University"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

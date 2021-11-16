@@ -2,7 +2,7 @@
 title: "How a Popular Medical Device Encodes Racial Bias"
 focus: "Bias"
 source: "Boston Review"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
 toolPurpose: []
 toolAccessibilityIssues: []

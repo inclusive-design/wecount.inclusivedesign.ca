@@ -2,7 +2,7 @@
 title: "Joint Optimization of AI Fairness and Utility: A Human-Centered Approach"
 focus: "AI Ethics/Policy"
 source: "AIES 2020"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
 toolPurpose: []
 toolAccessibilityIssues: []
