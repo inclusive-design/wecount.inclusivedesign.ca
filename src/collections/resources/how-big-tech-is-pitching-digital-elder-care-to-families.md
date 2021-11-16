@@ -3,7 +3,7 @@ title: How Big Tech Is Pitching Digital Elder Care to Families
 focus: AI Ethics/Policy
 source: The Markup
 readability:
-  - I
+  - Intermediate
 type: Website Article
 openSource: false
 link: https://themarkup.org/privacy/2021/10/28/how-big-tech-is-pitching-digital-elder-care-to-families
