@@ -18,10 +18,6 @@
 
 // Resource detail page
 .resource-detail {
-	h1 {
-		// margin-bottom: 0;
-	}
-
 	.features {
 		display: grid;
 		grid-template-columns: rem(80) auto;
@@ -47,6 +43,14 @@
 			display: inline-block;
 			margin: rem(2) 0 rem(2) rem(8);
 			padding: rem(8) rem(16);
+		}
+	}
+}
+
+@include breakpoint-up(lg) {
+	.resource-detail {
+		.features {
+			align-items: center;
 		}
 	}
 }

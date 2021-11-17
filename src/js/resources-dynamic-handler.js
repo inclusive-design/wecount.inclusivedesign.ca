@@ -73,7 +73,7 @@ function bindChoiceChange(viewSelector) {
 /*
  * Bind click handlers for topic checkbox titles. Clicking the text/icon for a given topic
  * is treated the same as if the user had clicked on the checkbox itself
- * 
+ *
  * @param {String} viewSelector - The selector of the static or the dynamic view template
  */
 function bindTopicTitleClick(viewSelector)
@@ -111,7 +111,7 @@ new Vue({
 			isStaticViewVisible = false;
 
 			axios.get(
-				window.location.origin + "/resources.json"
+				window.location.origin + "/resourceData.json"
 			).then(function (response) {
 				// Set up lookup arrays
 				vm.resourceCategories = response.data.resourceCategories;
