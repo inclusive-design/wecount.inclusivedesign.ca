@@ -317,6 +317,11 @@
 		background: $bColor;
 	}
 
+	// Outlines for the topic tiles on the resources page
+	.topic-title {
+		border: 1px solid $fColor;
+	}
+
 	// UIO table of content
 	.flc-toc-tocContainer ul li::before {
 		color: $fColor;

@@ -145,6 +145,7 @@
 			margin: 0;
 
 			.tile-resource {
+				border-radius: rem(18);
 				padding: 0 rem(16) rem(8) rem(16);
 			}
 		}
@@ -206,6 +207,8 @@
 			}
 
 			button {
+				align-self: center;
+				height: rem(32);
 				margin-right: 0;
 				padding: 0;
 			}
@@ -271,6 +274,9 @@
 					border-radius: 0 0 $topic-title-border-radius $topic-title-border-radius;
 
 					.filter-checkbox + label {
+						// The same "border-radius" needs to be applied to the inner container for border
+						// curves displayed properly on the outer container
+						border-radius: 0 0 $topic-title-border-radius $topic-title-border-radius;
 						display: block;
 						font-size: rem(18);
 
@@ -324,7 +330,6 @@
 						align-items: start;
 						column-gap: 0;
 						grid-template-columns: initial;
-						// grid-template-rows: min-content min-content;
 						height: 100%;
 						padding: rem(16);
 						row-gap: 0;
