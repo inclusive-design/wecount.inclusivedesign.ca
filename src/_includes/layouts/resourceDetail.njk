@@ -64,7 +64,7 @@
 
           <svg><use xlink:href="#tool-purpose" /></svg>
           <div><span class="feature-name">Tool Purpose:</span>
-              {% if toolPurpose.length > 0 %}{{ toolPurpose | safe }}{% else %}N/A{% endif %}
+              {% if toolPurpose.length > 0 %}{{ toolPurpose | join(", ") | safe }}{% else %}N/A{% endif %}
           </div>
 
           <svg><use xlink:href="#accessibility" /></svg>
