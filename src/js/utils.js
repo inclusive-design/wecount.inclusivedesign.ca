@@ -179,15 +179,17 @@ search = function (dataSet, searchTerm) {
  * 
  * @param {Array<Object>} dataSet - A set of Resource records upon which the search will be run
  * @param {String} searchTerm - The term for which to search
+ * @param {Array<Object>} resourceTags - The set of all resource tags, including value and label
  * 
  * @return A subset of the input `dataSet` that have matched term in any of the searched fields
  */
 // eslint-disable-next-line
-searchResources = function (dataSet, searchTerm) {
+searchResources = function (dataSet, searchTerm, resourceTags) {
 	searchTerm = searchTerm.toLowerCase();
 	return dataSet.filter((oneRecord) => {
+		// TODO: see if the tag value/label mapping can be done in the init for vm.tags in resources-dynamic-handler.js
 		const searchableContent = (oneRecord.title + " " +
-			oneRecord.learnTags.join(" ") + " " +
+			oneRecord.learnTags.map(learnTag => resourceTags.find(tag => tag.value === learnTag).label).join(" ") + " " +
 			oneRecord.summary + " " +
 			oneRecord.keywords.join(" ") +
 			oneRecord.abstract).toLowerCase();

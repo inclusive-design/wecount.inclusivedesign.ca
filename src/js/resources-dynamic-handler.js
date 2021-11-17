@@ -121,7 +121,7 @@ new Vue({
 				// Search
 				let results = response.data.resources;
 				if (searchTerm) {
-					results = searchResources(results, searchTerm);
+					results = searchResources(results, searchTerm, response.data.tags);
 				}
 
 				// Filter by selected tags, categories or media types
