@@ -198,11 +198,11 @@ pagination:
 
             <div class="info" v-if="item.readability">
               <svg aria-hidden="true" tabindex="0"><use xlink:href="#readability" /></svg>
-              Readability:&nbsp;
+              <span class="resource-readability-title">Readability:&MediumSpace;</span>
               <ul class="resource-readability-list">
                 <li v-for="(readabilityLevel, index) in item.readability">
-                  {{ '{{ resourceReadabilityLevels[readabilityLevel] }}' }}{#
-                  #}<span v-if="index < item.readability.length - 1">,&nbsp;</span>
+                  {{ '{{ readabilityLevel }}' }}{#
+                  #}<span v-if="index < item.readability.length - 1">,&MediumSpace;</span>
                 </li>
               </ul>
             </div>

@@ -10,10 +10,10 @@
       {% if readabilityList %}
       <div class="info">
         <svg aria-hidden="true" tabindex="0"><use xlink:href="#readability" /></svg>
-        Readability:&nbsp;
+        <span class="resource-readability-title">Readability:&MediumSpace;</span>
         <ul class="resource-readability-list">
           {%- for readability in readabilityList -%}
-          <li>{{ resourceReadabilityLevels[readability] | safe }}{% if not loop.last %},{% endif %}</li>
+          <li>{{ readability | safe }}{% if not loop.last %},&MediumSpace;{% endif %}</li>
           {%- endfor -%}
         </ul>
       </div>
