@@ -69,7 +69,7 @@
 
           <svg><use xlink:href="#accessibility" /></svg>
           <div><span class="feature-name">Tool Accessibility Issues:</span>
-              {% if toolAccessibilityIssues.length > 0 %}{{ toolAccessibilityIssues | safe }}{% else %}N/A{% endif %}
+              {% if toolAccessibilityIssues.length > 0 %}{{ toolAccessibilityIssues | join(", ") | safe }}{% else %}N/A{% endif %}
           </div>
 
           <svg><use xlink:href="#open-source" /></svg>
