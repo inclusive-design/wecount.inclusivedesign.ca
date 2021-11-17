@@ -214,6 +214,17 @@
 			}
 		}
 
+		.filter-body {
+			.filter-clear {
+				display: flex;
+				justify-content: end;
+
+				button {
+					font-size: rem(24);
+				}
+			}
+		}
+
 		.filter-expand-button {
 			--expand-button-color: none;
 			--expand-button-stroke-color: #{$grey-dark};
@@ -282,6 +293,7 @@
 
 						&::before {
 							margin-right: 0;
+							vertical-align: middle;
 						}
 					}
 
