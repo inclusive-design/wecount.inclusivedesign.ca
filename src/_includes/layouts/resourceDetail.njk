@@ -92,7 +92,7 @@
 
           <svg><use xlink:href="#keywords" /></svg>
           <div><span class="feature-name">Keywords:</span>
-              {% if keywords.length > 0 %}{{ keywords | safe }}{% else %}N/A{% endif %}
+              {% if keywords.length > 0 %}{{ keywords | join(", ") | safe }}{% else %}N/A{% endif %}
           </div>
 
           <svg><use xlink:href="#learn-tags" /></svg>
