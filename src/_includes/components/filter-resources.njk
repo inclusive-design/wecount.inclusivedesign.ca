@@ -58,7 +58,7 @@
   {% set filterType = "media types" %}
   {% include 'components/filter-resources-header.njk' %}
 
-  <div class="filter-body" data-section="types">
+  <div class="filter-body" data-section="mediatypes">
     <ul class="filter-choices">
       {% for mediaType in resourceTypes.resourceTypes  %}
         {% set typeId = mediaType.value | randomizeFilter %}

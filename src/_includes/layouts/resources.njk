@@ -65,7 +65,7 @@ pagination:
       {% set topicsFilterClearLabel = "Clear all topics" %}
       {% set tagsFilterTitle = "Tags" %}
       {% set tagsFilterClearLabel = "Clear all tags" %}
-      {% set typesFilterTitle = "Media Type" %}
+      {% set typesFilterTitle = "Media Types" %}
       {% set typesFilterClearLabel = "Clear all media types" %}
       {% set filterAction = "/resources/" %}
       {% include 'components/filter-resources.njk' %}
@@ -167,13 +167,13 @@ pagination:
         {# TODO: Dedupe this control #}
         <div class="filter-header">
           <h3>{{ typesFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">{{ '{{ selectedTypes.length }}' }}</span>)</h3>
-          <button type="button" class="filter-expand-button" data-section="types" aria-expanded="true" aria-label="expand or collapse the media types filter">
+          <button type="button" class="filter-expand-button" data-section="mediatypes" aria-expanded="true" aria-label="expand or collapse the media types filter">
             <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
             <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
           </button>
         </div>
 
-        <div class="filter-body" data-section="types">
+        <div class="filter-body" data-section="mediatypes">
           <ul class="filter-choices">
             <li v-for="mediaType in resourceTypes">
               <input class="filter-checkbox" type="checkbox" v-model="mediaType.checked" :id="mediaType.value" :name="'m_' + mediaType.value">
