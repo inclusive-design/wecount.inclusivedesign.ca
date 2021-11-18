@@ -1,6 +1,6 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, createPagination, processDisplayResults, filter, generateAside, getSideMenuObserver, $ */
+/* global Vue, axios, search, setupAside, createPagination, processDisplayResults, filter, $ */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -16,22 +16,6 @@ for (let p of params) {
 }
 
 let isStaticViewVisible = true;
-
-/*
- * Set up aside menu by:
- * 1. populate content with headings sourced from given selectors;
- * 2. Highlight the aside item at scrolling with the current active heading.
- * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
- */
-function setupAside(selectors) {
-	// Populate content with headings sourced from given selectors;
-	generateAside(document, selectors);
-	// Highlight the scrolled-to content heading on the <aside> list.
-	document.querySelectorAll(selectors).forEach((section) => {
-		const contentHeaderObserver = getSideMenuObserver();
-		contentHeaderObserver.observe(section);
-	});
-}
 
 new Vue({
 	el: "#defaultContainer",

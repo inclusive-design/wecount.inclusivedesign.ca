@@ -1,14 +1,9 @@
 <div class="filter">
   <h2>{{ filterHeading }}</h2>
   {# Topic selections #}
-  {# TODO: Dedupe this control #}
-  <div class="filter-header">
-    <h3>{{ topicsFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">0</span>)</h3>
-    <button type="button" class="filter-expand-button" data-section="topics" aria-expanded="false" aria-label="expand or collapse the topics filter">
-      <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
-      <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
-    </button>
-  </div>
+  {% set filterTitle = topicsFilterTitle %}
+  {% set filterType = "topics" %}
+  {% include 'components/filter-resources-header.njk' %}
 
   <div class="filter-body" data-section="topics">
     <ul class="topic-choices">
@@ -45,14 +40,9 @@
   </div>
 
   {# Tag selections #}
-  {# TODO: Dedupe this control #}
-  <div class="filter-header">
-    <h3>{{ tagsFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">0</span>)</h3>
-    <button type="button" class="filter-expand-button" data-section="tags" aria-expanded="false" aria-label="expand or collapse the tags filter">
-      <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
-      <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
-    </button>
-  </div>
+  {% set filterTitle = tagsFilterTitle %}
+  {% set filterType = "tags" %}
+  {% include 'components/filter-resources-header.njk' %}
 
   <div class="filter-body" data-section="tags">
     <ul class="filter-choices">
@@ -67,14 +57,9 @@
   </div>
 
   {# Media Type selections #}
-  {# TODO: Dedupe this control #}
-  <div class="filter-header">
-    <h3>{{ typeFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">0</span>)</h3>
-    <button type="button" class="filter-expand-button" data-section="types" aria-expanded="false" aria-label="expand or collapse the media types filter">
-      <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
-      <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
-    </button>
-  </div>
+  {% set filterTitle = typeFilterTitle %}
+  {% set filterType = "media types" %}
+  {% include 'components/filter-resources-header.njk' %}
 
   <div class="filter-body" data-section="types">
     <ul class="filter-choices">

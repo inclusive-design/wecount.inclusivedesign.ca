@@ -1,6 +1,6 @@
 // Shared utility functions
 
-/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars, slugify, includesCaseInsensitive */
+/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars, slugify, includesCaseInsensitive, generateAside, getSideMenuObserver */
 
 /*
  * Convert a date into the format of "Month day, Year".
@@ -153,7 +153,7 @@ getUniqueTags = function (posts) {
 /*
  * Search the data set with records that match the search term.
  * Used in the site-wide search as well as on the Initiatives (formerly Views) page.
- * 
+ *
  * @param {Array<Object>} dataSet - The data set that the search is performed upon.
  * @param {String} searchTerm - The search term.
  * @return A subset of the input `dataSet` that have matched term in any of these fields: title, content, tags.
@@ -164,36 +164,6 @@ search = function (dataSet, searchTerm) {
 	return dataSet.filter((oneRecord) => {
 		const tagNames = oneRecord.tags ? oneRecord.tags.map(({name}) => name) : [];
 		return oneRecord.title.concat(" ", oneRecord.content, " ", oneRecord.excerpt, " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchTerm));
-	});
-};
-
-/*
- * Search the data set with records that match the search term. Used on the Resources page.
- * 
- * This search comprises the following fields:
- * - title
- * - learnTags
- * - abstract
- * - summary
- * - keywords
- * 
- * @param {Array<Object>} dataSet - A set of Resource records upon which the search will be run
- * @param {String} searchTerm - The term for which to search
- * @param {Array<Object>} resourceTags - The set of all resource tags, including value and label
- * 
- * @return A subset of the input `dataSet` that have matched term in any of the searched fields
- */
-// eslint-disable-next-line
-searchResources = function (dataSet, searchTerm, resourceTags) {
-	searchTerm = searchTerm.toLowerCase();
-	return dataSet.filter((oneRecord) => {
-		// TODO: see if the tag value/label mapping can be done in the init for vm.tags in resources-dynamic-handler.js
-		const searchableContent = (oneRecord.title + " " +
-			oneRecord.learnTags.map(learnTag => resourceTags.find(tag => tag.value === learnTag).label).join(" ") + " " +
-			oneRecord.summary + " " +
-			oneRecord.keywords.join(" ") +
-			oneRecord.abstract).toLowerCase();
-		return searchableContent.match(escapeSpecialChars(searchTerm));
 	});
 };
 
@@ -325,4 +295,21 @@ generateAside = function (document, selectors) {
 		tocNav.appendChild(tocUl);
 		toc.appendChild(tocNav);
 	}
+};
+
+/*
+ * Set up aside menu by:
+ * 1. populate content with headings sourced from given selectors;
+ * 2. Highlight the aside item at scrolling with the current active heading.
+ * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
+ */
+// eslint-disable-next-line
+setupAside = function (selectors) {
+	// Populate content with headings sourced from given selectors;
+	generateAside(document, selectors);
+	// Highlight the scrolled-to content heading on the <aside> list.
+	document.querySelectorAll(selectors).forEach((section) => {
+		const contentHeaderObserver = getSideMenuObserver();
+		contentHeaderObserver.observe(section);
+	});
 };
