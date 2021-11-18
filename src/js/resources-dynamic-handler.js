@@ -212,7 +212,6 @@ for (let i = 0; i < expandButtons.length; i++) {
 		const currentExpandedValue = expandButtons[i].getAttribute("aria-expanded");
 		const expandedState = currentExpandedValue === "true" ? "false" : "true";
 		expandButtons[i].setAttribute("aria-expanded", expandedState);
-		expandButtons[i].setAttribute("aria-label", expandedState === "true" ? "collapse" : "expand");
 
 		// Open/close the appropriate filter
 		// Find the filter body by using its position relative to the button as well as the css selector
