@@ -120,7 +120,7 @@ pagination:
           <ul class="topic-choices">
               <li v-for="category in resourceCategories">
                 <div class="topic-title" :class="category.categoryId">
-                  <span id="{{ "title_" + categoryId }}">{{ '{{ category.categoryLabel }}' }}</span>
+                  <span :id="'title_' + category.categoryId">{{ '{{ category.categoryLabel }}' }}</span>
                   <svg>
                     <use v-if="category.categoryId === 'aiAndDisability'" xlink:href="#topic-ai-and-disability" />
                     <use v-else-if="category.categoryId === 'dataScience'" xlink:href="#topic-work-for-pwd-in-data-science" />
