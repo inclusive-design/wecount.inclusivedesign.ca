@@ -107,7 +107,9 @@ pagination:
       <div class="filter">
         <h2>{{ filterHeading }}</h2>
         {# Topic selections #}
-        {# TODO: Dedupe this control #}
+        {# TODO: Dedupe this control. #}
+        {# Note: The dedupe is impossible for now because nunjucks syntax such as including a sub-template is not 
+        supported in a vue syntax template. This may become possible when eleventy supports Vue templates. #}
         <div class="filter-header">
           <h3>{{ topicsFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">{{ '{{ selectedCategories.length }}' }}</span>)</h3>
           <button type="button" class="filter-expand-button" data-section="topics" aria-expanded="true" aria-label="expand or collapse the topics filter">

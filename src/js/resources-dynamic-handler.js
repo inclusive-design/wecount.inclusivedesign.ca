@@ -1,6 +1,6 @@
 // For search functionality on the header.
 
-/* global Vue, axios, searchResources, createPagination, processResourcesDisplayResults, includesCaseInsensitive, filterResources, generateAside, getSideMenuObserver, $ */
+/* global Vue, axios, escapeSpecialChars, setupAside, createPagination, processResourcesDisplayResults, includesCaseInsensitive, filterResources, $ */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -34,18 +34,31 @@ for (let p of params) {
 let isStaticViewVisible = true;
 
 /*
- * Set up aside menu by:
- * 1. populate content with headings sourced from given selectors;
- * 2. Highlight the aside item at scrolling with the current active heading.
- * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
+ * Search the data set with records that match the search term.
+ *
+ * This search comprises the following fields:
+ * - title
+ * - learnTags
+ * - abstract
+ * - summary
+ * - keywords
+ *
+ * @param {Array<Object>} dataSet - A set of Resource records upon which the search will be run
+ * @param {String} searchTerm - The term for which to search
+ * @param {Array<Object>} resourceTags - The set of all resource tags, including value and label
+ *
+ * @return A subset of the input `dataSet` that have matched term in any of the searched fields
  */
-function setupAside(selectors) {
-	// Populate content with headings sourced from given selectors;
-	generateAside(document, selectors);
-	// Highlight the scrolled-to content heading on the <aside> list.
-	document.querySelectorAll(selectors).forEach((section) => {
-		const contentHeaderObserver = getSideMenuObserver();
-		contentHeaderObserver.observe(section);
+function searchResources(dataSet, searchTerm, resourceTags) {
+	searchTerm = searchTerm.toLowerCase();
+	return dataSet.filter((oneRecord) => {
+		// TODO: see if the tag value/label mapping can be done in the init for vm.tags in resources-dynamic-handler.js
+		const searchableContent = (oneRecord.title + " " +
+			oneRecord.learnTags.map(learnTag => resourceTags.find(tag => tag.value === learnTag).label).join(" ") + " " +
+			oneRecord.summary + " " +
+			oneRecord.keywords.join(" ") +
+			oneRecord.abstract).toLowerCase();
+		return searchableContent.match(escapeSpecialChars(searchTerm));
 	});
 }
 
