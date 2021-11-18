@@ -87,6 +87,23 @@ function bindTopicTitleClick(viewSelector)
 	}
 }
 
+/*
+ * Bind click handlers for filter section checkbox clear buttons.
+ */
+function bindClearFilterButtonClick()
+{
+	const clearFilterButtons = document.querySelectorAll(".filter .filter-clear button");
+
+	for (let i = 0; i < clearFilterButtons.length; i++) {
+		clearFilterButtons[i].addEventListener("click", (e) => {
+			$(clearFilterButtons[i]).parent().siblings("ul").find(".filter-checkbox").prop("checked", false);
+
+			// Submit the form to update the filter after all checkboxes are unselected
+			e.target.closest("form").submit();
+		});
+	}
+}
+
 new Vue({
 	el: "#defaultContainer",
 	data: {
@@ -169,6 +186,7 @@ new Vue({
 		if (this.numOfUpdated === 0) {
 			bindChoiceChange(".dynamic-view");
 			bindTopicTitleClick(".dynamic-view");
+			bindClearFilterButtonClick();
 			this.numOfUpdated = 1;
 		}
 	}

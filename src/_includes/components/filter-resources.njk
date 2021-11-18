@@ -39,9 +39,6 @@
         </li>
       {% endfor %}
     </ul>
-    <div class="filter-clear">
-      <button type="button">{{ topicsFilterClearLabel }}</button>
-    </div>
   </div>
 
   {# Tag selections #}
@@ -69,7 +66,7 @@
   {# Media Type selections #}
   {# TODO: Dedupe this control #}
   <div class="filter-header">
-    <h3>{{ typeFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">0</span>)</h3>
+    <h3>{{ typesFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">0</span>)</h3>
     <button type="button" class="filter-expand-button" data-section="types" aria-expanded="false" aria-label="expand or collapse the media types filter">
       <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
       <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>

@@ -65,8 +65,8 @@ pagination:
       {% set topicsFilterClearLabel = "Clear all topics" %}
       {% set tagsFilterTitle = "Tags" %}
       {% set tagsFilterClearLabel = "Clear all tags" %}
-      {% set typeFilterTitle = "Media Type" %}
-      {% set typeFilterClearLabel = "Clear all media types" %}
+      {% set typesFilterTitle = "Media Type" %}
+      {% set typesFilterClearLabel = "Clear all media types" %}
       {% set filterAction = "/resources/" %}
       {% include 'components/filter-resources.njk' %}
     </form>
@@ -134,6 +134,9 @@ pagination:
                 </div>
               </li>
           </ul>
+          <div class="filter-clear">
+            <button type="button">{{ topicsFilterClearLabel }}</button>
+          </div>
         </div>
 
         {# Tag selections #}
@@ -153,12 +156,15 @@ pagination:
               <label :for="tag.value">{{ '{{ tag.label }}' }}</label>
             </li>
           </ul>
+          <div class="filter-clear">
+            <button type="button">{{ tagsFilterClearLabel }}</button>
+          </div>
         </div>
 
         {# Media Type selections #}
         {# TODO: Dedupe this control #}
         <div class="filter-header">
-          <h3>{{ typeFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">{{ '{{ selectedTypes.length }}' }}</span>)</h3>
+          <h3>{{ typesFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">{{ '{{ selectedTypes.length }}' }}</span>)</h3>
           <button type="button" class="filter-expand-button" data-section="types" aria-expanded="true" aria-label="expand or collapse the media types filter">
             <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
             <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
@@ -172,6 +178,9 @@ pagination:
               <label :for="mediaType.value">{{ '{{ mediaType.value }}' }}</label>
             </li>
           </ul>
+          <div class="filter-clear">
+            <button type="button">{{ typesFilterClearLabel }}</button>
+          </div>
         </div>
 
         <div class="filter-buttons">
