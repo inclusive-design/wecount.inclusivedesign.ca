@@ -317,9 +317,18 @@
 		background: $bColor;
 	}
 
-	// Outlines for the topic tiles on the resources page
-	.topic-title {
-		border: 1px solid $fColor;
+	// Resources page: adjust outlines of topic tiles; hide SVGs on topic tiles
+	.resources {
+		.filter .topic-choices li {
+			.topic-title {
+				border: 1px solid $fColor;
+				display: block;
+
+				svg {
+					display: none;
+				}
+			}
+		}
 	}
 
 	// UIO table of content

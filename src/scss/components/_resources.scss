@@ -223,6 +223,11 @@
 					color: $green-dark;
 					font-size: rem(18);
 					font-weight: $font-weight-semibold;
+
+					&:hover,
+					&:focus {
+						text-decoration: underline;
+					}
 				}
 			}
 		}
