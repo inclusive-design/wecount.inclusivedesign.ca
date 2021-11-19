@@ -57,7 +57,9 @@
           <div><span class="feature-name">Source:</span> {{ source | safe }}</div>
 
           <svg><use xlink:href="#readability-on-detail" /></svg>
-          <div><span class="feature-name">Redability:</span> {{ readability | join(", ") | safe }}</div>
+          <div><span class="feature-name">Redability:</span>
+              {% if readability.length > 0 %}{{ readability | join(", ") | safe }}{% else %}N/A{% endif %}
+           </div>
 
           <svg><use xlink:href="#type" /></svg>
           <div><span class="feature-name">Type:</span> {{ type | safe }}</div>
