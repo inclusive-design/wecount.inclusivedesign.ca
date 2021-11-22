@@ -155,6 +155,7 @@
 				display: grid;
 				flex: initial;
 				grid-template-rows: 1fr min-content;
+				min-width: 100%;
 				text-align: center;
 
 				svg {
@@ -233,6 +234,7 @@
 
 				li {
 					flex: 1 0 21%;
+					min-width: unset;
 					text-align: center;
 
 					svg {
