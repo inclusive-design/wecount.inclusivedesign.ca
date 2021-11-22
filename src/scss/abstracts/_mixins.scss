@@ -319,6 +319,16 @@
 
 	// Resources page: adjust outlines of topic tiles; hide SVGs on topic tiles
 	.resources {
+		.search-container {
+			input {
+				box-shadow: 0 0 0.4375rem currentColor;
+			}
+
+			svg {
+				fill: currentColor;
+			}
+		}
+
 		.filter .topic-choices li {
 			.topic-title {
 				border: 1px solid $fColor;
