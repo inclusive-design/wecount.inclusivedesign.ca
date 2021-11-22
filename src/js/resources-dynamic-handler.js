@@ -1,6 +1,6 @@
 // For search functionality on the header.
 
-/* global Vue, axios, escapeSpecialChars, setupAside, createPagination, processResourcesDisplayResults, includesCaseInsensitive, filterResources, $ */
+/* global Vue, axios, escapeSpecialChars, createPagination, processResourcesDisplayResults, includesCaseInsensitive, filterResources, $ */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -30,8 +30,6 @@ for (let p of params) {
 		}
 	}
 }
-
-let isStaticViewVisible = true;
 
 /*
  * Search the data set with records that match the search term.
@@ -133,7 +131,6 @@ new Vue({
 			// Hide the static view section and show the dynamic search and filtering result section
 			document.querySelector(".resources.static-view").style.display = "none";
 			document.querySelector(".resources.dynamic-view").style.display = "block";
-			isStaticViewVisible = false;
 
 			axios.get(
 				window.location.origin + "/resourceData.json"
@@ -186,10 +183,6 @@ new Vue({
 		}
 	},
 	updated() {
-		// Re-setup the <aside> section when filter/search results are rendered
-		document.querySelector("aside#toc").innerHTML="";
-		setupAside("main article.dynamic-view h1, main article.dynamic-view h2");
-
 		// Make sure change events for choice checkboxes in the dynamic view only bind once
 		if (this.numOfUpdated === 0) {
 			bindTopicTitleClick(".dynamic-view");
@@ -199,11 +192,6 @@ new Vue({
 		}
 	}
 });
-
-// Set up the aside menu when pages using the static view are loaded
-if (isStaticViewVisible) {
-	setupAside("main article.static-view h1, main article.static-view h2");
-}
 
 // Bind topic title checkbox selection in the static view template
 bindTopicTitleClick(".static-view");

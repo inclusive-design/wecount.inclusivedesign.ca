@@ -1,6 +1,6 @@
 // Shared utility functions
 
-/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars, slugify, includesCaseInsensitive, generateAside, getSideMenuObserver */
+/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars, slugify, includesCaseInsensitive */
 
 /*
  * Convert a date into the format of "Month day, Year".
@@ -295,21 +295,4 @@ generateAside = function (document, selectors) {
 		tocNav.appendChild(tocUl);
 		toc.appendChild(tocNav);
 	}
-};
-
-/*
- * Set up aside menu by:
- * 1. populate content with headings sourced from given selectors;
- * 2. Highlight the aside item at scrolling with the current active heading.
- * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
- */
-// eslint-disable-next-line
-setupAside = function (selectors) {
-	// Populate content with headings sourced from given selectors;
-	generateAside(document, selectors);
-	// Highlight the scrolled-to content heading on the <aside> list.
-	document.querySelectorAll(selectors).forEach((section) => {
-		const contentHeaderObserver = getSideMenuObserver();
-		contentHeaderObserver.observe(section);
-	});
 };
