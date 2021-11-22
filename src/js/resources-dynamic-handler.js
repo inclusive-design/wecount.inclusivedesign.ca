@@ -63,27 +63,6 @@ function searchResources(dataSet, searchTerm, resourceTags) {
 }
 
 /*
- * Bind change events for filter choice checkboxes. When a choice is checked or unchecked, update the selected
- * choices counter on the filter header.
- * @param {String} viewSelector - The selector of the static or the dynamic view template
- */
-function bindChoiceChange(viewSelector) {
-	// Clicking filter choices updates the corresponding counter
-	const filterCheckboxes = document.querySelectorAll(viewSelector + " .filter .filter-checkbox");
-
-	for (let i = 0; i < filterCheckboxes.length; i++) {
-		filterCheckboxes[i].addEventListener("change", (e) => {
-			const counterElm = $(e.target.closest(".filter-body")).prev().find(".filter-selected-choice-counter")[0];
-			const currentCount = parseInt(counterElm.innerText);
-			counterElm.innerText = e.target.checked ? currentCount + 1 : currentCount - 1;
-
-			// Submit the form to perform a filter when a choice is selected or unselected
-			e.target.closest("form").submit();
-		});
-	}
-}
-
-/*
  * Bind click handlers for topic checkbox titles. Clicking the text/icon for a given topic
  * is treated the same as if the user had clicked on the checkbox itself
  *
@@ -197,7 +176,6 @@ new Vue({
 
 		// Make sure change events for choice checkboxes in the dynamic view only bind once
 		if (this.numOfUpdated === 0) {
-			bindChoiceChange(".dynamic-view");
 			bindTopicTitleClick(".dynamic-view");
 			bindClearFilterButtonClick();
 			this.numOfUpdated = 1;
@@ -209,9 +187,6 @@ new Vue({
 if (isStaticViewVisible) {
 	setupAside("main article.static-view h1, main article.static-view h2");
 }
-
-// Bind change events for all choice checkboxes in the static view template
-bindChoiceChange(".static-view");
 
 // Bind topic title checkbox selection in the static view template
 bindTopicTitleClick(".static-view");
