@@ -108,7 +108,7 @@ pagination:
         <h2>{{ filterHeading }}</h2>
         {# Topic selections #}
         {# TODO: Dedupe this control. #}
-        {# Note: The dedupe is impossible for now because nunjucks syntax such as including a sub-template is not 
+        {# Note: The dedupe is impossible for now because nunjucks syntax such as including a sub-template is not
         supported in a vue syntax template. This may become possible when eleventy supports Vue templates. #}
         <div class="filter-header">
           <h3>{{ topicsFilterTitle }}&nbsp;(<span class="filter-selected-choice-counter">{{ '{{ selectedCategories.length }}' }}</span>)</h3>
@@ -206,12 +206,12 @@ pagination:
           <div class="tile-resource">
             <h2 class="h3">{{ '{{ item.title }}' }}</h2>
             <div class="info">
-              <svg aria-hidden="true" tabindex="0"><use xlink:href="#media-type" /></svg>
+              <svg aria-hidden="true"><use xlink:href="#media-type" /></svg>
               Media Type: {{ '{{ item.type }}' }}
             </div>
 
             <div class="info" v-if="item.readability">
-              <svg aria-hidden="true" tabindex="0"><use xlink:href="#readability" /></svg>
+              <svg aria-hidden="true"><use xlink:href="#readability" /></svg>
               <span class="resource-readability-title">Readability:&MediumSpace;</span>
               <ul class="resource-readability-list">
                 <li v-for="(readabilityLevel, index) in item.readability">
@@ -222,12 +222,12 @@ pagination:
             </div>
 
             <div class="info">
-              <svg aria-hidden="true" tabindex="0"><use xlink:href="#topics" /></svg>
+              <svg aria-hidden="true"><use xlink:href="#topics" /></svg>
               Topic: {{ '{{ resourceCategories.filter(cat => cat.focuses.includes(item.focus))[0].categoryLabel }}' }}
             </div>
 
             <div class="info" v-if="item.learnTags">
-              <svg aria-hidden="true" tabindex="0"><use xlink:href="#tags" /></svg>
+              <svg aria-hidden="true"><use xlink:href="#tags" /></svg>
               Tags:
               <ul class="resource-tags-list">
                 <li v-for="(tag, key, index) in item.learnTags">

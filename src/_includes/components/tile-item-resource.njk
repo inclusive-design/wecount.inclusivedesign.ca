@@ -4,12 +4,12 @@
       <h2 class="h3">{{ title | safe }}</h2>
       {# TODO: localize these items/labels #}
       <div class="info">
-        <svg aria-hidden="true" tabindex="0"><use xlink:href="#media-type" /></svg>
+        <svg aria-hidden="true"><use xlink:href="#media-type" /></svg>
         Media Type: {{ mediaType | safe }}
       </div>
       {% if readabilityList %}
       <div class="info">
-        <svg aria-hidden="true" tabindex="0"><use xlink:href="#readability" /></svg>
+        <svg aria-hidden="true"><use xlink:href="#readability" /></svg>
         <span class="resource-readability-title">Readability:&MediumSpace;</span>
         <ul class="resource-readability-list">
           {%- for readability in readabilityList -%}
@@ -19,12 +19,12 @@
       </div>
       {% endif %}
       <div class="info">
-        <svg aria-hidden="true" tabindex="0"><use xlink:href="#topics" /></svg>
+        <svg aria-hidden="true"><use xlink:href="#topics" /></svg>
         Topic: {{ focus | categoryFromFocus(resourceCategories.resourceCategories) }}
       </div>
       {% if tags %}
       <div class="info">
-        <svg aria-hidden="true" tabindex="0"><use xlink:href="#tags" /></svg>
+        <svg aria-hidden="true"><use xlink:href="#tags" /></svg>
         Tags:
         <ul class="resource-tags-list">
           {%- for tag in tags -%}
