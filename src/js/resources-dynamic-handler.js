@@ -80,6 +80,22 @@ function bindTopicTitleClick(viewSelector)
 }
 
 /*
+ * Bind change events for topic checkboxes. When a topic is checked or unchecked, reload the page immediately
+ * to show search results.
+ * @param {String} viewSelector - The selector of the static or the dynamic view template
+ */
+function bindTopicChange(viewSelector) {
+	// Clicking filter choices updates the corresponding counter
+	const topicCheckboxes = document.querySelectorAll(viewSelector + " .filter input[name^=c_]");
+
+	for (let i = 0; i < topicCheckboxes.length; i++) {
+		topicCheckboxes[i].addEventListener("change", (e) => {
+			e.target.closest("form").submit();
+		});
+	}
+}
+
+/*
  * Bind click handlers for filter section checkbox clear buttons.
  */
 function bindClearFilterButtonClick()
@@ -177,6 +193,7 @@ new Vue({
 		// Make sure change events for choice checkboxes in the dynamic view only bind once
 		if (this.numOfUpdated === 0) {
 			bindTopicTitleClick(".dynamic-view");
+			bindTopicChange(".dynamic-view");
 			bindClearFilterButtonClick();
 			this.numOfUpdated = 1;
 		}
@@ -190,6 +207,9 @@ if (isStaticViewVisible) {
 
 // Bind topic title checkbox selection in the static view template
 bindTopicTitleClick(".static-view");
+
+// Bind change events for topic checkboxes in the static view template
+bindTopicChange(".static-view");
 
 /*
  * Show/hide the corresponding arrow up and down buttons based on the expand state
