@@ -1,6 +1,6 @@
   <div class="filter-header">
     <h3>{{ filterTitle }}&nbsp;(<span class="filter-selected-choice-counter">0</span>)</h3>
-    <button type="button" class="filter-expand-button" data-section="{{ filterType | replace(" ", "") }}" aria-expanded="false" aria-label="expand or collapse the {{ filterType }} filter">
+    <button type="button" class="filter-expand-button" data-section="{{ filterType | replace(" ", "") }}" aria-expanded={% if filterType === "topics" %}"true"{% else %}"false"{% endif %} aria-label="expand or collapse the {{ filterType }} filter">
       <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
       <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
     </button>
