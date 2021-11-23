@@ -1,6 +1,6 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, setupAside, createPagination, processDisplayResults, filter, slugify, generateAside, getSideMenuObserver, $ */
+/* global Vue, axios, search, createPagination, processDisplayResults, filter, slugify, getSideMenuObserver, $ */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -92,8 +92,7 @@ new Vue({
  * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
  * to be rendered in <aside>.
  */
-// eslint-disable-next-line
-generateAside = function (document, selectors) {
+function generateAside(document, selectors) {
 	const articleHeadings = [...document.querySelectorAll(selectors)];
 
 	if (articleHeadings.length) {
@@ -122,7 +121,7 @@ generateAside = function (document, selectors) {
 		tocNav.appendChild(tocUl);
 		toc.appendChild(tocNav);
 	}
-};
+}
 
 /*
  * Set up aside menu by:
@@ -130,8 +129,7 @@ generateAside = function (document, selectors) {
  * 2. Highlight the aside item at scrolling with the current active heading.
  * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
  */
-// eslint-disable-next-line
-setupAside = function (selectors) {
+function setupAside(selectors) {
 	// Populate content with headings sourced from given selectors;
 	generateAside(document, selectors);
 	// Highlight the scrolled-to content heading on the <aside> list.
@@ -139,7 +137,7 @@ setupAside = function (selectors) {
 		const contentHeaderObserver = getSideMenuObserver();
 		contentHeaderObserver.observe(section);
 	});
-};
+}
 
 // Set up the aside menu when pages using the static view are loaded
 if (isStaticViewVisible) {

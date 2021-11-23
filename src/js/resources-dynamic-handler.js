@@ -39,6 +39,7 @@ for (let p of params) {
  * - learnTags
  * - abstract
  * - summary
+ * - type
  * - keywords
  *
  * @param {Array<Object>} dataSet - A set of Resource records upon which the search will be run
@@ -54,7 +55,8 @@ function searchResources(dataSet, searchTerm, resourceTags) {
 		const searchableContent = (oneRecord.title + " " +
 			oneRecord.learnTags.map(learnTag => resourceTags.find(tag => tag.value === learnTag).label).join(" ") + " " +
 			oneRecord.summary + " " +
-			oneRecord.keywords.join(" ") +
+			oneRecord.type + " " +
+			oneRecord.keywords.join(" ") + " " +
 			oneRecord.abstract).toLowerCase();
 		return searchableContent.match(escapeSpecialChars(searchTerm));
 	});
