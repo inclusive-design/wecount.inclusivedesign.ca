@@ -63,18 +63,18 @@ function searchResources(dataSet, searchTerm, resourceTags) {
 }
 
 /*
- * Bind click handlers for topic checkbox titles. Clicking the text/icon for a given topic
- * is treated the same as if the user had clicked on the checkbox itself
+ * Bind click handlers for topic cards. Clicking anywhere on the topic tile is treated the same as if
+ * the user had clicked on the checkbox itself.
  *
  * @param {String} viewSelector - The selector of the static or the dynamic view template
  */
-function bindTopicTitleClick(viewSelector)
+function bindTopicCardClick(viewSelector)
 {
-	const topicTitles = document.querySelectorAll(viewSelector + " .filter .topic-title");
+	const topicCards = document.querySelectorAll(viewSelector + " .topic-choices li");
 
-	for (let i = 0; i < topicTitles.length; i++) {
-		topicTitles[i].addEventListener("click", () => {
-			$(topicTitles[i]).siblings(".topic-checkbox").find(".filter-checkbox").click();
+	for (let i = 0; i < topicCards.length; i++) {
+		topicCards[i].addEventListener("click", () => {
+			$(topicCards[i]).find("input").click();
 		});
 	}
 }
@@ -187,7 +187,7 @@ new Vue({
 	updated() {
 		// Make sure change events for choice checkboxes in the dynamic view only bind once
 		if (this.numOfUpdated === 0) {
-			bindTopicTitleClick(".dynamic-view");
+			bindTopicCardClick(".dynamic-view");
 			bindTopicChange(".dynamic-view");
 			bindClearFilterButtonClick();
 			this.numOfUpdated = 1;
@@ -196,7 +196,7 @@ new Vue({
 });
 
 // Bind topic title checkbox selection in the static view template
-bindTopicTitleClick(".static-view");
+bindTopicCardClick(".static-view");
 
 // Bind change events for topic checkboxes in the static view template
 bindTopicChange(".static-view");

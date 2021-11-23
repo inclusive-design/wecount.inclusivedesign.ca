@@ -39,14 +39,16 @@
 		opacity: 0; // hide it
 		position: absolute; // take it out of document flow
 
-		& + label {
+		& + label,
+		& + span {
 			cursor: pointer;
 			padding: 0;
 			position: relative;
 		}
 
 		// Box
-		& + label::before {
+		& + label::before,
+		& + span::before {
 			content: '';
 			display: inline-block;
 			height: rem(20);
@@ -57,7 +59,8 @@
 		}
 
 		// Checkmark
-		&:checked + label::after {
+		&:checked + label::after,
+		&:checked + span::after {
 			color: $white;
 			content: '\2713';
 			font-size: rem(18);
@@ -156,37 +159,47 @@
 
 // Custom styles when "enhance inputs" is enabled
 // Custom checkbox
-.fl-input-enhanced .filter-checkbox + label::before {
+.fl-input-enhanced .filter-checkbox + label::before,
+.fl-input-enhanced .filter-checkbox + span::before {
 	outline: rem(3) double $blue-alt-light;
 }
 
 // Box checked
-.filter .filter-checkbox:checked + label::before {
+.filter .filter-checkbox:checked + label::before,
+.filter .filter-checkbox:checked + span::before {
 	background: $blue-alt-light;
 }
 
 // Box focus
 .filter .filter-checkbox:focus + label::before,
-.filter .filter-checkbox:hover + label::before {
+.filter .filter-checkbox:hover + label::before,
+.filter .filter-checkbox:focus + span::before,
+.filter .filter-checkbox:hover + span::before {
 	outline: rem(2.5) solid $blue-alt-light;
 }
 
 // Box focus when "enhance inputs" is enabled
 .fl-input-enhanced .filter-checkbox:focus + label::before,
-.fl-input-enhanced .filter-checkbox:hover + label::before {
+.fl-input-enhanced .filter-checkbox:hover + label::before,
+.fl-input-enhanced .filter-checkbox:focus + span::before,
+.fl-input-enhanced .filter-checkbox:hover + span::before {
 	border: rem(2.5) solid $blue-alt-light;
 	outline: rem(3.5) double $blue-alt-light;
 }
 
 // Box checked and focus/hover
 .filter .filter-checkbox:checked:focus + label::before,
-.filter .filter-checkbox:checked:hover + label::before {
+.filter .filter-checkbox:checked:hover + label::before,
+.filter .filter-checkbox:checked:focus + span::before,
+.filter .filter-checkbox:checked:hover + span::before {
 	outline: rem(3) double $blue-alt-light;
 }
 
 // Box checked and focus/hover
 .fl-input-enhanced .filter-checkbox:checked:focus + label::before,
-.fl-input-enhanced .filter-checkbox:checked:hover + label::before {
+.fl-input-enhanced .filter-checkbox:checked:hover + label::before,
+.fl-input-enhanced .filter-checkbox:checked:focus + span::before,
+.fl-input-enhanced .filter-checkbox:checked:hover + span::before {
 	border: rem(1) solid $white;
 	box-shadow: 0 0 0 rem(1) $blue-alt-light inset;
 	outline: rem(3) double $blue-alt-light;
