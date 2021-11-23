@@ -1,6 +1,10 @@
 {
   "resourceTags": [
     {
+      "value": "assistiveTechnology",
+      "label": "Assistive Technology"
+    },
+    {
       "value": "basicAI",
       "label": "Basic AI"
     },
