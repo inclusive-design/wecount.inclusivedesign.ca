@@ -26,6 +26,7 @@ learnTags:
   - dataTools
   - methods
   - machineLearning
+  - disability
 summary: "The Base SAS 9.4 windowing environment is a graphical user interface
   that enables SAS programmers to write SAS programs that analyze data, run
   those programs, and view the output.  "
