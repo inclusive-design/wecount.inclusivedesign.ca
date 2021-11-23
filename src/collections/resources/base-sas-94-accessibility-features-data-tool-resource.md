@@ -4,7 +4,7 @@ focus: Tool
 source: SAS Institute
 readability:
   - Expert
-type: Data Tool Resource
+type: Website Resource
 toolPurpose:
   - Create Content
 toolAccessibilityIssues:
