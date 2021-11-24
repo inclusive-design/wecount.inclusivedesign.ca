@@ -163,13 +163,13 @@ new Vue({
 					results = processResourcesDisplayResults(results);
 				}
 
-				let tagsQuery = selectedTags.map(tag => "t_" + tag).join("=on&") +
-					selectedCategories.map(cat => "c_" + cat).join("=on&") +
-					selectedTypes.map(type => "t_" + type).join("=on&") + "=on";
+				let filterQuery = selectedCategories.map(cat => "c_" + cat).join("=on&") + "&" +
+					selectedTags.map(tag => "t_" + tag).join("=on&") + "&" +
+					selectedTypes.map(type => "m_" + type).join("=on&") + "=on";
 
 				// Paginate search results
 				if (results.length > pageSize) {
-					pagination = createPagination(results, pageSize, pageInQuery, "/resources/?s=" + searchTerm + "&" + tagsQuery + "&page=:page");
+					pagination = createPagination(results, pageSize, pageInQuery, "/resources/?s=" + searchTerm + "&" + filterQuery + "&page=:page");
 				}
 
 				// add checked states for tags, categories and media types
