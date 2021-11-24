@@ -47,7 +47,7 @@
 <article class="resource-detail">
   <h1>{{ title | replace("<", "&lt;") | safe }}</h1>
   <div class="api-content">
-      {{ content | replace("<", "&lt;") | safe }}
+      {{ content | safe }}
 
       <div class="features">
           <svg><use xlink:href="#focus" /></svg>
