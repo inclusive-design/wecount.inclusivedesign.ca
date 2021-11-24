@@ -163,9 +163,12 @@ new Vue({
 					results = processResourcesDisplayResults(results);
 				}
 
-				let filterQuery = selectedCategories.map(cat => "c_" + cat).join("=on&") + "&" +
-					selectedTags.map(tag => "t_" + tag).join("=on&") + "&" +
-					selectedTypes.map(type => "m_" + type).join("=on&") + "=on";
+				// the "filter" call is to ignore empty query strings
+				let filterQuery = [
+					selectedCategories.map(cat => "c_" + cat + "=on").join("&"),
+					selectedTags.map(tag => "t_" + tag + "=on").join("&"),
+					selectedTypes.map(type => "m_" + type + "=on").join("&")
+				].filter(query => query).join("&");
 
 				// Paginate search results
 				if (results.length > pageSize) {
