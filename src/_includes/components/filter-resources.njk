@@ -14,18 +14,7 @@
         <li>
           <div class="topic-title {{ category.categoryId }}">
             <span id="{{ "title_" + categoryId }}">{{ category.categoryLabel }}</span>
-            <svg>
-              {# TODO: make this mapping configurable in the CMS #}
-              {% if category.categoryId === "aiAndDisability" %}
-                <use xlink:href="#topic-ai-and-disability" />
-              {% elif category.categoryId === "dataScience" %}
-                <use xlink:href="#topic-work-for-pwd-in-data-science" />
-              {% elif category.categoryId === "aiEthics" %}
-                <use xlink:href="#topic-ai-fairness-ethics-and-policy" />
-              {% elif category.categoryId === "designAndMethods" %}
-                <use xlink:href="#topic-technical-information" />
-              {% endif %}
-            </svg>
+            <svg><use xlink:href="#{{ category.categoryId }}" /></svg>
           </div>
           <div class="topic-checkbox">
             <input class="filter-checkbox" aria-labelledby="{{ "title_" + categoryId }}" type="checkbox" id="{{ categoryId }}" name="{{ 'c_' + category.categoryId }}">

@@ -39,16 +39,16 @@ pagination:
     <symbol id="topics" viewBox="0 0 15 15">
       {% include 'svg/topics.svg' %}
     </symbol>
-    <symbol id="topic-ai-and-disability" viewBox="0 0 117 103">
+    <symbol id="aiAndDisability" viewBox="0 0 117 103">
       {% include 'svg/topic-ai-and-disability.svg' %}
     </symbol>
-    <symbol id="topic-ai-fairness-ethics-and-policy" viewBox="0 0 107 99">
+    <symbol id="aiEthics" viewBox="0 0 107 99">
       {% include 'svg/topic-ai-fairness-ethics-and-policy.svg' %}
     </symbol>
-    <symbol id="topic-technical-information" viewBox="0 0 112 104">
+    <symbol id="designAndMethods" viewBox="0 0 112 104">
       {% include 'svg/topic-technical-information.svg' %}
     </symbol>
-    <symbol id="topic-work-for-pwd-in-data-science" viewBox="0 0 101 99">
+    <symbol id="dataScience" viewBox="0 0 101 99">
       {% include 'svg/topic-work-for-pwd-in-data-science.svg' %}
     </symbol>
   </svg>
@@ -126,12 +126,7 @@ pagination:
               <li v-for="category in resourceCategories">
                 <div class="topic-title" :class="category.categoryId">
                   <span :id="'title_' + category.categoryId">{{ '{{ category.categoryLabel }}' }}</span>
-                  <svg>
-                    <use v-if="category.categoryId === 'aiAndDisability'" xlink:href="#topic-ai-and-disability" />
-                    <use v-else-if="category.categoryId === 'dataScience'" xlink:href="#topic-work-for-pwd-in-data-science" />
-                    <use v-else-if="category.categoryId === 'aiEthics'" xlink:href="#topic-ai-fairness-ethics-and-policy" />
-                    <use v-else-if="category.categoryId === 'designAndMethods'" xlink:href="#topic-technical-information" />
-                  </svg>
+                  <svg><use :xlink:href="'#' + category.categoryId" /></svg>
                 </div>
                 <div class="topic-checkbox">
                   <input class="filter-checkbox" :aria-labelledby="'title_' + category.categoryId" type="checkbox" v-model="category.checked" :id="category.categoryId" :name="'c_' + category.categoryId">
