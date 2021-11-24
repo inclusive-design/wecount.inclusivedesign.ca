@@ -16,16 +16,6 @@ permalink: resourceData.json
         {%- endfor -%}
       ],
       "type": {{ item.data.type | dump | safe }},
-      "toolPurpose": [
-        {%- for purpose in item.data.toolPurpose -%}
-        {{ purpose | dump | safe }}{% if not loop.last %},{% endif %}
-        {%- endfor -%}
-      ],
-      "toolAccessibilityIssues": [
-        {%- for issue in item.data.toolAccessibilityIssues -%}
-        {{ issue | dump | safe }}{% if not loop.last %},{% endif %}
-        {%- endfor -%}
-      ],
       "openSource": {{ item.data.openSource | dump | safe }},
       "link": {% if item.data.link -%} {{- item.data.link | dump | safe -}} {%- else -%} "" {%- endif %},
       "keywords": [

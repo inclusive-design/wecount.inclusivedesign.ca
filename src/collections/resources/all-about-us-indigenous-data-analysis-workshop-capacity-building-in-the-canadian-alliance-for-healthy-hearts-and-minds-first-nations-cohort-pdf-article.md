@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "Canadian Journal of Cardiology"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/All%20about%20us_Indigenous%20Data%20Analysis%20Workshop.pdf"
 keywords: []

@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Ethics and Information Technology Journal"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Society%20in%20the%20loop%20Programming%20the%20algorithmic%20social%20contract.pdf"
 keywords: ["Ethics ","Artificial intelligence","Society","Governance","Regulation"]

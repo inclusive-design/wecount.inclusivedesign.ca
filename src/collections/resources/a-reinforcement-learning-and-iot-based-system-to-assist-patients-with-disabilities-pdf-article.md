@@ -4,8 +4,6 @@ focus: "AI and Disability/Outliers"
 source: "AI4EIoTs 2020"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/A%20Reinforcement%20Learning%20and%20IoT%20based%20System%20to%20Assist%20Patients%20with%20Disabilities.pdf"
 keywords: ["Artificial Intelligence","Disability","Healthcare","IoT","Pill Reminder","Reinforcement Learning."]

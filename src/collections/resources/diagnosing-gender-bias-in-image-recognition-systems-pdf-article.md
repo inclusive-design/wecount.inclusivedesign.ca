@@ -4,8 +4,6 @@ focus: "Bias"
 source: "SOCIUS"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Diagnosing%20Gender%20Bias%20in%20Image%20Recognition%20Systems.pdf?csf=1&web=1&e=A64Ntq"
 link: "https://journals.sagepub.com/doi/pdf/10.1177/2378023120967171"

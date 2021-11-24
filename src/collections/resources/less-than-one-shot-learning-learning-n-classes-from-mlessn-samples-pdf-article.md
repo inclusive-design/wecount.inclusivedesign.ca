@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "University of Waterloo"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/'Less%20Than%20One'-Shot%20Learning.pdf"
 keywords: []

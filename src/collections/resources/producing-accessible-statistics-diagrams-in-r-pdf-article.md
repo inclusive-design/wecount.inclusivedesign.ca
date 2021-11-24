@@ -4,8 +4,6 @@ focus: "Tool"
 source: "W4A 2017"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: ["Create Accessible Content"]
-toolAccessibilityIssues: ["Screen Reader"]
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Producing%20Accessible%20Statistics%20Diagrams%20in%20R.pdf?csf=1&web=1&e=nPpcqO"
 keywords: ["Human-centered computing","Accessibility technologies","STEM Accessibility","accessible diagrams","Statistics"]

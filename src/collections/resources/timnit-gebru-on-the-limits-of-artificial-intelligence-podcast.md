@@ -4,8 +4,6 @@ focus: "Bias"
 source: "Good Code Podcast"
 readability: ["Intermediate"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://soundcloud.com/chine-labbe/timnit-gebru-on-the-limits-of"
 keywords: []

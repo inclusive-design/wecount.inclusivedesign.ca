@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "CSCW 2019"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/WeBuildAI_Participatory%20Framework%20for%20Algorithmic%20Governance.pdf"
 keywords: ["participatory algorithm design","collective participation","human-centered AI","matching algorithm","algorithmic fairness"]

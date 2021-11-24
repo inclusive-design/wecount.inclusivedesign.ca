@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "ICML 2020"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/AutoML-Zero_Evolving%20Machine%20Learning%20Algorithms%20from%20Scratch.pdf"
 keywords: []

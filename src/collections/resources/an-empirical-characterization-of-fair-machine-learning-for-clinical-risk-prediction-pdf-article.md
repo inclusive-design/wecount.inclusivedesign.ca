@@ -4,8 +4,6 @@ focus: "Bias"
 source: " Journal of Biomedical Informatics"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/An%20Empirical%20Characterization%20of%20Fair%20Machine%20Learning%20For%20Clinical%20Risk%20Prediction.pdf?csf=1&web=1&e=Y1fKOs"
 keywords: []
@@ -28,4 +26,3 @@ to reason about the mechanisms that lead to health disparities, as well as about
 fairness methods to counteract those mechanisms. In light of these limitations, we encourage researchers
 building predictive models for clinical use to step outside the algorithmic fairness frame and engage critically
 with the broader sociotechnical context surrounding the use of machine learning in healthcare.
-

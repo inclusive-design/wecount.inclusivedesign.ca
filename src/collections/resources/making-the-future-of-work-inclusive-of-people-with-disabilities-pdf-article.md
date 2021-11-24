@@ -4,8 +4,6 @@ focus: "Employment"
 source: "Fundación ONCE and the ILO Global Business and Disability Network"
 readability: ["Beginner"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Making%20the%20future%20of%20work%20inclusive%20of%20people%20with%20disabilities.pdf"
 keywords: []

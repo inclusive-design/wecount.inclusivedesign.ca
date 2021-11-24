@@ -4,8 +4,6 @@ focus: "Data Set"
 source: "U.S. Federal Trade Commission"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Data%20Broker%20Report.pdf"
 keywords: []

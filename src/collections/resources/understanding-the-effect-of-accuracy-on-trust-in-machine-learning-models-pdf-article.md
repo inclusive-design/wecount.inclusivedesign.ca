@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "CHI 2019"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Understanding%20the%20Effect%20of%20Accuracy%20on%20Trust%20in%20Machine%20Learning%20Models.pdf"
 keywords: ["Machine learning","trust","human-subject experiments"]

@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Applied Artificial Intelligence"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/An%20Ethics%20Evaluation%20Tool%20for%20Automating%20Ethical%20Decision%20Making%20in%20Robots%20and%20Self%20Driving%20Cars.pdf"
 keywords: []

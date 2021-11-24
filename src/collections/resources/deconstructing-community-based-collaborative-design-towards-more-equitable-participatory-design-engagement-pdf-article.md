@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "CSCW 2019"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Deconstructing%20Community-Based%20Collaborative%20Design_Towards%20More%20Equitable%20Participatory%20Design%20Engagements.pdf"
 keywords: ["Design workshops","community-based participatory design","social action research","design equity"]

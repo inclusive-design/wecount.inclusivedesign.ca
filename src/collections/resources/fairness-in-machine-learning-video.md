@@ -5,8 +5,6 @@ source: NIPS 2017
 readability:
   - Intermediate
 type: Video
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: https://vimeo.com/248490141
 keywords: []

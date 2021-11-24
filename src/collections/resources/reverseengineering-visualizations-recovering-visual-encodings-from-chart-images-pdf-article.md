@@ -4,8 +4,6 @@ focus: "Tool"
 source: "EuroVis 2017"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: ["Create Accessible Content"]
-toolAccessibilityIssues: ["NVDA"]
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Reverse-Engineering%20Visualizations.pdf?csf=1&web=1&e=ZMdt84"
 keywords: []

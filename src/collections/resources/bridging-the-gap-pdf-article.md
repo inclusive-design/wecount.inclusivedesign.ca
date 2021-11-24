@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "AI and Ethics"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Bridging%20the%20Gap.pdf?csf=1&web=1&e=jzg7aK"
 keywords: ["Artificial intelligence","AI","Artificial intelligence policy","Long term","Short term","Artificial intelligence ethics","\nCooperation models","Incompletely theorized agreement","Overlapping consensus"]

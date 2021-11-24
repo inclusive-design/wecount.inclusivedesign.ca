@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Springer Philosophy and Technology Journal"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Fair,%20Transparent,%20and%20Accountable%20Algorithmic%20Decision-Making%20Processes.pdf"
 keywords: ["algorithmic decision-making","  algorithmic transparency","  fairness","accountability"," social good"]

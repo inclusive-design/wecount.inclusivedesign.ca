@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "ICML 2018"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Delayed%20Impact%20of%20Fair%20Machine%20Learning.pdf"
 keywords: []

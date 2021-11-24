@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Knowledge@Wharton"
 readability: ["Intermediate"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://knowledge.wharton.upenn.edu/article/who-is-responsible-for-biased-and-intrusive-algorithms/"
 keywords: []

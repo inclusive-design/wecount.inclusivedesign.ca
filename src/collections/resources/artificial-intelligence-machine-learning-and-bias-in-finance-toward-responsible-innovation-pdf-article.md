@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Fordham Law Review"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Artificial%20intelligence,%20machine%20learning,%20and%20bias%20in%20finance_Toward%20responsible%20innovation.pdf"
 keywords: []

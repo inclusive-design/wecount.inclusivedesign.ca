@@ -6,8 +6,6 @@ source: ACM ASSETS 2019
 readability:
   - Expert
 type: PDF Article
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Artificial%20Intelligence%20Fairness%20in%20the%20Context%20of%20Accessibility%20Research%20on%20Intelligent%20Systems%20for%20People%20who%20are%20Deaf%20or%20Hard%20of%20Hearing.pdf
 keywords:

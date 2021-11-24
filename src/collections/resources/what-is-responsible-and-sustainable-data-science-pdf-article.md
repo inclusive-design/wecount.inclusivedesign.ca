@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Big Data and Society"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/What%20is%20responsible%20and%20sustainable%20data%20science.pdf"
 keywords: ["Commons","health","responsibility","ethics","privacy","data protection"]

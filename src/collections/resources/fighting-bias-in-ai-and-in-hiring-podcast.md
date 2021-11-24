@@ -4,8 +4,6 @@ focus: "Employment"
 source: "Practical AI "
 readability: ["Beginner"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://changelog.com/practicalai/17"
 keywords: []

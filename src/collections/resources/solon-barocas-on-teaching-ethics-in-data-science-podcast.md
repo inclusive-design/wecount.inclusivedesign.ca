@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "Good Code Podcast"
 readability: ["Intermediate"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://soundcloud.com/chine-labbe/solon-barocas-on-teaching"
 keywords: []

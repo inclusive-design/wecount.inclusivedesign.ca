@@ -4,8 +4,6 @@ focus: "Bias"
 source: "IEEE"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/VR%20Disability%20Simulation%20Reduces%20Implicit%20Bias%20Towards%20Persons%20with%20Disabilities.pdf"
 keywords: ["Virtual Reality","Implicit Association Test","IAT","Bias","Disability Simulation","Immersion","Presence","Learning","InformationRecall","Head-Mounted Display","HMD"]

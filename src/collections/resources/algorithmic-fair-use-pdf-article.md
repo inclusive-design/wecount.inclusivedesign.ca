@@ -4,8 +4,6 @@ focus: "Bias"
 source: "University of Chicago Law Review"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Algorithmic%20Fair%20Use.pdf"
 keywords: []

@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Frontiers in Artificial Intelligence Journal"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/There%20Is%20Hope%20After%20All.pdf"
 keywords: ["artificial intelligence","deep neural networks","machine learning","trust in AI","subjective logic"]

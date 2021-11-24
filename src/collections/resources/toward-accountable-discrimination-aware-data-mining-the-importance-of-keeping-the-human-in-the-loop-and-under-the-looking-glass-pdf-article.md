@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Big Data"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Toward%20Accountable%20Discrimination-Aware%20Data%20Mining_The%20Importance%20of%20Keeping%20the%20Human%20in%20the%20Loop-and%20Under%20the%20Looking%20Glass.pdf"
 keywords: ["Discrimination discovery and prevention","Discrimination-aware and fairness-aware data mining","Accountability","Data protection","Evaluation","User studies"]

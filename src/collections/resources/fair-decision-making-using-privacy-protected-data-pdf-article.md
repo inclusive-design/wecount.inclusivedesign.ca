@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "FAT 2020"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Fair%20decision%20making%20using%20privacy-protected%20data.pdf"
 link: "https://arxiv.org/abs/1905.12744"
