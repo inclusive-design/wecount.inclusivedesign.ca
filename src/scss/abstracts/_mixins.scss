@@ -350,6 +350,11 @@
 					display: none;
 				}
 			}
+
+			// when the topic card gains the hover, apply the hover style to the checkbox
+			&:hover .topic-checkbox span::before {
+				outline: rem(2.5) solid currentColor;
+			}
 		}
 	}
 
