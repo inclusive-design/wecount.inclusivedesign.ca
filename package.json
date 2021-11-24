@@ -6,6 +6,7 @@
   "author": "OCAD University <idrc@ocadu.ca>",
   "contributors": [
     "Cindy Li <cli@ocadu.ca> (https://github.com/cindyli)",
+    "Gregor Moss <gmoss@ocadu.ca> (https://github.com/blueslug)",
     "Justin Obara <jobara@ocadu.ca> (https://github.com/jobara)",
     "Ted Thompson <tthompson@ocadu.ca> (https://github.com/TeddTech)",
     "Ned Zimmerman <nzimmerman@ocadu.ca> (https://github.com/greatislander)"
@@ -19,7 +20,7 @@
     "clean": "rimraf dist",
     "dev": "npm run build:mapDependency && cross-env ELEVENTY_ENV=development eleventy --serve --port=3000",
     "start": "npm-run-all clean start:*",
-    "start:eleventy": "concurrently \"npm run dev\" \"./build-cms.js -w\" \"netlify-cms-proxy-server\"",
+    "start:eleventy": "concurrently \"npm run dev\" \"node ./build-cms.js -w\" \"netlify-cms-proxy-server\"",
     "serve": "npx serve dist",
     "lint:css": "stylelint src/scss/**/*.scss",
     "lint:js": "eslint \"**/*.js\"",

@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "UC Berkeley"
 readability: ["Intermediate"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/inclusive_intelligence_draft_april_2019.pdf"
 keywords: []

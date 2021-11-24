@@ -19,6 +19,7 @@ module.exports = class {
 						"preview.njk",
 						"news.njk",
 						"initiative.njk",
+						"resourceDetail.njk",
 						"grid-item.njk",
 						"\\.svg$"
 					]

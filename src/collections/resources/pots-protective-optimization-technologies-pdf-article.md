@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "FAT 2020"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Protective%20Optimization%20Technologies.pdf"
 keywords: ["Fairness and Accountability","Protective Optimization Technologie"]

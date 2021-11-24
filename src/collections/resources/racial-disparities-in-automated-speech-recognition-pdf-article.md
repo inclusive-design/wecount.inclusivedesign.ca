@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "PNAS"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/racial%20disparities%20in%20automated%20speech%20recognition.pdf"
 keywords: []

@@ -4,8 +4,6 @@ focus: "AI and Disability/Outliers"
 source: "FAT 2020"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Centering%20disability%20perspectives%20in%20algorithmic%20fairness_accountability%20and%20transparency.pdf"
 keywords: ["AI FATE","algorithmic bias","disability studies","accessibility"]

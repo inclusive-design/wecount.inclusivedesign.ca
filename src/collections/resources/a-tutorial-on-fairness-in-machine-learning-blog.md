@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "Towards Data Science"
 readability: ["Expert"]
 type: "Blog"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://towardsdatascience.com/a-tutorial-on-fairness-in-machine-learning-3ff8ba1040cb"
 keywords: []

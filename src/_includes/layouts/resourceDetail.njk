@@ -1,0 +1,110 @@
+{% if previewMode %}
+{% extends 'layouts/preview.njk' %}
+{% else %}
+{% extends 'layouts/base.njk' %}
+{% endif %}
+
+{% set pageTitle = title %}
+{% set pageExcerpt = excerpt %}
+
+{% block content %}
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="accessibility" viewBox="0 0 57 57">
+    {% include 'svg/accessibility.svg' %}
+  </symbol>
+  <symbol id="focus" viewBox="0 0 42 42">
+    {% include 'svg/focus.svg' %}
+  </symbol>
+  <symbol id="keywords" viewBox="0 0 60 57">
+    {% include 'svg/keywords.svg' %}
+  </symbol>
+  <symbol id="learn-tags" viewBox="0 0 69 62">
+    {% include 'svg/learn-tags.svg' %}
+  </symbol>
+  <symbol id="open-source" viewBox="0 0 57 57">
+    {% include 'svg/open-source.svg' %}
+  </symbol>
+  <symbol id="readability-on-detail" viewBox="0 0 57 57">
+    {% include 'svg/readability-on-detail.svg' %}
+  </symbol>
+  <symbol id="share-point-url" viewBox="0 0 48 48">
+    {% include 'svg/share-point-url.svg' %}
+  </symbol>
+  <symbol id="source" viewBox="0 0 48 48">
+    {% include 'svg/source.svg' %}
+  </symbol>
+  <symbol id="summary" viewBox="0 0 62 62">
+    {% include 'svg/summary.svg' %}
+  </symbol>
+  <symbol id="tool-purpose" viewBox="0 0 32 64">
+    {% include 'svg/tool-purpose.svg' %}
+  </symbol>
+  <symbol id="type" viewBox="0 0 62 62">
+    {% include 'svg/type.svg' %}
+  </symbol>
+</svg>
+
+<article class="resource-detail">
+  <h1>{{ title | replace("<", "&lt;") | safe }}</h1>
+  <div class="api-content">
+      {{ content | safe }}
+
+      <div class="features">
+          <svg><use xlink:href="#focus" /></svg>
+          <div><span class="feature-name">Focus:</span> {{ focus | safe }}</div>
+
+          <svg><use xlink:href="#source" /></svg>
+          <div><span class="feature-name">Source:</span> {{ source | replace("<", "&lt;") | safe }}</div>
+
+          <svg><use xlink:href="#readability-on-detail" /></svg>
+          <div><span class="feature-name">Redability:</span>
+              {% if readability.length > 0 %}{{ readability | join(", ") | safe }}{% else %}N/A{% endif %}
+           </div>
+
+          <svg><use xlink:href="#type" /></svg>
+          <div><span class="feature-name">Type:</span> {{ type | safe }}</div>
+
+          <svg><use xlink:href="#open-source" /></svg>
+          <div><span class="feature-name">Open Source:</span>
+              {% if openSource %}Yes{% else %}No{% endif %}
+          </div>
+
+          {% if link %}
+          <svg><use xlink:href="#share-point-url" /></svg>
+          <div><span class="feature-name">External URL:</span><a href="{{ link }}"> {{ link | safe }}</a>
+          </div>
+          {% endif %}
+
+          {% if sharePointUrl %}
+          <svg><use xlink:href="#share-point-url" /></svg>
+          <div><span class="feature-name">SharePoint URL:</span>
+              <a href="{{ sharePointUrl }}">{{ sharePointUrl | safe }}</a>
+          </div>
+          {% endif %}
+
+          <svg><use xlink:href="#keywords" /></svg>
+          <div><span class="feature-name">Keywords:</span>
+              {% if keywords.length > 0 %}{{ keywords | join(", ") | safe }}{% else %}N/A{% endif %}
+          </div>
+
+          <svg><use xlink:href="#learn-tags" /></svg>
+          <div><span class="feature-name">Learn Tags:</span>
+              {% for tag in learnTags %}
+                  {% for resourceTag in resourceTags.resourceTags %}
+                      {% if (tag === resourceTag.value) %}
+                      <span class="learn-tag">{{ resourceTag.label | safe }}</span>
+                      {% endif %}
+                  {% endfor %}
+              {% else %}
+              N/A
+              {% endfor %}
+          </div>
+
+          <svg><use xlink:href="#summary" /></svg>
+          <div><span class="feature-name">Summary:</span>
+              {% if summary and summary !== "" %}{{ summary | replace("<", "&lt;") | safe }}{% else %}N/A{% endif %}
+          </div>
+      </div>
+  </div>
+</article>
+{% endblock %}

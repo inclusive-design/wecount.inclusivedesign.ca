@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "dg.o 2019"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20A.I.%20Pandorica%20_Linking%20Ethically%20Challenged%20Technical%20Outputs%20to%20Prospective%20Policy%20Approaches.pdf"
 keywords: ["Artificial intelligence","ethics","machine learning","algorithmic bias","digital government"]

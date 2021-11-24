@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "NIPS 2017"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Counterfactual%20Fairness.pdf"
 keywords: []

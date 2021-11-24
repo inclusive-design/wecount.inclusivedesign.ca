@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "HICSS 2020"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Toward%20an%20Understanding%20of%20Responsible%20Artificial%20Intelligence%20Practices.pdf"
 link: "https://www.researchgate.net/publication/336149427_Toward_an_Understanding_of_Responsible_Artificial_Intelligence_Practices"

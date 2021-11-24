@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "MICC "
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/A%20Multimodal%20Feature%20Learning%20Approach%20for%20Sentiment%20Analysis.pdf"
 link: "http://www.micc.unifi.it/wp-content/uploads/2015/12/2015-multimodal-feature-learning.pdf"

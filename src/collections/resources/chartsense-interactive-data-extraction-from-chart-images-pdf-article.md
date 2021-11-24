@@ -4,8 +4,6 @@ focus: "Tool"
 source: "CHI 2017"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: ["Consume Content"]
-toolAccessibilityIssues: ["Chart Data Extraction"]
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/ChartSense%20Interactive%20Data%20Extraction%20from%20Chart%20Images.pdf?csf=1&web=1&e=b20IPB"
 keywords: ["Chart recognition","Data extraction","Chart classification,\nDeep learning","Mixed-initiative interaction"]

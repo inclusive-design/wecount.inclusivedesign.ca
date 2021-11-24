@@ -4,8 +4,6 @@ focus: "AI and Disability/Outliers"
 source: "International Journal of STEM Education"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Physics%20Webpages%20Create%20Barriers%20to%20Participation%20for%20People%20with%20Disabilities.pdf?csf=1&web=1&e=0eeClG"
 keywords: ["Accessibility","Webpage accessibility","STEM","Physics Education","Americans with Disabilities Act","Section 508","Disability studies"]

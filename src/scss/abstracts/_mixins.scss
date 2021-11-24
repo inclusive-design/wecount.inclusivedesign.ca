@@ -73,12 +73,14 @@
 	.filter {
 		.filter-checkbox {
 			// Box
-			& + label::before {
+			& + label::before,
+			& + span::before {
 				outline: rem(1) solid $fColor;
 			}
 
 			// Checkmark
-			&:checked + label::after {
+			&:checked + label::after,
+			&:checked + span::after {
 				color: $bColor;
 			}
 		}
@@ -108,37 +110,47 @@
 	}
 
 	// Custom styles when "enhance inputs" is enabled
-	&.fl-input-enhanced .filter-checkbox + label::before {
+	&.fl-input-enhanced .filter-checkbox + label::before,
+	&.fl-input-enhanced .filter-checkbox + span::before {
 		outline: rem(3) double $fColor;
 	}
 
 	// Box checked
-	.filter .filter-checkbox:checked + label::before {
+	.filter .filter-checkbox:checked + label::before,
+	.filter .filter-checkbox:checked + span::before {
 		background: $fColor;
 	}
 
 	// Box focus
 	.filter .filter-checkbox:focus + label::before,
-	.filter .filter-checkbox:hover + label::before {
+	.filter .filter-checkbox:hover + label::before,
+	.filter .filter-checkbox:focus + span::before,
+	.filter .filter-checkbox:hover + span::before {
 		outline: rem(2.5) solid $fColor;
 	}
 
 	// Box focus when "enhance inputs" is enabled
 	&.fl-input-enhanced .filter-checkbox:focus + label::before,
-	&.fl-input-enhanced .filter-checkbox:hover + label::before {
+	&.fl-input-enhanced .filter-checkbox:hover + label::before,
+	&.fl-input-enhanced .filter-checkbox:focus + span::before,
+	&.fl-input-enhanced .filter-checkbox:hover + span::before {
 		border: rem(2.5) solid $fColor;
 		outline: rem(3.5) double $fColor;
 	}
 
 	// Box checked and focus/hover
 	.filter .filter-checkbox:checked:focus + label::before,
-	.filter .filter-checkbox:checked:hover + label::before {
+	.filter .filter-checkbox:checked:hover + label::before,
+	.filter .filter-checkbox:checked:focus + span::before,
+	.filter .filter-checkbox:checked:hover + span::before {
 		outline: rem(3) double $fColor;
 	}
 
 	// Box checked and focus/hover when "enhance inputs" is enabled
 	&.fl-input-enhanced .filter-checkbox:checked:focus + label::before,
-	&.fl-input-enhanced .filter-checkbox:checked:hover + label::before {
+	&.fl-input-enhanced .filter-checkbox:checked:hover + label::before,
+	&.fl-input-enhanced .filter-checkbox:checked:focus + span::before,
+	&.fl-input-enhanced .filter-checkbox:checked:hover + span::before {
 		border: rem(1) solid $bColor;
 		box-shadow: 0 0 0 rem(1) $fColor inset;
 		outline: rem(3) double $fColor;
@@ -315,6 +327,35 @@
 	// Hide ellipsis when a post excerpt is fully displayed
 	.news-grid .api-content .news-item .preview-content::after {
 		background: $bColor;
+	}
+
+	// Resources page: adjust outlines of topic tiles; hide SVGs on topic tiles
+	.resources {
+		.search-container {
+			input {
+				box-shadow: 0 0 0.4375rem currentColor;
+			}
+
+			svg {
+				fill: currentColor;
+			}
+		}
+
+		.filter .topic-choices li {
+			.topic-title {
+				border: 1px solid $fColor;
+				display: block;
+
+				svg {
+					display: none;
+				}
+			}
+
+			// when the topic card gains the hover, apply the hover style to the checkbox
+			&:hover .topic-checkbox span::before {
+				outline: rem(2.5) solid currentColor;
+			}
+		}
 	}
 
 	// UIO table of content

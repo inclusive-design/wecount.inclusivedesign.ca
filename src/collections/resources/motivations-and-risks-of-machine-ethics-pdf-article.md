@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "IEEE"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Motivations%20and%20Risks%20of%20Machine%20Ethics.pdf"
 keywords: ["Ethical alignment","ethical reasoning","machine agency","machine ethics"]

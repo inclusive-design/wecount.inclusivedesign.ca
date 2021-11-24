@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "ICML 2019"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Fair%20Regression-%20Quantitative%20Definitions%20and%20Reduction-Based%20Algorithms.pdf"
 keywords: []

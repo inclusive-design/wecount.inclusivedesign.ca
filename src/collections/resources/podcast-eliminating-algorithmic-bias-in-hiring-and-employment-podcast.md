@@ -4,8 +4,6 @@ focus: "Employment"
 source: "Workology and PEAT"
 readability: ["Beginner"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://peatworks.org/podcast-eliminating-algorithmic-bias-in-hiring-and-employment/"
 keywords: []

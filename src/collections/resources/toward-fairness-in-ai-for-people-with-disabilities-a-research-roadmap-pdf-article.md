@@ -4,8 +4,6 @@ focus: "AI and Disability/Outliers"
 source: "ACM ASSETS 2019 "
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Toward%20Fairness%20in%20AI%20for%20People%20with%20Disabilities-%20%20A%20Research%20Roadmap%20.pdf"
 keywords: ["Artificial intelligence","machine learning","data","disability","accessibility","inclusion","AI fairness","AI bias","ethical AI."]

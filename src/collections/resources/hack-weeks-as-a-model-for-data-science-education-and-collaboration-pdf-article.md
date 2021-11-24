@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "PNAS"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Hack%20weeks%20as%20a%20model%20for%20data%20science%20educaiton%20and%20collaboration.pdf"
 keywords: ["data science","education","interdisciplinary collaboration","reproducibility"]

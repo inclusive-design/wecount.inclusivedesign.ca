@@ -8,7 +8,9 @@ const fs = require("fs");
 const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
+const categoryFromFocusFilter = require("./src/filters/categoryFromFocus.js");
 const dateFilter = require("./src/filters/date.js");
+const getResourceTagLabelFilter = require("./src/filters/getResourceTagLabel.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
 const paginateFilter = require("./src/filters/paginate.js");
@@ -56,7 +58,11 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("resources", collection => {
 		return [
-			...collection.getFilteredByGlob("src/collections/resources/*.md")
+			...collection.getFilteredByGlob("src/collections/resources/*.md").sort((a, b) => a.data.title.localeCompare(b.data.title, undefined, {
+				ignorePunctuation: "true",
+				sensitivity: "base",
+				usage: "sort"
+			}))
 		];
 	});
 
@@ -126,7 +132,9 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Add filters.
+	eleventyConfig.addFilter("categoryFromFocus", categoryFromFocusFilter);
 	eleventyConfig.addFilter("dateFilter", dateFilter);
+	eleventyConfig.addFilter("getResourceTagLabel", getResourceTagLabelFilter);
 	eleventyConfig.addFilter("htmlSymbolFilter", htmlSymbolFilter);
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);

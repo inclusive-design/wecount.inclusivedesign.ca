@@ -1,0 +1,7 @@
+  <div class="filter-header">
+    <h3>{{ filterTitle }}</h3>
+    <button type="button" class="filter-expand-button" data-section="{{ filterType | replace(" ", "") }}" aria-expanded={% if filterType === "topics" %}"true"{% else %}"false"{% endif %} aria-label="expand or collapse the {{ filterType }} filter">
+      <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
+      <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
+    </button>
+  </div>

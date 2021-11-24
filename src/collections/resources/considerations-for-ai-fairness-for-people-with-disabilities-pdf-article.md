@@ -4,8 +4,6 @@ focus: "AI and Disability/Outliers"
 source: "AI Matters"
 readability: ["Intermediate"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Considerations%20for%20AI%20fairness%20for%20people%20with%20disabilities.pdf"
 keywords: []

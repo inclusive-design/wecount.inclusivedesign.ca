@@ -4,8 +4,6 @@ focus: "Bias"
 source: "2020 NeurIPS"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Biased%20Programmers%20Or%20Biased%20Data%20A%20Field%20Experiment%20in%20Operationalizing%20AI%20Ethics.pdf"
 keywords: []

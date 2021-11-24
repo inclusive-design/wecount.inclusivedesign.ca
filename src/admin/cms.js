@@ -11,6 +11,7 @@ import w3DateFilter from "../filters/w3-date";
 import expanderShortcode from "../shortcodes/expander.js";
 import imageAndTextShortcode from "../shortcodes/image-and-text.js";
 import getId from "../utils/extract-youtube-id.js";
+import globalResourceTags from "../_data/resourceTags.json";
 
 const env = nunjucks.configure();
 
@@ -21,8 +22,9 @@ env.addFilter("randomizeFilter", randomizeFilter);
 env.addFilter("slug", slugFilter);
 env.addFilter("w3DateFilter", w3DateFilter);
 
-const NunjucksPreview = ({ entry, path, context }) => {
-	const data = context(entry.get("data").toJS(), entry);
+const NunjucksPreview = ({ entry, path, context, globalData }) => {
+	const entryData = context(entry.get("data").toJS(), entry);
+	const data = {...entryData, ...globalData};
 	const html = env.render(path, data);
 	return <div dangerouslySetInnerHTML={{ __html: html }} />;
 };
@@ -30,7 +32,8 @@ const NunjucksPreview = ({ entry, path, context }) => {
 NunjucksPreview.propTypes = {
 	entry: PropTypes.object.isRequired,
 	path: PropTypes.string.isRequired,
-	context: PropTypes.func.isRequired
+	context: PropTypes.func.isRequired,
+	globalData: PropTypes.object
 };
 
 CMS.registerPreviewStyle("/css/main.css");
@@ -136,10 +139,40 @@ Initative.propTypes = {
 	getAsset: PropTypes.object.isRequired
 };
 
+const resourceTags = {resourceTags: globalResourceTags};
+
+const Resources = ({ entry }) => {
+	return <NunjucksPreview
+		entry={entry}
+		path="layouts/resourceDetail.njk"
+		context={({title, focus, source, readability, type, openSource, link, sharePointUrl, keywords, learnTags, summary, body }) => ({
+			previewMode: true,
+			title,
+			focus,
+			source,
+			readability,
+			type,
+			openSource,
+			link,
+			sharePointUrl,
+			keywords,
+			learnTags,
+			summary,
+			content: markdownFilter(body || "")
+		})}
+		globalData={resourceTags}
+	/>;
+};
+
+Resources.propTypes = {
+	entry: PropTypes.object.isRequired
+};
+
 CMS.registerPreviewTemplate("pages", Page);
 CMS.registerPreviewTemplate("news", News);
 CMS.registerPreviewTemplate("views", Views);
 CMS.registerPreviewTemplate("initiatives", Initative);
+CMS.registerPreviewTemplate("resources", Resources);
 
 CMS.registerWidget("uuid", UuidControl, UuidPreview);
 CMS.registerEditorComponent({

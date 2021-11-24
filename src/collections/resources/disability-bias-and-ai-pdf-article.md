@@ -4,8 +4,6 @@ focus: "AI and Disability/Outliers"
 source: "AI Now Institute"
 readability: ["Intermediate"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Disability,%20bias,%20AI.pdf"
 keywords: []

@@ -4,8 +4,6 @@ focus: "AI and Disability/Outliers"
 source: "Auburn University"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Accessible%20Computer%20Science%20for%20K-12%20Students%20with%20Disabilities.pdf?csf=1&web=1&e=RzFFmB"
 keywords: ["Accessibility","K-12 Education","Block-Based Programming"]

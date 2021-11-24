@@ -4,12 +4,9 @@ focus: "AI Ethics/Policy"
 source: "Concordia University"
 readability: ["Intermediate"]
 type: "Website Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://www.concordia.ca/news/stories/2019/04/30/concordias-jason-lewis-wants-ethical-artificial-intelligence-with-an-indigenous-worldview.html"
 keywords: []
 learnTags: ["bias","methods","ethics","fairness","framework","trust"]
 summary: "A look at the activities of Jason Lewis, the Initiative for Indigenous Futures (IIF) and the Indigenous Epistemology and AI Working Group. "
 ---
-

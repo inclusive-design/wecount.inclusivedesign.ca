@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "Overcast"
 readability: ["Intermediate"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://overcast.fm/itunes1406537385/practical-ai-machine-learning-data-science"
 keywords: []

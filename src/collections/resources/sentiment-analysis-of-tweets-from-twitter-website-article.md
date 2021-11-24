@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "MICC"
 readability: ["Expert"]
 type: "Website Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://www.micc.unifi.it/projects/advanced-web-applications/sentiment-analysis-of-tweets-from-twitter/"
 keywords: []

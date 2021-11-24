@@ -21,7 +21,7 @@
 	margin-top: rem(50);
 
 	p:first-child {
-		color: $grey-light;
+		color: $grey-mid;
 	}
 
 	.comment-name {
@@ -30,10 +30,10 @@
 	}
 
 	.submitted-comment {
-		color: $grey-light;
+		color: $grey-mid;
 
 		.comment-name {
-			color: $grey-light;
+			color: $grey-mid;
 		}
 	}
 
@@ -74,7 +74,7 @@
 	margin-bottom: rem(150);
 
 	.asterisk-def {
-		color: $grey-light;
+		color: $grey-mid;
 		display: inline;
 		font-size: rem(20);
 	}

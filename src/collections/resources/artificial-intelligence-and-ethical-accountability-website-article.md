@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "EDUCAUSE"
 readability: ["Beginner"]
 type: "Website Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://er.educause.edu/blogs/2020/7/artificial-intelligence-and-ethical-accountability"
 keywords: []

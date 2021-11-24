@@ -4,8 +4,6 @@ focus: "AI and Disability/Outliers"
 source: "NOVA"
 readability: ["Intermediate"]
 type: "Website Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 link: "https://www.pbs.org/wgbh/nova/article/people-with-disabilities-use-ai-to-improve-their-lives/"
 keywords: []
