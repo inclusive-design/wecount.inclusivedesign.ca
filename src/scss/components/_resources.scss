@@ -163,6 +163,11 @@
 				min-width: 100%;
 				text-align: center;
 
+				// when the topic card gains the hover, apply the hover style to the checkbox
+				&:hover .topic-checkbox span::before {
+					outline: rem(2.5) solid $blue-alt-light;
+				}
+
 				svg {
 					height: rem(80);
 					width: 100%;
@@ -190,11 +195,6 @@
 					background: $white;
 					border: 1px solid $blue-alt-light;
 					border-radius: 0 0 $topic-title-border-radius $topic-title-border-radius;
-
-					// when the topic checkbox bar gains the hover, apply the hover style to the checkbox
-					&:hover span::before {
-						outline: rem(2.5) solid $blue-alt-light;
-					}
 
 					.filter-checkbox + label,
 					.filter-checkbox + span {
