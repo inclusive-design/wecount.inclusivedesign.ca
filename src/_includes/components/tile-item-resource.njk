@@ -1,7 +1,7 @@
 <a href="{{ tileURL }}">
   <div class="tile-item">
     <div class="tile-resource">
-      <h2 class="h3">{{ title | safe }}</h2>
+      <h2 class="h3">{{ title | replace("<", "&lt;") | safe }}</h2>
       {# TODO: localize these items/labels #}
       <div class="info">
         <svg aria-hidden="true"><use xlink:href="#media-type" /></svg>
