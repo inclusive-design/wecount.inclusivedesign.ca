@@ -163,6 +163,11 @@
 				min-width: 100%;
 				text-align: center;
 
+				// when the topic card gains the hover, apply the hover style to the checkbox
+				&:hover .topic-checkbox span::before {
+					outline: rem(2.5) solid $blue-alt-light;
+				}
+
 				svg {
 					height: rem(80);
 					width: 100%;
@@ -191,7 +196,8 @@
 					border: 1px solid $blue-alt-light;
 					border-radius: 0 0 $topic-title-border-radius $topic-title-border-radius;
 
-					.filter-checkbox + label {
+					.filter-checkbox + label,
+					.filter-checkbox + span {
 						// The same "border-radius" needs to be applied to the inner container for border
 						// curves displayed properly on the outer container
 						border-radius: 0 0 $topic-title-border-radius $topic-title-border-radius;
@@ -204,7 +210,8 @@
 						}
 					}
 
-					.filter-checkbox:checked + label::after {
+					.filter-checkbox:checked + label::after,
+					.filter-checkbox:checked + span::after {
 						left: 50%;
 						margin-left: rem(-7);
 					}
