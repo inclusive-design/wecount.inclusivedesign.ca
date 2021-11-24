@@ -121,7 +121,6 @@ new Vue({
 		resultsToDisplay: [],
 		pagination: null,
 		resourceCategories: [],
-		resourceReadabilityLevels: [],
 		resourceTypes: [],
 		numOfUpdated: 0
 	},
@@ -139,7 +138,6 @@ new Vue({
 			).then(function (response) {
 				// Set up lookup arrays
 				vm.resourceCategories = response.data.resourceCategories;
-				vm.resourceReadabilityLevels = response.data.resourceReadabilityLevels;
 				vm.resourceTypes = response.data.resourceTypes;
 
 				// Search

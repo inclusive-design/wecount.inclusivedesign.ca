@@ -3,7 +3,6 @@ permalink: resourceData.json
 ---
 {
   "resourceCategories": {{ resourceCategories.resourceCategories | dump | safe }},
-  "resourceReadabilityLevels": {{ resourceReadabilityLevels | dump | safe }},
   "resources": [
   {%- for item in collections.resources %}
     {
