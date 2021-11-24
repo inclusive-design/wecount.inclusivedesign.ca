@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Humane AI Net"
 readability: ["Beginner","Intermediate","Expert"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://www.humane-ai.eu/"
 keywords: []

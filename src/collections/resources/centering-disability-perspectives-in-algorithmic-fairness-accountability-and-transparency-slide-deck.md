@@ -6,8 +6,6 @@ source: FAT 2020
 readability:
   - Beginner
 type: Slide Deck
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: https://www.slideshare.net/merriejune/centering-disability-perspectives-in-algorithmic-fairness-accountability-transparency-226143105
 keywords: []

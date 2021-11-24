@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "Ethics and Information Technology Journal"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Embedded%20ethics%20some%20technical%20and%20ethical%20challenges.pdf"
 keywords: ["Ethical dilemma","Ethical framework","Autonomous machines","Judgement","Subjectivity"]

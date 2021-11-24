@@ -4,8 +4,6 @@ focus: "Employment"
 source: "FAT 2020"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/What%20does%20it%20mean%20to%E2%80%98solve%20the%20problem%20of%20discrimination%20in%20hiring.pdf"
 keywords: ["Socio-technical systems","automated hiring","algorithmic decisionmaking","fairness","discrimination","GDPR","social justice"]

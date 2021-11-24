@@ -5,8 +5,6 @@ source: We Count
 readability:
   - Intermediate
 type: Slide Deck
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/_layouts/15/Doc.aspx?OR=teams&action=edit&sourcedoc={90300DEE-FDA4-497F-9926-E736FDD008D4}
 keywords: []

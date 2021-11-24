@@ -200,26 +200,6 @@ collections:
         value_field: resourceTypes.*.value
         display_fields: [resourceTypes.*.value]
         search_fields: [resourceTypes.*.value]
-      - label: "Tool Purpose"
-        name: "toolPurpose"
-        widget: relation
-        multiple: true
-        required: false
-        collection: resourceMetadata
-        file: toolPurposes
-        value_field: toolPurposes.*.value
-        display_fields: [toolPurposes.*.value]
-        search_fields: [toolPurposes.*.value]
-      - label: "Tool Accessibility Issues"
-        name: "toolAccessibilityIssues"
-        widget: relation
-        multiple: true
-        required: false
-        collection: resourceMetadata
-        file: toolAccessibilityIssues
-        value_field: toolAccessibilityIssues.*.value
-        display_fields: [toolAccessibilityIssues.*.value]
-        search_fields: [toolAccessibilityIssues.*.value]
       - label: Open Source
         name: openSource
         widget: boolean
@@ -289,36 +269,6 @@ collections:
           - label: "Focuses"
             label_singular: "Focus"
             name: "resourceFocuses"
-            widget: "list"
-            summary: "{{fields.value}}"
-            fields:
-              - label: "Value"
-                name: "value"
-                widget: "string"
-      - label: Tool Purposes
-        name: toolPurposes
-        file: "src/_data/toolPurposes.json"
-        editor:
-          preview: false
-        fields:
-          - label: "Tool Purposes"
-            label_singular: "Tool Purpose"
-            name: "toolPurposes"
-            widget: "list"
-            summary: "{{fields.value}}"
-            fields:
-              - label: "Value"
-                name: "value"
-                widget: "string"
-      - label: "Tool Accessibility Issues"
-        name: toolAccessibilityIssues
-        file: "src/_data/toolAccessibilityIssues.json"
-        editor:
-          preview: false
-        fields:
-          - label: "Tool Accessibility Issues"
-            label_singular: "Accessibility Issue"
-            name: "toolAccessibilityIssues"
             widget: "list"
             summary: "{{fields.value}}"
             fields:

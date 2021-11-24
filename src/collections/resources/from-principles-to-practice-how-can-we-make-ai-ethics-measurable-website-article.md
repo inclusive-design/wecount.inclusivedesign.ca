@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Ethics of Algorithms"
 readability: ["Intermediate"]
 type: "Website Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/from%20principles%20to%20practise.pdf"
 link: "https://ethicsofalgorithms.org/2020/04/02/from-principles-to-practice-how-can-we-make-ai-ethics-measurable/"

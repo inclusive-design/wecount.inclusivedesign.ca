@@ -4,8 +4,6 @@ focus: "Bias"
 source: "FAT 2020"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Interventions%20for%20Ranking%20in%20the%20Presence%20of%20Implicit%20Bias.pdf"
 keywords: []

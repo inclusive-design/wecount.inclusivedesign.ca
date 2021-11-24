@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "Knowledge and Information Systems Journal"
 readability: ["Intermediate"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Toward%20proactive%20social%20inclusion%20powered%20by%20machine%20learning.pdf"
 keywords: ["social exclusion","social services","data analysis","machine learning","data mining"]

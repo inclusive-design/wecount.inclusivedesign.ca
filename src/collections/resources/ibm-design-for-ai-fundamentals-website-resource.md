@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "IBM"
 readability: ["Beginner"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://www.ibm.com/design/ai/basics/ai"
 keywords: []

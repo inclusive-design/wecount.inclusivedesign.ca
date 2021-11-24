@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "Google"
 readability: ["Beginner","Intermediate","Expert"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://pair.withgoogle.com/"
 keywords: []

@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "Elements of AI"
 readability: ["Beginner"]
 type: "Online Learning (MOOC)"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://www.elementsofai.com/"
 keywords: []

@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "arXiv"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Manipulating%20and%20Measuring%20Model%20Interpretability.pdf"
 keywords: []

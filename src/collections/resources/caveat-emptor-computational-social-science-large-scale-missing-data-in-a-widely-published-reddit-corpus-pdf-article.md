@@ -4,8 +4,6 @@ focus: "Data Set"
 source: "PLOS ONE"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Caveat%20emptor,%20computational%20social%20science.pdf"
 keywords: []

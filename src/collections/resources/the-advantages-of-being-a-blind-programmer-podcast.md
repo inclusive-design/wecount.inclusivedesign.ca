@@ -4,8 +4,6 @@ focus: "AI and Disability/Outliers"
 source: "Changelog "
 readability: ["Beginner"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://changelog.com/podcast/206"
 keywords: []

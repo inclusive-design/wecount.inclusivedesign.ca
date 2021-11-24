@@ -64,16 +64,6 @@
           <svg><use xlink:href="#type" /></svg>
           <div><span class="feature-name">Type:</span> {{ type | safe }}</div>
 
-          <svg><use xlink:href="#tool-purpose" /></svg>
-          <div><span class="feature-name">Tool Purpose:</span>
-              {% if toolPurpose.length > 0 %}{{ toolPurpose | join(", ") | safe }}{% else %}N/A{% endif %}
-          </div>
-
-          <svg><use xlink:href="#accessibility" /></svg>
-          <div><span class="feature-name">Tool Accessibility Issues:</span>
-              {% if toolAccessibilityIssues.length > 0 %}{{ toolAccessibilityIssues | join(", ") | safe }}{% else %}N/A{% endif %}
-          </div>
-
           <svg><use xlink:href="#open-source" /></svg>
           <div><span class="feature-name">Open Source:</span>
               {% if openSource %}Yes{% else %}No{% endif %}

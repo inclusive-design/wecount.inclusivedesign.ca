@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Open Transcripts"
 readability: ["Intermediate"]
 type: "Video with Transcript"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 link: "http://opentranscripts.org/transcript/automating-inequality/"
 keywords: []

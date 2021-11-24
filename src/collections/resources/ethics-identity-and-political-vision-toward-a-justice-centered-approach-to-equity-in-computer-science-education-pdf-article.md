@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "Harvard Educational Review"
 readability: ["Intermediate"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Ethics,%20identity,%20and%20political%20vision_toward%20a%20justice-centered%20approach%20to%20equity%20in%20computer%20science%20education.pdf"
 keywords: ["computer science education","critical theory","STEM education","ethics","sociocultural theory"]

@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Open Access Government"
 readability: ["Intermediate"]
 type: "Website Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://www.openaccessgovernment.org/artificial-intelligence-in-the-workplace/84208/"
 keywords: []

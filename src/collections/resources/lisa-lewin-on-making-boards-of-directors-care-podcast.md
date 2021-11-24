@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Good Code Podcast"
 readability: ["Intermediate"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://soundcloud.com/chine-labbe/lisa-lewin-on-making-boards-of"
 keywords: []

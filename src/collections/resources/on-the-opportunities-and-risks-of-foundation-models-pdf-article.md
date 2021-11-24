@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "CRFM and HAI"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://arxiv.org/pdf/2108.07258.pdf"
 keywords: []

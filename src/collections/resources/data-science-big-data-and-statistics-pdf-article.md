@@ -5,8 +5,6 @@ source: TEST
 readability:
   - Expert
 type: PDF Article
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Data%20Science%20Big%20Data%20And%20Statistic.pdf
 keywords:

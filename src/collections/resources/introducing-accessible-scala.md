@@ -5,10 +5,6 @@ source: Scala
 readability:
   - Expert
 type: Data Tool Resource
-toolPurpose:
-  - Create Content
-toolAccessibilityIssues:
-  - General Accessibility
 openSource: false
 link: https://www.scala-lang.org/blog/2018/06/14/accessible-scala.html
 learnTags:

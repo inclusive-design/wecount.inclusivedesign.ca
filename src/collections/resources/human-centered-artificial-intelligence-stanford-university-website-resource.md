@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "Stanford University"
 readability: ["Beginner","Intermediate","Expert"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://hai.stanford.edu/"
 keywords: []

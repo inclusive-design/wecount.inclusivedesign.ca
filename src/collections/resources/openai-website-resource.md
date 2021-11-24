@@ -4,8 +4,6 @@ focus: "Data Science Education"
 source: "OpenAI"
 readability: ["Expert"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://openai.com/about/"
 keywords: []

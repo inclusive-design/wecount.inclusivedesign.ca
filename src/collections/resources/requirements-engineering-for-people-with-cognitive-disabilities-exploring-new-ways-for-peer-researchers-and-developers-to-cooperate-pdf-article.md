@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "ICCHP 2018 "
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Requirements%20Engineering%20for%20People%20with%20Cognitive%20Disabilities.pdf"
 keywords: ["Human-machine interaction","R&D","e-Inclusion","Accessibility UCD","Cognitive disabilities"]

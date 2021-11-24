@@ -4,8 +4,6 @@ focus: "Bias"
 source: "WIREs Data Mining and Knowledge Discovery Journal"
 readability: ["Intermediate"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Bias%20in%20data-driven%20artificial%20intelligence%20system.pdf"
 keywords: ["fairness","fairness-aware AI","fairness-aware machine learning","interpretability","responsible AI"]

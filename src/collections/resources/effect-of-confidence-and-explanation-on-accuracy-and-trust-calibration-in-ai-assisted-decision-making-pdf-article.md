@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "FAT 2020"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Effect%20of%20Confidence%20and%20Explanation%20on%20Accuracy%20and%20Trust%20Calibration%20in%20AI-Assisted%20Decision%20Making.pdf"
 keywords: ["decision support","trust","confidence","explainable AI"]

@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "FAT 2018"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Decoupled%20Classifiers%20for%20Group-Fair%20and%20Efficient%20Machine%20Learning.pdf"
 keywords: []

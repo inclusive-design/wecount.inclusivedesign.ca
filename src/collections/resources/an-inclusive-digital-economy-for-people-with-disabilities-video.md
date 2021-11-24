@@ -5,8 +5,6 @@ source: Zero Project conference 2021
 readability:
   - Intermediate
 type: Video
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: https://youtu.be/eS9nNz0IDmU
 keywords: []

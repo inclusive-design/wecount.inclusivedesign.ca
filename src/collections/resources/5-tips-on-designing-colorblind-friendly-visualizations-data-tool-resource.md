@@ -4,8 +4,6 @@ focus: "Tool"
 source: "Tableau"
 readability: ["Expert"]
 type: "Data Tool Resource"
-toolPurpose: ["Create Accessible Content"]
-toolAccessibilityIssues: ["Visual Enhancements"]
 openSource: true
 link: "https://www.tableau.com/about/blog/2016/4/examining-data-viz-rules-dont-use-red-green-together-53463"
 keywords: []

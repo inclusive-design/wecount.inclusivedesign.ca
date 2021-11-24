@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "NAACL 2019"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/What%20is%20in%20a%20Name_%20Reducing%20Bias%20in%20Bios%20without%20Access%20to%20Protected%20Attributes.pdf"
 keywords: []

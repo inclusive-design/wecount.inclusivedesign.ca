@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "Communications Journal"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Critical%20news%20reading%20with%20Twitter%20%20Exploring%20data-mining%20practices%20and%20their%20impact%20on%20societal%20discourse.pdf"
 link: "  "

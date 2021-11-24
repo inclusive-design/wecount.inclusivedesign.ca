@@ -4,8 +4,6 @@ focus: "Methods or Design"
 source: "Machine Learning Journal"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/A%20decomposition%20of%20the%20outlier%20detection%20problem%20into%20a%20set%20of%20supervised%20learning%20problems.pdf"
 keywords: ["Outlier detection","Machine learning","Outlier explanations"]

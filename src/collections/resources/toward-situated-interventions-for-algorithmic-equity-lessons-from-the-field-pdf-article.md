@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "FAT 2020"
 readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Toward%20Situated%20Interventions%20for%20Algorithmic%20Equity-Lessons%20from%20the%20Field.pdf"
 keywords: []

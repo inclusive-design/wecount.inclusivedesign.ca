@@ -4,8 +4,6 @@ focus: "AI Ethics/Policy"
 source: "Technology and Regulation Journal"
 readability: ["Intermediate"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Ethics%20of%20artificial%20intelligence_Some%20ethical%20issues%20and%20regulatory%20challenges.pdf"
 keywords: []

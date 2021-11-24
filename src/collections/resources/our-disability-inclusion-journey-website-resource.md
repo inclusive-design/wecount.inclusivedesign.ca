@@ -4,8 +4,6 @@ focus: "Employment"
 source: "Microsoft "
 readability: ["Beginner"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 link: "https://sway.office.com/ZIetX05BXMPoBLHk"
 keywords: []

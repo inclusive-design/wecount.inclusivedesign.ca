@@ -4,8 +4,6 @@ focus: "Employment"
 source: "Workology and PEAT"
 readability: ["Beginner"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://peatworks.org/podcast-protecting-people-with-disabilities-against-discrimination-with-ai-in-employment/"
 keywords: []
