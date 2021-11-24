@@ -45,7 +45,7 @@
 </svg>
 
 <article class="resource-detail">
-  <h1>{{ title | safe }}</h1>
+  <h1>{{ title | replace("<", "&lt;") | safe }}</h1>
   <div class="api-content">
       {{ content | safe }}
 
@@ -54,7 +54,7 @@
           <div><span class="feature-name">Focus:</span> {{ focus | safe }}</div>
 
           <svg><use xlink:href="#source" /></svg>
-          <div><span class="feature-name">Source:</span> {{ source | safe }}</div>
+          <div><span class="feature-name">Source:</span> {{ source | replace("<", "&lt;") | safe }}</div>
 
           <svg><use xlink:href="#readability-on-detail" /></svg>
           <div><span class="feature-name">Redability:</span>
@@ -112,7 +112,7 @@
 
           <svg><use xlink:href="#summary" /></svg>
           <div><span class="feature-name">Summary:</span>
-              {% if summary and summary !== "" %}{{ summary | safe }}{% else %}N/A{% endif %}
+              {% if summary and summary !== "" %}{{ summary | replace("<", "&lt;") | safe }}{% else %}N/A{% endif %}
           </div>
       </div>
   </div>
