@@ -1,6 +1,6 @@
 ---
 title: "The Cost of Poverty: A Different Way of Conceiving of Poverty"
-focus: MAID co-design
+focus: AI and Disability/Outliers
 source: John Stapleton
 readability:
   - Intermediate

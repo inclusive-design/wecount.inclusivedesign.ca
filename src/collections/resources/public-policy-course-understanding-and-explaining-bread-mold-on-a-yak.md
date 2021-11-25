@@ -1,6 +1,6 @@
 ---
 title: "Public Policy Course: Understanding and Explaining Bread Mold on a Yak"
-focus: MAID co-design
+focus: Bias
 source: John Stapleton
 readability:
   - Intermediate
