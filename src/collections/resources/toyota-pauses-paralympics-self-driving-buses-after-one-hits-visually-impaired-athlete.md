@@ -4,7 +4,6 @@ title: Toyota Pauses Paralympics Self-Driving Buses after One Hits Visually
 focus: AI and Disability/Outliers
 source: The Guardian
 readability:
-  - Beginner
   - Intermediate
 type: Website Article
 openSource: false
