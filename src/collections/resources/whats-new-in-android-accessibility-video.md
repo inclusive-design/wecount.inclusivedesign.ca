@@ -1,12 +1,19 @@
 ---
-title: "What’s new in Android Accessibility "
-focus: "AI and Disability/Outliers"
-source: "Google I/O 2018"
-readability: ["Intermediate"]
-type: "Video"
+title: "What’s New in Android Accessibility "
+focus: AI and Disability/Outliers
+source: Google I/O 2018
+readability:
+  - Intermediate
+type: Video
 openSource: true
-link: "https://www.youtube.com/watch?v=Lcoc4aCLfqI&list=PLOU2XLYxmsIInFRc3M44HUTQc3b_YJ4-Y&index=12&t=0s"
+link: https://www.youtube.com/watch?v=Lcoc4aCLfqI&list=PLOU2XLYxmsIInFRc3M44HUTQc3b_YJ4-Y&index=12&t=0s
 keywords: []
-learnTags: ["dataTools","disability","solution"]
-summary: "A video from Google I/O '18 that covers the latest feature additions to Android P, provides an update on accessibility testing and best practices, and discusses new APIs that developers can use to create more accessible app experiences.  "
+learnTags:
+  - dataTools
+  - disability
+  - solution
+summary: "A video from Google I/O '18 that covers the latest feature additions
+  to Android P, provides an update on accessibility testing and best practices,
+  and discusses new APIs that developers can use to create more accessible app
+  experiences.  "
 ---
