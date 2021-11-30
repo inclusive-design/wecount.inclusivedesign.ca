@@ -26,8 +26,8 @@ permalink: /map/
 $(document).ready(function () {
 	document.getElementById("defaultContainer").classList.add("map");
 
-	fluid.covidMap.map(".fl-mapviz-container", {
-		dataUrl: "/lib/covid-data-monitor/build/data/output.csv",
+	fluid.covidMap.map(".map", {
+		gradeNames: "fluid.covidMap.latestFetcher",
 		searchResultTemplateUrl: window.location.origin + "/lib/covid-data-monitor/build/html/searchResultTemplate.html"
 	});
 });
