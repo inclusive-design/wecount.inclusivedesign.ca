@@ -20,6 +20,8 @@ previewImageUrl: /uploads/only-image_wordpress_designing-proof-and-evidence-with
 ---
 In a fall 2021 co-design, stakeholders address the challenge of working with small group and highly diverse data for evidence-based decisions.
 
+[Designing Proof and Evidence with Minorities and Outlier Data workshop video](https://youtu.be/Ba_yQz70c34)
+
 Government policy decisions, and adjudicative rulings that interpret and reinforce them, are increasingly based on the collection and analysis of “evidence” through processes that rely on large data sets and statistical proof. These processes neglect the needs of diverse and marginalized groups, such as people with disabilities, since their experiences are dismissed as anecdotal or as producing outlier data. And yet it is often members of marginalized groups who are most impacted by policy decisions, and to whom these policy changes do the most harm.  
 
 In this design challenge we will co-design:
