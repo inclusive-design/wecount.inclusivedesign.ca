@@ -27,19 +27,25 @@ A clear and concise description of what you expected to happen.
 
 If applicable, add screenshots to help explain your problem.
 
-## Applicable WCAG Success Criteria (please complete the following information):
+## Applicable WCAG Success Criteria:
+
+(please complete the following information and then remove this line)
 
 If applicable, list any WCAG Success Criteria which are impacted by this issue.
 
 - Criterion number - Criterion title [e.g. 1.3.1 - Info and Relationships]
 
-## Desktop (please complete the following information):
+## Desktop:
+
+(please complete the following information and then remove this line)
 
 - OS: [e.g. macOS Monterey]
 - Browser: [e.g. Chrome 95, Safari 14]
 - Assistive Technologies: [e.g. NVDA 2019.3.1, Single-switch interface]
 
-## Smartphone (please complete the following information):
+## Mobile device:
+
+(please complete the following information and then remove this line)
 
 - Device: [e.g. iPhone 6]
 - OS: [e.g. iOS 8.1]
