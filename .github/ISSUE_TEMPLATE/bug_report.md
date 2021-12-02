@@ -29,14 +29,14 @@ If applicable, add screenshots to help explain your problem.
 
 ## Desktop:
 
- (please complete the following information and then remove this line)
+<!-- please complete the following information -->
 
 - OS: [e.g. macOS Monterey]
 - Browser: [e.g. Chrome 95, Safari 14]
 
 ## Smartphone:
 
-(please complete the following information and then remove this line)
+<!-- please complete the following information -->
 
 - Device: [e.g. iPhone 6]
 - OS: [e.g. iOS 8.1]

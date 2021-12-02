@@ -29,7 +29,7 @@ If applicable, add screenshots to help explain your problem.
 
 ## Applicable WCAG Success Criteria:
 
-(please complete the following information and then remove this line)
+<!-- please complete the following information -->
 
 If applicable, list any WCAG Success Criteria which are impacted by this issue.
 
@@ -37,7 +37,7 @@ If applicable, list any WCAG Success Criteria which are impacted by this issue.
 
 ## Desktop:
 
-(please complete the following information and then remove this line)
+<!-- please complete the following information -->
 
 - OS: [e.g. macOS Monterey]
 - Browser: [e.g. Chrome 95, Safari 14]
@@ -45,7 +45,7 @@ If applicable, list any WCAG Success Criteria which are impacted by this issue.
 
 ## Mobile device:
 
-(please complete the following information and then remove this line)
+<!-- please complete the following information -->
 
 - Device: [e.g. iPhone 6]
 - OS: [e.g. iOS 8.1]
