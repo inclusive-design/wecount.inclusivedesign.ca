@@ -43,7 +43,7 @@ The aim is to put tools in the hands of communities for publishing their own dat
 
 ### Workflow for COVID-19 map interface
 
-![line flowchart for the accessibility covid-19 map prototype](/uploads/data-monitor-prototyping-flow-chart-01.jpg "Workflow for COVID-19 Map interface")
+![map with location markers](/uploads/maptool.gif "Workflow for COVID-19 Map interface")
 
 The following images show that data can be presented visually through placement on the map and use of colour as well as in text formats that can be read or accessed by assistive technology. The presentation of information is flexible without compromising the design of the map and allows the individual to choose how to engage with the information.
 
