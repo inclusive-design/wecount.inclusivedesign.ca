@@ -52,7 +52,7 @@ You will learn:
 
 * How evidence-based decisions fall short of meeting the needs of marginalized, highly diverse communities
 * The challenges of producing proof for a highly diverse group of small minorities and outliers who are marginalized
-* How the passage of policy changes to Medical Assistance in Dying (MAiD), Bill C7 is devaluing the lives of persons with disabilities by singling out this group as not requiring a foreseeable death in order to access MAiD
+* How the passage of policy changes to Medical Assistance in Dying (MAiD), Bill C7, is devaluing the lives of persons with disabilities by singling out this group as not requiring a foreseeable death in order to access MAiD
 
 Learn and earn badges from this event:
 
