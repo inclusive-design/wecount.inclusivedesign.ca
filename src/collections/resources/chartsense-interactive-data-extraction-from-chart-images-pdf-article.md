@@ -7,6 +7,7 @@ readability:
 type: PDF Article
 openSource: true
 sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/ChartSense%20Interactive%20Data%20Extraction%20from%20Chart%20Images.pdf?csf=1&web=1&e=b20IPB
+link: https://www.microsoft.com/en-us/research/wp-content/uploads/2017/02/ChartSense-CHI2017.pdf
 keywords:
   - Chart recognition
   - Data extraction
