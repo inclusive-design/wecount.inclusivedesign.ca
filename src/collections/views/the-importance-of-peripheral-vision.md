@@ -11,7 +11,7 @@ tags:
   - Inclusion
   - Smart Cities
 ---
-_Originally published on [Some Thoughts](https://www.some-thoughts.org/treviranus.html), a collection of essays on smart cities._
+*Originally published on Some Thoughts, a collection of essays on smart cities.*
 
 We have a human propensity when planning to focus on the centre of a field, on the majority; especially when we believe resources to be scarce. We think we need to select “the best,” the winning solution, the highest impact, the biggest priority. We think innovation and quality arise from winner-takes-all competition. Our metrics and evidence are about finding the biggest number, or the average. This usually means we ignore or lose sight of the periphery, the minorities, and the people that find themselves at the margins.
 
