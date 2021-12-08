@@ -2,7 +2,7 @@
 title: Continuing Our Work During COVID-19
 author: Jutta Treviranus
 date: 2020-04-03T12:16:00
-picture: /uploads/jj-ying-WmnsGyaFnCQ-unsplash-scaled.jpg
+picture: /uploads/we-count-logo_colour_icon-only_white-background.png
 altTag: Abstract Image
 excerpt: A message from IDRC Director Jutta Treviranus about continuing our
   mission during COVID-19.
