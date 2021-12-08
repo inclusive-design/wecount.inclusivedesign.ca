@@ -2,8 +2,8 @@
 title: How Virtual Care Is Revolutionizing Digital Health
 author: Rachel Spence
 date: 2020-11-02T19:03:10
-picture: /uploads/ricardo-gomez-angel-2mjl2uvz9ic-unsplash-scaled.jpg
-altTag: Abstract Image
+picture: /uploads/d3.png
+altTag: District 3 logo
 excerpt: Dr. Jutta Treviranus collaborated in the District 3 panel “How Virtual
   Care Is Revolutionizing Digital Health” in October 2020.
 tags:
