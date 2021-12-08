@@ -2,7 +2,8 @@
 title: Inverted Wordles
 author: Cindy Li
 date: 2021-05-08T00:04:54.646Z
-picture: /uploads/mitchell-luo-U1Hhinvb-v4-unsplash-scaled.jpg
+picture: /uploads/wordle.jpg
+altTag: A sample wordle
 excerpt: Our development team has been hard at work creating a wordle tool that
   will allow users to highlight either minority or majority answers.
 tags:
