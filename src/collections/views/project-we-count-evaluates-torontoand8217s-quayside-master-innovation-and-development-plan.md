@@ -3,7 +3,7 @@ title: We Count Evaluates Toronto’s Quayside Master Innovation and Development
 author: Vera Roberts
 date: 2020-03-02T16:47:51
 picture: /uploads/we-count-logo-2.png
-altTag: We Count logo
+altTag: Part of the We Count logo
 excerpt: Project We Count evaluated the MIDP for Toronto’s Quayside from the
   perspective of persons in Toronto who have difficulty with or are excluded by
   the current urban plan.
