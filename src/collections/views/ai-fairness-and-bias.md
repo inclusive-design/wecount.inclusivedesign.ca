@@ -2,8 +2,8 @@
 title: AI, Fairness and Bias
 author: Jutta Treviranus
 date: 2020-12-22T15:01:23
-picture: /uploads/we-count-logo-2.png
-altTag: ""
+picture: /uploads/stg.png
+altTag: Sight Tech Global logo
 excerpt: Dr. Jutta Treviranus participated in the Sight Tech Global 2020 panel
   "AI, Fairness and Bias" on December 2.
 tags:
