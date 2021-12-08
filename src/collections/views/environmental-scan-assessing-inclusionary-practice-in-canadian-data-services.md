@@ -2,7 +2,7 @@
 title: "Environmental Scan: Assessing Inclusionary Practice in Canadian Data Services"
 author: Ali Milad
 date: 2020-12-17T18:33:18
-picture: /uploads/dynamicwang-bLIkWFelVKM-unsplash-scaled.jpg
+picture: /uploads/data-service-providers.png
 altTag: Abstract Image
 excerpt: "An overview of key findings from the Data Service Provider portion of
   the environmental scan conducted by the We Count team in May 2020. "
