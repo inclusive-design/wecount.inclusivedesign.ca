@@ -3,6 +3,7 @@ title: Preferences Edge Proxy Workflow
 author: Joseph Scheuhammer
 date: 2021-05-08T00:20:23.739Z
 picture: /uploads/we-count-logo-5.png
+altTag: Part of the We Count logo
 excerpt: The development team has created a new workflow supported by the
   Personal Data Storage, or Preferences server, where the user makes
   save/retrieve requests for their preferences while on a static site.
