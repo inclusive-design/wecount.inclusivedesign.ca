@@ -3,7 +3,7 @@ title: The Future of Work and Disability
 permalink: /views/fwd/
 author: David Pereyra
 date: 2021-02-19T15:37:31
-picture: /uploads/FWD-logoE-for-processing@4x-1.png
+picture: /uploads/FWDlogoBforprocessing4x1.png
 altTag: Future of Work and Disability logo
 excerpt: The Future of Work and Disability project formed a study group to
   understand and examine intersecting topics of AI, automation, standards and
