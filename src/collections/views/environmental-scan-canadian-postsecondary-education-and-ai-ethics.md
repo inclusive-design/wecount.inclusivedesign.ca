@@ -2,7 +2,7 @@
 title: "Environmental Scan: Canadian Postsecondary Education and AI Ethics"
 author: Ali Milad
 date: 2020-12-17T18:33:09
-picture: /uploads/we-count-logo-7.png
+picture: /uploads/we-count-logo-3.png
 altTag: Portion of the We Count logo
 excerpt: "An overview of key findings from the Postsecondary Education portion
   of the environmental scan conducted by the We Count team in May 2020. "
