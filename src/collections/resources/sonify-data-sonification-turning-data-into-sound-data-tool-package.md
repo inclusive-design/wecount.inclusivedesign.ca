@@ -4,7 +4,7 @@ focus: Tool
 source: CRAN
 readability:
   - Expert
-type: Website Resource
+type: Data Tool Package
 openSource: true
 link: https://cran.r-project.org/web/packages/sonify/index.html
 keywords:
