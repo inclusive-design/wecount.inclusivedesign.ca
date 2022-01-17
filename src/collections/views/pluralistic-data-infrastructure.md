@@ -26,7 +26,7 @@ The core implementation is housed in the [forgiving-data](https://github.com/inc
 Some presentations which have been given on the architecture:
 
 * [Openly Authored Data Pipelines](https://wiki.fluidproject.org/download/attachments/1707985/Openly%20authored%20data%20pipelines.pdf) [](https://wiki.fluidproject.org/download/attachments/1707985/Pluralist%20Data.pdf)- This is a quite technical presentation explaining a solution to the 2nd dimension of the architecture - how one community can adopt a complete pipeline produced by another community, and interpose its own processing elements in the middle of it without needing to edit the original pipeline definition.
-* [Pluralist Data](https://wiki.fluidproject.org/download/attachments/1707985/Pluralist%20Data.pdf) - A presentation to [CIFAR](https://cifar.ca/)'s [Data Communities for Inclusion](https://cifar.ca/ai/ai-society/cifar-solution-networks/data-communities-for-inclusion/) Solutions Network about our approach to pluralist data and a sketched plan for deploying a live, publicly ownable implementation of the architecture where any communities may take care of editing, publishing and hosting their own data.
+* [Pluralist Data](https://wiki.fluidproject.org/download/attachments/1707985/Pluralist%20Data.pdf) - A presentation to [CIFAR](https://cifar.ca/)'s [Cooperative Data Communities](https://cifar.ca/ai/ai-society/cifar-solution-networks/data-communities-for-inclusion/) (Data Communities for Inclusion) Solutions Network about our approach to pluralist data and a sketched plan for deploying a live, publicly ownable implementation of the architecture where any communities may take care of editing, publishing and hosting their own data.
 
 ## Conceptual background
 
