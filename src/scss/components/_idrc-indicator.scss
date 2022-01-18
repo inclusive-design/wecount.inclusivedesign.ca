@@ -1,0 +1,22 @@
+.idrc-indicator {
+	background-color: #ffcb70;
+
+	.idrc-indicator-element {
+		align-items: center;
+		display: flex;
+		font-family: Roboto, sans-serif;
+		font-size: rem(12);
+		height: rem(55);
+		justify-content: center;
+		max-height: rem(80);
+		max-width: $max-width-margins;
+	}
+}
+
+@include breakpoint-up(lg) {
+	.idrc-indicator .idrc-indicator-element {
+		display: block;
+		margin: auto;
+		padding: rem(18) 0 rem(18) rem(18);
+	}
+}
