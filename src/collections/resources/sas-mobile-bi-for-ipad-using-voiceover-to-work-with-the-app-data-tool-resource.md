@@ -7,10 +7,15 @@ readability:
 type: Video
 openSource: false
 link: https://www.sas.com/en_us/company-information/accessibility.html#m=video-sas-mobile-bi-for-ios
-keywords: []
+keywords:
+  - Consume Content
+  - General Accessibility
+  - Keyboard Navigation
 learnTags:
   - dataTools
   - methods
   - machineLearning
+  - assistiveTechnology
+  - disability
 summary: "A video that demonstrates the use of SAS Mobile BI with iOS VoiceOver. "
 ---

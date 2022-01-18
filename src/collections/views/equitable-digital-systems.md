@@ -3,12 +3,13 @@ title: Equitable Digital Systems
 permalink: views/EDS/
 author: Vera Roberts
 date: 2021-06-03T19:11:15.805Z
-picture: /uploads/karim-manjra-Jhapo3aqx_0-unsplash-scaled.jpg
+picture: /uploads/eds-colored-03.png
+altTag: "EDS: Equitable Digital Systems logo"
 excerpt: "The Future of Work: Equitable Digital Systems project is an initiative
   at the Inclusive Design Research Centre, OCAD U examining the accessibility of
   the digital tools and systems we rely upon for work."
 ---
-![EDS: Equitable Digital Systems](/uploads/eds-colored-03.png)
+![EDS: Equitable Digital Systems logo](/uploads/eds-colored-03.png)
 
 The Future of Work: Equitable Digital Systems project is an initiative at the Inclusive Design Research Centre, OCAD University, examining the accessibility of the digital tools and systems we rely upon for work. The focus of the project is on ensuring that current and emerging technology and digital systems and their associated practices are meeting the needs of and enabling work for people with disabilities. The project looks specifically at systems used by organizations that are regulated by the Accessible Canada Act, Bill C-81.
 

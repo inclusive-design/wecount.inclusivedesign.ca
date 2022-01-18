@@ -2,8 +2,8 @@
 title: Update on City of Toronto Data for Equity Strategy
 author: Vera Roberts
 date: 2020-12-04T14:34:29
-picture: /uploads/karim-manjra-Jhapo3aqx_0-unsplash-scaled.jpg
-altTag: Abstract Image
+picture: /uploads/toronto.jpg
+altTag: City of Toronto logo
 excerpt: The Data for Equity Strategy will support city divisions to collect
   socio-demographic data and to analyze, use and apply disaggregated data to
   inform equitable program planning and service delivery.

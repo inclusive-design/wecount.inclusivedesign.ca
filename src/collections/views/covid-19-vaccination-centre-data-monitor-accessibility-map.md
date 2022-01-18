@@ -3,7 +3,8 @@ title: "COVID-19 Vaccination Centre Data Monitor: Accessibility Map Demonstratio
 permalink: /views/mapdemo/
 author: Uttara Ghodke & Celine Nguyen
 date: 2021-06-08T18:12:48.138Z
-picture: /uploads/dynamicwang-bLIkWFelVKM-unsplash-scaled.jpg
+picture: /uploads/maptool.gif
+altTag: Map with marker pins on it.
 excerpt: A COVID-19 data monitor prototype test that was created to show
   how data gaps can be addressed, providing a way to
   find accessibility information that is not included in these data sets.
@@ -43,7 +44,7 @@ The aim is to put tools in the hands of communities for publishing their own dat
 
 ### Workflow for COVID-19 map interface
 
-![line flowchart for the accessibility covid-19 map prototype](/uploads/data-monitor-prototyping-flow-chart-01.jpg "Workflow for COVID-19 Map interface")
+![Workflow for the map ](/uploads/data-monitor-01.jpg "Workflow for COVID-19 Map interface")
 
 The following images show that data can be presented visually through placement on the map and use of colour as well as in text formats that can be read or accessed by assistive technology. The presentation of information is flexible without compromising the design of the map and allows the individual to choose how to engage with the information.
 
