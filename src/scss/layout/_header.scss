@@ -159,7 +159,7 @@ header {
 					display: flex;
 					flex: 1;
 					flex-direction: row;
-					justify-content: space-around;
+					justify-content: space-between;
 					position: inherit;
 					top: rem(120);
 					width: auto;
@@ -168,14 +168,16 @@ header {
 					a {
 						border-bottom: none;
 						float: none;
-						margin: rem(24) rem(8);
+						margin: rem(24) rem(8) rem(24) 0;
 						padding: rem(8) rem(10);
 					}
 
 					// When the user is in a section (other than the Home page), underline this particular item
 					// in the top level navigation.
 					a[aria-current="page"] {
-						border-bottom: rem(2) solid $white;
+						background-color: $orange-focus;
+						font-weight: $font-weight-bold;
+						text-decoration: underline;
 					}
 				}
 			}
