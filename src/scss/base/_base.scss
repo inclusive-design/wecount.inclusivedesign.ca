@@ -49,6 +49,10 @@ a:focus {
 	outline: none;
 }
 
+p {
+	margin: 1em 0;
+}
+
 .wp-block-file__button:hover::before,
 .wp-block-file__button:focus::before,
 .wp-block-file__button:active::before,
