@@ -11,12 +11,14 @@ h1 {
 	color: $grey-dark;
 	font-size: rem(35);
 	font-weight: $font-weight-semibold;
+	margin: 0.67em 0;
 }
 
 h2 {
 	color: $grey-dark;
 	font-size: rem(24);
 	font-weight: $font-weight-medium;
+	margin: 0.83em 0;
 }
 
 h3,
@@ -55,6 +57,11 @@ button:focus::before,
 button:active::before {
 	left: rem(4);
 	top: rem(4);
+}
+
+// SVG fill rule imported from sanitize ensures SVG colour agrees with text colour
+svg:not([fill]) {
+	fill: currentColor;
 }
 
 .wp-block-file__button::-moz-focus-inner,
