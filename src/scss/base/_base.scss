@@ -7,6 +7,18 @@
 	font-family: $family-sans-serif;
 }
 
+input,
+button,
+textarea,
+select {
+	line-height: normal;
+}
+
+::-webkit-input-placeholder {
+	color: inherit;
+	opacity: 0.54;
+}
+
 h1 {
 	color: $grey-dark;
 	font-size: rem(35);
