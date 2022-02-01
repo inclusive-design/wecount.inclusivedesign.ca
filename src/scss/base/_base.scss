@@ -85,6 +85,11 @@ svg:not([fill]) {
 	fill: currentColor;
 }
 
+button {
+	align-items: center;
+	display: flex;
+}
+
 .wp-block-file__button::-moz-focus-inner,
 button::-moz-focus-inner {
 	outline: none;
