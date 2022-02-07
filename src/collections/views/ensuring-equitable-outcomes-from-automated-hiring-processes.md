@@ -2,6 +2,7 @@
 title: Ensuring Equitable Outcomes from Automated Hiring Processes
 author: Antranig Basman
 date: 2022-02-07T21:08:34.623Z
+picture: /uploads/odd-crop.png
 excerpt: These automated hiring and matching algorithms, implemented by major
   corporations such as LinkedIn, Amazon and others can be positioned in the
   wider context of automated processes, that use machine learning/AI algorithms,
