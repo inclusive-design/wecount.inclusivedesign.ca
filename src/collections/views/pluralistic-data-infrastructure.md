@@ -2,6 +2,7 @@
 title: Pluralistic Data Infrastructure
 author: Antranig Basman
 date: 2022-01-14T15:30:28.651Z
+picture: /uploads/we-count-logo-7.png
 excerpt: The pluralistic data infrastructure supports communities in taking
   collective ownership of data that relates to them and curating its
   relationships with data from other sources.
