@@ -38,6 +38,12 @@ article {
 	}
 }
 
+// style for centering children of some buttons (#939)
+.has-centred-children {
+	align-items: center;
+	display: flex;
+}
+
 // WP customized styles
 .has-small-font-size {
 	font-size: 84%;

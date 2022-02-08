@@ -99,6 +99,8 @@
 			}
 
 			button {
+				@extend .has-centred-children;
+
 				align-self: center;
 				height: rem(32);
 				margin-right: 0;
@@ -130,6 +132,8 @@
 		}
 
 		.filter-expand-button {
+			@extend .has-centred-children;
+
 			--expand-button-color: none;
 			--expand-button-stroke-color: #{$grey-dark};
 
