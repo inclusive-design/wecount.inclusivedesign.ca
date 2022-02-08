@@ -83,6 +83,8 @@
 			margin-top: rem(24);
 
 			button {
+				@extend .has-centred-children;
+
 				background-color: $white;
 				box-shadow: 0 0 rem(7) $border-shadow-colour;
 			}
