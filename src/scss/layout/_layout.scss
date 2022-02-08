@@ -39,7 +39,7 @@ article {
 }
 
 // style for centering children of some buttons (#939)
-.has-centred-children {
+%has-vertically-centered-children {
 	align-items: center;
 	display: flex;
 }

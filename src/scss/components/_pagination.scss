@@ -87,6 +87,7 @@
 
 	li:first-child,
 	li:last-child {
+		display: flex;
 		flex: 1;
 	}
 
