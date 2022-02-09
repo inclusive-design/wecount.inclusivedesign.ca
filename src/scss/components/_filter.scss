@@ -135,6 +135,8 @@
 
 	.apply-button,
 	.reset-button {
+		@extend %has-vertically-centered-children;
+
 		padding: rem(1) rem(3);
 
 		span {

@@ -50,10 +50,10 @@
     "html-minifier": "^4.0.0",
     "infusion": "^3.0.0-dev.20210421T131019Z.2d15978fb.FLUID-6580",
     "markdown-it": "^12.0.4",
+    "modern-css-reset": "^1.4.0",
     "netlify-cms-widget-uuid-v4": "^1.0.12",
     "nodemailer": "^6.4.18",
     "nunjucks": "^3.2.3",
-    "sanitize.css": "^12.0.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

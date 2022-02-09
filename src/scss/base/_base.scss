@@ -7,22 +7,37 @@
 	font-family: $family-sans-serif;
 }
 
+input,
+button,
+textarea,
+select {
+	line-height: normal;
+}
+
+::-webkit-input-placeholder {
+	color: inherit;
+	opacity: 0.54;
+}
+
 h1 {
 	color: $grey-dark;
 	font-size: rem(35);
 	font-weight: $font-weight-semibold;
+	margin: 0.67em 0;
 }
 
 h2 {
 	color: $grey-dark;
 	font-size: rem(24);
 	font-weight: $font-weight-medium;
+	margin: 0.83em 0;
 }
 
 h3,
 .h3 {
 	font-size: rem(18);
 	font-weight: $font-weight-bold;
+	margin: 1em 0;
 }
 
 h4 {
@@ -47,6 +62,14 @@ a:focus {
 	outline: none;
 }
 
+li {
+	list-style: none;
+}
+
+p {
+	margin: 1em 0;
+}
+
 .wp-block-file__button:hover::before,
 .wp-block-file__button:focus::before,
 .wp-block-file__button:active::before,
@@ -55,6 +78,11 @@ button:focus::before,
 button:active::before {
 	left: rem(4);
 	top: rem(4);
+}
+
+// SVG fill rule imported from sanitize ensures SVG colour agrees with text colour
+svg:not([fill]) {
+	fill: currentColor;
 }
 
 .wp-block-file__button::-moz-focus-inner,

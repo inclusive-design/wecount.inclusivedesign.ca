@@ -83,6 +83,8 @@
 			margin-top: rem(24);
 
 			button {
+				@extend %has-vertically-centered-children;
+
 				background-color: $white;
 				box-shadow: 0 0 rem(7) $border-shadow-colour;
 			}
@@ -99,6 +101,8 @@
 			}
 
 			button {
+				@extend %has-vertically-centered-children;
+
 				align-self: center;
 				height: rem(32);
 				margin-right: 0;
@@ -130,6 +134,8 @@
 		}
 
 		.filter-expand-button {
+			@extend %has-vertically-centered-children;
+
 			--expand-button-color: none;
 			--expand-button-stroke-color: #{$grey-dark};
 
