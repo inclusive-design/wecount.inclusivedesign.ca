@@ -52,7 +52,7 @@
     "markdown-it": "^12.0.4",
     "modern-css-reset": "^1.4.0",
     "netlify-cms-widget-uuid-v4": "^1.0.12",
-    "nodemailer": "^6.4.18",
+    "nodemailer": "^6.6.1",
     "nunjucks": "^3.2.3",
     "uuid": "^8.3.2"
   },
