@@ -87,7 +87,6 @@
 
 	li:first-child,
 	li:last-child {
-		display: flex;
 		flex: 1;
 	}
 
@@ -170,7 +169,7 @@
 
 		.pagination-next,
 		.pagination-previous {
-			line-height: rem(40);
+			line-height: rem(48);
 		}
 	}
 }
