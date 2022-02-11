@@ -34,14 +34,16 @@ We Count wants to help small organizations and their members get into the data e
 
 You are invited to participate in the Sentiment Analysis Workshop offered by the We Count team. In this three-part workshop, you will learn how to complete a sentiment analysis and build your own data set. By participating in this free opportunity, you will gain in-depth knowledge about the process and the tools involved, as well as how to become a part of the data ecosystem. Members of advocacy organizations and people with disabilities are highly encouraged to sign up. CART/Captioning will be provided for the event. Please let us know if you require ASL or have other accessibility needs that we can meet to support your participation. 
 
-Micro-badges will be awarded for participation. To learn more about our badges, visit the [We Count Badges page](<https://wecount.inclusivedesign.ca/badges/>)[](https://wecount.inclusivedesign.ca/badges/).
+Micro-badges will be awarded for participation. To learn more about our badges, visit the [We Count Badges page](https://wecount.inclusivedesign.ca/badges/)[](https://wecount.inclusivedesign.ca/badges/).
 
 No previous knowledge or experience required.
 
 Workshop Dates:
 
 Session 1 Getting Started: Tuesday, February 22, 2022, 1–3 PM ET
+
 Session 2 Practising: Tuesday, March 1, 2022, 1–3 PM ET
+
 Session 3 Analysis: Tuesday, March 22, 2022, 1–3 PM ET
 
 [Register for the workshop](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo621xjv9v8p1-NGoyH_ZGO0IQxUOUNKREFFSUlKVUdUMTFKQ0xVT0owSjJBTSQlQCN0PWcu)
