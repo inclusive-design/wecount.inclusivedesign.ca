@@ -41,9 +41,7 @@ No previous knowledge or experience required.
 Workshop Dates:
 
 Session 1 Getting Started: Tuesday, February 22, 2022, 1–3 PM ET
-
 Session 2 Practising: Tuesday, March 1, 2022, 1–3 PM ET
-
 Session 3 Analysis: Tuesday, March 22, 2022, 1–3 PM ET
 
 [Register for the workshop](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo621xjv9v8p1-NGoyH_ZGO0IQxUOUNKREFFSUlKVUdUMTFKQ0xVT0owSjJBTSQlQCN0PWcu)
