@@ -1,7 +1,7 @@
 ---
 title: Sentiment Analysis Workshop
 id: 6f6d1d14-a419-4855-9f06-a62fa5afa7dc
-eventDate: 2022-02-11T15:27:15.995Z
+eventDate: 2022-02-22T15:27:15.995Z
 coverImageUrl: /uploads/wordpress_sentiment-analysis-workshop.jpg
 coverImageAltText: "We Count wants to help small organizations and their members
   get into the data ecosystem with this free, accessible workshop. Learn how to
