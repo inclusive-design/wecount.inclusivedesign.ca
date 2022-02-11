@@ -38,7 +38,7 @@ Members of advocacy organizations and people with disabilities are highly encour
 
 Micro-badges will be awarded for participation. To learn more about our badges, visit the [We Count Badges page](https://wecount.inclusivedesign.ca/badges/)[](https://wecount.inclusivedesign.ca/badges/). 
 
-Workshop Dates:
+**Workshop Dates:**
 
 Session 1 Getting Started: Tuesday, February 22, 2022, 1–3 PM ET
 
