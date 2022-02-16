@@ -1,5 +1,9 @@
 ---
 title: News
+permalink: /news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber }}/{% endif %}
+pagination:
+  data: collections.news
+  size: 10
 layout: layouts/news.njk
 excerpt: Subscribe now to stay up-to-date with the latest news in the data
   science, disability and AI communities.
