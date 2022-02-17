@@ -112,7 +112,7 @@ button:not(.fl-prefsEditor-buttons) button {
 	font-size: rem(24);
 	font-weight: 400;
 	height: rem(54);
-	line-height: (34 / 24);
+	line-height: calc(34 / 24);
 	padding: rem(8) rem(34);
 	transform: perspective(rem(1)) translateZ(0);
 }
