@@ -45,7 +45,7 @@
 	.pagination-link::before {
 		border-radius: 100%;
 		box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
-		content: '';
+		content: "";
 		height: 100%;
 		left: 0;
 		opacity: 1;
@@ -100,7 +100,7 @@
 		svg {
 			fill: none;
 			height: rem(24);
-			stroke: currentColor;
+			stroke: currentcolor;
 			stroke-width: 2;
 			width: rem(14);
 		}
@@ -121,7 +121,7 @@
 		background-color: transparent;
 
 		svg {
-			fill: currentColor;
+			fill: currentcolor;
 			stroke-width: 0.25;
 		}
 	}

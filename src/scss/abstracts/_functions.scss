@@ -1,11 +1,11 @@
 // Functions.
 
 @function rem($pixels, $context: $browser-context) {
-	@if (unitless($pixels)) {
+	@if unitless($pixels) {
 		$pixels: $pixels * 1px;
 	}
 
-	@if (unitless($context)) {
+	@if unitless($context) {
 		$context: $context * 1px;
 	}
 

@@ -2,15 +2,15 @@
 
 // CSS classes for "apply filter" and "reset filter" buttons
 .stroke-black {
-	stroke: var(--currentColor, black);
+	stroke: var(--currentcolor, black);
 }
 
 .fill-black {
-	fill: var(--currentColor, black);
+	fill: var(--currentcolor, black);
 }
 
 .fill-c4c4c4 {
-	fill: var(--currentColor, #c4c4c4);
+	fill: var(--currentcolor, #c4c4c4);
 }
 
 // CSS classes for the "expand filter" button
@@ -49,7 +49,7 @@
 		// Box
 		& + label::before,
 		& + span::before {
-			content: '';
+			content: "";
 			display: inline-block;
 			height: rem(20);
 			margin-right: rem(10);
@@ -62,7 +62,7 @@
 		&:checked + label::after,
 		&:checked + span::after {
 			color: $white;
-			content: '\2713';
+			content: "\2713";
 			font-size: rem(18);
 			height: rem(2);
 			left: rem(32);
@@ -71,6 +71,7 @@
 			width: rem(2);
 		}
 	}
+
 	// End of custom checkboxes
 
 	.filter-header {

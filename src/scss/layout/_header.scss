@@ -34,6 +34,7 @@ header {
 		.site-nav {
 			// drop shadow around nav element
 			box-shadow: $border-shadow-light;
+
 			// spacing for drop shadow, due to clipping by the next element
 			margin-bottom: $border-shadow-radius;
 
