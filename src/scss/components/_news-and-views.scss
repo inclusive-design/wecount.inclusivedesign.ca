@@ -179,7 +179,7 @@
 	}
 
 	.tags {
-		@include tags();
+		@include tags;
 
 		margin: rem(-16) 0 rem(16) 0;
 	}

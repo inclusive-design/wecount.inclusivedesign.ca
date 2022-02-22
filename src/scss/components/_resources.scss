@@ -1,19 +1,19 @@
 .fill-465d8b {
-	fill: var(--currentColor, #465d8b);
+	fill: var(--currentcolor, #465d8b);
 }
 
 .stroke-465d8b {
-	stroke: var(--currentColor, #465d8b);
+	stroke: var(--currentcolor, #465d8b);
 }
 
 .fill-stroke-465d8b {
-	fill: var(--currentColor, #465d8b);
-	stroke: var(--currentColor, #465d8b);
+	fill: var(--currentcolor, #465d8b);
+	stroke: var(--currentcolor, #465d8b);
 }
 
 .fill-white-stroke-465d8b {
 	fill: var(--bColor, white);
-	stroke: var(--currentColor, #465d8b);
+	stroke: var(--currentcolor, #465d8b);
 }
 
 // Resources page
@@ -97,7 +97,7 @@
 			padding: 0 rem(16);
 
 			&:hover {
-				box-shadow: 0 rem(3) rem(2) rem(-2) rgba(0, 0, 0, 0.6);
+				box-shadow: 0 rem(3) rem(2) rem(-2) rgba(0 0 0 / 60%);
 			}
 
 			button {

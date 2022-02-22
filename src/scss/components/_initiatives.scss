@@ -137,7 +137,8 @@
 	}
 }
 
-// Button style shared by the "register here" button on the Intiatives page and the "post a comment" button on the Initiative page
+// Button style shared by the "register here" button on the Intiatives page and the "post a comment"
+// button on the Initiative page
 #comment-form button {
 	background-color: $white;
 	border: 0;
@@ -155,7 +156,7 @@
 	&::before {
 		border-radius: rem(26);
 		box-shadow: 0 0 0 rem(2) $green-dark inset;
-		content: '';
+		content: "";
 		height: rem(41);
 		left: 0;
 		opacity: 1;

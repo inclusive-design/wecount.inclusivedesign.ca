@@ -1,10 +1,3 @@
----
-title: News
-permalink: /news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
-pagination:
-  data: collections.news
-  size: 10
----
 {% if previewMode %}
 {% extends 'layouts/preview.njk' %}
 {% else %}

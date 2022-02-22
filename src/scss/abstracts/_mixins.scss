@@ -7,7 +7,7 @@
 	&::before {
 		content: " ";
 		display: block;
-		padding-top: ($height / $width) * 100%;
+		padding-top: calc($height / $width) * 100%;
 		width: 100%;
 	}
 
@@ -47,9 +47,9 @@
 }
 
 // To adapt to UIO contrast themes
-@mixin adapt-to-uioThemes($fColor, $bColor) {
+@mixin adapt-to-uio-themes($fColor, $bColor) {
 	// Customized colors
-	--currentColor: currentColor;
+	--currentcolor: currentcolor;
 	--bColor: #{$bColor};
 	--fColor: #{$fColor};
 
@@ -57,14 +57,14 @@
 	.logo circle,
 	.logo path {
 		fill: none;
-		stroke: var(--fColor, currentColor);
+		stroke: var(--fColor, currentcolor);
 		stroke-linecap: round;
 		stroke-width: rem(3);
 	}
 
 	// Placeholder images on the "views" page
 	svg.placeholder-img use {
-		stroke: var(--fColor, currentColor);
+		stroke: var(--fColor, currentcolor);
 		stroke-linecap: round;
 		stroke-width: rem(3);
 	}
@@ -160,21 +160,21 @@
 	.tags {
 		a,
 		p {
-			box-shadow: 0 0 0 rem(1) currentColor inset;
+			box-shadow: 0 0 0 rem(1) currentcolor inset;
 		}
 
 		a:focus,
 		a:hover {
-			box-shadow: 0 0 0 rem(2) currentColor inset;
+			box-shadow: 0 0 0 rem(2) currentcolor inset;
 		}
 	}
 
 	// Tile item
 	.tile-item {
-		box-shadow: rem(0) rem(0) rem(7) currentColor;
+		box-shadow: rem(0) rem(0) rem(7) currentcolor;
 
 		&:hover {
-			box-shadow: 0 0 rem(35) currentColor;
+			box-shadow: 0 0 rem(35) currentcolor;
 		}
 	}
 
@@ -195,7 +195,7 @@
 		// Social media icons
 		.social-media .social-media-icons a {
 			svg path {
-				fill: currentColor;
+				fill: currentcolor;
 				stroke: $bColor;
 			}
 
@@ -203,7 +203,7 @@
 			&:focus {
 				svg path {
 					fill: $bColor;
-					stroke: currentColor;
+					stroke: currentcolor;
 				}
 			}
 		}
@@ -211,24 +211,19 @@
 
 	// Side Menu
 	#defaultContainer aside nav ul {
-		box-shadow: rem(1) 0 0 0 currentColor inset;
+		box-shadow: rem(1) 0 0 0 currentcolor inset;
 
 		li {
-			box-shadow: rem(1) 0 0 0 currentColor inset;
+			box-shadow: rem(1) 0 0 0 currentcolor inset;
 
 			&:active {
-				box-shadow: rem(5) 0 0 0 currentColor inset;
+				box-shadow: rem(5) 0 0 0 currentcolor inset;
 			}
 		}
 
 		li.active {
-			box-shadow: rem(5) 0 0 0 currentColor inset;
+			box-shadow: rem(5) 0 0 0 currentcolor inset;
 		}
-	}
-
-	// Styles for buttons
-	.wp-block-file__button {
-		box-shadow: 0 0 0 rem(1) currentColor inset;
 	}
 
 	// Focus/hover styles for links
@@ -243,10 +238,8 @@
 	#comment-form button,
 	#comment-form button::before,
 	li .pagination-link,
-	li .pagination-link::before,
-	.wp-block-file__button:focus,
-	.wp-block-file__button:hover {
-		box-shadow: 0 0 0 rem(2) currentColor inset;
+	li .pagination-link::before {
+		box-shadow: 0 0 0 rem(2) currentcolor inset;
 	}
 
 	#defaultContainer {
@@ -280,24 +273,19 @@
 		// Home page cards: hide background images and adjust box shadows on UIO contrast themes
 		.card {
 			background-image: none;
-			box-shadow: 0 rem(4) rem(4) currentColor;
+			box-shadow: 0 rem(4) rem(4) currentcolor;
 
 			&:focus,
 			&:hover {
-				box-shadow: rem(10) rem(10) rem(10) currentColor;
+				box-shadow: rem(10) rem(10) rem(10) currentcolor;
 			}
-		}
-
-		// Advisory panel page
-		.advisory-panel > .api-content > .wp-block-group > .wp-block-group__inner-container > .wp-block-group > .wp-block-group__inner-container > .wp-block-group {
-			box-shadow: rem(0) rem(0) rem(7) currentColor;
 		}
 	}
 
 	// The search container on the "Views" page
 	.views .search-container {
 		svg {
-			fill: currentColor;
+			fill: currentcolor;
 		}
 
 		input[type="search"] {
@@ -311,7 +299,7 @@
 
 	// The search icon on the header
 	header .site-nav-wrapper .site-nav .search-container svg {
-		fill: currentColor;
+		fill: currentcolor;
 		height: rem(19.2);
 		margin: rem(-25.6);
 		width: rem(19.2);
@@ -333,11 +321,11 @@
 	.resources {
 		.search-container {
 			input {
-				box-shadow: 0 0 0.4375rem currentColor;
+				box-shadow: 0 0 0.4375rem currentcolor;
 			}
 
 			svg {
-				fill: currentColor;
+				fill: currentcolor;
 			}
 		}
 
@@ -353,7 +341,7 @@
 
 			// when the topic card gains the hover, apply the hover style to the checkbox
 			&:hover .topic-checkbox span::before {
-				outline: rem(2.5) solid currentColor;
+				outline: rem(2.5) solid currentcolor;
 			}
 		}
 	}

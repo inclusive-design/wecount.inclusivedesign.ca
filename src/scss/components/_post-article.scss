@@ -22,7 +22,7 @@
 	}
 
 	.tags {
-		@include tags();
+		@include tags;
 
 		margin-bottom: rem(80);
 	}

@@ -1,11 +1,11 @@
 .tile-item {
 	border-radius: rem(18);
-	box-shadow: rem(0) rem(0) rem(7) rgba(0, 0, 0, 0.25);
+	box-shadow: rem(0) rem(0) rem(7) rgba(0 0 0 / 25%);
 	display: grid;
 	margin: rem(32) 0 rem(32) 0;
 
 	&:hover {
-		box-shadow: 0 0 rem(35) rgba(0, 0, 0, 0.55);
+		box-shadow: 0 0 rem(35) rgba(0 0 0 / 55%);
 	}
 
 	// Initiative title and descriptions

@@ -5,9 +5,7 @@
 		@media (min-width: rem($min)) {
 			@content;
 		}
-	}
-
-	@else {
+	} @else {
 		@content;
 	}
 }
@@ -19,9 +17,7 @@
 		@media (max-width: rem($max)) {
 			@content;
 		}
-	}
-
-	@else {
+	} @else {
 		@content;
 	}
 }

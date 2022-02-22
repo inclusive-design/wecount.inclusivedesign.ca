@@ -186,6 +186,7 @@ module.exports = function(eleventyConfig) {
 			input: "src",
 			output: "dist"
 		},
-		passthroughFileCopy: true
+		passthroughFileCopy: true,
+		markdownTemplateEngine: "njk"
 	};
 };
