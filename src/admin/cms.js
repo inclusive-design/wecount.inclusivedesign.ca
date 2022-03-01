@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 /* global CMS, createClass, nunjucks, PropTypes, React */
 
-import {UuidControl, UuidPreview} from "netlify-cms-widget-uuid-v4";
+import {UuidControl, UuidPreview} from "netlify-cms-widget-uuid-v4/dist/index.js";
 import dateFilter from "../filters/date";
 import htmlSymbolFilter from "../filters/html-symbol";
 import markdownFilter from "../filters/markdown";
