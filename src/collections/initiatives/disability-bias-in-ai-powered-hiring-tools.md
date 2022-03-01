@@ -9,7 +9,7 @@ coverImageAltText: "Disability Bias in AI-Powered Hiring Tools: Creating
   Cover Letters: Wednesday, March 30, 2022, 1-3 PM ET. Resume Tips Seminar:
   Wednesday, April 13, 2022, 1-3 PM ET (optional)."
 shortDescription: >-
-  The IDRC is investigating bias in AI-based hiring algorithms  by creating a
+  The IDRC is investigating bias in AI-based hiring algorithms by creating a
   data set based on the resumes and experience of real people with disabilities.
   This “synthetic” data set can be used to test hiring algorithms and help us to
   better understand and improve potential bias in these systems. Help is needed
