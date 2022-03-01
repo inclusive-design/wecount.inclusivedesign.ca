@@ -19,7 +19,7 @@ shortDescription: >-
 
   Session 1 Creating Resumes: Wednesday, March 23, 2022, 1-3 PM EST
 
-  Session 2 Creating Cover letters: Wednesday, March 30, 2022, 1-3 PM EST
+  Session 2 Creating Cover Letters: Wednesday, March 30, 2022, 1-3 PM EST
 
   Resume Tips Seminar: Wednesday, April 13, 2022, 1-3 PM EST (optional)
 
@@ -43,7 +43,7 @@ The goal of this accessible, online co-design is to generate a data set of job-s
 The co-design is structured in two required sessions and a third optional session on resume tips, which will take place over a period of three weeks, from 1-3 PM EST:
 
 1. Session 1 Creating Resumes: Wednesday, March 23, 2022
-2. Session 2 Creating Cover letters: Wednesday, March 30, 2022
+2. Session 2 Creating Cover Letters: Wednesday, March 30, 2022
 3. Resume Tips Seminar: Wednesday, April 13, 2022 (optional)
 
 The total time commitment is expected to be 4 hours for the co-design and 1-2 hours for the optional seminar. All participants will also receive [We Count micro-badges](https://wecount.inclusivedesign.ca/badges/).\
