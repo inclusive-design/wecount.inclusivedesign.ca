@@ -17,11 +17,11 @@ shortDescription: >-
   employment because of a disability. 
 
 
-  Session 1 Creating Resumes: Wednesday, March 23, 2022, 1-3 PM EST
+  Session 1 Creating Resumes: Wednesday, March 23, 2022, 1-3 PM ET
 
-  Session 2 Creating Cover Letters: Wednesday, March 30, 2022, 1-3 PM EST
+  Session 2 Creating Cover Letters: Wednesday, March 30, 2022, 1-3 PM ET
 
-  Resume Tips Seminar: Wednesday, April 13, 2022, 1-3 PM EST (optional)
+  Resume Tips Seminar: Wednesday, April 13, 2022, 1-3 PM ET (optional)
 
 
   **Register now**
