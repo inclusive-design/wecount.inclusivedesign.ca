@@ -24,3 +24,5 @@ Despite these challenges and hurdles, persons with disabilities are working in d
 * Resources to network with others working in data science. 
 
 We hope this library provides a consolidated resource that can continue to grow as data scientists use and add to this knowledge base. We have already seen how shared experiences between data scientists with and without disabilities can create positive changes in data science tools. It is vital that we continue to advocate for accessibility in these tools by providing ongoing feedback during the development, use and application of these tools. Only when data science tools can be used by all will AI be inclusive for all.
+
+[Explore the We Count research library](https://wecount.inclusivedesign.ca/resources/)
