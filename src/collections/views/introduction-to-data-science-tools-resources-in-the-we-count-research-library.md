@@ -5,12 +5,10 @@ author: Lorna Lo
 date: 2022-03-15T23:36:40.424Z
 picture: /uploads/we-count-logo-3.png
 excerpt: Learning data science comes with a steep learning curve. Inaccessible
-  tutorials, learning environments and data science resources create barriers;
-  and the need for users to investigate the idiosyncrasies of each data tool and
-  their interaction with assistive technologies only creates additional
-  obstacles. Despite these challenges and hurdles, persons with disabilities are
-  working in data science. To support a more inclusive environment in the field
-  of data science, We Count has created a growing resource library.
+  tutorials and resources create barriers, and the need for users to investigate
+  how each data tool interactions with assistive technologies only creates
+  additional obstacles. To support a more inclusive environment in the field of
+  data science, We Count has created a resource library.
 ---
 The issues with bias, gaps and fairness in AI can be addressed by ensuring persons with disabilities can equally participate in the field of data science. The tools used in data science are numerous. They differ greatly in their purpose, interface, complexity and capabilities. Unfortunately for data scientists with a disability, use of these tools can be challenging and unpredictable as their accessibility can vary greatly. There are often shortfalls in the tools’ designed accessibility, with accessibility features included as an afterthought. Persons with disabilities are left to develop workarounds and use trial-and-error methods to determine how assistive technologies can be used effectively with data science tools. The result is a patchwork of solutions and strategies that are less than ideal yet require constant adjustments.  
 
