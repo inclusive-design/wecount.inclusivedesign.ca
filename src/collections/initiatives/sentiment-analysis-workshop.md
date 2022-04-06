@@ -42,3 +42,5 @@ Session 1 Getting Started: Tuesday, February 22, 2022, 1–3 PM ET
 Session 2 Practising: Tuesday, March 1, 2022, 1–3 PM ET
 
 Session 3 Analysis: Tuesday, March 22, 2022, 1–3 PM ET
+
+[Sentiment Analysis Workshop video](https://youtu.be/IMTgif81wc0)
