@@ -46,18 +46,14 @@ The co-design is structured in two required sessions and a third optional sessio
 2. Session 2 Creating Cover Letters: Wednesday, March 30, 2022
 3. Resume Tips Seminar: Wednesday, April 13, 2022 (optional)
 
-The total time commitment is expected to be 4 hours for the co-design and 1-2 hours for the optional seminar. All participants will also receive [We Count micro-badges](https://wecount.inclusivedesign.ca/badges/).
-
-
+The total time commitment is expected to be 4 hours for the co-design and 2 hours for the optional seminar. All participants will also receive [We Count micro-badges](https://wecount.inclusivedesign.ca/badges/).
 
 ### Resume Tips Seminar
 
-The third session of our Disability Bias in AI-Powered Hiring Tools co-design is open to all interested participants, in addition to those who participated in the first two sessions.\
+**Registration is still open for our Resume Tips Seminar!**\
 \
-Wednesday, April 13, 2022, 1-3 PM ET\
-\
-The time commitment for the seminar is expected to be 1-2 hours. If you are interested in participating in our free Resume Tips Seminar with guest speaker Hassan Youssef from the Canadian Council on Rehabilitation and Work, please register below. ASL and captioning will be provided.
+Our upcoming free Resume Tips Seminar for People with Disabilities with guest speakers Hassan Youssef and Cho Chua from the Canadian Council on Rehabilitation and Work is open to everyone, and ASL and captioning will be provided.
 
-If you are interested in participating, please complete the brief form linked below. 
+Wednesday, April 13, 2022, 1-3 PM ET
 
 [Register now](https://forms.office.com/r/bcuc2jbBWH)
