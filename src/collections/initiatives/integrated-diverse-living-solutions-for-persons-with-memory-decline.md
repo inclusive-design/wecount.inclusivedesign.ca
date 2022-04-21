@@ -16,9 +16,6 @@ shortDescription: >-
 
 
   Tuesday, April 12, 2022, 1-3 PM ET
-
-
-  **Register now**
 previewImageUrl: /uploads/integrated-_diverse_webinar-03-small.png
 ---
 ### Integrated, Diverse Living Solutions for Persons with Memory Decline
@@ -26,8 +23,6 @@ previewImageUrl: /uploads/integrated-_diverse_webinar-03-small.png
 In this webinar, learn about recent trends of housing persons with dementia and about MonIA, a 1.5-year consortium project in Finland that centres on finding solutions and strategies to promote social inclusion and independence for persons living with mild to moderate memory decline. Discover examples and new ideas in the fields of architecture, interior design, urban design, renovations, smart technologies and more — all with the aim of making homes and built environments in general more inclusive and memory friendly.
 
 Tuesday, April 12, 2022, 1-3 PM ET
-
-[Register for the webinar](https://ocadu.zoom.us/meeting/register/tZwkcOyopzgsE93O6xk0-G2iB57S9ZKaWYGZ)
 
 **Guest Speaker:**
 
