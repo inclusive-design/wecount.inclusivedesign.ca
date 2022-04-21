@@ -22,9 +22,6 @@ shortDescription: >-
   Session 2 Creating Cover Letters: Wednesday, March 30, 2022, 1-3 PM ET
 
   Resume Tips Seminar: Wednesday, April 13, 2022, 1-3 PM ET (optional)
-
-
-  **Register now**
 previewImageUrl: /uploads/synthetic-dataset-exports-linkedin-small.jpg
 ---
 ### Creating Bias-Testing Data from the Experiences of People with Disabilities
@@ -55,5 +52,3 @@ The total time commitment is expected to be 4 hours for the co-design and 2 hour
 Our upcoming free Resume Tips Seminar for People with Disabilities with guest speakers Hassan Youssef and Cho Chua from the Canadian Council on Rehabilitation and Work is open to everyone, and ASL and captioning will be provided.
 
 Wednesday, April 13, 2022, 1-3 PM ET
-
-[Register now](https://forms.office.com/r/bcuc2jbBWH)
