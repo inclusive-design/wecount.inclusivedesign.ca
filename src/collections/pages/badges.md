@@ -40,9 +40,23 @@ See our [currently available badges](/badges/#earn-a-badge).
 
 Our initiatives and their corresponding badges are listed below. 
 
+### Sentiment Analysis Workshop
+
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+#### Learner badge
+
+You will learn:
+
+* How small organizations and their members can complete a sentiment analysis and build their own data set that represents a concern of the disability community as part of our learning
+* The process and the tools involved in the data ecosystem, as well as how to become a part of the data ecosystem
+
+[Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/RB0F6Ra258NHa1XK/apply)
+{% endimageAndText %}
+
 ### Designing Proof and Evidence with Minorities and Outlier Data
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 #### Learner badge
 
 You will learn:
@@ -52,9 +66,11 @@ You will learn:
 * How the passage of policy changes to Medical Assistance in Dying (MAiD), Bill C7, is devaluing the lives of persons with disabilities by singling out this group as not requiring a foreseeable death in order to access MAiD
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/R3G3D0aXUN9a3JL/apply)
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
+
 #### Brainstormer badge
 
 You will brainstorm:
@@ -63,11 +79,13 @@ You will brainstorm:
 * Alternative strategies and tools for minorities to collect and provide this evidence to policy makers
 
 [Apply for your Brainstormer badge](https://factory.cancred.ca/c/earnablebadge/R3G15TaXUN9a3JC/apply)
+
 {% endimageAndText %}
 
 ### AI and Disability: A Double-Edged Sword
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 #### Learner badge
@@ -80,11 +98,13 @@ You will learn:
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QZ5R8Ya1Q08Ra34G/apply)
 
 
+
 {% endimageAndText %}
 
 ### The Metric Society and the Unmeasurable
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -104,11 +124,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### Building Indigenous Future Imaginaries
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -127,11 +149,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### Inclusive AI for HR
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -150,11 +174,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### AI Hiring System Policies
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -173,11 +199,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### AI Employment Systems
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -196,11 +224,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### AI and AT Apps
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -220,9 +250,11 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
+
 
 
 
@@ -241,9 +273,11 @@ You will brainstorm:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_COMMUNICATOR-300x300.png", "We Count Communicator badge", "left", "top" %}
+
 
 
 
@@ -263,11 +297,13 @@ You will communicate:
 
 
 
+
 {% endimageAndText %}
 
 ### Bias In, Bias Out
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -281,6 +317,7 @@ You will learn:
 * How specific data resources are used to train and reinforce machine learning models to produce biased outputs
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply)
+
 
 
 

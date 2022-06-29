@@ -25,7 +25,7 @@ shortDescription: >-
   Session 3 Analysis: Tuesday, March 22, 2022, 1–3 PM ET
 
 
-  **Register now**
+  **Available badges:** Learner
 previewImageUrl: /uploads/wordpress_sentiment-analysis-workshop-small.jpg
 ---
 ### Sentiment Analysis Workshop
@@ -46,4 +46,16 @@ Session 2 Practising: Tuesday, March 1, 2022, 1–3 PM ET
 
 Session 3 Analysis: Tuesday, March 22, 2022, 1–3 PM ET
 
-[Register for the workshop](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo621xjv9v8p1-NGoyH_ZGO0IQxUOUNKREFFSUlKVUdUMTFKQ0xVT0owSjJBTSQlQCN0PWcu)
+[Sentiment Analysis Workshop video](https://youtu.be/IMTgif81wc0)
+
+### Earn a Learner badge
+
+You will learn:
+
+* How small organizations and their members can complete a sentiment analysis and build their own data set that represents a concern of the disability community as part of our learning
+* The process and the tools involved in the data ecosystem, as well as how to become a part of the data ecosystem
+
+Learn and earn badges from this event: 
+
+1. Watch the accessible [Sentiment Analysis Workshop](https://youtu.be/IMTgif81wc0)
+2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/RB0F6Ra258NHa1XK/apply) (four short answer questions on the contents of the workshop)
