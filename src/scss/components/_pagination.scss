@@ -1,7 +1,6 @@
 .pagination {
 	display: block;
 	line-height: rem(38);
-	list-style: none;
 	margin-left: -10%;
 	margin-right: -10%;
 	margin-top: rem(27);
@@ -71,6 +70,8 @@
 	}
 
 	li {
+		list-style: none;
+
 		a.is-current {
 			background-color: $green-pale;
 			box-shadow: 0 0 0 rem(2) $green-dark inset;
