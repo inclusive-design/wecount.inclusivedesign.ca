@@ -22,4 +22,4 @@ This video presentation examines how AI technology is utilized in recruitment an
 
 {% youtube "https://youtu.be/Kaw0IuAV7dU" %}
 
-Learn more about ODD: [https://idrc.ocadu.ca/odd/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazdscEY3ak4xaDNlQ0Z0NkZFMzJqUmdGOGFBZ3xBQ3Jtc0ttdkNmTEJSbDFpb2ozZGdjcFUxdlVSUWZrOWRkbzlZYmR6RUlvRjFhenNIOVQ5NnF5U0dPSV8yNzJkbDQ0MTZmSXd1OHN6aDhvNDZEQUlGdEtiNktsMnM2aHVCYlY5aGp6SnpRZzBoODRJVFY1NFBhSQ&q=https%3A%2F%2Fidrc.ocadu.ca%2Fodd%2F&v=Kaw0IuAV7dU)
+Learn more about [ODD](https://idrc.ocadu.ca/odd/).[](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazdscEY3ak4xaDNlQ0Z0NkZFMzJqUmdGOGFBZ3xBQ3Jtc0ttdkNmTEJSbDFpb2ozZGdjcFUxdlVSUWZrOWRkbzlZYmR6RUlvRjFhenNIOVQ5NnF5U0dPSV8yNzJkbDQ0MTZmSXd1OHN6aDhvNDZEQUlGdEtiNktsMnM2aHVCYlY5aGp6SnpRZzBoODRJVFY1NFBhSQ&q=https%3A%2F%2Fidrc.ocadu.ca%2Fodd%2F&v=Kaw0IuAV7dU)
