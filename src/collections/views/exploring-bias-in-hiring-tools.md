@@ -3,7 +3,7 @@ title: Exploring Bias in Hiring Tools
 author: Ed Thomas
 date: 2022-07-28T14:27:09.566Z
 picture: /uploads/odd-3.png
-altTag: ODD logo
+altTag: Optimizing Diversity with Disability logo
 excerpt: This ODD video presentation examines how AI technology is utilized in
   recruitment and selection, its implications for candidates with disabilities,
   and the question of accessibility and diversity.
