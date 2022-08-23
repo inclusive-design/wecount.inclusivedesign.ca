@@ -1,6 +1,6 @@
 ---
 title: Exploring Bias in Hiring Tools
-permalink: https://wecount.inclusivedesign.ca/views/#exploring-bias-in-hiring-tools
+permalink: https://wecount.inclusivedesign.ca/views/exploring-bias-in-hiring-tools/
 author: Ed Thomas
 date: 2022-07-28T14:27:09.566Z
 picture: /uploads/odd-3.png
