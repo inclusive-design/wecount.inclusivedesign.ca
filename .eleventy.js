@@ -88,20 +88,29 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("allTags", collection => {
 		const tags = getUniqueTags(collection.getAll());
-		const pageSize = 10;
+		
+		let postsByTag = {};
 		let collectionTogo = [];
 
+		// Compile posts by tag, circumventing getFilteredByTag's case sensitivity
 		tags.map(tag => {
-			const slug = slugFilter(tag);
-			const taggedPosts = collection.getFilteredByTag(tag).reverse();
+			const postsByTagCaseSensitive = collection.getFilteredByTag(tag).reverse();
+			const postsBySameTagOtherCases = postsByTag[tag.toLowerCase()];
+			postsByTag[tag.toLowerCase()] = postsBySameTagOtherCases ? [... postsBySameTagOtherCases, ... postsByTagCaseSensitive] : postsByTagCaseSensitive;
+		});
 
-			if (taggedPosts.length) {
-				const postsInPage = chunkArray(taggedPosts, pageSize);
+		for (let tag in postsByTag) {
+			if (postsByTag[tag].length) {
+				const pageSize = 10;
+				const postsInPage = chunkArray(postsByTag[tag], pageSize);
+				
 				for (let pageNumber = 1; pageNumber <= postsInPage.length; pageNumber++) {
+					const slug = slugFilter(tag);
 					let pagination;
+
 					if (pageNumber === 1) {
 						// Add the root page that has the same content as the first page
-						pagination = createPagination(taggedPosts, pageSize, 1, "/tags/" + slug + "/page/:page");
+						pagination = createPagination(postsByTag[tag], pageSize, 1, "/tags/" + slug + "/page/:page");
 						collectionTogo.push({
 							slug: slug,
 							title: tag,
@@ -115,11 +124,11 @@ module.exports = function(eleventyConfig) {
 						title: tag,
 						pageNumber: pageNumber,
 						posts: postsInPage[pageNumber - 1],
-						pagination: pagination ? pagination : createPagination(taggedPosts, pageSize, pageNumber, "/tags/" + slug + "/page/:page")
+						pagination: pagination ? pagination : createPagination(postsByTag[tag], pageSize, pageNumber, "/tags/" + slug + "/page/:page")
 					});
 				}
 			}
-		});
+		}
 
 		return collectionTogo;
 	});
