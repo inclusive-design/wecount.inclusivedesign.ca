@@ -2,6 +2,8 @@
 title: "The We Count Recount: Past Issues"
 author: Rachel Spence
 date: 2022-08-31T21:52:18.521Z
+picture: /uploads/we-count-logo_colour_icon-only_white-background.png
+altTag: We Count logo
 excerpt: Read all past issues of the We Count Recount, We Count's monthly newsletter.
 tags:
   - newsletter
