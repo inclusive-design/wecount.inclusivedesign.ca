@@ -7,6 +7,7 @@ altTag: We Count logo
 excerpt: Read all past issues of the We Count Recount, We Count's monthly newsletter.
 tags:
   - newsletter
+  - Recount
 ---
 Read all past issues of the We Count Recount, We Count's monthly newsletter.
 
