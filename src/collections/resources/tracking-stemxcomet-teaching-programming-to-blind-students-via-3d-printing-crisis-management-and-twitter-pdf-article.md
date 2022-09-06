@@ -11,7 +11,7 @@ sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Sh
 keywords:
   - Education
   - programming
-  - accessibility
+  - Accessibility
   - visual impairments
   - crisis informatics
   - 3D printing
