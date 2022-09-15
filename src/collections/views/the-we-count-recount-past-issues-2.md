@@ -1,5 +1,5 @@
 ---
-title: "The We Count Recount: Past Issues"
+title: "We Count Recount: Past Issues"
 author: Rachel Spence
 date: 2022-08-31T21:52:18.521Z
 picture: /uploads/we-count-logo_colour_icon-only_white-background.png
@@ -27,13 +27,13 @@ Read all past issues of the We Count Recount, We Count's monthly newsletter.
 
 ## 2021
 
-[March](/uploads/the-we-count-recount-march-2021.pdf)
+[March](/uploads/the-we-count-recount_-march-2021_accessible.docx)
 
-[April](/uploads/the-we-count-recount-april-2021.pdf)
+[April](/uploads/the-we-count-recount_-april-2021_accessible.docx)
 
-[May](/uploads/the-we-count-recount-may-2021.pdf)
+[May](/uploads/the-we-count-recount_-may-2021_accessible.docx)
 
-[June](/uploads/the-we-count-recount-june-2021.pdf)
+[June](/uploads/the-we-count-recount_-june-2021_accessible.docx)
 
 [July](https://mailchi.mp/ffe9b942dae7/the-we-count-recount-july-2021)
 
