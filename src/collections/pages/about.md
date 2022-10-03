@@ -101,7 +101,7 @@ Read all past issues of the We Count Recount, We Count's monthly newsletter.
 
 <style type="text/css">
 <!--
-.display_archive {font-family: arial,verdana; font-size: 14px;}
+.display_archive {font-family: arial,verdana; font-size: 16px;}
 .campaign {line-height: 125%; margin: 5px;}
 //-->
 </style>
