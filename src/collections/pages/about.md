@@ -110,13 +110,13 @@ Read all past issues of the We Count Recount, We Count's monthly newsletter.
 
 ### Additional Past Issues
 
-06/05/21 - [T﻿he We Count Recount: June 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-june-2021_accessible.docx)
+06/05/2021 - [T﻿he We Count Recount: June 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-june-2021_accessible.docx)
 
-05/08/21 - [T﻿he We Count Recount: May 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-may-2021_accessible.docx)
+05/08/2021 - [T﻿he We Count Recount: May 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-may-2021_accessible.docx)
 
-04/14/21 - [T﻿he We Count Recount: April 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-april-2021_accessible.docx)
+04/14/2021 - [T﻿he We Count Recount: April 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-april-2021_accessible.docx)
 
-03/09/21 - [T﻿he We Count Recount: March 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-march-2021_accessible.docx)
+03/09/2021 - [T﻿he We Count Recount: March 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-march-2021_accessible.docx)
 
 ## Sign up to learn more about We Count
 
