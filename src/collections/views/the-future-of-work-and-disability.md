@@ -75,11 +75,13 @@ The Future of Work and Disability had expert collaborators many of whom identify
 
 
 
+
 [FWD Findings Report (English PDF)](https://wecount.inclusivedesign.ca/uploads/fwd-findings-report_english_accessible.pdf)
 
 [FWD Findings Report (English doc)](https://wecount.inclusivedesign.ca/uploads/future-of-work-and-disability-findings-report-2.docx)
 
 [L’avenir du travail et les personnes handicapées (French doc)](https://wecount.inclusivedesign.ca/uploads/fr-future-of-work-and-disability-findings-report-2.docx)
+
 
 
 
@@ -106,11 +108,13 @@ In addition to our report to Accessibility Standards Canada, we created:
 
 
 
+
 [AI Employment Systems Learner badge](https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply)
 
 [AI Hiring System Policies Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply)
 
 [Inclusive AI for HR Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply)
+
 
 
 
@@ -153,7 +157,9 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
 **Anhong Guo** is an Assistant Professor in Computer Science & Engineering at the University of Michigan. He has also worked in the Ability and Intelligent User Experiences groups in Microsoft Research, the HCI group of Snap Research, the Accessibility Engineering team at Google, and the Mobile Innovation Center of SAP America.
+
 
 
 
@@ -193,7 +199,9 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
 **Shari Trewin** manages the IBM Accessibility Leadership Team, chairs the Association for Computing Machinery (ACM) Special Interest Group on Accessible Computing (SIGACCESS), and is a Distinguished Scientist of the ACM, a member of ACM’s Diversity and Inclusion Council.
+
 
 
 
@@ -233,7 +241,9 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
 **Ben Tamblyn** is the Director of Inclusive Design at Microsoft. Ben has worked in a wide range of marketing, design and technical roles, and has a passion for design, inclusion and potential impact of technology on the world.
+
 
 
 
@@ -273,7 +283,9 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
 **Chancey Fleet** was a 2018–19 Data & Society Fellow and is currently an Affiliate-in-Residence whose writing, organizing and advocacy aims to catalyze critical inquiry into how cloud-connected accessibility tools benefit and harm, empower and expose disability communities. Chancey is also the Assistive Technology Coordinator at the New York Public Library.
+
 
 
 
@@ -303,7 +315,9 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
 **Dr. Vera Roberts** is Senior Manager Research, Consulting and Projects at the Inclusive Design Research Centre (IDRC) at OCAD University. Vera’s primary research area is generating a culture of inclusion through outreach activities and implementation of inclusive technology and digital sharing platforms.
+
 
 
 
@@ -373,132 +387,6 @@ Learn and earn badges from this event:
 1. Watch the accessible [AI Employment Systems webinar](https://youtu.be/C_2lFeH9y2I)
 2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply) (five short answer questions)
 
-## Storytelling Workshop
-
-Storytelling can help us articulate our thoughts, feelings and experiences; it can build confidence and create a sense of belonging and connection. During our workshop, each participant shared an experience related to the challenges of employment with regards to AI, smart systems and automation. 
-
-### Facilitators
-
-{% imageAndText "/uploads/Minette-Samaroo.png", "A photo of Minette Samaroo", "left", "top" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**Minette Samaroo** is the President of AEBC Toronto Chapter. She is active in advocating for social change for persons with disabilities. In 2019, Minette led the development and execution of the Disability Advantage Program — a training program for employers that highlights the benefits of hiring and working with persons with disabilities.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% endimageAndText %}
-
-{% imageAndText "/uploads/Falaah-Arif-Khan.png", "A photo of Falaah Arif Khan", "left", "top" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**Falaah Arif Khan** is an Artist-in-Residence at the Montreal AI Ethics Institute and the NYU Center for Responsible AI, as well as a Research Fellow in the Bhasha group at the International Institute of Information Technology, Hyderabad. His latest artwork includes the first volume of the _Superheroes of Deep Learning_ comics (with Zack Lipton) and the _Data, Responsibly_ comics.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% endimageAndText %}
-
-{% imageAndText "/uploads/Melissa-Egan.png", "A photo of Melissa Egan", "left", "top" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**Melissa Egan** is National Lead, Episodic Disabilities at Realize. Using her training in curriculum development and adult education, she helped create online learning webinars on episodic disabilities and employment. She has worked extensively with marginalized, LGBTQ and Indigenous people to develop and deliver workshops across Canada.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% endimageAndText %}
-
 ## AI Hiring System Policies Webinar
 
 In this presentation, we explore the best policies and practices that both tech companies should adopt in designing their algorithms and the employment organizations that use them. Consider the many legal and ethical implications of machine learning bias must focus on.
@@ -524,7 +412,9 @@ In this presentation, we explore the best policies and practices that both tech 
 
 
 
+
 ****Alexandra Reeve Givens**** is the CEO of the Center for Democracy & Technology, a leading U.S. think tank that focuses on protecting democracy and individual rights in the digital age. The organization works on a wide range of tech policy issues, including consumer privacy to data and discrimination, free expression, surveillance, internet governance and competition.
+
 
 
 
@@ -564,7 +454,9 @@ In this presentation, we explore the best policies and practices that both tech 
 
 
 
+
 **Julia Stoyanovich** is an Assistant Professor of Computer Science and Engineering and of Data Science at New York University. Julia’s research focuses on responsible data management and analysis, including operationalizing fairness, diversity, transparency and data protection in all stages of the data science lifecycle. She is the founding director of the Center for Responsible AI at NYU, a comprehensive laboratory that is building a future in which responsible AI will be the only kind of AI accepted by society.
+
 
 
 
@@ -673,7 +565,9 @@ This webinar focused on employment, disability and artificial intelligence polic
 
 
 
+
 **Abhishek Gupta** is the Founder and Principal Researcher at the [Montreal AI Ethics Institute](https://montrealethics.ai) and a Machine Learning Engineer at Microsoft, where he serves on the CSE Responsible AI Board. He is representing Canada for the International Visitor Leaders Program (IVLP) administered by the U.S. State Department as an expert on the future of work. His research focuses on applied technical and policy methods to address ethical, safety and inclusivity concerns in using AI in different domains. He has built the largest community driven, public consultation group on AI Ethics in the world.
+
 
 
 
@@ -772,7 +666,9 @@ In this webinar, our panel discussion highlighted some of the potential problems
 
 
 
+
 **Shea Tanis** is the Director for Policy and Advocacy at the Coleman Institute for Cognitive Disabilities at the University of Colorado. She is nationally recognized for her expertise in applied cognitive technology supports, cognitive accessibility and advancing the rights of people with cognitive disabilities to technology and information access.
+
 
 
 
@@ -812,7 +708,9 @@ In this webinar, our panel discussion highlighted some of the potential problems
 
 
 
+
 **Rich Donovan** is CEO of the Return on Disability Group and is a globally recognized subject matter expert on the convergence of disability and corporate profitability. He has spent more than ten years focused on defining and unlocking the economic value of the disability market. In 2006 Rich founded Lime, the leading third-party recruiter in the disability space, where he worked with Google, PepsiCo, Bank of America/Merrill Lynch, IBM, TD Bank and others to help them attract and retain top talent from within the disability market.
+
 
 
 
@@ -882,9 +780,11 @@ In this webinar we learned about [nugget.ai](https://www.nugget.ai/)’s operati
 ### Guest Speakers
 
 {% imageAndText "/uploads/nugget.jpg", "nugget.ai logo", "left", "top" %}
+
 **Marian Pitel** is Head of Research at nugget.ai, completing a Doctor of Philosophy degree in Organizational Psychology.
 
 **Melisa Pike** is Product and Research Associate at nugget.ai, completing a Doctor of Philosophy degree in Organizational Psychology.
+
 {% endimageAndText %}
 
 ### Activity
