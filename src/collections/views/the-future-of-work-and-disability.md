@@ -2,7 +2,7 @@
 title: The Future of Work and Disability
 permalink: /views/fwd/
 author: David Pereyra
-date: 2021-02-19T15:37:31
+date: 2022-10-20T18:33:22.010Z
 picture: /uploads/8eb229f4-2.jpg
 altTag: Future of Work and Disability logo
 excerpt: The Future of Work and Disability project formed a study group to
