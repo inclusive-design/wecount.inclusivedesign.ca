@@ -1,6 +1,6 @@
 ---
 title: "Ensuring Equitable Outcomes from Automated Hiring Processes: An Update"
-author: Antranig Basman
+author: Antranig Basman, Raising the Floor - International
 date: 2022-11-21T23:59:53.363Z
 picture: /uploads/odd-3.png
 excerpt: For this article, Antranig is considering this problem in the context
