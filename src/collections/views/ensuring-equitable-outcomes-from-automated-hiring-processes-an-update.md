@@ -3,13 +3,10 @@ title: "Ensuring Equitable Outcomes from Automated Hiring Processes: An Update"
 author: Antranig Basman
 date: 2022-11-21T23:59:53.363Z
 picture: /uploads/odd-3.png
-excerpt: Since he wrote in February about the ODD's initiatives in investigating
-  bias in algorithmic hiring processes, and seeking more inclusive alternatives,
-  how we have received a disappointing response from their corporate partners on
-  this project. For this article, Antranig is considering this problem in the
-  context of corporate apologies for technological practice and initiatives such
-  as data feminism that seek to transfer power from privileged groups to those
-  at the margins of society.
+excerpt: For this article, Antranig is considering this problem in the context
+  of corporate apologies for technological practice and initiatives such as data
+  feminism that seek to transfer power from privileged groups to those at the
+  margins of society.
 tags:
   - ODD
 ---
