@@ -2,7 +2,7 @@
 title: "Ensuring Equitable Outcomes from Automated Hiring Processes: An Update"
 author: Antranig Basman
 date: 2022-11-21T23:59:53.363Z
-picture: /uploads/we-count-logo-6.png
+picture: /uploads/odd-3.png
 excerpt: Since I wrote in February about the ODD's initiatives in investigating
   bias in algorithmic hiring processes, and seeking more inclusive alternatives,
   we have received a disappointing response from our corporate partners on this
