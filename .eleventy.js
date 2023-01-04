@@ -25,19 +25,28 @@ require("./src/js/utils.js");
 
 /**
  * Get an array of unique tags from a collection.
+ * Note: tags with the same spelling but different case usage will each be considered unique.
  *
  * @param {Object} collection An Eleventy collection defined via the collections API: https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting
  * @returns {Array}
  */
 const getUniqueTags = function(collection) {
-	const tagsSet = new Set();
+	let tagsMap = new Map();
 	collection.forEach(item => {
 		if (!item.data.tags) return;
 		item.data.tags
 			.filter(tag => !["pages", "initiatives", "news", "views", "comments"].includes(tag))
-			.forEach(tag => tagsSet.add(tag));
+			.forEach(tag => {
+				if (!tagsMap.has(tag)) {
+					tagsMap.set(tag, slugFilter(tag));
+				}
+			});
 	});
-	return Array.from(tagsSet).sort();
+
+	// this sorting by tag name will put lowercase ahead of uppercase
+	const tagsArray = Array.from(tagsMap, ele => { return { name: ele[0], slug: ele[1] }; }).sort((a, b) => a.name.localeCompare(b.name));
+
+	return tagsArray;
 };
 
 module.exports = function(eleventyConfig) {
@@ -83,49 +92,63 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("viewsTags", collection => {
-		return getUniqueTags(collection.getFilteredByGlob("src/collections/views/*.md"));
+		const uniqueTags = getUniqueTags(collection.getFilteredByGlob("src/collections/views/*.md"));
+		let tagsFiltered = []; // Tags filtered to remove duplicates with different-case spelling
+
+		for (let i = 0; i < uniqueTags.length; i++) {
+			if (!tagsFiltered.some(tag => tag.slug === uniqueTags[i].slug && tag.name !== uniqueTags[i].name)) {
+				tagsFiltered.push(uniqueTags[i]); // there are no other spellings of this tag already in the list
+			}
+		}
+
+		return tagsFiltered;
 	});
 
 	eleventyConfig.addCollection("allTags", collection => {
-		const tags = getUniqueTags(collection.getAll());
-		
-		let postsByTag = {};
+		// Compile posts by tag slug.
+		const uniqueTags = getUniqueTags(collection.getAll());
+		let tagsAggregated = []; // Tags aggregated by slug
+
+		for (let i = 0; i < uniqueTags.length; i++) {
+			const tag = uniqueTags[i];
+			const tagPosts = collection.getFilteredByTag(tag.name).reverse();
+
+			// Check for duplicates with the same spelling but different case usage
+			let otherTags = tagsAggregated.filter(otherTag => tag.slug === otherTag.slug && tag.name !== otherTag.name);
+			
+			if (otherTags.length) {
+				// Only update the first entry as there should never be more than one
+				otherTags[0].posts = [ ... otherTags[0].posts, ... tagPosts ];
+			} else {
+				tagsAggregated.push(tag);
+				tag.posts = tagPosts;
+			}
+		}
+				
 		let collectionTogo = [];
 
-		// Compile posts by tag, circumventing getFilteredByTag's case sensitivity
-		tags.map(tag => {
-			const postsByTagCaseSensitive = collection.getFilteredByTag(tag).reverse();
-			const postsBySameTagOtherCases = postsByTag[tag.toLowerCase()];
-			postsByTag[tag.toLowerCase()] = postsBySameTagOtherCases ? [... postsBySameTagOtherCases, ... postsByTagCaseSensitive] : postsByTagCaseSensitive;
-		});
+		for (let i = 0; i < tagsAggregated.length; i++) {
+			const tag = tagsAggregated[i];
 
-		for (let tag in postsByTag) {
-			if (postsByTag[tag].length) {
+			if (tag.posts.length) {
 				const pageSize = 10;
-				const postsInPage = chunkArray(postsByTag[tag], pageSize);
+				const postsWithTag = chunkArray(tag.posts, pageSize);
 				
-				for (let pageNumber = 1; pageNumber <= postsInPage.length; pageNumber++) {
-					const slug = slugFilter(tag);
-					let pagination;
-
+				for (let pageNumber = 1; pageNumber <= postsWithTag.length; pageNumber++) {
+					let tagPage = {
+						slug: tag.slug,
+						title: tag.name,
+						posts: postsWithTag[pageNumber - 1],
+						pagination: createPagination(tag.posts, pageSize, pageNumber, "/tags/" + tag.slug + "/page/:page")
+					};
+					
+					// Add the root page that has the same content as the first page
+					// The root page is defined as such by its lack of "pageNumber" property
 					if (pageNumber === 1) {
-						// Add the root page that has the same content as the first page
-						pagination = createPagination(postsByTag[tag], pageSize, 1, "/tags/" + slug + "/page/:page");
-						collectionTogo.push({
-							slug: slug,
-							title: tag,
-							posts: postsInPage[0],
-							pagination: pagination
-						});
+						collectionTogo.push(tagPage);
 					}
-
-					collectionTogo.push({
-						slug: slug,
-						title: tag,
-						pageNumber: pageNumber,
-						posts: postsInPage[pageNumber - 1],
-						pagination: pagination ? pagination : createPagination(postsByTag[tag], pageSize, pageNumber, "/tags/" + slug + "/page/:page")
-					});
+					
+					collectionTogo.push({ ... tagPage, pageNumber: pageNumber });
 				}
 			}
 		}
