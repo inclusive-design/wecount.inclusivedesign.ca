@@ -27,8 +27,9 @@ require("./src/js/utils.js");
  * Get an array of unique tags from a collection.
  * Note: tags with the same spelling but different case usage will each be considered unique.
  *
- * @param {Object} collection An Eleventy collection defined via the collections API: https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting
- * @returns {Array}
+ * @param {Object} collection - An Eleventy collection defined via the collections API: https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting
+ * 
+ * @returns {Array<Object>} An array of tag objects with the string properties `name` and `slug`
  */
 const getUniqueTags = function(collection) {
 	let tagsMap = new Map();
@@ -44,9 +45,7 @@ const getUniqueTags = function(collection) {
 	});
 
 	// this sorting by tag name will put lowercase ahead of uppercase
-	const tagsArray = Array.from(tagsMap, ele => { return { name: ele[0], slug: ele[1] }; }).sort((a, b) => a.name.localeCompare(b.name));
-
-	return tagsArray;
+	return Array.from(tagsMap, ele => { return { name: ele[0], slug: ele[1] }; }).sort((a, b) => a.name.localeCompare(b.name));
 };
 
 module.exports = function(eleventyConfig) {
