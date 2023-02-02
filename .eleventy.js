@@ -10,7 +10,9 @@ const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const categoryFromFocusFilter = require("./src/filters/categoryFromFocus.js");
 const dateFilter = require("./src/filters/date.js");
+const getFilteredByTagTransformed = require("./src/utils/get-filtered-by-tag-transformed.js");
 const getResourceTagLabelFilter = require("./src/filters/getResourceTagLabel.js");
+const getUniqueTags = require("./src/utils/get-unique-tags.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
 const paginateFilter = require("./src/filters/paginate.js");
@@ -22,31 +24,6 @@ const imageAndTextShortcode = require("./src/shortcodes/image-and-text.js");
 const youtubeShortcode = require("./src/shortcodes/youtube.js");
 
 require("./src/js/utils.js");
-
-/**
- * Get an array of unique tags from a collection.
- * Note: tags with the same spelling but different case usage will each be considered unique.
- *
- * @param {Object} collection - An Eleventy collection defined via the collections API: https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting
- * 
- * @returns {Array<Object>} An array of tag objects with the string properties `name` and `slug`
- */
-const getUniqueTags = function(collection) {
-	let tagsMap = new Map();
-	collection.forEach(item => {
-		if (!item.data.tags) return;
-		item.data.tags
-			.filter(tag => !["pages", "initiatives", "news", "views", "comments"].includes(tag))
-			.forEach(tag => {
-				if (!tagsMap.has(tag)) {
-					tagsMap.set(tag, slugFilter(tag));
-				}
-			});
-	});
-
-	// this sorting by tag name will put lowercase ahead of uppercase
-	return Array.from(tagsMap, ele => { return { name: ele[0], slug: ele[1] }; }).sort((a, b) => a.name.localeCompare(b.name));
-};
 
 module.exports = function(eleventyConfig) {
 	// Watch SCSS files.
@@ -91,68 +68,41 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("viewsTags", collection => {
-		const uniqueTags = getUniqueTags(collection.getFilteredByGlob("src/collections/views/*.md"));
-		let tagsFiltered = []; // Tags filtered to remove duplicates with different-case spelling
-
-		for (let i = 0; i < uniqueTags.length; i++) {
-			if (!tagsFiltered.some(tag => tag.slug === uniqueTags[i].slug && tag.name !== uniqueTags[i].name)) {
-				tagsFiltered.push(uniqueTags[i]); // there are no other spellings of this tag already in the list
-			}
-		}
-
-		return tagsFiltered;
+		return getUniqueTags(collection.getFilteredByGlob("src/collections/views/*.md"));
 	});
 
 	eleventyConfig.addCollection("allTags", collection => {
-		// Compile posts by tag slug.
-		const uniqueTags = getUniqueTags(collection.getAll());
-		let tagsAggregated = []; // Tags aggregated by slug
+		let postsByTag = [];
 
-		for (let i = 0; i < uniqueTags.length; i++) {
-			const tag = uniqueTags[i];
-			const tagPosts = collection.getFilteredByTag(tag.name).reverse();
+		getUniqueTags(collection.getAll()).forEach(tag => {
+			postsByTag.push({ ... tag, posts: getFilteredByTagTransformed(tag.slug, collection, { transform: slugFilter }) });
+		});
 
-			// Check for duplicates with the same spelling but different case usage
-			let otherTags = tagsAggregated.filter(otherTag => tag.slug === otherTag.slug && tag.name !== otherTag.name);
+		const pageSize = 10;
+		let paginatedPostsByTag = [];
+
+		postsByTag.forEach(tag => {
+			const postsWithTag = chunkArray(tag.posts, pageSize);
 			
-			if (otherTags.length) {
-				// Only update the first entry as there should never be more than one
-				otherTags[0].posts = [ ... otherTags[0].posts, ... tagPosts ];
-			} else {
-				tagsAggregated.push(tag);
-				tag.posts = tagPosts;
-			}
-		}
+			for (let pageNumber = 1; pageNumber <= postsWithTag.length; pageNumber++) {
+				let tagPage = {
+					slug: tag.slug,
+					title: tag.name,
+					posts: postsWithTag[pageNumber - 1],
+					pagination: createPagination(tag.posts, pageSize, pageNumber, "/tags/" + tag.slug + "/page/:page")
+				};
 				
-		let collectionTogo = [];
-
-		for (let i = 0; i < tagsAggregated.length; i++) {
-			const tag = tagsAggregated[i];
-
-			if (tag.posts.length) {
-				const pageSize = 10;
-				const postsWithTag = chunkArray(tag.posts, pageSize);
-				
-				for (let pageNumber = 1; pageNumber <= postsWithTag.length; pageNumber++) {
-					let tagPage = {
-						slug: tag.slug,
-						title: tag.name,
-						posts: postsWithTag[pageNumber - 1],
-						pagination: createPagination(tag.posts, pageSize, pageNumber, "/tags/" + tag.slug + "/page/:page")
-					};
-					
-					// Add the root page that has the same content as the first page
-					// The root page is defined as such by its lack of "pageNumber" property
-					if (pageNumber === 1) {
-						collectionTogo.push(tagPage);
-					}
-					
-					collectionTogo.push({ ... tagPage, pageNumber: pageNumber });
+				// Add the root page that has the same content as the first page
+				// The root page is defined as such by its lack of "pageNumber" property
+				if (pageNumber === 1) {
+					paginatedPostsByTag.push(tagPage);
 				}
+				
+				paginatedPostsByTag.push({ ... tagPage, pageNumber: pageNumber });
 			}
-		}
+		});
 
-		return collectionTogo;
+		return paginatedPostsByTag;
 	});
 
 	// Add plugins.
