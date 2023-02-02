@@ -10,7 +10,7 @@ const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const categoryFromFocusFilter = require("./src/filters/categoryFromFocus.js");
 const dateFilter = require("./src/filters/date.js");
-const getFilteredByTagTransformed = require("./src/utils/get-filtered-by-tag-transformed.js");
+const getFilteredByTagSlug = require("./src/utils/get-filtered-by-tag-slug.js");
 const getResourceTagLabelFilter = require("./src/filters/getResourceTagLabel.js");
 const getUniqueTags = require("./src/utils/get-unique-tags.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
@@ -75,7 +75,7 @@ module.exports = function(eleventyConfig) {
 		let postsByTag = [];
 
 		getUniqueTags(collection.getAll()).forEach(tag => {
-			postsByTag.push({ ... tag, posts: getFilteredByTagTransformed(tag.slug, collection, { transform: slugFilter }) });
+			postsByTag.push({ ... tag, posts: getFilteredByTagSlug(tag.slug, collection) });
 		});
 
 		const pageSize = 10;
