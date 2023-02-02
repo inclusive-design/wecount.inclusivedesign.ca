@@ -11,18 +11,10 @@
  */
 
 module.exports = (filterTag, collection, options) => {
-	let allItems = collection.getAll();
-
-	// filter out items without tags
-	allItems = allItems.filter(item => {
-		if (item.data && item.data.tags) {
-			return item;
-		}
-	});
+	let allItems = collection.getAll().filter(item => item.data && item.data.tags); // filter out items without tags
 
 	// filter the collection to find posts with the same tag, or transformed tag if the `transform` function is supplied
 	if (options.transform) {
-		
 		// make a transformed copy of the tags list to avoid side effects, keying by fileSlug to avoid collisions
 		let transformedTags = {};
 		for (let i = 0; i < allItems.length; i++) {
@@ -31,12 +23,7 @@ module.exports = (filterTag, collection, options) => {
 
 		const transformedFilterTag = options.transform(filterTag);
 		return allItems.filter(item => transformedTags[item.fileSlug].includes(transformedFilterTag));
-
 	} else {
-
-		return allItems.filter(item => {
-			return item.data.tags.includes(filterTag);
-		});
-
+		return allItems.filter(item => item.data.tags.includes(filterTag));
 	}
 };
