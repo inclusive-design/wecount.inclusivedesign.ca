@@ -10,7 +10,9 @@ const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const categoryFromFocusFilter = require("./src/filters/categoryFromFocus.js");
 const dateFilter = require("./src/filters/date.js");
+const getFilteredByTagSlug = require("./src/utils/get-filtered-by-tag-slug.js");
 const getResourceTagLabelFilter = require("./src/filters/getResourceTagLabel.js");
+const getUniqueTags = require("./src/utils/get-unique-tags.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
 const paginateFilter = require("./src/filters/paginate.js");
@@ -22,23 +24,6 @@ const imageAndTextShortcode = require("./src/shortcodes/image-and-text.js");
 const youtubeShortcode = require("./src/shortcodes/youtube.js");
 
 require("./src/js/utils.js");
-
-/**
- * Get an array of unique tags from a collection.
- *
- * @param {Object} collection An Eleventy collection defined via the collections API: https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting
- * @returns {Array}
- */
-const getUniqueTags = function(collection) {
-	const tagsSet = new Set();
-	collection.forEach(item => {
-		if (!item.data.tags) return;
-		item.data.tags
-			.filter(tag => !["pages", "initiatives", "news", "views", "comments"].includes(tag))
-			.forEach(tag => tagsSet.add(tag));
-	});
-	return Array.from(tagsSet).sort();
-};
 
 module.exports = function(eleventyConfig) {
 	// Watch SCSS files.
@@ -87,41 +72,37 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("allTags", collection => {
-		const tags = getUniqueTags(collection.getAll());
+		let postsByTag = [];
+
+		getUniqueTags(collection.getAll()).forEach(tag => {
+			postsByTag.push({ ... tag, posts: getFilteredByTagSlug(tag.slug, collection) });
+		});
+
 		const pageSize = 10;
-		let collectionTogo = [];
+		let paginatedPostsByTag = [];
 
-		tags.map(tag => {
-			const slug = slugFilter(tag);
-			const taggedPosts = collection.getFilteredByTag(tag).reverse();
-
-			if (taggedPosts.length) {
-				const postsInPage = chunkArray(taggedPosts, pageSize);
-				for (let pageNumber = 1; pageNumber <= postsInPage.length; pageNumber++) {
-					let pagination;
-					if (pageNumber === 1) {
-						// Add the root page that has the same content as the first page
-						pagination = createPagination(taggedPosts, pageSize, 1, "/tags/" + slug + "/page/:page");
-						collectionTogo.push({
-							slug: slug,
-							title: tag,
-							posts: postsInPage[0],
-							pagination: pagination
-						});
-					}
-
-					collectionTogo.push({
-						slug: slug,
-						title: tag,
-						pageNumber: pageNumber,
-						posts: postsInPage[pageNumber - 1],
-						pagination: pagination ? pagination : createPagination(taggedPosts, pageSize, pageNumber, "/tags/" + slug + "/page/:page")
-					});
+		postsByTag.forEach(tag => {
+			const postsWithTag = chunkArray(tag.posts, pageSize);
+			
+			for (let pageNumber = 1; pageNumber <= postsWithTag.length; pageNumber++) {
+				let tagPage = {
+					slug: tag.slug,
+					title: tag.name,
+					posts: postsWithTag[pageNumber - 1],
+					pagination: createPagination(tag.posts, pageSize, pageNumber, "/tags/" + tag.slug + "/page/:page")
+				};
+				
+				// Add the root page that has the same content as the first page
+				// The root page is defined as such by its lack of "pageNumber" property
+				if (pageNumber === 1) {
+					paginatedPostsByTag.push(tagPage);
 				}
+				
+				paginatedPostsByTag.push({ ... tagPage, pageNumber: pageNumber });
 			}
 		});
 
-		return collectionTogo;
+		return paginatedPostsByTag;
 	});
 
 	// Add plugins.
