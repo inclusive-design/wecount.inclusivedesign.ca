@@ -132,25 +132,6 @@ processResourcesDisplayResults = function (inArray) {
 };
 
 /*
- * Find and return an array of unique tags.
- * @param {Array<Object>} posts - An array of posts to find unique tags. Each object in this array contains a field named "tags"
- * that in a format of:
- * tags: [{slug: {String}, name: {String}}, ...]
- * @return An array of unique tag slugs.
- */
-// eslint-disable-next-line
-getUniqueTags = function (posts) {
-	let tags = [];
-	posts.map(post => {
-		tags = tags.concat(post.tags.filter(({slug}) => {
-			const currentTagSlugs = tags.map(({slug}) => slug);
-			return currentTagSlugs.indexOf(slug) < 0;
-		}));
-	});
-	return tags;
-};
-
-/*
  * Search the data set with records that match the search term.
  * Used in the site-wide search as well as on the Initiatives (formerly Views) page.
  *
