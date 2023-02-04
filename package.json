@@ -36,7 +36,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.12.0",
+    "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@tbranyen/jsdom": "^13.0.0",
@@ -63,7 +63,7 @@
     "cross-env": "^7.0.3",
     "cssesc": "^3.0.0",
     "dotenv": "^16.0.0",
-    "eleventy-plugin-error-overlay": "^0.1.2",
+    "eleventy-plugin-error-overlay": "^1.0.0",
     "eslint": "^8.10.0",
     "eslint-plugin-react": "^7.29.2",
     "husky": "^7.0.4",
