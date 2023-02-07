@@ -152,7 +152,7 @@
 			display: block;
 		}
 
-		li:not(:first-child):not(:last-child) {
+		li:not(:first-child, :last-child) {
 			padding-top: rem(4);
 		}
 
