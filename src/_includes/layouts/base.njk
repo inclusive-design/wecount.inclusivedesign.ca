@@ -11,15 +11,16 @@
     {% include 'globals/meta.njk' %}
     <link rel="stylesheet" href="/css/main.css"/>
     <script src="/js/main.js" defer></script>
-    <link rel="preload" href="/lib/infusion/dist/infusion-uio.min.js" as="script">
+    <link rel="preload" href="/lib/infusion/dist/infusion-uio.js" as="script">
 
     <!-- CSS files for UI Options-->
-    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/Enactors.css"/>
-    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/PrefsEditor.css"/>
-    <link rel="stylesheet" type="text/css" href="/lib/infusion/dist/assets/src/framework/preferences/css/SeparatedPanelPrefsEditor.css"/>
+    <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/core/css/fluid.css"/>
+    <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/preferences/css/Enactors.css"/>
+    <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/preferences/css/PrefsEditor.css"/>
+    <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css"/>
 
     <!-- The Infusion Library for UI Options -->
-    <script src="/lib/infusion/dist/infusion-uio.min.js"></script>
+    <script src="/lib/infusion/dist/infusion-uio.js"></script>
     {% block headerScripts %}{% endblock %}
   </head>
   <body>
