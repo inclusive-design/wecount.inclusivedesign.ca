@@ -22,6 +22,7 @@ const randomizeFilter = require("./src/filters/randomize.js");
 const expanderShortcode = require("./src/shortcodes/expander.js");
 const imageAndTextShortcode = require("./src/shortcodes/image-and-text.js");
 const youtubeShortcode = require("./src/shortcodes/youtube.js");
+const populateResources = require("./functions/populateResources.js");
 
 require("./src/js/utils.js");
 
@@ -53,6 +54,10 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("comments", async function() {
 		return dataFetcherAirtable.comments();
+	});
+
+	eleventyConfig.addCollection("airtableResources", async function() {
+		return populateResources.populateResources();
 	});
 
 	eleventyConfig.addCollection("news", collection => {
