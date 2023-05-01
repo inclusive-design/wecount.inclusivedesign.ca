@@ -196,6 +196,7 @@
 				.dataScience { background-color: $blue-grey; }
 				.aiEthics { background-color: $green-grey; }
 				.designAndMethods { background-color: $yellow; }
+				.ictStandards { background-color: $green-grey; }
 
 				.topic-checkbox {
 					background: $white;
@@ -251,7 +252,7 @@
 				gap: rem(16);
 
 				li {
-					flex: 1 0 21%;
+					flex: 1 0 18%;
 					min-width: unset;
 					text-align: center;
 
