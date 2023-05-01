@@ -1,0 +1,12 @@
+---
+title: "Provincial Strategy for the Inclusion of Persons with Disabilities in Newfoundland and Labrador"
+focus: "ICT Standards and Legislation"
+source: "Government of Newfoundland and Labrador"
+type: "PDF Article"
+openSource: true
+link: "https://www.gov.nl.ca/cssd/files/disabilities-pdf-dpo-access-inclusion-equality.pdf"
+learnTags: ["accessibility","bias","canadianLandscape","disability","fairness","government","framework","ict","inclusivePractice","rights"]
+summary: "Government of Newfoundland and Labrador's strategy for accessibility, inclusion and equality for people with disabilities."
+keywords: []
+jurisdiction: ["Canada","Newfoundland and Labrador"]
+---
