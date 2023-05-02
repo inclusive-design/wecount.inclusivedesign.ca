@@ -1,6 +1,10 @@
 {
   "resourceTags": [
     {
+      "value": "accessibility",
+      "label": "Accessibility"
+    },
+    {
       "value": "assistiveTechnology",
       "label": "Assistive Technology"
     },
@@ -19,6 +23,10 @@
     {
       "value": "canadianLandscape",
       "label": "Canadian Landscape"
+    },
+    {
+      "value": "dataAndDataSecurity",
+      "label": "Data and Data Security"
     },
     {
       "value": "dataBroker",
@@ -65,16 +73,36 @@
       "label": "Government"
     },
     {
+      "value": "ict",
+      "label": "ICT"
+    },
+    {
       "value": "inclusivePractice",
       "label": "Inclusive Practice"
     },
     {
+      "value": "legislationAndLaw",
+      "label": "Legislation and Law"
+    },
+    {
       "value": "machineLearning",
-      "label": "Machine Learning"
+      "label": "AI and Machine Learning"
     },
     {
       "value": "notForProfit",
       "label": "Not-for-Profit"
+    },
+    {
+      "value": "procurement",
+      "label": "Procurement"
+    },
+    {
+      "value": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "value": "rights",
+      "label": "Rights"
     },
     {
       "value": "researchCentre",
@@ -87,6 +115,18 @@
     {
       "value": "solution",
       "label": "Solution"
+    },
+    {
+      "value": "surveillance",
+      "label": "Surveillance"
+    },
+    {
+      "value": "telecommunications",
+      "label": "Telecommunications"
+    },
+    {
+      "value": "transportation",
+      "label": "Transportation"
     },
     {
       "value": "trust",
