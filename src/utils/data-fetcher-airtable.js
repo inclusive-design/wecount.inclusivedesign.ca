@@ -47,8 +47,7 @@ module.exports = {
 				tagLabelToValue[tag.label] = tag.value;
 			});
 			const resources = [];
-			// Need Airtable table id for resources
-			base(env.airtableTableId).select().eachPage(function page(records, fetchNextPage) {
+			base("tbll2NpygbXrUnZZV").select().eachPage(function page(records, fetchNextPage) {
 				records.forEach(function(record) {
 					let resource = {
 						title: record.get("title"),
