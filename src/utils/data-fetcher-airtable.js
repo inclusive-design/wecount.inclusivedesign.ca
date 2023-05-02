@@ -7,6 +7,8 @@ airtable.configure({
 	apiKey: process.env.AIRTABLE_API_KEY
 });
 
+// How to get base id: https://airtable.com/developers/web/api/list-bases
+// You can also find base id from the airtable url, a part where it begins with 'app'
 const base = airtable.base(env.airtableBase);
 
 // Share data fetch functions
@@ -47,6 +49,7 @@ module.exports = {
 				tagLabelToValue[tag.label] = tag.value;
 			});
 			const resources = [];
+			// You can find table id from the airtable url, a part where it begins with 'tbl'
 			base("tbll2NpygbXrUnZZV").select().eachPage(function page(records, fetchNextPage) {
 				records.forEach(function(record) {
 					let resource = {
