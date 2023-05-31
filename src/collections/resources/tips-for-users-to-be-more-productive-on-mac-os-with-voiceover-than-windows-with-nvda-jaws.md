@@ -6,7 +6,7 @@ source: AppleVis
 readability:
   - Intermediate
 type: Website Resource
-openSource: false
+openSource: true
 link: https://www.applevis.com/forum/macos-mac-apps/tips-power-usersanyone-does-more-read-emailslight-web-browsing-be-more
 learnTags:
   - accessibility
