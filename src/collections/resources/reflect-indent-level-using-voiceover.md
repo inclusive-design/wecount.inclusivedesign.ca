@@ -5,7 +5,7 @@ source: GitHub
 readability:
   - Intermediate
 type: Website Resource
-openSource: false
+openSource: true
 link: https://github.com/microsoft/vscode/issues/88877
 learnTags:
   - accessibility
