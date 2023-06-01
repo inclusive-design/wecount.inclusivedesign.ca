@@ -1,7 +1,5 @@
 ---
-title: |-
-  Bringing the People Back In: Contesting Benchmark Machine Learning
-  Datasets
+title: "Bringing the People Back In: Contesting Benchmark Machine Learning Datasets"
 focus: Methods or Design
 source: ICML Workshop on Participatory Approaches to Machine Learning 2020
 readability:
