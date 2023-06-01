@@ -1,6 +1,6 @@
 ---
 title: The Employment Rate of People with Disabilities
-focus: Bias
+focus: Employment
 source: "Monthly Labour Review "
 readability:
   - Intermediate
