@@ -5,6 +5,10 @@
       "label": "Accessibility"
     },
     {
+      "value": "machineLearning",
+      "label": "AI and Machine Learning"
+    },
+    {
       "value": "assistiveTechnology",
       "label": "Assistive Technology"
     },
@@ -83,10 +87,6 @@
     {
       "value": "legislationAndLaw",
       "label": "Legislation and Law"
-    },
-    {
-      "value": "machineLearning",
-      "label": "AI and Machine Learning"
     },
     {
       "value": "notForProfit",
