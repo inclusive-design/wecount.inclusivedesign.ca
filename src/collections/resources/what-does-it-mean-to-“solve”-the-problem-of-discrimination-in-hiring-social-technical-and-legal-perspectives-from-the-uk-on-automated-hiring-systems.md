@@ -1,7 +1,5 @@
 ---
-title: What Does It Mean to “Solve” the Problem of Discrimination in Hiring?
-  Social, Technical and Legal Perspectives from the UK on Automated Hiring
-  Systems
+title: "What Does It Mean to “Solve” the Problem of Discrimination in Hiring? "
 focus: Employment
 source: FAT 2020
 readability:
