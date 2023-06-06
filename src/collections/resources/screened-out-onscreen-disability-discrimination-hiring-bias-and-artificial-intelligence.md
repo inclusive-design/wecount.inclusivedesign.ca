@@ -5,7 +5,7 @@ focus: AI and Disability/Outliers
 source: "Denver Law Review "
 readability:
   - Expert
-type: PDF Article
+type: Website Article
 openSource: true
 sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount-OptimizingDiversitywithDisabilityODDChannel/Shared%20Documents/Optimizing%20Diversity%20with%20Disability%20(ODD)%20Channel/Hiring%20Systems/Article%20+%20Resources/Screened%20out%20Onscreen_%20Disability%20Discrimination%20Hiring%20Bias%20and%20AI.pdf?csf=1&web=1&e=wTTaAP
 link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3906300
