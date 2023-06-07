@@ -4,10 +4,10 @@ focus: AI and Disability/Outliers
 source: Journal of Democracy
 readability:
   - Expert
-type: Website Article
+type: PDF Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/AI_and_Human_Rights.pdf
-link: https://muse.jhu.edu/article/721650
+link: https://wecount.inclusivedesign.ca/uploads/ai_and_human_rights.pdf
 keywords:
   - data analysis
   - human capital
