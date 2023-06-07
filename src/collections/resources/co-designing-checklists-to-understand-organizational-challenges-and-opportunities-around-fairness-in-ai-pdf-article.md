@@ -5,10 +5,10 @@ focus: AI Ethics/Policy
 source: CHI 2020
 readability:
   - Expert
-type: Website Article
+type: PDF Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Co-Designing%20Checklists%20to%20Understand%20Organizational%20Challenges%20and%20Opportunities%20around%20Fairness%20in%20AI.pdf
-link: https://dl.acm.org/doi/10.1145/3313831.3376445
+link: https://wecount.inclusivedesign.ca/uploads/co-designing-checklists-to-understand-organizational-challenges-and-opportunities-around-fairness-in-ai.pdf
 keywords:
   - AI
   - ML
