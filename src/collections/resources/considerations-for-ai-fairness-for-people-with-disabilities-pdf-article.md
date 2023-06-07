@@ -3,11 +3,11 @@ title: Considerations for AI Fairness for People with Disabilities
 focus: AI and Disability/Outliers
 source: AI Matters
 readability:
-  - Intermediate
-type: Website Article
+  - Expert
+type: PDF Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Considerations%20for%20AI%20fairness%20for%20people%20with%20disabilities.pdf
-link: https://www.semanticscholar.org/paper/Considerations-for-AI-fairness-for-people-with-Trewin-Basson/68d3fa028db42157d988d2b8ad7d495c157e14e1
+link: https://wecount.inclusivedesign.ca/uploads/considerations-for-ai-fairness-for-people-with-disabilities.pdf
 keywords: []
 learnTags:
   - bias
