@@ -8,7 +8,7 @@ readability:
 type: Website Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Better%20decision%20support%20through%20exploratory%20discrimination%20aware%20data%20mining%20foundations%20and%20empirical%20evidence.pdf
-link: https://www.semanticscholar.org/paper/Better-decision-support-through-exploratory-data-Berendt-Preibusch/a32b840e651b864dbcb0e965f8e36af1676d5717
+link: https://wecount.inclusivedesign.ca/uploads/bias-in-data-driven-artificial-intelligence-system.pdf
 keywords:
   - Discrimination discovery and prevention
   - |-
