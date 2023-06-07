@@ -5,10 +5,10 @@ focus: AI and Disability/Outliers
 source: CHASE 2016
 readability:
   - Intermediate
-type: Website Article
+type: PDF Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Eliciting%20Programming%20Challenges%20Faced%20by%20Developers%20with%20Visual%20Impairments_Exploratory%20Study.pdf
-link: https://dl.acm.org/doi/10.1145/2897586.2897616
+link: https://wecount.inclusivedesign.ca/uploads/eliciting-programming-challenges-faced-by-developers-with-visual-impairments_exploratory-study.pdf
 keywords:
   - Accessibility
   - Elicitation
