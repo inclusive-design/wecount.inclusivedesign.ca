@@ -5,7 +5,7 @@ focus: Data Set
 source: Artificial Intelligence and Law
 readability:
   - Expert
-type: Website Article
+type: PDF Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Better%20decision%20support%20through%20exploratory%20discrimination%20aware%20data%20mining%20foundations%20and%20empirical%20evidence.pdf
 link: https://wecount.inclusivedesign.ca/uploads/better-decision-support-through-exploratory-discrimination-aware-data-mining-foundations-and-empirical-evidence.pdf
