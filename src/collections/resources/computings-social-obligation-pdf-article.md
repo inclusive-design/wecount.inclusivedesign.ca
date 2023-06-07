@@ -4,10 +4,10 @@ focus: Data Science Education
 source: ACM Computers and Society Journal
 readability:
   - Intermediate
-type: Website Article
+type: PDF Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Computing's%20social%20obligation.pdf
-link: https://dl.acm.org/doi/abs/10.1145/3383641.3383644
+link: https://wecount.inclusivedesign.ca/uploads/computing-s-social-obligation.pdf
 keywords:
   - Computing
   - Social Obligation
