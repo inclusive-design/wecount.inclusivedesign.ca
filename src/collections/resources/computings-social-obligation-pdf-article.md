@@ -3,7 +3,7 @@ title: Computing's Social Obligation
 focus: Data Science Education
 source: ACM Computers and Society Journal
 readability:
-  - Intermediate
+  - Expert
 type: PDF Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Computing's%20social%20obligation.pdf
