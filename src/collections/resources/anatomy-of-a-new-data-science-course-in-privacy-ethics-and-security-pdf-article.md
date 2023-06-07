@@ -4,10 +4,10 @@ focus: Data Science Education
 source: WCCCE 2018
 readability:
   - Expert
-type: Website Article
+type: PDF Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Anatomy%20of%20a%20New%20Data%20Science%20Course%20in%20Privacy,%20Ethics,%20and%20Security.pdf
-link: https://dl.acm.org/doi/10.1145/3209635.3209640
+link: https://wecount.inclusivedesign.ca/uploads/anatomy-of-a-new-data-science-course-in-privacy-ethics-and-security.pdf
 keywords:
   - Computer security
   - privacy
