@@ -1,13 +1,14 @@
 ---
 title: "Reverse‐Engineering Visualizations: Recovering Visual Encodings from
   Chart Images"
-focus: Tool
+focus: Methods or Design
 source: EuroVis 2017
 readability:
   - Expert
 type: PDF Article
 openSource: true
 sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Reverse-Engineering%20Visualizations.pdf?csf=1&web=1&e=ZMdt84
+link: https://wecount.inclusivedesign.ca/uploads/reverse-engineering-visualizations.pdf
 keywords:
   - Create Accessible Content
   - Chart Data Extraction
