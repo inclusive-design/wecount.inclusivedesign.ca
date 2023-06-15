@@ -5,9 +5,10 @@ focus: AI Ethics/Policy
 source: FAT 2020
 readability:
   - Expert
-type: PDF Article
+type: Website Article
 openSource: false
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20relationship%20between%20trust%20in%20AI%20and%20trustworthy%20machine%20learning%20technologies.pdf
+link: https://dl.acm.org/doi/abs/10.1145/3351095.3372834
 keywords:
   - trust
   - trustworthiness
