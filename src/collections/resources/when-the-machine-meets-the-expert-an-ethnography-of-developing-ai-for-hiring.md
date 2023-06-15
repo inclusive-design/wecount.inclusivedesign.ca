@@ -4,13 +4,14 @@ focus: AI Ethics/Policy
 source: MIS Quarterly
 readability:
   - Expert
-type: PDF Article
+type: Website Article
 openSource: false
 sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount-\
   OptimizingDiversitywithDisabilityODDChannel/Shared%20Documents/Optimizing%20D\
   iversity%20with%20Disability%20(ODD)%20Channel/Hiring%20Systems/Article%20+%2\
   0Resources/WHEN%20THE%20MACHINE%20MEETS%20THE%20EXPERT_AN%20ETHNOGRAPHY%20OF%\
   20DEVELOPING%20AI%20FOR%20HIRING.pdf?csf=1&web=1&e=mcLx6u "
+link: https://aisel.aisnet.org/misq/vol45/iss3/21/
 keywords:
   - Machine learning
   - artificial intelligence
