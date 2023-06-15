@@ -1,13 +1,19 @@
 ---
-title: "Inclusive Intelligence: Artificial Intelligence in the Service of Science, Work, and the Public Good"
-focus: "Data Science Education"
-source: "UC Berkeley"
-readability: ["Intermediate"]
-type: "PDF Article"
+title: "Inclusive Intelligence: Artificial Intelligence in the Service of
+  Science, Work, and the Public Good"
+focus: Data Science Education
+source: UC Berkeley
+readability:
+  - Intermediate
+type: PDF Article
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/inclusive_intelligence_draft_april_2019.pdf"
+sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/inclusive_intelligence_draft_april_2019.pdf
+link: https://vcresearch.berkeley.edu/sites/default/files/inline-files/Inclusive%20Intelligence%20Signature%20Initiative%20October%202019.pdf
 keywords: []
-learnTags: ["education","ethics"]
-summary: "This report explores the rationale and need for a cross-disciplinary AI program at UC Berkley. "
+learnTags:
+  - education
+  - ethics
+summary: "This report explores the rationale and need for a cross-disciplinary
+  AI program at UC Berkley. "
 ---
 Advances in Artificial Intelligenceand associated innovations in data science and machine learning are transforming how we work, learn, and communicate; how we are governed; and how we live our daily lives. AI has potential to erode privacy, exacerbate bias and socio-economic disparity, and concentrate power in a few corporations and countries. Moreover, the field of AI is currently a patchwork of techniques lacking coherent, systematic design principles and tools. Like chemical engineering, which emerged from chemistry and physics, and circuit design and databases, which emerged as computer science began to mature, AI needs a systems perspective that integrates data, algorithms, context, and human values. UCBerkeleyis uniquely positioned as a trusted global institution to develop the tools for design of AI systems and policies for effective, responsible use of AI in support of science, work, and the public good. With an unequaled legacy in research and pursuit of social justice and the public good, there is no institution as qualified, respected, and trusted. We believe it is our duty as scholars and educators to ensure that AI is not a threat but an opportunity to advance equity, diversity, and human values by leading a new Initiative on“Inclusive Intelligence,” an approach to AI that is: 1) Inclusive of diverse disciplines and ways of knowing; 2) Inclusive of diverse populations including those most vulnerable due to societal bias, and economic inequality; and 3) Inclusive of both human and artificial intelligence and the way they interact, complement, and enhance each other. The Inclusive Intelligence Initiative will engage a broad community of scholars from the spectrum of disciplines on campus. The Signature Initiative on Inclusive Intelligence will put a distinct Berkeley imprimatur on how AI should be conceived, designed, built, and employed for the next 100 years. This will extend UC Berkeley’s reputation as a leading research center for AI and guide the field toward inclusivity rather than exclusivity. The II Initiative will advance research with new algorithms and methods, and research exploring their implications and developing opportunities to shape the design and use of algorithms and methods that align with II, organize forums for scholarly exchange, encourage artistic creation, and teach and advise a new generation of interdisciplinary scholars dedicated to applying AI technologies to advance the public good. It will produce new research, tools, curricula, policy, and guidelines so that Berkeley students and alumni can continue to be at the forefront of this field with a deep understanding of the broader societal issues at stake. This initiative will actively explore three themes: 1. AI and Society: Exploring the Human Experience, Supporting Civic Life and Advancing the Public Good. 2. Collaborative AI Systems, Robots, and Livelihoods. 3. AI to Enhance Scientific Discovery. This draft report summarizes specific goals, existing units and institutional programs this initiative can build on, and new resources needed. This Initiative is synergistic with all of the other four Signature Initiatives.
