@@ -1,6 +1,6 @@
 ---
 title: Producing Accessible Statistics Diagrams in R
-focus: Tool
+focus: Methods or Design
 source: W4A 2017
 readability:
   - Expert
