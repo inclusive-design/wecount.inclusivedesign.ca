@@ -1,14 +1,21 @@
 ---
-title: "How Do Fair Decisions Fare in Long-Term Qualification?"
-focus: "Bias"
-source: "NeurIPS 2020"
-readability: ["Expert"]
-type: "PDF Article"
+title: How Do Fair Decisions Fare in Long-Term Qualification?
+focus: Bias
+source: NeurIPS 2020
+readability:
+  - Expert
+type: Website Article
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/How%20Do%20Fair%20Decisions%20Fare%20in%20Long-Term%20Qualification.pdf?csf=1&web=1&e=UcdxrT"
+sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/How%20Do%20Fair%20Decisions%20Fare%20in%20Long-Term%20Qualification.pdf?csf=1&web=1&e=UcdxrT
+link: https://arxiv.org/abs/2010.11300
 keywords: []
-learnTags: ["bias","fairness","framework"]
-summary: "A paper that studies the dynamics of population qualification and algorithmic decisions to analyze the long-term impact of static fairness constraints on the equality and improvement of group well-being. "
+learnTags:
+  - bias
+  - fairness
+  - framework
+summary: "A paper that studies the dynamics of population qualification and
+  algorithmic decisions to analyze the long-term impact of static fairness
+  constraints on the equality and improvement of group well-being. "
 ---
 Although many fairness criteria have been proposed for decision making, their
 long-term impact on the well-being of a population remains unclear. In this work,
