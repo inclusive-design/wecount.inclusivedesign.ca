@@ -10,7 +10,7 @@ sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%2
 link: https://arxiv.org/abs/1806.02711
 keywords:
   - Fairness and Accountability
-  - Protective Optimization Technologie
+  - Protective Optimization Technologies
 learnTags:
   - methods
   - ethics
