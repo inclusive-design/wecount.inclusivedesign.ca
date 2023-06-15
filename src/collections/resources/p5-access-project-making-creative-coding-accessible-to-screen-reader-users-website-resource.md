@@ -7,7 +7,7 @@ readability:
 type: Website Resource
 openSource: true
 sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/NYU%20Ability%20Project.pdf
-link: https://p5js.org/learn/p5-screen-reader.html	Yes
+link: https://p5js.org/learn/p5-screen-reader.html
 keywords: []
 learnTags:
   - basicAI
