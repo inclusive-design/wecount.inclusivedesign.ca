@@ -1,14 +1,28 @@
 ---
 title: "The Algorithm Audit: Scoring the Algorithms That Score Us"
-focus: "Methods or Design"
-source: "Big Data and Society"
-readability: ["Expert"]
-type: "PDF Article"
+focus: Methods or Design
+source: Big Data and Society
+readability:
+  - Expert
+type: Website Article
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20Algorithm%20Audit.pdf?csf=1&web=1&e=sAFVQV"
-keywords: ["Algorithm audits","algorithm ethics","ethics","ethics of AI","machine learning","machine learning and ethics"]
-learnTags: ["methods","ethics","fairness","framework","solution"]
-summary: "An article that proposes an auditing framework to guide the ethical assessment of an algorithm.  "
+sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20Algorithm%20Audit.pdf?csf=1&web=1&e=sAFVQV
+link: https://journals.sagepub.com/doi/full/10.1177/2053951720983865
+keywords:
+  - Algorithm audits
+  - algorithm ethics
+  - ethics
+  - ethics of AI
+  - machine learning
+  - machine learning and ethics
+learnTags:
+  - methods
+  - ethics
+  - fairness
+  - framework
+  - solution
+summary: "An article that proposes an auditing framework to guide the ethical
+  assessment of an algorithm.  "
 ---
 In recent years, the ethical impact of AI has been increasingly scrutinized, with public scandals emerging over biased
 outcomes, lack of transparency, and the misuse of data. This has led to a growing mistrust of AI and increased calls for
