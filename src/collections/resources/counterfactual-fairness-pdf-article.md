@@ -5,7 +5,6 @@ source: "NIPS 2017"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Counterfactual%20Fairness.pdf"
 keywords: []
 learnTags: ["bias","methods","ethics","fairness","framework","machineLearning","solution"]
 summary: "A machine learning framework for modelling fairness using tools from causal inference. "

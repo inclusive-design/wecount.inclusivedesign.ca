@@ -5,7 +5,6 @@ source: "PLOS ONE"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Caveat%20emptor,%20computational%20social%20science.pdf"
 keywords: []
 learnTags: ["bias","dataset","dataTools","methods"]
 summary: "In this paper, the authors document the Reddit data set, substantial missing observations in the data set, and the risks to research validity that arise from those gaps.  "

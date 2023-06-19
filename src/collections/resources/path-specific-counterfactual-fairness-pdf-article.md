@@ -5,7 +5,6 @@ source: "AAAI 2019"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Path-Specific%20Counterfactual%20Fairness.pdf"
 keywords: []
 learnTags: ["bias","methods","ethics","fairness","framework","machineLearning","solution"]
 summary: "A fairness framework that considers the problem of fairness modelling that is path specific and broken into fair and unfair pathways. "

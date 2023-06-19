@@ -5,7 +5,6 @@ source: "Brookings"
 readability: ["Intermediate"]
 type: "Website Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Protecting%20privacy%20in%20an%20AI-driven%20world.pdf"
 link: "https://www.brookings.edu/research/protecting-privacy-in-an-ai-driven-world/"
 keywords: []
 learnTags: ["bias","business","dataset","ethics","fairness","framework","government"]

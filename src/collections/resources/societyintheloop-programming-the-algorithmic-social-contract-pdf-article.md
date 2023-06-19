@@ -5,7 +5,6 @@ source: "Ethics and Information Technology Journal"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Society%20in%20the%20loop%20Programming%20the%20algorithmic%20social%20contract.pdf"
 keywords: ["Ethics ","Artificial intelligence","Society","Governance","Regulation"]
 learnTags: ["ethics","fairness","framework","government","machineLearning"]
 summary: "An article that adds social contract theory to current Human in the Loop (HITL) for monitoring and supervising machine learning systems called Society in the Loop (SITL), where various societal stakeholders are required to monitor the system rather than just the human creator. "

@@ -5,7 +5,6 @@ source: "Universitat de Lleida"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Methodology%20for%20Heuristic%20Evaluation%20of%20the%20Accessibility%20of%20Statistical%20Charts.pdf?csf=1&web=1&e=OcCfSZ"
 link: "https://assets.researchsquare.com/files/rs-156959/v1/9a255150-c14d-4958-8b0e-1dbf52b2b4af.pdf"
 keywords: ["Accessibility","Charts","Graphs","Information visualization","Low-vision","Colour blindness","Heuristic evaluation"]
 learnTags: ["disability","inclusivePractice","solution"]

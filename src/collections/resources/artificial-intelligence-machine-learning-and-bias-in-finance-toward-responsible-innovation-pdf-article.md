@@ -5,7 +5,6 @@ source: "Fordham Law Review"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Artificial%20intelligence,%20machine%20learning,%20and%20bias%20in%20finance_Toward%20responsible%20innovation.pdf"
 keywords: []
 learnTags: ["bias","business","dataset","ethics","fairness","government","machineLearning"]
 summary: "A financial law article showing the regulation challenges of consumer data algorithms in commerce.   "

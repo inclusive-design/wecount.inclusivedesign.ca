@@ -5,7 +5,6 @@ source: "CHI 2019"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Improving%20fairness%20in%20machine%20learning%20systems-%20What%20do%20industry%20practitioners%20need.pdf"
 keywords: ["algorithmic bias","fair machine learning","product teams","needfinding","empirical study","UX of machine learnin"]
 learnTags: ["bias","business","methods","ethics","fairness","inclusivePractice","solution"]
 summary: "Through 35 semi-structured interviews and an anonymous survey of 267 ML practitioners, the first systematic investigation of commercial product teams’ challenges and needs for support in developing fairer machine learning systems is presented.  "

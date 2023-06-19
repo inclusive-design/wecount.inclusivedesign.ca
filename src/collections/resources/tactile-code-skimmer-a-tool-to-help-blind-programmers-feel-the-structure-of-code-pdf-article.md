@@ -5,7 +5,6 @@ source: "ACM ASSETS 2019"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Tactile%20Code%20Skimmer.pdf?csf=1&web=1&e=yOcVDL"
 keywords: ["Accessibility","Blind Programmers","Code Structure","Tactile Aids","Visually Impaired"]
 learnTags: ["methods","disability","fairness","inclusivePractice","solution"]
 summary: "A paper that introduces the Tactile Code Skimmer, a tool that helps blind and visually impaired programmers skim code. "

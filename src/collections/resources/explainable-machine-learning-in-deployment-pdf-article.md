@@ -5,7 +5,6 @@ source: "FAT 2020"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Explainable%20Machine%20Learning%20in%20Deployment.pdf"
 keywords: ["machine learning","explainability","transparency","deployed systems,\nqualitative study"]
 learnTags: ["methods","framework","machineLearning"]
 summary: "A study that analyzes the limits of current explainable machine learning techniques for end users and proposes a framework for establishing clear guidelines for explainability. "

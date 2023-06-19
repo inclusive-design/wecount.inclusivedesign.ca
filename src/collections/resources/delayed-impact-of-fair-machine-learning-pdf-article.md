@@ -5,7 +5,6 @@ source: "ICML 2018"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Delayed%20Impact%20of%20Fair%20Machine%20Learning.pdf"
 keywords: []
 learnTags: ["methods","fairness","framework","machineLearning"]
 summary: "A study how static fairness criteria interact with temporal indicators of well-being and highlight the importance of measurement and temporal modeling in the evaluation of fairness criteria. "

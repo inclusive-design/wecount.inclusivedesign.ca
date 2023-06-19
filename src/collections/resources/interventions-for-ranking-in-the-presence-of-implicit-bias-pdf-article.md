@@ -5,7 +5,6 @@ source: "FAT 2020"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Interventions%20for%20Ranking%20in%20the%20Presence%20of%20Implicit%20Bias.pdf"
 keywords: []
 learnTags: ["bias","dataTools","methods","employment","ethics","fairness","inclusivePractice","solution"]
 summary: "This paper considers a type of constraint-based interventions for re-ordering biased rankings derived from utilities with systematic biases against a particular socially salient group. The goal of these interventions is to recover the unbiased ranking that would have resulted from the true latent (unbiased) utilities.  "

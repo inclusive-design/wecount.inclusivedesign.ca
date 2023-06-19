@@ -5,7 +5,6 @@ source: "CSCW 2019"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/WeBuildAI_Participatory%20Framework%20for%20Algorithmic%20Governance.pdf"
 keywords: ["participatory algorithm design","collective participation","human-centered AI","matching algorithm","algorithmic fairness"]
 learnTags: ["basicAI","methods","ethics","fairness","framework"]
 summary: "The WeBuildAI team designed, applied and evaluated this social participatory framework for engaging community stakeholders to enable people to create a decision-making algorithm that fits their needs. "

@@ -5,7 +5,6 @@ source: "Diginomia"
 readability: ["Beginner"]
 type: "Website Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20AI%20ethics%20review%20-%20eight%20sticking%20points%20we%20haven%27t%20resolved.pdf"
 link: "https://diginomica.com/ai-ethics-review-eight-sticking-points-we-havent-resolved"
 keywords: []
 learnTags: ["basicAI","ethics","fairness","framework"]

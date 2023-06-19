@@ -5,7 +5,6 @@ source: "AI Now Institute"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Discriminating%20Systems.pdf"
 keywords: []
 learnTags: ["bias","business","dataset","methods","employment","ethics","fairness","government","inclusivePractice"]
 summary: "This report provides evidence regarding the lack of diversity, discrimination and inequality in AI systems and the workplace, and offers recommendations to address these issues and the challenges ahead. "

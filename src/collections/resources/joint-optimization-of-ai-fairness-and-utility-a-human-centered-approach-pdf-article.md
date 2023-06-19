@@ -5,7 +5,6 @@ source: "AIES 2020"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Joint%20Optimization%20of%20AI%20Fairness%20and%20Utility-%20A%20Human-Centered%20Approach.pdf"
 keywords: []
 learnTags: ["bias","methods","ethics","fairness","framework","machineLearning","solution"]
 summary: "A proposed framework to assist policy makers in choosing a machine learning model that maximizes fairness within the constraints of the policy. "

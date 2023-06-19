@@ -5,7 +5,6 @@ source: "ICML 2019"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Fair%20Regression-%20Quantitative%20Definitions%20and%20Reduction-Based%20Algorithms.pdf"
 keywords: []
 learnTags: ["dataTools","methods","inclusivePractice","smallData","solution"]
 summary: "As machine learning touches increasingly critical aspects of our life, including education, healthcare, criminal justice and lending, there is a growing focus on ensuring that algorithms treat various subpopulations fairly. This paper seeks to diminish this gap by developing efficient algorithms for a substantially broader set of regression tasks and model classes. "

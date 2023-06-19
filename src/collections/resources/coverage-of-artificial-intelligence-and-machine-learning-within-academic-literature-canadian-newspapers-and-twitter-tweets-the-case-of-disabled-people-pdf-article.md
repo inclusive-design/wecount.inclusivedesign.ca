@@ -5,7 +5,6 @@ source: "Societies Journal"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Coverage%20of%20artificial%20intelligence%20and%20machine%20learning%20within%20academic%20literature,%20Canadian%20newspapers,%20and%20Twitter%20tweets_The%20case%20of%20disabled%20people.pdf"
 keywords: ["disabled people","people with disabilities","artificial intelligence","machine learning","scoping review","social good","for good"]
 learnTags: ["business","disability","government","inclusivePractice"]
 summary: "A scoping review from academic literature, Canadian newspapers and Twitter found limited coverage on persons with disabilities as knowledge producers or influencers of machine learning and AI technology, revealing a pressing need for changes to AI/ML coverage. "

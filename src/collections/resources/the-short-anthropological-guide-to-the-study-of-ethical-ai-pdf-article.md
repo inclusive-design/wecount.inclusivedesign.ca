@@ -5,7 +5,6 @@ source: "MAIEI"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20Short%20Anthropological%20Guide%20to%20Ethical%20AI.pdf?csf=1&web=1&e=dXYXXg"
 keywords: []
 learnTags: ["bias","ethics","fairness","researchCentre","trust"]
 summary: "A guide that provides an introduction to AI ethics and social science and anthropological perspectives on the development of AI. "

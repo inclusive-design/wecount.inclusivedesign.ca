@@ -8,7 +8,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount-OptimizingDiversitywithDisabilityODDChannel/Shared%20Documents/Optimizing%20Diversity%20with%20Disability%20(ODD)%20Channel/Hiring%20Systems/Article%20+%20Resources/Changing%20Landscape%20of%20Recruitment%20Industry%20A%20study%20on%20the%20Impact%20of%20AI%20on%20Eliminating%20Hiring%20Bias.pdf?csf=1&web=1&e=FOoeuh
 link: https://www.researchgate.net/publication/347681335_Changing_Landscape_of_Recruitment_Industry_A_Study_on_the_Impact_of_Artificial_Intelligence_on_Eliminating_Hiring_Bias_from_Recruitment_and_Selection_Process
 keywords:
   - Artiﬁcial Intelligence

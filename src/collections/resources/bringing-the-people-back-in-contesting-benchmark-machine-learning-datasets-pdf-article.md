@@ -5,7 +5,6 @@ source: "ICML Workshop on Participatory Approaches to Machine Learning 2020"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Bringing%20the%20People%20Back%20In.pdf?csf=1&web=1&e=ir2lhX"
 keywords: []
 learnTags: ["methods","ethics","framework"]
 summary: "A paper that outlines a research program — a genealogy of machine learning data — for investigating how and why datasets have been created, what and whose values influence the choices of data to collect, the contextual and contingent conditions of their creation. "

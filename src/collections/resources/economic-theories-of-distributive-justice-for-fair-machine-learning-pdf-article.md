@@ -5,7 +5,6 @@ source: "WWW 2019"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Economic%20Theories%20of%20Distributive%20Justice.pdf"
 keywords: ["social choice theory","equality of opportunity","inequality"]
 learnTags: ["ethics","fairness","framework","machineLearning"]
 summary: "An overview of fair machine learning through the ethical lens of prominent economic theories of distributive justice. "

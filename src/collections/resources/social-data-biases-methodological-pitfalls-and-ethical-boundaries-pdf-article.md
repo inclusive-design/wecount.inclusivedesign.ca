@@ -5,7 +5,6 @@ source: "Frontiers in Big Data Journal"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Social%20Data-%20Biases,%20Methodological%20Pitfalls,%20and%20Ethical%20Boundaries.pdf"
 keywords: ["social media","user data","biases","evaluation","ethics"]
 learnTags: ["bias","ethics","fairness","framework"]
 summary: "This article highlights data quality issues and general challenges for research using social data, including population biases, behavioural biases, content biases, linking biases, temporal variations and redundancy. "

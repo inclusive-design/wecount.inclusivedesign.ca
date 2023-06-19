@@ -5,7 +5,6 @@ source: "AAAI 2018"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Towards%20an%20Inclusive%20AI%20Design.pdf"
 keywords: []
 learnTags: ["basicAI","ethics","fairness","inclusivePractice"]
 summary: "This article demonstrates how using a co-creative model, virtual meetings and physical engagement in AI design research can be more inclusive for those who do not traditionally participate due to race, gender, computer literacy and geography. "

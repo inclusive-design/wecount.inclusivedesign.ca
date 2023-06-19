@@ -5,7 +5,6 @@ source: "Artificial Intelligence and Law"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Better%20decision%20support%20through%20exploratory%20discrimination%20aware%20data%20mining%20foundations%20and%20empirical%20evidence.pdf"
 keywords: ["Discrimination discovery and prevention","Data mining\nfor decision support","Discrimination-aware data mining","Responsible\ndata mining","Evaluation","User studies","Online experiment"," Mechanical\nTurk"]
 learnTags: ["bias","methods","ethics","fairness"]
 summary: "This paper describes an exploratory study that uses different discrimination-aware data mining (DADM) methods to determine how information technology supports the decision process and keep it free from bias. "

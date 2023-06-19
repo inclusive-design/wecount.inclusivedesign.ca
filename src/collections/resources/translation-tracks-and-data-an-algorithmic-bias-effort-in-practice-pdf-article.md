@@ -5,7 +5,6 @@ source: "CHI 2019"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Translation,%20Tracks%20&%20Data_an%20Algorithmic%20Bias%20Effort%20in%20Practice.pdf"
 keywords: ["Algorithmic bias","algorithmic accountability","bias and data checklist","industry practice"]
 learnTags: ["bias","dataset","framework","machineLearning"]
 summary: "A case study on lessons on addressing algorithmic bias, including the development of a bias checklist and dashboarding and data efforts for auditing. "

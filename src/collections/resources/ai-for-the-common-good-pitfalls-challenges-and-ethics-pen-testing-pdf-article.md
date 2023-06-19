@@ -5,7 +5,6 @@ source: "Paladyn, Journal of Behavioral Robotics"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/AI%20for%20the%20Common%20Good%20Pitfalls,%20challenges,%20and%20ethics%20pen-testing.pdf"
 keywords: ["artificial intelligence","machine learning","data science","AI ethics","ethics and ethics codes","risks and impacts","Common Good","AI for Social Good"]
 learnTags: ["methods","ethics","fairness"]
 summary: "A critical discussion on the challenges and pitfalls that can occur when determining what the Common Good is and how it can be enhanced by AI. "

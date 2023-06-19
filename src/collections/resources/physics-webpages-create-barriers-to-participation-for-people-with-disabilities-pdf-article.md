@@ -5,7 +5,6 @@ source: "International Journal of STEM Education"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Physics%20Webpages%20Create%20Barriers%20to%20Participation%20for%20People%20with%20Disabilities.pdf?csf=1&web=1&e=0eeClG"
 keywords: ["Accessibility","Webpage accessibility","STEM","Physics Education","Americans with Disabilities Act","Section 508","Disability studies"]
 learnTags: ["methods","disability","education","ethics","fairness","solution"]
 summary: "In this paper, five common accessibility errors identified on university physics webpages are presented, solutions for these errors are suggested, and the implications of these errors are discussed. "

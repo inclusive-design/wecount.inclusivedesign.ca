@@ -5,7 +5,6 @@ source: "IEEE"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Semi-Supervised%20Discriminative%20Classi%EF%AC%81cation%20Robust%20to%20Sample-Outliers%20and%20Feature-Noises.pdf"
 keywords: ["Linear discriminant analysis","semi-supervised learning","robust classification","feature selection","sample outlier detection","Alzheimer’s disease","Parkinson’s disease","biomarker identification","disease diagnosis","nuclear norm","regularization"]
 learnTags: ["dataset","methods","disability","smallData","solution"]
 summary: "A new approach for discriminative classification in disease diagnosis that is more robust against outliers and noise from this particular type of data.   "

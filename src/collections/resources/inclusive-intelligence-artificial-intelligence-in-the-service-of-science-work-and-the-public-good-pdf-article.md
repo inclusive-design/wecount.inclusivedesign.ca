@@ -5,7 +5,6 @@ source: "UC Berkeley"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/inclusive_intelligence_draft_april_2019.pdf"
 keywords: []
 learnTags: ["education","ethics"]
 summary: "This report explores the rationale and need for a cross-disciplinary AI program at UC Berkley. "

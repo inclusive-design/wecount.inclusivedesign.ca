@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Understanding%20Data%20Accessibility%20for%20People%20with%20Intellectual%20and%20Developmental%20Disabilities.pdf?csf=1&web=1&e=5ffA5c
 link: ""
 keywords:
   - human-subjects quantitative studies

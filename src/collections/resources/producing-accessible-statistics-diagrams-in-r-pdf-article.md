@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Producing%20Accessible%20Statistics%20Diagrams%20in%20R.pdf?csf=1&web=1&e=nPpcqO
 keywords:
   - Human-centred computing
   - Accessibility technologies

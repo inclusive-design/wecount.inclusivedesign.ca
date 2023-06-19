@@ -5,7 +5,6 @@ source: "Fundación ONCE and the ILO Global Business and Disability Network"
 readability: ["Beginner"]
 type: "PDF Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Making%20the%20future%20of%20work%20inclusive%20of%20people%20with%20disabilities.pdf"
 keywords: []
 learnTags: ["business","disability","education","employment","government","inclusivePractice"]
 summary: "A joint publication by Fundación ONCE and the ILO Global Business and Disability Network to connect different areas of debate, looking at the key trends of the future of work from a disability perspective and seeking to identify specific action needed in order to shape the future of work in a more disability-inclusive way. "

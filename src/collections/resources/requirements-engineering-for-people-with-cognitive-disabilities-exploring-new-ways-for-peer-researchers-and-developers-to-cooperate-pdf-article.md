@@ -5,7 +5,6 @@ source: "ICCHP 2018 "
 readability: ["Expert"]
 type: "PDF Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Requirements%20Engineering%20for%20People%20with%20Cognitive%20Disabilities.pdf"
 keywords: ["Human-machine interaction","R&D","e-Inclusion","Accessibility UCD","Cognitive disabilities"]
 learnTags: ["methods","disability","inclusivePractice"]
 summary: "A research paper that stresses the importance of developing the user experience for new digital technologies through collaboration with their users, who, in this case, are people with cognitive disabilities. "

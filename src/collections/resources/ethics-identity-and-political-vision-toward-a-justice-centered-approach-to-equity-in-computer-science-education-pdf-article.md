@@ -5,7 +5,6 @@ source: "Harvard Educational Review"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Ethics,%20identity,%20and%20political%20vision_toward%20a%20justice-centered%20approach%20to%20equity%20in%20computer%20science%20education.pdf"
 keywords: ["computer science education","critical theory","STEM education","ethics","sociocultural theory"]
 learnTags: ["ethics","fairness","framework","inclusivePractice"]
 summary: "This essay takes a critical look at current computer science curriculum and argues for a justice-centred approach to public school computer science education to ensure issues of equity and any ethical and political implications are addressed. "

@@ -5,7 +5,6 @@ source: "ICML 2020"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/AutoML-Zero_Evolving%20Machine%20Learning%20Algorithms%20from%20Scratch.pdf"
 keywords: []
 learnTags: ["bias","methods","machineLearning"]
 summary: "A Google paper discussing AutoML, a new machine learning method to reduce bias by providing small pieces of code to allow the computer to build its own algorithms with less human input. "

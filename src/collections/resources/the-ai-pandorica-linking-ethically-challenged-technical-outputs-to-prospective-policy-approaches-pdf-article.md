@@ -5,7 +5,6 @@ source: "dg.o 2019"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20A.I.%20Pandorica%20_Linking%20Ethically%20Challenged%20Technical%20Outputs%20to%20Prospective%20Policy%20Approaches.pdf"
 keywords: ["Artificial intelligence","ethics","machine learning","algorithmic bias","digital government"]
 learnTags: ["bias","ethics","fairness","framework","machineLearning"]
 summary: "An overview of AI issues and possible methods for addressing bias, including AI audits, implementing accountability in policy, instituting Code of Ethics for AI practitioners, data transparency, diversity in the field, and ethics in higher education. "

@@ -5,7 +5,6 @@ source: "CHI 2019"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/%E2%80%9CTechShops%E2%80%9D_Engaging%20Young%20Adults%20with%20Intellectual%20Disability%20in%20Exploratory%20Design%20Research.pdf"
 keywords: ["“TechShops,” contextual interviews","intellectual disability","engagement","co-design workshops"]
 learnTags: ["disability","framework","machineLearning","solution"]
 summary: "A workshop-based case study that explores how young adults with intellectual disabilities use social media and how their activities can be supported through co-design. "

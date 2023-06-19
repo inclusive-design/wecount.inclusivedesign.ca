@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/My%20Algorithms%20Have%20Determined%20You're%20Not%20Human.pdf
 keywords:
   - Artificial intelligence
   - deep neural networks

@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: PDF Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount-OptimizingDiversitywithDisabilityODDChannel/Shared%20Documents/Optimizing%20Diversity%20with%20Disability%20(ODD)%20Channel/Hiring%20Systems/Article%20+%20Resources/Can%20AI%20hiring%20systems%20be%20made%20antiracist.pdf?csf=1&web=1&e=J1D24o
 link: "https://ieeexplore.ieee.org/document/9173891 "
 learnTags:
   - bias

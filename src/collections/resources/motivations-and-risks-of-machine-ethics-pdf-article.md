@@ -5,7 +5,6 @@ source: "IEEE"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Motivations%20and%20Risks%20of%20Machine%20Ethics.pdf"
 keywords: ["Ethical alignment","ethical reasoning","machine agency","machine ethics"]
 learnTags: ["ethics","fairness","machineLearning"]
 summary: "This paper surveys reasons for and against pursuing the field of machine ethics, and clarifies the nature of this goal, why it is worth pursuing, and the risks involved in its pursuit. "

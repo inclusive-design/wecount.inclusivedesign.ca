@@ -5,7 +5,6 @@ source: "Journal of Democracy"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/AI_and_Human_Rights.pdf"
 keywords: ["data analysis","human capital","human resource ethics","hiring and recruitment","information systems","decision-making tools"]
 learnTags: ["business","ethics","fairness","framework","government"]
 summary: "An article that examines the UN Human Rights Framework as a way to address AI concerns. "

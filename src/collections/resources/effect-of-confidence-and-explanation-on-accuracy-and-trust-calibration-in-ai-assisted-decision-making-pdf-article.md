@@ -5,7 +5,6 @@ source: "FAT 2020"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Effect%20of%20Confidence%20and%20Explanation%20on%20Accuracy%20and%20Trust%20Calibration%20in%20AI-Assisted%20Decision%20Making.pdf"
 keywords: ["decision support","trust","confidence","explainable AI"]
 learnTags: ["bias","dataset","methods","ethics","framework","trust"]
 summary: "A case study of AI-assisted decision making in which humans and AI have comparable performance alone, and explores whether features that reveal case-specific model information can calibrate trust and improve the joint performance of the human and AI.  "

@@ -5,7 +5,6 @@ source: "FAT 2019"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20Disparate%20Effects%20of%20Strategic%20Manipulation.pdf"
 keywords: []
 learnTags: ["methods","fairness","machineLearning"]
 summary: "An article that shows how classification models in machine learning can reinforce existing inequalities and how attempts to intervene in the learning model to correct this response can lead to further social adversity. "

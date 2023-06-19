@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Image%20Cropping%20on%20Twitter.pdf?csf=1&web=1&e=EeYWkG
 link: https://arxiv.org/pdf/2105.08667.pdf
 keywords:
   - image cropping

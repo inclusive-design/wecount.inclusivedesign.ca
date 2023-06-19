@@ -5,7 +5,6 @@ source: "Auburn University"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Accessible%20Computer%20Science%20for%20K-12%20Students%20with%20Disabilities.pdf?csf=1&web=1&e=RzFFmB"
 keywords: ["Accessibility","K-12 Education","Block-Based Programming"]
 learnTags: ["bias","methods","disability","education","ethics","fairness","framework","inclusivePractice","solution"]
 summary: "A master's thesis that aims to make computer science concepts accessible to K-12 students who are Deaf/Hard of Hearing, Blind/Low Vision and those with motor disabilities.  "

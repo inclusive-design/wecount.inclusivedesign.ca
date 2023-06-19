@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Ethics-Based%20Auditing%20of%20Automated%20Decision-Making%20Systems.pdf?csf=1&web=1&e=gfiZBq
 link: https://link.springer.com/article/10.1007/s00146-021-01286-x
 keywords:
   - Artificial Intelligence

@@ -5,7 +5,6 @@ source: "Springer Philosophy and Technology Journal"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Fair,%20Transparent,%20and%20Accountable%20Algorithmic%20Decision-Making%20Processes.pdf"
 keywords: ["algorithmic decision-making","  algorithmic transparency","  fairness","accountability"," social good"]
 learnTags: ["ethics","fairness","machineLearning","trust"]
 summary: "This paper provides an overview of available technical solutions to enhance fairness, accountability and transparency in algorithmic decision-making and highlights the criticality of engaging multidisciplinary teams to co-develop, deploy and evaluate algorithms designed to maximize fairness and transparency. "

@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Visualizing%20for%20the%20Non-Visual.pdf?csf=1&web=1&e=0PEfIh
 keywords:
   - Human-centred computing
   - Visual analytics

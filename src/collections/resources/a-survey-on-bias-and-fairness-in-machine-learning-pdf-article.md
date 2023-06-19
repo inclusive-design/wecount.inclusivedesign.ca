@@ -5,7 +5,6 @@ source: "arXiv"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/A%20survey%20on%20bias%20and%20fiarness%20in%20machine%20learning.pdf"
 keywords: ["Fairness and Bias in Artificial Intelligence","Machine Learning","Deep Learning","Natural Language Processing","Representation Learning"]
 learnTags: ["bias","ethics","fairness"]
 summary: "A taxonomy of terms related to fairness and AI bias in machine learning, deep learning, natural language processing and algorithms. "

@@ -5,7 +5,6 @@ source: "WCCCE 2018"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Anatomy%20of%20a%20New%20Data%20Science%20Course%20in%20Privacy,%20Ethics,%20and%20Security.pdf"
 keywords: ["Computer security","privacy","ethics","data science","information ethics","human dignity","database privacy"]
 learnTags: ["education","ethics","fairness"]
 summary: "A description of a new ethics course created for a Master of Data Science program at UBC, including learning goals, content, activities and evaluation methods.  "

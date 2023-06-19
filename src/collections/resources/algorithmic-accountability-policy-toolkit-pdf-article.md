@@ -5,7 +5,6 @@ source: "AI Now Institute"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Algorithmic%20Accountabiltiy%20Policy%20Toolkit.pdf"
 keywords: []
 learnTags: ["bias","methods","disability","ethics","fairness","government"]
 summary: "Provides a toolkit of resources on the current debates and concerns in AI, algorithms, machine learning and automated decisions from a legal perspective. "

@@ -5,7 +5,6 @@ source: "CIPPIC"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Back%20on%20the%20data%20trail.pdf"
 keywords: []
 learnTags: ["bias","business","dataBroker","dataset","ethics","fairness","government"]
 summary: "A public interest report that provides an easy-to-read overview and breakdown on the data broker industry in Canada, including data types and sources, services offered, and legal regulations. "

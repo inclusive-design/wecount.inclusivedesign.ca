@@ -5,7 +5,6 @@ source: "arXiv"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Datasheets%20for%20Datasets.pdf"
 keywords: []
 learnTags: ["bias","dataset","methods","ethics","fairness","solution"]
 summary: "An extensive list of questions for data set creaters and consumers to use when creating and using data sets in order to make informed decisions and to avoid harm. "

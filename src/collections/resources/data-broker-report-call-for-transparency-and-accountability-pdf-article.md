@@ -5,7 +5,6 @@ source: "U.S. Federal Trade Commission"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Data%20Broker%20Report.pdf"
 keywords: []
 learnTags: ["bias","business","dataBroker","dataset","dataTools","methods","ethics","fairness","government"]
 summary: "This federal report provides detailed information on the practices of major data brokers — Acxiom, Corelogic, Datalogix, eBureau, ID Analytics, Intelius, PeekYou, Rapleaf, and Recorded Future — and makes recommendations to Congress for data broker legislation and best practices. "

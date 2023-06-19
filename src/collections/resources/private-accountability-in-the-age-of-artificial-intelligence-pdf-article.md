@@ -5,7 +5,6 @@ source: "UCLA Law Journal"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Private_Accountability_in_the_age-of_AI.pdf"
 keywords: []
 learnTags: ["bias","business","dataset","ethics","fairness","government","machineLearning"]
 summary: "This article discusses how algorithms based on biased data can result in machine learning that perpetuates inequalities and discrimination, and calls for greater government accountability for AI bias. "

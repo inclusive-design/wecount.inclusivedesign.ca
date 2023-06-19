@@ -5,7 +5,6 @@ source: "University of Chicago Law Review"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Algorithmic%20Fair%20Use.pdf"
 keywords: []
 learnTags: ["bias","methods","ethics","fairness","government"]
 summary: "This article discusses the legal challenges that have developed around using algorithms, which are subject to bias decisions and biased data, to detect copyright infringement in a multimedia environment and the subjectiveness in judging \"fair use.\"  "

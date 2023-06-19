@@ -5,7 +5,6 @@ source: "arXiv"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Manipulating%20and%20Measuring%20Model%20Interpretability.pdf"
 keywords: []
 learnTags: ["machineLearning"]
 summary: "A series of experiments determined that providing information to participants meant to increase interpretability of decision-making models had negligible and detrimental effects, suggesting more rigorous work needs to be done to improve interpretability of models. "

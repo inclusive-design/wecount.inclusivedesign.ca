@@ -5,7 +5,6 @@ source: "SSRN "
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Discrimination%20in%20the%20Age%20of%20Algorithms.pdf"
 keywords: []
 learnTags: ["bias","ethics","fairness"]
 summary: "A legally framed discussion of discrimination and bias within algorithms. "

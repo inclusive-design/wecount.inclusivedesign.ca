@@ -5,7 +5,6 @@ source: "University of Waterloo"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/'Less%20Than%20One'-Shot%20Learning.pdf"
 keywords: []
 learnTags: ["dataset","dataTools","methods","framework","machineLearning","smallData"]
 summary: "A paper that discusses how deep neural networks require large training sets but suffer from high computational cost and long training times, and how training on much smaller training sets while maintaining nearly the same accuracy would be very beneficial.  "

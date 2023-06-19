@@ -5,7 +5,6 @@ source: "Frontiers in Artificial Intelligence Journal"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/There%20Is%20Hope%20After%20All.pdf"
 keywords: ["artificial intelligence","deep neural networks","machine learning","trust in AI","subjective logic"]
 learnTags: ["dataTools","ethics","framework","machineLearning","trust"]
 summary: "An article that introduces DeepTrust, a new subjective logic framework that determines the trustworthiness of both data sets and their associated AI algorithms. "

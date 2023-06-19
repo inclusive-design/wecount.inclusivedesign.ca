@@ -5,7 +5,6 @@ source: "AI Now Institute"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Disability,%20bias,%20AI.pdf"
 keywords: []
 learnTags: ["bias","dataset","methods","disability","ethics","fairness","inclusivePractice","smallData"]
 summary: "A report capturing critical themes and discussions from a workshop at the AI NOW Institute at New York University, the NYU Center for Disability Studies.  "

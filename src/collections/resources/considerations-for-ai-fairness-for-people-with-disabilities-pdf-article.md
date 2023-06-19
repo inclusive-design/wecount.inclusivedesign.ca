@@ -5,7 +5,6 @@ source: "AI Matters"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Considerations%20for%20AI%20fairness%20for%20people%20with%20disabilities.pdf"
 keywords: []
 learnTags: ["bias","methods","disability","framework","inclusivePractice"]
 summary: "This paper recommends reviewing AI systems for their potential impact on the user in their broader context of use, and including people with disabilities when sourcing data to build models and when testing, to create a more inclusive and robust system. "

@@ -5,7 +5,6 @@ source: "Canadian Journal of Cardiology"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/All%20about%20us_Indigenous%20Data%20Analysis%20Workshop.pdf"
 keywords: []
 learnTags: ["basicAI","inclusivePractice"]
 summary: "This article describes a three-day workshop with university researchers and several First Nation communities to increase the capacity for data management and analysis by those communities. "

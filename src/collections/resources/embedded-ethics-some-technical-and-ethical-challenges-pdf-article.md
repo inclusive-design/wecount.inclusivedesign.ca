@@ -5,7 +5,6 @@ source: "Ethics and Information Technology Journal"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Embedded%20ethics%20some%20technical%20and%20ethical%20challenges.pdf"
 keywords: ["Ethical dilemma","Ethical framework","Autonomous machines","Judgement","Subjectivity"]
 learnTags: ["methods","ethics","fairness","framework"]
 summary: "Various ethical frameworks are applied using mathematical concepts to determine if ethical decisions can be formalized in machines.  "

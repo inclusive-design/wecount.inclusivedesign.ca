@@ -5,7 +5,6 @@ source: "Gender Shades "
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Gender%20Shades.pdf"
 keywords: ["Computer Vision","Algorithmic Audit","Gender Classification"]
 learnTags: ["bias","business","dataTools","methods","fairness","machineLearning","researchCentre"]
 summary: "This research paper a method for evaluating gender and racial bias in AI facial analysis algorithms and datasets using the Fitzpatrick Skin Type classification system. "

@@ -5,7 +5,6 @@ source: "NAACL 2019"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/What%20is%20in%20a%20Name_%20Reducing%20Bias%20in%20Bios%20without%20Access%20to%20Protected%20Attributes.pdf"
 keywords: []
 learnTags: ["bias","dataTools","methods","ethics","fairness","framework","inclusivePractice","machineLearning","solution"]
 summary: "This article proposes a method for reducing bias in machine learning classifiers without relying on protected attributes. In the context of occupation classification, this method discourages a classifier from learning a correlation between the predicted probability of an individual’s occupation and a word embedding of their name.  "

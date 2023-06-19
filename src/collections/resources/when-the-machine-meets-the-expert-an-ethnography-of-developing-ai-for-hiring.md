@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount-\
   OptimizingDiversitywithDisabilityODDChannel/Shared%20Documents/Optimizing%20D\
   iversity%20with%20Disability%20(ODD)%20Channel/Hiring%20Systems/Article%20+%2\
   0Resources/WHEN%20THE%20MACHINE%20MEETS%20THE%20EXPERT_AN%20ETHNOGRAPHY%20OF%\
