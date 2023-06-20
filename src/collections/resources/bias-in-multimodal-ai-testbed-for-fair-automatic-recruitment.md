@@ -1,6 +1,6 @@
 ---
 title: "Bias in Multimodal AI: Testbed for Fair Automatic Recruitment"
-focus: AI Ethics/Policy
+focus: Bias
 source: CVPR 2020
 readability:
   - Expert
