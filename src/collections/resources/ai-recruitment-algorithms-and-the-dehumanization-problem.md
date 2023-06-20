@@ -6,6 +6,7 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
+link: https://wecount.inclusivedesign.ca/uploads/ai-recruitment-algorithms-and-the-dehumanization-problem.pdf
 learnTags:
   - machineLearning
   - bias
