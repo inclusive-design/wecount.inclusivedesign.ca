@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Toward%20Fairness%20in%20AI%20for%20People%20with%20Disabilities-%20%20A%20Research%20Roadmap%20.pdf
 link: https://arxiv.org/pdf/1907.02227.pdf
 keywords:
   - Artificial intelligence

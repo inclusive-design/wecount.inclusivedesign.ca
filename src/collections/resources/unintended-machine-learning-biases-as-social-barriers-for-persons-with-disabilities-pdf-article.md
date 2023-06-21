@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Unintended%20machine%20learning%20biases%20as%20social%20barriers%20for%20persons%20with%20disabilities.pdf
 link: https://research.google/pubs/pub48613/
 keywords: []
 learnTags:

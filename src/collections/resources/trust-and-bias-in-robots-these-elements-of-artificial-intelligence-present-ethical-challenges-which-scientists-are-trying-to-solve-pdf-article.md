@@ -7,7 +7,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Trust_and_Bias_in_Robots_These.pdf
 link: https://www.americanscientist.org/article/trust-and-bias-in-robots
 keywords: []
 learnTags:

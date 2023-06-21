@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Hack%20weeks%20as%20a%20model%20for%20data%20science%20educaiton%20and%20collaboration.pdf
 link: https://www.pnas.org/doi/10.1073/pnas.1717196115
 keywords:
   - data science

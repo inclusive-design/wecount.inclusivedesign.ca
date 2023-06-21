@@ -145,7 +145,7 @@ const Resources = ({ entry }) => {
 	return <NunjucksPreview
 		entry={entry}
 		path="layouts/resourceDetail.njk"
-		context={({title, focus, source, readability, type, openSource, link, sharePointUrl, keywords, learnTags, summary, body }) => ({
+		context={({title, focus, source, readability, type, openSource, link, keywords, learnTags, summary, body }) => ({
 			previewMode: true,
 			title,
 			focus,
@@ -154,7 +154,6 @@ const Resources = ({ entry }) => {
 			type,
 			openSource,
 			link,
-			sharePointUrl,
 			keywords,
 			learnTags,
 			summary,

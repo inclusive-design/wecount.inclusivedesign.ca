@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20A.I.%20Pandorica%20_Linking%20Ethically%20Challenged%20Technical%20Outputs%20to%20Prospective%20Policy%20Approaches.pdf
 link: https://www.researchgate.net/publication/333793272_The_AI_Pandorica_Linking_Ethically-challenged_Technical_Outputs_to_Prospective_Policy_Approaches
 keywords:
   - Artificial intelligence

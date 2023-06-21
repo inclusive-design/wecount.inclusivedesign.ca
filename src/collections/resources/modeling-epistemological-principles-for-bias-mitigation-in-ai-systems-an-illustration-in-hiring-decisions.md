@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount-OptimizingDiversitywithDisabilityODDChannel/Shared%20Documents/Optimizing%20Diversity%20with%20Disability%20(ODD)%20Channel/Hiring%20Systems/Article%20+%20Resources/Modeling%20Epistemological%20Principles%20for%20Bias%20Mitigation%20in%20AI%20Systems.pdf?csf=1&web=1&e=etlwkV
 link: "https://arxiv.org/pdf/1711.07111.pdf "
 learnTags:
   - bias

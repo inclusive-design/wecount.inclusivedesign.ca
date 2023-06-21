@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20Social%20Dilemma%20in%20Artificial%20Intelligence.pdf?csf=1&web=1&e=hxwwov
 link: https://link.springer.com/content/pdf/10.1007/s43681-021-00120-w.pdf
 keywords:
   - Artificial intelligence

@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Datasheets%20for%20Datasets.pdf
 link: https://arxiv.org/abs/1803.09010
 keywords: []
 learnTags:

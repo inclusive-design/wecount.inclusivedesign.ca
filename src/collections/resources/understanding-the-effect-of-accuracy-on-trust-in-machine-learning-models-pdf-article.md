@@ -5,7 +5,6 @@ source: "CHI 2019"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Understanding%20the%20Effect%20of%20Accuracy%20on%20Trust%20in%20Machine%20Learning%20Models.pdf"
 keywords: ["Machine learning","trust","human-subject experiments"]
 learnTags: ["methods","machineLearning","solution","trust"]
 summary: "An article that explores how a randomized human subject experiment found the average person's trust in a machine learning model is affected by the model's stated accuracy level and observation of the model in practice.  "

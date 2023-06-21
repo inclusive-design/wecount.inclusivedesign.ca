@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Tracking%20@stemxcomet%20Teaching%20Programming%20to%20Blind%20Students%20via%203D%20Printing,%20Crisis%20Management,%20and%20Twitter.pdf?csf=1&web=1&e=jzsNwG
 link: https://userpages.umbc.edu/~skane/pubs/sigcse14.pdf
 keywords:
   - Education

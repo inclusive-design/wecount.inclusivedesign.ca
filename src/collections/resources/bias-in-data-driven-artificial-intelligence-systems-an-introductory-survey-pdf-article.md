@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Bias%20in%20data-driven%20artificial%20intelligence%20system.pdf
 link: https://arxiv.org/abs/2001.09762
 keywords:
   - fairness

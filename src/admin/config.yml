@@ -205,10 +205,6 @@ collections:
         widget: boolean
         default: false
         required: false
-      - label: SharePoint URL
-        name: sharePointUrl
-        widget: string
-        required: false
       - label: External Link
         name: link
         widget: string

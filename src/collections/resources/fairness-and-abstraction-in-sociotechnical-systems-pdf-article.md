@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Fairness%20and%20Abstraction%20in%20Sociotechnical%20Systems.pdf
 link: https://dl.acm.org/doi/10.1145/3287560.3287598
 keywords: []
 learnTags:

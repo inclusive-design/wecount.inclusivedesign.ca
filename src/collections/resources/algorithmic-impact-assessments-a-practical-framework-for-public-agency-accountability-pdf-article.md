@@ -5,7 +5,6 @@ source: "AI Now Institute"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Algorthmic%20Impact%20Assessments.pdf"
 link: "https://ainowinstitute.org/aiareport2018.pdf"
 keywords: []
 learnTags: ["bias","business","methods","disability","ethics","fairness","framework","government"]

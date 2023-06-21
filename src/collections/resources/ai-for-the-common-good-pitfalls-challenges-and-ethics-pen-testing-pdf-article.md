@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/AI%20for%20the%20Common%20Good%20Pitfalls,%20challenges,%20and%20ethics%20pen-testing.pdf
 link: https://arxiv.org/abs/1810.12847
 keywords:
   - artificial intelligence

@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Bridging%20the%20Gap.pdf?csf=1&web=1&e=jzg7aK
 link: https://link.springer.com/article/10.1007/s43681-020-00037-w
 keywords:
   - Artificial intelligence

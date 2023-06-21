@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Social%20Data-%20Biases,%20Methodological%20Pitfalls,%20and%20Ethical%20Boundaries.pdf
 link: https://www.frontiersin.org/articles/10.3389/fdata.2019.00013/full
 keywords:
   - social media

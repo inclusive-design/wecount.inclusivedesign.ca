@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/There%20Is%20Hope%20After%20All.pdf
 link: https://www.frontiersin.org/articles/10.3389/frai.2020.00054/full
 keywords:
   - artificial intelligence

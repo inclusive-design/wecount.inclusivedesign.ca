@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Decoupled%20Classifiers%20for%20Group-Fair%20and%20Efficient%20Machine%20Learning.pdf
 link: https://arxiv.org/abs/1707.06613
 keywords: []
 learnTags:

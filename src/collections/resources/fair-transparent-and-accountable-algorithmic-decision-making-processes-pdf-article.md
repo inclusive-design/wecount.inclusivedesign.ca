@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Fair,%20Transparent,%20and%20Accountable%20Algorithmic%20Decision-Making%20Processes.pdf
 link: https://dspace.mit.edu/bitstream/handle/1721.1/122933/13347_2017_279_ReferencePDF.pdf?sequence=2&isAllowed=y
 keywords:
   - algorithmic decision-making

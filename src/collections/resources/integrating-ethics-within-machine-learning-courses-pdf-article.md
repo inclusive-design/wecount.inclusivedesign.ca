@@ -5,7 +5,6 @@ source: "ACM Transactions on Computing Education Journal"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Integrating%20Ethics%20within%20Machine-learning%20Courses.pdf"
 link: "https://dl.acm.org/doi/fullHtml/10.1145/3341164"
 keywords: ["Machine learning","ethics","education"]
 learnTags: ["education","ethics","fairness"]

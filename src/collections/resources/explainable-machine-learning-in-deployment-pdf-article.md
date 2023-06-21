@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Explainable%20Machine%20Learning%20in%20Deployment.pdf
 link: https://arxiv.org/abs/1909.06342
 keywords:
   - machine learning

@@ -5,7 +5,6 @@ source: "SIGACCESS"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/What%20is%20the%20point%20of%20fairness_disability,%20AI%20and%20the%20complexity%20of%20justice.pdf"
 link: "https://arxiv.org/abs/1908.01024"
 keywords: ["Computer Vision","Disability","AI","fairness","justice"]
 learnTags: ["disability","ethics","fairness"]

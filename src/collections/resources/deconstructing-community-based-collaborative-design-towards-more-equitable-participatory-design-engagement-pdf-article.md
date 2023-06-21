@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Deconstructing%20Community-Based%20Collaborative%20Design_Towards%20More%20Equitable%20Participatory%20Design%20Engagements.pdf
 link: https://dl.acm.org/doi/10.1145/3359318
 keywords:
   - Design workshops

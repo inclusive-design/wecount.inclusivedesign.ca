@@ -7,7 +7,6 @@ readability:
   - Intermediate
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/inclusive_intelligence_draft_april_2019.pdf
 link: https://vcresearch.berkeley.edu/sites/default/files/inline-files/Inclusive%20Intelligence%20Signature%20Initiative%20October%202019.pdf
 keywords: []
 learnTags:

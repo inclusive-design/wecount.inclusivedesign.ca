@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Improving%20fairness%20in%20machine%20learning%20systems-%20What%20do%20industry%20practitioners%20need.pdf
 link: https://arxiv.org/abs/1812.05239
 keywords:
   - algorithmic bias

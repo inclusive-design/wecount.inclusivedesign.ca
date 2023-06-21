@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Interventions%20for%20Ranking%20in%20the%20Presence%20of%20Implicit%20Bias.pdf
 link: https://arxiv.org/abs/2001.08767
 keywords: []
 learnTags:

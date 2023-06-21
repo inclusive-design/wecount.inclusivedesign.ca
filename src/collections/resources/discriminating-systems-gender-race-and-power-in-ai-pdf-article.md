@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Discriminating%20Systems.pdf
 link: https://ainowinstitute.org/publication/discriminating-systems-gender-race-and-power-in-ai-2
 keywords: []
 learnTags:

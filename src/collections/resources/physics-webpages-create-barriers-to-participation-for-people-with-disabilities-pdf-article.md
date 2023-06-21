@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Physics%20Webpages%20Create%20Barriers%20to%20Participation%20for%20People%20with%20Disabilities.pdf?csf=1&web=1&e=0eeClG
 link: https://stemeducationjournal.springeropen.com/articles/10.1186/s40594-021-00282-3
 keywords:
   - Accessibility

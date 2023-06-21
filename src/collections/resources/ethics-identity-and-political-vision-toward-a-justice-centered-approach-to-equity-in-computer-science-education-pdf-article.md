@@ -7,7 +7,6 @@ readability:
   - Intermediate
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Ethics,%20identity,%20and%20political%20vision_toward%20a%20justice-centered%20approach%20to%20equity%20in%20computer%20science%20education.pdf
 link: https://www.sesp.northwestern.edu/docs/publications/16371748565ecda18fea3a0.pdf
 keywords:
   - computer science education

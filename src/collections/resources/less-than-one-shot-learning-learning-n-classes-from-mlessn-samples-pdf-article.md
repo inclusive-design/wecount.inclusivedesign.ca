@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/'Less%20Than%20One'-Shot%20Learning.pdf
 link: https://arxiv.org/abs/2009.08449
 keywords: []
 learnTags:

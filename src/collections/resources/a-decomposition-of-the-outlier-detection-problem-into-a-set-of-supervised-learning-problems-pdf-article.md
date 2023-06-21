@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/A%20decomposition%20of%20the%20outlier%20detection%20problem%20into%20a%20set%20of%20supervised%20learning%20problems.pdf
 link: https://link.springer.com/article/10.1007/s10994-015-5507-y
 keywords:
   - Outlier detection

@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Towards%20an%20Inclusive%20AI%20Design.pdf
 link: https://wecount.inclusivedesign.ca/uploads/towards-an-inclusive-ai-design.pdf
 keywords: []
 learnTags:

@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Corporate%20Surveillance%20in%20Everyday%20Life.pdf
 link: https://crackedlabs.org/en/corporate-surveillance
 keywords: []
 learnTags:

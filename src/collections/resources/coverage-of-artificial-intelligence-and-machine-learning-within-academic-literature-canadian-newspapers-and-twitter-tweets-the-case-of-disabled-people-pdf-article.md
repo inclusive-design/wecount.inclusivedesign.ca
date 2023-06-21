@@ -8,7 +8,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Coverage%20of%20artificial%20intelligence%20and%20machine%20learning%20within%20academic%20literature,%20Canadian%20newspapers,%20and%20Twitter%20tweets_The%20case%20of%20disabled%20people.pdf
 link: https://www.mdpi.com/2075-4698/10/1/23
 keywords:
   - disabled people

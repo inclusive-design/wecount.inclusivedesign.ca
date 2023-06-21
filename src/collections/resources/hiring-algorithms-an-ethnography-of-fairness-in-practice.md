@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount-OptimizingDiversitywithDisabilityODDChannel/Shared%20Documents/Optimizing%20Diversity%20with%20Disability%20(ODD)%20Channel/Hiring%20Systems/Article%20+%20Resources/Hiring%20Algorithms%20An%20Ethnography%20of%20Fairness%20in%20Practice.pdf?csf=1&web=1&e=VQ9gEN
 link: "https://core.ac.uk/download/pdf/301385085.pdf "
 keywords:
   - Artificial Intelligence

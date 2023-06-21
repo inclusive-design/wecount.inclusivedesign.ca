@@ -7,7 +7,6 @@ readability:
   - Intermediate
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Algorithm-Driven%20Hiring%20Tools.pdf?csf=1&web=1&e=55Ryoq
 link: https://cdt.org/wp-content/uploads/2020/12/Full-Text-Algorithm-driven-Hiring-Tools-Innovative-Recruitment-or-Expedited-Disability-Discrimination.pdf
 keywords: []
 learnTags:

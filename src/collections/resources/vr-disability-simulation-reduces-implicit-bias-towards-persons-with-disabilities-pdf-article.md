@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/VR%20Disability%20Simulation%20Reduces%20Implicit%20Bias%20Towards%20Persons%20with%20Disabilities.pdf
 link: https://www.researchgate.net/publication/337875864_VR_Disability_Simulation_Reduces_Implicit_Bias_Towards_Persons_With_Disabilities
 keywords:
   - Virtual Reality

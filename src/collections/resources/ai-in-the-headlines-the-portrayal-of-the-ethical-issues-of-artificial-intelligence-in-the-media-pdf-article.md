@@ -5,7 +5,6 @@ source: "AI and Society Journal"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/AI%20In%20The%20Headlines-%20The%20Portrayal%20Of%20ethical%20issues%20of%20AI%20in%20the%20media.pdf"
 link: "https://link.springer.com/article/10.1007/s00146-020-00965-5"
 keywords: ["Artificial intelligence (AI)","Ethics","Media","News","Public discourse","Public policy"]
 learnTags: ["bias","ethics","framework","government","solution","trust"]

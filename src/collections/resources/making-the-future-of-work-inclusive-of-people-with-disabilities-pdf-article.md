@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Making%20the%20future%20of%20work%20inclusive%20of%20people%20with%20disabilities.pdf
 link: https://www.ilo.org/global/topics/disability-and-work/WCMS_729457/lang--en/index.htm
 keywords: []
 learnTags:

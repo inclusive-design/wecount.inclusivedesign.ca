@@ -5,7 +5,6 @@ source: "AI&."
 readability: ["Intermediate"]
 type: "Website Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Working%20to%20Address%20Algorithmic%20Bias%20Don%E2%80%99t%20Overlook%20the%20Role%20of%20Demographic%20Data.pdf"
 link: "https://medium.com/@PartnershipAI/working-to-address-algorithmic-bias-dont-overlook-the-role-of-demographic-data-e71c304ee742"
 keywords: []
 learnTags: ["bias","methods","ethics","framework"]

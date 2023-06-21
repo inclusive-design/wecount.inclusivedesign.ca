@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Algorithmic%20Fair%20Use.pdf
 link: https://lawreview.uchicago.edu/sites/default/files/03%20Burk_SYMP_Post-SA%20%28BE%29.pdf
 keywords: []
 learnTags:
