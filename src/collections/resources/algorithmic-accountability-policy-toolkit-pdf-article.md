@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: Website Resource
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Algorithmic%20Accountabiltiy%20Policy%20Toolkit.pdf
 link: https://ainowinstitute.org/publication/algorithmic-accountability-policy-toolkit
 keywords: []
 learnTags:

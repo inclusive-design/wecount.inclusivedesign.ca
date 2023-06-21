@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Discrimination%20in%20the%20Age%20of%20Algorithms.pdf
 link: https://arxiv.org/abs/1902.03731
 keywords: []
 learnTags:

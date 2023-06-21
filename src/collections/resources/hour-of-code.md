@@ -6,7 +6,6 @@ readability:
   - Beginner
 type: Website Resource
 openSource: false
-sharePointUrl: ""
 link: https://hourofcode.com/ca/how-to/virtual
 learnTags:
   - education

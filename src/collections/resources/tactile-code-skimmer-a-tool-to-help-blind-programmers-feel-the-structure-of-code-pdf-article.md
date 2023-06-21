@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Tactile%20Code%20Skimmer.pdf?csf=1&web=1&e=yOcVDL
 link: https://shape.stanford.edu/research/TCS/Tactile_Code_Skimmer_Final.pdf
 keywords:
   - Accessibility

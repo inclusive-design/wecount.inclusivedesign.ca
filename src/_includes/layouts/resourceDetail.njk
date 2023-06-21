@@ -75,13 +75,6 @@
           </div>
           {% endif %}
 
-          {% if sharePointUrl %}
-          <svg><use xlink:href="#share-point-url" /></svg>
-          <div><span class="feature-name">SharePoint URL:</span>
-              <a href="{{ sharePointUrl }}">{{ sharePointUrl | safe }}</a>
-          </div>
-          {% endif %}
-
           <svg><use xlink:href="#keywords" /></svg>
           <div><span class="feature-name">Keywords:</span>
               {% if keywords.length > 0 %}{{ keywords | join(", ") | safe }}{% else %}N/A{% endif %}

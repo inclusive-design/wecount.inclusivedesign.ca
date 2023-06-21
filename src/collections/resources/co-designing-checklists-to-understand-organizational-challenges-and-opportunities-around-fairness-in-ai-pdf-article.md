@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Co-Designing%20Checklists%20to%20Understand%20Organizational%20Challenges%20and%20Opportunities%20around%20Fairness%20in%20AI.pdf
 link: https://wecount.inclusivedesign.ca/uploads/co-designing-checklists-to-understand-organizational-challenges-and-opportunities-around-fairness-in-ai.pdf
 keywords:
   - AI

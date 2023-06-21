@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/How%20Do%20Fair%20Decisions%20Fare%20in%20Long-Term%20Qualification.pdf?csf=1&web=1&e=UcdxrT
 link: https://arxiv.org/abs/2010.11300
 keywords: []
 learnTags:

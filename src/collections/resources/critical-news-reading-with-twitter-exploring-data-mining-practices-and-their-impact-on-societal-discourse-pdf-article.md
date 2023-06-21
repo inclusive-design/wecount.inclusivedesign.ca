@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Critical%20news%20reading%20with%20Twitter%20%20Exploring%20data-mining%20practices%20and%20their%20impact%20on%20societal%20discourse.pdf
 link: "  https://www.researchgate.net/publication/315799299_Critical_news_readi\
   ng_with_Twitter_Exploring_data-mining_practices_and_their_impact_on_societal_\
   discourse"

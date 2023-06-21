@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Disability,%20bias,%20AI.pdf
 link: https://ainowinstitute.org/publication/disabilitybiasai-2019
 keywords: []
 learnTags:

@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:p:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Public%20Policy%20Course%20-%20Understanding%20and%20Explaining%20Bread%20Mold%20on%20a%20Yak.pptx?d=wdb415aaea335477aadf2ddf9b4bf5d32&csf=1&web=1&e=3OA0Si
 link: https://wecount.inclusivedesign.ca/uploads/public-policy-course-understanding-and-explaining-bread-mold-on-a-yak.pdf
 learnTags:
   - disability

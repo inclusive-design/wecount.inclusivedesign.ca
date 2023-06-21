@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/WeBuildAI_Participatory%20Framework%20for%20Algorithmic%20Governance.pdf
 link: https://dl.acm.org/doi/10.1145/3359283
 keywords:
   - participatory algorithm design

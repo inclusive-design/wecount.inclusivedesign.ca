@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Gender%20Shades.pdf
 link: https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf
 keywords:
   - Computer Vision

@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/AutoML-Zero_Evolving%20Machine%20Learning%20Algorithms%20from%20Scratch.pdf
 link: http://proceedings.mlr.press/v119/real20a/real20a.pdf
 keywords: []
 learnTags:

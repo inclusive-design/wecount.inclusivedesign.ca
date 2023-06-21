@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Protective%20Optimization%20Technologies.pdf
 link: https://arxiv.org/abs/1806.02711
 keywords:
   - Fairness and Accountability

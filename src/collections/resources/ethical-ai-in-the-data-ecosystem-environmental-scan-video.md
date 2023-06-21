@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: Video
 openSource: false
-sharePointUrl: >-
   
   https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Ethical%20AI%20in%20the%20Data%20Ecosystem%20Environmental%20Scan_Final.mp4
 link: https://youtu.be/NCjqn3QNmMM

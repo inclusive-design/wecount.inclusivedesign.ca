@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/WHO%20Draft%20global%20strategy%20on%20digital%20health%202020-2024.pdf
 link: https://www.who.int/docs/default-source/documents/gs4dhdaa2a9f352b0445bafbc79ca799dce4d.pdf
 keywords: []
 learnTags:

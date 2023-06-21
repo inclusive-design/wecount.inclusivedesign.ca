@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Governance%20of%20artificial%20intelligence.pdf?csf=1&web=1&e=a2Pwdo
 link: https://www.tandfonline.com/doi/full/10.1080/14494035.2021.1928377
 keywords:
   - Governance; artificial intelligence; AI; robotics; public policy

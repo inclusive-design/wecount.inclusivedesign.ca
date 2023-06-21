@@ -6,7 +6,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/AI%20Governance%20A%20Holistic%20Approach%20to%20Implement%20Ethics%20into%20AI%20(1).pdf
 link: https://www.weforum.org/whitepapers/ai-governance-a-holistic-approach-to-implement-ethics-into-ai/
 keywords: []
 learnTags:

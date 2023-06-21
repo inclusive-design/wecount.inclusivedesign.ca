@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/A%20Reinforcement%20Learning%20and%20IoT%20based%20System%20to%20Assist%20Patients%20with%20Disabilities.pdf
 link: https://www.scitepress.org/Papers/2020/97838/97838.pdf
 keywords:
   - Artificial Intelligence

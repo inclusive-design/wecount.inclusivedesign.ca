@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Joint%20Optimization%20of%20AI%20Fairness%20and%20Utility-%20A%20Human-Centered%20Approach.pdf
 link: https://arxiv.org/abs/2002.01621
 keywords: []
 learnTags:

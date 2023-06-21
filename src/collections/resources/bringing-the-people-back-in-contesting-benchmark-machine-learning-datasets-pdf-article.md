@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Bringing%20the%20People%20Back%20In.pdf?csf=1&web=1&e=ir2lhX
 link: https://arxiv.org/abs/2007.07399
 keywords: []
 learnTags:

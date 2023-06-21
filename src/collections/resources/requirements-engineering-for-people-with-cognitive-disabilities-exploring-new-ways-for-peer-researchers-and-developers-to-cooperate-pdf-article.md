@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Requirements%20Engineering%20for%20People%20with%20Cognitive%20Disabilities.pdf
 link: https://link.springer.com/chapter/10.1007/978-3-319-94277-3_68
 keywords:
   - Human-machine interaction

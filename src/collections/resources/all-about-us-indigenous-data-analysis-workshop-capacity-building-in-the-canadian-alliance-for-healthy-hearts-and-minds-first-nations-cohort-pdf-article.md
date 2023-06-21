@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/All%20about%20us_Indigenous%20Data%20Analysis%20Workshop.pdf
 link: https://pubmed.ncbi.nlm.nih.gov/32159122/
 keywords: []
 learnTags:

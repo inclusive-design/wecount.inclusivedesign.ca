@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Holistic%20User%20Models%20for%20Cognitive%20Disabilities_Personalized%20Tools%20for%20Supporting%20People%20with%20Autism%20in%20the%20City.pdf
 link: https://wecount.inclusivedesign.ca/uploads/holistic-user-models-for-cognitive-disabilities_personalized-tools-for-supporting-people-with-autism-in-the-city.pdf
 keywords:
   - Adaptive support

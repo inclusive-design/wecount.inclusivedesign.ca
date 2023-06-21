@@ -7,7 +7,6 @@ readability:
   - Intermediate
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Eliciting%20Programming%20Challenges%20Faced%20by%20Developers%20with%20Visual%20Impairments_Exploratory%20Study.pdf
 link: https://wecount.inclusivedesign.ca/uploads/eliciting-programming-challenges-faced-by-developers-with-visual-impairments_exploratory-study.pdf
 keywords:
   - Accessibility

@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Accessible%20Computer%20Science%20for%20K-12%20Students%20with%20Disabilities.pdf?csf=1&web=1&e=RzFFmB
 link: https://etd.auburn.edu/xmlui/bitstream/handle/10415/7637/MeenaDas-Thesis2021.pdf
 keywords:
   - Accessibility

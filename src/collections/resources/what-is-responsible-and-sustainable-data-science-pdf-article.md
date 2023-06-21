@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/What%20is%20responsible%20and%20sustainable%20data%20science.pdf
 link: https://journals.sagepub.com/doi/full/10.1177/2053951719858114
 keywords:
   - Commons

@@ -5,7 +5,6 @@ source: "Access and Mobility Professional"
 readability: ["Beginner"]
 type: "Website Resource"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Microsoft%20Corporation%20champions%20AI%20in%20health%20.pdf"
 link: "https://www.accessandmobilityprofessional.com/microsoft-corporation-champions-ai-in-health-and-mobility-sector/"
 keywords: []
 learnTags: ["basicAI","disability"]

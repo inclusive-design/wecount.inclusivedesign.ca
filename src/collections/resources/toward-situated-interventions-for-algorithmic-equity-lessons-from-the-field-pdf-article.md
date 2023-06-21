@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Toward%20Situated%20Interventions%20for%20Algorithmic%20Equity-Lessons%20from%20the%20Field.pdf
 link: https://dl.acm.org/doi/abs/10.1145/3351095.3372874
 keywords: []
 learnTags:

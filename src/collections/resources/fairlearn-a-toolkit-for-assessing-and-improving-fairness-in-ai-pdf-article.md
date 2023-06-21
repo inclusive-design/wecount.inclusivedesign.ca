@@ -5,7 +5,6 @@ source: "Microsoft"
 readability: ["Intermediate"]
 type: "PDF Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Fairlearn_A%20toolkitfor%20assessing%20and%20improving%20fairness%20in%20AI_Whitepaper.pdf"
 link: "https://www.microsoft.com/en-us/research/uploads/prod/2020/05/Fairlearn_whitepaper.pdf"
 keywords: []
 learnTags: ["bias","dataTools","methods","fairness","framework","inclusivePractice","solution","trust"]

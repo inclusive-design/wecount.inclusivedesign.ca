@@ -5,7 +5,6 @@ source: "Stanford HAI"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/ai_index_2019_report.pdf"
 link: "https://hai.stanford.edu/sites/g/files/sbiybj10986/f/ai_index_2019_report.pdf"
 keywords: []
 learnTags: ["bias","dataset","dataTools","methods","ethics","fairness","framework","inclusivePractice"]

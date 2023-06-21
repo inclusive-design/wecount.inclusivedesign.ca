@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Effect%20of%20Confidence%20and%20Explanation%20on%20Accuracy%20and%20Trust%20Calibration%20in%20AI-Assisted%20Decision%20Making.pdf
 link: https://arxiv.org/abs/2001.02114
 keywords:
   - decision support

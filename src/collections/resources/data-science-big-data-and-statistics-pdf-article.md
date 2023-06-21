@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Data%20Science%20Big%20Data%20And%20Statistic.pdf
 link: https://www.researchgate.net/publication/332276688_Data_science_big_data_and_statistics
 keywords:
   - Machine learning

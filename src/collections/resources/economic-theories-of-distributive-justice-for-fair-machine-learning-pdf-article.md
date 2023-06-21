@@ -6,7 +6,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Economic%20Theories%20of%20Distributive%20Justice.pdf
 link: https://wecount.inclusivedesign.ca/uploads/economic-theories-of-distributive-justice.pdf
 keywords:
   - social choice theory

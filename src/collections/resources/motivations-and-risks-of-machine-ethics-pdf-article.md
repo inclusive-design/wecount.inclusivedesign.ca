@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Motivations%20and%20Risks%20of%20Machine%20Ethics.pdf
 link: https://ieeexplore.ieee.org/document/8456834
 keywords:
   - Ethical alignment

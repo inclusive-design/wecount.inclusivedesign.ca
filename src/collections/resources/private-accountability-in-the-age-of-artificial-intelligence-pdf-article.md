@@ -6,7 +6,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Private_Accountability_in_the_age-of_AI.pdf
 link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3309397
 keywords: []
 learnTags:

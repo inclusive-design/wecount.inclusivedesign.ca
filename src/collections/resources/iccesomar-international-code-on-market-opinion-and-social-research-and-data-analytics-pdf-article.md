@@ -7,7 +7,6 @@ readability:
   - Intermediate
 type: Website Resource
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/ICCESOMAR%20Code.pdf
 link: https://esomar.org/code-and-guidelines/icc-esomar-code
 keywords: []
 learnTags:

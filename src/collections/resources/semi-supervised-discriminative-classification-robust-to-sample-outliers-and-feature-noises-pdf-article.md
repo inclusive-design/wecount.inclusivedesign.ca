@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Semi-Supervised%20Discriminative%20Classi%EF%AC%81cation%20Robust%20to%20Sample-Outliers%20and%20Feature-Noises.pdf
 link: https://wecount.inclusivedesign.ca/uploads/semi-supervised-discriminative-classiﬁcation-robust-to-sample-outliers-and-feature-noises.pdf
 keywords:
   - Linear discriminant analysis

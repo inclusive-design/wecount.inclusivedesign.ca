@@ -5,7 +5,6 @@ source: "Towards Data Science"
 readability: ["Expert"]
 type: "Blog"
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Breaking%20the%20curse%20of%20small%20datasets%20in%20Machine%20Learning%20Part%201.pdf"
 link: "https://towardsdatascience.com/breaking-the-curse-of-small-datasets-in-machine-learning-part-1-36f28b0c044d"
 keywords: []
 learnTags: ["bias","dataset","dataTools","smallData"]

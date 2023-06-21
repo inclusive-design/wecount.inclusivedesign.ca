@@ -7,7 +7,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Ethics%20of%20artificial%20intelligence_Some%20ethical%20issues%20and%20regulatory%20challenges.pdf
 link: https://techreg.org/article/view/10999
 keywords: []
 learnTags:

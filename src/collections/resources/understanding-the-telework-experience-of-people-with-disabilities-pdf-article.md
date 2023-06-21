@@ -5,7 +5,6 @@ source: "ACM"
 readability: ["Expert"]
 type: "PDF Article"
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Understanding%20the%20Telework%20Experience%20of%20People%20with%20Disabilities.pdf?csf=1&web=1&e=Vvbudk"
 keywords: ["Telework","computer-mediated communication","collaboration technology","video calling","people with disabilities"]
 learnTags: ["bias","disability","ethics","fairness"]
 summary: "Twenty-five persons with disabilities were interviewed during the first month of the COVID-19 pandemic response to understand how the sudden shift to pervasive teleworking affected their telework experience. "

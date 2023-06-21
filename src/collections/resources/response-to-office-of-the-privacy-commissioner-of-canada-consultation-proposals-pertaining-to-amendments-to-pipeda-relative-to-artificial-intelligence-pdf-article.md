@@ -8,7 +8,6 @@ readability:
   - Intermediate
 type: Website Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Response%20to%20Office%20of%20the%20Privacy%20Commissioner%20of%20Canada%20ConsultationProposals%20pertaining%20to%20amendments%20to%20PIPEDA%20relative%20to%20Artificial%20Intelligence.pdf
 link: https://arxiv.org/abs/2006.07025
 keywords: []
 learnTags:

@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Integrating%20FATE_critical%20data%20studies%20into%20data%20science%20curricula-%20where%20are%20we%20going%20and%20how%20do%20we%20get%20there.pdf
 link: https://dl.acm.org/doi/abs/10.1145/3351095.3372832
 keywords: []
 learnTags:

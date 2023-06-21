@@ -7,7 +7,6 @@ readability:
   - Expert
 type: Website Article
 openSource: false
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Caveat%20emptor,%20computational%20social%20science.pdf
 link: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0200162
 keywords: []
 learnTags:

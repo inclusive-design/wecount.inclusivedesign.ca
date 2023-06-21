@@ -7,7 +7,6 @@ readability:
   - Expert
 type: PDF Article
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount-OptimizingDiversitywithDisabilityODDChannel/Shared%20Documents/Optimizing%20Diversity%20with%20Disability%20(ODD)%20Channel/Hiring%20Systems/Article%20+%20Resources/Recruitment_AI_%20has%20a%20Disability%20Problem.pdf?csf=1&web=1&e=d6tWag
 link: https://osf.io/preprints/socarxiv/8sxh7/
 keywords:
   - disability
