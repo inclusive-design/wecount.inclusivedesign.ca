@@ -6,6 +6,7 @@ readability:
   - Intermediate
 type: Website Article
 openSource: false
+link: https://www.fastcompany.com/90593541/how-algorithm-based-hiring-tools-can-increase-disability-discrimination
 learnTags:
   - machineLearning
   - bias
