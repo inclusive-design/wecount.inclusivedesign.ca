@@ -1,5 +1,5 @@
 ---
-title: '"The Science behind Psychometric AI "'
+title: The Science behind Psychometric AI
 focus: Methods or Design
 source: Pinpoint Predictive
 readability:
