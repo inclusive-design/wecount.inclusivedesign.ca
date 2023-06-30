@@ -5,7 +5,7 @@ source: Brookings
 readability:
   - Intermediate
 type: Website Article
-openSource: false
+openSource: true
 link: https://www.brookings.edu/articles/auditing-employment-algorithms-for-discrimination/
 learnTags:
   - machineLearning
