@@ -6,7 +6,7 @@ readability:
   - Intermediate
 type: Website Article
 openSource: false
-link: https://www.forbes.com/sites/tomaspremuzic/2021/07/19/how-to-make-ethical-use-of-ai-in-the-hiring-process/?sh=6ad000d01bca
+link: https://www.forbes.com/sites/tomaspremuzic/2021/07/19/how-to-make-ethical-use-of-ai-in-the-hiring-process/
 learnTags:
   - machineLearning
   - ethics
