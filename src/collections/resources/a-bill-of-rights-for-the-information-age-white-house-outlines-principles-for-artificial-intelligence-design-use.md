@@ -2,10 +2,10 @@
 title: "A Bill of Rights for the Information Age: White House Outlines
   Principles for Artificial Intelligence Design & Use"
 focus: AI Ethics/Policy
-source: Lexology
+source: Hunton Employment & Labor Perspectives
 readability:
   - Intermediate
-type: Website Article
+type: Blog
 openSource: true
 link: https://www.lexology.com/library/detail.aspx?g=f82c919f-9579-48ff-8e16-eeb42bebcecc
 learnTags:
