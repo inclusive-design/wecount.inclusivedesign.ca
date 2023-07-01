@@ -7,7 +7,7 @@ readability:
   - Intermediate
 type: Blog
 openSource: true
-link: https://www.lexology.com/library/detail.aspx?g=f82c919f-9579-48ff-8e16-eeb42bebcecc
+link: https://www.huntonlaborblog.com/2022/10/articles/workplace-technology/a-bill-of-rights-for-the-information-age-white-house-outlines-principles-for-artificial-intelligence-design-use/#page=1
 learnTags:
   - machineLearning
   - bias
