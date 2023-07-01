@@ -1,7 +1,7 @@
 ---
 title: Research Suggests Using AI to Reduce Bias in Recruitment Is Counter Productive
 focus: Employment
-source: Lexology
+source: Stevens & Bolton
 readability:
   - Intermediate
 type: Website Article
