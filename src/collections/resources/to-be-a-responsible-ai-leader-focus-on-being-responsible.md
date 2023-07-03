@@ -5,7 +5,7 @@ source: MIT Sloan Management Review
 readability:
   - Intermediate
 type: Website Article
-openSource: false
+openSource: true
 link: https://sloanreview.mit.edu/projects/to-be-a-responsible-ai-leader-focus-on-being-responsible/
 learnTags:
   - machineLearning
