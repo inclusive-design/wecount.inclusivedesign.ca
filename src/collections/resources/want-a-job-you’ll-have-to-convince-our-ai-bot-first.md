@@ -13,6 +13,8 @@ learnTags:
   - fairness
   - bias
   - ethics
+  - business
+  - canadianLandscape
 summary: Employers are increasingly using AI tools to save time and money in
   their hiring processes, but while AI hiring tools can save time and money for
   businesses when all they want to do is fill a job position, experts caution
