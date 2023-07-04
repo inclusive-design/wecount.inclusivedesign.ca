@@ -1,12 +1,12 @@
 ---
 title: Big Tech Layoffs Are Hitting Diversity and Inclusion Jobs Hard
 focus: Employment
-source: CBC News
+source: BNN Bloomberg
 readability:
   - Intermediate
 type: Website Article
 openSource: true
-link: https://www.cbc.ca/news/business/recruitment-ai-tools-risk-bias-hidden-workers-keywords-1.6718151
+link: https://www.bnnbloomberg.ca/big-tech-layoffs-are-hitting-diversity-and-inclusion-jobs-hard-1.1874133
 learnTags:
   - machineLearning
   - employment
@@ -14,7 +14,6 @@ learnTags:
   - bias
   - fairness
   - ethics
-  - canadianLandscape
 summary: The recent layoffs sweeping the tech industry are gutting diversity and
   inclusion departments and undercutting company pledges to boost the employment
   of underrepresented groups.
