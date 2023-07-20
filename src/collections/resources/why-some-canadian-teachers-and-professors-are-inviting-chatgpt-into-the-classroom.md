@@ -6,7 +6,7 @@ source: CP24
 readability:
   - Intermediate
 type: Website Article
-openSource: false
+openSource: true
 link: https://www.cp24.com/news/why-some-canadian-teachers-and-professors-are-inviting-chatgpt-into-the-classroom-1.6299023
 learnTags:
   - machineLearning
