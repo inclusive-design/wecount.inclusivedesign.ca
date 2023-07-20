@@ -4,7 +4,7 @@ title: "The Governance of Artificial Intelligence in Canada: Findings and
 focus: AI Ethics/Policy
 source: SSRN
 readability:
-  - Intermediate
+  - Expert
 type: Website Article
 openSource: true
 link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4414212
