@@ -2,6 +2,7 @@
 title: Equitable Digital Systems Final Research Report
 author: Jess Mitchell
 date: 2023-06-15T19:31:41.206Z
+picture: /uploads/eds-colored-03.png
 excerpt: "Future of Work: Equitable Digital Systems (EDS) project team is
   excited to share the outcomes of a nearly three-year collaboration — during
   COVID."
