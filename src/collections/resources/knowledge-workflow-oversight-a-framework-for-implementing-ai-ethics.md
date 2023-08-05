@@ -6,7 +6,7 @@ readability:
   - Expert
 type: Website Article
 openSource: true
-link: https://montrealethics.ai/how-different-groups-prioritize-ethical-values-for-responsible-ai/
+link: https://montrealethics.ai/knowledge-workflow-oversight-a-framework-for-implementing-ai-ethics/
 learnTags:
   - machineLearning
   - methods
