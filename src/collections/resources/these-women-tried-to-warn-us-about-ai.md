@@ -1,5 +1,5 @@
 ---
-title: These women tried to warn us about AI
+title: These Women Tried to Warn Us about AI
 focus: AI Ethics/Policy
 source: Rolling Stone
 readability:
