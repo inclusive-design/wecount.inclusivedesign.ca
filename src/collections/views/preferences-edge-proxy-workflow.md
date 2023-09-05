@@ -8,7 +8,7 @@ excerpt: The development team has created a new workflow supported by the
   Personal Data Storage, or Preferences server, where the user makes
   save/retrieve requests for their preferences while on a static site.
 tags:
-  - Data-Science
+  - Data Science
 ---
 The development team is defining the workflow supported by the Personal Data Storage, or Preferences server, where the user makes save/retrieve requests for their preferences while on a static site, such as when a user changes their UI Options (UIO) preferences and wants to save them.
 
