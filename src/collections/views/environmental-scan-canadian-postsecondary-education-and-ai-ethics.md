@@ -7,10 +7,8 @@ altTag: Portion of the We Count logo
 excerpt: "An overview of key findings from the Postsecondary Education portion
   of the environmental scan conducted by the We Count team in May 2020. "
 tags:
-  - Environmental Scan
-  - ethical AI
-  - postsecondary education
-  - postsecondary institutions
+  - AI
+  - Education
 ---
 This article provides an overview of key findings from an environmental scan conducted by the We Count team in May 2020. The scan relied on information available through online sources to explore how data ethics are being taught, expressed, and implemented within Canada by three stakeholders in the data ecosystem: Postsecondary Education (PSE) Institutions, [Data Service Providers](https://wecount.inclusivedesign.ca/views/environmental-scan-assessing-inclusionary-practice-in-canadian-data-services/), and [AI Firms](https://wecount.inclusivedesign.ca/views/environmental-scan-addressing-inclusionary-practice-in-canadian-ai-firms/).
 
