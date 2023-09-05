@@ -7,7 +7,9 @@ excerpt: Clusive is a free, flexible, adaptive and customizable learning
   environment. It is a web application for students and teachers that addresses
   access and learning barriers present in digital and open learning materials.
 tags:
-  - Clusive
+  - Data-Science
+  - Disability
+  - Education
 ---
 ![Clusive logo](https://www.cast.org/binaries/content/gallery/castm/impact/clusive-story-16x9.jpg/clusive-story-16x9.jpg/aem%3Amedium)
 
