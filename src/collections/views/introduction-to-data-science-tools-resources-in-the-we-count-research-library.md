@@ -8,6 +8,10 @@ excerpt: Learning data science comes with a steep learning curve, and
   inaccessible tutorials, resources and tools create barriers. To support a more
   inclusive environment in the field of data science, We Count has created a
   resource library.
+tags:
+  - Disability
+  - Data-Science
+  - Accessibility
 ---
 The issues with bias, gaps and fairness in AI can be addressed by ensuring persons with disabilities can equally participate in the field of data science. The tools used in data science are numerous. They differ greatly in their purpose, interface, complexity and capabilities. Unfortunately for data scientists with a disability, use of these tools can be challenging and unpredictable as their accessibility can vary greatly. There are often shortfalls in the tools’ designed accessibility, with accessibility features included as an afterthought. Persons with disabilities are left to develop workarounds and use trial-and-error methods to determine how assistive technologies can be used effectively with data science tools. The result is a patchwork of solutions and strategies that are less than ideal yet require constant adjustments.  
 
