@@ -8,9 +8,9 @@ excerpt: Project We Count evaluated the MIDP for Toronto’s Quayside from the
   perspective of persons in Toronto who have difficulty with or are excluded by
   the current urban plan.
 tags:
+  - Disability
+  - Accessibility
   - AI
-  - Inclusion
-  - Smart Cities
 ---
 Project We Count evaluated the Master Innovation and Development Plan for Toronto’s Quayside from the perspective of persons in Toronto who have difficulty with or are excluded by the current urban plan.
 
