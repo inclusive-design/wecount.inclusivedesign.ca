@@ -8,8 +8,8 @@ excerpt: The Data for Equity Strategy will support city divisions to collect
   socio-demographic data and to analyze, use and apply disaggregated data to
   inform equitable program planning and service delivery.
 tags:
-  - Data for Equity Strategy
-  - Toronto
+  - Data Science
+  - Data Privacy
 ---
 The City of Toronto Data for Equity Strategy was considered at the City of Toronto Executive Committee on November 18, 2020 and adopted on November 25, 2020.
 
