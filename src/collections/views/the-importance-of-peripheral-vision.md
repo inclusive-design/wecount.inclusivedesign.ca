@@ -8,8 +8,8 @@ excerpt: Jutta Treviranus was invited to contribute this essay related to We
   Count to Some Thoughts, a collection of essays on smart cities.
 tags:
   - AI
-  - Inclusion
-  - Smart Cities
+  - Disability
+  - Accessibility
 ---
 *Originally published on Some Thoughts, a collection of essays on smart cities.*
 
