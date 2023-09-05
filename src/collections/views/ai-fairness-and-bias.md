@@ -10,6 +10,7 @@ tags:
   - AI
   - Fairness
   - Bias
+  - Disability
 ---
 On December 2, Dr. Jutta Treviranus, Director of the IDRC, participated in the Sight Tech Global 2020 panel “AI, Fairness and Bias: What Technologists and Advocates Need to Do to Ensure That AI Helps Instead of Harms People with Disabilities.” This panel discussed examples of where AI technologies inject bias against people with disabilities and offers approaches to help address these issues from the ground up.
 
