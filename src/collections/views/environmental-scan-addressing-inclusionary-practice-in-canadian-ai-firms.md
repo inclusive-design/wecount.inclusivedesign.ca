@@ -7,9 +7,8 @@ altTag: Portion of the We Count logo
 excerpt: "An overview of key findings from the AI Firm portion of the
   environmental scan conducted by the We Count team in May 2020. "
 tags:
-  - AI firms
-  - Environmental Scan
-  - ethical AI
+  - AI
+  - Employment
 ---
 This article provides an overview of key findings from an environmental scan conducted by the We Count team in May 2020. The scan relied on information available through online sources to explore how data ethics are being taught, expressed, and implemented within Canada by three stakeholders in the data ecosystem: [Postsecondary education (PSE) Institutions](https://wecount.inclusivedesign.ca/views/environmental-scan-canadian-postsecondary-education-and-ai-ethics/), [Data Service Providers](https://wecount.inclusivedesign.ca/views/environmental-scan-assessing-inclusionary-practice-in-canadian-data-services/), and AI Firms.
 
