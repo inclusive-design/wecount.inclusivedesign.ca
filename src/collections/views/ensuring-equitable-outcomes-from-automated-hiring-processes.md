@@ -9,7 +9,10 @@ excerpt: These automated hiring and matching algorithms, implemented by major
   and support the infrastructure of society. These systems inevitably result in
   inequitable outcomes.
 tags:
-  - ODD
+  - AI
+  - Bias
+  - Employment
+  - Disability
 ---
 The [ODD](https://idrc.ocadu.ca/odd/) (Optimizing Diversity with Disability) initiative is a part of the IDRC's [We Count](https://wecount.inclusivedesign.ca/) project. A central aim of ODD is to investigate bias in widely deployed hiring algorithms and to suggest more inclusive alternatives.
 
