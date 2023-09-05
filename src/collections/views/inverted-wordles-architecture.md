@@ -13,7 +13,7 @@ When word cloud centres build wordles based on people's answers to a question, m
 
 Currently, this wordle tool includes two steps. Further development will be based on feedback.
 
-1. People submit their answers to the question: What are three most important problems to be addressed by inclusive design?
+1. People submit their answers to the question: What are the three most important problems to be addressed by inclusive design?
 
 ![Submit answers to a question](/uploads/question.png)
 
