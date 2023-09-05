@@ -9,6 +9,9 @@ excerpt: To say that the route to almost all essential services is through
   plethora of guidelines and resources to support accessibility, and a thriving
   industry checking and repairing inaccessible websites, people who require
   alternative ways to access digital systems face ever-multiplying barriers.
+tags:
+  - Accessibility
+  - Disability
 ---
 To say that the route to almost all essential services is through digital systems is stating the obvious. Despite this reality, more than twenty-five years of regulations requiring accessible digital technology, a plethora of guidelines and resources to support accessibility, and a thriving industry checking and repairing inaccessible websites, people who require alternative ways to access digital systems face ever-multiplying barriers.\
  \
