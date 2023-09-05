@@ -8,7 +8,10 @@ excerpt: For this article, Antranig is considering this problem in the context
   feminism that seek to transfer power from privileged groups to those at the
   margins of society.
 tags:
-  - ODD
+  - AI
+  - Disability
+  - Employment
+  - Fairness
 ---
 Several months ago, I wrote a piece about [Ensuring Equitable Outcomes from Automated Hiring Processes](https://wecount.inclusivedesign.ca/views/ensuring-equitable-outcomes-from-automated-hiring-processes/) questioning what roles would be taken by those corporations deploying automated systems as part of the infrastructure of society. I highlighted that there was a familiar trajectory to this process, whereby those corporations acting against the public interest were eventually made subject to oversight and regulation. After this it was found that it was perfectly possible to operate these systems at a profit, despite the corporations insisting that this oversight was incompatible with the demands of capitalism. In that posting, I appealed to a familiar example from the history of technology, the operation of steamboats on the Hudson River and Mississippi, whose captains insisted that they could not be made safe at a price the public could afford.
 
