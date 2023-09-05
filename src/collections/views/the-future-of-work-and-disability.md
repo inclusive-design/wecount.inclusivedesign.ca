@@ -9,8 +9,9 @@ excerpt: The Future of Work and Disability project formed a study group to
   understand and examine intersecting topics of AI, automation, standards and
   employment as they relate to persons with disabilities.
 tags:
-  - Future of Work
-  - FWD
+  - AI
+  - Disability
+  - Employment
 ---
 ![](/uploads/FWD-logoE-for-processing@4x-1.png)
 
