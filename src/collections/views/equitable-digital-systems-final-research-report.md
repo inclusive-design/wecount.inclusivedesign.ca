@@ -7,9 +7,9 @@ excerpt: "Future of Work: Equitable Digital Systems (EDS) project team is
   excited to share the outcomes of a nearly three-year collaboration — during
   COVID."
 tags:
-  - EDS
-  - FutureofWork
-  - disability
+  - Disability
+  - Accessibility
+  - Employment
 ---
 ![Equitable Digital Systems logo](/uploads/eds-colored-03.png)
 
