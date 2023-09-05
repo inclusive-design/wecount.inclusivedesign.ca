@@ -8,7 +8,6 @@ excerpt: Dr. Jutta Treviranus participated in the Sight Tech Global 2020 panel
   "AI, Fairness and Bias" on December 2.
 tags:
   - AI
-  - Fairness
   - Bias
   - Disability
 ---
