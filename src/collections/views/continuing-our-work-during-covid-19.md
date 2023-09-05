@@ -7,7 +7,6 @@ altTag: IDRC logo
 excerpt: A message from IDRC Director Jutta Treviranus about continuing our
   mission during COVID-19.
 tags:
-  - COVID-19
   - Disability
 ---
 We are fortunate that our team members are able to work from home during this pandemic. We want to extend our enormous gratitude to the front-line workers.
