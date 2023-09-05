@@ -8,6 +8,10 @@ altTag: "EDS: Equitable Digital Systems logo"
 excerpt: "The Future of Work: Equitable Digital Systems project is an initiative
   at the Inclusive Design Research Centre, OCAD U examining the accessibility of
   the digital tools and systems we rely upon for work."
+tags:
+  - Disability
+  - Accessibility
+  - Employment
 ---
 ![EDS: Equitable Digital Systems logo](/uploads/eds-colored-03.png)
 
