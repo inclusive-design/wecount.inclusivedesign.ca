@@ -8,6 +8,11 @@ altTag: Map with marker pins on it.
 excerpt: A COVID-19 data monitor prototype test that was created to show
   how data gaps can be addressed, providing a way to
   find accessibility information that is not included in these data sets.
+tags:
+  - COVID-19
+  - Disability
+  - Healthcare
+  - Accessibility
 ---
 ## Background 
 
