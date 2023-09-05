@@ -7,9 +7,8 @@ excerpt: Communication Access within the Accessible Canada Act project ended in
   March of this year with 26 recommendations to improve communication access
   within federal government services.
 tags:
-  - communication
-  - disability
-  - IDRC
+  - Accessibility
+  - Disability
 ---
 ![Communication Access within the Accessible Canada Act logo](/uploads/commacc2.png)
 
