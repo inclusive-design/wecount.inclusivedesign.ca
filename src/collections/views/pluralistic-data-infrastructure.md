@@ -6,6 +6,10 @@ picture: /uploads/we-count-logo-7.png
 excerpt: The pluralistic data infrastructure supports communities in taking
   collective ownership of data that relates to them and curating its
   relationships with data from other sources.
+tags:
+  - Data-Science
+  - Data-Privacy
+  - AI
 ---
 The pluralistic data infrastructure supports communities in taking collective ownership of data that relates to them and curating its relationships with data from other sources.
 
