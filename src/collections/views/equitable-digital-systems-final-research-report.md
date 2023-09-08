@@ -10,6 +10,7 @@ tags:
   - Disability
   - Accessibility
   - Employment
+  - EDS
 ---
 ![Equitable Digital Systems logo](/uploads/eds-colored-03.png)
 
