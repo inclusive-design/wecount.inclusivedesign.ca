@@ -15,6 +15,7 @@ excerpt: We Count worked with stakeholders to envision how the proposed
 tags:
   - Disability
   - Accessibility
+  - We Count
 ---
 We Count worked with stakeholders to envision how the proposed technologies for the proposed Quayside “Smart City” project in Toronto could impact individuals with disabilities and their networks.
 
