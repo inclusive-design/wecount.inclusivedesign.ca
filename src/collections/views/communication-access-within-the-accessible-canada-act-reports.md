@@ -9,6 +9,7 @@ excerpt: Communication Access within the Accessible Canada Act project ended in
 tags:
   - Accessibility
   - Disability
+  - Communication Access
 ---
 ![Communication Access within the Accessible Canada Act logo](/uploads/commacc2.png)
 
