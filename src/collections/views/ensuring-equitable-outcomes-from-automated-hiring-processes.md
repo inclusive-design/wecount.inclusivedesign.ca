@@ -13,6 +13,7 @@ tags:
   - Bias
   - Employment
   - Disability
+  - ODD
 ---
 The [ODD](https://idrc.ocadu.ca/odd/) (Optimizing Diversity with Disability) initiative is a part of the IDRC's [We Count](https://wecount.inclusivedesign.ca/) project. A central aim of ODD is to investigate bias in widely deployed hiring algorithms and to suggest more inclusive alternatives.
 
