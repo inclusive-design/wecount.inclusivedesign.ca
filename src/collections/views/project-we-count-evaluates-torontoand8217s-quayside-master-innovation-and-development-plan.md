@@ -11,6 +11,7 @@ tags:
   - Disability
   - Accessibility
   - AI
+  - We Count
 ---
 Project We Count evaluated the Master Innovation and Development Plan for Toronto’s Quayside from the perspective of persons in Toronto who have difficulty with or are excluded by the current urban plan.
 
