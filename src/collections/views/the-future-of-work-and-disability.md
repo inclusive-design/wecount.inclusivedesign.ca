@@ -12,6 +12,7 @@ tags:
   - AI
   - Disability
   - Employment
+  - FWD
 ---
 ![](/uploads/FWD-logoE-for-processing@4x-1.png)
 
