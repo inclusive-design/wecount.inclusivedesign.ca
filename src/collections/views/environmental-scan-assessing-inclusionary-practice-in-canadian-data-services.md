@@ -9,6 +9,7 @@ excerpt: "An overview of key findings from the Data Service Provider portion of
 tags:
   - AI
   - Employment
+  - We Count
 ---
 This article provides an overview of key findings from an environmental scan conducted by the We Count team in May 2020. The scan relied on information available through online sources to explore how data ethics are being taught, expressed, and implemented within Canada by three stakeholders in the data ecosystem: [Postsecondary Education (PSE) Institutions](https://wecount.inclusivedesign.ca/views/environmental-scan-canadian-postsecondary-education-and-ai-ethics/), Data Service Providers, and [AI Firms](https://wecount.inclusivedesign.ca/views/environmental-scan-addressing-inclusionary-practice-in-canadian-ai-firms/).
 
