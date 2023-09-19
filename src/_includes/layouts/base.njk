@@ -5,6 +5,9 @@
 <html lang="en-ca">
   <head>
     {% include 'globals/matomo-analytics.njk' %}
+    {% if env.context !== "dev" %}
+    {% include 'globals/service-worker.njk' %}
+    {% endif %}
     {% include 'globals/meta.njk' %}
     <link rel="stylesheet" href="/css/main.css"/>
     <script src="/js/main.js" defer></script>
