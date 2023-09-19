@@ -17,7 +17,7 @@ tags:
   - Accessibility
   - We Count
 ---
-We Count worked with stakeholders to envision how the proposed technologies for the proposed Quayside “Smart City” project in Toronto could impact individuals with disabilities and their networks.
+We Count worked with stakeholders to envision how the proposed technologies for the proposed Quayside “Smart City project in Toronto could impact individuals with disabilities and their networks.
 
 We’ve prepared a brief report that tells the journey of 10 individuals in the smart community. Each journey includes information about the relevant digital services, envisions some potential impacts and provides questions that can be used to evaluate these systems and the issues that could arise from them.
 
