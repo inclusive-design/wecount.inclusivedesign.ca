@@ -3,12 +3,16 @@ name: Lint assets
 on:
   push:
     paths:
+      - 'package.json'
+      - 'package-lock.json'
       - '**.js'
       - '**.md'
       - '**.scss'
       - '!src/collections/**.md'
   pull_request:
     paths:
+      - 'package.json'
+      - 'package-lock.json'
       - '**.js'
       - '**.md'
       - '**.scss'
