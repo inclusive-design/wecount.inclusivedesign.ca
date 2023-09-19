@@ -4,7 +4,6 @@ module.exports = {
 		"stylelint-order"
 	],
 	"rules": {
-		"indentation": "tab",
 		"no-descending-specificity": null,
 		"order/order": [
 			"custom-properties",
