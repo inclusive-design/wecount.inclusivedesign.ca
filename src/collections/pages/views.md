@@ -6,7 +6,7 @@ pagination:
   data: collections.views
   size: 10
 layout: layouts/views.njk
-excerpt: Discover more about We Count’s efforts, activities and viewpoints.
+excerpt: Explore IDRC project actives
 menu_order: 2
 ---
-Explore IDRC's project activities
+Explore IDRC project activities
