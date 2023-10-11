@@ -1,5 +1,5 @@
 ---
-title: IDRC’s Inclusive AI Initiatives
+title: IDRC’s Inclusive Artificial Intelligence (AI) Initiatives
 permalink: /
 slug: home
 excerpt: |-
