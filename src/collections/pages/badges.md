@@ -10,7 +10,7 @@ menu_order: 4
 ---
 {% youtube "https://youtu.be/t5CSlGcmln8" %}
 
-Badges enable people to showcase their proficiency in the growing fields of AI, data systems and inclusive data practices as well as other skills. Badges, once earned, will be owned completely by the earner and can be shared across social media platforms, such as LinkedIn and Instagram, to display their achievement and showcase what has been learned. These badges are designed to address the interests, skills and availability of diverse participants. Earners can expect to work with and learn from a range of experts:
+Badges enable people to showcase their proficiency in the growing fields of AI, data systems and inclusive data practices as well as other skills. Badges, once earned, will be owned completely by the earner and can be shared across social media platforms, such as LinkedIn and Instagram, to display their achievement and showcase what has been learned. These badges are designed to address the interests, skills and availability of diverse participants. People can expect to work with and learn from a range of experts:
 
 * Industry and public service professionals in data systems
 * Technical and research assistants that specialize in data science
@@ -44,6 +44,7 @@ Our initiatives and their corresponding badges are listed below.
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
 
+
 #### Learner badge
 
 You will learn:
@@ -53,11 +54,13 @@ You will learn:
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/RB0F6Ra258NHa1XK/apply)
 
+
 {% endimageAndText %}
 
 ### Designing Proof and Evidence with Minorities and Outlier Data
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 #### Learner badge
@@ -71,9 +74,11 @@ You will learn:
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/R3G3D0aXUN9a3JL/apply)
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
+
 
 
 #### Brainstormer badge
@@ -86,11 +91,13 @@ You will brainstorm:
 [Apply for your Brainstormer badge](https://factory.cancred.ca/c/earnablebadge/R3G15TaXUN9a3JC/apply)
 
 
+
 {% endimageAndText %}
 
 ### AI and Disability: A Double-Edged Sword
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -107,11 +114,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### The Metric Society and the Unmeasurable
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -135,11 +144,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### Building Indigenous Future Imaginaries
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -162,11 +173,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### Inclusive AI for HR
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -189,11 +202,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### AI Hiring System Policies
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -216,11 +231,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### AI Employment Systems
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -243,11 +260,13 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 ### AI and AT Apps
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -271,9 +290,11 @@ You will learn:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
+
 
 
 
@@ -296,9 +317,11 @@ You will brainstorm:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Badges_final_COMMUNICATOR-300x300.png", "We Count Communicator badge", "left", "top" %}
+
 
 
 
@@ -322,11 +345,13 @@ You will communicate:
 
 
 
+
 {% endimageAndText %}
 
 ### Bias In, Bias Out
 
 {% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+
 
 
 
@@ -342,6 +367,7 @@ You will learn:
 * How specific data resources are used to train and reinforce machine learning models to produce biased outputs
 
 [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply)
+
 
 
 
