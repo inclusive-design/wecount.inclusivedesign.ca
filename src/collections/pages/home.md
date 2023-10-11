@@ -1,5 +1,5 @@
 ---
-title: Creating an inclusive data ecosystem
+title: IDRC’s Inclusive AI Initiatives
 permalink: /
 slug: home
 excerpt: |-
@@ -10,7 +10,7 @@ menu_order: 0
 ---
 {% youtube "https://youtu.be/mFvXgQMLdNw" %}
 
-## Artificial Intelligence Inclusion Projects from Inclusive Design Research Centre
+## Removing bias and exclusion in the data economy
 
 We Count is a community-driven project to address the inherent bias against small minorities and outliers in artificial intelligence and data analytics. Disability often places you at the margins of a data set. More and more critical decisions are made and automated using data. Current artificial intelligence can automate and amplify existing discrimination.
 
