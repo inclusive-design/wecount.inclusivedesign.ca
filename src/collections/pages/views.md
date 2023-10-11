@@ -9,4 +9,4 @@ layout: layouts/views.njk
 excerpt: Discover more about We Count’s efforts, activities and viewpoints.
 menu_order: 2
 ---
-Discover more about IDRC's project activities
+Explore IDRC's project activities
