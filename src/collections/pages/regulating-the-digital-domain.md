@@ -28,7 +28,9 @@ The project findings will inform Accessibility Standards Canada on greater acces
 
 ## Six challenges to be addressed with inclusive practices and co-design
 
-> If you are interested in participating in IDRC co-designs sign up here <https://forms.office.com/r/g4bgbHifqc>
+> If you are interested in participating in IDRC co-designs p﻿lease sign up here <https://forms.office.com/r/g4bgbHifqc>
+>
+>
 
 Six challenges will be addressed through a series of co-designs. We will address the following challenges by engaging a wide range of stakeholders with relevant lived experiences and expertise, recognizing that the issues are complex and interrelated. The results will inform the next generation of model accessibility standards in the digital domain. The team will develop strategies that leverage the properties of the digital domain and the approaches needed to ensure greater digital inclusion for people with disabilities.         
 
