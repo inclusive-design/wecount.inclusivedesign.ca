@@ -26,11 +26,33 @@ The project findings will inform Accessibility Standards Canada on greater acces
 
 ## I﻿nforming standards
 
-## Six challenges to be addressed with inclusive practices and co-design
+One of the critical aspects this research seeks to explore is the role of standards in facilitating these interventions. Standards play a vital role in shaping digital technologies' design, development, and implementation. By understanding how standards impact accessibility interventions, the project intends to present recommendations that promote more inclusive digital innovations.
+
+The project research will take an interdisciplinary approach. We will do this by bringing together both lived experience experts and domain experts as co-researchers. The domain experts will be from various fields including:
+
+* policy, 
+* legislative design, 
+* access to justice, 
+* technology systems, 
+* communications, 
+* management, 
+* inclusive design, 
+* digital inclusion, 
+* economics, and 
+* complex adaptive systems. 
+
+Together co-researchers will design and propose regulatory approaches and systems that:
+
+* address the diversity and complexity of accessibility needs, including the needs of small minorities and outliers,            
+* are suited to the exponential rates of change of ICT and designed to proactively prevent emerging barriers,       
+* support and require integrated accessibility approaches over segregated approaches to support interoperability and benefits to all users,            
+* support rather than constrain accessibility innovation,        
+* do not create incentives for the perpetuation of the problem, and
+* engage and empower people with disabilities and their communities to shape regulatory requirements, inform methods of meeting requirements, identify regulatory gaps, and continuously refine the regulatory system. 
+
+## Addressing six challenges with inclusive practices and co-design
 
 > If you are interested in participating in IDRC co-designs p﻿lease sign up here <https://forms.office.com/r/g4bgbHifqc>
->
->
 
 Six challenges will be addressed through a series of co-designs. We will address the following challenges by engaging a wide range of stakeholders with relevant lived experiences and expertise, recognizing that the issues are complex and interrelated. The results will inform the next generation of model accessibility standards in the digital domain. The team will develop strategies that leverage the properties of the digital domain and the approaches needed to ensure greater digital inclusion for people with disabilities.         
 
