@@ -28,6 +28,8 @@ The project findings will inform Accessibility Standards Canada on greater acces
 
 ## Six challenges to be addressed with inclusive practices and co-design
 
+> If you are interested in participating in IDRC co-designs sign up here <https://forms.office.com/r/g4bgbHifqc>
+
 Six challenges will be addressed through a series of co-designs. We will address the following challenges by engaging a wide range of stakeholders with relevant lived experiences and expertise, recognizing that the issues are complex and interrelated. The results will inform the next generation of model accessibility standards in the digital domain. The team will develop strategies that leverage the properties of the digital domain and the approaches needed to ensure greater digital inclusion for people with disabilities.         
 
 The challenges are:
@@ -50,3 +52,49 @@ The challenges are:
 6. How can we empower people with disabilities and their communities?
 
    * Accessibility regulations often assume that people with disabilities are passive consumers, not active producers, of digital content and technology. They also rely on experts to prescribe, train, and maintain AT systems for people with disabilities. This limits the participation and autonomy of people with disabilities in the digital domain. We need to support people with disabilities as creators, innovators, and decision-makers in the digital world.
+
+## P﻿artners
+
+Boris Vukovic, The Canadian Accessibility Network  and Accessibility Institute
+
+Christopher Sutton, Wavefront Centre for Communication Accessibility, an institute of the Deaf and Hard of Hearing
+
+David Baker, Ross & McBride LLP
+
+Emile Tompa, Institute for Work and Health, McMaster University
+
+Francis Fung, March of Dimes Canada
+
+Heather Walkus, Council of Canadians with Disabilities
+
+Jenelle Rouse, Black Deaf Canada research
+
+Jim Tokos, Canadian Council of the Blind
+
+Joelle Robinson, Manitoba League of Persons with Disabilities 
+
+Kerri Joffee, ARCH Disability Law Centre
+
+Lori Vaanholt, L’Arche Canada
+
+Mahadeo Sukhai, Canadian National Institute of the Blind Foundation
+
+Michael Bach, Institute for Research and Development on Inclusion and Society
+
+Pina D'Agostino, IP Osgoode, Osgoode Hall Law School, York U
+
+Shermineh Esmati, Digital Governance Strategy Institute
+
+## Team
+
+Jutta Treviranus, principal investigator 
+
+Vera Roberts
+
+David Pereyra
+
+Caren Watkins 
+
+## Co-design research events
+
+If you are interested in participating in IDRC co-designs sign up here <https://forms.office.com/r/g4bgbHifqc>
