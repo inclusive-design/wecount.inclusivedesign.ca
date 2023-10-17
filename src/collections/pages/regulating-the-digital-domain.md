@@ -23,3 +23,5 @@ ICT enables users to access, store, transmit, understand, and manipulate informa
 To make improvements the project will address the design of a regulatory system focused on regulating the digital domain. 
 
 The project findings will inform Accessibility Standards Canada on greater accessibility to digital tools, content, transactions and/or computer-mediated processes.
+
+## I﻿nforming standards
