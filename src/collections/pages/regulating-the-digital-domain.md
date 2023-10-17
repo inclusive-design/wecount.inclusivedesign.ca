@@ -1,10 +1,10 @@
 ---
-title: Regulating the Digital Domain
+title: "Project: Regulating the Digital Domain"
 excerpt: The RtDD goal is to improve digital inclusion and ICT accessibility for
   the full range of PWD (people with disabilities).
 menu_order: 0
 ---
-![](/uploads/rtdd-logo-small.png)
+![RtDD logo](/uploads/rtdd-logo-small.png)
 
 The project Regulating the Digital Domain (RtDD) is looking at the challenges people with disabilities face when interacting with ICT (information and communication technologies) and digital tools. 
 
