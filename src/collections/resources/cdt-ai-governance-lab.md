@@ -4,7 +4,7 @@ focus: AI Ethics/Policy
 source: CDT
 readability:
   - Intermediate
-type: Website Article
+type: Website Resource
 openSource: true
 link: https://cdt.org/cdt-ai-governance-lab/
 learnTags:
