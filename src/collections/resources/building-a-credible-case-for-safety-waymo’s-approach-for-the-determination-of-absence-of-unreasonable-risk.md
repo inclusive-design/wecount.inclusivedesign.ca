@@ -1,6 +1,5 @@
 ---
-title: "Building a Credible Case for Safety: Waymo’s Approach for the
-  Determination of Absence of Unreasonable Risk"
+title: "Building a Credible Case for Safety: Waymo’s Approach"
 focus: AI Ethics/Policy
 source: MAIEI
 readability:
