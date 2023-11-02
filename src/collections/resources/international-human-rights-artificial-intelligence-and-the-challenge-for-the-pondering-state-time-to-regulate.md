@@ -4,7 +4,6 @@ title: "International Human Rights, Artificial Intelligence, and the Challenge
 focus: AI Ethics/Policy
 source: MAIEI
 readability:
-  - Intermediate
   - Expert
 type: Website Article
 openSource: true
