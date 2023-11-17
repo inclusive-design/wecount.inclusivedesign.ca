@@ -80,7 +80,7 @@ The challenges are:
 
 ## P﻿artners
 
-Boris Vukovic, The Canadian Accessibility Network  and Accessibility Institute
+Boris Vukovic, The Canadian Accessibility Network and Accessibility Institute
 
 Christopher Sutton, Wavefront Centre for Communication Accessibility, an institute of the Deaf and Hard of Hearing
 
@@ -109,6 +109,20 @@ Michael Bach, Institute for Research and Development on Inclusion and Society
 Pina D'Agostino, IP Osgoode, Osgoode Hall Law School, York U
 
 Shermineh Esmati, Digital Governance Strategy Institute
+
+### P﻿artner roles
+
+{% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+#### Institute for Research and Development on Inclusion and Society (IRIS): Michael Bach
+
+##### About the Institute:
+
+Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, IRIS works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change.
+
+##### About Michael’s role with Rtdd:
+
+Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
+{% endimageAndText %}
 
 ## Team
 
