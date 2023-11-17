@@ -136,6 +136,4 @@ If you are interested in participating in IDRC co-designs sign up here <https://
 
 Funded by Accessibility Standards Canada / the Government of Canada.
 
-{% imageAndText "/uploads/asc-signature-en-black.png", "Accessibility Standards Canada logo", "left", "top" %}
-undefined
-{% endimageAndText %}
+![Accessibility Standards Canada logo](/uploads/asc-signature-en-black.png)
