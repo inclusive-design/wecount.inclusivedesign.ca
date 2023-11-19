@@ -7,6 +7,8 @@ permalink: /rtdd/
 ---
 ![RtDD logo](/uploads/rtdd-logo-small.png)
 
+
+
 ## A﻿bout the project
 
 Regulating the Digital Domain (RtDD) is focused on supporting development of accessibility standards for existing and new technologies. Standards Council of Canada describes a standard as “a document that provides a set of agreed-upon rules, guidelines or characteristics for activities or their results.” In the project, we will co-research with people with disabilities ways to address challenges they face when using information and communication technologies (ICT) and digital tools like websites and applications.
@@ -137,3 +139,5 @@ If you are interested in participating in IDRC co-designs sign up here <https://
 Funded by Accessibility Standards Canada / the Government of Canada.
 
 ![Accessibility Standards Canada logo](/uploads/asc-signature-en-black.png)
+
+![](/uploads/canadawordmark-black-bil.png)
