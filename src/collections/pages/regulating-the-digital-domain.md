@@ -5,9 +5,7 @@ excerpt: The RtDD goal is to improve digital inclusion and ICT accessibility for
 menu_order: 0
 permalink: /rtdd/
 ---
-![RtDD logo](/uploads/rtdd-logo-small.png)
-
-
+![RtDD logo](/uploads/rtdd-logo-small.png "Michael Bach")
 
 ## A﻿bout the project
 
@@ -109,6 +107,7 @@ Shermineh Esmati, Digital Governance Strategy Institute
 ### P﻿artner roles
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+
 #### MICHAEL BACH: Institute for Research and Development on Inclusion and Society (IRIS) 
 
 ##### About the Institute:
@@ -118,6 +117,7 @@ Informed by the systemic exclusion that people with intellectual and other disab
 ##### About Michael’s role with Rtdd:
 
 Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
+
 {% endimageAndText %}
 
 ## Team
