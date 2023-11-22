@@ -106,7 +106,9 @@ Shermineh Esmati, Digital Governance Strategy Institute
 
 ### P﻿artner roles
 
-
+{% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
+#### Boris Vukovic
+{% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
 #### C﻿hristopher Sutton
