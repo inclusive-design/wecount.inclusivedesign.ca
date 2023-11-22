@@ -5,7 +5,7 @@ excerpt: The RtDD goal is to improve digital inclusion and ICT accessibility for
 menu_order: 0
 permalink: /rtdd/
 ---
-![RtDD logo](/uploads/rtdd-logo-small.png "Michael Bach")
+![RtDD logo](/uploads/rtdd-logo-small.png)
 
 ## A﻿bout the project
 
@@ -82,7 +82,7 @@ David Baker, Ross & McBride LLP
 
 Emile Tompa, Institute for Work and Health, McMaster University
 
-Francis Fung, March of Dimes Canada
+W. Francis Fung, March of Dimes Canada.
 
 Heather Walkus, Council of Canadians with Disabilities
 
@@ -107,17 +107,15 @@ Shermineh Esmati, Digital Governance Strategy Institute
 ### P﻿artner roles
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
-
-#### MICHAEL BACH: Institute for Research and Development on Inclusion and Society (IRIS) 
+#### MICHAEL BACH: Institute for Research and Development on Inclusion and Society (IRIS)
 
 ##### About the Institute:
 
 Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, IRIS works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change.
 
-##### About Michael’s role with Rtdd:
+##### About Michael’s role with RtDD:
 
 Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
-
 {% endimageAndText %}
 
 ## Team
