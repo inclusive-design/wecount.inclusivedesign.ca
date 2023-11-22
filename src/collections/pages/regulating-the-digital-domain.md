@@ -106,6 +106,24 @@ Shermineh Esmati, Digital Governance Strategy Institute
 
 ### P﻿artner roles
 
+{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+undefined
+{% endimageAndText %}
+
+{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+undefined
+{% endimageAndText %}
+
+{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+undefined
+{% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+undefined
+{% endimageAndText %}
+
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
 #### Boris Vukovic
 {% endimageAndText %}
@@ -121,7 +139,7 @@ Shermineh Esmati, Digital Governance Strategy Institute
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-undefined
+#### J﻿im Tokos
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
