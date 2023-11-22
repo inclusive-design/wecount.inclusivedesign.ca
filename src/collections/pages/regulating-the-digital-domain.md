@@ -106,7 +106,7 @@ Shermineh Esmati, Digital Governance Strategy Institute
 
 ### P﻿artner roles
 
-{% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "bottom" %}
+{% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
 #### MICHAEL BACH: Institute for Research and Development on Inclusion and Society (IRIS)
 
 ##### About the Institute:
