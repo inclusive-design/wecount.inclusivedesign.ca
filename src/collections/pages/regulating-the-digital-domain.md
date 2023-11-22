@@ -124,6 +124,10 @@ Shermineh Esmati, Digital Governance Strategy Institute
 #### Jenelle Rouse
 {% endimageAndText %}
 
+{% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
+#### Kerri Joffee
+{% endimageAndText %}
+
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
 #### Mahadeo Sukhai
 {% endimageAndText %}
