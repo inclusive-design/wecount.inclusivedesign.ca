@@ -120,6 +120,10 @@ Shermineh Esmati, Digital Governance Strategy Institute
 #### E﻿mile Tompa
 {% endimageAndText %}
 
+{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+undefined
+{% endimageAndText %}
+
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
 #### Jenelle Rouse
 {% endimageAndText %}
