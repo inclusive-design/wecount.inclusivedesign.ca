@@ -107,11 +107,29 @@ Shermineh Esmati, Digital Governance Strategy Institute
 ### P﻿artner roles
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+
+
 #### MICHAEL BACH: Institute for Research and Development on Inclusion and Society (IRIS)
 
 **About Michael’s role with RtDD:** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
 
 **About IRIS:** Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, IRIS works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change.
+
+
+{% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
+undefined
+{% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/pina-d’agostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
+
+undefined
+
 {% endimageAndText %}
 
 ## Team
