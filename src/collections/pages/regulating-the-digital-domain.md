@@ -106,6 +106,18 @@ Shermineh Esmati, Digital Governance Strategy Institute
 
 ### P﻿artner roles
 
+
+
+{% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
+#### C﻿hristopher Sutton
+{% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
+#### E﻿mile Tompa
+{% endimageAndText %}
+
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
 
 
@@ -120,16 +132,14 @@ Shermineh Esmati, Digital Governance Strategy Institute
 
 
 
-{% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
-undefined
+{% imageAndText "/uploads/pina-d’agostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
+#### Pina D'Agostino
 {% endimageAndText %}
 
 
 
-{% imageAndText "/uploads/pina-d’agostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
-
-undefined
-
+{% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
+#### Shermineh Esmati
 {% endimageAndText %}
 
 ## Team
