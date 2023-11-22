@@ -106,24 +106,6 @@ Shermineh Esmati, Digital Governance Strategy Institute
 
 ### P﻿artner roles
 
-{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-undefined
-{% endimageAndText %}
-
-{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-undefined
-{% endimageAndText %}
-
-{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-undefined
-{% endimageAndText %}
-
-
-
-{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-undefined
-{% endimageAndText %}
-
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
 #### Boris Vukovic
 {% endimageAndText %}
@@ -132,10 +114,12 @@ undefined
 #### C﻿hristopher Sutton
 {% endimageAndText %}
 
-
-
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
 #### E﻿mile Tompa
+{% endimageAndText %}
+
+{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+#### Heather Walkus
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
@@ -146,8 +130,16 @@ undefined
 #### Jenelle Rouse
 {% endimageAndText %}
 
+{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+#### Joelle Robinson
+{% endimageAndText %}
+
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
 #### Kerri Joffee
+{% endimageAndText %}
+
+{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+#### Lori Vaanholt
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
@@ -174,10 +166,12 @@ undefined
 #### Pina D'Agostino
 {% endimageAndText %}
 
-
-
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
 #### Shermineh Esmati
+{% endimageAndText %}
+
+{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+#### W. Francis Fung
 {% endimageAndText %}
 
 ## Team
