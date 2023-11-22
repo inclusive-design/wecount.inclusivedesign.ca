@@ -134,7 +134,9 @@ Shermineh Esmati, Digital Governance Strategy Institute
 
 {% endimageAndText %}
 
-
+{% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
+#### Paula Chapman
+{% endimageAndText %}
 
 {% imageAndText "/uploads/pina-d’agostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
 #### Pina D'Agostino
