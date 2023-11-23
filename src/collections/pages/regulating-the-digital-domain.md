@@ -78,11 +78,7 @@ Boris Vukovic, The Canadian Accessibility Network and Accessibility Institute
 
 Christopher Sutton, Wavefront Centre for Communication Accessibility, an institute of the Deaf and Hard of Hearing
 
-David Baker, Ross & McBride LLP
-
 Emile Tompa, Institute for Work and Health, McMaster University
-
-W. Francis Fung, March of Dimes Canada.
 
 Heather Walkus, Council of Canadians with Disabilities
 
@@ -100,53 +96,80 @@ Mahadeo Sukhai, Canadian National Institute of the Blind Foundation
 
 Michael Bach, Institute for Research and Development on Inclusion and Society
 
+P﻿aula Chapman, Ross & McBride LLP
+
 Pina D'Agostino, IP Osgoode, Osgoode Hall Law School, York U
 
 Shermineh Esmati, Digital Governance Strategy Institute
 
+W. Francis Fung, March of Dimes Canada
+
 ### P﻿artner roles
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
+
 #### Boris Vukovic
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
+
 #### C﻿hristopher Sutton
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
+
 #### E﻿mile Tompa
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 #### Heather Walkus
-{% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-#### J﻿im Tokos
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
+
 #### Jenelle Rouse
+
+{% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
+#### J﻿im Tokos
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 #### Joelle Robinson
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
+
 #### Kerri Joffee
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 #### Lori Vaanholt
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
+
 #### Mahadeo Sukhai
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+
 
 
 #### MICHAEL BACH: Institute for Research and Development on Inclusion and Society (IRIS)
@@ -156,22 +179,31 @@ Shermineh Esmati, Digital Governance Strategy Institute
 **About IRIS:** Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, IRIS works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
+
 #### Paula Chapman
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-d’agostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
+
 #### Pina D'Agostino
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
+
 #### Shermineh Esmati
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 #### W. Francis Fung
+
 {% endimageAndText %}
 
 ## Team
