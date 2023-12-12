@@ -1,11 +1,12 @@
 ---
 title: Initiatives
-permalink: /views/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
+permalink: /views/{% if pagination.pageNumber > 0 %}page/{{
+  pagination.pageNumber + 1 }}/{% endif %}
 pagination:
   data: collections.views
   size: 10
 layout: layouts/views.njk
-excerpt: Discover more about We Count’s efforts, activities and viewpoints.
+excerpt: "Explore IDRC project activities "
 menu_order: 2
 ---
-Discover more about We Count’s efforts, activities and viewpoints.
+Explore IDRC project activities
