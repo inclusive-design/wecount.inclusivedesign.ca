@@ -78,7 +78,7 @@
     "stylelint-config-standard-scss": "7.0.1",
     "stylelint-order": "6.0.2",
     "stylelint-scss": "4.4.0",
-    "turndown": "7.1.1"
+    "turndown": "7.1.2"
   },
   "lint-staged": {
     "*.js": [
