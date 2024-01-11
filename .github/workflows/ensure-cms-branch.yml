@@ -14,7 +14,7 @@ jobs:
     env:
       target_branch: "dev" # Default to dev branch
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Adjust target branch for environment
       if: endsWith(github.ref, '/main') # If the commit is in
       run: |
