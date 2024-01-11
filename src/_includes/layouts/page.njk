@@ -52,7 +52,7 @@
 </article>
 
 {% else %}
-<article class="page {{ title | slug }}">
+<article class="page {{ title | slugify }}">
   <h1>{{ pageTitle }}</h1>
   <div class="api-content">
     {{ content | safe }}

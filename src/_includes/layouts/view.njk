@@ -21,7 +21,7 @@
     <h2 class="h3">Tags</h2>
     <div class="tags">
     {% for tag in tags %}
-    <a href="/tags/{{ tag | slug }}/">{{ tag | safe }}</a>
+    <a href="/tags/{{ tag | slugify }}/">{{ tag | safe }}</a>
     {% endfor %}
     </div>
   </section>

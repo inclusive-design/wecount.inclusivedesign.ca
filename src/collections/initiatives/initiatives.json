@@ -1,4 +1,0 @@
-{
-	"permalink": "/initiatives/{{ title | slug }}/",
-	"layout": "layouts/initiative.njk"
-}

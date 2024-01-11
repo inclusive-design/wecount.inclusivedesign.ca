@@ -3,9 +3,10 @@
 const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginPWA = require("eleventy-plugin-pwa-v2");
 const eleventyNavigation = require("@11ty/eleventy-navigation");
+const fluidPlugin = require("eleventy-plugin-fluid");
 const fs = require("fs");
 
-const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
+// const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const categoryFromFocusFilter = require("./src/filters/categoryFromFocus.js");
@@ -16,7 +17,6 @@ const getUniqueTags = require("./src/utils/get-unique-tags.js");
 const htmlSymbolFilter = require("./src/filters/html-symbol.js");
 const markdownFilter = require("./src/filters/markdown.js");
 const paginateFilter = require("./src/filters/paginate.js");
-const slugFilter = require("./src/filters/slug.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
 const expanderShortcode = require("./src/shortcodes/expander.js");
@@ -25,39 +25,39 @@ const youtubeShortcode = require("./src/shortcodes/youtube.js");
 
 require("./src/js/utils.js");
 
+const siteConfig = require("./src/_data/config.json");
+
 module.exports = function(eleventyConfig) {
 	// Watch SCSS files.
 	eleventyConfig.addWatchTarget("./src/scss/");
 
+	siteConfig.locales.forEach(lang => {
+		eleventyConfig.addCollection(`initiatives_${lang}`, collection => {
+			return [
+				...collection.getFilteredByGlob(`src/collections/initiatives/${lang}/*.md`).sort((a, b) => b.data.eventDate - a.data.eventDate)
+			];
+		});
+
+		eleventyConfig.addCollection(`resources_${lang}`, collection => {
+			return [
+				...collection.getFilteredByGlob(`src/collections/resources/${lang}/*.md`).sort((a, b) => a.data.title.localeCompare(b.data.title, undefined, {
+					ignorePunctuation: "true",
+					sensitivity: "base",
+					usage: "sort"
+				}))
+			];
+		});
+
+		eleventyConfig.addCollection(`news_${lang}`, collection => {
+			return [
+				...collection.getFilteredByGlob(`src/collections/news/${lang}/*.md`).sort((a, b) => b.data.date - a.data.date)
+			];
+		});
+	});
+
 	eleventyConfig.addCollection("pages", collection => {
 		return [
 			...collection.getFilteredByGlob("src/collections/pages/*.md")
-		];
-	});
-
-	eleventyConfig.addCollection("initiatives", collection => {
-		return [
-			...collection.getFilteredByGlob("src/collections/initiatives/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
-		];
-	});
-
-	eleventyConfig.addCollection("resources", collection => {
-		return [
-			...collection.getFilteredByGlob("src/collections/resources/*.md").sort((a, b) => a.data.title.localeCompare(b.data.title, undefined, {
-				ignorePunctuation: "true",
-				sensitivity: "base",
-				usage: "sort"
-			}))
-		];
-	});
-
-	eleventyConfig.addCollection("comments", async function() {
-		return dataFetcherAirtable.comments();
-	});
-
-	eleventyConfig.addCollection("news", collection => {
-		return [
-			...collection.getFilteredByGlob("src/collections/news/*.md").sort((a, b) => b.data.date - a.data.date)
 		];
 	});
 
@@ -111,6 +111,27 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginPWA, {
 		globIgnores: ["admin/*"]
 	});
+	eleventyConfig.addPlugin(fluidPlugin, {
+		css: {
+			enabled: false
+		},
+		sass: {
+			enabled: true
+		},
+		defaultLanguage: "en-CA",
+		supportedLanguages: {
+			"en-CA": {
+				slug: "en",
+				name: "English"
+			},
+			"fr-CA": {
+				slug: "fr",
+				name: "Français",
+				dir: "ltr",
+				uioSlug: "fr"
+			}
+		}
+	});
 
 	// Add filters.
 	eleventyConfig.addFilter("categoryFromFocus", categoryFromFocusFilter);
@@ -120,7 +141,6 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
 	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
-	eleventyConfig.addFilter("slug", slugFilter);
 	eleventyConfig.addFilter("paginate", paginateFilter);
 
 	// Add shortcodes.

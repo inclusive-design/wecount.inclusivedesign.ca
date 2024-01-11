@@ -1,4 +1,0 @@
-{
-	"permalink": "/resources/{{ page.fileSlug }}/",
-	"layout": "layouts/resourceDetail.njk"
-}

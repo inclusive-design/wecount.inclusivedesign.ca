@@ -18,7 +18,7 @@ module.exports = {
 			"jsx": true
 		}
 	},
-	"ignorePatterns": ["dist", "!.eslintrc.js", "!.eleventy.js"],
+	"ignorePatterns": ["dist", "src/_locales/messages.js", "!.eslintrc.js", "!.eleventy.js"],
 	rules: {
 		"indent": [1, "tab"],
 		"linebreak-style": ["error", "unix"],
