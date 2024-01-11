@@ -59,7 +59,7 @@
     "@commitlint/cli": "17.4.4",
     "@commitlint/config-conventional": "17.4.4",
     "autoprefixer": "10.4.13",
-    "clean-css": "5.3.2",
+    "clean-css": "5.3.3",
     "cross-env": "7.0.3",
     "cssesc": "3.0.0",
     "dotenv": "16.0.3",
