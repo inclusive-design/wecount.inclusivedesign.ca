@@ -2,9 +2,12 @@
 title: W3C Portable Personal Data Preferences Community Group
 author: Joseph Scheuhammer
 date: 2021-06-09T13:46:57.297Z
-picture: /uploads/ricardo-gomez-angel-2mjl2uvz9ic-unsplash-scaled.jpg
+picture: https://www.w3.org/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo.svg
 excerpt: The IDRC has submitted a proposal to the W3C to establish a Community
   Group to discuss and develop portable personal data preferences.
+tags:
+  - Data Science
+  - Data Privacy
 ---
 The IDRC has submitted a proposal to the W3C to establish a Community Group to discuss and develop portable personal data preferences, and it has been approved.  More information about the group can be found on the [W3C community group site](https://www.w3.org/community/prtbl-prsnl-prefs/).
 

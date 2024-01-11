@@ -2,12 +2,9 @@
 title: "Technology Developments in Touch-Based Accessible Graphics: A Systematic Review of Research 2010-2020"
 focus: "AI and Disability/Outliers"
 source: "CHI 2021"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
-sharePointUrl: "https://ocaduniversity.sharepoint.com/:b:/r/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Technology%20Developments%20in%20Touch-Based%20Accessible%20Graphics.pdf?csf=1&web=1&e=l6bebe"
 link: "https://arxiv.org/pdf/2102.01273.pdf"
 keywords: ["Systematic Literature Review","Assistive Technology","Tactile Graphics","Blind","Low Vision"]
 learnTags: ["disability","inclusivePractice"]

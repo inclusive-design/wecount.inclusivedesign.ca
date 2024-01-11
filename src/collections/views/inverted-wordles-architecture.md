@@ -2,17 +2,19 @@
 title: Inverted Wordles
 author: Cindy Li
 date: 2021-05-08T00:04:54.646Z
-picture: /uploads/mitchell-luo-U1Hhinvb-v4-unsplash-scaled.jpg
+picture: /uploads/wordle.jpg
+altTag: A sample wordle
 excerpt: Our development team has been hard at work creating a wordle tool that
   will allow users to highlight either minority or majority answers.
 tags:
-  - Wordle
+  - Bias
+  - We Count
 ---
 When word cloud centres build wordles based on people's answers to a question, majority answers are emphasized while minority answers fade to the background. In order to make minority voices heard, the development team is building a wordle tool that allows users to have the option to flip the algorithm to highlight either the majority or minority answers.
 
 Currently, this wordle tool includes two steps. Further development will be based on feedback.
 
-1. People submit their answers to the question: What are three most important problems to be addressed by inclusive design?
+1. People submit their answers to the question: What are the three most important problems to be addressed by inclusive design?
 
 ![Submit answers to a question](/uploads/question.png)
 

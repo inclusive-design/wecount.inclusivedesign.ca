@@ -1,6 +1,6 @@
 // Shared utility functions
 
-/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars, slugify */
+/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars, slugify, includesCaseInsensitive */
 
 /*
  * Convert a date into the format of "Month day, Year".
@@ -47,32 +47,6 @@ htmlDecode = function (input) {
 // eslint-disable-next-line
 chunkArray = function (inputArray, chunkSize) {
 	return Array(Math.ceil(inputArray.length / chunkSize)).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
-};
-
-/*
- * Process the WordPress returned data structure to the format required by WeCount site.
- * @param {Array<Object>} posts - Posts returned by the WordPress REST API.
- * @return An array of object that re in the format required by WeCount site.
- */
-// eslint-disable-next-line
-processPosts = function (posts) {
-	return posts.map(function (onePost) {
-		const categoryType = onePost.categories.includes(1) ? "views" : "news";
-		return {
-			category: categoryType,
-			slug: onePost.slug,
-			title: onePost.title.rendered,
-			author: categoryType === "views" ? onePost.acf.custom_author : null,
-			content: onePost.content.rendered,
-			excerpt: onePost.excerpt.rendered,
-			dateTime: onePost.date,
-			tags: onePost.pure_taxonomies.tags ? onePost.pure_taxonomies.tags.map(({slug, name}) => ({slug, name})) : [],
-			picture: onePost._links["wp:featuredmedia"] ? onePost._embedded["wp:featuredmedia"][0].source_url : null,
-			altTag: onePost._links["wp:featuredmedia"] ? onePost._embedded["wp:featuredmedia"][0].alt_text : "",
-			// For news, "href" points to the external news links. For views, "href" is customized to show views content.
-			href: categoryType === "news" ? onePost.acf.link : "/views/" + onePost.slug + "/"
-		};
-	});
 };
 
 /*
@@ -143,50 +117,24 @@ processDisplayResults = function (inArray) {
 };
 
 /*
- * Find and return an array of unique tags.
- * @param {Array<Object>} posts - An array of posts to find unique tags. Each object in this array contains a field named "tags"
- * that in a format of:
- * tags: [{slug: {String}, name: {String}}, ...]
- * @return An array of unique tag slugs.
+ * Process each object in the data set to convert some field value to formats for display.
+ * @param {Array<Object>} dataSet - The data set to process.
+ * @return The same set of the data set with fields converted.
  */
 // eslint-disable-next-line
-getUniqueTags = function (posts) {
-	let tags = [];
-	posts.map(post => {
-		tags = tags.concat(post.tags.filter(({slug}) => {
-			const currentTagSlugs = tags.map(({slug}) => slug);
-			return currentTagSlugs.indexOf(slug) < 0;
-		}));
+processResourcesDisplayResults = function (inArray) {
+	return inArray.map((oneRecord) => {
+		oneRecord.title = htmlDecode(oneRecord.title);
+		oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime): undefined;
+		oneRecord.summary = stripHtmlTags(oneRecord.summary);
+		return oneRecord;
 	});
-	return tags;
-};
-
-/*
- * Extract the page title and intro paragraphs from the data collection for pages.
- * @param {Array<Object>} allPages - data.collections.allPages
- * @param {String} pageSlug - The slug of the page to extract the info for.
- * @return An object containing the page title and intro.
- */
-// eslint-disable-next-line
-extractPageIntro = function (allPages, pageSlug) {
-	let rtn = {
-		title: null,
-		content: null
-	};
-	for (const page of allPages) {
-		if (page.slug === pageSlug) {
-			rtn = {
-				title: page.title,
-				content: page.content
-			};
-			break;
-		}
-	}
-	return rtn;
 };
 
 /*
  * Search the data set with records that match the search term.
+ * Used in the site-wide search as well as on the Initiatives (formerly Views) page.
+ *
  * @param {Array<Object>} dataSet - The data set that the search is performed upon.
  * @param {String} searchTerm - The search term.
  * @return A subset of the input `dataSet` that have matched term in any of these fields: title, content, tags.
@@ -217,6 +165,44 @@ filter = function (dataSet, tagSlugs) {
 };
 
 /*
+ * Filter the data set for records that satisfy one or more of the following criteria,
+ * - category (aka topic) in the selected categories
+ * - media type in the selected media types
+ * - at least one tag in the selected tags
+ *
+ * If multiple criteria are selected, the intersections of the result sets for each
+ * criterion will be returned.
+ *
+ * @param {Array<Object>} resources - The data set that the filter is performed upon.
+ * @param {Object} filterSettings - A collection of data and settings representing the filter selections
+ * @param {Array<Object>} filterSettings.categories - The set of all categories (aka topics)
+ * @param {Array<String>} filterSettings.selectedCategories - An array of category values to match.
+ * @param {Array<String>} filterSettings.selectedTags - An array of tag values to match.
+ * @param {Array<String>} filterSettings.selectedTypes - An array of media types to match.
+ *
+ * @return A subset of the input `dataSet` that satisfy the matching criteria outlined above
+ */
+// eslint-disable-next-line
+filterResources = function (resources, filterSettings) {
+	let results = resources;
+
+	if (filterSettings.selectedCategories.length > 0) {
+		const selectedFocuses = filterSettings.categories.filter(cat => includesCaseInsensitive(filterSettings.selectedCategories, cat.categoryId));
+		results = results.filter(oneRecord => selectedFocuses.some(cat => cat.focuses.includes(oneRecord.focus)));
+	}
+
+	if (filterSettings.selectedTags.length > 0) {
+		results = results.filter(oneRecord => oneRecord.learnTags.some(tag => filterSettings.selectedTags.indexOf(tag) >= 0));
+	}
+
+	if (filterSettings.selectedTypes.length > 0) {
+		results = results.filter(oneRecord => filterSettings.selectedTypes.includes(oneRecord.type));
+	}
+
+	return results;
+};
+
+/*
  * Replace special characters in the input string to understandable characters.
  * @param {String} str - The input string to have special characters replaced.
  * @return A string with all special characters replaced.
@@ -230,6 +216,28 @@ slugify = function (str) {
 	// 1. Replace spaces with -
 	// 2. Replace special characters
 	return str.toString().toLowerCase().replace(/\s+/g, "-").replace(p, c => to.charAt(from.indexOf(c)));
+};
+
+/*
+ * Performs a case-insensitive search to determine whether a string array includes
+ * a certain value among its entries, returning true or false as appropriate.
+ * If inputStringArray is not exclusively an array of strings or if searchString
+ * isn't a string, then false is returned.
+ *
+ * @param {String[]} inputStringArray - an array of strings to search over
+ * @param {String} searchString - a string to search the collection for
+ */
+// eslint-disable-next-line
+includesCaseInsensitive = function (inputStringArray, searchString) {
+	if (typeof searchString !== "string" || inputStringArray.some(str => typeof str !== "string")) {
+		return false; // TODO: consider throwing an exception instead
+	} else {
+		// normalize all string values by making them upper case
+		inputStringArray = inputStringArray.map(str => str.toUpperCase());
+		searchString = searchString.toUpperCase();
+
+		return inputStringArray.includes(searchString);
+	}
 };
 
 /*

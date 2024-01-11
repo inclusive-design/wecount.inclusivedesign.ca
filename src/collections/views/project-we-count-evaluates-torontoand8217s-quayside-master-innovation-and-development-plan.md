@@ -2,15 +2,16 @@
 title: We Count Evaluates Toronto’s Quayside Master Innovation and Development Plan
 author: Vera Roberts
 date: 2020-03-02T16:47:51
-picture: /uploads/colin-carter-w1g2o4J_4Dg-unsplash-scaled.jpg
-altTag: Abstract Image
+picture: /uploads/we-count-logo-2.png
+altTag: Part of the We Count logo
 excerpt: Project We Count evaluated the MIDP for Toronto’s Quayside from the
   perspective of persons in Toronto who have difficulty with or are excluded by
   the current urban plan.
 tags:
+  - Disability
+  - Accessibility
   - AI
-  - Inclusion
-  - Smart Cities
+  - We Count
 ---
 Project We Count evaluated the Master Innovation and Development Plan for Toronto’s Quayside from the perspective of persons in Toronto who have difficulty with or are excluded by the current urban plan.
 

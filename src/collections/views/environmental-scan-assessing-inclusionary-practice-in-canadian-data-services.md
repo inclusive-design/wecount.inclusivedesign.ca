@@ -2,14 +2,14 @@
 title: "Environmental Scan: Assessing Inclusionary Practice in Canadian Data Services"
 author: Ali Milad
 date: 2020-12-17T18:33:18
-picture: /uploads/dynamicwang-bLIkWFelVKM-unsplash-scaled.jpg
-altTag: Abstract Image
+picture: /uploads/we-count-logo-6.png
+altTag: Portion of the We Count logo
 excerpt: "An overview of key findings from the Data Service Provider portion of
   the environmental scan conducted by the We Count team in May 2020. "
 tags:
-  - data service providers
-  - Environmental Scan
-  - ethical AI
+  - AI
+  - Employment
+  - We Count
 ---
 This article provides an overview of key findings from an environmental scan conducted by the We Count team in May 2020. The scan relied on information available through online sources to explore how data ethics are being taught, expressed, and implemented within Canada by three stakeholders in the data ecosystem: [Postsecondary Education (PSE) Institutions](https://wecount.inclusivedesign.ca/views/environmental-scan-canadian-postsecondary-education-and-ai-ethics/), Data Service Providers, and [AI Firms](https://wecount.inclusivedesign.ca/views/environmental-scan-addressing-inclusionary-practice-in-canadian-ai-firms/).
 

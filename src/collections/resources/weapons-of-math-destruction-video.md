@@ -1,15 +1,17 @@
 ---
-title: "Weapons of Math Destruction"
-focus: "Bias"
-source: "Talks at Google"
-readability: ["I"]
-type: "Video"
-toolPurpose: []
-toolAccessibilityIssues: []
+title: Weapons of Math Destruction
+focus: Bias
+source: Talks at Google
+readability:
+  - Intermediate
+type: Video
 openSource: false
-link: "https://www.youtube.com/watch?v=TQHs8SA1qpk"
+link: https://youtu.be/TQHs8SA1qpk
 keywords: []
-learnTags: ["bias","business","disability","ethics"]
-summary: "A detailed look at how deeply bias pervades even commonly used algorthms. "
+learnTags:
+  - bias
+  - business
+  - disability
+  - ethics
+summary: A detailed look at how deeply bias pervades even commonly used algorithms.
 ---
-

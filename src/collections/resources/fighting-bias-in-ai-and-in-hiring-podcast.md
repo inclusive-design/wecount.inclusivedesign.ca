@@ -2,10 +2,8 @@
 title: "Fighting Bias in AI (and in Hiring)"
 focus: "Employment"
 source: "Practical AI "
-readability: ["B"]
+readability: ["Beginner"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://changelog.com/practicalai/17"
 keywords: []

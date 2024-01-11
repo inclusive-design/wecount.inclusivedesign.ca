@@ -38,6 +38,12 @@ article {
 	}
 }
 
+// style for centering children of some buttons (#939)
+%has-vertically-centered-children {
+	align-items: center;
+	display: flex;
+}
+
 // WP customized styles
 .has-small-font-size {
 	font-size: 84%;
@@ -129,11 +135,6 @@ p img {
 	min-width: 100%;
 }
 
-// The folowing CSS rule ensures that video content fits within the viewport for mobile and iPad views
-.wp-block-embed__wrapper iframe {
-	width: 100%;
-}
-
 // Special styling rules for homepage content
 article .homepage-content {
 	// removes underline for "non-h3" h2's
@@ -174,37 +175,6 @@ article .homepage-content {
 			top: 50%;
 			transform: translate(-50%, -50%);
 		}
-	}
-}
-
-.wp-block-group {
-	display: grid;
-	margin-top: rem(12);
-
-	p {
-		margin: 0 auto;
-	}
-}
-
-// The folowing CSS rule ensures content fits within the viewport for mobile and iPad views
-.wp-block-image,
-.wp-block-audio,
-.wp-block-embed,
-.image-and-text,
-.wp-block-group {
-	img {
-		max-width: 100%;
-	}
-
-	audio {
-		max-width: 100%;
-	}
-
-	// Blur images which are missing alt tags altogether
-	// or whose alt tags begin with "This image has an empty alt attribute"
-	img:not([alt]),
-	img[alt^="This image has an empty alt attribute"] {
-		filter: blur(10px);
 	}
 }
 
@@ -262,18 +232,6 @@ figcaption {
 			min-width: auto;
 		}
 
-		.alignleft {
-			float: left;
-			margin-right: rem(25);
-			margin-top: 0;
-		}
-
-		.alignright {
-			float: right;
-			margin-left: rem(25);
-			margin-top: 0;
-		}
-
 		// Styling for media and text block with media on the left
 		.image-and-text--image-left {
 			.image-and-text__content {
@@ -305,14 +263,6 @@ figcaption {
 			.embed--youtube {
 				margin-left: $full-width-video-widescreen-margins;
 				margin-right: $full-width-video-widescreen-margins;
-			}
-		}
-
-		.alignleft,
-		.alignright {
-			.wp-block-embed__wrapper iframe {
-				height: 100%;
-				width: 100%;
 			}
 		}
 	}

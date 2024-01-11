@@ -2,10 +2,8 @@
 title: "IBM Design for AI: Fundamentals"
 focus: "Data Science Education"
 source: "IBM"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://www.ibm.com/design/ai/basics/ai"
 keywords: []

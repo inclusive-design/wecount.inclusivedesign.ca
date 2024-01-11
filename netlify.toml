@@ -3,6 +3,9 @@
   publish = "dist"
   functions = "functions"
 
+[build.environment]
+  NODE_OPTIONS = "--max_old_space_size=4096"
+
 [dev]
   command = "npm run start"
   targetPort = 3000

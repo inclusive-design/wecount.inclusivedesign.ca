@@ -2,10 +2,8 @@
 title: "Our Disability Inclusion Journey"
 focus: "Employment"
 source: "Microsoft "
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 link: "https://sway.office.com/ZIetX05BXMPoBLHk"
 keywords: []

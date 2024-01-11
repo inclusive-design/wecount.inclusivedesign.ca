@@ -1,7 +1,6 @@
 .pagination {
 	display: block;
 	line-height: rem(38);
-	list-style: none;
 	margin-left: -10%;
 	margin-right: -10%;
 	margin-top: rem(27);
@@ -45,7 +44,7 @@
 	.pagination-link::before {
 		border-radius: 100%;
 		box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
-		content: '';
+		content: "";
 		height: 100%;
 		left: 0;
 		opacity: 1;
@@ -71,6 +70,8 @@
 	}
 
 	li {
+		list-style: none;
+
 		a.is-current {
 			background-color: $green-pale;
 			box-shadow: 0 0 0 rem(2) $green-dark inset;
@@ -100,7 +101,7 @@
 		svg {
 			fill: none;
 			height: rem(24);
-			stroke: currentColor;
+			stroke: currentcolor;
 			stroke-width: 2;
 			width: rem(14);
 		}
@@ -121,7 +122,7 @@
 		background-color: transparent;
 
 		svg {
-			fill: currentColor;
+			fill: currentcolor;
 			stroke-width: 0.25;
 		}
 	}
@@ -151,7 +152,7 @@
 			display: block;
 		}
 
-		li:not(:first-child):not(:last-child) {
+		li:not(:first-child, :last-child) {
 			padding-top: rem(4);
 		}
 
@@ -169,7 +170,7 @@
 
 		.pagination-next,
 		.pagination-previous {
-			line-height: rem(40);
+			line-height: rem(48);
 		}
 	}
 }

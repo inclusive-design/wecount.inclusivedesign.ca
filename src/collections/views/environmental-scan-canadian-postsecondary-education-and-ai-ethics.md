@@ -2,15 +2,14 @@
 title: "Environmental Scan: Canadian Postsecondary Education and AI Ethics"
 author: Ali Milad
 date: 2020-12-17T18:33:09
-picture: /uploads/jared-arango-1-mh6U3qeGQ-unsplash-scaled.jpg
-altTag: Abstract Image
+picture: /uploads/we-count-logo-3.png
+altTag: Portion of the We Count logo
 excerpt: "An overview of key findings from the Postsecondary Education portion
   of the environmental scan conducted by the We Count team in May 2020. "
 tags:
-  - Environmental Scan
-  - ethical AI
-  - postsecondary education
-  - postsecondary institutions
+  - AI
+  - Education
+  - We Count
 ---
 This article provides an overview of key findings from an environmental scan conducted by the We Count team in May 2020. The scan relied on information available through online sources to explore how data ethics are being taught, expressed, and implemented within Canada by three stakeholders in the data ecosystem: Postsecondary Education (PSE) Institutions, [Data Service Providers](https://wecount.inclusivedesign.ca/views/environmental-scan-assessing-inclusionary-practice-in-canadian-data-services/), and [AI Firms](https://wecount.inclusivedesign.ca/views/environmental-scan-addressing-inclusionary-practice-in-canadian-ai-firms/).
 

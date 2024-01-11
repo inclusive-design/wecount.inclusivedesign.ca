@@ -19,6 +19,11 @@
 			"categoryId": "designAndMethods",
 			"categoryLabel": "AI design and methods (for AI experts)",
 			"focuses": ["Data Science Education", "Data Set", "Tool", "Methods or Design"]
+		},
+		{
+			"categoryId": "ictStandards",
+			"categoryLabel": "ICT Standards and Legislation",
+			"focuses": ["ICT Standards and Legislation"]
 		}
 	]
 }

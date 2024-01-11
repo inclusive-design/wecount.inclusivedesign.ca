@@ -2,10 +2,8 @@
 title: "AI for Accessibility Grants"
 focus: "Methods or Design"
 source: "Microsoft AI"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 link: "https://www.microsoft.com/en-us/ai/ai-for-accessibility-grants?activetab=pivot1%3aprimaryr2"
 keywords: []

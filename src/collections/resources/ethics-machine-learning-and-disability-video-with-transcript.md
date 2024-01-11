@@ -2,10 +2,8 @@
 title: "Ethics, Machine Learning and Disability"
 focus: "AI and Disability/Outliers"
 source: "TechShare Pro 2019"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Video with Transcript"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
 link: "https://www.youtube.com/watch?time_continue=825&v=icoR_WRzMCs&feature=emb_logo"
 keywords: []

@@ -1,92 +1,136 @@
 {
-	"resourceTags": [
-		{
-			"value": "basicAI",
-			"label": "Basic AI"
-		},
-		{
-			"value": "bias",
-			"label": "Bias"
-		},
-		{
-			"value": "business",
-			"label": "Business"
-		},
-		{
-			"value": "canadianLandscape",
-			"label": "Canadian Landscape"
-		},
-		{
-			"value": "dataBroker",
-			"label": "Data Broker"
-		},
-		{
-			"value": "dataset",
-			"label": "Data Collection/Data Set"
-		},
-		{
-			"value": "dataTools",
-			"label": "Data Tools"
-		},
-		{
-			"value": "methods",
-			"label": "Design/Methods"
-		},
-		{
-			"value": "disability",
-			"label": "Disability"
-		},
-		{
-			"value": "education",
-			"label": "Education"
-		},
-		{
-			"value": "employment",
-			"label": "Employment"
-		},
-		{
-			"value": "ethics",
-			"label": "Ethics"
-		},
-		{
-			"value": "fairness",
-			"label": "Fairness"
-		},
-		{
-			"value": "framework",
-			"label": "Framework"
-		},
-		{
-			"value": "government",
-			"label": "Government"
-		},
-		{
-			"value": "inclusivePractice",
-			"label": "Inclusive Practice"
-		},
-		{
-			"value": "machineLearning",
-			"label": "Machine Learning"
-		},
-		{
-			"value": "notForProfit",
-			"label": "Not-for-Profit"
-		},
-		{
-			"value": "researchCentre",
-			"label": "Research Centre"
-		},
-		{
-			"value": "smallData",
-			"label": "Small Data"
-		},
-		{
-			"value": "solution",
-			"label": "Solution"
-		},
-		{
-			"value": "trust",
-			"label": "Trust"
-		}
-	]
+  "resourceTags": [
+    {
+      "value": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "value": "machineLearning",
+      "label": "AI and Machine Learning"
+    },
+    {
+      "value": "assistiveTechnology",
+      "label": "Assistive Technology"
+    },
+    {
+      "value": "basicAI",
+      "label": "Basic AI"
+    },
+    {
+      "value": "bias",
+      "label": "Bias"
+    },
+    {
+      "value": "business",
+      "label": "Business"
+    },
+    {
+      "value": "canadianLandscape",
+      "label": "Canadian Landscape"
+    },
+    {
+      "value": "dataAndDataSecurity",
+      "label": "Data and Data Security"
+    },
+    {
+      "value": "dataBroker",
+      "label": "Data Broker"
+    },
+    {
+      "value": "dataset",
+      "label": "Data Collection/Data Set"
+    },
+    {
+      "value": "dataTools",
+      "label": "Data Tools"
+    },
+    {
+      "value": "methods",
+      "label": "Design/Methods"
+    },
+    {
+      "value": "disability",
+      "label": "Disability"
+    },
+    {
+      "value": "education",
+      "label": "Education"
+    },
+    {
+      "value": "employment",
+      "label": "Employment"
+    },
+    {
+      "value": "ethics",
+      "label": "Ethics"
+    },
+    {
+      "value": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "value": "framework",
+      "label": "Framework"
+    },
+    {
+      "value": "government",
+      "label": "Government"
+    },
+    {
+      "value": "ict",
+      "label": "ICT"
+    },
+    {
+      "value": "inclusivePractice",
+      "label": "Inclusive Practice"
+    },
+    {
+      "value": "legislationAndLaw",
+      "label": "Legislation and Law"
+    },
+    {
+      "value": "notForProfit",
+      "label": "Not-for-Profit"
+    },
+    {
+      "value": "procurement",
+      "label": "Procurement"
+    },
+    {
+      "value": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "value": "rights",
+      "label": "Rights"
+    },
+    {
+      "value": "researchCentre",
+      "label": "Research Centre"
+    },
+    {
+      "value": "smallData",
+      "label": "Small Data"
+    },
+    {
+      "value": "solution",
+      "label": "Solution"
+    },
+    {
+      "value": "surveillance",
+      "label": "Surveillance"
+    },
+    {
+      "value": "telecommunications",
+      "label": "Telecommunications"
+    },
+    {
+      "value": "transportation",
+      "label": "Transportation"
+    },
+    {
+      "value": "trust",
+      "label": "Trust"
+    }
+  ]
 }

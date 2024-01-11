@@ -2,12 +2,12 @@
 title: Continuing Our Work During COVID-19
 author: Jutta Treviranus
 date: 2020-04-03T12:16:00
-picture: /uploads/jj-ying-WmnsGyaFnCQ-unsplash-scaled.jpg
-altTag: Abstract Image
+picture: /uploads/idrc-cropped.png
+altTag: IDRC logo
 excerpt: A message from IDRC Director Jutta Treviranus about continuing our
   mission during COVID-19.
 tags:
-  - Inclusion
+  - Disability
 ---
 We are fortunate that our team members are able to work from home during this pandemic. We want to extend our enormous gratitude to the front-line workers.
 

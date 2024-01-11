@@ -2,12 +2,9 @@
 title: "What Are Important Ethical Implications of Using Facial Recognition Technology in Health Care?"
 focus: "AI Ethics/Policy"
 source: "AMA Journal of Ethics"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Website Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/What%20are%20important%20ethical%20implications%20of%20using%20facial%20recognition%20technology%20in%20health%20care.pdf"
 link: "https://journalofethics.ama-assn.org/article/what-are-important-ethical-implications-using-facial-recognition-technology-health-care/2019-02"
 keywords: []
 learnTags: ["dataTools","methods","disability","ethics","fairness","government"]

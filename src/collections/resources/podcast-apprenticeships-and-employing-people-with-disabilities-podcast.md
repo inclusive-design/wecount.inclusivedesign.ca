@@ -2,10 +2,8 @@
 title: "Podcast: Apprenticeships and Employing People with Disabilities"
 focus: "Employment"
 source: "Workology and PEAT"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://peatworks.org/podcast-apprenticeships-and-employing-people-with-disabilities/"
 keywords: []

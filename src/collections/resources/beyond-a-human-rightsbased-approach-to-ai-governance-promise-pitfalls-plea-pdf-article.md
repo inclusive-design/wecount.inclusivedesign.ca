@@ -2,12 +2,9 @@
 title: "Beyond a Human Rights–Based Approach to AI Governance: Promise, Pitfalls, Plea"
 focus: "AI Ethics/Policy"
 source: "SSRN"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/Beyond%20a%20Human%20Rights%20based%20approach%20to%20AI%20Governance%20Promise,%20Pitfalls,%20Plea.pdf"
 link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3543112"
 keywords: ["Artificial Intelligence","ethics","human rights","AI governance","AI for good."]
 learnTags: ["ethics","framework","government","trust"]

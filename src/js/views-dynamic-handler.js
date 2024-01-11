@@ -1,6 +1,6 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, createPagination, processDisplayResults, filter, generateAside, getSideMenuObserver, $ */
+/* global Vue, axios, search, createPagination, processDisplayResults, filter, slugify, getSideMenuObserver, $ */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -16,22 +16,6 @@ for (let p of params) {
 }
 
 let isStaticViewVisible = true;
-
-/*
- * Set up aside menu by:
- * 1. populate content with headings sourced from given selectors;
- * 2. Highlight the aside item at scrolling with the current active heading.
- * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
- */
-function setupAside(selectors) {
-	// Populate content with headings sourced from given selectors;
-	generateAside(document, selectors);
-	// Highlight the scrolled-to content heading on the <aside> list.
-	document.querySelectorAll(selectors).forEach((section) => {
-		const contentHeaderObserver = getSideMenuObserver();
-		contentHeaderObserver.observe(section);
-	});
-}
 
 new Vue({
 	el: "#defaultContainer",
@@ -102,6 +86,59 @@ new Vue({
 	}
 });
 
+/*
+ * Generate the content in the <aside> element.
+ * @param {Object} document - The html document object.
+ * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
+ * to be rendered in <aside>.
+ */
+function generateAside(document, selectors) {
+	const articleHeadings = [...document.querySelectorAll(selectors)];
+
+	if (articleHeadings.length) {
+		const toc = document.querySelector("aside#toc");
+		const tocNav = document.createElement("nav");
+		const tocUl = document.createElement("ul");
+		tocNav.setAttribute("aria-label", "Secondary Navigation");
+
+		articleHeadings.forEach(heading => {
+			const headingSlug = slugify(heading.textContent.toLowerCase());
+
+			heading.setAttribute("id", headingSlug);
+
+			const tocLi = document.createElement("li");
+			const tocLink = document.createElement("a");
+			tocLink.setAttribute("href", `#${headingSlug}`);
+			// Some headings on the main page are explicitly using soft hyphens (&shy;) for words to be properly hyphened on
+			// the mobile sized screens. This creates an issue that these hyphens are picked up and shown as `&shy;` on the side
+			// menu. Considering the side menu is only shown on the desktop view not on the mobile view and hyphens are unnecessary
+			// on the desktop view, these soft hyphens can be removed from the side menu.
+			tocLink.textContent = heading.textContent.replace(/&shy;/g, "");
+			tocLi.appendChild(tocLink);
+			tocUl.appendChild(tocLi);
+		});
+
+		tocNav.appendChild(tocUl);
+		toc.appendChild(tocNav);
+	}
+}
+
+/*
+ * Set up aside menu by:
+ * 1. populate content with headings sourced from given selectors;
+ * 2. Highlight the aside item at scrolling with the current active heading.
+ * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
+ */
+function setupAside(selectors) {
+	// Populate content with headings sourced from given selectors;
+	generateAside(document, selectors);
+	// Highlight the scrolled-to content heading on the <aside> list.
+	document.querySelectorAll(selectors).forEach((section) => {
+		const contentHeaderObserver = getSideMenuObserver();
+		contentHeaderObserver.observe(section);
+	});
+}
+
 // Set up the aside menu when pages using the static view are loaded
 if (isStaticViewVisible) {
 	setupAside("main article.static-view h1, main article.static-view h2");
@@ -133,7 +170,6 @@ for (let i = 0; i < expandButtons.length; i++) {
 		const currentExpandedValue = expandButtons[i].getAttribute("aria-expanded");
 		const expandedState = currentExpandedValue === "true" ? "false" : "true";
 		expandButtons[i].setAttribute("aria-expanded", expandedState);
-		expandButtons[i].setAttribute("aria-label", expandedState === "true" ? "collapse" : "expand");
 
 		// Open/close the filter
 		// Find the form filter by using its relative position with the button instead of a css selector is to work around

@@ -2,10 +2,8 @@
 title: "Human Centered Artificial Intelligence - Stanford University"
 focus: "Data Science Education"
 source: "Stanford University"
-readability: ["B","I","E"]
+readability: ["Beginner","Intermediate","Expert"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://hai.stanford.edu/"
 keywords: []

@@ -1,15 +1,21 @@
 ---
-title: "Keyboard Shortcuts in Jupyter Notebook"
-focus: "Tool"
-source: "Jupyter Notebook"
-readability: ["E"]
-type: "Data Tool Resource"
-toolPurpose: ["Create Content"]
-toolAccessibilityIssues: ["Keyboard Accessibility"]
+title: Keyboard Shortcuts in Jupyter Notebook
+focus: Tool
+source: Jupyter Notebook
+readability:
+  - Expert
+type: Website Resource
 openSource: true
-link: "https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#keyboard-shortcuts"
-keywords: []
-learnTags: ["dataTools","methods","machineLearning"]
+link: https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#keyboard-shortcuts
+keywords:
+  - Create Content
+  - Juptyer Notebook
+  - Keyboard Navigation
+learnTags:
+  - dataTools
+  - methods
+  - machineLearning
+  - assistiveTechnology
+  - disability
 summary: "Instructions for using keyboard shortcuts in Jupyter Notebook. "
 ---
-

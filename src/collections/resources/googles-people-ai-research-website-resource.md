@@ -2,10 +2,8 @@
 title: "Google's People + AI Research"
 focus: "Data Science Education"
 source: "Google"
-readability: ["B","I","E"]
+readability: ["Beginner","Intermediate","Expert"]
 type: "Website Resource"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://pair.withgoogle.com/"
 keywords: []

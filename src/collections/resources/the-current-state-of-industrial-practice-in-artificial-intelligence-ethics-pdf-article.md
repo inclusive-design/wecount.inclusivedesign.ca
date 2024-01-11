@@ -2,12 +2,9 @@
 title: "The Current State of Industrial Practice in Artificial Intelligence Ethics"
 focus: "AI Ethics/Policy"
 source: "IEEE"
-readability: ["E"]
+readability: ["Expert"]
 type: "PDF Article"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: true
-sharePointUrl: "https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/The%20current%20State%20of%20Industrial%20Practise%20in%20AI%20Ethics.pdf"
 link: "https://jyx.jyu.fi/bitstream/handle/123456789/68453/vakkuriym.pdf?sequence=2&isAllowed=y"
 keywords: ["Artificial Intelligence","Ethics","Software Development"]
 learnTags: ["bias","ethics","fairness","framework"]

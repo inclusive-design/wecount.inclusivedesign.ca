@@ -2,10 +2,8 @@
 title: "Lisa Lewin on Making Boards of Directors Care"
 focus: "AI Ethics/Policy"
 source: "Good Code Podcast"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://soundcloud.com/chine-labbe/lisa-lewin-on-making-boards-of"
 keywords: []

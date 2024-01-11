@@ -5,9 +5,9 @@ eventDate: 2020-12-01T04:00:00.000Z
 coverImageUrl: /uploads/FWDlogoBforprocessing4x1.png
 coverImageAltText: "FWD: Future of Work and Disability logo"
 shortDescription: >-
-  Panelists will highlight some of the potential problems that arise from AI in
-  the hiring process and brainstorm ideas to make this process more inclusive
-  for persons with disabilities.
+  Panelists Shea Tanis and Rich Donovan will highlight some of the potential
+  problems that arise from AI in the hiring process and brainstorm ideas to make
+  this process more inclusive for persons with disabilities.
 
 
   December 1, 2020, 1:30 PM – 3:00 PM (EST)
@@ -26,6 +26,8 @@ The ideas that are generated from this webinar will provide insights for the dev
 December 1, 2020, 1:30 PM – 3:00 PM (EST)
 
 [Inclusive AI for HR webinar video](https://youtu.be/0fBqJgt_w2E)
+
+[Inclusive AI for HR transcript](/uploads/future-of-work_inclusive-ai-for-hr_dec-1_transcript.docx)
 
 **Panelists:**
 

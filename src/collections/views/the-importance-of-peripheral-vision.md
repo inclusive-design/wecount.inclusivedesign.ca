@@ -1,18 +1,17 @@
 ---
-title: "The Importance of Peripheral Vision"
-date: 2019-10-30T12:09:00
+title: The Importance of Peripheral Vision
 author: Jutta Treviranus
-picture: /uploads/adrien-converse-WYmPNSUyfNg-unsplash-scaled.jpg
-altTag: |-
-  Abstract Image
-excerpt: |-
-  Jutta Treviranus was invited to contribute this essay related to We Count to Some Thoughts, a collection of essays on smart cities.
+date: 2019-10-30T12:09:00
+picture: /uploads/we-count-logo-7.png
+altTag: Part of the We Count logo
+excerpt: Jutta Treviranus was invited to contribute this essay related to We
+  Count to Some Thoughts, a collection of essays on smart cities.
 tags:
   - AI
-  - Inclusion
-  - Smart Cities
+  - Disability
+  - Accessibility
 ---
-_Originally published on [Some Thoughts](https://www.some-thoughts.org/treviranus.html), a collection of essays on smart cities._
+*Originally published on Some Thoughts, a collection of essays on smart cities.*
 
 We have a human propensity when planning to focus on the centre of a field, on the majority; especially when we believe resources to be scarce. We think we need to select “the best,” the winning solution, the highest impact, the biggest priority. We think innovation and quality arise from winner-takes-all competition. Our metrics and evidence are about finding the biggest number, or the average. This usually means we ignore or lose sight of the periphery, the minorities, and the people that find themselves at the margins.
 

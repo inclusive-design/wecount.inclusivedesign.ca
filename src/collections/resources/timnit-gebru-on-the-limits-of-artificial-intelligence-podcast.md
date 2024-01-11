@@ -2,10 +2,8 @@
 title: "Timnit Gebru on the Limits of Artificial Intelligence"
 focus: "Bias"
 source: "Good Code Podcast"
-readability: ["I"]
+readability: ["Intermediate"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://soundcloud.com/chine-labbe/timnit-gebru-on-the-limits-of"
 keywords: []

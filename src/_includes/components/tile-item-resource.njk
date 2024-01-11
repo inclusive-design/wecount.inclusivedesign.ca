@@ -1,0 +1,38 @@
+<a href="{{ tileURL }}">
+  <div class="tile-item">
+    <div class="tile-resource">
+      <h2 class="h3">{{ title | replace("<", "&lt;") | safe }}</h2>
+      {# TODO: localize these items/labels #}
+      <div class="info">
+        <svg aria-hidden="true"><use xlink:href="#media-type" /></svg>
+        Media Type: {{ mediaType | safe }}
+      </div>
+      {% if readabilityList %}
+      <div class="info">
+        <svg aria-hidden="true"><use xlink:href="#readability" /></svg>
+        <span class="resource-readability-title">Readability:&MediumSpace;</span>
+        <ul class="resource-readability-list">
+          {%- for readability in readabilityList -%}
+          <li>{{ readability | safe }}{% if not loop.last %},&MediumSpace;{% endif %}</li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      {% endif %}
+      <div class="info">
+        <svg aria-hidden="true"><use xlink:href="#topics" /></svg>
+        Topic: {{ focus | categoryFromFocus(resourceCategories.resourceCategories) }}
+      </div>
+      {% if tags %}
+      <div class="info">
+        <svg aria-hidden="true"><use xlink:href="#tags" /></svg>
+        Tags:
+        <ul class="resource-tags-list">
+          {%- for tag in tags -%}
+          <li>{{ tag | getResourceTagLabel(resourceTags.resourceTags) }}</li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</a>

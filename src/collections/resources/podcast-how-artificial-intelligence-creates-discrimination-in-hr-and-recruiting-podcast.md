@@ -2,10 +2,8 @@
 title: "Podcast: How Artificial Intelligence Creates Discrimination in #HR & #Recruiting"
 focus: "Employment"
 source: "Workology and PEAT"
-readability: ["B"]
+readability: ["Beginner"]
 type: "Podcast"
-toolPurpose: []
-toolAccessibilityIssues: []
 openSource: false
 link: "https://peatworks.org/podcast-how-artificial-intelligence-creates-discrimination-in-hr-recruiting/"
 keywords: []

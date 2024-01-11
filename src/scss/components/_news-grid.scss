@@ -14,7 +14,7 @@
 			}
 
 			.author {
-				color: $grey-light;
+				color: $grey-mid;
 				font-style: italic;
 				font-weight: $font-weight-semibold;
 			}
@@ -38,7 +38,7 @@
 			// create the ellipsis
 			.preview-content::before {
 				bottom: 0;
-				content: '...';
+				content: "...";
 				position: absolute;
 				right: 0;
 			}
@@ -46,7 +46,7 @@
 			// hide the ellipsis if we have text, which is less than or equal to max lines
 			.preview-content::after {
 				background: $white;
-				content: '';
+				content: "";
 				height: rem(16);
 				margin-top: rem(3.2);
 				position: absolute;

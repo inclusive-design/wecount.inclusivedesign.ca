@@ -25,6 +25,8 @@
 
 @include breakpoint-up(lg) {
 	.brand {
+		margin-top: rem(16);
+
 		a {
 			display: inline-flex;
 		}
