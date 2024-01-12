@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "18.4.4",
-    "@commitlint/config-conventional": "17.4.4",
+    "@commitlint/config-conventional": "18.4.4",
     "autoprefixer": "10.4.13",
     "clean-css": "5.3.3",
     "cross-env": "7.0.3",
