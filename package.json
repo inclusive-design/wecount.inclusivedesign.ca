@@ -62,7 +62,7 @@
     "clean-css": "5.3.3",
     "cross-env": "7.0.3",
     "cssesc": "3.0.0",
-    "dotenv": "16.0.3",
+    "dotenv": "16.3.1",
     "eleventy-plugin-error-overlay": "1.0.0",
     "eslint": "8.35.0",
     "eslint-plugin-react": "7.32.2",
