@@ -53,7 +53,7 @@
     "netlify-cms-widget-uuid-v4": "1.1.1",
     "nodemailer": "6.9.8",
     "nunjucks": "3.2.4",
-    "uuid": "9.0.0"
+    "uuid": "9.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "18.4.4",
