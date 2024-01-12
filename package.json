@@ -36,7 +36,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@11ty/eleventy": "2.0.0",
+    "@11ty/eleventy": "2.0.1",
     "@11ty/eleventy-navigation": "0.3.5",
     "@11ty/eleventy-plugin-rss": "1.2.0",
     "@tbranyen/jsdom": "13.0.0",
