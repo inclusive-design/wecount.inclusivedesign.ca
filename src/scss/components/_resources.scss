@@ -231,9 +231,8 @@
 @include breakpoint-up(lg) {
 	.resources {
 		.api-content {
-			column-gap: rem(48);
+			gap: rem(48);
 			grid-template-columns: 1fr 1fr;
-			row-gap: rem(48);
 
 			.tile-item {
 				height: 100%;
@@ -262,11 +261,10 @@
 
 					.topic-title {
 						align-items: start;
-						column-gap: 0;
+						gap: rem(16) 0;
 						grid-template-columns: initial;
 						height: 100%;
 						padding: rem(16);
-						row-gap: rem(16);
 
 						svg {
 							align-self: end;

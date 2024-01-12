@@ -1,6 +1,7 @@
 ---
-title: News
-permalink: /news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber }}/{% endif %}
+title: Recount
+permalink: /news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber
+  }}/{% endif %}
 pagination:
   data: collections.news_en
   size: 10
