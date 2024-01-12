@@ -14,7 +14,7 @@
   "private": true,
   "scripts": {
     "build": "npm-run-all clean -s build:*",
-    "build:mapDependency": "npm explore covid-data-monitor -- npm run build:noInfusion",
+    "build:mapDependency": "npm explore covid-data-monitor -- npm install fs-extra && npm explore covid-data-monitor -- npm run build:noInfusion",
     "build:eleventy": "node --max-old-space-size=6000 ./node_modules/@11ty/eleventy/cmd.js",
     "build:netlify-cms": "node ./build-cms.js",
     "clean": "rimraf dist",
