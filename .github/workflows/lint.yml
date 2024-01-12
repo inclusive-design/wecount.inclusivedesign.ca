@@ -2,21 +2,12 @@ name: Lint assets
 
 on:
   push:
-    paths:
-      - 'package.json'
-      - 'package-lock.json'
-      - '**.js'
-      - '**.md'
-      - '**.scss'
-      - '!src/collections/**.md'
+    branches:
+      - dev
+      - main
   pull_request:
-    paths:
-      - 'package.json'
-      - 'package-lock.json'
-      - '**.js'
-      - '**.md'
-      - '**.scss'
-      - '!src/collections/**.md'
+    branches:
+      - dev
 jobs:
   lint:
     runs-on: ubuntu-latest
