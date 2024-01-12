@@ -3,9 +3,9 @@
  * showing the item's position in the collection and identifying the previous/next items. The collection is paginated
  * using a chunk size of one, which allows us to generate paged navigation for single Views items.
  *
- * @param {Object} collection An Eleventy collection to paginate.
- * @param {Object} page The current item in the Eleventy collection.
- * @returns {Object} A pagination object in the form shown here: https://www.11ty.dev/docs/pagination/#paging-an-array
+ * @param {Object} collection - An Eleventy collection to paginate.
+ * @param {Object} page - The current item in the Eleventy collection.
+ * @return {Object} A pagination object in the form shown here: https://www.11ty.dev/docs/pagination/#paging-an-array
  */
 module.exports = (collection, page) => {
 	const pagination = {

@@ -11,8 +11,8 @@ commit_messages:
 local_backend: true
 publish_mode: editorial_workflow
 site_url: "https://wecount.inclusivedesign.ca"
-media_folder: "src/uploads"
-public_folder: "/uploads"
+media_folder: src/uploads
+public_folder: /uploads
 i18n:
   structure: multiple_folders
   locales: [en-CA, fr-CA]
@@ -21,189 +21,189 @@ collections:
   - name: pages
     label: Pages
     label_singular: Page
-    folder: "src/collections/pages"
-    sortable_fields: ['title']
+    folder: src/collections/pages
+    sortable_fields: [title]
     slug: "{{title}}"
     preview_path: "{{slug}}"
     create: true
     i18n: false
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
-        hint: "The excerpt is shown in search results."
-      - label: "Navigation Order"
-        name: "menu_order"
+      - label: Title
+        name: title
+        widget: string
+      - label: Excerpt
+        name: excerpt
+        widget: text
+        hint: The excerpt is shown in search results.
+      - label: Navigation Order
+        name: menu_order
         widget: number
         default: 0
         required: true
         hint: |-
           This determines where the page should appear in the primary navigation. To hide the page from the primary navigation, set the value to zero.
-      - label: "Permanent Link"
-        name: "permalink"
-        widget: "string"
+      - label: Permanent Link
+        name: permalink
+        widget: string
         required: false
         hint: |-
           If you do not specify a permanent link, one will be automatically generated from the page title.
           Permalinks must have the format /page-title/ (the trailing slash is required).
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
+      - label: Body
+        name: body
+        widget: markdown
   - name: news
     label: News
     label_singular: News Entry
-    folder: "src/collections/news"
-    sortable_fields: ['title', 'date']
-    preview_path: "/news/"
+    folder: src/collections/news
+    sortable_fields: [title, date]
+    preview_path: /news/
     create: true
     i18n: true
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
+      - label: Title
+        name: title
+        widget: string
         i18n: true
-      - label: "Link"
-        name: "link"
-        widget: "string"
-        hint: "The link to the external news item or attached resource."
+      - label: Link
+        name: link
+        widget: string
+        hint: The link to the external news item or attached resource.
         i18n: true
-      - label: "Date"
-        name: "date"
-        widget: "datetime"
+      - label: Date
+        name: date
+        widget: datetime
         time_format: false
-        hint: "The publication date of the item."
+        hint: The publication date of the item.
         i18n: duplicate
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
-        hint: "The excerpt is shown in search results."
+      - label: Excerpt
+        name: excerpt
+        widget: text
+        hint: The excerpt is shown in search results.
         i18n: true
   - name: views
     label: Views
     label_singular: Views Entry
-    folder: "src/collections/views"
-    sortable_fields: ['title', 'date']
+    folder: src/collections/views
+    sortable_fields: [title, date]
     slug: "{{title}}"
     preview_path: "views/{{slug}}"
     create: true
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Permanent Link"
-        name: "permalink"
-        widget: "string"
+      - label: Title
+        name: title
+        widget: string
+      - label: Permanent Link
+        name: permalink
+        widget: string
         required: false
         hint: |-
           If you do not specify a permanent link, one will be automatically generated from the title.
           Permalinks must have the format /views/entry-title/ (the trailing slash is required).
-      - label: "Author"
-        name: "author"
+      - label: Author
+        name: author
         widget: string
-      - label: "Date"
-        name: "date"
-        widget: "datetime"
+      - label: Date
+        name: date
+        widget: datetime
         time_format: false
-        hint: "The publication date of the item."
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-      - label: "Preview Image"
-        name: "picture"
-        widget: "image"
+        hint: The publication date of the item.
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Preview Image
+        name: picture
+        widget: image
         required: false
-      - label: "Preview Image Alt Text"
-        name: "altTag"
-        widget: "string"
+      - label: Preview Image Alt Text
+        name: altTag
+        widget: string
         required: false
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
-        hint: "The excerpt is shown in search results."
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
+      - label: Excerpt
+        name: excerpt
+        widget: text
+        hint: The excerpt is shown in search results.
+      - label: Tags
+        name: tags
+        widget: list
   - name: initiatives
     label: Initiatives
     label_singular: Initiative
-    folder: "src/collections/initiatives"
-    sortable_fields: ['eventDate', 'title']
+    folder: src/collections/initiatives
+    sortable_fields: [eventDate, title]
     slug: "{{title}}"
     preview_path: "initiatives/{{slug}}"
     create: true
     i18n: true
     fields:
-      - label: "Event Title"
-        name: "title"
-        widget: "string"
+      - label: Event Title
+        name: title
+        widget: string
         i18n: true
-      - label: "Event ID"
-        name: "id"
-        widget: "uuid"
-        hint: "The ID is used to associate comments with this initiative and cannot be edited."
+      - label: Event ID
+        name: id
+        widget: uuid
+        hint: The ID is used to associate comments with this initiative and cannot be edited.
         i18n: duplicate
-      - label: "Permanent Link"
-        name: "permalink"
-        widget: "string"
+      - label: Permanent Link
+        name: permalink
+        widget: string
         required: false
         hint: |-
           If you do not specify a permanent link, one will be automatically generated from the event title.
           Permalinks must have the format /initiatives/event-title/ (the trailing slash is required).
         i18n: duplicate
-      - label: "Event Date"
-        name: "eventDate"
-        widget: "datetime"
+      - label: Event Date
+        name: eventDate
+        widget: datetime
         time_format: false
         required: false
         i18n: duplicate
-      - label: "Cover Image"
-        name: "coverImageUrl"
-        widget: "image"
+      - label: Cover Image
+        name: coverImageUrl
+        widget: image
         required: false
         i18n: duplicate
-      - label: "Cover Image Alt Text"
-        name: "coverImageAltText"
-        widget: "string"
+      - label: Cover Image Alt Text
+        name: coverImageAltText
+        widget: string
         required: false
         i18n: true
-      - label: "Event Body"
-        name: "body"
-        widget: "markdown"
+      - label: Event Body
+        name: body
+        widget: markdown
         i18n: true
-      - label: "Short Description"
-        name: "shortDescription"
-        widget: "markdown"
-        hint: "The short description is shown on the Initiatives page."
+      - label: Short Description
+        name: shortDescription
+        widget: markdown
+        hint: The short description is shown on the Initiatives page.
         i18n: true
-      - label: "Preview Image"
-        name: "previewImageUrl"
-        widget: "image"
+      - label: Preview Image
+        name: previewImageUrl
+        widget: image
         required: false
-        hint: "The preview image is shown on the Initiatives page."
+        hint: The preview image is shown on the Initiatives page.
         i18n: duplicate
-      - label: "Preview Image Alt Text"
-        name: "previewImageAltText"
-        widget: "string"
+      - label: Preview Image Alt Text
+        name: previewImageAltText
+        widget: string
         required: false
         i18n: true
   - name: resources
     label: Resources
     label_singular: Resource
-    folder: "src/collections/resources"
-    sortable_fields: ['title']
+    folder: src/collections/resources
+    sortable_fields: [title]
     preview_path: "resources/{{filename}}"
     create: true
     i18n: true
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
+      - label: Title
+        name: title
+        widget: string
         i18n: true
-      - label: "Focus"
-        name: "focus"
+      - label: Focus
+        name: focus
         widget: relation
         collection: resourceMetadata
         file: resourceFocuses
@@ -211,21 +211,21 @@ collections:
         display_fields: [resourceFocuses.*.value]
         search_fields: [resourceFocuses.*.value]
         i18n: duplicate
-      - label: "Source"
-        name: "source"
-        widget: "string"
+      - label: Source
+        name: source
+        widget: string
         i18n: duplicate
-      - label: "Readability"
-        name: "readability"
-        widget: "select"
+      - label: Readability
+        name: readability
+        widget: select
         multiple: true
         options:
-          - {label: "Beginner", value: "Beginner"}
-          - {label: "Intermediate", value: "Intermediate"}
-          - {label: "Expert", value: "Expert"}
+          - {label: Beginner, value: Beginner}
+          - {label: Intermediate, value: Intermediate}
+          - {label: Expert, value: Expert}
         i18n: duplicate
-      - label: "Type"
-        name: "type"
+      - label: Type
+        name: type
         widget: relation
         required: true
         collection: resourceMetadata
@@ -250,7 +250,7 @@ collections:
         widget: list
         required: false
         i18n: true
-      - label: "Learn Tags"
+      - label: Learn Tags
         name: learnTags
         widget: relation
         multiple: true
@@ -266,7 +266,7 @@ collections:
         name: summary
         widget: markdown
         minimal: true
-        buttons: ["bold", "italic"]
+        buttons: [bold, italic]
         editor_components: []
         required: false
         i18n: true
@@ -274,7 +274,7 @@ collections:
         name: body
         widget: markdown
         minimal: true
-        buttons: ["bold", "italic", "link"]
+        buttons: [bold, italic, link]
         editor_components: []
         required: false
         i18n: true
@@ -284,72 +284,72 @@ collections:
     files:
       - label: Resource Types
         name: resourceTypes
-        file: "src/_data/resourceTypes.json"
+        file: src/_data/resourceTypes.json
         editor:
           preview: false
         fields:
-          - label: "Resource Types"
-            label_singular: "Resource Type"
-            name: "resourceTypes"
-            widget: "list"
+          - label: Resource Types
+            label_singular: Resource Type
+            name: resourceTypes
+            widget: list
             summary: "{{fields.value}}"
             fields:
-              - label: "Value"
-                name: "value"
-                widget: "string"
+              - label: Value
+                name: value
+                widget: string
       - label: Resource Focuses
         name: resourceFocuses
-        file: "src/_data/resourceFocuses.json"
+        file: src/_data/resourceFocuses.json
         editor:
           preview: false
         fields:
-          - label: "Focuses"
-            label_singular: "Focus"
-            name: "resourceFocuses"
-            widget: "list"
+          - label: Focuses
+            label_singular: Focus
+            name: resourceFocuses
+            widget: list
             summary: "{{fields.value}}"
             fields:
-              - label: "Value"
-                name: "value"
-                widget: "string"
+              - label: Value
+                name: value
+                widget: string
       - label: Resource Tags
         name: resourceTags
-        file: "src/_data/resourceTags.json"
+        file: src/_data/resourceTags.json
         editor:
           preview: false
         fields:
-          - label: "Resource Tags"
-            label_singular: "Resource Tag"
-            name: "resourceTags"
-            widget: "list"
+          - label: Resource Tags
+            label_singular: Resource Tag
+            name: resourceTags
+            widget: list
             summary: "{{fields.label}}"
             fields:
-              - label: "Value"
-                name: "value"
-                widget: "string"
-              - label: "Label"
-                name: "label"
-                widget: "string"
+              - label: Value
+                name: value
+                widget: string
+              - label: Label
+                name: label
+                widget: string
       - label: Resource Categories
         name: resourceCategories
-        file: "src/_data/resourceCategories.json"
+        file: src/_data/resourceCategories.json
         editor:
           preview: false
         fields:
-          - label: "Resource Categories"
-            label_singular: "Resource Category"
-            name: "resourceCategories"
-            widget: "list"
+          - label: Resource Categories
+            label_singular: Resource Category
+            name: resourceCategories
+            widget: list
             summary: "{{fields.categoryLabel}}"
             fields:
-              - label: "Category ID"
-                name: "categoryId"
-                widget: "string"
-              - label: "Category Label"
-                name: "categoryLabel"
-                widget: "string"
-              - label: "Focuses"
-                name: "focuses"
+              - label: Category ID
+                name: categoryId
+                widget: string
+              - label: Category Label
+                name: categoryLabel
+                widget: string
+              - label: Focuses
+                name: focuses
                 widget: relation
                 multiple: true
                 collection: resourceMetadata

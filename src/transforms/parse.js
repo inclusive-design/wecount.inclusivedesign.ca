@@ -2,9 +2,9 @@
 
 const {parseHTML} = require("linkedom");
 
-require("../js/utils.js");
+require("../assets/scripts/utils.js");
 
-module.exports = function(value, outputPath) {
+module.exports = function (value, outputPath) {
 	if (outputPath && outputPath.includes(".html")) {
 		const {document} = parseHTML(value);
 

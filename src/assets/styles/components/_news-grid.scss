@@ -1,0 +1,94 @@
+.news-grid {
+	display: grid;
+	grid-gap: rem(30) rem(38);
+	grid-template-columns: repeat(1, 1fr);
+
+	.api-content {
+		background: #fff;
+		border: 1px solid #000;
+		box-sizing: border-box;
+
+		.news-item {
+			.preview-media-wrapper .content {
+				display: none;
+			}
+
+			.author {
+				color: $grey-mid;
+				font-style: italic;
+				font-weight: $font-weight-semibold;
+			}
+
+			.date {
+				padding-block-end: rem(8);
+			}
+
+			// Apply ellipsis on the third line to the preview content.
+			// Reference: http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+			.preview-content {
+				line-height: rem(19.2);
+				margin-block-end: rem(16);
+				margin-inline-end: rem(-16);
+				max-block-size: rem(57.6);
+				overflow: hidden;
+				padding-inline-end: rem(16);
+				position: relative;
+			}
+
+			// create the ellipsis
+			.preview-content::before {
+				bottom: 0;
+				content: "...";
+				position: absolute;
+				right: 0;
+			}
+
+			// hide the ellipsis if we have text, which is less than or equal to max lines
+			.preview-content::after {
+				background: $white;
+				block-size: rem(16);
+				content: "";
+				inline-size: rem(16);
+				margin-block-start: rem(3.2);
+				position: absolute;
+				right: 0;
+			}
+		}
+	}
+}
+
+@include breakpoint-up(lg) {
+	.news-grid {
+		grid-template-columns: repeat(2, 1fr);
+
+		.api-content .news-item {
+			padding: 0;
+
+			.preview-media-wrapper {
+				@include aspect-ratio(16, 9);
+
+				.content {
+					display: block;
+				}
+
+				// Style the placeholder images
+				.placeholder-img {
+					block-size: 100%;
+					inline-size: 100%;
+				}
+
+				// Style featured images
+				img {
+					block-size: 100%;
+					inline-size: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+
+		.content-preview {
+			padding-block: rem(1);
+			padding-inline: rem(60);
+		}
+	}
+}

@@ -1,0 +1,129 @@
+.tile-item {
+	border-radius: rem(18);
+	box-shadow: rem(0) rem(0) rem(7) rgba(0 0 0 / 25%);
+	display: grid;
+	margin-block: rem(32);
+	margin-inline: 0;
+
+	&:hover {
+		box-shadow: 0 0 rem(35) rgba(0 0 0 / 55%);
+	}
+
+	// Initiative title and descriptions
+	.tile-narrative,
+	.tile-resource {
+		border-radius: rem(18) rem(18) rem(18) rem(18);
+		min-block-size: rem(208);
+		padding-block: 0 rem(16);
+		padding-inline: rem(16);
+
+		// Initiative titles
+		h2 {
+			border-block-end: rem(2) solid $grey-shade;
+			padding-block-end: rem(16);
+		}
+
+		.author {
+			color: $black;
+			font-style: italic;
+			font-weight: $font-weight-semibold;
+		}
+
+		.date {
+			color: $grey-mid;
+			font-style: italic;
+			padding-block-end: rem(16);
+		}
+
+		.description {
+			color: $black;
+			font-weight: $font-weight-normal;
+		}
+	}
+
+	.tile-resource {
+		.h3 {
+			border-block-end: none;
+			color: $green-dark;
+			padding-block-end: 0;
+		}
+
+		.info {
+			color: $black;
+			font-weight: $font-weight-normal;
+			margin-block-start: rem(16);
+
+			svg {
+				block-size: rem(20);
+				inline-size: rem(20);
+				margin-inline-end: rem(12);
+			}
+
+			.resource-readability-list {
+				display: inline;
+				list-style: none;
+				padding-inline-start: 0;
+
+				li {
+					display: inline;
+				}
+			}
+
+			.resource-tags-list {
+				margin-block: rem(16) 0;
+				margin-inline: 0;
+				padding-inline-start: 0;
+
+				li {
+					background: $grey-light;
+					border-radius: rem(32);
+					display: inline-block;
+					margin-block: 0 rem(12);
+					margin-inline: 0 rem(12);
+					padding-block: rem(4);
+					padding-inline: rem(16);
+				}
+			}
+		}
+	}
+
+	// Initiative images
+	.tile-image {
+		display: none;
+	}
+}
+
+@include breakpoint-up(lg) {
+	.tile-item {
+		grid-template-columns: 70% 30%;
+		grid-template-rows: 100%;
+
+		.tile-narrative,
+		.tile-resource {
+			border-radius: rem(18) 0 0 rem(18);
+			min-block-size: rem(336);
+			padding-block: 0 rem(16);
+			padding-inline: rem(32) rem(16);
+		}
+
+		// In order to apply border-radius, all inner elements need to have the same border-radius applied.
+		// This includes the wrapper div.tile-image and inner img element.
+		.tile-image {
+			block-size: 100%;
+			border-radius: 0 0 rem(18) rem(18);
+			display: block;
+
+			img,
+			svg {
+				block-size: 100%;
+				border-radius: 0 rem(18) rem(18) 0;
+				inline-size: 100%;
+			}
+		}
+	}
+
+	.resources .tile-item {
+		grid-template-columns: 1fr;
+		margin: 0;
+	}
+}

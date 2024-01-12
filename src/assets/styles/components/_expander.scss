@@ -1,0 +1,71 @@
+.expander {
+	background-color: #fff;
+	border-radius: 0.625rem;
+	box-shadow: 0 0 0.4375rem rgb(0 0 0 / 25%);
+	padding: 1rem;
+
+	.expander__preview {
+		column-gap: rem(16);
+		display: grid;
+		grid-template-columns: minmax(70px, 230px) minmax(50%, 1fr);
+		grid-template-rows: auto 1fr auto;
+		position: relative;
+
+		img {
+			block-size: auto;
+			grid-row: 1 / 4;
+			inline-size: 100%;
+		}
+
+		.expander__title {
+			border-block-end: 0;
+			color: $green-dark;
+			font-weight: $font-weight-semibold;
+			grid-row: 1 / 2;
+			margin: 0;
+		}
+
+		.expander__subtitle {
+			font-weight: 600;
+			grid-row: 2 / 3;
+		}
+
+		button {
+			align-items: center;
+			appearance: none;
+			background: transparent;
+			block-size: rem(32);
+			border: none;
+			bottom: 0;
+			color: $green-dark;
+			display: flex;
+			flex-direction: column;
+			grid-row: 3 / 4;
+			inline-size: rem(32);
+			justify-content: center;
+			padding: 0;
+			position: absolute;
+			right: 0;
+
+			svg {
+				block-size: rem(24);
+				inline-size: rem(24);
+			}
+
+			&[aria-expanded="true"] .vert {
+				display: none;
+			}
+
+			&:hover,
+			&:focus {
+				background-color: #fadc90;
+				color: $green-dark;
+				outline: 0;
+			}
+		}
+	}
+
+	+ .expander {
+		margin-block-start: rem(16);
+	}
+}

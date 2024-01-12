@@ -39,7 +39,7 @@ NunjucksPreview.propTypes = {
 CMS.registerPreviewStyle("/css/main.css");
 
 const Page = createClass({
-	render: function() {
+	render: function () {
 		return <main>
 			<article className="page">
 				<h1>{this.props.entry.getIn(["data", "title"])}</h1>
@@ -83,7 +83,7 @@ News.propTypes = {
 };
 
 const Views = createClass({
-	render: function() {
+	render: function () {
 		const tagItems = this.props.entry.getIn(["data", "tags"]);
 
 		const tags = [];
@@ -129,7 +129,7 @@ const Initative = ({ entry, getAsset }) => {
 			previewImageAltText,
 			coverImageUrl: getAsset(entry.getIn(["data", "coverImageUrl"])),
 			coverImageAltText,
-			content: markdownFilter(body || ""),
+			content: markdownFilter(body || "")
 		})}
 	/>;
 };
@@ -290,18 +290,18 @@ CMS.registerEditorComponent({
 	id: "youtube",
 	label: "YouTube Embed",
 	fields: [
-		{name: "url", label: "YouTube Video URL", widget: "string"},
+		{name: "url", label: "YouTube Video URL", widget: "string"}
 	],
 	pattern: /^{% youtube "(\S+)" %}$/,
-	fromBlock: function(match) {
+	fromBlock: function (match) {
 		return {
 			url: match[1]
 		};
 	},
-	toBlock: function(obj) {
+	toBlock: function (obj) {
 		return `{% youtube "${obj.url}" %}`;
 	},
-	toPreview: function(obj) {
+	toPreview: function (obj) {
 		return (
 			`<figure class="embed--youtube"><iframe class="youtube-player video video--youtube" src="https://youtube.com/embed/${getId(obj.url)}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>`
 		);
@@ -314,7 +314,7 @@ CMS.registerEditorComponent({
 	fromBlock: match =>
 		match && {
 			file: match[2],
-			text: match[1],
+			text: match[1]
 		},
 	toBlock: ({ text, file }) =>
 		`[${text || ""}](${file || ""})`,
@@ -328,12 +328,12 @@ CMS.registerEditorComponent({
 			name: "file",
 			widget: "file",
 			media_library: {
-				allow_multiple: false,
-			},
+				allow_multiple: false
+			}
 		},
 		{
 			label: "Link Text",
-			name: "text",
+			name: "text"
 		}
-	],
+	]
 });

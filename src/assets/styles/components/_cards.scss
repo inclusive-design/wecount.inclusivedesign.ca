@@ -1,0 +1,58 @@
+.homepage-cards {
+	display: grid;
+	grid-gap: rem(38);
+	grid-template-columns: repeat(1, 1fr);
+	padding-block: 0 rem(50);
+	padding-inline: rem(32);
+
+	.card {
+		background-color: $white;
+		background-position: 50% 80%;
+		background-repeat: no-repeat;
+		block-size: rem(216);
+		border-radius: rem(10);
+		box-shadow: 0 rem(4) rem(4) rgba(0 0 0 / 25%);
+		text-align: center;
+
+		&:hover,
+		&:focus {
+			box-shadow: rem(10) rem(10) rem(10) rgba(0 0 0 / 25%);
+		}
+
+		h2 {
+			color: $navy-light;
+			font-size: rem(18);
+			line-height: rem(22);
+			margin-block: rem(15);
+			margin-inline: rem(19);
+		}
+	}
+
+	.blue {
+		background-color: $blue-grey;
+		background-image: url("../images/blue.svg");
+	}
+
+	.green {
+		background-color: $green-grey;
+		background-image: url("../images/green.svg");
+	}
+
+	.yellow {
+		background-color: $yellow;
+		background-image: url("../images/yellow.svg");
+	}
+
+	.azure {
+		background-color: $azure;
+		background-image: url("../images/azure.svg");
+	}
+}
+
+@include breakpoint-up(lg) {
+	.homepage-cards {
+		grid-template-columns: repeat(4, 1fr);
+		padding-block: 0 rem(50);
+		padding-inline: rem(60);
+	}
+}

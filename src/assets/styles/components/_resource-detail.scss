@@ -1,0 +1,40 @@
+// Resource detail page
+.resource-detail {
+	.features {
+		display: grid;
+		grid-template-columns: rem(80) auto;
+		row-gap: rem(32);
+
+		svg {
+			block-size: rem(48);
+			inline-size: rem(48);
+		}
+
+		div {
+			align-self: center;
+		}
+
+		.feature-name {
+			color: $green-dark;
+			font-weight: $font-weight-bold;
+		}
+
+		.learn-tag {
+			background-color: $grey-light;
+			border-radius: rem(22);
+			display: inline-block;
+			margin-block: rem(2);
+			margin-inline: rem(8) 0;
+			padding-block: rem(8);
+			padding-inline: rem(16);
+		}
+	}
+}
+
+@include breakpoint-up(lg) {
+	.resource-detail {
+		.features {
+			align-items: center;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+aside {
+	display: none;
+	justify-self: end;
+}
+
+@include breakpoint-up(lg) {
+	#defaultContainer aside {
+		display: inherit;
+		padding-block-start: rem(58);
+
+		nav {
+			ul {
+				box-shadow: rem(1) 0 0 0 $green-dark inset;
+				inline-size: rem(195);
+				list-style-type: none;
+				margin-inline-start: rem(45);
+				padding-block: 0;
+				padding-inline: rem(0);
+				position: sticky;
+				top: rem(58);
+
+				li {
+					inline-size: rem(158);
+					left: rem(-2);
+					margin-block: 0 rem(23);
+					margin-inline: 0;
+					padding-inline-start: rem(20);
+					word-wrap: break-word;
+
+					&.active {
+						box-shadow: rem(5) 0 0 0 $green-dark inset;
+						padding-inline-start: rem(22);
+						position: relative;
+					}
+
+					a {
+						color: $navy-light;
+						font-size: rem(18) !important; // Enactors.css in infusion uses !important on this element
+						font-weight: $font-weight-normal;
+					}
+
+					&:first-child {
+						a {
+							font-weight: $font-weight-bold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
