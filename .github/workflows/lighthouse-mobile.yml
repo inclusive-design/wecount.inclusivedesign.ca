@@ -8,14 +8,15 @@ jobs:
     if: ${{ github.repository_owner == 'inclusive-design'}}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Wait for the Netlify Preview
       uses: jakepartusch/wait-for-netlify-action@v1
       id: netlify
       with:
         site_name: 'wecount'
+        max_timeout: 300
     - name: Audit URLs using Lighthouse
-      uses: treosh/lighthouse-ci-action@v3
+      uses: treosh/lighthouse-ci-action@v10
       with:
         runs: 3
         urls: |
