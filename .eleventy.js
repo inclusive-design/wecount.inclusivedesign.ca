@@ -1,6 +1,5 @@
 /* global chunkArray, createPagination */
 
-const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginPWA = require("eleventy-plugin-pwa-v2");
 const eleventyNavigation = require("@11ty/eleventy-navigation");
 const fs = require("fs");
@@ -106,7 +105,6 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Add plugins.
-	eleventyConfig.addPlugin(errorOverlay);
 	eleventyConfig.addPlugin(eleventyNavigation);
 	eleventyConfig.addPlugin(pluginPWA, {
 		globIgnores: ["admin/*"]

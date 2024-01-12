@@ -61,7 +61,6 @@
     "cross-env": "7.0.3",
     "cssesc": "3.0.0",
     "dotenv": "16.3.1",
-    "eleventy-plugin-error-overlay": "1.0.0",
     "eslint": "8.56.0",
     "eslint-plugin-react": "7.33.2",
     "husky": "8.0.3",
