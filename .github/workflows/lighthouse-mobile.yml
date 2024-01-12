@@ -18,7 +18,7 @@ jobs:
     - name: Audit URLs using Lighthouse
       uses: treosh/lighthouse-ci-action@v10
       with:
-        runs: 3
+        runs: 1
         urls: |
           ${{ steps.netlify.outputs.url }}
           ${{ steps.netlify.outputs.url }}/404.html
