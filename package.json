@@ -17,7 +17,7 @@
     "build:eleventy": "node --max-old-space-size=6000 ./node_modules/@11ty/eleventy/cmd.js",
     "build:netlify-cms": "node ./build-cms.js",
     "clean": "rimraf dist",
-    "dev": "npm run build:mapDependency && cross-env ELEVENTY_ENV=development node --max-old-space-size=6000 ./node_modules/@11ty/eleventy/cmd.js --serve --port=3000",
+    "dev": "cross-env ELEVENTY_ENV=development node --max-old-space-size=6000 ./node_modules/@11ty/eleventy/cmd.js --serve --port=3000",
     "start": "npm-run-all clean start:*",
     "start:eleventy": "concurrently \"npm run dev\" \"node ./build-cms.js -w\" \"netlify-cms-proxy-server\"",
     "serve": "npx serve dist",
