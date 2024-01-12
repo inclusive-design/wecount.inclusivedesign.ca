@@ -107,7 +107,10 @@ module.exports = function(eleventyConfig) {
 	// Add plugins.
 	eleventyConfig.addPlugin(eleventyNavigation);
 	eleventyConfig.addPlugin(pluginPWA, {
-		globIgnores: ["admin/*"]
+		globIgnores: [
+			"admin/*",
+			"resources/**/*"
+		]
 	});
 	eleventyConfig.addPlugin(fluidPlugin, {
 		css: {
@@ -160,6 +163,14 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"src/uploads": "uploads"});
 	eleventyConfig.addPassthroughCopy({"src/js": "js"});
 	eleventyConfig.addPassthroughCopy({"src/admin/config.yml": "admin/config.yml"});
+	eleventyConfig.addPassthroughCopy({
+		"node_modules/decap-cms/dist/decap-cms.js": "lib/cms/decap-cms.js",
+		"node_modules/decap-cms/dist/decap-cms.js.map": "lib/cms/decap-cms.js.map",
+		"node_modules/nunjucks/browser/nunjucks-slim.min.js": "lib/cms/nunjucks-slim.min.js",
+		"node_modules/prop-types/prop-types.min.js": "lib/cms/prop-types.min.js",
+		"node_modules/react/umd/react.development.js": "lib/cms/react.development.js",
+		"node_modules/react/umd/react.production.min.js": "lib/cms/react.production.min.js"
+	});
 
 	// Configure BrowserSync.
 	eleventyConfig.setBrowserSyncConfig({
