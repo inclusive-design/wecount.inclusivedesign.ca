@@ -1,6 +1,5 @@
 /* global chunkArray, createPagination */
 
-const errorOverlay = require("eleventy-plugin-error-overlay");
 const pluginPWA = require("eleventy-plugin-pwa-v2");
 const eleventyNavigation = require("@11ty/eleventy-navigation");
 const fs = require("fs");
@@ -83,7 +82,7 @@ module.exports = function(eleventyConfig) {
 
 		postsByTag.forEach(tag => {
 			const postsWithTag = chunkArray(tag.posts, pageSize);
-			
+
 			for (let pageNumber = 1; pageNumber <= postsWithTag.length; pageNumber++) {
 				let tagPage = {
 					slug: tag.slug,
@@ -91,13 +90,13 @@ module.exports = function(eleventyConfig) {
 					posts: postsWithTag[pageNumber - 1],
 					pagination: createPagination(tag.posts, pageSize, pageNumber, "/tags/" + tag.slug + "/page/:page")
 				};
-				
+
 				// Add the root page that has the same content as the first page
 				// The root page is defined as such by its lack of "pageNumber" property
 				if (pageNumber === 1) {
 					paginatedPostsByTag.push(tagPage);
 				}
-				
+
 				paginatedPostsByTag.push({ ... tagPage, pageNumber: pageNumber });
 			}
 		});
@@ -106,7 +105,6 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Add plugins.
-	eleventyConfig.addPlugin(errorOverlay);
 	eleventyConfig.addPlugin(eleventyNavigation);
 	eleventyConfig.addPlugin(pluginPWA, {
 		globIgnores: ["admin/*"]
@@ -137,7 +135,6 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"src/_redirects": "_redirects"});
 	eleventyConfig.addPassthroughCopy({"manifest.json": "manifest.json"});
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
-	eleventyConfig.addPassthroughCopy({"node_modules/covid-data-monitor": "lib/covid-data-monitor"});
 	eleventyConfig.addPassthroughCopy({"src/fonts": "fonts"});
 	eleventyConfig.addPassthroughCopy({"src/images": "images"});
 	eleventyConfig.addPassthroughCopy({"src/uploads": "uploads"});

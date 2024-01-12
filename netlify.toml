@@ -21,6 +21,12 @@
   status = 200
 
 [[redirects]]
+  from = "/map/"
+  to = "https://map.wecount.inclusivedesign.ca"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/admin/*"
   status = 200
   force = true
