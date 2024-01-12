@@ -24,6 +24,7 @@
   from = "/map/"
   to = "https://map.wecount.inclusivedesign.ca"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/admin/*"
