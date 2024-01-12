@@ -231,9 +231,8 @@
 @include breakpoint-up(lg) {
 	.resources {
 		.api-content {
-			column-gap: rem(48);
+			gap: rem(48);
 			grid-template-columns: 1fr 1fr;
-			row-gap: rem(48);
 
 			.tile-item {
 				height: 100%;
