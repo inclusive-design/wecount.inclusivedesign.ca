@@ -4,7 +4,7 @@ permalink: resourceData.json
 {
   "resourceCategories": {{ resourceCategories.resourceCategories | dump | safe }},
   "resources": [
-  {%- for item in collections.resources_en-CA %}
+  {%- for item in collections["resources_en-CA"] %}
     {
       "url": {{ item.url | dump | safe }},
       "title": {{ item.data.title | dump | safe }},
