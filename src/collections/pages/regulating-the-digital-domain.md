@@ -2,10 +2,10 @@
 title: Regulating the Digital Domain
 excerpt: The RtDD goal is to improve digital inclusion and ICT accessibility for
   the full range of PWD (people with disabilities).
-menu_order: 1
+menu_order: 0
 permalink: /rtdd/
 ---
-![RtDD logo](/uploads/rtdd-logo-small.png)
+![RtDD logo](/uploads/wip_rdd_colour_no-type.png)
 
 ## A﻿bout the project
 
@@ -108,67 +108,86 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
 
+
 #### Boris Vukovic
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
 
+
 #### C﻿hristopher Sutton
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
 
+
 #### E﻿mile Tompa
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
+
 #### Heather Walkus
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
 
+
 #### Jenelle Rouse
+
 
 {% endimageAndText %}
 
-
-
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 #### J﻿im Tokos
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
+
 #### Joelle Robinson
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
 
+
 #### Kerri Joffee
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
+
 #### Lori Vaanholt
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
 
+
 #### Mahadeo Sukhai
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+
 
 
 
@@ -180,29 +199,38 @@ W. Francis Fung, March of Dimes Canada
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
 
+
 #### Paula Chapman
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-d’agostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
 
+
 #### Pina D'Agostino
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
 
+
 #### Shermineh Esmati
+
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
+
 #### W. Francis Fung
+
 
 {% endimageAndText %}
 
