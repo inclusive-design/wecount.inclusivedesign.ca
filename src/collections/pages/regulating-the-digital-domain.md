@@ -5,8 +5,6 @@ excerpt: The RtDD goal is to improve digital inclusion and ICT accessibility for
 menu_order: 0
 permalink: /rtdd/
 ---
-![RtDD logo](/uploads/wip_rdd_colour_no-type.png)
-
 ## A﻿bout the project
 
 Regulating the Digital Domain (RtDD) is focused on supporting development of accessibility standards for existing and new technologies. Standards Council of Canada describes a standard as “a document that provides a set of agreed-upon rules, guidelines or characteristics for activities or their results.” In the project, we will co-research with people with disabilities ways to address challenges they face when using information and communication technologies (ICT) and digital tools like websites and applications.
