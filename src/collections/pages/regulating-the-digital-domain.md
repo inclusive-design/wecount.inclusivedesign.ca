@@ -5,6 +5,8 @@ excerpt: The RtDD goal is to improve digital inclusion and ICT accessibility for
 menu_order: 0
 permalink: /rtdd/
 ---
+![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.png)
+
 ## A﻿bout the project
 
 Regulating the Digital Domain (RtDD) is focused on supporting development of accessibility standards for existing and new technologies. Standards Council of Canada describes a standard as “a document that provides a set of agreed-upon rules, guidelines or characteristics for activities or their results.” In the project, we will co-research with people with disabilities ways to address challenges they face when using information and communication technologies (ICT) and digital tools like websites and applications.
@@ -107,7 +109,9 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
 
 
+
 #### Boris Vukovic
+
 
 
 {% endimageAndText %}
@@ -115,7 +119,9 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
 
 
+
 #### C﻿hristopher Sutton
+
 
 
 {% endimageAndText %}
@@ -123,7 +129,9 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
 
 
+
 #### E﻿mile Tompa
+
 
 
 {% endimageAndText %}
@@ -131,7 +139,9 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
 
+
 #### Heather Walkus
+
 
 
 {% endimageAndText %}
@@ -139,23 +149,29 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
 
 
+
 #### Jenelle Rouse
+
 
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 #### J﻿im Tokos
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
 
+
 #### Joelle Robinson
+
 
 
 {% endimageAndText %}
@@ -163,7 +179,9 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
 
 
+
 #### Kerri Joffee
+
 
 
 {% endimageAndText %}
@@ -171,7 +189,9 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
 
+
 #### Lori Vaanholt
+
 
 
 {% endimageAndText %}
@@ -179,12 +199,15 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
 
 
+
 #### Mahadeo Sukhai
+
 
 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+
 
 
 
@@ -198,12 +221,15 @@ W. Francis Fung, March of Dimes Canada
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
 
 
+
 #### Paula Chapman
+
 
 
 {% endimageAndText %}
@@ -211,7 +237,9 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/pina-d’agostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
 
 
+
 #### Pina D'Agostino
+
 
 
 {% endimageAndText %}
@@ -219,7 +247,9 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
 
 
+
 #### Shermineh Esmati
+
 
 
 {% endimageAndText %}
@@ -227,7 +257,9 @@ W. Francis Fung, March of Dimes Canada
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
 
+
 #### W. Francis Fung
+
 
 
 {% endimageAndText %}
