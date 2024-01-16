@@ -5,7 +5,7 @@ excerpt: The RtDD goal is to improve digital inclusion and ICT accessibility for
 menu_order: 0
 permalink: /rtdd/
 ---
-![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.png)
+![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
 
 ## A﻿bout the project
 
