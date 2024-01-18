@@ -223,27 +223,21 @@ W. Francis Fung, March of Dimes Canada
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
-
-
-
-
 #### Shermineh Esmati
 
+**About Digital Governance Council / Digital Governance Standards Institute:** The Digital Governance Council (formerly the CIO Strategy Council) works through its members across the public and private sectors to strengthen trust in Canada’s digital economy by collaboratively identifying, prioritizing, and acting on digital governance opportunities and challenges.  
 
+The Digital Governance Standards Institute, part of the Digital Governance Council, is an accredited standards development body. The Institute enables greater trust and confidence in Canada’s digital systems through developing technology governance standards collaboratively across a range of stakeholders. 
 
-
+**About Shermineh’s role with RtDD:** Technical guidance for the process of standards development. Provide insights regarding motivations and challenges in complying to digital accessibility requirements by private and public sector organizations.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-
-
-
-
 #### W. Francis Fung
 
+**About March of Dimes:** The vision of the March of Dimes is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.  
 
-
-
+**About W. Francis’s role with RtDD:** Recruit members with physical disabilities to participate in co-design, help disseminate project drafts for review and feedback.
 {% endimageAndText %}
 
 ## Team
