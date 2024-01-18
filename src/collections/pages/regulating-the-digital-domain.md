@@ -114,6 +114,12 @@ W. Francis Fung, March of Dimes Canada
 **About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
 {% endimageAndText %}
 
+
+
+
+
+
+
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
 #### C﻿hristopher Sutton
 
@@ -121,6 +127,10 @@ W. Francis Fung, March of Dimes Canada
 
 **About Christopher’s role with RtDD:** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
 {% endimageAndText %}
+
+
+
+
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
 #### E﻿mile Tompa
