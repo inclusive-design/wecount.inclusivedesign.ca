@@ -196,12 +196,11 @@ collections:
     sortable_fields: [title]
     preview_path: "resources/{{filename}}"
     create: true
-    i18n: true
+    i18n: false
     fields:
       - label: Title
         name: title
         widget: string
-        i18n: true
       - label: Focus
         name: focus
         widget: relation
@@ -210,11 +209,9 @@ collections:
         value_field: resourceFocuses.*.value
         display_fields: [resourceFocuses.*.value]
         search_fields: [resourceFocuses.*.value]
-        i18n: duplicate
       - label: Source
         name: source
         widget: string
-        i18n: duplicate
       - label: Readability
         name: readability
         widget: select
@@ -223,7 +220,6 @@ collections:
           - {label: Beginner, value: Beginner}
           - {label: Intermediate, value: Intermediate}
           - {label: Expert, value: Expert}
-        i18n: duplicate
       - label: Type
         name: type
         widget: relation
@@ -233,23 +229,19 @@ collections:
         value_field: resourceTypes.*.value
         display_fields: [resourceTypes.*.value]
         search_fields: [resourceTypes.*.value]
-        i18n: duplicate
       - label: Open Source
         name: openSource
         widget: boolean
         default: false
         required: false
-        i18n: duplicate
       - label: External Link
         name: link
         widget: string
         required: false
-        i18n: true
       - label: Keywords
         name: keywords
         widget: list
         required: false
-        i18n: true
       - label: Learn Tags
         name: learnTags
         widget: relation
@@ -261,7 +253,6 @@ collections:
         search_fields: [resourceTags.*.label]
         options_length: 100
         required: false
-        i18n: duplicate
       - label: Summary
         name: summary
         widget: markdown
@@ -269,7 +260,6 @@ collections:
         buttons: [bold, italic]
         editor_components: []
         required: false
-        i18n: true
       - label: Abstract
         name: body
         widget: markdown
@@ -277,7 +267,6 @@ collections:
         buttons: [bold, italic, link]
         editor_components: []
         required: false
-        i18n: true
   - name: resourceMetadata
     label: Resource Metadata
     i18n: false

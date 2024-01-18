@@ -34,21 +34,21 @@ module.exports = function (eleventyConfig) {
 			];
 		});
 
-		eleventyConfig.addCollection(`resources_${lang}`, collection => {
-			return [
-				...collection.getFilteredByGlob(`src/collections/resources/${lang}/*.md`).sort((a, b) => a.data.title.localeCompare(b.data.title, undefined, {
-					ignorePunctuation: "true",
-					sensitivity: "base",
-					usage: "sort"
-				}))
-			];
-		});
-
 		eleventyConfig.addCollection(`news_${lang}`, collection => {
 			return [
 				...collection.getFilteredByGlob(`src/collections/news/${lang}/*.md`).sort((a, b) => b.data.date - a.data.date)
 			];
 		});
+	});
+
+	eleventyConfig.addCollection("resources", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/resources/*.md").sort((a, b) => a.data.title.localeCompare(b.data.title, undefined, {
+				ignorePunctuation: "true",
+				sensitivity: "base",
+				usage: "sort"
+			}))
+		];
 	});
 
 	eleventyConfig.addCollection("pages", collection => {
