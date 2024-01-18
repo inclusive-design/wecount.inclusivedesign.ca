@@ -232,6 +232,10 @@ The Digital Governance Standards Institute, part of the Digital Governance Counc
 **About Shermineh’s role with RtDD:** Technical guidance for the process of standards development. Provide insights regarding motivations and challenges in complying to digital accessibility requirements by private and public sector organizations.
 {% endimageAndText %}
 
+
+
+
+
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 #### W. Francis Fung
 
