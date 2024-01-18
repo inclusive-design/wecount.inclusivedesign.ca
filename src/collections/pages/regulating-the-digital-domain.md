@@ -116,14 +116,6 @@ W. Francis Fung, March of Dimes Canada
 
 {% endimageAndText %}
 
-
-
-
-
-
-
-
-
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
 #### C﻿hristopher Sutton
 
