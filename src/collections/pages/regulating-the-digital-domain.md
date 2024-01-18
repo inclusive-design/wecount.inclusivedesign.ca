@@ -131,87 +131,59 @@ W. Francis Fung, March of Dimes Canada
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-
-
-
-
 #### Heather Walkus
 
+**About CCD:** CCD is a pan-Canadian organization of people with disabilities. CCD has worked to find solutions and innovative ways to support the full and equal citizenship of people with disabilities. CCD unites the voice of Canadians with disabilities to defend and extend the equality rights of persons with disabilities through public education, advocacy, research, litigation, and partnerships. 
 
-
-
+**About Heather’s role with RtDD:** Support member organizations across Canada to recruit members with disabilities to participate in co-design. Assist in reaching out to Indigenous communities. Help disseminate project drafts for review and feedback. Provide insights regarding the need for capacity building within member organizations to participate in digital inclusion efforts. Recruit co-designers and review project outputs.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
-
-
-
-
 #### Jenelle Rouse
 
+**About BDC:** BDC has a community-building focus where it aims to increase network of Black Deaf individuals across Canada to increase a visible representation. BDC commits to create and provide community-based, informative resources, strategies, and opportunities for Black Deaf Canadians (and those with additional disabilities). BDC’s mandate is to explore different ways of educating the hearing society about accessibilities, Deaf intra/intercultural experiences and contexts, so the society can better serve Deaf Black individuals, including Indigenous, and Peoples of Colour.  
 
-
-
+**About Jenelle’s role with RtDD:** Recruit Black Deaf members to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers and review, and review project outputs.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-
-
-
-
 #### J﻿im Tokos
 
+**About CCB:** The CCB works to improve the quality of life for persons living with vision loss through awareness, peer mentoring, socializing, sports & recreation, advocacy, health promotion and illness prevention. CCB’s community-based model offer programs to assist those people living with vision loss, create awareness of vision issues to the public and government. Recently, the CCB has undertaken proactive programs such as mobile eye health and training for employment. The CCB partners with a number or local, provincial, national and international organizations. 
 
-
-
+**About Jim’s role with RtDD:** Recruit members with vision loss to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-
-
-
-
 #### Joelle Robinson
 
+**About MLPD:** The MLPD is a united voice of people with disabilities, and their supporters, that promotes equal rights, full participation in society, and facilitates positive change through advocacy and public education. 
 
-
-
+**About Joelle’s role with RtDD:** Recruit members with disabilities, especially in rural and remote areas, to participate in co-design. Help disseminate project drafts for review and feedback.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
-
-
-
-
 #### Kerri Joffee
 
+**About ARCH:** ARCH Disability Law Centre is a specialty legal clinic that practices exclusively in disability rights law. ARCH is dedicated to defending and advancing the equality rights, entitlements, fundamental freedoms, and inclusion of persons with disabilities in Ontario.  
 
-
-
+**About Kerri’s role with RtDD:** Provide insights regarding legal challenges faced by persons with disabilities and the relative effectiveness of regulatory approaches. Assist in legal interpretation and determining viability of project co- design approaches.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
-
-
-
-
 #### Lori Vaanholt
 
+**About L’Arche:** Across Canada and around the world, L’Arche creates communities of friendship and belonging. In L’Arche, people with and without intellectual disabilities live, work, learn, and grow together. L’Arche demonstrates that when persons with intellectual disabilities take their place at the table, they contribute to a more just, compassionate, and vibrant world for all. 
 
-
-
+**About Lori’s role with RtDD:** Recruit members with intellectual disabilities to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
-
-
-
-
 #### Mahadeo Sukhai
 
+**About CNIB Foundation:** The Canadian National Institute of the Blind Foundation (CNIB Foundation), a non-profit organization, delivers programs and advocacy that empower people impacted by blindness to live their dreams and tear down barriers to inclusion.  
 
-
-
+**About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
@@ -235,27 +207,19 @@ W. Francis Fung, March of Dimes Canada
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
-
-
-
-
 #### Paula Chapman
 
+**About Ross & McBride LLP:** Ross & McBride lawyers have extensive experience in settling complex cases and assisting clients in resolving conflict. Ross & McBride provide input regarding human rights law and access to justice for persons with disabilities.  
 
-
-
+**About Paula’s role with RtDD:** Assist in the environmental scan and assessment of compliance effectiveness of regulatory approaches.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/pina-d’agostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
-
-
-
-
+{% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
 #### Pina D'Agostino
 
+**About IP Osgoode:** IP Osgoode at Osgoode Hall Law School is an independent and authoritative voice which explores legal governance issues at the intersection of intellectual property (IP) and technology. 
 
-
-
+**About Pina’s role with RtDD:** Provide input regarding legislative design, innovative regulatory instruments, legal interpretation of possible approaches within the Accessible Canada Act.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
