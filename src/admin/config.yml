@@ -89,10 +89,12 @@ collections:
     slug: "{{title}}"
     preview_path: "views/{{slug}}"
     create: true
+    i18n: true
     fields:
       - label: Title
         name: title
         widget: string
+        i18n: true
       - label: Permanent Link
         name: permalink
         widget: string
@@ -100,32 +102,40 @@ collections:
         hint: |-
           If you do not specify a permanent link, one will be automatically generated from the title.
           Permalinks must have the format /views/entry-title/ (the trailing slash is required).
+        i18n: true
       - label: Author
         name: author
         widget: string
+        i18n: true
       - label: Date
         name: date
         widget: datetime
         time_format: false
         hint: The publication date of the item.
+        i18n: duplicate
       - label: Body
         name: body
         widget: markdown
+        i18n: true
       - label: Preview Image
         name: picture
         widget: image
         required: false
+        i18n: duplicate
       - label: Preview Image Alt Text
         name: altTag
         widget: string
         required: false
+        i18n: true
       - label: Excerpt
         name: excerpt
         widget: text
         hint: The excerpt is shown in search results.
+        i18n: true
       - label: Tags
         name: tags
         widget: list
+        i18n: true
   - name: initiatives
     label: Initiatives
     label_singular: Initiative

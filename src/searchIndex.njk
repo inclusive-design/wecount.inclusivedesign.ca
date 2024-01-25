@@ -2,7 +2,7 @@
 permalink: index.json
 ---
 [
-{%- for item in collections.views %}
+{%- for item in collections["views_en-CA"] %}
   {
     "title": {{ item.data.title | dump | safe }},
     "category": "views",

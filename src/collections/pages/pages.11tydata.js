@@ -3,7 +3,8 @@ module.exports = {
 		eleventyNavigation: {
 			key: data => data.title,
 			parent: data => data.parent ? data.parent : false,
-			order: data => data.menu_order ? data.menu_order : false
+			order: data => data.menu_order ? data.menu_order : false,
+			locale: data => data.locale ? data.locale : "en-CA"
 		}
 	}
 };

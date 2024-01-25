@@ -39,6 +39,12 @@ module.exports = function (eleventyConfig) {
 				...collection.getFilteredByGlob(`src/collections/news/${lang}/*.md`).sort((a, b) => b.data.date - a.data.date)
 			];
 		});
+
+		eleventyConfig.addCollection(`views_${lang}`, collection => {
+			return [
+				...collection.getFilteredByGlob(`src/collections/views/${lang}/*.md`).sort((a, b) => b.data.date - a.data.date)
+			];
+		});
 	});
 
 	eleventyConfig.addCollection("resources", collection => {
@@ -54,12 +60,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("pages", collection => {
 		return [
 			...collection.getFilteredByGlob("src/collections/pages/*.md")
-		];
-	});
-
-	eleventyConfig.addCollection("views", collection => {
-		return [
-			...collection.getFilteredByGlob("src/collections/views/*.md").sort((a, b) => b.data.date - a.data.date)
 		];
 	});
 
