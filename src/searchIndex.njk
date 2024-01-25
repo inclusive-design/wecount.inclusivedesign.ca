@@ -32,7 +32,7 @@ permalink: index.json
     "date": {{ item.data.date | dump | safe }}
   },
 {%- endfor %}
-{%- for item in collections.initiatives %}
+{%- for item in collections["initiatives_en-CA"] %}
   {
     "title": {{ item.data.title | dump | safe }},
     "category": "initiative",

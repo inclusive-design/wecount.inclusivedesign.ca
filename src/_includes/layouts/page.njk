@@ -38,7 +38,7 @@
   <div class="api-content">
     {{ content | safe }}
     <div class="initiatives">
-      {% for initiative in collections.initiatives %}
+      {% for initiative in collections["initiatives_en-CA"] %}
         {% set tileURL = initiative.url %}
         {% set title = initiative.data.title %}
         {% set description = initiative.data.shortDescription %}
