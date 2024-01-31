@@ -91,13 +91,11 @@ The challenges are:
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
-
-### E﻿mile Tompa
+### Inclusive Design for Employment Access / Institute for Work and Health, McMaster University: Emile Tompa 
 
 **About Inclusive Design for Employment Access / Institute for Work and Health:** Inclusive Design for Employment Access (IDEA) is a social innovation laboratory focused on helping create stronger and more diverse labour markets that include persons with disabilities, through knowledge to practice. We develop evidence informed tools and resources through co-design with partners that help advance workplace capacity for recruitment, hiring, onboarding, retention, mentorship and promotion of persons with disabilities across the full range of employment opportunities.  
 
 **About Emile’s role with Rtdd:** Contribute insights regarding policy, practice, compliance, and effective strategies as they relate to digital accessibility and employment of persons with disabilities.
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
