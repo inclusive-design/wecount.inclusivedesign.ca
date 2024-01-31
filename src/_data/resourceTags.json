@@ -101,12 +101,12 @@
       "label": "Regulation"
     },
     {
-      "value": "rights",
-      "label": "Rights"
-    },
-    {
       "value": "researchCentre",
       "label": "Research Centre"
+    },
+    {
+      "value": "rights",
+      "label": "Rights"
     },
     {
       "value": "smallData",
