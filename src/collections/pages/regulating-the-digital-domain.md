@@ -107,24 +107,32 @@ W. Francis Fung, March of Dimes Canada
 ### P﻿artner roles
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
-#### Boris Vukovic
+
+### Boris Vukovic 
+
+#### <https://carleton.ca/accessibility-institute/people/boris-vukovic/> 
+
+
 
 **About The Canadian Accessibility Network & Accessibility Institute:**  [The Canadian Accessibility Network](https://carleton.ca/accessibility-institute/can/) under the leadership of the Accessibility Institute at Carleton University is mandated to bring organizations together to facilitate partnerships in specific collaboration areas under each of the five overarching domains: Research, Design and Innovation, Education and Training, Policy, Employment and Community Engagement.  
 
 **About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
-#### C﻿hristopher Sutton
+
+### C﻿hristopher Sutton
 
 **About Wavefront Centre for Communication Accessibility:** [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), an institute of the Deaf and Hard of Hearing, envisions a society where Deaf, Hard of Hearing and Hearing people can interact freely without communication barriers. Our mission is to serve Deaf and Hard of Hearing individuals, their families and the community by delivering innovative programs, products and solutions to achieve full communication accessibility. 
 
 **About Christopher’s role with RtDD:** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
 
-#### E﻿mile Tompa
+### E﻿mile Tompa
 
 **About Inclusive Design for Employment Access / Institute for Work and Health:** Inclusive Design for Employment Access (IDEA) is a social innovation laboratory focused on helping create stronger and more diverse labour markets that include persons with disabilities, through knowledge to practice. We develop evidence informed tools and resources through co-design with partners that help advance workplace capacity for recruitment, hiring, onboarding, retention, mentorship and promotion of persons with disabilities across the full range of employment opportunities.  
 
@@ -134,7 +142,7 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
-#### Heather Walkus
+### Heather Walkus
 
 **About CCD:** CCD is a pan-Canadian organization of people with disabilities. CCD has worked to find solutions and innovative ways to support the full and equal citizenship of people with disabilities. CCD unites the voice of Canadians with disabilities to defend and extend the equality rights of persons with disabilities through public education, advocacy, research, litigation, and partnerships. 
 
@@ -144,7 +152,7 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
 
-#### Jenelle Rouse
+### Jenelle Rouse
 
 **About BDC:** BDC has a community-building focus where it aims to increase network of Black Deaf individuals across Canada to increase a visible representation. BDC commits to create and provide community-based, informative resources, strategies, and opportunities for Black Deaf Canadians (and those with additional disabilities). BDC’s mandate is to explore different ways of educating the hearing society about accessibilities, Deaf intra/intercultural experiences and contexts, so the society can better serve Deaf Black individuals, including Indigenous, and Peoples of Colour.  
 
@@ -154,7 +162,7 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
-#### J﻿im Tokos
+### J﻿im Tokos
 
 **About CCB:** The CCB works to improve the quality of life for persons living with vision loss through awareness, peer mentoring, socializing, sports & recreation, advocacy, health promotion and illness prevention. CCB’s community-based model offer programs to assist those people living with vision loss, create awareness of vision issues to the public and government. Recently, the CCB has undertaken proactive programs such as mobile eye health and training for employment. The CCB partners with a number or local, provincial, national and international organizations. 
 
@@ -164,7 +172,7 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
-#### Joelle Robinson
+### Joelle Robinson
 
 **About MLPD:** The MLPD is a united voice of people with disabilities, and their supporters, that promotes equal rights, full participation in society, and facilitates positive change through advocacy and public education. 
 
@@ -174,7 +182,7 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
 
-#### Kerri Joffee
+### Kerri Joffee
 
 **About ARCH:** ARCH Disability Law Centre is a specialty legal clinic that practices exclusively in disability rights law. ARCH is dedicated to defending and advancing the equality rights, entitlements, fundamental freedoms, and inclusion of persons with disabilities in Ontario.  
 
@@ -184,7 +192,7 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
-#### Lori Vaanholt
+### Lori Vaanholt
 
 **About L’Arche:** Across Canada and around the world, L’Arche creates communities of friendship and belonging. In L’Arche, people with and without intellectual disabilities live, work, learn, and grow together. L’Arche demonstrates that when persons with intellectual disabilities take their place at the table, they contribute to a more just, compassionate, and vibrant world for all. 
 
@@ -194,7 +202,7 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
 
-#### Mahadeo Sukhai
+### Mahadeo Sukhai
 
 **About CNIB Foundation:** The Canadian National Institute of the Blind Foundation (CNIB Foundation), a non-profit organization, delivers programs and advocacy that empower people impacted by blindness to live their dreams and tear down barriers to inclusion.  
 
@@ -204,29 +212,17 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
 
-
-
-
-
-
-
-#### MICHAEL BACH: Institute for Research and Development on Inclusion and Society (IRIS)
+### MICHAEL BACH: Institute for Research and Development on Inclusion and Society (IRIS)
 
 **About Michael’s role with RtDD:** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
 
 **About IRIS:** Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, IRIS works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change.
 
-
-
-
-
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
 
-#### Paula Chapman
+### Paula Chapman
 
 **About Ross & McBride LLP:** Ross & McBride lawyers have extensive experience in settling complex cases and assisting clients in resolving conflict. Ross & McBride provide input regarding human rights law and access to justice for persons with disabilities.  
 
@@ -236,7 +232,7 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
 
-#### Pina D'Agostino
+### Pina D'Agostino
 
 **About IP Osgoode:** IP Osgoode at Osgoode Hall Law School is an independent and authoritative voice which explores legal governance issues at the intersection of intellectual property (IP) and technology. 
 
@@ -246,7 +242,7 @@ W. Francis Fung, March of Dimes Canada
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
 
-#### Shermineh Esmati
+### Shermineh Esmati
 
 **About Digital Governance Council / Digital Governance Standards Institute:** The Digital Governance Council (formerly the CIO Strategy Council) works through its members across the public and private sectors to strengthen trust in Canada’s digital economy by collaboratively identifying, prioritizing, and acting on digital governance opportunities and challenges.  
 
@@ -258,7 +254,7 @@ The Digital Governance Standards Institute, part of the Digital Governance Counc
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
 
-#### W. Francis Fung
+### W. Francis Fung
 
 **About March of Dimes:** The vision of the March of Dimes is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.  
 
@@ -284,6 +280,6 @@ If you are interested in participating in IDRC co-designs sign up here <https://
 
 Funded by Accessibility Standards Canada / the Government of Canada.
 
-![Accessibility Standards Canada logo](/uploads/asc-signature-en-black.png)
+![Accessibility Standards Canada logo](/uploads/accessibility_standards_canada_accessibility_standards_canada_20.jpg)
 
 ![](/uploads/canadawordmark-black-bil.png)
