@@ -74,38 +74,6 @@ The challenges are:
 
 ## P﻿artners
 
-Boris Vukovic, The Canadian Accessibility Network and Accessibility Institute
-
-Christopher Sutton, Wavefront Centre for Communication Accessibility, an institute of the Deaf and Hard of Hearing
-
-Emile Tompa, Institute for Work and Health, McMaster University
-
-Heather Walkus, Council of Canadians with Disabilities
-
-Jenelle Rouse, Black Deaf Canada research
-
-Jim Tokos, Canadian Council of the Blind
-
-Joelle Robinson, Manitoba League of Persons with Disabilities 
-
-Kerri Joffee, ARCH Disability Law Centre
-
-Lori Vaanholt, L’Arche Canada
-
-Mahadeo Sukhai, Canadian National Institute of the Blind Foundation
-
-Michael Bach, Institute for Research and Development on Inclusion and Society
-
-P﻿aula Chapman, Ross & McBride LLP
-
-Pina D'Agostino, IP Osgoode, Osgoode Hall Law School, York U
-
-Shermineh Esmati, Digital Governance Strategy Institute
-
-W. Francis Fung, March of Dimes Canada
-
-### P﻿artner roles
-
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
 
 ### Boris Vukovic 
