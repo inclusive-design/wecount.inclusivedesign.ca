@@ -59,7 +59,16 @@ Les défis sont les suivants
    * La technologie évolue plus rapidement que les normes et les réglementations. De nouvelles opportunités et de nouveaux risques apparaissent constamment. Les réglementations en matière d'accessibilité entrent souvent en conflit avec la dynamique d'innovation qui alimente l'économie numérique. La conformité à l'accessibilité est souvent sacrifiée à la vitesse et à la nouveauté. Nous devons trouver des moyens de faire de l'accessibilité une priorité dans l'évolution de l'économie numérique.
 3. How can we ensure integration and interoperability of digital systems and devices?
 
-   * The digital world is interconnected and interdependent. Functionality depends on compatibility. Accessibility regulations have created a separate market for specialized assistive technologies (AT) that often do not work well with mainstream products. This makes digital access more expensive, less functional, and less inclusive for people with disabilities who rely on AT. It also deprives the general public of the benefits of accessible design. We need to promote integration and interoperability of digital systems and devices for everyone.
+   * Le monde numérique est interconnecté et interdépendant. La fonctionnalité dépend de la compatibilité. Les réglementations en matière d'accessibilité ont créé un marché distinct pour les technologies d'assistance spécialisées qui, souvent, ne fonctionnent pas bien avec les produits courants. Cela rend l'accès numérique plus coûteux, moins fonctionnel et moins inclusif pour les personnes handicapées qui dépendent des technologies d'assistance. Cela prive également le grand public des avantages d'une conception accessible. Nous devons promouvoir l'intégration et l'interopérabilité des systèmes et dispositifs numériques pour tous
+4. How can we foster accessibility innovation?
+
+   * People with disabilities need innovation, perhaps more than anyone else. However, accessibility regulations often discourage innovation by imposing rigid and outdated standards. We need to encourage accessibility innovation that can address the evolving needs and preferences of people with disabilities.
+5. How can we remove disincentives for accessibility compliance?
+
+   * Accessibility regulations have created an industry that profits from the persistence and complexity of accessibility problems. This industry also influences the development of accessibility standards. This creates a conflict of interest that undermines the goal of eliminating barriers and creating inclusive design. We need to remove the disincentives for accessibility compliance and create a culture of accessibility that benefits everyone.
+6. How can we empower people with disabilities and their communities?
+
+   * Accessibility regulations often assume that people with disabilities are passive consumers, not active producers, of digital content and technology. They also rely on experts to prescribe, train, and maintain AT systems for people with disabilities. This limits the participation and autonomy of people with disabilities in the digital domain. We need to support people with disabilities as creators, innovators, and decision-makers in the digital world.
 
 ## P﻿artners
 
