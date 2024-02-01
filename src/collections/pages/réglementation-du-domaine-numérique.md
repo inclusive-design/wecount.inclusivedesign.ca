@@ -57,18 +57,18 @@ Les défis sont les suivants
 2. Comment pouvons-nous suivre l'évolution rapide de la technologie et empêcher l'apparition de nouveaux obstacles ?
 
    * La technologie évolue plus rapidement que les normes et les réglementations. De nouvelles opportunités et de nouveaux risques apparaissent constamment. Les réglementations en matière d'accessibilité entrent souvent en conflit avec la dynamique d'innovation qui alimente l'économie numérique. La conformité à l'accessibilité est souvent sacrifiée à la vitesse et à la nouveauté. Nous devons trouver des moyens de faire de l'accessibilité une priorité dans l'évolution de l'économie numérique.
-3. How can we ensure integration and interoperability of digital systems and devices?
+3. Comment assurer l'intégration et l'interopérabilité des systèmes et dispositifs numériques ?
 
    * Le monde numérique est interconnecté et interdépendant. La fonctionnalité dépend de la compatibilité. Les réglementations en matière d'accessibilité ont créé un marché distinct pour les technologies d'assistance spécialisées qui, souvent, ne fonctionnent pas bien avec les produits courants. Cela rend l'accès numérique plus coûteux, moins fonctionnel et moins inclusif pour les personnes handicapées qui dépendent des technologies d'assistance. Cela prive également le grand public des avantages d'une conception accessible. Nous devons promouvoir l'intégration et l'interopérabilité des systèmes et dispositifs numériques pour tous
-4. How can we foster accessibility innovation?
+4. Comment pouvons-nous encourager l'innovation en matière d'accessibilité ?
 
-   * People with disabilities need innovation, perhaps more than anyone else. However, accessibility regulations often discourage innovation by imposing rigid and outdated standards. We need to encourage accessibility innovation that can address the evolving needs and preferences of people with disabilities.
-5. How can we remove disincentives for accessibility compliance?
+   * Le personnes handicapées ont besoin d'innovation, peut-être plus que n'importe qui d'autre. Cependant, les réglementations en matière d'accessibilité découragent souvent l'innovation en imposant des normes rigides et dépassées. Nous devons encourager l'innovation en matière d'accessibilité qui peut répondre à l'évolution des besoins et des préférences des personnes handicapées.
+5. Comment pouvons-nous supprimer les éléments qui découragent la mise en conformité avec les normes d'accessibilité ?
 
-   * Accessibility regulations have created an industry that profits from the persistence and complexity of accessibility problems. This industry also influences the development of accessibility standards. This creates a conflict of interest that undermines the goal of eliminating barriers and creating inclusive design. We need to remove the disincentives for accessibility compliance and create a culture of accessibility that benefits everyone.
-6. How can we empower people with disabilities and their communities?
+   * Les réglementations en matière d'accessibilité ont créé une industrie qui tire profit de la persistance et de la complexité des problèmes d'accessibilité. Ce secteur influence également l'élaboration des normes d'accessibilité. Il en résulte un conflit d'intérêts qui compromet l'objectif d'élimination des obstacles et de création d'un design inclusif. Nous devons supprimer les facteurs qui découragent la mise en conformité avec les normes d'accessibilité et créer une culture de l'accessibilité qui profite à tous.
+6. Comment pouvons-nous renforcer le pouvoir des personnes handicapées et de leurs communautés ?
 
-   * Accessibility regulations often assume that people with disabilities are passive consumers, not active producers, of digital content and technology. They also rely on experts to prescribe, train, and maintain AT systems for people with disabilities. This limits the participation and autonomy of people with disabilities in the digital domain. We need to support people with disabilities as creators, innovators, and decision-makers in the digital world.
+   * Les réglementations en matière d'accessibilité partent souvent du principe que les personnes handicapées sont des consommateurs passifs, et non des producteurs actifs, de contenus et de technologies numériques. Elles s'appuient également sur des experts pour prescrire, former et entretenir les systèmes AT pour les personnes handicapées. Cela limite la participation et l'autonomie des personnes handicapées dans le domaine numérique. Nous devons soutenir les personnes handicapées en tant que créateurs, innovateurs et décideurs dans le monde numérique.
 
 ## P﻿artners
 
