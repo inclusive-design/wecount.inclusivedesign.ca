@@ -60,7 +60,7 @@
     "clean-css": "5.3.3",
     "cross-env": "7.0.3",
     "cssesc": "3.0.0",
-    "dotenv": "16.3.1",
+    "dotenv": "16.4.1",
     "eslint": "8.56.0",
     "eslint-plugin-react": "7.33.2",
     "husky": "8.0.3",
