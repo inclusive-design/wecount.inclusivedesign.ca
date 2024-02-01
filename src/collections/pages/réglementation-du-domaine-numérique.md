@@ -43,20 +43,20 @@ Ensemble, les co-chercheurs concevront et proposeront des approches et des syst�
 * ne pas créer d'incitations à la perpétuation du problème, et
 * impliquer et responsabiliser les personnes handicapées et leurs communautés pour qu'elles façonnent les exigences réglementaires, informent sur les méthodes de respect des exigences, identifient les lacunes réglementaires et affinent en permanence le système réglementaire.
 
-## Addressing six challenges with inclusive practices and co-design
+## Relever six défis grâce à des pratiques inclusives et à la co-conception
 
-> If you are interested in participating in IDRC co-designs p﻿lease sign up here <https://forms.office.com/r/g4bgbHifqc>
+> Si vous souhaitez participer à la co-conception du CRDI, inscrivez-vous ici <https://forms.office.com/r/g4bgbHifqc>
 
-Six challenges will be addressed through a series of co-designs. We will address the following challenges by engaging a wide range of stakeholders with relevant lived experiences and expertise, recognizing that the issues are complex and interrelated. The results will inform the next generation of model accessibility standards in the digital domain. The team will develop strategies that leverage the properties of the digital domain and the approaches needed to ensure greater digital inclusion for people with disabilities.         
+Six défis seront relevés par le biais d'une série de co-conceptions. Nous relèverons les défis suivants en impliquant un large éventail de parties prenantes ayant des expériences vécues et une expertise pertinentes, tout en reconnaissant que les questions sont complexes et interdépendantes. Les résultats informeront la prochaine génération de modèles de normes d'accessibilité dans le domaine numérique. L'équipe développera des stratégies qui tireront parti des propriétés du domaine numérique et des approches nécessaires pour assurer une plus grande inclusion numérique des personnes handicapées.         
 
-The challenges are:
+Les défis sont les suivants
 
-1. How can we meet the diverse and complex accessibility needs of people with disabilities?
+1. Comment répondre aux besoins divers et complexes des personnes handicapées en matière d'accessibilité ?
 
-   * People with disabilities have more varied needs than people without disabilities. Regulations tend to simplify and generalize these needs, leaving out many people who do not fit the standard criteria. Regulations also limit the potential of digital systems to adapt to individual differences. We need to design for the spectrum of accessibility needs, not just for a checklist of requirements.
-2. How can we keep up with the rapid changes in technology and prevent new barriers from emerging?
+   * Les personnes handicapées ont des besoins plus variés que les personnes non handicapées. Les réglementations ont tendance à simplifier et à généraliser ces besoins, laissant de côté de nombreuses personnes qui ne répondent pas aux critères standard. Les réglementations limitent également la capacité des systèmes numériques à s'adapter aux différences individuelles. Nous devons concevoir des produits adaptés à l'ensemble des besoins en matière d'accessibilité, et pas seulement à une liste d'exigences.
+2. Comment pouvons-nous suivre l'évolution rapide de la technologie et empêcher l'apparition de nouveaux obstacles ?
 
-   * Technology changes faster than standards and regulations. New opportunities and risks arise constantly. Accessibility regulations often clash with the innovation drive that fuels the digital economy. Accessibility compliance is often sacrificed for speed and novelty. We need to find ways to make accessibility a priority in the changing digital landscape, and to prevent new barriers before they become entrenched.
+   * La technologie évolue plus rapidement que les normes et les réglementations. De nouvelles opportunités et de nouveaux risques apparaissent constamment. Les réglementations en matière d'accessibilité entrent souvent en conflit avec la dynamique d'innovation qui alimente l'économie numérique. La conformité à l'accessibilité est souvent sacrifiée à la vitesse et à la nouveauté. Nous devons trouver des moyens de faire de l'accessibilité une priorité dans l'évolution de l'économie numérique.
 3. How can we ensure integration and interoperability of digital systems and devices?
 
    * The digital world is interconnected and interdependent. Functionality depends on compatibility. Accessibility regulations have created a separate market for specialized assistive technologies (AT) that often do not work well with mainstream products. This makes digital access more expensive, less functional, and less inclusive for people with disabilities who rely on AT. It also deprives the general public of the benefits of accessible design. We need to promote integration and interoperability of digital systems and devices for everyone.
