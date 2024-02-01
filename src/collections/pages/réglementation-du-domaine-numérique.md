@@ -122,152 +122,80 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
+### Joelle Robinson: Ligue manitobaine des personnes handicapées (MLPD)
 
+La MLPD est une voix unie des personnes handicapées et de leurs sympathisants, qui promeut l'égalité des droits, la pleine participation à la société et facilite les changements positifs par la défense des droits et l'éducation du public.  
 
-
-
-### Joelle Robinson: Manitoba League of Persons with Disabilities (MLPD)
-
-The MLPD is a united voice of people with disabilities, and their supporters, that promotes equal rights, full participation in society, and facilitates positive change through advocacy and public education. 
-
-**About Joelle’s role with RtDD:** Recruit members with disabilities, especially in rural and remote areas, to participate in co-design. Help disseminate project drafts for review and feedback.
-
-
-
-
+**A propos du rôle de Joelle au sein de la RtDD:** Recruter des membres handicapés, en particulier dans les zones rurales et éloignées, pour participer à la co-conception. Contribuer à la diffusion des ébauches de projets pour examen et commentaires.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
+{% imageAndText "/uploads/kerri-joffee.png", "photo de la tête et des épaules de Kerri Joffee", "left", "top" %}
+### Kerri Joffee: ARCH Disability Law Centre (Centre juridique pour les personnes handicapées)
 
+[ARCH](https://archdisabilitylaw.ca/) est une clinique juridique spécialisée qui se consacre exclusivement aux droits des personnes handicapées. ARCH se consacre à la défense et à l'avancement des droits à l'égalité, des droits, des libertés fondamentales et de l'inclusion des personnes handicapées en Ontario.   
 
-
-
-### Kerri Joffee: ARCH Disability Law Centre
-
-ARCH Disability Law Centre is a specialty legal clinic that practices exclusively in disability rights law. ARCH is dedicated to defending and advancing the equality rights, entitlements, fundamental freedoms, and inclusion of persons with disabilities in Ontario.  
-
-**About Kerri’s role with RtDD:** Provide insights regarding legal challenges faced by persons with disabilities and the relative effectiveness of regulatory approaches. Assist in legal interpretation and determining viability of project co- design approaches.
-
-
-
-
+**Le rôle de Kerri au sein de la RtDD:** Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
-
-
-
-
 ### Lori Vaanholt: L’Arche Canada
 
-Across Canada and around the world, L’Arche creates communities of friendship and belonging. In L’Arche, people with and without intellectual disabilities live, work, learn, and grow together. L’Arche demonstrates that when persons with intellectual disabilities take their place at the table, they contribute to a more just, compassionate, and vibrant world for all. 
+Across Canada and around the world, L’Arche creates communities of friendship and belonging. In L’Arche, people with and without intellectual disabilities live, work, learn, and grow together. L’Arche demonstrates that when persons with intellectual disabilities take their place at the table, they contribute to a more just, compassionate, and vibrant world for all.  
 
 **About Lori’s role with RtDD:** Recruit members with intellectual disabilities to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
-
-
-
-
 {% endimageAndText %}
 
-{% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
+{% imageAndText "/uploads/mahadeo-sukhai.png", "photo de la tête et des épaules de Mahadeo Sukhai", "left", "top" %}
+### Mahadeo Sukhai: Fondation de l'Institut national canadien des aveugles
 
+La Fondation de l'Institut national canadien des aveugles (Fondation INCA), une organisation à but non lucratif, propose des programmes et des actions de sensibilisation qui permettent aux personnes touchées par la cécité de vivre leurs rêves et d'éliminer les obstacles à l'inclusion.   
 
-
-
-### Mahadeo Sukhai: Canadian National Institute of the Blind Foundation
-
-The Canadian National Institute of the Blind Foundation (CNIB Foundation), a non-profit organization, delivers programs and advocacy that empower people impacted by blindness to live their dreams and tear down barriers to inclusion.  
-
-**About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
-
-
-
-
+**Le rôle de Mahadeo au sein de la RtDD:** Recruter des membres aveugles pour participer à la co-conception, aider à diffuser des ébauches de projet pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
+{% imageAndText "/uploads/christopher-sutton.png", "photo de la tête et des épaules de Christopher Sutton", "left", "top" %}
+### Christopher Sutton: Centre Wavefront pour l'accessibilité des communications 
 
+Le Wavefront Centre for Communication Accessibility, un institut pour les sourds et les malentendants, envisage une société où les sourds, les malentendants et les entendants peuvent interagir librement sans barrières de communication. Notre mission est de servir les personnes sourdes et malentendantes, leurs familles et la communauté en proposant des programmes, des produits et des solutions innovants pour parvenir à une accessibilité totale à la communication.  
 
-
-
-### Wavefront Centre for Communication Accessibility: Christopher Sutton
-
-[Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), an institute of the Deaf and Hard of Hearing, envisions a society where Deaf, Hard of Hearing and Hearing people can interact freely without communication barriers. Our mission is to serve Deaf and Hard of Hearing individuals, their families and the community by delivering innovative programs, products and solutions to achieve full communication accessibility. 
-
-**About Christopher’s role with RtDD:** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
-
-
-
-
+**Le rôle de Christopher au sein de la RtDD:** Recruter des membres sourds et malentendants pour participer à la co-conception. Contribuer à la diffusion des ébauches de projets pour examen et commentaires. Évaluer l'accessibilité du processus de recherche pour les personnes sourdes et malentendantes. Examiner les résultats du projet.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
-
-
-
-
 ### Paula Chapman: Ross & McBride LLP
 
-Ross & McBride lawyers have extensive experience in settling complex cases and assisting clients in resolving conflict. Ross & McBride provide input regarding human rights law and access to justice for persons with disabilities.  
+Les avocats de Ross & McBride ont une grande expérience dans le règlement d'affaires complexes et dans l'aide à la résolution de conflits. Ross & McBride apporte sa contribution en matière de droits de l'homme et d'accès à la justice pour les personnes handicapées.   
 
-**About Paula’s role with RtDD:** Assist in the environmental scan and assessment of compliance effectiveness of regulatory approaches.
-
-
-
-
+**A propos du rôle de Paula au sein du RtDD:** Aider à l'analyse de l'environnement et à l'évaluation de l'efficacité de la conformité des approches réglementaires.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
+### Pina D'Agostino: IP Osgoode - Programme de droit de la propriété intellectuelle et de la technologie, Osgoode Hall Law School, York U
 
-
-
-
-### Pina D'Agostino: IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U
-
-IP Osgoode at Osgoode Hall Law School is an independent and authoritative voice which explores legal governance issues at the intersection of intellectual property (IP) and technology. 
+IP Osgoode at Osgoode Hall Law School is an independent and authoritative voice which explores legal governance issues at the intersection of intellectual property (IP) and technology.  
 
 **About Pina’s role with RtDD:** Provide input regarding legislative design, innovative regulatory instruments, legal interpretation of possible approaches within the Accessible Canada Act.
-
-
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
+### Shermineh Esmati: Conseil de la gouvernance numérique / Institut des normes de gouvernance numérique
 
+Le Conseil de la gouvernance numérique (anciennement le Conseil stratégique du DPI) travaille par l'intermédiaire de ses membres des secteurs public et privé pour renforcer la confiance dans l'économie numérique du Canada en identifiant, priorisant et agissant de manière collaborative sur les opportunités et les défis de la gouvernance numérique.   
 
+L'Institut des normes de gouvernance numérique, qui fait partie du Conseil de la gouvernance numérique, est un organisme accrédité d'élaboration de normes. L'Institut permet d'accroître la confiance dans les systèmes numériques du Canada en élaborant des normes de gouvernance technologique en collaboration avec un large éventail de parties prenantes.  
 
-
-### Shermineh Esmati: Digital Governance Council / Digital Governance Standards Institute:
-
-The Digital Governance Council (formerly the CIO Strategy Council) works through its members across the public and private sectors to strengthen trust in Canada’s digital economy by collaboratively identifying, prioritizing, and acting on digital governance opportunities and challenges.  
-
-The Digital Governance Standards Institute, part of the Digital Governance Council, is an accredited standards development body. The Institute enables greater trust and confidence in Canada’s digital systems through developing technology governance standards collaboratively across a range of stakeholders. 
-
-**About Shermineh’s role with RtDD:** Technical guidance for the process of standards development. Provide insights regarding motivations and challenges in complying to digital accessibility requirements by private and public sector organizations.
-
-
-
-
+**Le rôle de Shermineh au sein de la RtDD:** Conseils techniques pour le processus d'élaboration des normes. Fournir des informations sur les motivations et les défis liés au respect des exigences en matière d'accessibilité numérique par les organisations des secteurs privé et public.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
+### W. Francis Fung: La Marche des dix sous du Canada
 
+La vision de la Marche des dix sous est de créer une société inclusive pour les personnes ayant un handicap physique ; la mission est de maximiser l'indépendance, l'autonomisation personnelle et la participation communautaire des personnes ayant un handicap physique.   
 
-
-
-### W. Francis Fung: March of Dimes Canada
-
-The vision of the March of Dimes is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.  
-
-**About W. Francis’s role with RtDD:** Recruit members with physical disabilities to participate in co-design, help disseminate project drafts for review and feedback.
-
-
-
-
+**Le rôle de W. Francis au sein de la RtDD:**  Recruter des membres ayant un handicap physique pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires.
 {% endimageAndText %}
 
-## Team
+## Équipe
 
 Jutta Treviranus, principal investigator 
 
@@ -277,13 +205,15 @@ David Pereyra
 
 Caren Watkins 
 
-## Co-design research events
+U﻿ttara Ghodke
 
-If you are interested in participating in IDRC co-designs sign up here <https://forms.office.com/r/g4bgbHifqc>
+## Événements de recherche en co-conception
 
-## Acknowledgements
+Si vous souhaitez participer aux co-conceptions du CRDI, inscrivez-vous ici <https://forms.office.com/r/g4bgbHifqc>
 
-Funded by Accessibility Standards Canada / the Government of Canada.
+## Remerciements
+
+Financé par Normes d'accessibilité Canada / le gouvernement du Canada.
 
 ![Logo des normes d'accessibilité du Canada](/uploads/accessibility_standards_canada_accessibility_standards_canada_20.jpg)
 
