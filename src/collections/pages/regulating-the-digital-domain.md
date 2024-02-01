@@ -7,7 +7,7 @@ permalink: /rtdd/
 ---
 ![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
 
-## About the project 
+## About the project
 
 Regulating the Digital Domain (RtDD) project focuses on addressing the persistent challenges and disparities that people with disabilities face in accessing information and communication technologies (ICT) and digital tools.  
 
@@ -80,6 +80,7 @@ The challenges are:
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
 
 
+
 ### The Canadian Accessibility Network & Accessibility Institute: Boris Vukovic
 
 [The Canadian Accessibility Network](https://carleton.ca/accessibility-institute/can/) under the leadership of the Accessibility Institute at Carleton University is mandated to bring organizations together to facilitate partnerships in specific collaboration areas under each of the five overarching domains: Research, Design and Innovation, Education and Training, Policy, Employment and Community Engagement.  
@@ -87,9 +88,11 @@ The challenges are:
 **About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+
 
 
 ### Michael Bach: Institute for Research and Development on Inclusion and Society (IRIS)
@@ -99,9 +102,11 @@ Informed by the systemic exclusion that people with intellectual and other disab
 **About Michael’s role with RtDD:** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
+
 
 
 ### Emile Tompa: Inclusive Design for Employment Access / Institute for Work and Health, McMaster University
@@ -111,9 +116,11 @@ Inclusive Design for Employment Access (IDEA) is a social innovation laboratory 
 **About Emile’s role with Rtdd:** Contribute insights regarding policy, practice, compliance, and effective strategies as they relate to digital accessibility and employment of persons with disabilities.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 ### Heather Walkus: Council of Canadians with Disabilities (CCD)
@@ -123,9 +130,11 @@ CCD is a pan-Canadian organization of people with disabilities. CCD has worked t
 **About Heather’s role with RtDD:** Support member organizations across Canada to recruit members with disabilities to participate in co-design. Assist in reaching out to Indigenous communities. Help disseminate project drafts for review and feedback. Provide insights regarding the need for capacity building within member organizations to participate in digital inclusion efforts. Recruit co-designers and review project outputs.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
+
 
 
 ### Jenelle Rouse: Black Deaf Canada (BDC)
@@ -135,9 +144,11 @@ BDC has a community-building focus where it aims to increase network of Black De
 **About Jenelle’s role with RtDD:** Recruit Black Deaf members to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers and review, and review project outputs.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 ### J﻿im Tokos: Canadian Council of the Blind (CCB)
@@ -147,9 +158,11 @@ The CCB works to improve the quality of life for persons living with vision loss
 **About Jim’s role with RtDD:** Recruit members with vision loss to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 ### Joelle Robinson: Manitoba League of Persons with Disabilities (MLPD)
@@ -159,9 +172,11 @@ The MLPD is a united voice of people with disabilities, and their supporters, th
 **About Joelle’s role with RtDD:** Recruit members with disabilities, especially in rural and remote areas, to participate in co-design. Help disseminate project drafts for review and feedback.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
+
 
 
 ### Kerri Joffee: ARCH Disability Law Centre
@@ -171,9 +186,11 @@ ARCH Disability Law Centre is a specialty legal clinic that practices exclusivel
 **About Kerri’s role with RtDD:** Provide insights regarding legal challenges faced by persons with disabilities and the relative effectiveness of regulatory approaches. Assist in legal interpretation and determining viability of project co- design approaches.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 ### Lori Vaanholt: L’Arche Canada
@@ -183,9 +200,11 @@ Across Canada and around the world, L’Arche creates communities of friendship 
 **About Lori’s role with RtDD:** Recruit members with intellectual disabilities to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
+
 
 
 ### Mahadeo Sukhai: Canadian National Institute of the Blind Foundation
@@ -195,9 +214,11 @@ The Canadian National Institute of the Blind Foundation (CNIB Foundation), a non
 **About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
+
 
 
 ### Wavefront Centre for Communication Accessibility: Christopher Sutton
@@ -207,9 +228,11 @@ The Canadian National Institute of the Blind Foundation (CNIB Foundation), a non
 **About Christopher’s role with RtDD:** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
+
 
 
 ### Paula Chapman: Ross & McBride LLP
@@ -219,9 +242,11 @@ Ross & McBride lawyers have extensive experience in settling complex cases and a
 **About Paula’s role with RtDD:** Assist in the environmental scan and assessment of compliance effectiveness of regulatory approaches.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
+
 
 
 ### Pina D'Agostino: IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U
@@ -231,9 +256,11 @@ IP Osgoode at Osgoode Hall Law School is an independent and authoritative voice 
 **About Pina’s role with RtDD:** Provide input regarding legislative design, innovative regulatory instruments, legal interpretation of possible approaches within the Accessible Canada Act.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
+
 
 
 ### Shermineh Esmati: Digital Governance Council / Digital Governance Standards Institute:
@@ -245,9 +272,11 @@ The Digital Governance Standards Institute, part of the Digital Governance Counc
 **About Shermineh’s role with RtDD:** Technical guidance for the process of standards development. Provide insights regarding motivations and challenges in complying to digital accessibility requirements by private and public sector organizations.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 ### W. Francis Fung: March of Dimes Canada
@@ -255,6 +284,7 @@ The Digital Governance Standards Institute, part of the Digital Governance Counc
 The vision of the March of Dimes is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.  
 
 **About W. Francis’s role with RtDD:** Recruit members with physical disabilities to participate in co-design, help disseminate project drafts for review and feedback.
+
 
 
 {% endimageAndText %}
