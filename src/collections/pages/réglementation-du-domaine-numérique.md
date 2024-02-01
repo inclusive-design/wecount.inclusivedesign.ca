@@ -71,37 +71,26 @@ Les défis sont les suivants
 
    * Les réglementations en matière d'accessibilité partent souvent du principe que les personnes handicapées sont des consommateurs passifs, et non des producteurs actifs, de contenus et de technologies numériques. Elles s'appuient également sur des experts pour prescrire, former et entretenir les systèmes AT pour les personnes handicapées. Cela limite la participation et l'autonomie des personnes handicapées dans le domaine numérique. Nous devons soutenir les personnes handicapées en tant que créateurs, innovateurs et décideurs dans le monde numérique.
 
-## P﻿artners
+## ﻿Partenaires
 
-{% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
+{% imageAndText "/uploads/boris-vukovic.png", "photo de Boris Vukovic de la tête et des épaules", "left", "top" %}
+### Boris Vukovic: Le Réseau Canadien d'accessibilité et l'Institut de l'accessibilité
 
+[Le Réseau canadien de l'accessibilité](https://carleton.ca/accessibility-institute/can/), sous la direction de l'Institut de l'accessibilité de l'Université Carleton, a pour mandat de rassembler les organisations afin de faciliter les partenariats dans des domaines de collaboration spécifiques relevant de chacun des cinq domaines primordiaux : Recherche, conception et innovation, éducation et formation, politique, emploi et engagement communautaire.   
 
-
-### The Canadian Accessibility Network & Accessibility Institute: Boris Vukovic
-
-[The Canadian Accessibility Network](https://carleton.ca/accessibility-institute/can/) under the leadership of the Accessibility Institute at Carleton University is mandated to bring organizations together to facilitate partnerships in specific collaboration areas under each of the five overarching domains: Research, Design and Innovation, Education and Training, Policy, Employment and Community Engagement.  
-
-**About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
-
-
-
+**A propos du rôle de Boris au sein de la RtDD:** Contribuer à la réflexion sur les motivations et les défis auxquels est confronté le domaine de l'accessibilité au Canada. Aider à obtenir des informations de la part des professionnels de l'accessibilité.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+{% imageAndText "/uploads/michael-bach.png", "photo de Michael Bach de la tête et des épaules", "left", "top" %}
+### Michael Bach: Institut de recherche et développement sur l'inclusion et la société (IRIS)
 
+Informé par l'exclusion systémique à laquelle sont confrontées les personnes ayant un handicap intellectuel ou autre et les groupes marginalisés, IRIS s'efforce d'amorcer et de soutenir un développement social transformateur. Guidés par les principes de l'inclusion totale et des droits de l'homme, nous menons des recherches pour identifier les problèmes et les options politiques, nous encourageons l'innovation sociale pour réimaginer l'inclusion, et nous renforçons les capacités et le leadership en vue d'un changement transformateur.  
 
-
-### Michael Bach: Institute for Research and Development on Inclusion and Society (IRIS)
-
-Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, IRIS works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change.
-
-**About Michael’s role with RtDD:** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
-
-
-
+**Le rôle de Michael au sein de Rtdd:** Fournir des informations et des conseils sur l'efficacité et les défis auxquels sont confrontées les organisations au service des personnes ayant une déficience intellectuelle.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
+
 
 
 
@@ -113,9 +102,11 @@ Inclusive Design for Employment Access (IDEA) is a social innovation laboratory 
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 
@@ -127,9 +118,11 @@ CCD is a pan-Canadian organization of people with disabilities. CCD has worked t
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
+
 
 
 
@@ -141,9 +134,11 @@ BDC has a community-building focus where it aims to increase network of Black De
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 
@@ -155,9 +150,11 @@ The CCB works to improve the quality of life for persons living with vision loss
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 
@@ -169,9 +166,11 @@ The MLPD is a united voice of people with disabilities, and their supporters, th
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
+
 
 
 
@@ -183,9 +182,11 @@ ARCH Disability Law Centre is a specialty legal clinic that practices exclusivel
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 
@@ -197,9 +198,11 @@ Across Canada and around the world, L’Arche creates communities of friendship 
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
+
 
 
 
@@ -211,9 +214,11 @@ The Canadian National Institute of the Blind Foundation (CNIB Foundation), a non
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
+
 
 
 
@@ -225,9 +230,11 @@ The Canadian National Institute of the Blind Foundation (CNIB Foundation), a non
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
+
 
 
 
@@ -239,9 +246,11 @@ Ross & McBride lawyers have extensive experience in settling complex cases and a
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
+
 
 
 
@@ -253,9 +262,11 @@ IP Osgoode at Osgoode Hall Law School is an independent and authoritative voice 
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
+
 
 
 
@@ -269,9 +280,11 @@ The Digital Governance Standards Institute, part of the Digital Governance Counc
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 
 
@@ -280,6 +293,7 @@ The Digital Governance Standards Institute, part of the Digital Governance Counc
 The vision of the March of Dimes is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.  
 
 **About W. Francis’s role with RtDD:** Recruit members with physical disabilities to participate in co-design, help disseminate project drafts for review and feedback.
+
 
 
 
