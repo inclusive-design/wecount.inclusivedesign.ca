@@ -82,12 +82,12 @@ The challenges are:
 **About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
-### Institute for Research and Development on Inclusion and Society (IRIS): Michael Bach 
+{% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+### MICHAEL BACH: Institute for Research and Development on Inclusion and Society (IRIS)
 
-**About Wavefront Centre for Communication Accessibility:** [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), an institute of the Deaf and Hard of Hearing, envisions a society where Deaf, Hard of Hearing and Hearing people can interact freely without communication barriers. Our mission is to serve Deaf and Hard of Hearing individuals, their families and the community by delivering innovative programs, products and solutions to achieve full communication accessibility. 
+**About Michael’s role with RtDD:** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
 
-**About Christopher’s role with RtDD:** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
+**About IRIS:** Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, IRIS works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change.
 {% endimageAndText %}
 
 
