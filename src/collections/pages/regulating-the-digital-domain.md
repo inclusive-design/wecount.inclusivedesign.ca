@@ -1,64 +1,67 @@
 ---
-title: Réglementation du Domaine Numérique
+title: "Regulating the Digital Domain "
 excerpt: L'objectif de la RtDD est d'améliorer l'inclusion numérique et
   l'accessibilité aux TIC pour l'ensemble des personnes handicapées.
 menu_order: 0
 permalink: /rtdd/
 ---
-![Réglementation du logo du domaine numérique](/uploads/wip_rdd_colour_no-type.jpg)
+![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
 
-## A propos du projet
+## About the project 
 
-Regulating the Digital Domain (RtDD) vise à soutenir l'élaboration de normes d'accessibilité pour les technologies existantes et nouvelles. Le Conseil canadien des normes décrit une norme comme "un document qui fournit un ensemble de règles, de lignes directrices ou de caractéristiques convenues pour des activités ou leurs résultats". Dans le cadre de ce projet, nous allons rechercher avec les personnes handicapées des moyens de relever les défis auxquels elles sont confrontées lorsqu'elles utilisent les technologies de l'information et de la communication (TIC) et les outils numériques tels que les sites web et les applications.
+Regulating the Digital Domain (RtDD) project focuses on addressing the persistent challenges and disparities that people with disabilities face in accessing information and communication technologies (ICT) and digital tools.  
 
-Au cours du projet, les collaborateurs de la RtDD :
+The RtDD team will: 
 
-* travailleront pour découvrir ce qui cause les obstacles
-* se concentrer sur des systèmes entiers (et pas seulement sur un problème localisé),
-* identifieront les moyens de lever les obstacles ou d'empêcher l'apparition de nouveaux obstacles.
+* work to uncover root causes of barriers,  
+* focus on systemic issues that support digital exclusion,  
+* identify potential ways to interrupt and eliminate, improve or prevent barriers from becoming worse  
+* enhance the accessibility of digital tools, content, transactions, and computer-mediated processes (using two or more electronic devices for a process) for people with disabilities. 
 
-L'objectif du projet RtDD est d'améliorer l'inclusion numérique et l'accessibilité des TIC pour les personnes handicapées et les personnes ayant des besoins divers. Afin d'apporter des améliorations, le projet élaborera des recommandations pour la conception de lignes directrices sur l'accessibilité des technologies numériques. Les conclusions du projet seront communiquées à Accessibility Standards Canada pour l'aider à créer des normes qui favorisent une plus grande accessibilité aux outils numériques, au contenu, aux transactions et/ou aux processus informatisés.
+The RtDD goal is to significantly improve digital inclusion and ICT accessibility for the full range of PWD (people with disabilities). To make improvements the project will address the design of a regulatory system that focuses on the challenges of regulating within the digital domain. The project findings will inform Accessibility Standards Canada on greater accessibility to digital tools, content, transactions and/or computer-mediated processes. 
 
-## Normes de formation
+## Informing standards
 
-L'un des aspects essentiels que cette recherche cherche à explorer est le rôle des normes dans la facilitation de ces interventions. Les normes jouent un rôle essentiel dans la conception, le développement et la mise en œuvre des technologies numériques. En comprenant l'impact des normes sur les interventions en matière d'accessibilité, le projet entend présenter des recommandations qui favorisent des innovations numériques plus inclusives.
+One of the critical aspects this research seeks to explore is the role of existing standards in facilitating these interventions. Standards play a vital role in shaping digital technologies' design, development, and implementation. By understanding how standards impact accessibility interventions, the project intends to present recommendations that promote more inclusive digital innovations. 
 
-Le projet de recherche adoptera une approche interdisciplinaire. Pour ce faire, nous rassemblerons des experts de l'expérience vécue et des experts du domaine en tant que co-chercheurs. Les experts du domaine proviendront de différents domaines, y compris :
+The project research will take an interdisciplinary approach. We will do this by bringing together both lived experience experts and domain experts as co-researchers. The domain experts will be from various fields including: 
 
-* la politique, 
-  la politique, * la conception législative, 
-* l'accès à la justice 
-* les systèmes technologiques, 
-* les communications, 
-* gestion, 
-* la conception inclusive, 
-* l'inclusion numérique, 
-* l'économie, et 
-* les systèmes adaptatifs complexes. 
+* policy,  
+* legislative design,  
+* access to justice,  
+* technology systems,  
+* communications,  
+* management,  
+* inclusive design,  
+* digital inclusion,  
+* economics, and  
+* complex adaptive systems.  
 
-Ensemble, les co-chercheurs concevront et proposeront des approches et des systèmes réglementaires qui :
+Together co-researchers will design and propose regulatory approaches and systems that: 
 
-* répondent à la diversité et à la complexité des besoins en matière d'accessibilité, y compris les besoins des petites minorités et des cas isolés,            
-* sont adaptés au rythme exponentiel de l'évolution des TIC et conçus pour prévenir de manière proactive l'apparition d'obstacles,       
-* soutiennent et exigent des approches intégrées de l'accessibilité plutôt que des approches séparées, afin de favoriser l'interopérabilité et les avantages pour tous les utilisateurs,            
-* soutenir l'innovation en matière d'accessibilité plutôt que de la freiner,        
-* ne pas créer d'incitations à la perpétuation du problème, et
-  engager et responsabiliser les personnes handicapées et leur communauté, * soutenir l'innovation en matière d'accessibilité au lieu de la freiner
+* address the diversity and complexity of accessibility needs, including the needs of small minorities and outliers,  
+* are suited to the exponential rates of change of ICT and designed to proactively prevent emerging barriers,  
+* support and require integrated accessibility approaches over segregated approaches to support interoperability and benefits to all users,  
+* support rather than constrain accessibility innovation,  
+* do not create incentives for the perpetuation of the problem,  
+* engage and empower people with disabilities and their communities to shape regulatory requirements, inform methods of meeting requirements, identify regulatory gaps, and continuously refine the regulatory system.  
 
-## Relever six défis grâce à des pratiques inclusives et à la co-conception
+## Addressing six challenges with inclusive practices and co-design 
 
-> Si vous souhaitez participer aux co-conceptions du CRDI, inscrivez-vous ici <https://forms.office.com/r/g4bgbHifqc>
+> If you would like to take part in IDRC co-designs, register here
+>
+> <https://forms.office.com/r/g4bgbHifqc>
 
-Six défis seront relevés par le biais d'une série de co-conceptions. Nous relèverons les défis suivants en impliquant un large éventail de parties prenantes ayant des expériences vécues et une expertise pertinentes, tout en reconnaissant que les questions sont complexes et interdépendantes. Les résultats informeront la prochaine génération de modèles de normes d'accessibilité dans le domaine numérique. L'équipe développera des stratégies qui tireront parti des propriétés du domaine numérique et des approches nécessaires pour assurer une plus grande inclusion numérique des personnes handicapées.
+Six challenges will be addressed through a series of co-designs. We will address the following challenges by engaging a wide range of stakeholders with relevant lived experiences and expertise, recognizing that the issues are complex and interrelated. The results will inform the next generation of model accessibility standards in the digital domain. The team will develop strategies that leverage the properties of the digital domain and the approaches needed to ensure greater digital inclusion for people with disabilities.	 
 
-Les défis sont les suivants
+The challenges are: 
 
-1. Comment répondre aux besoins divers et complexes des personnes handicapées en matière d'accessibilité ?
+1. How can we meet the diverse and complex accessibility needs of people with disabilities?
 
-   * Les personnes handicapées ont des besoins plus variés que les personnes non handicapées. Les réglementations ont tendance à simplifier et à généraliser ces besoins, laissant de côté de nombreuses personnes qui ne répondent pas aux critères standard. Les réglementations limitent également la capacité des systèmes numériques à s'adapter aux différences individuelles. Nous devons concevoir des produits adaptés à l'ensemble des besoins en matière d'accessibilité, et pas seulement à une liste d'exigences.
-2. Comment pouvons-nous suivre l'évolution rapide de la technologie et empêcher l'apparition de nouveaux obstacles ?
+   * People with disabilities have more varied needs than people without disabilities. Regulations tend to simplify and generalize these needs, leaving out many people who do not fit the standard criteria. Regulations also limit the potential of digital systems to adapt to individual differences. We need to design for the spectrum of accessibility needs, not just for a checklist of requirements.
+2. How can we keep up with the rapid changes in technology and prevent new barriers from emerging? 
 
-   * La technologie évolue plus rapidement que les normes et les réglementations. De nouvelles opportunités et de nouveaux risques apparaissent constamment. Les réglementations en matière d'accessibilité entrent souvent en conflit avec la dynamique d'innovation qui alimente l'économie numérique. La conformité à l'accessibilité est souvent sacrifiée à la vitesse et à la nouveauté. Nous devons trouver des moyens de faire de l'accessibilité une priorité dans le paysage numérique en mutation et de prévenir l'apparition de nouveaux obstacles avant qu'ils ne s'enracinent.
+   * Technology changes faster than standards and regulations. New opportunities and risks arise constantly. Accessibility regulations often clash with the innovation drive that fuels the digital economy. Accessibility compliance is often sacrificed for speed and novelty. We need to find ways to make accessibility a priority in the changing digital landscape, and to prevent new barriers before they become entrenched. 
 3. How can we ensure integration and interoperability of digital systems and devices?
 
    * The digital world is interconnected and interdependent. Functionality depends on compatibility. Accessibility regulations have created a separate market for specialized assistive technologies (AT) that often do not work well with mainstream products. This makes digital access more expensive, less functional, and less inclusive for people with disabilities who rely on AT. It also deprives the general public of the benefits of accessible design. We need to promote integration and interoperability of digital systems and devices for everyone.
@@ -76,15 +79,18 @@ Les défis sont les suivants
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
 
+
 ### The Canadian Accessibility Network & Accessibility Institute: Boris Vukovic
 
 [The Canadian Accessibility Network](https://carleton.ca/accessibility-institute/can/) under the leadership of the Accessibility Institute at Carleton University is mandated to bring organizations together to facilitate partnerships in specific collaboration areas under each of the five overarching domains: Research, Design and Innovation, Education and Training, Policy, Employment and Community Engagement.  
 
 **About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+
 
 ### Michael Bach: Institute for Research and Development on Inclusion and Society (IRIS)
 
@@ -92,9 +98,11 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 **About Michael’s role with RtDD:** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
+
 
 ### Emile Tompa: Inclusive Design for Employment Access / Institute for Work and Health, McMaster University
 
@@ -102,9 +110,11 @@ Inclusive Design for Employment Access (IDEA) is a social innovation laboratory 
 
 **About Emile’s role with Rtdd:** Contribute insights regarding policy, practice, compliance, and effective strategies as they relate to digital accessibility and employment of persons with disabilities.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 ### Heather Walkus: Council of Canadians with Disabilities (CCD)
 
@@ -112,9 +122,11 @@ CCD is a pan-Canadian organization of people with disabilities. CCD has worked t
 
 **About Heather’s role with RtDD:** Support member organizations across Canada to recruit members with disabilities to participate in co-design. Assist in reaching out to Indigenous communities. Help disseminate project drafts for review and feedback. Provide insights regarding the need for capacity building within member organizations to participate in digital inclusion efforts. Recruit co-designers and review project outputs.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
+
 
 ### Jenelle Rouse: Black Deaf Canada (BDC)
 
@@ -122,9 +134,11 @@ BDC has a community-building focus where it aims to increase network of Black De
 
 **About Jenelle’s role with RtDD:** Recruit Black Deaf members to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers and review, and review project outputs.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 ### J﻿im Tokos: Canadian Council of the Blind (CCB)
 
@@ -132,9 +146,11 @@ The CCB works to improve the quality of life for persons living with vision loss
 
 **About Jim’s role with RtDD:** Recruit members with vision loss to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 ### Joelle Robinson: Manitoba League of Persons with Disabilities (MLPD)
 
@@ -142,9 +158,11 @@ The MLPD is a united voice of people with disabilities, and their supporters, th
 
 **About Joelle’s role with RtDD:** Recruit members with disabilities, especially in rural and remote areas, to participate in co-design. Help disseminate project drafts for review and feedback.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
+
 
 ### Kerri Joffee: ARCH Disability Law Centre
 
@@ -152,9 +170,11 @@ ARCH Disability Law Centre is a specialty legal clinic that practices exclusivel
 
 **About Kerri’s role with RtDD:** Provide insights regarding legal challenges faced by persons with disabilities and the relative effectiveness of regulatory approaches. Assist in legal interpretation and determining viability of project co- design approaches.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 ### Lori Vaanholt: L’Arche Canada
 
@@ -162,9 +182,11 @@ Across Canada and around the world, L’Arche creates communities of friendship 
 
 **About Lori’s role with RtDD:** Recruit members with intellectual disabilities to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
+
 
 ### Mahadeo Sukhai: Canadian National Institute of the Blind Foundation
 
@@ -172,9 +194,11 @@ The Canadian National Institute of the Blind Foundation (CNIB Foundation), a non
 
 **About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
+
 
 ### Wavefront Centre for Communication Accessibility: Christopher Sutton
 
@@ -182,9 +206,11 @@ The Canadian National Institute of the Blind Foundation (CNIB Foundation), a non
 
 **About Christopher’s role with RtDD:** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
+
 
 ### Paula Chapman: Ross & McBride LLP
 
@@ -192,9 +218,11 @@ Ross & McBride lawyers have extensive experience in settling complex cases and a
 
 **About Paula’s role with RtDD:** Assist in the environmental scan and assessment of compliance effectiveness of regulatory approaches.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
+
 
 ### Pina D'Agostino: IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U
 
@@ -202,9 +230,11 @@ IP Osgoode at Osgoode Hall Law School is an independent and authoritative voice 
 
 **About Pina’s role with RtDD:** Provide input regarding legislative design, innovative regulatory instruments, legal interpretation of possible approaches within the Accessible Canada Act.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
+
 
 ### Shermineh Esmati: Digital Governance Council / Digital Governance Standards Institute:
 
@@ -214,15 +244,18 @@ The Digital Governance Standards Institute, part of the Digital Governance Counc
 
 **About Shermineh’s role with RtDD:** Technical guidance for the process of standards development. Provide insights regarding motivations and challenges in complying to digital accessibility requirements by private and public sector organizations.
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 
 ### W. Francis Fung: March of Dimes Canada
 
 The vision of the March of Dimes is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.  
 
 **About W. Francis’s role with RtDD:** Recruit members with physical disabilities to participate in co-design, help disseminate project drafts for review and feedback.
+
 
 {% endimageAndText %}
 
