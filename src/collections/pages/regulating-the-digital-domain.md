@@ -1,7 +1,7 @@
 ---
-title: Regulating the Digital Domain
-excerpt: The RtDD goal is to improve digital inclusion and ICT accessibility for
-  the full range of PWD (people with disabilities).
+title: Réglementation du Domaine Numérique
+excerpt: L'objectif de la RtDD est d'améliorer l'inclusion numérique et
+  l'accessibilité aux TIC pour l'ensemble des personnes handicapées.
 menu_order: 0
 permalink: /rtdd/
 ---
