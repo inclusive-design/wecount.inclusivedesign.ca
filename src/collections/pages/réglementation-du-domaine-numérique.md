@@ -113,23 +113,15 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 **A propos du rôle de Jenelle au sein de la RtDD:** Recruter des membres sourds noirs pour participer à la co-conception, aider à diffuser les projets pour examen et commentaires, recruter des co-concepteurs et les examiner, et examiner les résultats du projet.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+{% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
+### J﻿im Tokos: Conseil canadien des aveugles, Canadian Council of the Blind (CCB)
 
+[CCB](https://ccbnational.net/shaggy/) s'efforce d'améliorer la qualité de vie des personnes vivant avec une perte de vision par la sensibilisation, le mentorat par les pairs, la socialisation, les sports et les loisirs, la défense des droits, la promotion de la santé et la prévention des maladies. Le modèle communautaire de CCB offre des programmes pour aider les personnes vivant avec une perte de vision, sensibiliser le public et le gouvernement aux problèmes de vision. Récemment, CCB a entrepris des programmes proactifs tels que la santé oculaire mobile et la formation à l'emploi. Le CCB travaille en partenariat avec un certain nombre d'organisations locales, provinciales, nationales et internationales.  
 
-
-
-### J﻿im Tokos: Canadian Council of the Blind (CCB)
-
-The CCB works to improve the quality of life for persons living with vision loss through awareness, peer mentoring, socializing, sports & recreation, advocacy, health promotion and illness prevention. CCB’s community-based model offer programs to assist those people living with vision loss, create awareness of vision issues to the public and government. Recently, the CCB has undertaken proactive programs such as mobile eye health and training for employment. The CCB partners with a number or local, provincial, national and international organizations. 
-
-**About Jim’s role with RtDD:** Recruit members with vision loss to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
-
-
-
-
+**À propos du rôle de Jim au sein de la RtDD:** Recruter des membres vivant avec une perte de vision pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats des projets.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+{% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
 
 
 
@@ -161,7 +153,7 @@ ARCH Disability Law Centre is a specialty legal clinic that practices exclusivel
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+{% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
 
 
 
@@ -259,7 +251,7 @@ The Digital Governance Standards Institute, part of the Digital Governance Counc
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+{% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
 
 
 
@@ -293,6 +285,6 @@ If you are interested in participating in IDRC co-designs sign up here <https://
 
 Funded by Accessibility Standards Canada / the Government of Canada.
 
-![Accessibility Standards Canada logo](/uploads/accessibility_standards_canada_accessibility_standards_canada_20.jpg)
+![Logo des normes d'accessibilité du Canada](/uploads/accessibility_standards_canada_accessibility_standards_canada_20.jpg)
 
 ![](/uploads/canadawordmark-black-bil.png)
