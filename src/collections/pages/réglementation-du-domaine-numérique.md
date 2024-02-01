@@ -89,52 +89,28 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 **Le rôle de Michael au sein de Rtdd:** Fournir des informations et des conseils sur l'efficacité et les défis auxquels sont confrontées les organisations au service des personnes ayant une déficience intellectuelle.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
+{% imageAndText "/uploads/emile-tompa.png", "photo de la tête et des épaules d'Emile Tompa", "left", "top" %}
+### Emile Tompa: Vision radicale pour l’accès inclusif à l’emploi (VRAIE), Université McMaster
 
+Vision radicale pour l’accès inclusif à l’emploi (VRAIE) est un laboratoire d'innovation sociale dont l'objectif est d'aider à créer des marchés du travail plus forts et plus diversifiés qui intègrent les personnes handicapées, en passant de la connaissance à la pratique. Nous développons des outils et des ressources fondés sur des données probantes, en collaboration avec des partenaires, qui contribuent à renforcer les capacités du lieu de travail en matière de recrutement, d'embauche, d'intégration, de maintien dans l'emploi, de mentorat et de promotion des personnes handicapées dans toute la gamme des possibilités d'emploi. 
 
-
-
-### Emile Tompa: Inclusive Design for Employment Access / Institute for Work and Health, McMaster University
-
-Inclusive Design for Employment Access (IDEA) is a social innovation laboratory focused on helping create stronger and more diverse labour markets that include persons with disabilities, through knowledge to practice. We develop evidence informed tools and resources through co-design with partners that help advance workplace capacity for recruitment, hiring, onboarding, retention, mentorship and promotion of persons with disabilities across the full range of employment opportunities.  
-
-**About Emile’s role with Rtdd:** Contribute insights regarding policy, practice, compliance, and effective strategies as they relate to digital accessibility and employment of persons with disabilities.
-
-
-
-
+**A propos du rôle d'Emile au sein de Rtdd:** Contribuer à la réflexion sur la politique, la pratique, la conformité et les stratégies efficaces en matière d'accessibilité numérique et d'emploi des personnes handicapées.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+### Heather Walkus: Conseil des Canadiens avec Déficiences (CCD)
 
+Le CCD est une organisation pancanadienne de personnes handicapées. Le CCD s'est efforcé de trouver des solutions et des moyens novateurs pour soutenir la citoyenneté pleine et entière des personnes handicapées. Le CCD unit la voix des Canadiens avec des déficiences pour défendre et étendre les droits à l'égalité des personnes handicapées par l'éducation publique, la défense des droits, la recherche, les litiges et les partenariats.   
 
-
-
-### Heather Walkus: Council of Canadians with Disabilities (CCD)
-
-CCD is a pan-Canadian organization of people with disabilities. CCD has worked to find solutions and innovative ways to support the full and equal citizenship of people with disabilities. CCD unites the voice of Canadians with disabilities to defend and extend the equality rights of persons with disabilities through public education, advocacy, research, litigation, and partnerships. 
-
-**About Heather’s role with RtDD:** Support member organizations across Canada to recruit members with disabilities to participate in co-design. Assist in reaching out to Indigenous communities. Help disseminate project drafts for review and feedback. Provide insights regarding the need for capacity building within member organizations to participate in digital inclusion efforts. Recruit co-designers and review project outputs.
-
-
-
-
+**À propos du rôle de Heather au sein de la RtDD:** Aider les organisations membres à travers le Canada à recruter des membres handicapés pour participer à la co-conception. Aider à atteindre les communautés indigènes. Contribuer à la diffusion des ébauches de projets pour examen et commentaires. Fournir des informations sur la nécessité de renforcer les capacités des organisations membres pour qu'elles puissent participer aux efforts d'inclusion numérique. Recruter des co-concepteurs et examiner les résultats du projet.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/janelle-rouse.png", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
-
-
-
-
+{% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules de Jenelle Rouse", "left", "top" %}
 ### Jenelle Rouse: Black Deaf Canada (BDC)
 
-BDC has a community-building focus where it aims to increase network of Black Deaf individuals across Canada to increase a visible representation. BDC commits to create and provide community-based, informative resources, strategies, and opportunities for Black Deaf Canadians (and those with additional disabilities). BDC’s mandate is to explore different ways of educating the hearing society about accessibilities, Deaf intra/intercultural experiences and contexts, so the society can better serve Deaf Black individuals, including Indigenous, and Peoples of Colour.  
+La BDC se concentre sur le développement de la communauté et vise à accroître le réseau des personnes sourdes noires à travers le Canada afin d'augmenter leur représentation visible. Le BDC s'engage à créer et à fournir des ressources, des stratégies et des opportunités informatives basées sur la communauté pour les Canadiens Noirs Sourds (et ceux qui ont d'autres handicaps). Le mandat de BDC est d'explorer différentes façons d'éduquer la société entendante sur les accessibilités, les expériences et les contextes intra/interculturels des Sourds, afin que la société puisse mieux servir les individus Noirs Sourds, y compris les indigènes et les personnes de couleur. 
 
-**About Jenelle’s role with RtDD:** Recruit Black Deaf members to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers and review, and review project outputs.
-
-
-
-
+**A propos du rôle de Jenelle au sein de la RtDD:** Recruter des membres sourds noirs pour participer à la co-conception, aider à diffuser les projets pour examen et commentaires, recruter des co-concepteurs et les examiner, et examiner les résultats du projet.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
