@@ -2,6 +2,7 @@
 title: Réglementation du Domaine Numérique
 excerpt: .
 menu_order: 0
+permalink: /rddn/
 ---
 ![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
 
