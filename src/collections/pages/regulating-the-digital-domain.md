@@ -3,7 +3,7 @@ title: Réglementation du Domaine Numérique
 excerpt: L'objectif de la RtDD est d'améliorer l'inclusion numérique et
   l'accessibilité aux TIC pour l'ensemble des personnes handicapées.
 menu_order: 0
-permalink: /rtdd/
+permalink: /rdDN/
 ---
 ![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
 
