@@ -99,7 +99,12 @@ button:-moz-focusring {
 	text-shadow: 0 0 0 $green-dark;
 }
 
-button:not(.fl-prefsEditor-buttons) {
+button:not(
+.fl-prefsEditor-buttons,
+.fl-textfieldStepper-button,
+.fl-prefsEditor-showHide,
+.fl-prefsEditor-reset,
+.fl-switchUI-control) {
 	background-color: $green-light;
 	block-size: rem(54);
 	border: 0;
@@ -114,7 +119,12 @@ button:not(.fl-prefsEditor-buttons) {
 	transform: perspective(rem(1)) translateZ(0);
 }
 
-button:not(.fl-prefsEditor-buttons)::before {
+button:not(
+.fl-prefsEditor-buttons,
+.fl-textfieldStepper-button,
+.fl-prefsEditor-showHide,
+.fl-prefsEditor-reset,
+.fl-switchUI-control)::before {
 	block-size: rem(54);
 	border-radius: rem(26);
 	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
