@@ -85,12 +85,12 @@ The challenges are:
 **About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
-### Michael Bach: Institute for Research and Development on Inclusion and Society (IRIS)
+{% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
+### Wavefront Centre for Communication Accessibility: Christopher Sutton
 
-Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, [IRIS](https://irisinstitute.ca/) works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change.
+[Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), an institute of the Deaf and Hard of Hearing, envisions a society where Deaf, Hard of Hearing and Hearing people can interact freely without communication barriers. Our mission is to serve Deaf and Hard of Hearing individuals, their families and the community by delivering innovative programs, products and solutions to achieve full communication accessibility. 
 
-**About Michael’s role with RtDD:** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
+**About Christopher’s role with RtDD:** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulders photo of Emile Tompa", "left", "top" %}
@@ -165,20 +165,12 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 **About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton", "left", "top" %}
+{% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
+### Michael Bach: Institute for Research and Development on Inclusion and Society (IRIS)
 
+Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, [IRIS](https://irisinstitute.ca/) works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change.
 
-
-
-### Wavefront Centre for Communication Accessibility: Christopher Sutton
-
-[Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), an institute of the Deaf and Hard of Hearing, envisions a society where Deaf, Hard of Hearing and Hearing people can interact freely without communication barriers. Our mission is to serve Deaf and Hard of Hearing individuals, their families and the community by delivering innovative programs, products and solutions to achieve full communication accessibility. 
-
-**About Christopher’s role with RtDD:** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
-
-
-
-
+**About Michael’s role with RtDD:** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
