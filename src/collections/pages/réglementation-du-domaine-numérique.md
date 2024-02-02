@@ -120,27 +120,19 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
-
-
-### J﻿im Tokos: Conseil canadien des aveugles, Canadian Council of the Blind (CCB)
+### J﻿im Tokos: Canadian Council of the Blind (CCB)
 
 [CCB](https://ccbnational.net/shaggy/) s'efforce d'améliorer la qualité de vie des personnes vivant avec une perte de vision par la sensibilisation, le mentorat par les pairs, la socialisation, les sports et les loisirs, la défense des droits, la promotion de la santé et la prévention des maladies. Le modèle communautaire de CCB offre des programmes pour aider les personnes vivant avec une perte de vision, sensibiliser le public et le gouvernement aux problèmes de vision. Récemment, CCB a entrepris des programmes proactifs tels que la santé oculaire mobile et la formation à l'emploi. Le CCB travaille en partenariat avec un certain nombre d'organisations locales, provinciales, nationales et internationales.  
 
 **À propos du rôle de Jim au sein de la RtDD:** Recruter des membres vivant avec une perte de vision pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats des projets.
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
+### Joelle Robinson: Manitoba League of Persons with Disabilities (MLPD)
 
-
-### Joelle Robinson: Ligue manitobaine des personnes handicapées (MLPD)
-
-La MLPD est une voix unie des personnes handicapées et de leurs sympathisants, qui promeut l'égalité des droits, la pleine participation à la société et facilite les changements positifs par la défense des droits et l'éducation du public.  
+La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et de leurs sympathisants, qui promeut l'égalité des droits, la pleine participation à la société et facilite les changements positifs par la défense des droits et l'éducation du public.  
 
 **A propos du rôle de Joelle au sein de la RtDD:** Recruter des membres handicapés, en particulier dans les zones rurales et éloignées, pour participer à la co-conception. Contribuer à la diffusion des ébauches de projets pour examen et commentaires.
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "photo de la tête et des épaules de Kerri Joffee", "left", "top" %}
