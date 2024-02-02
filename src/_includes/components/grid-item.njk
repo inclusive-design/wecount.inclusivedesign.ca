@@ -1,5 +1,5 @@
 <article class="news-item">
-  {% if item.data.category === 'views' %}
+  {% if item.data.category === 'initiatives' %}
   <div class="preview-media-wrapper">
     <figure class="content">
       {% if item.data.picture %}
@@ -16,7 +16,7 @@
     <h2 class="h3">
       <a href="{{ item.url if item.url else item.data.link }}">{{ item.data.title | safe }}</a>
     </h2>
-    {% if item.data.category === 'views' %}
+    {% if item.data.category === 'initiatives' %}
     <div class="author">{{ item.data.author | safe }}</div>
     {% endif %}
     <div class="date">

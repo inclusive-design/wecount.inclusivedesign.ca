@@ -1,9 +1,9 @@
 ---
-permalink: viewsWithTags.json
+permalink: initiativesWithTags.json
 ---
 {
-  "views": [
-  {%- for item in collections.views %}
+  "initiatives": [
+  {%- for item in collections.initiatives %}
     {
       "title": {{ item.data.title | dump | safe }},
       "author": {{ item.data.author | dump | safe }},
@@ -25,7 +25,7 @@ permalink: viewsWithTags.json
   {%- endfor %}
   ],
   "tags": [
-  {%- for item in collections.viewsTags %}
+  {%- for item in collections.initiativesTags %}
     {
       "name": {{ item.name | dump | safe }},
       "slug": {{ item.slug | dump | safe }}

@@ -2,10 +2,10 @@
 permalink: index.json
 ---
 [
-{%- for item in collections.views %}
+{%- for item in collections.initiatives %}
   {
     "title": {{ item.data.title | dump | safe }},
-    "category": "views",
+    "category": "initiatives",
     "author": {{ item.data.author | dump | safe }},
     "content": {{ item.templateContent | dump | safe }},
     "excerpt": {{ item.data.excerpt | dump | safe }},
@@ -23,7 +23,7 @@ permalink: index.json
     "url": {{ item.url | dump | safe }}
   },
 {%- endfor %}
-{%- for item in collections.news %}
+{%- for item in collections.recount %}
   {
     "title": {{ item.data.title | dump | safe }},
     "category": "news",
@@ -32,10 +32,10 @@ permalink: index.json
     "date": {{ item.data.date | dump | safe }}
   },
 {%- endfor %}
-{%- for item in collections.initiatives %}
+{%- for item in collections.events %}
   {
     "title": {{ item.data.title | dump | safe }},
-    "category": "initiative",
+    "category": "events",
     "url": {{ item.url | dump | safe }},
     "content": {{ item.templateContent | dump | safe }},
     "excerpt": {{ item.data.shortDescription | dump | safe }}

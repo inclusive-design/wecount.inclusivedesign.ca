@@ -1,4 +1,5 @@
 {
 	"permalink": "/initiatives/{{ title | slugify }}/",
-	"layout": "layouts/initiative.njk"
+	"layout": "layouts/initiative.njk",
+	"category": "initiatives"
 }
