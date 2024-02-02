@@ -40,7 +40,7 @@
     "@11ty/eleventy-plugin-rss": "1.2.0",
     "@tbranyen/jsdom": "13.0.0",
     "airtable": "0.12.2",
-    "axios": "1.6.5",
+    "axios": "1.6.7",
     "concurrently": "8.2.2",
     "eleventy-plugin-pwa-v2": "1.0.1",
     "estrella": "1.4.1",
