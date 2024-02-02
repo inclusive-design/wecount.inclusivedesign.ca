@@ -92,15 +92,11 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "photo de la tête et des épaules d'Emile Tompa", "left", "top" %}
+### Emile Tompa: Inclusive Design for Employment Access / Institute for Work and Health, McMaster University
 
-
-### Emile Tompa: Vision radicale pour l’accès inclusif à l’emploi (VRAIE), Université McMaster
-
-Vision radicale pour l’accès inclusif à l’emploi (VRAIE) est un laboratoire d'innovation sociale dont l'objectif est d'aider à créer des marchés du travail plus forts et plus diversifiés qui intègrent les personnes handicapées, en passant de la connaissance à la pratique. Nous développons des outils et des ressources fondés sur des données probantes, en collaboration avec des partenaires, qui contribuent à renforcer les capacités du lieu de travail en matière de recrutement, d'embauche, d'intégration, de maintien dans l'emploi, de mentorat et de promotion des personnes handicapées dans toute la gamme des possibilités d'emploi. 
+[Inclusive Design for Employment Access](https://vraie-idea.ca/index.html) (IDEA) est un laboratoire d'innovation sociale dont l'objectif est d'aider à créer des marchés du travail plus forts et plus diversifiés qui intègrent les personnes handicapées, en passant de la connaissance à la pratique. Nous développons des outils et des ressources fondés sur des données probantes, en collaboration avec des partenaires, qui contribuent à renforcer les capacités du lieu de travail en matière de recrutement, d'embauche, d'intégration, de maintien dans l'emploi, de mentorat et de promotion des personnes handicapées dans toute la gamme des possibilités d'emploi. 
 
 **A propos du rôle d'Emile au sein de Rtdd:** Contribuer à la réflexion sur la politique, la pratique, la conformité et les stratégies efficaces en matière d'accessibilité numérique et d'emploi des personnes handicapées.
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
