@@ -36,7 +36,7 @@ NunjucksPreview.propTypes = {
 	globalData: PropTypes.object
 };
 
-CMS.registerPreviewStyle("/css/main.css");
+CMS.registerPreviewStyle("/assets/styles/main.css");
 
 const Page = createClass({
 	render: function () {

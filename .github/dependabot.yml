@@ -7,8 +7,6 @@ updates:
     allow:
       - dependency-type: direct
     ignore:
-    - dependency-name: react
-      versions: [">16"]
     - dependency-name: stylelint
       versions: [">14"]
   - package-ecosystem: github-actions
