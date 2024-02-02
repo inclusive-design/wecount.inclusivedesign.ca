@@ -136,15 +136,11 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "photo de la tête et des épaules de Kerri Joffee", "left", "top" %}
-
-
-### Kerri Joffee: ARCH Disability Law Centre (Centre juridique pour les personnes handicapées)
+### Kerri Joffee: ARCH Disability Law Centre
 
 [ARCH](https://archdisabilitylaw.ca/) est une clinique juridique spécialisée qui se consacre exclusivement aux droits des personnes handicapées. ARCH se consacre à la défense et à l'avancement des droits à l'égalité, des droits, des libertés fondamentales et de l'inclusion des personnes handicapées en Ontario.   
 
 **Le rôle de Kerri au sein de la RtDD:** Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
