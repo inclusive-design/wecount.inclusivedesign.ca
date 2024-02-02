@@ -152,15 +152,11 @@ Partout au Canada et dans le monde, [L'Arche](https://www.larche.ca/) crée des 
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "photo de la tête et des épaules de Mahadeo Sukhai", "left", "top" %}
-
-
-### Mahadeo Sukhai: Fondation de l'Institut national canadien des aveugles
+### Mahadeo Sukhai: Fondation de l'Institut National Canadien des Aveugles
 
 La Fondation de l'Institut national canadien des aveugles (Fondation INCA), une organisation à but non lucratif, propose des programmes et des actions de sensibilisation qui permettent aux personnes touchées par la cécité de vivre leurs rêves et d'éliminer les obstacles à l'inclusion.   
 
 **Le rôle de Mahadeo au sein de la RtDD:** Recruter des membres aveugles pour participer à la co-conception, aider à diffuser des ébauches de projet pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "photo de Michael Bach de la tête et des épaules ", "left", "top" %}
