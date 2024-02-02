@@ -77,56 +77,56 @@ file according to Netlify CMS' [specifications](https://www.netlifycms.org/docs/
 As an example, here is the configuration for the initiatives collection, stored in [`src/collections/initiatives`](src/collections/initiatives):
 
 ```yaml
-  - name: initiatives
-    label: Initiatives
-    label_singular: Initiative
-    folder: "src/collections/initiatives"
-    slug: "{{title}}"
-    create: true
-    fields:
-      - label: "Event Title"
-        name: "title"
-        widget: "string"
-      - label: "Event ID"
-        name: "id"
-        widget: "uuid"
-        hint: "The ID is used to associate comments with this initiative and cannot be edited."
-      - label: "Permanent Link"
-        name: "permalink"
-        widget: "string"
-        required: false
-        hint: |-
-          If you do not specify a permanent link, one will be automatically generated from the event title.
-          Permalinks must have the format /initiatives/event-title/ (the trailing slash is required).
-      - label: "Event Date"
-        name: "eventDate"
-        widget: "datetime"
-        time_format: false
-        required: false
-      - label: "Cover Image"
-        name: "coverImageUrl"
-        widget: "image"
-        required: false
-      - label: "Cover Image Alt Text"
-        name: "coverImageAltText"
-        widget: "string"
-        required: false
-      - label: "Event Body"
-        name: "body"
-        widget: "markdown"
-      - label: "Short Description"
-        name: "shortDescription"
-        widget: "markdown"
-        hint: "The short description is shown on the Initiatives page."
-      - label: "Preview Image"
-        name: "previewImageUrl"
-        widget: "image"
-        required: false
-        hint: "The preview image is shown on the Initiatives page."
-      - label: "Preview Image Alt Text"
-        name: "previewImageAltText"
-        widget: "string"
-        required: false
+- name: initiatives
+  label: Initiatives
+  label_singular: Initiative
+  folder: src/collections/initiatives
+  slug: "{{title}}"
+  create: true
+  fields:
+    - label: Event Title
+      name: title
+      widget: string
+    - label: Event ID
+      name: id
+      widget: uuid
+      hint: The ID is used to associate comments with this initiative and cannot be edited.
+    - label: Permanent Link
+      name: permalink
+      widget: string
+      required: false
+      hint: |-
+        If you do not specify a permanent link, one will be automatically generated from the event title.
+        Permalinks must have the format /initiatives/event-title/ (the trailing slash is required).
+    - label: Event Date
+      name: eventDate
+      widget: datetime
+      time_format: false
+      required: false
+    - label: Cover Image
+      name: coverImageUrl
+      widget: image
+      required: false
+    - label: Cover Image Alt Text
+      name: coverImageAltText
+      widget: string
+      required: false
+    - label: Event Body
+      name: body
+      widget: markdown
+    - label: Short Description
+      name: shortDescription
+      widget: markdown
+      hint: The short description is shown on the Initiatives page.
+    - label: Preview Image
+      name: previewImageUrl
+      widget: image
+      required: false
+      hint: The preview image is shown on the Initiatives page.
+    - label: Preview Image Alt Text
+      name: previewImageAltText
+      widget: string
+      required: false
 ```
 
 For information on individual widgets and their configuration, see Netlify CMS' [widget documentation](https://www.netlifycms.org/docs/widgets/).

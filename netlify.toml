@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "dist"
+  publish = "_site"
   functions = "functions"
   ignore = "git log -1 --pretty=%B | grep dependabot"
 
@@ -10,7 +10,7 @@
 [dev]
   command = "npm run start"
   targetPort = 3000
-  publish = "dist"
+  publish = "_site"
   autoLaunch = true
   framework = "#custom"
   functions = "functions"

@@ -6,6 +6,9 @@ updates:
       interval: monthly
     allow:
       - dependency-type: direct
+    ignore:
+    - dependency-name: stylelint
+      versions: [">14"]
   - package-ecosystem: github-actions
     directory: /
     schedule:

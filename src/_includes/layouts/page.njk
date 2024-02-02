@@ -38,11 +38,11 @@
   <div class="api-content">
     {{ content | safe }}
     <div class="initiatives">
-      {% for initiative in collections.initiatives %}
+      {% for initiative in collections["initiatives"] %}
         {% set tileURL = initiative.url %}
         {% set title = initiative.data.title %}
         {% set description = initiative.data.shortDescription %}
-        {% set defaultPreviewImageUrl = "/images/initiative.png" %}
+        {% set defaultPreviewImageUrl = "/assets/images/initiative.png" %}
         {% set previewImageUrl = initiative.data.previewImageUrl %}
         {% set previewImageAltText = initiative.data.previewImageAltText %}
         {% include "components/tile-item.njk" %}
@@ -52,7 +52,7 @@
 </article>
 
 {% else %}
-<article class="page {{ title | slug }}">
+<article class="page {{ title | slugify }}">
   <h1>{{ pageTitle }}</h1>
   <div class="api-content">
     {{ content | safe }}
@@ -62,7 +62,7 @@
 {% endblock %}
 
 {% block footerScripts %}
-<script src="/js/content-header-observer.js"></script>
+<script src="/assets/scripts/content-header-observer.js"></script>
 <script>
   // Track all h1 and h2 in content for the About and Inclusion Challenges page.
 document.querySelectorAll("main article.page h1, main article.page h2, header").forEach((section) => {
@@ -72,9 +72,9 @@ document.querySelectorAll("main article.page h1, main article.page h2, header").
 </script>
 
 {% if page.url === "/advisory-panel/" %}
-  <script src="/js/expander.js"></script>
+  <script src="/assets/scripts/expander.js"></script>
 {% endif %}
 {% if page.url === "/team/" %}
-  <script src="/js/team-handler.js"></script>
+  <script src="/assets/scripts/team-handler.js"></script>
 {% endif %}
 {% endblock %}

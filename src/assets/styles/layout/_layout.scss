@@ -1,0 +1,299 @@
+// Layout styles.
+@import "header";
+@import "footer";
+
+// Sticky footer. See https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+#defaultContainer {
+	display: flex;
+	flex-direction: column;
+	min-block-size: 100vh;
+}
+
+.content-wrapper {
+	flex: 1;
+	font-size: rem(14);
+}
+
+main {
+	inline-size: 100%;
+	margin-block: 0;
+	margin-inline: auto;
+	max-inline-size: 75ch;
+}
+
+article {
+	padding-block: rem(0) rem(27);
+	padding-inline: rem(27);
+
+	h2:not(.h3) {
+		border-block-end: rem(5) solid $gold;
+	}
+
+	.api-content {
+		display: block;
+
+		&::after {
+			clear: both;
+			content: "";
+			display: table;
+		}
+	}
+}
+
+// style for centering children of some buttons (#939)
+%has-vertically-centered-children {
+	align-items: center;
+	display: flex;
+}
+
+// WP customized styles
+.has-small-font-size {
+	font-size: 84%;
+}
+
+.has-large-font-size {
+	font-size: 126%;
+}
+
+.has-larger-font-size {
+	font-size: 168%;
+}
+
+// WP styles for vertically aligning text within Media & Text blocks
+.image-and-text--vertical-top {
+	.image-and-text__media,
+	.image-and-text__content {
+		align-self: start;
+
+		& > * {
+			margin-block: 0;
+		}
+	}
+}
+
+.image-and-text--vertical-center {
+	.image-and-text__media,
+	.image-and-text__content {
+		align-self: center;
+
+		& > * {
+			margin-block: 0;
+		}
+	}
+}
+
+.image-and-text--vertical-bottom {
+	.image-and-text__media,
+	.image-and-text__content {
+		align-self: end;
+
+		& > * {
+			margin-block: 0;
+		}
+	}
+}
+
+// WP styles for horizontally aligning text within Media & Text blocks
+.has-text-align-left {
+	text-align: start;
+}
+
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-right {
+	text-align: end;
+}
+
+figure {
+	display: table;
+	margin-inline: auto;
+}
+
+p img {
+	block-size: auto;
+	max-inline-size: 100%;
+}
+
+// Base styling for media and text block
+.image-and-text {
+	display: grid;
+	margin-block: 1em;
+
+	.image-and-text__content {
+		margin-inline-start: rem(25);
+	}
+
+	img {
+		block-size: auto;
+		inline-size: 100%;
+	}
+}
+
+// Styling for media and text block with media on the left
+.image-and-text--image-left {
+	grid-template-columns: 15% auto;
+}
+
+// Styling for media and text block with media on the right
+.image-and-text--image-right {
+	.image-and-text__media {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.image-and-text__content {
+		grid-column: 1;
+		grid-row: 1;
+		margin-inline-start: 0;
+	}
+}
+
+.embed--youtube {
+	min-inline-size: 100%;
+}
+
+// Special styling rules for homepage content
+article .homepage-content {
+	// removes underline for "non-h3" h2's
+	h2 {
+		border: none;
+	}
+
+	// The folowing CSS rule ensures video content is the width of the viewport in mobile and iPad views
+	.embed--youtube {
+		// not yet supported in Safari. for support details, see:
+		// https://caniuse.com/mdn-css_properties_aspect-ratio
+		aspect-ratio: 16 / 9;
+		display: block;
+		margin-inline: $full-width-video-margins;
+		position: relative;
+
+		// fallback for aspect-ratio
+		@supports not (aspect-ratio: auto) {
+			block-size: 0;
+			overflow: hidden;
+			padding-block-start: 56.25%; // 16:9
+			position: relative;
+		}
+	}
+
+	.embed--youtube iframe {
+		block-size: 100%;
+		inline-size: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+
+		// fallback for aspect-ratio
+		@supports not (aspect-ratio: auto) {
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+video {
+	inline-size: 100%;
+	max-block-size: rem(580);
+}
+
+figcaption {
+	caption-side: bottom;
+	display: table-caption;
+	font-size: rem(14);
+	font-style: italic;
+	padding-block: 1rem;
+	padding-inline: 0;
+	text-align: center;
+}
+
+// Hide an element visually without hiding it from screen readers
+// Reference: https://tailwindcss.com/docs/screen-readers/#app
+.screen-reader-only {
+	block-size: rem(1);
+	border-width: 0;
+	clip: rect(0, 0, 0, 0);
+	inline-size: rem(1);
+	margin: rem(-1);
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+}
+
+@include breakpoint-up(lg) {
+	body {
+		background-position: center;
+	}
+
+	.content-wrapper {
+		display: grid;
+		font-size: rem(18);
+		grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
+		grid-template-rows: auto auto;
+	}
+
+	main {
+		background-color: $white;
+		max-inline-size: 130ch;
+
+		article {
+			padding-block: rem(1);
+			padding-block-end: rem(62);
+			padding-inline: rem(60);
+		}
+
+		// WP customized styles for Desktop and iPad Pro views
+		.embed--youtube {
+			min-inline-size: auto;
+		}
+
+		// Styling for media and text block with media on the left
+		.image-and-text--image-left {
+			.image-and-text__content {
+				margin-inline-start: rem(25);
+			}
+
+			img {
+				block-size: 100%;
+				inline-size: 100%;
+			}
+		}
+
+		// Styling for media and text block with media on the right
+		.image-and-text--image-right {
+			.image-and-text__content {
+				margin-inline: 0 rem(25);
+			}
+		}
+
+		.embed--youtube iframe {
+			block-size: rem(326);
+			inline-size: rem(580);
+		}
+
+		// Special styling rules for homepage content
+		article .homepage-content {
+			// to make the YouTube embed full-width
+			.embed--youtube {
+				margin-inline: $full-width-video-widescreen-margins;
+			}
+		}
+	}
+}
+
+@include breakpoint-up(xl) {
+	// When screen sizes >= the iPad Pro landscape mode, use larger sizes for embedded media elements that
+	// are aligned left or right.
+	.alignleft,
+	.alignright {
+		.wp-block-embed__wrapper iframe {
+			block-size: rem(326);
+			inline-size: rem(580);
+		}
+	}
+}

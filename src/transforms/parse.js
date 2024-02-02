@@ -1,17 +1,13 @@
 /* global generateAside */
 
-const jsdom = require("@tbranyen/jsdom");
-const {JSDOM} = jsdom;
+const {parseHTML} = require("linkedom");
 
-require("../js/utils.js");
+require("../assets/scripts/utils.js");
 
-module.exports = function(value, outputPath) {
+module.exports = function (value, outputPath) {
 	if (outputPath && outputPath.includes(".html")) {
-		const DOM = new JSDOM(value, {
-			resources: "usable"
-		});
+		const {document} = parseHTML(value);
 
-		const document = DOM.window.document;
 		generateAside(document, "main article.post-article h1, main article.post-article h2, main article.page h1, main article.page h2, main article.initiatives h1, main article.initiatives h2");
 
 		return "<!DOCTYPE html>\r\n" + document.documentElement.outerHTML;
