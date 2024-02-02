@@ -84,9 +84,9 @@ Les défis sont les suivants
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "photo de la tête et des épaules de Christopher Sutton", "left", "top" %}
-### Christopher Sutton: Centre Wavefront pour l'accessibilité des communications
+### Christopher Sutton: Wavefront Centre for Communication Accessibility
 
-Le Wavefront Centre for Communication Accessibility, un institut pour les sourds et les malentendants, envisage une société où les sourds, les malentendants et les entendants peuvent interagir librement sans barrières de communication. Notre mission est de servir les personnes sourdes et malentendantes, leurs familles et la communauté en proposant des programmes, des produits et des solutions innovants pour parvenir à une accessibilité totale à la communication.  
+Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), un institut pour les sourds et les malentendants, envisage une société où les sourds, les malentendants et les entendants peuvent interagir librement sans barrières de communication. Notre mission est de servir les personnes sourdes et malentendantes, leurs familles et la communauté en proposant des programmes, des produits et des solutions innovants pour parvenir à une accessibilité totale à la communication.  
 
 **Le rôle de Christopher au sein de la RtDD:** Recruter des membres sourds et malentendants pour participer à la co-conception. Contribuer à la diffusion des ébauches de projets pour examen et commentaires. Évaluer l'accessibilité du processus de recherche pour les personnes sourdes et malentendantes. Examiner les résultats du projet.
 {% endimageAndText %}
