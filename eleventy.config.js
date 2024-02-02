@@ -112,7 +112,8 @@ module.exports = function (eleventyConfig) {
 		},
 		sass: {
 			enabled: true
-		}
+		},
+		i18n: false
 	});
 
 	// Add filters.
