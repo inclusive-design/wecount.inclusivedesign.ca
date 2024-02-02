@@ -2,7 +2,7 @@
 permalink: index.json
 ---
 [
-{%- for item in collections["views_en-CA"] %}
+{%- for item in collections.views %}
   {
     "title": {{ item.data.title | dump | safe }},
     "category": "views",
@@ -32,7 +32,7 @@ permalink: index.json
     "date": {{ item.data.date | dump | safe }}
   },
 {%- endfor %}
-{%- for item in collections["initiatives_en-CA"] %}
+{%- for item in collections.initiatives %}
   {
     "title": {{ item.data.title | dump | safe }},
     "category": "initiative",

@@ -13,10 +13,6 @@ publish_mode: editorial_workflow
 site_url: "https://wecount.inclusivedesign.ca"
 media_folder: src/uploads
 public_folder: /uploads
-i18n:
-  structure: multiple_folders
-  locales: [en-CA, fr-CA]
-  default_locale: en-CA
 collections:
   - name: pages
     label: Pages
@@ -26,7 +22,6 @@ collections:
     slug: "{{title}}"
     preview_path: "{{slug}}"
     create: true
-    i18n: false
     fields:
       - label: Title
         name: title
@@ -59,28 +54,23 @@ collections:
     sortable_fields: [title, date]
     preview_path: /news/
     create: true
-    i18n: true
     fields:
       - label: Title
         name: title
         widget: string
-        i18n: true
       - label: Link
         name: link
         widget: string
         hint: The link to the external news item or attached resource.
-        i18n: true
       - label: Date
         name: date
         widget: datetime
         time_format: false
         hint: The publication date of the item.
-        i18n: duplicate
       - label: Excerpt
         name: excerpt
         widget: text
         hint: The excerpt is shown in search results.
-        i18n: true
   - name: views
     label: Views
     label_singular: Views Entry
@@ -89,12 +79,10 @@ collections:
     slug: "{{title}}"
     preview_path: "views/{{slug}}"
     create: true
-    i18n: true
     fields:
       - label: Title
         name: title
         widget: string
-        i18n: true
       - label: Permanent Link
         name: permalink
         widget: string
@@ -102,40 +90,32 @@ collections:
         hint: |-
           If you do not specify a permanent link, one will be automatically generated from the title.
           Permalinks must have the format /views/entry-title/ (the trailing slash is required).
-        i18n: true
       - label: Author
         name: author
         widget: string
-        i18n: true
       - label: Date
         name: date
         widget: datetime
         time_format: false
         hint: The publication date of the item.
-        i18n: duplicate
       - label: Body
         name: body
         widget: markdown
-        i18n: true
       - label: Preview Image
         name: picture
         widget: image
         required: false
-        i18n: duplicate
       - label: Preview Image Alt Text
         name: altTag
         widget: string
         required: false
-        i18n: true
       - label: Excerpt
         name: excerpt
         widget: text
         hint: The excerpt is shown in search results.
-        i18n: true
       - label: Tags
         name: tags
         widget: list
-        i18n: true
   - name: initiatives
     label: Initiatives
     label_singular: Initiative
@@ -144,17 +124,14 @@ collections:
     slug: "{{title}}"
     preview_path: "initiatives/{{slug}}"
     create: true
-    i18n: true
     fields:
       - label: Event Title
         name: title
         widget: string
-        i18n: true
       - label: Event ID
         name: id
         widget: uuid
         hint: The ID is used to associate comments with this initiative and cannot be edited.
-        i18n: duplicate
       - label: Permanent Link
         name: permalink
         widget: string
@@ -162,43 +139,35 @@ collections:
         hint: |-
           If you do not specify a permanent link, one will be automatically generated from the event title.
           Permalinks must have the format /initiatives/event-title/ (the trailing slash is required).
-        i18n: duplicate
       - label: Event Date
         name: eventDate
         widget: datetime
         time_format: false
         required: false
-        i18n: duplicate
       - label: Cover Image
         name: coverImageUrl
         widget: image
         required: false
-        i18n: duplicate
       - label: Cover Image Alt Text
         name: coverImageAltText
         widget: string
         required: false
-        i18n: true
       - label: Event Body
         name: body
         widget: markdown
-        i18n: true
       - label: Short Description
         name: shortDescription
         widget: markdown
         hint: The short description is shown on the Initiatives page.
-        i18n: true
       - label: Preview Image
         name: previewImageUrl
         widget: image
         required: false
         hint: The preview image is shown on the Initiatives page.
-        i18n: duplicate
       - label: Preview Image Alt Text
         name: previewImageAltText
         widget: string
         required: false
-        i18n: true
   - name: resources
     label: Resources
     label_singular: Resource
@@ -206,7 +175,6 @@ collections:
     sortable_fields: [title]
     preview_path: "resources/{{filename}}"
     create: true
-    i18n: false
     fields:
       - label: Title
         name: title
@@ -279,7 +247,6 @@ collections:
         required: false
   - name: resourceMetadata
     label: Resource Metadata
-    i18n: false
     files:
       - label: Resource Types
         name: resourceTypes

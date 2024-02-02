@@ -1,5 +1,4 @@
 {
 	"permalink": "/{{ title | slugify }}/",
-	"layout": "layouts/page",
-	"locale": "en-CA"
+	"layout": "layouts/page"
 }

@@ -6,7 +6,7 @@
 
 {% set pageTitle = title %}
 {% set pageExcerpt = excerpt %}
-{% set pagination = collections["views_en-CA"] | paginate(page) %}
+{% set pagination = collections.views | paginate(page) %}
 
 {% block content %}
 <article class="post-article">

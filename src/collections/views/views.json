@@ -1,0 +1,5 @@
+{
+	"permalink": "/views/{{ title | slugify }}/",
+	"layout": "layouts/view.njk",
+	"category": "views"
+}

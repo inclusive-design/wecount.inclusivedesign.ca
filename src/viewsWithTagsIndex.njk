@@ -3,7 +3,7 @@ permalink: viewsWithTags.json
 ---
 {
   "views": [
-  {%- for item in collections["views_en-CA"] %}
+  {%- for item in collections.views %}
     {
       "title": {{ item.data.title | dump | safe }},
       "author": {{ item.data.author | dump | safe }},

@@ -24,27 +24,24 @@ const youtubeShortcode = require("./src/shortcodes/youtube.js");
 
 require("./src/assets/scripts/utils.js");
 
-const siteConfig = require("./src/_data/config.json");
-
 module.exports = function (eleventyConfig) {
-	siteConfig.locales.forEach(lang => {
-		eleventyConfig.addCollection(`initiatives_${lang}`, collection => {
-			return [
-				...collection.getFilteredByGlob(`src/collections/initiatives/${lang}/*.md`).sort((a, b) => b.data.eventDate - a.data.eventDate)
-			];
-		});
 
-		eleventyConfig.addCollection(`news_${lang}`, collection => {
-			return [
-				...collection.getFilteredByGlob(`src/collections/news/${lang}/*.md`).sort((a, b) => b.data.date - a.data.date)
-			];
-		});
+	eleventyConfig.addCollection("initiatives", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/initiatives/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
+		];
+	});
 
-		eleventyConfig.addCollection(`views_${lang}`, collection => {
-			return [
-				...collection.getFilteredByGlob(`src/collections/views/${lang}/*.md`).sort((a, b) => b.data.date - a.data.date)
-			];
-		});
+	eleventyConfig.addCollection("news", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/news/*.md").sort((a, b) => b.data.date - a.data.date)
+		];
+	});
+
+	eleventyConfig.addCollection("views", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/views/*.md").sort((a, b) => b.data.date - a.data.date)
+		];
 	});
 
 	eleventyConfig.addCollection("resources", collection => {
@@ -115,19 +112,6 @@ module.exports = function (eleventyConfig) {
 		},
 		sass: {
 			enabled: true
-		},
-		defaultLanguage: "en-CA",
-		supportedLanguages: {
-			"en-CA": {
-				slug: "en",
-				name: "English"
-			},
-			"fr-CA": {
-				slug: "fr",
-				name: "Français",
-				dir: "ltr",
-				uioSlug: "fr"
-			}
 		}
 	});
 
