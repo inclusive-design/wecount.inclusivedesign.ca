@@ -1,0 +1,208 @@
+// Header styles
+
+header {
+	background-color: $white;
+
+	form {
+		align-items: center;
+		display: flex;
+	}
+
+	// Styles for the search container
+	.search-container {
+		svg {
+			block-size: rem(24);
+			fill: $white;
+			inline-size: rem(24);
+			margin: rem(-29);
+			z-index: 1;
+		}
+
+		input[type="search"] {
+			border-radius: rem(16);
+			box-shadow: $border-shadow-light;
+			inline-size: rem(160);
+			outline: none;
+			padding-block: rem(8);
+			padding-inline: rem(32) rem(16);
+		}
+	}
+
+	.site-nav-wrapper {
+		background-color: $white;
+		inline-size: 100%;
+
+		.site-nav {
+			// drop shadow around nav element
+			box-shadow: $border-shadow-light;
+
+			// spacing for drop shadow, due to clipping by the next element
+			margin-block-end: $border-shadow-radius;
+
+			.nav-wideScreen {
+				display: none;
+			}
+
+			.nav-smallScreen {
+				display: flex;
+				flex-direction: column;
+				padding-block: 0.5rem;
+				padding-inline: 0;
+				position: relative;
+
+				.starter-nav {
+					display: flex;
+					flex-direction: row;
+					inline-size: 100%;
+					justify-content: space-between;
+					margin: auto;
+					padding-block: 0;
+					padding-inline: rem(16);
+
+					// Toggle menu button on mobile design
+					// Override the default button styles from _base.scss and apply the new style
+					button {
+						background: none;
+						border: none;
+						border-radius: 0;
+						box-shadow: none;
+						color: $black;
+						padding: rem(8);
+
+						svg {
+							block-size: rem(32);
+							inline-size: rem(32);
+							padding: rem(3.2);
+							pointer-events: none;
+						}
+					}
+
+					button::before {
+						content: none;
+					}
+
+					button:hover,
+					button:focus {
+						background-color: $orange-focus;
+					}
+
+					#menuToggleButton .screen-reader-only {
+						display: none;
+					}
+				}
+			}
+
+			// To make room for the box-shadow on nav container
+			.content-wrapper {
+				margin-block-start: 4px;
+			}
+
+			// Styles for the navigation menu
+			nav.primary-nav {
+				background: $white;
+				display: none;
+				inline-size: 100vw;
+				position: absolute;
+				top: rem(56);
+				z-index: 2;
+
+				a {
+					border-block-end: solid rem(2);
+					color: $black;
+					display: block;
+					float: none;
+					font-size: rem(18) !important; // Enactors.css in infusion uses !important on this element
+					font-weight: $font-weight-normal;
+					margin-block: rem(16);
+					margin-inline: rem(16);
+					text-align: start;
+					text-transform: uppercase;
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint-up(lg) {
+	header {
+		.search-container {
+			margin-inline-start: rem(80);
+
+			svg {
+				margin: rem(-40);
+			}
+
+			input[type="search"],
+			input[type="search"]:focus {
+				border-radius: rem(28);
+				inline-size: rem(240);
+				padding-block: rem(16);
+				padding-inline: rem(48);
+			}
+		}
+
+		.site-nav-wrapper {
+			.site-nav {
+				justify-content: space-around;
+
+				.nav-smallScreen {
+					display: none;
+				}
+
+				.nav-wideScreen {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					margin: auto;
+					margin-block-start: 1rem;
+					max-inline-size: $max-width-margins;
+					padding-block: 0;
+					padding-inline: rem(16);
+				}
+
+				nav.primary-nav {
+					background-color: transparent;
+					display: flex;
+					flex: 1;
+					flex-direction: row;
+					inline-size: auto;
+					justify-content: space-between;
+					position: inherit;
+					top: rem(120);
+					z-index: 0;
+
+					a {
+						border-block-end: none;
+						float: none;
+						margin-block: rem(24);
+						margin-inline: 0 rem(8);
+						padding-block: rem(8);
+						padding-inline: rem(10);
+					}
+
+					// When the user is in a section (other than the Home page), underline this particular item
+					// in the top level navigation.
+					a[aria-current="page"] {
+						background-color: $orange-focus;
+						font-weight: $font-weight-bold;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+// This media query breakpoint is for the Galaxy Fold screen.
+@include breakpoint-down(xs) {
+	header .site-nav-wrapper .site-nav .nav-smallScreen .starter-nav #menuToggleButton {
+		span {
+			display: none;
+		}
+
+		.screen-reader-only {
+			display: inline;
+		}
+	}
+}

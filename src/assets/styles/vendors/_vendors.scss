@@ -1,0 +1,172 @@
+// Vendor-specific styles.
+
+// *** UIO ***
+
+.fl-panelBar-wideScreen {
+	margin: auto;
+	max-inline-size: rem(1600);
+}
+
+// UIO button style by default
+#defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar {
+	border-block-end: none;
+	box-shadow: none;
+
+	.fl-prefsEditor-buttons {
+		background: $white;
+		border: none;
+		border-radius: 0 0 rem(30) rem(30);
+		box-shadow: $border-shadow-light;
+		box-sizing: border-box;
+		max-block-size: rem(50);
+		padding-block: rem(10);
+		padding-inline: rem(20);
+
+		button {
+			color: $black;
+			font-family: Roboto, sans-serif;
+			font-size: rem(12);
+			font-style: normal;
+			font-weight: $font-weight-normal;
+			line-height: rem(19);
+
+			&:hover,
+			&:focus {
+				background-color: $orange-focus;
+			}
+		}
+
+		.fl-prefsEditor-showHide[aria-expanded="false"] {
+			padding: 0;
+			text-align: center;
+		}
+	}
+}
+
+// UIO button style when enhance inputs is turned on
+.fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+	block-size: rem(88);
+	display: inline-block;
+	max-block-size: rem(88);
+	padding: 0;
+
+	button {
+		font-size: 95% !important;
+	}
+
+	.fl-prefsEditor-reset {
+		border: none;
+		margin-inline-start: rem(9);
+		padding-block: rem(5) rem(1);
+	}
+
+	.fl-prefsEditor-showHide[aria-expanded="false"] {
+		display: block;
+		margin-block: rem(23) 0;
+		margin-inline: auto;
+		padding-block: rem(10);
+		padding-inline: 0;
+		word-spacing: -2px;
+	}
+
+	.fl-prefsEditor-showHide[aria-expanded="true"] {
+		border-block-end: 2px solid #ccc;
+		inline-size: 97%;
+		margin-inline-start: rem(5);
+		padding-block: rem(10) rem(15);
+		padding-inline: rem(10) 0;
+	}
+}
+
+// UIO table of content
+.flc-toc-tocContainer {
+	padding-block: rem(0);
+	padding-inline: rem(27);
+
+	.flc-toc-header {
+		margin-block-end: rem(16);
+	}
+
+	// The list style for h1: solid circle
+	ul {
+		list-style: none;
+		margin-inline-start: rem(16);
+
+		a {
+			color: $navy-light;
+			font-weight: $font-weight-semibold;
+		}
+	}
+
+	ul li::before {
+		color: $navy-light;
+		content: "\25CF";
+		display: inline-block;
+		font-size: 120%;
+		inline-size: rem(10);
+		margin-inline-start: rem(-16);
+	}
+
+	// The list style for h2 and other heading levels: empty circle
+	ul ul li::before {
+		content: "\25CB";
+	}
+}
+
+// To adapt to UIO contrast themes
+@each $theme, $fColor, $bColor in $uio-themes {
+	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
+		@include adapt-to-uio-themes($fColor, $bColor);
+	}
+}
+
+// This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button
+// styles on desktop and mobile.
+@include breakpoint-up(sm) {
+	#defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons button {
+		font-size: rem(16);
+	}
+
+	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+		block-size: auto;
+		display: block;
+		padding-block: rem(10);
+		padding-inline: rem(20);
+
+		button {
+			font-size: 125% !important;
+		}
+
+		button:not(.fl-prefsEditor-reset) {
+			margin-block: 0;
+			margin-inline: rem(8);
+		}
+
+		.fl-prefsEditor-reset {
+			padding-block: 0;
+			padding-inline: rem(3);
+			padding-inline-start: rem(12.8);
+		}
+
+		.fl-prefsEditor-showHide[aria-expanded="true"] {
+			border: none;
+			inline-size: unset;
+			padding-block: 0;
+			padding-inline: rem(3);
+		}
+
+		.fl-prefsEditor-showHide[aria-expanded="false"] {
+			margin-block-start: 0;
+			padding-block: 0;
+			padding-inline: rem(3);
+		}
+	}
+}
+
+@include breakpoint-up(lg) {
+	// UIO table of content
+	.flc-toc-tocContainer {
+		padding-block: rem(1);
+		padding-inline: rem(60);
+	}
+}

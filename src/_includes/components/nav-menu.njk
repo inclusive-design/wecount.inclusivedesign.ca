@@ -1,7 +1,7 @@
 <nav class="primary-nav" aria-label="Primary Navigation">
   {% set navItems = collections.pages | eleventyNavigation %}
   {%- for item in navItems %}
-    {%- if item.order > 0 %}
+    {%- if (item.order > 0) and (item.locale === locale) %}
     <a {% if page.url === item.url %}aria-current="page" {% endif %}href="{{ item.url }}">{{ item.key }}</a>
     {%- endif %}
   {%- endfor %}

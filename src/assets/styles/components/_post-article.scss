@@ -1,0 +1,30 @@
+.post-article {
+	.author {
+		color: $grey-mid;
+		font-style: italic;
+	}
+
+	.date {
+		margin-block-end: rem(64);
+	}
+
+	.api-content {
+		border-block-end: 2px solid $green-dark;
+		margin-block-end: rem(24);
+		padding-block-end: rem(160);
+	}
+
+	.tags-info {
+		h2 {
+			color: $green-dark;
+			margin-block: rem(8);
+			margin-inline: 0;
+		}
+	}
+
+	.tags {
+		@include tags;
+
+		margin-block-end: rem(80);
+	}
+}

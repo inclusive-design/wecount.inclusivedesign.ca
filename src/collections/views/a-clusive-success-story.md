@@ -36,7 +36,7 @@ Kristin, one of the instructional designers who helped develop Clusive, reached 
 >
 > Your work has changed lives. Truly. And everyone deserves to know it!
 
-## L﻿earn more
+## Learn more
 
 Clusive was developed by the Center on Inclusive Software for Learning (CISL). [Learn more about Clusive](https://clusive.cast.org/).
 
