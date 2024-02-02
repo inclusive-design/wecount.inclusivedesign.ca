@@ -144,15 +144,11 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
+## Lori Vaanholt: L’Arche Canada
 
+Partout au Canada et dans le monde, [L'Arche](https://www.larche.ca/) crée des communautés d'amitié et d'appartenance. À L'Arche, les personnes avec et sans déficience intellectuelle vivent, travaillent, apprennent et grandissent ensemble. L'Arche démontre que lorsque les personnes ayant une déficience intellectuelle prennent leur place à la table, elles contribuent à un monde plus juste, plus compatissant et plus vivant pour tous. 
 
-### Lori Vaanholt: L’Arche Canada
-
-Across Canada and around the world, L’Arche creates communities of friendship and belonging. In L’Arche, people with and without intellectual disabilities live, work, learn, and grow together. L’Arche demonstrates that when persons with intellectual disabilities take their place at the table, they contribute to a more just, compassionate, and vibrant world for all.  
-
-**About Lori’s role with RtDD:** Recruit members with intellectual disabilities to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
-
-
+**A propos du rôle de Lori au sein de la RtDD:** Recruter des membres ayant une déficience intellectuelle pour participer à la co-conception, aider à diffuser des ébauches de projet pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "photo de la tête et des épaules de Mahadeo Sukhai", "left", "top" %}
