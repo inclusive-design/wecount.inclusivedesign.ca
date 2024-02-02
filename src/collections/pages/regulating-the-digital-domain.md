@@ -78,19 +78,11 @@ The challenges are:
 ## P﻿artners
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulders photo of Boris Vukovic", "left", "top" %}
-
-
-
-
-### The Canadian Accessibility Network & Accessibility Institute: Boris Vukovic
+### Boris Vukovic: The Canadian Accessibility Network & Accessibility Institute
 
 [The Canadian Accessibility Network](https://carleton.ca/accessibility-institute/can/) under the leadership of the Accessibility Institute at Carleton University is mandated to bring organizations together to facilitate partnerships in specific collaboration areas under each of the five overarching domains: Research, Design and Innovation, Education and Training, Policy, Employment and Community Engagement.  
 
 **About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
-
-
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
@@ -232,6 +224,8 @@ Vera Roberts
 David Pereyra
 
 Caren Watkins 
+
+U﻿ttara Ghodke
 
 ## Co-design research events
 
