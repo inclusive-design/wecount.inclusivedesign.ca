@@ -92,7 +92,7 @@ The challenges are:
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulders photo of Christopher Sutton ", "left", "top" %}
 ### Christopher Sutton: Wavefront Centre for Communication Accessibility  
 
-[Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), an institute of the Deaf and Hard of Hearing, envisions a society where Deaf, Hard of Hearing and Hearing people can interact freely without communication barriers. Our mission is to serve Deaf and Hard of Hearing individuals, their families and the community by delivering innovative programs, products and solutions to achieve full communication accessibility. 
+L﻿e [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), an institute of the Deaf and Hard of Hearing, envisions a society where Deaf, Hard of Hearing and Hearing people can interact freely without communication barriers. Our mission is to serve Deaf and Hard of Hearing individuals, their families and the community by delivering innovative programs, products and solutions to achieve full communication accessibility. 
 
 **About Christopher’s role with RtDD:** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
 {% endimageAndText %}
