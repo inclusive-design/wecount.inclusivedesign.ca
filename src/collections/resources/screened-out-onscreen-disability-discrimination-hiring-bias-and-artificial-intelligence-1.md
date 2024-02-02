@@ -1,6 +1,6 @@
 ---
 title: "Screened Out Onscreen: Disability Discrimination, Hiring Bias, and
-  Artificial Intelligence"
+  Artificial Intelligence - DPF"
 focus: AI and Disability/Outliers
 source: "Denver Law Review "
 readability:

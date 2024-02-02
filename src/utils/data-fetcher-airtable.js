@@ -18,9 +18,9 @@ module.exports = {
 
 			base("comments").select({
 				view: "reviewed",
-				sort: [{field: "post_date", direction: "desc"}],
+				sort: [{field: "post_date", direction: "desc"}]
 			}).eachPage(function page(recs, fetchNextPage) {
-				recs.forEach(function(rec) {
+				recs.forEach(function (rec) {
 					let commentProps = {
 						name: rec.get("name"),
 						date: rec.get("post_date"),
@@ -33,6 +33,7 @@ module.exports = {
 				fetchNextPage();
 			}, function done(err) {
 				if (err) {
+					// eslint-disable-next-line no-console
 					console.error("Error reading 'comments' table from Airtable: ", err);
 					return;
 				} else {

@@ -1,6 +1,6 @@
 /* global convertDate */
 
-require("../js/utils.js");
+require("../assets/scripts/utils.js");
 
 module.exports = value => {
 	return convertDate(value);

@@ -1,24 +1,27 @@
 module.exports = {
-	env: {
-		es6: true,
-		node: true,
-		browser: true
-	},
 	extends: [
-		"eslint:recommended",
+		"fluid",
+		"plugin:yml/standard",
+		"plugin:markdown/recommended",
 		"plugin:react/recommended"
 	],
 	plugins: [
 		"react"
 	],
+	"ignorePatterns": ["_site", "src/_locales/messages.js", "!.*.js"],
+	env: {
+		amd: true,
+		browser: true,
+		node: true,
+		es6: true
+	},
 	parserOptions: {
 		sourceType: "module",
-		ecmaVersion: 2018,
+		ecmaVersion: 2020,
 		ecmaFeatures: {
 			"jsx": true
 		}
 	},
-	"ignorePatterns": ["dist", "!.eslintrc.js", "!.eleventy.js"],
 	rules: {
 		"indent": [1, "tab"],
 		"linebreak-style": ["error", "unix"],
@@ -26,6 +29,12 @@ module.exports = {
 		semi: ["error", "always"],
 		"react/react-in-jsx-scope": 0
 	},
+	overrides: [
+		{
+			files: ["**/*.md"],
+			processor: "markdown/markdown"
+		}
+	],
 	"settings": {
 		"react": {
 			"version": "16.14.0"

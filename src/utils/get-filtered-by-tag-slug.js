@@ -3,8 +3,8 @@
  *
  * @param {String} filterTag - The tag for which to filter the collection
  * @param {Object} collection - An Eleventy collection defined via the collections API: https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting
- * 
- * @returns {Array<Object>} A filtered collection of items
+ *
+ * @return {Array<Object>} A filtered collection of items
  */
 
 const slugFilter = require("../filters/slug.js");

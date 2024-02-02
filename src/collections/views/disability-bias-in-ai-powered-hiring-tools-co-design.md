@@ -15,8 +15,6 @@ tags:
   - Employment
   - EDS
 ---
-
-
 ![EDS: Equitable Digital Systems logo](/uploads/eds-colored-03.png)
 
 In May, we completed our second set of co-design sessions with the Equitable Digital Systems (EDS) project. EDS is a project that explores how to make digital systems more inclusive for persons with disabilities in the workplace.

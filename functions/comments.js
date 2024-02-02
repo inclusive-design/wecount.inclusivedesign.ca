@@ -40,11 +40,13 @@ const sendEmail = (moderatorEmail, { timestamp, name, comment }) => {
 	};
 
 	return new Promise((resolve, reject) => {
-		transporter.sendMail(mailOptions, function(error, info){
+		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
+				// eslint-disable-next-line no-console
 				console.error(error);
 				return reject(error);
 			} else {
+				// eslint-disable-next-line no-console
 				console.log("Email sent: " + info.response);
 				resolve();
 			}
@@ -66,10 +68,12 @@ const saveComment = async (base, { timestamp, name, comment, initiativeId }) => 
 			}
 		], function (err, records) {
 			if (err) {
+				// eslint-disable-next-line no-console
 				console.error(err);
 				return reject(err);
 			}
 			records.forEach(function (record) {
+				// eslint-disable-next-line no-console
 				console.log("saved into a new ID: ", record.getId());
 			});
 			resolve();
@@ -77,7 +81,7 @@ const saveComment = async (base, { timestamp, name, comment, initiativeId }) => 
 	});
 };
 
-exports.handler = async function(event, context, callback) {
+exports.handler = async function (event, context, callback) {
 	const incomingData = JSON.parse(event.body);
 
 	// Reject the request when:

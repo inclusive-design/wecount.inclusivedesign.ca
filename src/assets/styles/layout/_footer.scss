@@ -1,0 +1,309 @@
+// Footer styles.
+
+// For the canada logo: the color of the flag is red by default but is able to adapt
+// to the color determined by the selected UIO high contrast theme.
+.fill-f00 {
+	fill: var(--currentcolor, #f00);
+}
+
+footer {
+	background: $navy-light;
+	color: $white;
+	margin-block-start: rem(30);
+	padding-block: rem(16);
+	padding-inline: rem(32);
+	text-align: center;
+
+	a {
+		color: $white;
+
+		&:hover,
+		&:focus {
+			color: $navy-light;
+		}
+	}
+
+	.netlify-notice {
+		padding-block-start: rem(32);
+
+		a {
+			font-weight: $font-weight-normal;
+		}
+	}
+
+	.footer-content {
+		align-items: baseline;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		max-inline-size: $max-width-margins;
+
+		h2 {
+			color: $white;
+			font-size: rem(16);
+			font-weight: $font-weight-bold;
+		}
+
+		.funders {
+			p {
+				margin: 0;
+				padding-block-end: rem(2);
+			}
+
+			div {
+				.funder-logo {
+					display: inline-block;
+				}
+			}
+
+			.canada-logo {
+				block-size: rem(60);
+				inline-size: rem(144);
+				padding-block: rem(13);
+				padding-inline: 0 rem(13);
+			}
+
+			.hewlett-logo {
+				block-size: rem(55);
+				inline-size: rem(215);
+				margin-block-end: rem(16);
+				padding-block: rem(13) 0;
+				padding-inline: 0 rem(13);
+			}
+		}
+
+		.subscribe {
+			a {
+				background-color: $white;
+				border-radius: rem(28);
+				color: $navy-light;
+				padding-block: rem(8);
+				padding-inline: rem(8);
+
+				&:hover,
+				&:focus {
+					background-color: $navy-light;
+					border: solid 1px $white;
+					color: $white;
+				}
+			}
+
+			hr {
+				background: $white;
+				inline-size: 100%;
+				margin-block-start: rem(48);
+			}
+
+			.subscribe-text {
+				margin-block-end: rem(32);
+			}
+		}
+
+		.contact-info {
+			inline-size: 100%;
+
+			address {
+				font-style: normal;
+			}
+
+			a {
+				font-weight: $font-weight-normal;
+
+				svg {
+					padding-block: rem(32) rem(16);
+					padding-inline: 0 rem(16);
+				}
+			}
+
+			.footer-logos {
+				a {
+					display: inline-block;
+				}
+			}
+
+			.ocadu-logo-wrapper {
+				a svg {
+					block-size: rem(128);
+					inline-size: rem(128);
+					padding: rem(16);
+				}
+			}
+
+			.idrc-logo {
+				block-size: rem(92);
+				inline-size: rem(213);
+			}
+
+			.ocadu-logo {
+				block-size: rem(128);
+				inline-size: rem(128);
+			}
+		}
+
+		.social-media {
+			align-self: center;
+			padding-block-end: rem(32);
+
+			.social-media-icons {
+				display: grid;
+				grid-row-gap: rem(16);
+				grid-template-columns: repeat(5, auto);
+				margin: auto;
+
+				div {
+					&:nth-child(2) {
+						grid-column-start: 3;
+					}
+
+					&:nth-child(3) {
+						grid-column-start: 5;
+					}
+
+					&:nth-child(4) {
+						grid-column-start: 2;
+					}
+
+					&:nth-child(5) {
+						grid-column-start: 4;
+					}
+				}
+
+				a {
+					svg {
+						block-size: rem(50);
+						inline-size: rem(50);
+						stroke-width: 2px;
+					}
+
+					&:hover,
+					&:focus {
+						background-color: inherit;
+
+						svg {
+							fill: $navy-light;
+							stroke: $white;
+							stroke-linecap: round;
+
+							path {
+								fill: $navy-light;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint-up(md) {
+	footer {
+		margin-block-start: rem(0);
+
+		.footer-content {
+			display: grid;
+			grid-row-gap: rem(16);
+			grid-template-columns: 3.8fr 1.2fr;
+			padding-block: rem(32);
+			padding-inline: rem(48);
+
+			.funders {
+				align-self: end;
+				grid-column: 2/3;
+				grid-row: 3/3;
+				text-align: start;
+
+				svg {
+					margin-block-end: rem(16);
+				}
+
+				.hewlett-logo {
+					block-size: rem(80);
+					inline-size: rem(288);
+				}
+			}
+
+			.contact-info {
+				grid-column: 1/2;
+				grid-row: 3/3;
+				text-align: start;
+
+				.idrc-logo {
+					block-size: rem(96);
+					inline-size: rem(176);
+				}
+
+				.ocadu-logo {
+					block-size: rem(72);
+					inline-size: rem(176);
+				}
+
+				.footer-logos {
+					display: inline-flex;
+
+					.ocadu-logo-wrapper {
+						padding: 0;
+					}
+				}
+			}
+
+			.social-media {
+				align-self: auto;
+				grid-row: 2;
+
+				h2 {
+					text-align: start;
+				}
+
+				.social-media-icons {
+					grid-gap: rem(16);
+					grid-template-columns: repeat(5, auto);
+					inline-size: rem(96);
+					margin: inherit;
+
+					div {
+						&:nth-child(2) {
+							grid-column-start: 2;
+						}
+
+						&:nth-child(3) {
+							grid-column-start: 3;
+						}
+
+						&:nth-child(4) {
+							grid-column-start: 4;
+						}
+
+						&:nth-child(5) {
+							grid-column-start: 5;
+						}
+					}
+
+					a svg {
+						block-size: rem(50);
+						inline-size: rem(50);
+					}
+				}
+			}
+
+			.subscribe {
+				grid-column: span 2;
+				grid-row: 1;
+				text-align: start;
+
+				a {
+					padding-block: rem(16);
+					padding-inline: rem(32);
+				}
+
+				hr {
+					background: $white;
+					inline-size: 100%;
+				}
+			}
+		}
+
+		.netlify-notice {
+			padding-block-start: 0;
+		}
+	}
+}
