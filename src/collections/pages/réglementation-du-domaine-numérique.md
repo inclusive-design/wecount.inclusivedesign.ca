@@ -144,7 +144,7 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
-## Lori Vaanholt: L’Arche Canada
+### Lori Vaanholt: L’Arche Canada
 
 Partout au Canada et dans le monde, [L'Arche](https://www.larche.ca/) crée des communautés d'amitié et d'appartenance. À L'Arche, les personnes avec et sans déficience intellectuelle vivent, travaillent, apprennent et grandissent ensemble. L'Arche démontre que lorsque les personnes ayant une déficience intellectuelle prennent leur place à la table, elles contribuent à un monde plus juste, plus compatissant et plus vivant pour tous. 
 
