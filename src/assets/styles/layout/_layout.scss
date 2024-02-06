@@ -152,6 +152,10 @@ p img {
 
 .embed--youtube {
 	min-inline-size: 100%;
+
+	lite-youtube {
+		max-inline-size: 100%;
+	}
 }
 
 // Special styling rules for homepage content

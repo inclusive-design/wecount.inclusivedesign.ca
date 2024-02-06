@@ -104,7 +104,8 @@ button:not(
 .fl-textfieldStepper-button,
 .fl-prefsEditor-showHide,
 .fl-prefsEditor-reset,
-.fl-switchUI-control) {
+.fl-switchUI-control,
+.lty-playbtn) {
 	background-color: $green-light;
 	block-size: rem(54);
 	border: 0;
@@ -124,7 +125,8 @@ button:not(
 .fl-textfieldStepper-button,
 .fl-prefsEditor-showHide,
 .fl-prefsEditor-reset,
-.fl-switchUI-control)::before {
+.fl-switchUI-control,
+.lty-playbtn)::before {
 	block-size: rem(54);
 	border-radius: rem(26);
 	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
