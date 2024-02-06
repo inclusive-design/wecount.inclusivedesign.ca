@@ -1,5 +1,5 @@
 /**
- * Handle client requests for adding comments for initiatives. This script does:
+ * Handle client requests for adding comments for events. This script does:
  * 1. Save the comment to Airtable;
  * 2. Send an email to moderator that a new comment has been posted and waiting for a review/
  *

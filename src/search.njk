@@ -26,7 +26,7 @@ permalink: /search/
         when https://github.com/11ty/eleventy-plugin-vue is released #}
         <article class="news-item">
           <div class="preview-media-wrapper">
-            <figure v-if="item.category==='views'" class="content">
+            <figure v-if="item.category==='initiatives'" class="content">
               <svg v-if="item.picture===null" class="logo placeholder-img">
                 <use xlink:href="#placeholder" />
               </svg>
@@ -41,7 +41,7 @@ permalink: /search/
               </a>
             </h2>
 
-            <div v-if="item.category==='views'" class="author">
+            <div v-if="item.category==='initiatives'" class="author">
               {{ '{{ item.author }}' }}
             </div>
 
