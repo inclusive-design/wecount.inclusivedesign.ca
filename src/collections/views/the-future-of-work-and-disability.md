@@ -67,7 +67,7 @@ The Future of Work and Disability had expert collaborators many of whom identify
 
 **Future of Work and Disability Findings Report:** 
 
-{% imageAndText "/uploads/fwd-report.jpg", "FWD Findings Report cover", "left", "top" %}
+{% imageAndText "/uploads/fwd-report.jpg", "FWD Findings Report cover", "", "left", "top" %}
 
 
 
@@ -103,7 +103,7 @@ In addition to our report to Accessibility Standards Canada, we created:
 
 # Badges
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
 
 
 
@@ -140,7 +140,7 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 ### Panelists
 
-{% imageAndText "/uploads/Anhong-Guo.png", "A photo of Anhong Guo", "left", "top" %}
+{% imageAndText "/uploads/Anhong-Guo.png", "A photo of Anhong Guo", "", "left", "top" %}
 
 
 
@@ -182,7 +182,7 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/Shari-Trewin-IBM.jpg", "A photo of Shari Trewin", "left", "top" %}
+{% imageAndText "/uploads/Shari-Trewin-IBM.jpg", "A photo of Shari Trewin", "", "left", "top" %}
 
 
 
@@ -224,7 +224,7 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/Ben-Tamblyn.jpg", "A photo of Ben Tamblyn", "left", "top" %}
+{% imageAndText "/uploads/Ben-Tamblyn.jpg", "A photo of Ben Tamblyn", "", "left", "top" %}
 
 
 
@@ -266,7 +266,7 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/Chancey-Fleet.png", "A photo of Chancey Fleet", "left", "top" %}
+{% imageAndText "/uploads/Chancey-Fleet.png", "A photo of Chancey Fleet", "", "left", "top" %}
 
 
 
@@ -395,7 +395,7 @@ In this presentation, we explore the best policies and practices that both tech 
 
 ### Panelists
 
-{% imageAndText "/uploads/Alexandra-Reeve-Givens.png", "A photo of Alexandra Reeve Givens", "left", "top" %}
+{% imageAndText "/uploads/Alexandra-Reeve-Givens.png", "A photo of Alexandra Reeve Givens", "", "left", "top" %}
 
 
 
@@ -437,7 +437,7 @@ In this presentation, we explore the best policies and practices that both tech 
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/Julia-Stoyanovich.png", "A photo of Julia Stoyanovich", "left", "top" %}
+{% imageAndText "/uploads/Julia-Stoyanovich.png", "A photo of Julia Stoyanovich", "", "left", "top" %}
 
 
 
@@ -548,7 +548,7 @@ This webinar focused on employment, disability and artificial intelligence polic
 
 ### Guest Speaker
 
-{% imageAndText "/uploads/Abhishek-Gupta.png", "A photo of Abhishek Gupta", "left", "top" %}
+{% imageAndText "/uploads/Abhishek-Gupta.png", "A photo of Abhishek Gupta", "", "left", "top" %}
 
 
 
@@ -649,7 +649,7 @@ In this webinar, our panel discussion highlighted some of the potential problems
 
 ### Panelists
 
-{% imageAndText "/uploads/Shea-Tanis-PhD.jpg", "A photo of Shea Tanis", "left", "top" %}
+{% imageAndText "/uploads/Shea-Tanis-PhD.jpg", "A photo of Shea Tanis", "", "left", "top" %}
 
 
 
@@ -781,7 +781,7 @@ In this webinar we learned about [nugget.ai](https://www.nugget.ai/)’s operati
 
 ### Guest Speakers
 
-{% imageAndText "/uploads/nugget.jpg", "nugget.ai logo", "left", "top" %}
+{% imageAndText "/uploads/nugget.jpg", "nugget.ai logo", "", "left", "top" %}
 
 **Marian Pitel** is Head of Research at nugget.ai, completing a Doctor of Philosophy degree in Organizational Psychology.
 

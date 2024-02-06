@@ -30,7 +30,7 @@ The PSE portion of the environmental scan identified 46 AI-related programs acro
 
 ## **Examples of Ethical AI Courses**
 
-{% imageAndText "/uploads/UBC-logo.png", "UBC logo", "right", "top" %}
+{% imageAndText "/uploads/UBC-logo.png", "UBC logo", "", "right", "top" %}
 
 ### **University of British Columbia**
 
@@ -46,7 +46,7 @@ The legal, ethical, and security issues concerning data, including aggregated da
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/SFU.png", "SFU logo", "right", "top" %}
+{% imageAndText "/uploads/SFU.png", "SFU logo", "", "right", "top" %}
 
 ### **Simon Fraser University**
 
@@ -60,7 +60,7 @@ An examination of social processes that are being automated and implications for
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/Queens.png", "Queen's University logo", "right", "top" %}
+{% imageAndText "/uploads/Queens.png", "Queen's University logo", "", "right", "top" %}
 
 ### **Queen’s University**
 
@@ -74,7 +74,7 @@ This course explores the profound implications of AI on business and society. Th
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/UofT-e1608249714254.png", "University of Toronto logo", "right", "top" %}
+{% imageAndText "/uploads/UofT-e1608249714254.png", "University of Toronto logo", "", "right", "top" %}
 
 ### **University of Toronto**
 
@@ -88,7 +88,7 @@ Machine learning systems are becoming increasingly important in many domains whe
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/York.png", "York University logo", "right", "top" %}
+{% imageAndText "/uploads/York.png", "York University logo", "", "right", "top" %}
 
 ### **York University**
 
@@ -104,7 +104,7 @@ This course is intended for students with professional interest in the social an
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/Western.png", "University of Western Ontario logo", "right", "top" %}
+{% imageAndText "/uploads/Western.png", "University of Western Ontario logo", "", "right", "top" %}
 
 ### ****University of Western Ontario****
 
@@ -118,7 +118,7 @@ As we increasingly create a society where people have to interact with various a
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/UofW.png", "University of Waterloo logo", "right", "top" %}
+{% imageAndText "/uploads/UofW.png", "University of Waterloo logo", "", "right", "top" %}
 
 ### ******University of Waterloo******
 
@@ -134,7 +134,7 @@ Students must complete a 3-day workshop on Ethics in Data Science & Artificial I
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/OTU-e1608250233884.png", "Ontario Tech University logo", "right", "top" %}
+{% imageAndText "/uploads/OTU-e1608250233884.png", "Ontario Tech University logo", "", "right", "top" %}
 
 ### ********Ontario Tech University********
 

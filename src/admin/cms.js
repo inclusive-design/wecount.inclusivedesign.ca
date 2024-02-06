@@ -247,6 +247,11 @@ CMS.registerEditorComponent({
 			widget: "string"
 		},
 		{
+			name: "title",
+			label: "Title",
+			widget: "string",
+		},
+		{
 			name: "imagePosition",
 			label: "Image Position",
 			widget: "select",
@@ -265,24 +270,25 @@ CMS.registerEditorComponent({
 			required: true
 		}
 	],
-	pattern: /^{% imageAndText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimageAndText %}/,
+	pattern: /^{% imageAndText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimageAndText %}/,
 	fromBlock: function (match) {
 		return {
 			image: match[1],
 			alt: match[2],
-			imagePosition: match[3],
-			verticalAlignment: match[4],
-			content: match[5]
+			title: match[3],
+			imagePosition: match[4],
+			verticalAlignment: match[5],
+			content: match[6]
 		};
 	},
 	toBlock: function (obj) {
-		return `{% imageAndText "${obj.image}", "${obj.alt}", "${obj.imagePosition}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimageAndText %}`;
+		return `{% imageAndText "${obj.image}", "${obj.alt}", "${obj.title}", "${obj.imagePosition}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimageAndText %}`;
 	},
 	toPreview: function (obj, getAsset, fields) {
-		const {content, image, alt, imagePosition, verticalAlignment} = obj;
+		const {content, image, alt, title, imagePosition, verticalAlignment} = obj;
 		const imageField = fields.find(f => f.get("widget") === "image");
 		const src = getAsset(image, imageField);
-		return imageAndTextShortcode(content, src, alt, imagePosition, verticalAlignment);
+		return imageAndTextShortcode(content, src, alt, title, imagePosition, verticalAlignment);
 	}
 });
 
