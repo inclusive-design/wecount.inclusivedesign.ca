@@ -1,6 +1,6 @@
-// Initiative page
-.initiative-page {
-	.initiative-cover-image {
+// Event page
+.event-page {
+	.event-cover-image {
 		display: block;
 		margin-inline: auto;
 		max-inline-size: 100%;
@@ -187,7 +187,7 @@
 }
 
 // Use higher specificity to define special style for two buttons to avoid css linting errors
-.initiative-page #comment-form button {
+.event-page #comment-form button {
 	float: right;
 	margin-block: rem(29);
 	margin-inline: 0;

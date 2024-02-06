@@ -132,7 +132,7 @@
 }
 
 // Initially show the static generated page and hide the dynamic page section for the search and filtering result.
-.views.dynamic-view,
+.initiatives.dynamic-view,
 .resources.dynamic-view {
 	display: none;
 }
@@ -143,7 +143,7 @@
 	display: none;
 }
 
-.views,
+.initiatives,
 .resources {
 	.search-container {
 		padding-block-end: rem(27);
@@ -191,7 +191,7 @@
 	}
 }
 
-.views {
+.initiatives {
 	.search-container {
 		input[type="search"] {
 			margin-inline-start: rem(-8);
@@ -200,7 +200,7 @@
 }
 
 @include breakpoint-up(lg) {
-	.views {
+	.initiatives {
 		.search-container {
 			inline-size: rem(288);
 			margin-inline-start: auto;

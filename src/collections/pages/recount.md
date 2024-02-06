@@ -1,11 +1,11 @@
 ---
 title: Recount
-permalink: /news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber
+permalink: /recount/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber
   }}/{% endif %}
 pagination:
-  data: collections.news
+  data: collections.recount
   size: 10
-layout: layouts/news.njk
+layout: layouts/recount.njk
 excerpt: Subscribe now to stay up-to-date with the latest news in the data
   science, disability and AI communities.
 menu_order: 5

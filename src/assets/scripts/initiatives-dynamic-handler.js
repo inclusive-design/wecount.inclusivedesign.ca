@@ -33,15 +33,15 @@ new Vue({
 
 		if (searchTerm || selectedTags.length > 0) {
 			// Hide the static view section and show the dynamic search and filtering result section
-			document.querySelector(".views.static-view").style.display = "none";
-			document.querySelector(".views.dynamic-view").style.display = "block";
+			document.querySelector(".initiatives.static-view").style.display = "none";
+			document.querySelector(".initiatives.dynamic-view").style.display = "block";
 			isStaticViewVisible = false;
 
 			axios.get(
-				window.location.origin + "/viewsWithTags.json"
+				window.location.origin + "/initiativesWithTags.json"
 			).then(function (response) {
 				// Search
-				let results = response.data.views;
+				let results = response.data.initiatives;
 				if (searchTerm) {
 					results = search(results, searchTerm);
 				}
@@ -61,7 +61,7 @@ new Vue({
 
 				// Paginate search results
 				if (results.length > pageSize) {
-					pagination = createPagination(results, pageSize, pageInQuery, "/views/?s=" + searchTerm + "&" + tagsQuery + "&page=:page");
+					pagination = createPagination(results, pageSize, pageInQuery, "/initiatives/?s=" + searchTerm + "&" + tagsQuery + "&page=:page");
 				}
 
 				vm.tags = response.data.tags.map(tag => {
@@ -76,7 +76,7 @@ new Vue({
 				});
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
-				vm.searchResult = `${results.length} of ${response.data.views.length} resources matched`;
+				vm.searchResult = `${results.length} of ${response.data.initiatives.length} resources matched`;
 			});
 		}
 	},

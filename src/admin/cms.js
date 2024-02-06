@@ -7,6 +7,7 @@ import htmlSymbolFilter from "../filters/html-symbol";
 import markdownFilter from "../filters/markdown";
 import randomizeFilter from "../filters/randomize";
 import slugFilter from "../filters/slug";
+import paginateFilter from "../filters/paginate";
 import w3DateFilter from "../filters/w3-date";
 import expanderShortcode from "../shortcodes/expander.js";
 import imageAndTextShortcode from "../shortcodes/image-and-text.js";
@@ -20,6 +21,7 @@ env.addFilter("htmlSymbolFilter", htmlSymbolFilter);
 env.addFilter("markdownFilter", markdownFilter);
 env.addFilter("randomizeFilter", randomizeFilter);
 env.addFilter("slug", slugFilter);
+env.addFilter("paginate", paginateFilter);
 env.addFilter("w3DateFilter", w3DateFilter);
 
 const NunjucksPreview = ({ entry, path, context, globalData }) => {
@@ -55,12 +57,12 @@ Page.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
-const News = ({ entry }) => {
+const Recount = ({ entry }) => {
 	return <NunjucksPreview
 		entry={entry}
-		path="layouts/news.njk"
+		path="layouts/recount.njk"
 		context={({title, date, link, excerpt}) => ({
-			title: "News",
+			title: "Recount",
 			previewMode: true,
 			pagination: {
 				items: [
@@ -78,11 +80,11 @@ const News = ({ entry }) => {
 	/>;
 };
 
-News.propTypes = {
+Recount.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
-const Views = createClass({
+const Initiatives = createClass({
 	render: function () {
 		const tagItems = this.props.entry.getIn(["data", "tags"]);
 
@@ -111,14 +113,14 @@ const Views = createClass({
 	}
 });
 
-Views.propTypes = {
+Initiatives.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
-const Initative = ({ entry, getAsset }) => {
+const Event = ({ entry, getAsset }) => {
 	return <NunjucksPreview
 		entry={entry}
-		path="layouts/initiative.njk"
+		path="layouts/event.njk"
 		context={({title, id, eventDate, shortDescription, previewImageAltText, coverImageAltText, body }, entry) => ({
 			previewMode: true,
 			title,
@@ -134,7 +136,7 @@ const Initative = ({ entry, getAsset }) => {
 	/>;
 };
 
-Initative.propTypes = {
+Event.propTypes = {
 	entry: PropTypes.object.isRequired,
 	getAsset: PropTypes.object.isRequired
 };
@@ -168,9 +170,9 @@ Resources.propTypes = {
 };
 
 CMS.registerPreviewTemplate("pages", Page);
-CMS.registerPreviewTemplate("news", News);
-CMS.registerPreviewTemplate("views", Views);
-CMS.registerPreviewTemplate("initiatives", Initative);
+CMS.registerPreviewTemplate("recount", Recount);
+CMS.registerPreviewTemplate("initiatives", Initiatives);
+CMS.registerPreviewTemplate("events", Event);
 CMS.registerPreviewTemplate("resources", Resources);
 
 CMS.registerWidget("uuid", UuidControl, UuidPreview);

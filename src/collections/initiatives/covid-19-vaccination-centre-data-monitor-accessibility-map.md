@@ -1,6 +1,6 @@
 ---
 title: "COVID-19 Vaccination Centre Data Monitor: Accessibility Map Demonstration"
-permalink: /views/mapdemo/
+permalink: /initiatives/mapdemo/
 author: Uttara Ghodke & Celine Nguyen
 date: 2021-06-08T18:12:48.138Z
 picture: /uploads/maptool.gif

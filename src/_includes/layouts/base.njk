@@ -37,24 +37,6 @@
     {% block footerScripts %}{% endblock %}
     {% if page.url === "/" %}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-    netlifyIdentity.on("login", user => {
-      if (user.app_metadata.roles.includes("admin")) {
-        const el = document.querySelector("[data-netlify-identity-button]");
-        const newEl = document.createElement("p");
-        newEl.id = "administration";
-        newEl.className = "has-text-align-center";
-        newEl.innerHTML = "<a href='/admin/'>Administration</a>";
-        el.parentNode.insertBefore(newEl, el);
-      }
-    });
-    netlifyIdentity.on("logout", () => {
-      const el = document.querySelector("#administration");
-      if (el) {
-        el.remove();
-      }
-    });
-    </script>
     {% endif %}
     <script src="/assets/scripts/uio.js" defer></script>
   </body>

@@ -17,32 +17,32 @@
     </div>
   </article>
   <div class="homepage-cards">
-    <a href="/views/" class="blue card">
+    <a href="/initiatives/" class="blue card">
       <h2>Read current views in inclusive data science</h2>
     </a>
-    <a href="/initiatives/" class="yellow card">
+    <a href="/events/" class="yellow card">
       <h2>Participate in our inclusion challenge initiatives</h2>
     </a>
     <a href="/badges/" class="azure card">
       <h2>Earn We Count Badges</h2>
     </a>
-    <a href="/Resources/" class="green card">
+    <a href="/resources/" class="green card">
       <h2>Search the We Count Library</h2>
     </a>
   </div>
 </div>
 
-{% elif page.url === "/initiatives/" %}
-<article class="page initiatives">
+{% elif page.url === "/events/" %}
+<article class="page events">
   <h1 class="title">{{ pageTitle }}</h1>
   <div class="api-content">
     {{ content | safe }}
-    <div class="initiatives">
-      {% for initiative in collections["initiatives"] %}
+    <div class="events">
+      {% for initiative in collections.events %}
         {% set tileURL = initiative.url %}
         {% set title = initiative.data.title %}
         {% set description = initiative.data.shortDescription %}
-        {% set defaultPreviewImageUrl = "/assets/images/initiative.png" %}
+        {% set defaultPreviewImageUrl = "/assets/images/event.png" %}
         {% set previewImageUrl = initiative.data.previewImageUrl %}
         {% set previewImageAltText = initiative.data.previewImageAltText %}
         {% include "components/tile-item.njk" %}

@@ -19,16 +19,16 @@
     </symbol>
   </svg>
 
-  <article class="views static-view">
+  <article class="initiatives static-view">
     <h1>{{ title }}</h1>
         {{ content | safe }}
-    <form method="get" action="/views/">
-      {% set placeholderForSearch = "Search views..." %}
+    <form method="get" action="/initiatives/">
+      {% set placeholderForSearch = "Search initiatives..." %}
       {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
       {% include 'components/search-container.njk' %}
 
       {% set filterTitle = "Search Filters" %}
-      {% set filterAction = "/views/" %}
+      {% set filterAction = "/initiatives/" %}
       {% include 'components/filter.njk' %}
     </form>
 
@@ -51,15 +51,15 @@
   </article>
 
   {# For displaying dynamic search and filtering results #}
-  <article class="views dynamic-view">
+  <article class="initiatives dynamic-view">
         <h1>{{ title }}</h1>
         {{ content | safe }}
 
-    <form method="get" action="/views/">
+    <form method="get" action="/initiatives/">
       {# Search #}
       <div class="search-container">
         <svg><use xlink:href="#search" /></svg>
-        <input type="search" name="s" :value="searchTerm" placeholder="Search views..." aria-label="Enter keywords for a search in posts">
+        <input type="search" name="s" :value="searchTerm" placeholder="Search initiatives..." aria-label="Enter keywords for a search in posts">
       </div>
 
       {# Filter #}
@@ -114,7 +114,7 @@
                             {{ '{{ item.title }}' }}
                         </h2>
 
-                        <div v-if="item.category==='views'" class="author">
+                        <div v-if="item.category==='initiatives'" class="author">
               {{ '{{ item.author }}' }}
             </div>
 
@@ -196,5 +196,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 <script src="/assets/scripts/utils.js"></script>
 <script src="/assets/scripts/content-header-observer.js"></script>
-<script src="/assets/scripts/views-dynamic-handler.js"></script>
+<script src="/assets/scripts/initiatives-dynamic-handler.js"></script>
 {% endblock %}

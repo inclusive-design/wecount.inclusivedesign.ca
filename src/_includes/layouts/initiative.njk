@@ -4,55 +4,42 @@
 {% extends 'layouts/base.njk' %}
 {% endif %}
 
-{% set pageTitle = page.title %}
+{% set pageTitle = title %}
+{% set pageExcerpt = excerpt %}
+{% set pagination = collections.initiatives | paginate(page) %}
 
 {% block content %}
-  <article class="initiative-page">
-    <h1>{{ title | safe }}</h1>
-    {% if coverImageUrl %}
-    <img class="initiative-cover-image" src="{{ coverImageUrl | safe }}" alt="{{ coverImageAltText }}">
-    {% endif %}
+<article class="post-article">
+  <h1>{{ title | safe }}</h1>
+  <div class="author">By {{ author }}</div>
+  <time class="date" datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
+  <div class="api-content">{{ content | safe }}</div>
 
-    <div class="description">{{ content | safe }}</div>
 
-    <form id="comment-form">
-      <h3>Comments</h3>
-      <div class="form-field">
-        <span>*</span><p class="asterisk-def"> Indicates required field</p>
-      </div>
-
-      <div class="form-field">
-        <span>*</span><h4><label for="name">Name</label></h4><span class="required-name">Required</span>
-        <input id="name" type="text" name="name" placeholder="" aria-label="Enter your name">
-      </div>
-
-      <div class="form-field">
-        <span>*</span><h4><label for="comment">Post a comment or question</label></h4><span class="required-comment">Required</span>
-        <textarea id="comment" name="comment" placeholder="" aria-label="Enter your comment"></textarea>
-        <input type="hidden" name="initiativeId" id="initiativeId" value="{{ id }}">
-        <button id="post-comment" type="submit">Post a comment</button>
-      </div>
-    </form>
-
-    <div class="submit-success-message" role="status">
-      <span>Thank you for submitting your comment. It will be posted on the page once it is approved</span>
+  {% if tags.length > 0 %}
+  <section class="tags-info">
+    <h2 class="h3">Tags</h2>
+    <div class="tags">
+    {% for tag in tags %}
+    <a href="/tags/{{ tag | slugify }}/">{{ tag | safe }}</a>
+    {% endfor %}
     </div>
+  </section>
+  {% endif %}
 
-    <div class="submit-failure-message" role="alert">
-      <span>There was an error submitting your comment. Please try again</span>
-    </div>
-
-    <div class="comments">
-      {% for comment in collections.comments %}
-        {% if comment.initiativeId === id %}
-        {% include 'components/comment.njk' %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </article>
+  {% if pagination.pages.length > 1 %}
+  {% include 'components/pagination.njk' %}
+  {% endif %}
+</article>
 {% endblock %}
 
 {% block footerScripts %}
-<script src="/assets/scripts/utils.js"></script>
-<script src="/assets/scripts/initiative-comments.js"></script>
+<script src="/assets/scripts/content-header-observer.js"></script>
+<script>
+  // Track all h1 and h2 in content for the Initiatives post page.
+document.querySelectorAll("main article.post-article h1, main article.post-article h2, header").forEach((section) => {
+  const contentHeaderObserver = getSideMenuObserver();
+  contentHeaderObserver.observe(section);
+});
+</script>
 {% endblock %}

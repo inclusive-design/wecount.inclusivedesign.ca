@@ -61,7 +61,7 @@
 		stroke-width: rem(3);
 	}
 
-	// Placeholder images on the "views" page
+	// Placeholder images on the "initiatives" page
 	svg.placeholder-img use {
 		stroke: var(--fColor, currentcolor);
 		stroke-linecap: round;
@@ -279,8 +279,8 @@
 		}
 	}
 
-	// The search container on the "Views" page
-	.views .search-container {
+	// The search container on the "Initiatives" page
+	.initiatives .search-container {
 		svg {
 			fill: currentcolor;
 		}
@@ -310,7 +310,7 @@
 	}
 
 	// Hide ellipsis when a post excerpt is fully displayed
-	.news-grid .api-content .news-item .preview-content::after {
+	.news-grid .api-content .recount-item .preview-content::after {
 		background: $bColor;
 	}
 
