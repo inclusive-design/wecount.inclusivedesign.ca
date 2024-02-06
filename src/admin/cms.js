@@ -251,7 +251,7 @@ CMS.registerEditorComponent({
 		{
 			name: "title",
 			label: "Title",
-			widget: "string",
+			widget: "string"
 		},
 		{
 			name: "imagePosition",
