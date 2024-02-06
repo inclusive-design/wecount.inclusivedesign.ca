@@ -1,6 +1,6 @@
 ---
 title: The Future of Work and Disability
-permalink: /views/fwd/
+permalink: /initiatives/fwd/
 author: David Pereyra
 date: 2022-10-20T18:33:22.010Z
 picture: /uploads/8eb229f4-2.jpg

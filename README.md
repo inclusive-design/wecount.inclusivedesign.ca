@@ -9,21 +9,16 @@ The source code for the We Count website.
 
 The front end of the website is built with [Eleventy](https://11ty.dev/).
 
-The website uses [Netlify CMS](https://netlifycms.org) to manage the following content:
+The website uses [Decap CMS](https://decapcms.org) to manage the following content:
 
-- [initiatives](src/collections/initiatives)
+- [events](src/collections/events)
 - [pages](src/collections/pages)
 - [news](src/collections/news)
-- [views](src/collections/views)
-
-The website uses [Netlify Large Media](https://docs.netlify.com/large-media/overview/) for storing uploaded files with
-Git LFS. Developers must install [Git LFS](https://git-lfs.github.com/) and
-[consult the documentation for Netlify Large Media](https://docs.netlify.com/large-media/setup/) to ensure that they are
-working properly with the Git repository locally.
+- [initiatives](src/collections/initiatives)
 
 The website also uses one backend API:
 
-- [Airtable API](https://airtable.com/api) that serves user comments for initiatives.
+- [Airtable API](https://airtable.com/api) that serves user comments for events.
   - The production table: WeCount
   - The development table: WeCount_DEV
 
@@ -32,9 +27,7 @@ The website also uses one backend API:
 To contribute, please be sure to review our development processes as documented in the
 [contributing](.github/CONTRIBUTING.md) guide.
 
-To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system,
-as well as [Git LFS](https://git-lfs.github.com/) to ensure that you can work with uploaded files managed via
-[Netlify Large Media](https://docs.netlify.com/large-media/overview/) while working with the Git repository locally.
+To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
 
 Then, clone the project from GitHub. [Create a fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 with your GitHub account, then enter the following in your command line (make sure to replace `your-username` with your username):
@@ -49,23 +42,9 @@ From the root of the cloned project, enter the following in your command line to
 npm ci
 ```
 
-Add _Large Media_ support to the local development environment:
-
-```bash
-netlify lm:install
-```
-
-After running the following command, the output may instruct you to run further commands; run these as well. **Please note
- that the command will be different on every environment.**
-
-```bash
-# this is an example, the path may be different depending on the environment
-source /home/username/.config/netlify/helper/path.bash.inc
-```
-
 ## Content Management System (CMS)
 
-[Netlify CMS](https://netlifycms.org) is a client-side React application which manages files in a git repository,
+[Decap CMS](https://decapcms.org) is a client-side React application which manages files in a git repository,
 creating pull requests when new content is drafted and merging them when it is published. Access to this website's
 CMS is managed via [Netlify Identity](https://docs.netlify.com/visitor-access/identity/). If you need access to the
 CMS, a team administrator must invite you to create a Netlify Identity account.
@@ -73,15 +52,17 @@ CMS, a team administrator must invite you to create a Netlify Identity account.
 ### CMS Configuration
 
 The CMS is configured via a [config.yml](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/config.yml)
-file according to Netlify CMS' [specifications](https://www.netlifycms.org/docs/configuration-options/).
-As an example, here is the configuration for the initiatives collection, stored in [`src/collections/initiatives`](src/collections/initiatives):
+file according to Decap CMS' [specifications](https://www.decapcms.org/docs/configuration-options/).
+As an example, here is the configuration for the events collection, stored in [`src/collections/events`](src/collections/events):
 
 ```yaml
-- name: initiatives
-  label: Initiatives
-  label_singular: Initiative
-  folder: src/collections/initiatives
+- name: events
+  label: Events
+  label_singular: Event
+  folder: src/collections/events
+  sortable_fields: [eventDate, title]
   slug: "{{title}}"
+  preview_path: "events/{{slug}}"
   create: true
   fields:
     - label: Event Title
@@ -90,14 +71,14 @@ As an example, here is the configuration for the initiatives collection, stored 
     - label: Event ID
       name: id
       widget: uuid
-      hint: The ID is used to associate comments with this initiative and cannot be edited.
+      hint: The ID is used to associate comments with this event and cannot be edited.
     - label: Permanent Link
       name: permalink
       widget: string
       required: false
       hint: |-
         If you do not specify a permanent link, one will be automatically generated from the event title.
-        Permalinks must have the format /initiatives/event-title/ (the trailing slash is required).
+        Permalinks must have the format /events/event-title/ (the trailing slash is required).
     - label: Event Date
       name: eventDate
       widget: datetime
@@ -117,43 +98,43 @@ As an example, here is the configuration for the initiatives collection, stored 
     - label: Short Description
       name: shortDescription
       widget: markdown
-      hint: The short description is shown on the Initiatives page.
+      hint: The short description is shown on the Events page.
     - label: Preview Image
       name: previewImageUrl
       widget: image
       required: false
-      hint: The preview image is shown on the Initiatives page.
+      hint: The preview image is shown on the Events page.
     - label: Preview Image Alt Text
       name: previewImageAltText
       widget: string
       required: false
 ```
 
-For information on individual widgets and their configuration, see Netlify CMS' [widget documentation](https://www.netlifycms.org/docs/widgets/).
+For information on individual widgets and their configuration, see Decap CMS' [widget documentation](https://www.decapcms.org/docs/widgets/).
 
 ### Previews
 
-Netlify CMS supports [preview templates](https://www.netlifycms.org/docs/customization/) for CMS content, which must be
-a React component registered with the following code (the following examples are for initiatives):
+Decap CMS supports [preview templates](https://www.decapcms.org/docs/customization/) for CMS content, which must be
+a React component registered with the following code (the following examples are for events):
 
 ```javascript
-CMS.registerPreviewTemplate("initiatives", Initiative);
+CMS.registerPreviewTemplate("events", Event);
 ```
 
-The `Initiative` React component is created in [src/admin/cms.js](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js)
+The `Event` React component is created in [src/admin/cms.js](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/src/admin/cms.js)
 based on a technique demonstrated in [Andy Bell's Hylia Eleventy starter kit](https://github.com/hankchizljaw/hylia):
 
 1. The site's Nunjucks templates are [precompiled](https://mozilla.github.io/nunjucks/api.html#precompiling) and copied
-   to the admin directory of the built site (Eleventy handles this [here](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/admin.11ty.js)).
-2. A generic [`Preview`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js#L20-L24)
+   to the admin directory of the built site (Eleventy handles this [here](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/src/admin/admin.11ty.js)).
+2. A generic [`Preview`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/277cb52c0e7880bf400ab6f827c4b705080c9f73/src/admin/cms.js#L25-L30)
    React component accepts a data object and a Nunjucks template path, renders the Nunjucks template with the supplied
    data using [Nunjucks Slim](https://mozilla.github.io/nunjucks/getting-started.html#when-in-the-browser), and outputs
    the resulting HTML.
-3. The specific [`Initiative`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js#L35-L52)
-  React component passes the Preview component the entry object (from Netlify CMS), the Nunjucks template path (relative
+3. The specific [`Event`](https://github.com/greatislander/wecount.inclusivedesign.ca/blob/277cb52c0e7880bf400ab6f827c4b705080c9f73/src/admin/cms.js#L120-L142)
+  React component passes the Preview component the entry object (from Decap CMS), the Nunjucks template path (relative
   to `src/_includes`), and a function which maps the entry object's data to what's needed in the Nunjucks template expects.
 
-This approach allows the templates which Eleventy uses to render the production site to be consumed by Netlify CMS and
+This approach allows the templates which Eleventy uses to render the production site to be consumed by Decap CMS and
 used to generate live previews as content editors are updating content in the CMS interface.
 
 ### Testing the CMS
@@ -268,9 +249,9 @@ npm run lint
 
 We use the following lint configurations:
 
-- TODO: [ESLint (JS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/.eslintrc.js)
-- [Stylelint (CSS/SCSS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/stylelint.config.js)
-- [MarkdownLint (Markdown)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/.markdownlint.json)
+- [ESLint (JS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/.eslintrc.js)
+- [Stylelint (CSS/SCSS)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/.stylelintrc.js)
+- [MarkdownLint (Markdown)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/.markdownlint-cli2.cjs)
 
 ## How to Build
 

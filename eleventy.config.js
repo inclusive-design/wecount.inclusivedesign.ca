@@ -26,15 +26,21 @@ require("./src/assets/scripts/utils.js");
 
 module.exports = function (eleventyConfig) {
 
-	eleventyConfig.addCollection("initiatives", collection => {
+	eleventyConfig.addCollection("events", collection => {
 		return [
-			...collection.getFilteredByGlob("src/collections/initiatives/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
+			...collection.getFilteredByGlob("src/collections/events/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
 		];
 	});
 
-	eleventyConfig.addCollection("news", collection => {
+	eleventyConfig.addCollection("initiatives", collection => {
 		return [
-			...collection.getFilteredByGlob("src/collections/news/*.md").sort((a, b) => b.data.date - a.data.date)
+			...collection.getFilteredByGlob("src/collections/initiatives/*.md").sort((a, b) => b.data.date - a.data.date)
+		];
+	});
+
+	eleventyConfig.addCollection("recount", collection => {
+		return [
+			...collection.getFilteredByGlob("src/collections/recount/*.md").sort((a, b) => b.data.date - a.data.date)
 		];
 	});
 
@@ -60,8 +66,8 @@ module.exports = function (eleventyConfig) {
 		];
 	});
 
-	eleventyConfig.addCollection("viewsTags", collection => {
-		return getUniqueTags(collection.getFilteredByGlob("src/collections/views/*.md"));
+	eleventyConfig.addCollection("initiativesTags", collection => {
+		return getUniqueTags(collection.getFilteredByGlob("src/collections/initiatives/*.md"));
 	});
 
 	eleventyConfig.addCollection("allTags", collection => {
@@ -138,7 +144,6 @@ module.exports = function (eleventyConfig) {
 
 	// Configure passthrough file copy.
 	eleventyConfig.addPassthroughCopy({"src/_redirects": "_redirects"});
-	eleventyConfig.addPassthroughCopy({"manifest.json": "manifest.json"});
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
 	eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
 	eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});

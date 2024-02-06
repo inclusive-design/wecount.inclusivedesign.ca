@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: dev
   squash_merges: true
   commit_messages:
     create: 'chore(cms): create "{{path}}"'
@@ -47,37 +47,13 @@ collections:
       - label: Body
         name: body
         widget: markdown
-  - name: news
-    label: News
-    label_singular: News Entry
-    folder: src/collections/news
-    sortable_fields: [title, date]
-    preview_path: /news/
-    create: true
-    fields:
-      - label: Title
-        name: title
-        widget: string
-      - label: Link
-        name: link
-        widget: string
-        hint: The link to the external news item or attached resource.
-      - label: Date
-        name: date
-        widget: datetime
-        time_format: false
-        hint: The publication date of the item.
-      - label: Excerpt
-        name: excerpt
-        widget: text
-        hint: The excerpt is shown in search results.
-  - name: views
-    label: Views
-    label_singular: Views Entry
-    folder: src/collections/views
+  - name: initiatives
+    label: Initiatives
+    label_singular: Initiative
+    folder: src/collections/initiatives
     sortable_fields: [title, date]
     slug: "{{title}}"
-    preview_path: "views/{{slug}}"
+    preview_path: "initiatives/{{slug}}"
     create: true
     fields:
       - label: Title
@@ -89,7 +65,7 @@ collections:
         required: false
         hint: |-
           If you do not specify a permanent link, one will be automatically generated from the title.
-          Permalinks must have the format /views/entry-title/ (the trailing slash is required).
+          Permalinks must have the format /initiatives/entry-title/ (the trailing slash is required).
       - label: Author
         name: author
         widget: string
@@ -116,13 +92,13 @@ collections:
       - label: Tags
         name: tags
         widget: list
-  - name: initiatives
-    label: Initiatives
-    label_singular: Initiative
-    folder: src/collections/initiatives
+  - name: events
+    label: Events
+    label_singular: Event
+    folder: src/collections/events
     sortable_fields: [eventDate, title]
     slug: "{{title}}"
-    preview_path: "initiatives/{{slug}}"
+    preview_path: "events/{{slug}}"
     create: true
     fields:
       - label: Event Title
@@ -131,14 +107,14 @@ collections:
       - label: Event ID
         name: id
         widget: uuid
-        hint: The ID is used to associate comments with this initiative and cannot be edited.
+        hint: The ID is used to associate comments with this event and cannot be edited.
       - label: Permanent Link
         name: permalink
         widget: string
         required: false
         hint: |-
           If you do not specify a permanent link, one will be automatically generated from the event title.
-          Permalinks must have the format /initiatives/event-title/ (the trailing slash is required).
+          Permalinks must have the format /events/event-title/ (the trailing slash is required).
       - label: Event Date
         name: eventDate
         widget: datetime
@@ -158,16 +134,39 @@ collections:
       - label: Short Description
         name: shortDescription
         widget: markdown
-        hint: The short description is shown on the Initiatives page.
+        hint: The short description is shown on the Events page.
       - label: Preview Image
         name: previewImageUrl
         widget: image
         required: false
-        hint: The preview image is shown on the Initiatives page.
+        hint: The preview image is shown on the Events page.
       - label: Preview Image Alt Text
         name: previewImageAltText
         widget: string
         required: false
+  - name: recount
+    label: Recount
+    label_singular: Recount
+    folder: src/collections/recount
+    sortable_fields: [title, date]
+    create: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Link
+        name: link
+        widget: string
+        hint: The link to the external news item or attached resource.
+      - label: Date
+        name: date
+        widget: datetime
+        time_format: false
+        hint: The publication date of the item.
+      - label: Excerpt
+        name: excerpt
+        widget: text
+        hint: The excerpt is shown in search results.
   - name: resources
     label: Resources
     label_singular: Resource
