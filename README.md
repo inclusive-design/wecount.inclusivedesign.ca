@@ -115,22 +115,22 @@ For information on individual widgets and their configuration, see Decap CMS' [w
 ### Previews
 
 Decap CMS supports [preview templates](https://www.decapcms.org/docs/customization/) for CMS content, which must be
-a React component registered with the following code (the following examples are for initiatives):
+a React component registered with the following code (the following examples are for events):
 
 ```javascript
 CMS.registerPreviewTemplate("events", Event);
 ```
 
-The `Event` React component is created in [src/admin/cms.js](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js)
+The `Event` React component is created in [src/admin/cms.js](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/src/admin/cms.js)
 based on a technique demonstrated in [Andy Bell's Hylia Eleventy starter kit](https://github.com/hankchizljaw/hylia):
 
 1. The site's Nunjucks templates are [precompiled](https://mozilla.github.io/nunjucks/api.html#precompiling) and copied
-   to the admin directory of the built site (Eleventy handles this [here](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/admin.11ty.js)).
-2. A generic [`Preview`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js#L20-L24)
+   to the admin directory of the built site (Eleventy handles this [here](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/src/admin/admin.11ty.js)).
+2. A generic [`Preview`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/277cb52c0e7880bf400ab6f827c4b705080c9f73/src/admin/cms.js#L25-L30)
    React component accepts a data object and a Nunjucks template path, renders the Nunjucks template with the supplied
    data using [Nunjucks Slim](https://mozilla.github.io/nunjucks/getting-started.html#when-in-the-browser), and outputs
    the resulting HTML.
-3. The specific [`Event`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/cms.js#L35-L52)
+3. The specific [`Event`](https://github.com/greatislander/wecount.inclusivedesign.ca/blob/277cb52c0e7880bf400ab6f827c4b705080c9f73/src/admin/cms.js#L120-L142)
   React component passes the Preview component the entry object (from Decap CMS), the Nunjucks template path (relative
   to `src/_includes`), and a function which maps the entry object's data to what's needed in the Nunjucks template expects.
 
