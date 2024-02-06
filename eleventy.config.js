@@ -138,7 +138,6 @@ module.exports = function (eleventyConfig) {
 
 	// Configure passthrough file copy.
 	eleventyConfig.addPassthroughCopy({"src/_redirects": "_redirects"});
-	eleventyConfig.addPassthroughCopy({"manifest.json": "manifest.json"});
 	eleventyConfig.addPassthroughCopy({"node_modules/infusion": "lib/infusion"});
 	eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
 	eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
