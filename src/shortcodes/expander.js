@@ -8,7 +8,7 @@ module.exports = (content, image, alt, title, subtitle) => {
 <img src="${image}" alt="${alt}" width="230" height="230" />
 <h2 id="${slugFilter(title)}" class="expander__title">${title}</h2>
 ${subtitleEl}
-<button aria-expanded="false" aria-labelledby="${slugFilter(title)}">
+<button class="expander__toggle" aria-expanded="false" aria-labelledby="${slugFilter(title)}">
 <svg viewBox="0 0 80 80" fill="currentcolor" aria-hidden="true" focusable="false">
 <rect class="vert" x="30.021" width="20" height="80"></rect>
 <rect y="29.381" width="80" height="20"></rect>
