@@ -10,7 +10,7 @@ import slugFilter from "../filters/slug";
 import paginateFilter from "../filters/paginate";
 import w3DateFilter from "../filters/w3-date";
 import expanderShortcode from "../shortcodes/expander.js";
-import figureShortcode from "../shortcodes/figure-shortcode.js";
+import figureShortcode from "../../node_modules/eleventy-plugin-fluid/src/shortcodes/figure-shortcode.js";
 import imageAndTextShortcode from "../shortcodes/image-and-text.js";
 import getId from "../utils/extract-youtube-id.js";
 import globalResourceTags from "../_data/resourceTags.json";
@@ -256,23 +256,22 @@ CMS.registerEditorComponent({
 			widget: "string"
 		}
 	],
-	pattern: /^{% figure "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endfigure %}/,
+	pattern: /^{% figure "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endfigure %}/,
 	fromBlock: function (match) {
 		return {
 			image: match[1],
 			alt: match[2],
-			cssClass: match[3],
-			caption: match[4]
+			caption: match[3]
 		};
 	},
 	toBlock: function (obj) {
-		return `{% figure "${obj.image}", "${obj.alt}", "${obj.cssClass}" %}\n${obj.caption}\n{% endfigure %}`;
+		return `{% figure "${obj.image}", "${obj.alt}" %}\n${obj.caption}\n{% endfigure %}`;
 	},
 	toPreview: function (obj, getAsset, fields) {
-		const {image, alt, cssClass, caption} = obj;
+		const {image, alt, caption} = obj;
 		const imageField = fields.find(f => f.get("widget") === "image");
 		const src = getAsset(image, imageField);
-		return figureShortcode(src, alt, cssClass, caption);
+		return figureShortcode(caption, src, alt);
 	}
 });
 

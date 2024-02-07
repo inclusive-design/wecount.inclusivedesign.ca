@@ -61,7 +61,7 @@ article {
 
 // WP styles for vertically aligning text within Media & Text blocks
 .image-and-text--vertical-top {
-	.image-and-text__media,
+	figure,
 	.image-and-text__content {
 		align-self: start;
 
@@ -72,7 +72,7 @@ article {
 }
 
 .image-and-text--vertical-center {
-	.image-and-text__media,
+	figure,
 	.image-and-text__content {
 		align-self: center;
 
@@ -83,7 +83,7 @@ article {
 }
 
 .image-and-text--vertical-bottom {
-	.image-and-text__media,
+	figure,
 	.image-and-text__content {
 		align-self: end;
 
@@ -138,7 +138,7 @@ p img {
 
 // Styling for media and text block with media on the right
 .image-and-text--image-right {
-	.image-and-text__media {
+	figure {
 		grid-column: 2;
 		grid-row: 1;
 	}

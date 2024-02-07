@@ -19,7 +19,6 @@ const paginateFilter = require("./src/filters/paginate.js");
 const w3DateFilter = require("./src/filters/w3-date.js");
 const randomizeFilter = require("./src/filters/randomize.js");
 const expanderShortcode = require("./src/shortcodes/expander.js");
-const figureShortcode = require("./src/shortcodes/figure-shortcode.js");
 const imageAndTextShortcode = require("./src/shortcodes/image-and-text.js");
 const youtubeShortcode = require("./src/shortcodes/youtube.js");
 
@@ -135,7 +134,6 @@ module.exports = function (eleventyConfig) {
 
 	// Add shortcodes.
 	eleventyConfig.addPairedShortcode("expander", expanderShortcode);
-	eleventyConfig.addPairedShortcode("figure", figureShortcode);
 	eleventyConfig.addPairedShortcode("imageAndText", imageAndTextShortcode);
 	eleventyConfig.addShortcode("youtube", youtubeShortcode);
 
