@@ -42,7 +42,10 @@ Our initiatives and their corresponding badges are listed below.
 
 ### Sentiment Analysis Workshop
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
+
+
+
 
 
 #### Learner badge
@@ -59,7 +62,10 @@ You will learn:
 
 ### Designing Proof and Evidence with Minorities and Outlier Data
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -77,7 +83,10 @@ You will learn:
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -96,7 +105,10 @@ You will brainstorm:
 
 ### AI and Disability: A Double-Edged Sword
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -119,7 +131,10 @@ You will learn:
 
 ### The Metric Society and the Unmeasurable
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -149,7 +164,10 @@ You will learn:
 
 ### Building Indigenous Future Imaginaries
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -178,7 +196,10 @@ You will learn:
 
 ### Inclusive AI for HR
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -207,7 +228,10 @@ You will learn:
 
 ### AI Hiring System Policies
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -236,7 +260,10 @@ You will learn:
 
 ### AI Employment Systems
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -265,7 +292,10 @@ You will learn:
 
 ### AI and AT Apps
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -293,7 +323,10 @@ You will learn:
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_BRAINSTORMER-300x300.png", "We Count Brainstormer badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -320,7 +353,10 @@ You will brainstorm:
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/Badges_final_COMMUNICATOR-300x300.png", "We Count Communicator badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_COMMUNICATOR-300x300.png", "We Count Communicator badge", "", "left", "top" %}
+
+
+
 
 
 
@@ -350,7 +386,10 @@ You will communicate:
 
 ### Bias In, Bias Out
 
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "left", "top" %}
+{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
+
+
+
 
 
 

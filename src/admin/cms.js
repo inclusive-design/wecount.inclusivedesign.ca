@@ -10,6 +10,7 @@ import slugFilter from "../filters/slug";
 import paginateFilter from "../filters/paginate";
 import w3DateFilter from "../filters/w3-date";
 import expanderShortcode from "../shortcodes/expander.js";
+import figureShortcode from "../../node_modules/eleventy-plugin-fluid/src/shortcodes/figure-shortcode.js";
 import imageAndTextShortcode from "../shortcodes/image-and-text.js";
 import getId from "../utils/extract-youtube-id.js";
 import globalResourceTags from "../_data/resourceTags.json";
@@ -234,6 +235,47 @@ CMS.registerEditorComponent({
 });
 
 CMS.registerEditorComponent({
+	id: "figure",
+	label: "Figure",
+	fields: [
+		{
+			name: "image",
+			label: "Image",
+			widget: "image",
+			required: true
+		},
+		{
+			name: "alt",
+			label: "Alternative Text",
+			widget: "string",
+			required: true
+		},
+		{
+			name: "caption",
+			label: "Caption",
+			widget: "string"
+		}
+	],
+	pattern: /^{% figure "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endfigure %}/,
+	fromBlock: function (match) {
+		return {
+			image: match[1],
+			alt: match[2],
+			caption: match[3]
+		};
+	},
+	toBlock: function (obj) {
+		return `{% figure "${obj.image}", "${obj.alt}" %}\n${obj.caption}\n{% endfigure %}`;
+	},
+	toPreview: function (obj, getAsset, fields) {
+		const {image, alt, caption} = obj;
+		const imageField = fields.find(f => f.get("widget") === "image");
+		const src = getAsset(image, imageField);
+		return figureShortcode(caption, src, alt);
+	}
+});
+
+CMS.registerEditorComponent({
 	id: "image-and-text",
 	label: "Image and Text",
 	fields: [
@@ -246,6 +288,11 @@ CMS.registerEditorComponent({
 		{
 			name: "alt",
 			label: "Alternative Text",
+			widget: "string"
+		},
+		{
+			name: "caption",
+			label: "Caption",
 			widget: "string"
 		},
 		{
@@ -267,24 +314,25 @@ CMS.registerEditorComponent({
 			required: true
 		}
 	],
-	pattern: /^{% imageAndText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimageAndText %}/,
+	pattern: /^{% imageAndText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimageAndText %}/,
 	fromBlock: function (match) {
 		return {
 			image: match[1],
 			alt: match[2],
-			imagePosition: match[3],
-			verticalAlignment: match[4],
-			content: match[5]
+			caption: match[3],
+			imagePosition: match[4],
+			verticalAlignment: match[5],
+			content: match[6]
 		};
 	},
 	toBlock: function (obj) {
-		return `{% imageAndText "${obj.image}", "${obj.alt}", "${obj.imagePosition}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimageAndText %}`;
+		return `{% imageAndText "${obj.image}", "${obj.alt}", "${obj.caption}", "${obj.imagePosition}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimageAndText %}`;
 	},
 	toPreview: function (obj, getAsset, fields) {
-		const {content, image, alt, imagePosition, verticalAlignment} = obj;
+		const {content, image, alt, caption, imagePosition, verticalAlignment} = obj;
 		const imageField = fields.find(f => f.get("widget") === "image");
 		const src = getAsset(image, imageField);
-		return imageAndTextShortcode(content, src, alt, imagePosition, verticalAlignment);
+		return imageAndTextShortcode(content, src, alt, caption, imagePosition, verticalAlignment);
 	}
 });
 

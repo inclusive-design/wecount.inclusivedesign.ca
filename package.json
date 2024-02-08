@@ -51,6 +51,7 @@
     "html-minifier": "4.0.0",
     "infusion": "4.6.0",
     "linkedom": "0.16.8",
+    "lite-youtube-embed": "0.3.0",
     "markdown-it": "14.0.0",
     "modern-css-reset": "1.4.0",
     "netlify-cms-widget-uuid-v4": "1.1.1",

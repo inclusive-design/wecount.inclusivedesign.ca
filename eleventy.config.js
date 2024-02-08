@@ -149,6 +149,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
 	eleventyConfig.addPassthroughCopy({"src/uploads": "uploads"});
 	eleventyConfig.addPassthroughCopy({"src/assets/scripts": "assets/scripts"});
+	eleventyConfig.addPassthroughCopy({"node_modules/lite-youtube-embed/src/lite-yt-embed.js": "assets/scripts/lite-yt-embed.js"});
+	eleventyConfig.addPassthroughCopy({"node_modules/lite-youtube-embed/src/lite-yt-embed.css": "assets/styles/lite-yt-embed.css"});
+
 	eleventyConfig.addPassthroughCopy({"src/admin/config.yml": "admin/config.yml"});
 	eleventyConfig.addPassthroughCopy({
 		"node_modules/decap-cms/dist/decap-cms.js": "lib/cms/decap-cms.js",
