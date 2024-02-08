@@ -134,11 +134,25 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 
 
 
-{% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules d'Kerri Joffee", "", "left", "decorative", "left", "top" %}
+{% imageAndText "/uploads/kerri-joffee.png", "photo de la tête et des épaules d'Kerri Joffee", "", "left", "decorative", "left", "top" %}
 ### Kerri Joffee: ARCH Disability Law Centre  
 
 [ARCH ](https://archdisabilitylaw.ca/)est une clinique juridique spécialisée qui se consacre exclusivement aux droits des personnes handicapées. ARCH se consacre à la défense et à l'avancement des droits à l'égalité, des droits, des libertés fondamentales et de l'inclusion des personnes handicapées en Ontario.   \
 **Le rôle de Kerri au sein de la RtDD:**  Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
+{% endimageAndText %}
+
+{% imageAndText "/uploads/no-image-image.png", "Image générique de Lori Vaanholt", "", "left", "décoratif", "left", "top" %}
+### Lori Vaanholt : L’Arche Canada 
+
+Partout au Canada et dans le monde,[ L'Arche](https://www.larche.ca/) crée des communautés d'amitié et d'appartenance. À L'Arche, les personnes avec et sans déficience intellectuelle vivent, travaillent, apprennent et grandissent ensemble. L'Arche démontre que lorsque les personnes ayant une déficience intellectuelle prennent leur place à la table, elles contribuent à un monde plus juste, plus compatissant et plus dynamique pour tous.  \
+**À propos du rôle de Lori au sein de la RtDD:** Recruter des membres ayant une déficience intellectuelle pour participer à la co-conception, aider à diffuser les ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
+{% endimageAndText %}
+
+{% imageAndText "/uploads/mahadeo-sukhai.png", "photo de la tête et des épaules d'Mahadeo Sukhai", "", "left", "decorative", "left", "top" %}
+### Mahadeo Sukhai : Fondation de l'Institut national canadien des aveugles 
+
+La Fondation de l'Institut national canadien des aveugles (Fondation[ INCA](https://inca.ca/fr?region=on)), une organisation à but non lucratif, propose des programmes et des actions de sensibilisation qui permettent aux personnes touchées par la cécité de vivre leurs rêves et d'éliminer les obstacles à l'inclusion.   \
+**Le rôle de Mahadeo au sein de la RtDD:** Recruter des membres aveugles pour participer à la co-conception, aider à diffuser des ébauches de projet pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
 {% endimageAndText %}
 
 ## Équipe
