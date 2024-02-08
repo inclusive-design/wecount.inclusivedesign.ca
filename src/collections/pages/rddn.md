@@ -155,6 +155,27 @@ La Fondation de l'Institut national canadien des aveugles (Fondation[ INCA](http
 **Le rôle de Mahadeo au sein de la RtDD:** Recruter des membres aveugles pour participer à la co-conception, aider à diffuser des ébauches de projet pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
 {% endimageAndText %}
 
+{% imageAndText "/uploads/michael-bach.png", "photo de la tête et des épaules d'Michael Bach", "", "left", "decorative", "left", "top" %}
+### Michael Bach: Institute for Research and Development on Inclusion and Society (IRIS) 
+
+Informé par l'exclusion systémique à laquelle sont confrontées les personnes ayant un handicap intellectuel ou autre et les groupes marginalisés,[ IRIS](https://irisinstitute.ca/) s'efforce d'amorcer et de soutenir un développement social transformateur. Guidés par les principes de l'inclusion totale et des droits de l'homme, nous menons des recherches pour identifier les problèmes et les options politiques, nous encourageons l'innovation sociale pour réimaginer l'inclusion, et nous renforçons les capacités et le leadership en vue d'un changement transformateur.  \
+**Le rôle de Michael au sein de Rtdd:** Fournir des informations et des conseils sur l'efficacité et les défis auxquels sont confrontées les organisations au service des personnes ayant une déficience intellectuelle.
+{% endimageAndText %}
+
+{% imageAndText "/uploads/paula-chapman.png", "photo de la tête et des épaules d'Kerri Joffee", "", "left", "decorative", "left", "top" %}
+### Kerri Joffee: ARCH Disability Law Centre  
+
+[ARCH ](https://archdisabilitylaw.ca/)est une clinique juridique spécialisée qui se consacre exclusivement aux droits des personnes handicapées. ARCH se consacre à la défense et à l'avancement des droits à l'égalité, des droits, des libertés fondamentales et de l'inclusion des personnes handicapées en Ontario.   \
+**Le rôle de Kerri au sein de la RtDD:**  Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
+{% endimageAndText %}
+
+{% imageAndText "/uploads/pina-dγçöagostino.png", "photo de la tête et des épaules d'Kerri Joffee", "", "left", "decorative", "left", "top" %}
+### Kerri Joffee: ARCH Disability Law Centre  
+
+[ARCH ](https://archdisabilitylaw.ca/)est une clinique juridique spécialisée qui se consacre exclusivement aux droits des personnes handicapées. ARCH se consacre à la défense et à l'avancement des droits à l'égalité, des droits, des libertés fondamentales et de l'inclusion des personnes handicapées en Ontario.   \
+**Le rôle de Kerri au sein de la RtDD:**  Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
+{% endimageAndText %}
+
 ## Équipe
 
 Jutta Treviranus, principal investigator 
