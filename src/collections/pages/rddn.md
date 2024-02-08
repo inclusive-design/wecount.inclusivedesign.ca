@@ -183,6 +183,22 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 **Le rôle de Michael au sein de la RtDD:** Fournir des informations et des conseils sur l'efficacité et les défis auxquels sont confrontées les organisations au service des personnes handicapées mentales.
 {% endimageAndText %}
 
+{% imageAndText "undefined", "undefined", "undefined", "undefined", "undefined" %}
+### Paula Chapman: Ross & McBride LLP
+
+Les avocats de Ross & McBride ont une grande expérience dans le règlement d'affaires complexes et dans l'aide à la résolution de conflits. Ross & McBride apporte sa contribution en matière de droits de l'homme et d'accès à la justice pour les personnes handicapées.
+
+**A propos du rôle de Paula au sein du RtDD:** Aider à l'analyse de l'environnement et à l'évaluation de l'efficacité de la conformité des approches réglementaires.
+{% endimageAndText %}
+
+{% imageAndText "undefined", "undefined", "undefined", "undefined", "undefined" %}
+### Pina D'Agostino: IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U
+
+IP Osgoode à la Osgoode Hall Law School est une voix indépendante et faisant autorité qui explore les questions de gouvernance juridique à l'intersection de la propriété intellectuelle et de la technologie.
+
+**À propos du rôle de Pina au sein de la RtDD:** contribuer à la conception législative, aux instruments réglementaires novateurs et à l'interprétation juridique des approches possibles dans le cadre de la Loi sur l'accessibilité du Canada.
+{% endimageAndText %}
+
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
 
 
