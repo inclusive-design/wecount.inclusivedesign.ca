@@ -84,11 +84,13 @@ Les défis sont les suivants
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "photo de la tête et des épaules de Christopher Sutton", "left", "top" %}
+
 ### Christopher Sutton: Wavefront Centre for Communication Accessibility
 
 Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), un institut pour les sourds et les malentendants, envisage une société où les sourds, les malentendants et les entendants peuvent interagir librement sans barrières de communication. Notre mission est de servir les personnes sourdes et malentendantes, leurs familles et la communauté en proposant des programmes, des produits et des solutions innovants pour parvenir à une accessibilité totale à la communication.  
 
 **Le rôle de Christopher au sein de la RtDD:** Recruter des membres sourds et malentendants pour participer à la co-conception. Contribuer à la diffusion des ébauches de projets pour examen et commentaires. Évaluer l'accessibilité du processus de recherche pour les personnes sourdes et malentendantes. Examiner les résultats du projet.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "photo de la tête et des épaules d'Emile Tompa", "left", "top" %}
@@ -100,11 +102,13 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+
 ### Heather Walkus: Council of Canadians with Disabilities (CCD)
 
 L﻿e [CCD ](http://www.ccdonline.ca/en/)est une organisation pancanadienne de personnes handicapées. Le CCD s'est efforcé de trouver des solutions et des moyens novateurs pour soutenir la citoyenneté pleine et entière des personnes handicapées. Le CCD unit la voix des Canadiens avec des déficiences pour défendre et étendre les droits à l'égalité des personnes handicapées par l'éducation publique, la défense des droits, la recherche, les litiges et les partenariats.   
 
 **À propos du rôle de Heather au sein de la RtDD:** Aider les organisations membres à travers le Canada à recruter des membres handicapés pour participer à la co-conception. Aider à atteindre les communautés indigènes. Contribuer à la diffusion des ébauches de projets pour examen et commentaires. Fournir des informations sur la nécessité de renforcer les capacités des organisations membres pour qu'elles puissent participer aux efforts d'inclusion numérique. Recruter des co-concepteurs et examiner les résultats du projet.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules de Jenelle Rouse", "left", "top" %}
@@ -120,11 +124,13 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
+
 ### J﻿im Tokos: Canadian Council of the Blind (CCB)
 
 [CCB](https://ccbnational.net/shaggy/) s'efforce d'améliorer la qualité de vie des personnes vivant avec une perte de vision par la sensibilisation, le mentorat par les pairs, la socialisation, les sports et les loisirs, la défense des droits, la promotion de la santé et la prévention des maladies. Le modèle communautaire de CCB offre des programmes pour aider les personnes vivant avec une perte de vision, sensibiliser le public et le gouvernement aux problèmes de vision. Récemment, CCB a entrepris des programmes proactifs tels que la santé oculaire mobile et la formation à l'emploi. Le CCB travaille en partenariat avec un certain nombre d'organisations locales, provinciales, nationales et internationales.  
 
 **À propos du rôle de Jim au sein de la RtDD:** Recruter des membres vivant avec une perte de vision pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats des projets.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
@@ -136,11 +142,13 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "photo de la tête et des épaules de Kerri Joffee", "left", "top" %}
+
 ### Kerri Joffee: ARCH Disability Law Centre
 
 [ARCH](https://archdisabilitylaw.ca/) est une clinique juridique spécialisée qui se consacre exclusivement aux droits des personnes handicapées. ARCH se consacre à la défense et à l'avancement des droits à l'égalité, des droits, des libertés fondamentales et de l'inclusion des personnes handicapées en Ontario.   
 
 **Le rôle de Kerri au sein de la RtDD:** Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
@@ -154,12 +162,12 @@ Partout au Canada et dans le monde, [L'Arche](https://www.larche.ca/) crée des 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "photo de la tête et des épaules de Mahadeo Sukhai", "left", "top" %}
 ### Mahadeo Sukhai: Fondation de l'Institut National Canadien des Aveugles
 
-La Fondation de l'Institut national canadien des aveugles (Fondation INCA), une organisation à but non lucratif, propose des programmes et des actions de sensibilisation qui permettent aux personnes touchées par la cécité de vivre leurs rêves et d'éliminer les obstacles à l'inclusion.   
+La Fondation de l'Institut national canadien des aveugles (Fondation [INCA](https://www.inca.ca/fr?region=on)), une organisation à but non lucratif, propose des programmes et des actions de sensibilisation qui permettent aux personnes touchées par la cécité de vivre leurs rêves et d'éliminer les obstacles à l'inclusion.   
 
 **Le rôle de Mahadeo au sein de la RtDD:** Recruter des membres aveugles pour participer à la co-conception, aider à diffuser des ébauches de projet pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/christopher-sutton.png", "photo de Michael Bach de la tête et des épaules ", "left", "top" %}
+{% imageAndText "/uploads/michael-bach.png", "photo de Michael Bach de la tête et des épaules ", "left", "top" %}
 ### Michael Bach: Institut de recherche et développement sur l'inclusion et la société (IRIS)
 
 Informé par l'exclusion systémique à laquelle sont confrontées les personnes ayant un handicap intellectuel ou autre et les groupes marginalisés, IRIS s'efforce d'amorcer et de soutenir un développement social transformateur. Guidés par les principes de l'inclusion totale et des droits de l'homme, nous menons des recherches pour identifier les problèmes et les options politiques, nous encourageons l'innovation sociale pour réimaginer l'inclusion, et nous renforçons les capacités et le leadership en vue d'un changement transformateur.  
@@ -168,15 +176,11 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
+### Michael Bach: Institute for Research and Development on Inclusion and Society (IRIS)
 
+Informé par l'exclusion systémique à laquelle sont confrontées les personnes ayant un handicap intellectuel ou autre et les groupes marginalisés, IRIS s'efforce d'amorcer et de soutenir un développement social transformateur. Guidés par les principes de l'inclusion totale et des droits de l'homme, nous menons des recherches pour identifier les problèmes et les options politiques, nous encourageons l'innovation sociale pour réimaginer l'inclusion, et nous renforçons les capacités et le leadership en vue d'un changement transformateur.
 
-### Paula Chapman: Ross & McBride LLP
-
-Les avocats de Ross & McBride ont une grande expérience dans le règlement d'affaires complexes et dans l'aide à la résolution de conflits. Ross & McBride apporte sa contribution en matière de droits de l'homme et d'accès à la justice pour les personnes handicapées.   
-
-**A propos du rôle de Paula au sein du RtDD:** Aider à l'analyse de l'environnement et à l'évaluation de l'efficacité de la conformité des approches réglementaires.
-
-
+**Le rôle de Michael au sein de la RtDD:** Fournir des informations et des conseils sur l'efficacité et les défis auxquels sont confrontées les organisations au service des personnes handicapées mentales.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
@@ -194,6 +198,7 @@ IP Osgoode at Osgoode Hall Law School is an independent and authoritative voice 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "left", "top" %}
 
 
+
 ### Shermineh Esmati: Conseil de la gouvernance numérique / Institut des normes de gouvernance numérique
 
 Le Conseil de la gouvernance numérique (anciennement le Conseil stratégique du DPI) travaille par l'intermédiaire de ses membres des secteurs public et privé pour renforcer la confiance dans l'économie numérique du Canada en identifiant, priorisant et agissant de manière collaborative sur les opportunités et les défis de la gouvernance numérique.   
@@ -203,17 +208,16 @@ L'Institut des normes de gouvernance numérique, qui fait partie du Conseil de l
 **Le rôle de Shermineh au sein de la RtDD:** Conseils techniques pour le processus d'élaboration des normes. Fournir des informations sur les motivations et les défis liés au respect des exigences en matière d'accessibilité numérique par les organisations des secteurs privé et public.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
-
 
 ### W. Francis Fung: La Marche des dix sous du Canada
 
 La vision de la Marche des dix sous est de créer une société inclusive pour les personnes ayant un handicap physique ; la mission est de maximiser l'indépendance, l'autonomisation personnelle et la participation communautaire des personnes ayant un handicap physique.   
 
 **Le rôle de W. Francis au sein de la RtDD:**  Recruter des membres ayant un handicap physique pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires.
-
 
 {% endimageAndText %}
 
