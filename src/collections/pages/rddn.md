@@ -96,6 +96,8 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 **A propos du rôle d'Emile au sein de Rtdd:** Contribuer à la réflexion sur la politique, la pratique, la conformité et les stratégies efficaces en matière d'accessibilité numérique et d'emploi des personnes handicapées.
 {% endimageAndText %}
 
+
+
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Heather Walkus", "", "left", "décoratif", "left", "top" %}
 ### Heather Walkus: Council of Canadians with Disabilities (CCD) 
 
@@ -104,6 +106,13 @@ Le [CCD](http://www.ccdonline.ca/en/)  est une organisation pancanadienne de per
 {% endimageAndText %}
 
 
+
+{% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules d'Jenelle Rouse", "", "left", "decorative", "left", "top" %}
+### Jenelle Rouse : Black Deaf Canada (BDC) 
+
+La BDC se concentre sur le développement de la communauté et vise à accroître le réseau des personnes sourdes noires à travers le Canada afin d'augmenter leur représentation visible. Le BDC s'engage à créer et à fournir des ressources, des stratégies et des opportunités informatives basées sur la communauté pour les Canadiens Noirs Sourds (et ceux qui ont d'autres handicaps). Le mandat de BDC est d'explorer différentes façons d'éduquer la société entendante sur les accessibilités, les expériences et les contextes intra/interculturels des Sourds, afin que la société puisse mieux servir les individus Noirs Sourds, y compris les indigènes et les personnes de couleur. \
+**A propos du rôle de Jenelle au sein de la RtDD:** Recruter des membres sourds noirs pour participer à la co-conception, aider à diffuser les projets pour examen et commentaires, recruter des co-concepteurs et les examiner, et examiner les résultats du projet.
+{% endimageAndText %}
 
 ## Équipe
 
