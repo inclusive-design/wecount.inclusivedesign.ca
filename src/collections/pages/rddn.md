@@ -183,7 +183,7 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 **Le rôle de Michael au sein de la RtDD:** Fournir des informations et des conseils sur l'efficacité et les défis auxquels sont confrontées les organisations au service des personnes handicapées mentales.
 {% endimageAndText %}
 
-{% imageAndText "undefined", "undefined", "undefined", "undefined", "undefined" %}
+{% imageAndText "undefined", "", "undefined", "undefined", "undefined" %}
 ### Paula Chapman: Ross & McBride LLP
 
 Les avocats de Ross & McBride ont une grande expérience dans le règlement d'affaires complexes et dans l'aide à la résolution de conflits. Ross & McBride apporte sa contribution en matière de droits de l'homme et d'accès à la justice pour les personnes handicapées.
