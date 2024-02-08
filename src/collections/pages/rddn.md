@@ -183,7 +183,7 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 **Le rôle de Michael au sein de la RtDD:** Fournir des informations et des conseils sur l'efficacité et les défis auxquels sont confrontées les organisations au service des personnes handicapées mentales.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
+{% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Pina D’Agostino", "left", "top" %}
 
 
 ### Pina D'Agostino: IP Osgoode - Programme de droit de la propriété intellectuelle et de la technologie, Osgoode Hall Law School, York U
@@ -211,14 +211,12 @@ L'Institut des normes de gouvernance numérique, qui fait partie du Conseil de l
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "décoratif", "left", "top" %}
-
+{% imageAndText "/uploads/no-image-image.png", "décoratif", "undefined", "left", "undefined" %}
 ### W. Francis Fung: La Marche des dix sous du Canada
 
 La vision de la Marche des dix sous est de créer une société inclusive pour les personnes ayant un handicap physique ; la mission est de maximiser l'indépendance, l'autonomisation personnelle et la participation communautaire des personnes ayant un handicap physique.   
 
 **Le rôle de W. Francis au sein de la RtDD:**  Recruter des membres ayant un handicap physique pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires.
-
 {% endimageAndText %}
 
 ## Équipe
