@@ -114,6 +114,33 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 **A propos du rôle de Jenelle au sein de la RtDD:** Recruter des membres sourds noirs pour participer à la co-conception, aider à diffuser les projets pour examen et commentaires, recruter des co-concepteurs et les examiner, et examiner les résultats du projet.
 {% endimageAndText %}
 
+
+
+{% imageAndText "/uploads/no-image-image.png", "Image générique de J﻿im Tokos", "", "left", "décoratif", "left", "top" %}
+### J﻿im Tokos: Canadian Council of the Blind (CCB) 
+
+[CCB](https://ccbnational.net/shaggy/) s'efforce d'améliorer la qualité de vie des personnes vivant avec une perte de vision par la sensibilisation, le mentorat par les pairs, la socialisation, les sports et les loisirs, la défense des droits, la promotion de la santé et la prévention des maladies. Le modèle communautaire de CCB offre des programmes pour aider les personnes vivant avec une perte de vision, sensibiliser le public et le gouvernement aux problèmes de vision. Récemment, CCB a entrepris des programmes proactifs tels que la santé oculaire mobile et la formation à l'emploi. Le CCB travaille en partenariat avec un certain nombre d'organisations locales, provinciales, nationales et internationales.  \
+**À propos du rôle de Jim au sein de la RtDD:**  Recruter des membres vivant avec une perte de vision pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats des projets.
+{% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/no-image-image.png", "Image générique de Joelle Robinson", "", "left", "décoratif", "left", "top" %}
+### Joelle Robinson: Manitoba League of Persons with Disabilities (MLPD) 
+
+La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et de leurs sympathisants, qui promeut l'égalité des droits, la pleine participation à la société et facilite les changements positifs par la défense des droits et l'éducation du public.  \
+**A propos du rôle de Joelle au sein de la RtDD:** Recruter des membres handicapés, en particulier dans les zones rurales et éloignées, pour participer à la co-conception. Contribuer à la diffusion des ébauches de projets pour examen et commentaires.
+{% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules d'Kerri Joffee", "", "left", "decorative", "left", "top" %}
+### Kerri Joffee: ARCH Disability Law Centre  
+
+[ARCH ](https://archdisabilitylaw.ca/)est une clinique juridique spécialisée qui se consacre exclusivement aux droits des personnes handicapées. ARCH se consacre à la défense et à l'avancement des droits à l'égalité, des droits, des libertés fondamentales et de l'inclusion des personnes handicapées en Ontario.   \
+**Le rôle de Kerri au sein de la RtDD:**  Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
+{% endimageAndText %}
+
 ## Équipe
 
 Jutta Treviranus, principal investigator 
