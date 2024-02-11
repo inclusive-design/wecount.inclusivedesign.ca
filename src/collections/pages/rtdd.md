@@ -95,19 +95,7 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/kerri-joffee.png", "head and shoulder image of Kerri Joffee", "left", "top" %}
-
-
-### Joelle Robinson: Manitoba League of Persons with Disabilities (MLPD)
-
-The [MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, and their supporters, that promotes equal rights, full participation in society, and facilitates positive change through advocacy and public education. 
-
-**About Joelle’s role with RtDD:** Recruit members with disabilities, especially in rural and remote areas, to participate in co-design. Help disseminate project drafts for review and feedback.
-
-
-{% endimageAndText %}
-
-{% imageAndText "/uploads/kerri-joffee.png", "head and shoulders photo of Kerri Joffee", "left", "top" %}
+{% imageAndText "/uploads/kerri-joffee.png", "head and shoulder image of Kerri Joffee", "", "left", "center" %}
 
 ### Kerri Joffee: ARCH Disability Law Centre
 
