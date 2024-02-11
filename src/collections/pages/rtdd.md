@@ -95,7 +95,7 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 {% endimageAndText %}
 
-{% imageAndText "", "decorative", "left", "top" %}
+{% imageAndText "/uploads/kerri-joffee.png", "head and shoulder image of Kerri Joffee", "left", "top" %}
 
 
 ### Joelle Robinson: Manitoba League of Persons with Disabilities (MLPD)
