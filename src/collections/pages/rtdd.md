@@ -104,19 +104,7 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 {% endimageAndText %}
 
-{% imageAndText "", "decorative", "left", "top" %}
-
-
-### Lori Vaanholt: L’Arche Canada
-
-Across Canada and around the world, [L’Arche](https://www.larche.ca/) creates communities of friendship and belonging. In L’Arche, people with and without intellectual disabilities live, work, learn, and grow together. L’Arche demonstrates that when persons with intellectual disabilities take their place at the table, they contribute to a more just, compassionate, and vibrant world for all. 
-
-**About Lori’s role with RtDD:** Recruit members with intellectual disabilities to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
-
-
-{% endimageAndText %}
-
-{% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulders photo of Mahadeo Sukhai", "left", "top" %}
+{% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "", "left", "center" %}
 
 ### Mahadeo Sukhai: Canadian National Institute of the Blind Foundation
 
