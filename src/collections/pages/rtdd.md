@@ -112,7 +112,7 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 
 {% endimageAndText %}
 
-{% imageAndText "", "head and shoulders photo of Michael Bach", "", "left", "center" %}
+{% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "", "left", "center" %}
 
 ### Paula Chapman: Ross & McBride LLP
 
@@ -121,10 +121,12 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 
 {% endimageAndText %}
 
+{% imageAndText "/uploads/no-image-image.png", "decorative", "undefined", "left", "center" %}
 ### W. Francis Fung: March of Dimes Canada
 
 The vision of the [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.  \
 **About W. Francis’s role with RtDD:** Recruit members with physical disabilities to participate in co-design, help disseminate project drafts for review and feedback.
+{% endimageAndText %}
 
 ## Team
 
