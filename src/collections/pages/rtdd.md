@@ -77,7 +77,15 @@ The challenges are:
 
 ## P﻿artners
 
+{% imageAndText "/uploads/boris-vukovic.png", "head and shoulder image of Boris Vukovic", "", "left", "center" %}
+### The Canadian Accessibility Network & Accessibility Institute: Boris Vukovic 
+
+The Canadian Accessibility Network under the leadership of the Accessibility Institute at Carleton University is mandated to bring organizations together to facilitate partnerships in specific collaboration areas under each of the five overarching domains: Research, Design and Innovation, Education and Training, Policy, Employment and Community Engagement.  \
+**About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
+{% endimageAndText %}
+
 {% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
+
 
 
 ### Heather Walkus: Council of Canadians with Disabilities (CCD)
@@ -86,9 +94,11 @@ The challenges are:
 **About Heather’s role with RtDD:** Support member organizations across Canada to recruit members with disabilities to participate in co-design. Assist in reaching out to Indigenous communities. Help disseminate project drafts for review and feedback. Provide insights regarding the need for capacity building within member organizations to participate in digital inclusion efforts. Recruit co-designers and review project outputs.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
+
 
 
 ### J﻿im Tokos: Canadian Council of the Blind (CCB)
@@ -97,9 +107,13 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 **About Jim’s role with RtDD:** Recruit members with vision loss to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 
 
+
 {% endimageAndText %}
 
+
+
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulder image of Kerri Joffee", "", "left", "center" %}
+
 
 
 ### Kerri Joffee: ARCH Disability Law Centre
@@ -108,9 +122,11 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 **About Kerri’s role with RtDD:** Provide insights regarding legal challenges faced by persons with disabilities and the relative effectiveness of regulatory approaches. Assist in legal interpretation and determining viability of project co- design approaches.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "", "left", "center" %}
+
 
 
 ### Mahadeo Sukhai: Canadian National Institute of the Blind Foundation
@@ -118,9 +134,11 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https://www.cnib.ca/en?region=on)), a non-profit organization, delivers programs and advocacy that empower people impacted by blindness to live their dreams and tear down barriers to inclusion.  **About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "", "left", "center" %}
+
 
 
 ### Paula Chapman: Ross & McBride LLP
@@ -129,14 +147,17 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 **About Paula’s role with RtDD:** Assist in the environmental scan and assessment of compliance effectiveness of regulatory approaches.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
+
 
 ### W. Francis Fung: March of Dimes Canada
 
 The vision of the [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.  \
 **About W. Francis’s role with RtDD:** Recruit members with physical disabilities to participate in co-design, help disseminate project drafts for review and feedback.
+
 
 {% endimageAndText %}
 
