@@ -86,27 +86,7 @@ The challenges are:
 
 {% endimageAndText %}
 
-{% imageAndText "", "head and shoulders photo of Jenelle Rouse", "left", "top" %}
-
-
-
-
-
-
-### Jenelle Rouse: Black Deaf Canada (BDC)
-
-BDC has a community-building focus where it aims to increase network of Black Deaf individuals across Canada to increase a visible representation. BDC commits to create and provide community-based, informative resources, strategies, and opportunities for Black Deaf Canadians (and those with additional disabilities). BDC’s mandate is to explore different ways of educating the hearing society about accessibilities, Deaf intra/intercultural experiences and contexts, so the society can better serve Deaf Black individuals, including Indigenous, and Peoples of Colour.  
-
-**About Jenelle’s role with RtDD:** Recruit Black Deaf members to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers and review, and review project outputs.
-
-
-
-
-
-
-{% endimageAndText %}
-
-{% imageAndText "/uploads/no-image-image.png", "decorative", "left", "top" %}
+{% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
 
 ### J﻿im Tokos: Canadian Council of the Blind (CCB)
 
