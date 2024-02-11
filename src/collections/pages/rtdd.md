@@ -77,15 +77,7 @@ The challenges are:
 
 ## P﻿artners
 
-{% imageAndText "", "head and shoulders photo of Boris Vukovic", "", "left", "head and shoulders photo of Christopher Sutton ", "left", "top" %}
 
-Boris Vukovic: The Canadian Accessibility Network & Accessibility Institute
-
-The Canadian Accessibility Network under the leadership of the Accessibility Institute at Carleton University is mandated to bring organizations together to facilitate partnerships in specific collaboration areas under each of the five overarching domains: Research, Design and Innovation, Education and Training, Policy, Employment and Community Engagement.  
-
-About Boris’s role with RtDD: Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
-
-{% endimageAndText %}
 
 {% imageAndText "", "head and shoulders photo of Emile Tompa", "left", "top" %}
 
@@ -170,17 +162,7 @@ Across Canada and around the world, [L’Arche](https://www.larche.ca/) creates 
 The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https://www.cnib.ca/en?region=on)), a non-profit organization, delivers programs and advocacy that empower people impacted by blindness to live their dreams and tear down barriers to inclusion.  **About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/michael-bach.png", "head and shoulders photo of Michael Bach", "left", "top" %}
-
-### Michael Bach: Institute for Research and Development on Inclusion and Society (IRIS)
-
-Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, [IRIS](https://irisinstitute.ca/) works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change.
-
-**About Michael’s role with RtDD:** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
-
-{% endimageAndText %}
-
-{% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "left", "top" %}
+{% imageAndText "", "head and shoulders photo of Michael Bach", "", "left", "center" %}
 ### Paula Chapman: Ross & McBride LLP
 
 [Ross & McBride](https://www.rossmcbride.com/) lawyers have extensive experience in settling complex cases and assisting clients in resolving conflict. Ross & McBride provide input regarding human rights law and access to justice for persons with disabilities.  \
