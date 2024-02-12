@@ -78,36 +78,24 @@ The challenges are:
 ## P﻿artners
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulder image of Boris Vukovic", "", "left", "center" %}
-
-
-### The Canadian Accessibility Network & Accessibility Institute: Boris Vukovic 
+### Boris Vukovic : The Canadian Accessibility Network & Accessibility Institute
 
 The Canadian Accessibility Network under the leadership of the Accessibility Institute at Carleton University is mandated to bring organizations together to facilitate partnerships in specific collaboration areas under each of the five overarching domains: Research, Design and Innovation, Education and Training, Policy, Employment and Community Engagement.  \
 **About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulder image of Christopher Sutton ", "", "left", "center" %}
-
-
-### Wavefront Centre for Communication Accessibility : Christopher Sutton 
+### Christopher Sutton : Wavefront Centre for Communication Accessibility 
 
 Wavefront Centre for Communication Accessibility, an institute of the Deaf and Hard of Hearing, envisions a society where Deaf, Hard of Hearing and Hearing people can interact freely without communication barriers. Our mission is to serve Deaf and Hard of Hearing individuals, their families and the community by delivering innovative programs, products and solutions to achieve full communication accessibility. \
 **About Christopher’s role with RtDD :** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulder image of Emile Tompa ", "", "left", "center" %}
-
-
-### Inclusive Design for Employment Access / Institute for Work and Health, McMaster University : Emile Tompa 
+### Emile Tompa : Inclusive Design for Employment Access / Institute for Work and Health, McMaster University
 
 Inclusive Design for Employment Access (IDEA) is a social innovation laboratory focused on helping create stronger and more diverse labour markets that include persons with disabilities, through knowledge to practice. We develop evidence informed tools and resources through co-design with partners that help advance workplace capacity for recruitment, hiring, onboarding, retention, mentorship and promotion of persons with disabilities across the full range of employment opportunities.  \
 **About Emile’s role with Rtdd :** Contribute insights regarding policy, practice, compliance, and effective strategies as they relate to digital accessibility and employment of persons with disabilities.
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
@@ -134,6 +122,8 @@ BDC has a community-building focus where it aims to increase network of Black De
 **About Jenelle’s role with RtDD :** Recruit Black Deaf members to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers and review, and review project outputs.
 {% endimageAndText %}
 
+
+
 {% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
 
 
@@ -150,6 +140,16 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 
 {% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
+### Joelle Robinson : Manitoba League of Persons with Disabilities (MLPD)
+
+The MLPD is a united voice of people with disabilities, and their supporters, that promotes equal rights, full participation in society, and facilitates positive change through advocacy and public education. **About Joelle’s role with RtDD :** Recruit members with disabilities, especially in rural and remote areas, to participate in co-design. Help disseminate project drafts for review and feedback.
+{% endimageAndText %}
+
+
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulder image of Kerri Joffee", "", "left", "center" %}
 
@@ -168,6 +168,17 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 {% endimageAndText %}
 
+
+
+{% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
+### Lori Vaanholt : L’Arche Canada
+
+Across Canada and around the world, L’Arche creates communities of friendship and belonging. In L’Arche, people with and without intellectual disabilities live, work, learn, and grow together. L’Arche demonstrates that when persons with intellectual disabilities take their place at the table, they contribute to a more just, compassionate, and vibrant world for all. \
+**About Lori’s role with RtDD :** Recruit members with intellectual disabilities to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
+{% endimageAndText %}
+
+
+
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "", "left", "center" %}
 
 
@@ -183,6 +194,26 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 
 
 {% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "", "left", "center" %}
+
+
+
+
+
+### Mahadeo Sukhai: Canadian National Institute of the Blind Foundation
+
+The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https://www.cnib.ca/en?region=on)), a non-profit organization, delivers programs and advocacy that empower people impacted by blindness to live their dreams and tear down barriers to inclusion.  **About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
+
+
+
+
+
+{% endimageAndText %}
+
+
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "", "left", "center" %}
 
