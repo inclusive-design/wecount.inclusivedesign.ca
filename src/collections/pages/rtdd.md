@@ -205,6 +205,8 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 {% endimageAndText %}
 
+
+
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "", "left", "center" %}
 
 
@@ -223,6 +225,17 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 
 {% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "", "left", "center" %}
+### Pina D’Agostino : IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U
+
+IP Osgoode at Osgoode Hall Law School is an independent and authoritative voice which explores legal governance issues at the intersection of intellectual property (IP) and technology. \
+**About Pina’s role with RtDD :** Provide input regarding legislative design, innovative regulatory instruments, legal interpretation of possible approaches within the Accessible Canada Act.
+{% endimageAndText %}
+
+
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
 
