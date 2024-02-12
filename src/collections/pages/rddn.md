@@ -77,6 +77,7 @@ Les défis sont les suivants
 
 
 
+
 ### Boris Vukovic : The Canadian Accessibility Network & Accessibility Institute 
 
 Le [Canadian Accessibility Network & Accessibility Institute](https://carleton.ca/accessibility-institute/can/), sous la direction de l'Institut de l'accessibilité de l'Université Carleton, a pour mandat de rassembler les organisations afin de faciliter les partenariats dans des domaines de collaboration spécifiques relevant de chacun des cinq domaines primordiaux : Recherche, conception et innovation, éducation et formation, politique, emploi et engagement communautaire.   \
@@ -84,9 +85,11 @@ Le [Canadian Accessibility Network & Accessibility Institute](https://carleton.c
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "photo de Christopher Sutton de la tête et des épaules", "", "left", "center" %}
+
 
 
 
@@ -97,9 +100,11 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "photo de la tête et des épaules d'Emile Tompa", "", "left", "center" %}
+
 
 
 
@@ -110,9 +115,11 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Heather Walkus", "", "left", "center" %}
+
 
 
 
@@ -123,9 +130,11 @@ Le [CCD](http://www.ccdonline.ca/en/)  est une organisation pancanadienne de per
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules d'Jenelle Rouse", "", "left", "center" %}
+
 
 
 
@@ -136,9 +145,11 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de J﻿im Tokos", "", "left", "center" %}
+
 
 
 
@@ -149,9 +160,11 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Joelle Robinson", "", "left", "center" %}
+
 
 
 
@@ -162,9 +175,11 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "photo de la tête et des épaules d'Kerri Joffee", "", "left", "center" %}
+
 
 
 
@@ -175,9 +190,11 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Lori Vaanholt", "", "left", "center" %}
+
 
 
 
@@ -188,9 +205,11 @@ Partout au Canada et dans le monde,[ L'Arche](https://www.larche.ca/) crée des 
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "photo de la tête et des épaules d'Mahadeo Sukhai", "", "left", "center" %}
+
 
 
 
@@ -201,9 +220,11 @@ La Fondation de l'Institut national canadien des aveugles (Fondation[ INCA](http
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "photo de la tête et des épaules d'Michael Bach", "", "left", "center" %}
+
 
 
 
@@ -214,9 +235,11 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "photo de la tête et des épaules d'Paula Chapman ", "", "left", "center" %}
+
 
 
 
@@ -227,30 +250,28 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "photo de la tête et des épaules d'Pina D'Agostino ", "", "left", "center" %}
+### Pina D'Agostino : IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U
 
-
-
-### Pina D'Agostino : IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U 
-
-IP Osgoode à la Osgoode Hall Law School est une voix indépendante et faisant autorité qui explore les questions de gouvernance juridique à l'intersection de la propriété intellectuelle (PI) et de la technologie.   \
+[IP Osgoode](https://www.yorku.ca/osgoode/iposgoode/) à la Osgoode Hall Law School est une voix indépendante et faisant autorité qui explore les questions de gouvernance juridique à l'intersection de la propriété intellectuelle (PI) et de la technologie.   \
 **Le rôle de Pina au sein de la RtDD :**  Contribuer à la conception législative, aux instruments réglementaires novateurs et à l'interprétation juridique des approches possibles dans le cadre de la Loi sur l'accessibilité du Canada.
-
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "photo de la tête et des épaules d'Shermineh Esmati", "", "left", "center" %}
+
 ### Shermineh Esmati : Digital Governance Council / Digital Governance Standards Institute
 
 Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement le Conseil stratégique du DPI) travaille par l'intermédiaire de ses membres des secteurs public et privé pour renforcer la confiance dans l'économie numérique du Canada en identifiant, priorisant et agissant de manière collaborative sur les opportunités et les défis de la gouvernance numérique.  \
 [Digital Governance Standards Institute](https://dgc-cgn.org/standards/),  numérique, qui fait partie du Conseil de la gouvernance numérique, est un organisme accrédité d'élaboration de normes. L'Institut permet d'accroître la confiance dans les systèmes numériques du Canada en élaborant des normes de gouvernance technologique en collaboration avec un large éventail de parties prenantes.  \
 **Le rôle de Shermineh au sein de la RtDD :** Conseils techniques pour le processus d'élaboration des normes. Fournir des informations sur les motivations et les défis liés au respect des exigences en matière d'accessibilité numérique par les organisations des secteurs privé et public.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de W. Francis Fung", "", "left", "center" %}
+
 
 
 
@@ -258,6 +279,7 @@ Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement l
 
 La vision de la [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) sous est de créer une société inclusive pour les personnes ayant un handicap physique ; la mission est de maximiser l'indépendance, l'autonomisation personnelle et la participation communautaire des personnes ayant un handicap physique.   \
 **Le rôle de W. Francis au sein de la RtDD:** Recruter des membres ayant un handicap physique pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires.
+
 
 
 
