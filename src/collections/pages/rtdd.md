@@ -237,6 +237,16 @@ IP Osgoode at Osgoode Hall Law School is an independent and authoritative voice 
 
 
 
+{% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "", "left", "center" %}
+### Shermineh Esmati : Digital Governance Council / Digital Governance Standards Institute 
+
+The Digital Governance Council (formerly the CIO Strategy Council) works through its members across the public and private sectors to strengthen trust in Canada’s digital economy by collaboratively identifying, prioritizing, and acting on digital governance opportunities and challenges.  \
+[The Digital Governance Standards Institute](https://dgc-cgn.org/standards/), part of the Digital Governance Council, is an accredited standards development body. The Institute enables greater trust and confidence in Canada’s digital systems through developing technology governance standards collaboratively across a range of stakeholders. \
+**About Shermineh’s role with RtDD :** Technical guidance for the process of standards development. Provide insights regarding motivations and challenges in complying to digital accessibility requirements by private and public sector organizations.
+{% endimageAndText %}
+
+
+
 {% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
 
 
