@@ -78,29 +78,40 @@ The challenges are:
 ## P﻿artners
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulder image of Boris Vukovic", "", "left", "center" %}
+
 ### The Canadian Accessibility Network & Accessibility Institute: Boris Vukovic 
 
 The Canadian Accessibility Network under the leadership of the Accessibility Institute at Carleton University is mandated to bring organizations together to facilitate partnerships in specific collaboration areas under each of the five overarching domains: Research, Design and Innovation, Education and Training, Policy, Employment and Community Engagement.  \
 **About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
+
 {% endimageAndText %}
 
+
+
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulder image of Christopher Sutton ", "", "left", "center" %}
+
 ### Wavefront Centre for Communication Accessibility : Christopher Sutton 
 
 Wavefront Centre for Communication Accessibility, an institute of the Deaf and Hard of Hearing, envisions a society where Deaf, Hard of Hearing and Hearing people can interact freely without communication barriers. Our mission is to serve Deaf and Hard of Hearing individuals, their families and the community by delivering innovative programs, products and solutions to achieve full communication accessibility. \
 **About Christopher’s role with RtDD :** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
+
 {% endimageAndText %}
 
+
+
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulder image of Emile Tompa ", "", "left", "center" %}
+
 ### Inclusive Design for Employment Access / Institute for Work and Health, McMaster University : Emile Tompa 
 
 Inclusive Design for Employment Access (IDEA) is a social innovation laboratory focused on helping create stronger and more diverse labour markets that include persons with disabilities, through knowledge to practice. We develop evidence informed tools and resources through co-design with partners that help advance workplace capacity for recruitment, hiring, onboarding, retention, mentorship and promotion of persons with disabilities across the full range of employment opportunities.  \
 **About Emile’s role with Rtdd :** Contribute insights regarding policy, practice, compliance, and effective strategies as they relate to digital accessibility and employment of persons with disabilities.
+
 {% endimageAndText %}
 
 
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
+
 
 
 
@@ -111,11 +122,22 @@ Inclusive Design for Employment Access (IDEA) is a social innovation laboratory 
 
 
 
+
+{% endimageAndText %}
+
+
+
+{% imageAndText "/uploads/janelle-rouse.png", "head and shoulder image of Jenelle Rouse", "", "left", "center" %}
+### Black Deaf Canada (BDC) : Jenelle Rouse
+
+BDC has a community-building focus where it aims to increase network of Black Deaf individuals across Canada to increase a visible representation. BDC commits to create and provide community-based, informative resources, strategies, and opportunities for Black Deaf Canadians (and those with additional disabilities). BDC’s mandate is to explore different ways of educating the hearing society about accessibilities, Deaf intra/intercultural experiences and contexts, so the society can better serve Deaf Black individuals, including Indigenous, and Peoples of Colour.  \
+**About Jenelle’s role with RtDD :** Recruit Black Deaf members to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers and review, and review project outputs.
 {% endimageAndText %}
 
 
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
+
 
 
 
@@ -126,11 +148,11 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 
 
+
 {% endimageAndText %}
 
-
-
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulder image of Kerri Joffee", "", "left", "center" %}
+
 
 
 
@@ -141,9 +163,11 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "", "left", "center" %}
+
 
 
 
@@ -153,9 +177,11 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "", "left", "center" %}
+
 
 
 
@@ -166,15 +192,18 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "", "left", "center" %}
+
 
 
 ### W. Francis Fung: March of Dimes Canada
 
 The vision of the [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.  \
 **About W. Francis’s role with RtDD:** Recruit members with physical disabilities to participate in co-design, help disseminate project drafts for review and feedback.
+
 
 
 {% endimageAndText %}
