@@ -76,15 +76,18 @@ Les défis sont les suivants
 {% imageAndText "/uploads/boris-vukovic.png", "photo de Boris Vukovic de la tête et des épaules", "", "left", "center" %}
 
 
+
 ### Boris Vukovic : The Canadian Accessibility Network & Accessibility Institute 
 
 Le [Canadian Accessibility Network & Accessibility Institute](https://carleton.ca/accessibility-institute/can/), sous la direction de l'Institut de l'accessibilité de l'Université Carleton, a pour mandat de rassembler les organisations afin de faciliter les partenariats dans des domaines de collaboration spécifiques relevant de chacun des cinq domaines primordiaux : Recherche, conception et innovation, éducation et formation, politique, emploi et engagement communautaire.   \
 **A propos du rôle de Boris au sein de la RtDD :** Contribuer à la réflexion sur les motivations et les défis auxquels est confronté le domaine de l'accessibilité au Canada. Aider à obtenir des informations de la part des professionnels de l'accessibilité.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "photo de Christopher Sutton de la tête et des épaules", "", "left", "center" %}
+
 
 
 ### Christopher Sutton : Wavefront Centre for Communication Accessibility 
@@ -93,9 +96,11 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 **Le rôle de Christopher au sein de la RtDD :** Recruter des membres sourds et malentendants pour participer à la co-conception. Contribuer à la diffusion des ébauches de projets pour examen et commentaires. Évaluer l'accessibilité du processus de recherche pour les personnes sourdes et malentendantes. Examiner les résultats du projet.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "photo de la tête et des épaules d'Emile Tompa", "", "left", "center" %}
+
 
 
 ### Emile Tompa : Inclusive Design for Employment Access / Institute for Work and Health, McMaster University
@@ -104,9 +109,11 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 **A propos du rôle d'Emile au sein de Rtdd :** Contribuer à la réflexion sur la politique, la pratique, la conformité et les stratégies efficaces en matière d'accessibilité numérique et d'emploi des personnes handicapées.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Heather Walkus", "", "left", "center" %}
+
 
 
 ### Heather Walkus : Council of Canadians with Disabilities (CCD)
@@ -115,9 +122,11 @@ Le [CCD](http://www.ccdonline.ca/en/)  est une organisation pancanadienne de per
 **À propos du rôle de Heather au sein de la RtDD :** Aider les organisations membres à travers le Canada à recruter des membres handicapés pour participer à la co-conception. Aider à atteindre les communautés indigènes. Contribuer à la diffusion des ébauches de projets pour examen et commentaires. Fournir des informations sur la nécessité de renforcer les capacités des organisations membres pour qu'elles puissent participer aux efforts d'inclusion numérique. Recruter des co-concepteurs et examiner les résultats du projet.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules d'Jenelle Rouse", "", "left", "center" %}
+
 
 
 ### Jenelle Rouse : Black Deaf Canada (BDC) 
@@ -126,9 +135,11 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 **A propos du rôle de Jenelle au sein de la RtDD :** Recruter des membres sourds noirs pour participer à la co-conception, aider à diffuser les projets pour examen et commentaires, recruter des co-concepteurs et les examiner, et examiner les résultats du projet.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de J﻿im Tokos", "", "left", "center" %}
+
 
 
 ### J﻿im Tokos : Canadian Council of the Blind (CCB) 
@@ -137,9 +148,11 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 **À propos du rôle de Jim au sein de la RtDD :**  Recruter des membres vivant avec une perte de vision pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats des projets.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Joelle Robinson", "", "left", "center" %}
+
 
 
 ### Joelle Robinson : Manitoba League of Persons with Disabilities (MLPD)
@@ -148,9 +161,11 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 **A propos du rôle de Joelle au sein de la RtDD :** Recruter des membres handicapés, en particulier dans les zones rurales et éloignées, pour participer à la co-conception. Contribuer à la diffusion des ébauches de projets pour examen et commentaires.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "photo de la tête et des épaules d'Kerri Joffee", "", "left", "center" %}
+
 
 
 ### Kerri Joffee : ARCH Disability Law Centre  
@@ -159,9 +174,11 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 **Le rôle de Kerri au sein de la RtDD :**  Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Lori Vaanholt", "", "left", "center" %}
+
 
 
 ### Lori Vaanholt : L’Arche Canada 
@@ -170,9 +187,11 @@ Partout au Canada et dans le monde,[ L'Arche](https://www.larche.ca/) crée des 
 **À propos du rôle de Lori au sein de la RtDD :** Recruter des membres ayant une déficience intellectuelle pour participer à la co-conception, aider à diffuser les ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "photo de la tête et des épaules d'Mahadeo Sukhai", "", "left", "center" %}
+
 
 
 ### Mahadeo Sukhai : Fondation de l'Institut national canadien des aveugles 
@@ -181,9 +200,11 @@ La Fondation de l'Institut national canadien des aveugles (Fondation[ INCA](http
 **Le rôle de Mahadeo au sein de la RtDD :** Recruter des membres aveugles pour participer à la co-conception, aider à diffuser des ébauches de projet pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "photo de la tête et des épaules d'Michael Bach", "", "left", "center" %}
+
 
 
 ### Michael Bach : Institute for Research and Development on Inclusion and Society (IRIS) 
@@ -192,9 +213,11 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 **Le rôle de Michael au sein de Rtdd :** Fournir des informations et des conseils sur l'efficacité et les défis auxquels sont confrontées les organisations au service des personnes ayant une déficience intellectuelle.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "photo de la tête et des épaules d'Paula Chapman ", "", "left", "center" %}
+
 
 
 ### Paula Chapman : Ross & McBride LLP 
@@ -203,9 +226,11 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 **Le rôle de Kerri au sein de la RtDD :** Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "photo de la tête et des épaules d'Pina D'Agostino ", "", "left", "center" %}
+
 
 
 ### Pina D'Agostino : IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U 
@@ -214,26 +239,26 @@ IP Osgoode à la Osgoode Hall Law School est une voix indépendante et faisant a
 **Le rôle de Pina au sein de la RtDD :**  Contribuer à la conception législative, aux instruments réglementaires novateurs et à l'interprétation juridique des approches possibles dans le cadre de la Loi sur l'accessibilité du Canada.
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "photo de la tête et des épaules d'Shermineh Esmati", "", "left", "center" %}
-
-
 ### Shermineh Esmati : Digital Governance Council / Digital Governance Standards Institute
 
-Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement le Conseil stratégique du DPI) travaille par l'intermédiaire de ses membres des secteurs public et privé pour renforcer la confiance dans l'économie numérique du Canada en identifiant, priorisant et agissant de manière collaborative sur les opportunités et les défis de la gouvernance numérique.  Digital Governance Standards Institute,  numérique, qui fait partie du Conseil de la gouvernance numérique, est un organisme accrédité d'élaboration de normes. L'Institut permet d'accroître la confiance dans les systèmes numériques du Canada en élaborant des normes de gouvernance technologique en collaboration avec un large éventail de parties prenantes.  \
+Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement le Conseil stratégique du DPI) travaille par l'intermédiaire de ses membres des secteurs public et privé pour renforcer la confiance dans l'économie numérique du Canada en identifiant, priorisant et agissant de manière collaborative sur les opportunités et les défis de la gouvernance numérique.  \
+[Digital Governance Standards Institute](https://dgc-cgn.org/standards/),  numérique, qui fait partie du Conseil de la gouvernance numérique, est un organisme accrédité d'élaboration de normes. L'Institut permet d'accroître la confiance dans les systèmes numériques du Canada en élaborant des normes de gouvernance technologique en collaboration avec un large éventail de parties prenantes.  \
 **Le rôle de Shermineh au sein de la RtDD :** Conseils techniques pour le processus d'élaboration des normes. Fournir des informations sur les motivations et les défis liés au respect des exigences en matière d'accessibilité numérique par les organisations des secteurs privé et public.
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de W. Francis Fung", "", "left", "center" %}
+
 
 
 ### W. Francis Fung : March of Dimes Canada 
 
 La vision de la [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) sous est de créer une société inclusive pour les personnes ayant un handicap physique ; la mission est de maximiser l'indépendance, l'autonomisation personnelle et la participation communautaire des personnes ayant un handicap physique.   \
 **Le rôle de W. Francis au sein de la RtDD:** Recruter des membres ayant un handicap physique pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires.
+
 
 
 {% endimageAndText %}
