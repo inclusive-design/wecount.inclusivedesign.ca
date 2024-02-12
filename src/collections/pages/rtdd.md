@@ -166,6 +166,8 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 {% endimageAndText %}
 
+
+
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "", "left", "center" %}
 
 
@@ -179,6 +181,8 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 
 
 {% endimageAndText %}
+
+
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "", "left", "center" %}
 
