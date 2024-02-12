@@ -180,37 +180,19 @@ Across Canada and around the world, L’Arche creates communities of friendship 
 
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "", "left", "center" %}
-
-
-
-
-
 ### Mahadeo Sukhai: Canadian National Institute of the Blind Foundation
 
-The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https://www.cnib.ca/en?region=on)), a non-profit organization, delivers programs and advocacy that empower people impacted by blindness to live their dreams and tear down barriers to inclusion.  **About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
-
-
-
-
-
+The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https://www.cnib.ca/en?region=on)), a non-profit organization, delivers programs and advocacy that empower people impacted by blindness to live their dreams and tear down barriers to inclusion.  \
+**About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
 {% endimageAndText %}
 
 
 
-{% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "", "left", "center" %}
+{% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Michael Bach", "", "left", "center" %}
+### Michael Bach : Institute for Research and Development on Inclusion and Society (IRIS)
 
-
-
-
-
-### Mahadeo Sukhai: Canadian National Institute of the Blind Foundation
-
-The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https://www.cnib.ca/en?region=on)), a non-profit organization, delivers programs and advocacy that empower people impacted by blindness to live their dreams and tear down barriers to inclusion.  **About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
-
-
-
-
-
+Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, IRIS works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change. \
+**About Michael’s role with Rtdd :** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
 {% endimageAndText %}
 
 
