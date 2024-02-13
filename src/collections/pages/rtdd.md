@@ -84,13 +84,11 @@ The challenges are:
 **About Boris’s role with RtDD:** Contribute insights regarding motivations and challenges facing the accessibility field in Canada. Assist in obtaining input from accessibility professionals.
 {% endimageAndText %}
 
-{% imageAndText "/uploads/christopher-sutton.png", "head and shoulder image of Christopher Sutton ", "", "left", "center" %}
-
-### Christopher Sutton : Wavefront Centre for Communication Accessibility
+{% imageAndText "/uploads/christopher-sutton.png", "head and shoulder image of Christopher Sutton ", "Christopher Sutton", "left", "center" %}
+### Wavefront Centre for Communication Accessibility
 
 [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), an institute of the Deaf and Hard of Hearing, envisions a society where Deaf, Hard of Hearing and Hearing people can interact freely without communication barriers. Our mission is to serve Deaf and Hard of Hearing individuals, their families and the community by delivering innovative programs, products and solutions to achieve full communication accessibility. \
 **About Christopher’s role with RtDD :** Recruit members who are Deaf and hard of hearing to participate in co-design. Help disseminate project drafts for review and feedback. Evaluate the accessibility of the research process for persons who are Deaf and hard of hearing. Review project outputs.
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulder image of Emile Tompa ", "", "left", "center" %}
