@@ -112,7 +112,7 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 ### Canadian Council of the Blind (CCB)
 
 [CCB](https://ccbnational.net/shaggy/) s'efforce d'améliorer la qualité de vie des personnes vivant avec une perte de vision par la sensibilisation, le mentorat par les pairs, la socialisation, les sports et les loisirs, la défense des droits, la promotion de la santé et la prévention des maladies. Le modèle communautaire de CCB offre des programmes pour aider les personnes vivant avec une perte de vision, sensibiliser le public et le gouvernement aux problèmes de vision. Récemment, CCB a entrepris des programmes proactifs tels que la santé oculaire mobile et la formation à l'emploi. Le CCB travaille en partenariat avec un certain nombre d'organisations locales, provinciales, nationales et internationales.  \
-**À propos du rôle de Jim au sein de la RtDD :**  Recruter des membres vivant avec une perte de vision pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats des projets.
+**À propos du rôle de Jim au sein de la RtDD :** Recruter des membres vivant avec une perte de vision pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats des projets.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Joelle Robinson", "Joelle Robinson", "left", "center" %}
@@ -161,14 +161,14 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 ### IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U
 
 [IP Osgoode](https://www.yorku.ca/osgoode/iposgoode/) à la Osgoode Hall Law School est une voix indépendante et faisant autorité qui explore les questions de gouvernance juridique à l'intersection de la propriété intellectuelle (PI) et de la technologie.   \
-**Le rôle de Pina au sein de la RtDD :**  Contribuer à la conception législative, aux instruments réglementaires novateurs et à l'interprétation juridique des approches possibles dans le cadre de la Loi sur l'accessibilité du Canada.
+**Le rôle de Pina au sein de la RtDD :** Contribuer à la conception législative, aux instruments réglementaires novateurs et à l'interprétation juridique des approches possibles dans le cadre de la Loi sur l'accessibilité du Canada.
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "photo de la tête et des épaules d'Shermineh Esmati", "Shermineh Esmati", "left", "center" %}
 ### Digital Governance Council / Digital Governance Standards Institute
 
 Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement le Conseil stratégique du DPI) travaille par l'intermédiaire de ses membres des secteurs public et privé pour renforcer la confiance dans l'économie numérique du Canada en identifiant, priorisant et agissant de manière collaborative sur les opportunités et les défis de la gouvernance numérique.  \
-[Digital Governance Standards Institute](https://dgc-cgn.org/standards/),  numérique, qui fait partie du Conseil de la gouvernance numérique, est un organisme accrédité d'élaboration de normes. L'Institut permet d'accroître la confiance dans les systèmes numériques du Canada en élaborant des normes de gouvernance technologique en collaboration avec un large éventail de parties prenantes.  \
+[Digital Governance Standards Institute](https://dgc-cgn.org/standards/), numérique, qui fait partie du Conseil de la gouvernance numérique, est un organisme accrédité d'élaboration de normes. L'Institut permet d'accroître la confiance dans les systèmes numériques du Canada en élaborant des normes de gouvernance technologique en collaboration avec un large éventail de parties prenantes.  \
 **Le rôle de Shermineh au sein de la RtDD :** Conseils techniques pour le processus d'élaboration des normes. Fournir des informations sur les motivations et les défis liés au respect des exigences en matière d'accessibilité numérique par les organisations des secteurs privé et public.
 {% endimageAndText %}
 
@@ -176,7 +176,7 @@ Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement l
 ### March of Dimes Canada
 
 La vision de la [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) sous est de créer une société inclusive pour les personnes ayant un handicap physique ; la mission est de maximiser l'indépendance, l'autonomisation personnelle et la participation communautaire des personnes ayant un handicap physique.   \
-**Le rôle de W. Francis au sein de la RtDD:** Recruter des membres ayant un handicap physique pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires.
+**Le rôle de W. Francis au sein de la RtDD :** Recruter des membres ayant un handicap physique pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires.
 {% endimageAndText %}
 
 ## Équipe
