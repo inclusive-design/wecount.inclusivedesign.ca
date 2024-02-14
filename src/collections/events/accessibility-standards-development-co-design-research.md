@@ -17,6 +17,6 @@ Throughout these projects, people with disabilities will lead the direction and 
 
 In this co-research activity, participants and co-researchers learned about the standards development process, played a collaborative game to develop a standard and then "hacked" the game to make the standards development process more inclusive and accessible to the community. 
 
-* **Session 1** - Tuesday, January 9, 2024: Education session led by Collinda Joseph. Manager of Accessibility and Education Accessibility Standards Canada, Government of Canada
+* **Session 1** - Tuesday, January 9, 2024: Education session led by Collinda Joseph, Manager of Accessibility and Education Accessibility Standards Canada, Government of Canada
 * **Session 2** - Tuesday, January 16, 2024: Play the Game 
 * **Session 3** - Tuesday, January 23, 2024: Hack the Game
