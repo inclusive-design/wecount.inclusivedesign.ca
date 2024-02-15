@@ -8,6 +8,7 @@ shortDescription: In this co-research activity, participants and co-researchers
   learned about the standards development process, played a collaborative game
   to develop a standard and then "hacked" the game to make the standards
   development process more inclusive and accessible to the community.
+previewImageUrl: /uploads/wip_rdd_colour_no-type.jpg
 ---
 Regulating the Digital Domain and the Review of the Review (RotR) projects are assisting Accessibility Standards Canada in developing standards development processes and activities that are accessible and inclusively designed.
 
