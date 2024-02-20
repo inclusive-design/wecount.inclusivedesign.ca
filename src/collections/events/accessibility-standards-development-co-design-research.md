@@ -1,7 +1,7 @@
 ---
 title: Accessibility Standards Development Co-Design Research
 id: c5e691a8-9057-446b-b20a-e70ff60b79cf
-eventDate: ""
+eventDate: 2024-01-09T18:00:00.000Z
 coverImageUrl: /uploads/wip_rdd_colour_no-type.jpg
 coverImageAltText: Regulating the Digital Domain Logo
 shortDescription: In this co-research activity, participants and co-researchers
