@@ -1,8 +1,9 @@
 ---
-title: "Regulating the Digital Domain "
+title: Regulating the Digital Domain
 excerpt: The aim of RtDD is to improve digital inclusion and ICT accessibility
   for all disabled people.
-menu_order: 0
+menu_order: 6
+key: Regulating the Digital
 permalink: /rtdd/
 ---
 

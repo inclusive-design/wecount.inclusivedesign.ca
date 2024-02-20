@@ -7,9 +7,9 @@
 
 	.card {
 		background-color: $white;
-		background-position: 50% 80%;
+		background-position: 50% 115%;
 		background-repeat: no-repeat;
-		block-size: rem(216);
+		block-size: rem(438);
 		border-radius: rem(10);
 		box-shadow: 0 rem(4) rem(4) rgba(0 0 0 / 25%);
 		text-align: center;
@@ -19,12 +19,26 @@
 			box-shadow: rem(10) rem(10) rem(10) rgba(0 0 0 / 25%);
 		}
 
-		h2 {
-			color: $navy-light;
-			font-size: rem(18);
-			line-height: rem(22);
-			margin-block: rem(15);
+		h2,
+		p {
+			color: hsl(0deg 0% 0% / 100%);
+			margin-block-end: unset;
+			margin-block-start: rem(15);
 			margin-inline: rem(19);
+			text-align: start;
+		}
+
+		h2 {
+			font-weight: 600;
+		}
+
+		p {
+			font-weight: 400;
+		}
+
+		.card-title__french {
+			margin-block: unset;
+			opacity: 0.5;
 		}
 	}
 

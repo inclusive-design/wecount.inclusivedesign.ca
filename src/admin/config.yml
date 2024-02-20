@@ -37,6 +37,11 @@ collections:
         required: true
         hint: |-
           This determines where the page should appear in the primary navigation. To hide the page from the primary navigation, set the value to zero.
+      - label: Navigation Key
+        name: key
+        widget: string
+        required: false
+        hint: The title appears in the primary navigation. If you do not specify a navigation key, title will be used.
       - label: Permanent Link
         name: permalink
         widget: string
