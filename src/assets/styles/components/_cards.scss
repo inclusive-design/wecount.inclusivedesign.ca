@@ -12,11 +12,21 @@
 		block-size: rem(438);
 		border-radius: rem(10);
 		box-shadow: 0 rem(4) rem(4) rgba(0 0 0 / 25%);
+		position: relative;
 		text-align: center;
 
 		&:hover,
-		&:focus {
+		&:has(a:focus) {
 			box-shadow: rem(10) rem(10) rem(10) rgba(0 0 0 / 25%);
+		}
+
+		a::after {
+			bottom: 0;
+			content: "";
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
 		}
 
 		h2,
@@ -30,15 +40,20 @@
 
 		h2 {
 			font-weight: 600;
+
+			a {
+				color: hsl(0deg 0% 0% / 100%);
+				font-weight: 600;
+
+				&:hover,
+				&:focus {
+					background-color: unset;
+				}
+			}
 		}
 
 		p {
 			font-weight: 400;
-		}
-
-		.card-title__french {
-			margin-block: unset;
-			opacity: 0.5;
 		}
 	}
 
