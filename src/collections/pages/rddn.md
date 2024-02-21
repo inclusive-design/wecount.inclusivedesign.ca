@@ -1,6 +1,7 @@
 ---
 title: Réglementation du Domaine Numérique
 excerpt: .
+locale: fr-CA
 menu_order: 7
 key: Réglementation du Numérique
 permalink: /rddn/

@@ -30,6 +30,11 @@ collections:
         name: excerpt
         widget: text
         hint: The excerpt is shown in search results.
+      - label: Locale
+        name: locale
+        widget: string
+        required: false
+        hint: The locale of the page. If you do not specify a locale, default will be set to en-CA.
       - label: Navigation Order
         name: menu_order
         widget: number

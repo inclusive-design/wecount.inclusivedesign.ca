@@ -72,7 +72,7 @@
 </article>
 
 {% else %}
-<article class="page {{ title | slugify }}">
+<article {% if locale and locale !== "en-CA" %}lang="{{ locale }}" {% endif %}class="page {{ title | slugify }}">
   <h1>{{ pageTitle }}</h1>
   <div class="api-content">
     {{ content | safe }}
