@@ -3,13 +3,8 @@
 @import "fonts";
 
 // Typography.
-* {
+body {
 	font-family: $family-sans-serif;
-
-	&.card > h2 > a,
-	&.card > p {
-		font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
-	}
 }
 
 input,
