@@ -36,7 +36,7 @@ Cette conférence est l'occasion de cocréer des ressources et de partager les c
 
 **Thème 4 :** Communications accessibles et équitables
 
-### Détails
+### Détails de la conférence
 
 **Date de la conférence :** Les 27 et 28 mai 2024
 
