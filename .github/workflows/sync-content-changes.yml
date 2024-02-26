@@ -1,0 +1,15 @@
+name: Ensure correct CMS branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ensure-cms-branch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Open pull request
+      run: gh pr create -B main -H dev --title 'Sync main branch into dev branch' --body ''
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
