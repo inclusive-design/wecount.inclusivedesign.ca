@@ -1,4 +1,4 @@
-name: Ensure correct CMS branch
+name: Sync content changes
 
 on:
   push:
@@ -6,9 +6,10 @@ on:
       - main
 
 jobs:
-  ensure-cms-branch:
+  sync-content-changes:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v4
     - name: Open pull request
       run: gh pr create -B main -H dev --title 'Sync main branch into dev branch' --body ''
       env:
