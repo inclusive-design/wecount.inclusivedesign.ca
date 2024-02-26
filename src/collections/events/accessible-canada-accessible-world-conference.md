@@ -37,7 +37,7 @@ This conference is an opportunity to co-create resources and to share knowledge 
 
 ### **Conference details**
 
-**Date:** May 27–28, 2024
+**Date:** May 27–28, 2024 (Monday and Tuesday)
 
 **Location:** Concordia University (Montreal) and online
 
