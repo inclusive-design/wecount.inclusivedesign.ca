@@ -47,12 +47,12 @@ This conference is an opportunity to co-create resources and to share knowledge 
 
 ### ACAW organizers and hosts
 
-![IDRC logo](/uploads/idrc-bw.png)
+![IDRC logo](/uploads/idrc-bw-small.png)
 
-![Concordia logo](/uploads/concordia-logo-rgb-compact-black.png)
+![Concordia logo](/uploads/concordia-logo-rgb-compact-black-small.png)
 
 ### ACAW sponsors
 
-![Accessibility Standards Canada logo](/uploads/accessibility_standards_canada_accessibility_standards_canada_20.jpg)
+![Accessibility Standards Canada logo](/uploads/accessibility_standards_canada-small.jpg)
 
-![Aequum logo](/uploads/aequum-logo.png)
+![Aequum logo](/uploads/aequum-logo-small.png)
