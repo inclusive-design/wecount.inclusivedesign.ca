@@ -35,7 +35,7 @@ This conference is an opportunity to co-create resources and to share knowledge 
 
 **Theme 4:** Accessible and equitable communications
 
-### **Details**
+### **Conference details**
 
 **Date:** May 27–28, 2024
 
