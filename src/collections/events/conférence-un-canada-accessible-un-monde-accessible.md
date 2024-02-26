@@ -36,13 +36,15 @@ Cette conférence est l'occasion de cocréer des ressources et de partager les c
 
 **Lieu :** Université Concordia (Montréal) et en ligne
 
-[Site web de la conférence](https://sites.events.concordia.ca/sites/accessconf/fr/accessible-canada-accessible-world) 
+[Site web de la conférence](https://sites.events.concordia.ca/sites/accessconf/fr/accessible-canada-accessible-world)
 
 [S'inscrire maintenant](https://sites.events.concordia.ca/sites/accessconf/fr/accessible-canada-accessible-world/register)
 
 ### Organisateurs et hôtes de l'CAMA
 
-![]()
+![Logo du IDRC](/uploads/idrc-bw.png)
+
+![Logo de l'Université Concordia](/uploads/concordia-logo-rgb-compact-black.png)
 
 ### Les sponsors de l'CAMA[](https://sites.events.concordia.ca/sites/accessconf/fr/accessible-canada-accessible-world/register)
 
