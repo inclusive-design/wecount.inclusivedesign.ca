@@ -23,19 +23,19 @@ This conference is an opportunity to co-create resources and to share knowledge 
 
 ### **Conference themes**
 
-Theme 1: Emerging Issues and Addressing Gaps. “Who and what are we missing?”
+**Theme 1:** Emerging Issues and Addressing Gaps. “Who and what are we missing?”
 
-Theme 2: Inclusive decision-making, in which we will collectively shape inclusive design of research, democracy, evidence, proof, measuring, indicators and other decision tools.
+**Theme 2:** Inclusive decision-making, in which we will collectively shape inclusive design of research, democracy, evidence, proof, measuring, indicators and other decision tools.
 
-Theme 3: Innovation in standards and policy, with a focus on standards for disruptive emerging systems.
+**Theme 3:** Innovation in standards and policy, with a focus on standards for disruptive emerging systems.
 
-Theme 4: Accessible and equitable communications
+**Theme 4:** Accessible and equitable communications
 
 ### **Details**
 
-Date: May 27–28, 2024
+**Date:** May 27–28, 2024
 
-Location: Concordia University (Montreal) and online
+**Location:** Concordia University (Montreal) and online
 
 [Conference website](https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world)
 
