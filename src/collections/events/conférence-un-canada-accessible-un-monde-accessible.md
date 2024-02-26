@@ -7,8 +7,12 @@ coverImageUrl: /uploads/acaw_fr_registernow_lnkd_fb-dec-29.png
 coverImageAltText: Inscrivez-vous dès maintenant à la conférence Un Canada
   accessible, Un monde accessible. Les 27 et 28 mai 2024. Université Concordia
   (Montréal) et en ligne.
-shortDescription: Inscrivez-vous à la conférence Un Canada accessible, Un monde
-  accessible qui se tiendra les 27 et 28 mai 2024.
+shortDescription: >-
+  Inscrivez-vous à la conférence Un Canada accessible, Un monde accessible qui
+  se tiendra les 27 et 28 mai 2024.
+
+
+  Organisée par le IDRC, en partenariat avec l'Université Concordia, la conférence CAMA est un événement international consacré à l'avancement de l'accessibilité et de la conception inclusive.
 previewImageUrl: /uploads/acaw_logo_white_07_crop.png
 previewImageAltText: Logo de l'ACAW
 ---
