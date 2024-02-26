@@ -2,7 +2,7 @@
 title: Conférence Un Canada accessible, Un monde accessible
 id: f7859415-739e-4c44-b726-659eb10e7314
 permalink: /events/cama/
-eventDate: 2024-05-27T12:00:00.000Z
+eventDate: 2024-05-27T12:02:00.000Z
 coverImageUrl: /uploads/acaw_fr_registernow_lnkd_fb-dec-29.png
 coverImageAltText: Inscrivez-vous dès maintenant à la conférence Un Canada
   accessible, Un monde accessible. Les 27 et 28 mai 2024. Université Concordia
