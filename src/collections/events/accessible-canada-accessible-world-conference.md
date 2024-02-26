@@ -6,8 +6,12 @@ eventDate: 2024-05-27T12:00:00.000Z
 coverImageUrl: /uploads/acaw_eng_registernow_lnkd_fb-dec-29.png
 coverImageAltText: Register now for the Accessible Canada, Accessible World
   Conference. May 27-28, 2024. Concordia University (Montreal) and online.
-shortDescription: Register for the Accessible Canada, Accessible World
-  conference on May 27-28, 2024.
+shortDescription: >-
+  Register for the Accessible Canada, Accessible World conference on May 27-28,
+  2024.
+
+
+  Organized by IDRC, in partnership with Concordia, the ACAW conference is an international event dedicated to advancing accessibility and inclusive design.
 previewImageUrl: /uploads/acaw_logo_white_07_crop.png
 previewImageAltText: ACAW logo
 ---
