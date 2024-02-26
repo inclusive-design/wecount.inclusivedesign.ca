@@ -24,6 +24,8 @@ Organisée par le IDRC, en partenariat avec l'Université Concordia, la confére
 
 Cette conférence est l'occasion de cocréer des ressources et de partager les connaissances et les enseignements tirés de l'avancement de l'accessibilité et de l'inclusion. Nous vous invitons à vous joindre à nous dans cet effort de collaboration et à veiller à ce que l'agenda mondial de l'accessibilité soit guidé par les personnes en situation d’handicapées. Ensemble, nous pouvons rendre le Canada et le monde plus accessibles et plus inclusifs pour tous.
 
+[S'inscrire maintenant](https://sites.events.concordia.ca/sites/accessconf/fr/accessible-canada-accessible-world/register)
+
 ### Thèmes de la conférence
 
 **Thème 1 :** Questions émergentes et combler les lacunes. "Qui et qu'est-ce qui nous manque ?
