@@ -124,7 +124,7 @@ header {
 	}
 }
 
-@include breakpoint-up(lg) {
+@include breakpoint-up(xl) {
 	header {
 		.search-container {
 			margin-inline-start: rem(80);
