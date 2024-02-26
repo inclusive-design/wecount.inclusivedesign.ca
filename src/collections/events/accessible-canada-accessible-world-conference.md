@@ -19,6 +19,8 @@ Organized by IDRC, in partnership with Concordia, the ACAW conference is an inte
 
 This conference is an opportunity to co-create resources and to share knowledge and lessons learned in advancing accessibility and inclusion. We invite you to join us in this collaborative effort, and to ensure that the global accessibility agenda is guided by people with disabilities. Together, we can make Canada and the world more accessible and inclusive for everyone.
 
+[Register now](https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world/register)[](https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world)
+
 ### **Conference themes**
 
 Theme 1: Emerging Issues and Addressing Gaps. “Who and what are we missing?”
