@@ -9,6 +9,8 @@ coverImageAltText: Inscrivez-vous dès maintenant à la conférence Un Canada
   (Montréal) et en ligne.
 shortDescription: Inscrivez-vous à la conférence Un Canada accessible, Un monde
   accessible qui se tiendra les 27 et 28 mai 2024.
+previewImageUrl: /uploads/acaw_logo_white_07_crop.png
+previewImageAltText: Logo de l'ACAW
 ---
 ## Conférence Un Canada accessible, Un monde accessible
 
