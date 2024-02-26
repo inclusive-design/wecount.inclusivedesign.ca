@@ -6,7 +6,7 @@ pagination:
   size: 10
 layout: layouts/resources.njk
 excerpt: Search the We Count Library.
-menu_order: 6
+menu_order: 5
 ---
 Support your learning through our searchable research library and discover valuable
 resources about many topics in artificial intelligence and data analytics, such as AI

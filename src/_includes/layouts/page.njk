@@ -17,18 +17,38 @@
     </div>
   </article>
   <div class="homepage-cards">
-    <a href="/initiatives/" class="blue card">
-      <h2>Read current views in inclusive data science</h2>
-    </a>
-    <a href="/events/" class="yellow card">
-      <h2>Participate in our inclusion challenge initiatives</h2>
-    </a>
-    <a href="/badges/" class="azure card">
-      <h2>Earn We Count Badges</h2>
-    </a>
-    <a href="/resources/" class="green card">
-      <h2>Search the We Count Library</h2>
-    </a>
+    <div class="card blue">
+      <h2>
+        <a href="/resources/">
+          Resource Library
+        </a>
+      </h2>
+      <p>Search IDRC's library of AI and data analytics resources</p>
+    </div>
+    <div class="card green">
+      <h2>
+        <a href="/events/">
+          Events
+        </a>
+      </h2>
+      <p>Find out about IDRC events and how you can participate</p>
+    </div>
+     <div class="card azure">
+      <h2>
+        <a href="/initiatives/">
+          Events
+        </a>
+      </h2>
+      <p>Explore IDRC project activities</p>
+    </div>
+    <div class="card yellow">
+      <h2>
+        <a href="/rtdd/">
+          Regulating the Digital / <span lang="fr-CA">Réguler le numérique</span>
+        </a>
+      </h2>
+      <p>Addressing digital exclusion / <span lang="fr-CA">Lutter contre l’exclusion numérique</span></p>
+    </div>
   </div>
 </div>
 
@@ -52,7 +72,7 @@
 </article>
 
 {% else %}
-<article class="page {{ title | slugify }}">
+<article {% if locale and locale !== "en-CA" %}lang="{{ locale }}" {% endif %}class="page {{ title | slugify }}">
   <h1>{{ pageTitle }}</h1>
   <div class="api-content">
     {{ content | safe }}

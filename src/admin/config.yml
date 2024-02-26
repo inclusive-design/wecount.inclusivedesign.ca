@@ -30,6 +30,11 @@ collections:
         name: excerpt
         widget: text
         hint: The excerpt is shown in search results.
+      - label: Locale
+        name: locale
+        widget: string
+        required: false
+        hint: The locale of the page. If you do not specify a locale, default will be set to en-CA.
       - label: Navigation Order
         name: menu_order
         widget: number
@@ -37,6 +42,11 @@ collections:
         required: true
         hint: |-
           This determines where the page should appear in the primary navigation. To hide the page from the primary navigation, set the value to zero.
+      - label: Navigation Key
+        name: key
+        widget: string
+        required: false
+        hint: The title appears in the primary navigation. If you do not specify a navigation key, title will be used.
       - label: Permanent Link
         name: permalink
         widget: string
