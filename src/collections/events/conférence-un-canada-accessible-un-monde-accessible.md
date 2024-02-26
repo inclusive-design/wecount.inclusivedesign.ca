@@ -48,12 +48,12 @@ Cette conférence est l'occasion de cocréer des ressources et de partager les c
 
 ### Organisateurs et hôtes de l'CAMA
 
-![Logo du IDRC](/uploads/idrc-bw.png)
+![Logo du IDRC](/uploads/idrc-bw-small.png)
 
-![Logo de l'Université Concordia](/uploads/concordia-logo-rgb-compact-black.png)
+![Logo de l'Université Concordia](/uploads/concordia-logo-rgb-compact-black-small.png)
 
 ### Les sponsors de l'CAMA[](https://sites.events.concordia.ca/sites/accessconf/fr/accessible-canada-accessible-world/register)
 
-![Logo des Normes d'accessibilité Canada](/uploads/accessibility_standards_canada_accessibility_standards_canada_20.jpg)
+![Logo des Normes d'accessibilité Canada](/uploads/accessibility_standards_canada-small.jpg)
 
-![Logo d'Aequum](/uploads/aequum-logo-fr.png)
+![Logo d'Aequum](/uploads/aequum-logo-fr-small.png)
