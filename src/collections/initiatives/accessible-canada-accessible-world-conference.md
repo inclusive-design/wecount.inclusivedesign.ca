@@ -60,4 +60,6 @@ This conference is an opportunity to co-create resources and to share knowledge 
 
 ![Accessibility Standards Canada logo](/uploads/accessibility_standards_canada-small.jpg)
 
+
+
 ![Aequum logo](/uploads/aequum-logo-small.png)
