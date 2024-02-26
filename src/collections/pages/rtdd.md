@@ -10,7 +10,7 @@ permalink: /rtdd/
 
 ![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
 
-[Cliquez pour voir](https://wecount.inclusivedesign.ca/rddn) la page en Français
+Voir ce page en [français](https://wecount.inclusivedesign.ca/rddn)
 
 ## About the project
 
