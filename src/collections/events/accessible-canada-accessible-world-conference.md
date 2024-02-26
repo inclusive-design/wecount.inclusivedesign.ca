@@ -2,7 +2,7 @@
 title: Accessible Canada, Accessible World Conference
 id: 1596eddf-5849-4257-9072-051229e9c97c
 permalink: /events/acaw/
-eventDate: 2024-02-26T19:57:27.374Z
+eventDate: 2024-05-27T12:00:00.000Z
 coverImageUrl: /uploads/acaw_eng_registernow_lnkd_fb-dec-29.png
 coverImageAltText: Register now for the Accessible Canada, Accessible World
   Conference. May 27-28, 2024. Concordia University (Montreal) and online.
@@ -19,7 +19,17 @@ Organized by IDRC, in partnership with Concordia, the ACAW conference is an inte
 
 This conference is an opportunity to co-create resources and to share knowledge and lessons learned in advancing accessibility and inclusion. We invite you to join us in this collaborative effort, and to ensure that the global accessibility agenda is guided by people with disabilities. Together, we can make Canada and the world more accessible and inclusive for everyone.
 
-**Details:**
+### **Conference themes**
+
+Theme 1: Emerging Issues and Addressing Gaps. “Who and what are we missing?”
+
+Theme 2: Inclusive decision-making, in which we will collectively shape inclusive design of research, democracy, evidence, proof, measuring, indicators and other decision tools.
+
+Theme 3: Innovation in standards and policy, with a focus on standards for disruptive emerging systems.
+
+Theme 4: Accessible and equitable communications
+
+### **Details**
 
 Date: May 27–28, 2024
 
@@ -28,3 +38,15 @@ Location: Concordia University (Montreal) and online
 [Conference website](https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world)
 
 [Register now](https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world/register)[](https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world)
+
+### ACAW organizers and hosts
+
+![IDRC logo](/uploads/idrc-bw.png)
+
+![Concordia logo](/uploads/concordia-logo-rgb-compact-black.png)
+
+### ACAW sponsors
+
+![Accessibility Standards Canada logo](/uploads/accessibility_standards_canada_accessibility_standards_canada_20.jpg)
+
+![Aequum logo](/uploads/aequum-logo.png)
