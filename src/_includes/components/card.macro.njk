@@ -1,0 +1,13 @@
+{%- macro card(params) -%}
+<div class="card {{ params.color }}">
+  {% include params.backgroundSvg %}
+  <div class="card__content">
+    <h2>
+      <a href="{{ params.url }}">
+        {{ params.title | safe }}
+      </a>
+    </h2>
+    <p>{{ params.text | safe }}</p>
+  </div>
+</div>
+{% endmacro %}

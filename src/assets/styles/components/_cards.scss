@@ -58,6 +58,14 @@
 			font-weight: 400;
 		}
 
+		.card__content {
+			block-size: 100%;
+			inline-size: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+
 		svg {
 			bottom: -20;
 			inline-size: 100%;
@@ -68,6 +76,29 @@
 
 	.blue {
 		background-color: $blue-grey;
+
+		svg {
+			.cls-1 {
+				fill: var(--fl-bgColor, #abdde9);
+			}
+
+			.cls-2 {
+				fill: var(--fl-bgColor, #198293);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-3 {
+				fill: #55769f;
+			}
+
+			.cls-4 {
+				fill: #6ab9c6;
+			}
+
+			.cls-5 {
+				fill: #37a5b7;
+			}
+		}
 	}
 
 	.green {
@@ -89,4 +120,8 @@
 		padding-block: 0 rem(50);
 		padding-inline: rem(60);
 	}
+}
+
+[class*="fl-theme"]:not(.fl-theme-prefsEditor-default) div.card__content {
+	background: transparent !important;
 }
