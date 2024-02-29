@@ -7,13 +7,12 @@
 
 	.card {
 		background-color: $white;
-		background-position: 50% 115%;
 		background-repeat: no-repeat;
 		block-size: rem(438);
+		border: rem(1) solid;
 		border-radius: rem(10);
 		box-shadow: 0 rem(4) rem(4) rgba(0 0 0 / 25%);
 		font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
-		overflow: hidden;
 		position: relative;
 		text-align: center;
 
@@ -42,6 +41,7 @@
 
 		h2 {
 			font-weight: 600;
+			line-height: 130%;
 
 			a {
 				color: hsl(0deg 0% 0% / 100%);
@@ -56,6 +56,7 @@
 
 		p {
 			font-weight: 400;
+			line-height: 130%;
 		}
 
 		.card__content {
@@ -67,8 +68,7 @@
 		}
 
 		svg {
-			bottom: -20;
-			inline-size: 100%;
+			bottom: 0;
 			left: 0;
 			position: absolute;
 		}
@@ -80,6 +80,7 @@
 		svg {
 			.cls-1 {
 				fill: var(--fl-bgColor, #abdde9);
+				stroke: var(--fl-fgColor, transparent);
 			}
 
 			.cls-2 {
@@ -88,29 +89,104 @@
 			}
 
 			.cls-3 {
-				fill: #55769f;
+				fill: var(--fl-bgColor, #55769f);
+				stroke: var(--fl-fgColor, transparent);
 			}
 
 			.cls-4 {
-				fill: #6ab9c6;
+				fill: var(--fl-bgColor, #6ab9c6);
+				stroke: var(--fl-fgColor, transparent);
 			}
 
 			.cls-5 {
-				fill: #37a5b7;
+				fill: var(--fl-bgColor, #37a5b7);
+				stroke: var(--fl-fgColor, transparent);
 			}
 		}
 	}
 
 	.green {
 		background-color: $green-grey;
+
+		svg {
+			.cls-1 {
+				fill: var(--fl-bgColor, #cde6c4);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-2 {
+				fill: var(--fl-bgColor, #daeed3);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-3 {
+				fill: var(--fl-bgColor, #b1d6a1);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-4 {
+				fill: var(--fl-bgColor, #96bc84);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-5 {
+				fill: var(--fl-bgColor, #85a576);
+				stroke: var(--fl-fgColor, transparent);
+			}
+		}
 	}
 
 	.yellow {
 		background-color: $yellow;
+
+		.cls-1 {
+			fill: var(--fl-bgColor, #95d2f9);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-2 {
+			fill: var(--fl-bgColor, #dd9c3e);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-3 {
+			fill: var(--fl-bgColor, #fbb23e);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-4 {
+			fill: var(--fl-bgColor, $white);
+			stroke: var(--fl-fgColor, transparent);
+		}
 	}
 
 	.azure {
 		background-color: $azure;
+
+		.cls-1 {
+			fill: var(--fl-bgColor, #fbdc90);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-2 {
+			fill: var(--fl-bgColor, #337595);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-3 {
+			fill: var(--fl-bgColor, #5b9ad2);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-4 {
+			fill: var(--fl-bgColor, #3b93e4);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-5 {
+			fill: var(--fl-bgColor, #4892c4);
+			stroke: var(--fl-fgColor, transparent);
+		}
 	}
 }
 
