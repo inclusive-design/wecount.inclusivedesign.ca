@@ -140,6 +140,10 @@
 	.yellow {
 		background-color: $yellow;
 
+		a div {
+			margin-block-start: rem(4);
+		}
+
 		.cls-1 {
 			fill: var(--fl-bgColor, #95d2f9);
 			stroke: var(--fl-fgColor, transparent);
