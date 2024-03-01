@@ -1,18 +1,18 @@
 .homepage-cards {
-	display: grid;
-	grid-gap: rem(38);
-	grid-template-columns: repeat(1, 1fr);
+	gap: rem(38);
 	padding-block: 0 rem(50);
 	padding-inline: rem(32);
 
 	.card {
+		aspect-ratio: 271 / 476;
 		background-color: $white;
 		background-repeat: no-repeat;
-		block-size: rem(438);
 		border: rem(1) solid;
 		border-radius: rem(10);
 		box-shadow: 0 rem(4) rem(4) rgba(0 0 0 / 25%);
 		font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+		inline-size: 100%;
+		max-inline-size: rem(271);
 		position: relative;
 		text-align: center;
 
@@ -68,6 +68,7 @@
 		}
 
 		svg {
+			border-end-end-radius: 0.5rem;
 			bottom: 0;
 			left: 0;
 			position: absolute;
@@ -192,9 +193,23 @@
 
 @include breakpoint-up(lg) {
 	.homepage-cards {
+		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		padding-block: 0 rem(50);
-		padding-inline: rem(60);
+	}
+}
+
+@include breakpoint-down(lg) {
+	.homepage-cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@include breakpoint-down(sm) {
+	.homepage-cards {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
 	}
 }
 
