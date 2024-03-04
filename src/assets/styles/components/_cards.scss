@@ -1,4 +1,7 @@
 .homepage-cards {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 	gap: rem(38);
 	padding-block: 0 rem(50);
 	padding-inline: rem(32);
@@ -194,25 +197,16 @@
 	}
 }
 
-@include breakpoint-up(lg) {
-	.homepage-cards {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-
-@include breakpoint-down(lg) {
+@include breakpoint-up(md) {
 	.homepage-cards {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
-@include breakpoint-down(sm) {
+@include breakpoint-up(lg) {
 	.homepage-cards {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 

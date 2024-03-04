@@ -2,7 +2,7 @@
 	$min: breakpoint-value($name, $breakpoints);
 
 	@if $min {
-		@media (width > rem($min)) {
+		@media (width >= rem($min)) {
 			@content;
 		}
 	}
