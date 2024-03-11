@@ -1,4 +1,4 @@
-name: Lint assets
+name: Run tests
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
     branches:
       - dev
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -22,3 +22,6 @@ jobs:
       run: npm ci
     - name: Lint assets
       run: npm run lint
+    - name: Ensure that commitlint works
+      run: |
+        echo "fix: make sure commitlint works" | npx --no-install commitlint
