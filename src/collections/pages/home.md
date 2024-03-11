@@ -8,7 +8,7 @@ excerpt: |-
   analytics. Disability often places you at the…
 menu_order: 0
 ---
-{% youtube "https://youtu.be/mFvXgQMLdNw" %}
+![A meeting room with people with different access needs](/uploads/landing.png)
 
 ## Removing bias and exclusion in the data economy
 

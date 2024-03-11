@@ -165,38 +165,22 @@ article .homepage-content {
 		border: none;
 	}
 
-	// The folowing CSS rule ensures video content is the width of the viewport in mobile and iPad views
-	.embed--youtube {
-		// not yet supported in Safari. for support details, see:
-		// https://caniuse.com/mdn-css_properties_aspect-ratio
-		aspect-ratio: 16 / 9;
-		display: block;
-		margin-inline: $full-width-video-margins;
+	.landing-image-container {
 		position: relative;
-
-		// fallback for aspect-ratio
-		@supports not (aspect-ratio: auto) {
-			block-size: 0;
-			overflow: hidden;
-			padding-block-start: 56.25%; // 16:9
-			position: relative;
-		}
 	}
 
-	.embed--youtube iframe {
-		block-size: 100%;
-		inline-size: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
+	.landing-image {
+		border-block-start: rem(10) solid hsl(199deg 50% 39% / 100%);
+	}
 
-		// fallback for aspect-ratio
-		@supports not (aspect-ratio: auto) {
-			left: 50%;
-			position: absolute;
-			top: 50%;
-			transform: translate(-50%, -50%);
-		}
+	.landing-image-text {
+		background-color: transparent !important;
+		color: $white;
+		font-size: rem(40);
+		font-weight: 600;
+		position: absolute;
+		right: 10%;
+		top: 10%;
 	}
 }
 
