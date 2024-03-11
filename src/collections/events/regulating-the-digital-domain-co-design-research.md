@@ -9,6 +9,8 @@ shortDescription: We invite members of the disability community, aged 18 years
   event. We aim to foster an inclusive environment where diverse perspectives
   contribute to meaningful change and will work with you to make sure that you
   can participate equitably. Read More.
+previewImageUrl: /uploads/wip_rdd_colour_no-type.jpg
+previewImageAltText: RtDD logo
 ---
 We invite members of the disability community, aged 18 years or older, to participate in an upcoming online, inclusive co-design research event. We aim to foster an inclusive environment where diverse perspectives contribute to meaningful change and will work with you to make sure that you can participate equitably.
 
