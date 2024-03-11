@@ -17,3 +17,9 @@
 		}
 	}
 }
+
+.idrc-indicator-element a {
+	color: $black;
+	text-decoration: underline;
+	text-underline-offset: calc(2 / 16 * 1rem);
+}
