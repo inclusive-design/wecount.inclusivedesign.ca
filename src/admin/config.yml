@@ -57,6 +57,11 @@ collections:
       - label: Body
         name: body
         widget: markdown
+      - label: Expandable H2
+        name: expandableHeading
+        widget: boolean
+        default: false
+        hint: Make every H2s on the page hide/show their content.
   - name: initiatives
     label: Initiatives
     label_singular: Initiative
@@ -102,6 +107,11 @@ collections:
       - label: Tags
         name: tags
         widget: list
+      - label: Expandable H2
+        name: expandableHeading
+        widget: boolean
+        default: false
+        hint: Make every H2s on the page hide/show their content.
   - name: events
     label: Events
     label_singular: Event
