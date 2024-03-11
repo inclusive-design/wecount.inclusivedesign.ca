@@ -55,7 +55,7 @@
     "markdown-it": "14.0.0",
     "modern-css-reset": "1.4.0",
     "netlify-cms-widget-uuid-v4": "1.1.1",
-    "nodemailer": "6.9.9",
+    "nodemailer": "6.9.12",
     "nunjucks": "3.2.4",
     "uuid": "9.0.1"
   },
