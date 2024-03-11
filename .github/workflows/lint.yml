@@ -24,4 +24,4 @@ jobs:
       run: npm run lint
     - name: Ensure that commitlint works
       run: |
-        echo "fix: make sure commitlint works" | npx --no-install commitlint
+        echo "fix: make sure commitlint works" | npx --no-install commitlint --config commitlint.config.mjs

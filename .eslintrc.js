@@ -5,10 +5,8 @@ module.exports = {
 		"plugin:markdown/recommended",
 		"plugin:react/recommended"
 	],
-	plugins: [
-		"react"
-	],
-	"ignorePatterns": ["_site", "src/_locales/messages.js", "!.*.js"],
+	plugins: ["react"],
+	ignorePatterns: ["_site", "src/_locales/messages.js", "!.*.js"],
 	env: {
 		amd: true,
 		browser: true,
@@ -19,11 +17,11 @@ module.exports = {
 		sourceType: "module",
 		ecmaVersion: 2020,
 		ecmaFeatures: {
-			"jsx": true
+			jsx: true
 		}
 	},
 	rules: {
-		"indent": [1, "tab"],
+		indent: [1, "tab"],
 		"linebreak-style": ["error", "unix"],
 		quotes: ["error", "double"],
 		semi: ["error", "always"],
@@ -35,9 +33,9 @@ module.exports = {
 			processor: "markdown/markdown"
 		}
 	],
-	"settings": {
-		"react": {
-			"version": "16.14.0"
+	settings: {
+		react: {
+			version: "16.14.0"
 		}
 	}
 };
