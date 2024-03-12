@@ -9,13 +9,10 @@ shortDescription: >-
   participate in an upcoming online, inclusive co-design research event. We aim
   to foster an inclusive environment where diverse perspectives contribute to
   meaningful change and will work with you to make sure that you can participate
-  equitably. 
+  equitably. *Read More.*
 
 
   **Introductory session on Thursday, March 28th.**
-
-
-  Read More.
 previewImageUrl: /uploads/wip_rdd_colour_no-type.jpg
 previewImageAltText: RtDD logo
 ---
