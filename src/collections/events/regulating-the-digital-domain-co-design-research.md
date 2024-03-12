@@ -1,14 +1,18 @@
 ---
 title: "Regulating the Digital Domain Co-Design Research "
 id: 99ffdff7-1f42-4831-89c8-755f4eb2b84f
-eventDate: 2024-03-28T17:00:00.000Z
-coverImageUrl: /uploads/wip_rdd_colour_no-type.jpg
+eventDate: 2024-03-28T12:00:00.000Z
+coverImageUrl: /uploads/rdd_colour_horiz_eng.jpg
 coverImageAltText: RtDD Logo
-shortDescription: We invite members of the disability community, aged 18 years
-  or older, to participate in an upcoming online, inclusive co-design research
-  event. We aim to foster an inclusive environment where diverse perspectives
-  contribute to meaningful change and will work with you to make sure that you
-  can participate equitably. Read More.
+shortDescription: >-
+  We invite members of the disability community, aged 18 years or older, to
+  participate in an upcoming online, inclusive co-design research event. We aim
+  to foster an inclusive environment where diverse perspectives contribute to
+  meaningful change and will work with you to make sure that you can participate
+  equitably. *Read More.*
+
+
+  **Introductory session on Thursday, March 28th.**
 previewImageUrl: /uploads/wip_rdd_colour_no-type.jpg
 previewImageAltText: RtDD logo
 ---
