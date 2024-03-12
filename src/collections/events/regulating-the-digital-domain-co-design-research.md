@@ -13,7 +13,7 @@ shortDescription: >-
 
 
   **Introductory session on Thursday, March 28th.**
-previewImageUrl: /uploads/wip_rdd_colour_no-type.jpg
+previewImageUrl: /uploads/rtdd_colour_small-type_eng.jpg
 previewImageAltText: RtDD logo
 ---
 We invite members of the disability community, aged 18 years or older, to participate in an upcoming online, inclusive co-design research event. We aim to foster an inclusive environment where diverse perspectives contribute to meaningful change and will work with you to make sure that you can participate equitably.
