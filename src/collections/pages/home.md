@@ -1,15 +1,16 @@
 ---
 title: IDRC’s Inclusive Artificial Intelligence (AI) Initiatives
-permalink: /
-slug: home
 excerpt: |-
   We Count is a community-driven project to address the inherent bias
   against small minorities and outliers in artificial intelligence and data
   analytics. Disability often places you at the…
+bannerImageAltText: A meeting with people with different access needs
+slug: home
 menu_order: 0
+permalink: /
+bannerImage: /uploads/landing.png
+bannerImageText: IDRC addresses barriers<br />throughout the data<br />ecosystem.
 ---
-![A meeting room with people with different access needs](/uploads/landing.png)
-
 ## Removing bias and exclusion in the data economy
 
 We Count is a community-driven project to address the inherent bias against small minorities and outliers in artificial intelligence and data analytics. Disability often places you at the margins of a data set. More and more critical decisions are made and automated using data. Current artificial intelligence can automate and amplify existing discrimination.

@@ -9,11 +9,20 @@
 
 {% block content %}
 {% if page.url === "/" %}
-<script src="/assets/scripts/home-page-image.js"></script>
 <div>
   <article>
     <h1 class="title">{{ pageTitle }}</h1>
     <div class="api-content homepage-content">
+    {% if bannerImage %}
+    <div class="banner-image-container">
+      {% figure bannerImage, bannerImageAltText %} {% endfigure %}
+      {% if bannerImageText %}
+        <div class="banner-image-text">
+          {{ bannerImageText | safe }}
+        </div>
+      {% endif %}
+    </div>
+    {% endif %}
     {{ content | safe }}
     </div>
   </article>

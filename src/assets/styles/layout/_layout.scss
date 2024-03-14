@@ -165,15 +165,15 @@ article .homepage-content {
 		border: none;
 	}
 
-	.landing-image-container {
+	.banner-image-container {
 		position: relative;
 	}
 
-	.landing-image {
+	.banner-image-container img {
 		border-block-start: rem(10) solid hsl(199deg 50% 39% / 100%);
 	}
 
-	.landing-image-text {
+	.banner-image-text {
 		background-color: transparent !important;
 		color: $white;
 		font-size: rem(40);
