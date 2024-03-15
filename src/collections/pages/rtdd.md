@@ -22,7 +22,9 @@ Voir ce page en [français](https://wecount.inclusivedesign.ca/rddn)
 
 ### **`How to apply:`**
 
-* **`To apply to participate as a co-researcher, please visit https://lnkd.in/eBjAZnmU`**
+**`To apply to participate as a co-researcher, please visit https://lnkd.in/eBjAZnmU`**
+
+**[`Find out more about this event`](https://wecount.inclusivedesign.ca/events/regulating-the-digital-domain-co-design-research/)**
 
 ## About the project
 
