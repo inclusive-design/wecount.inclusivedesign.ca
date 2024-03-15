@@ -10,21 +10,19 @@ permalink: /rtdd/
 
 Voir ce page en [français](https://wecount.inclusivedesign.ca/rddn)
 
-## **`Announcements!`**
+## **`Event announcement`**
 
 **`IDRC invites members of the disability community to participate in an upcoming online, inclusive co-design research event.`**
 
-**`About the co-design:`**
+### **`About the co-design:`**
 
-**`• The co-design process will span 7-8 hours over 6 weeks.`**
+* **`The co-design process will span 7-8 hours over 6 weeks.`**
+* **`Selected participants will receive an honorarium of $500 CAD upon completion of the research activities.`**
+* **`The application deadline is Friday, March 22, 2023, at 5 PM (EDT).`**
 
-**`• Selected participants will receive an honorarium of $500 CAD upon completion of the research activities.`**
+### **`How to apply:`**
 
-**`• The application deadline is Friday, March 22, 2023, at 5 PM (EDT).`**
-
-**`How to apply:`**
-
-**`• To apply to participate as a co-researcher, please visit https://lnkd.in/eBjAZnmU`**
+* **`To apply to participate as a co-researcher, please visit https://lnkd.in/eBjAZnmU`**
 
 ## About the project
 
