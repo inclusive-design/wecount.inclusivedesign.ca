@@ -15,7 +15,9 @@
     <div class="api-content homepage-content">
     {% if bannerImage %}
     <div class="banner-image-container">
-      {% figure bannerImage, bannerImageAltText %} {% endfigure %}
+      <figure>
+      <img src="{{ bannerImage }}" alt="{{ bannerImageAltText }}" />
+      </figure>
       {% if bannerImageText %}
         <div class="banner-image-text">
           {{ bannerImageText | safe }}
