@@ -13,6 +13,18 @@
   <article>
     <h1 class="title">{{ pageTitle }}</h1>
     <div class="api-content homepage-content">
+    {% if bannerImage %}
+    <div class="banner-image-container">
+      <figure>
+      <img src="{{ bannerImage }}" alt="{{ bannerImageAltText }}" />
+      </figure>
+      {% if bannerImageText %}
+        <div class="banner-image-text">
+          {{ bannerImageText | safe }}
+        </div>
+      {% endif %}
+    </div>
+    {% endif %}
     {{ content | safe }}
     </div>
   </article>
