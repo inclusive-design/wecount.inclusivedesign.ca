@@ -1,5 +1,8 @@
+const optimizeImage = require("../../utils/optimize-image.js");
+
 module.exports = {
 	eleventyComputed: {
+		bannerImage: data => data.bannerImage ? optimizeImage(data.bannerImage) : false,
 		eleventyNavigation: {
 			key: data => data.key ? data.key : data.title,
 			parent: data => data.parent ? data.parent : false,
