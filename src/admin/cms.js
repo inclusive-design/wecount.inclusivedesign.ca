@@ -43,8 +43,19 @@ CMS.registerPreviewStyle("/assets/styles/main.css");
 
 const Page = createClass({
 	render: function () {
+		const bannerImage = this.props.entry.getIn(["data", "bannerImage"]);
+		const bannerImageContent = bannerImage ?
+			<div className="homepage-content">
+				<div className="banner-image-container">
+					<figure>
+						<img src={this.props.entry.getIn(["data", "bannerImage"])} alt={this.props.entry.getIn(["data", "bannerImageAltText"])} />
+					</figure>
+					<div className="banner-image-text" dangerouslySetInnerHTML={{ __html: this.props.entry.getIn(["data", "bannerImageText"]) }} />
+				</div>
+			</div> : "";
 		return <main>
 			<article className="page">
+				{bannerImageContent}
 				<h1>{this.props.entry.getIn(["data", "title"])}</h1>
 				<>
 					{this.props.widgetFor("body")}
