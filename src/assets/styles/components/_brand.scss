@@ -8,12 +8,11 @@
 		block-size: inherit;
 		color: $black;
 		display: flex;
-		padding-inline-end: rem(16);
 	}
 
 	.logo {
-		block-size: rem(52);
-		inline-size: rem(52);
+		block-size: rem(64);
+		inline-size: rem(64);
 		margin-block: 0;
 		margin-inline: rem(16);
 	}
