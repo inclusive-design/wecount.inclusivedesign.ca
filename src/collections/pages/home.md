@@ -8,7 +8,7 @@ bannerImageAltText: A meeting with people with different access needs
 slug: home
 menu_order: 0
 permalink: /
-bannerImage: /uploads/landing.png
+bannerImage: /uploads/landing-banner.png
 bannerImageText: IDRC addresses barriers<br />throughout the data<br />ecosystem.
 ---
 ## Removing bias and exclusion in the data economy
