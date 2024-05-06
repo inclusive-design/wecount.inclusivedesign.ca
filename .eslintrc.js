@@ -2,7 +2,7 @@ module.exports = {
 	extends: [
 		"fluid",
 		"plugin:yml/standard",
-		"plugin:markdown/recommended",
+		"plugin:markdown/recommended-legacy",
 		"plugin:react/recommended"
 	],
 	plugins: [
