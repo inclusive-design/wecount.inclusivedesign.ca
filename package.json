@@ -36,7 +36,7 @@
     "release:major": "release major",
     "release:minor": "release minor",
     "release:patch": "release patch",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@11ty/eleventy": "2.0.1",

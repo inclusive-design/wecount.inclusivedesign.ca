@@ -23,17 +23,19 @@ Organized by IDRC, in partnership with Concordia, the ACAW conference is an inte
 
 This conference is an opportunity to co-create resources and to share knowledge and lessons learned in advancing accessibility and inclusion. We invite you to join us in this collaborative effort, and to ensure that the global accessibility agenda is guided by people with disabilities. Together, we can make Canada and the world more accessible and inclusive for everyone.
 
+There are no formal presentations during the conference. The conference is a flipped model where presentations will be available online ahead of time so attendees can view the ones that interest them, at their own pace, when it is convenient for them. Viewing content ahead of the conference is optional for conference participants, and participants can watch as many or as few videos as they would like. The conference has four parallel streams:
+
+**Theme 1:** Who and what are we missing?
+
+**Theme 2:** How do we support inclusive decision-making?
+
+**Theme 3:** How can we develop accessibility standards that are responsive, inclusive and effective?
+
+**Theme 4:** How can we promote the inclusion of people with disabilities in media production, representation, and consumption?
+
+During the conference, a facilitator and provocateur will provide an overview of the field and provoke discussion enabling attendees to participate actively in the discussions.
+
 [Register now](https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world/register)[](https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world)
-
-### **Conference themes**
-
-**Theme 1:** Emerging Issues and Addressing Gaps. “Who and what are we missing?”
-
-**Theme 2:** Inclusive decision-making, in which we will collectively shape inclusive design of research, democracy, evidence, proof, measuring, indicators and other decision tools.
-
-**Theme 3:** Innovation in standards and policy, with a focus on standards for disruptive emerging systems.
-
-**Theme 4:** Accessible and equitable communications
 
 ### **Conference details**
 
@@ -56,3 +58,5 @@ This conference is an opportunity to co-create resources and to share knowledge 
 ![Accessibility Standards Canada logo](/uploads/accessibility_standards_canada-small.jpg)
 
 ![Aequum logo](/uploads/aequum-logo-small.png)
+
+![VIA Rail Canada logo](/uploads/via_logo_k_srgb.png)
