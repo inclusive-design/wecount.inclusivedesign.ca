@@ -24,6 +24,6 @@ Currently, this word cloud tool includes two steps. Further development will be 
 
 Visit these wiki pages to learn more about the technical details:
 
-1. [Inverted Word Cloud Architecture](https://wiki.fluidproject.org/display/fluid/Inverted+Wordles+Architecture)
-2. [Evaluation of Word Cloud Libraries](https://wiki.fluidproject.org/display/fluid/Evaluation+of+word+cloud+libraries)
+1. [Inverted Word Cloud Architecture](https://fluidproject.atlassian.net/wiki/spaces/fluid/pages/11588419/Inverted+Word+Clouds+Architecture)
+2. [Evaluation of Word Cloud Libraries](https://fluidproject.atlassian.net/wiki/spaces/fluid/pages/11588563/Evaluation+of+word+cloud+libraries)
 3. [The Source Code in GitHub](https://github.com/inclusive-design/inverted-wordles/)
