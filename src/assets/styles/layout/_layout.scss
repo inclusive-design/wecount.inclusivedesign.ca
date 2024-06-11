@@ -10,21 +10,19 @@
 }
 
 .content-wrapper {
+	background-color: rgb(244 248 252 / 100%);
 	flex: 1;
 	font-size: rem(14);
+	padding-inline: rem(96);
 }
 
 main {
 	inline-size: 100%;
 	margin-block: 0;
 	margin-inline: auto;
-	max-inline-size: 75ch;
 }
 
 article {
-	padding-block: rem(0) rem(27);
-	padding-inline: rem(27);
-
 	h2:not(.h3) {
 		border-block-end: rem(5) solid $gold;
 	}
@@ -160,12 +158,24 @@ p img {
 
 // Special styling rules for homepage content
 article .homepage-content {
+	font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+	text-align: center;
+
 	// removes underline for "non-h3" h2's
 	h2 {
 		border: none;
+		color: #1b93b9;
+		font-size: rem(48);
+		font-weight: 800;
+	}
+
+	p {
+		font-size: rem(24);
+		line-height: rem(36);
 	}
 
 	.banner-image-container {
+		margin-block-start: rem(48);
 		position: relative;
 	}
 
@@ -174,14 +184,11 @@ article .homepage-content {
 	}
 
 	.banner-image-text {
-		background-color: transparent !important;
-		color: $white;
-		font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
-		font-size: rem(40);
-		font-weight: 600;
-		position: absolute;
-		right: 10%;
-		top: 10%;
+		display: none;
+	}
+
+	ul {
+		text-align: initial;
 	}
 }
 
@@ -214,6 +221,19 @@ figcaption {
 	white-space: nowrap;
 }
 
+@include breakpoint-down(md) {
+	article .homepage-content {
+		h2 {
+			font-size: rem(24);
+		}
+
+		p {
+			font-size: rem(14);
+			line-height: rem(21);
+		}
+	}
+}
+
 @include breakpoint-up(lg) {
 	body {
 		background-position: center;
@@ -222,19 +242,12 @@ figcaption {
 	.content-wrapper {
 		display: grid;
 		font-size: rem(18);
-		grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
+		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
 	}
 
 	main {
-		background-color: $white;
-		max-inline-size: 130ch;
-
-		article {
-			padding-block: rem(1);
-			padding-block-end: rem(62);
-			padding-inline: rem(60);
-		}
+		max-inline-size: 100vw;
 
 		// WP customized styles for Desktop and iPad Pro views
 		.embed--youtube {
@@ -271,6 +284,20 @@ figcaption {
 			.embed--youtube {
 				margin-inline: $full-width-video-widescreen-margins;
 			}
+		}
+	}
+
+	article .homepage-content {
+		.banner-image-text {
+			background-color: transparent !important;
+			color: $white;
+			display: block;
+			font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+			font-size: rem(40);
+			font-weight: 600;
+			position: absolute;
+			right: 10%;
+			top: 10%;
 		}
 	}
 }
