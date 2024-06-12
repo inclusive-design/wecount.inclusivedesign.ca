@@ -8,7 +8,7 @@ bannerImageAltText: A meeting with people with different access needs
 slug: home
 menu_order: 0
 permalink: /
-bannerImage: /uploads/landing-banner.png
+bannerImage: /uploads/landing-page-image-01-1.png
 ---
 ## Advancing the conversation of inclusive AI and data ecosystems
 
