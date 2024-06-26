@@ -2,6 +2,10 @@
 .search-container {
 	position: relative;
 
+	button {
+		display: contents;
+	}
+
 	svg {
 		block-size: rem(24);
 		fill: $white;

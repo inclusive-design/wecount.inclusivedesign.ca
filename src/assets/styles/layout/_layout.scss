@@ -159,6 +159,8 @@ p img {
 // Special styling rules for homepage content
 article .homepage-content {
 	font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+	margin-inline: auto;
+	max-inline-size: max-content;
 	text-align: center;
 
 	// removes underline for "non-h3" h2's
@@ -170,8 +172,19 @@ article .homepage-content {
 	}
 
 	p {
+		font-family: Montserrat, $family-sans-serif;
 		font-size: rem(24);
 		line-height: rem(36);
+		max-inline-size: rem(630);
+		text-align: start;
+	}
+
+	.homepage-intro p {
+		font-size: rem(48);
+		font-weight: $font-weight-semibold;
+		line-height: rem(62);
+		max-inline-size: rem(650);
+		text-align: start;
 	}
 
 	.banner-image-container {
@@ -179,8 +192,12 @@ article .homepage-content {
 		position: relative;
 	}
 
+	.banner-image-container figure {
+		max-inline-size: 100%;
+	}
+
 	.banner-image-container img {
-		border-block-start: rem(10) solid hsl(199deg 50% 39% / 100%);
+		border-block-start: rem(10) solid rgb(253 204 112 / 100%);
 	}
 
 	.banner-image-text {
@@ -235,6 +252,10 @@ figcaption {
 }
 
 @include breakpoint-up(lg) {
+	#defaultContainer aside {
+		padding-block-start: unset;
+	}
+
 	body {
 		background-position: center;
 	}
@@ -244,6 +265,10 @@ figcaption {
 		font-size: rem(18);
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
+	}
+
+	.homepage-content-wrapper {
+		grid-template-columns: unset;
 	}
 
 	main {
@@ -288,6 +313,10 @@ figcaption {
 	}
 
 	article .homepage-content {
+		p {
+			max-inline-size: rem(905);
+		}
+
 		.banner-image-text {
 			background-color: transparent !important;
 			color: $white;
@@ -298,6 +327,12 @@ figcaption {
 			position: absolute;
 			right: 10%;
 			top: 10%;
+		}
+
+		.homepage-intro p {
+			font-size: rem(64);
+			line-height: rem(83);
+			max-inline-size: rem(1000);
 		}
 	}
 }

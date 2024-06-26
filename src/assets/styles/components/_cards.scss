@@ -1,10 +1,9 @@
 .homepage-cards {
-	align-items: center;
 	display: flex;
 	flex-direction: column;
 	gap: rem(38);
+	justify-content: flex-start;
 	padding-block: rem(58);
-	padding-inline: rem(32);
 
 	.card {
 		aspect-ratio: 271 / 476;
@@ -15,7 +14,8 @@
 		box-shadow: 0 rem(4) rem(4) rgba(0 0 0 / 25%);
 		font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
 		inline-size: 100%;
-		max-inline-size: rem(271);
+		max-block-size: rem(501.74);
+		max-inline-size: rem(285.53);
 		position: relative;
 		text-align: center;
 
@@ -43,11 +43,14 @@
 		}
 
 		h2 {
+			font-size: unset;
 			font-weight: 600;
 			line-height: 1.3;
 
 			a {
 				color: hsl(0deg 0% 0% / 100%);
+				display: inline-block;
+				font-size: rem(30);
 				font-weight: 600;
 
 				&:hover,
@@ -58,9 +61,9 @@
 		}
 
 		p {
-			font-size: rem(24);
+			font-size: rem(20);
 			font-weight: 400;
-			line-height: 1.3;
+			line-height: rem(28);
 		}
 
 		.card__content {
@@ -206,31 +209,14 @@
 @include breakpoint-up(md) {
 	.homepage-cards {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-
-		.card:first-child,
-		.card:nth-child(3) {
-			justify-self: flex-end;
-		}
-
-		.card:nth-child(2),
-		.card:last-child {
-			justify-self: flex-start;
-		}
+		grid-template-columns: repeat(2, rem(285.53));
 	}
 }
 
-@media only screen and (min-width: 1297px) {
+// enough width to fit 4 cards in a row with paddings
+@media only screen and (min-width: 1448px) {
 	.homepage-cards {
-		grid-template-columns: repeat(4, 1fr);
-		justify-content: center;
-
-		.card:first-child,
-		.card:nth-child(2),
-		.card:nth-child(3),
-		.card:last-child {
-			justify-self: initial;
-		}
+		grid-template-columns: repeat(4, rem(285.53));
 	}
 }
 
