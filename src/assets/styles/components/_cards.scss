@@ -1,58 +1,215 @@
 .homepage-cards {
-	display: grid;
-	grid-gap: rem(38);
-	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: rem(38);
 	padding-block: 0 rem(50);
 	padding-inline: rem(32);
 
 	.card {
+		aspect-ratio: 271 / 476;
 		background-color: $white;
-		background-position: 50% 80%;
 		background-repeat: no-repeat;
-		block-size: rem(216);
+		border: rem(1) solid transparent;
 		border-radius: rem(10);
 		box-shadow: 0 rem(4) rem(4) rgba(0 0 0 / 25%);
+		font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+		inline-size: 100%;
+		max-inline-size: rem(271);
+		position: relative;
 		text-align: center;
 
 		&:hover,
-		&:focus {
+		&:has(a:focus) {
 			box-shadow: rem(10) rem(10) rem(10) rgba(0 0 0 / 25%);
 		}
 
-		h2 {
-			color: $navy-light;
-			font-size: rem(18);
-			line-height: rem(22);
-			margin-block: rem(15);
+		a::after {
+			bottom: 0;
+			content: "";
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		h2,
+		p {
+			color: hsl(0deg 0% 0% / 100%);
+			margin-block-end: unset;
+			margin-block-start: rem(15);
 			margin-inline: rem(19);
+			text-align: start;
+		}
+
+		h2 {
+			font-weight: 600;
+			line-height: 1.3;
+
+			a {
+				color: hsl(0deg 0% 0% / 100%);
+				font-weight: 600;
+
+				&:hover,
+				&:focus {
+					background-color: unset;
+				}
+			}
+		}
+
+		p {
+			font-weight: 400;
+			line-height: 1.3;
+		}
+
+		.card__content {
+			block-size: 100%;
+			inline-size: 100%;
+			inset: 0;
+			position: absolute;
+		}
+
+		svg {
+			border-end-end-radius: 0.5rem;
+			bottom: 0;
+			left: 0;
+			position: absolute;
 		}
 	}
 
 	.blue {
 		background-color: $blue-grey;
-		background-image: url("../images/blue.svg");
+
+		svg {
+			.cls-1 {
+				fill: var(--fl-bgColor, #abdde9);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-2 {
+				fill: var(--fl-bgColor, #198293);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-3 {
+				fill: var(--fl-bgColor, #55769f);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-4 {
+				fill: var(--fl-bgColor, #6ab9c6);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-5 {
+				fill: var(--fl-bgColor, #37a5b7);
+				stroke: var(--fl-fgColor, transparent);
+			}
+		}
 	}
 
 	.green {
 		background-color: $green-grey;
-		background-image: url("../images/green.svg");
+
+		svg {
+			.cls-1 {
+				fill: var(--fl-bgColor, #cde6c4);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-2 {
+				fill: var(--fl-bgColor, #daeed3);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-3 {
+				fill: var(--fl-bgColor, #b1d6a1);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-4 {
+				fill: var(--fl-bgColor, #96bc84);
+				stroke: var(--fl-fgColor, transparent);
+			}
+
+			.cls-5 {
+				fill: var(--fl-bgColor, #85a576);
+				stroke: var(--fl-fgColor, transparent);
+			}
+		}
 	}
 
 	.yellow {
 		background-color: $yellow;
-		background-image: url("../images/yellow.svg");
+
+		a div {
+			margin-block-start: rem(4);
+		}
+
+		.cls-1 {
+			fill: var(--fl-bgColor, #95d2f9);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-2 {
+			fill: var(--fl-bgColor, #dd9c3e);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-3 {
+			fill: var(--fl-bgColor, #fbb23e);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-4 {
+			fill: var(--fl-bgColor, $white);
+			stroke: var(--fl-fgColor, transparent);
+		}
 	}
 
 	.azure {
 		background-color: $azure;
-		background-image: url("../images/azure.svg");
+
+		.cls-1 {
+			fill: var(--fl-bgColor, #fbdc90);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-2 {
+			fill: var(--fl-bgColor, #337595);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-3 {
+			fill: var(--fl-bgColor, #5b9ad2);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-4 {
+			fill: var(--fl-bgColor, #3b93e4);
+			stroke: var(--fl-fgColor, transparent);
+		}
+
+		.cls-5 {
+			fill: var(--fl-bgColor, #4892c4);
+			stroke: var(--fl-fgColor, transparent);
+		}
+	}
+}
+
+@include breakpoint-up(md) {
+	.homepage-cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @include breakpoint-up(lg) {
 	.homepage-cards {
 		grid-template-columns: repeat(4, 1fr);
-		padding-block: 0 rem(50);
-		padding-inline: rem(60);
 	}
+}
+
+[class*="fl-theme"]:not(.fl-theme-prefsEditor-default) div.card__content {
+	background: transparent !important;
 }

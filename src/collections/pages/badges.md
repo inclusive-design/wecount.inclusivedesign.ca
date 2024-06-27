@@ -6,7 +6,7 @@ excerpt: |-
   Badges enable earners to showcase their proficiency in the
   growing fields of AI, data systems and inclusive data practices as well as
   other skills. Badges, once…
-menu_order: 4
+menu_order: 0
 ---
 {% youtube "https://youtu.be/t5CSlGcmln8" %}
 

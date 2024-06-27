@@ -17,18 +17,11 @@
     </div>
   </article>
   <div class="homepage-cards">
-    <a href="/initiatives/" class="blue card">
-      <h2>Read current views in inclusive data science</h2>
-    </a>
-    <a href="/events/" class="yellow card">
-      <h2>Participate in our inclusion challenge initiatives</h2>
-    </a>
-    <a href="/badges/" class="azure card">
-      <h2>Earn We Count Badges</h2>
-    </a>
-    <a href="/resources/" class="green card">
-      <h2>Search the We Count Library</h2>
-    </a>
+    {%- from '../components/card.macro.njk' import card %}
+    {{ card({color: "blue", url: "/resources/", title: "Resource Library", text: "Search IDRC's library of AI and data analytics resources", backgroundSvg: "../svg/blue.svg"}) }}
+    {{ card({color: "green", url: "/events/", title: "Events", text: "Find out about IDRC events and how you can participate", backgroundSvg: "../svg/green.svg"}) }}
+    {{ card({color: "azure", url: "/initiatives/", title: "Inclusive AI Initiatives", text: "Explore IDRC project activities", backgroundSvg: "../svg/azure.svg"}) }}
+    {{ card({color: "yellow", url: "/rtdd/", title: "Regulating the Digital<div lang='fr-CA'>Réguler le numérique</div>", text: "Addressing digital exclusion / <span lang='fr-CA'>Lutter contre l’exclusion numérique</span>", backgroundSvg: "../svg/yellow.svg"}) }}
   </div>
 </div>
 
@@ -52,7 +45,7 @@
 </article>
 
 {% else %}
-<article class="page {{ title | slugify }}">
+<article {% if locale and locale !== "en-CA" %}lang="{{ locale }}" {% endif %}class="page {{ title | slugify }}">
   <h1>{{ pageTitle }}</h1>
   <div class="api-content">
     {{ content | safe }}
