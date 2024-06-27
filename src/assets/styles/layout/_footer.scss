@@ -6,6 +6,40 @@
 	fill: var(--currentcolor, #f00);
 }
 
+.subscribe {
+	align-items: center;
+	background-color: #fefefe;
+	display: flex;
+	flex-direction: column;
+	font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+	padding-block: rem(36);
+	padding-inline: rem(96);
+
+	a {
+		background-color: #acdeeb;
+		border: solid 1px transparent;
+		border-radius: rem(36);
+		color: #1a4672;
+		font-size: rem(24);
+		font-weight: $font-weight-bold;
+		padding-block: rem(24);
+		padding-inline: rem(72);
+
+		&:hover,
+		&:focus {
+			background-color: $navy-light;
+			border: solid 1px $white;
+			color: $white;
+		}
+	}
+
+	.subscribe-text {
+		font-size: rem(32);
+		margin-block: 0;
+		margin-block-end: rem(32);
+	}
+}
+
 footer {
 	background: $navy-light;
 	color: $white;
@@ -69,33 +103,6 @@ footer {
 				margin-block-end: rem(16);
 				padding-block: rem(13) 0;
 				padding-inline: 0 rem(13);
-			}
-		}
-
-		.subscribe {
-			a {
-				background-color: $white;
-				border-radius: rem(28);
-				color: $navy-light;
-				padding-block: rem(8);
-				padding-inline: rem(8);
-
-				&:hover,
-				&:focus {
-					background-color: $navy-light;
-					border: solid 1px $white;
-					color: $white;
-				}
-			}
-
-			hr {
-				background: $white;
-				inline-size: 100%;
-				margin-block-start: rem(48);
-			}
-
-			.subscribe-text {
-				margin-block-end: rem(32);
 			}
 		}
 
@@ -191,6 +198,17 @@ footer {
 					}
 				}
 			}
+		}
+	}
+}
+
+@include breakpoint-down(md) {
+	.subscribe {
+		.subscribe-text {
+			font-size: rem(14);
+			line-height: rem(21);
+			margin-block: 0;
+			margin-block-end: rem(32);
 		}
 	}
 }
@@ -293,11 +311,6 @@ footer {
 				a {
 					padding-block: rem(16);
 					padding-inline: rem(32);
-				}
-
-				hr {
-					background: $white;
-					inline-size: 100%;
 				}
 			}
 		}

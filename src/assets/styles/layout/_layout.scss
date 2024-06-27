@@ -10,21 +10,19 @@
 }
 
 .content-wrapper {
+	background-color: rgb(244 248 252 / 100%);
 	flex: 1;
 	font-size: rem(14);
+	padding-inline: rem(96);
 }
 
 main {
 	inline-size: 100%;
 	margin-block: 0;
 	margin-inline: auto;
-	max-inline-size: 75ch;
 }
 
 article {
-	padding-block: rem(0) rem(27);
-	padding-inline: rem(27);
-
 	h2:not(.h3) {
 		border-block-end: rem(5) solid $gold;
 	}
@@ -160,43 +158,54 @@ p img {
 
 // Special styling rules for homepage content
 article .homepage-content {
+	font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+	margin-inline: auto;
+	max-inline-size: max-content;
+	text-align: center;
+
 	// removes underline for "non-h3" h2's
 	h2 {
 		border: none;
+		color: #1b93b9;
+		font-size: rem(48);
+		font-weight: 800;
 	}
 
-	// The folowing CSS rule ensures video content is the width of the viewport in mobile and iPad views
-	.embed--youtube {
-		// not yet supported in Safari. for support details, see:
-		// https://caniuse.com/mdn-css_properties_aspect-ratio
-		aspect-ratio: 16 / 9;
-		display: block;
-		margin-inline: $full-width-video-margins;
+	p {
+		font-family: Montserrat, $family-sans-serif;
+		font-size: rem(24);
+		line-height: rem(36);
+		max-inline-size: rem(630);
+		text-align: start;
+	}
+
+	.homepage-intro p {
+		font-size: rem(48);
+		font-weight: $font-weight-semibold;
+		line-height: rem(62);
+		max-inline-size: rem(650);
+		text-align: start;
+	}
+
+	.banner-image-container {
+		margin-block-start: rem(48);
 		position: relative;
-
-		// fallback for aspect-ratio
-		@supports not (aspect-ratio: auto) {
-			block-size: 0;
-			overflow: hidden;
-			padding-block-start: 56.25%; // 16:9
-			position: relative;
-		}
 	}
 
-	.embed--youtube iframe {
-		block-size: 100%;
-		inline-size: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
+	.banner-image-container figure {
+		max-inline-size: 100%;
+	}
 
-		// fallback for aspect-ratio
-		@supports not (aspect-ratio: auto) {
-			left: 50%;
-			position: absolute;
-			top: 50%;
-			transform: translate(-50%, -50%);
-		}
+	.banner-image-container img {
+		border-block-start: rem(10) solid rgb(253 204 112 / 100%);
+	}
+
+	.banner-image-text {
+		display: none;
+	}
+
+	ul {
+		text-align: initial;
 	}
 }
 
@@ -229,7 +238,24 @@ figcaption {
 	white-space: nowrap;
 }
 
+@include breakpoint-down(md) {
+	article .homepage-content {
+		h2 {
+			font-size: rem(24);
+		}
+
+		p {
+			font-size: rem(14);
+			line-height: rem(21);
+		}
+	}
+}
+
 @include breakpoint-up(lg) {
+	#defaultContainer aside {
+		padding-block-start: unset;
+	}
+
 	body {
 		background-position: center;
 	}
@@ -237,19 +263,16 @@ figcaption {
 	.content-wrapper {
 		display: grid;
 		font-size: rem(18);
-		grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
+		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
 	}
 
-	main {
-		background-color: $white;
-		max-inline-size: 130ch;
+	.homepage-content-wrapper {
+		grid-template-columns: unset;
+	}
 
-		article {
-			padding-block: rem(1);
-			padding-block-end: rem(62);
-			padding-inline: rem(60);
-		}
+	main {
+		max-inline-size: 100vw;
 
 		// WP customized styles for Desktop and iPad Pro views
 		.embed--youtube {
@@ -286,6 +309,30 @@ figcaption {
 			.embed--youtube {
 				margin-inline: $full-width-video-widescreen-margins;
 			}
+		}
+	}
+
+	article .homepage-content {
+		p {
+			max-inline-size: rem(905);
+		}
+
+		.banner-image-text {
+			background-color: transparent !important;
+			color: $white;
+			display: block;
+			font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+			font-size: rem(40);
+			font-weight: 600;
+			position: absolute;
+			right: 10%;
+			top: 10%;
+		}
+
+		.homepage-intro p {
+			font-size: rem(64);
+			line-height: rem(83);
+			max-inline-size: rem(1000);
 		}
 	}
 }

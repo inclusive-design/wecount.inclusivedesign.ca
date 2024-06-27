@@ -1,21 +1,17 @@
 .brand {
-	block-size: rem(72);
-	margin: auto;
-	max-inline-size: $max-width-margins;
+	block-size: rem(90);
+	inline-size: rem(90);
 
 	a {
 		align-items: center;
 		block-size: inherit;
 		color: $black;
 		display: flex;
-		padding-inline-end: rem(16);
 	}
 
 	.logo {
-		block-size: rem(52);
-		inline-size: rem(52);
-		margin-block: 0;
-		margin-inline: rem(16);
+		block-size: rem(90);
+		inline-size: rem(90);
 	}
 
 	.logotype {
@@ -26,8 +22,6 @@
 
 @include breakpoint-up(lg) {
 	.brand {
-		margin-block-start: rem(16);
-
 		a {
 			display: inline-flex;
 		}

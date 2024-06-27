@@ -105,7 +105,8 @@ button:not(
 .fl-prefsEditor-showHide,
 .fl-prefsEditor-reset,
 .fl-switchUI-control,
-.lty-playbtn) {
+.lty-playbtn,
+.search-button) {
 	background-color: $green-light;
 	block-size: rem(54);
 	border: 0;
@@ -127,6 +128,7 @@ button:not(
 .fl-prefsEditor-reset,
 .fl-switchUI-control,
 .lty-playbtn,
+.search-button,
 .expander__toggle)::before {
 	block-size: rem(54);
 	border-radius: rem(26);

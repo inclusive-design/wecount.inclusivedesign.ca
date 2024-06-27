@@ -149,13 +149,17 @@
 		padding-block-end: rem(27);
 
 		svg {
+			left: 0;
 			margin-inline-start: rem(16);
+			top: rem(16);
 		}
 
 		input[type="search"] {
 			border: 1px solid $green-dark;
 			border-radius: rem(28);
+			font-size: rem(18);
 			inline-size: 100%;
+			padding-block: rem(16);
 			padding-inline-start: rem(48);
 
 			&:focus {
@@ -206,7 +210,6 @@
 			margin-inline-start: auto;
 
 			input[type="search"] {
-				float: right;
 				inline-size: rem(288);
 				margin-inline-start: 0;
 			}

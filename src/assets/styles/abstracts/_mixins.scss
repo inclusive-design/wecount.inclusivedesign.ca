@@ -53,7 +53,6 @@
 	--fColor: #{$fColor};
 
 	// WeCount logo
-	.logo circle,
 	.logo path {
 		fill: none;
 		stroke: var(--fColor, currentcolor);
@@ -294,14 +293,6 @@
 		}
 	}
 
-	// The search icon on the header
-	header .site-nav-wrapper .site-nav .search-container svg {
-		block-size: rem(19.2);
-		fill: currentcolor;
-		inline-size: rem(19.2);
-		margin: rem(-25.6);
-	}
-
 	// Outlines for the main Search input and Subscribe button
 	header .search-container input[type="search"],
 	footer .footer-content .subscribe a {
@@ -346,14 +337,5 @@
 	// UIO table of content
 	.flc-toc-tocContainer ul li::before {
 		color: $fColor;
-	}
-
-	@include breakpoint-up(lg) {
-		// Adjust the position of the search icon on the header
-		header .site-nav-wrapper .site-nav .search-container svg {
-			block-size: rem(24);
-			inline-size: rem(24);
-			margin: rem(-40);
-		}
 	}
 }
