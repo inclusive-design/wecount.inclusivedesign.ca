@@ -1,7 +1,7 @@
 ---
 title: We Count Project
 author: Caren Watkins
-date: 2024-07-10T20:30:36.205Z
+date: 2024-07-10T20:33:56.109Z
 excerpt: tk
 ---
 As data becomes the primary basis for determining truth and value, and data science drives the opportunities and risks of our digital economy, people with disabilities are likely to become more and more marginalized if their needs are not considered in this quickly ascending domain. There is a small but quickly closing window to act proactively to curtail the risks and catch the opportunities for people experiencing disabilities.
