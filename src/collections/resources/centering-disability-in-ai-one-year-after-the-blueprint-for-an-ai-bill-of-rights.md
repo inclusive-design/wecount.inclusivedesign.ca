@@ -6,7 +6,7 @@ source: CDT
 readability:
   - Expert
 type: Video
-openSource: false
+openSource: true
 link: https://www.youtube.com/live/ceQ_r8RBOMA?si=ZufEKQIAySxrt8BD
 learnTags:
   - machineLearning
