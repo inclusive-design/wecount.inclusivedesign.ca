@@ -80,7 +80,7 @@
     "npm-run-all2": "5.0.0",
     "release": "6.3.1",
     "rimraf": "5.0.10",
-    "stylelint": "14.16.1",
+    "stylelint": "16.8.1",
     "stylelint-config-fluid": "1.0.0",
     "stylelint-config-standard-scss": "6.1.0",
     "stylelint-order": "6.0.4",
