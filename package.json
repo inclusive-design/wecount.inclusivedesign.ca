@@ -36,7 +36,7 @@
     "release:major": "release major",
     "release:minor": "release minor",
     "release:patch": "release patch",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@11ty/eleventy": "2.0.1",
@@ -69,7 +69,7 @@
     "eslint": "8.57.0",
     "eslint-config-fluid": "2.1.1",
     "eslint-plugin-jsdoc": "48.2.1",
-    "eslint-plugin-markdown": "4.0.1",
+    "eslint-plugin-markdown": "5.0.0",
     "eslint-plugin-react": "7.34.0",
     "eslint-plugin-yml": "1.14.0",
     "husky": "9.0.11",
