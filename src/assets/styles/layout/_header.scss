@@ -177,6 +177,12 @@ header {
 					text-transform: capitalize;
 				}
 
+				div > a + a::before {
+					content: "/";
+					display: inline;
+					padding-inline: 1ch;
+				}
+
 				a[aria-current="page"] {
 					background-color: $orange-focus;
 					font-weight: $font-weight-bold;
@@ -275,6 +281,14 @@ header {
 					a {
 						font-size: rem(14) !important; // Enactors.css in infusion uses !important on this element
 						line-height: rem(28);
+					}
+
+					div > a {
+						display: block;
+					}
+
+					div > a + a::before {
+						display: none;
 					}
 				}
 			}
