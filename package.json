@@ -36,7 +36,7 @@
     "release:major": "release major",
     "release:minor": "release minor",
     "release:patch": "release patch",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@11ty/eleventy": "2.0.1",
@@ -60,18 +60,18 @@
     "uuid": "9.0.1"
   },
   "devDependencies": {
-		"@commitlint/cli": "19.0.3",
+    "@commitlint/cli": "19.0.3",
     "@commitlint/config-conventional": "19.0.3",
-    "autoprefixer": "10.4.18",
+    "autoprefixer": "10.4.19",
     "cross-env": "7.0.3",
     "decap-server": "3.0.2",
     "dotenv": "16.4.5",
     "eslint": "8.57.0",
     "eslint-config-fluid": "2.1.1",
     "eslint-plugin-jsdoc": "48.2.1",
-    "eslint-plugin-markdown": "3.0.1",
+    "eslint-plugin-markdown": "5.0.0",
     "eslint-plugin-react": "7.34.0",
-    "eslint-plugin-yml": "1.12.2",
+    "eslint-plugin-yml": "1.14.0",
     "husky": "9.0.11",
     "lint-staged": "15.2.2",
     "markdownlint-cli2": "0.12.1",
