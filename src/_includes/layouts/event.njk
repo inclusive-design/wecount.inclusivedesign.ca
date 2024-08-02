@@ -14,45 +14,9 @@
     {% endif %}
 
     <div class="description">{{ content | safe }}</div>
-
-    <form id="comment-form">
-      <h3>Comments</h3>
-      <div class="form-field">
-        <span>*</span><p class="asterisk-def"> Indicates required field</p>
-      </div>
-
-      <div class="form-field">
-        <span>*</span><h4><label for="name">Name</label></h4><span class="required-name">Required</span>
-        <input id="name" type="text" name="name" placeholder="" aria-label="Enter your name">
-      </div>
-
-      <div class="form-field">
-        <span>*</span><h4><label for="comment">Post a comment or question</label></h4><span class="required-comment">Required</span>
-        <textarea id="comment" name="comment" placeholder="" aria-label="Enter your comment"></textarea>
-        <input type="hidden" name="initiativeId" id="initiativeId" value="{{ id }}">
-        <button id="post-comment" type="submit">Post a comment</button>
-      </div>
-    </form>
-
-    <div class="submit-success-message" role="status">
-      <span>Thank you for submitting your comment. It will be posted on the page once it is approved</span>
-    </div>
-
-    <div class="submit-failure-message" role="alert">
-      <span>There was an error submitting your comment. Please try again</span>
-    </div>
-
-    <div class="comments">
-      {% for comment in collections.comments %}
-        {% if comment.initiativeId === id %}
-        {% include 'components/comment.njk' %}
-        {% endif %}
-      {% endfor %}
-    </div>
   </article>
 {% endblock %}
 
 {% block footerScripts %}
 <script src="/assets/scripts/utils.js"></script>
-<script src="/assets/scripts/event-comments.js"></script>
 {% endblock %}
