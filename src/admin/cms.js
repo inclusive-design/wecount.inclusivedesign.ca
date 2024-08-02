@@ -1,7 +1,6 @@
 /* eslint-disable react/display-name */
 /* global CMS, createClass, nunjucks, PropTypes, React */
 
-import {UuidControl, UuidPreview} from "netlify-cms-widget-uuid-v4/dist/index.js";
 import dateFilter from "../filters/date";
 import htmlSymbolFilter from "../filters/html-symbol";
 import markdownFilter from "../filters/markdown";
@@ -187,7 +186,6 @@ CMS.registerPreviewTemplate("initiatives", Initiatives);
 CMS.registerPreviewTemplate("events", Event);
 CMS.registerPreviewTemplate("resources", Resources);
 
-CMS.registerWidget("uuid", UuidControl, UuidPreview);
 CMS.registerEditorComponent({
 	id: "expander",
 	label: "Expander",
