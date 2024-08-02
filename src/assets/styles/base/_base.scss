@@ -106,7 +106,8 @@ button:not(
 .fl-prefsEditor-reset,
 .fl-switchUI-control,
 .lty-playbtn,
-.expandable-heading__toggle) {
+.expandable-heading__toggle,
+.search-button) {
 	background-color: $green-light;
 	block-size: rem(54);
 	border: 0;
@@ -128,8 +129,9 @@ button:not(
 .fl-prefsEditor-reset,
 .fl-switchUI-control,
 .lty-playbtn,
-.expander__toggle,
-.expandable-heading__toggle)::before {
+.expandable-heading__toggle,
+.search-button,
+.expander__toggle)::before {
 	block-size: rem(54);
 	border-radius: rem(26);
 	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;

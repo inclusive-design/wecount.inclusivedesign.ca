@@ -51,6 +51,13 @@
 		input[type="search"] {
 			border: none;
 			box-shadow: 0 0 rem(7) $border-shadow-colour;
+			font-size: rem(18);
+			padding-block: rem(16);
+		}
+
+		svg {
+			left: 0;
+			top: rem(16);
 		}
 	}
 
