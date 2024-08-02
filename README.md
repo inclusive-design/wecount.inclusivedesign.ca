@@ -62,10 +62,6 @@ As an example, here is the configuration for the events collection, stored in [`
     - label: Event Title
       name: title
       widget: string
-    - label: Event ID
-      name: id
-      widget: uuid
-      hint: The ID is used to associate comments with this event and cannot be edited.
     - label: Permanent Link
       name: permalink
       widget: string
