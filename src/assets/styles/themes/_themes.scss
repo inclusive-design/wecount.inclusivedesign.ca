@@ -1,1 +1,24 @@
 // Theme variations.
+
+.fl-theme-bw,
+.fl-theme-wb,
+.fl-theme-lgdg,
+.fl-theme-gw,
+.fl-theme-gd {
+	img {
+		filter: grayscale(1);
+	}
+}
+
+.fl-theme-by,
+.fl-theme-yb {
+	img {
+		filter: url("#yellow");
+	}
+}
+
+.fl-theme-bbr {
+	img {
+		filter: url("#brown");
+	}
+}

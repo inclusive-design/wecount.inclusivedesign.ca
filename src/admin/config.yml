@@ -54,6 +54,20 @@ collections:
         hint: |-
           If you do not specify a permanent link, one will be automatically generated from the page title.
           Permalinks must have the format /page-title/ (the trailing slash is required).
+      - label: Banner Image
+        name: bannerImage
+        widget: image
+        required: false
+        hint: Image that appears at the top of the page.
+      - label: Banner Image Alt Text
+        name: bannerImageAltText
+        widget: string
+        required: false
+      - label: Banner Image Text
+        name: bannerImageText
+        widget: text
+        required: false
+        hint: Text that will appear on top right corner of the banner image.
       - label: Body
         name: body
         widget: markdown
