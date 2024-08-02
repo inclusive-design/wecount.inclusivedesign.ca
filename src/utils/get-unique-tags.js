@@ -14,7 +14,7 @@ module.exports = collection => {
 	collection.forEach(item => {
 		if (!item.data.tags) {return;}
 		item.data.tags
-			.filter(tag => !["pages", "initiatives", "recount", "events", "comments"].includes(tag))
+			.filter(tag => !["pages", "initiatives", "recount", "events"].includes(tag))
 			.forEach(tag => {
 				let slugifiedTag = slugFilter(tag);
 				if (!tagsMap.has(tag)) {

@@ -5,7 +5,6 @@ const eleventyNavigation = require("@11ty/eleventy-navigation");
 const fluidPlugin = require("eleventy-plugin-fluid");
 const fs = require("fs");
 
-// const dataFetcherAirtable = require("./src/utils/data-fetcher-airtable.js");
 const htmlMinifyTransform = require("./src/transforms/html-minify.js");
 const parseTransform = require("./src/transforms/parse.js");
 const categoryFromFocusFilter = require("./src/filters/categoryFromFocus.js");
