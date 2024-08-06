@@ -4,6 +4,7 @@ excerpt: .
 locale: fr-CA
 menu_order: 7
 key: Réglementation du Numérique
+translation_key: rtdd-rddn
 permalink: /rddn/
 ---
 ![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
@@ -28,23 +29,23 @@ L'un des aspects essentiels que cette recherche cherche à explorer est le rôle
 
 Le projet de recherche adoptera une approche interdisciplinaire. Pour ce faire, nous rassemblerons des experts de l'expérience vécue et des experts du domaine en tant que co-chercheurs. Les experts du domaine proviendront de différents domaines, y compris :
 
-* la politique, 
-  la politique, * la conception législative, 
-* l'accès à la justice 
-* les systèmes technologiques, 
-* les communications, 
-* gestion, 
-* la conception inclusive, 
-* l'inclusion numérique, 
-* l'économie, et 
-* les systèmes adaptatifs complexes. 
+* la politique,
+  la politique, * la conception législative,
+* l'accès à la justice
+* les systèmes technologiques,
+* les communications,
+* gestion,
+* la conception inclusive,
+* l'inclusion numérique,
+* l'économie, et
+* les systèmes adaptatifs complexes.
 
 Ensemble, les co-chercheurs concevront et proposeront des approches et des systèmes réglementaires qui :
 
-* qui tiennent compte de la diversité et de la complexité des besoins en matière d'accessibilité, y compris les besoins des petites minorités et des cas isolés,            
-* sont adaptés au rythme exponentiel de l'évolution des TIC et conçus pour prévenir de manière proactive l'apparition d'obstacles,       
-* soutiennent et exigent des approches intégrées de l'accessibilité plutôt que des approches séparées, afin de favoriser l'interopérabilité et les avantages pour tous les utilisateurs,            
-* soutenir l'innovation en matière d'accessibilité plutôt que de la freiner,        
+* qui tiennent compte de la diversité et de la complexité des besoins en matière d'accessibilité, y compris les besoins des petites minorités et des cas isolés,
+* sont adaptés au rythme exponentiel de l'évolution des TIC et conçus pour prévenir de manière proactive l'apparition d'obstacles,
+* soutiennent et exigent des approches intégrées de l'accessibilité plutôt que des approches séparées, afin de favoriser l'interopérabilité et les avantages pour tous les utilisateurs,
+* soutenir l'innovation en matière d'accessibilité plutôt que de la freiner,
 * ne pas créer d'incitations à la perpétuation du problème, et
 * impliquer et responsabiliser les personnes handicapées et leurs communautés pour qu'elles façonnent les exigences réglementaires, informent sur les méthodes de respect des exigences, identifient les lacunes réglementaires et affinent en permanence le système réglementaire.
 
@@ -52,7 +53,7 @@ Ensemble, les co-chercheurs concevront et proposeront des approches et des syst�
 
 > Si vous souhaitez participer à la co-conception du CRDI, inscrivez-vous ici <https://forms.office.com/r/g4bgbHifqc>
 
-Six défis seront relevés par le biais d'une série de co-conceptions. Nous relèverons les défis suivants en impliquant un large éventail de parties prenantes ayant des expériences vécues et une expertise pertinentes, tout en reconnaissant que les questions sont complexes et interdépendantes. Les résultats informeront la prochaine génération de modèles de normes d'accessibilité dans le domaine numérique. L'équipe développera des stratégies qui tireront parti des propriétés du domaine numérique et des approches nécessaires pour assurer une plus grande inclusion numérique des personnes handicapées.         
+Six défis seront relevés par le biais d'une série de co-conceptions. Nous relèverons les défis suivants en impliquant un large éventail de parties prenantes ayant des expériences vécues et une expertise pertinentes, tout en reconnaissant que les questions sont complexes et interdépendantes. Les résultats informeront la prochaine génération de modèles de normes d'accessibilité dans le domaine numérique. L'équipe développera des stratégies qui tireront parti des propriétés du domaine numérique et des approches nécessaires pour assurer une plus grande inclusion numérique des personnes handicapées.
 
 Les défis sont les suivants
 
@@ -215,13 +216,13 @@ La vision de la [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pag
 
 ## Équipe
 
-Jutta Treviranus, principal investigator 
+Jutta Treviranus, principal investigator
 
 Vera Roberts
 
 David Pereyra
 
-Caren Watkins 
+Caren Watkins
 
 U﻿ttara Ghodke
 
