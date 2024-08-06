@@ -47,7 +47,6 @@
     "axios": "1.7.3",
     "decap-cms": "3.1.11",
     "eleventy-plugin-fluid": "2.7.1",
-    "eleventy-plugin-pwa-v2": "1.0.2",
     "estrella": "1.4.1",
     "html-minifier": "4.0.0",
     "infusion": "4.7.1",

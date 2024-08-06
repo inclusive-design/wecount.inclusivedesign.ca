@@ -1,6 +1,5 @@
 /* global chunkArray, createPagination */
 
-const pluginPWA = require("eleventy-plugin-pwa-v2");
 const eleventyNavigation = require("@11ty/eleventy-navigation");
 const fluidPlugin = require("eleventy-plugin-fluid");
 const fs = require("fs");
@@ -105,12 +104,6 @@ module.exports = function (eleventyConfig) {
 
 	// Add plugins.
 	eleventyConfig.addPlugin(eleventyNavigation);
-	eleventyConfig.addPlugin(pluginPWA, {
-		globIgnores: [
-			"admin/*",
-			"resources/**/*"
-		]
-	});
 	eleventyConfig.addPlugin(fluidPlugin, {
 		css: {
 			enabled: false
