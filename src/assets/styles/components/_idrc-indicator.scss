@@ -1,35 +1,31 @@
 .idrc-indicator-wrapper {
 	background-color: #f4f8fc;
 	font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
-
-	.idrc-indicator {
-		max-inline-size: $max-width-margins;
-		padding-block-end: rem(30);
-		padding-block-start: rem(60);
-
-		.idrc-indicator-element {
-			align-items: center;
-			display: flex;
-			font-size: rem(16);
-			line-height: rem(21);
-			padding-block: 0;
-			padding-inline: rem(96);
-
-			a {
-				color: #000;
-				text-decoration: underline;
-			}
-		}
-	}
 }
 
-@include breakpoint-down(md) {
-	.idrc-indicator-wrapper {
-		.idrc-indicator {
-			.idrc-indicator-element {
-				font-size: rem(16);
-				line-height: rem(20);
-			}
-		}
+.idrc-indicator {
+	max-inline-size: $max-width-margins;
+	padding-block-end: rem(30);
+	padding-block-start: rem(60);
+}
+
+.idrc-indicator-element {
+	align-items: center;
+	display: flex;
+	font-size: rem(16);
+	line-height: rem(20);
+	padding-block: 0;
+	padding-inline: rem(24);
+}
+
+.idrc-indicator-element a {
+	color: #000;
+	text-decoration: underline;
+}
+
+@include breakpoint-up(md) {
+	.idrc-indicator-element {
+		line-height: rem(21);
+		padding-inline: rem(96);
 	}
 }
