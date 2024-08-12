@@ -18,6 +18,10 @@
 	padding-inline: rem(24);
 }
 
+.idrc-indicator-element svg {
+	margin-block-end: -0.1875em;
+}
+
 .idrc-indicator-element a {
 	color: #000;
 	text-decoration: underline;

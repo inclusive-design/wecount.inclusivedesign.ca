@@ -1,46 +1,153 @@
 // Header styles
 
 header {
-	.nav-mobile-layout-wrapped {
-		display: contents;
+	.site-nav {
+		box-shadow: 0 0 rem(20) 0 rgb(0 0 0 / 10%);
+		position: relative;
+
+		&::after {
+			background: linear-gradient($white, rgb(0 0 0 / 5%));
+			block-size: 15px;
+			content: "";
+			display: block;
+			inline-size: 100vw;
+			left: 0;
+			position: absolute;
+			top: rem(130);
+		}
 	}
 
-	.header-recount {
-		background-color: #fbdc90;
-		border-radius: rem(36);
-		color: #1a4672;
-		font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
-		font-size: rem(24);
-		padding-block: rem(18);
-		padding-inline: rem(33);
-		text-align: center;
-		white-space: nowrap;
+	.site-nav-inner {
+		align-items: center;
+		background: $white;
+		display: grid;
+		gap: rem(18);
+		grid-template-columns: rem(72) 1fr;
+		grid-template-rows: rem(130) rem(95);
+		inline-size: calc(100vw - rem(36));
+		margin-inline: auto;
+
+		.header-join {
+			block-size: max-content;
+			border-radius: rem(36);
+			box-shadow: inset 0 0 0 rem(1) $black;
+			color: $black;
+			font-family: $family-montserrat;
+			font-size: rem(14);
+			font-weight: $font-weight-medium;
+			inline-size: max-content;
+			justify-self: end;
+			padding-block: rem(18);
+			padding-inline: rem(33);
+			text-align: center;
+			white-space: nowrap;
+		}
+
+		.header-join:focus {
+			box-shadow: inset 0 0 0 rem(2) $black;
+		}
+
+		// Menu Button
+		[aria-expanded] {
+			align-items: center;
+			background: none;
+			block-size: rem(90);
+			border: unset;
+			border-radius: unset;
+			box-shadow: none;
+			color: $black;
+			display: flex;
+			flex-direction: column;
+			inline-size: rem(52);
+			justify-self: center;
+			padding: rem(8);
+
+			.menu-open {
+				block-size: auto;
+				inline-size: rem(42);
+			}
+
+			.menu-close {
+				block-size: auto;
+				inline-size: rem(34);
+			}
+
+			.label {
+				font-family: $family-montserrat;
+				font-size: rem(14);
+				font-weight: $font-weight-semibold;
+				letter-spacing: 0.15em;
+			}
+		}
+
+		[aria-expanded]::before {
+			content: none;
+		}
+
+		[aria-expanded]:hover,
+		[aria-expanded]:focus {
+			background-color: $orange-focus;
+		}
+
+		[aria-expanded="false"] {
+			.menu-close {
+				display: none;
+			}
+
+			.menu-open {
+				display: block;
+			}
+		}
+
+		[aria-expanded="true"] {
+			.menu-close {
+				display: block;
+			}
+
+			.menu-open {
+				display: none;
+			}
+		}
+
+		&:has([aria-expanded="false"]) + .primary-nav {
+			display: none;
+		}
+
+		&:has([aria-expanded="true"]) + .primary-nav {
+			display: flex;
+		}
+
+		.search-form {
+			padding-inline: 0;
+		}
 	}
 
-	form {
-		padding-inline: 6.5rem;
+	.primary-nav .search-container {
+		display: none;
 	}
 
 	// Styles for the search container
 	.search-container {
-		svg {
-			block-size: rem(40);
+		button {
 			fill: $white;
-			inline-size: rem(40);
-			right: rem(30);
-			top: rem(18);
-			z-index: 1;
+			right: rem(4);
+			top: rem(4);
 		}
 
 		input[type="search"] {
-			block-size: rem(71);
-			border-radius: rem(35.5);
-			box-shadow: $border-shadow-light;
-			font-size: rem(24);
+			block-size: rem(52);
+			border-radius: rem(26);
+			box-shadow: 0 0 0 rem(1) #000 inset;
+			font-family: $family-montserrat;
+			font-size: rem(16);
 			font-weight: $font-weight-semibold;
 			inline-size: 100%;
 			outline: none;
-			padding-inline-start: rem(32);
+			padding-inline-start: rem(12);
+		}
+
+		input[type="search"]:focus {
+			box-shadow: 0 0 0 rem(2) #000 inset;
 		}
 
 		/* remove the ‘X’ from Internet Explorer */
@@ -60,250 +167,117 @@ header {
 		}
 	}
 
-	.site-nav-wrapper {
-		background-color: $white;
-		inline-size: 100%;
+	// Styles for the navigation menu
+	.primary-nav {
+		background: rgb(247 236 207 / 100%);
+		display: flex;
+		flex-direction: column;
+		inline-size: 100vw;
+		padding-block: rem(36);
 
-		.site-nav {
-			.nav-container {
-				align-items: center;
-				border-block-end: rem(3) rgb(0 0 0 / 10%) outset;
-				border-block-start: rem(3) rgb(0 0 0 / 10%) outset;
-				display: flex;
-				justify-content: space-between;
-				padding-block: rem(30);
-				padding-inline: rem(96);
+		nav {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-inline: rem(36);
+		}
 
-				form {
-					display: none;
-				}
-			}
+		a {
+			color: $black;
+			font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+			font-size: rem(14) !important; // Enactors.css in infusion uses !important on this element
+			font-weight: $font-weight-medium;
+			inline-size: 100%;
+			line-height: rem(28);
+			text-transform: capitalize;
+		}
 
-			.starter-nav {
-				align-items: center;
-				display: flex;
-				flex-direction: column;
-				inline-size: rem(90);
-				justify-content: end;
-				padding-block: 0;
+		div > a {
+			display: block;
+		}
 
-				// Toggle menu button on mobile design
-				// Override the default button styles from _base.scss and apply the new style
-				button {
-					background: none;
-					block-size: rem(90);
-					border: rem(1) solid;
-					border-radius: 50%;
-					box-shadow: none;
-					color: $black;
-					inline-size: rem(90);
-					padding: rem(24);
-
-					svg {
-						block-size: rem(42);
-						inline-size: rem(42);
-						pointer-events: none;
-					}
-				}
-
-				button::before {
-					content: none;
-				}
-
-				button:hover,
-				button:focus {
-					background-color: $orange-focus;
-				}
-
-				#menuToggleButton .screen-reader-only {
-					display: none;
-				}
-
-				#menuToggleButton {
-					&[aria-expanded="false"] {
-						.menu-close {
-							display: none;
-						}
-
-						.menu-open {
-							display: block;
-						}
-					}
-
-					&[aria-expanded="true"] {
-						.menu-close {
-							display: block;
-						}
-
-						.menu-open {
-							display: none;
-						}
-					}
-				}
-
-				#navigation-menu {
-					text-align: center;
-				}
-			}
-
-			// To make room for the box-shadow on nav container
-			.content-wrapper {
-				margin-block-start: 4px;
-			}
-
-			// Styles for the navigation menu
-			.primary-nav {
-				background: rgb(247 236 207 / 100%);
-				display: flex;
-				flex-direction: column;
-				inline-size: 100vw;
-				padding-block: rem(36);
-
-				nav {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					margin-block-end: rem(28);
-					padding-inline: 6.5rem;
-				}
-
-				a {
-					color: $black;
-					font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
-					font-size: rem(32) !important; // Enactors.css in infusion uses !important on this element
-					font-weight: $font-weight-medium;
-					inline-size: 100%;
-					line-height: rem(64);
-					text-transform: capitalize;
-				}
-
-				div > a + a::before {
-					content: "/";
-					display: inline;
-					padding-inline: 1ch;
-				}
-
-				a[aria-current="page"] {
-					background-color: $orange-focus;
-					font-weight: $font-weight-bold;
-					text-decoration: underline;
-				}
-			}
+		a[aria-current="page"] {
+			background-color: $orange-focus;
+			font-weight: $font-weight-bold;
+			text-decoration: underline;
 		}
 	}
 }
 
-// This media query breakpoint is for the Galaxy Fold screen.
+@include breakpoint-up(md) {
+	header .site-nav::after {
+		display: none;
+	}
 
-@include breakpoint-down(md) {
-	header {
-		.nav-mobile-layout-wrapped {
-			align-items: center;
-			display: flex;
-			inline-size: 100vw;
-			justify-content: space-between;
-			padding-block: rem(40);
+	header .site-nav-inner {
+		block-size: rem(150);
+		display: flex;
+		inline-size: 100%;
+		justify-content: space-between;
+		margin-inline: auto;
+		max-inline-size: rem(1265);
+	}
 
-			.brand,
-			.starter-nav {
-				margin-inline-start: rem(96);
-			}
+	header .site-nav-inner .header-join {
+		font-size: rem(24);
+	}
 
-			.header-recount,
-			.search-container {
-				margin-inline-end: rem(96);
-			}
+	header .site-nav-inner .search-form {
+		display: none;
+	}
 
-			&:first-child {
-				padding-block: rem(40);
-			}
+	header input[type="search"] {
+		font-size: rem(24);
+	}
 
-			&:last-child {
-				border-block-start: rem(3) rgb(0 0 0 / 10%) outset;
-				padding-block: rem(10);
-			}
+	header .nav-container {
+		flex-direction: row;
+		padding-block: rem(30);
+
+		form {
+			display: none;
+		}
+	}
+
+	header .site-nav-inner [aria-expanded] {
+		align-items: center;
+		block-size: rem(89);
+		border: 1px solid $black;
+		border-radius: 50%;
+		display: flex;
+		inline-size: rem(89);
+		justify-content: center;
+	}
+
+	header .site-nav-inner [aria-expanded] span {
+		bottom: rem(-24);
+		position: absolute;
+	}
+
+	header .site-nav-inner [aria-expanded] .menu-open {
+		block-size: rem(42);
+		inline-size: rem(42);
+		position: relative;
+	}
+
+	header .primary-nav {
+		nav {
+			margin-block-end: rem(28);
 		}
 
-		.header-recount {
-			block-size: max-content;
-			font-size: rem(14);
+		a {
+			font-size: rem(32) !important; // Enactors.css in infusion uses !important on this element
+			line-height: rem(64);
+		}
+
+		div > a + a::before {
+			content: "/";
+			display: inline;
+			padding-inline: 1ch;
 		}
 
 		.search-container {
-			input[type="search"] {
-				font-size: rem(16);
-				font-weight: $font-weight-semibold;
-			}
-		}
-
-		.site-nav form {
-			display: none;
-		}
-
-		.site-nav-wrapper {
-			.site-nav {
-				.nav-container {
-					display: flex;
-					flex-direction: column;
-					padding-block: unset;
-
-					form {
-						display: block;
-						padding-inline: unset;
-					}
-				}
-
-				.starter-nav {
-					justify-content: unset;
-
-					button {
-						border: unset;
-						border-radius: unset;
-						padding: rem(8);
-
-						svg {
-							block-size: rem(74);
-							inline-size: rem(74);
-						}
-					}
-
-					#navigation-menu {
-						font-size: rem(14);
-						font-weight: $font-weight-semibold;
-					}
-				}
-
-				.primary-nav {
-					nav {
-						margin-block-end: unset;
-					}
-
-					a {
-						font-size: rem(14) !important; // Enactors.css in infusion uses !important on this element
-						line-height: rem(28);
-					}
-
-					div > a {
-						display: block;
-					}
-
-					div > a + a::before {
-						display: none;
-					}
-				}
-			}
-		}
-	}
-}
-
-@include breakpoint-down(xs) {
-	header .site-nav-wrapper .site-nav .starter-nav #menuToggleButton {
-		span {
-			display: none;
-		}
-
-		.screen-reader-only {
-			display: inline;
+			display: unset;
 		}
 	}
 }

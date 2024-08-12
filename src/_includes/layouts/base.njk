@@ -26,6 +26,7 @@
     {% block headerScripts %}{% endblock %}
   </head>
   <body>
+    {% include 'globals/sprites.njk' %}
     <div id="defaultContainer">
       {% include 'components/header.njk' %}
       <div class="content-wrapper{% if page.url === "/" %} homepage-content-wrapper{% endif %}">

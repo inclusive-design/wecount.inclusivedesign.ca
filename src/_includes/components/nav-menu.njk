@@ -13,9 +13,8 @@
       {%- endif %}
     {%- endfor %}
   </nav>
-  <div>
-    <form method="get" action="/search/">
-      {% include 'components/search-container.njk' %}
-    </form>
-  </div>
+  {%- from './search.macro.njk' import search %}
+  <form method="get" action="/search/">
+  {{ search({placeholder: "Search …", label: "Enter keywords for a site-wide search"}) }}
+  </form>
 </div>

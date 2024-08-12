@@ -1,12 +1,13 @@
 .brand {
-	block-size: rem(90);
-	inline-size: rem(90);
+	block-size: auto;
+	inline-size: rem(72);
 
 	a {
 		align-items: center;
 		block-size: inherit;
 		color: $black;
 		display: flex;
+		position: relative;
 	}
 
 	.logo {

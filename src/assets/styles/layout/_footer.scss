@@ -34,7 +34,8 @@
 	}
 
 	.subscribe-text {
-		font-size: rem(32);
+		font-size: rem(14);
+		line-height: rem(21);
 		margin-block: 0;
 		margin-block-end: rem(32);
 	}
@@ -202,17 +203,6 @@ footer {
 	}
 }
 
-@include breakpoint-down(md) {
-	.subscribe {
-		.subscribe-text {
-			font-size: rem(14);
-			line-height: rem(21);
-			margin-block: 0;
-			margin-block-end: rem(32);
-		}
-	}
-}
-
 @include breakpoint-up(md) {
 	footer {
 		margin-block-start: rem(0);
@@ -307,6 +297,10 @@ footer {
 				grid-column: span 2;
 				grid-row: 1;
 				text-align: start;
+
+				.subscribe-text {
+					font-size: rem(32);
+				}
 
 				a {
 					padding-block: rem(16);

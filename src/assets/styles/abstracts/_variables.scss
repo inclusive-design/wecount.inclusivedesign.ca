@@ -2,6 +2,7 @@ $browser-context: 16;
 
 /** Typography **/
 $family-sans-serif: "Fira Sans", sans-serif;
+$family-montserrat: "Montserrat Alternates", montserrat, $family-sans-serif;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
@@ -26,6 +27,7 @@ $blue-light: #acdde9;
 $gold-dark: #fcb33e;
 $gold: #fdcc70;
 $gold-light: #ffe6a7;
+$gold-lightest: #fadc90;
 
 // Secondary
 $black: #000;

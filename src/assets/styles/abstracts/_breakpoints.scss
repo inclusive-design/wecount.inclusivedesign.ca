@@ -10,16 +10,3 @@
 		@content;
 	}
 }
-
-@mixin breakpoint-down($name, $breakpoints: $breakpoints) {
-	$max: breakpoint-value($name, $breakpoints);
-
-	@if $max {
-		@media only screen and (width <= rem($max)) {
-			@content;
-		}
-	}
-	@else {
-		@content;
-	}
-}

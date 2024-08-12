@@ -37,7 +37,7 @@
 		inline-size: rem(45);
 		line-height: rem(45);
 		margin-block: rem(10);
-		margin-inline: rem(5);
+		margin-inline: rem(3);
 		transform: perspective(rem(5)) translateZ(0);
 	}
 
@@ -130,6 +130,12 @@
 	}
 }
 
+@include breakpoint-up(xs) {
+	.pagination .pagination-link {
+		margin-inline: rem(5);
+	}
+}
+
 @include breakpoint-up(lg) {
 	.pagination {
 		line-height: rem(35);
@@ -176,13 +182,5 @@
 		.pagination-previous {
 			line-height: rem(48);
 		}
-	}
-}
-
-// This media query breakpoint is for the Galaxy Fold screen.
-@include breakpoint-down(xs) {
-	.pagination .pagination-link {
-		margin-block: rem(10);
-		margin-inline: rem(3);
 	}
 }
