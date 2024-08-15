@@ -46,7 +46,7 @@
     "airtable": "0.12.2",
     "axios": "1.7.4",
     "decap-cms": "3.3.2",
-    "eleventy-plugin-fluid": "2.7.1",
+    "eleventy-plugin-fluid": "2.7.3",
     "eleventy-plugin-pwa-v2": "1.0.2",
     "estrella": "1.4.1",
     "html-minifier": "4.0.0",
