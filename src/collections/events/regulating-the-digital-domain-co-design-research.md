@@ -12,23 +12,23 @@ shortDescription: >-
   equitably. *Read More.*
 
 
-  **Introductory session on Thursday, March 28th.**
+  **Introductory session on Thursday, March 28th, 2024.**
 previewImageUrl: /uploads/rtdd_colour_small-type_eng.svg
 previewImageAltText: RtDD logo
 ---
+This event has concluded. 
+
 We invite members of the disability community, aged 18 years or older, to participate in an upcoming online, inclusive co-design research event. We aim to foster an inclusive environment where diverse perspectives contribute to meaningful change and will work with you to make sure that you can participate equitably.
 
 ## Event Details:
 
 The co-design process will span 7-8 hours over six weeks. This initiative is part of the Regulating the Digital Domain (RtDD) project, and will inform development of accessible and inclusively designed standards development processes and activities by Accessibility Standards Canada and others.
 
-**You can apply to participate as a co-researcher: [HERE](https://forms.office.com/r/bExSBf4yGq)**
-
-## Co-Design Groups:
+### Co-Design Groups:
 
 Six different groups will convene every other week for six weeks, providing flexibility for participation according to availability. The week before each session, there will be a brief “homework” activity to help prepare co-researchers for the session.  
 
-### Session Schedule: 
+### Session Schedule:
 
 All small group sessions will occur Tuesdays or Thursdays 1:00-3:00 PM EDT or Wednesdays 10:00 AM – 12:00 PM via Zoom, except for the final session, which will be an online activity that you can complete at the time of your choosing. Everyone must attend the introductory session on Thursday, March 28th.
 
@@ -45,6 +45,4 @@ All small group sessions will occur Tuesdays or Thursdays 1:00-3:00 PM EDT or We
 
 ### What to Expect:
 
-During the co-research activity, we will explore issues that perpetuate barriers and digital disparities in information and communication technologies for persons with disabilities. Your valuable insights will inform the design of regulatory systems to enhance digital inclusion and ICT accessibility for all.
-
-### You can apply to participate as a co-researcher: [HERE](https://forms.office.com/r/bExSBf4yGq)
+During the co-research activity, we will explore issues that perpetuate barriers and digital disparities in information and communication technologies for persons with disabilities. Your valuable insights will inform the design of regulatory systems to enhance digital inclusion and ICT accessibility for all.[](https://forms.office.com/r/bExSBf4yGq)
