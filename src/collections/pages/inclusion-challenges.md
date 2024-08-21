@@ -43,6 +43,4 @@ As data becomes the main source for truth and value, persons with disabilities a
 
 Do you know an inclusion challenge in data systems or the data ecosystem? Nominate your challenge with our [nomination form](https://forms.gle/bcsvB48o6amgusdq6).
 
-## Sign up
-
-Are you interested in hearing about We Count activities or do you want to be contacted to learn about ways you can participate? [Subscribe now.](http://eepurl.com/hBMRev)
+[](http://eepurl.com/hBMRev)
