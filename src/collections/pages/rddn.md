@@ -12,7 +12,7 @@ View this page in [English](https://wecount.inclusivedesign.ca/rtdd)
 
 ## Participez
 
-Ce projet et d'autres projets du CRDI font appel à des co-chercheurs de la communauté. Vous pouvez participer à ce projet en [rejoignant la communauté RtDD sur Canvas](https://canvas.instructure.com/enroll/94XY87) ou en vous inscrivant à notre liste de diffusion pour recevoir des nouvelles du CRDI et être informé des activités de cochercheurs à venir.
+Ce projet et d'autres projets du CRDI font appel à des co-chercheurs de la communauté. Vous pouvez participer à ce projet en [rejoignant la communauté ](https://canvas.instructure.com/enroll/94XY87)RdDN[ sur Canvas](https://canvas.instructure.com/enroll/94XY87) ou en vous inscrivant à notre liste de diffusion pour recevoir des nouvelles du CRDI et être informé des activités de cochercheurs à venir.
 
 [S'inscrire pour connaître les possibilités de cochercheurs](https://forms.office.com/r/g4bgbHifqc)
 
@@ -22,7 +22,7 @@ Ce projet et d'autres projets du CRDI font appel à des co-chercheurs de la comm
 
 Le projet Réglementation du Domaine Numérique (RdDN) se concentre sur les défis persistants et les disparités auxquels les personnes handicapées sont confrontées dans l'accès aux technologies de l'information et de la communication (TIC) et aux outils numériques.
 
-L'équipe du projet RtDD
+L'équipe du projet RdDN : 
 
 *  s'efforcera de découvrir les causes profondes des obstacles
 *  se concentrer sur les problèmes systémiques qui favorisent l'exclusion numérique,
