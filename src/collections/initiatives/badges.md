@@ -1,12 +1,12 @@
 ---
-title: Badges
+title: We Count Badges
 author: Rachel Spence
 date: 2024-08-28T19:52:11.933Z
 picture: /uploads/Badges_final_LEARNER-300x300.png
 altTag: We Count Learner badge
-excerpt: "Badges enabled people to showcase their proficiency in the growing
-  fields of AI, data systems and inclusive data practices as well as other
-  skills. "
+excerpt: "We Count badges enabled people to showcase their proficiency in the
+  growing fields of AI, data systems and inclusive data practices as well as
+  other skills. "
 tags:
   - We Count
   - AI
