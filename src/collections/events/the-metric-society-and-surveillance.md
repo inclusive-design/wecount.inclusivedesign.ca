@@ -14,9 +14,6 @@ shortDescription: >-
 
 
   April 28, 2021, 10:30 AM – 12:00 PM (EDT)
-
-
-  **Available badges:** Learner
 previewImageUrl: /uploads/metric-society_wordpress_2010x1052-copy.png
 previewImageAltText: Decorative
 ---
@@ -35,16 +32,3 @@ April 28, 2021, 10:30 AM – 12:00 PM (EDT)
 **Virginia Eubanks** is an Associate Professor of Political Science at the University at Albany, SUNY. She is the author of *Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor*; *Digital Dead End: Fighting for Social Justice in the Information Age*; and co-editor, with Alethia Jones, of *Ain’t Gonna Let Nobody Turn Me Around: Forty Years of Movement Building with Barbara Smith*. Her writing about technology and social justice has appeared in *Scientific American*, *The Nation*, *Harper’s*, and *Wired*. For two decades, Eubanks has worked in community technology and economic justice movements. She was a founding member of the [Our Data Bodies Project](http://www.odbproject.org/) and a 2016–2017 Fellow at [New America](https://www.newamerica.org/our-people/virginia-eubanks/). She lives in Troy, NY. 
 
 **Jutta Treviranus** is the Director of the [Inclusive Design Research Centre](http://idrc.ocadu.ca) (IDRC) and professor in the faculty of Design at OCAD University. Jutta established the IDRC in 1993 as the nexus of a growing global community that proactively works to ensure that our digitally transformed and globally connected society is designed inclusively. She also heads the [Inclusive Design Institute](https://inclusivedesign.ca), a multi-university regional centre of expertise. Jutta founded an innovative graduate program in inclusive design at OCAD University. She leads international multi-partner research networks that have created broadly implemented innovations that support digital equity. She has played a leading role in developing accessibility legislation, standards and specifications internationally (including [W3C WAI ATAG](https://www.w3.org/TR/ATAG20/), IMS AccessForAll, ISO 24751, and [AODA Information and Communication](https://www.ontario.ca/page/accessibility-legislative-reviews-committees-and-councils)). She serves on many advisory bodies globally to provide expertise in equitable policy design. Jutta’s work has been attributed as the impetus for the corporate adoption of more inclusive practices in large enterprise companies such as [Microsoft](https://www.fastcompany.com/3054927/microsofts-inspiring-bet-on-a-radical-new-type-of-design-thinking) and [Adobe](https://adobe.design/inclusive/).
-
-### Earn a Learner badge
-
-You will learn:
-
-* How the rise of quantification has created and strengthened social hierarchies
-* How quantification could lead to standardization but does not necessarily capture social diversity and deviance 
-* About the importance of bottom-up, community-driven initiatives in addressing the top-down mismanagement of personal data and access to social services
-
-Learn and earn badges from this event:
-
-1. Watch the accessible [Metric Society and the Unmeasurable webinar](https://youtu.be/G1gbAFlZjGE) 
-2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRZ70Ma1SCPa6F/apply) (five short answer questions on the main themes of the webinar)
