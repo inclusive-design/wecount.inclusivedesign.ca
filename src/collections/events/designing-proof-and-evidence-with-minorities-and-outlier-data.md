@@ -16,9 +16,6 @@ shortDescription: >-
 
 
   Think of something you experience in your life that is difficult to demonstrate. Perhaps it’s an emotion you feel, a value you hold, or a pain you experience. How might you go about proving your experience to someone else? How might you document or demonstrate it? What kind of proof could you produce to convince someone about the validity of your experience?
-
-
-  **Available badges:** Learner, Brainstormer
 previewImageUrl: /uploads/only-image_wordpress_designing-proof-and-evidence-with-minorities-and-outliers.jpg
 ---
 ### Designing Proof and Evidence with Minorities and Outlier Data co-design
@@ -45,29 +42,3 @@ In preparation for our Minority and Outlier Data Co-design, we’re encouraging 
 Think of something you experience in your life that is difficult to demonstrate. Perhaps it’s an emotion you feel, a value you hold, or a pain you experience. How might you go about proving your experience to someone else? How might you document or demonstrate it? What kind of proof could you produce to convince someone about the validity of your experience?
 
 You can use the comment form below to share your ideas of how to approach this challenge with the We Count community.
-
-### Earn a Learner badge
-
-You will learn:
-
-* How evidence-based decisions fall short of meeting the needs of marginalized, highly diverse communities
-* The challenges of producing proof for a highly diverse group of small minorities and outliers who are marginalized
-* How the passage of policy changes to Medical Assistance in Dying (MAiD), Bill C7, is devaluing the lives of persons with disabilities by singling out this group as not requiring a foreseeable death in order to access MAiD
-
-Learn and earn badges from this event:
-
-1. Watch the accessible [Designing Proof and Evidence with Minorities and Outlier Data workshop](https://youtu.be/Ba_yQz70c34)
-2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/R3G3D0aXUN9a3JL/apply) (four short answer questions on the contents of the webinar)
-
-### Earn a Brainstormer badge
-
-You will brainstorm:
-
-* Acceptable forms of evidence, proof and data that could be produced by a highly diverse group of small minorities and outliers who are marginalized
-* Alternative strategies and tools for minorities to collect and provide this evidence to policy makers
-
-Brainstorm and earn badges from this event:
-
-1. To qualify for this Brainstormer badge, you must have the [Designing Proof and Evidence with Minorities and Outlier Data Learner badge](https://factory.cancred.ca/c/earnablebadge/R3G3D0aXUN9a3JL/apply)
-2. Watch the accessible [Designing Proof and Evidence with Minorities and Outlier Data workshop](https://youtu.be/Ba_yQz70c34) again
-3. [Apply for your Brainstormer badge](https://factory.cancred.ca/c/earnablebadge/R3G15TaXUN9a3JC/apply)
