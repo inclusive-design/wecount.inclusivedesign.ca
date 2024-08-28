@@ -8,8 +8,10 @@ excerpt: "Badges enabled people to showcase their proficiency in the growing
   fields of AI, data systems and inclusive data practices as well as other
   skills. "
 tags:
-  - Badges
-  - WeCount
+  - We Count
+  - AI
+  - Disability
+  - Bias
 ---
 
 
