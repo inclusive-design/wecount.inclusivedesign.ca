@@ -19,9 +19,6 @@ shortDescription: >-
   Part 2: October 7, 2020, 10:30 AM – 12:00 PM (EST)\
 
   Part 3: October 21, 2020, 10:30 AM – 12:00 PM (EST)
-
-
-  **Available badges:** Learner, Brainstormer, Communicator
 previewImageUrl: /uploads/group81.jpg
 previewImageAltText: ""
 ---
