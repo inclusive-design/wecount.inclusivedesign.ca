@@ -12,9 +12,6 @@ shortDescription: >-
 
 
   July 22, 2021, 1:30 PM – 3:00 PM (EDT)
-
-
-  **Available badges:** Learner
 previewImageUrl: /uploads/ai-and-disability_wordpress_2010x1052-small.png
 ---
 ### AI and Disability: A Double-Edged Sword
