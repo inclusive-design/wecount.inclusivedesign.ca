@@ -2,7 +2,7 @@
 title: "Co-design research One: The Standards Development Game"
 author: Caren Watkins
 date: 2024-09-09T14:50:22.131Z
-picture: ""
+picture: /uploads/rtdd_colour_small-type_eng.svg
 altTag: ""
 excerpt: Between January and February 2024, we conducted three co-design
   research sessions in collaboration with another IDRC team that was reviewing
