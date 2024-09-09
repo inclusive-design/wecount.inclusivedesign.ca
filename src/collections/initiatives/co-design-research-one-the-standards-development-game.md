@@ -1,5 +1,5 @@
 ---
-title: "Co-design research One: The Standards Development Game"
+title: "Co-design One: The Standards Development Game"
 author: Caren Watkins
 date: 2024-09-09T14:50:22.131Z
 picture: /uploads/rtdd_colour_small-type_eng.svg
