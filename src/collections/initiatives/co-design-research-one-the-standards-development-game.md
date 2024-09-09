@@ -45,4 +45,4 @@ Effective facilitation was identified as key to bridging gaps in ability, partic
 
 This co-design research has not only provided valuable insights into the standards development process but also set a precedent for inclusive, collaborative approaches that honor the expertise of all individuals, particularly those with disabilities.
 
-[Co-design Two: Accessibility Barriers and Regulatory Approaches for Digital Technologies](https://wecount.inclusivedesign.ca/initiatives/co-design-two-accessibility-barriers-and-regulatory-approaches-for-digital-technologies/)
+[Co-design research Two: Accessibility Barriers and Regulatory Approaches for Digital Technologies](https://wecount.inclusivedesign.ca/rtdd/cd2)
