@@ -25,7 +25,7 @@ The RtDD team will design and propose regulatory approaches and systems that:
 5. do not create incentives for the perpetuation of the problem,               
 6. engage and empower people with disabilities and their communities to shape regulatory requirements, inform methods of meeting requirements, identify regulatory gaps, and continuously refine the regulatory system.
 
-To date these six challenges have been addressed by a series of co-design sessions with experts with lived experience of disability.
+To date these six challenges have been addressed by a series of co-design sessions with experts with lived experience of disability:
 
 [Co-design One: The Standards Development Game](https://wecount.inclusivedesign.ca/initiatives/co-design-research-one-the-standards-development-game/)
 
@@ -121,6 +121,7 @@ The challenges are:
 
 
 
+
 ### The Canadian Accessibility Network & Accessibility Institute
 
 [The Canadian Accessibility Network](https://carleton.ca/accessibility-institute/can/) under the leadership of the Accessibility Institute at Carleton University is mandated to bring organizations together to facilitate partnerships in specific collaboration areas under each of the five overarching domains: Research, Design and Innovation, Education and Training, Policy, Employment and Community Engagement.  \
@@ -136,9 +137,11 @@ The challenges are:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulder image of Christopher Sutton ", "Christopher Sutton", "left", "center" %}
+
 
 
 
@@ -165,9 +168,11 @@ The challenges are:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulder image of Emile Tompa ", "Emile Tompa", "left", "center" %}
+
 
 
 
@@ -194,9 +199,11 @@ The challenges are:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Heather Walkus", "left", "center" %}
+
 
 
 
@@ -223,9 +230,11 @@ The challenges are:
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulder image of Jenelle Rouse", "Jenelle Rouse", "left", "center" %}
+
 
 
 
@@ -252,9 +261,11 @@ BDC has a community-building focus where it aims to increase network of Black De
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "J﻿im Tokos", "left", "center" %}
+
 
 
 
@@ -281,9 +292,11 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Joelle Robinson", "left", "center" %}
+
 
 
 
@@ -309,9 +322,11 @@ The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, a
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulder image of Kerri Joffee", "Kerri Joffee", "left", "center" %}
+
 
 
 
@@ -338,9 +353,11 @@ The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, a
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Lori Vaanholt", "left", "center" %}
+
 
 
 
@@ -367,9 +384,11 @@ Across Canada and around the world, [L’Arche](https://www.larche.ca/) creates 
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "Mahadeo Sukhai", "left", "center" %}
+
 
 
 
@@ -396,9 +415,11 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulder image of Michael Bach", "Michael Bach", "left", "center" %}
+
 
 
 
@@ -425,9 +446,11 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "Paula Chapman", "left", "center" %}
+
 
 
 
@@ -454,9 +477,11 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "Pina D’Agostino", "left", "center" %}
+
 
 
 
@@ -483,9 +508,11 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "Shermineh Esmati", "left", "center" %}
+
 
 
 
@@ -513,9 +540,11 @@ The [Digital Governance Standards Institute](https://dgc-cgn.org/standards/), pa
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "W. Francis Fung", "left", "center" %}
+
 
 
 
@@ -531,6 +560,7 @@ The [Digital Governance Standards Institute](https://dgc-cgn.org/standards/), pa
 
 The vision of the [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.  \
 **About W. Francis’s role with RtDD:** Recruit members with physical disabilities to participate in co-design, help disseminate project drafts for review and feedback.
+
 
 
 
