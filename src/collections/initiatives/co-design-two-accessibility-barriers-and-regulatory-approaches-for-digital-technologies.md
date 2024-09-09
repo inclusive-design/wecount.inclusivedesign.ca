@@ -1,7 +1,7 @@
 ---
 title: "Co-design research Two: Accessibility Barriers and Regulatory Approaches
   for Digital Technologies"
-permalink: /rtdd/cd-2/
+permalink: /initiative/rtdd-cd-2/
 author: Caren Watkins
 date: 2024-09-09T15:07:40.558Z
 picture: /uploads/rtdd_colour_small-type_eng.svg
