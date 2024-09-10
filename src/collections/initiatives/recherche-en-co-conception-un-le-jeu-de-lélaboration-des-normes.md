@@ -1,6 +1,6 @@
 ---
 title: "Recherche en co-conception Un : le jeu de l'élaboration des normes"
-permalink: /initiatives/RlDN_cocon_1
+permalink: /initiatives/RlDN_cocon_1/
 author: Caren Watkins
 date: 2024-09-10T17:24:18.970Z
 picture: /uploads/rtdd_colour_small-type_fr.svg
