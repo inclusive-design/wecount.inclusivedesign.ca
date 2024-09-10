@@ -1,7 +1,7 @@
 ---
 title: "Co-conception deux : Obstacles à l'accessibilité et approches
   réglementaires pour les technologies numériques"
-permalink: /initiatives/RlDN_cocon_2
+permalink: /initiatives/RlDN_cocon_2/
 author: Caren Watkins
 date: 2024-09-10T17:32:10.407Z
 picture: /uploads/rtdd_colour_small-type_fr.svg
