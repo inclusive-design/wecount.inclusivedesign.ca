@@ -63,7 +63,7 @@ L'équipe du CRDI a ensuite résumé le contenu généré par les co-chercheurs 
 
 ## Résultats et orientations futures
 
-Plus de trente-cinq thèmes ont émergé du contenu des discussions générées par les co-chercheurs. Nous avons organisé ces thèmes en fonction des six principaux défis du projet. 
+Plus de vingt thèmes ont émergé du contenu des discussions générées par les co-chercheurs. Nous avons organisé ces thèmes en fonction des six principaux défis du projet. 
 
 Les résultats de la recherche conjointe mettent l'accent sur l'implication des utilisateurs handicapés dans le processus de développement afin de garantir l'inclusivité et d'humaniser l'accessibilité afin de promouvoir l'empathie parmi les développeurs. Les principaux thèmes qui ont émergé sont la nécessité d'une technologie adaptable, d'une meilleure accessibilité du web, de solutions pratiques et d'une innovation continue. 
 
