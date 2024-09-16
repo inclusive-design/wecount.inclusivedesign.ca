@@ -65,7 +65,7 @@
     "cross-env": "7.0.3",
     "decap-server": "3.1.2",
     "dotenv": "16.4.5",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "eslint-config-fluid": "2.1.3",
     "eslint-plugin-jsdoc": "50.2.3",
     "eslint-plugin-markdown": "5.1.0",
