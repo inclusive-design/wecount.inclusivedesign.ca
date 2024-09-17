@@ -81,11 +81,13 @@ The Future of Work and Disability had expert collaborators many of whom identify
 
 
 
+
 [FWD Findings Report (English PDF)](https://wecount.inclusivedesign.ca/uploads/fwd-findings-report_english_accessible.pdf)
 
 [FWD Findings Report (English doc)](https://wecount.inclusivedesign.ca/uploads/future-of-work-and-disability-findings-report-2.docx)
 
 [L’avenir du travail et les personnes handicapées (French doc)](https://wecount.inclusivedesign.ca/uploads/fr-future-of-work-and-disability-findings-report-2.docx)
+
 
 
 
@@ -146,7 +148,9 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
 **Anhong Guo** is an Assistant Professor in Computer Science & Engineering at the University of Michigan. He has also worked in the Ability and Intelligent User Experiences groups in Microsoft Research, the HCI group of Snap Research, the Accessibility Engineering team at Google, and the Mobile Innovation Center of SAP America.
+
 
 
 
@@ -194,7 +198,9 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
 **Shari Trewin** manages the IBM Accessibility Leadership Team, chairs the Association for Computing Machinery (ACM) Special Interest Group on Accessible Computing (SIGACCESS), and is a Distinguished Scientist of the ACM, a member of ACM’s Diversity and Inclusion Council.
+
 
 
 
@@ -242,7 +248,9 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
 **Ben Tamblyn** is the Director of Inclusive Design at Microsoft. Ben has worked in a wide range of marketing, design and technical roles, and has a passion for design, inclusion and potential impact of technology on the world.
+
 
 
 
@@ -290,7 +298,9 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
 **Chancey Fleet** was a 2018–19 Data & Society Fellow and is currently an Affiliate-in-Residence whose writing, organizing and advocacy aims to catalyze critical inquiry into how cloud-connected accessibility tools benefit and harm, empower and expose disability communities. Chancey is also the Assistive Technology Coordinator at the New York Public Library.
+
 
 
 
@@ -425,7 +435,9 @@ In this presentation, we explore the best policies and practices that both tech 
 
 
 
+
 ****Alexandra Reeve Givens**** is the CEO of the Center for Democracy & Technology, a leading U.S. think tank that focuses on protecting democracy and individual rights in the digital age. The organization works on a wide range of tech policy issues, including consumer privacy to data and discrimination, free expression, surveillance, internet governance and competition.
+
 
 
 
@@ -473,7 +485,9 @@ In this presentation, we explore the best policies and practices that both tech 
 
 
 
+
 **Julia Stoyanovich** is an Assistant Professor of Computer Science and Engineering and of Data Science at New York University. Julia’s research focuses on responsible data management and analysis, including operationalizing fairness, diversity, transparency and data protection in all stages of the data science lifecycle. She is the founding director of the Center for Responsible AI at NYU, a comprehensive laboratory that is building a future in which responsible AI will be the only kind of AI accepted by society.
+
 
 
 
@@ -501,8 +515,6 @@ In this presentation, we explore the best policies and practices that both tech 
 ### Moderator
 
 **Dr. Vera Roberts,** Inclusive Design Research Centre
-
-{% youtube "https://www.youtube.com/embed/Tq230FBgoiU" %}
 
 ### Summary
 
@@ -582,7 +594,9 @@ This webinar focused on employment, disability and artificial intelligence polic
 
 
 
+
 **Abhishek Gupta** is the Founder and Principal Researcher at the [Montreal AI Ethics Institute](https://montrealethics.ai) and a Machine Learning Engineer at Microsoft, where he serves on the CSE Responsible AI Board. He is representing Canada for the International Visitor Leaders Program (IVLP) administered by the U.S. State Department as an expert on the future of work. His research focuses on applied technical and policy methods to address ethical, safety and inclusivity concerns in using AI in different domains. He has built the largest community driven, public consultation group on AI Ethics in the world.
+
 
 
 
@@ -691,7 +705,9 @@ In this webinar, our panel discussion highlighted some of the potential problems
 
 
 
+
 **Shea Tanis** is the Director for Policy and Advocacy at the Coleman Institute for Cognitive Disabilities at the University of Colorado. She is nationally recognized for her expertise in applied cognitive technology supports, cognitive accessibility and advancing the rights of people with cognitive disabilities to technology and information access.
+
 
 
 
@@ -808,9 +824,11 @@ In this webinar we learned about [nugget.ai](https://www.nugget.ai/)’s operati
 
 {% imageAndText "/uploads/nugget.jpg", "nugget.ai logo", "", "left", "top" %}
 
+
 **Marian Pitel** is Head of Research at nugget.ai, completing a Doctor of Philosophy degree in Organizational Psychology.
 
 **Melisa Pike** is Product and Research Associate at nugget.ai, completing a Doctor of Philosophy degree in Organizational Psychology.
+
 
 {% endimageAndText %}
 
