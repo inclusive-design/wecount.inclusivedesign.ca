@@ -21,7 +21,7 @@ Tout d'abord, nous avons créé trois questions qui englobent les six défis du 
 2. Pensez à de nouvelles technologies ou applications qui n'ont pas bien fonctionné pour vous. Quelles règles auraient dû être mises en place pour les rendre plus accessibles ?
 3. Voyez-vous des problèmes liés à des règles visant à rendre les choses accessibles qui ne disent pas comment le faire ?
 
-Ensuite, nous avons choisi de tirer parti de CANVAS, un système de gestion de l'apprentissage (LMS) qui héberge la communauté RnDN, pour aider les participants à se préparer à des discussions synchrones sur l'élaboration des normes, à documenter les discussions et à revoir leurs contributions.
+Ensuite, nous avons choisi de tirer parti de Canvas, un système de gestion de l'apprentissage qui héberge la communauté RnDN, pour aider les participants à se préparer à des discussions synchrones sur l'élaboration des normes, à documenter les discussions et à revoir leurs contributions.
 
 Enfin, nous avons choisi la méthode de recherche 1-2-4-All pour favoriser la discussion à partir de petits groupes vers des groupes de plus en plus grands afin de permettre à chaque co-chercheur d'avoir l'occasion de partager et de discuter. 
 
