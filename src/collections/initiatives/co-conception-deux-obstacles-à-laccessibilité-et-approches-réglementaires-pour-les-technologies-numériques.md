@@ -54,10 +54,6 @@ Les activités asynchrones et synchrones ont produit un grand nombre de notes et
 
 Les tâches ont pris la forme d'une enquête. Chaque section comportait une introduction qui rappelait aux co-chercheurs la question abordée et la raison pour laquelle elle était posée. Ensuite, chaque thème était présenté un par un, avec un champ de réponse. Les co-chercheurs étaient invités à se demander si leur point de vue était inclus et représenté avec précision. Si ce n'était pas le cas, nous leur avons demandé de nous indiquer ce qu'ils pensaient devoir être modifié ou ajouté dans le champ de réponse.
 
-## 1-2-4-Tous
-
-L'approche du format 1-2-4-All consiste à commencer les activités en petits groupes et à augmenter progressivement la taille du groupe jusqu'à ce que tout le monde soit ensemble, en développant la réflexion et les idées au fur et à mesure que le groupe s'agrandit. Pour cette co-conception, nous avons commencé par demander aux co-chercheurs de réfléchir individuellement aux trois questions et de documenter leurs réflexions sur Canvas. Nous nous sommes ensuite réunis de manière synchrone sur Zoom et dans des salles de réunion Zoom pour que les co-chercheurs partagent leurs réflexions par paires, par groupes de quatre et enfin tous ensemble dans un seul groupe. Pendant les sessions synchrones, les animateurs ont pris des notes pour saisir les nouvelles informations et les idées en évolution. 
-
 ## Analyse et révision
 
 L'équipe du CRDI a ensuite résumé le contenu généré par les co-chercheurs sur Canvas et pendant les sessions synchrones et a fait revenir les co-chercheurs dans le processus pour examiner l'information résumée. Les informations résumées ont été téléchargées sur Canvas et organisées en groupes sur la base de chaque question incitative. La question suivante a été posée aux co-chercheurs : « Votre point de vue est-il inclus et correctement représenté dans les résumés ? Si ce n'est pas le cas, faites-nous savoir dans les zones de réponse ce que vous pensez qu'il faudrait changer ou ajouter » et ont eu la possibilité de répondre à chaque section de l'analyse sous la forme d'un quiz.
