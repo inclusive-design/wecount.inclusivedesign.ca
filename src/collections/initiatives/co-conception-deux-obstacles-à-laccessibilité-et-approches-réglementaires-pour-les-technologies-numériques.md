@@ -54,10 +54,6 @@ Les activités asynchrones et synchrones ont produit un grand nombre de notes et
 
 Les tâches ont pris la forme d'une enquête. Chaque section comportait une introduction qui rappelait aux co-chercheurs la question abordée et la raison pour laquelle elle était posée. Ensuite, chaque thème était présenté un par un, avec un champ de réponse. Les co-chercheurs étaient invités à se demander si leur point de vue était inclus et représenté avec précision. Si ce n'était pas le cas, nous leur avons demandé de nous indiquer ce qu'ils pensaient devoir être modifié ou ajouté dans le champ de réponse.
 
-## Analyse et révision
-
-L'équipe du CRDI a ensuite résumé le contenu généré par les co-chercheurs sur Canvas et pendant les sessions synchrones et a fait revenir les co-chercheurs dans le processus pour examiner l'information résumée. Les informations résumées ont été téléchargées sur Canvas et organisées en groupes sur la base de chaque question incitative. La question suivante a été posée aux co-chercheurs : « Votre point de vue est-il inclus et correctement représenté dans les résumés ? Si ce n'est pas le cas, faites-nous savoir dans les zones de réponse ce que vous pensez qu'il faudrait changer ou ajouter » et ont eu la possibilité de répondre à chaque section de l'analyse sous la forme d'un quiz.
-
 ## Résultats et orientations futures
 
 Le projet Réglementation du Domaine Numérique (RdDN) est une initiative pionnière visant à améliorer l'inclusion numérique et l'accessibilité des TIC pour les personnes handicapées. En rassemblant une équipe multidisciplinaire de conseillers et de co-chercheurs, le projet s'attaque à six défis majeurs afin de développer un système réglementaire qui régisse efficacement le paysage numérique. L'approche multidimensionnelle du projet comprend l'engagement de personnes ayant une expérience vécue du handicap, la résolution de problèmes systémiques liés aux normes actuelles et l'exploration de solutions innovantes pour prévenir les obstacles.
