@@ -22,7 +22,7 @@ First, we created three questions that encompassed the six project challenges:
 2. Think about new technologies or apps that didn’t work well for you. What rules should have been in place to make them more accessible?
 3. Can you see any problems with rules to make things accessible that don’t say how to do it?
 
-Next, we chose to leverage CANVAS a Learning Management System (LMS) which hosts the RtDD community to support participants in preparing for synchronous discussions about standards development, document the discussions, and reviewing their contributions.
+Next, we chose to leverage Canvas a Learning Management System which hosts the RtDD community to support participants in preparing for synchronous discussions about standards development, document the discussions, and reviewing their contributions.
 
 Finally, we chose the research method 1-2-4-All to foster discussion from small groups to progressively larger groups as a way to support each co-researcher having an opportunity to share and discuss. 
 
@@ -46,7 +46,7 @@ In the first week, co-researchers joined RtDD’s Canvas community. We used the 
 
 The approach of a 1-2-4-All format was to start activities with small groups and increase the group size gradually until everyone was together, building out thinking and ideas as the group grew. For this co-design, we asked co-researchers to individually think about the three discussion questions individually and document their thoughts on Canvas. We then met synchronously on Zoom and in Zoom breakout rooms for co-researchers to share their thoughts in pairs, groups of four, and finally, all together in a group of approximately 16 co-researchers. During the synchronous sessions, facilitators took notes to capture added information and evolving ideas. 
 
-###  Session 3: Analysis and review
+### Session 3: Analysis and review
 
 The asynchronous and synchronous activities produced a great deal of written notes and responses. The RtDD team summarized these texts so that they were organized into themes and recommendations. The final session had co-researchers review and offer feedback on:
 
@@ -54,8 +54,6 @@ The asynchronous and synchronous activities produced a great deal of written not
 * Draft recommendations for Accessibility Standards Canada (ASC) created by the IDRC team from co-researcher contributions. A plain-language version of the recommendations was also provided. 
 
 The tasks took the form of a survey. Each section had an introduction that reminded the co-researchers of the question discussed and the reason for asking it. Then, each theme was presented one at a time, along with a response field. Co-researchers were prompted to consider whether their perspective was included and accurately represented. If not, we asked them to let us know what they think should change or be added in the response area.
-
-
 
 ![List of activities in Sessions 1 and 2 on Canvas LMS for Co-research Two: Accessibility Barriers and Regulatory Approaches for Digital Technologies. Activities include Introduction, .pptx facilitator presentation files, and three discussion threads.](/uploads/lms_canvas_rtdd-module-session-1-2.png)
 
