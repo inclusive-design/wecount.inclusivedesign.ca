@@ -55,10 +55,6 @@ The asynchronous and synchronous activities produced a great deal of written not
 
 The tasks took the form of a survey. Each section had an introduction that reminded the co-researchers of the question discussed and the reason for asking it. Then, each theme was presented one at a time, along with a response field. Co-researchers were prompted to consider whether their perspective was included and accurately represented. If not, we asked them to let us know what they think should change or be added in the response area.
 
-![List of activities in Sessions 1 and 2 on Canvas LMS for Co-research Two: Accessibility Barriers and Regulatory Approaches for Digital Technologies. Activities include Introduction, .pptx facilitator presentation files, and three discussion threads.](/uploads/lms_canvas_rtdd-module-session-1-2.png)
-
-![List of activities in Session 3 on Canvas LMS. Organized by the three questions co-researchers engaged in. Each question has a list of four activities. Each activity has a rocket graphic followed by the following headings: Introduction, Your review of our summanry on the CANVAS discussion, Your review of our summary of the C-design Activity, Your review of our Analysis, and Your review of our Analysis in Plain Language.](/uploads/lms_canvas_rtdd-module-session-3.png)
-
 ## 1-2-4-All
 
 The approach of a 1-2-4-All format is to start activities with small groups and increase the group size gradually until everyone is together, building out thinking and ideas as the group grows. For this co-design we start by asking co-researchers to think about the three questions individually and document their thoughts on Canvas. We then met synchronously on Zoom and in Zoom breakout rooms for co-researchers to share their thoughts in pairs, groups of four and finally all together in one group. During the synchronous sessions facilitators took notes to capture new information and evolving ideas. 
