@@ -30,25 +30,32 @@ Finally, we chose the research method 1-2-4-All to foster discussion from small 
 
 We recruited co-researchers from our community and list of interested co-researchers. We identified 16 co-researchers out of 149 applicants that would provide a variety of access needs, experiences, languages, regions, and ages. Co-researchers were compensated $250 CAD for their expertise.
 
-## The process
+## The process and online community
 
 The co-research activities were both synchronous and asynchronous online activities. The process was divided into three online sessions over six weeks:
 
-1. Learning, Thinking and sharing: Individually identify detailed experiences within challenges and respond to seed questions in LMS asynchronously 
+### Session 1: Learning, Thinking and sharing
 
-   * synchronous intro to co-design and Canvas learning management system (LMS) 
-   * Opportunity to learn about the project, standards and standards development 
-   * respond to questions asynchronously in preparation for discussions.
-2. Discussing: expand identified experiences with co-research team and continue 1-2-4-All process synchronously with co-researchers online. 
+In the first week, co-researchers joined RtDD’s Canvas community. We used the discussion forum in Canvas for an asynchronous exchange of ideas, where co-researchers answered questions about digital barriers and regulations that were not prescriptive in how to achieve accessibility. There were three discussion areas:
 
-   * synchronous discussion activities through Zoom video communication software. Activities used the 1-2-4-All format.
-3. Analysis and review: respond to synthesized output of co-research content. Through the LMS participants were given the opportunity to asynchronously read through the collective content and offer corrections, feedback and additional information as required.
+1. Flexible Standards: What specific problems have you faced using digital tools or systems like computers, things with screens and buttons or apps on the phone?
+2. Inclusion and Accessibility: Think about new technologies or apps that didn’t work well for you. What rules should have been in place to make them more accessible?
+3. Supporting Innovation: Can you see any problems with rules to make things accessible that don’t say how to do it?
 
-   * asynchronous activities through Canvas LMS for co-researchers to review the contributions and analysis of sessions 1 and 2.
+### Session 2: Discussing
 
-## The LMS Modules
+The approach of a 1-2-4-All format was to start activities with small groups and increase the group size gradually until everyone was together, building out thinking and ideas as the group grew. For this co-design, we asked co-researchers to individually think about the three discussion questions individually and document their thoughts on Canvas. We then met synchronously on Zoom and in Zoom breakout rooms for co-researchers to share their thoughts in pairs, groups of four, and finally, all together in a group of approximately 16 co-researchers. During the synchronous sessions, facilitators took notes to capture added information and evolving ideas. 
 
-Developed by the IDRC team, the modules were designed to support asynchronous group participation involving co-researchers across Canada. When required IDRC facilitators worked one-on-one with participants to support contribution. Three sections in Canvas, one for each session. 
+###  Session 3: Analysis and review
+
+The asynchronous and synchronous activities produced a great deal of written notes and responses. The RtDD team summarized these texts so that they were organized into themes and recommendations. The final session had co-researchers review and offer feedback on:
+
+* Summaries the team made from the contributions of all co-researchers from Sessions 1 and 2. 
+* Draft recommendations for Accessibility Standards Canada (ASC) created by the IDRC team from co-researcher contributions. A plain-language version of the recommendations was also provided. 
+
+The tasks took the form of a survey. Each section had an introduction that reminded the co-researchers of the question discussed and the reason for asking it. Then, each theme was presented one at a time, along with a response field. Co-researchers were prompted to consider whether their perspective was included and accurately represented. If not, we asked them to let us know what they think should change or be added in the response area.
+
+
 
 ![List of activities in Sessions 1 and 2 on Canvas LMS for Co-research Two: Accessibility Barriers and Regulatory Approaches for Digital Technologies. Activities include Introduction, .pptx facilitator presentation files, and three discussion threads.](/uploads/lms_canvas_rtdd-module-session-1-2.png)
 
