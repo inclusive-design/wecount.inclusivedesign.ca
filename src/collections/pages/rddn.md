@@ -31,7 +31,7 @@ L'équipe RlDN concevra et proposera des approches et des systèmes réglementai
 
 ## Participez
 
-Ce projet et d'autres projets du CRDI font appel à des co-chercheurs de la communauté. Vous pouvez participer à ce projet en [rejoignant la communauté ](https://canvas.instructure.com/enroll/94XY87)RdDN[ sur Canvas](https://canvas.instructure.com/enroll/94XY87) ou en vous inscrivant à notre liste de diffusion pour recevoir des nouvelles du CRDI et être informé des activités de cochercheurs à venir.
+Ce projet et d'autres projets du IDRC font appel à des co-chercheurs de la communauté. Vous pouvez participer à ce projet en [rejoignant la communauté ](https://canvas.instructure.com/enroll/94XY87)RlDN[ sur Canvas](https://canvas.instructure.com/enroll/94XY87) ou en vous inscrivant à notre liste de diffusion pour recevoir des nouvelles du CRDI et être informé des activités de cochercheurs à venir.
 
 [S'inscrire pour connaître les possibilités de cochercheurs](https://forms.office.com/r/g4bgbHifqc)
 
@@ -41,14 +41,14 @@ Ce projet et d'autres projets du CRDI font appel à des co-chercheurs de la comm
 
 Le projet Réguler le Domaine Numérique (RlDN) se concentre sur les défis persistants et les disparités auxquels les personnes handicapées sont confrontées dans l'accès aux technologies de l'information et de la communication (TIC) et aux outils numériques.
 
-L'équipe du projet RdDN : 
+L'équipe du projet RlDN : 
 
 * s'efforcera de découvrir les causes profondes des obstacles
 * se concentrer sur les problèmes systémiques qui favorisent l'exclusion numérique,
 * identifiera les moyens potentiels d'interrompre et d'éliminer, d'améliorer ou d'empêcher l'aggravation des obstacles
 * améliorer l'accessibilité des outils numériques, du contenu, des transactions et des processus médiatisés par ordinateur (utilisation de deux appareils électroniques ou plus pour un processus) pour les personnes handicapées.
 
-L'objectif de la RlDN est d'améliorer de manière significative l'inclusion numérique et l'accessibilité aux TIC pour l'ensemble des personnes handicapées. Afin d'apporter des améliorations, le projet portera sur la conception d'un système réglementaire axé sur les défis de la réglementation dans le domaine numérique. Les résultats du projet informeront les normes d'accessibilité du Canada sur une plus grande accessibilité aux outils numériques, au contenu, aux transactions et/ou aux processus mé
+L'objectif de la RlDN est d'améliorer de manière significative l'inclusion numérique et l'accessibilité aux TIC pour l'ensemble des personnes handicapées. Afin d'apporter des améliorations, le projet portera sur la conception d'un système réglementaire axé sur les défis de la réglementation dans le domaine numérique. Les résultats du projet informeront les normes d'accessibilité du Canada sur une plus grande accessibilité aux outils numériques, au contenu, aux transactions et/ou aux processus médiatisés par ordinateur.
 
 ## L'élaboration de normes
 
@@ -78,7 +78,7 @@ Ensemble, les co-chercheurs concevront et proposeront des approches et des syst�
 
 ## Relever six défis grâce à des pratiques inclusives et à la co-conception
 
-> Si vous souhaitez participer aux co-conceptions du CRDI, [inscrivez-vous à la liste de diffusion](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo62199fYthCJCZAjMYVyFj1V1dUNjdNSFRTTkVXTVNNOEM0RVZHOVlBNEJVMiQlQCN0PWcu&route=shorturl) pour être informé des événements à venir.[](https://forms.office.com/r/g4bgbHifqc)
+> Si vous souhaitez participer aux co-conceptions du IDRC, [inscrivez-vous à la liste de diffusion](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo62199fYthCJCZAjMYVyFj1V1dUNjdNSFRTTkVXTVNNOEM0RVZHOVlBNEJVMiQlQCN0PWcu&route=shorturl) pour être informé des événements à venir.[](https://forms.office.com/r/g4bgbHifqc)
 
 Six défis seront relevés par le biais d'une série de co-conceptions. Nous relèverons les défis suivants en impliquant un large éventail de parties prenantes ayant des expériences vécues et une expertise pertinentes, tout en reconnaissant que les questions sont complexes et interdépendantes. Les résultats informeront la prochaine génération de modèles de normes d'accessibilité dans le domaine numérique. L'équipe développera des stratégies qui tireront parti des propriétés du domaine numérique et des approches nécessaires pour assurer une plus grande inclusion numérique des personnes handicapées.         
 
@@ -106,13 +106,16 @@ Les défis sont les suivants
 ## ﻿Partenaires
 
 {% imageAndText "/uploads/boris-vukovic.png", "photo de Boris Vukovic de la tête et des épaules", "Boris Vukovic", "left", "center" %}
+
 ### The Canadian Accessibility Network & Accessibility Institute
 
 Le [Canadian Accessibility Network & Accessibility Institute](https://carleton.ca/accessibility-institute/can/), sous la direction de l'Institut de l'accessibilité de l'Université Carleton, a pour mandat de rassembler les organisations afin de faciliter les partenariats dans des domaines de collaboration spécifiques relevant de chacun des cinq domaines primordiaux : Recherche, conception et innovation, éducation et formation, politique, emploi et engagement communautaire.   \
 **A propos du rôle de Boris au sein de la RlDN :** Contribuer à la réflexion sur les motivations et les défis auxquels est confronté le domaine de l'accessibilité au Canada. Aider à obtenir des informations de la part des professionnels de l'accessibilité.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "photo de Christopher Sutton de la tête et des épaules", "Christopher Sutton", "left", "center" %}
+
 
 
 
@@ -135,98 +138,125 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "photo de la tête et des épaules d'Emile Tompa", "Emile Tompa", "left", "center" %}
+
 ### Inclusive Design for Employment Access / Institute for Work and Health, McMaster University
 
 [Inclusive Design for Employment Access (IDEA) ](https://vraie-idea.ca/index.html)est un laboratoire d'innovation sociale dont l'objectif est d'aider à créer des marchés du travail plus forts et plus diversifiés qui intègrent les personnes handicapées, en passant de la connaissance à la pratique. Nous développons des outils et des ressources fondés sur des données probantes, en collaboration avec des partenaires, qui contribuent à renforcer les capacités du lieu de travail en matière de recrutement, d'embauche, d'intégration, de maintien dans l'emploi, de mentorat et de promotion des personnes handicapées dans toute la gamme des possibilités d'emploi. \
 **A propos du rôle d'Emile au sein de RlDN :** Contribuer à la réflexion sur la politique, la pratique, la conformité et les stratégies efficaces en matière d'accessibilité numérique et d'emploi des personnes handicapées.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Heather Walkus", "Heather Walkus", "left", "center" %}
+
 ### Council of Canadians with Disabilities (CCD)
 
 Le [CCD](http://www.ccdonline.ca/en/)  est une organisation pancanadienne de personnes handicapées. Le CCD s'est efforcé de trouver des solutions et des moyens novateurs pour soutenir la citoyenneté pleine et entière des personnes handicapées. Le CCD unit la voix des Canadiens avec des déficiences pour défendre et étendre les droits à l'égalité des personnes handicapées par l'éducation publique, la défense des droits, la recherche, les litiges et les partenariats.  \
 **À propos du rôle de Heather au sein de la RlDN :** Aider les organisations membres à travers le Canada à recruter des membres handicapés pour participer à la co-conception. Aider à atteindre les communautés indigènes. Contribuer à la diffusion des ébauches de projets pour examen et commentaires. Fournir des informations sur la nécessité de renforcer les capacités des organisations membres pour qu'elles puissent participer aux efforts d'inclusion numérique. Recruter des co-concepteurs et examiner les résultats du projet.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules d'Jenelle Rouse", "Jenelle Rouse", "left", "center" %}
+
 ### Black Deaf Canada (BDC)
 
 La BDC se concentre sur le développement de la communauté et vise à accroître le réseau des personnes sourdes noires à travers le Canada afin d'augmenter leur représentation visible. Le BDC s'engage à créer et à fournir des ressources, des stratégies et des opportunités informatives basées sur la communauté pour les Canadiens Noirs Sourds (et ceux qui ont d'autres handicaps). Le mandat de BDC est d'explorer différentes façons d'éduquer la société entendante sur les accessibilités, les expériences et les contextes intra/interculturels des Sourds, afin que la société puisse mieux servir les individus Noirs Sourds, y compris les indigènes et les personnes de couleur. \
 **A propos du rôle de Jenelle au sein de la RlDN :** Recruter des membres sourds noirs pour participer à la co-conception, aider à diffuser les projets pour examen et commentaires, recruter des co-concepteurs et les examiner, et examiner les résultats du projet.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de J﻿im Tokos", "J﻿im Tokos", "left", "center" %}
+
 ### Canadian Council of the Blind (CCB)
 
 [CCB](https://ccbnational.net/shaggy/) s'efforce d'améliorer la qualité de vie des personnes vivant avec une perte de vision par la sensibilisation, le mentorat par les pairs, la socialisation, les sports et les loisirs, la défense des droits, la promotion de la santé et la prévention des maladies. Le modèle communautaire de CCB offre des programmes pour aider les personnes vivant avec une perte de vision, sensibiliser le public et le gouvernement aux problèmes de vision. Récemment, CCB a entrepris des programmes proactifs tels que la santé oculaire mobile et la formation à l'emploi. Le CCB travaille en partenariat avec un certain nombre d'organisations locales, provinciales, nationales et internationales.  \
 **À propos du rôle de Jim au sein de la RlDN :** Recruter des membres vivant avec une perte de vision pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats des projets.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Joelle Robinson", "Joelle Robinson", "left", "center" %}
+
 ### Manitoba League of Persons with Disabilities (MLPD)
 
 La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et de leurs sympathisants, qui promeut l'égalité des droits, la pleine participation à la société et facilite les changements positifs par la défense des droits et l'éducation du public.  \
 **A propos du rôle de Joelle au sein de la RlDN :** Recruter des membres handicapés, en particulier dans les zones rurales et éloignées, pour participer à la co-conception. Contribuer à la diffusion des ébauches de projets pour examen et commentaires.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "photo de la tête et des épaules d'Kerri Joffee", "Kerri Joffee", "left", "center" %}
+
 ### ARCH Disability Law Centre
 
 [ARCH ](https://archdisabilitylaw.ca/)est une clinique juridique spécialisée qui se consacre exclusivement aux droits des personnes handicapées. ARCH se consacre à la défense et à l'avancement des droits à l'égalité, des droits, des libertés fondamentales et de l'inclusion des personnes handicapées en Ontario.   \
 **Le rôle de Kerri au sein de la RlDN :**  Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Lori Vaanholt", "Lori Vaanholt", "left", "center" %}
+
 ### L’Arche Canada
 
 Partout au Canada et dans le monde,[ L'Arche](https://www.larche.ca/) crée des communautés d'amitié et d'appartenance. À L'Arche, les personnes avec et sans déficience intellectuelle vivent, travaillent, apprennent et grandissent ensemble. L'Arche démontre que lorsque les personnes ayant une déficience intellectuelle prennent leur place à la table, elles contribuent à un monde plus juste, plus compatissant et plus dynamique pour tous.  \
 **À propos du rôle de Lori au sein de la RlDN :** Recruter des membres ayant une déficience intellectuelle pour participer à la co-conception, aider à diffuser les ébauches de projets pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "photo de la tête et des épaules d'Mahadeo Sukhai", "Mahadeo Sukhai", "left", "center" %}
+
 ### Fondation de l'Institut national canadien des aveugles
 
 La Fondation de l'Institut national canadien des aveugles (Fondation[ INCA](https://inca.ca/fr?region=on)), une organisation à but non lucratif, propose des programmes et des actions de sensibilisation qui permettent aux personnes touchées par la cécité de vivre leurs rêves et d'éliminer les obstacles à l'inclusion.   \
 **Le rôle de Mahadeo au sein de la RlDN :** Recruter des membres aveugles pour participer à la co-conception, aider à diffuser des ébauches de projet pour examen et commentaires, recruter des co-concepteurs et examiner les résultats du projet.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "photo de la tête et des épaules d'Michael Bach", "Michael Bach", "left", "center" %}
+
 ### Institute for Research and Development on Inclusion and Society (IRIS)
 
 Informé par l'exclusion systémique à laquelle sont confrontées les personnes ayant un handicap intellectuel ou autre et les groupes marginalisés,[ IRIS](https://irisinstitute.ca/) s'efforce d'amorcer et de soutenir un développement social transformateur. Guidés par les principes de l'inclusion totale et des droits de l'homme, nous menons des recherches pour identifier les problèmes et les options politiques, nous encourageons l'innovation sociale pour réimaginer l'inclusion, et nous renforçons les capacités et le leadership en vue d'un changement transformateur.  \
 **Le rôle de Michael au sein de RlDN :** Fournir des informations et des conseils sur l'efficacité et les défis auxquels sont confrontées les organisations au service des personnes ayant une déficience intellectuelle.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "photo de la tête et des épaules d'Paula Chapman ", "Paula Chapman", "left", "center" %}
+
 ### Ross & McBride LLP
 
 [ARCH ](https://archdisabilitylaw.ca/)est une clinique juridique spécialisée qui se consacre exclusivement aux droits des personnes handicapées. ARCH se consacre à la défense et à l'avancement des droits à l'égalité, des droits, des libertés fondamentales et de l'inclusion des personnes handicapées en Ontario.   \
 **Le rôle de Kerri au sein de la RlDN :** Fournir des informations sur les défis juridiques auxquels sont confrontées les personnes handicapées et sur l'efficacité relative des approches réglementaires. Aider à l'interprétation juridique et à la détermination de la viabilité des approches de co-conception des projets.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "photo de la tête et des épaules d'Pina D'Agostino ", "Pina D'Agostino", "left", "center" %}
+
 ### IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U
 
 [IP Osgoode](https://www.yorku.ca/osgoode/iposgoode/) à la Osgoode Hall Law School est une voix indépendante et faisant autorité qui explore les questions de gouvernance juridique à l'intersection de la propriété intellectuelle (PI) et de la technologie.   \
 **Le rôle de Pina au sein de la RlDN :** Contribuer à la conception législative, aux instruments réglementaires novateurs et à l'interprétation juridique des approches possibles dans le cadre de la Loi sur l'accessibilité du Canada.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "photo de la tête et des épaules d'Shermineh Esmati", "Shermineh Esmati", "left", "center" %}
+
 ### Digital Governance Council / Digital Governance Standards Institute
 
 Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement le Conseil stratégique du DPI) travaille par l'intermédiaire de ses membres des secteurs public et privé pour renforcer la confiance dans l'économie numérique du Canada en identifiant, priorisant et agissant de manière collaborative sur les opportunités et les défis de la gouvernance numérique.  \
 [Digital Governance Standards Institute](https://dgc-cgn.org/standards/), numérique, qui fait partie du Conseil de la gouvernance numérique, est un organisme accrédité d'élaboration de normes. L'Institut permet d'accroître la confiance dans les systèmes numériques du Canada en élaborant des normes de gouvernance technologique en collaboration avec un large éventail de parties prenantes.  \
 **Le rôle de Shermineh au sein de la RlDN :** Conseils techniques pour le processus d'élaboration des normes. Fournir des informations sur les motivations et les défis liés au respect des exigences en matière d'accessibilité numérique par les organisations des secteurs privé et public.
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de W. Francis Fung", "W. Francis Fung", "left", "center" %}
+
 ### March of Dimes Canada
 
 La vision de la [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) sous est de créer une société inclusive pour les personnes ayant un handicap physique ; la mission est de maximiser l'indépendance, l'autonomisation personnelle et la participation communautaire des personnes ayant un handicap physique.   \
 **Le rôle de W. Francis au sein de la RlDN :** Recruter des membres ayant un handicap physique pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires.
+
 {% endimageAndText %}
 
 ## Équipe
