@@ -1,5 +1,5 @@
 ---
-title: Réglementation du Domaine Numérique
+title: Régler le domaine numérique
 excerpt: .
 locale: fr-CA
 menu_order: 7
@@ -12,11 +12,11 @@ View this page in [English](https://wecount.inclusivedesign.ca/rtdd)
 
 ## Mise à jour des recherches
 
-Le projet Regulating the Digital Domain (RtDD) s'est engagé à faire progresser l'inclusion numérique et l'accessibilité des TIC pour les personnes handicapées. Cette entreprise ambitieuse est réalisée en réunissant une équipe multidisciplinaire de conseillers et de co-chercheurs, chacun apportant des connaissances précieuses dans son domaine respectif. L'expertise collective de l'équipe couvre les expériences vécues du handicap, la conception réglementaire, les systèmes numériques, la politique, le changement culturel, les communications, les systèmes adaptatifs complexes et la conformité. Ensemble, ils s'attaqueront à six défis majeurs et jetteront les bases d'un système réglementaire qui régira efficacement le paysage numérique. L'objectif du projet est d'établir des normes et des méthodologies solides qui garantissent que le domaine numérique est inclusif, équitable et accessible à tous.
+Le projet Régler le domaine numérique (RlDN) s'est engagé à faire progresser l'inclusion numérique et l'accessibilité des TIC pour les personnes handicapées. Cette entreprise ambitieuse est réalisée en réunissant une équipe multidisciplinaire de conseillers et de co-chercheurs, chacun apportant des connaissances précieuses dans son domaine respectif. L'expertise collective de l'équipe couvre les expériences vécues du handicap, la conception réglementaire, les systèmes numériques, la politique, le changement culturel, les communications, les systèmes adaptatifs complexes et la conformité. Ensemble, ils s'attaqueront à six défis majeurs et jetteront les bases d'un système réglementaire qui régira efficacement le paysage numérique. L'objectif du projet est d'établir des normes et des méthodologies solides qui garantissent que le domaine numérique est inclusif, équitable et accessible à tous.
 
 ### Défis à relever
 
-L'équipe RtDD concevra et proposera des approches et des systèmes réglementaires qui :
+L'équipe RlDN concevra et proposera des approches et des systèmes réglementaires qui :
 
 1. répondent à la diversité et à la complexité des besoins en matière d'accessibilité, y compris les besoins des petites minorités et des exceptions,          
 2. sont adaptés au rythme exponentiel de l'évolution des TIC et conçus pour prévenir de manière proactive l'apparition d'obstacles,    
@@ -113,6 +113,7 @@ Les défis sont les suivants
 
 
 
+
 ### The Canadian Accessibility Network & Accessibility Institute
 
 Le [Canadian Accessibility Network & Accessibility Institute](https://carleton.ca/accessibility-institute/can/), sous la direction de l'Institut de l'accessibilité de l'Université Carleton, a pour mandat de rassembler les organisations afin de faciliter les partenariats dans des domaines de collaboration spécifiques relevant de chacun des cinq domaines primordiaux : Recherche, conception et innovation, éducation et formation, politique, emploi et engagement communautaire.   \
@@ -124,9 +125,11 @@ Le [Canadian Accessibility Network & Accessibility Institute](https://carleton.c
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "photo de Christopher Sutton de la tête et des épaules", "Christopher Sutton", "left", "center" %}
+
 
 
 
@@ -145,9 +148,11 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "photo de la tête et des épaules d'Emile Tompa", "Emile Tompa", "left", "center" %}
+
 
 
 
@@ -166,9 +171,11 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Heather Walkus", "Heather Walkus", "left", "center" %}
+
 
 
 
@@ -187,9 +194,11 @@ Le [CCD](http://www.ccdonline.ca/en/)  est une organisation pancanadienne de per
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules d'Jenelle Rouse", "Jenelle Rouse", "left", "center" %}
+
 
 
 
@@ -208,9 +217,11 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de J﻿im Tokos", "J﻿im Tokos", "left", "center" %}
+
 
 
 
@@ -229,9 +240,11 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Joelle Robinson", "Joelle Robinson", "left", "center" %}
+
 
 
 
@@ -250,9 +263,11 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "photo de la tête et des épaules d'Kerri Joffee", "Kerri Joffee", "left", "center" %}
+
 
 
 
@@ -271,9 +286,11 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Lori Vaanholt", "Lori Vaanholt", "left", "center" %}
+
 
 
 
@@ -292,9 +309,11 @@ Partout au Canada et dans le monde,[ L'Arche](https://www.larche.ca/) crée des 
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "photo de la tête et des épaules d'Mahadeo Sukhai", "Mahadeo Sukhai", "left", "center" %}
+
 
 
 
@@ -313,9 +332,11 @@ La Fondation de l'Institut national canadien des aveugles (Fondation[ INCA](http
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "photo de la tête et des épaules d'Michael Bach", "Michael Bach", "left", "center" %}
+
 
 
 
@@ -334,9 +355,11 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "photo de la tête et des épaules d'Paula Chapman ", "Paula Chapman", "left", "center" %}
+
 
 
 
@@ -355,9 +378,11 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "photo de la tête et des épaules d'Pina D'Agostino ", "Pina D'Agostino", "left", "center" %}
+
 
 
 
@@ -376,9 +401,11 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "photo de la tête et des épaules d'Shermineh Esmati", "Shermineh Esmati", "left", "center" %}
+
 
 
 
@@ -398,9 +425,11 @@ Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement l
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de W. Francis Fung", "W. Francis Fung", "left", "center" %}
+
 
 
 
@@ -412,6 +441,7 @@ Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement l
 
 La vision de la [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) sous est de créer une société inclusive pour les personnes ayant un handicap physique ; la mission est de maximiser l'indépendance, l'autonomisation personnelle et la participation communautaire des personnes ayant un handicap physique.   \
 **Le rôle de W. Francis au sein de la RtDD :** Recruter des membres ayant un handicap physique pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires.
+
 
 
 
