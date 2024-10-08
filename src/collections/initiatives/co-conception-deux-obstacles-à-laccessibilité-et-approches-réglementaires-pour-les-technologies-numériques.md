@@ -5,11 +5,11 @@ permalink: /initiatives/RlDN_cocon_2/
 author: Caren Watkins
 date: 2024-09-10T17:32:10.407Z
 picture: /uploads/rtdd_colour_small-type_fr.svg
-excerpt: Entre avril et mai 2024, l'équipe de la Régulation du domaine numérique
-  (RtDD) a poursuivi son travail avec des co-chercheurs communautaires ayant une
+excerpt: Entre avril et mai 2024, l'équipe de la Réguler le domaine numérique
+  (RlDN) a poursuivi son travail avec des co-chercheurs communautaires ayant une
   expérience vécue du handicap afin de relever les défis du projet.
 ---
-Entre avril et mai 2024, l'équipe de la Régulation du domaine numérique (RnDN) a poursuivi son travail avec des co-chercheurs communautaires ayant une expérience vécue du handicap afin de relever les défis du projet. 
+Entre avril et mai 2024, l'équipe de la Réguler le domaine numérique (RlDN) a poursuivi son travail avec des co-chercheurs communautaires ayant une expérience vécue du handicap afin de relever les défis du projet. 
 
 ## Notre approche
 
@@ -35,7 +35,7 @@ Les activités de recherche conjointe étaient des activités en ligne synchrone
 
 ### Session 1 : Apprendre, réfléchir et partager
 
-Au cours de la première semaine, les co-chercheurs ont rejoint la communauté Canvas de la RnDN. Nous avons utilisé le forum de discussion de Canvas pour un échange d'idées asynchrone, où les co-chercheurs ont répondu à des questions sur les barrières numériques et les réglementations qui n'étaient pas prescriptives sur la manière d'atteindre l'accessibilité. Il y avait trois domaines de discussion :
+Au cours de la première semaine, les co-chercheurs ont rejoint la communauté Canvas de la RlDN. Nous avons utilisé le forum de discussion de Canvas pour un échange d'idées asynchrone, où les co-chercheurs ont répondu à des questions sur les barrières numériques et les réglementations qui n'étaient pas prescriptives sur la manière d'atteindre l'accessibilité. Il y avait trois domaines de discussion :
 
 1. Normes souples : Quels problèmes spécifiques avez-vous rencontrés lors de l'utilisation d'outils ou de systèmes numériques tels que des ordinateurs, des objets avec des écrans et des boutons ou des applications sur le téléphone ?
 2. Inclusion et accessibilité : Pensez à de nouvelles technologies ou applications qui n'ont pas bien fonctionné pour vous. Quelles règles auraient dû être mises en place pour les rendre plus accessibles ?
@@ -56,12 +56,12 @@ Les tâches ont pris la forme d'une enquête. Chaque section comportait une intr
 
 ## Résultats et orientations futures
 
-Le projet Réglementation du Domaine Numérique (RdDN) est une initiative pionnière visant à améliorer l'inclusion numérique et l'accessibilité des TIC pour les personnes handicapées. En rassemblant une équipe multidisciplinaire de conseillers et de co-chercheurs, le projet s'attaque à six défis majeurs afin de développer un système réglementaire qui régisse efficacement le paysage numérique. L'approche multidimensionnelle du projet comprend l'engagement de personnes ayant une expérience vécue du handicap, la résolution de problèmes systémiques liés aux normes actuelles et l'exploration de solutions innovantes pour prévenir les obstacles.
+Le projet Régler le Domaine Numérique (RlDN) est une initiative pionnière visant à améliorer l'inclusion numérique et l'accessibilité des TIC pour les personnes handicapées. En rassemblant une équipe multidisciplinaire de conseillers et de co-chercheurs, le projet s'attaque à six défis majeurs afin de développer un système réglementaire qui régisse efficacement le paysage numérique. L'approche multidimensionnelle du projet comprend l'engagement de personnes ayant une expérience vécue du handicap, la résolution de problèmes systémiques liés aux normes actuelles et l'exploration de solutions innovantes pour prévenir les obstacles.
 
-Grâce à des activités de recherche conjointes approfondies, l'équipe de la RdDN a identifié plus de vingt thèmes alignés sur les six principaux défis du projet. Ces thèmes mettent en évidence le besoin de normes d'accessibilité diverses et flexibles, l'importance de suivre le rythme des avancées technologiques et la nécessité d'encourager l'innovation tout en garantissant l'interopérabilité des systèmes numériques. Les résultats soulignent le rôle essentiel de l'implication des personnes handicapées dans le processus de conception et de développement, de la promotion de l'empathie et de la compréhension parmi les développeurs, et de la création d'outils numériques adaptables et conviviaux.
+Grâce à des activités de recherche conjointes approfondies, l'équipe de la RlDN a identifié plus de vingt thèmes alignés sur les six principaux défis du projet. Ces thèmes mettent en évidence le besoin de normes d'accessibilité diverses et flexibles, l'importance de suivre le rythme des avancées technologiques et la nécessité d'encourager l'innovation tout en garantissant l'interopérabilité des systèmes numériques. Les résultats soulignent le rôle essentiel de l'implication des personnes handicapées dans le processus de conception et de développement, de la promotion de l'empathie et de la compréhension parmi les développeurs, et de la création d'outils numériques adaptables et conviviaux.
 
 Les stratégies proposées jusqu'à présent pour les règlements consolident ces thèmes en étapes réalisables, telles que l'établissement de conseils consultatifs, la mise en œuvre de normes dynamiques, l'encouragement de la liberté de création et la garantie d'une amélioration continue grâce au retour d'information des utilisateurs. Ces stratégies visent à créer un environnement numérique plus inclusif en favorisant le respect des normes, en encourageant l'innovation en matière d'accessibilité et en responsabilisant les personnes handicapées.
 
-À l'avenir, le projet RdDN continuera à travailler avec les parties prenantes pour s'appuyer sur les stratégies issues des premières co-conceptions et pour réimaginer et itérer sur les approches réglementaires qui répondent aux défis identifiés. Ce faisant, le projet vise à améliorer de manière significative l'inclusion numérique et l'accessibilité des TIC, en informant finalement les Normes d'accessibilité du Canada sur les pratiques alternatives pour créer un monde numérique plus accessible.
+À l'avenir, le projet RlDN continuera à travailler avec les parties prenantes pour s'appuyer sur les stratégies issues des premières co-conceptions et pour réimaginer et itérer sur les approches réglementaires qui répondent aux défis identifiés. Ce faisant, le projet vise à améliorer de manière significative l'inclusion numérique et l'accessibilité des TIC, en informant finalement les Normes d'accessibilité du Canada sur les pratiques alternatives pour créer un monde numérique plus accessible.
 
 Vous souhaitez participer ou faire des commentaires ? Rejoignez la communauté Regulating the Digital Domain Canvas \[https://canvas.instructure.com/enroll/94XY87]
