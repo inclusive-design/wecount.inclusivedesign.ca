@@ -1,5 +1,5 @@
 ---
-title: "About We Count: IDRC's Inclusive AI Initiatives"
+title: About
 permalink: /about/
 slug: about
 excerpt: As data becomes the primary basis for determining truth and value, and
@@ -10,11 +10,13 @@ excerpt: As data becomes the primary basis for determining truth and value, and
   opportunities for people experiencing disabilities.
 menu_order: 1
 ---
+# We Count: IDRC's Inclusive AI Initiatives
+
 As data becomes the primary basis for determining truth and value, and data science drives the opportunities and risks of our digital economy, people with disabilities are at risk of becoming increasingly marginalized if their needs are not considered in this rapidly evolving domain. There is a small but quickly closing window to act proactively to mitigate these risks and seize opportunities for people experiencing disabilities.
 
 The Inclusive Design Research Centre (IDRC) collaborates with the disability community and other stakeholders to address challenges related to inclusive AI through multiple projects. We Count is IDRC's dedicated site for inclusive AI initiatives and resources, aiming to ensure that the voices and needs of people with disabilities are integral to the development and deployment of AI technologies.
 
-## We Count At Large
+## We Count at Large
 
 **Coming soon:** 
 
