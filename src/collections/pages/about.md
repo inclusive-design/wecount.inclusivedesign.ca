@@ -12,9 +12,7 @@ menu_order: 1
 ---
 As data becomes the primary basis for determining truth and value, and data science drives the opportunities and risks of our digital economy, people with disabilities are likely to become more and more marginalized if their needs are not considered in this quickly ascending domain. There is a small but quickly closing window to act proactively to curtail the risks and catch the opportunities for people experiencing disabilities.
 
-
-
-[](https://wecount.inclusivedesign.ca/inclusion-challenges)
+[]()
 
 ## Recount Newsletter
 
