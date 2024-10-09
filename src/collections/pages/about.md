@@ -16,7 +16,9 @@ The Inclusive Design Research Centre (IDRC) collaborates with the disability com
 
 ## We Count At Large
 
-In this section, we proudly showcase the speaking engagements and presentations by the dedicated team members and project collaborators of the Inclusive Design Research Centre (IDRC). While we feature contributions from various experts, most of the engagements highlighted here are by our esteemed director, Jutta Treviranus. Her pioneering work and insights in AI and Inclusive AI continue to inspire and lead the field. Here, you'll find links to insightful talks and events that highlight our collective efforts in advancing AI and Inclusive AI. Through these engagements, we aim to share our knowledge, advocate for inclusivity, and inspire action within the broader community. Stay connected with the latest contributions from our experts and partners in the field.
+**Coming soon:** 
+
+In this section, we proudly showcase the speaking engagements and presentations by the dedicated team members and project collaborators of the Inclusive Design Research Centre (IDRC). While we feature contributions from various experts, most of the engagements highlighted here are by our esteemed director, Jutta Treviranus. Her pioneering work and insights in AI and Inclusive AI continue to inspire and lead the field. Here, you'll find links to insightful talks and events that highlight our collective efforts in advancing AI and Inclusive AI. Through these engagements, we aim to share our knowledge, advocate for inclusivity, and inspire action within the broader community. Stay connected with the latest contributions from our experts and partners in the field. 
 
 ## Recount Newsletter
 
