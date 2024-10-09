@@ -4,15 +4,19 @@ permalink: /about/
 slug: about
 excerpt: As data becomes the primary basis for determining truth and value, and
   data science drives the opportunities and risks of our digital economy, people
-  with disabilities are likely to become more and more marginalized if their
-  needs are not considered in this quickly ascending domain. There is a small
-  but quickly closing window to act proactively to curtail the risks and catch
-  the opportunities for people experiencing disabilities.
+  with disabilities are at risk of becoming increasingly marginalized if their
+  needs are not considered in this rapidly evolving domain. There is a small but
+  quickly closing window to act proactively to mitigate these risks and seize
+  opportunities for people experiencing disabilities.
 menu_order: 1
 ---
-As data becomes the primary basis for determining truth and value, and data science drives the opportunities and risks of our digital economy, people with disabilities are likely to become more and more marginalized if their needs are not considered in this quickly ascending domain. There is a small but quickly closing window to act proactively to curtail the risks and catch the opportunities for people experiencing disabilities.
+As data becomes the primary basis for determining truth and value, and data science drives the opportunities and risks of our digital economy, people with disabilities are at risk of becoming increasingly marginalized if their needs are not considered in this rapidly evolving domain. There is a small but quickly closing window to act proactively to mitigate these risks and seize opportunities for people experiencing disabilities.
 
-[]()
+The Inclusive Design Research Centre (IDRC) collaborates with the disability community and other stakeholders to address challenges related to inclusive AI through multiple projects. We Count is IDRC's dedicated site for inclusive AI initiatives and resources, aiming to ensure that the voices and needs of people with disabilities are integral to the development and deployment of AI technologies.
+
+## We Count At Large
+
+In this section, we proudly showcase the speaking engagements and presentations by the dedicated team members and project collaborators of the Inclusive Design Research Centre (IDRC). While we feature contributions from various experts, most of the engagements highlighted here are by our esteemed director, Jutta Treviranus. Her pioneering work and insights in AI and Inclusive AI continue to inspire and lead the field. Here, you'll find links to insightful talks and events that highlight our collective efforts in advancing AI and Inclusive AI. Through these engagements, we aim to share our knowledge, advocate for inclusivity, and inspire action within the broader community. Stay connected with the latest contributions from our experts and partners in the field.
 
 ## Recount Newsletter
 
@@ -37,7 +41,7 @@ Read all past issues of the We Count Recount, We Count's monthly newsletter.
 
 03/09/2021 - [T﻿he We Count Recount: March 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-march-2021_accessible.docx)
 
-## Sign up to learn more about We Count
+## Get Involved
 
 [Subscribe to the Recount ](http://eepurl.com/hBMRev)
 
