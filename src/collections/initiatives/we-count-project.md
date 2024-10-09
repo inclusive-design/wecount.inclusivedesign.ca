@@ -23,7 +23,7 @@ We Count, a project of the Inclusive Design Research Centre at OCAD University, 
 
 {% youtube "https://youtu.be/cEnONDRi-_U" %}
 
-We Count is guided by challenges nominated by the community. Learn more about We Count challenges and how to nominate your challenge on our[ Challenges page.](https://wecount.inclusivedesign.ca/inclusion-challenges)
+We Count was guided by challenges nominated by the community. Learn more about We Count challenges on our[ Challenges page.](https://wecount.inclusivedesign.ca/inclusion-challenges)
 
 ## Mission
 
