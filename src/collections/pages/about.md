@@ -1,5 +1,5 @@
 ---
-title: "About We Count: IDRC's Incluisve AI Initiatives"
+title: "About We Count: IDRC's Inclusive AI Initiatives"
 permalink: /about/
 slug: about
 excerpt: As data becomes the primary basis for determining truth and value, and
