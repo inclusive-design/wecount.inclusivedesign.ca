@@ -8,6 +8,8 @@ picture: /uploads/rtdd_colour_small-type_fr.svg
 excerpt: Entre avril et mai 2024, l'équipe de la Réguler le domaine numérique
   (RlDN) a poursuivi son travail avec des co-chercheurs communautaires ayant une
   expérience vécue du handicap afin de relever les défis du projet.
+tags:
+  - RtDD
 ---
 Entre avril et mai 2024, l'équipe de la Réguler le domaine numérique (RlDN) a poursuivi son travail avec des co-chercheurs communautaires ayant une expérience vécue du handicap afin de relever les défis du projet. 
 
