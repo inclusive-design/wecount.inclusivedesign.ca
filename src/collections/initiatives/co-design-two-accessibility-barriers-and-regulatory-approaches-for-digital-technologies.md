@@ -1,5 +1,5 @@
 ---
-title: "Co-design research Two: Accessibility Barriers and Regulatory Approaches
+title: "Co-Design Research Two: Accessibility Barriers and Regulatory Approaches
   for Digital Technologies"
 permalink: /initiative/rtdd-cd-2/
 author: Caren Watkins
@@ -71,4 +71,4 @@ Moving forward, the RtDD project will continue to work with stakeholders to buil
 
 Are you interested in participating or commenting? Join the Regulating the Digital Domain Canvas community \[https://canvas.instructure.com/enroll/94XY87]
 
-[Co-design research One: The Standards Development Game](https://wecount.inclusivedesign.ca/initiatives/rtdd-cd-1/)
+[Co-Design Research One: The Standards Development Game](https://wecount.inclusivedesign.ca/initiatives/rtdd-cd-1/)
