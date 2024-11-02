@@ -9,6 +9,8 @@ excerpt: "Between April and May 2024, the RtDD team worked with other community
   co-researchers with lived experience of disability to address all six project
   challenges. The research approach used online synchronous and asynchronous
   activities. "
+tags:
+  - RtDD
 ---
 Between April and May 2024, the Regulating the Digital Domain (RtDD) team continued work with community co-researchers with lived experience of disability to address project challenges. 
 
