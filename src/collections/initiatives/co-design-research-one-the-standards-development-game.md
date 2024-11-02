@@ -1,5 +1,5 @@
 ---
-title: "Co-design research One: The Standards Development Game"
+title: "Co-Design Research One: The Standards Development Game"
 permalink: /initiatives/rtdd-cd-1/
 author: Caren Watkins
 date: 2024-09-09T14:50:22.131Z
@@ -10,6 +10,8 @@ excerpt: Between January and February 2024, we conducted three co-design
   the standards development process to identify areas and ways to improve
   inclusion of people with disabilities to integrate the insights of Canadians
   with disabilities into the standards development process.
+tags:
+  - RtDD
 ---
 Between January and February 2024, we conducted three co-design research sessions in collaboration with another IDRC team that was reviewing the standards development process to identify areas and ways to improve inclusion of people with disabilities to integrate the insights of Canadians with disabilities into the standards development process. Sixteen recommendations under four themes emerged from the co-design. The themes include Capacity building, education, and communication; Diversity and representation; Empowering participation; Decision-making and stakeholder synergy.
 
@@ -47,4 +49,4 @@ This co-design research has not only provided valuable insights into the standar
 
 [Review of the Review Reports](https://idrc.ocadu.ca/projects/rotr/)
 
-[Co-design research Two: Accessibility Barriers and Regulatory Approaches for Digital Technologies](https://wecount.inclusivedesign.ca/initiative/rtdd-cd-2/)
+[Co-design Research Two: Accessibility Barriers and Regulatory Approaches for Digital Technologies](https://wecount.inclusivedesign.ca/initiative/rtdd-cd-2/)
