@@ -10,6 +10,8 @@ excerpt: "Entre janvier et février 2024, nous avons mené trois sessions de
   et les moyens d'améliorer l'inclusion des personnes handicapées et d'intégrer
   les points de vue des Canadiens handicapés dans le processus d'élaboration des
   normes. "
+tags:
+  - RtDD
 ---
 Entre janvier et février 2024, nous avons mené trois sessions de recherche en co-conception en collaboration avec une autre équipe du CRDI qui examinait le processus d'élaboration des normes afin d'identifier les domaines et les moyens d'améliorer l'inclusion des personnes handicapées et d'intégrer les points de vue des Canadiens handicapés dans le processus d'élaboration des normes. Seize recommandations réparties en quatre thèmes ont émergé de la co-conception. Ces thèmes sont les suivants : renforcement des capacités, éducation et communication ; diversité et représentation ; renforcement de la participation ; prise de décision et synergie des parties prenantes.
 
