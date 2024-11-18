@@ -71,7 +71,7 @@
     "eslint-plugin-markdown": "5.1.0",
     "eslint-plugin-react": "7.37.2",
     "eslint-plugin-yml": "1.15.0",
-    "husky": "9.1.6",
+    "husky": "9.1.7",
     "lint-staged": "15.2.10",
     "markdownlint-cli2": "0.14.0",
     "markdownlint-config-fluid": "0.1.5",
