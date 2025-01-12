@@ -20,7 +20,7 @@ jobs:
       run: |
         echo "target_branch=main" >> $GITHUB_ENV
     - name: Update CMS branch configuration
-      uses: mikefarah/yq@v4.44.6
+      uses: mikefarah/yq@v4.45.1
       with:
         cmd: yq eval -i '.backend.branch = "${{ env.target_branch }}"' src/admin/config.yml
     - name: Commit changes
