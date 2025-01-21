@@ -13,4 +13,8 @@ IDRC partnered with Carleton University's Accessibility Institute on the Informi
 
 Informed by research literature, field assessments of available acoustics technologies and active engagement with people with lived experience of disability, the research team has recommended a set of acoustics best practices and informed the creation of accessibility standards to improve the quality and comfort of the listening experience.
 
-The final reports are now available on the [Accessibility Institute website](https://carleton.ca/accessibility-institute/projects/informing-standards-for-acoustics-and-the-built-environment/).
+
+
+[Download the IDRC research report.](/uploads/acoustic-co-design-final_public.docx)
+
+The final reports are available on the [Accessibility Institute website](https://carleton.ca/accessibility-institute/projects/informing-standards-for-acoustics-and-the-built-environment/).
