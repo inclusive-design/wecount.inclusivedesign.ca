@@ -27,3 +27,5 @@
 
 /views/* /initiatives/:splat 301
 /news/* /recount/:splat 301
+
+/rddn /rldn 301
