@@ -4,7 +4,7 @@ excerpt: .
 locale: fr-CA
 menu_order: 7
 key: Réguler le Numérique
-permalink: /rddn/
+permalink: /rldn/
 ---
 ![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
 
