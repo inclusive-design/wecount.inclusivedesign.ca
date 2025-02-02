@@ -59,8 +59,8 @@
     "uuid": "10.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.6.1",
-    "@commitlint/config-conventional": "19.6.0",
+    "@commitlint/cli": "19.7.1",
+    "@commitlint/config-conventional": "19.7.1",
     "autoprefixer": "10.4.20",
     "cross-env": "7.0.3",
     "decap-server": "3.2.0",
