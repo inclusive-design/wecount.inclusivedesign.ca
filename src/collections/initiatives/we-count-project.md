@@ -3,6 +3,10 @@ title: We Count Project
 permalink: ""
 author: Vera Roberts
 date: 2024-10-09T16:27:41.315Z
+picture: /uploads/we-count-logo_colour_icon-only_white-background.png
+altTag: "We Count logo: the right tail of a blue bell curve graph overlaps the
+  left tail of a yellow one within a circle frame. there is a peak at the centre
+  of the overlap. A blue dot is centred within the top of the circle frame."
 excerpt: We Count, a project of the Inclusive Design Research Centre at OCAD
   University, was created to address bias, discrimination and barriers to
   participation and employment for persons with disabilities within the field of
