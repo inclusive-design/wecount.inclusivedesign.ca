@@ -5,7 +5,7 @@ source: ADA
 readability:
   - Intermediate
 type: Website Resource
-openSource: false
+openSource: true
 link: https://www.ada.gov/resources/ai-guidance/
 learnTags:
   - business
