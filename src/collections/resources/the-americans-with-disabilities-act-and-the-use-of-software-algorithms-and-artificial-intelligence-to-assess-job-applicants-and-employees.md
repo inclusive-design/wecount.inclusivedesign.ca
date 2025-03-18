@@ -1,13 +1,12 @@
 ---
-title: The Americans with Disabilities Act and the Use of Software, Algorithms,
-  and Artificial Intelligence to Assess Job Applicants and Employees
+title: Algorithms, Artificial Intelligence, and Disability Discrimination in Hiring
 focus: Employment
-source: EEOC
+source: ADA
 readability:
   - Intermediate
 type: Website Resource
 openSource: false
-link: https://www.eeoc.gov/laws/guidance/americans-disabilities-act-and-use-software-algorithms-and-artificial-intelligence
+link: https://www.ada.gov/resources/ai-guidance/
 learnTags:
   - business
   - bias
@@ -16,7 +15,7 @@ learnTags:
   - ethics
   - fairness
   - employment
-summary: The EEOC has released a technical assistance document that provides an
-  overview of how the use of AI hiring systems may impact existing ADA
-  requirements.
+  - government
+summary: ADA guidance that explains how algorithms and artificial intelligence
+  can lead to disability discrimination in hiring.
 ---
