@@ -4,13 +4,13 @@ permalink: /initiatives/RlDN_cocon_3/
 author: David Pereyra
 date: 2025-04-07T12:44:49.340Z
 picture: /uploads/rtdd_colour_small-type_fr.svg
-excerpt: En novembre 2024, l'équipe chargée de la réglementation du domaine
-  numérique (RDN) a poursuivi son travail, cette fois avec le groupe
-  consultatif, afin de relever les défis du projet.
+excerpt: En novembre 2024, l'équipe chargée de la régulation du domaine
+  numérique (RDN) a travaillé avec le comité consultatif en s'appuyant sur deux
+  recherches en co-conception pour relever les défis du projet.
 tags:
   - RDN
 ---
-En novembre 2024, l'équipe chargée de la réglementation du domaine numérique (RDN) a poursuivi son travail, cette fois avec le groupe consultatif, afin de relever les défis du projet.
+En novembre 2024, l'équipe chargée de la régulation du domaine numérique (RDN) a travaillé avec le comité consultatif en s'appuyant sur deux recherches en co-conception pour relever les défis du projet.
 
 ## Notre approche
 
