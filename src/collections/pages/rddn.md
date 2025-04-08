@@ -25,7 +25,7 @@ L'équipe RlDN concevra et proposera des approches et des systèmes réglementai
 5. ne pas créer d'incitations à la perpétuation du problème,               
 6. impliquer et responsabiliser les personnes handicapées
 
-[Co-conception un : le jeu de l'élaboration des normes](https://wecount.inclusivedesign.ca/initiatives/RlDN_cocon_1)
+[Co-conception un : Le jeu de l'élaboration des normes](https://wecount.inclusivedesign.ca/initiatives/RlDN_cocon_1)
 
 [Co-conception deux : Obstacles à l'accessibilité et approches réglementaires pour les technologies numériques](https://wecount.inclusivedesign.ca/initiatives/RlDN_cocon_2/)
 
