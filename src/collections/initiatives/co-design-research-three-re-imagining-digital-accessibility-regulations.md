@@ -4,13 +4,13 @@ permalink: /initiative/rtdd-cd-3/
 author: David Pereyra
 date: 2025-04-03T14:45:36.272Z
 picture: /uploads/rtdd_colour_small-type_eng.svg
-excerpt: In November 2024, the Regulating the Digital Domain (RtDD) team
-  continued work, this time with the Advisory Panel to address project
-  challenges.
+excerpt: In November 2024, the Regulating the Digital Domain (RtDD) team worked
+  with the Advisory Panel building on co-design research two to address the
+  project challenges.
 tags:
   - RtDD
 ---
-In November 2024, the Regulating the Digital Domain (RtDD) team continued work, this time with the Advisory Panel to address project challenges.
+In November 2024, the Regulating the Digital Domain (RtDD) team worked with the Advisory Panel building on co-design research two to address the project challenges.
 
 ## Our approach
 
