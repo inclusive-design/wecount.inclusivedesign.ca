@@ -22,32 +22,11 @@ En utilisant une version adaptée de la méthodologie 1-2-4-All, nous avons disc
 
 ## Méthode de recherche conjointe
 
-Avant de nous réunir de manière synchrone, nous avons partagé avec le groupe consultatif les résultats de nos précédentes activités de recherche conjointe, ainsi que le défi qui serait abordé lors de la session de recherche conjointe. Lorsque nous nous sommes réunis le 6 novembre 2024, nous avons commencé par un examen du défi et une vue d'ensemble de la méthode 1-2-4 All.
-
-### Premier tour :
-
-* Les collaborateurs ont été invités à réfléchir seuls à la question pendant une minute avant de se mettre en groupes de deux pour discuter de leurs idées. La question était la suivante:
-
-> *Les réglementations actuelles ne permettent pas d'obtenir des produits et des services accessibles. Nous voulons réimaginer nos processus réglementaires afin d'obtenir des produits et des services accessibles. Réfléchissez aux aspects de la réglementation et des normes d'accessibilité pour les technologies numériques : Que changeriez-vous et comment le feriez-vous ?*
-
-* Les co-chercheurs ont réfléchi individuellement pendant une minute et en binôme dans des salles de réunion pendant 10 minutes.
-
-### Deuxième tour :
-
-* Les paires sont retournées dans la salle principale et, avant d'être réparties en différents groupes de deux personnes pour une discussion de 15 minutes, elles ont été invitées à:
-
-> *Examinez les similitudes et les différences entre vos idées et réfléchissez à la manière dont vous pourriez réviser votre approche ou intégrer différentes approches.*
-
-* Les participants ont travaillé en binôme pour développer les approches du premier tour, en se demandant si les idées pouvaient fonctionner ensemble ou si elles restaient des approches distinctes.
-
-### Troisième tour :
-
-* Enfin, pour les trente dernières minutes de la session, tout le monde s'est retrouvé dans la salle principale pour mettre en lumière les idées les plus marquantes de leurs discussions.
-* Lors de la séance plénière, le groupe a examiné comment ces approches pouvaient fonctionner en tant que système intégré, en discutant des similitudes, des différences et des facteurs de réussite.
+Avant de nous réunir de manière synchrone, nous avons partagé avec le groupe consultatif les résultats des activités de recherche conjointes précédentes. Lorsque nous nous sommes réunis, nous avons examiné les défis et réimaginé les réglementations en matière d'accessibilité numérique en utilisant la méthode 1-2-4 All. L'objectif des activités de recherche conjointe était d'abord d'explorer les expériences, puis de comprendre les défis et enfin d'envisager des approches (une description complète de la méthode appliquée est disponible dans Réguler le domaine numérique : Co-conception trois résultats).
 
 ## Approches générées
 
-Les co-chercheurs ont travaillé ensemble pour exploiter les résultats de recherches antérieures et partager leurs idées sur des approches modèles de la régulation numérique. L'objectif des activités de co-recherche de la Réguler le domaine numérique (RlDN) était d'abord d'explorer les expériences, puis de comprendre les défis et enfin d'envisager des approches. Onze idées à différents niveaux de développement ont été générées pour être prises en compte dans le projet. Dans cette section, nous présentons un cadre général pour chaque idée, suivi de questions ou d'orientations connexes soulevées par les co-chercheurs ou, au cours de l'analyse, par l'équipe du CRDI. L'étape suivante consistera à sélectionner certaines de ces idées pour les étendre à des approches modèles qui pourront faire l'objet d'itérations au cours de la dernière année du projet. 
+Les co-chercheurs ont travaillé ensemble pour exploiter les résultats de recherches antérieures et partager leurs idées d'approches modèles de la régulation numérique. Onze idées à différents stades de développement ont été générées. Dans cette section, nous présentons un cadre général pour chaque idée, suivi de questions ou de conseils connexes soulevés par les co-chercheurs ou, au cours de l'analyse, par l'équipe du IDRC.
 
 ### 1.	Élaboration des normes
 
