@@ -4,13 +4,13 @@ permalink: /initiatives/RlDN_cocon_3/
 author: David Pereyra
 date: 2025-04-07T12:44:49.340Z
 picture: /uploads/rtdd_colour_small-type_fr.svg
-excerpt: En novembre 2024, l'équipe chargée de la régulation du domaine
-  numérique (RDN) a travaillé avec le comité consultatif en s'appuyant sur deux
+excerpt: En novembre 2024, l'équipe chargée de la Réguler le domaine numérique
+  (RlDN) a travaillé avec le comité consultatif en s'appuyant sur deux
   recherches en co-conception pour relever les défis du projet.
 tags:
-  - RDN
+  - RlDN
 ---
-En novembre 2024, l'équipe chargée de la régulation du domaine numérique (RDN) a travaillé avec le comité consultatif en s'appuyant sur deux recherches en co-conception pour relever les défis du projet.
+En novembre 2024, l'équipe chargée de la Réguler le domaine numérique (RlDN) a travaillé avec le comité consultatif en s'appuyant sur deux recherches en co-conception pour relever les défis du projet.
 
 ## Notre approche
 
@@ -47,7 +47,7 @@ Avant de nous réunir de manière synchrone, nous avons partagé avec le groupe 
 
 ## Approches générées
 
-Les co-chercheurs ont travaillé ensemble pour exploiter les résultats de recherches antérieures et partager leurs idées sur des approches modèles de la régulation numérique. L'objectif des activités de co-recherche de la Réguler le domaine numérique (RDN) était d'abord d'explorer les expériences, puis de comprendre les défis et enfin d'envisager des approches. Onze idées à différents niveaux de développement ont été générées pour être prises en compte dans le projet. Dans cette section, nous présentons un cadre général pour chaque idée, suivi de questions ou d'orientations connexes soulevées par les co-chercheurs ou, au cours de l'analyse, par l'équipe du CRDI. L'étape suivante consistera à sélectionner certaines de ces idées pour les étendre à des approches modèles qui pourront faire l'objet d'itérations au cours de la dernière année du projet. 
+Les co-chercheurs ont travaillé ensemble pour exploiter les résultats de recherches antérieures et partager leurs idées sur des approches modèles de la régulation numérique. L'objectif des activités de co-recherche de la Réguler le domaine numérique (RlDN) était d'abord d'explorer les expériences, puis de comprendre les défis et enfin d'envisager des approches. Onze idées à différents niveaux de développement ont été générées pour être prises en compte dans le projet. Dans cette section, nous présentons un cadre général pour chaque idée, suivi de questions ou d'orientations connexes soulevées par les co-chercheurs ou, au cours de l'analyse, par l'équipe du CRDI. L'étape suivante consistera à sélectionner certaines de ces idées pour les étendre à des approches modèles qui pourront faire l'objet d'itérations au cours de la dernière année du projet. 
 
 ### 1.	Élaboration des normes
 
@@ -170,7 +170,7 @@ Nous avons rassemblé de nombreuses stratégies qui mettent en évidence les act
 
 Pour aller de l'avant, nous allons
 
-* Continuer à recueillir les commentaires de la communauté et construire la communauté RDN sur Canvas par le biais d'une campagne de médias sociaux et d'un forum de discussion sur Canvas.
+* Continuer à recueillir les commentaires de la communauté et construire la communauté RlDN sur Canvas par le biais d'une campagne de médias sociaux et d'un forum de discussion sur Canvas.
 * Avec l'aide du groupe consultatif, sélectionner des idées et coconcevoir des approches de mise en œuvre pour les idées générées.
 
 Vous souhaitez participer ou faire des commentaires ? Rejoignez la communauté Regulating the Digital Domain Canvas \[https://canvas.instructure.com/enroll/94XY87]
