@@ -25,7 +25,7 @@ L'équipe RlDN concevra et proposera des approches et des systèmes réglementai
 5. ne pas créer d'incitations à la perpétuation du problème,               
 6. impliquer et responsabiliser les personnes handicapées
 
-[Co-conception Un : le jeu de l'élaboration des normes](https://wecount.inclusivedesign.ca/initiatives/RlDN_cocon_1)
+[Co-conception un : le jeu de l'élaboration des normes](https://wecount.inclusivedesign.ca/initiatives/RlDN_cocon_1)
 
 [Co-conception deux : Obstacles à l'accessibilité et approches réglementaires pour les technologies numériques](https://wecount.inclusivedesign.ca/initiatives/RlDN_cocon_2/)
 
@@ -128,10 +128,12 @@ Si vous souhaitez participer aux co-conceptions du IDRC, [inscrivez-vous à la l
 
 
 
+
 ### The Canadian Accessibility Network & Accessibility Institute
 
 Le [Canadian Accessibility Network & Accessibility Institute](https://carleton.ca/accessibility-institute/can/), sous la direction de l'Institut de l'accessibilité de l'Université Carleton, a pour mandat de rassembler les organisations afin de faciliter les partenariats dans des domaines de collaboration spécifiques relevant de chacun des cinq domaines primordiaux : Recherche, conception et innovation, éducation et formation, politique, emploi et engagement communautaire.   \
 **A propos du rôle de Boris au sein de la RlDN :** Contribuer à la réflexion sur les motivations et les défis auxquels est confronté le domaine de l'accessibilité au Canada. Aider à obtenir des informations de la part des professionnels de l'accessibilité.
+
 
 
 
@@ -145,6 +147,7 @@ Le [Canadian Accessibility Network & Accessibility Institute](https://carleton.c
 
 
 
+
 ### Wavefront Centre for Communication Accessibility
 
 Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), un institut pour les sourds et les malentendants, envisage une société où les sourds, les malentendants et les entendants peuvent interagir librement sans barrières de communication. Notre mission est de servir les personnes sourdes et malentendantes, leurs familles et la communauté en proposant des programmes, des produits et des solutions innovants pour parvenir à une accessibilité totale à la communication.  \
@@ -153,9 +156,11 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "photo de la tête et des épaules d'Emile Tompa", "Emile Tompa", "left", "center" %}
+
 
 
 
@@ -172,9 +177,11 @@ Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Heather Walkus", "Heather Walkus", "left", "center" %}
+
 
 
 
@@ -191,9 +198,11 @@ Le [CCD](http://www.ccdonline.ca/en/)  est une organisation pancanadienne de per
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules d'Jenelle Rouse", "Jenelle Rouse", "left", "center" %}
+
 
 
 
@@ -210,9 +219,11 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de J﻿im Tokos", "J﻿im Tokos", "left", "center" %}
+
 
 
 
@@ -229,9 +240,11 @@ La BDC se concentre sur le développement de la communauté et vise à accroîtr
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Joelle Robinson", "Joelle Robinson", "left", "center" %}
+
 
 
 
@@ -248,9 +261,11 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "photo de la tête et des épaules d'Kerri Joffee", "Kerri Joffee", "left", "center" %}
+
 
 
 
@@ -267,9 +282,11 @@ La [MLPD](https://mlpd.mb.ca/) est une voix unie des personnes handicapées et d
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Lori Vaanholt", "Lori Vaanholt", "left", "center" %}
+
 
 
 
@@ -286,9 +303,11 @@ Partout au Canada et dans le monde,[ L'Arche](https://www.larche.ca/) crée des 
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "photo de la tête et des épaules d'Mahadeo Sukhai", "Mahadeo Sukhai", "left", "center" %}
+
 
 
 
@@ -305,9 +324,11 @@ La Fondation de l'Institut national canadien des aveugles (Fondation[ INCA](http
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "photo de la tête et des épaules d'Michael Bach", "Michael Bach", "left", "center" %}
+
 
 
 
@@ -324,9 +345,11 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "photo de la tête et des épaules d'Paula Chapman ", "Paula Chapman", "left", "center" %}
+
 
 
 
@@ -343,9 +366,11 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "photo de la tête et des épaules d'Pina D'Agostino ", "Pina D'Agostino", "left", "center" %}
+
 
 
 
@@ -362,9 +387,11 @@ Informé par l'exclusion systémique à laquelle sont confrontées les personnes
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "photo de la tête et des épaules d'Shermineh Esmati", "Shermineh Esmati", "left", "center" %}
+
 
 
 
@@ -382,9 +409,11 @@ Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement l
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de W. Francis Fung", "W. Francis Fung", "left", "center" %}
+
 
 
 
@@ -395,6 +424,7 @@ Le [Digital Governance Council](https://dgc-cgn.org/) numérique (anciennement l
 
 La vision de la [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) sous est de créer une société inclusive pour les personnes ayant un handicap physique ; la mission est de maximiser l'indépendance, l'autonomisation personnelle et la participation communautaire des personnes ayant un handicap physique.   \
 **Le rôle de W. Francis au sein de la RlDN :** Recruter des membres ayant un handicap physique pour participer à la co-conception, aider à diffuser des ébauches de projets pour examen et commentaires.
+
 
 
 
