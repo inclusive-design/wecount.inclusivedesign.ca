@@ -22,32 +22,11 @@ Using an adapted version of the [1-2-4-All methodology](https://www.liberatingst
 
 ## Co-design Research Method
 
-Prior to meeting synchronously, we shared the findings from our previous co-research activities with the advisory group, as well as the challenge that would be addressed in the co-research session. When we came together on November 6, 2024, we began with a review of the challenge and an overview of the 1-2-4 All method.
-
-### Round One:
-
-* Collaborators were asked to think about the challenge question on their own for a minute before moving to groups of two to discuss their ideas. The challenge question was:
-
-> *Current regulations aren't producing accessible products and services. We want to re-imagine our regulatory processes so we can get accessible products and services. Think about aspects of accessibility regulations and standards for digital technologies: What would you change, and how would you change them?*
-
-* Co-researchers reflected individually for one minute and in pairs in breakout rooms for 10 minutes.
-
-### Round Two:
-
-* Pairs returned to the main room and prior to being rotated into different groups of two for a 15-minute discussion, they were instructed to:
-
-> *Consider similarities and differences in your ideas and consider how you might revise your approach or integrate different approaches.*
-
-* Participants worked in pairs to expand on the approaches from the first round, considering whether the ideas could work together or stood as separate approaches.
-
-### Round Three:
-
-* Finally, for the last thirty minutes of the session, everyone reconvened in the main room to highlight standout ideas from their discussions.
-* In the plenary session, the group considered how these approaches could function as an integrated system, discussing similarities, differences, and success factors.
+Prior to meeting synchronously, we shared the findings from previous co-research activities with the advisory group. When we came together, we reviewed the challenges and reimagined digital accessibility regulations using the 1-2-4 All method. The objective of the co-research activities was to first explore experiences, next to understand challenges and then to consider approaches (full description of the applied method can be found in  Regulating the Digital Domain: Co-Design 3 Results).
 
 ## Generated Approaches
 
-Co-researchers worked together to build on previous co-research findings and share their ideas for model approaches to digital regulation. The objective of RtDD co-research activities was to first explore experiences, next to understand challenges and then to consider approaches. Eleven ideas at different levels of development were generated for consideration in the project. In this section, we provide some background framing for each idea, followed by related questions or guidance that were raised by co-researchers or, during the analysis, by the IDRC team. The next step for these ideas will be to select some to extend to model approaches that can be iterated on over the final year of the project.
+Co-researchers worked together to build on previous co-research findings and share their ideas for model approaches to digital regulation. Eleven ideas at different stages of development were generated. In this section, we provide some background framing for each idea, followed by related questions or guidance that were raised by co-researchers or, during the analysis, by the IDRC team.
 
 ### 1. Standards Development
 
