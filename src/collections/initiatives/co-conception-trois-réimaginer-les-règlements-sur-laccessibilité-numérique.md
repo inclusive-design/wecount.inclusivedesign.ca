@@ -152,4 +152,4 @@ Pour aller de l'avant, nous allons
 * Continuer à recueillir les commentaires de la communauté et construire la communauté RlDN sur Canvas par le biais d'une campagne de médias sociaux et d'un forum de discussion sur Canvas.
 * Avec l'aide du groupe consultatif, sélectionner des idées et coconcevoir des approches de mise en œuvre pour les idées générées.
 
-Vous souhaitez participer ou faire des commentaires ? Rejoignez la communauté Regulating the Digital Domain Canvas \[https://canvas.instructure.com/enroll/94XY87]
+Vous souhaitez participer ou faire des commentaires ? Rejoignez la communauté Regulating the Digital Domain Canvas (anglais) \[https://canvas.instructure.com/enroll/94XY87]
