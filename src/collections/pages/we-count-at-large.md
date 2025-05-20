@@ -127,325 +127,321 @@ In a talk, IDRC Director Jutta Treviranus gave practical and current examples of
 
 IDRC Director Jutta Treviranus was a speaker at the 2024 Disability and Work in Canada Virtual Policy Roundtable.
 
-Source: Disability and Work in Canada
+**Source:** Disability and Work in Canada
 
-Date: October 24, 2024
+**Date:** October 24, 2024
 
-Impact of AI and innovation on the accessibility profession: Threats or opportunities?
+### Impact of AI and innovation on the accessibility profession: Threats or opportunities?
 
 At the 2024 M-Enabling Summit, Jutta Treviranus gave a lightning talk on the potential beneficial and negative impacts of AI, with a particular focus on implications for the accessibility profession.
 
-Source: M-Enabling Summit
+**Source:** M-Enabling Summit
 
-Date: October 17, 2024
+**Date:** October 17, 2024
 
-Media type: website resource
+**Media type:** website resource
 
-Link: https://m-enabling.com/thursday-agenda/
+**Link:** <https://m-enabling.com/thursday-agenda/>
 
-AI ethics for persons with disabilities
+### AI ethics for persons with disabilities
 
 At the 2024 M-Enabling Summit, Jutta Treviranus moderated a round table discussion that provided fresh updates and perspectives on equitable and ethical use of AI technologies.
 
-Source: M-Enabling Summit
+**Source:** M-Enabling Summit
 
-Date: October 15, 2024
+**Date:** October 15, 2024
 
-Media type: website resource
+**Media type:** website resource
 
-Link: https://m-enabling.com/tuesday-agenda/
+**Link:** <https://m-enabling.com/tuesday-agenda/>
 
-G7 ministerial meeting on inclusion and disability
+### G7 ministerial meeting on inclusion and disability
 
 This OCAD U news article, “OCAD U inclusive design expert addresses G7 Summit,” gives an overview on Jutta Treviranus’s participation as a panelist at the G7 Italia Summit.
 
-Source: G7 Italia Summit
+**Source:** G7 Italia Summit
 
-Date: October 15, 2024
+**Date:** October 15, 2024
 
-Media type: website article
+**Media type:** website article
 
-Link: https://www.ocadu.ca/news/ocad-u-inclusive-design-expert-addresses-g7-summit  
+**Link:** <https://www.ocadu.ca/news/ocad-u-inclusive-design-expert-addresses-g7-summit>  
 
-The impact of AI accessibility in learning 
+### The impact of AI accessibility in learning 
 
 Jutta Treviranus participated in an IAAP HE Series webinar on the correlation between AI accessibility and learning.
 
-Source: IAAP HE Series
+**Source:** IAAP HE Series
 
-Date: October 3, 2024
+**Date:** October 3, 2024
 
-ILC annual conference 
+### ILC annual conference 
 
 Jutta Treviranus gave a keynote presentation and participated in a workshop during the Independent Living Canada’s 2024 annual conference.
 
-Source: ILC Annual Conference
+**Source:** ILC Annual Conference
 
-Date: September 26, 2024
+**Date:** September 26, 2024
 
-Media type: website resource
+**Media type:** website resource
 
-Link: https://www.ilc-vac.ca/home
+**Link:** <https://www.ilc-vac.ca/home>
 
-ESDC panel discussion on AI
+### ESDC panel discussion on AI
 
 At a 2024 ESDC Portfolio Management Board Retreat, Jutta Treviranus participated in a panel discussion on artificial intelligence.
 
-Source: ESDC Portfolio Management Board Retreat
+**Source:** ESDC Portfolio Management Board Retreat
 
-Date: September 18, 2024
+**Date:** September 18, 2024
 
-Transformative technologies: AI’s role in accessibility
+### Transformative technologies: AI’s role in accessibility
 
 Jutta Treviranus participated in a panel on AI’s role in accessibility at the NextGen Accessibility Summit. 
 
-Source: NextGen Accessibility Summit
+**Source:** NextGen Accessibility Summit
 
-Date: September 17, 2024
+**Date:** September 17, 2024
 
-Media type: website resource
+**Media type:** website resource
 
-Link: https://www.benton.org/event/nextgen-accessibility-summit
+**Link:** <https://www.benton.org/event/nextgen-accessibility-summit>
 
-Towards trustworthy artificial intelligence
+### Towards trustworthy artificial intelligence
 
 Jutta Treviranus participated in a webinar that gave an overview of the complex relationship between AI and disability and discussed emerging standards and regulations, the CRC Code of Ethics, and promising approaches for trustworthy AI.
 
-Source: WisTech AT Advisory Council
+**Source:** WisTech AT Advisory Council
 
-Date: August 29, 2024
+**Date:** August 29, 2024
 
-Media type: video
+**Media type:** video
 
-Link: https://youtu.be/Q_JuwsxJ2MU?si=tY4J5Whf2uuG1Azt
+**Link:** <https://youtu.be/Q_JuwsxJ2MU?si=tY4J5Whf2uuG1Azt>
 
-Federal and AI industry practitioner hearing on artificial intelligence
+### Federal and AI industry practitioner hearing on artificial intelligence
 
 Jutta Treviranus spoke at the US Access Board’s Federal Agency and Industry Practitioner Hearing on Artificial Intelligence.
 
-Source: US Access Board
+**Source:** US Access Board
 
-Date: August 22, 2024
+**Date:** August 22, 2024
 
-Media type: video
+**Media type:** video
 
-Link: https://youtu.be/AY2czzVU4JI?si=aDfrD2wIAFja6ziw
+**Link:** <https://youtu.be/AY2czzVU4JI?si=aDfrD2wIAFja6ziw>
 
-Promoting inclusion and overcoming inequalities are crucial to public policies for digital transformation
+### Promoting inclusion and overcoming inequalities are crucial to public policies for digital transformation
 
 During an online G20 event with representatives from 68 countries, experts reiterated how important inclusive digital transformation and international collaboration are to the global adoption of digital solutions, including our very own Jutta Treviranus.
 
-Source: G20 Brasil 2024
+**Source:** G20 Brasil 2024
 
-Date: August 18, 2024
+**Date:** August 18, 2024
 
-Media type: website article and video
+**Media type:** website article and video
 
-Link: https://g20.gov.br/en/news/promoting-inclusion-and-overcoming-inequalities-are-crucial-to-public-policies-for-digital-transformation 
+**Link:** <https://g20.gov.br/en/news/promoting-inclusion-and-overcoming-inequalities-are-crucial-to-public-policies-for-digital-transformation> 
 
-G20: Inclusion, equality key in digital transformation
+### G20: Inclusion, equality key in digital transformation
 
 During the debate, Jutta Treviranus presented the urgent need to deeply rethink inclusive participation in society. She emphasized that diversity is a valuable resource in the design of digital tools, while inclusion represents a significant challenge.
 
-Source: Mirage 
+**Source:** Mirage 
 
-Date: August 18, 2024
+**Date:** August 18, 2024
 
-Media type: website article
+**Media type:** website article
 
-Link: https://www.miragenews.com/g20-inclusion-equality-key-in-digital-1298022/?utm_source=chatgpt.com 
+**Link:** <https://www.miragenews.com/g20-inclusion-equality-key-in-digital-1298022/> 
 
-50th anniversary of the internet 
+### 50th anniversary of the internet 
 
 Jutta Treviranus was a panelist on the Royal Society’s 50th Anniversary of the Internet panel.
 
-Source: Royal Society
+**Source:** Royal Society
 
-Date: June 27, 2024
+**Date:** June 27, 2024
 
-Digital government and inclusion workshop
+### Digital government and inclusion workshop
 
 Jutta Treviranus participated in a digital government and inclusion workshop as part of G20 Brasil 2024.
 
-Source: G20 Brasil 2024
+**Source:** G20 Brasil 2024
 
-Date: June 19, 2024
+**Date:** June 19, 2024
 
-What does meaningful stakeholder engagement look like in the context of AI? 
+### What does meaningful stakeholder engagement look like in the context of AI? 
 
 At the 2024 EPR Annual Conference, Jutta Treviranus participated as a panelist and explored what meaningful stakeholder engagement might look like in the context of AI.
 
-Source: EPR Annual Conference
+**Source:** EPR Annual Conference
 
-Date: June 18–19, 2024
+**Date:** June 18–19, 2024
 
-Media type: PDF article
+**Media type:** PDF article
 
-Link: https://www.epr.eu/wp-content/uploads/Speakers-Annual-Conference-2024.pdf
+**Link:** <https://www.epr.eu/wp-content/uploads/Speakers-Annual-Conference-2024.pdf>
 
-Who and what are we missing? 
+### Who and what are we missing? 
 
 At the ARCH24 Conference, Jutta Treviranus gave a keynote on inclusive design as well as hosting an interactive session on the subject.
 
-Source: ARCH24 Conference
+**Source:** ARCH24 Conference
 
-Date: June 17–19, 2024
+**Date:** June 17–19, 2024
 
-Media type: website resource
+**Media type:** website resource
 
-Link: https://arch24.aalto.fi/speakers/
+**Link:** <https://arch24.aalto.fi/speakers/>
 
-The advantages of “nothing without us”: Proactively planning with employees and community
+### The advantages of “nothing without us”: Proactively planning with employees and community
 
 As part of INFONEX’s Accessible Canada Act (ACA): Compliance for Federally Regulated Employers virtual course, Jutta Treviranus spoke about standard under development, implications of AI for an inclusive workplace, and the benefits and strategies for engaging employees and community in planning.
 
-Source: INFONEX
+**Source:** INFONEX
 
-Date: June 7, 2024
+**Date:** June 7, 2024
 
-Media type: website resource
+**Media type:** website resource
 
-Link: https://infonex.com/1463/
+**Link:** <https://infonex.com/1463/>
 
-Accessible and equitable AI
+### Accessible and equitable AI
 
 Jutta Treviranus participated in the 2024 AFB Speaker Series and discussed accessible and equitable AI.
 
-Source: AFB Speaker Series
+**Source:** AFB Speaker Series
 
-Date: June 4, 2024
+**Date:** June 4, 2024
 
-Unlocking access: Conversations on ability and vision
+### Unlocking access:Conversations on ability and vision
 
 Jutta Treviranus was a guest speaker on AMI’s Access Tech Live, discussing National AccessAbility Week and Vision Health Month.
 
-Source: Access Tech Live, AMI
+**Source:** Access Tech Live, AMI
 
-Date: May 30, 2024
+**Date:** May 30, 2024
 
-Media type: video
+**Media type:** video
 
-Link: https://www.youtube.com/watch?v=ZdASVxbW09A 
+**Link:** [https://www.youtube.com/watch?v=ZdASVxbW09A ](https://www.youtube.com/watch?v=ZdASVxbW09A)
 
-Using inclusive design to remove AI bias
+### Using inclusive design to remove AI bias
 
 Our director, Jutta Treviranus, chats with the hosts of the Remarkable Insights podcast about how inclusive AI design can shape a fairer world. 
 
-Source: Remarkable 
+**Source:** Remarkable 
 
-Date: May 30, 2024
+**Date:** May 30, 2024
 
-Media type: podcast
+**Media type:** podcast
 
-Link: https://www.remarkable.org/blog-posts/jutta-treviranus-removing-bias-from-ai
+**Link:** <https://www.remarkable.org/blog-posts/jutta-treviranus-removing-bias-from-ai>
 
-2024 IRD award recipients: Inclusive co-design of AI systems
+### 2024 IRD award recipients: Inclusive co-design of AI systems
 
 As part of a core research team, Jutta Treviranus is contributing to improving existing inclusive AI co-design practices and informing the construction of a shared set of vocabulary for technologists and policymakers.
 
-Source: Computational and Data Systems Initiative, McGill University
+**Source:** Computational and Data Systems Initiative, McGill University
 
-Date: May 30, 2024
+**Date:** May 30, 2024
 
-Media type: website resource
+**Media type:** website resource
 
-Link: https://www.mcgill.ca/cdsi/mccais/interdisciplinary-research-development-awards/ird-award-recipients-2024/proof-concept-jin-guo 
+**Link:** [https://www.mcgill.ca/cdsi/mccais/interdisciplinary-research-development-awards/ird-award-recipients-2024/proof-concept-jin-guo ](https://www.mcgill.ca/cdsi/mccais/interdisciplinary-research-development-awards/ird-award-recipients-2024/proof-concept-jin-guo)
 
-Accessible Canada — Accessible World keynote
+### Accessible Canada — Accessible World keynote
 
 Jutta Treviranus delivered the keynote at Accessible Canada — Accessible World, a conference that aimed to advance accessibility and inclusive design in various domains.
 
-Source: Accessible Canada — Accessible World Conference
+**Source:** Accessible Canada — Accessible World Conference
 
-Date: May 27–28, 2024
+**Date:** May 27–28, 2024
 
-Media type: website resource
+**Media type:** website resource
 
-Link: https://idrc.ocadu.ca/projects/acaw-cama/ 
+**Link:** [https://idrc.ocadu.ca/projects/acaw-cama/ ](https://idrc.ocadu.ca/projects/acaw-cama/)
 
-CCB Vision Health Month 2024 conference
+### CCB Vision Health Month 2024 conference
 
 IDRC Director Jutta Treviranus provided an overview of the different forms of AI, the risks and opportunities posed by the design of AI, emerging regulations relevant to people with disabilities, and promising trends in AI.
 
-Source: CCB Annual Conference
+**Source:** CCB Annual Conference
 
-Date: May 24, 2024
+**Date:** May 24, 2024
 
-Media type: video
+**Media type:** video
 
-Link: https://www.youtube.com/watch?v=DHn8nF5ORM0 
+**Link:** <https://www.youtube.com/watch?v=DHn8nF5ORM0> 
 
-ASC annual public meeting
+### ASC annual public meeting
 
 Jutta Treviranus was a panelist at the ASC Annual Public Meeting, sharing her extensive expertise and experience in the disability field.
 
-Source: Accessibility Standards Canada
+**Source:** Accessibility Standards Canada
 
-Date: May 22, 2024
+**Date:** May 22, 2024
 
-Media type: website resource and video
+**Media type:** website resource and video
 
-Link: https://accessible.canada.ca/annual-public-meeting-2024
+**Link:** <https://accessible.canada.ca/annual-public-meeting-2024>
 
-GAAD 2024: Speaker at IBM and LexisNexis events 
+### GAAD 2024: Speaker at IBM and LexisNexis events 
 
 During Global Accessibility Awareness Day 2024, Jutta Treviranus was a speaker at IBM and LexisNexis events.
 
-Source: GAAD 2024
+**Source:** GAAD 2024
 
-Date: May 16, 2024
+**Date:** May 16, 2024
 
-Media type: website resource
-
-Link: https://accessibility.day/events/
-
-Myth: Accessibility is optional
+### Myth: Accessibility is optional
 
 Jutta Treviranus was a guest on an episode of the Busted podcast that discussed the importance of accessibility and how it’s not optional.
 
-Source: Busted (Institute for Gender and the Economy)
+**Source:** Busted (Institute for Gender and the Economy)
 
-Date: May 13, 2024
+**Date:** May 13, 2024
 
-Media type: PDF article
+**Media type:** podcast
 
-Link: https://www.gendereconomy.org/wp-content/uploads/2024/05/Busted_episode-14_Show-Notes.pdf
+**Link:** <https://www.gendereconomy.org/wp-content/uploads/2024/05/Busted_episode-14_Show-Notes.pdf>
 
-Designing inclusive AI
+### Designing inclusive AI
 
 Jutta Treviranus was a panelist at the Hewlett Foundation Education Grantee Convening, discussing how to design inclusive AI.
 
-Source: Hewlett Foundation Education Grantee Convening
+**Source:** Hewlett Foundation Education Grantee Convening
 
-Date: May 1–3, 2024
+**Date:** May 1–3, 2024
 
-Media type: blog
+**Media type:** blog
 
-Link: https://blog.learningequality.org/hewlett-foundation-education-grantee-convening-our-experiences-and-learnings-94a5a125a3f6
+**Link:** <https://blog.learningequality.org/hewlett-foundation-education-grantee-convening-our-experiences-and-learnings-94a5a125a3f6>
 
-Addressing the risks and opportunities of artificial intelligence 
+### Addressing the risks and opportunities of artificial intelligence 
 
 As a speaker in an IDEA Speaker Series webinar, Jutta Treviranus discussed emerging regulatory standards and efforts to train AI to serve individual differences.
 
-Source: IDEA Speaker Series
+**Source:** IDEA Speaker Series
 
-Date: April 26, 2024
+**Date:** April 26, 2024
 
-Media type: video
+**Media type:** video
 
-Link: https://www.youtube.com/watch?v=zFqsnUcTMlc
+**Link:** <https://www.youtube.com/watch?v=zFqsnUcTMlc>
 
-Disability and the risks and opportunities of artificial intelligence
+### Disability and the risks and opportunities of artificial intelligence
 
 At the AT3 Leadership Symposium, Jutta Treviranus gave a keynote on disability and the risks and opportunities of artificial intelligence.
 
-Source: AT3 Leadership Symposium
+**Source:** AT3 Leadership Symposium
 
-Date: April 22, 2024
+**Date:** April 22, 2024
 
-Media type: website resource
+**Media type:** website resource
 
-Link: https://at3center.net/event/leadership-symposium-keynote-address-disability-and-the-risks-and-opportunities-of-artificial-intelligence/
+**Link:** <https://at3center.net/event/leadership-symposium-keynote-address-disability-and-the-risks-and-opportunities-of-artificial-intelligence/>
 
 ### AIDG Standardization Collaborative workshop
 
