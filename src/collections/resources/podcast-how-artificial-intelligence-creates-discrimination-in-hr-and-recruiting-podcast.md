@@ -1,14 +1,22 @@
 ---
-title: "Podcast: How Artificial Intelligence Creates Discrimination in #HR & #Recruiting"
-focus: "Employment"
-source: "Workology and PEAT"
-readability: ["Beginner"]
-type: "Podcast"
-openSource: false
-link: "https://peatworks.org/podcast-how-artificial-intelligence-creates-discrimination-in-hr-recruiting/"
+title: "How Artificial Intelligence Creates Discrimination in #HR & #Recruiting"
+focus: Employment
+source: Workology and PEAT
+readability:
+  - Intermediate
+type: Podcast
+openSource: true
+link: https://peatworks.org/podcast-how-artificial-intelligence-creates-discrimination-in-hr-recruiting/
 keywords: []
-learnTags: ["bias","business","disability","employment","inclusivePractice"]
-summary: "A podcast that looks at how artificial intelligence systems can be improved to better serve everyone, including people with disabilities. "
+learnTags:
+  - bias
+  - business
+  - disability
+  - employment
+  - inclusivePractice
+  - weCountAtLarge
+summary: "A podcast that looks at how artificial intelligence systems can be
+  improved to better serve everyone, including people with disabilities. "
 ---
 Future of Work Podcast, Episode 2.
 
