@@ -5,7 +5,7 @@ source: New York City Bar Association
 readability:
   - Expert
 type: Website Article
-openSource: false
+openSource: true
 link: https://www.nycbar.org/reports/the-impact-of-the-use-of-ai-on-people-with-disabilities/
 learnTags:
   - machineLearning
