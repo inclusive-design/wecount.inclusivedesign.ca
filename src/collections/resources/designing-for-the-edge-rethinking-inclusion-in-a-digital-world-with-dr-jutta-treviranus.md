@@ -16,6 +16,7 @@ learnTags:
   - methods
   - ethics
   - fairness
+  - weCountAtLarge
 summary: In a new AUTM on the Air podcast episode featuring IDRC Director Jutta
   Treviranus, learn about Jutta's "human starburst" metaphor and how it's
   changing design philosophy, why focusing on diversity at the edges of a system
