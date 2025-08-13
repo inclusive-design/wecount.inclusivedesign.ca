@@ -13,6 +13,7 @@ learnTags:
   - methods
   - ethics
   - fairness
+  - machineLearning
 summary: This paper demonstrates how the widespread adoption of large language
   models (LLMs) as writing assistants is linked to notable declines in
   linguistic diversity and may interfere with the societal and psychological
