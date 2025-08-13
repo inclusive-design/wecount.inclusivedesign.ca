@@ -13,6 +13,7 @@ learnTags:
   - methods
   - ethics
   - fairness
+  - machineLearning
 summary: As LLMs become deeply embedded in people’s lives, they risk
   standardizing language and reasoning. This review synthesizes evidence across
   linguistics, cognitive and computer science to show how LLMs reflect and
