@@ -10,7 +10,6 @@ link: https://www.inclusionhub.com/articles/episode-8
 learnTags:
   - machineLearning
   - accessibility
-  - assistiveTechnology
   - bias
   - methods
   - disability
