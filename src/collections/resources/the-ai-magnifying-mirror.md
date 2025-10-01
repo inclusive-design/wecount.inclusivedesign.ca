@@ -17,6 +17,7 @@ learnTags:
   - accessibility
   - disability
   - fairness
+  - inclusivePractice
 summary: IDRC's Jutta Treviranus has contributed this article to our FLOE
   project's AI in Education collection, supported by the Hewlett Foundation in
   partnership with Etika Insights. Jutta's article warns that current AI
