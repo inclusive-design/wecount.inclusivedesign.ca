@@ -11,7 +11,7 @@ learnTags:
   - machineLearning
   - business
   - researchCentre
-summary: MIT's Project NANDA has released a report that explores how 95% of
-  organizations are getting zero return, despite $30-40 billion USD in
+summary: MIT's Project NANDA has released a report that explores how 95 percent
+  of organizations are getting zero return, despite $30–40 billion USD in
   enterprise investment into generative AI.
 ---
