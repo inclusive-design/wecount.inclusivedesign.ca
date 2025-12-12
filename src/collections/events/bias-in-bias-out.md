@@ -11,9 +11,6 @@ shortDescription: >-
 
 
   July 8, 2020, 11:00 AM – 12:30 PM (EST)
-
-
-  **Available badges:** Learner
 previewImageUrl: /uploads/Group83.jpg
 previewImageAltText: ""
 ---
@@ -27,16 +24,4 @@ Artificial intelligence is more and more responsible for decisions that have a h
 
 [Bias In, Bias Out webinar video](https://youtu.be/NNrknIYLbrc)
 
-### Earn a Learner badge
-
-Machine learning, a subset of artificial intelligence, depends on the quality, objectivity and size of training data used to teach it. We Count encourages participants and learners to explore this concept to help inform more equitable decisions and supports by understanding data gaps and biases.
-
-You will learn:
-
-* How predictive algorithms and data mining affect different populations in a discriminatory manner
-* How specific data resources are used to train and reinforce machine learning models to produce biased outputs
-
-Learn and earn badges from this event:
-
-1. Watch the accessible [Bias In, Bias Out webinar](https://youtu.be/NNrknIYLbrc)
-2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QFMWKWaFRa9OE/apply) (four multiple choice and two short answer questions on the content of the webinar)
+[](https://youtu.be/NNrknIYLbrc)
