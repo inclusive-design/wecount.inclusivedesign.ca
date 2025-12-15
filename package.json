@@ -73,7 +73,7 @@
     "eslint-plugin-yml": "1.19.1",
     "husky": "9.1.7",
     "lint-staged": "15.5.2",
-    "markdownlint-cli2": "0.14.0",
+    "markdownlint-cli2": "0.20.0",
     "markdownlint-config-fluid": "0.1.8",
     "npm-run-all2": "7.0.2",
     "release": "6.3.1",
