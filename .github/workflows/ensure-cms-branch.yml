@@ -24,7 +24,7 @@ jobs:
       with:
         cmd: yq eval -i '.backend.branch = "${{ env.target_branch }}"' src/admin/config.yml
     - name: Commit changes
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: "chore: update CMS branch configuration"
         file_pattern: src/admin/config.yml
