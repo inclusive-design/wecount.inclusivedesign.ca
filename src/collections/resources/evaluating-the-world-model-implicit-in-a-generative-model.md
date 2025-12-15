@@ -1,0 +1,17 @@
+---
+title: Evaluating the World Model Implicit in a Generative Model
+focus: Methods or Design
+source: NeurIPS 2024
+readability:
+  - Expert
+type: PDF Article
+openSource: true
+link: https://arxiv.org/pdf/2406.03689
+learnTags:
+  - machineLearning
+  - methods
+summary: Large language models may implicitly learn world models, but this paper
+  reveals that their world models are far less coherent than they appear, which
+  can create fragility and lead to failures.
+---
+Recent work suggests that large language models may implicitly learn world models. How should we assess this possibility? We formalize this question for the case where the underlying reality is governed by a deterministic finite automaton. This includes problems as diverse as simple logical reasoning, geographic navigation, game-playing, and chemistry. We propose new evaluation metrics for world model recovery inspired by the classic Myhill-Nerode theorem from language theory. We illustrate their utility in three domains: game playing, logic puzzles, and navigation. In all domains, the generative models we consider do well on existing diagnostics for assessing world models, but our evaluation metrics reveal their world models to be far less coherent than they appear. Such incoherence creates fragility: using a generative model to solve related but subtly different tasks can lead to failures. Building generative models that meaningfully capture the underlying logic of the domains they model would be immensely valuable; our results suggest new ways to assess how close a given model is to that goal.
