@@ -61,7 +61,7 @@
   "devDependencies": {
     "@commitlint/cli": "20.2.0",
     "@commitlint/config-conventional": "20.2.0",
-    "autoprefixer": "10.4.20",
+    "autoprefixer": "10.4.23",
     "cross-env": "7.0.3",
     "decap-server": "3.4.0",
     "dotenv": "16.4.7",
