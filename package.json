@@ -63,7 +63,7 @@
     "@commitlint/config-conventional": "19.7.1",
     "autoprefixer": "10.4.20",
     "cross-env": "7.0.3",
-    "decap-server": "3.2.0",
+    "decap-server": "3.4.0",
     "dotenv": "16.4.7",
     "eslint": "8.57.1",
     "eslint-config-fluid": "2.1.3",
