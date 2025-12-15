@@ -56,7 +56,7 @@
     "markdown-it": "14.1.0",
     "modern-css-reset": "1.4.0",
     "nunjucks": "3.2.4",
-    "uuid": "11.1.0"
+    "uuid": "13.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "20.2.0",
