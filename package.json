@@ -75,7 +75,7 @@
     "lint-staged": "15.4.3",
     "markdownlint-cli2": "0.14.0",
     "markdownlint-config-fluid": "0.1.8",
-    "npm-run-all2": "7.0.2",
+    "npm-run-all2": "8.0.4",
     "release": "6.3.1",
     "rimraf": "6.0.1",
     "stylelint": "14.16.1",
