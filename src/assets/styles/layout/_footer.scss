@@ -3,7 +3,7 @@
 // For the canada logo: the color of the flag is red by default but is able to adapt
 // to the color determined by the selected UIO high contrast theme.
 .fill-f00 {
-	fill: var(--currentcolor, #f00);
+	fill: var(--fl-fgColor, #f00);
 }
 
 .subscribe {

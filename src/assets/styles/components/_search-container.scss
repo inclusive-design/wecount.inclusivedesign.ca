@@ -22,7 +22,7 @@
 
 	svg {
 		block-size: calc(32 / 16 * 1rem);
-		fill: $white;
+		fill: var(--fl-bgColor, $white);
 		inline-size: calc(32 / 16 * 1rem);
 	}
 

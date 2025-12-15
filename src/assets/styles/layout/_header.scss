@@ -6,7 +6,7 @@ header {
 		position: relative;
 
 		&::after {
-			background: linear-gradient($white, rgb(0 0 0 / 5%));
+			background: linear-gradient(var(--fl-fgColor, $white), rgb(0 0 0 / 5%));
 			block-size: 15px;
 			content: "";
 			display: block;
@@ -129,7 +129,7 @@ header {
 	// Styles for the search container
 	.search-container {
 		button {
-			fill: $white;
+			fill: var(--fl-fgColor, $white);
 			right: calc(4 / 16 * 1rem);
 			top: calc(4 / 16 * 1rem);
 		}
@@ -216,6 +216,7 @@ header {
 		justify-content: space-between;
 		margin-inline: auto;
 		max-inline-size: calc(1265 / 16 * 1rem);
+		padding-inline: calc(36 / 16 * 1rem);
 	}
 
 	header .site-nav-inner .header-join {
