@@ -42,7 +42,7 @@
     "@11ty/eleventy": "2.0.1",
     "@11ty/eleventy-img": "6.0.1",
     "@11ty/eleventy-navigation": "1.0.5",
-    "@11ty/eleventy-plugin-rss": "2.0.3",
+    "@11ty/eleventy-plugin-rss": "2.0.4",
     "airtable": "0.12.2",
     "axios": "1.7.9",
     "decap-cms": "3.6.2",
