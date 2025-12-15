@@ -14,17 +14,17 @@ jobs:
     env:
       target_branch: "dev" # Default to dev branch
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Adjust target branch for environment
       if: endsWith(github.ref, '/main') # If the commit is in
       run: |
         echo "target_branch=main" >> $GITHUB_ENV
     - name: Update CMS branch configuration
-      uses: mikefarah/yq@v4.45.1
+      uses: mikefarah/yq@v4.50.1
       with:
         cmd: yq eval -i '.backend.branch = "${{ env.target_branch }}"' src/admin/config.yml
     - name: Commit changes
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: "chore: update CMS branch configuration"
         file_pattern: src/admin/config.yml

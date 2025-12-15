@@ -24,7 +24,8 @@ To contribute, please be sure to review our development processes as documented 
 To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
 
 Then, clone the project from GitHub. [Create a fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-with your GitHub account, then enter the following in your command line (make sure to replace `your-username` with your username):
+with your GitHub account, then enter the following in your command line (make
+sure to replace `your-username` with your username):
 
 ```bash
 git clone https://github.com/your-username/wecount.inclusivedesign.ca.git
@@ -115,7 +116,7 @@ The `Event` React component is created in [src/admin/cms.js](https://github.com/
 based on a technique demonstrated in [Andy Bell's Hylia Eleventy starter kit](https://github.com/hankchizljaw/hylia):
 
 1. The site's Nunjucks templates are [precompiled](https://mozilla.github.io/nunjucks/api.html#precompiling) and copied
-   to the admin directory of the built site (Eleventy handles this [here](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/src/admin/admin.11ty.js)).
+   to the admin directory of the built site (Eleventy [handles this here](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/src/admin/admin.11ty.js)).
 2. A generic [`Preview`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/277cb52c0e7880bf400ab6f827c4b705080c9f73/src/admin/cms.js#L25-L30)
    React component accepts a data object and a Nunjucks template path, renders the Nunjucks template with the supplied
    data using [Nunjucks Slim](https://mozilla.github.io/nunjucks/getting-started.html#when-in-the-browser), and outputs
