@@ -78,11 +78,19 @@ The Future of Work and Disability had expert collaborators many of whom identify
 
 
 
+
+
+
+
 [FWD Findings Report (English PDF)](https://wecount.inclusivedesign.ca/uploads/fwd-findings-report_english_accessible.pdf)
 
 [FWD Findings Report (English doc)](https://wecount.inclusivedesign.ca/uploads/future-of-work-and-disability-findings-report-2.docx)
 
 [L’avenir du travail et les personnes handicapées (French doc)](https://wecount.inclusivedesign.ca/uploads/fr-future-of-work-and-disability-findings-report-2.docx)
+
+
+
+
 
 
 
@@ -101,38 +109,15 @@ In addition to our report to Accessibility Standards Canada, we created:
 * **Badges that can be used by learners to demonstrate their proficiency in the field**
 * **A learning program that will be publicly available at the close of the project**
 
-# Badges
-
-{% imageAndText "/uploads/Badges_final_LEARNER-300x300.png", "We Count Learner badge", "", "left", "top" %}
-
-
-
-
-
-
-
-[AI Employment Systems Learner badge](https://factory.cancred.ca/c/earnablebadge/QSXG1Wa7B4SaBI/apply)
-
-[AI Hiring System Policies Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply)
-
-[Inclusive AI for HR Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ53Ua7B4SaN8/apply)
-
-
-
-
-
-
-
-{% endimageAndText %}
-
 # Webinar Series
 
 In these four webinars, we explore, understand and draw insights into how artificial intelligence and other "smart" technologies affect persons with disabilities and limit or improve their opportunities and well-being concerning employment. The speakers are experts in employment, artificial intelligence, automation, smart systems, policy, privacy and security areas. We have centred our attention on four theme areas:
 
-1. AI Employment Systems
-2. AI Hiring System Policies
-3. AI Lifecycle and Ethics
-4. Inclusive AI for HR
+1. [AI Employment Systems](https://youtu.be/C_2lFeH9y2I)
+2. [AI Hiring System Policies](https://youtu.be/Tq230FBgoiU)
+3. [AI Lifecycle and Ethics](https://youtu.be/0TJiM6xziWQ)
+4. [Inclusive AI for HR](https://youtu.be/0fBqJgt_w2E)
+5. [Making AI Inclusive for Hiring and HR](https://www.youtube.com/watch?v=zVXL-HhydFo)
 
 ## AI Employment Systems Webinar
 
@@ -160,7 +145,15 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
+
+
+
 **Anhong Guo** is an Assistant Professor in Computer Science & Engineering at the University of Michigan. He has also worked in the Ability and Intelligent User Experiences groups in Microsoft Research, the HCI group of Snap Research, the Accessibility Engineering team at Google, and the Mobile Innovation Center of SAP America.
+
+
+
+
 
 
 
@@ -202,7 +195,15 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
+
+
+
 **Shari Trewin** manages the IBM Accessibility Leadership Team, chairs the Association for Computing Machinery (ACM) Special Interest Group on Accessible Computing (SIGACCESS), and is a Distinguished Scientist of the ACM, a member of ACM’s Diversity and Inclusion Council.
+
+
+
+
 
 
 
@@ -244,7 +245,15 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
+
+
+
 **Ben Tamblyn** is the Director of Inclusive Design at Microsoft. Ben has worked in a wide range of marketing, design and technical roles, and has a passion for design, inclusion and potential impact of technology on the world.
+
+
+
+
 
 
 
@@ -286,7 +295,15 @@ In the technological age, AI, smart systems and automation promise a more inclus
 
 
 
+
+
+
+
 **Chancey Fleet** was a 2018–19 Data & Society Fellow and is currently an Affiliate-in-Residence whose writing, organizing and advocacy aims to catalyze critical inquiry into how cloud-connected accessibility tools benefit and harm, empower and expose disability communities. Chancey is also the Assistive Technology Coordinator at the New York Public Library.
+
+
+
+
 
 
 
@@ -415,7 +432,15 @@ In this presentation, we explore the best policies and practices that both tech 
 
 
 
+
+
+
+
 ****Alexandra Reeve Givens**** is the CEO of the Center for Democracy & Technology, a leading U.S. think tank that focuses on protecting democracy and individual rights in the digital age. The organization works on a wide range of tech policy issues, including consumer privacy to data and discrimination, free expression, surveillance, internet governance and competition.
+
+
+
+
 
 
 
@@ -457,7 +482,15 @@ In this presentation, we explore the best policies and practices that both tech 
 
 
 
+
+
+
+
 **Julia Stoyanovich** is an Assistant Professor of Computer Science and Engineering and of Data Science at New York University. Julia’s research focuses on responsible data management and analysis, including operationalizing fairness, diversity, transparency and data protection in all stages of the data science lifecycle. She is the founding director of the Center for Responsible AI at NYU, a comprehensive laboratory that is building a future in which responsible AI will be the only kind of AI accepted by society.
+
+
+
+
 
 
 
@@ -482,8 +515,6 @@ In this presentation, we explore the best policies and practices that both tech 
 ### Moderator
 
 **Dr. Vera Roberts,** Inclusive Design Research Centre
-
-{% youtube "https://www.youtube.com/embed/Tq230FBgoiU" %}
 
 ### Summary
 
@@ -530,17 +561,9 @@ Stoyanovich argues that bias in the data can be construed as a distortion of ref
 
 For Stoyanovich, bias in predictive analytics raises a few questions: “What’s the source of the data? What happens to it inside the black box? And how are the results used?” Bias in ADS is represented as a three-headed dragon. Namely, pre-existing or societal bias; technical and emergent.
 
-### Earn a Learner badge
+### Learn More
 
-You will learn:
-
-* How legal frameworks and public policies can act against structural discrimination in candidate selection on the basis of disability
-* About the challenges to policy regulations for AI hiring systems
-
-Learn and earn badges from this event:
-
-1. Watch the accessible [AI Hiring System Policies webinar](https://youtu.be/Tq230FBgoiU) 
-2. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QSZ1I6a7B4SaM8/apply) (five short answer questions)
+Watch the accessible [AI Hiring System Policies webinar](https://youtu.be/Tq230FBgoiU) 
 
 ## AI Lifecycle and Ethics Webinar
 
@@ -549,6 +572,10 @@ This webinar focused on employment, disability and artificial intelligence polic
 ### Guest Speaker
 
 {% imageAndText "/uploads/Abhishek-Gupta.png", "A photo of Abhishek Gupta", "", "left", "top" %}
+
+
+
+
 
 
 
@@ -588,9 +615,11 @@ This webinar focused on employment, disability and artificial intelligence polic
 
 
 
-{% endimageAndText %}
 
-{% youtube "https://www.youtube.com/embed/0TJiM6xziWQ" %}
+
+
+
+{% endimageAndText %}
 
 ### S﻿ummary
 
@@ -643,6 +672,10 @@ Traceability and auditability — the ability to audit is hampered if things are
 
 Machine learning security — thought must be given to machine learning security.
 
+### Learn More
+
+Watch the[ Bias in Candidate Selection](https://www.youtube.com/watch?v=0TJiM6xziWQ) [](https://www.youtube.com/watch?v=0TJiM6xziWQ)Webinar
+
 ## Inclusive AI for HR Webinar
 
 In this webinar, our panel discussion highlighted some of the potential problems that AI raises in the hiring process and brainstormed ideas to make this process more inclusive for persons with disabilities.
@@ -669,7 +702,15 @@ In this webinar, our panel discussion highlighted some of the potential problems
 
 
 
+
+
+
+
 **Shea Tanis** is the Director for Policy and Advocacy at the Coleman Institute for Cognitive Disabilities at the University of Colorado. She is nationally recognized for her expertise in applied cognitive technology supports, cognitive accessibility and advancing the rights of people with cognitive disabilities to technology and information access.
+
+
+
+
 
 
 
@@ -783,9 +824,11 @@ In this webinar we learned about [nugget.ai](https://www.nugget.ai/)’s operati
 
 {% imageAndText "/uploads/nugget.jpg", "nugget.ai logo", "", "left", "top" %}
 
+
 **Marian Pitel** is Head of Research at nugget.ai, completing a Doctor of Philosophy degree in Organizational Psychology.
 
 **Melisa Pike** is Product and Research Associate at nugget.ai, completing a Doctor of Philosophy degree in Organizational Psychology.
+
 
 {% endimageAndText %}
 
@@ -794,3 +837,7 @@ In this webinar we learned about [nugget.ai](https://www.nugget.ai/)’s operati
 Marian Pitel and Melissa Pike, members of [nugget.ai](https://www.nugget.ai/)’s science team, guided the presentation and activity, taking turns explaining key stages in [nugget.ai](https://www.nugget.ai/)’s operations and highlighting decisions and considerations that the [nugget.ai](https://www.nugget.ai/) team have had to make at these stages.
 
 At each stage, Marian and Melissa worked with the whole group in identifying the advantages of [nugget.ai](https://www.nugget.ai/)’s approach and any areas of opportunities. The participants were encouraged to reflect on nugget.ai’s business decisions, leaning on lessons that have emerged from the study group’s previous modules.
+
+### Learn More
+
+Watch the accessible [Making AI Inclusive for Hiring and HR](https://www.youtube.com/watch?v=zVXL-HhydFo) with nugget.ai
