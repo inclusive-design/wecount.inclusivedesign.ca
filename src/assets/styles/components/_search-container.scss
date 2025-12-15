@@ -5,10 +5,10 @@
 	button {
 		appearance: none;
 		background: transparent;
-		block-size: rem(44);
+		block-size: calc(44 / 16 * 1rem);
 		border: 0;
 		border-radius: 50%;
-		inline-size: rem(44);
+		inline-size: calc(44 / 16 * 1rem);
 		position: absolute;
 	}
 
@@ -17,22 +17,22 @@
 	}
 
 	button:focus {
-		box-shadow: 0 0 0 rem(2) #000 inset;
+		box-shadow: 0 0 0 calc(2 / 16 * 1rem) #000 inset;
 	}
 
 	svg {
-		block-size: rem(32);
+		block-size: calc(32 / 16 * 1rem);
 		fill: $white;
-		inline-size: rem(32);
+		inline-size: calc(32 / 16 * 1rem);
 	}
 
 	input[type="search"] {
 		border: 0;
 		border-radius: 50%;
-		font-size: rem(14);
-		inline-size: rem(16);
+		font-size: calc(14 / 16 * 1rem);
+		inline-size: calc(16 / 16 * 1rem);
 		outline: none;
-		padding-block: rem(8);
-		padding-inline: rem(16);
+		padding-block: calc(8 / 16 * 1rem);
+		padding-inline: calc(16 / 16 * 1rem);
 	}
 }

@@ -1,21 +1,21 @@
 .idrc-indicator-wrapper {
 	background-color: #f4f8fc;
-	font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+	font-family: var(--font-alternate);
 }
 
 .idrc-indicator {
-	max-inline-size: $max-width-margins;
-	padding-block-end: rem(30);
-	padding-block-start: rem(60);
+	max-inline-size: var(--content-max);
+	padding-block-end: calc(20 / 16 * 1rem);
+	padding-block-start: calc(20 / 16 * 1rem);
 }
 
 .idrc-indicator-element {
 	align-items: center;
 	display: flex;
-	font-size: rem(16);
-	line-height: rem(20);
+	font-size: calc(16 / 16 * 1rem);
+	line-height: calc(20 / 16 * 1rem);
 	padding-block: 0;
-	padding-inline: rem(24);
+	padding-inline: calc(24 / 16 * 1rem);
 }
 
 .idrc-indicator-element svg {
@@ -27,9 +27,9 @@
 	text-decoration: underline;
 }
 
-@include breakpoint-up(md) {
+@media screen and (width >= 47.5rem) {
 	.idrc-indicator-element {
-		line-height: rem(21);
-		padding-inline: rem(96);
+		line-height: calc(21 / 16 * 1rem);
+		padding-inline: calc(96 / 16 * 1rem);
 	}
 }

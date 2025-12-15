@@ -7,11 +7,11 @@
 	}
 
 	.description {
-		margin-block-end: rem(100);
+		margin-block-end: calc(100 / 16 * 1rem);
 
 		h3 {
-			border-block-end: rem(5) solid $gold;
-			line-height: rem(60);
+			border-block-end: calc(5 / 16 * 1rem) solid $gold;
+			line-height: calc(60 / 16 * 1rem);
 		}
 	}
 }

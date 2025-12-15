@@ -1,21 +1,21 @@
 .homepage-cards {
 	display: flex;
 	flex-direction: column;
-	gap: rem(38);
+	gap: calc(38 / 16 * 1rem);
 	justify-content: flex-start;
-	padding-block: rem(58);
+	padding-block: calc(58 / 16 * 1rem);
 
 	.card {
 		aspect-ratio: 271 / 476;
 		background-color: $white;
 		background-repeat: no-repeat;
-		border: rem(1) solid transparent;
-		border-radius: rem(10);
-		box-shadow: 0 rem(4) rem(4) rgba(0 0 0 / 25%);
-		font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
+		border: calc(1 / 16 * 1rem) solid transparent;
+		border-radius: calc(10 / 16 * 1rem);
+		box-shadow: 0 calc(4 / 16 * 1rem) calc(4 / 16 * 1rem) rgba(0 0 0 / 25%);
+		font-family: "Montserrat Alternates", Montserrat, var(--font-alternate);
 		inline-size: 100%;
-		max-block-size: rem(501.74);
-		max-inline-size: rem(285.53);
+		max-block-size: calc(501.74 / 16 * 1rem);
+		max-inline-size: calc(285.53 / 16 * 1rem);
 		position: relative;
 		text-align: center;
 
@@ -27,7 +27,9 @@
 
 		&:hover,
 		&:has(a:focus) {
-			box-shadow: 0 0 0 rem(2) $black, rem(10) rem(10) rem(10) rgba(0 0 0 / 25%);
+			box-shadow:
+				0 0 0 calc(2 / 16 * 1rem) $black,
+				calc(10 / 16 * 1rem) calc(10 / 16 * 1rem) calc(10 / 16 * 1rem) rgba(0 0 0 / 25%);
 		}
 
 		a::after {
@@ -43,8 +45,8 @@
 		p {
 			color: hsl(0deg 0% 0% / 100%);
 			margin-block-end: unset;
-			margin-block-start: rem(15);
-			margin-inline: rem(19);
+			margin-block-start: calc(15 / 16 * 1rem);
+			margin-inline: calc(19 / 16 * 1rem);
 			text-align: start;
 		}
 
@@ -56,7 +58,7 @@
 			a {
 				color: hsl(0deg 0% 0% / 100%);
 				display: inline-block;
-				font-size: rem(30);
+				font-size: calc(30 / 16 * 1rem);
 				font-weight: 600;
 
 				&:hover,
@@ -67,9 +69,9 @@
 		}
 
 		p {
-			font-size: rem(20);
+			font-size: calc(20 / 16 * 1rem);
 			font-weight: 400;
-			line-height: rem(28);
+			line-height: calc(28 / 16 * 1rem);
 		}
 
 		.card__content {
@@ -153,7 +155,7 @@
 		background-color: $yellow;
 
 		a div {
-			margin-block-start: rem(4);
+			margin-block-start: calc(4 / 16 * 1rem);
 		}
 
 		.cls-1 {
@@ -212,17 +214,17 @@
 	}
 }
 
-@include breakpoint-up(md) {
+@media screen and (width >= 47.5rem) {
 	.homepage-cards {
 		display: grid;
-		grid-template-columns: repeat(2, rem(285.53));
+		grid-template-columns: repeat(2, calc(285.53 / 16 * 1rem));
 	}
 }
 
 // enough width to fit 4 cards in a row with paddings
-@media only screen and (min-width: 1448px) {
+@media only screen and (width >= 90.4375rem) {
 	.homepage-cards {
-		grid-template-columns: repeat(4, rem(285.53));
+		grid-template-columns: repeat(4, calc(285.53 / 16 * 1rem));
 	}
 }
 

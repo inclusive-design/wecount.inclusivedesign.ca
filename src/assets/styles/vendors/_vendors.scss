@@ -4,7 +4,15 @@
 
 .fl-panelBar-wideScreen {
 	margin: auto;
-	max-inline-size: rem(1600);
+	max-inline-size: calc(1600 / 16 * 1rem);
+}
+
+header > .fl-prefsEditor-separatedPanel {
+	border-block-end: none;
+}
+
+header > .fl-prefsEditor-separatedPanel .fl-panelBar {
+	background-color: var(--fl-bgColor, #f4f8fc);
 }
 
 // UIO button style by default
@@ -15,20 +23,20 @@
 	.fl-prefsEditor-buttons {
 		background: $white;
 		border: none;
-		border-radius: 0 0 rem(30) rem(30);
+		border-radius: 0 0 calc(30 / 16 * 1rem) calc(30 / 16 * 1rem);
 		box-shadow: $border-shadow-light;
 		box-sizing: border-box;
-		max-block-size: rem(50);
-		padding-block: rem(10);
-		padding-inline: rem(20);
+		max-block-size: calc(50 / 16 * 1rem);
+		padding-block: calc(10 / 16 * 1rem);
+		padding-inline: calc(20 / 16 * 1rem);
 
 		button {
 			color: $black;
 			font-family: Roboto, sans-serif;
-			font-size: rem(16);
+			font-size: calc(16 / 16 * 1rem);
 			font-style: normal;
-			font-weight: $font-weight-bold;
-			line-height: rem(19);
+			font-weight: var(--font-weight-bold);
+			line-height: calc(19 / 16 * 1rem);
 
 			&:hover,
 			&:focus {
@@ -45,9 +53,9 @@
 
 // UIO button style when enhance inputs is turned on
 .fl-input-enhanced #defaultContainer .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
-	block-size: rem(88);
+	block-size: calc(88 / 16 * 1rem);
 	display: inline-block;
-	max-block-size: rem(88);
+	max-block-size: calc(88 / 16 * 1rem);
 	padding: 0;
 
 	button {
@@ -56,15 +64,15 @@
 
 	.fl-prefsEditor-reset {
 		border: none;
-		margin-inline-start: rem(9);
-		padding-block: rem(5) rem(1);
+		margin-inline-start: calc(9 / 16 * 1rem);
+		padding-block: calc(5 / 16 * 1rem) calc(1 / 16 * 1rem);
 	}
 
 	.fl-prefsEditor-showHide[aria-expanded="false"] {
 		display: block;
-		margin-block: rem(23) 0;
+		margin-block: calc(23 / 16 * 1rem) 0;
 		margin-inline: auto;
-		padding-block: rem(10);
+		padding-block: calc(10 / 16 * 1rem);
 		padding-inline: 0;
 		word-spacing: -2px;
 	}
@@ -72,29 +80,29 @@
 	.fl-prefsEditor-showHide[aria-expanded="true"] {
 		border-block-end: 2px solid #ccc;
 		inline-size: 97%;
-		margin-inline-start: rem(5);
-		padding-block: rem(10) rem(15);
-		padding-inline: rem(10) 0;
+		margin-inline-start: calc(5 / 16 * 1rem);
+		padding-block: calc(10 / 16 * 1rem) calc(15 / 16 * 1rem);
+		padding-inline: calc(10 / 16 * 1rem) 0;
 	}
 }
 
 // UIO table of content
 .flc-toc-tocContainer {
-	padding-block: rem(0);
-	padding-inline: rem(27);
+	padding-block: calc(0 / 16 * 1rem);
+	padding-inline: calc(27 / 16 * 1rem);
 
 	.flc-toc-header {
-		margin-block-end: rem(16);
+		margin-block-end: calc(16 / 16 * 1rem);
 	}
 
 	// The list style for h1: solid circle
 	ul {
 		list-style: none;
-		margin-inline-start: rem(16);
+		margin-inline-start: calc(16 / 16 * 1rem);
 
 		a {
 			color: $navy-light;
-			font-weight: $font-weight-semibold;
+			font-weight: var(--font-weight-semibold);
 		}
 	}
 
@@ -103,8 +111,8 @@
 		content: "\25CF";
 		display: inline-block;
 		font-size: 120%;
-		inline-size: rem(10);
-		margin-inline-start: rem(-16);
+		inline-size: calc(10 / 16 * 1rem);
+		margin-inline-start: -1rem;
 	}
 
 	// The list style for h2 and other heading levels: empty circle
@@ -114,24 +122,356 @@
 }
 
 // To adapt to UIO contrast themes
-@each $theme, $fColor, $bColor in $uio-themes {
-	.fl-theme-#{$theme}, .gpii-ext-theme-#{$theme} {
-		@include adapt-to-uio-themes($fColor, $bColor);
+[class^="fl-theme-"],
+[class^="gpii-ext-theme-"] {
+	// WeCount logo
+	.logo path {
+		fill: none;
+		stroke: var(--fColor, currentcolor);
+		stroke-linecap: round;
+		stroke-width: calc(3 / 16 * 1rem);
 	}
+
+	// Placeholder images on the "initiatives" page
+	svg.placeholder-img use {
+		stroke: var(--fColor, currentcolor);
+		stroke-linecap: round;
+		stroke-width: calc(3 / 16 * 1rem);
+	}
+
+	// Filter
+	.filter {
+		.filter-checkbox {
+			// Box
+			& + label::before,
+			& + span::before {
+				outline: calc(1 / 16 * 1rem) solid var(--fColor);
+			}
+
+			// Checkmark
+			&:checked + label::after,
+			&:checked + span::after {
+				color: var(--bColor);
+			}
+		}
+
+		// "Expand filter" button
+		.filter-expand-button {
+			--expand-button-color: var(--bColor);
+			--expand-button-stroke-color: var(--fColor);
+
+			background-color: var(--bColor) !important;
+
+			svg {
+				background-color: var(--bColor) !important;
+			}
+
+			&:focus,
+			&:hover {
+				--expand-button-color: var(--fColor);
+				--expand-button-stroke-color: var(--bColor);
+			}
+		}
+
+		// Apply and reset buttons
+		.filter-buttons {
+			background-color: $grey-lighter;
+		}
+	}
+
+	// Custom styles when "enhance inputs" is enabled
+	&.fl-input-enhanced .filter-checkbox + label::before,
+	&.fl-input-enhanced .filter-checkbox + span::before {
+		outline: calc(3 / 16 * 1rem) double var(--fColor);
+	}
+
+	// Box checked
+	.filter .filter-checkbox:checked + label::before,
+	.filter .filter-checkbox:checked + span::before {
+		background: var(--fColor);
+	}
+
+	// Box focus
+	.filter .filter-checkbox:focus + label::before,
+	.filter .filter-checkbox:hover + label::before,
+	.filter .filter-checkbox:focus + span::before,
+	.filter .filter-checkbox:hover + span::before {
+		outline: calc(2.5 / 16 * 1rem) solid var(--fColor);
+	}
+
+	// Box focus when "enhance inputs" is enabled
+	&.fl-input-enhanced .filter-checkbox:focus + label::before,
+	&.fl-input-enhanced .filter-checkbox:hover + label::before,
+	&.fl-input-enhanced .filter-checkbox:focus + span::before,
+	&.fl-input-enhanced .filter-checkbox:hover + span::before {
+		border: calc(2.5 / 16 * 1rem) solid var(--fColor);
+		outline: calc(3.5 / 16 * 1rem) double var(--fColor);
+	}
+
+	// Box checked and focus/hover
+	.filter .filter-checkbox:checked:focus + label::before,
+	.filter .filter-checkbox:checked:hover + label::before,
+	.filter .filter-checkbox:checked:focus + span::before,
+	.filter .filter-checkbox:checked:hover + span::before {
+		outline: calc(3 / 16 * 1rem) double var(--fColor);
+	}
+
+	// Box checked and focus/hover when "enhance inputs" is enabled
+	&.fl-input-enhanced .filter-checkbox:checked:focus + label::before,
+	&.fl-input-enhanced .filter-checkbox:checked:hover + label::before,
+	&.fl-input-enhanced .filter-checkbox:checked:focus + span::before,
+	&.fl-input-enhanced .filter-checkbox:checked:hover + span::before {
+		border: calc(1 / 16 * 1rem) solid var(--bColor);
+		box-shadow: 0 0 0 calc(1 / 16 * 1rem) var(--fColor) inset;
+		outline: calc(3 / 16 * 1rem) double var(--fColor);
+	}
+
+	// Tags
+	.tags {
+		a,
+		p {
+			box-shadow: 0 0 0 calc(1 / 16 * 1rem) currentcolor inset;
+		}
+
+		a:focus,
+		a:hover {
+			box-shadow: 0 0 0 calc(2 / 16 * 1rem) currentcolor inset;
+		}
+	}
+
+	// Tile item
+	.tile-item {
+		box-shadow: calc(0 / 16 * 1rem) calc(0 / 16 * 1rem) calc(7 / 16 * 1rem) currentcolor;
+
+		&:hover {
+			box-shadow: 0 0 calc(35 / 16 * 1rem) currentcolor;
+		}
+	}
+
+	// Initiative Page
+	.disabled-element,
+	.submitted-comment {
+		opacity: 0.7;
+	}
+
+	// Focus/hover styles for SVGs on the footer
+	footer .footer-content {
+		// Logos on the footer
+		.funders a,
+		.footer-logos a {
+			padding: calc(5 / 16 * 1rem);
+		}
+
+		// Social media icons
+		.social-media .social-media-icons a {
+			svg path {
+				fill: currentcolor;
+				stroke: var(--bColor);
+			}
+
+			&:hover,
+			&:focus {
+				svg path {
+					fill: var(--bColor);
+					stroke: currentcolor;
+				}
+			}
+		}
+	}
+
+	// Side Menu
+	#defaultContainer aside nav ul {
+		box-shadow: calc(1 / 16 * 1rem) 0 0 0 currentcolor inset;
+
+		li {
+			box-shadow: calc(1 / 16 * 1rem) 0 0 0 currentcolor inset;
+
+			&:active {
+				box-shadow: calc(5 / 16 * 1rem) 0 0 0 currentcolor inset;
+			}
+		}
+
+		li.active {
+			box-shadow: calc(5 / 16 * 1rem) 0 0 0 currentcolor inset;
+		}
+	}
+
+	// Focus/hover styles for links
+	#defaultContainer a:focus,
+	#defaultContainer a:hover,
+	#defaultContainer header .site-nav-wrapper .site-nav nav a:focus,
+	#defaultContainer header .site-nav-wrapper .site-nav nav a:hover,
+	.search-container input,
+	button:not(.filter-expand-button):focus,
+	button:not(.filter-expand-button):hover,
+	#comment-form button,
+	#comment-form button::before,
+	li .pagination-link,
+	li .pagination-link::before {
+		box-shadow: 0 0 0 calc(2 / 16 * 1rem) currentcolor inset;
+	}
+
+	#defaultContainer {
+		// UIO buttons
+		.fl-prefsEditor-buttons button {
+			padding-inline: calc(3 / 16 * 1rem);
+		}
+
+		// Pagination on the contrast theme: previous, next, current page
+		.content-wrapper main .pagination .pagination-list {
+			.pagination-next,
+			.pagination-previous,
+			li a[aria-current="page"]::before {
+				box-shadow: none;
+			}
+		}
+
+		.content-wrapper main .pagination .pagination-list li a[aria-current="page"] {
+			background-color: var(--fColor) !important; // Enactors.css in infusion uses !important on this element
+			box-shadow: none;
+			color: var(--bColor) !important; // Enactors.css in infusion uses !important on this element
+			&:hover,
+			&:focus {
+				box-shadow:
+					0 0 0 calc(4 / 16 * 1rem) var(--bColor),
+					0 0 0 calc(6 / 16 * 1rem) var(--fColor);
+			}
+		}
+
+		// Home page cards: hide background images and adjust box shadows on UIO contrast themes
+		.card {
+			background-image: none;
+			box-shadow: 0 calc(4 / 16 * 1rem) calc(4 / 16 * 1rem) currentcolor;
+
+			&:focus,
+			&:hover {
+				box-shadow: calc(10 / 16 * 1rem) calc(10 / 16 * 1rem) calc(10 / 16 * 1rem) currentcolor;
+			}
+		}
+	}
+
+	// The search container on the "Initiatives" page
+	.initiatives .search-container {
+		svg {
+			fill: currentcolor;
+		}
+
+		input[type="search"] {
+			border: none;
+		}
+
+		::placeholder {
+			color: var(--fColor);
+		}
+	}
+
+	// Outlines for the main Search input and Subscribe button
+	header .search-container input[type="search"],
+	footer .footer-content .subscribe a {
+		border-style: solid;
+		border-width: calc(2 / 16 * 1rem);
+	}
+
+	// Hide ellipsis when a post excerpt is fully displayed
+	.news-grid .api-content .recount-item .preview-content::after {
+		background: var(--bColor);
+	}
+
+	// Resources page: adjust outlines of topic tiles; hide SVGs on topic tiles
+	.resources {
+		.search-container {
+			input {
+				box-shadow: 0 0 0.4375rem currentcolor;
+			}
+
+			svg {
+				fill: currentcolor;
+			}
+		}
+
+		.filter .topic-choices li {
+			.topic-title {
+				border: 1px solid var(--fColor);
+				display: block;
+
+				svg {
+					display: none;
+				}
+			}
+
+			// when the topic card gains the hover, apply the hover style to the checkbox
+			&:hover .topic-checkbox span::before {
+				outline: calc(2.5 / 16 * 1rem) solid currentcolor;
+			}
+		}
+	}
+
+	// UIO table of content
+	.flc-toc-tocContainer ul li::before {
+		color: var(--fColor);
+	}
+}
+
+.fl-theme-bw,
+.gpii-ext-theme-bw {
+	--fColor: #000;
+	--bColor: #fff;
+}
+
+.fl-theme-wb,
+.gpii-ext-theme-wb {
+	--fColor: #fff;
+	--bColor: #000;
+}
+
+.fl-theme-yb,
+.gpii-ext-theme-yb {
+	--fColor: #ff0;
+	--bColor: #000;
+}
+
+.fl-theme-by,
+.gpii-ext-theme-by {
+	--fColor: #000;
+	--bColor: #ff0;
+}
+
+.fl-theme-lgdg,
+.gpii-ext-theme-lgdg {
+	--fColor: #bdbdbb;
+	--bColor: #555;
+}
+
+.fl-theme-gd,
+.gpii-ext-theme-gd {
+	--fColor: #888;
+	--bColor: #222;
+}
+
+.fl-theme-gw,
+.gpii-ext-theme-gw {
+	--fColor: #6c6c6c;
+	--bColor: #fff;
+}
+
+.fl-theme-bbr,
+.gpii-ext-theme-bbr {
+	--fColor: #000;
+	--bColor: #b96;
 }
 
 // This media query breakpoint comes from the infusion preferences framework for UIO in order to customize UIO button
 // styles on desktop and mobile.
-@include breakpoint-up(sm) {
+@media screen and (width >= 40rem) {
 	#defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons button {
-		font-size: rem(16);
+		font-size: calc(16 / 16 * 1rem);
 	}
 
 	.fl-input-enhanced #defaultContainer header .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
 		block-size: auto;
 		display: block;
-		padding-block: rem(10);
-		padding-inline: rem(20);
+		padding-block: calc(10 / 16 * 1rem);
+		padding-inline: calc(20 / 16 * 1rem);
 
 		button {
 			font-size: 125% !important;
@@ -139,34 +479,34 @@
 
 		button:not(.fl-prefsEditor-reset) {
 			margin-block: 0;
-			margin-inline: rem(8);
+			margin-inline: calc(8 / 16 * 1rem);
 		}
 
 		.fl-prefsEditor-reset {
 			padding-block: 0;
-			padding-inline: rem(3);
-			padding-inline-start: rem(12.8);
+			padding-inline: calc(3 / 16 * 1rem);
+			padding-inline-start: calc(12.8 / 16 * 1rem);
 		}
 
 		.fl-prefsEditor-showHide[aria-expanded="true"] {
 			border: none;
 			inline-size: unset;
 			padding-block: 0;
-			padding-inline: rem(3);
+			padding-inline: calc(3 / 16 * 1rem);
 		}
 
 		.fl-prefsEditor-showHide[aria-expanded="false"] {
 			margin-block-start: 0;
 			padding-block: 0;
-			padding-inline: rem(3);
+			padding-inline: calc(3 / 16 * 1rem);
 		}
 	}
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	// UIO table of content
 	.flc-toc-tocContainer {
-		padding-block: rem(1);
-		padding-inline: rem(60);
+		padding-block: calc(1 / 16 * 1rem);
+		padding-inline: calc(60 / 16 * 1rem);
 	}
 }

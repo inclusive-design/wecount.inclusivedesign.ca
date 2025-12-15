@@ -1,6 +1,6 @@
 .brand {
 	block-size: auto;
-	inline-size: rem(72);
+	inline-size: calc(72 / 16 * 1rem);
 
 	a {
 		align-items: center;
@@ -11,17 +11,17 @@
 	}
 
 	.logo {
-		block-size: rem(90);
-		inline-size: rem(90);
+		block-size: calc(90 / 16 * 1rem);
+		inline-size: calc(90 / 16 * 1rem);
 	}
 
 	.logotype {
-		block-size: rem(32);
-		inline-size: rem(200);
+		block-size: calc(32 / 16 * 1rem);
+		inline-size: calc(200 / 16 * 1rem);
 	}
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	.brand {
 		a {
 			display: inline-flex;

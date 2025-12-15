@@ -1,7 +1,7 @@
 .pagination {
 	display: block;
-	line-height: rem(38);
-	margin-block-start: rem(27);
+	line-height: calc(38 / 16 * 1rem);
+	margin-block-start: calc(27 / 16 * 1rem);
 	margin-inline: -10%;
 	padding: 0;
 	text-align: center;
@@ -13,38 +13,38 @@
 
 	.previous,
 	.next {
-		block-size: rem(65);
+		block-size: calc(65 / 16 * 1rem);
 	}
 
 	.previous {
-		margin-inline-end: rem(6);
+		margin-inline-end: calc(6 / 16 * 1rem);
 	}
 
 	.next {
-		margin-inline-start: rem(6);
+		margin-inline-start: calc(6 / 16 * 1rem);
 	}
 
 	.pagination-link {
 		background-color: $green-light;
-		block-size: rem(45);
+		block-size: calc(45 / 16 * 1rem);
 		border: 0;
 		border-radius: 100%;
-		box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
+		box-shadow: 0 0 0 calc(2 / 16 * 1rem) $blue-alt-light inset;
 		color: $green-dark;
 		float: left;
-		font-size: rem(18);
+		font-size: calc(18 / 16 * 1rem);
 		font-weight: 400;
-		inline-size: rem(45);
-		line-height: rem(45);
-		margin-block: rem(10);
-		margin-inline: rem(3);
-		transform: perspective(rem(5)) translateZ(0);
+		inline-size: calc(45 / 16 * 1rem);
+		line-height: calc(45 / 16 * 1rem);
+		margin-block: calc(10 / 16 * 1rem);
+		margin-inline: calc(5 / 16 * 1rem);
+		transform: perspective(calc(5 / 16 * 1rem)) translateZ(0);
 	}
 
 	.pagination-link::before {
 		block-size: 100%;
 		border-radius: 100%;
-		box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
+		box-shadow: 0 0 0 calc(2 / 16 * 1rem) $blue-alt-light inset;
 		content: "";
 		inline-size: 100%;
 		left: 0;
@@ -56,17 +56,17 @@
 	.pagination-link:hover::before,
 	.pagination-link:focus::before,
 	.pagination-link:active::before {
-		left: rem(4);
-		top: rem(4);
+		left: calc(4 / 16 * 1rem);
+		top: calc(4 / 16 * 1rem);
 	}
 
 	.pagination-ellipsis {
-		margin-block: rem(9);
-		margin-inline: rem(0);
+		margin-block: calc(9 / 16 * 1rem);
+		margin-inline: calc(0 / 16 * 1rem);
 
 		span {
 			color: $blue-alt;
-			font-size: rem(18);
+			font-size: calc(18 / 16 * 1rem);
 		}
 	}
 
@@ -75,10 +75,10 @@
 
 		a.is-current {
 			background-color: $green-pale;
-			box-shadow: 0 0 0 rem(2) $green-dark inset;
+			box-shadow: 0 0 0 calc(2 / 16 * 1rem) $green-dark inset;
 
 			&::before {
-				box-shadow: 0 0 0 rem(2) $green-dark inset;
+				box-shadow: 0 0 0 calc(2 / 16 * 1rem) $green-dark inset;
 			}
 		}
 	}
@@ -96,14 +96,14 @@
 	.pagination-previous {
 		color: $green-dark;
 		float: left;
-		line-height: rem(45);
-		margin-block: rem(10);
-		margin-inline: rem(5);
+		line-height: calc(45 / 16 * 1rem);
+		margin-block: calc(10 / 16 * 1rem);
+		margin-inline: calc(5 / 16 * 1rem);
 
 		svg {
-			block-size: rem(24);
+			block-size: calc(24 / 16 * 1rem);
 			fill: none;
-			inline-size: rem(14);
+			inline-size: calc(14 / 16 * 1rem);
 			stroke: currentcolor;
 			stroke-width: 2;
 		}
@@ -130,30 +130,24 @@
 	}
 }
 
-@include breakpoint-up(xs) {
-	.pagination .pagination-link {
-		margin-inline: rem(5);
-	}
-}
-
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	.pagination {
-		line-height: rem(35);
-		margin-block-start: rem(62);
+		line-height: calc(35 / 16 * 1rem);
+		margin-block-start: calc(62 / 16 * 1rem);
 		margin-inline: auto;
 
 		.previous,
 		.next {
 			margin-block: 0;
-			margin-inline: rem(20);
+			margin-inline: calc(20 / 16 * 1rem);
 		}
 
 		.pagination-ellipsis {
-			margin-block: rem(4);
-			margin-inline: rem(0);
+			margin-block: calc(4 / 16 * 1rem);
+			margin-inline: calc(0 / 16 * 1rem);
 
 			span {
-				font-size: rem(24);
+				font-size: calc(24 / 16 * 1rem);
 			}
 		}
 
@@ -162,25 +156,25 @@
 		}
 
 		li:not(:first-child, :last-child) {
-			padding-block-start: rem(4);
+			padding-block-start: calc(4 / 16 * 1rem);
 		}
 
 		.pagination-list {
-			inline-size: rem(640);
+			inline-size: calc(640 / 16 * 1rem);
 		}
 
 		.pagination-link {
-			block-size: rem(53);
-			font-size: rem(24);
-			inline-size: rem(53);
-			line-height: rem(53);
+			block-size: calc(53 / 16 * 1rem);
+			font-size: calc(24 / 16 * 1rem);
+			inline-size: calc(53 / 16 * 1rem);
+			line-height: calc(53 / 16 * 1rem);
 			margin-block: 0;
-			margin-inline: rem(13);
+			margin-inline: calc(13 / 16 * 1rem);
 		}
 
 		.pagination-next,
 		.pagination-previous {
-			line-height: rem(48);
+			line-height: calc(48 / 16 * 1rem);
 		}
 	}
 }

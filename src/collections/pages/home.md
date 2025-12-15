@@ -1,5 +1,5 @@
 ---
-title: IDRC’s Inclusive Artificial Intelligence (AI) Initiatives
+title: Inclusive Design Research Centre’s Artificial Intelligence initiatives
 excerpt: |-
   We Count is a community-driven project to address the inherent bias
   against small minorities and outliers in artificial intelligence and data

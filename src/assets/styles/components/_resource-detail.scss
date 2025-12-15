@@ -2,12 +2,12 @@
 .resource-detail {
 	.features {
 		display: grid;
-		grid-template-columns: rem(80) auto;
-		row-gap: rem(32);
+		grid-template-columns: calc(80 / 16 * 1rem) auto;
+		row-gap: calc(32 / 16 * 1rem);
 
 		svg {
-			block-size: rem(48);
-			inline-size: rem(48);
+			block-size: calc(48 / 16 * 1rem);
+			inline-size: calc(48 / 16 * 1rem);
 		}
 
 		div {
@@ -16,22 +16,22 @@
 
 		.feature-name {
 			color: $green-dark;
-			font-weight: $font-weight-bold;
+			font-weight: var(--font-weight-bold);
 		}
 
 		.learn-tag {
 			background-color: $grey-light;
-			border-radius: rem(22);
+			border-radius: calc(22 / 16 * 1rem);
 			display: inline-block;
-			margin-block: rem(2);
-			margin-inline: rem(8) 0;
-			padding-block: rem(8);
-			padding-inline: rem(16);
+			margin-block: calc(2 / 16 * 1rem);
+			margin-inline: calc(8 / 16 * 1rem) 0;
+			padding-block: calc(8 / 16 * 1rem);
+			padding-inline: calc(16 / 16 * 1rem);
 		}
 	}
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	.resource-detail {
 		.features {
 			align-items: center;
