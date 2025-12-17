@@ -27,10 +27,14 @@ header {
 		inline-size: calc(100vw - calc(36 / 16 * 1rem));
 		margin-inline: auto;
 
+		.brand svg {
+			stroke: var(--fl-linkFgColor);
+		}
+
 		.header-join {
 			block-size: max-content;
 			border-radius: calc(36 / 16 * 1rem);
-			box-shadow: inset 0 0 0 calc(1 / 16 * 1rem) $black;
+			box-shadow: inset 0 0 0 calc(1 / 16 * 1rem) var(--fl-linkFgColor, black);
 			color: $black;
 			font-family: var(--font-alternate);
 			font-size: calc(14 / 16 * 1rem);
@@ -43,8 +47,9 @@ header {
 			white-space: nowrap;
 		}
 
+		.header-join:hover,
 		.header-join:focus {
-			box-shadow: inset 0 0 0 calc(2 / 16 * 1rem) $black;
+			box-shadow: inset 0 0 0 calc(2 / 16 * 1rem) var(--fl-linkFgColor, black);
 		}
 
 		// Menu Button
@@ -64,12 +69,16 @@ header {
 
 			.menu-open {
 				block-size: auto;
+				fill: var(--fl-bgColor, black);
 				inline-size: calc(42 / 16 * 1rem);
+				stroke: var(--fl-fgColor, black);
 			}
 
 			.menu-close {
 				block-size: auto;
+				fill: var(--fl-bgColor, black);
 				inline-size: calc(34 / 16 * 1rem);
+				stroke: var(--fl-fgColor, black);
 			}
 
 			.label {
@@ -87,6 +96,7 @@ header {
 		[aria-expanded]:hover,
 		[aria-expanded]:focus {
 			background-color: $orange-focus;
+			box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--fl-linkFgColor, black) inset;
 		}
 
 		[aria-expanded="false"] {
@@ -244,7 +254,7 @@ header {
 	header .site-nav-inner [aria-expanded] {
 		align-items: center;
 		block-size: calc(89 / 16 * 1rem);
-		border: 1px solid $black;
+		border: 1px solid var(--fl-fgColor, black);
 		border-radius: 50%;
 		display: flex;
 		inline-size: calc(89 / 16 * 1rem);

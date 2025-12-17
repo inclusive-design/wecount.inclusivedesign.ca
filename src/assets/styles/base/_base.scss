@@ -57,13 +57,16 @@ a {
 
 a:hover,
 a:focus {
-	background-color: $orange-focus;
+	background-color: var(--fl-linkFgColor, $orange-focus);
 	border-radius: calc(4 / 16 * 1rem);
 	color: $blue-alt-dark;
 }
 
 a:focus {
-	box-shadow: 0 0 0 calc(4 / 16 * 1rem) $orange-focus, 0 0 0 calc(6 / 16 * 1rem) $black;
+	box-shadow:
+		0 0 0
+		calc(4 / 16 * 1rem) var(--fl-linkBgColor, $orange-focus),
+		0 0 0 calc(6 / 16 * 1rem) var(--fl-linkFgColor, black);
 	outline: none;
 }
 
