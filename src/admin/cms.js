@@ -1,7 +1,6 @@
 /* eslint-disable react/display-name */
 /* global CMS, createClass, nunjucks, PropTypes, React */
 
-import {UuidControl, UuidPreview} from "netlify-cms-widget-uuid-v4/dist/index.js";
 import dateFilter from "../filters/date";
 import htmlSymbolFilter from "../filters/html-symbol";
 import markdownFilter from "../filters/markdown";
@@ -43,8 +42,19 @@ CMS.registerPreviewStyle("/assets/styles/main.css");
 
 const Page = createClass({
 	render: function () {
+		const bannerImage = this.props.entry.getIn(["data", "bannerImage"]);
+		const bannerImageContent = bannerImage ?
+			<div className="homepage-content">
+				<div className="banner-image-container">
+					<figure>
+						<img src={this.props.entry.getIn(["data", "bannerImage"])} alt={this.props.entry.getIn(["data", "bannerImageAltText"])} />
+					</figure>
+					<div className="banner-image-text" dangerouslySetInnerHTML={{ __html: this.props.entry.getIn(["data", "bannerImageText"]) }} />
+				</div>
+			</div> : "";
 		return <main>
 			<article className="page">
+				{bannerImageContent}
 				<h1>{this.props.entry.getIn(["data", "title"])}</h1>
 				<>
 					{this.props.widgetFor("body")}
@@ -176,7 +186,6 @@ CMS.registerPreviewTemplate("initiatives", Initiatives);
 CMS.registerPreviewTemplate("events", Event);
 CMS.registerPreviewTemplate("resources", Resources);
 
-CMS.registerWidget("uuid", UuidControl, UuidPreview);
 CMS.registerEditorComponent({
 	id: "expander",
 	label: "Expander",

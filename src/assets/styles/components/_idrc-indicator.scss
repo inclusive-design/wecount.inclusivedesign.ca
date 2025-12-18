@@ -1,25 +1,35 @@
 .idrc-indicator-wrapper {
-	background-color: $orange-focus;
-	font-family: Roboto, sans-serif;
+	background-color: #f4f8fc;
+	font-family: var(--font-alternate);
+}
 
-	.idrc-indicator {
-		margin: auto;
-		max-inline-size: $max-width-margins;
+.idrc-indicator {
+	max-inline-size: var(--content-max);
+	padding-block-end: calc(20 / 16 * 1rem);
+	padding-block-start: calc(20 / 16 * 1rem);
+}
 
-		.idrc-indicator-element {
-			align-items: center;
-			block-size: rem(55);
-			display: flex;
-			font-size: rem(14);
-			max-block-size: rem(80);
-			padding-block: 0;
-			padding-inline: rem(26);
-		}
-	}
+.idrc-indicator-element {
+	align-items: center;
+	display: flex;
+	font-size: calc(16 / 16 * 1rem);
+	line-height: calc(20 / 16 * 1rem);
+	padding-block: 0;
+	padding-inline: calc(24 / 16 * 1rem);
+}
+
+.idrc-indicator-element svg {
+	margin-block-end: -0.1875em;
 }
 
 .idrc-indicator-element a {
-	color: $black;
+	color: #000;
 	text-decoration: underline;
-	text-underline-offset: calc(2 / 16 * 1rem);
+}
+
+@media screen and (width >= 47.5rem) {
+	.idrc-indicator-element {
+		line-height: calc(21 / 16 * 1rem);
+		padding-inline: calc(96 / 16 * 1rem);
+	}
 }

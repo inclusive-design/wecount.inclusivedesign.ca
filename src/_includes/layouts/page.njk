@@ -11,18 +11,32 @@
 {% if page.url === "/" %}
 <div>
   <article>
-    <h1 class="title">{{ pageTitle }}</h1>
     <div class="api-content homepage-content">
+    <div class="homepage-intro">
+      <h1>{{ title }}</h1>
+    </div>
+    {% if bannerImage %}
+    <div class="banner-image-container">
+      <figure>
+      <img src="{{ bannerImage }}" alt="{{ bannerImageAltText }}" />
+      </figure>
+      {% if bannerImageText %}
+        <div class="banner-image-text">
+          {{ bannerImageText | safe }}
+        </div>
+      {% endif %}
+    </div>
+    {% endif %}
     {{ content | safe }}
+    <div class="homepage-cards">
+      {%- from '../components/card.macro.njk' import card %}
+      {{ card({color: "blue", url: "/resources/", title: "Resource Library", text: "Search IDRC's library of AI and data analytics resources", backgroundSvg: "../svg/blue.svg"}) }}
+      {{ card({color: "green", url: "/events/", title: "Events", text: "Find out about IDRC events and how you can participate", backgroundSvg: "../svg/green.svg"}) }}
+      {{ card({color: "azure", url: "/initiatives/", title: "Inclusive AI Initiatives", text: "Explore IDRC project activities", backgroundSvg: "../svg/azure.svg"}) }}
+      {{ card({color: "yellow", url: "/rtdd/", title: "Regulating the Digital<div lang='fr-CA'>Réguler le numérique</div>", text: "Addressing digital exclusion / <span lang='fr-CA'>Lutter contre l’exclusion numérique</span>", backgroundSvg: "../svg/yellow.svg"}) }}
+    </div>
     </div>
   </article>
-  <div class="homepage-cards">
-    {%- from '../components/card.macro.njk' import card %}
-    {{ card({color: "blue", url: "/resources/", title: "Resource Library", text: "Search IDRC's library of AI and data analytics resources", backgroundSvg: "../svg/blue.svg"}) }}
-    {{ card({color: "green", url: "/events/", title: "Events", text: "Find out about IDRC events and how you can participate", backgroundSvg: "../svg/green.svg"}) }}
-    {{ card({color: "azure", url: "/initiatives/", title: "Inclusive AI Initiatives", text: "Explore IDRC project activities", backgroundSvg: "../svg/azure.svg"}) }}
-    {{ card({color: "yellow", url: "/rtdd/", title: "Regulating the Digital<div lang='fr-CA'>Réguler le numérique</div>", text: "Addressing digital exclusion / <span lang='fr-CA'>Lutter contre l’exclusion numérique</span>", backgroundSvg: "../svg/yellow.svg"}) }}
-  </div>
 </div>
 
 {% elif page.url === "/events/" %}

@@ -4,7 +4,7 @@
 
 // Typography.
 body {
-	font-family: $family-sans-serif;
+	font-family: var(--font-body);
 }
 
 input,
@@ -21,47 +21,52 @@ select {
 
 h1 {
 	color: $grey-dark;
-	font-size: rem(35);
-	font-weight: $font-weight-semibold;
+	font-size: calc(35 / 16 * 1rem);
+	font-weight: var(--font-weight-semibold);
 	margin-block: 0.67em;
 	margin-inline: 0;
 }
 
 h2 {
 	color: $grey-dark;
-	font-size: rem(24);
-	font-weight: $font-weight-medium;
+	font-size: calc(24 / 16 * 1rem);
+	font-weight: var(--font-weight-medium);
 	margin-block: 0.83em;
 	margin-inline: 0;
 }
 
 h3,
 .h3 {
-	font-size: rem(18);
-	font-weight: $font-weight-bold;
+	font-size: calc(18 / 16 * 1rem);
+	font-weight: var(--font-weight-bold);
 	margin-block: 1em;
 	margin-inline: 0;
 }
 
 h4 {
-	font-size: rem(16);
-	font-weight: $font-weight-bold;
+	font-size: calc(16 / 16 * 1rem);
+	font-weight: var(--font-weight-bold);
 }
 
 // Links and Buttons.
 a {
 	color: $blue-alt-contrast;
-	font-weight: $font-weight-bold;
+	font-weight: var(--font-weight-bold);
 	text-decoration: none;
 }
 
 a:hover,
 a:focus {
-	background-color: $orange-focus;
+	background-color: var(--fl-linkFgColor, $orange-focus);
+	border-radius: calc(4 / 16 * 1rem);
 	color: $blue-alt-dark;
 }
 
 a:focus {
+	box-shadow:
+		0 0 0
+		calc(4 / 16 * 1rem) var(--fl-linkBgColor, $orange-focus),
+		0 0 0 calc(6 / 16 * 1rem) var(--fl-linkFgColor, black);
 	outline: none;
 }
 
@@ -77,8 +82,8 @@ p {
 button:hover::before,
 button:focus::before,
 button:active::before {
-	left: rem(4);
-	top: rem(4);
+	left: calc(4 / 16 * 1rem);
+	top: calc(4 / 16 * 1rem);
 }
 
 // SVG fill rule imported from sanitize ensures SVG colour agrees with text colour
@@ -105,19 +110,20 @@ button:not(
 .fl-prefsEditor-showHide,
 .fl-prefsEditor-reset,
 .fl-switchUI-control,
-.lty-playbtn) {
+.lty-playbtn,
+.search-button) {
 	background-color: $green-light;
-	block-size: rem(54);
+	block-size: calc(54 / 16 * 1rem);
 	border: 0;
-	border-radius: rem(28);
-	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
+	border-radius: calc(28 / 16 * 1rem);
+	box-shadow: 0 0 0 calc(2 / 16 * 1rem) $blue-alt-light inset;
 	color: $green-dark;
-	font-size: rem(24);
+	font-size: calc(24 / 16 * 1rem);
 	font-weight: 400;
 	line-height: calc(34 / 24);
-	padding-block: rem(8);
-	padding-inline: rem(34);
-	transform: perspective(rem(1)) translateZ(0);
+	padding-block: calc(8 / 16 * 1rem);
+	padding-inline: calc(34 / 16 * 1rem);
+	transform: perspective(calc(1 / 16 * 1rem)) translateZ(0);
 }
 
 button:not(
@@ -127,10 +133,11 @@ button:not(
 .fl-prefsEditor-reset,
 .fl-switchUI-control,
 .lty-playbtn,
+.search-button,
 .expander__toggle)::before {
-	block-size: rem(54);
-	border-radius: rem(26);
-	box-shadow: 0 0 0 rem(2) $blue-alt-light inset;
+	block-size: calc(54 / 16 * 1rem);
+	border-radius: calc(26 / 16 * 1rem);
+	box-shadow: 0 0 0 calc(2 / 16 * 1rem) $blue-alt-light inset;
 	content: "";
 	inline-size: 100%;
 	left: 0;
@@ -139,21 +146,21 @@ button:not(
 	top: 0;
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	h1 {
-		font-size: rem(50);
+		font-size: calc(50 / 16 * 1rem);
 	}
 
 	h2 {
-		font-size: rem(35);
+		font-size: calc(35 / 16 * 1rem);
 	}
 
 	h3,
 	.h3 {
-		font-size: rem(24);
+		font-size: calc(24 / 16 * 1rem);
 	}
 
 	h4 {
-		font-size: rem(18);
+		font-size: calc(18 / 16 * 1rem);
 	}
 }

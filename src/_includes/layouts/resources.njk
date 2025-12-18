@@ -55,9 +55,8 @@
 
     <form method="get" action="/resources/">
       {# TODO: review the language used for search instruction and labelling #}
-      {% set placeholderForSearch = "Search resources..." %}
-      {% set ariaLabelForSearch = "Enter keywords for a search in resources" %}
-      {% include 'components/search-container.njk' %}
+      {%- from '../components/search.macro.njk' import search %}
+      {{ search({placeholder: "Search resources...", label: "Enter keywords for a search in resources"}) }}
 
       {% set filterHeading = "Filters" %}
       {% set topicsFilterTitle = "Topics" %}

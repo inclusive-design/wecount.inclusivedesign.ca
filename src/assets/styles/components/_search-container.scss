@@ -1,48 +1,38 @@
 // Styles for the search container
 .search-container {
-	align-items: center;
-	display: flex;
+	position: relative;
+
+	button {
+		appearance: none;
+		background: transparent;
+		block-size: calc(44 / 16 * 1rem);
+		border: 0;
+		border-radius: 50%;
+		inline-size: calc(44 / 16 * 1rem);
+		position: absolute;
+	}
+
+	button:hover {
+		background-color: #fbdc90;
+	}
+
+	button:focus {
+		box-shadow: 0 0 0 calc(2 / 16 * 1rem) #000 inset;
+	}
 
 	svg {
-		block-size: rem(24);
-		fill: $white;
-		inline-size: rem(24);
-		margin: rem(-29);
-
-		// make sure search svg is displayed on top of the search input box
-		z-index: 1;
+		block-size: calc(32 / 16 * 1rem);
+		fill: var(--fl-bgColor, $white);
+		inline-size: calc(32 / 16 * 1rem);
 	}
 
 	input[type="search"] {
 		border: 0;
 		border-radius: 50%;
-		font-size: rem(14);
-		inline-size: rem(16);
+		font-size: calc(14 / 16 * 1rem);
+		inline-size: calc(16 / 16 * 1rem);
 		outline: none;
-		padding-block: rem(8);
-		padding-inline: rem(16);
-
-		&:focus {
-			border-radius: rem(28);
-			inline-size: rem(160);
-			padding-inline-start: rem(32);
-		}
-	}
-}
-
-@include breakpoint-up(lg) {
-	.search-container {
-		svg {
-			margin: rem(-40);
-		}
-
-		input[type="search"],
-		input[type="search"]:focus {
-			border-radius: rem(28);
-			font-size: rem(18);
-			inline-size: rem(240);
-			padding-block: rem(16);
-			padding-inline: rem(56);
-		}
+		padding-block: calc(8 / 16 * 1rem);
+		padding-inline: calc(16 / 16 * 1rem);
 	}
 }

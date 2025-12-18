@@ -35,6 +35,11 @@ collections:
         widget: string
         required: false
         hint: The locale of the page. If you do not specify a locale, default will be set to en-CA.
+      - label: Translation Key
+        name: translation_key
+        widget: string
+        required: false
+        hint: A unique key used to link translated content in French or English with its corresponding content in the other language.
       - label: Navigation Order
         name: menu_order
         widget: number
@@ -54,6 +59,20 @@ collections:
         hint: |-
           If you do not specify a permanent link, one will be automatically generated from the page title.
           Permalinks must have the format /page-title/ (the trailing slash is required).
+      - label: Banner Image
+        name: bannerImage
+        widget: image
+        required: false
+        hint: Image that appears at the top of the page.
+      - label: Banner Image Alt Text
+        name: bannerImageAltText
+        widget: string
+        required: false
+      - label: Banner Image Text
+        name: bannerImageText
+        widget: text
+        required: false
+        hint: Text that will appear on top right corner of the banner image.
       - label: Body
         name: body
         widget: markdown
@@ -114,10 +133,6 @@ collections:
       - label: Event Title
         name: title
         widget: string
-      - label: Event ID
-        name: id
-        widget: uuid
-        hint: The ID is used to associate comments with this event and cannot be edited.
       - label: Permanent Link
         name: permalink
         widget: string

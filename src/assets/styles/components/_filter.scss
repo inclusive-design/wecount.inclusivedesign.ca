@@ -17,12 +17,12 @@
 .expand-svg {
 	fill: var(--expand-button-color, $gold-light);
 	stroke: var(--expand-button-stroke-color, $blue-alt-light);
-	stroke-width: var(--expand-button-stroke-width, rem(4));
+	stroke-width: var(--expand-button-stroke-width, calc(4 / 16 * 1rem));
 }
 
 .filter {
-	border: rem(1) solid $blue-alt-light;
-	margin-block-end: rem(48);
+	border: calc(1 / 16 * 1rem) solid $blue-alt-light;
+	margin-block-end: calc(48 / 16 * 1rem);
 
 	// Transparent buttons
 	button {
@@ -49,24 +49,24 @@
 		// Box
 		& + label::before,
 		& + span::before {
-			block-size: rem(20);
+			block-size: calc(20 / 16 * 1rem);
 			content: "";
 			display: inline-block;
-			inline-size: rem(20);
-			margin-inline-end: rem(10);
-			outline: rem(1) solid $blue-alt-light;
+			inline-size: calc(20 / 16 * 1rem);
+			margin-inline-end: calc(10 / 16 * 1rem);
+			outline: calc(1 / 16 * 1rem) solid $blue-alt-light;
 			vertical-align: text-top;
 		}
 
 		// Checkmark
 		&:checked + label::after,
 		&:checked + span::after {
-			block-size: rem(2);
+			block-size: calc(2 / 16 * 1rem);
 			color: $white;
 			content: "\2713";
-			font-size: rem(18);
-			inline-size: rem(2);
-			left: rem(32);
+			font-size: calc(18 / 16 * 1rem);
+			inline-size: calc(2 / 16 * 1rem);
+			left: calc(32 / 16 * 1rem);
 			position: absolute;
 			top: 0;
 		}
@@ -82,17 +82,17 @@
 
 		h2 {
 			border-block-end: none;
-			line-height: rem(8);
-			padding-inline-start: rem(8);
+			line-height: calc(8 / 16 * 1rem);
+			padding-inline-start: calc(8 / 16 * 1rem);
 		}
 
 		button {
-			margin-inline-end: rem(16);
+			margin-inline-end: calc(16 / 16 * 1rem);
 		}
 
 		svg {
-			block-size: rem(24);
-			inline-size: rem(24);
+			block-size: calc(24 / 16 * 1rem);
+			inline-size: calc(24 / 16 * 1rem);
 		}
 	}
 
@@ -104,34 +104,34 @@
 		padding: 0;
 
 		li {
-			padding-block: rem(4);
-			padding-inline: rem(8);
+			padding-block: calc(4 / 16 * 1rem);
+			padding-inline: calc(8 / 16 * 1rem);
 
 			// Hanging indent for label texts
 			label {
 				display: block;
-				padding-inline-start: rem(29);
-				text-indent: rem(-30);
+				padding-inline-start: calc(29 / 16 * 1rem);
+				text-indent: calc(-1 * 30 / 16 * 1rem);
 			}
 		}
 	}
 
 	.filter-buttons {
 		background-color: $grey-lighter;
-		border-block-start: rem(1) solid $blue-alt-light;
+		border-block-start: calc(1 / 16 * 1rem) solid $blue-alt-light;
 		display: flex;
 		justify-content: flex-end;
 
 		svg {
-			block-size: rem(40);
+			block-size: calc(40 / 16 * 1rem);
 			fill: none;
-			inline-size: rem(40);
-			margin-inline-end: rem(3);
-			padding: rem(3);
+			inline-size: calc(40 / 16 * 1rem);
+			margin-inline-end: calc(3 / 16 * 1rem);
+			padding: calc(3 / 16 * 1rem);
 		}
 
 		span {
-			font-size: rem(14);
+			font-size: calc(14 / 16 * 1rem);
 		}
 	}
 
@@ -139,8 +139,8 @@
 	.reset-button {
 		@extend %has-vertically-centered-children;
 
-		padding-block: rem(1);
-		padding-inline: rem(3);
+		padding-block: calc(1 / 16 * 1rem);
+		padding-inline: calc(3 / 16 * 1rem);
 
 		span {
 			display: inline-flex;
@@ -166,7 +166,7 @@
 // Custom checkbox
 .fl-input-enhanced .filter-checkbox + label::before,
 .fl-input-enhanced .filter-checkbox + span::before {
-	outline: rem(3) double $blue-alt-light;
+	outline: calc(3 / 16 * 1rem) double $blue-alt-light;
 }
 
 // Box checked
@@ -180,7 +180,7 @@
 .filter .filter-checkbox:hover + label::before,
 .filter .filter-checkbox:focus + span::before,
 .filter .filter-checkbox:hover + span::before {
-	outline: rem(2.5) solid $blue-alt-light;
+	outline: calc(2.5 / 16 * 1rem) solid $blue-alt-light;
 }
 
 // Box focus when "enhance inputs" is enabled
@@ -188,8 +188,8 @@
 .fl-input-enhanced .filter-checkbox:hover + label::before,
 .fl-input-enhanced .filter-checkbox:focus + span::before,
 .fl-input-enhanced .filter-checkbox:hover + span::before {
-	border: rem(2.5) solid $blue-alt-light;
-	outline: rem(3.5) double $blue-alt-light;
+	border: calc(2.5 / 16 * 1rem) solid $blue-alt-light;
+	outline: calc(3.5 / 16 * 1rem) double $blue-alt-light;
 }
 
 // Box checked and focus/hover
@@ -197,7 +197,7 @@
 .filter .filter-checkbox:checked:hover + label::before,
 .filter .filter-checkbox:checked:focus + span::before,
 .filter .filter-checkbox:checked:hover + span::before {
-	outline: rem(3) double $blue-alt-light;
+	outline: calc(3 / 16 * 1rem) double $blue-alt-light;
 }
 
 // Box checked and focus/hover
@@ -205,20 +205,20 @@
 .fl-input-enhanced .filter-checkbox:checked:hover + label::before,
 .fl-input-enhanced .filter-checkbox:checked:focus + span::before,
 .fl-input-enhanced .filter-checkbox:checked:hover + span::before {
-	border: rem(1) solid $white;
-	box-shadow: 0 0 0 rem(1) $blue-alt-light inset;
-	outline: rem(3) double $blue-alt-light;
+	border: calc(1 / 16 * 1rem) solid $white;
+	box-shadow: 0 0 0 calc(1 / 16 * 1rem) $blue-alt-light inset;
+	outline: calc(3 / 16 * 1rem) double $blue-alt-light;
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	.filter {
 		.filter-header {
 			h2 {
-				padding-inline-start: rem(16);
+				padding-inline-start: calc(16 / 16 * 1rem);
 			}
 
 			button {
-				margin-inline-end: rem(24);
+				margin-inline-end: calc(24 / 16 * 1rem);
 			}
 		}
 
@@ -226,19 +226,19 @@
 			grid-template-columns: repeat(2, auto);
 
 			li {
-				padding-block: rem(4);
-				padding-inline: rem(16);
+				padding-block: calc(4 / 16 * 1rem);
+				padding-inline: calc(16 / 16 * 1rem);
 			}
 		}
 
 		.filter-buttons {
 			button {
-				margin-inline-end: rem(8);
-				padding: rem(4);
+				margin-inline-end: calc(8 / 16 * 1rem);
+				padding: calc(4 / 16 * 1rem);
 			}
 
 			span {
-				font-size: rem(18);
+				font-size: calc(18 / 16 * 1rem);
 			}
 		}
 	}

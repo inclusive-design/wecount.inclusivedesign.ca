@@ -3,7 +3,9 @@ title: Regulating the Digital Domain
 excerpt: The aim of RtDD is to improve digital inclusion and ICT accessibility
   for all disabled people.
 menu_order: 6
+locale: en-CA
 key: Regulating the Digital
+translation_key: rtdd-rddn
 permalink: /rtdd/
 ---
 ![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
@@ -45,57 +47,57 @@ To date these six challenges have been addressed by a series of co-design resear
 
 ## About the project
 
-Regulating the Digital Domain (RtDD) project focuses on addressing the persistent challenges and disparities that people with disabilities face in accessing information and communication technologies (ICT) and digital tools.  
+Regulating the Digital Domain (RtDD) project focuses on addressing the persistent challenges and disparities that people with disabilities face in accessing information and communication technologies (ICT) and digital tools.
 
-The RtDD team will: 
+The RtDD team will:
 
-* work to uncover root causes of barriers,  
-* focus on systemic issues that support digital exclusion,  
-* identify potential ways to interrupt and eliminate, improve or prevent barriers from becoming worse  
-* enhance the accessibility of digital tools, content, transactions, and computer-mediated processes (using two or more electronic devices for a process) for people with disabilities. 
+* work to uncover root causes of barriers,
+* focus on systemic issues that support digital exclusion,
+* identify potential ways to interrupt and eliminate, improve or prevent barriers from becoming worse
+* enhance the accessibility of digital tools, content, transactions, and computer-mediated processes (using two or more electronic devices for a process) for people with disabilities.
 
-The RtDD goal is to significantly improve digital inclusion and ICT accessibility for the full range of PWD (people with disabilities). To make improvements the project will address the design of a regulatory system that focuses on the challenges of regulating within the digital domain. The project findings will inform Accessibility Standards Canada on greater accessibility to digital tools, content, transactions and/or computer-mediated processes. 
+The RtDD goal is to significantly improve digital inclusion and ICT accessibility for the full range of PWD (people with disabilities). To make improvements the project will address the design of a regulatory system that focuses on the challenges of regulating within the digital domain. The project findings will inform Accessibility Standards Canada on greater accessibility to digital tools, content, transactions and/or computer-mediated processes.
 
 ## Informing standards
 
-One of the critical aspects this research seeks to explore is the role of existing standards in facilitating these interventions. Standards play a vital role in shaping digital technologies' design, development, and implementation. By understanding how standards impact accessibility interventions, the project intends to present recommendations that promote more inclusive digital innovations. 
+One of the critical aspects this research seeks to explore is the role of existing standards in facilitating these interventions. Standards play a vital role in shaping digital technologies' design, development, and implementation. By understanding how standards impact accessibility interventions, the project intends to present recommendations that promote more inclusive digital innovations.
 
-The project research will take an interdisciplinary approach. We will do this by bringing together both lived experience experts and domain experts as co-researchers. The domain experts will be from various fields including: 
+The project research will take an interdisciplinary approach. We will do this by bringing together both lived experience experts and domain experts as co-researchers. The domain experts will be from various fields including:
 
-* policy,  
-* legislative design,  
-* access to justice,  
-* technology systems,  
-* communications,  
-* management,  
-* inclusive design,  
-* digital inclusion,  
-* economics, and  
-* complex adaptive systems.  
+* policy,
+* legislative design,
+* access to justice,
+* technology systems,
+* communications,
+* management,
+* inclusive design,
+* digital inclusion,
+* economics, and
+* complex adaptive systems.
 
-Together co-researchers will design and propose regulatory approaches and systems that: 
+Together co-researchers will design and propose regulatory approaches and systems that:
 
-* address the diversity and complexity of accessibility needs, including the needs of small minorities and outliers,  
-* are suited to the exponential rates of change of ICT and designed to proactively prevent emerging barriers,  
-* support and require integrated accessibility approaches over segregated approaches to support interoperability and benefits to all users,  
-* support rather than constrain accessibility innovation,  
-* do not create incentives for the perpetuation of the problem,  
-* engage and empower people with disabilities and their communities to shape regulatory requirements, inform methods of meeting requirements, identify regulatory gaps, and continuously refine the regulatory system.  
+* address the diversity and complexity of accessibility needs, including the needs of small minorities and outliers,
+* are suited to the exponential rates of change of ICT and designed to proactively prevent emerging barriers,
+* support and require integrated accessibility approaches over segregated approaches to support interoperability and benefits to all users,
+* support rather than constrain accessibility innovation,
+* do not create incentives for the perpetuation of the problem,
+* engage and empower people with disabilities and their communities to shape regulatory requirements, inform methods of meeting requirements, identify regulatory gaps, and continuously refine the regulatory system.
 
 ## Addressing six challenges with inclusive practices and co-design
 
 > If you would like to take part in IDRC co-designs, please [join the mailing list](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo62199fYthCJCZAjMYVyFj1V1dUNjdNSFRTTkVXTVNNOEM0RVZHOVlBNEJVMiQlQCN0PWcu&route=shorturl) to learn about upcoming events.
 
-Six challenges will be addressed through a series of co-designs. We will address the following challenges by engaging a wide range of stakeholders with relevant lived experiences and expertise, recognizing that the issues are complex and interrelated. The results will inform the next generation of model accessibility standards in the digital domain. The team will develop strategies that leverage the properties of the digital domain and the approaches needed to ensure greater digital inclusion for people with disabilities.	 
+Six challenges will be addressed through a series of co-designs. We will address the following challenges by engaging a wide range of stakeholders with relevant lived experiences and expertise, recognizing that the issues are complex and interrelated. The results will inform the next generation of model accessibility standards in the digital domain. The team will develop strategies that leverage the properties of the digital domain and the approaches needed to ensure greater digital inclusion for people with disabilities.
 
-The challenges are: 
+The challenges are:
 
 1. How can we meet the diverse and complex accessibility needs of people with disabilities?
 
    * People with disabilities have more varied needs than people without disabilities. Regulations tend to simplify and generalize these needs, leaving out many people who do not fit the standard criteria. Regulations also limit the potential of digital systems to adapt to individual differences. We need to design for the spectrum of accessibility needs, not just for a checklist of requirements.
-2. How can we keep up with the rapid changes in technology and prevent new barriers from emerging? 
+2. How can we keep up with the rapid changes in technology and prevent new barriers from emerging?
 
-   * Technology changes faster than standards and regulations. New opportunities and risks arise constantly. Accessibility regulations often clash with the innovation drive that fuels the digital economy. Accessibility compliance is often sacrificed for speed and novelty. We need to find ways to make accessibility a priority in the changing digital landscape, and to prevent new barriers before they become entrenched. 
+   * Technology changes faster than standards and regulations. New opportunities and risks arise constantly. Accessibility regulations often clash with the innovation drive that fuels the digital economy. Accessibility compliance is often sacrificed for speed and novelty. We need to find ways to make accessibility a priority in the changing digital landscape, and to prevent new barriers before they become entrenched.
 3. How can we ensure integration and interoperability of digital systems and devices?
 
    * The digital world is interconnected and interdependent. Functionality depends on compatibility. Accessibility regulations have created a separate market for specialized assistive technologies (AT) that often do not work well with mainstream products. This makes digital access more expensive, less functional, and less inclusive for people with disabilities who rely on AT. It also deprives the general public of the benefits of accessible design. We need to promote integration and interoperability of digital systems and devices for everyone.
@@ -553,7 +555,7 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 ### Manitoba League of Persons with Disabilities (MLPD)
 
-The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, and their supporters, that promotes equal rights, full participation in society, and facilitates positive change through advocacy and public education. 
+The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, and their supporters, that promotes equal rights, full participation in society, and facilitates positive change through advocacy and public education.
 
 **About Joelle’s role with RtDD :** Recruit members with disabilities, especially in rural and remote areas, to participate in co-design. Help disseminate project drafts for review and feedback.
 
@@ -1126,13 +1128,13 @@ The vision of the [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/P
 
 ## Team
 
-Jutta Treviranus, principal investigator 
+Jutta Treviranus, principal investigator
 
 Vera Roberts
 
 David Pereyra
 
-Caren Watkins 
+Caren Watkins
 
 U﻿ttara Ghodke
 

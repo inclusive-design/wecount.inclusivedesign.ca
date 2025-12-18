@@ -3,15 +3,50 @@
 // For the canada logo: the color of the flag is red by default but is able to adapt
 // to the color determined by the selected UIO high contrast theme.
 .fill-f00 {
-	fill: var(--currentcolor, #f00);
+	fill: var(--fl-fgColor, #f00);
+}
+
+.subscribe {
+	align-items: center;
+	background-color: #fefefe;
+	display: flex;
+	flex-direction: column;
+	font-family: "Montserrat Alternates", Montserrat, var(--font-alternate);
+	padding-block: calc(36 / 16 * 1rem);
+	padding-inline: calc(96 / 16 * 1rem);
+
+	a {
+		background-color: #acdeeb;
+		border: solid 1px transparent;
+		border-radius: calc(36 / 16 * 1rem);
+		color: #1a4672;
+		font-size: calc(24 / 16 * 1rem);
+		font-weight: var(--font-weight-bold);
+		padding-block: calc(24 / 16 * 1rem);
+		padding-inline: calc(72 / 16 * 1rem);
+
+		&:hover,
+		&:focus {
+			background-color: $navy-light;
+			border: solid 1px $white;
+			color: $white;
+		}
+	}
+
+	.subscribe-text {
+		font-size: calc(14 / 16 * 1rem);
+		line-height: calc(21 / 16 * 1rem);
+		margin-block: 0;
+		margin-block-end: calc(32 / 16 * 1rem);
+	}
 }
 
 footer {
 	background: $navy-light;
 	color: $white;
-	margin-block-start: rem(30);
-	padding-block: rem(16);
-	padding-inline: rem(32);
+	margin-block-start: calc(30 / 16 * 1rem);
+	padding-block: calc(16 / 16 * 1rem);
+	padding-inline: calc(32 / 16 * 1rem);
 	text-align: center;
 
 	a {
@@ -24,10 +59,10 @@ footer {
 	}
 
 	.netlify-notice {
-		padding-block-start: rem(32);
+		padding-block-start: calc(32 / 16 * 1rem);
 
 		a {
-			font-weight: $font-weight-normal;
+			font-weight: var(--font-weight-normal);
 		}
 	}
 
@@ -36,18 +71,18 @@ footer {
 		display: flex;
 		flex-direction: column;
 		margin: auto;
-		max-inline-size: $max-width-margins;
+		max-inline-size: var(--content-max);
 
 		h2 {
 			color: $white;
-			font-size: rem(16);
-			font-weight: $font-weight-bold;
+			font-size: calc(16 / 16 * 1rem);
+			font-weight: var(--font-weight-bold);
 		}
 
 		.funders {
 			p {
 				margin: 0;
-				padding-block-end: rem(2);
+				padding-block-end: calc(2 / 16 * 1rem);
 			}
 
 			div {
@@ -57,45 +92,18 @@ footer {
 			}
 
 			.canada-logo {
-				block-size: rem(60);
-				inline-size: rem(144);
-				padding-block: rem(13);
-				padding-inline: 0 rem(13);
+				block-size: calc(60 / 16 * 1rem);
+				inline-size: calc(144 / 16 * 1rem);
+				padding-block: calc(13 / 16 * 1rem);
+				padding-inline: 0 calc(13 / 16 * 1rem);
 			}
 
 			.hewlett-logo {
-				block-size: rem(55);
-				inline-size: rem(215);
-				margin-block-end: rem(16);
-				padding-block: rem(13) 0;
-				padding-inline: 0 rem(13);
-			}
-		}
-
-		.subscribe {
-			a {
-				background-color: $white;
-				border-radius: rem(28);
-				color: $navy-light;
-				padding-block: rem(8);
-				padding-inline: rem(8);
-
-				&:hover,
-				&:focus {
-					background-color: $navy-light;
-					border: solid 1px $white;
-					color: $white;
-				}
-			}
-
-			hr {
-				background: $white;
-				inline-size: 100%;
-				margin-block-start: rem(48);
-			}
-
-			.subscribe-text {
-				margin-block-end: rem(32);
+				block-size: calc(55 / 16 * 1rem);
+				inline-size: calc(215 / 16 * 1rem);
+				margin-block-end: calc(16 / 16 * 1rem);
+				padding-block: calc(13 / 16 * 1rem) 0;
+				padding-inline: 0 calc(13 / 16 * 1rem);
 			}
 		}
 
@@ -107,11 +115,11 @@ footer {
 			}
 
 			a {
-				font-weight: $font-weight-normal;
+				font-weight: var(--font-weight-normal);
 
 				svg {
-					padding-block: rem(32) rem(16);
-					padding-inline: 0 rem(16);
+					padding-block: calc(32 / 16 * 1rem) calc(16 / 16 * 1rem);
+					padding-inline: 0 calc(16 / 16 * 1rem);
 				}
 			}
 
@@ -123,30 +131,30 @@ footer {
 
 			.ocadu-logo-wrapper {
 				a svg {
-					block-size: rem(128);
-					inline-size: rem(128);
-					padding: rem(16);
+					block-size: calc(128 / 16 * 1rem);
+					inline-size: calc(128 / 16 * 1rem);
+					padding: calc(16 / 16 * 1rem);
 				}
 			}
 
 			.idrc-logo {
-				block-size: rem(92);
-				inline-size: rem(213);
+				block-size: calc(92 / 16 * 1rem);
+				inline-size: calc(213 / 16 * 1rem);
 			}
 
 			.ocadu-logo {
-				block-size: rem(128);
-				inline-size: rem(128);
+				block-size: calc(128 / 16 * 1rem);
+				inline-size: calc(128 / 16 * 1rem);
 			}
 		}
 
 		.social-media {
 			align-self: center;
-			padding-block-end: rem(32);
+			padding-block-end: calc(32 / 16 * 1rem);
 
 			.social-media-icons {
 				display: grid;
-				grid-row-gap: rem(16);
+				grid-row-gap: calc(16 / 16 * 1rem);
 				grid-template-columns: repeat(5, auto);
 				margin: auto;
 
@@ -170,8 +178,8 @@ footer {
 
 				a {
 					svg {
-						block-size: rem(50);
-						inline-size: rem(50);
+						block-size: calc(50 / 16 * 1rem);
+						inline-size: calc(50 / 16 * 1rem);
 						stroke-width: 2px;
 					}
 
@@ -195,16 +203,16 @@ footer {
 	}
 }
 
-@include breakpoint-up(md) {
+@media screen and (width >= 47.5rem) {
 	footer {
-		margin-block-start: rem(0);
+		margin-block-start: calc(0 / 16 * 1rem);
 
 		.footer-content {
 			display: grid;
-			grid-row-gap: rem(16);
+			grid-row-gap: calc(16 / 16 * 1rem);
 			grid-template-columns: 3.8fr 1.2fr;
-			padding-block: rem(32);
-			padding-inline: rem(48);
+			padding-block: calc(32 / 16 * 1rem);
+			padding-inline: calc(48 / 16 * 1rem);
 
 			.funders {
 				align-self: end;
@@ -213,12 +221,12 @@ footer {
 				text-align: start;
 
 				svg {
-					margin-block-end: rem(16);
+					margin-block-end: calc(16 / 16 * 1rem);
 				}
 
 				.hewlett-logo {
-					block-size: rem(80);
-					inline-size: rem(288);
+					block-size: calc(80 / 16 * 1rem);
+					inline-size: calc(288 / 16 * 1rem);
 				}
 			}
 
@@ -228,13 +236,13 @@ footer {
 				text-align: start;
 
 				.idrc-logo {
-					block-size: rem(96);
-					inline-size: rem(176);
+					block-size: calc(96 / 16 * 1rem);
+					inline-size: calc(176 / 16 * 1rem);
 				}
 
 				.ocadu-logo {
-					block-size: rem(72);
-					inline-size: rem(176);
+					block-size: calc(72 / 16 * 1rem);
+					inline-size: calc(176 / 16 * 1rem);
 				}
 
 				.footer-logos {
@@ -255,9 +263,9 @@ footer {
 				}
 
 				.social-media-icons {
-					grid-gap: rem(16);
+					grid-gap: calc(16 / 16 * 1rem);
 					grid-template-columns: repeat(5, auto);
-					inline-size: rem(96);
+					inline-size: calc(96 / 16 * 1rem);
 					margin: inherit;
 
 					div {
@@ -279,8 +287,8 @@ footer {
 					}
 
 					a svg {
-						block-size: rem(50);
-						inline-size: rem(50);
+						block-size: calc(50 / 16 * 1rem);
+						inline-size: calc(50 / 16 * 1rem);
 					}
 				}
 			}
@@ -290,14 +298,13 @@ footer {
 				grid-row: 1;
 				text-align: start;
 
-				a {
-					padding-block: rem(16);
-					padding-inline: rem(32);
+				.subscribe-text {
+					font-size: calc(32 / 16 * 1rem);
 				}
 
-				hr {
-					background: $white;
-					inline-size: 100%;
+				a {
+					padding-block: calc(16 / 16 * 1rem);
+					padding-inline: calc(32 / 16 * 1rem);
 				}
 			}
 		}

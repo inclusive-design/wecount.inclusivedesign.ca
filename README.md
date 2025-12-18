@@ -16,12 +16,6 @@ The website uses [Decap CMS](https://decapcms.org) to manage the following conte
 - [news](src/collections/news)
 - [initiatives](src/collections/initiatives)
 
-The website also uses one backend API:
-
-- [Airtable API](https://airtable.com/api) that serves user comments for events.
-  - The production table: WeCount
-  - The development table: WeCount_DEV
-
 ## Getting Started
 
 To contribute, please be sure to review our development processes as documented in the
@@ -30,7 +24,8 @@ To contribute, please be sure to review our development processes as documented 
 To work on the project, you need to install [NodeJS and NPM](https://nodejs.org/en/download/) for your operating system.
 
 Then, clone the project from GitHub. [Create a fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-with your GitHub account, then enter the following in your command line (make sure to replace `your-username` with your username):
+with your GitHub account, then enter the following in your command line (make
+sure to replace `your-username` with your username):
 
 ```bash
 git clone https://github.com/your-username/wecount.inclusivedesign.ca.git
@@ -68,10 +63,6 @@ As an example, here is the configuration for the events collection, stored in [`
     - label: Event Title
       name: title
       widget: string
-    - label: Event ID
-      name: id
-      widget: uuid
-      hint: The ID is used to associate comments with this event and cannot be edited.
     - label: Permanent Link
       name: permalink
       widget: string
@@ -125,7 +116,7 @@ The `Event` React component is created in [src/admin/cms.js](https://github.com/
 based on a technique demonstrated in [Andy Bell's Hylia Eleventy starter kit](https://github.com/hankchizljaw/hylia):
 
 1. The site's Nunjucks templates are [precompiled](https://mozilla.github.io/nunjucks/api.html#precompiling) and copied
-   to the admin directory of the built site (Eleventy handles this [here](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/src/admin/admin.11ty.js)).
+   to the admin directory of the built site (Eleventy [handles this here](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/src/admin/admin.11ty.js)).
 2. A generic [`Preview`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/277cb52c0e7880bf400ab6f827c4b705080c9f73/src/admin/cms.js#L25-L30)
    React component accepts a data object and a Nunjucks template path, renders the Nunjucks template with the supplied
    data using [Nunjucks Slim](https://mozilla.github.io/nunjucks/getting-started.html#when-in-the-browser), and outputs
@@ -145,98 +136,13 @@ behaves as expected, but content should not be edited this way under normal circ
 log in under their Netlify Identity accounts at <https://wecount.inclusivedesign.ca/admin/> and create content through the
 CMS interface.
 
-## How to Run
-
-The website uses [Netlify Functions](https://functions.netlify.com/) to provide a server side endpoint that supports
-the save of user comments for initiatives on the "Initiatives" page. To run the website in local development mode that
-supports a live reload at file changes, there are two ways to test the website with and without Netlify Functions.
-The latter is easier than the former:
-
-### Test the website with Netlify Functions
-
-1. Follow [Netlify instructions](https://docs.netlify.com/functions/build-with-javascript/#tools) to install tools for testing
-and deploying Netlify functions locally;
-2. Once the tool is set up, using Netlify Dev as an example, run following commands:
+### Test the website
 
 ```bash
-# Due to security concerns, these environment variables are only available to WeCount team members
-export AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
-export EMAIL_FROM=EMAIL_TO_VALUE
-export EMAIL_FROM_PWD=EMAIL_FROM_PWD_VALUE
-export EMAIL_TO_PRODUCTION=PRODUCTION_SITE_MODERATOR_EMAIL
-export EMAIL_TO_DEV=DEV_SITE_MODERATOR_EMAIL
-export AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
-export AIRTABLE_BASE_DEV=AIRTABLE_BASE_VALUE_FOR_DEV
-
-netlify dev
-```
-
-Look for this box in your console output:
-
-```bash
-   ┌──────────────────────────────────────────────────┐
-   │                                                  │
-   │   * Server now ready on http://localhost:64939   │
-   │                                                  │
-   └──────────────────────────────────────────────────┘
-```
-
-The website will be available at [http://localhost:64939](http://localhost:64939).
-
-Alternatively, a `.env` file can be created within the local project directory and
-environment variables can be added directly to it as follows:
-
-```env
-AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
-EMAIL_FROM=EMAIL_TO_VALUE
-EMAIL_FROM_PWD=EMAIL_FROM_PWD_VALUE
-EMAIL_TO_PRODUCTION=PRODUCTION_SITE_MODERATOR_EMAIL
-EMAIL_TO_DEV=DEV_SITE_MODERATOR_EMAIL
-AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
-AIRTABLE_BASE_DEV=AIRTABLE_BASE_VALUE_FOR_DEV
-```
-
-(Note: `.env` is in the project's `.gitignore` file to prevent sensitive information from being accidentally
-committed to git.)
-
-If a `.env` file is used, the local development server can be started with the following command:
-
-```bash
-netlify dev
-```
-
-### Test the website without Netlify Functions
-
-Note that the website launched via this testing method cannot save user comments to Airtable due to the absence of the
-server side save function.
-
-```bash
-# Due to security concerns, these environment variables are only available to WeCount team members
-export AIRTABLE_API_KEY=WECOUNT_API_KEY
-export AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
-export AIRTABLE_BASE_DEV=AIRTABLE_BASE_VALUE_FOR_DEV
 npm run start
 ```
 
 The website will be available at [http://localhost:3000](http://localhost:3000).
-
-Alternatively, a `.env` file can be created within the local project directory and
-environment variables can be added directly to it as follows:
-
-```env
-AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
-AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
-AIRTABLE_BASE_DEV=AIRTABLE_BASE_VALUE_FOR_DEV
-```
-
-(Note: `.env` is in the project's `.gitignore` file to prevent sensitive information from being accidentally
-committed to git.)
-
-If a `.env` file is used, the local development server can be started with the following command:
-
-```bash
-npm run start
-```
 
 ## How to Lint
 
@@ -255,38 +161,14 @@ We use the following lint configurations:
 
 ## How to Build
 
-Note that the website launched via this build method cannot save user comments to Airtable due to the absence of the
-server side save function.
-
 To build and serve a static version of the website, enter the following in your command line:
 
 ```bash
-# Due to security concerns, these environment variables are only available to WeCount team members
-export AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
-export AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
 npm run build
 npm run serve
 ```
 
 The website will be available at [http://localhost:5000](http://localhost:5000).
-
-Alternatively, a `.env` file can be created within the local project directory and
-environment variables can be added directly to it as follows:
-
-```env
-AIRTABLE_API_KEY=AIRTABLE_API_KEY_VALUE
-AIRTABLE_BASE_PRODUCTION=AIRTABLE_BASE_VALUE_FOR_PRODUCTION
-```
-
-(Note: `.env` is in the project's `.gitignore` file to prevent sensitive information from being accidentally
-committed to git.)
-
-If a `.env` file is used, the site can be built and served with the following commands:
-
-```bash
-npm run build
-npm run serve
-```
 
 ## How to Deploy
 

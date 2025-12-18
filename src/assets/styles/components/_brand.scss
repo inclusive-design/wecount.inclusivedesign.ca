@@ -1,33 +1,28 @@
 .brand {
-	block-size: rem(72);
-	margin: auto;
-	max-inline-size: $max-width-margins;
+	block-size: auto;
+	inline-size: calc(72 / 16 * 1rem);
 
 	a {
 		align-items: center;
 		block-size: inherit;
 		color: $black;
 		display: flex;
-		padding-inline-end: rem(16);
+		position: relative;
 	}
 
 	.logo {
-		block-size: rem(52);
-		inline-size: rem(52);
-		margin-block: 0;
-		margin-inline: rem(16);
+		block-size: calc(90 / 16 * 1rem);
+		inline-size: calc(90 / 16 * 1rem);
 	}
 
 	.logotype {
-		block-size: rem(32);
-		inline-size: rem(200);
+		block-size: calc(32 / 16 * 1rem);
+		inline-size: calc(200 / 16 * 1rem);
 	}
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	.brand {
-		margin-block-start: rem(16);
-
 		a {
 			display: inline-flex;
 		}

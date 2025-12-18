@@ -1,1 +1,5 @@
-<path d="m1536 1152v256h-1536v-256zm0-512v256h-1536v-256zm0-512v256h-1536v-256z"/>
+<svg width="43" height="27" viewBox="0 0 43 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.734375" y="1.06885" width="41" height="4.59888" rx="2.29944" fill="var(--fl-fgColor, black)" stroke="var(--fl-bgColor, white)" />
+<rect x="0.734375" y="11.4668" width="41" height="4.59888" rx="2.29944" fill="var(--fl-fgColor, black)" stroke="var(--fl-bgColor, white)" />
+<rect x="0.734375" y="21.8647" width="41" height="4.59888" rx="2.29944" fill="var(--fl-fgColor, black)" stroke="var(--fl-bgColor, white)" />
+</svg>

@@ -1,27 +1,13 @@
-/* global toggleMenu */
-
-// Clicking the menu toggle button on the mobile layout opens up the popup menu
-// and sets the button "aria-expanded" attribute value properly.
-// eslint-disable-next-line
-toggleMenu = function (expanded) {
-	document.getElementById("menuToggleButton").setAttribute("aria-expanded", expanded);
-	$($(".nav-smallScreen").children("nav.primary-nav")[0]).toggle(expanded);
-};
-
-// Clicking the menu toggle button on the mobile layout opens up the popup menu.
-// Clicking anywhere else closes this popup menu.
+// Clicking the menu toggle button opens up the disclosure menu.
+// Clicking anywhere else closes the disclosure menu.
 document.addEventListener("click", (event) => {
-	if (event.target.id === "menuToggleButton") {
-		const expanded = "true" === event.target.getAttribute("aria-expanded") || false;
-		toggleMenu(!expanded);
-	} else {
-		// click anywhere else on the page closes the pop up menu.
-		toggleMenu(false);
-	}
-});
+	if (!event.target.closest(".site-nav .primary-nav") && !event.target.closest(".site-nav [aria-expanded]") && !event.target.matches(".site-nav [aria-expanded]")) {
+		const toggleButton = document.querySelector(".site-nav [aria-expanded]");
+		toggleButton.setAttribute("aria-expanded", false);
+		return;
+	};
 
-// Clicking the search svg on the header enlarges the search input box and places the focus in it.
-// This is required for the mobile layout where the search icon overlays on top of the input field.
-document.querySelector(".site-nav .nav-smallScreen .search-container svg").addEventListener("click", () => {
-	document.querySelector(".site-nav .nav-smallScreen .search-container input").focus();
+	const toggleButton = event.target.closest(".site-nav [aria-expanded]");
+	const expanded = "true" === toggleButton.getAttribute("aria-expanded") || false;
+	toggleButton.setAttribute("aria-expanded", !expanded);
 });

@@ -10,8 +10,10 @@
 }
 
 .content-wrapper {
+	background-color: rgb(244 248 252 / 100%);
 	flex: 1;
-	font-size: rem(14);
+	font-size: calc(14 / 16 * 1rem);
+	padding-inline: calc(27 / 16 * 1rem);
 }
 
 main {
@@ -22,11 +24,8 @@ main {
 }
 
 article {
-	padding-block: rem(0) rem(27);
-	padding-inline: rem(27);
-
 	h2:not(.h3) {
-		border-block-end: rem(5) solid $gold;
+		border-block-end: calc(5 / 16 * 1rem) solid $gold;
 	}
 
 	.api-content {
@@ -122,7 +121,7 @@ p img {
 	margin-block: 1em;
 
 	.image-and-text__content {
-		margin-inline-start: rem(25);
+		margin-inline-start: calc(25 / 16 * 1rem);
 	}
 
 	img {
@@ -160,55 +159,65 @@ p img {
 
 // Special styling rules for homepage content
 article .homepage-content {
+	font-family: var(--font-alternate);
+	margin-inline: auto;
+	max-inline-size: max-content;
+	text-align: center;
+
 	// removes underline for "non-h3" h2's
 	h2 {
 		border: none;
+		color: #1b93b9;
+		font-size: calc(24 / 16 * 1rem);
+		font-weight: 800;
 	}
 
-	// The folowing CSS rule ensures video content is the width of the viewport in mobile and iPad views
-	.embed--youtube {
-		// not yet supported in Safari. for support details, see:
-		// https://caniuse.com/mdn-css_properties_aspect-ratio
-		aspect-ratio: 16 / 9;
-		display: block;
-		margin-inline: $full-width-video-margins;
+	p {
+		font-size: calc(14 / 16 * 1rem);
+		line-height: calc(21 / 16 * 1rem);
+		max-inline-size: calc(630 / 16 * 1rem);
+		text-align: start;
+	}
+
+	.homepage-intro p {
+		font-size: calc(48 / 16 * 1rem);
+		font-weight: var(--font-weight-semibold);
+		line-height: calc(62 / 16 * 1rem);
+		max-inline-size: calc(650 / 16 * 1rem);
+		text-align: start;
+	}
+
+	.banner-image-container {
+		margin-block-start: calc(48 / 16 * 1rem);
 		position: relative;
-
-		// fallback for aspect-ratio
-		@supports not (aspect-ratio: auto) {
-			block-size: 0;
-			overflow: hidden;
-			padding-block-start: 56.25%; // 16:9
-			position: relative;
-		}
 	}
 
-	.embed--youtube iframe {
-		block-size: 100%;
-		inline-size: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
+	.banner-image-container figure {
+		max-inline-size: 100%;
+	}
 
-		// fallback for aspect-ratio
-		@supports not (aspect-ratio: auto) {
-			left: 50%;
-			position: absolute;
-			top: 50%;
-			transform: translate(-50%, -50%);
-		}
+	.banner-image-container img {
+		border-block-start: calc(10 / 16 * 1rem) solid rgb(253 204 112 / 100%);
+	}
+
+	.banner-image-text {
+		display: none;
+	}
+
+	ul {
+		text-align: initial;
 	}
 }
 
 video {
 	inline-size: 100%;
-	max-block-size: rem(580);
+	max-block-size: calc(580 / 16 * 1rem);
 }
 
 figcaption {
 	caption-side: bottom;
 	display: table-caption;
-	font-size: rem(14);
+	font-size: calc(14 / 16 * 1rem);
 	font-style: italic;
 	padding-block: 1rem;
 	padding-inline: 0;
@@ -218,38 +227,39 @@ figcaption {
 // Hide an element visually without hiding it from screen readers
 // Reference: https://tailwindcss.com/docs/screen-readers/#app
 .screen-reader-only {
-	block-size: rem(1);
+	block-size: calc(1 / 16 * 1rem);
 	border-width: 0;
 	clip: rect(0, 0, 0, 0);
-	inline-size: rem(1);
-	margin: rem(-1);
+	inline-size: calc(1 / 16 * 1rem);
+	margin: calc(-1 * 1 / 16 * 1rem);
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
 	white-space: nowrap;
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
+	#defaultContainer aside {
+		padding-block-start: unset;
+	}
+
 	body {
 		background-position: center;
 	}
 
 	.content-wrapper {
 		display: grid;
-		font-size: rem(18);
+		font-size: calc(18 / 16 * 1rem);
 		grid-template-columns: 1fr minmax(75ch, 130ch) 1fr;
 		grid-template-rows: auto auto;
 	}
 
-	main {
-		background-color: $white;
-		max-inline-size: 130ch;
+	.homepage-content-wrapper {
+		grid-template-columns: unset;
+	}
 
-		article {
-			padding-block: rem(1);
-			padding-block-end: rem(62);
-			padding-inline: rem(60);
-		}
+	main {
+		max-inline-size: 100vw;
 
 		// WP customized styles for Desktop and iPad Pro views
 		.embed--youtube {
@@ -259,7 +269,7 @@ figcaption {
 		// Styling for media and text block with media on the left
 		.image-and-text--image-left {
 			.image-and-text__content {
-				margin-inline-start: rem(25);
+				margin-inline-start: calc(25 / 16 * 1rem);
 			}
 
 			img {
@@ -271,33 +281,55 @@ figcaption {
 		// Styling for media and text block with media on the right
 		.image-and-text--image-right {
 			.image-and-text__content {
-				margin-inline: 0 rem(25);
+				margin-inline: 0 calc(25 / 16 * 1rem);
 			}
 		}
 
 		.embed--youtube iframe {
-			block-size: rem(326);
-			inline-size: rem(580);
+			block-size: calc(326 / 16 * 1rem);
+			inline-size: calc(580 / 16 * 1rem);
+		}
+	}
+
+	article .homepage-content {
+		h2 {
+			font-size: calc(48 / 16 * 1rem);
 		}
 
-		// Special styling rules for homepage content
-		article .homepage-content {
-			// to make the YouTube embed full-width
-			.embed--youtube {
-				margin-inline: $full-width-video-widescreen-margins;
-			}
+		p {
+			font-size: calc(24 / 16 * 1rem);
+			line-height: calc(36 / 16 * 1rem);
+			max-inline-size: calc(905 / 16 * 1rem);
+		}
+
+		.banner-image-text {
+			background-color: transparent !important;
+			color: $white;
+			display: block;
+			font-family: "Montserrat Alternates", Montserrat, var(--font-alternate);
+			font-size: calc(40 / 16 * 1rem);
+			font-weight: 600;
+			position: absolute;
+			right: 10%;
+			top: 10%;
+		}
+
+		.homepage-intro p {
+			font-size: calc(64 / 16 * 1rem);
+			line-height: calc(83 / 16 * 1rem);
+			max-inline-size: calc(1000 / 16 * 1rem);
 		}
 	}
 }
 
-@include breakpoint-up(xl) {
+@media screen and (width >= 85.375rem) {
 	// When screen sizes >= the iPad Pro landscape mode, use larger sizes for embedded media elements that
 	// are aligned left or right.
 	.alignleft,
 	.alignright {
 		.wp-block-embed__wrapper iframe {
-			block-size: rem(326);
-			inline-size: rem(580);
+			block-size: calc(326 / 16 * 1rem);
+			inline-size: calc(580 / 16 * 1rem);
 		}
 	}
 }

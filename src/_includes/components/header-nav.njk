@@ -1,31 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="menu-icon" viewBox="0 0 1536 1536">
-    {% include 'svg/menu.svg' %}
-  </symbol>
-  <symbol id="search" viewBox="0 0 21 22">
-    {% include 'svg/search.svg' %}
-  </symbol>
-</svg>
-
-{% set placeholderForSearch = "Search..." %}
-{% set ariaLabelForSearch = "Enter keywords for a site-wide search" %}
-
-<div class="nav-wideScreen">
-  {% include 'components/nav-menu.njk' %}
-  <form method="get" action="/search/">
-    {% include 'components/search-container.njk' %}
-  </form>
+<div class="site-nav-inner">
+{% include 'components/brand.njk' %}
+<a class="header-join" href="/recount">Join the conversation</a>
+<button id="menuToggleButton" aria-expanded="false">
+    <svg class="menu-open" aria-hidden="true"><use xlink:href="#menu-icon" /></svg>
+    <svg class="menu-close" aria-hidden="true"><use xlink:href="#menu-close" /></svg>
+    <span class="label">MENU</span>
+</button>
+{%- from './search.macro.njk' import search %}
+<form method="get" action="/search/" class="search-form">
+{{ search({placeholder: "Search …", label: "Enter keywords for a site-wide search"}) }}
+</form>
 </div>
-
-<div class="nav-smallScreen">
-  <nav class="starter-nav">
-    <button id="menuToggleButton" aria-expanded="false">
-      <svg><use xlink:href="#menu-icon" /></svg>&nbsp;<span>Menu</span><span class="screen-reader-only">Menu</span>
-    </button>
-    <form method="get" action="/search/">
-      {% include 'components/search-container.njk' %}
-    </form>
-  </nav>
-
-  {% include 'components/nav-menu.njk' %}
-</div>
+{% include 'components/nav-menu.njk' %}

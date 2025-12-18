@@ -8,6 +8,7 @@
     {% include 'globals/service-worker.njk' %}
     {% endif %}
     {% include 'globals/meta.njk' %}
+    {% include "svg/filters.svg" %}
     <link rel="stylesheet" href="/assets/styles/main.css"/>
     <link rel="stylesheet" href="/assets/styles/lite-yt-embed.css"/>
     <script src="/assets/scripts/main.js" defer></script>
@@ -25,9 +26,10 @@
     {% block headerScripts %}{% endblock %}
   </head>
   <body>
+    {% include 'globals/sprites.njk' %}
     <div id="defaultContainer">
       {% include 'components/header.njk' %}
-      <div class="content-wrapper">
+      <div class="content-wrapper{% if page.url === "/" %} homepage-content-wrapper{% endif %}">
         <aside id="toc"></aside>
         <main>
           <nav class="flc-toc-tocContainer"></nav>

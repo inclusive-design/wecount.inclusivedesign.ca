@@ -73,10 +73,10 @@ Le projet de recherche adoptera une approche interdisciplinaire. Pour ce faire, 
 
 Ensemble, les co-chercheurs concevront et proposeront des approches et des systèmes réglementaires qui :
 
-* qui tiennent compte de la diversité et de la complexité des besoins en matière d'accessibilité, y compris les besoins des petites minorités et des cas isolés,            
-* sont adaptés au rythme exponentiel de l'évolution des TIC et conçus pour prévenir de manière proactive l'apparition d'obstacles,       
-* soutiennent et exigent des approches intégrées de l'accessibilité plutôt que des approches séparées, afin de favoriser l'interopérabilité et les avantages pour tous les utilisateurs,            
-* soutenir l'innovation en matière d'accessibilité plutôt que de la freiner,        
+* qui tiennent compte de la diversité et de la complexité des besoins en matière d'accessibilité, y compris les besoins des petites minorités et des cas isolés,
+* sont adaptés au rythme exponentiel de l'évolution des TIC et conçus pour prévenir de manière proactive l'apparition d'obstacles,
+* soutiennent et exigent des approches intégrées de l'accessibilité plutôt que des approches séparées, afin de favoriser l'interopérabilité et les avantages pour tous les utilisateurs,
+* soutenir l'innovation en matière d'accessibilité plutôt que de la freiner,
 * ne pas créer d'incitations à la perpétuation du problème, et
 * impliquer et responsabiliser les personnes handicapées et leurs communautés pour qu'elles façonnent les exigences réglementaires, informent sur les méthodes de respect des exigences, identifient les lacunes réglementaires et affinent en permanence le système réglementaire.
 
@@ -84,7 +84,7 @@ Ensemble, les co-chercheurs concevront et proposeront des approches et des syst�
 
 > Si vous souhaitez participer aux co-conceptions du IDRC, [inscrivez-vous à la liste de diffusion](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo62199fYthCJCZAjMYVyFj1V1dUNjdNSFRTTkVXTVNNOEM0RVZHOVlBNEJVMiQlQCN0PWcu&route=shorturl) pour être informé des événements à venir.[](https://forms.office.com/r/g4bgbHifqc)
 
-Six défis seront relevés par le biais d'une série de co-conceptions. Nous relèverons les défis suivants en impliquant un large éventail de parties prenantes ayant des expériences vécues et une expertise pertinentes, tout en reconnaissant que les questions sont complexes et interdépendantes. Les résultats informeront la prochaine génération de modèles de normes d'accessibilité dans le domaine numérique. L'équipe développera des stratégies qui tireront parti des propriétés du domaine numérique et des approches nécessaires pour assurer une plus grande inclusion numérique des personnes handicapées.         
+Six défis seront relevés par le biais d'une série de co-conceptions. Nous relèverons les défis suivants en impliquant un large éventail de parties prenantes ayant des expériences vécues et une expertise pertinentes, tout en reconnaissant que les questions sont complexes et interdépendantes. Les résultats informeront la prochaine génération de modèles de normes d'accessibilité dans le domaine numérique. L'équipe développera des stratégies qui tireront parti des propriétés du domaine numérique et des approches nécessaires pour assurer une plus grande inclusion numérique des personnes handicapées.
 
 Les défis sont les suivants
 
@@ -109,11 +109,11 @@ Les défis sont les suivants
 
 ## Les rapports
 
-[Réguler le domaine numérique : Co-conception un résultats (document Word téléchargeable)](/uploads/réguler-le-domaine-numérique_co_conception_un_résultats.docx)
+[Réguler le domaine numérique : Co-conception un résultats (document Word téléchargeable)](/uploads/reguler-le-domaine-numerique_co_conception_un_resultats.docx)
 
 [Réguler le domaine numérique : Co-conception deux résultats (document Word téléchargeable)](/uploads/rapport_co_design_deux_finale_fr.docx)
 
-[Réguler le domaine numérique : Co-conception trois résultats (document Word téléchargeable)](/uploads/réguler_le_domaine_numérique_co_conception_trois_résultats.docx)
+[Réguler le domaine numérique : Co-conception trois résultats (document Word téléchargeable)](/uploads/reguler_le_domaine_numerique_co_conception_trois_resultats.docx)
 
 ## ﻿Partenaires
 
@@ -551,13 +551,13 @@ La vision de la [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pag
 
 ## Équipe
 
-Jutta Treviranus, principal investigator 
+Jutta Treviranus, principal investigator
 
 Vera Roberts
 
 David Pereyra
 
-Caren Watkins 
+Caren Watkins
 
 U﻿ttara Ghodke
 

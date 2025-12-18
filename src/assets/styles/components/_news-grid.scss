@@ -1,6 +1,6 @@
 .news-grid {
 	display: grid;
-	grid-gap: rem(30) rem(38);
+	grid-gap: calc(30 / 16 * 1rem) calc(38 / 16 * 1rem);
 	grid-template-columns: repeat(1, 1fr);
 
 	.api-content {
@@ -16,22 +16,21 @@
 			.author {
 				color: $grey-mid;
 				font-style: italic;
-				font-weight: $font-weight-semibold;
+				font-weight: var(--font-weight-semibold);
 			}
 
 			.date {
-				padding-block-end: rem(8);
+				padding-block-end: calc(8 / 16 * 1rem);
 			}
 
 			// Apply ellipsis on the third line to the preview content.
 			// Reference: http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
 			.preview-content {
-				line-height: rem(19.2);
-				margin-block-end: rem(16);
-				margin-inline-end: rem(-16);
-				max-block-size: rem(57.6);
+				line-height: calc(19.2 / 16 * 1rem);
+				margin-block-end: calc(16 / 16 * 1rem);
+				max-block-size: calc(57.6 / 16 * 1rem);
 				overflow: hidden;
-				padding-inline-end: rem(16);
+				padding-inline-end: calc(16 / 16 * 1rem);
 				position: relative;
 			}
 
@@ -46,10 +45,10 @@
 			// hide the ellipsis if we have text, which is less than or equal to max lines
 			.preview-content::after {
 				background: $white;
-				block-size: rem(16);
+				block-size: calc(16 / 16 * 1rem);
 				content: "";
-				inline-size: rem(16);
-				margin-block-start: rem(3.2);
+				inline-size: calc(16 / 16 * 1rem);
+				margin-block-start: calc(3.2 / 16 * 1rem);
 				position: absolute;
 				right: 0;
 			}
@@ -57,7 +56,7 @@
 	}
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	.news-grid {
 		grid-template-columns: repeat(2, 1fr);
 
@@ -65,7 +64,7 @@
 			padding: 0;
 
 			.preview-media-wrapper {
-				@include aspect-ratio(16, 9);
+				aspect-ratio: 16 / 9;
 
 				.content {
 					display: block;
@@ -87,8 +86,8 @@
 		}
 
 		.content-preview {
-			padding-block: rem(1);
-			padding-inline: rem(60);
+			padding-block: calc(1 / 16 * 1rem);
+			padding-inline: calc(60 / 16 * 1rem);
 		}
 	}
 }

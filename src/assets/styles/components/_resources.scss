@@ -25,11 +25,11 @@
 	.api-content {
 		display: grid;
 		grid-template-columns: 1fr;
-		row-gap: rem(32);
+		row-gap: calc(32 / 16 * 1rem);
 
 		a:hover,
 		a:focus {
-			border-radius: rem(18);
+			border-radius: calc(18 / 16 * 1rem);
 		}
 
 		.tile-item {
@@ -37,79 +37,86 @@
 			margin: 0;
 
 			.tile-resource {
-				border-radius: rem(18);
-				padding-block: 0 rem(8);
-				padding-inline: rem(16);
+				border-radius: calc(18 / 16 * 1rem);
+				padding-block: 0 calc(8 / 16 * 1rem);
+				padding-inline: calc(16 / 16 * 1rem);
 			}
 		}
 	}
 
 	.search-container {
-		margin-block: rem(32) 0;
+		margin-block: calc(32 / 16 * 1rem) 0;
 		margin-inline: 0;
 
 		input[type="search"] {
 			border: none;
-			box-shadow: 0 0 rem(7) $border-shadow-colour;
+			box-shadow: 0 0 calc(7 / 16 * 1rem) $border-shadow-colour;
+			font-size: calc(18 / 16 * 1rem);
+			padding-block: calc(16 / 16 * 1rem);
+		}
+
+		svg {
+			left: 0;
+			top: calc(16 / 16 * 1rem);
 		}
 	}
 
 	.filter {
 		background-color: $grey-lightest;
 		border: none;
-		border-radius: rem(9);
-		box-shadow: 0 0 rem(7) $border-shadow-colour;
-		margin-block-end: rem(32);
-		padding-block: rem(8);
-		padding-inline: rem(16);
+		border-radius: calc(9 / 16 * 1rem);
+		box-shadow: 0 0 calc(7 / 16 * 1rem) $border-shadow-colour;
+		margin-block-end: calc(32 / 16 * 1rem);
+		padding-block: calc(8 / 16 * 1rem);
+		padding-inline: calc(16 / 16 * 1rem);
 
 		h2 {
-			border-block-end: rem(1) solid $grey-mid-light;
-			font-size: rem(25);
-			font-weight: $font-weight-bold;
+			border-block-end: calc(1 / 16 * 1rem) solid $grey-mid-light;
+			font-size: calc(25 / 16 * 1rem);
+			font-weight: var(--font-weight-bold);
 			margin: 0;
-			padding-block: 0 rem(12);
-			padding-inline: rem(4) 0;
+			padding-block: 0 calc(12 / 16 * 1rem);
+			padding-inline: calc(4 / 16 * 1rem) 0;
 			text-transform: uppercase;
 		}
 
 		h3 {
 			border-block-end: none;
 			color: $grey-dark;
-			font-size: rem(18);
-			line-height: rem(40);
+			font-size: calc(18 / 16 * 1rem);
+			line-height: calc(40 / 16 * 1rem);
 		}
 
 		.filter-buttons {
 			background-color: initial;
 			border-block-start: none;
-			gap: rem(8);
-			margin-block-start: rem(24);
+			gap: calc(8 / 16 * 1rem);
+			margin-block-start: calc(24 / 16 * 1rem);
 
 			button {
 				@extend %has-vertically-centered-children;
 
 				background-color: $white;
-				box-shadow: 0 0 rem(7) $border-shadow-colour;
+				box-shadow: 0 0 calc(7 / 16 * 1rem) $border-shadow-colour;
 			}
 		}
 
 		.filter-header {
 			background-color: initial;
-			border-block-end: rem(1) solid $grey-mid-light;
+			border-block-end: calc(1 / 16 * 1rem) solid $grey-mid-light;
 			margin: 0;
 			padding-block: 0;
-			padding-inline: rem(16);
+			padding-inline: calc(16 / 16 * 1rem);
 
 			&:hover {
-				box-shadow: 0 rem(3) rem(2) rem(-2) rgba(0 0 0 / 60%);
+				box-shadow: 0 calc(3 / 16 * 1rem) calc(2 / 16 * 1rem) calc(-1 * 2 / 16 * 1rem) rgba(0 0 0 / 60%);
 			}
 
 			button {
 				@extend %has-vertically-centered-children;
 
 				align-self: center;
-				block-size: rem(32);
+				block-size: calc(32 / 16 * 1rem);
 				margin-inline-end: 0;
 				padding: 0;
 			}
@@ -127,8 +134,8 @@
 
 				button {
 					color: $green-dark;
-					font-size: rem(18);
-					font-weight: $font-weight-semibold;
+					font-size: calc(18 / 16 * 1rem);
+					font-weight: var(--font-weight-semibold);
 
 					&:hover,
 					&:focus {
@@ -162,8 +169,8 @@
 		.topic-choices {
 			display: flex;
 			flex-wrap: wrap;
-			font-size: rem(20);
-			gap: rem(18);
+			font-size: calc(20 / 16 * 1rem);
+			gap: calc(18 / 16 * 1rem);
 			list-style: none;
 			padding-inline-start: 0;
 
@@ -176,11 +183,11 @@
 
 				// when the topic card gains the hover, apply the hover style to the checkbox
 				&:hover .topic-checkbox span::before {
-					outline: rem(2.5) solid $blue-alt-light;
+					outline: calc(2.5 / 16 * 1rem) solid $blue-alt-light;
 				}
 
 				svg {
-					block-size: rem(80);
+					block-size: calc(80 / 16 * 1rem);
 					inline-size: 100%;
 				}
 
@@ -188,12 +195,12 @@
 					align-items: center;
 					block-size: auto;
 					border-radius: $topic-title-border-radius $topic-title-border-radius 0 0;
-					column-gap: rem(16);
+					column-gap: calc(16 / 16 * 1rem);
 					cursor: pointer;
 					display: grid;
-					font-weight: $font-weight-semibold;
+					font-weight: var(--font-weight-semibold);
 					grid-template-columns: 2fr 1fr;
-					padding: rem(16);
+					padding: calc(16 / 16 * 1rem);
 				}
 
 				// topic title background
@@ -228,7 +235,7 @@
 						// curves displayed properly on the outer container
 						border-radius: 0 0 $topic-title-border-radius $topic-title-border-radius;
 						display: block;
-						font-size: rem(18);
+						font-size: calc(18 / 16 * 1rem);
 
 						&::before {
 							margin-inline-end: 0;
@@ -239,7 +246,7 @@
 					.filter-checkbox:checked + label::after,
 					.filter-checkbox:checked + span::after {
 						left: 50%;
-						margin-inline-start: rem(-7);
+						margin-inline-start: calc(-1 * 7 / 16 * 1rem);
 					}
 				}
 			}
@@ -247,29 +254,29 @@
 	}
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	.resources {
 		.api-content {
-			gap: rem(48);
+			gap: calc(48 / 16 * 1rem);
 			grid-template-columns: 1fr 1fr;
 
 			.tile-item {
 				block-size: 100%;
 
 				.tile-resource {
-					padding-block: 0 rem(16);
-					padding-inline: rem(16);
+					padding-block: 0 calc(16 / 16 * 1rem);
+					padding-inline: calc(16 / 16 * 1rem);
 				}
 			}
 		}
 
 		.filter {
-			margin-block-end: rem(48);
-			padding-block: rem(24);
-			padding-inline: rem(40);
+			margin-block-end: calc(48 / 16 * 1rem);
+			padding-block: calc(24 / 16 * 1rem);
+			padding-inline: calc(40 / 16 * 1rem);
 
 			.topic-choices {
-				gap: rem(16);
+				gap: calc(16 / 16 * 1rem);
 
 				li {
 					flex: 1 0 18%;
@@ -283,9 +290,9 @@
 					.topic-title {
 						align-items: start;
 						block-size: 100%;
-						gap: rem(16) 0;
+						gap: calc(16 / 16 * 1rem) 0;
 						grid-template-columns: initial;
-						padding: rem(16);
+						padding: calc(16 / 16 * 1rem);
 
 						svg {
 							align-self: end;

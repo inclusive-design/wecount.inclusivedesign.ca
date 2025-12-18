@@ -1,0 +1,10 @@
+name: Sync branches
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  sync-branches:
+    uses: inclusive-design/workflows/.github/workflows/sync-branches.yml@main
+    secrets: inherit
