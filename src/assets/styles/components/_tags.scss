@@ -1,0 +1,21 @@
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+
+	a {
+		background-color: $gold-light;
+		border-radius: calc(20 / 16 * 1rem);
+		box-shadow: 0 0 0 calc(1 / 16 * 1rem) transparent inset;
+		color: $blue-alt-dark;
+		font-weight: var(--font-weight-bold);
+		margin-block: calc(8 / 16 * 1rem);
+		margin-inline: 0 calc(16 / 16 * 1rem);
+		padding-block: calc(5 / 16 * 1rem);
+		padding-inline: calc(16 / 16 * 1rem);
+
+		&:focus,
+		&:hover {
+			box-shadow: 0 0 0 calc(1 / 16 * 1rem) $blue-alt inset;
+		}
+	}
+}

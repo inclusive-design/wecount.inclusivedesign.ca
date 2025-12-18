@@ -23,9 +23,8 @@
     <h1>{{ title }}</h1>
         {{ content | safe }}
     <form method="get" action="/initiatives/">
-      {% set placeholderForSearch = "Search initiatives..." %}
-      {% set ariaLabelForSearch = "Enter keywords for a search in posts" %}
-      {% include 'components/search-container.njk' %}
+      {%- from '../components/search.macro.njk' import search %}
+      {{ search({placeholder: "Search initiatives...", label: "Enter keywords for a search in posts"}) }}
 
       {% set filterTitle = "Search Filters" %}
       {% set filterAction = "/initiatives/" %}

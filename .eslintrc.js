@@ -21,10 +21,10 @@ module.exports = {
 		}
 	},
 	rules: {
-		indent: [1, "tab"],
+		"@stylistic/js/indent": ["error", "tab"],
 		"linebreak-style": ["error", "unix"],
-		quotes: ["error", "double"],
-		semi: ["error", "always"],
+		"@stylistic/js/quotes": ["error", "double"],
+		"@stylistic/js/semi": ["error", "always"],
 		"react/react-in-jsx-scope": 0
 	},
 	overrides: [

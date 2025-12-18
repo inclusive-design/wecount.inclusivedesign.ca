@@ -1,0 +1,8 @@
+{%- macro search(params) -%}
+<div class="search-container">
+  <input name="s" type="search" placeholder="{{ params.placeholder }}" aria-label="{{ params.label }}">
+  <button class="search-button" aria-label="search">
+    <svg><use xlink:href="#search" /></svg>
+  </button>
+</div>
+{%- endmacro -%}

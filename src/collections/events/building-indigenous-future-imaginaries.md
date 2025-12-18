@@ -12,9 +12,6 @@ shortDescription: >-
 
 
   December 9, 2020, 10:30 AM – 12:00 PM (EST)
-
-
-  **Available badges:** Learner
 previewImageUrl: /uploads/IPAI.Quartet.Artist-KariNoe.CourtesyoftheInitiativeforIndigenousFutures1.png
 previewImageAltText: ""
 ---
@@ -27,18 +24,3 @@ December 9, 2020, 10:30 AM – 12:00 PM (EST)
 [Building Indigenous Future Imaginaries webinar video](https://youtu.be/R4FME84Sn2I)
 
 [Jason Lewis](http://jasonlewis.org/) is a digital media theorist, artist, and software designer. He founded Obx Laboratory for Experimental Media, where he directs research/creation projects exploring computation as a creative and cultural material. Lewis is deeply committed to developing intriguing new forms of expression by working on conceptual, critical, creative and technical levels simultaneously. He is the University Research Chair in Computational Media and the Indigenous Future Imaginary as well as Professor of Computation Arts at Concordia University, Montreal. Born and raised in northern California, Lewis is Hawaiian and Samoan.
-
-### Earn a Learner badge
-
-Machine learning, a subset of artificial intelligence (AI), depends on the quality, objectivity and size of training data used to teach it. We Count encourages participants and learners to explore this concept to help inform more equitable decisions and supports by understanding data gaps and biases.
-
-You will learn:
-
-* How various Indigenous communities are contributing to AI technology to express and preserve their identity
-* How Indigenous ways of knowing are contributing to the global conversation regarding society and AI
-
-Learn and earn badges from this event:
-
-1. Watch the accessible [Building Indigenous Future Imaginaries webinar](https://youtu.be/R4FME84Sn2I)
-2. Read Jason Lewis’s award-winning essay: [Making Kin with the Machines](https://jods.mitpress.mit.edu/pub/lewis-arista-pechawis-kite/release/1)
-3. [Apply for your Learner badge](https://factory.cancred.ca/c/earnablebadge/QRIF1HaV773a5D0/apply) (five short answer questions on the main themes of the webinar and the essay)

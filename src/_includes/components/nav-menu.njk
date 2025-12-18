@@ -3,13 +3,18 @@
     {% set navItems = collections.pages | eleventyNavigation %}
     {%- for item in navItems %}
       {%- if (item.order > 0) %}
-      <a {% if page.url === item.url %}aria-current="page" {% endif %}href="{{ item.url }}" {% if item.locale and item.locale !== "en-CA" %}hreflang="{{ item.locale }}" lang="{{ item.locale }}"{% endif %}>{{ item.key }}</a>
+      {%- if navItems[loop.index0 - 1].translation_key !== item.translation_key %}
+      <div>
+      {%- endif %}
+      <a data-key="{{ item.translation_key }}" {% if page.url === item.url %}aria-current="page" {% endif %}href="{{ item.url }}" {% if item.locale and item.locale !== "en-CA" %}hreflang="{{ item.locale }}" lang="{{ item.locale }}"{% endif %}>{{ item.key }}</a>
+      {%- if item.translation_key and navItems[loop.index0 + 1].translation_key !== item.translation_key %}
+      </div>
+      {%- endif %}
       {%- endif %}
     {%- endfor %}
   </nav>
-  <div>
-    <form method="get" action="/search/">
-      {% include 'components/search-container.njk' %}
-    </form>
-  </div>
+  {%- from './search.macro.njk' import search %}
+  <form method="get" action="/search/">
+  {{ search({placeholder: "Search …", label: "Enter keywords for a site-wide search"}) }}
+  </form>
 </div>

@@ -1,19 +1,5 @@
 $browser-context: 16;
 
-/** Typography **/
-$family-sans-serif: "Fira Sans", sans-serif;
-$font-weight-normal: 400;
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
-
-/** Max Widths **/
-$max-width-margins: rem(1600);
-
-// the ch widths represent the max width of the "main" element in narrow and wide viewports
-$full-width-video-margins: calc(-50vw + min(37.5ch, 50%));
-$full-width-video-widescreen-margins: calc(-50vw + min(65ch, 50%));
-
 /** Colors **/
 
 // Primary
@@ -26,6 +12,7 @@ $blue-light: #acdde9;
 $gold-dark: #fcb33e;
 $gold: #fdcc70;
 $gold-light: #ffe6a7;
+$gold-lightest: #fadc90;
 
 // Secondary
 $black: #000;
@@ -52,28 +39,7 @@ $green-grey: #cde6c4;
 $orange-focus: #fadc90;
 $orange-light: #5c81a9;
 $yellow: #ffcb70;
-$border-shadow-radius: rem(4);
+$border-shadow-radius: calc(4 / 16 * 1rem);
 $border-shadow-colour: rgba(0 0 0 / 25%);
 $border-shadow-light: 0 0 $border-shadow-radius $border-shadow-colour;
-$topic-title-border-radius: rem(8);
-
-// UIO themes
-$uio-themes: "bw" #000 #fff,
-	"wb" #fff #000,
-	"yb" #ff0 #000,
-	"by" #000 #ff0,
-	"lgdg" #bdbdbb #555,
-	"gd" #888 #222,
-	"gw" #6c6c6c #fff,
-	"bbr" #000 #b96;
-
-// Responsive Breakpoints, shamelessy cribbed from Bootstrap.
-// @see https://github.com/twbs/bootstrap/blob/master/scss/mixins/_breakpoints.scss
-
-$breakpoints: (
-	xs: 280,
-	sm: 640,
-	md: 760,
-	lg: 1100,
-	xl: 1366
-);
+$topic-title-border-radius: calc(8 / 16 * 1rem);

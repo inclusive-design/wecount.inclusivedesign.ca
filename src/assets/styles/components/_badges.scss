@@ -4,7 +4,7 @@
 		margin-block-end: 0;
 
 		& + div p {
-			margin-block-start: rem(6);
+			margin-block-start: calc(6 / 16 * 1rem);
 		}
 	}
 }

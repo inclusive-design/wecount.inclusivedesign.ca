@@ -35,6 +35,11 @@ collections:
         widget: string
         required: false
         hint: The locale of the page. If you do not specify a locale, default will be set to en-CA.
+      - label: Translation Key
+        name: translation_key
+        widget: string
+        required: false
+        hint: A unique key used to link translated content in French or English with its corresponding content in the other language.
       - label: Navigation Order
         name: menu_order
         widget: number
@@ -138,10 +143,6 @@ collections:
       - label: Event Title
         name: title
         widget: string
-      - label: Event ID
-        name: id
-        widget: uuid
-        hint: The ID is used to associate comments with this event and cannot be edited.
       - label: Permanent Link
         name: permalink
         widget: string

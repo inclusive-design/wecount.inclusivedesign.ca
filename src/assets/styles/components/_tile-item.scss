@@ -1,43 +1,43 @@
 .tile-item {
-	border-radius: rem(18);
-	box-shadow: rem(0) rem(0) rem(7) rgba(0 0 0 / 25%);
+	border-radius: calc(18 / 16 * 1rem);
+	box-shadow: calc(0 / 16 * 1rem) calc(0 / 16 * 1rem) calc(7 / 16 * 1rem) rgba(0 0 0 / 25%);
 	display: grid;
-	margin-block: rem(32);
+	margin-block: calc(32 / 16 * 1rem);
 	margin-inline: 0;
 
 	&:hover {
-		box-shadow: 0 0 rem(35) rgba(0 0 0 / 55%);
+		box-shadow: 0 0 calc(35 / 16 * 1rem) rgba(0 0 0 / 55%);
 	}
 
 	// Initiative title and descriptions
 	.tile-narrative,
 	.tile-resource {
-		border-radius: rem(18) rem(18) rem(18) rem(18);
-		min-block-size: rem(208);
-		padding-block: 0 rem(16);
-		padding-inline: rem(16);
+		border-radius: calc(18 / 16 * 1rem) calc(18 / 16 * 1rem) calc(18 / 16 * 1rem) calc(18 / 16 * 1rem);
+		min-block-size: calc(208 / 16 * 1rem);
+		padding-block: 0 calc(16 / 16 * 1rem);
+		padding-inline: calc(16 / 16 * 1rem);
 
 		// Initiative titles
 		h2 {
-			border-block-end: rem(2) solid $grey-shade;
-			padding-block-end: rem(16);
+			border-block-end: calc(2 / 16 * 1rem) solid $grey-shade;
+			padding-block-end: calc(16 / 16 * 1rem);
 		}
 
 		.author {
 			color: $black;
 			font-style: italic;
-			font-weight: $font-weight-semibold;
+			font-weight: var(--font-weight-semibold);
 		}
 
 		.date {
 			color: $grey-mid;
 			font-style: italic;
-			padding-block-end: rem(16);
+			padding-block-end: calc(16 / 16 * 1rem);
 		}
 
 		.description {
 			color: $black;
-			font-weight: $font-weight-normal;
+			font-weight: var(--font-weight-normal);
 		}
 	}
 
@@ -50,13 +50,13 @@
 
 		.info {
 			color: $black;
-			font-weight: $font-weight-normal;
-			margin-block-start: rem(16);
+			font-weight: var(--font-weight-normal);
+			margin-block-start: calc(16 / 16 * 1rem);
 
 			svg {
-				block-size: rem(20);
-				inline-size: rem(20);
-				margin-inline-end: rem(12);
+				block-size: calc(20 / 16 * 1rem);
+				inline-size: calc(20 / 16 * 1rem);
+				margin-inline-end: calc(12 / 16 * 1rem);
 			}
 
 			.resource-readability-list {
@@ -70,18 +70,18 @@
 			}
 
 			.resource-tags-list {
-				margin-block: rem(16) 0;
+				margin-block: calc(16 / 16 * 1rem) 0;
 				margin-inline: 0;
 				padding-inline-start: 0;
 
 				li {
 					background: $grey-light;
-					border-radius: rem(32);
+					border-radius: calc(32 / 16 * 1rem);
 					display: inline-block;
-					margin-block: 0 rem(12);
-					margin-inline: 0 rem(12);
-					padding-block: rem(4);
-					padding-inline: rem(16);
+					margin-block: 0 calc(12 / 16 * 1rem);
+					margin-inline: 0 calc(12 / 16 * 1rem);
+					padding-block: calc(4 / 16 * 1rem);
+					padding-inline: calc(16 / 16 * 1rem);
 				}
 			}
 		}
@@ -93,30 +93,30 @@
 	}
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	.tile-item {
 		grid-template-columns: 70% 30%;
 		grid-template-rows: 100%;
 
 		.tile-narrative,
 		.tile-resource {
-			border-radius: rem(18) 0 0 rem(18);
-			min-block-size: rem(336);
-			padding-block: 0 rem(16);
-			padding-inline: rem(32) rem(16);
+			border-radius: calc(18 / 16 * 1rem) 0 0 calc(18 / 16 * 1rem);
+			min-block-size: calc(336 / 16 * 1rem);
+			padding-block: 0 calc(16 / 16 * 1rem);
+			padding-inline: calc(32 / 16 * 1rem) calc(16 / 16 * 1rem);
 		}
 
 		// In order to apply border-radius, all inner elements need to have the same border-radius applied.
 		// This includes the wrapper div.tile-image and inner img element.
 		.tile-image {
 			block-size: 100%;
-			border-radius: 0 0 rem(18) rem(18);
+			border-radius: 0 0 calc(18 / 16 * 1rem) calc(18 / 16 * 1rem);
 			display: block;
 
 			img,
 			svg {
 				block-size: 100%;
-				border-radius: 0 rem(18) rem(18) 0;
+				border-radius: 0 calc(18 / 16 * 1rem) calc(18 / 16 * 1rem) 0;
 				inline-size: 100%;
 			}
 		}

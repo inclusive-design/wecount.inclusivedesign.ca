@@ -3,84 +3,101 @@ title: Regulating the Digital Domain
 excerpt: The aim of RtDD is to improve digital inclusion and ICT accessibility
   for all disabled people.
 menu_order: 6
+locale: en-CA
 key: Regulating the Digital
+translation_key: rtdd-rddn
 permalink: /rtdd/
 ---
 ![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
 
-Voir ce page en [français](https://wecount.inclusivedesign.ca/rddn)
+Voir ce page en [français](https://wecount.inclusivedesign.ca/rldn)
 
-## Upcoming Events
+## Research update
 
-[](https://wecount.inclusivedesign.ca/rddn)IDRC invites members of the disability community to participate in an upcoming online, inclusive co-design research event.
+The Regulating the Digital Domain (RtDD) project is committed to advancing digital inclusion and ICT accessibility for people with disabilities. This ambitious endeavor is achieved by convening a multidisciplinary team of advisors and co-researchers, each bringing valuable insights from their respective fields. The team's collective expertise spans lived experiences of disability, regulatory design, digital systems, policy, cultural change, communications, complex adaptive systems, and compliance. Together, they tackle six pivotal challenges, and will develop the groundwork for a regulatory system that effectively governs the digital landscape. The project's goal is to establish robust standards and methodologies that ensure the digital domain is inclusive, equitable, and accessible for everyone.
 
-### About the co-design:
+### Challenges
 
-* The co-design process will span 7-8 hours over 6 weeks.
-* Selected participants will receive an honorarium of $500 CAD upon completion of the research activities.
-* The application deadline is Friday, March 22, 2023, at 5 PM (EDT).
+The RtDD team will design and propose regulatory approaches and systems that:
 
-### How to apply:
+1. address the diversity and complexity of accessibility needs, including the needs of small minorities and outliers,          
+2. are suited to the exponential rates of change of ICT and designed to proactively prevent emerging barriers,    
+3. support and require integrated accessibility approaches over segregated approaches to support interoperability and benefits to all users,       
+4. support rather than constrain accessibility innovation,              
+5. do not create incentives for the perpetuation of the problem,               
+6. engage and empower people with disabilities and their communities to shape regulatory requirements, inform methods of meeting requirements, identify regulatory gaps, and continuously refine the regulatory system.
 
-[Apply to participate as a co-researcher](https://lnkd.in/eBjAZnmU)
+To date these six challenges have been addressed by a series of co-design research sessions with experts with lived experience of disability:
 
-[Find out more about this event](https://wecount.inclusivedesign.ca/events/regulating-the-digital-domain-co-design-research/)
+[Co-design Research One: The Standards Development Game](https://wecount.inclusivedesign.ca/initiatives/rtdd-cd-1/)
+
+[Co-design Research Two: Accessibility Barriers and Regulatory Approaches for Digital Technologies](https://wecount.inclusivedesign.ca/initiative/rtdd-cd-2/)
+
+[Co-Design Research Three: Re-imagining Digital Accessibility Regulations](https://wecount.inclusivedesign.ca/initiative/rtdd-cd-3/)
+
+## Get involved
+
+[](https://wecount.inclusivedesign.ca/rddn)This and other IDRC projects include community co-researchers. You can participate in this project by [joining our RtDD community on Canvas ](https://canvas.instructure.com/enroll/94XY87)or sign up to our mailing list to get IDRC news and hear about upcoming co-research activities. 
+
+[Join the RtDD community on Canvas](https://canvas.instructure.com/enroll/94XY87)
+
+[Sign up to learn about co-researcher opportunities](https://forms.office.com/r/g4bgbHifqc)
+
+[Find out more about our last co-design research activity](https://wecount.inclusivedesign.ca/events/regulating-the-digital-domain-co-design-research/)
 
 ## About the project
 
-Regulating the Digital Domain (RtDD) project focuses on addressing the persistent challenges and disparities that people with disabilities face in accessing information and communication technologies (ICT) and digital tools.  
+Regulating the Digital Domain (RtDD) project focuses on addressing the persistent challenges and disparities that people with disabilities face in accessing information and communication technologies (ICT) and digital tools.
 
-The RtDD team will: 
+The RtDD team will:
 
-* work to uncover root causes of barriers,  
-* focus on systemic issues that support digital exclusion,  
-* identify potential ways to interrupt and eliminate, improve or prevent barriers from becoming worse  
-* enhance the accessibility of digital tools, content, transactions, and computer-mediated processes (using two or more electronic devices for a process) for people with disabilities. 
+* work to uncover root causes of barriers,
+* focus on systemic issues that support digital exclusion,
+* identify potential ways to interrupt and eliminate, improve or prevent barriers from becoming worse
+* enhance the accessibility of digital tools, content, transactions, and computer-mediated processes (using two or more electronic devices for a process) for people with disabilities.
 
-The RtDD goal is to significantly improve digital inclusion and ICT accessibility for the full range of PWD (people with disabilities). To make improvements the project will address the design of a regulatory system that focuses on the challenges of regulating within the digital domain. The project findings will inform Accessibility Standards Canada on greater accessibility to digital tools, content, transactions and/or computer-mediated processes. 
+The RtDD goal is to significantly improve digital inclusion and ICT accessibility for the full range of PWD (people with disabilities). To make improvements the project will address the design of a regulatory system that focuses on the challenges of regulating within the digital domain. The project findings will inform Accessibility Standards Canada on greater accessibility to digital tools, content, transactions and/or computer-mediated processes.
 
 ## Informing standards
 
-One of the critical aspects this research seeks to explore is the role of existing standards in facilitating these interventions. Standards play a vital role in shaping digital technologies' design, development, and implementation. By understanding how standards impact accessibility interventions, the project intends to present recommendations that promote more inclusive digital innovations. 
+One of the critical aspects this research seeks to explore is the role of existing standards in facilitating these interventions. Standards play a vital role in shaping digital technologies' design, development, and implementation. By understanding how standards impact accessibility interventions, the project intends to present recommendations that promote more inclusive digital innovations.
 
-The project research will take an interdisciplinary approach. We will do this by bringing together both lived experience experts and domain experts as co-researchers. The domain experts will be from various fields including: 
+The project research will take an interdisciplinary approach. We will do this by bringing together both lived experience experts and domain experts as co-researchers. The domain experts will be from various fields including:
 
-* policy,  
-* legislative design,  
-* access to justice,  
-* technology systems,  
-* communications,  
-* management,  
-* inclusive design,  
-* digital inclusion,  
-* economics, and  
-* complex adaptive systems.  
+* policy,
+* legislative design,
+* access to justice,
+* technology systems,
+* communications,
+* management,
+* inclusive design,
+* digital inclusion,
+* economics, and
+* complex adaptive systems.
 
-Together co-researchers will design and propose regulatory approaches and systems that: 
+Together co-researchers will design and propose regulatory approaches and systems that:
 
-* address the diversity and complexity of accessibility needs, including the needs of small minorities and outliers,  
-* are suited to the exponential rates of change of ICT and designed to proactively prevent emerging barriers,  
-* support and require integrated accessibility approaches over segregated approaches to support interoperability and benefits to all users,  
-* support rather than constrain accessibility innovation,  
-* do not create incentives for the perpetuation of the problem,  
-* engage and empower people with disabilities and their communities to shape regulatory requirements, inform methods of meeting requirements, identify regulatory gaps, and continuously refine the regulatory system.  
+* address the diversity and complexity of accessibility needs, including the needs of small minorities and outliers,
+* are suited to the exponential rates of change of ICT and designed to proactively prevent emerging barriers,
+* support and require integrated accessibility approaches over segregated approaches to support interoperability and benefits to all users,
+* support rather than constrain accessibility innovation,
+* do not create incentives for the perpetuation of the problem,
+* engage and empower people with disabilities and their communities to shape regulatory requirements, inform methods of meeting requirements, identify regulatory gaps, and continuously refine the regulatory system.
 
 ## Addressing six challenges with inclusive practices and co-design
 
-> If you would like to take part in IDRC co-designs, register here
->
-> <https://forms.office.com/r/g4bgbHifqc>
+> If you would like to take part in IDRC co-designs, please [join the mailing list](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo62199fYthCJCZAjMYVyFj1V1dUNjdNSFRTTkVXTVNNOEM0RVZHOVlBNEJVMiQlQCN0PWcu&route=shorturl) to learn about upcoming events.
 
-Six challenges will be addressed through a series of co-designs. We will address the following challenges by engaging a wide range of stakeholders with relevant lived experiences and expertise, recognizing that the issues are complex and interrelated. The results will inform the next generation of model accessibility standards in the digital domain. The team will develop strategies that leverage the properties of the digital domain and the approaches needed to ensure greater digital inclusion for people with disabilities.	 
+Six challenges will be addressed through a series of co-designs. We will address the following challenges by engaging a wide range of stakeholders with relevant lived experiences and expertise, recognizing that the issues are complex and interrelated. The results will inform the next generation of model accessibility standards in the digital domain. The team will develop strategies that leverage the properties of the digital domain and the approaches needed to ensure greater digital inclusion for people with disabilities.
 
-The challenges are: 
+The challenges are:
 
 1. How can we meet the diverse and complex accessibility needs of people with disabilities?
 
    * People with disabilities have more varied needs than people without disabilities. Regulations tend to simplify and generalize these needs, leaving out many people who do not fit the standard criteria. Regulations also limit the potential of digital systems to adapt to individual differences. We need to design for the spectrum of accessibility needs, not just for a checklist of requirements.
-2. How can we keep up with the rapid changes in technology and prevent new barriers from emerging? 
+2. How can we keep up with the rapid changes in technology and prevent new barriers from emerging?
 
-   * Technology changes faster than standards and regulations. New opportunities and risks arise constantly. Accessibility regulations often clash with the innovation drive that fuels the digital economy. Accessibility compliance is often sacrificed for speed and novelty. We need to find ways to make accessibility a priority in the changing digital landscape, and to prevent new barriers before they become entrenched. 
+   * Technology changes faster than standards and regulations. New opportunities and risks arise constantly. Accessibility regulations often clash with the innovation drive that fuels the digital economy. Accessibility compliance is often sacrificed for speed and novelty. We need to find ways to make accessibility a priority in the changing digital landscape, and to prevent new barriers before they become entrenched.
 3. How can we ensure integration and interoperability of digital systems and devices?
 
    * The digital world is interconnected and interdependent. Functionality depends on compatibility. Accessibility regulations have created a separate market for specialized assistive technologies (AT) that often do not work well with mainstream products. This makes digital access more expensive, less functional, and less inclusive for people with disabilities who rely on AT. It also deprives the general public of the benefits of accessible design. We need to promote integration and interoperability of digital systems and devices for everyone.
@@ -94,9 +111,40 @@ The challenges are:
 
    * Accessibility regulations often assume that people with disabilities are passive consumers, not active producers, of digital content and technology. They also rely on experts to prescribe, train, and maintain AT systems for people with disabilities. This limits the participation and autonomy of people with disabilities in the digital domain. We need to support people with disabilities as creators, innovators, and decision-makers in the digital world.
 
+## Reports
+
+[Regulating the Digital Domain: Co-Design 1 Results (downloadable Word document)   ](/uploads/regulating-the-digital-domain_co-design-1-results.docx)
+
+[Regulating the Digital Domain: Co-Design 2 Results (downloadable Word document)   ](/uploads/regulating-the-digital-domain_co-design-2-results.docx)
+
+[Regulating the Digital Domain: Co-Design 3 Results (downloadable Word document)   ](/uploads/regulating-the-digital-domain_co-design-3-results.docx)
+
 ## P﻿artners
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulder image of Boris Vukovic", "Boris Vukovic", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -115,9 +163,55 @@ The challenges are:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulder image of Christopher Sutton ", "Christopher Sutton", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -136,9 +230,55 @@ The challenges are:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulder image of Emile Tompa ", "Emile Tompa", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -157,9 +297,55 @@ The challenges are:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Heather Walkus", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -178,9 +364,55 @@ The challenges are:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulder image of Jenelle Rouse", "Jenelle Rouse", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,9 +431,55 @@ BDC has a community-building focus where it aims to increase network of Black De
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "J﻿im Tokos", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -220,6 +498,29 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Joelle Robinson", "left", "center" %}
@@ -229,11 +530,57 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Manitoba League of Persons with Disabilities (MLPD)
 
-The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, and their supporters, that promotes equal rights, full participation in society, and facilitates positive change through advocacy and public education. 
+The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, and their supporters, that promotes equal rights, full participation in society, and facilitates positive change through advocacy and public education.
 
 **About Joelle’s role with RtDD :** Recruit members with disabilities, especially in rural and remote areas, to participate in co-design. Help disseminate project drafts for review and feedback.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -243,6 +590,29 @@ The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, a
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulder image of Kerri Joffee", "Kerri Joffee", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -261,9 +631,55 @@ The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, a
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Lori Vaanholt", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -282,9 +698,55 @@ Across Canada and around the world, [L’Arche](https://www.larche.ca/) creates 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "Mahadeo Sukhai", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -303,9 +765,55 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulder image of Michael Bach", "Michael Bach", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -324,9 +832,55 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "Paula Chapman", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -345,9 +899,55 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "Pina D’Agostino", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -366,9 +966,55 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "Shermineh Esmati", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -388,9 +1034,55 @@ The [Digital Governance Standards Institute](https://dgc-cgn.org/standards/), pa
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "W. Francis Fung", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -409,23 +1101,44 @@ The vision of the [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/P
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 ## Team
 
-Jutta Treviranus, principal investigator 
+Jutta Treviranus, principal investigator
 
 Vera Roberts
 
 David Pereyra
 
-Caren Watkins 
+Caren Watkins
 
 U﻿ttara Ghodke
 
-## Co-design research events
-
-If you are interested in participating in IDRC co-designs sign up here <https://forms.office.com/r/g4bgbHifqc>
+[](https://forms.office.com/r/g4bgbHifqc)
 
 ## Acknowledgements
 

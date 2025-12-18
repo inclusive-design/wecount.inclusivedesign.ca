@@ -146,25 +146,25 @@
 .initiatives,
 .resources {
 	.search-container {
-		padding-block-end: rem(27);
+		padding-block-end: calc(27 / 16 * 1rem);
 
 		svg {
 			left: 0;
-			margin-inline-start: rem(16);
-			top: rem(16);
+			margin-inline-start: calc(16 / 16 * 1rem);
+			top: calc(16 / 16 * 1rem);
 		}
 
 		input[type="search"] {
 			border: 1px solid $green-dark;
-			border-radius: rem(28);
-			font-size: rem(18);
+			border-radius: calc(28 / 16 * 1rem);
+			font-size: calc(18 / 16 * 1rem);
 			inline-size: 100%;
-			padding-block: rem(16);
-			padding-inline-start: rem(48);
+			padding-block: calc(16 / 16 * 1rem);
+			padding-inline-start: calc(48 / 16 * 1rem);
 
 			&:focus {
 				inline-size: 100%;
-				padding-inline-start: rem(48);
+				padding-inline-start: calc(48 / 16 * 1rem);
 			}
 		}
 
@@ -175,7 +175,7 @@
 
 	.search-result {
 		color: $green-dark;
-		margin-block-start: rem(-32);
+		margin-block-start: calc(-1 * 32 / 16 * 1rem);
 	}
 
 	.search-for-title {
@@ -183,14 +183,12 @@
 	}
 
 	.tags {
-		@include tags;
-
-		margin-block: rem(-16) rem(16);
+		margin-block: -1rem 1rem;
 		margin-inline: 0;
 	}
 
 	.search-term {
-		margin-block: rem(-8) rem(32);
+		margin-block: -0.5rem 2rem;
 		margin-inline: 0;
 	}
 }
@@ -198,19 +196,19 @@
 .initiatives {
 	.search-container {
 		input[type="search"] {
-			margin-inline-start: rem(-8);
+			margin-inline-start: -0.5rem;
 		}
 	}
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	.initiatives {
 		.search-container {
-			inline-size: rem(288);
+			inline-size: calc(288 / 16 * 1rem);
 			margin-inline-start: auto;
 
 			input[type="search"] {
-				inline-size: rem(288);
+				inline-size: calc(288 / 16 * 1rem);
 				margin-inline-start: 0;
 			}
 		}
