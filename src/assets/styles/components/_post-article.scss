@@ -5,26 +5,24 @@
 	}
 
 	.date {
-		margin-block-end: rem(64);
+		margin-block-end: calc(64 / 16 * 1rem);
 	}
 
 	.api-content {
 		border-block-end: 2px solid $green-dark;
-		margin-block-end: rem(24);
-		padding-block-end: rem(160);
+		margin-block-end: calc(24 / 16 * 1rem);
+		padding-block-end: calc(160 / 16 * 1rem);
 	}
 
 	.tags-info {
 		h2 {
 			color: $green-dark;
-			margin-block: rem(8);
+			margin-block: calc(8 / 16 * 1rem);
 			margin-inline: 0;
 		}
 	}
 
 	.tags {
-		@include tags;
-
-		margin-block-end: rem(80);
+		margin-block-end: calc(80 / 16 * 1rem);
 	}
 }

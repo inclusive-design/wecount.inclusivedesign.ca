@@ -3,43 +3,43 @@ aside {
 	justify-self: end;
 }
 
-@include breakpoint-up(lg) {
+@media screen and (width >= 68.75rem) {
 	#defaultContainer aside {
 		display: inherit;
-		padding-block-start: rem(58);
+		padding-block-start: calc(58 / 16 * 1rem);
 
 		nav {
 			ul {
-				box-shadow: rem(1) 0 0 0 $green-dark inset;
-				inline-size: rem(195);
+				box-shadow: calc(1 / 16 * 1rem) 0 0 0 $green-dark inset;
+				inline-size: calc(195 / 16 * 1rem);
 				list-style-type: none;
 				padding-block: 0;
-				padding-inline: rem(0);
+				padding-inline: calc(0 / 16 * 1rem);
 				position: sticky;
-				top: rem(58);
+				top: calc(58 / 16 * 1rem);
 
 				li {
-					inline-size: rem(158);
-					left: rem(-2);
-					margin-block: 0 rem(23);
+					inline-size: calc(158 / 16 * 1rem);
+					left: calc(-1 * 2 / 16 * 1rem);
+					margin-block: 0 calc(23 / 16 * 1rem);
 					margin-inline: 0;
-					padding-inline-start: rem(20);
+					padding-inline-start: calc(20 / 16 * 1rem);
 
 					&.active {
-						box-shadow: rem(5) 0 0 0 $green-dark inset;
-						padding-inline-start: rem(22);
+						box-shadow: calc(5 / 16 * 1rem) 0 0 0 $green-dark inset;
+						padding-inline-start: calc(22 / 16 * 1rem);
 						position: relative;
 					}
 
 					a {
 						color: $navy-light;
-						font-size: rem(18) !important; // Enactors.css in infusion uses !important on this element
-						font-weight: $font-weight-normal;
+						font-size: calc(18 / 16 * 1rem) !important; // Enactors.css in infusion uses !important on this element
+						font-weight: var(--font-weight-normal);
 					}
 
 					&:first-child {
 						a {
-							font-weight: $font-weight-bold;
+							font-weight: var(--font-weight-bold);
 						}
 					}
 				}

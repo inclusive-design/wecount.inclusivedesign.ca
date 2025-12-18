@@ -1,46 +1,159 @@
 // Header styles
 
 header {
-	.nav-mobile-layout-wrapped {
-		display: contents;
+	.site-nav {
+		box-shadow: 0 0 calc(20 / 16 * 1rem) 0 rgb(0 0 0 / 10%);
+		position: relative;
+
+		&::after {
+			background: linear-gradient(var(--fl-fgColor, $white), rgb(0 0 0 / 5%));
+			block-size: 15px;
+			content: "";
+			display: block;
+			inline-size: 100vw;
+			left: 0;
+			position: absolute;
+			top: calc(130 / 16 * 1rem);
+		}
 	}
 
-	.header-recount {
-		background-color: #fbdc90;
-		border-radius: rem(36);
-		color: #1a4672;
-		font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
-		font-size: rem(24);
-		padding-block: rem(18);
-		padding-inline: rem(33);
-		text-align: center;
-		white-space: nowrap;
+	.site-nav-inner {
+		align-items: center;
+		background: $white;
+		display: grid;
+		gap: calc(18 / 16 * 1rem);
+		grid-template-columns: calc(72 / 16 * 1rem) 1fr;
+		grid-template-rows: calc(130 / 16 * 1rem) calc(95 / 16 * 1rem);
+		inline-size: calc(100vw - calc(36 / 16 * 1rem));
+		margin-inline: auto;
+
+		.brand svg {
+			stroke: var(--fl-linkFgColor);
+		}
+
+		.header-join {
+			block-size: max-content;
+			border-radius: calc(36 / 16 * 1rem);
+			box-shadow: inset 0 0 0 calc(1 / 16 * 1rem) var(--fl-linkFgColor, black);
+			color: $black;
+			font-family: var(--font-alternate);
+			font-size: calc(14 / 16 * 1rem);
+			font-weight: var(--font-weight-bold);
+			inline-size: max-content;
+			justify-self: end;
+			padding-block: calc(18 / 16 * 1rem);
+			padding-inline: calc(14 / 16 * 1rem);
+			text-align: center;
+			white-space: nowrap;
+		}
+
+		.header-join:hover,
+		.header-join:focus {
+			box-shadow: inset 0 0 0 calc(2 / 16 * 1rem) var(--fl-linkFgColor, black);
+		}
+
+		// Menu Button
+		[aria-expanded] {
+			align-items: center;
+			background: none;
+			block-size: calc(90 / 16 * 1rem);
+			border: unset;
+			border-radius: unset;
+			box-shadow: none;
+			color: $black;
+			display: flex;
+			flex-direction: column;
+			inline-size: calc(52 / 16 * 1rem);
+			justify-self: center;
+			padding: calc(8 / 16 * 1rem);
+
+			.menu-open {
+				block-size: auto;
+				inline-size: calc(42 / 16 * 1rem);
+			}
+
+			.menu-close {
+				block-size: auto;
+				inline-size: calc(34 / 16 * 1rem);
+			}
+
+			.label {
+				font-family: var(--font-alternate);
+				font-size: calc(14 / 16 * 1rem);
+				font-weight: var(--font-weight-semibold);
+				letter-spacing: 0.15em;
+			}
+		}
+
+		[aria-expanded]::before {
+			content: none;
+		}
+
+		[aria-expanded]:hover,
+		[aria-expanded]:focus {
+			background-color: $orange-focus;
+			box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--fl-linkFgColor, black) inset;
+		}
+
+		[aria-expanded="false"] {
+			.menu-close {
+				display: none;
+			}
+
+			.menu-open {
+				display: block;
+			}
+		}
+
+		[aria-expanded="true"] {
+			.menu-close {
+				display: block;
+			}
+
+			.menu-open {
+				display: none;
+			}
+		}
+
+		&:has([aria-expanded="false"]) + .primary-nav {
+			display: none;
+		}
+
+		&:has([aria-expanded="true"]) + .primary-nav {
+			display: flex;
+		}
+
+		.search-form {
+			padding-inline: 0;
+		}
 	}
 
-	form {
-		padding-inline: 6.5rem;
+	.primary-nav .search-container {
+		display: none;
 	}
 
 	// Styles for the search container
 	.search-container {
-		svg {
-			block-size: rem(40);
-			fill: $white;
-			inline-size: rem(40);
-			right: rem(30);
-			top: rem(18);
-			z-index: 1;
+		button {
+			fill: var(--fl-fgColor, $white);
+			right: calc(4 / 16 * 1rem);
+			top: calc(4 / 16 * 1rem);
 		}
 
 		input[type="search"] {
-			block-size: rem(71);
-			border-radius: rem(35.5);
-			box-shadow: $border-shadow-light;
-			font-size: rem(24);
-			font-weight: $font-weight-semibold;
+			block-size: calc(52 / 16 * 1rem);
+			border-radius: calc(26 / 16 * 1rem);
+			box-shadow: 0 0 0 calc(1 / 16 * 1rem) #000 inset;
+			font-family: var(--font-alternate);
+			font-size: calc(16 / 16 * 1rem);
+			font-weight: var(--font-weight-semibold);
 			inline-size: 100%;
 			outline: none;
-			padding-inline-start: rem(32);
+			padding-inline-start: calc(12 / 16 * 1rem);
+		}
+
+		input[type="search"]:focus {
+			box-shadow: 0 0 0 calc(2 / 16 * 1rem) #000 inset;
 		}
 
 		/* remove the ‘X’ from Internet Explorer */
@@ -60,250 +173,119 @@ header {
 		}
 	}
 
-	.site-nav-wrapper {
-		background-color: $white;
-		inline-size: 100%;
+	// Styles for the navigation menu
+	.primary-nav {
+		background: rgb(247 236 207 / 100%);
+		display: flex;
+		flex-direction: column;
+		inline-size: 100vw;
+		padding-block: calc(36 / 16 * 1rem);
 
-		.site-nav {
-			.nav-container {
-				align-items: center;
-				border-block-end: rem(3) rgb(0 0 0 / 10%) outset;
-				border-block-start: rem(3) rgb(0 0 0 / 10%) outset;
-				display: flex;
-				justify-content: space-between;
-				padding-block: rem(30);
-				padding-inline: rem(96);
+		nav {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-inline: calc(36 / 16 * 1rem);
+		}
 
-				form {
-					display: none;
-				}
-			}
+		a {
+			color: $black;
+			font-family: "Montserrat Alternates", Montserrat, var(--font-alternate);
+			font-size: calc(14 / 16 * 1rem) !important; // Enactors.css in infusion uses !important on this element
+			font-weight: var(--font-weight-medium);
+			inline-size: 100%;
+			line-height: calc(28 / 16 * 1rem);
+			text-transform: capitalize;
+		}
 
-			.starter-nav {
-				align-items: center;
-				display: flex;
-				flex-direction: column;
-				inline-size: rem(90);
-				justify-content: end;
-				padding-block: 0;
+		div > a {
+			display: block;
+		}
 
-				// Toggle menu button on mobile design
-				// Override the default button styles from _base.scss and apply the new style
-				button {
-					background: none;
-					block-size: rem(90);
-					border: rem(1) solid;
-					border-radius: 50%;
-					box-shadow: none;
-					color: $black;
-					inline-size: rem(90);
-					padding: rem(24);
-
-					svg {
-						block-size: rem(42);
-						inline-size: rem(42);
-						pointer-events: none;
-					}
-				}
-
-				button::before {
-					content: none;
-				}
-
-				button:hover,
-				button:focus {
-					background-color: $orange-focus;
-				}
-
-				#menuToggleButton .screen-reader-only {
-					display: none;
-				}
-
-				#menuToggleButton {
-					&[aria-expanded="false"] {
-						.menu-close {
-							display: none;
-						}
-
-						.menu-open {
-							display: block;
-						}
-					}
-
-					&[aria-expanded="true"] {
-						.menu-close {
-							display: block;
-						}
-
-						.menu-open {
-							display: none;
-						}
-					}
-				}
-
-				#navigation-menu {
-					text-align: center;
-				}
-			}
-
-			// To make room for the box-shadow on nav container
-			.content-wrapper {
-				margin-block-start: 4px;
-			}
-
-			// Styles for the navigation menu
-			.primary-nav {
-				background: rgb(247 236 207 / 100%);
-				display: flex;
-				flex-direction: column;
-				inline-size: 100vw;
-				padding-block: rem(36);
-
-				nav {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					margin-block-end: rem(28);
-					padding-inline: 6.5rem;
-				}
-
-				a {
-					color: $black;
-					font-family: "Montserrat Alternates", Montserrat, $family-sans-serif;
-					font-size: rem(32) !important; // Enactors.css in infusion uses !important on this element
-					font-weight: $font-weight-medium;
-					inline-size: 100%;
-					line-height: rem(64);
-					text-transform: capitalize;
-				}
-
-				div > a + a::before {
-					content: "/";
-					display: inline;
-					padding-inline: 1ch;
-				}
-
-				a[aria-current="page"] {
-					background-color: $orange-focus;
-					font-weight: $font-weight-bold;
-					text-decoration: underline;
-				}
-			}
+		a[aria-current="page"] {
+			background-color: $orange-focus;
+			font-weight: var(--font-weight-bold);
+			text-decoration: underline;
 		}
 	}
 }
 
-// This media query breakpoint is for the Galaxy Fold screen.
+@media screen and (width >= 47.5rem) {
+	header .site-nav::after {
+		display: none;
+	}
 
-@include breakpoint-down(md) {
-	header {
-		.nav-mobile-layout-wrapped {
-			align-items: center;
-			display: flex;
-			inline-size: 100vw;
-			justify-content: space-between;
-			padding-block: rem(40);
+	header .site-nav-inner {
+		block-size: calc(150 / 16 * 1rem);
+		display: flex;
+		inline-size: 100%;
+		justify-content: space-between;
+		margin-inline: auto;
+		max-inline-size: calc(1265 / 16 * 1rem);
+		padding-inline: calc(36 / 16 * 1rem);
+	}
 
-			.brand,
-			.starter-nav {
-				margin-inline-start: rem(96);
-			}
+	header .site-nav-inner .header-join {
+		font-size: calc(24 / 16 * 1rem);
+		padding-inline: calc(32 / 16 * 1rem);
+	}
 
-			.header-recount,
-			.search-container {
-				margin-inline-end: rem(96);
-			}
+	header .site-nav-inner .search-form {
+		display: none;
+	}
 
-			&:first-child {
-				padding-block: rem(40);
-			}
+	header input[type="search"] {
+		font-size: calc(24 / 16 * 1rem);
+	}
 
-			&:last-child {
-				border-block-start: rem(3) rgb(0 0 0 / 10%) outset;
-				padding-block: rem(10);
-			}
-		}
-
-		.header-recount {
-			block-size: max-content;
-			font-size: rem(14);
-		}
-
-		.search-container {
-			input[type="search"] {
-				font-size: rem(16);
-				font-weight: $font-weight-semibold;
-			}
-		}
+	header .nav-container {
+		flex-direction: row;
+		padding-block: calc(30 / 16 * 1rem);
 
 		form {
 			display: none;
 		}
-
-		.site-nav-wrapper {
-			.site-nav {
-				.nav-container {
-					display: flex;
-					flex-direction: column;
-					padding-block: unset;
-
-					form {
-						display: block;
-						padding-inline: unset;
-					}
-				}
-
-				.starter-nav {
-					justify-content: unset;
-
-					button {
-						border: unset;
-						border-radius: unset;
-						padding: rem(8);
-
-						svg {
-							block-size: rem(74);
-							inline-size: rem(74);
-						}
-					}
-
-					#navigation-menu {
-						font-size: rem(14);
-						font-weight: $font-weight-semibold;
-					}
-				}
-
-				.primary-nav {
-					nav {
-						margin-block-end: unset;
-					}
-
-					a {
-						font-size: rem(14) !important; // Enactors.css in infusion uses !important on this element
-						line-height: rem(28);
-					}
-
-					div > a {
-						display: block;
-					}
-
-					div > a + a::before {
-						display: none;
-					}
-				}
-			}
-		}
 	}
-}
 
-@include breakpoint-down(xs) {
-	header .site-nav-wrapper .site-nav .starter-nav #menuToggleButton {
-		span {
-			display: none;
+	header .site-nav-inner [aria-expanded] {
+		align-items: center;
+		block-size: calc(89 / 16 * 1rem);
+		border: 1px solid var(--fl-fgColor, black);
+		border-radius: 50%;
+		display: flex;
+		inline-size: calc(89 / 16 * 1rem);
+		justify-content: center;
+	}
+
+	header .site-nav-inner [aria-expanded] span {
+		bottom: -1.5rem;
+		position: absolute;
+	}
+
+	header .site-nav-inner [aria-expanded] .menu-open {
+		block-size: calc(42 / 16 * 1rem);
+		inline-size: calc(42 / 16 * 1rem);
+		position: relative;
+	}
+
+	header .primary-nav {
+		nav {
+			margin-block-end: calc(28 / 16 * 1rem);
 		}
 
-		.screen-reader-only {
+		a {
+			font-size: calc(32 / 16 * 1rem) !important; // Enactors.css in infusion uses !important on this element
+			line-height: calc(64 / 16 * 1rem);
+		}
+
+		div > a + a::before {
+			content: "/";
 			display: inline;
+			padding-inline: 1ch;
+		}
+
+		.search-container {
+			display: unset;
 		}
 	}
 }

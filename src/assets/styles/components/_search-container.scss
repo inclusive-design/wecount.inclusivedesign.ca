@@ -3,23 +3,36 @@
 	position: relative;
 
 	button {
-		display: contents;
+		appearance: none;
+		background: transparent;
+		block-size: calc(44 / 16 * 1rem);
+		border: 0;
+		border-radius: 50%;
+		inline-size: calc(44 / 16 * 1rem);
+		position: absolute;
+	}
+
+	button:hover {
+		background-color: #fbdc90;
+	}
+
+	button:focus {
+		box-shadow: 0 0 0 calc(2 / 16 * 1rem) #000 inset;
 	}
 
 	svg {
-		block-size: rem(24);
-		fill: $white;
-		inline-size: rem(24);
-		position: absolute;
+		block-size: calc(32 / 16 * 1rem);
+		fill: var(--fl-bgColor, $white);
+		inline-size: calc(32 / 16 * 1rem);
 	}
 
 	input[type="search"] {
 		border: 0;
 		border-radius: 50%;
-		font-size: rem(14);
-		inline-size: rem(16);
+		font-size: calc(14 / 16 * 1rem);
+		inline-size: calc(16 / 16 * 1rem);
 		outline: none;
-		padding-block: rem(8);
-		padding-inline: rem(16);
+		padding-block: calc(8 / 16 * 1rem);
+		padding-inline: calc(16 / 16 * 1rem);
 	}
 }
