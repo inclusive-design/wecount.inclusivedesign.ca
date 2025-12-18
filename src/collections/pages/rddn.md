@@ -109,11 +109,11 @@ Les défis sont les suivants
 
 ## Les rapports
 
-[Réguler le domaine numérique : Co-conception un résultats (document Word téléchargeable)](/uploads/réguler-le-domaine-numérique_co_conception_un_résultats.docx)
+[Réguler le domaine numérique : Co-conception un résultats (document Word téléchargeable)](/uploads/reguler-le-domaine-numerique_co_conception_un_resultats.docx)
 
 [Réguler le domaine numérique : Co-conception deux résultats (document Word téléchargeable)](/uploads/rapport_co_design_deux_finale_fr.docx)
 
-[Réguler le domaine numérique : Co-conception trois résultats (document Word téléchargeable)](/uploads/réguler_le_domaine_numérique_co_conception_trois_résultats.docx)
+[Réguler le domaine numérique : Co-conception trois résultats (document Word téléchargeable)](/uploads/reguler_le_domaine_numerique_co_conception_trois_resultats.docx)
 
 ## ﻿Partenaires
 
