@@ -111,6 +111,7 @@ button:not(
 .fl-prefsEditor-reset,
 .fl-switchUI-control,
 .lty-playbtn,
+.expandable-heading__toggle,
 .search-button) {
 	background-color: $green-light;
 	block-size: calc(54 / 16 * 1rem);
@@ -133,6 +134,7 @@ button:not(
 .fl-prefsEditor-reset,
 .fl-switchUI-control,
 .lty-playbtn,
+.expandable-heading__toggle,
 .search-button,
 .expander__toggle)::before {
 	block-size: calc(54 / 16 * 1rem);
