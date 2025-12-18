@@ -1,13 +1,21 @@
 # Changelog
 
-## [2.9.0](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2.8.0...v2.9.0) (2025-12-18)
+## [2025.12.18.1917.e5c10c2](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/v2.9.0...2025.12.18.1917.e5c10c2)
 
+### Features
+
+* fix: add the NFRF funder logo (#2435) [@cindyli](https://github.com/cindyli)
+
+### Bug Fixes
+
+* fix: rename files with accented characters (#2433) [@nedatidrc](https://github.com/nedatidrc)
+
+## [2.9.0](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2.8.0...v2.9.0) (2025-12-18)
 
 ### Features
 
 * add idea logo at the footer ([#2079](https://github.com/inclusive-design/wecount.inclusivedesign.ca/issues/2079)) ([752261c](https://github.com/inclusive-design/wecount.inclusivedesign.ca/commit/752261cd916172dadc064385c2cfc810c34789f5))
 * add idea logo at the footer ([#2079](https://github.com/inclusive-design/wecount.inclusivedesign.ca/issues/2079)) ([e32bfbb](https://github.com/inclusive-design/wecount.inclusivedesign.ca/commit/e32bfbb6482f69bb6693214c1e93587d182d7615))
-
 
 ### Bug Fixes
 
