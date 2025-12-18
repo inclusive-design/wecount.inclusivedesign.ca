@@ -3,6 +3,8 @@ name: Release
 on:
   push:
     branches: [dev]
+  pull_request:
+    types: [opened, reopened, synchronize]
 
 permissions:
   contents: write
@@ -10,7 +12,7 @@ permissions:
 
 jobs:
   release:
-    uses: inclusive-design/workflows/.github/workflows/release-please.yml@main
+    uses: inclusive-design/workflows/.github/workflows/node-release-semver.yml@main
     with:
       GHA_APP_ID: ${{ vars.GHA_APP_ID }}
     secrets:
