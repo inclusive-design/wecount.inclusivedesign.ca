@@ -26,4 +26,3 @@ exclude-labels:
 category-template: "### $TITLE"
 template: |
   $CHANGES
-
