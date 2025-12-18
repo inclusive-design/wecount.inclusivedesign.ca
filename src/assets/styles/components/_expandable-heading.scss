@@ -14,10 +14,10 @@
 	background-color: unset;
 	border: none;
 	display: flex;
-	gap: rem(12);
+	gap: calc(12 / 16 * 1rem);
 	inline-size: 100%;
 
 	svg {
-		block-size: rem(24);
+		block-size: calc(24 / 16 * 1rem);
 	}
 }
