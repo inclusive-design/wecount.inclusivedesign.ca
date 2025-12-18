@@ -69,16 +69,12 @@ header {
 
 			.menu-open {
 				block-size: auto;
-				fill: var(--fl-bgColor, black);
 				inline-size: calc(42 / 16 * 1rem);
-				stroke: var(--fl-fgColor, black);
 			}
 
 			.menu-close {
 				block-size: auto;
-				fill: var(--fl-bgColor, black);
 				inline-size: calc(34 / 16 * 1rem);
-				stroke: var(--fl-fgColor, black);
 			}
 
 			.label {
