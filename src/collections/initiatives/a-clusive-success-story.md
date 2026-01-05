@@ -11,6 +11,7 @@ tags:
   - Disability
   - Education
   - CISL
+expandableHeading: true
 ---
 ![Clusive logo](https://www.cast.org/binaries/content/gallery/castm/impact/clusive-story-16x9.jpg/clusive-story-16x9.jpg/aem%3Amedium)
 

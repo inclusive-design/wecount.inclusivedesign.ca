@@ -1,0 +1,23 @@
+.expandable-heading {
+	inline-size: 100%;
+
+	&:has(button:focus),
+	&:hover {
+		background-color: #fadc90;
+		color: $green-dark;
+		outline: 0;
+	}
+}
+
+.expandable-heading__toggle {
+	align-items: center;
+	background-color: unset;
+	border: none;
+	display: flex;
+	gap: calc(12 / 16 * 1rem);
+	inline-size: 100%;
+
+	svg {
+		block-size: calc(24 / 16 * 1rem);
+	}
+}
