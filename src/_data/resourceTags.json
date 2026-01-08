@@ -117,6 +117,10 @@
       "label": "Solution"
     },
     {
+      "value": "Standards",
+      "label": "Standards"
+    },
+    {
       "value": "surveillance",
       "label": "Surveillance"
     },
@@ -135,10 +139,6 @@
     {
       "label": "We Count at Large",
       "value": "weCountAtLarge"
-    },
-    {
-      "value": "Standards",
-      "label": "Standards"
     }
   ]
 }
