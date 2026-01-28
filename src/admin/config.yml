@@ -1,7 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main
   squash_merges: true
+  repo: inclusive-design/wecount.inclusivedesign.ca
+  base_url: https://auth.incd.ca
   commit_messages:
     create: 'chore(cms): create "{{path}}"'
     update: 'chore(cms): update "{{path}}"'
@@ -9,7 +11,6 @@ backend:
     uploadMedia: 'chore(cms): upload "{{path}}"'
     deleteMedia: 'chore(cms): delete "{{path}}"'
 local_backend: true
-publish_mode: editorial_workflow
 site_url: "https://wecount.inclusivedesign.ca"
 media_folder: src/uploads
 public_folder: /uploads
