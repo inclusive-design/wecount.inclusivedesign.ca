@@ -1,5 +1,25 @@
 # Changelog
 
+## [2026.01.28.2010.82ab034](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2025.12.18.1917.e5c10c2...2026.01.28.2010.82ab034)
+
+* chore(deps): lock file maintenance (#2451) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update commitlint monorepo to v20.3.0 (#2438) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#2437) @[renovate[bot]](https://github.com/apps/renovate)
+
+### Bug Fixes
+
+* fix: point some files to cachefly (#2454) [@nedatidrc](https://github.com/nedatidrc)
+
+### Chores
+
+* chore(cms): update "src/_data/resourceTags.json" (#2449) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): create "src/collections/resources/can-asc-6-2-2025-accessible-and-equitable-artificial-intelligence-systems.md" (#2448) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): update "src/_data/resourceTags.json" (#2447) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): update "src/collections/initiatives/accessible-and-equitable-artificial-intelligence-systems-standard.md" (#2446) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): update "src/collections/pages/home.md" (#2445) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): create "src/collections/initiatives/systèmes-d’intelligence-artificielle-accessibles-et-équitables.md" (#2444) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): create "src/collections/initiatives/accessible-and-equitable-artificial-intelligence-systems-standard.md" (#2443) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+
 ## [2025.12.18.1917.e5c10c2](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/v2.9.0...2025.12.18.1917.e5c10c2)
 
 ### Features
