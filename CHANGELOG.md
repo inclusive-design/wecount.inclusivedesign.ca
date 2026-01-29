@@ -1,5 +1,11 @@
 # Changelog
 
+## [2026.01.29.1740.9de00cd](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.01.28.2014.4e80d24...2026.01.29.1740.9de00cd)
+
+### Bug Fixes
+
+* fix: remove Netlify identity (#2459) [@nedatidrc](https://github.com/nedatidrc)
+
 ## [2026.01.28.2014.4e80d24](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.01.28.2010.82ab034...2026.01.28.2014.4e80d24)
 
 * feat: change to GitHub backend (#2457) [@nedatidrc](https://github.com/nedatidrc)
