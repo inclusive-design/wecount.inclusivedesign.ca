@@ -127,19 +127,19 @@ The final phase focuses on refining these selected approaches into validated mod
 
 The inclusion process pathways model helps organizations understand how to strengthen their accessibility practices, and the evidence it generates can demonstrate meaningful progress to regulators.
 
-`<iframe width="560" height="315" src="https://www.youtube.com/embed/OVqQQ4FsrH0?si=fGkhqqEOSqM3ZBNu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+{% youtube "https://youtu.be/OVqQQ4FsrH0" %}
 
 ### Model 2: Inclusive Learning Framework
 
 The Inclusive Learning Framework is a flexible and practical guide for embedding accessibility into lesson plans and teaching approaches across any subject matter.
 
-`<iframe width="560" height="315" src="https://www.youtube.com/embed/ZVUJfEbeBV8?si=1U3AgAh4aI8JJrsJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+{% youtube "https://youtu.be/ZVUJfEbeBV8" %}
 
 ### Model 3: Digital Inclusion Framework for Developers
 
 The Digital Inclusion Framework for Developers is a process-based framework for inclusive innovation that integrates accessibility throughout the development lifecycle.  
 
-`<iframe width="560" height="315" src="https://www.youtube.com/embed/BxCuY0T3rtQ?si=o_Ikd9xSp0WoQHKj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+{% youtube "https://youtu.be/BxCuY0T3rtQ" %}
 
 ## Reports
 
