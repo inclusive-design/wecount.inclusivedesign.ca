@@ -1,5 +1,19 @@
 # Changelog
 
+## [2026.03.24.1447.98f3337](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.02.12.1334.962e512...2026.03.24.1447.98f3337)
+
+* chore(deps): update actions/create-github-app-token action to v3 (#2471) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update mikefarah/yq action to v4.52.4 (#2470) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency markdownlint-cli2 to ^0.22.0 (#2469) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency markdown-it to v14.1.1 [security] - autoclosed (#2466) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency dotenv to v17.3.1 - autoclosed (#2465) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency autoprefixer to v10.4.27 - autoclosed (#2461) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#2462) @[renovate[bot]](https://github.com/apps/renovate)
+
+### Bug Fixes
+
+* fix: use inline-size instead of min-inline-size for YouTube container (#2468) [@chosww](https://github.com/chosww)
+
 ## [2026.02.12.1334.962e512](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.01.29.1740.9de00cd...2026.02.12.1334.962e512)
 
 * chore(deps): update dependency axios to v1.13.5 [security] (#2463) @[renovate[bot]](https://github.com/apps/renovate)
