@@ -1,5 +1,11 @@
 # Changelog
 
+## [2026.03.25.1402.817e38f](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.03.24.1447.98f3337...2026.03.25.1402.817e38f)
+
+### Bug Fixes
+
+* fix: issue with YouTube video player size (#2475) [@chosww](https://github.com/chosww)
+
 ## [2026.03.24.1447.98f3337](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.02.12.1334.962e512...2026.03.24.1447.98f3337)
 
 * chore(deps): update actions/create-github-app-token action to v3 (#2471) @[renovate[bot]](https://github.com/apps/renovate)
