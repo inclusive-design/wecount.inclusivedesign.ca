@@ -55,7 +55,7 @@
     "modern-css-reset": "^1.4.0",
     "nunjucks": "^3.2.4",
     "prop-types": "^15.8.1",
-    "react": "^16.14.0",
+    "react": "^19.0.0",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
