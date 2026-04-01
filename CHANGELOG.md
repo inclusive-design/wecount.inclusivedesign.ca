@@ -1,5 +1,18 @@
 # Changelog
 
+## [2026.04.01.1556.46d6021](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.03.25.1402.817e38f...2026.04.01.1556.46d6021)
+
+* chore(deps): update dependency axios to v1.14.0 (#2480) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update mikefarah/yq action to v4.52.5 (#2477) @[renovate[bot]](https://github.com/apps/renovate)
+
+### Bug Fixes
+
+* fix: resolve issues with CMS previews (#2479) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* fix: resolve issues with CMS previews (#2479) [@nedatidrc](https://github.com/nedatidrc)
+
 ## [2026.03.25.1402.817e38f](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.03.24.1447.98f3337...2026.03.25.1402.817e38f)
 
 ### Bug Fixes
