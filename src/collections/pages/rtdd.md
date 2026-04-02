@@ -1476,7 +1476,7 @@ The vision of the [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/P
 
 {% endimageAndText %}
 
-## Team
+## IDRC team
 
 Jutta Treviranus, principal investigator
 
