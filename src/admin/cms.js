@@ -1,11 +1,11 @@
 /* eslint-disable react/display-name */
 /* global CMS, createClass, nunjucks, PropTypes, React */
 
-import dateFilter from "../filters/date";
+import slugify from "@sindresorhus/slugify";
+import dateFilter from "../filters/convert-date.js";
 import htmlSymbolFilter from "../filters/html-symbol";
 import markdownFilter from "../filters/markdown";
 import randomizeFilter from "../filters/randomize";
-import slugFilter from "../filters/slug";
 import paginateFilter from "../filters/paginate";
 import w3DateFilter from "../filters/w3-date";
 import expanderShortcode from "../shortcodes/expander.js";
@@ -20,7 +20,7 @@ env.addFilter("dateFilter", dateFilter);
 env.addFilter("htmlSymbolFilter", htmlSymbolFilter);
 env.addFilter("markdownFilter", markdownFilter);
 env.addFilter("randomizeFilter", randomizeFilter);
-env.addFilter("slug", slugFilter);
+env.addFilter("slug", slugify);
 env.addFilter("paginate", paginateFilter);
 env.addFilter("w3DateFilter", w3DateFilter);
 
@@ -103,7 +103,7 @@ const Initiatives = createClass({
 
 		if (tagItems) {
 			for (const [index, value] of tagItems.entries()) {
-				tags.push(<a key={index} href={"/tags/" + slugFilter(value)}>{value}</a>);
+				tags.push(<a key={index} href={"/tags/" + slugify(value)}>{value}</a>);
 			}
 		}
 

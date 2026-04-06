@@ -1,28 +1,13 @@
+import convertDate from "../../filters/convert-date.js";
+
 // Shared utility functions
-
-/* global convertDate, stripHtmlTags, htmlDecode, chunkArray, escapeSpecialChars, slugify, includesCaseInsensitive */
-
-/*
- * Convert a date into the format of "Month day, Year".
- * @param {String} inputDate - A string of date.
- * @return The string in the format of "Month day, Year".
- */
-// eslint-disable-next-line
-convertDate = function (inputDate) {
-	const dateObject = new Date(inputDate);
-
-	const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-	return `${months[dateObject.getMonth()]} ${dateObject.getDate()}, ${dateObject.getFullYear()}`;
-};
 
 /*
  * Remove html tags from the input string.
  * @param {String} inputString - The string to remove html tags.
  * @return The string with html tags removed.
  */
-// eslint-disable-next-line
-stripHtmlTags = function (inputString) {
+const stripHtmlTags = function (inputString) {
 	return inputString.replace(/<\/?[^>]+(>|$)/g, "");
 };
 
@@ -31,8 +16,7 @@ stripHtmlTags = function (inputString) {
  * @param {String} input - The string to extract text from.
  * @return The extracted text.
  */
-// eslint-disable-next-line
-htmlDecode = function (input) {
+const htmlDecode = function (input) {
 	let el = document.createElement("div");
 	el.innerHTML = input;
 	return el.innerText;
@@ -44,8 +28,7 @@ htmlDecode = function (input) {
  * @param {Number} chunkSize - The size of smaller arrays to chunk to.
  * @return An array of smaller arrays with the given chunk size at its most.
  */
-// eslint-disable-next-line
-chunkArray = function (inputArray, chunkSize) {
+const chunkArray = function (inputArray, chunkSize) {
 	return Array(Math.ceil(inputArray.length / chunkSize)).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
 };
 
@@ -57,8 +40,7 @@ chunkArray = function (inputArray, chunkSize) {
  * @param {String} hrefTemplate - The href to redirect to when a page number is clicked.
  * @return Generate a pagination object in this data structure: https://www.11ty.dev/docs/pagination/#paging-an-array.
  */
-// eslint-disable-next-line
-createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplate) {
+const createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplate) {
 	const dataInChunk = chunkArray(dataArray, pageSize);
 	pageInQuery = pageInQuery ? (parseInt(pageInQuery) > 1 ? parseInt(pageInQuery) : 1) : 1;
 	let hrefs = [];
@@ -96,8 +78,7 @@ createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplate) {
  * @param {String} data - The string to escape special characters within it.
  * @return The same string with special characters within it escaped.
  */
-// eslint-disable-next-line
-escapeSpecialChars = function (data) {
+const escapeSpecialChars = function (data) {
 	return data.replace(/[!@#$%^&*()+=\-[\]\\';,./{}|":<>?~_]/g, "\\$&");
 };
 
@@ -106,8 +87,7 @@ escapeSpecialChars = function (data) {
  * @param {Array<Object>} dataSet - The data set to process.
  * @return The same set of the data set with fields converted.
  */
-// eslint-disable-next-line
-processDisplayResults = function (inArray) {
+const processDisplayResults = function (inArray) {
 	return inArray.map((oneRecord) => {
 		oneRecord.title = htmlDecode(oneRecord.title);
 		oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime) : undefined;
@@ -121,8 +101,7 @@ processDisplayResults = function (inArray) {
  * @param {Array<Object>} dataSet - The data set to process.
  * @return The same set of the data set with fields converted.
  */
-// eslint-disable-next-line
-processResourcesDisplayResults = function (inArray) {
+const processResourcesDisplayResults = function (inArray) {
 	return inArray.map((oneRecord) => {
 		oneRecord.title = htmlDecode(oneRecord.title);
 		oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime) : undefined;
@@ -139,8 +118,7 @@ processResourcesDisplayResults = function (inArray) {
  * @param {String} searchTerm - The search term.
  * @return A subset of the input `dataSet` that have matched term in any of these fields: title, content, tags.
  */
-// eslint-disable-next-line
-search = function (dataSet, searchTerm) {
+const search = function (dataSet, searchTerm) {
 	searchTerm = searchTerm.toLowerCase();
 	return dataSet.filter((oneRecord) => {
 		const tagNames = oneRecord.tags ? oneRecord.tags.map(({name}) => name) : [];
@@ -156,8 +134,7 @@ search = function (dataSet, searchTerm) {
  * @param {Array<String>} tagSlugs - An array of tag slugs to match.
  * @return A subset of the input `dataSet` that have matched tag slug(s) in `tagSlugs`
  */
-// eslint-disable-next-line
-filter = function (dataSet, tagSlugs) {
+const filter = function (dataSet, tagSlugs) {
 	return dataSet.filter((oneRecord) => {
 		const recordSlugs = oneRecord.tags ? oneRecord.tags.map(({slug}) => slug) : [];
 		return recordSlugs.some(slug => tagSlugs.indexOf(slug) >= 0);
@@ -182,8 +159,7 @@ filter = function (dataSet, tagSlugs) {
  *
  * @return A subset of the input `dataSet` that satisfy the matching criteria outlined above
  */
-// eslint-disable-next-line
-filterResources = function (resources, filterSettings) {
+const filterResources = function (resources, filterSettings) {
 	let results = resources;
 
 	if (filterSettings.selectedCategories.length > 0) {
@@ -207,8 +183,7 @@ filterResources = function (resources, filterSettings) {
  * @param {String} str - The input string to have special characters replaced.
  * @return A string with all special characters replaced.
  */
-// eslint-disable-next-line
-slugify = function (str) {
+const slugify = function (str) {
 	const from = "àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;";
 	const to = "aaaaaaaaaacccddeeeeeeeegghiiiiiilmnnnnoooooooooprrsssssttuuuuuuuuuwxyyzzz------";
 	const p = new RegExp(from.split("").join("|"), "g");
@@ -227,8 +202,7 @@ slugify = function (str) {
  * @param {String[]} inputStringArray - an array of strings to search over
  * @param {String} searchString - a string to search the collection for
  */
-// eslint-disable-next-line
-includesCaseInsensitive = function (inputStringArray, searchString) {
+const includesCaseInsensitive = function (inputStringArray, searchString) {
 	if (typeof searchString !== "string" || inputStringArray.some(str => typeof str !== "string")) {
 		return false; // TODO: consider throwing an exception instead
 	} else {
@@ -246,8 +220,7 @@ includesCaseInsensitive = function (inputStringArray, searchString) {
  * @param {String} selectors - A string of all selectors joined in comma. These selectors identifies headings
  * to be rendered in <aside>.
  */
-// eslint-disable-next-line
-generateAside = function (document, selectors) {
+const generateAside = function (document, selectors) {
 	const articleHeadings = [...document.querySelectorAll(selectors)];
 
 	if (articleHeadings.length) {
@@ -276,4 +249,20 @@ generateAside = function (document, selectors) {
 		tocNav.appendChild(tocUl);
 		toc.appendChild(tocNav);
 	}
+};
+
+export {
+	stripHtmlTags,
+	htmlDecode,
+	chunkArray,
+	createPagination,
+	escapeSpecialChars,
+	processDisplayResults,
+	processResourcesDisplayResults,
+	search,
+	filter,
+	filterResources,
+	slugify,
+	includesCaseInsensitive,
+	generateAside
 };

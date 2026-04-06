@@ -93,7 +93,7 @@
 
     <h3 role="status" class="search-result" v-if="searchResult">{{ '{{ searchResult }}' }}</h3>
 
-    <div class="applied-tags" v-if="selectedTags.length > 0">
+    <div class="applied-tags" v-if="tags.length > 0">
       <h4 class="search-for-title">Applied Tags:</p>
       <div class="tags">
         <a v-for="tag in selectedTags" :href="'/tags/' + tag.slug + '/'">{{ '{{ tag.name }}' }}</a>
@@ -193,7 +193,6 @@
 
 {% block footerScripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-<script src="/assets/scripts/utils.js"></script>
 <script src="/assets/scripts/content-header-observer.js"></script>
-<script src="/assets/scripts/initiatives-dynamic-handler.js"></script>
+<script type="module" src="/assets/scripts/initiatives-dynamic-handler.js"></script>
 {% endblock %}

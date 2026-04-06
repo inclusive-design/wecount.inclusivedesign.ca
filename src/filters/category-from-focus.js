@@ -7,8 +7,8 @@
  * @return {String} The name of the Category that contains the given Focus
  */
 
-module.exports = (focusToMatch, categories) => {
-	var categoryName = "";
+const categoryFromFocus = (focusToMatch, categories) => {
+	let categoryName = "";
 
 	categories.forEach(category => {
 		const found = category.focuses.find(focus => focus === focusToMatch);
@@ -21,3 +21,5 @@ module.exports = (focusToMatch, categories) => {
 
 	return categoryName;
 };
+
+export default categoryFromFocus;

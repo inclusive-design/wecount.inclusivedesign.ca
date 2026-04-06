@@ -1,7 +1,6 @@
-const nunjucks = require("nunjucks");
-const path = require("path");
+import nunjucks from "nunjucks";
 
-module.exports = class {
+export default class {
 	async data() {
 		return {
 			permalink: "/admin/templates.js",
@@ -12,7 +11,7 @@ module.exports = class {
 	async precompile() {
 		return new Promise((resolve, reject) => {
 			const templates = nunjucks.precompile(
-				path.join(__dirname, "../_includes/"),
+				"./src/_includes/",
 				{
 					include: [
 						"page.njk",

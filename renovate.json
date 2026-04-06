@@ -1,16 +1,18 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["config:recommended"],
-    "commitBody": "[skip netlify]",
-    "lockFileMaintenance": {
-        "enabled": true,
-        "automerge": true
-    },
-    "packageRules": [
-        {
-            "matchUpdateTypes": ["minor", "patch"],
-            "matchCurrentVersion": "!/^0/",
-            "automerge": true
-        }
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "commitBody": "[skip netlify]",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "minimumReleaseAge": "2 days",
+      "automerge": true
+    }
+  ]
 }

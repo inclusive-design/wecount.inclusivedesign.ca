@@ -1,29 +1,31 @@
-/* global chunkArray, createPagination */
+import { chunkArray, createPagination } from "./src/assets/scripts/utils.js";
+import eleventyNavigation from "@11ty/eleventy-navigation";
+import fluidPlugin from "eleventy-plugin-fluid";
+import fluidSassPlugin from "eleventy-plugin-fluid-sass";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
-const eleventyNavigation = require("@11ty/eleventy-navigation");
-const fluidPlugin = require("eleventy-plugin-fluid");
-const fs = require("fs");
+import fs from "node:fs";
 
-const htmlMinifyTransform = require("./src/transforms/html-minify.js");
-const parseTransform = require("./src/transforms/parse.js");
-const categoryFromFocusFilter = require("./src/filters/categoryFromFocus.js");
-const dateFilter = require("./src/filters/date.js");
-const getFilteredByTagSlug = require("./src/utils/get-filtered-by-tag-slug.js");
-const getResourceTagLabelFilter = require("./src/filters/getResourceTagLabel.js");
-const getUniqueTags = require("./src/utils/get-unique-tags.js");
-const htmlSymbolFilter = require("./src/filters/html-symbol.js");
-const markdownFilter = require("./src/filters/markdown.js");
-const paginateFilter = require("./src/filters/paginate.js");
-const w3DateFilter = require("./src/filters/w3-date.js");
-const randomizeFilter = require("./src/filters/randomize.js");
-const expanderShortcode = require("./src/shortcodes/expander.js");
-const imageAndTextShortcode = require("./src/shortcodes/image-and-text.js");
-const youtubeShortcode = require("./src/shortcodes/youtube.js");
+import parseTransform from "./src/transforms/parse.js";
+import categoryFromFocusFilter from "./src/filters/category-from-focus.js";
+import convertDateFilter from "./src/filters/convert-date.js";
+import getFilteredByTagSlug from "./src/utils/get-filtered-by-tag-slug.js";
+import getResourceTagLabelFilter from "./src/filters/get-resource-tag-label.js";
+import getUniqueTags from "./src/utils/get-unique-tags.js";
+import htmlSymbolFilter from "./src/filters/html-symbol.js";
+import markdownFilter from "./src/filters/markdown.js";
+import paginateFilter from "./src/filters/paginate.js";
+import w3DateFilter from "./src/filters/w3-date.js";
+import randomizeFilter from "./src/filters/randomize.js";
+import expanderShortcode from "./src/shortcodes/expander.js";
+import imageAndTextShortcode from "./src/shortcodes/image-and-text.js";
+import youtubeShortcode from "./src/shortcodes/youtube.js";
 
-require("./src/assets/scripts/utils.js");
-
-module.exports = function (eleventyConfig) {
-
+/**
+ * @param {Object} eleventyConfig - The Eleventy configuration object.
+ * @return {Object} - Eleventy configuration.
+ */
+export default function eleventy(eleventyConfig) {
 	eleventyConfig.addCollection("events", collection => {
 		return [
 			...collection.getFilteredByGlob("src/collections/events/*.md").sort((a, b) => b.data.eventDate - a.data.eventDate)
@@ -104,19 +106,18 @@ module.exports = function (eleventyConfig) {
 
 	// Add plugins.
 	eleventyConfig.addPlugin(eleventyNavigation);
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 	eleventyConfig.addPlugin(fluidPlugin, {
 		css: {
 			enabled: false
 		},
-		sass: {
-			enabled: true
-		},
 		i18n: false
 	});
+	eleventyConfig.addPlugin(fluidSassPlugin);
 
 	// Add filters.
 	eleventyConfig.addFilter("categoryFromFocus", categoryFromFocusFilter);
-	eleventyConfig.addFilter("dateFilter", dateFilter);
+	eleventyConfig.addFilter("dateFilter", convertDateFilter);
 	eleventyConfig.addFilter("getResourceTagLabel", getResourceTagLabelFilter);
 	eleventyConfig.addFilter("htmlSymbolFilter", htmlSymbolFilter);
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
@@ -129,9 +130,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPairedShortcode("imageAndText", imageAndTextShortcode);
 	eleventyConfig.addShortcode("youtube", youtubeShortcode);
 
-
 	// Add transforms.
-	eleventyConfig.addTransform("htmlmin", htmlMinifyTransform);
 	eleventyConfig.addTransform("parse", parseTransform);
 
 	// Configure passthrough file copy.

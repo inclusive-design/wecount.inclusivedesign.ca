@@ -29,7 +29,7 @@ permalink: resourceData.json
       ],
       "source": {{ item.data.source | dump | safe }},
       "summary": {% if item.data.summary -%} {{- item.data.summary | dump | safe -}} {%- else -%} "" {%- endif %},
-      "abstract": {{ item.template.frontMatter.content | replace("\n", "") | dump | safe }}
+      "abstract": {{ item.templateContent | replace("\n", "") | dump | safe }}
     }{% if not loop.last %},{% endif %}
   {%- endfor %}
   ],

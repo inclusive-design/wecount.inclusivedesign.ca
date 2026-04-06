@@ -8,7 +8,7 @@ menu_order: 6
 key: Regulating the Digital
 permalink: /rtdd/
 ---
-![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
+![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.png)
 
 Voir ce page en [français](https://wecount.inclusivedesign.ca/rldn)
 
@@ -1407,4 +1407,4 @@ Funded by Accessibility Standards Canada / the Government of Canada.
 
 ![Accessibility Standards Canada logo](/uploads/accessibility_standards_canada_accessibility_standards_canada_20.jpg)
 
-![](/uploads/canadawordmark-black-bil.png)
+![](/uploads/canada.avif)

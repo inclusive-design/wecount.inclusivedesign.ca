@@ -1,7 +1,7 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, createPagination, processDisplayResults */
-
+/* global Vue, axios */
+import { search, createPagination, processDisplayResults } from "./utils.js";
 const params = new URLSearchParams(window.location.search);
 const searchTerm = params.get("s").toLowerCase();
 let pageInQuery = params.get("page");

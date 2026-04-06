@@ -7,7 +7,7 @@
  * @param {Object} page - The current item in the Eleventy collection.
  * @return {Object} A pagination object in the form shown here: https://www.11ty.dev/docs/pagination/#paging-an-array
  */
-module.exports = (collection, page) => {
+const paginate = (collection, page) => {
 	const pagination = {
 		items: [],
 		hrefs: [],
@@ -47,3 +47,5 @@ module.exports = (collection, page) => {
 
 	return pagination;
 };
+
+export default paginate;

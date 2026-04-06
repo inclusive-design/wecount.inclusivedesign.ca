@@ -4,7 +4,7 @@
  * @return A string that html symbols have been converted to understandable characters.
  */
 
-module.exports = value => {
+export default value => {
 	const conversionMap = {
 		"&#8217;": "’",
 		"&shy;": ""
