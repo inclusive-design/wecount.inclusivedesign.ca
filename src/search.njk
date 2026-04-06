@@ -115,6 +115,6 @@ permalink: /search/
 {% endblock %}
 
 {% block footerScripts %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.10.0/axios.min.js" integrity="sha512-WkZrEcQ5LMyNy6Y2PQf+Tu3vMcsmKKRKuPXtJSTHQJ3mpuvLRlA5dlDDhrrcXfyWr6Z/y3wIMfjfqVFO/gDZYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/lib/axios.min.js?v={{ pkg.dependencies.axios }}"></script>
 <script type="module" src="/assets/scripts/search.js"></script>
 {% endblock %}
