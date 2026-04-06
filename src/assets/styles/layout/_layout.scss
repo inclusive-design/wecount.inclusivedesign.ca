@@ -150,7 +150,7 @@ p img {
 }
 
 .embed--youtube {
-	min-inline-size: 100%;
+	inline-size: 100%;
 
 	lite-youtube {
 		max-inline-size: 100%;
@@ -263,7 +263,11 @@ figcaption {
 
 		// WP customized styles for Desktop and iPad Pro views
 		.embed--youtube {
-			min-inline-size: auto;
+			inline-size: 100%;
+		}
+
+		.regulating-the-digital-domain .embed--youtube {
+			inline-size: 59%;
 		}
 
 		// Styling for media and text block with media on the left
@@ -283,11 +287,6 @@ figcaption {
 			.image-and-text__content {
 				margin-inline: 0 calc(25 / 16 * 1rem);
 			}
-		}
-
-		.embed--youtube iframe {
-			block-size: calc(326 / 16 * 1rem);
-			inline-size: calc(580 / 16 * 1rem);
 		}
 	}
 

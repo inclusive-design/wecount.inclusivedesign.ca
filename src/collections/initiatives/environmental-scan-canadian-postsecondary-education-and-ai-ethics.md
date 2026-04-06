@@ -161,7 +161,7 @@ We are pleased to share the findings of this scan through the following acces
 
 *   [Word: Ethical AI in the Data Ecosystem](/uploads/Ethical-AI-in-the-Data-Ecosystem.docx)
 *   [PDF: Ethical AI in the Data Ecosystem](/uploads/Ethical-AI-in-the-Data-Ecosystem.pdf)
-*   [PowerPoint: Ethical AI in the Data Ecosystem (with audio)](/uploads/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan.pptx)
+*   [PowerPoint: Ethical AI in the Data Ecosystem (with audio)](https://static.inclusivedesign.ca/wecount.inclusivedesign.ca/uploads/Ethical-AI-in-the-Data-Ecosystem-Environmental-Scan.pptx)
 *   [YouTube video: Ethical AI in the Data Ecosystem](https://youtu.be/NCjqn3QNmMM) 
 
 We have also compiled lists of stakeholders identified during the scan for their proactive stance regarding data ethics and ethical AI:

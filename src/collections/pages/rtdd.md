@@ -2,10 +2,10 @@
 title: Regulating the Digital Domain
 excerpt: The aim of RtDD is to improve digital inclusion and ICT accessibility
   for all disabled people.
-menu_order: 6
 locale: en-CA
-key: Regulating the Digital
 translation_key: rtdd-rddn
+menu_order: 6
+key: Regulating the Digital
 permalink: /rtdd/
 ---
 ![Regulating the Digital Domain logo](/uploads/wip_rdd_colour_no-type.jpg)
@@ -34,16 +34,6 @@ To date these six challenges have been addressed by a series of co-design resear
 [Co-design Research Two: Accessibility Barriers and Regulatory Approaches for Digital Technologies](https://wecount.inclusivedesign.ca/initiative/rtdd-cd-2/)
 
 [Co-Design Research Three: Re-imagining Digital Accessibility Regulations](https://wecount.inclusivedesign.ca/initiative/rtdd-cd-3/)
-
-## Get involved
-
-[](https://wecount.inclusivedesign.ca/rddn)This and other IDRC projects include community co-researchers. You can participate in this project by [joining our RtDD community on Canvas ](https://canvas.instructure.com/enroll/94XY87)or sign up to our mailing list to get IDRC news and hear about upcoming co-research activities. 
-
-[Join the RtDD community on Canvas](https://canvas.instructure.com/enroll/94XY87)
-
-[Sign up to learn about co-researcher opportunities](https://forms.office.com/r/g4bgbHifqc)
-
-[Find out more about our last co-design research activity](https://wecount.inclusivedesign.ca/events/regulating-the-digital-domain-co-design-research/)
 
 ## About the project
 
@@ -111,6 +101,36 @@ The challenges are:
 
    * Accessibility regulations often assume that people with disabilities are passive consumers, not active producers, of digital content and technology. They also rely on experts to prescribe, train, and maintain AT systems for people with disabilities. This limits the participation and autonomy of people with disabilities in the digital domain. We need to support people with disabilities as creators, innovators, and decision-makers in the digital world.
 
+## Developing the Models
+
+The Regulating the Digital Domain (RtDD) project arrived at the model-approach phase through an iterative co-design process with people with lived experience of disability, advisors, and facilitators, focused on addressing the systemic limitations of traditional accessibility regulations. This transition was guided by the identification of six core project challenges. 
+
+The progression to this phase involved several key developmental stages:
+
+* Initial discovery involved three co-design sessions with experts to identify the causes of digital exclusion and to document how WCAG often fails to create truly inclusive experiences despite technical compliance.
+* During Co-Design Research Three, participants used the "1-2-4-All" method to reimagine regulatory processes, generating eleven ideas like "Regulating Processes," "Integrated Accessibility," and "Sandboxes for Accessibility Testing." These were then handed to working groups to develop into models.
+* The project had three working groups (WG): Systemic Standards and Processes (WG1), Education and Capacity Building (WG2), and Innovation and Emerging Technologies (WG3), each of which developed a model. 
+
+The final phase focuses on refining these selected approaches into validated models that emphasize organizational capability, continuous improvement, and the meaningful participation of people with disabilities.
+
+### Model 1: Inclusion Process Pathway
+
+The inclusion process pathways model helps organizations understand how to strengthen their accessibility practices, and the evidence it generates can demonstrate meaningful progress to regulators.
+
+{% youtube "https://www.youtube.com/watch?v=OVqQQ4FsrH0" %}
+
+### Model 2: Inclusive Learning Framework
+
+The Inclusive Learning Framework is a flexible and practical guide for embedding accessibility into lesson plans and teaching approaches across any subject matter.
+
+{% youtube "https://youtu.be/ZVUJfEbeBV8" %}
+
+### Model 3: Digital Inclusion Framework for Developers
+
+The Digital Inclusion Framework for Developers is a process-based framework for inclusive innovation that integrates accessibility throughout the development lifecycle.  
+
+{% youtube "https://youtu.be/BxCuY0T3rtQ" %}
+
 ## Reports
 
 [Regulating the Digital Domain: Co-Design 1 Results (downloadable Word document)   ](/uploads/regulating-the-digital-domain_co-design-1-results.docx)
@@ -122,6 +142,17 @@ The challenges are:
 ## P﻿artners
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulder image of Boris Vukovic", "Boris Vukovic", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -186,9 +217,31 @@ The challenges are:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/christopher-sutton.png", "head and shoulder image of Christopher Sutton ", "Christopher Sutton", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -253,9 +306,31 @@ The challenges are:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulder image of Emile Tompa ", "Emile Tompa", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -320,9 +395,31 @@ The challenges are:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Heather Walkus", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -387,9 +484,31 @@ The challenges are:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "head and shoulder image of Jenelle Rouse", "Jenelle Rouse", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -454,9 +573,31 @@ BDC has a community-building focus where it aims to increase network of Black De
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "J﻿im Tokos", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -521,9 +662,31 @@ The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Joelle Robinson", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -587,9 +750,31 @@ The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, a
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/kerri-joffee.png", "head and shoulder image of Kerri Joffee", "Kerri Joffee", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -654,9 +839,31 @@ The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, a
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Lori Vaanholt", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -721,9 +928,31 @@ Across Canada and around the world, [L’Arche](https://www.larche.ca/) creates 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "Mahadeo Sukhai", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -788,9 +1017,31 @@ The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/michael-bach.png", "head and shoulder image of Michael Bach", "Michael Bach", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -855,62 +1106,6 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 
 
-{% endimageAndText %}
-
-{% imageAndText "/uploads/paula-chapman.png", "head and shoulders photo of Paula Chapman", "Paula Chapman", "left", "center" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Ross & McBride LLP
-
-[Ross & McBride](https://www.rossmcbride.com/) lawyers have extensive experience in settling complex cases and assisting clients in resolving conflict. Ross & McBride provide input regarding human rights law and access to justice for persons with disabilities.  \
-**About Paula’s role with RtDD:** Assist in the environmental scan and assessment of compliance effectiveness of regulatory approaches.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -923,8 +1118,21 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 
 {% endimageAndText %}
+
+
 
 {% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "Pina D’Agostino", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -989,9 +1197,31 @@ Informed by the systemic exclusion that people with intellectual and other disab
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "Shermineh Esmati", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1057,9 +1287,31 @@ The [Digital Governance Standards Institute](https://dgc-cgn.org/standards/), pa
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "decorative", "W. Francis Fung", "left", "center" %}
+{% imageAndText "/uploads/francis_fung.png", "head and shoulder image of W. Francis Fung", "W. Francis Fung", "left", "center" %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1124,9 +1376,20 @@ The vision of the [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/P
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 {% endimageAndText %}
 
-## Team
+## IDRC team
 
 Jutta Treviranus, principal investigator
 
@@ -1135,8 +1398,6 @@ Vera Roberts
 David Pereyra
 
 Caren Watkins
-
-U﻿ttara Ghodke
 
 [](https://forms.office.com/r/g4bgbHifqc)
 

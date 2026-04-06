@@ -1,5 +1,72 @@
 # Changelog
 
+## [2026.04.01.1556.46d6021](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.03.25.1402.817e38f...2026.04.01.1556.46d6021)
+
+* chore(deps): update dependency axios to v1.14.0 (#2480) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update mikefarah/yq action to v4.52.5 (#2477) @[renovate[bot]](https://github.com/apps/renovate)
+
+### Bug Fixes
+
+* fix: resolve issues with CMS previews (#2479) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* fix: resolve issues with CMS previews (#2479) [@nedatidrc](https://github.com/nedatidrc)
+
+## [2026.03.25.1402.817e38f](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.03.24.1447.98f3337...2026.03.25.1402.817e38f)
+
+### Bug Fixes
+
+* fix: issue with YouTube video player size (#2475) [@chosww](https://github.com/chosww)
+
+## [2026.03.24.1447.98f3337](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.02.12.1334.962e512...2026.03.24.1447.98f3337)
+
+* chore(deps): update actions/create-github-app-token action to v3 (#2471) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update mikefarah/yq action to v4.52.4 (#2470) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency markdownlint-cli2 to ^0.22.0 (#2469) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency markdown-it to v14.1.1 [security] - autoclosed (#2466) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency dotenv to v17.3.1 - autoclosed (#2465) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency autoprefixer to v10.4.27 - autoclosed (#2461) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#2462) @[renovate[bot]](https://github.com/apps/renovate)
+
+### Bug Fixes
+
+* fix: use inline-size instead of min-inline-size for YouTube container (#2468) [@chosww](https://github.com/chosww)
+
+## [2026.02.12.1334.962e512](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.01.29.1740.9de00cd...2026.02.12.1334.962e512)
+
+* chore(deps): update dependency axios to v1.13.5 [security] (#2463) @[renovate[bot]](https://github.com/apps/renovate)
+
+## [2026.01.29.1740.9de00cd](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.01.28.2014.4e80d24...2026.01.29.1740.9de00cd)
+
+### Bug Fixes
+
+* fix: remove Netlify identity (#2459) [@nedatidrc](https://github.com/nedatidrc)
+
+## [2026.01.28.2014.4e80d24](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.01.28.2010.82ab034...2026.01.28.2014.4e80d24)
+
+* feat: change to GitHub backend (#2457) [@nedatidrc](https://github.com/nedatidrc)
+
+## [2026.01.28.2010.82ab034](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2025.12.18.1917.e5c10c2...2026.01.28.2010.82ab034)
+
+* chore(deps): lock file maintenance (#2451) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update commitlint monorepo to v20.3.0 (#2438) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#2437) @[renovate[bot]](https://github.com/apps/renovate)
+
+### Bug Fixes
+
+* fix: point some files to cachefly (#2454) [@nedatidrc](https://github.com/nedatidrc)
+
+### Chores
+
+* chore(cms): update "src/_data/resourceTags.json" (#2449) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): create "src/collections/resources/can-asc-6-2-2025-accessible-and-equitable-artificial-intelligence-systems.md" (#2448) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): update "src/_data/resourceTags.json" (#2447) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): update "src/collections/initiatives/accessible-and-equitable-artificial-intelligence-systems-standard.md" (#2446) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): update "src/collections/pages/home.md" (#2445) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): create "src/collections/initiatives/systèmes-d’intelligence-artificielle-accessibles-et-équitables.md" (#2444) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+* chore(cms): create "src/collections/initiatives/accessible-and-equitable-artificial-intelligence-systems-standard.md" (#2443) [@idrc-cms-bot](https://github.com/idrc-cms-bot)
+
 ## [2025.12.18.1917.e5c10c2](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/v2.9.0...2025.12.18.1917.e5c10c2)
 
 ### Features
