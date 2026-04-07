@@ -2,7 +2,7 @@
 
 /* global Vue, axios */
 
-import { escapeSpecialChars, createPagination, processResourcesDisplayResults, includesCaseInsensitive, filterResources } from "./utils";
+import { escapeSpecialChars, createPagination, processResourcesDisplayResults, includesCaseInsensitive, filterResources } from "./utils.js";
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);

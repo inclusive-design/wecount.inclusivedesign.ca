@@ -2,12 +2,12 @@
 /* global CMS, createClass, nunjucks, PropTypes, React */
 
 import slugify from "@sindresorhus/slugify";
-import dateFilter from "../filters/convert-date.js";
+import formatDateFilter from "../../node_modules/eleventy-plugin-fluid/src/filters/format-date-filter.js";
 import htmlSymbolFilter from "../filters/html-symbol";
 import markdownFilter from "../filters/markdown";
 import randomizeFilter from "../filters/randomize";
 import paginateFilter from "../filters/paginate";
-import w3DateFilter from "../filters/w3-date";
+import isoDateFilter from ".../../node_modules/eleventy-plugin-fluid/src/filters/iso-date-filter.js";
 import expanderShortcode from "../shortcodes/expander.js";
 import figureShortcode from "../../node_modules/eleventy-plugin-fluid/src/shortcodes/figure-shortcode.js";
 import imageAndTextShortcode from "../shortcodes/image-and-text.js";
@@ -16,13 +16,13 @@ import globalResourceTags from "../_data/resourceTags.json";
 
 const env = nunjucks.configure();
 
-env.addFilter("dateFilter", dateFilter);
+env.addFilter("formatDate", formatDateFilter);
 env.addFilter("htmlSymbolFilter", htmlSymbolFilter);
 env.addFilter("markdownFilter", markdownFilter);
 env.addFilter("randomizeFilter", randomizeFilter);
 env.addFilter("slug", slugify);
 env.addFilter("paginate", paginateFilter);
-env.addFilter("w3DateFilter", w3DateFilter);
+env.addFilter("isoDate", isoDateFilter);
 
 const NunjucksPreview = ({ entry, path, context, globalData }) => {
 	const entryData = context(entry.get("data").toJS(), entry);
@@ -111,7 +111,7 @@ const Initiatives = createClass({
 			<article className="post-article">
 				<h1>{this.props.entry.getIn(["data", "title"])}</h1>
 				<div className="author">{this.props.entry.getIn(["data", "author"])}</div>
-				<time>{dateFilter(this.props.entry.getIn(["data", "date"]))}</time>
+				<time>{formatDateFilter(this.props.entry.getIn(["data", "date"]))}</time>
 				<div className="api-content">
 					{this.props.widgetFor("body")}
 				</div>

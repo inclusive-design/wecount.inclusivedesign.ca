@@ -20,7 +20,7 @@
     <div class="author">{{ item.data.author | safe }}</div>
     {% endif %}
     <div class="date">
-      <time datetime="{{ item.data.date | w3DateFilter }}" class="dt-published">{{ item.data.date | dateFilter }}</time>
+      <time datetime="{{ item.data.date | isoDate }}" class="dt-published">{{ item.data.date | formatDate }}</time>
     </div>
     <div class="preview-content">
       {{ item.data.excerpt | striptags | safe }}

@@ -7,7 +7,7 @@
       {% endif %}
       {% if dateTime %}
       <div class="date">
-        <time datetime="{{ dateTime | w3DateFilter }}" class="dt-published">{{ dateTime | dateFilter }}</time>
+        <time datetime="{{ dateTime | isoDate }}" class="dt-published">{{ dateTime | formatDate }}</time>
       </div>
       {% endif %}
       <div class="description">{{ description | markdownFilter | safe }}</div>

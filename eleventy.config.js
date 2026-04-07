@@ -8,14 +8,12 @@ import fs from "node:fs";
 
 import parseTransform from "./src/transforms/parse.js";
 import categoryFromFocusFilter from "./src/filters/category-from-focus.js";
-import convertDateFilter from "./src/filters/convert-date.js";
 import getFilteredByTagSlug from "./src/utils/get-filtered-by-tag-slug.js";
 import getResourceTagLabelFilter from "./src/filters/get-resource-tag-label.js";
 import getUniqueTags from "./src/utils/get-unique-tags.js";
 import htmlSymbolFilter from "./src/filters/html-symbol.js";
 import markdownFilter from "./src/filters/markdown.js";
 import paginateFilter from "./src/filters/paginate.js";
-import w3DateFilter from "./src/filters/w3-date.js";
 import randomizeFilter from "./src/filters/randomize.js";
 import expanderShortcode from "./src/shortcodes/expander.js";
 import imageAndTextShortcode from "./src/shortcodes/image-and-text.js";
@@ -117,11 +115,9 @@ export default function eleventy(eleventyConfig) {
 
 	// Add filters.
 	eleventyConfig.addFilter("categoryFromFocus", categoryFromFocusFilter);
-	eleventyConfig.addFilter("dateFilter", convertDateFilter);
 	eleventyConfig.addFilter("getResourceTagLabel", getResourceTagLabelFilter);
 	eleventyConfig.addFilter("htmlSymbolFilter", htmlSymbolFilter);
 	eleventyConfig.addFilter("markdownFilter", markdownFilter);
-	eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 	eleventyConfig.addFilter("randomizeFilter", randomizeFilter);
 	eleventyConfig.addFilter("paginate", paginateFilter);
 
