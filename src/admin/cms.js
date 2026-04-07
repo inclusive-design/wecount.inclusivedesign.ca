@@ -2,14 +2,14 @@
 /* global CMS, createClass, nunjucks, PropTypes, React */
 
 import slugify from "@sindresorhus/slugify";
-import formatDateFilter from "../../node_modules/eleventy-plugin-fluid/src/filters/format-date-filter.js";
+import formatDateFilter from "eleventy-plugin-fluid/src/filters/format-date-filter.js";
 import htmlSymbolFilter from "../filters/html-symbol";
 import markdownFilter from "../filters/markdown";
 import randomizeFilter from "../filters/randomize";
 import paginateFilter from "../filters/paginate";
-import isoDateFilter from ".../../node_modules/eleventy-plugin-fluid/src/filters/iso-date-filter.js";
+import isoDateFilter from "eleventy-plugin-fluid/src/filters/iso-date-filter.js";
 import expanderShortcode from "../shortcodes/expander.js";
-import figureShortcode from "../../node_modules/eleventy-plugin-fluid/src/shortcodes/figure-shortcode.js";
+import figureShortcode from "eleventy-plugin-fluid/src/shortcodes/figure-shortcode.js";
 import imageAndTextShortcode from "../shortcodes/image-and-text.js";
 import getId from "../utils/extract-youtube-id.js";
 import globalResourceTags from "../_data/resourceTags.json";
