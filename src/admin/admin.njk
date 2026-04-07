@@ -9,15 +9,8 @@ permalink: '/admin/index.html'
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- Include the script that builds the page and powers Netlify CMS -->
-    <script src="/lib/cms/decap-cms.js"></script>
-    {% if env.context === "dev" %}
-    <script src="/lib/cms/react.development.js"></script>
-    {% else %}
-    <script src="/lib/cms/react.production.min.js"></script>
-    {% endif %}
-    <script src="/lib/cms/prop-types.min.js"></script>
-    <script src="/lib/cms/nunjucks-slim.min.js"></script><script src="templates.js"></script>
+    <!-- Include the script that builds the page and powers Sveltia CMS -->
+    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
     <script src="cms.js"></script>
   </body>
 </html>
