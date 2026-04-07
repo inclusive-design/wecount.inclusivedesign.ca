@@ -1,5 +1,5 @@
-const uuid = require("uuid");
+import { v4 as uuidv4 } from "uuid";
 
-module.exports = value => {
-	return value.concat("-" + uuid.v4());
+export default value => {
+	return value.concat("-" + uuidv4());
 };

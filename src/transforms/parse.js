@@ -1,10 +1,7 @@
-/* global generateAside */
+import {parseHTML} from "linkedom";
+import { generateAside } from "../assets/scripts/utils.js";
 
-const {parseHTML} = require("linkedom");
-
-require("../assets/scripts/utils.js");
-
-module.exports = function (value, outputPath) {
+const parseTransform = function (value, outputPath) {
 	if (outputPath && outputPath.includes(".html")) {
 		const {document} = parseHTML(value);
 
@@ -14,3 +11,5 @@ module.exports = function (value, outputPath) {
 	}
 	return value;
 };
+
+export default parseTransform;

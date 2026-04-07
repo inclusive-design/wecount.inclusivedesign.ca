@@ -1,3 +1,5 @@
+import slugify from "@sindresorhus/slugify";
+
 /**
  * Get items filtered from a collection by the given tag slug
  *
@@ -6,19 +8,18 @@
  *
  * @return {Array<Object>} A filtered collection of items
  */
-
-const slugFilter = require("../filters/slug.js");
-
-module.exports = (filterTag, collection) => {
+const getFilteredTagBySlug = (filterTag, collection) => {
 	let allItems = collection.getAll().filter(item => item.data && item.data.tags); // filter out items without tags
 
 	// filter the collection to find posts with the same tag slug
 	// make a copy of the tags list to avoid side effects, keying by fileSlug to avoid collisions
 	let tagSlugs = {};
 	for (let i = 0; i < allItems.length; i++) {
-		tagSlugs[allItems[i].fileSlug] = allItems[i].data.tags.map(tagToSlugify => slugFilter(tagToSlugify));
+		tagSlugs[allItems[i].fileSlug] = allItems[i].data.tags.map(tagToSlugify => slugify(tagToSlugify));
 	}
 
-	const slugifiedFilterTag = slugFilter(filterTag);
+	const slugifiedFilterTag = slugify(filterTag);
 	return allItems.filter(item => tagSlugs[item.fileSlug].includes(slugifiedFilterTag));
 };
+
+export default getFilteredTagBySlug;

@@ -1,6 +1,8 @@
 // For search functionality on the header.
 
-/* global Vue, axios, search, createPagination, processDisplayResults, filter, slugify, getSideMenuObserver */
+/* global Vue, axios, getSideMenuObserver */
+
+import { search, slugify, createPagination, processDisplayResults, filter } from "./utils.js";
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);

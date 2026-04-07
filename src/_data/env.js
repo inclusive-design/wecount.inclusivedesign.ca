@@ -1,6 +1,6 @@
-require("dotenv").config();
+import {env} from "node:process";
 
-module.exports = {
-	context: process.env.CONTEXT || "dev",
-	baseUrl: process.env.DEPLOY_PRIME_URL || false
+export default {
+	context: env.CONTEXT || "dev",
+	baseUrl: env.DEPLOY_PRIME_URL || false
 };

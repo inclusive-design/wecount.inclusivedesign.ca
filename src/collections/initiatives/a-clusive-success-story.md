@@ -12,9 +12,9 @@ tags:
   - Education
   - CISL
 ---
-![Clusive logo](https://www.cast.org/binaries/content/gallery/castm/impact/clusive-story-16x9.jpg/clusive-story-16x9.jpg/aem%3Amedium)
+![Clusive logo](/uploads/clusive.png)
 
-[Clusive ](https://www.cast.org/products-services/products/clusive)is a free, flexible, adaptive and customizable learning environment. It is a web application for students and teachers that addresses access and learning barriers present in digital and open learning materials. Teachers can create classes of students, upload and assign ebooks to those classes, and monitor students' progress. Students can upload books as well and create their own virtual library. They can use built-in tools to alter the display of the contents of a book in terms of text size, line spacing, letter spacing, colour contrast themes and font, including a font developed for reading with dyslexia. The Reader component provides read-aloud and can be configured with different voices and reading speeds. When activated, read-aloud speaks the text and highlights individual words as they are spoken. There are also supports for notetaking, word definition lookup and text simplification.
+[Clusive](https://web.archive.org/web/20230301142614/https://www.cast.org/products-services/products/clusive)is a free, flexible, adaptive and customizable learning environment. It is a web application for students and teachers that addresses access and learning barriers present in digital and open learning materials. Teachers can create classes of students, upload and assign ebooks to those classes, and monitor students' progress. Students can upload books as well and create their own virtual library. They can use built-in tools to alter the display of the contents of a book in terms of text size, line spacing, letter spacing, colour contrast themes and font, including a font developed for reading with dyslexia. The Reader component provides read-aloud and can be configured with different voices and reading speeds. When activated, read-aloud speaks the text and highlights individual words as they are spoken. There are also supports for notetaking, word definition lookup and text simplification.
 
 ## A real-life Clusive story
 

@@ -197,7 +197,9 @@ article .homepage-content {
 	}
 
 	.banner-image-container img {
+		block-size: auto;
 		border-block-start: calc(10 / 16 * 1rem) solid rgb(253 204 112 / 100%);
+		inline-size: 100%;
 	}
 
 	.banner-image-text {

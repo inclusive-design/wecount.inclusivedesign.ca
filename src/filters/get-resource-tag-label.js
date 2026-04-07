@@ -6,8 +6,8 @@
  * @return {String} The tag's label
  */
 
-module.exports = (tagValue, tagList) => {
-	var tagLabel = "";
+const getResourceTagLabel = (tagValue, tagList) => {
+	let tagLabel = "";
 
 	tagList.forEach(tag => {
 		const found = tagList.find(() => tag.value === tagValue);
@@ -20,3 +20,5 @@ module.exports = (tagValue, tagList) => {
 
 	return tagLabel;
 };
+
+export default getResourceTagLabel;

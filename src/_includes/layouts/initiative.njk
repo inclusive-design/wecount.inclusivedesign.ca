@@ -12,7 +12,7 @@
 <article class="post-article">
   <h1>{{ title | safe }}</h1>
   <div class="author">By {{ author }}</div>
-  <time class="date" datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
+  <time class="date" datetime="{{ date | isoDate }}" class="dt-published">{{ date | formatDate }}</time>
   <div class="api-content">{{ content | safe }}</div>
 
 

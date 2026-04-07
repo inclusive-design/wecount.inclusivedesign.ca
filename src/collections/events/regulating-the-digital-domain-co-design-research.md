@@ -2,7 +2,7 @@
 title: "Regulating the Digital Domain Co-Design Research "
 id: 99ffdff7-1f42-4831-89c8-755f4eb2b84f
 eventDate: 2024-03-28T12:00:00.000Z
-coverImageUrl: /uploads/rdd_colour_horiz_eng.jpg
+coverImageUrl: /uploads/rdd_colour_horiz_eng.png
 coverImageAltText: RtDD Logo
 shortDescription: >-
   We invite members of the disability community, aged 18 years or older, to

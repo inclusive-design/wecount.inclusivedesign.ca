@@ -1,3 +1,5 @@
+import slugify from "@sindresorhus/slugify";
+
 /**
  * Get an array of unique tags from a collection.
  * Note: tags with the same spelling but different case usage will not be considered unique.
@@ -7,16 +9,14 @@
  * @return {Array<Object>} An array of tag objects with the string properties `name` and `slug`
  */
 
-const slugFilter = require("../filters/slug.js");
-
-module.exports = collection => {
+const getUniqueTags = collection => {
 	let tagsMap = new Map();
 	collection.forEach(item => {
 		if (!item.data.tags) {return;}
 		item.data.tags
 			.filter(tag => !["pages", "initiatives", "recount", "events"].includes(tag))
 			.forEach(tag => {
-				let slugifiedTag = slugFilter(tag);
+				let slugifiedTag = slugify(tag);
 				if (!tagsMap.has(tag)) {
 					tagsMap.set(slugifiedTag, tag);
 				}
@@ -26,3 +26,5 @@ module.exports = collection => {
 	// this sorting by tag name will put lowercase ahead of uppercase
 	return Array.from(tagsMap, ele => { return { name: ele[1], slug: ele[0] }; }).sort((a, b) => a.slug.localeCompare(b.slug));
 };
+
+export default getUniqueTags;

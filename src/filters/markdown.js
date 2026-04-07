@@ -1,9 +1,13 @@
-const markdownIt = require("markdown-it")({
-	html: true,
-	breaks: true,
-	linkify: true
-});
+import MarkdownIt from "markdown-it";
 
-module.exports = value => {
-	return markdownIt.render(value);
+const markdown = value => {
+	const md = new MarkdownIt({
+		html: true,
+		breaks: true,
+		linkify: true
+	});
+
+	return md.render(value);
 };
+
+export default markdown;
