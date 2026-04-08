@@ -1,20 +1,21 @@
 # We Count
 
-[![License](https://img.shields.io/github/license/inclusive-design/wecount.inclusivedesign.ca?style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/LICENSE.md)
-[![GitHub Release](https://img.shields.io/github/v/release/inclusive-design/wecount.inclusivedesign.ca?sort=semver&style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/releases/latest)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/inclusive-design/wecount.inclusivedesign.ca/Test%20and%20build?label=github&style=flat-square)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/actions)
-[![Netlify Status](https://img.shields.io/netlify/d63b3d00-fd5f-47d7-8e43-d09bf4e8eb4f?style=flat-square)](https://app.netlify.com/sites/wecount/deploys)
+[![License](https://flat.badgen.net/github/license/inclusive-design/wecount.inclusivedesign.ca)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/LICENSE.md)
+[![GitHub Release](https://flat.badgen.net/github/release/inclusive-design/wecount.inclusivedesign.ca)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/releases/latest)
+[![GitHub Workflow Status](https://flat.badgen.net/github/checks/inclusive-design/wecount.inclusivedesign.ca/)](https://github.com/inclusive-design/wecount.inclusivedesign.ca/actions)
+[![Netlify Status](https://flat.badgen.net/github/checks/inclusive-design/wecount.inclusivedesign.ca/main/Cloudflare%20Pages?label=deploy)](https://wecount.inclusivedesign.ca/)
 
 The source code for the We Count website.
 
 The front end of the website is built with [Eleventy](https://11ty.dev/).
 
-The website uses [Decap CMS](https://decapcms.org) to manage the following content:
+The website uses [Sveltia CMS](https://sveltiacms.app) to manage the following content:
 
 - [events](src/collections/events)
-- [pages](src/collections/pages)
-- [news](src/collections/news)
 - [initiatives](src/collections/initiatives)
+- [pages](src/collections/pages)
+- [recount](src/collections/recount)
+- [resources](src/collections/resources)
 
 ## Getting Started
 
@@ -39,101 +40,57 @@ npm ci
 
 ## Content Management System (CMS)
 
-[Decap CMS](https://decapcms.org) is a client-side React application which manages files in a git repository,
+[Sveltia CMS](https://sveltiacms.app) is a client-side Svelte application which manages files in a git repository,
 creating pull requests when new content is drafted and merging them when it is published. Access to this website's
-CMS is managed via [Netlify Identity](https://docs.netlify.com/visitor-access/identity/). If you need access to the
-CMS, a team administrator must invite you to create a Netlify Identity account.
+CMS is managed via the [GitHub backend](https://sveltiacms.app/en/docs/backends/github). If you need access to the
+CMS, a GitHub administrator must add you to the team for this repository.
 
 ### CMS Configuration
 
-The CMS is configured via a [config.yml](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/e082fdd17c08d53fd6910f055132e3dd150fbb79/src/admin/config.yml)
-file according to Decap CMS' [specifications](https://www.decapcms.org/docs/configuration-options/).
-As an example, here is the configuration for the events collection, stored in [`src/collections/events`](src/collections/events):
+The CMS is configured via a [config.yml](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/src/admin/config.yml)
+file according to Sveltia CMS' [specifications](https://sveltiacms.app/en/docs/config-basics).
+As an example, here is the configuration for the recount collection, stored in [`src/collections/recount`](src/collections/recount):
 
 ```yaml
-- name: events
-  label: Events
-  label_singular: Event
-  folder: src/collections/events
-  sortable_fields: [eventDate, title]
-  slug: "{{title}}"
-  preview_path: "events/{{slug}}"
+- name: recount
+  label: Recount
+  label_singular: Recount
+  folder: src/collections/recount
+  sortable_fields: [title, date]
   create: true
+  i18n: false
   fields:
-    - label: Event Title
+    - label: Title
       name: title
       widget: string
-    - label: Permanent Link
-      name: permalink
+    - label: Link
+      name: link
       widget: string
-      required: false
-      hint: |-
-        If you do not specify a permanent link, one will be automatically generated from the event title.
-        Permalinks must have the format /events/event-title/ (the trailing slash is required).
-    - label: Event Date
-      name: eventDate
+      hint: The link to the external news item or attached resource.
+    - label: Date
+      name: date
       widget: datetime
       time_format: false
-      required: false
-    - label: Cover Image
-      name: coverImageUrl
-      widget: image
-      required: false
-    - label: Cover Image Alt Text
-      name: coverImageAltText
-      widget: string
-      required: false
-    - label: Event Body
-      name: body
-      widget: markdown
-    - label: Short Description
-      name: shortDescription
-      widget: markdown
-      hint: The short description is shown on the Events page.
-    - label: Preview Image
-      name: previewImageUrl
-      widget: image
-      required: false
-      hint: The preview image is shown on the Events page.
-    - label: Preview Image Alt Text
-      name: previewImageAltText
-      widget: string
-      required: false
+      hint: The publication date of the item.
+    - label: Excerpt
+      name: excerpt
+      widget: text
+      hint: The excerpt is shown in search results.
 ```
 
-For information on individual widgets and their configuration, see Decap CMS' [widget documentation](https://www.decapcms.org/docs/widgets/).
+For information on individual fields and their configuration, see Sveltia CMS' [fields documentation](https://sveltiacms.app/en/docs/fields).
 
 ### Previews
 
-Decap CMS supports [preview templates](https://www.decapcms.org/docs/customization/) for CMS content, which must be
-a React component registered with the following code (the following examples are for events):
-
-```javascript
-CMS.registerPreviewTemplate("events", Event);
-```
-
-The `Event` React component is created in [src/admin/cms.js](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/main/src/admin/cms.js)
-based on a technique demonstrated in [Andy Bell's Hylia Eleventy starter kit](https://github.com/hankchizljaw/hylia):
-
-1. The site's Nunjucks templates are [precompiled](https://mozilla.github.io/nunjucks/api.html#precompiling) and copied
-   to the admin directory of the built site (Eleventy [handles this here](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/dev/src/admin/admin.11ty.js)).
-2. A generic [`Preview`](https://github.com/inclusive-design/wecount.inclusivedesign.ca/blob/277cb52c0e7880bf400ab6f827c4b705080c9f73/src/admin/cms.js#L25-L30)
-   React component accepts a data object and a Nunjucks template path, renders the Nunjucks template with the supplied
-   data using [Nunjucks Slim](https://mozilla.github.io/nunjucks/getting-started.html#when-in-the-browser), and outputs
-   the resulting HTML.
-3. The specific [`Event`](https://github.com/greatislander/wecount.inclusivedesign.ca/blob/277cb52c0e7880bf400ab6f827c4b705080c9f73/src/admin/cms.js#L120-L142)
-  React component passes the Preview component the entry object (from Decap CMS), the Nunjucks template path (relative
-  to `src/_includes`), and a function which maps the entry object's data to what's needed in the Nunjucks template expects.
-
-This approach allows the templates which Eleventy uses to render the production site to be consumed by Decap CMS and
-used to generate live previews as content editors are updating content in the CMS interface.
+Sveltia CMS supports [preview styles](https://sveltiacms.app/en/docs/api/preview-styles) for CMS content. These have not
+been implemented for the We Count website, but previews with generic styles are be shown.
 
 ### Testing the CMS
 
 The CMS may be tested locally without authentication if the site is being run in development mode as documented below.
 Any changes made will be immediately reflected in the file system. This is a good way of making sure that CMS functionality
 behaves as expected, but content should not be edited this way under normal circumstances. Rather, content editors should
-log in under their Netlify Identity accounts at <https://wecount.inclusivedesign.ca/admin/> and create content through the
+log in with their GitHub accounts at <https://wecount.inclusivedesign.ca/admin/> and create or edit content through the
 CMS interface.
 
 ### Test the website
@@ -142,7 +99,7 @@ CMS interface.
 npm run start
 ```
 
-The website will be available at [http://localhost:3000](http://localhost:3000).
+The website will be available at [http://localhost:8080](http://localhost:8080).
 
 ## How to Lint
 
@@ -172,11 +129,12 @@ The website will be available at [http://localhost:5000](http://localhost:5000).
 
 ## How to Deploy
 
-This repository is connected to [Netlify](https://netlify.com), and commits will be automatically deployed as follows:
+This repository is connected to [Cloudflare Pages](https://pages.cloudflare.com/), and commits will be automatically
+deployed as follows:
 
-- Pull request #175 (for example): [https://deploy-preview-175--wecount.netlify.app](https://deploy-preview-175--wecount.netlify.app)
-- Branch `dev`: [https://dev--wecount.netlify.app](https://dev--wecount.netlify.app)
-- Branch `main`: [https://wecount.inclusivedesign.ca](https://wecount.inclusivedesign.ca)
+- Pull request from a branch named `my-feature` (for example): <https://my-feature.wecount.pages.dev>
+- Branch `dev`: <https://dev.wecount.pages.dev>
+- Branch `main`: <https://wecount.inclusivedesign.ca>
 
 ## License
 
