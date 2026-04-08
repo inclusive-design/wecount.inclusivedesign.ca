@@ -12,8 +12,7 @@ CMS.registerEditorComponent({
 		{
 			name: "image",
 			label: "Image",
-			widget: "image",
-			required: true
+			widget: "image"
 		},
 		{
 			name: "alt",
@@ -23,19 +22,18 @@ CMS.registerEditorComponent({
 		{
 			name: "title",
 			label: "Title",
-			widget: "string",
-			required: true
+			widget: "string"
 		},
 		{
 			name: "subtitle",
 			label: "Subtitle",
-			widget: "string"
+			widget: "string",
+			required: false
 		},
 		{
 			name: "content",
 			label: "Content",
-			widget: "markdown",
-			required: true
+			widget: "markdown"
 		}
 	],
 	pattern: /^{% expander "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endexpander %}/,
@@ -48,15 +46,11 @@ CMS.registerEditorComponent({
 			content: match[5]
 		};
 	},
-	toBlock: function (obj) {
-		return `{% expander "${obj.image}", "${obj.alt}", "${obj.title}", "${obj.subtitle}" %}\n${obj.content}\n{% endexpander %}`;
+	toBlock: function ({image, alt, title, subtitle, content}) {
+		return `{% expander "${image}", "${alt}", "${title}", "${subtitle}" %}\n${content}\n{% endexpander %}`;
 	},
-	toPreview: function (obj, getAsset, fields) {
-		const {content, image, alt, title, subtitle} = obj;
-		const imageField = fields.find(f => f.get("widget") === "image");
-		const src = getAsset(image, imageField);
-		return expanderShortcode(content, src, alt, title, subtitle)
-		// Show expanded state for preview purposes.
+	toPreview: function ({ image, alt, title, subtitle, content }) {
+		return expanderShortcode(content ?? "", image, alt, title ?? "", subtitle)
 			.replace(" hidden", "")
 			.replace("aria-expanded=\"false\"", "aria-expanded=\"true\"");
 	}
@@ -69,19 +63,18 @@ CMS.registerEditorComponent({
 		{
 			name: "image",
 			label: "Image",
-			widget: "image",
-			required: true
+			widget: "image"
 		},
 		{
 			name: "alt",
 			label: "Alternative Text",
-			widget: "string",
-			required: true
+			widget: "string"
 		},
 		{
 			name: "caption",
 			label: "Caption",
-			widget: "string"
+			widget: "string",
+			required: false
 		}
 	],
 	pattern: /^{% figure "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endfigure %}/,
@@ -92,14 +85,11 @@ CMS.registerEditorComponent({
 			caption: match[3]
 		};
 	},
-	toBlock: function (obj) {
-		return `{% figure "${obj.image}", "${obj.alt}" %}\n${obj.caption}\n{% endfigure %}`;
+	toBlock: function ({image, alt, caption}) {
+		return `{% figure "${image}", "${alt}" %}\n${caption}\n{% endfigure %}`;
 	},
-	toPreview: function (obj, getAsset, fields) {
-		const {image, alt, caption} = obj;
-		const imageField = fields.find(f => f.get("widget") === "image");
-		const src = getAsset(image, imageField);
-		return figureShortcode(caption, src, alt);
+	toPreview: function ({ image, alt, caption }) {
+		return figureShortcode(caption ?? "", image, alt);
 	}
 });
 
@@ -110,8 +100,7 @@ CMS.registerEditorComponent({
 		{
 			name: "image",
 			label: "Image",
-			widget: "image",
-			required: true
+			widget: "image"
 		},
 		{
 			name: "alt",
@@ -121,7 +110,8 @@ CMS.registerEditorComponent({
 		{
 			name: "caption",
 			label: "Caption",
-			widget: "string"
+			widget: "string",
+			required: false
 		},
 		{
 			name: "imagePosition",
@@ -138,8 +128,7 @@ CMS.registerEditorComponent({
 		{
 			name: "content",
 			label: "Content",
-			widget: "markdown",
-			required: true
+			widget: "markdown"
 		}
 	],
 	pattern: /^{% imageAndText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimageAndText %}/,
@@ -153,14 +142,11 @@ CMS.registerEditorComponent({
 			content: match[6]
 		};
 	},
-	toBlock: function (obj) {
-		return `{% imageAndText "${obj.image}", "${obj.alt}", "${obj.caption}", "${obj.imagePosition}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimageAndText %}`;
+	toBlock: function ({content, image, alt, caption, imagePosition, verticalAlignment}) {
+		return `{% imageAndText "${image}", "${alt}", "${caption}", "${imagePosition}", "${verticalAlignment}" %}\n${content}\n{% endimageAndText %}`;
 	},
-	toPreview: function (obj, getAsset, fields) {
-		const {content, image, alt, caption, imagePosition, verticalAlignment} = obj;
-		const imageField = fields.find(f => f.get("widget") === "image");
-		const src = getAsset(image, imageField);
-		return imageAndTextShortcode(content, src, alt, caption, imagePosition, verticalAlignment);
+	toPreview: function ({content, image, alt, caption, imagePosition, verticalAlignment}) {
+		return imageAndTextShortcode(content ?? "", image, alt, caption ?? "", imagePosition, verticalAlignment);
 	}
 });
 
@@ -176,42 +162,10 @@ CMS.registerEditorComponent({
 			url: match[1]
 		};
 	},
-	toBlock: function (obj) {
-		return `{% youtube "${obj.url}" %}`;
+	toBlock: function ({url}) {
+		return `{% youtube "${url}" %}`;
 	},
-	toPreview: function (obj) {
-		return (
-			`<figure class="embed--youtube"><iframe class="youtube-player video video--youtube" src="https://youtube.com/embed/${getId(obj.url)}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>`
-		);
+	toPreview: function ({ url }) {
+		return `<figure class="embed--youtube"><iframe class="youtube-player video video--youtube" src="https://youtube.com/embed/${getId(url)}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>`;
 	}
-});
-
-CMS.registerEditorComponent({
-	label: "File",
-	id: "file",
-	fromBlock: match =>
-		match && {
-			file: match[2],
-			text: match[1]
-		},
-	toBlock: ({ text, file }) =>
-		`[${text || ""}](${file || ""})`,
-	toPreview: (obj) => {
-		return <a href={obj.file || ""}>{obj.text}</a>;
-	},
-	pattern: /^\[(.*)\]\((.*?)\)$/,
-	fields: [
-		{
-			label: "File",
-			name: "file",
-			widget: "file",
-			media_library: {
-				allow_multiple: false
-			}
-		},
-		{
-			label: "Link Text",
-			name: "text"
-		}
-	]
 });

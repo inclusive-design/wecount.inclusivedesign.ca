@@ -10,7 +10,6 @@ backend:
     delete: 'chore(cms): delete "{{path}}"'
     uploadMedia: 'chore(cms): upload "{{path}}"'
     deleteMedia: 'chore(cms): delete "{{path}}"'
-local_backend: true
 site_url: "https://wecount.inclusivedesign.ca"
 media_folder: src/uploads
 public_folder: /uploads
@@ -254,7 +253,6 @@ collections:
         value_field: resourceTags.*.value
         display_fields: [resourceTags.*.label]
         search_fields: [resourceTags.*.label]
-        options_length: 100
         required: false
       - label: Summary
         name: summary
