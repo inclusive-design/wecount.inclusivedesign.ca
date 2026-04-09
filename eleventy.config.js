@@ -140,15 +140,7 @@ export default function eleventy(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"node_modules/lite-youtube-embed/src/lite-yt-embed.css": "assets/styles/lite-yt-embed.css"});
 
 	eleventyConfig.addPassthroughCopy({"src/admin/config.yml": "admin/config.yml"});
-	eleventyConfig.addPassthroughCopy({
-		"node_modules/axios/dist/axios.min.js": "lib/axios.min.js",
-		"node_modules/decap-cms/dist/decap-cms.js": "lib/cms/decap-cms.js",
-		"node_modules/decap-cms/dist/decap-cms.js.map": "lib/cms/decap-cms.js.map",
-		"node_modules/nunjucks/browser/nunjucks-slim.min.js": "lib/cms/nunjucks-slim.min.js",
-		"node_modules/prop-types/prop-types.min.js": "lib/cms/prop-types.min.js",
-		"node_modules/react/umd/react.development.js": "lib/cms/react.development.js",
-		"node_modules/react/umd/react.production.min.js": "lib/cms/react.production.min.js"
-	});
+	eleventyConfig.addPassthroughCopy({"node_modules/axios/dist/axios.min.js": "lib/axios.min.js"});
 
 	// Configure BrowserSync.
 	eleventyConfig.setBrowserSyncConfig({
