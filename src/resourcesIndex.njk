@@ -6,7 +6,7 @@ permalink: resourceData.json
   "resources": [
   {%- for item in collections.resources %}
     {
-      "url": {{ item.url | dump | safe }},
+      "url": {{ item.data.link | dump | safe }},
       "title": {{ item.data.title | dump | safe }},
       "focus": {{ item.data.focus | dump | safe }},
       "readability": [

@@ -20,32 +20,17 @@
     </symbol>
 
     {# for the tile items #}
+    <symbol id="source" viewBox="0 0 48 48">
+      {% include 'svg/source.svg' %}
+    </symbol>
     <symbol id="media-type" viewBox="0 0 16 16">
       {% include 'svg/media-type.svg' %}
     </symbol>
     <symbol id="readability" viewBox="0 0 18 18">
       {% include 'svg/readability.svg' %}
     </symbol>
-    <symbol id="tags" viewBox="0 0 19 17">
-      {% include 'svg/tags.svg' %}
-    </symbol>
-    <symbol id="topics" viewBox="0 0 15 15">
-      {% include 'svg/topics.svg' %}
-    </symbol>
-    <symbol id="aiAndDisability" viewBox="0 0 117 103">
-      {% include 'svg/topic-ai-and-disability.svg' %}
-    </symbol>
-    <symbol id="aiEthics" viewBox="0 0 107 99">
-      {% include 'svg/topic-ai-fairness-ethics-and-policy.svg' %}
-    </symbol>
-    <symbol id="designAndMethods" viewBox="0 0 112 104">
-      {% include 'svg/topic-technical-information.svg' %}
-    </symbol>
-    <symbol id="dataScience" viewBox="0 0 101 99">
-      {% include 'svg/topic-work-for-pwd-in-data-science.svg' %}
-    </symbol>
-    <symbol id="ictStandards" viewBox="0 0 123 117">
-      {% include 'svg/ict-standards.svg' %}
+    <symbol id="summary" viewBox="0 0 62 62">
+      {% include 'svg/summary.svg' %}
     </symbol>
   </svg>
 
@@ -71,13 +56,11 @@
 
     <div class="api-content">
       {% for item in pagination.items %}
-        {% set tileURL = item.url %}
         {% set title = item.data.title %}
+        {% set tileURL = item.data.link %}
         {% set source = item.data.source %}
-        {% set mediaType = item.data.type %}
         {% set readabilityList = item.data.readability %}
-        {% set focus = item.data.focus %}
-        {% set tags = item.data.learnTags %}
+        {% set mediaType = item.data.type %}
         {% set summary = item.data.summary %}
         {% include "components/tile-item-resource.njk" %}
       {% endfor %}
@@ -202,6 +185,10 @@
           <div class="tile-resource">
             <h2 class="h3">{{ '{{ item.title }}' }}</h2>
             <div class="info">
+              <svg aria-hidden="true"><use xlink:href="#source" /></svg>
+             Source: {{ '{{ item.source }}' }}
+            </div>
+            <div class="info">
               <svg aria-hidden="true"><use xlink:href="#media-type" /></svg>
               Media Type: {{ '{{ item.type }}' }}
             </div>
@@ -218,20 +205,9 @@
             </div>
 
             <div class="info">
-              <svg aria-hidden="true"><use xlink:href="#topics" /></svg>
-              Topic:
-              <span v-if="resourceCategories.filter(cat => cat.focuses.includes(item.focus))[0]">{{ '{{ resourceCategories.filter(cat => cat.focuses.includes(item.focus))[0].categoryLabel }}' }}</span>
-              <span v-else>{{ '{{ item.focus }}' }}</span>
-            </div>
-
-            <div class="info" v-if="item.learnTags">
-              <svg aria-hidden="true"><use xlink:href="#tags" /></svg>
-              Tags:
-              <ul class="resource-tags-list">
-                <li v-for="(tag, key, index) in item.learnTags">
-                  {{ '{{ tags.filter(singleTag => singleTag.value === tag)[0].label }}' }}
-                </li>
-              </ul>
+              <svg aria-hidden="true"><use xlink:href="#summary" /></svg>
+              Summary:
+              <p>{{ '{{ item.summary }}' }}</p>
             </div>
 
           </div>
