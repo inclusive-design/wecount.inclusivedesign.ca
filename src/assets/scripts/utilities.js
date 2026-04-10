@@ -8,7 +8,7 @@
 const convertDate = inputDate => {
 	const dateObject = new Date(inputDate);
 
-	const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 	return `${months[dateObject.getMonth()]} ${dateObject.getDate()}, ${dateObject.getFullYear()}`;
 };
@@ -19,7 +19,7 @@ const convertDate = inputDate => {
  * @return The string with html tags removed.
  */
 const stripHtmlTags = function (inputString) {
-	return inputString.replace(/<\/?[^>]+(>|$)/g, "");
+	return inputString.replaceAll(/<\/?[^>]+(>|$)/g, '');
 };
 
 /*
@@ -28,9 +28,9 @@ const stripHtmlTags = function (inputString) {
  * @return The extracted text.
  */
 const htmlDecode = function (input) {
-	let el = document.createElement("div");
-	el.innerHTML = input;
-	return el.innerText;
+	const element = document.createElement('div');
+	element.innerHTML = input;
+	return element.textContent;
 };
 
 /*
@@ -40,7 +40,7 @@ const htmlDecode = function (input) {
  * @return An array of smaller arrays with the given chunk size at its most.
  */
 const chunkArray = function (inputArray, chunkSize) {
-	return Array(Math.ceil(inputArray.length / chunkSize)).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
+	return Array.from({length: Math.ceil(inputArray.length / chunkSize)}).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
 };
 
 /*
@@ -53,10 +53,10 @@ const chunkArray = function (inputArray, chunkSize) {
  */
 const createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplate) {
 	const dataInChunk = chunkArray(dataArray, pageSize);
-	pageInQuery = pageInQuery ? (parseInt(pageInQuery) > 1 ? parseInt(pageInQuery) : 1) : 1;
-	let hrefs = [];
-	for (let i = 0; i < dataInChunk.length; i++) {
-		hrefs.push(hrefTemplate.replace(":page", i + 1));
+	pageInQuery = pageInQuery ? (Math.max(Number.parseInt(pageInQuery, 10), 1)) : 1;
+	const hrefs = [];
+	for (let index = 0; index < dataInChunk.length; index++) {
+		hrefs.push(hrefTemplate.replace(':page', index + 1));
 	}
 
 	// The pagination data structure follows the Eleventy pagination data structure to make it easier to integrate
@@ -64,22 +64,22 @@ const createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplat
 	const pagination = {
 		items: dataInChunk[pageInQuery - 1],
 		pageNumber: pageInQuery - 1,
-		hrefs: hrefs,
+		hrefs,
 		href: {
-			next: hrefs[pageInQuery] ? hrefs[pageInQuery] : null,
-			previous: hrefs[pageInQuery - 2] ? hrefs[pageInQuery - 2] : null,
+			next: hrefs[pageInQuery] ?? null,
+			previous: hrefs[pageInQuery - 2] ?? null,
 			first: hrefs[0],
-			last: hrefs[hrefs.length - 1]
+			last: hrefs.at(-1),
 		},
 		pages: dataInChunk,
 		page: {
-			next: dataInChunk[pageInQuery] ? dataInChunk[pageInQuery] : null,
-			previous: dataInChunk[pageInQuery - 2] ? dataInChunk[pageInQuery - 2] : null,
+			next: dataInChunk[pageInQuery] ?? null,
+			previous: dataInChunk[pageInQuery - 2] ?? null,
 			first: dataInChunk[0],
-			last: dataInChunk[dataInChunk.length - 1]
+			last: dataInChunk.at(-1),
 		},
 		hideProceedingPageButton: pageInQuery !== 2 && pageInQuery !== 3,
-		hideFollowingPageButton: pageInQuery !== dataInChunk.length - 1 && pageInQuery !== dataInChunk.length - 2
+		hideFollowingPageButton: pageInQuery !== dataInChunk.length - 1 && pageInQuery !== dataInChunk.length - 2,
 	};
 	return pagination;
 };
@@ -90,7 +90,7 @@ const createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplat
  * @return The same string with special characters within it escaped.
  */
 const escapeSpecialChars = function (data) {
-	return data.replace(/[!@#$%^&*()+=\-[\]\\';,./{}|":<>?~_]/g, "\\$&");
+	return data.replaceAll(/[!@#$%^&*()+=\-[\]\\';,./{}|":<>?~_]/g, String.raw`\$&`);
 };
 
 /*
@@ -99,7 +99,7 @@ const escapeSpecialChars = function (data) {
  * @return The same set of the data set with fields converted.
  */
 const processDisplayResults = function (inArray) {
-	return inArray.map((oneRecord) => {
+	return inArray.map(oneRecord => {
 		oneRecord.title = htmlDecode(oneRecord.title);
 		oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime) : undefined;
 		oneRecord.excerpt = stripHtmlTags(oneRecord.excerpt);
@@ -113,7 +113,7 @@ const processDisplayResults = function (inArray) {
  * @return The same set of the data set with fields converted.
  */
 const processResourcesDisplayResults = function (inArray) {
-	return inArray.map((oneRecord) => {
+	return inArray.map(oneRecord => {
 		oneRecord.title = htmlDecode(oneRecord.title);
 		oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime) : undefined;
 		oneRecord.summary = stripHtmlTags(oneRecord.summary);
@@ -127,13 +127,13 @@ const processResourcesDisplayResults = function (inArray) {
  *
  * @param {Array<Object>} dataSet - The data set that the search is performed upon.
  * @param {String} searchTerm - The search term.
- * @return A subset of the input `dataSet` that have matched term in any of these fields: title, content, tags.
+ * @return {Array} A subset of the input `dataSet` that have matched term in any of these fields: title, content, tags.
  */
 const search = function (dataSet, searchTerm) {
 	searchTerm = searchTerm.toLowerCase();
-	return dataSet.filter((oneRecord) => {
+	return dataSet.filter(oneRecord => {
 		const tagNames = oneRecord.tags ? oneRecord.tags.map(({name}) => name) : [];
-		return oneRecord.title.concat(" ", oneRecord.content, " ", oneRecord.excerpt, " ", tagNames.join(" ")).toLowerCase().match(escapeSpecialChars(searchTerm));
+		return `${oneRecord.title} ${oneRecord.content} ${oneRecord.excerpt} ${tagNames.join(' ')}`.toLowerCase().match(escapeSpecialChars(searchTerm));
 	});
 };
 
@@ -146,9 +146,9 @@ const search = function (dataSet, searchTerm) {
  * @return A subset of the input `dataSet` that have matched tag slug(s) in `tagSlugs`
  */
 const filter = function (dataSet, tagSlugs) {
-	return dataSet.filter((oneRecord) => {
+	return dataSet.filter(oneRecord => {
 		const recordSlugs = oneRecord.tags ? oneRecord.tags.map(({slug}) => slug) : [];
-		return recordSlugs.some(slug => tagSlugs.indexOf(slug) >= 0);
+		return recordSlugs.some(slug => tagSlugs.includes(slug));
 	});
 };
 
@@ -179,7 +179,7 @@ const filterResources = function (resources, filterSettings) {
 	}
 
 	if (filterSettings.selectedTags.length > 0) {
-		results = results.filter(oneRecord => oneRecord.learnTags.some(tag => filterSettings.selectedTags.indexOf(tag) >= 0));
+		results = results.filter(oneRecord => oneRecord.learnTags.some(tag => filterSettings.selectedTags.includes(tag)));
 	}
 
 	if (filterSettings.selectedTypes.length > 0) {
@@ -194,14 +194,14 @@ const filterResources = function (resources, filterSettings) {
  * @param {String} str - The input string to have special characters replaced.
  * @return A string with all special characters replaced.
  */
-const slugify = function (str) {
-	const from = "àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;";
-	const to = "aaaaaaaaaacccddeeeeeeeegghiiiiiilmnnnnoooooooooprrsssssttuuuuuuuuuwxyyzzz------";
-	const p = new RegExp(from.split("").join("|"), "g");
+const slugify = function (string_) {
+	const from = 'àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;';
+	const to = 'aaaaaaaaaacccddeeeeeeeegghiiiiiilmnnnnoooooooooprrsssssttuuuuuuuuuwxyyzzz------';
+	const p = new RegExp([...from].join('|'), 'g');
 
 	// 1. Replace spaces with -
 	// 2. Replace special characters
-	return str.toString().toLowerCase().replace(/\s+/g, "-").replace(p, c => to.charAt(from.indexOf(c)));
+	return string_.toString().toLowerCase().replaceAll(/\s+/g, '-').replaceAll(p, c => to.charAt(from.indexOf(c)));
 };
 
 /*
@@ -214,15 +214,15 @@ const slugify = function (str) {
  * @param {String} searchString - a string to search the collection for
  */
 const includesCaseInsensitive = function (inputStringArray, searchString) {
-	if (typeof searchString !== "string" || inputStringArray.some(str => typeof str !== "string")) {
-		return false; // TODO: consider throwing an exception instead
-	} else {
-		// normalize all string values by making them upper case
-		inputStringArray = inputStringArray.map(str => str.toUpperCase());
-		searchString = searchString.toUpperCase();
-
-		return inputStringArray.includes(searchString);
+	if (typeof searchString !== 'string' || inputStringArray.some(string_ => typeof string_ !== 'string')) {
+		return false;
 	}
+
+	// Normalize all string values by making them upper case
+	inputStringArray = inputStringArray.map(string_ => string_.toUpperCase());
+	searchString = searchString.toUpperCase();
+
+	return inputStringArray.includes(searchString);
 };
 
 /*
@@ -234,31 +234,31 @@ const includesCaseInsensitive = function (inputStringArray, searchString) {
 const generateAside = function (document, selectors) {
 	const articleHeadings = [...document.querySelectorAll(selectors)];
 
-	if (articleHeadings.length) {
-		const toc = document.querySelector("aside#toc");
-		const tocNav = document.createElement("nav");
-		const tocUl = document.createElement("ul");
-		tocNav.setAttribute("aria-label", "Secondary Navigation");
+	if (articleHeadings.length > 0) {
+		const toc = document.querySelector('aside#toc');
+		const tocNav = document.createElement('nav');
+		const tocUl = document.createElement('ul');
+		tocNav.setAttribute('aria-label', 'Secondary Navigation');
 
-		articleHeadings.forEach(heading => {
+		for (const heading of articleHeadings) {
 			const headingSlug = slugify(heading.textContent.toLowerCase());
 
-			heading.setAttribute("id", headingSlug);
+			heading.setAttribute('id', headingSlug);
 
-			const tocLi = document.createElement("li");
-			const tocLink = document.createElement("a");
-			tocLink.setAttribute("href", `#${headingSlug}`);
+			const tocLi = document.createElement('li');
+			const tocLink = document.createElement('a');
+			tocLink.setAttribute('href', `#${headingSlug}`);
 			// Some headings on the main page are explicitly using soft hyphens (&shy;) for words to be properly hyphened on
 			// the mobile sized screens. This creates an issue that these hyphens are picked up and shown as `&shy;` on the side
 			// menu. Considering the side menu is only shown on the desktop view not on the mobile view and hyphens are unnecessary
 			// on the desktop view, these soft hyphens can be removed from the side menu.
-			tocLink.textContent = heading.textContent.replace(/&shy;/g, "");
-			tocLi.appendChild(tocLink);
-			tocUl.appendChild(tocLi);
-		});
+			tocLink.textContent = heading.textContent.replaceAll('&shy;', '');
+			tocLi.append(tocLink);
+			tocUl.append(tocLi);
+		}
 
-		tocNav.appendChild(tocUl);
-		toc.appendChild(tocNav);
+		tocNav.append(tocUl);
+		toc.append(tocNav);
 	}
 };
 
@@ -276,5 +276,5 @@ export {
 	filterResources,
 	slugify,
 	includesCaseInsensitive,
-	generateAside
+	generateAside,
 };

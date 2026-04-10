@@ -1,6 +1,6 @@
-import extractYoutubeId from "../utils/extract-youtube-id.js";
+import extractYoutubeId from '../utils/extract-youtube-id.js';
 
-const youtube = (url) => {
+const youtube = url => {
 	const id = extractYoutubeId(url);
 
 	if (id) {

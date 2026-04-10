@@ -1,45 +1,47 @@
-$(document).ready(function () {
-	fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
+/* global $, fluid */
+
+$(document).ready(() => {
+	fluid.uiOptions('.flc-prefsEditor-separatedPanel', {
 		preferences: [
-			"fluid.prefs.lineSpace",
-			"fluid.prefs.textFont",
-			"fluid.prefs.contrast",
-			"fluid.prefs.tableOfContents",
-			"fluid.prefs.enhanceInputs",
-			"fluid.prefs.syllabification"
+			'fluid.prefs.lineSpace',
+			'fluid.prefs.textFont',
+			'fluid.prefs.contrast',
+			'fluid.prefs.tableOfContents',
+			'fluid.prefs.enhanceInputs',
+			'fluid.prefs.syllabification',
 		],
 		auxiliarySchema: {
 			terms: {
-				"templatePrefix": "/lib/infusion/src/framework/preferences/html",
-				"messagePrefix": "/lib/infusion/src/framework/preferences/messages"
+				templatePrefix: '/lib/infusion/src/framework/preferences/html',
+				messagePrefix: '/lib/infusion/src/framework/preferences/messages',
 			},
-			"fluid.prefs.tableOfContents": {
+			'fluid.prefs.tableOfContents': {
 				enactor: {
-					"tocTemplate": "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
-					"tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json",
+					tocTemplate: '/lib/infusion/src/components/tableOfContents/html/TableOfContents.html',
+					tocMessage: '/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json',
 					ignoreForToC: {
-						"footer": "footer",
-						"tags": ".tags-info"
-					}
-				}
+						footer: 'footer',
+						tags: '.tags-info',
+					},
+				},
 			},
-			"fluid.prefs.syllabification": {
+			'fluid.prefs.syllabification': {
 				enactor: {
 					terms: {
-						patternPrefix: "/lib/infusion/src/lib/hypher/patterns"
-					}
-				}
-			}
+						patternPrefix: '/lib/infusion/src/lib/hypher/patterns',
+					},
+				},
+			},
 		},
 		prefsEditorLoader: {
-			lazyLoad: true
+			lazyLoad: true,
 		},
 		schema: {
 			properties: {
-				"fluid.prefs.lineSpace": {
-					"minimum": 1
-				}
-			}
-		}
+				'fluid.prefs.lineSpace': {
+					minimum: 1,
+				},
+			},
+		},
 	});
 });
