@@ -25,12 +25,12 @@
 	}
 
 	.pagination-link {
-		background-color: $green-light;
+		background-color: var(--color-green-light);
 		block-size: calc(45 / 16 * 1rem);
 		border: 0;
 		border-radius: 100%;
-		box-shadow: 0 0 0 calc(2 / 16 * 1rem) $blue-alt-light inset;
-		color: $green-dark;
+		box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-blue-alt-light) inset;
+		color: var(--color-green-dark);
 		float: left;
 		font-size: calc(18 / 16 * 1rem);
 		font-weight: 400;
@@ -44,7 +44,7 @@
 	.pagination-link::before {
 		block-size: 100%;
 		border-radius: 100%;
-		box-shadow: 0 0 0 calc(2 / 16 * 1rem) $blue-alt-light inset;
+		box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-blue-alt-light) inset;
 		content: "";
 		inline-size: 100%;
 		left: 0;
@@ -65,7 +65,7 @@
 		margin-inline: calc(0 / 16 * 1rem);
 
 		span {
-			color: $blue-alt;
+			color: var(--color-blue-alt);
 			font-size: calc(18 / 16 * 1rem);
 		}
 	}
@@ -74,11 +74,11 @@
 		list-style: none;
 
 		a.is-current {
-			background-color: $green-pale;
-			box-shadow: 0 0 0 calc(2 / 16 * 1rem) $green-dark inset;
+			background-color: var(--color-green-pale);
+			box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-green-dark) inset;
 
 			&::before {
-				box-shadow: 0 0 0 calc(2 / 16 * 1rem) $green-dark inset;
+				box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-green-dark) inset;
 			}
 		}
 	}
@@ -94,7 +94,7 @@
 
 	.pagination-next,
 	.pagination-previous {
-		color: $green-dark;
+		color: var(--color-green-dark);
 		float: left;
 		line-height: calc(45 / 16 * 1rem);
 		margin-block: calc(10 / 16 * 1rem);

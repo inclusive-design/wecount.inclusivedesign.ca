@@ -1,0 +1,53 @@
+:root {
+	--font-body: "Fira Sans", sans-serif;
+	--font-alternate: "Montserrat Alternates", montserrat, "Fira Sans", sans-serif;
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+	--content-max: 100rem;
+
+	/* Colors - Primary */
+	--color-white: #fff;
+	--color-red: #ff3636;
+	--color-red-light: #ffaca7;
+	--color-blue-dark: #6895c6;
+	--color-blue: #84bcde;
+	--color-blue-light: #acdde9;
+	--color-gold-dark: #fcb33e;
+	--color-gold: #fdcc70;
+	--color-gold-light: #ffe6a7;
+	--color-gold-lightest: #fadc90;
+
+	/* Colors - Secondary */
+	--color-black: #000;
+	--color-grey-lightest: #f8f8f8;
+	--color-grey-lighter: #f3f3f3;
+	--color-grey-light: #e7e7e7;
+	--color-grey-mid-light: #888;
+	--color-grey-mid: #6c6c6c;
+	--color-grey-dark: #313131;
+	--color-grey-shade: #c4c4c4;
+	--color-navy: #203149;
+	--color-navy-light: #2e405b;
+	--color-blue-alt: #5c81a9;
+	--color-blue-alt-contrast: #5879a0;
+	--color-blue-alt-dark: #4d6b8d;
+	--color-blue-alt-light: #8caabb;
+	--color-blue-grey: #abdde9;
+	--color-azure: #89b2e0;
+	--color-green: #b0d0be;
+	--color-green-light: #cee6c5;
+	--color-green-dark: #465d8b;
+	--color-green-pale: #f7fff4;
+	--color-green-grey: #cde6c4;
+	--color-orange-focus: #fadc90;
+	--color-orange-light: #5c81a9;
+	--color-yellow: #ffcb70;
+
+	/* Borders */
+	--border-shadow-radius: calc(4 / 16 * 1rem);
+	--border-shadow-color: rgb(0 0 0 / 25%);
+	--border-shadow-light: 0 0 var(--border-shadow-radius) var(--border-shadow-color);
+	--topic-title-border-radius: calc(8 / 16 * 1rem);
+}

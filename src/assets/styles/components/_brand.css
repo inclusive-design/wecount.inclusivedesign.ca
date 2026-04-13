@@ -5,7 +5,7 @@
 	a {
 		align-items: center;
 		block-size: inherit;
-		color: $black;
+		color: var(--color-black);
 		display: flex;
 		position: relative;
 	}

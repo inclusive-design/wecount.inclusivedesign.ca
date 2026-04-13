@@ -1,7 +1,7 @@
-// Footer styles.
+/* Footer styles. */
 
-// For the canada logo: the color of the flag is red by default but is able to adapt
-// to the color determined by the selected UIO high contrast theme.
+/* For the canada logo: the color of the flag is red by default but is able to adapt
+to the color determined by the selected UIO high contrast theme. */
 .fill-f00 {
 	fill: var(--fl-fgColor, #f00);
 }
@@ -27,9 +27,9 @@
 
 		&:hover,
 		&:focus {
-			background-color: $navy-light;
-			border: solid 1px $white;
-			color: $white;
+			background-color: var(--color-navy-light);
+			border: solid 1px var(--color-white);
+			color: var(--color-white);
 		}
 	}
 
@@ -42,19 +42,19 @@
 }
 
 footer {
-	background: $navy-light;
-	color: $white;
+	background: var(--color-navy-light);
+	color: var(--color-white);
 	margin-block-start: calc(30 / 16 * 1rem);
 	padding-block: calc(16 / 16 * 1rem);
 	padding-inline: calc(32 / 16 * 1rem);
 	text-align: center;
 
 	a {
-		color: $white;
+		color: var(--color-white);
 
 		&:hover,
 		&:focus {
-			color: $navy-light;
+			color: var(--color-navy-light);
 		}
 	}
 
@@ -74,7 +74,7 @@ footer {
 		max-inline-size: var(--content-max);
 
 		h2 {
-			color: $white;
+			color: var(--color-white);
 			font-size: calc(16 / 16 * 1rem);
 			font-weight: var(--font-weight-bold);
 		}
@@ -154,9 +154,9 @@ footer {
 
 			.social-media-icons {
 				display: grid;
-				grid-row-gap: calc(16 / 16 * 1rem);
 				grid-template-columns: repeat(5, auto);
 				margin: auto;
+				row-gap: calc(16 / 16 * 1rem);
 
 				div {
 					&:nth-child(2) {
@@ -188,12 +188,12 @@ footer {
 						background-color: inherit;
 
 						svg {
-							fill: $navy-light;
-							stroke: $white;
+							fill: var(--color-navy-light);
+							stroke: var(--color-white);
 							stroke-linecap: round;
 
 							path {
-								fill: $navy-light;
+								fill: var(--color-navy-light);
 							}
 						}
 					}
@@ -209,10 +209,10 @@ footer {
 
 		.footer-content {
 			display: grid;
-			grid-row-gap: calc(16 / 16 * 1rem);
 			grid-template-columns: 3.8fr 1.2fr;
 			padding-block: calc(32 / 16 * 1rem);
 			padding-inline: calc(48 / 16 * 1rem);
+			row-gap: calc(16 / 16 * 1rem);
 
 			.funders {
 				align-self: end;
@@ -263,7 +263,7 @@ footer {
 				}
 
 				.social-media-icons {
-					grid-gap: calc(16 / 16 * 1rem);
+					gap: calc(16 / 16 * 1rem);
 					grid-template-columns: repeat(5, auto);
 					inline-size: calc(96 / 16 * 1rem);
 					margin: inherit;

@@ -19,7 +19,7 @@
 
 		.expander__title {
 			border-block-end: 0;
-			color: $green-dark;
+			color: var(--color-green-dark);
 			font-weight: var(--font-weight-semibold);
 			grid-row: 1 / 2;
 			margin: 0;
@@ -37,7 +37,7 @@
 			block-size: calc(32 / 16 * 1rem);
 			border: none;
 			bottom: 0;
-			color: $green-dark;
+			color: var(--color-green-dark);
 			display: flex;
 			flex-direction: column;
 			grid-row: 3 / 4;
@@ -59,7 +59,7 @@
 			&:hover,
 			&:focus {
 				background-color: #fadc90;
-				color: $green-dark;
+				color: var(--color-green-dark);
 				outline: 0;
 			}
 		}

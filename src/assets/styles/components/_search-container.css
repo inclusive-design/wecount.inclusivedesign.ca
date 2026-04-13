@@ -1,4 +1,4 @@
-// Styles for the search container
+ /* Styles for the search container */
 .search-container {
 	position: relative;
 
@@ -22,7 +22,7 @@
 
 	svg {
 		block-size: calc(32 / 16 * 1rem);
-		fill: var(--fl-bgColor, $white);
+		fill: var(--fl-bgColor, var(--color-white));
 		inline-size: calc(32 / 16 * 1rem);
 	}
 

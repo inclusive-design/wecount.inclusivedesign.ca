@@ -5,8 +5,7 @@
 
 .idrc-indicator {
 	max-inline-size: var(--content-max);
-	padding-block-end: calc(20 / 16 * 1rem);
-	padding-block-start: calc(20 / 16 * 1rem);
+	padding-block: calc(20 / 16 * 1rem);
 }
 
 .idrc-indicator-element {

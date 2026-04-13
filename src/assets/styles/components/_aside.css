@@ -10,7 +10,7 @@ aside {
 
 		nav {
 			ul {
-				box-shadow: calc(1 / 16 * 1rem) 0 0 0 $green-dark inset;
+				box-shadow: calc(1 / 16 * 1rem) 0 0 0 var(--color-green-dark) inset;
 				inline-size: calc(195 / 16 * 1rem);
 				list-style-type: none;
 				padding-block: 0;
@@ -26,14 +26,16 @@ aside {
 					padding-inline-start: calc(20 / 16 * 1rem);
 
 					&.active {
-						box-shadow: calc(5 / 16 * 1rem) 0 0 0 $green-dark inset;
+						box-shadow: calc(5 / 16 * 1rem) 0 0 0 var(--color-green-dark) inset;
 						padding-inline-start: calc(22 / 16 * 1rem);
 						position: relative;
 					}
 
 					a {
-						color: $navy-light;
-						font-size: calc(18 / 16 * 1rem) !important; // Enactors.css in infusion uses !important on this element
+						color: var(--color-navy-light);
+						font-size: calc(18 / 16 * 1rem) !important;
+
+						/* Enactors.css in infusion uses !important on this element */
 						font-weight: var(--font-weight-normal);
 					}
 

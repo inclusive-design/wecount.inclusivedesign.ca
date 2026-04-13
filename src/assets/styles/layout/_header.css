@@ -1,4 +1,4 @@
-// Header styles
+/* Header styles */
 
 header {
 	.site-nav {
@@ -6,7 +6,7 @@ header {
 		position: relative;
 
 		&::after {
-			background: linear-gradient(var(--fl-fgColor, $white), rgb(0 0 0 / 5%));
+			background: linear-gradient(var(--fl-fgColor, var(--color-white)), rgb(0 0 0 / 5%));
 			block-size: 15px;
 			content: "";
 			display: block;
@@ -19,7 +19,7 @@ header {
 
 	.site-nav-inner {
 		align-items: center;
-		background: $white;
+		background: var(--color-white);
 		display: grid;
 		gap: calc(18 / 16 * 1rem);
 		grid-template-columns: calc(72 / 16 * 1rem) 1fr;
@@ -35,7 +35,7 @@ header {
 			block-size: max-content;
 			border-radius: calc(36 / 16 * 1rem);
 			box-shadow: inset 0 0 0 calc(1 / 16 * 1rem) var(--fl-linkFgColor, black);
-			color: $black;
+			color: var(--color-black);
 			font-family: var(--font-alternate);
 			font-size: calc(14 / 16 * 1rem);
 			font-weight: var(--font-weight-bold);
@@ -52,7 +52,7 @@ header {
 			box-shadow: inset 0 0 0 calc(2 / 16 * 1rem) var(--fl-linkFgColor, black);
 		}
 
-		// Menu Button
+		 /* Menu Button */
 		[aria-expanded] {
 			align-items: center;
 			background: none;
@@ -60,7 +60,7 @@ header {
 			border: unset;
 			border-radius: unset;
 			box-shadow: none;
-			color: $black;
+			color: var(--color-black);
 			display: flex;
 			flex-direction: column;
 			inline-size: calc(52 / 16 * 1rem);
@@ -91,7 +91,7 @@ header {
 
 		[aria-expanded]:hover,
 		[aria-expanded]:focus {
-			background-color: $orange-focus;
+			background-color: var(--color-orange-focus);
 			box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--fl-linkFgColor, black) inset;
 		}
 
@@ -132,10 +132,10 @@ header {
 		display: none;
 	}
 
-	// Styles for the search container
+	/* Styles for the search container */
 	.search-container {
 		button {
-			fill: var(--fl-fgColor, $white);
+			fill: var(--fl-fgColor, var(--color-white));
 			right: calc(4 / 16 * 1rem);
 			top: calc(4 / 16 * 1rem);
 		}
@@ -173,7 +173,7 @@ header {
 		}
 	}
 
-	// Styles for the navigation menu
+	/* Styles for the navigation menu */
 	.primary-nav {
 		background: rgb(247 236 207 / 100%);
 		display: flex;
@@ -189,9 +189,9 @@ header {
 		}
 
 		a {
-			color: $black;
+			color: var(--color-black);
 			font-family: "Montserrat Alternates", Montserrat, var(--font-alternate);
-			font-size: calc(14 / 16 * 1rem) !important; // Enactors.css in infusion uses !important on this element
+			font-size: calc(14 / 16 * 1rem) !important; /* Enactors.css in infusion uses !important on this element */
 			font-weight: var(--font-weight-medium);
 			inline-size: 100%;
 			line-height: calc(28 / 16 * 1rem);
@@ -203,7 +203,7 @@ header {
 		}
 
 		a[aria-current="page"] {
-			background-color: $orange-focus;
+			background-color: var(--color-orange-focus);
 			font-weight: var(--font-weight-bold);
 			text-decoration: underline;
 		}
@@ -274,7 +274,7 @@ header {
 		}
 
 		a {
-			font-size: calc(32 / 16 * 1rem) !important; // Enactors.css in infusion uses !important on this element
+			font-size: calc(32 / 16 * 1rem) !important; /* Enactors.css in infusion uses !important on this element */
 			line-height: calc(64 / 16 * 1rem);
 		}
 

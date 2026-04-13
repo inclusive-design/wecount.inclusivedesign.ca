@@ -1,4 +1,4 @@
-// CSS classes for the placeholder svg
+/* CSS classes for the placeholder svg */
 .fill-fadc90 {
 	fill: var(--bColor, #fadc90);
 }
@@ -131,15 +131,15 @@
 	fill: var(--bColor, #6895c6);
 }
 
-// Initially show the static generated page and hide the dynamic page section for the search and filtering result.
+/* Initially show the static generated page and hide the dynamic page section for the search and filtering result. */
 .initiatives.dynamic-view,
 .resources.dynamic-view {
 	display: none;
 }
 
-// Initially hide the filter form on the static generated page
+/* Initially hide the filter form on the static generated page */
 .static-view .filter-body {
-	border-block-start: 1px solid $blue-alt-light;
+	border-block-start: 1px solid var(--color-blue-alt-light);
 	display: none;
 }
 
@@ -155,7 +155,7 @@
 		}
 
 		input[type="search"] {
-			border: 1px solid $green-dark;
+			border: 1px solid var(--color-green-dark);
 			border-radius: calc(28 / 16 * 1rem);
 			font-size: calc(18 / 16 * 1rem);
 			inline-size: 100%;
@@ -169,17 +169,17 @@
 		}
 
 		::placeholder {
-			color: $green-dark;
+			color: var(--color-green-dark);
 		}
 	}
 
 	.search-result {
-		color: $green-dark;
+		color: var(--color-green-dark);
 		margin-block-start: calc(-1 * 32 / 16 * 1rem);
 	}
 
 	.search-for-title {
-		color: $green-dark;
+		color: var(--color-green-dark);
 	}
 
 	.tags {

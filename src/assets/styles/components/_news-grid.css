@@ -1,6 +1,6 @@
 .news-grid {
 	display: grid;
-	grid-gap: calc(30 / 16 * 1rem) calc(38 / 16 * 1rem);
+	gap: calc(30 / 16 * 1rem) calc(38 / 16 * 1rem);
 	grid-template-columns: repeat(1, 1fr);
 
 	.api-content {
@@ -14,7 +14,7 @@
 			}
 
 			.author {
-				color: $grey-mid;
+				color: var(--color-grey-mid);
 				font-style: italic;
 				font-weight: var(--font-weight-semibold);
 			}
@@ -23,8 +23,9 @@
 				padding-block-end: calc(8 / 16 * 1rem);
 			}
 
-			// Apply ellipsis on the third line to the preview content.
-			// Reference: http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+			/* Apply ellipsis on the third line to the preview content. */
+
+			/* Reference: http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/ */
 			.preview-content {
 				line-height: calc(19.2 / 16 * 1rem);
 				margin-block-end: calc(16 / 16 * 1rem);
@@ -34,7 +35,7 @@
 				position: relative;
 			}
 
-			// create the ellipsis
+			/* create the ellipsis */
 			.preview-content::before {
 				bottom: 0;
 				content: "...";
@@ -42,9 +43,9 @@
 				right: 0;
 			}
 
-			// hide the ellipsis if we have text, which is less than or equal to max lines
+			/* hide the ellipsis if we have text, which is less than or equal to max lines */
 			.preview-content::after {
-				background: $white;
+				background: var(--color-white);
 				block-size: calc(16 / 16 * 1rem);
 				content: "";
 				inline-size: calc(16 / 16 * 1rem);
@@ -70,13 +71,13 @@
 					display: block;
 				}
 
-				// Style the placeholder images
+				/* Style the placeholder images */
 				.placeholder-img {
 					block-size: 100%;
 					inline-size: 100%;
 				}
 
-				// Style featured images
+				/* Style featured images */
 				img {
 					block-size: 100%;
 					inline-size: 100%;

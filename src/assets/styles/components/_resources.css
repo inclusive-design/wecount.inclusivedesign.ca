@@ -16,7 +16,7 @@
 	stroke: var(--currentcolor, #465d8b);
 }
 
-// Resources page
+/* Resources page */
 .resources {
 	h1 {
 		margin-block-end: 0;
@@ -50,7 +50,7 @@
 
 		input[type="search"] {
 			border: none;
-			box-shadow: 0 0 calc(7 / 16 * 1rem) $border-shadow-colour;
+			box-shadow: 0 0 calc(7 / 16 * 1rem) var(--border-shadow-colour);
 			font-size: calc(18 / 16 * 1rem);
 			padding-block: calc(16 / 16 * 1rem);
 		}
@@ -62,16 +62,16 @@
 	}
 
 	.filter {
-		background-color: $grey-lightest;
+		background-color: var(--color-grey-lightest);
 		border: none;
 		border-radius: calc(9 / 16 * 1rem);
-		box-shadow: 0 0 calc(7 / 16 * 1rem) $border-shadow-colour;
+		box-shadow: 0 0 calc(7 / 16 * 1rem) var(--border-shadow-colour);
 		margin-block-end: calc(32 / 16 * 1rem);
 		padding-block: calc(8 / 16 * 1rem);
 		padding-inline: calc(16 / 16 * 1rem);
 
 		h2 {
-			border-block-end: calc(1 / 16 * 1rem) solid $grey-mid-light;
+			border-block-end: calc(1 / 16 * 1rem) solid var(--color-grey-mid-light);
 			font-size: calc(25 / 16 * 1rem);
 			font-weight: var(--font-weight-bold);
 			margin: 0;
@@ -82,7 +82,7 @@
 
 		h3 {
 			border-block-end: none;
-			color: $grey-dark;
+			color: var(--color-grey-dark);
 			font-size: calc(18 / 16 * 1rem);
 			line-height: calc(40 / 16 * 1rem);
 		}
@@ -94,35 +94,35 @@
 			margin-block-start: calc(24 / 16 * 1rem);
 
 			button {
-				@extend %has-vertically-centered-children;
-
-				background-color: $white;
-				box-shadow: 0 0 calc(7 / 16 * 1rem) $border-shadow-colour;
+				align-items: center;
+				background-color: var(--color-white);
+				box-shadow: 0 0 calc(7 / 16 * 1rem) var(--border-shadow-colour);
+				display: flex;
 			}
 		}
 
 		.filter-header {
 			background-color: initial;
-			border-block-end: calc(1 / 16 * 1rem) solid $grey-mid-light;
+			border-block-end: calc(1 / 16 * 1rem) solid var(--color-grey-mid-light);
 			margin: 0;
 			padding-block: 0;
 			padding-inline: calc(16 / 16 * 1rem);
 
 			&:hover {
-				box-shadow: 0 calc(3 / 16 * 1rem) calc(2 / 16 * 1rem) calc(-1 * 2 / 16 * 1rem) rgba(0 0 0 / 60%);
+				box-shadow: 0 calc(3 / 16 * 1rem) calc(2 / 16 * 1rem) calc(-1 * 2 / 16 * 1rem) rgb(0 0 0 / 60%);
 			}
 
 			button {
-				@extend %has-vertically-centered-children;
-
+				align-items: center;
 				align-self: center;
 				block-size: calc(32 / 16 * 1rem);
+				display: flex;
 				margin-inline-end: 0;
 				padding: 0;
 			}
 		}
 
-		// override `display: hidden` defined in _news-and-initiatives.scss
+		/* override `display: hidden` defined in _news-and-initiatives.css */
 		.filter-body[data-section="topics"] {
 			display: block;
 		}
@@ -133,7 +133,7 @@
 				justify-content: end;
 
 				button {
-					color: $green-dark;
+					color: var(--color-green-dark);
 					font-size: calc(18 / 16 * 1rem);
 					font-weight: var(--font-weight-semibold);
 
@@ -146,10 +146,11 @@
 		}
 
 		.filter-expand-button {
-			@extend %has-vertically-centered-children;
+			align-items: center;
+			display: flex;
 
 			--expand-button-color: none;
-			--expand-button-stroke-color: #{$grey-dark};
+			--expand-button-stroke-color: var(--color-grey-dark);
 
 			svg {
 				background-color: initial !important;
@@ -161,8 +162,8 @@
 
 			&:focus,
 			&:hover {
-				--expand-button-color: #{$grey-dark};
-				--expand-button-stroke-color: #{$grey-dark};
+				--expand-button-color: var(--color-grey-dark);
+				--expand-button-stroke-color: var(--color-grey-dark);
 			}
 		}
 
@@ -181,9 +182,9 @@
 				min-inline-size: 100%;
 				text-align: center;
 
-				// when the topic card gains the hover, apply the hover style to the checkbox
+				/* when the topic card gains the hover, apply the hover style to the checkbox */
 				&:hover .topic-checkbox span::before {
-					outline: calc(2.5 / 16 * 1rem) solid $blue-alt-light;
+					outline: calc(2.5 / 16 * 1rem) solid var(--color-blue-alt-light);
 				}
 
 				svg {
@@ -194,7 +195,7 @@
 				.topic-title {
 					align-items: center;
 					block-size: auto;
-					border-radius: $topic-title-border-radius $topic-title-border-radius 0 0;
+					border-radius: var(--topic-title-border-radius) var(--topic-title-border-radius) 0 0;
 					column-gap: calc(16 / 16 * 1rem);
 					cursor: pointer;
 					display: grid;
@@ -203,37 +204,37 @@
 					padding: calc(16 / 16 * 1rem);
 				}
 
-				// topic title background
+				/* topic title background */
 				.aiAndDisability {
-					background-color: $azure;
+					background-color: var(--color-azure);
 				}
 
 				.dataScience {
-					background-color: $blue-grey;
+					background-color: var(--color-blue-grey);
 				}
 
 				.aiEthics {
-					background-color: $green-grey;
+					background-color: var(--color-green-grey);
 				}
 
 				.designAndMethods {
-					background-color: $yellow;
+					background-color: var(--color-yellow);
 				}
 
 				.ictStandards {
-					background-color: $green-grey;
+					background-color: var(--color-green-grey);
 				}
 
 				.topic-checkbox {
-					background: $white;
-					border: 1px solid $blue-alt-light;
-					border-radius: 0 0 $topic-title-border-radius $topic-title-border-radius;
+					background: var(--color-white);
+					border: 1px solid var(--color-blue-alt-light);
+					border-radius: 0 0 var(--topic-title-border-radius) var(--topic-title-border-radius);
 
 					.filter-checkbox + label,
 					.filter-checkbox + span {
-						// The same "border-radius" needs to be applied to the inner container for border
-						// curves displayed properly on the outer container
-						border-radius: 0 0 $topic-title-border-radius $topic-title-border-radius;
+						/* The same "border-radius" needs to be applied to the inner container for border
+						curves displayed properly on the outer container */
+						border-radius: 0 0 var(--topic-title-border-radius) var(--topic-title-border-radius);
 						display: block;
 						font-size: calc(18 / 16 * 1rem);
 

@@ -1,4 +1,4 @@
-// Resource detail page
+/* Resource detail page */
 .resource-detail {
 	.features {
 		display: grid;
@@ -15,12 +15,12 @@
 		}
 
 		.feature-name {
-			color: $green-dark;
+			color: var(--color-green-dark);
 			font-weight: var(--font-weight-bold);
 		}
 
 		.learn-tag {
-			background-color: $grey-light;
+			background-color: var(--color-grey-light);
 			border-radius: calc(22 / 16 * 1rem);
 			display: inline-block;
 			margin-block: calc(2 / 16 * 1rem);
