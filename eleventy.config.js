@@ -1,6 +1,7 @@
 import {chunkArray, createPagination} from './src/assets/scripts/utilities.js';
 import eleventyNavigation from '@11ty/eleventy-navigation';
 import fluidPlugin from 'eleventy-plugin-fluid';
+import pluginRss from '@11ty/eleventy-plugin-rss';
 import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
 
 import parseTransform from './src/transforms/parse.js';
@@ -104,6 +105,7 @@ export default function eleventy(eleventyConfig) {
 	eleventyConfig.addPlugin(fluidPlugin, {
 		i18n: false,
 	});
+	eleventyConfig.addPlugin(pluginRss);
 
 	// Add filters.
 	eleventyConfig.addFilter('categoryFromFocus', categoryFromFocusFilter);
