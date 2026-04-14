@@ -278,12 +278,6 @@ header {
 			line-height: calc(64 / 16 * 1rem);
 		}
 
-		div > a + a::before {
-			content: "/";
-			display: inline;
-			padding-inline: 1ch;
-		}
-
 		.search-container {
 			display: unset;
 		}
