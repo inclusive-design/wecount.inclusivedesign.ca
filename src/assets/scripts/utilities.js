@@ -66,8 +66,8 @@ const createPagination = function (dataArray, pageSize, pageInQuery, hrefTemplat
 		pageNumber: pageInQuery - 1,
 		hrefs,
 		href: {
-			next: hrefs[pageInQuery] ?? null,
-			previous: hrefs[pageInQuery - 2] ?? null,
+			next: hrefs[pageInQuery],
+			previous: hrefs[pageInQuery - 2],
 			first: hrefs[0],
 			last: hrefs.at(-1),
 		},

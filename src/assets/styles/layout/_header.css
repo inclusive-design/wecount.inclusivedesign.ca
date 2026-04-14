@@ -31,14 +31,14 @@ header {
 			stroke: var(--fl-linkFgColor);
 		}
 
-		.header-join {
+		a.header-join {
 			block-size: max-content;
 			border-radius: calc(36 / 16 * 1rem);
 			box-shadow: inset 0 0 0 calc(1 / 16 * 1rem) var(--fl-linkFgColor, black);
 			color: var(--color-black);
 			font-family: var(--font-alternate);
-			font-size: calc(14 / 16 * 1rem);
-			font-weight: var(--font-weight-bold);
+			font-size: calc(14 / 16 * 1rem) !important;
+			font-weight: var(--font-weight-bold) !important;
 			inline-size: max-content;
 			justify-self: end;
 			padding-block: calc(18 / 16 * 1rem);
@@ -225,8 +225,8 @@ header {
 		padding-inline: calc(36 / 16 * 1rem);
 	}
 
-	header .site-nav-inner .header-join {
-		font-size: calc(24 / 16 * 1rem);
+	header .site-nav-inner a.header-join {
+		font-size: calc(24 / 16 * 1rem) !important;
 		padding-inline: calc(32 / 16 * 1rem);
 	}
 
