@@ -1,5 +1,28 @@
 # Changelog
 
+## [2026.04.14.1605.9ab7bee](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.04.01.1556.46d6021...2026.04.14.1605.9ab7bee)
+
+### Features
+
+* feat: migrate to updated linters, replace Sass with CSS (#2494) [@nedatidrc](https://github.com/nedatidrc)
+* feat: simplify resource cards, link directly to resources (#2491) [@nedatidrc](https://github.com/nedatidrc)
+* feat: migrate to Sveltia CMS (#2488) [@nedatidrc](https://github.com/nedatidrc)
+* feat!: upgrade to 11ty v3 and eleventy-plugin-fluid v3 (#2487) [@nedatidrc](https://github.com/nedatidrc)
+
+### Chores
+
+* ci: remove branch adjustment workflow (#2489) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* fix(deps): update dependency [@11ty](https://github.com/11ty)/eleventy-plugin-rss to v3 (#2474) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency markdownlint-cli2 to ^0.22.0 (#2496) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#2497) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#2492) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/create-github-app-token action to v3.1.1 (#2493) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency axios to v1.15.0 (#2490) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#2486) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.04.01.1556.46d6021](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.03.25.1402.817e38f...2026.04.01.1556.46d6021)
 
 * chore(deps): update dependency axios to v1.14.0 (#2480) @[renovate[bot]](https://github.com/apps/renovate)
