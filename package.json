@@ -55,7 +55,7 @@
     "eslint": "^10.2.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "markdownlint-cli2": "^0.21.0",
+    "markdownlint-cli2": "^0.22.0",
     "npm-run-all2": "^8.0.4",
     "rimraf": "^6.1.2",
     "stylelint": "^17.7.0"
