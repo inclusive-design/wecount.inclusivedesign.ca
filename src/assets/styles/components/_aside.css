@@ -1,0 +1,51 @@
+aside {
+	display: none;
+	justify-self: end;
+}
+
+@media screen and (width >= 68.75rem) {
+	#defaultContainer aside {
+		display: inherit;
+		padding-block-start: calc(58 / 16 * 1rem);
+
+		nav {
+			ul {
+				box-shadow: calc(1 / 16 * 1rem) 0 0 0 var(--color-green-dark) inset;
+				inline-size: calc(195 / 16 * 1rem);
+				list-style-type: none;
+				padding-block: 0;
+				padding-inline: calc(0 / 16 * 1rem);
+				position: sticky;
+				top: calc(58 / 16 * 1rem);
+
+				li {
+					inline-size: calc(158 / 16 * 1rem);
+					left: calc(-1 * 2 / 16 * 1rem);
+					margin-block: 0 calc(23 / 16 * 1rem);
+					margin-inline: 0;
+					padding-inline-start: calc(20 / 16 * 1rem);
+
+					&.active {
+						box-shadow: calc(5 / 16 * 1rem) 0 0 0 var(--color-green-dark) inset;
+						padding-inline-start: calc(22 / 16 * 1rem);
+						position: relative;
+					}
+
+					a {
+						color: var(--color-navy-light);
+						font-size: calc(18 / 16 * 1rem) !important;
+
+						/* Enactors.css in infusion uses !important on this element */
+						font-weight: var(--font-weight-normal);
+					}
+
+					&:first-child {
+						a {
+							font-weight: var(--font-weight-bold);
+						}
+					}
+				}
+			}
+		}
+	}
+}

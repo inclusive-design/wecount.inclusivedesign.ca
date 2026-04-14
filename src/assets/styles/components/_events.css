@@ -1,0 +1,17 @@
+/* Event page */
+.event-page {
+	.event-cover-image {
+		display: block;
+		margin-inline: auto;
+		max-inline-size: 100%;
+	}
+
+	.description {
+		margin-block-end: calc(100 / 16 * 1rem);
+
+		h3 {
+			border-block-end: calc(5 / 16 * 1rem) solid var(--color-gold);
+			line-height: calc(60 / 16 * 1rem);
+		}
+	}
+}

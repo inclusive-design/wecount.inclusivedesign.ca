@@ -1,22 +1,20 @@
 // For search functionality on the header.
 
 /* global Vue, axios */
-import { search, createPagination, processDisplayResults } from "./utils.js";
-const params = new URLSearchParams(window.location.search);
-const searchTerm = params.get("s").toLowerCase();
-let pageInQuery = params.get("page");
+import {search, createPagination, processDisplayResults} from './utilities.js';
+const parameters = new URLSearchParams(globalThis.location.search);
+const searchTerm = parameters.get('s').toLowerCase();
+const pageInQuery = parameters.get('page');
 const pageSize = 10;
 
 // eslint-disable-next-line no-new
 new Vue({
-	el: "#defaultContainer",
+	el: '#defaultContainer',
 	mounted() {
-		let vm = this;
+		const vm = this;
 		let results = [];
 
-		axios.get(
-			window.location.origin + "/index.json"
-		).then(function (response) {
+		axios.get(globalThis.location.origin + '/index.json').then(response => {
 			// Perform the search
 			results = search(response.data, searchTerm);
 
@@ -28,17 +26,18 @@ new Vue({
 			// Paginate search results
 			let pagination;
 			if (results.length > pageSize) {
-				pagination = createPagination(results, pageSize, pageInQuery, "/search/?s=" + searchTerm + "&page=:page");
+				pagination = createPagination(results, pageSize, pageInQuery, '/search/?s=' + searchTerm + '&page=:page');
 			}
+
 			vm.pagination = pagination;
 			vm.resultsToDisplay = pagination ? pagination.items : results;
 			vm.searchStatus = `We found ${results.length} results for your search.`;
 		});
 	},
 	data: {
-		searchTerm: params.get("s"),
-		searchStatus: "Searching...",
+		searchTerm: parameters.get('s'),
+		searchStatus: 'Searching...',
 		resultsToDisplay: [],
-		pagination: null
-	}
+		pagination: null,
+	},
 });

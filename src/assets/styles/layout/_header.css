@@ -1,0 +1,285 @@
+/* Header styles */
+
+header {
+	.site-nav {
+		box-shadow: 0 0 calc(20 / 16 * 1rem) 0 rgb(0 0 0 / 10%);
+		position: relative;
+
+		&::after {
+			background: linear-gradient(var(--fl-fgColor, var(--color-white)), rgb(0 0 0 / 5%));
+			block-size: 15px;
+			content: "";
+			display: block;
+			inline-size: 100vw;
+			left: 0;
+			position: absolute;
+			top: calc(130 / 16 * 1rem);
+		}
+	}
+
+	.site-nav-inner {
+		align-items: center;
+		background: var(--color-white);
+		display: grid;
+		gap: calc(18 / 16 * 1rem);
+		grid-template-columns: calc(72 / 16 * 1rem) 1fr;
+		grid-template-rows: calc(130 / 16 * 1rem) calc(95 / 16 * 1rem);
+		inline-size: calc(100vw - calc(36 / 16 * 1rem));
+		margin-inline: auto;
+
+		.brand svg {
+			stroke: var(--fl-linkFgColor);
+		}
+
+		a.header-join {
+			block-size: max-content;
+			border-radius: calc(36 / 16 * 1rem);
+			box-shadow: inset 0 0 0 calc(1 / 16 * 1rem) var(--fl-linkFgColor, black);
+			color: var(--color-black);
+			font-family: var(--font-alternate);
+			font-size: calc(14 / 16 * 1rem) !important;
+			font-weight: var(--font-weight-bold) !important;
+			inline-size: max-content;
+			justify-self: end;
+			padding-block: calc(18 / 16 * 1rem);
+			padding-inline: calc(14 / 16 * 1rem);
+			text-align: center;
+			white-space: nowrap;
+		}
+
+		.header-join:hover,
+		.header-join:focus {
+			box-shadow: inset 0 0 0 calc(2 / 16 * 1rem) var(--fl-linkFgColor, black);
+		}
+
+		 /* Menu Button */
+		[aria-expanded] {
+			align-items: center;
+			background: none;
+			block-size: calc(90 / 16 * 1rem);
+			border: unset;
+			border-radius: unset;
+			box-shadow: none;
+			color: var(--color-black);
+			display: flex;
+			flex-direction: column;
+			inline-size: calc(52 / 16 * 1rem);
+			justify-self: center;
+			padding: calc(8 / 16 * 1rem);
+
+			.menu-open {
+				block-size: auto;
+				inline-size: calc(42 / 16 * 1rem);
+			}
+
+			.menu-close {
+				block-size: auto;
+				inline-size: calc(34 / 16 * 1rem);
+			}
+
+			.label {
+				font-family: var(--font-alternate);
+				font-size: calc(14 / 16 * 1rem);
+				font-weight: var(--font-weight-semibold);
+				letter-spacing: 0.15em;
+			}
+		}
+
+		[aria-expanded]::before {
+			content: none;
+		}
+
+		[aria-expanded]:hover,
+		[aria-expanded]:focus {
+			background-color: var(--color-orange-focus);
+			box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--fl-linkFgColor, black) inset;
+		}
+
+		[aria-expanded="false"] {
+			.menu-close {
+				display: none;
+			}
+
+			.menu-open {
+				display: block;
+			}
+		}
+
+		[aria-expanded="true"] {
+			.menu-close {
+				display: block;
+			}
+
+			.menu-open {
+				display: none;
+			}
+		}
+
+		&:has([aria-expanded="false"]) + .primary-nav {
+			display: none;
+		}
+
+		&:has([aria-expanded="true"]) + .primary-nav {
+			display: flex;
+		}
+
+		.search-form {
+			padding-inline: 0;
+		}
+	}
+
+	.primary-nav .search-container {
+		display: none;
+	}
+
+	/* Styles for the search container */
+	.search-container {
+		button {
+			fill: var(--fl-fgColor, var(--color-white));
+			right: calc(4 / 16 * 1rem);
+			top: calc(4 / 16 * 1rem);
+		}
+
+		input[type="search"] {
+			block-size: calc(52 / 16 * 1rem);
+			border-radius: calc(26 / 16 * 1rem);
+			box-shadow: 0 0 0 calc(1 / 16 * 1rem) #000 inset;
+			font-family: var(--font-alternate);
+			font-size: calc(16 / 16 * 1rem);
+			font-weight: var(--font-weight-semibold);
+			inline-size: 100%;
+			outline: none;
+			padding-inline-start: calc(12 / 16 * 1rem);
+		}
+
+		input[type="search"]:focus {
+			box-shadow: 0 0 0 calc(2 / 16 * 1rem) #000 inset;
+		}
+
+		/* remove the ‘X’ from Internet Explorer */
+		input[type="search"]::-ms-clear,
+		input[type="search"]::-ms-reveal {
+			block-size: 0;
+			display: none;
+			inline-size: 0;
+		}
+
+		/* remove the ‘X’ from Chrome */
+		input[type="search"]::-webkit-search-decoration,
+		input[type="search"]::-webkit-search-cancel-button,
+		input[type="search"]::-webkit-search-results-button,
+		input[type="search"]::-webkit-search-results-decoration {
+			display: none;
+		}
+	}
+
+	/* Styles for the navigation menu */
+	.primary-nav {
+		background: rgb(247 236 207 / 100%);
+		display: flex;
+		flex-direction: column;
+		inline-size: 100vw;
+		padding-block: calc(36 / 16 * 1rem);
+
+		nav {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-inline: calc(36 / 16 * 1rem);
+		}
+
+		a {
+			color: var(--color-black);
+			font-family: "Montserrat Alternates", Montserrat, var(--font-alternate);
+			font-size: calc(14 / 16 * 1rem) !important; /* Enactors.css in infusion uses !important on this element */
+			font-weight: var(--font-weight-medium);
+			inline-size: 100%;
+			line-height: calc(28 / 16 * 1rem);
+			text-transform: capitalize;
+		}
+
+		div > a {
+			display: block;
+		}
+
+		a[aria-current="page"] {
+			background-color: var(--color-orange-focus);
+			font-weight: var(--font-weight-bold);
+			text-decoration: underline;
+		}
+	}
+}
+
+@media screen and (width >= 47.5rem) {
+	header .site-nav::after {
+		display: none;
+	}
+
+	header .site-nav-inner {
+		block-size: calc(150 / 16 * 1rem);
+		display: flex;
+		inline-size: 100%;
+		justify-content: space-between;
+		margin-inline: auto;
+		max-inline-size: calc(1265 / 16 * 1rem);
+		padding-inline: calc(36 / 16 * 1rem);
+	}
+
+	header .site-nav-inner a.header-join {
+		font-size: calc(24 / 16 * 1rem) !important;
+		padding-inline: calc(32 / 16 * 1rem);
+	}
+
+	header .site-nav-inner .search-form {
+		display: none;
+	}
+
+	header input[type="search"] {
+		font-size: calc(24 / 16 * 1rem);
+	}
+
+	header .nav-container {
+		flex-direction: row;
+		padding-block: calc(30 / 16 * 1rem);
+
+		form {
+			display: none;
+		}
+	}
+
+	header .site-nav-inner [aria-expanded] {
+		align-items: center;
+		block-size: calc(89 / 16 * 1rem);
+		border: 1px solid var(--fl-fgColor, black);
+		border-radius: 50%;
+		display: flex;
+		inline-size: calc(89 / 16 * 1rem);
+		justify-content: center;
+	}
+
+	header .site-nav-inner [aria-expanded] span {
+		bottom: -1.5rem;
+		position: absolute;
+	}
+
+	header .site-nav-inner [aria-expanded] .menu-open {
+		block-size: calc(42 / 16 * 1rem);
+		inline-size: calc(42 / 16 * 1rem);
+		position: relative;
+	}
+
+	header .primary-nav {
+		nav {
+			margin-block-end: calc(28 / 16 * 1rem);
+		}
+
+		a {
+			font-size: calc(32 / 16 * 1rem) !important; /* Enactors.css in infusion uses !important on this element */
+			line-height: calc(64 / 16 * 1rem);
+		}
+
+		.search-container {
+			display: unset;
+		}
+	}
+}

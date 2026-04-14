@@ -1,22 +1,21 @@
 /**
  * Gets the resource tag label for a given tag value
- *
- * @param {String} tagValue - The value of the tag to search for
- * @param {Object} tagList - The set of all resource Tags
- * @return {String} The tag's label
+ * @param {string} tagValue - The value of the tag to search for
+ * @param {object} tagList - The set of all resource Tags
+ * @returns {string} The tag's label
  */
 
 const getResourceTagLabel = (tagValue, tagList) => {
-	let tagLabel = "";
+	let tagLabel = '';
 
-	tagList.forEach(tag => {
+	for (const tag of tagList) {
 		const found = tagList.find(() => tag.value === tagValue);
 
 		if (found) {
 			tagLabel = tag.label;
-			return;
+			continue;
 		}
-	});
+	}
 
 	return tagLabel;
 };

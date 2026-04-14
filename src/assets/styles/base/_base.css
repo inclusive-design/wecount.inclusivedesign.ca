@@ -1,0 +1,162 @@
+/* Typography. */
+body {
+	font-family: var(--font-body);
+}
+
+input,
+button,
+textarea,
+select {
+	line-height: normal;
+}
+
+::placeholder {
+	color: inherit;
+	opacity: 0.54;
+}
+
+h1 {
+	color: var(--color-grey-dark);
+	font-size: calc(35 / 16 * 1rem);
+	font-weight: var(--font-weight-semibold);
+	margin-block: 0.67em;
+	margin-inline: 0;
+}
+
+h2 {
+	color: var(--color-grey-dark);
+	font-size: calc(24 / 16 * 1rem);
+	font-weight: var(--font-weight-medium);
+	margin-block: 0.83em;
+	margin-inline: 0;
+}
+
+h3,
+.h3 {
+	font-size: calc(18 / 16 * 1rem);
+	font-weight: var(--font-weight-bold);
+	margin-block: 1em;
+	margin-inline: 0;
+}
+
+h4 {
+	font-size: calc(16 / 16 * 1rem);
+	font-weight: var(--font-weight-bold);
+}
+
+/* Links and Buttons. */
+a {
+	color: var(--color-blue-alt-contrast);
+	font-weight: var(--font-weight-bold);
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	background-color: var(--fl-linkFgColor, var(--color-orange-focus));
+	border-radius: calc(4 / 16 * 1rem);
+	color: var(--color-blue-alt-dark);
+}
+
+a:focus {
+	box-shadow:
+		0 0 0
+		calc(4 / 16 * 1rem) var(--fl-linkBgColor, var(--color-orange-focus)),
+		0 0 0 calc(6 / 16 * 1rem) var(--fl-linkFgColor, black);
+	outline: none;
+}
+
+li {
+	list-style: unset;
+}
+
+p {
+	margin-block: 1em;
+	margin-inline: 0;
+}
+
+button:hover::before,
+button:focus::before,
+button:active::before {
+	left: calc(4 / 16 * 1rem);
+	top: calc(4 / 16 * 1rem);
+}
+
+/* SVG fill rule imported from sanitize ensures SVG colour agrees with text colour */
+svg:not([fill]) {
+	fill: currentcolor;
+}
+
+button::-moz-focus-inner {
+	outline: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 var(--color-green-dark);
+}
+
+button:not(
+.fl-prefsEditor-buttons,
+.fl-textfieldStepper-button,
+.fl-prefsEditor-showHide,
+.fl-prefsEditor-reset,
+.fl-switchUI-control,
+.lty-playbtn,
+.search-button) {
+	background-color: var(--color-green-light);
+	block-size: calc(54 / 16 * 1rem);
+	border: 0;
+	border-radius: calc(28 / 16 * 1rem);
+	box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-blue-alt-light) inset;
+	color: var(--color-green-dark);
+	font-size: calc(24 / 16 * 1rem);
+	font-weight: 400;
+	line-height: calc(34 / 24);
+	padding-block: calc(8 / 16 * 1rem);
+	padding-inline: calc(34 / 16 * 1rem);
+	transform: perspective(calc(1 / 16 * 1rem)) translateZ(0);
+}
+
+button:not(
+.fl-prefsEditor-buttons,
+.fl-textfieldStepper-button,
+.fl-prefsEditor-showHide,
+.fl-prefsEditor-reset,
+.fl-switchUI-control,
+.lty-playbtn,
+.search-button,
+.expander__toggle)::before {
+	block-size: calc(54 / 16 * 1rem);
+	border-radius: calc(26 / 16 * 1rem);
+	box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-blue-alt-light) inset;
+	content: "";
+	inline-size: 100%;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+}
+
+@media screen and (width >= 68.75rem) {
+	h1 {
+		font-size: calc(50 / 16 * 1rem);
+	}
+
+	h2 {
+		font-size: calc(35 / 16 * 1rem);
+	}
+
+	h3,
+	.h3 {
+		font-size: calc(24 / 16 * 1rem);
+	}
+
+	h4 {
+		font-size: calc(18 / 16 * 1rem);
+	}
+}

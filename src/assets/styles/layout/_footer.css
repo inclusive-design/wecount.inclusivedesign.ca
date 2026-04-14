@@ -1,0 +1,316 @@
+/* Footer styles. */
+
+/* For the canada logo: the color of the flag is red by default but is able to adapt
+to the color determined by the selected UIO high contrast theme. */
+.fill-f00 {
+	fill: var(--fl-fgColor, #f00);
+}
+
+.subscribe {
+	align-items: center;
+	background-color: #fefefe;
+	display: flex;
+	flex-direction: column;
+	font-family: "Montserrat Alternates", Montserrat, var(--font-alternate);
+	padding-block: calc(36 / 16 * 1rem);
+	padding-inline: calc(96 / 16 * 1rem);
+
+	a {
+		background-color: #acdeeb;
+		border: solid 1px transparent;
+		border-radius: calc(36 / 16 * 1rem);
+		color: #1a4672;
+		font-size: calc(24 / 16 * 1rem);
+		font-weight: var(--font-weight-bold);
+		padding-block: calc(24 / 16 * 1rem);
+		padding-inline: calc(72 / 16 * 1rem);
+
+		&:hover,
+		&:focus {
+			background-color: var(--color-navy-light);
+			border: solid 1px var(--color-white);
+			color: var(--color-white);
+		}
+	}
+
+	.subscribe-text {
+		font-size: calc(14 / 16 * 1rem);
+		line-height: calc(21 / 16 * 1rem);
+		margin-block: 0;
+		margin-block-end: calc(32 / 16 * 1rem);
+	}
+}
+
+footer {
+	background: var(--color-navy-light);
+	color: var(--color-white);
+	margin-block-start: calc(30 / 16 * 1rem);
+	padding-block: calc(16 / 16 * 1rem);
+	padding-inline: calc(32 / 16 * 1rem);
+	text-align: center;
+
+	a {
+		color: var(--color-white);
+
+		&:hover,
+		&:focus {
+			color: var(--color-navy-light);
+		}
+	}
+
+	.netlify-notice {
+		padding-block-start: calc(32 / 16 * 1rem);
+
+		a {
+			font-weight: var(--font-weight-normal);
+		}
+	}
+
+	.footer-content {
+		align-items: baseline;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		max-inline-size: var(--content-max);
+
+		h2 {
+			color: var(--color-white);
+			font-size: calc(16 / 16 * 1rem);
+			font-weight: var(--font-weight-bold);
+		}
+
+		.funders {
+			p {
+				margin: 0;
+				padding-block-end: calc(2 / 16 * 1rem);
+			}
+
+			div {
+				.funder-logo {
+					display: inline-block;
+				}
+			}
+
+			.canada-logo {
+				block-size: calc(60 / 16 * 1rem);
+				inline-size: calc(144 / 16 * 1rem);
+				padding-block: calc(13 / 16 * 1rem);
+				padding-inline: 0 calc(13 / 16 * 1rem);
+			}
+
+			.hewlett-logo {
+				block-size: calc(55 / 16 * 1rem);
+				inline-size: calc(215 / 16 * 1rem);
+				margin-block-end: calc(16 / 16 * 1rem);
+				padding-block: calc(13 / 16 * 1rem) 0;
+				padding-inline: 0 calc(13 / 16 * 1rem);
+			}
+		}
+
+		.contact-info {
+			inline-size: 100%;
+
+			address {
+				font-style: normal;
+			}
+
+			a {
+				font-weight: var(--font-weight-normal);
+
+				svg {
+					padding-block: calc(32 / 16 * 1rem) calc(16 / 16 * 1rem);
+					padding-inline: 0 calc(16 / 16 * 1rem);
+				}
+			}
+
+			.footer-logos {
+				a {
+					display: inline-block;
+				}
+			}
+
+			.ocadu-logo-wrapper {
+				a svg {
+					block-size: calc(128 / 16 * 1rem);
+					inline-size: calc(128 / 16 * 1rem);
+					padding: calc(16 / 16 * 1rem);
+				}
+			}
+
+			.idrc-logo {
+				block-size: calc(92 / 16 * 1rem);
+				inline-size: calc(213 / 16 * 1rem);
+			}
+
+			.ocadu-logo {
+				block-size: calc(128 / 16 * 1rem);
+				inline-size: calc(128 / 16 * 1rem);
+			}
+		}
+
+		.social-media {
+			align-self: center;
+			padding-block-end: calc(32 / 16 * 1rem);
+
+			.social-media-icons {
+				display: grid;
+				grid-template-columns: repeat(5, auto);
+				margin: auto;
+				row-gap: calc(16 / 16 * 1rem);
+
+				div {
+					&:nth-child(2) {
+						grid-column-start: 3;
+					}
+
+					&:nth-child(3) {
+						grid-column-start: 5;
+					}
+
+					&:nth-child(4) {
+						grid-column-start: 2;
+					}
+
+					&:nth-child(5) {
+						grid-column-start: 4;
+					}
+				}
+
+				a {
+					svg {
+						block-size: calc(50 / 16 * 1rem);
+						inline-size: calc(50 / 16 * 1rem);
+						stroke-width: 2px;
+					}
+
+					&:hover,
+					&:focus {
+						background-color: inherit;
+
+						svg {
+							fill: var(--color-navy-light);
+							stroke: var(--color-white);
+							stroke-linecap: round;
+
+							path {
+								fill: var(--color-navy-light);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (width >= 47.5rem) {
+	footer {
+		margin-block-start: calc(0 / 16 * 1rem);
+
+		.footer-content {
+			display: grid;
+			grid-template-columns: 3.8fr 1.2fr;
+			padding-block: calc(32 / 16 * 1rem);
+			padding-inline: calc(48 / 16 * 1rem);
+			row-gap: calc(16 / 16 * 1rem);
+
+			.funders {
+				align-self: end;
+				grid-column: 2/3;
+				grid-row: 3/3;
+				text-align: start;
+
+				svg {
+					margin-block-end: calc(16 / 16 * 1rem);
+				}
+
+				.hewlett-logo {
+					block-size: calc(80 / 16 * 1rem);
+					inline-size: calc(288 / 16 * 1rem);
+				}
+			}
+
+			.contact-info {
+				grid-column: 1/2;
+				grid-row: 3/3;
+				text-align: start;
+
+				.idrc-logo {
+					block-size: calc(96 / 16 * 1rem);
+					inline-size: calc(176 / 16 * 1rem);
+				}
+
+				.ocadu-logo {
+					block-size: calc(72 / 16 * 1rem);
+					inline-size: calc(176 / 16 * 1rem);
+				}
+
+				.footer-logos {
+					display: inline-flex;
+
+					.ocadu-logo-wrapper {
+						padding: 0;
+					}
+				}
+			}
+
+			.social-media {
+				align-self: auto;
+				grid-row: 2;
+
+				h2 {
+					text-align: start;
+				}
+
+				.social-media-icons {
+					gap: calc(16 / 16 * 1rem);
+					grid-template-columns: repeat(5, auto);
+					inline-size: calc(96 / 16 * 1rem);
+					margin: inherit;
+
+					div {
+						&:nth-child(2) {
+							grid-column-start: 2;
+						}
+
+						&:nth-child(3) {
+							grid-column-start: 3;
+						}
+
+						&:nth-child(4) {
+							grid-column-start: 4;
+						}
+
+						&:nth-child(5) {
+							grid-column-start: 5;
+						}
+					}
+
+					a svg {
+						block-size: calc(50 / 16 * 1rem);
+						inline-size: calc(50 / 16 * 1rem);
+					}
+				}
+			}
+
+			.subscribe {
+				grid-column: span 2;
+				grid-row: 1;
+				text-align: start;
+
+				.subscribe-text {
+					font-size: calc(32 / 16 * 1rem);
+				}
+
+				a {
+					padding-block: calc(16 / 16 * 1rem);
+					padding-inline: calc(32 / 16 * 1rem);
+				}
+			}
+		}
+
+		.netlify-notice {
+			padding-block-start: 0;
+		}
+	}
+}

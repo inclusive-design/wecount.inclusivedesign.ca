@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
     {% for page in collections.all %}
     {%- if page.url -%}
     <url>
-        <loc>{{ env.baseUrl if env.baseUrl else 'http://localhost:3000' }}{{ page.url | url }}</loc>
+        <loc>{{ environment.baseUrl if env.baseUrl else 'http://localhost:3000' }}{{ page.url | url }}</loc>
         <lastmod>{{ page.date.toISOString() }}</lastmod>
         {% set links = page.url | locale_links %}
         {%- for link in links -%}

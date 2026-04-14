@@ -1,0 +1,306 @@
+.fill-465d8b {
+	fill: var(--currentcolor, #465d8b);
+}
+
+.stroke-465d8b {
+	stroke: var(--currentcolor, #465d8b);
+}
+
+.fill-stroke-465d8b {
+	fill: var(--currentcolor, #465d8b);
+	stroke: var(--currentcolor, #465d8b);
+}
+
+.fill-white-stroke-465d8b {
+	fill: var(--bColor, white);
+	stroke: var(--currentcolor, #465d8b);
+}
+
+/* Resources page */
+.resources {
+	h1 {
+		margin-block-end: 0;
+	}
+
+	.api-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: calc(32 / 16 * 1rem);
+
+		a:hover,
+		a:focus {
+			border-radius: calc(18 / 16 * 1rem);
+		}
+
+		.tile-item {
+			block-size: auto;
+			margin: 0;
+
+			.tile-resource {
+				border-radius: calc(18 / 16 * 1rem);
+				padding-block: 0 calc(8 / 16 * 1rem);
+				padding-inline: calc(16 / 16 * 1rem);
+			}
+		}
+	}
+
+	.search-container {
+		margin-block: calc(32 / 16 * 1rem) 0;
+		margin-inline: 0;
+
+		input[type="search"] {
+			border: none;
+			box-shadow: 0 0 calc(7 / 16 * 1rem) var(--border-shadow-colour);
+			font-size: calc(18 / 16 * 1rem);
+			padding-block: calc(16 / 16 * 1rem);
+		}
+
+		svg {
+			left: 0;
+			top: calc(16 / 16 * 1rem);
+		}
+	}
+
+	.filter {
+		background-color: var(--color-grey-lightest);
+		border: none;
+		border-radius: calc(9 / 16 * 1rem);
+		box-shadow: 0 0 calc(7 / 16 * 1rem) var(--border-shadow-colour);
+		margin-block-end: calc(32 / 16 * 1rem);
+		padding-block: calc(8 / 16 * 1rem);
+		padding-inline: calc(16 / 16 * 1rem);
+
+		h2 {
+			border-block-end: calc(1 / 16 * 1rem) solid var(--color-grey-mid-light);
+			font-size: calc(25 / 16 * 1rem);
+			font-weight: var(--font-weight-bold);
+			margin: 0;
+			padding-block: 0 calc(12 / 16 * 1rem);
+			padding-inline: calc(4 / 16 * 1rem) 0;
+			text-transform: uppercase;
+		}
+
+		h3 {
+			border-block-end: none;
+			color: var(--color-grey-dark);
+			font-size: calc(18 / 16 * 1rem);
+			line-height: calc(40 / 16 * 1rem);
+		}
+
+		.filter-buttons {
+			background-color: initial;
+			border-block-start: none;
+			gap: calc(8 / 16 * 1rem);
+			margin-block-start: calc(24 / 16 * 1rem);
+
+			button {
+				align-items: center;
+				background-color: var(--color-white);
+				box-shadow: 0 0 calc(7 / 16 * 1rem) var(--border-shadow-colour);
+				display: flex;
+			}
+		}
+
+		.filter-header {
+			background-color: initial;
+			border-block-end: calc(1 / 16 * 1rem) solid var(--color-grey-mid-light);
+			margin: 0;
+			padding-block: 0;
+			padding-inline: calc(16 / 16 * 1rem);
+
+			&:hover {
+				box-shadow: 0 calc(3 / 16 * 1rem) calc(2 / 16 * 1rem) calc(-1 * 2 / 16 * 1rem) rgb(0 0 0 / 60%);
+			}
+
+			button {
+				align-items: center;
+				align-self: center;
+				block-size: calc(32 / 16 * 1rem);
+				display: flex;
+				margin-inline-end: 0;
+				padding: 0;
+			}
+		}
+
+		/* override `display: hidden` defined in _news-and-initiatives.css */
+		.filter-body[data-section="topics"] {
+			display: block;
+		}
+
+		.filter-body {
+			.filter-clear {
+				display: flex;
+				justify-content: end;
+
+				button {
+					color: var(--color-green-dark);
+					font-size: calc(18 / 16 * 1rem);
+					font-weight: var(--font-weight-semibold);
+
+					&:hover,
+					&:focus {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		.filter-expand-button {
+			align-items: center;
+			display: flex;
+
+			--expand-button-color: none;
+			--expand-button-stroke-color: var(--color-grey-dark);
+
+			svg {
+				background-color: initial !important;
+
+				.expand-svg {
+					fill: none;
+				}
+			}
+
+			&:focus,
+			&:hover {
+				--expand-button-color: var(--color-grey-dark);
+				--expand-button-stroke-color: var(--color-grey-dark);
+			}
+		}
+
+		.topic-choices {
+			display: flex;
+			flex-wrap: wrap;
+			font-size: calc(20 / 16 * 1rem);
+			gap: calc(18 / 16 * 1rem);
+			list-style: none;
+			padding-inline-start: 0;
+
+			li {
+				display: grid;
+				flex: initial;
+				grid-template-rows: 1fr min-content;
+				min-inline-size: 100%;
+				text-align: center;
+
+				/* when the topic card gains the hover, apply the hover style to the checkbox */
+				&:hover .topic-checkbox span::before {
+					outline: calc(2.5 / 16 * 1rem) solid var(--color-blue-alt-light);
+				}
+
+				svg {
+					block-size: calc(80 / 16 * 1rem);
+					inline-size: 100%;
+				}
+
+				.topic-title {
+					align-items: center;
+					block-size: auto;
+					border-radius: var(--topic-title-border-radius) var(--topic-title-border-radius) 0 0;
+					column-gap: calc(16 / 16 * 1rem);
+					cursor: pointer;
+					display: grid;
+					font-weight: var(--font-weight-semibold);
+					grid-template-columns: 2fr 1fr;
+					padding: calc(16 / 16 * 1rem);
+				}
+
+				/* topic title background */
+				.aiAndDisability {
+					background-color: var(--color-azure);
+				}
+
+				.dataScience {
+					background-color: var(--color-blue-grey);
+				}
+
+				.aiEthics {
+					background-color: var(--color-green-grey);
+				}
+
+				.designAndMethods {
+					background-color: var(--color-yellow);
+				}
+
+				.ictStandards {
+					background-color: var(--color-green-grey);
+				}
+
+				.topic-checkbox {
+					background: var(--color-white);
+					border: 1px solid var(--color-blue-alt-light);
+					border-radius: 0 0 var(--topic-title-border-radius) var(--topic-title-border-radius);
+
+					.filter-checkbox + label,
+					.filter-checkbox + span {
+						/* The same "border-radius" needs to be applied to the inner container for border
+						curves displayed properly on the outer container */
+						border-radius: 0 0 var(--topic-title-border-radius) var(--topic-title-border-radius);
+						display: block;
+						font-size: calc(18 / 16 * 1rem);
+
+						&::before {
+							margin-inline-end: 0;
+							vertical-align: middle;
+						}
+					}
+
+					.filter-checkbox:checked + label::after,
+					.filter-checkbox:checked + span::after {
+						left: 50%;
+						margin-inline-start: calc(-1 * 7 / 16 * 1rem);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (width >= 68.75rem) {
+	.resources {
+		.api-content {
+			gap: calc(48 / 16 * 1rem);
+			grid-template-columns: 1fr 1fr;
+
+			.tile-item {
+				block-size: 100%;
+
+				.tile-resource {
+					padding-block: 0 calc(16 / 16 * 1rem);
+					padding-inline: calc(16 / 16 * 1rem);
+				}
+			}
+		}
+
+		.filter {
+			margin-block-end: calc(48 / 16 * 1rem);
+			padding-block: calc(24 / 16 * 1rem);
+			padding-inline: calc(40 / 16 * 1rem);
+
+			.topic-choices {
+				gap: calc(16 / 16 * 1rem);
+
+				li {
+					flex: 1 0 18%;
+					min-inline-size: unset;
+					text-align: center;
+
+					svg {
+						block-size: auto;
+					}
+
+					.topic-title {
+						align-items: start;
+						block-size: 100%;
+						gap: calc(16 / 16 * 1rem) 0;
+						grid-template-columns: initial;
+						padding: calc(16 / 16 * 1rem);
+
+						svg {
+							align-self: end;
+						}
+					}
+				}
+			}
+		}
+	}
+}
