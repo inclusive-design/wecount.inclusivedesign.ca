@@ -6,7 +6,7 @@ readability:
   - Intermediate
 type: Website Resource
 openSource: true
-sharePointUrl: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/How%20AI%20is%20helping%20Social%20Program%20IBM%20Watson%20Health%20Community.pdf
+link: https://ocaduniversity.sharepoint.com/teams/Team_WeCount/Shared%20Documents/Resources%20and%20Tools/Literature%20(curated)/How%20AI%20is%20helping%20Social%20Program%20IBM%20Watson%20Health%20Community.pdf
 keywords: []
 learnTags:
   - dataTools

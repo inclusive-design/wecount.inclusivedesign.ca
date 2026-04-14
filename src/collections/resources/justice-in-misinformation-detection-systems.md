@@ -6,12 +6,12 @@ readability:
   - Expert
 type: Website Article
 openSource: true
+link: https://montrealethics.ai/justice-in-misinformation-detection-systems/
 learnTags:
   - machineLearning
   - ethics
   - bias
   - methods
   - researchCentre
-summary: This paper explains the key stakeholders that are implicated in and
-  affected by misinformation detection systems.
+summary: This paper explains the key stakeholders that are implicated in and affected by misinformation detection systems.
 ---

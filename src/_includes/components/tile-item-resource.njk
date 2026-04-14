@@ -4,6 +4,10 @@
       <h2 class="h3">{{ title | replace("<", "&lt;") | safe }}</h2>
       {# TODO: localize these items/labels #}
       <div class="info">
+        <svg aria-hidden="true"><use xlink:href="#source" /></svg>
+       Source: {{ source | safe }}
+      </div>
+      <div class="info">
         <svg aria-hidden="true"><use xlink:href="#media-type" /></svg>
         Media Type: {{ mediaType | safe }}
       </div>
@@ -19,20 +23,10 @@
       </div>
       {% endif %}
       <div class="info">
-        <svg aria-hidden="true"><use xlink:href="#topics" /></svg>
-        Topic: {{ focus | categoryFromFocus(resourceCategories.resourceCategories) }}
+        <svg aria-hidden="true"><use xlink:href="#summary" /></svg>
+        Summary:
+        {{ summary | markdownFilter | safe }}
       </div>
-      {% if tags %}
-      <div class="info">
-        <svg aria-hidden="true"><use xlink:href="#tags" /></svg>
-        Tags:
-        <ul class="resource-tags-list">
-          {%- for tag in tags -%}
-          <li>{{ tag | getResourceTagLabel(resourceTags.resourceTags) }}</li>
-          {%- endfor -%}
-        </ul>
-      </div>
-      {% endif %}
     </div>
   </div>
 </a>
