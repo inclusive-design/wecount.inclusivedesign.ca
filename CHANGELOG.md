@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.4.1](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/v2026.4.0...v2026.4.1) (2026-04-15)
+
+
+### Bug Fixes
+
+* adjust filters title on Initiatives page ([#2501](https://github.com/inclusive-design/wecount.inclusivedesign.ca/issues/2501)) ([4a4390e](https://github.com/inclusive-design/wecount.inclusivedesign.ca/commit/4a4390e44130b2fab63bf163d3863071502d37cd))
+
 ## [2026.04.14.1605.9ab7bee](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/2026.04.01.1556.46d6021...2026.04.14.1605.9ab7bee)
 
 ### Features
