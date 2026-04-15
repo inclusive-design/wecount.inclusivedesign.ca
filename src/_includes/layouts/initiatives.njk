@@ -26,7 +26,7 @@
       {%- from '../components/search.macro.njk' import search %}
       {{ search({placeholder: "Search initiatives...", label: "Enter keywords for a search in posts"}) }}
 
-      {% set filterTitle = "Search Filters" %}
+      {% set filterTitle = "Filters" %}
       {% set filterAction = "/initiatives/" %}
       {% include 'components/filter.njk' %}
     </form>
@@ -64,7 +64,7 @@
       {# Filter #}
       <div class="filter">
         <div class="filter-header">
-          <h2 class="h3">Search Filters</h2>
+          <h2 class="h3">Filters</h2>
           <button type="button" class="filter-expand-button" aria-expanded="true" aria-label="expand or collapse search filters">
             <svg class="arrowdown" aria-label="hidden"><use xlink:href="#arrowdown" /></svg>
             <svg class="arrowup" aria-label="hidden"><use xlink:href="#arrowup" /></svg>
