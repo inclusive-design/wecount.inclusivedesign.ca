@@ -40,7 +40,7 @@ jobs:
           echo 'BRANCH='${{ inputs.branch || 'main' }} >> $GITHUB_ENV
 
       - name: Checkout "${{ env.BRANCH }}" branch locally
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
         with:
           ref: ${{ env.BRANCH }}
           fetch-tags: true
