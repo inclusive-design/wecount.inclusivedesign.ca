@@ -41,7 +41,7 @@
     "linkedom": "^0.18.12",
     "lite-youtube-embed": "^0.3.4",
     "modern-css-reset": "^1.4.0",
-    "uuid": "^13.0.0"
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.2.0",
