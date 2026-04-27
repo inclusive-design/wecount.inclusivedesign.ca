@@ -1,5 +1,13 @@
 # Changelog
 
+## [2026.4.2](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/v2026.4.1...v2026.4.2) (2026-04-27)
+
+
+### Bug Fixes
+
+* adjust readme ([#2505](https://github.com/inclusive-design/wecount.inclusivedesign.ca/issues/2505)) ([0ebcab5](https://github.com/inclusive-design/wecount.inclusivedesign.ca/commit/0ebcab5344f2d92b3904184914cfa95a37d8757e))
+* **deps:** update dependency uuid to v14 [security] ([#2512](https://github.com/inclusive-design/wecount.inclusivedesign.ca/issues/2512)) ([8bd530f](https://github.com/inclusive-design/wecount.inclusivedesign.ca/commit/8bd530f5ad0723d164e7c612df4c7a5dcb10cc0f))
+
 ## [2026.4.1](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/v2026.4.0...v2026.4.1) (2026-04-15)
 
 
