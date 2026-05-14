@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^20.2.0",
-    "@commitlint/config-conventional": "^20.2.0",
+    "@commitlint/config-conventional": "^21.0.0",
     "@inclusive-design/eslint-config": "^0.3.0",
     "@inclusive-design/markdownlint-config": "^0.1.1",
     "@inclusive-design/stylelint-config": "^0.1.0",
