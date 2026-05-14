@@ -44,7 +44,7 @@
     "uuid": "^14.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.2.0",
+    "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^20.2.0",
     "@inclusive-design/eslint-config": "^0.3.0",
     "@inclusive-design/markdownlint-config": "^0.1.1",
