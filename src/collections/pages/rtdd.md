@@ -103,7 +103,7 @@ Director, Accessibility Institute and Director, Canadian Accessibility Network
 [The Canadian Accessibility Network](https://carleton.ca/accessibility-institute/can/) 
 {% endimageAndText %}
 
-{% imageAndText "/uploads/christopher-sutton.png", "head and shoulder image of Christopher Sutton ", "Christopher Sutton", "left", "center" %}
+{% imageAndText "/uploads/Ruth-Warick.jpg", "head and shoulder image of Ruth Warick", "Ruth Warick", "left", "center" %}
 ### Dr. Ruth Warick
 
 Senior Director, Strategic Initiatives + Impact
@@ -125,72 +125,30 @@ Executive Director, IDEA Senior Scientist, Insitute for Work & Health
 Chairperson
 
 [Council of Canadians with Disabilities](http://www.ccdonline.ca/en/) (CCD)
-
 {% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "decorative", "J﻿im Tokos", "left", "center" %}
-### Canadian Council of the Blind (CCB)
+{% imageAndText "/uploads/Lori%20Vaanholt.jpeg", "decorative", "Lori Vaanholt", "left", "center" %}
+### Lori Vaanholt
 
-The [CCB](https://ccbnational.net/shaggy/) works to improve the quality of life for persons living with vision loss through awareness, peer mentoring, socializing, sports & recreation, advocacy, health promotion and illness prevention. CCB’s community-based model offer programs to assist those people living with vision loss, create awareness of vision issues to the public and government. Recently, the CCB has undertaken proactive programs such as mobile eye health and training for employment. The CCB partners with a number or local, provincial, national and international organizations.
-**About Jim’s role with RtDD:** Recruit members with vision loss to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
+National Vice-Executive Director, Innovation & Impact
+
+[ ](https://www.larche.ca/)[L’Arche](https://www.larche.ca/)[ Canada](https://www.larche.ca/)
 {% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "decorative", "Joelle Robinson", "left", "center" %}
-### Manitoba League of Persons with Disabilities (MLPD)
+{% imageAndText "/uploads/michael-bach.png", "head and shoulder image of Michael Bach", "Eric Nettle", "left", "center" %}
+### Eric Nettle
 
-The[ MLPD](https://mlpd.mb.ca/) is a united voice of people with disabilities, and their supporters, that promotes equal rights, full participation in society, and facilitates positive change through advocacy and public education.
+Manager of Online Services
 
-**About Joelle’s role with RtDD :** Recruit members with disabilities, especially in rural and remote areas, to participate in co-design. Help disseminate project drafts for review and feedback.
-{% endimageAndText %}
-
-{% imageAndText "/uploads/kerri-joffee.png", "head and shoulder image of Kerri Joffee", "Kerri Joffee", "left", "center" %}
-### ARCH Disability Law Centre
-
-[ARCH](https://archdisabilitylaw.ca/) Disability Law Centre is a specialty legal clinic that practices exclusively in disability rights law. ARCH is dedicated to defending and advancing the equality rights, entitlements, fundamental freedoms, and inclusion of persons with disabilities in Ontario.
-**About Kerri’s role with RtDD:** Provide insights regarding legal challenges faced by persons with disabilities and the relative effectiveness of regulatory approaches. Assist in legal interpretation and determining viability of project co- design approaches.
-{% endimageAndText %}
-
-{% imageAndText "/uploads/no-image-image.png", "decorative", "Lori Vaanholt", "left", "center" %}
-### L’Arche Canada
-
-Across Canada and around the world, [L’Arche](https://www.larche.ca/) creates communities of friendship and belonging. In L’Arche, people with and without intellectual disabilities live, work, learn, and grow together. L’Arche demonstrates that when persons with intellectual disabilities take their place at the table, they contribute to a more just, compassionate, and vibrant world for all. 
-**About Lori’s role with RtDD :** Recruit members with intellectual disabilities to participate in co-design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
-{% endimageAndText %}
-
-{% imageAndText "/uploads/mahadeo-sukhai.png", "head and shoulder image of Mahadeo Sukhai", "Mahadeo Sukhai", "left", "center" %}
-### Canadian National Institute of the Blind Foundation
-
-The Canadian National Institute of the Blind Foundation ([CNIB Foundation](https://www.cnib.ca/en?region=on)), a non-profit organization, delivers programs and advocacy that empower people impacted by blindness to live their dreams and tear down barriers to inclusion.  
-**About Mahadeo’s role with RtDD:** Recruit members who are blind to participate in co- design, help disseminate project drafts for review and feedback, recruit co-designers, and review project outputs.
-{% endimageAndText %}
-
-{% imageAndText "/uploads/michael-bach.png", "head and shoulder image of Michael Bach", "Michael Bach", "left", "center" %}
-### Institute for Research and Development on Inclusion and Society (IRIS)
-
-Informed by the systemic exclusion that people with intellectual and other disabilities and marginalized groups face, [IRIS ](https://irisinstitute.ca/)works to seed and support transformative social development. Guided by principles of full inclusion and human rights, we conduct research to identify issues and policy options, foster social innovation to re-imagine inclusion, and strengthen capacity and leadership for transformative change. 
-**About Michael’s role with Rtdd :** Provide insight and guidance regarding the effectiveness and challenges faced by organizations serving persons with intellectual disabilities.
-{% endimageAndText %}
-
-{% imageAndText "/uploads/pina-dγçöagostino.png", "head and shoulders photo of Pina D’Agostino", "Pina D’Agostino", "left", "center" %}
-### IP Osgoode — Intellectual Property Law & Technology Program, Osgoode Hall Law School, York U
-
-[IP Osgoode](https://www.iposgoode.ca/) at Osgoode Hall Law School is an independent and authoritative voice which explores legal governance issues at the intersection of intellectual property (IP) and technology. 
-**About Pina’s role with RtDD :** Provide input regarding legislative design, innovative regulatory instruments, legal interpretation of possible approaches within the Accessible Canada Act.
-{% endimageAndText %}
-
-{% imageAndText "/uploads/shermineh-esmati.png", "head and shoulders photo of Shermineh Esmati", "Shermineh Esmati", "left", "center" %}
-### Digital Governance Council / Digital Governance Standards Institute
-
-The [Digital Governance Council](https://dgc-cgn.org/) (formerly the CIO Strategy Council) works through its members across the public and private sectors to strengthen trust in Canada’s digital economy by collaboratively identifying, prioritizing, and acting on digital governance opportunities and challenges.
-The [Digital Governance Standards Institute](https://dgc-cgn.org/standards/), part of the Digital Governance Council, is an accredited standards development body. The Institute enables greater trust and confidence in Canada’s digital systems through developing technology governance standards collaboratively across a range of stakeholders.
-**About Shermineh’s role with RtDD :** Technical guidance for the process of standards development. Provide insights regarding motivations and challenges in complying to digital accessibility requirements by private and public sector organizations.
+[New Society Institute](https://newsocietyinstitute.ca/)
 {% endimageAndText %}
 
 {% imageAndText "/uploads/francis_fung.png", "head and shoulder image of W. Francis Fung", "W. Francis Fung", "left", "center" %}
-### March of Dimes Canada
+### W. Francis Fung
 
-The vision of the [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) is to create a society inclusive of people with physical disabilities; the mission is to maximize the independence, personal empowerment, and community participation of people with physical disabilities.
-**About W. Francis’s role with RtDD:** Recruit members with physical disabilities to participate in co-design, help disseminate project drafts for review and feedback.
+Engagement Lead, IDEA and Senior Manager, Skills Development and Employment, March of Dimes
+
+ [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) 
 {% endimageAndText %}
 
 ## IDRC team
