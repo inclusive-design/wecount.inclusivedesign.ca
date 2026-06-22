@@ -26,7 +26,7 @@ From 2023 to 2026 the RtDD team:
 - identified potential ways to interrupt and eliminate, improve or prevent barriers from becoming worse
 - enhanced the accessibility of digital tools, content, transactions, and computer-mediated processes (using two or more electronic devices for a process) for people with disabilities.
 
-The RtDD goal was to significantly improve digital inclusion and ICT accessibility for the full range of people with disabilities. To make improvements the project addressed the design of a regulatory system that focuses on the challenges of regulating within the digital domain. The project findings informed Accessibility Standards Canada on greater accessibility to digital tools, content, transactions and/or computer-mediated processes.
+The RtDD goal was to significantly improve digital inclusion and ICT accessibility for the full range of people with disabilities. To make improvements, the project addressed the design of a regulatory system that focuses on the challenges of regulating within the digital domain. The project findings informed Accessibility Standards Canada on greater accessibility to digital tools, content, transactions and/or computer-mediated processes.
 
 ### The Six Challenges
 
@@ -127,6 +127,13 @@ Chairperson
 [Council of Canadians with Disabilities](http://www.ccdonline.ca/en/) (CCD)
 {% endimageAndText %}
 
+{% imageAndText "/uploads/no-image-image.png", "decorative", "Darryl Kingston", "left", "center" %}
+### Darryl Kingston
+
+Executive Director
+[Digital Governance Standards Institute](https://dgc-cgn.org/)
+{% endimageAndText %}
+
 {% imageAndText "/uploads/Lori%20Vaanholt.jpeg", "decorative", "Lori Vaanholt", "left", "center" %}
 ### Lori Vaanholt
 
@@ -135,7 +142,7 @@ National Vice-Executive Director, Innovation & Impact
 [ ](https://www.larche.ca/)[L’Arche](https://www.larche.ca/)[ Canada](https://www.larche.ca/)
 {% endimageAndText %}
 
-{% imageAndText "/uploads/michael-bach.png", "head and shoulder image of Michael Bach", "Eric Nettle", "left", "center" %}
+{% imageAndText "/uploads/Erick.jpeg", "head and shoulder image of Eric Nettle", "Eric Nettle", "left", "center" %}
 ### Eric Nettle
 
 Manager of Online Services
