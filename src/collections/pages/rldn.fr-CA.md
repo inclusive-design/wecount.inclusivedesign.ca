@@ -41,89 +41,47 @@ L'équipe RlDN concevra et proposera des approches et des systèmes réglementai
 
 Dans le cadre du projet, ces six défis ont été abordés par le développement de trois approches modèles. Ces modèles ont été élaborés à travers une série d'activités de co-conception avec des experts ayant une expérience vécue du handicap.
 
-[Co-conception un : Le jeu de l'élaboration des normes](https://wecount.inclusivedesign.ca/initiatives/RlDN_cocon_1)
-
-[Co-conception deux : Obstacles à l'accessibilité et approches réglementaires pour les technologies numériques](https://wecount.inclusivedesign.ca/initiatives/RlDN_cocon_2/)
-
-[Co-conception trois : Réimaginer les règlements sur l'accessibilité numérique](https://wecount.inclusivedesign.ca/initiatives/RlDN_cocon_3/)
-
-## Les modèles et comment nous y sommes arrives 
+## Les modèles et comment nous y sommes arrivés 
 
 Comment les modèles ont été développés :
 
-### Apprendre comment fonctionnent les normes et la réglementation
+### 1. Apprendre comment fonctionnent les normes et la réglementation
 
 L'activité a débuté par une séance d'apprentissage ludique. Les participants ont exploré le processus d'élaboration des normes, identifié les difficultés potentielles de participation, et commencé à envisager comment rendre le système plus inclusif.
 
-2.	Identifier les expériences vécues face aux obstacles numériques
+### 2. Identifier les expériences vécues face aux obstacles numériques
 
-La prochaine étape s’est concentrée sur les obstacles rencontrés sur les sites web, appareils, bornes interactives, plateformes d’apprentissage, systèmes de service client, outils de décision automatisée et autres environnements numériques. Ces exemples montrent que les défaillances en matière d’accessibilité sont souvent systémiques. Les outils numériques peuvent sembler conformes sur le plan technique, mais rester difficile ou impossible à utiliser lorsque l’accessibilité n’est pas intégrée dès la phase de planification, de conception, de développement, de test, d’achat ou de maintenance continue..
+La prochaine étape a porté sur les obstacles rencontrés sur les sites web, les appareils, les bornes interactives, les plateformes d’apprentissage, les systèmes de service client, les outils de décision automatisée et d’autres environnements numériques. Ces exemples montrent que les défaillances en matière d’accessibilité sont souvent systémiques. Les outils numériques peuvent sembler conformes sur le plan technique, mais rester difficiles ou impossibles à utiliser lorsque l’accessibilité n’est pas intégrée dès la phase de planification, de conception, de développement, de test, d’achat ou de maintenance continue..
 
-3.	Réinventer la réglementation de l'accessibilité numérique
+### 3. Réinventer la réglementation de l'accessibilité numérique
 
 Une troisième étape a invité des conseillers à réimaginer la réglementation de l'accessibilité numérique. En utilisant une méthode de co-conception structurée, les participants ont généré onze approches possibles, notamment la réglementation basée sur les processus, l'apprentissage inclusif, l'accessibilité intégrée, la participation significative des personnes en situation de handicap, et des espaces d'expérimentation pour les tests d'accessibilité. Ces idées ont contribué à orienter le développement des modèles.
 
-4.	Développer et affiner trois approches de modèle
+### 4. Développer et affiner trois approches de modèle
 
 Le projet s’est ensuite structuré en trois groupes de travail axés sur les normes et processus systémiques, la formation et le renforcement des capacités, ainsi que l’innovation et les technologies émergentes. Chaque groupe a élaboré une approche modèle. Par la suite, des membres de la communauté et des conseillers ont visionné de courtes vidéos de présentation et ont fourni des retours qui ont permis d’affiner les modèles, d’améliorer leur clarté et de renforcer le rôle de l’expertise issue de l’expérience vécue.
 
-## L'élaboration de normes
+## Ce que mettent en avant les modèles
 
-L'un des aspects essentiels que cette recherche cherche à explorer est le rôle des normes dans la facilitation de ces interventions. Les normes jouent un rôle essentiel dans la conception, le développement et la mise en œuvre des technologies numériques. En comprenant l'impact des normes sur les interventions en matière d'accessibilité, le projet entend présenter des recommandations qui favorisent des innovations numériques plus inclusives.
+Ensemble, les trois modèles RtDD vont au-delà de simples vérifications ponctuelles de conformité. Ils visent à construire des systèmes capables d'apprendre, de s'adapter et de s'améliorer au fil du temps. Ces modèles mettent l'accent sur la capacité organisationnelle, l'éducation inclusive, l'innovation responsable, la participation significative et le rôle central des personnes en situation de handicap dans la conception, le test, la gouvernance et l'amélioration des technologies numériques.
 
-Le projet de recherche adoptera une approche interdisciplinaire. Pour ce faire, nous rassemblerons des experts de l'expérience vécue et des experts du domaine en tant que co-chercheurs. Les experts du domaine proviendront de différents domaines, y compris :
+### Modèle 1 : Parcours du processus d'inclusion
 
-* la politique,
-* la conception législative,
-* l'accès à la justice
-* les systèmes technologiques,
-* les communications,
-* gestion,
-* la conception inclusive,
-* l'inclusion numérique,
-* l'économie, et
-* les systèmes adaptatifs complexes.
+Le modèle des parcours du processus d'inclusion aide les organisations à comprendre comment renforcer leurs pratiques d'accessibilité, et les preuves qu'il génère peuvent démontrer des progrès significatifs auprès des régulateurs.
 
-Ensemble, les co-chercheurs concevront et proposeront des approches et des systèmes réglementaires qui :
+Lire la vidéo
 
-* qui tiennent compte de la diversité et de la complexité des besoins en matière d'accessibilité, y compris les besoins des petites minorités et des cas isolés,
-* sont adaptés au rythme exponentiel de l'évolution des TIC et conçus pour prévenir de manière proactive l'apparition d'obstacles,
-* soutiennent et exigent des approches intégrées de l'accessibilité plutôt que des approches séparées, afin de favoriser l'interopérabilité et les avantages pour tous les utilisateurs,
-* soutenir l'innovation en matière d'accessibilité plutôt que de la freiner,
-* ne pas créer d'incitations à la perpétuation du problème, et
-* impliquer et responsabiliser les personnes handicapées et leurs communautés pour qu'elles façonnent les exigences réglementaires, informent sur les méthodes de respect des exigences, identifient les lacunes réglementaires et affinent en permanence le système réglementaire.
+### Modèle 2 : Cadre d'apprentissage inclusif
 
-## Relever six défis grâce à des pratiques inclusives et à la co-conception
+Le Cadre d'Apprentissage Inclusif est un guide flexible et pratique pour intégrer l'accessibilité aux plans de cours et aux approches pédagogiques, quel que soit le domaine d'enseignement.
 
-> Si vous souhaitez participer aux co-conceptions du IDRC, [inscrivez-vous à la liste de diffusion](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo62199fYthCJCZAjMYVyFj1V1dUNjdNSFRTTkVXTVNNOEM0RVZHOVlBNEJVMiQlQCN0PWcu&route=shorturl) pour être informé des événements à venir.[](https://forms.office.com/r/g4bgbHifqc)
+Lire la vidéo
 
-Six défis seront relevés par le biais d'une série de co-conceptions. Nous relèverons les défis suivants en impliquant un large éventail de parties prenantes ayant des expériences vécues et une expertise pertinentes, tout en reconnaissant que les questions sont complexes et interdépendantes. Les résultats informeront la prochaine génération de modèles de normes d'accessibilité dans le domaine numérique. L'équipe développera des stratégies qui tireront parti des propriétés du domaine numérique et des approches nécessaires pour assurer une plus grande inclusion numérique des personnes handicapées.
+### Modèle 3 : Cadre pour l'inclusion numérique destiné aux développeurs
 
-Les défis sont les suivants
+Le Cadre d'Inclusion Numérique pour les Développeurs est un cadre basé sur le processus pour une innovation inclusive qui intègre l'accessibilité tout au long du cycle de développement.
 
-1. Comment répondre aux besoins divers et complexes des personnes handicapées en matière d'accessibilité ?
-
-    - Les personnes handicapées ont des besoins plus variés que les personnes non handicapées. Les réglementations ont tendance à simplifier et à généraliser ces besoins, laissant de côté de nombreuses personnes qui ne répondent pas aux critères standard. Les réglementations limitent également la capacité des systèmes numériques à s'adapter aux différences individuelles. Nous devons concevoir des produits adaptés à l'ensemble des besoins en matière d'accessibilité, et pas seulement à une liste d'exigences.
-
-2. Comment pouvons-nous suivre l'évolution rapide de la technologie et empêcher l'apparition de nouveaux obstacles ?
-
-    - La technologie évolue plus rapidement que les normes et les réglementations. De nouvelles opportunités et de nouveaux risques apparaissent constamment. Les réglementations en matière d'accessibilité entrent souvent en conflit avec la dynamique d'innovation qui alimente l'économie numérique. La conformité à l'accessibilité est souvent sacrifiée à la vitesse et à la nouveauté. Nous devons trouver des moyens de faire de l'accessibilité une priorité dans l'évolution de l'économie numérique.
-
-3. Comment assurer l'intégration et l'interopérabilité des systèmes et dispositifs numériques ?
-
-    - Le monde numérique est interconnecté et interdépendant. La fonctionnalité dépend de la compatibilité. Les réglementations en matière d'accessibilité ont créé un marché distinct pour les technologies d'assistance spécialisées qui, souvent, ne fonctionnent pas bien avec les produits courants. Cela rend l'accès numérique plus coûteux, moins fonctionnel et moins inclusif pour les personnes handicapées qui dépendent des technologies d'assistance. Cela prive également le grand public des avantages d'une conception accessible. Nous devons promouvoir l'intégration et l'interopérabilité des systèmes et dispositifs numériques pour tous
-
-4. Comment pouvons-nous encourager l'innovation en matière d'accessibilité ?
-
-    - Le personnes handicapées ont besoin d'innovation, peut-être plus que n'importe qui d'autre. Cependant, les réglementations en matière d'accessibilité découragent souvent l'innovation en imposant des normes rigides et dépassées. Nous devons encourager l'innovation en matière d'accessibilité qui peut répondre à l'évolution des besoins et des préférences des personnes handicapées.
-
-5. Comment pouvons-nous supprimer les éléments qui découragent la mise en conformité avec les normes d'accessibilité ?
-
-    - Les réglementations en matière d'accessibilité ont créé une industrie qui tire profit de la persistance et de la complexité des problèmes d'accessibilité. Ce secteur influence également l'élaboration des normes d'accessibilité. Il en résulte un conflit d'intérêts qui compromet l'objectif d'élimination des obstacles et de création d'un design inclusif. Nous devons supprimer les facteurs qui découragent la mise en conformité avec les normes d'accessibilité et créer une culture de l'accessibilité qui profite à tous.
-
-6. Comment pouvons-nous renforcer le pouvoir des personnes handicapées et de leurs communautés ?
-
-    - Les réglementations en matière d'accessibilité partent souvent du principe que les personnes handicapées sont des consommateurs passifs, et non des producteurs actifs, de contenus et de technologies numériques. Elles s'appuient également sur des experts pour prescrire, former et entretenir les systèmes AT pour les personnes handicapées. Cela limite la participation et l'autonomie des personnes handicapées dans le domaine numérique. Nous devons soutenir les personnes handicapées en tant que créateurs, innovateurs et décideurs dans le monde numérique.
+Lire la vidéo
 
 ## Les rapports
 
