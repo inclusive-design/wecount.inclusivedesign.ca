@@ -91,34 +91,38 @@ Lire la vidéo
 
 [Réguler le domaine numérique : Co-conception trois résultats (document Word téléchargeable)](/uploads/reguler_le_domaine_numerique_co_conception_trois_resultats.docx)
 
-## ﻿Partenaires
+## Conseillers
 
 {% imageAndText "/uploads/boris-vukovic.png", "photo de Boris Vukovic de la tête et des épaules", "Boris Vukovic", "left", "center" %}
-### The Canadian Accessibility Network & Accessibility Institute
+### Boris Vukovi
 
-Le [Canadian Accessibility Network & Accessibility Institute](https://carleton.ca/accessibility-institute/can/), sous la direction de l'Institut de l'accessibilité de l'Université Carleton, a pour mandat de rassembler les organisations afin de faciliter les partenariats dans des domaines de collaboration spécifiques relevant de chacun des cinq domaines primordiaux : Recherche, conception et innovation, éducation et formation, politique, emploi et engagement communautaire.
-**A propos du rôle de Boris au sein de la RlDN :** Contribuer à la réflexion sur les motivations et les défis auxquels est confronté le domaine de l'accessibilité au Canada. Aider à obtenir des informations de la part des professionnels de l'accessibilité.
+Directeur, Institut de l’accessibilité et Réseau canadien d’accessibilité 
+
+[Réseau canadien d’accessibilité](https://www.can-rca.ca/fr/)
 {% endimageAndText %}
 
-{% imageAndText "/uploads/christopher-sutton.png", "photo de Christopher Sutton de la tête et des épaules", "Christopher Sutton", "left", "center" %}
-### Wavefront Centre for Communication Accessibility
+{% imageAndText "/uploads/Ruth-Warick.jpg", "photo de Ruth Warick de la tête et des épaules", "Ruth Warick", "left", "center" %}
+### Dr. Ruth Warick
 
-Le [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/), un institut pour les sourds et les malentendants, envisage une société où les sourds, les malentendants et les entendants peuvent interagir librement sans barrières de communication. Notre mission est de servir les personnes sourdes et malentendantes, leurs familles et la communauté en proposant des programmes, des produits et des solutions innovants pour parvenir à une accessibilité totale à la communication.  
-**Le rôle de Christopher au sein de la RlDN :** Recruter des membres sourds et malentendants pour participer à la co-conception. Contribuer à la diffusion des ébauches de projets pour examen et commentaires. Évaluer l'accessibilité du processus de recherche pour les personnes sourdes et malentendantes. Examiner les résultats du projet.
+Directrice principale, Initiatives stratégiques + Impact
+
+[Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/)
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "photo de la tête et des épaules d'Emile Tompa", "Emile Tompa", "left", "center" %}
-### Inclusive Design for Employment Access / Institute for Work and Health, McMaster University
+### Emile Tompa
 
-[Inclusive Design for Employment Access (IDEA) ](https://vraie-idea.ca/index.html)est un laboratoire d'innovation sociale dont l'objectif est d'aider à créer des marchés du travail plus forts et plus diversifiés qui intègrent les personnes handicapées, en passant de la connaissance à la pratique. Nous développons des outils et des ressources fondés sur des données probantes, en collaboration avec des partenaires, qui contribuent à renforcer les capacités du lieu de travail en matière de recrutement, d'embauche, d'intégration, de maintien dans l'emploi, de mentorat et de promotion des personnes handicapées dans toute la gamme des possibilités d'emploi. 
-**A propos du rôle d'Emile au sein de RlDN :** Contribuer à la réflexion sur la politique, la pratique, la conformité et les stratégies efficaces en matière d'accessibilité numérique et d'emploi des personnes handicapées.
+Directeur exécutif, VRAIE Scientifique principal, l’Institute for Work & Health
+
+[VRAIE (Vision Radicale Pour L’Accès Inclusif à l’Emploi)](https://vraie-idea.ca/fr)
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Heather Walkus", "Heather Walkus", "left", "center" %}
-### Council of Canadians with Disabilities (CCD)
+### Heather Walkus
 
-Le [CCD](http://www.ccdonline.ca/en/)  est une organisation pancanadienne de personnes handicapées. Le CCD s'est efforcé de trouver des solutions et des moyens novateurs pour soutenir la citoyenneté pleine et entière des personnes handicapées. Le CCD unit la voix des Canadiens avec des déficiences pour défendre et étendre les droits à l'égalité des personnes handicapées par l'éducation publique, la défense des droits, la recherche, les litiges et les partenariats.  
-**À propos du rôle de Heather au sein de la RlDN :** Aider les organisations membres à travers le Canada à recruter des membres handicapés pour participer à la co-conception. Aider à atteindre les communautés indigènes. Contribuer à la diffusion des ébauches de projets pour examen et commentaires. Fournir des informations sur la nécessité de renforcer les capacités des organisations membres pour qu'elles puissent participer aux efforts d'inclusion numérique. Recruter des co-concepteurs et examiner les résultats du projet.
+Président
+
+[Conseil des Canadiens avec déficiences](https://www.ccdonline.ca/fr/)
 {% endimageAndText %}
 
 {% imageAndText "/uploads/janelle-rouse.png", "photo de la tête et des épaules d'Jenelle Rouse", "Jenelle Rouse", "left", "center" %}
@@ -221,4 +225,4 @@ Financé par Normes d'accessibilité Canada / le gouvernement du Canada.
 
 [![Logo des normes d'accessibilité du Canada](/uploads/accessibility_standards_canada_accessibility_standards_canada_20.jpg)](https://accessibilite.canada.ca/domaines-prioritaires-qui-guident-notre-travail)
 
-![](/uploads/canada.avif)
+### ![](/uploads/canada.avif)
