@@ -69,7 +69,9 @@ Ensemble, les trois modèles RtDD vont au-delà de simples vérifications ponctu
 
 Le modèle des parcours du processus d'inclusion aide les organisations à comprendre comment renforcer leurs pratiques d'accessibilité, et les preuves qu'il génère peuvent démontrer des progrès significatifs auprès des régulateurs.
 
-Lire la vidéo
+[Lire la vidéo](https://youtu.be/OVqQQ4FsrH0) \*
+
+\*Des sous-titres en français sont disponibles pour cette vidéo dans le lecteur YouTube.
 
 ### Modèle 2 : Cadre d'apprentissage inclusif
 
@@ -131,7 +133,6 @@ Président
 Directeur general
 
 [Conseil de la gouvernance numérique](https://dgc-cgn.org/fr/)
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Lori Vaanholt", "Lori Vaanholt", "left", "center" %}
