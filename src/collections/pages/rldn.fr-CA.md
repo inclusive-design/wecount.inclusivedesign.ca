@@ -77,13 +77,17 @@ Le modèle des parcours du processus d'inclusion aide les organisations à compr
 
 Le Cadre d'Apprentissage Inclusif est un guide flexible et pratique pour intégrer l'accessibilité aux plans de cours et aux approches pédagogiques, quel que soit le domaine d'enseignement.
 
-Lire la vidéo
+{% youtube "https://youtu.be/ZVUJfEbeBV8" %}
+
+\*Des sous-titres en français sont disponibles pour cette vidéo dans le lecteur YouTube.
 
 ### Modèle 3 : Cadre pour l'inclusion numérique destiné aux développeurs
 
 Le Cadre d'Inclusion Numérique pour les Développeurs est un cadre basé sur le processus pour une innovation inclusive qui intègre l'accessibilité tout au long du cycle de développement.
 
 Lire la vidéo
+
+\*Des sous-titres en français sont disponibles pour cette vidéo dans le lecteur YouTube.
 
 ## Les rapports
 
