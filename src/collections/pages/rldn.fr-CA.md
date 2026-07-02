@@ -85,7 +85,7 @@ Le Cadre d'Apprentissage Inclusif est un guide flexible et pratique pour intégr
 
 Le Cadre d'Inclusion Numérique pour les Développeurs est un cadre basé sur le processus pour une innovation inclusive qui intègre l'accessibilité tout au long du cycle de développement.
 
-Lire la vidéo
+{% youtube "https://youtu.be/BxCuY0T3rtQ" %}
 
 \*Des sous-titres en français sont disponibles pour cette vidéo dans le lecteur YouTube.
 
