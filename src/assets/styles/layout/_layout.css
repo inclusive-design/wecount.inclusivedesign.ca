@@ -261,7 +261,8 @@ figcaption {
 			inline-size: 100%;
 		}
 
-		.regulating-the-digital-domain .embed--youtube {
+		.regulating-the-digital-domain .embed--youtube,
+		.reguler-le-domaine-numerique .embed--youtube {
 			inline-size: 59%;
 		}
 
