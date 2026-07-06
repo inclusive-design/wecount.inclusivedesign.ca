@@ -131,7 +131,7 @@ Président
 [Conseil des Canadiens avec déficiences](https://www.ccdonline.ca/fr/)
 {% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "Image générique de Darryl Kingston", "Jenelle Rouse", "left", "center" %}
+{% imageAndText "/uploads/no-image-image.png", "Image générique de Darryl Kingston", "Darryl Kingston", "left", "center" %}
 ### Darryl Kingston
 
 Directeur general
@@ -139,7 +139,7 @@ Directeur general
 [Conseil de la gouvernance numérique](https://dgc-cgn.org/fr/)
 {% endimageAndText %}
 
-{% imageAndText "/uploads/no-image-image.png", "Image générique de Lori Vaanholt", "Lori Vaanholt", "left", "center" %}
+{% imageAndText "/uploads/Lori%20Vaanholt.jpeg", "Image générique de Lori Vaanholt", "Lori Vaanholt", "left", "center" %}
 ### Lori Vaanholt
 
 Directrice générale nationale adjointe – Innovation et Impact
