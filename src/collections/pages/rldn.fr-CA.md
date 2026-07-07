@@ -97,98 +97,78 @@ Le Cadre d'Inclusion Numérique pour les Développeurs est un cadre basé sur le
 
 [Réguler le domaine numérique : Co-conception trois résultats (document Word téléchargeable)](/uploads/reguler_le_domaine_numerique_co_conception_trois_resultats.docx)
 
-[Réguler le domaine numérique:  Rapport final de recherche (document Word téléchargeable)](https://wecount.inclusivedesign.ca/uploads/RtDD Research Report Fr.docx)
-
 ## Conseillers
 
 {% imageAndText "/uploads/boris-vukovic.png", "photo de Boris Vukovic de la tête et des épaules", "Boris Vukovic", "left", "center" %}
-
 ### Boris Vukovi
 
 Directeur, Institut de l’accessibilité et Réseau canadien d’accessibilité 
 
 [Réseau canadien d’accessibilité](https://www.can-rca.ca/fr/)
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Ruth-Warick.jpg", "photo de Ruth Warick de la tête et des épaules", "Ruth Warick", "left", "center" %}
-
 ### Dr. Ruth Warick
 
 Directrice principale, Initiatives stratégiques + Impact
 
 [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/)
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "photo de la tête et des épaules d'Emile Tompa", "Emile Tompa", "left", "center" %}
-
 ### Emile Tompa
 
 Directeur exécutif, VRAIE Scientifique principal, l’Institute for Work & Health
 
 [VRAIE (Vision Radicale Pour L’Accès Inclusif à l’Emploi)](https://vraie-idea.ca/fr)
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Heather Walkus", "Heather Walkus", "left", "center" %}
-
 ### Heather Walkus
 
 Président
 
 [Conseil des Canadiens avec déficiences](https://www.ccdonline.ca/fr/)
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Darryl Kingston", "Darryl Kingston", "left", "center" %}
-
 ### Darryl Kingston
 
 Directeur general
 
 [Conseil de la gouvernance numérique](https://dgc-cgn.org/fr/)
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Lori%20Vaanholt.jpeg", "Image générique de Lori Vaanholt", "Lori Vaanholt", "left", "center" %}
-
 ### Lori Vaanholt
 
 Directrice générale nationale adjointe – Innovation et Impact
 
 [ L'Arche Canada](https://larche.ca/fr/)
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Erick.jpeg", "photo de la tête et des épaules d'Eric Nettle", "Eric Nettle", "left", "center" %}
-
 ### Eric Nettle
 
 Gestionnaire des services en ligne
 
 [Institut Société Nouvelle](https://newsocietyinstitute.ca/fr/)
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Monica Ackermann ", "Monica Ackermann", "left", "center" %}
-
 ### Monica Ackermann, P. Eng., MA
 
 Consultant en accessibilité
 
 [https://www.linkedin.com/in/monica-ackermann/](https://www.linkedin.com/in/monica-ackermann/)
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/francis_fung.png", "photo de la tête et des épaules d'W. Francis Fung", "W. Francis Fung", "left", "center" %}
-
 ### W. Francis Fung
 
 Responsable de l'engagement, VRAIE et Directeur national de la réadaptation et des services cliniques, Marche des dix sous Canada
 
 [La Marche des dix sous du Canada](https://www.marchofdimes.ca/fr-ca)
-
 {% endimageAndText %}
 
 ## Équipe
