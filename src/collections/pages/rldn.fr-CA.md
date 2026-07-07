@@ -97,8 +97,6 @@ Le Cadre d'Inclusion Numérique pour les Développeurs est un cadre basé sur le
 
 [Réguler le domaine numérique : Co-conception trois résultats (document Word téléchargeable)](/uploads/reguler_le_domaine_numerique_co_conception_trois_resultats.docx)
 
-[Réguler le domaine numérique (RlDN) : Rapport final de recherche (document Word téléchargeable)](uploads/RtDD Research Report Fr.docx)
-
 ## Conseillers
 
 {% imageAndText "/uploads/boris-vukovic.png", "photo de Boris Vukovic de la tête et des épaules", "Boris Vukovic", "left", "center" %}
