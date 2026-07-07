@@ -91,64 +91,42 @@ The Digital Inclusion Framework for Developers is a process-based framework for 
 
 [Regulating the Digital Domain: Co-Design 3 Results (downloadable Word document)   ](/uploads/regulating-the-digital-domain_co-design-3-results.docx)
 
+[Regulating the Digital Domain: Final Research Report (downloadable Word document)](/src/uploads/RtDD Research Report En2.docx)
+
 If you would like to take part in IDRC co-designs, please [join the mailing list](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo62199fYthCJCZAjMYVyFj1V1dUNjdNSFRTTkVXTVNNOEM0RVZHOVlBNEJVMiQlQCN0PWcu&route=shorturl) to learn about upcoming events.
 
 ## Advisors
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulder image of Boris Vukovic", "Boris Vukovic", "left", "center" %}
-
-
-
 ### Boris Vukovic
 
 Director, Accessibility Institute and Director, Canadian Accessibility Network
 
 [The Canadian Accessibility Network](https://carleton.ca/accessibility-institute/can/) 
-
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Ruth-Warick.jpg", "head and shoulder image of Ruth Warick", "Ruth Warick", "left", "center" %}
-
-
-
 ### Dr. Ruth Warick
 
 Senior Director, Strategic Initiatives + Impact
 
 [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/)
-
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulder image of Emile Tompa ", "Emile Tompa", "left", "center" %}
-
-
-
 ### Emile Tompa
 
 Executive Director, IDEA Senior Scientist, Insitute for Work & Health
 
 [Inclusive Design for Employment Access](http://www.vraie-idea.ca) (IDEA) 
-
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Heather Walkus", "left", "center" %}
-
-
-
 ### Heather Walkus
 
 Chairperson
 
 [Council of Canadians with Disabilities](http://www.ccdonline.ca/en/) (CCD)
-
-
-
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Darryl Kingston", "left", "center" %}
