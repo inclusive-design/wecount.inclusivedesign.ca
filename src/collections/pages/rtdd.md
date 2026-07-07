@@ -91,7 +91,7 @@ The Digital Inclusion Framework for Developers is a process-based framework for 
 
 [Regulating the Digital Domain: Co-Design 3 Results (downloadable Word document)   ](/uploads/regulating-the-digital-domain_co-design-3-results.docx)
 
-[Regulating the Digital Domain: Final Research Report (downloadable Word document)](/src/uploads/RtDD Research Report En2.docx)
+[Regulating the Digital Domain: Final Research Report (downloadable Word document)](https://wecount.inclusivedesign.ca/uploads/RtDD Research Report En2.docx)
 
 If you would like to take part in IDRC co-designs, please [join the mailing list](https://forms.office.com/pages/responsepage.aspx?id=0WnkBiotj0aum33wlo62199fYthCJCZAjMYVyFj1V1dUNjdNSFRTTkVXTVNNOEM0RVZHOVlBNEJVMiQlQCN0PWcu&route=shorturl) to learn about upcoming events.
 
