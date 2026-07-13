@@ -99,7 +99,7 @@ Nouvelles approches pour améliorer l’accessibilité des technologies numériq
 
 [Réguler le domaine numérique : Co-conception trois résultats (document Word téléchargeable)](/uploads/reguler_le_domaine_numerique_co_conception_trois_resultats.docx)
 
-Réguler le domaine numérique: Rapport final de recherche Résumé exécutif (document Word téléchargeable)
+[Réguler le domaine numérique: Rapport final de recherche Résumé exécutif (document Word téléchargeable)](/uploads/RtDD_Executive_Summary_Fr.docx)
 
 [Réguler le domaine numérique :  Rapport final de recherche (document Word téléchargeable)](/uploads/RtDD_Research_Report_Fr.docx)
 
