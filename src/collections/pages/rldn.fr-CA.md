@@ -93,7 +93,7 @@ Le Cadre d'Inclusion Numérique pour les Développeurs est un cadre basé sur le
 
 Nouvelles approches pour améliorer l’accessibilité des technologies numériques :
 
-[Réguler le domaine numérique: Rapport final de recherche Résumé exécutif (document Word téléchargeable)](/uploads/RtDD_Research_Report_Fr.docx)
+Réguler le domaine numérique: Rapport final de recherche Résumé exécutif (document Word téléchargeable)
 
 [Réguler le domaine numérique : Co-conception un résultats (document Word téléchargeable)](/uploads/reguler-le-domaine-numerique_co_conception_un_resultats.docx)
 
@@ -138,11 +138,13 @@ Président
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "Image générique de Darryl Kingston", "Darryl Kingston", "left", "center" %}
+
 ### Darryl Kingston
 
 Directeur general
 
 [Conseil de la gouvernance numérique](https://dgc-cgn.org/fr/)
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Lori%20Vaanholt.jpeg", "Image générique de Lori Vaanholt", "Lori Vaanholt", "left", "center" %}
