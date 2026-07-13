@@ -91,9 +91,7 @@ New approaches to improve accessibility of digital technologies:
 
 [Regulating the Digital Domain: Co-Design 3 Results (downloadable Word document)   ](/uploads/regulating-the-digital-domain_co-design-3-results.docx)
 
-[Regulating the Digital Domain: Final Research Report Executive Summary (downloadable Word Document)](/uploads/RtDD_Research_Report_En.docx)
-
-[](/uploads/regulating-the-digital-domain_co-design-1-results.docx)
+[Regulating the Digital Domain: Final Research Report Executive Summary (downloadable Word Document)](/uploads/RtDD_Executive_Summary_En.docx)
 
 [Regulating the  Digital Domain:  Final Research  Report (downloadable Word document)](/uploads/RtDD_Research_Report_En.docx)
 
