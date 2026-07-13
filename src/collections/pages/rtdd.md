@@ -81,9 +81,9 @@ The Inclusive Learning Framework is a flexible and practical guide for embedding
 
 The Digital Inclusion Framework for Developers is a process-based framework for inclusive innovation that integrates accessibility throughout the development lifecycle.
 
-{% youtube "https://youtu.be/BxCuY0T3rtQ" %}
-
 ## Reports
+
+Regulating the Digital Domain: Research Report Executive Summary (downloadable Word Document)
 
 [Regulating the Digital Domain: Co-Design 1 Results (downloadable Word document)   ](/uploads/regulating-the-digital-domain_co-design-1-results.docx)
 
