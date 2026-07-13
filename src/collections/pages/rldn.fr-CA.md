@@ -91,6 +91,10 @@ Le Cadre d'Inclusion Numérique pour les Développeurs est un cadre basé sur le
 
 ## Les rapports
 
+Nouvelles approches pour améliorer l’accessibilité des technologies numériques
+
+[Réguler le domaine numérique: Rapport final de recherche Résumé exécutif (document Word téléchargeable)](/uploads/RtDD Executive Summary Fr.docx)
+
 [Réguler le domaine numérique : Co-conception un résultats (document Word téléchargeable)](/uploads/reguler-le-domaine-numerique_co_conception_un_resultats.docx)
 
 [Réguler le domaine numérique : Co-conception deux résultats (document Word téléchargeable)](/uploads/rapport_co_design_deux_finale_fr.docx)
