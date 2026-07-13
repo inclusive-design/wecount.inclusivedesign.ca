@@ -83,7 +83,7 @@ The Digital Inclusion Framework for Developers is a process-based framework for 
 
 ## Reports
 
-Regulating the Digital Domain: Research Report Executive Summary (downloadable Word Document)
+[Regulating the Digital Domain: Research Report Executive Summary (downloadable Word Document)](/uploads/RtDD Executive Summary En.docx)
 
 [Regulating the Digital Domain: Co-Design 1 Results (downloadable Word document)   ](/uploads/regulating-the-digital-domain_co-design-1-results.docx)
 
@@ -130,10 +130,12 @@ Chairperson
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Darryl Kingston", "left", "center" %}
+
 ### Darryl Kingston
 
 Executive Director
 [Digital Governance Standards Institute](https://dgc-cgn.org/)
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Lori%20Vaanholt.jpeg", "decorative", "Lori Vaanholt", "left", "center" %}
