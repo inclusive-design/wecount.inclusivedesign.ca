@@ -85,7 +85,7 @@ The Digital Inclusion Framework for Developers is a process-based framework for 
 
 New approaches to improve accessibility of digital technologies:
 
-[Regulating the Digital Domain: Final Research Report Executive Summary (downloadable Word Document)](/uploads/RtDD_Research_Report_En.docx)
+Regulating the Digital Domain: Final Research Report Executive Summary (downloadable Word Document)
 
 [Regulating the Digital Domain: Co-Design 1 Results (downloadable Word document)   ](/uploads/regulating-the-digital-domain_co-design-1-results.docx)
 
@@ -101,15 +101,18 @@ If you would like to take part in IDRC co-designs, please [join the mailing list
 
 {% imageAndText "/uploads/boris-vukovic.png", "head and shoulder image of Boris Vukovic", "Boris Vukovic", "left", "center" %}
 
+
 ### Boris Vukovic
 
 Director, Accessibility Institute and Director, Canadian Accessibility Network
 
 [The Canadian Accessibility Network](https://carleton.ca/accessibility-institute/can/) 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Ruth-Warick.jpg", "head and shoulder image of Ruth Warick", "Ruth Warick", "left", "center" %}
+
 
 ### Dr. Ruth Warick
 
@@ -117,9 +120,11 @@ Senior Director, Strategic Initiatives + Impact
 
 [Wavefront Centre for Communication Accessibility](https://www.wavefrontcentre.ca/)
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/emile-tompa.png", "head and shoulder image of Emile Tompa ", "Emile Tompa", "left", "center" %}
+
 
 ### Emile Tompa
 
@@ -127,9 +132,11 @@ Executive Director, IDEA Senior Scientist, Insitute for Work & Health
 
 [Inclusive Design for Employment Access](http://www.vraie-idea.ca) (IDEA) 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Heather Walkus", "left", "center" %}
+
 
 ### Heather Walkus
 
@@ -137,9 +144,11 @@ Chairperson
 
 [Council of Canadians with Disabilities](http://www.ccdonline.ca/en/) (CCD)
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/no-image-image.png", "decorative", "Darryl Kingston", "left", "center" %}
+
 
 
 
@@ -150,9 +159,11 @@ Executive Director
 
 
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Lori%20Vaanholt.jpeg", "decorative", "Lori Vaanholt", "left", "center" %}
+
 
 ### Lori Vaanholt
 
@@ -160,9 +171,11 @@ National Vice-Executive Director, Innovation & Impact
 
 [ ](https://www.larche.ca/)[L’Arche](https://www.larche.ca/)[ Canada](https://www.larche.ca/)
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/Erick.jpeg", "head and shoulder image of Eric Nettle", "Eric Nettle", "left", "center" %}
+
 
 ### Eric Nettle
 
@@ -170,15 +183,18 @@ Manager of Online Services
 
 [New Society Institute](https://newsocietyinstitute.ca/)
 
+
 {% endimageAndText %}
 
 {% imageAndText "/uploads/francis_fung.png", "head and shoulder image of W. Francis Fung", "W. Francis Fung", "left", "center" %}
+
 
 ### W. Francis Fung
 
 Engagement Lead, IDEA and Senior Manager, Skills Development and Employment, March of Dimes
 
  [March of Dimes](https://www.marchofdimes.ca/en-ca/provinces/Pages/on.aspx) 
+
 
 {% endimageAndText %}
 
