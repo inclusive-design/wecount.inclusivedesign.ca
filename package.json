@@ -46,7 +46,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.2.0",
     "@commitlint/config-conventional": "^20.2.0",
-    "@inclusive-design/eslint-config": "^0.3.0",
+    "@inclusive-design/eslint-config": "^0.5.0",
     "@inclusive-design/markdownlint-config": "^0.1.1",
     "@inclusive-design/stylelint-config": "^0.1.0",
     "autoprefixer": "^10.4.23",
@@ -55,7 +55,7 @@
     "eslint": "^10.2.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "markdownlint-cli2": "^0.22.0",
+    "markdownlint-cli2": "^0.23.0",
     "npm-run-all2": "^8.0.4",
     "rimraf": "^6.1.2",
     "stylelint": "^17.7.0"
