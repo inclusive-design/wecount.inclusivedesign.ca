@@ -8,7 +8,7 @@ shortDescription: |-
   Join Madeline Toubiana (University of Ottawa) and Natalie Eng (University of Alberta) as they explore participatory architecture as a community-led, inclusive governance structure — discussing its benefits, challenges, and alignment with organizational goals.
 
   Wednesday, August 19, 2026, 1:00–2:30 PM EDT
-previewImageUrl: ''
+previewImageUrl: /uploads/Parnerships_for_F_I_logo.jpg
 previewImageAltText: ''
 ---
 
