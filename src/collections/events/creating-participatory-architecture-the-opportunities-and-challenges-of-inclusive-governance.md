@@ -2,7 +2,7 @@
 title: 'Creating Participatory Architecture: The Opportunities and Challenges of Inclusive Governance'
 permalink: ''
 eventDate: 2026-08-19
-coverImageUrl: /uploads/PFI Webinar Social Card 1080x1080.png
+coverImageUrl: /uploads/Webinar_1080x1080_1WEEK_with_pictures.jpg
 coverImageAltText: 'Creating Participatory Architecture: The Opportunities and Challenges of Inclusive Governance'
 shortDescription: |-
   Join Madeline Toubiana (University of Ottawa) and Natalie Eng (University of Alberta) as they explore participatory architecture as a community-led, inclusive governance structure — discussing its benefits, challenges, and alignment with organizational goals.
@@ -14,8 +14,6 @@ previewImageAltText: ''
 
 ## [Register here](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
 
-Partnerships for Financial Inclusion invites community members, organizations, researchers, and practitioners to the first Community of Practice event on August 19, 2026, at 1:00 PM EDT. The free webinar, Creating Participatory Architecture: The Opportunities and Challenges of Inclusive Governance, will be presented by Madeline Toubiana (University of Ottawa) and Natalie Eng (University of Alberta).
+If your organization is trying to make decisions more collaboratively, build trust with a community, or create a group where people with lived experience have real influence, participatory governance can offer practical ways forward. Madeline Toubiana (University of Ottawa) and Natalie Eng (University of Alberta) will explore how grassroots governance models can help organizations and communities share decision-making, navigate power dynamics, and work together toward common goals. This session also marks the starting point for developing a governance structure for the Financial Inclusion & Resilience Movement (FIRM) (part of the Partnerships for Financial Inclusion Project)
 
-The session will explore participatory governance models as grassroots approaches that help organizations and communities share decision-making and work together toward common goals. The session will also serve as a starting point for developing a governance structure for the Financial Inclusion & Resilience Movement (FIRM).
-
-The event is free and open to all. Live captioning will be provided. English/French interpretation, ASL, and LSQ are available upon request.
+The webinar is free and accessible, with live English/French captioning and interpretation provided. ASL and LSQ will be provided if requested by 3 PM ET on Wednesday, August 12.
