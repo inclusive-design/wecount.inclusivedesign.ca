@@ -1,0 +1,15 @@
+name: Bump calver
+on:
+  schedule:
+     - cron: "0 1 1 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  bump-month:
+    uses: inclusive-design/workflows/.github/workflows/calver-monthly.yml@main
+    with:
+      GHA_APP_ID: ${{ vars.GHA_APP_ID }}
+    secrets:
+      GHA_PRIVATE_KEY: ${{ secrets.GHA_PRIVATE_KEY }}
