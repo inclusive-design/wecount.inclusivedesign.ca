@@ -7,7 +7,7 @@ const observerOptions = {
 // eslint-disable-next-line no-undef
 getSideMenuObserver = function () {
 	// This object keeps track of the current content section during scroll and applies the active styling to the corresponding side menu nav item.
-	return new IntersectionObserver(entries => {
+	return new IntersectionObserver((entries) => {
 		for (const entry of entries) {
 			const id = entry.target.getAttribute('id');
 			if (entry.isIntersecting) {

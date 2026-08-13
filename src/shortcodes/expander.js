@@ -1,5 +1,5 @@
-import markdownFilter from '../filters/markdown.js';
 import slugify from '@sindresorhus/slugify';
+import markdownFilter from '../filters/markdown.js';
 
 const expander = (content, image, alt, title, subtitle) => {
 	const subtitleElement = subtitle ? `<p class="expander__subtitle">${subtitle}</p>` : '';

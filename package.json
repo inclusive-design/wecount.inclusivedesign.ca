@@ -35,11 +35,13 @@
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@sindresorhus/slugify": "^3.0.0",
     "axios": "^1.15.0",
     "eleventy-plugin-fluid": "^3.2.1",
     "infusion": "^4.8.0",
     "linkedom": "^0.18.12",
     "lite-youtube-embed": "^0.3.4",
+    "markdown-it": "^15.0.0",
     "modern-css-reset": "^1.4.0",
     "uuid": "^14.0.0"
   },

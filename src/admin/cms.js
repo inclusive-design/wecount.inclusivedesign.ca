@@ -1,7 +1,7 @@
 /* global CMS */
 
-import expanderShortcode from '../shortcodes/expander.js';
 import figureShortcode from 'eleventy-plugin-fluid/src/shortcodes/figure-shortcode.js';
+import expanderShortcode from '../shortcodes/expander.js';
 import imageAndTextShortcode from '../shortcodes/image-and-text.js';
 import getId from '../utils/extract-youtube-id.js';
 
@@ -46,10 +46,10 @@ CMS.registerEditorComponent({
 			content: match[5],
 		};
 	},
-	toBlock({image, alt, title, subtitle, content}) {
+	toBlock({ image, alt, title, subtitle, content }) {
 		return `{% expander "${image}", "${alt}", "${title}", "${subtitle}" %}\n${content}\n{% endexpander %}`;
 	},
-	toPreview({image, alt, title, subtitle, content}) {
+	toPreview({ image, alt, title, subtitle, content }) {
 		return expanderShortcode(content ?? '', image, alt, title ?? '', subtitle)
 			.replace(' hidden', '')
 			.replace('aria-expanded="false"', 'aria-expanded="true"');
@@ -85,10 +85,10 @@ CMS.registerEditorComponent({
 			caption: match[3],
 		};
 	},
-	toBlock({image, alt, caption}) {
+	toBlock({ image, alt, caption }) {
 		return `{% figure "${image}", "${alt}" %}\n${caption}\n{% endfigure %}`;
 	},
-	toPreview({image, alt, caption}) {
+	toPreview({ image, alt, caption }) {
 		return figureShortcode(caption ?? '', image, alt);
 	},
 });
@@ -117,13 +117,13 @@ CMS.registerEditorComponent({
 			name: 'imagePosition',
 			label: 'Image Position',
 			widget: 'select',
-			options: [{value: 'left', label: 'Left'}, {value: 'right', label: 'Right'}],
+			options: [{ value: 'left', label: 'Left' }, { value: 'right', label: 'Right' }],
 		},
 		{
 			name: 'verticalAlignment',
 			label: 'Vertical Alignment',
 			widget: 'select',
-			options: [{value: 'top', label: 'Top'}, {value: 'center', label: 'Center'}, {value: 'bottom', label: 'Bottom'}],
+			options: [{ value: 'top', label: 'Top' }, { value: 'center', label: 'Center' }, { value: 'bottom', label: 'Bottom' }],
 		},
 		{
 			name: 'content',
@@ -142,10 +142,10 @@ CMS.registerEditorComponent({
 			content: match[6],
 		};
 	},
-	toBlock({content, image, alt, caption, imagePosition, verticalAlignment}) {
+	toBlock({ content, image, alt, caption, imagePosition, verticalAlignment }) {
 		return `{% imageAndText "${image}", "${alt}", "${caption}", "${imagePosition}", "${verticalAlignment}" %}\n${content}\n{% endimageAndText %}`;
 	},
-	toPreview({content, image, alt, caption, imagePosition, verticalAlignment}) {
+	toPreview({ content, image, alt, caption, imagePosition, verticalAlignment }) {
 		return imageAndTextShortcode(content ?? '', image, alt, caption ?? '', imagePosition, verticalAlignment);
 	},
 });
@@ -154,7 +154,7 @@ CMS.registerEditorComponent({
 	id: 'youtube',
 	label: 'YouTube Embed',
 	fields: [
-		{name: 'url', label: 'YouTube Video URL', widget: 'string'},
+		{ name: 'url', label: 'YouTube Video URL', widget: 'string' },
 	],
 	pattern: /^{% youtube "(\S+)" %}$/,
 	fromBlock(match) {
@@ -162,10 +162,10 @@ CMS.registerEditorComponent({
 			url: match[1],
 		};
 	},
-	toBlock({url}) {
+	toBlock({ url }) {
 		return `{% youtube "${url}" %}`;
 	},
-	toPreview({url}) {
+	toPreview({ url }) {
 		return `<figure class="embed--youtube"><iframe class="youtube-player video video--youtube" src="https://youtube.com/embed/${getId(url ?? false)}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>`;
 	},
 });

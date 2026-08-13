@@ -4,7 +4,7 @@
  * @returns {string} - A string where html symbols have been converted to understandable characters.
  */
 
-const htmlString = value => {
+const htmlString = (value) => {
 	const conversionMap = {
 		'&#8217;': '’',
 		'&shy;': '',
