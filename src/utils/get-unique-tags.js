@@ -7,7 +7,7 @@ import slugify from '@sindresorhus/slugify';
  * @returns {Array<object>} An array of tag objects with the string properties `name` and `slug`
  */
 
-const getUniqueTags = collection => {
+const getUniqueTags = (collection) => {
 	const tagsMap = new Map();
 	for (const item of collection) {
 		if (!item.data.tags) {
@@ -15,7 +15,7 @@ const getUniqueTags = collection => {
 		}
 
 		for (const tag of item.data.tags
-			.filter(tag => !['pages', 'initiatives', 'recount', 'events'].includes(tag))) {
+			.filter((tag) => !['pages', 'initiatives', 'recount', 'events'].includes(tag))) {
 			const slugifiedTag = slugify(tag);
 			if (!tagsMap.has(tag)) {
 				tagsMap.set(slugifiedTag, tag);
@@ -24,7 +24,7 @@ const getUniqueTags = collection => {
 	}
 
 	// This sorting by tag name will put lowercase ahead of uppercase
-	return Array.from(tagsMap, ele => ({name: ele[1], slug: ele[0]})).toSorted((a, b) => a.slug.localeCompare(b.slug));
+	return Array.from(tagsMap, (ele) => ({ name: ele[1], slug: ele[0] })).toSorted((a, b) => a.slug.localeCompare(b.slug));
 };
 
 export default getUniqueTags;

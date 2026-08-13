@@ -55,22 +55,21 @@ for (const p of parameters) {
  * - type
  * - keywords
  * @param {Array<object>} dataSet - A set of Resource records upon which the search will be run
- * @param {string} searchTerm - The term for which to search
+ * @param {string} term - The term for which to search
  * @param {Array<object>} resourceTags - The set of all resource tags, including value and label
  * @returns {Array<object>} - A subset of the input `dataSet` that have matched term in any of the searched fields
  */
-function searchResources(dataSet, searchTerm, resourceTags) {
-	searchTerm = searchTerm.toLowerCase();
-	return dataSet.filter(oneRecord => {
-		// eslint-disable-next-line no-warning-comments
+function searchResources(dataSet, term, resourceTags) {
+	term = term.toLowerCase();
+	return dataSet.filter((oneRecord) => {
 		// TODO: see if the tag value/label mapping can be done in the init for vm.tags in resources-dynamic-handler.js
 		const searchableContent = (oneRecord.title + ' '
-			+ oneRecord.learnTags.map(learnTag => resourceTags.find(tag => tag.value === learnTag).label).join(' ') + ' '
+			+ oneRecord.learnTags.map((learnTag) => resourceTags.find((tag) => tag.value === learnTag).label).join(' ') + ' '
 			+ oneRecord.summary + ' '
 			+ oneRecord.type + ' '
 			+ oneRecord.keywords.join(' ') + ' '
 			+ oneRecord.abstract).toLowerCase();
-		return searchableContent.match(escapeSpecialChars(searchTerm));
+		return searchableContent.match(escapeSpecialChars(term));
 	});
 }
 
@@ -99,7 +98,7 @@ function bindTopicChange(viewSelector) {
 	const topicCheckboxes = document.querySelectorAll(viewSelector + ' .filter input[name^=c_]');
 
 	for (const topicCheckbox of topicCheckboxes) {
-		topicCheckbox.addEventListener('change', event => {
+		topicCheckbox.addEventListener('change', (event) => {
 			event.target.closest('form').submit();
 		});
 	}
@@ -115,7 +114,7 @@ function bindClearFilterButtonClick() {
 	const clearFilterButtons = document.querySelectorAll('.filter .filter-clear button');
 
 	for (const clearFilterButton of clearFilterButtons) {
-		clearFilterButton.addEventListener('click', event => {
+		clearFilterButton.addEventListener('click', (event) => {
 			$(clearFilterButton).parent().siblings('ul').find('.filter-checkbox').prop('checked', false);
 
 			// Submit the form to update the filter after all checkboxes are unselected
@@ -146,7 +145,7 @@ new Vue({
 			document.querySelector('.resources.static-view').style.display = 'none';
 			document.querySelector('.resources.dynamic-view').style.display = 'block';
 
-			axios.get(globalThis.location.origin + '/resourceData.json').then(response => {
+			axios.get(globalThis.location.origin + '/resourceData.json').then((response) => {
 				// Set up lookup arrays
 				vm.resourceCategories = response.data.resourceCategories;
 				vm.resourceTypes = response.data.resourceTypes;
@@ -174,9 +173,9 @@ new Vue({
 
 				// The "filter" call is to ignore empty query strings
 				const filterQuery = [
-					selectedCategories.map(cat => 'c_' + cat + '=on').join('&'),
-					selectedTags.map(tag => 't_' + tag + '=on').join('&'),
-					selectedTypes.map(type => 'm_' + type + '=on').join('&'),
+					selectedCategories.map((cat) => 'c_' + cat + '=on').join('&'),
+					selectedTags.map((tag) => 't_' + tag + '=on').join('&'),
+					selectedTypes.map((type) => 'm_' + type + '=on').join('&'),
 				].filter(Boolean).join('&');
 
 				// Paginate search results
@@ -185,11 +184,11 @@ new Vue({
 				}
 
 				// Add checked states for tags, categories and media types
-				vm.tags = response.data.tags.map(tag => ({...tag, checked: selectedTags.includes(tag.value)}));
-				vm.resourceCategories = response.data.resourceCategories.map(cat => ({...cat, checked: includesCaseInsensitive(selectedCategories, cat.categoryId)}));
-				vm.resourceTypes = response.data.resourceTypes.map(type => ({...type, checked: includesCaseInsensitive(selectedTypes, type.value)}));
+				vm.tags = response.data.tags.map((tag) => ({ ...tag, checked: selectedTags.includes(tag.value) }));
+				vm.resourceCategories = response.data.resourceCategories.map((cat) => ({ ...cat, checked: includesCaseInsensitive(selectedCategories, cat.categoryId) }));
+				vm.resourceTypes = response.data.resourceTypes.map((type) => ({ ...type, checked: includesCaseInsensitive(selectedTypes, type.value) }));
 
-				vm.selectedTags = response.data.tags.filter(tag => selectedTags.includes(tag.value));
+				vm.selectedTags = response.data.tags.filter((tag) => selectedTags.includes(tag.value));
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
 				vm.searchResult = `${results.length} of ${response.data.resources.length} resources matched`;
@@ -234,7 +233,7 @@ for (const expandButton of expandButtons) {
 	setExpandSVGState(expandButton, initialExpandedValue);
 
 	// Add event listener for expand buttons
-	expandButton.addEventListener('click', event => {
+	expandButton.addEventListener('click', (event) => {
 		event.preventDefault();
 		event.stopPropagation();
 		const currentExpandedValue = expandButton.getAttribute('aria-expanded');

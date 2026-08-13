@@ -5,7 +5,7 @@
  * @param {String} inputDate - A string of date.
  * @return The string in the format of "Month day, Year".
  */
-const convertDate = inputDate => {
+const convertDate = (inputDate) => {
 	const dateObject = new Date(inputDate);
 
 	const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -40,7 +40,7 @@ const htmlDecode = function (input) {
  * @return An array of smaller arrays with the given chunk size at its most.
  */
 const chunkArray = function (inputArray, chunkSize) {
-	return Array.from({length: Math.ceil(inputArray.length / chunkSize)}).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
+	return Array.from({ length: Math.ceil(inputArray.length / chunkSize) }).fill().map((_, index) => index * chunkSize).map((begin) => inputArray.slice(begin, begin + chunkSize));
 };
 
 /*
@@ -99,7 +99,7 @@ const escapeSpecialChars = function (data) {
  * @return The same set of the data set with fields converted.
  */
 const processDisplayResults = function (inArray) {
-	return inArray.map(oneRecord => {
+	return inArray.map((oneRecord) => {
 		oneRecord.title = htmlDecode(oneRecord.title);
 		oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime) : undefined;
 		oneRecord.excerpt = stripHtmlTags(oneRecord.excerpt);
@@ -113,7 +113,7 @@ const processDisplayResults = function (inArray) {
  * @return The same set of the data set with fields converted.
  */
 const processResourcesDisplayResults = function (inArray) {
-	return inArray.map(oneRecord => {
+	return inArray.map((oneRecord) => {
 		oneRecord.title = htmlDecode(oneRecord.title);
 		oneRecord.dateTime = oneRecord.dateTime ? convertDate(oneRecord.dateTime) : undefined;
 		oneRecord.summary = stripHtmlTags(oneRecord.summary);
@@ -131,8 +131,8 @@ const processResourcesDisplayResults = function (inArray) {
  */
 const search = function (dataSet, searchTerm) {
 	searchTerm = searchTerm.toLowerCase();
-	return dataSet.filter(oneRecord => {
-		const tagNames = oneRecord.tags ? oneRecord.tags.map(({name}) => name) : [];
+	return dataSet.filter((oneRecord) => {
+		const tagNames = oneRecord.tags ? oneRecord.tags.map(({ name }) => name) : [];
 		return `${oneRecord.title} ${oneRecord.content} ${oneRecord.excerpt} ${tagNames.join(' ')}`.toLowerCase().match(escapeSpecialChars(searchTerm));
 	});
 };
@@ -146,9 +146,9 @@ const search = function (dataSet, searchTerm) {
  * @return A subset of the input `dataSet` that have matched tag slug(s) in `tagSlugs`
  */
 const filter = function (dataSet, tagSlugs) {
-	return dataSet.filter(oneRecord => {
-		const recordSlugs = oneRecord.tags ? oneRecord.tags.map(({slug}) => slug) : [];
-		return recordSlugs.some(slug => tagSlugs.includes(slug));
+	return dataSet.filter((oneRecord) => {
+		const recordSlugs = oneRecord.tags ? oneRecord.tags.map(({ slug }) => slug) : [];
+		return recordSlugs.some((slug) => tagSlugs.includes(slug));
 	});
 };
 
@@ -174,16 +174,16 @@ const filterResources = function (resources, filterSettings) {
 	let results = resources;
 
 	if (filterSettings.selectedCategories.length > 0) {
-		const selectedFocuses = filterSettings.categories.filter(cat => includesCaseInsensitive(filterSettings.selectedCategories, cat.categoryId));
-		results = results.filter(oneRecord => selectedFocuses.some(cat => cat.focuses.includes(oneRecord.focus)));
+		const selectedFocuses = filterSettings.categories.filter((cat) => includesCaseInsensitive(filterSettings.selectedCategories, cat.categoryId));
+		results = results.filter((oneRecord) => selectedFocuses.some((cat) => cat.focuses.includes(oneRecord.focus)));
 	}
 
 	if (filterSettings.selectedTags.length > 0) {
-		results = results.filter(oneRecord => oneRecord.learnTags.some(tag => filterSettings.selectedTags.includes(tag)));
+		results = results.filter((oneRecord) => oneRecord.learnTags.some((tag) => filterSettings.selectedTags.includes(tag)));
 	}
 
 	if (filterSettings.selectedTypes.length > 0) {
-		results = results.filter(oneRecord => filterSettings.selectedTypes.includes(oneRecord.type));
+		results = results.filter((oneRecord) => filterSettings.selectedTypes.includes(oneRecord.type));
 	}
 
 	return results;
@@ -201,7 +201,7 @@ const slugify = function (string_) {
 
 	// 1. Replace spaces with -
 	// 2. Replace special characters
-	return string_.toString().toLowerCase().replaceAll(/\s+/g, '-').replaceAll(p, c => to.charAt(from.indexOf(c)));
+	return string_.toString().toLowerCase().replaceAll(/\s+/g, '-').replaceAll(p, (c) => to.charAt(from.indexOf(c)));
 };
 
 /*
@@ -214,12 +214,12 @@ const slugify = function (string_) {
  * @param {String} searchString - a string to search the collection for
  */
 const includesCaseInsensitive = function (inputStringArray, searchString) {
-	if (typeof searchString !== 'string' || inputStringArray.some(string_ => typeof string_ !== 'string')) {
+	if (typeof searchString !== 'string' || inputStringArray.some((string_) => typeof string_ !== 'string')) {
 		return false;
 	}
 
 	// Normalize all string values by making them upper case
-	inputStringArray = inputStringArray.map(string_ => string_.toUpperCase());
+	inputStringArray = inputStringArray.map((string_) => string_.toUpperCase());
 	searchString = searchString.toUpperCase();
 
 	return inputStringArray.includes(searchString);

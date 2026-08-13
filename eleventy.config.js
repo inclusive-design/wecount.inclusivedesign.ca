@@ -1,9 +1,8 @@
-import {chunkArray, createPagination} from './src/assets/scripts/utilities.js';
 import eleventyNavigation from '@11ty/eleventy-navigation';
 import fluidPlugin from 'eleventy-plugin-fluid';
 import pluginRss from '@11ty/eleventy-plugin-rss';
-import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
-
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+import { chunkArray, createPagination } from './src/assets/scripts/utilities.js';
 import parseTransform from './src/transforms/parse.js';
 import categoryFromFocusFilter from './src/filters/category-from-focus.js';
 import getFilteredByTagSlug from './src/utils/get-filtered-by-tag-slug.js';
@@ -22,35 +21,35 @@ import youtubeShortcode from './src/shortcodes/youtube.js';
  * @returns {object} - Eleventy configuration.
  */
 export default function eleventy(eleventyConfig) {
-	eleventyConfig.addCollection('events', collection => {
+	eleventyConfig.addCollection('events', (collection) => {
 		const events = [
 			...collection.getFilteredByGlob('src/collections/events/*.md'),
 		];
 		return events.toSorted((a, b) => b.data.eventDate - a.data.eventDate);
 	});
 
-	eleventyConfig.addCollection('initiatives', collection => {
+	eleventyConfig.addCollection('initiatives', (collection) => {
 		const initiatives = [
 			...collection.getFilteredByGlob('src/collections/initiatives/*.md'),
 		];
 		return initiatives.toSorted((a, b) => b.data.date - a.data.date);
 	});
 
-	eleventyConfig.addCollection('recount', collection => {
+	eleventyConfig.addCollection('recount', (collection) => {
 		const recount = [
 			...collection.getFilteredByGlob('src/collections/recount/*.md'),
 		];
 		return recount.toSorted((a, b) => b.data.date - a.data.date);
 	});
 
-	eleventyConfig.addCollection('views', collection => {
+	eleventyConfig.addCollection('views', (collection) => {
 		const views = [
 			...collection.getFilteredByGlob('src/collections/views/*.md'),
 		];
 		return views.toSorted((a, b) => b.data.date - a.data.date);
 	});
 
-	eleventyConfig.addCollection('resources', collection => {
+	eleventyConfig.addCollection('resources', (collection) => {
 		const resources = [...collection.getFilteredByGlob('src/collections/resources/*.md')];
 		return resources.toSorted((a, b) => a.data.title.localeCompare(b.data.title, undefined, {
 			ignorePunctuation: 'true',
@@ -59,17 +58,17 @@ export default function eleventy(eleventyConfig) {
 		}));
 	});
 
-	eleventyConfig.addCollection('pages', collection => [
+	eleventyConfig.addCollection('pages', (collection) => [
 		...collection.getFilteredByGlob('src/collections/pages/*.md'),
 	]);
 
-	eleventyConfig.addCollection('initiativesTags', collection => getUniqueTags(collection.getFilteredByGlob('src/collections/initiatives/*.md')));
+	eleventyConfig.addCollection('initiativesTags', (collection) => getUniqueTags(collection.getFilteredByGlob('src/collections/initiatives/*.md')));
 
-	eleventyConfig.addCollection('allTags', collection => {
+	eleventyConfig.addCollection('allTags', (collection) => {
 		const postsByTag = [];
 
 		for (const tag of getUniqueTags(collection.getAll())) {
-			postsByTag.push({...tag, posts: getFilteredByTagSlug(tag.slug, collection)});
+			postsByTag.push({ ...tag, posts: getFilteredByTagSlug(tag.slug, collection) });
 		}
 
 		const pageSize = 10;
@@ -92,7 +91,7 @@ export default function eleventy(eleventyConfig) {
 					paginatedPostsByTag.push(tagPage);
 				}
 
-				paginatedPostsByTag.push({...tagPage, pageNumber});
+				paginatedPostsByTag.push({ ...tagPage, pageNumber });
 			}
 		}
 
@@ -124,17 +123,17 @@ export default function eleventy(eleventyConfig) {
 	eleventyConfig.addTransform('parse', parseTransform);
 
 	// Configure passthrough file copy.
-	eleventyConfig.addPassthroughCopy({'src/_redirects': '_redirects'});
-	eleventyConfig.addPassthroughCopy({'node_modules/infusion': 'lib/infusion'});
-	eleventyConfig.addPassthroughCopy({'src/assets/fonts': 'assets/fonts'});
-	eleventyConfig.addPassthroughCopy({'src/assets/images': 'assets/images'});
-	eleventyConfig.addPassthroughCopy({'src/uploads': 'uploads'});
-	eleventyConfig.addPassthroughCopy({'src/assets/scripts': 'assets/scripts'});
-	eleventyConfig.addPassthroughCopy({'node_modules/lite-youtube-embed/src/lite-yt-embed.js': 'assets/scripts/lite-yt-embed.js'});
-	eleventyConfig.addPassthroughCopy({'node_modules/lite-youtube-embed/src/lite-yt-embed.css': 'assets/styles/lite-yt-embed.css'});
+	eleventyConfig.addPassthroughCopy({ 'src/_redirects': '_redirects' });
+	eleventyConfig.addPassthroughCopy({ 'node_modules/infusion': 'lib/infusion' });
+	eleventyConfig.addPassthroughCopy({ 'src/assets/fonts': 'assets/fonts' });
+	eleventyConfig.addPassthroughCopy({ 'src/assets/images': 'assets/images' });
+	eleventyConfig.addPassthroughCopy({ 'src/uploads': 'uploads' });
+	eleventyConfig.addPassthroughCopy({ 'src/assets/scripts': 'assets/scripts' });
+	eleventyConfig.addPassthroughCopy({ 'node_modules/lite-youtube-embed/src/lite-yt-embed.js': 'assets/scripts/lite-yt-embed.js' });
+	eleventyConfig.addPassthroughCopy({ 'node_modules/lite-youtube-embed/src/lite-yt-embed.css': 'assets/styles/lite-yt-embed.css' });
 
-	eleventyConfig.addPassthroughCopy({'src/admin/config.yml': 'admin/config.yml'});
-	eleventyConfig.addPassthroughCopy({'node_modules/axios/dist/axios.min.js': 'lib/axios.min.js'});
+	eleventyConfig.addPassthroughCopy({ 'src/admin/config.yml': 'admin/config.yml' });
+	eleventyConfig.addPassthroughCopy({ 'node_modules/axios/dist/axios.min.js': 'lib/axios.min.js' });
 
 	return {
 		dir: {

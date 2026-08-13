@@ -7,17 +7,17 @@ import slugify from '@sindresorhus/slugify';
  * @returns {Array<object>} A filtered collection of items
  */
 const getFilteredTagBySlug = (filterTag, collection) => {
-	const allItems = collection.getAll().filter(item => item.data && item.data.tags); // Filter out items without tags
+	const allItems = collection.getAll().filter((item) => item.data && item.data.tags); // Filter out items without tags
 
 	// filter the collection to find posts with the same tag slug
 	// make a copy of the tags list to avoid side effects, keying by fileSlug to avoid collisions
 	const tagSlugs = {};
 	for (const allItem of allItems) {
-		tagSlugs[allItem.fileSlug] = allItem.data.tags.map(tagToSlugify => slugify(tagToSlugify));
+		tagSlugs[allItem.fileSlug] = allItem.data.tags.map((tagToSlugify) => slugify(tagToSlugify));
 	}
 
 	const slugifiedFilterTag = slugify(filterTag);
-	return allItems.filter(item => tagSlugs[item.fileSlug].includes(slugifiedFilterTag));
+	return allItems.filter((item) => tagSlugs[item.fileSlug].includes(slugifiedFilterTag));
 };
 
 export default getFilteredTagBySlug;

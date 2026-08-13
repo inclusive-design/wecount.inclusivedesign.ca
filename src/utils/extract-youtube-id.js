@@ -1,4 +1,4 @@
-const extractYoutubeId = url => {
+const extractYoutubeId = (url) => {
 	if (!url) {
 		return false;
 	}

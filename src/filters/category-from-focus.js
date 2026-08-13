@@ -10,7 +10,7 @@ const categoryFromFocus = (focusToMatch, categories) => {
 	let categoryName = '';
 
 	for (const category of categories) {
-		const found = category.focuses.find(focus => focus === focusToMatch);
+		const found = category.focuses.find((focus) => focus === focusToMatch);
 
 		if (found) {
 			categoryName = category.categoryLabel;

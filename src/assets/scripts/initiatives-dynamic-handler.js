@@ -41,7 +41,7 @@ new Vue({
 			document.querySelector('.initiatives.dynamic-view').style.display = 'block';
 			isStaticViewVisible = false;
 
-			axios.get(globalThis.location.origin + '/initiativesWithTags.json').then(response => {
+			axios.get(globalThis.location.origin + '/initiativesWithTags.json').then((response) => {
 				// Search
 				let results = response.data.initiatives;
 				if (searchTerm) {
@@ -65,12 +65,12 @@ new Vue({
 					pagination = createPagination(results, pageSize, pageInQuery, '/initiatives/?s=' + searchTerm + '&' + tagsQuery + '&page=:page');
 				}
 
-				vm.tags = response.data.tags.map(tag => ({
+				vm.tags = response.data.tags.map((tag) => ({
 					slug: tag.slug,
 					name: tag.name,
 					checked: selectedTags.includes(tag.slug),
 				}));
-				vm.selectedTags = response.data.tags.filter(tag => selectedTags.includes(tag.slug));
+				vm.selectedTags = response.data.tags.filter((tag) => selectedTags.includes(tag.slug));
 				vm.pagination = pagination;
 				vm.resultsToDisplay = pagination ? pagination.items : results;
 				vm.searchResult = `${results.length} of ${response.data.initiatives.length} resources matched`;
@@ -163,7 +163,7 @@ for (const expandButton of expandButtons) {
 	setExpandSVGState(expandButton, initialExpandedValue);
 
 	// Add event listener for expand buttons
-	expandButton.addEventListener('click', event => {
+	expandButton.addEventListener('click', (event) => {
 		event.preventDefault();
 		const currentExpandedValue = expandButton.getAttribute('aria-expanded');
 		const expandedState = currentExpandedValue === 'true' ? 'false' : 'true';
@@ -173,8 +173,8 @@ for (const expandButton of expandButtons) {
 		// Find the form filter by using its relative position with the button instead of a css selector is to work around
 		// the case when there are 2 filters (one for the static view and one for the dynamic view) are on the page. Clicking
 		// on one of expand buttons only opens the form that this button corresponds to.
-		const filter = $(expandButton).parent().siblings();
-		filter[expandedState === 'false' ? 'hide' : 'show']();
+		const filterElement = $(expandButton).parent().siblings();
+		filterElement[expandedState === 'false' ? 'hide' : 'show']();
 
 		// Show/hide the expand svg
 		setExpandSVGState(expandButton, expandedState);

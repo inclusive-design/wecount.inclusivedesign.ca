@@ -1,5 +1,5 @@
-import markdownFilter from '../filters/markdown.js';
 import figureShortcode from 'eleventy-plugin-fluid/src/shortcodes/figure-shortcode.js';
+import markdownFilter from '../filters/markdown.js';
 
 const imageAndText = (content, image, alt, caption, imagePosition, verticalAlignment) => {
 	const figure = caption ? figureShortcode(caption, image, alt) : figureShortcode('', image, alt);
