@@ -1,5 +1,17 @@
 # Changelog
 
+## [2026.8.0](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/v2026.4.2...v2026.8.0) (2026-08-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @11ty/eleventy-img to v7 ([#2525](https://github.com/inclusive-design/wecount.inclusivedesign.ca/issues/2525)) ([78185db](https://github.com/inclusive-design/wecount.inclusivedesign.ca/commit/78185db907a9acd0f48a9c0fcb154f739707266d))
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([3854104](https://github.com/inclusive-design/wecount.inclusivedesign.ca/commit/38541040f29f653a630c8fb7c4466c25a0bffe34))
+
 ## [2026.4.2](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/v2026.4.1...v2026.4.2) (2026-07-06)
 
 
