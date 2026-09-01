@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.9.0](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/v2026.8.0...v2026.9.0) (2026-09-01)
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([69a02cd](https://github.com/inclusive-design/wecount.inclusivedesign.ca/commit/69a02cdd706721b94c9b37abd96791a9574fece9))
+
 ## [2026.8.0](https://github.com/inclusive-design/wecount.inclusivedesign.ca/compare/v2026.4.2...v2026.8.0) (2026-08-13)
 
 
