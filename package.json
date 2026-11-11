@@ -35,7 +35,7 @@
     "@11ty/eleventy-img": "^7.0.0",
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
-    "@sindresorhus/slugify": "^3.0.0",
+    "@sindresorhus/slugify": "^4.0.0",
     "axios": "^1.15.0",
     "eleventy-plugin-fluid": "^3.2.1",
     "infusion": "^4.8.0",
